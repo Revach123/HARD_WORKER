@@ -72,7 +72,7 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: pip install requests --break-system-packages
+        run: pip install requests pypdf --break-system-packages
 
       - name: Build report selection plan
         if: github.event.inputs.skip_maya_refetch != 'true'
