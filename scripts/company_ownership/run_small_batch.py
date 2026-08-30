@@ -118,9 +118,9 @@ def _call_gemini_with_quota_retry(pdf_bytes: bytes, filename_hint: str,
     זיהו שזו מכסה אמיתית (לא מבזבזת עוד קירורים על מפתחות ריקים)."""
     last_quota_error = None
     for attempt in range(quota_retries):
-        if QUOTA_EXCEEDED.is_set():
+        if QUOTA_EXCEEDED.is_set() or ex.all_keys_daily_exhausted():
             raise ex.GeminiQuotaExceededError(
-                "מכסה כבר זוהתה כנגמרת ב-thread אחר - מוותר מיד בלי קירור נוסף."
+                "מכסה יומית אמיתית (RPD) כבר זוהתה - מוותר מיד בלי קירור נוסף."
             )
         try:
             raw = ex.call_gemini_extraction(pdf_bytes, filename_hint=filename_hint, max_retries=6)
@@ -131,6 +131,9 @@ def _call_gemini_with_quota_retry(pdf_bytes: bytes, filename_hint: str,
             return raw
         except ex.GeminiQuotaExceededError as e:
             last_quota_error = e
+            if ex.all_keys_daily_exhausted():
+                # לא עוד קירור - זו כבר מכסה יומית ידועה, לא תיפתר תוך 65s
+                raise
             print(f"    כל המפתחות בקירור (ניסיון {attempt + 1}/{quota_retries}) - "
                   f"ממתין {ex.GeminiKeyPool.COOLDOWN_SECONDS}s לפני ניסיון נוסף...")
             time.sleep(ex.GeminiKeyPool.COOLDOWN_SECONDS)
