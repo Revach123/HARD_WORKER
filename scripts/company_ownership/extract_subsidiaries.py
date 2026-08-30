@@ -371,7 +371,7 @@ def call_gemini_extraction(pdf_bytes: bytes, filename_hint: str, max_retries: in
             # שהאכיפה הקשיחה גורמת למודל "להסתפק" בתשובה ריקה תקנית
             # סכמטית כשהוא פחות בטוח, במקום לחפש לעומק במסמך ענק. שאר
             # התיקונים (מיזוג קבצים, quota_retries) לא הושפעו ונשארים.
-            "thinking_level": "high",  # איכות > מהירות - עברנו ל-3.6-flash בשביל זה בדיוק
+            "thinkingConfig": {"thinkingLevel": "high"},  # איכות > מהירות
         },
     }
 
