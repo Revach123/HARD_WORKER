@@ -107,7 +107,7 @@ class GeminiKeyPool:
     אין סיבה להמתין למפתח שלא נכשל, ואין סיבה לחכות יותר מהנדרש
     למפתח שכן נכשל."""
 
-    COOLDOWN_SECONDS = 65  # TPM/RPM מתאפסים תוך ~60s; RPD אמיתי פשוט ייכשל שוב
+    COOLDOWN_SECONDS = 65  # TPM/RPM זמני - חוזר לבד תוך ~60s
 
     def __init__(self, keys: list[str]):
         if not keys:
@@ -115,19 +115,22 @@ class GeminiKeyPool:
         self._keys = keys
         self._limiters = {k: RateLimiter(max_per_minute=14) for k in keys}
         self._exhausted_at: dict[str, float] = {}  # key -> timestamp (monotonic)
+        self._daily_exhausted: set[str] = set()  # RPD אמיתי - לא מתאושש היום
         self._lock = threading.Lock()
         self._next_idx = 0
 
     def get_next_key(self) -> str | None:
-        """מחזיר מפתח זמין, או None אם כולם עדיין בקירור. מפתח בקירור
-        חוזר אוטומטית להיות זמין ברגע ש-COOLDOWN_SECONDS חלפו מאז
-        שנכשל - לא צריך איפוס ידני."""
+        """מחזיר מפתח זמין, או None אם כולם עדיין בקירור/במכסה יומית.
+        מפתח בקירור זמני חוזר אוטומטית להיות זמין ברגע ש-COOLDOWN_SECONDS
+        חלפו. מפתח שסומן daily_exhausted לא חוזר לעולם באותו תהליך -
+        אין טעם לנסות שוב היום."""
         with self._lock:
             now = time.monotonic()
             available = [
                 k for k in self._keys
-                if k not in self._exhausted_at
-                or now - self._exhausted_at[k] >= self.COOLDOWN_SECONDS
+                if k not in self._daily_exhausted
+                and (k not in self._exhausted_at
+                     or now - self._exhausted_at[k] >= self.COOLDOWN_SECONDS)
             ]
             if not available:
                 return None
@@ -136,22 +139,39 @@ class GeminiKeyPool:
             self._exhausted_at.pop(key, None)  # מפתח שנבחר כבר לא "בקירור"
             return key
 
-    def mark_exhausted(self, key: str) -> None:
+    def mark_exhausted(self, key: str, daily: bool = False) -> None:
+        """daily=True - מכסה יומית אמיתית (RPD), מזוהה לפי quotaId עם
+        'PerDay' בתגובת השגיאה (ראה call_gemini_extraction). המפתח
+        נחסם לגמרי עד סוף התהליך הנוכחי - לא עוד קירור-ואז-ניסיון-חוזר
+        על אותו מפתח, זה רק מבזבז זמן על מכסה שלא תתאפס עד מחר."""
         with self._lock:
-            self._exhausted_at[key] = time.monotonic()
+            if daily:
+                self._daily_exhausted.add(key)
+            else:
+                self._exhausted_at[key] = time.monotonic()
+
+    def all_daily_exhausted(self) -> bool:
+        with self._lock:
+            return len(self._daily_exhausted) == len(self._keys)
 
     def seconds_until_next_available(self) -> float:
         """כמה שניות עד שהמפתח הכי-קרוב-להחלמה יהיה זמין - לשימוש
-        כשכולם בקירור, כדי לחכות בדיוק את הזמן הנדרש ולא יותר."""
+        כשכולם בקירור, כדי לחכות בדיוק את הזמן הנדרש ולא יותר. מחזיר
+        inf אם כל המפתחות הפנויים (לא daily_exhausted) כבר בקירור אבל
+        עדיין 0 בפועל כי COOLDOWN_SECONDS תמיד חולף - inf רק אם ממש
+        כולם daily_exhausted (אין למי לחכות בכלל)."""
         with self._lock:
+            candidates = [k for k in self._keys if k not in self._daily_exhausted]
+            if not candidates:
+                return float("inf")
             if not self._exhausted_at:
                 return 0.0
             now = time.monotonic()
             remaining = [
                 self.COOLDOWN_SECONDS - (now - t)
-                for t in self._exhausted_at.values()
+                for k, t in self._exhausted_at.items() if k in candidates
             ]
-            return max(0.0, min(remaining))
+            return max(0.0, min(remaining)) if remaining else 0.0
 
     def limiter_for(self, key: str) -> "RateLimiter":
         return self._limiters[key]
@@ -343,6 +363,13 @@ def download_pdf(url: str) -> bytes:
     return resp.content
 
 
+def all_keys_daily_exhausted() -> bool:
+    """True אם כל המפתחות (GEMINI_API_KEY*) הגיעו למכסה יומית אמיתית
+    (RPD) - לשימוש חיצוני (run_small_batch.py) כדי לוותר מיד בלי לחכות
+    קירור נוסף שלא יעזור."""
+    return _key_pool.all_daily_exhausted()
+
+
 def call_gemini_extraction(pdf_bytes: bytes, filename_hint: str, max_retries: int = 2) -> dict:
     b64 = base64.b64encode(pdf_bytes).decode()
     payload = {
@@ -377,10 +404,21 @@ def call_gemini_extraction(pdf_bytes: bytes, filename_hint: str, max_retries: in
 
     last_error = None
     for attempt in range(max_retries):
+        if _key_pool.all_daily_exhausted():
+            raise GeminiQuotaExceededError(
+                "כל המפתחות (GEMINI_API_KEY*) הגיעו למכסה יומית אמיתית (RPD) - "
+                "לא ינוסו שוב עד מחר."
+            )
+
         key = _key_pool.get_next_key()
 
         if key is None:
             wait = _key_pool.seconds_until_next_available()
+            if wait == float("inf"):
+                raise GeminiQuotaExceededError(
+                    "כל המפתחות (GEMINI_API_KEY*) הגיעו למכסה יומית אמיתית (RPD) - "
+                    "לא ינוסו שוב עד מחר."
+                )
             if wait > 0:
                 print(f"    כל המפתחות בקירור זמני - ממתין {wait:.0f}s "
                       f"(המפתח הקרוב ביותר להחלמה)...")
@@ -404,12 +442,29 @@ def call_gemini_extraction(pdf_bytes: bytes, filename_hint: str, max_retries: in
             continue
 
         if resp.status_code == 429 and "exceeded your current quota" in resp.text:
-            # יכול להיות RPD אמיתי או TPM/RPM זמני - אי אפשר להבדיל מתוך
-            # הודעת השגיאה בלבד. מסמנים רק את המפתח הזה בקירור (65s) -
-            # לא נוגעים באחרים, הם עדיין זמינים לניסיון הבא מיד.
-            print(f"    מפתח ...{key[-4:]} הגיע למכסה - נכנס לקירור של "
-                  f"{GeminiKeyPool.COOLDOWN_SECONDS}s (מפתחות אחרים לא נפגעים).")
-            _key_pool.mark_exhausted(key)
+            # ניתן להבדיל בין RPD אמיתי לזמני-TPM/RPM: תגובת השגיאה של
+            # Gemini כוללת details[].violations[].quotaId, ומכסות
+            # יומיות תמיד מכילות "PerDay" בשם (למשל
+            # "GenerateRequestsPerDayPerProjectPerModel-FreeTier") לעומת
+            # "PerMinute" לזמני. מאומת מול תיעוד/דוגמאות אמיתיות של
+            # Google - זו לא הנחה.
+            is_daily = False
+            try:
+                violations = []
+                for detail in resp.json().get("error", {}).get("details", []):
+                    if detail.get("@type", "").endswith("QuotaFailure"):
+                        violations.extend(detail.get("violations", []))
+                is_daily = any("PerDay" in v.get("quotaId", "") for v in violations)
+            except Exception:
+                pass  # פורמט לא צפוי - מתייחסים כזמני (בטוח יותר, פשוט ננסה שוב)
+
+            _key_pool.mark_exhausted(key, daily=is_daily)
+            if is_daily:
+                print(f"    מפתח ...{key[-4:]} - מכסה יומית אמיתית (RPD) נגמרה - "
+                      f"לא ינוסה שוב היום (מפתחות אחרים לא נפגעים).")
+            else:
+                print(f"    מפתח ...{key[-4:]} הגיע למכסה - נכנס לקירור זמני של "
+                      f"{GeminiKeyPool.COOLDOWN_SECONDS}s (RPM/TPM, מפתחות אחרים לא נפגעים).")
             last_error = requests.exceptions.HTTPError(f"429: {resp.text[:200]}")
             continue
 
