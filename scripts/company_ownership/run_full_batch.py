@@ -22,6 +22,7 @@ concurrency לא "עוקף" את המכסה, רק מנצל טוב יותר את 
 import argparse
 import json
 import os
+import subprocess
 import threading
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -29,6 +30,41 @@ from datetime import datetime, timezone
 
 import extract_subsidiaries as ex
 import run_small_batch as rsb
+
+CHECKPOINT_EVERY = 10  # commit+push תוך כדי ריצה אחרי כל כך הרבה משימות -
+# לא רק בסוף. נלמד בדרך הקשה: ריצה של 59 דקות איבדה את כל ההתקדמות
+# שלה כי ה-commit היחיד (בסוף בלבד) התנגש עם push מקביל (תיקון קוד
+# ידני תוך כדי הריצה) ונכשל בשקט - ה-workflow דיווח "success" למרות
+# שההתקדמות מעולם לא הגיעה ל-git.
+
+
+def _commit_progress(results_path: str, processed_log_path: str, reason: str = "") -> bool:
+    """Commit+push התקדמות חלקית תוך כדי ריצה, מה-thread הראשי בלבד
+    (לא בטוח לקרוא מכמה threads בו-זמנית - כל הקריאות לפונקציה הזו
+    קורות מתוך לולאת as_completed הראשית, לא מתוך worker threads).
+    מחזיר True אם ה-push הצליח (או שלא היה מה לחיוב), False אם נכשל
+    אחרי כל הניסיונות - ההתקדמות עדיין קיימת מקומית על הדיסק, רק לא
+    הגיעה ל-git."""
+    try:
+        subprocess.run(["git", "config", "user.name", "github-actions[bot]"], check=True)
+        subprocess.run(["git", "config", "user.email",
+                         "github-actions[bot]@users.noreply.github.com"], check=True)
+        subprocess.run(["git", "add", results_path, processed_log_path], check=True)
+        diff = subprocess.run(["git", "diff", "--staged", "--quiet"])
+        if diff.returncode == 0:
+            return True  # אין שינויים לחיוב - לא באמת כישלון
+
+        subprocess.run(["git", "commit", "-m", f"Progress checkpoint {reason} [skip ci]"], check=True)
+        for attempt in range(5):
+            if subprocess.run(["git", "push"]).returncode == 0:
+                return True
+            safe_print(f"    checkpoint push נדחה (ניסיון {attempt + 1}/5) - מושך ועושה rebase...")
+            subprocess.run(["git", "pull", "--rebase", "origin", "main"])
+        safe_print("    checkpoint נכשל אחרי 5 ניסיונות - ההתקדמות עדיין על הדיסק המקומי בלבד.")
+        return False
+    except subprocess.CalledProcessError as e:
+        safe_print(f"    שגיאת git ב-checkpoint: {e}")
+        return False
 
 PROCESSED_LOG_PATH = "processed_reports.json"
 
@@ -296,6 +332,11 @@ if __name__ == "__main__":
                 n_fail += 1
             safe_print(f"[{n_ok + n_fail}/{len(tasks)}] הושלם: {company_name} "
                        f"({kind}) -> {status}")
+
+            if (n_ok + n_fail) % CHECKPOINT_EVERY == 0:
+                safe_print(f"  --- checkpoint: מחייב התקדמות אחרי {n_ok + n_fail} משימות ---")
+                _commit_progress(args.results, args.processed_log,
+                                  reason=f"after {n_ok + n_fail} tasks")
 
     print(f"\n=== סיכום הרצה זו ===")
     print(f"הצליחו: {n_ok} | נכשלו בהרצה זו (ינוסו שוב עד {MAX_RETRY_ATTEMPTS} "
