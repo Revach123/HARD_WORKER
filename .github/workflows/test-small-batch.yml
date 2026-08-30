@@ -105,7 +105,8 @@ jobs:
             LIMIT_ARG="--limit ${{ github.event.inputs.limit }}"
           fi
           python run_full_batch.py --plan selection_plan.json $LIMIT_ARG \
-            --workers ${{ github.event.inputs.workers || '2' }}
+            --workers ${{ github.event.inputs.workers || '2' }} 2>&1 | tee run_log.txt
+          exit ${PIPESTATUS[0]}
 
       # if: always() - קריטי: מחייב את ההתקדמות ל-git גם אם ההרצה
       # נעצרה/נכשלה/נקטעה באמצע. זה מחליף את actions/cache - קבצים
@@ -116,7 +117,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add .maya_cache/*_merged.json selection_plan.json \
+          git add .maya_cache/*_merged.json selection_plan.json run_log.txt \
                   processed_reports.json private_subsidiaries.jsonl 2>/dev/null || true
           if git diff --staged --quiet; then
             echo "אין שינויים לחיוב."
