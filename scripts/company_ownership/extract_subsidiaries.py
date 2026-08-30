@@ -32,7 +32,13 @@ import urllib3
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-GEMINI_MODEL = "gemini-3.5-flash-lite"  # 500 RPD מול 20 RPD ב-gemini-3.6-flash (ראה dashboard)
+GEMINI_MODEL = "gemini-3.6-flash"
+# הוחלף מ-gemini-3.5-flash-lite (2026-08-30): לפי גוגל, 3.6-flash "משפר
+# דיוק בפירוק וחילוץ מובנה ממסמכים" לעומת flash-lite שמתועדף למהירות/
+# עלות בלבד ("לא מתחרה על איכות"). התפוקה יורדת (20 RPD/מפתח מול 500),
+# אבל עם 4 מפתחות = 80/יום, ו-647 חברות זה עדיין רק כ-8-9 ימי כיסוי -
+# סביר לגמרי לבאקפיל חד-פעמי, ועם דיוק גבוה משמעותית לכל קריאה בודדת.
+# שני המודלים מתעלמים מ-temperature באותה מידה - זה לא משתנה כאן.
 
 # עולה בכל פעם שהשדות בפלט (בעיקר change_events) משתנים מהותית - למשל
 # הוספת event_type/ownership_pct_before. run_full_batch.py משווה מול
@@ -365,6 +371,7 @@ def call_gemini_extraction(pdf_bytes: bytes, filename_hint: str, max_retries: in
             # שהאכיפה הקשיחה גורמת למודל "להסתפק" בתשובה ריקה תקנית
             # סכמטית כשהוא פחות בטוח, במקום לחפש לעומק במסמך ענק. שאר
             # התיקונים (מיזוג קבצים, quota_retries) לא הושפעו ונשארים.
+            "thinking_level": "high",  # איכות > מהירות - עברנו ל-3.6-flash בשביל זה בדיוק
         },
     }
 
