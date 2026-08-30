@@ -26,10 +26,7 @@ import run_small_batch as rsb
 # ביטול responseSchema - הריצה תדלג עליהן (כבר ב-ab_test_results.json)
 # ותשלים רק את שאר ה-16.
 SAMPLE_COMPANY_IDS = [
-    "604",   # לאומי
-    "691",   # דיסקונט
-    "1172",  # אפי נכסים
-    "387",   # אלרוב נדל"ן
+    "604",   # לאומי - רק אחת קודם, לחסוך מכסה עד שנוודא שהתיקון עובד
 ]
 
 OUT_PATH = "ab_test_results_36flash.json"
