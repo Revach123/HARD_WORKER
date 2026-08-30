@@ -8,12 +8,25 @@ run_small_batch.py
 לא נוגע בדוחות שינויים (change) בשלב הזה - רק snapshot, כדי לשמור את
 הבדיקה הראשונה פשוטה.
 
-תיקון (ראה diagnose_multipart.py): הקוד הישן עצר על ה-PDF הראשון
-שהחזיר תוצאה כלשהי, ומעולם לא ניסה extra_pdfs - גם כשהם הכילו מידע
-משמעותי (בדיסקונט: 11 חברות בגרסה הישנה מול 58 בפועל בכל הקבצים
-ביחד). עכשיו: מעבדים את כל קבצי ה-PDF של כל דוח, וממזגים (dedup לפי
-שם חברה). זה מכפיל פחות או יותר את מספר קריאות ה-Gemini לחברות עם
-extra_pdfs (כ-147 מתוך 669 בתוכנית) - תמורה מכוונת בעד שלמות הנתונים.
+שלושה תיקונים (ראה diagnose_multipart.py לפרטי האבחון):
+
+1. עיבוד כל קבצי ה-PDF: הקוד הישן עצר על ה-PDF הראשון שהחזיר תוצאה
+   כלשהי, ומעולם לא ניסה extra_pdfs - גם כשהם הכילו מידע משמעותי
+   (בדיסקונט: 11 חברות בגרסה הישנה מול 58 בפועל בכל הקבצים ביחד).
+   עכשיו מעבדים את כולם וממזגים (dedup לפי שם).
+
+2. בדיקה ממוקדת בתוך-קובץ: קובץ בודד יכול "לדלל" את תשומת הלב של
+   Gemini אם הוא ענק (מאות עמודים) - נמצאה טבלה פורמלית (תקנה 11 וכו')
+   עם page_reference אבל רק מעט מדי רשומות משויכות לאותו עמוד בדיוק.
+   כשזה קורה, גוזרים (pypdf) רק את טווח העמודים סביב הטבלה ומריצים
+   עליו בדיקה נפרדת - נצפה באלרוב נדל"ן: 19 חברות במסמך המלא מול 68
+   בקטע ממוקד של 100 עמודים סביב הטבלה (פי 3.6).
+
+3. ויתור מהיר על מכסה: כש-run_full_batch.py מזהה שהמכסה היומית נגמרה
+   (QUOTA_EXCEEDED, threading.Event משותף), משימות שכבר בתור מוותרות
+   מיד במקום להמשיך לנסות קירורים מלאים (עד כמה דקות לכל ניסיון) על
+   מפתחות שכבר ידוע שאין בהם כלום - זה מה שגרם לריצה אחת (445 "דקות"
+   בטעות בחישוב, בפועל ~5 שעות) להימשך שעות אחרי שהמכסה כבר נגמרה.
 
 הרצה:
     py run_small_batch.py --plan selection_plan.json --n 5
@@ -21,37 +34,101 @@ extra_pdfs (כ-147 מתוך 669 בתוכנית) - תמורה מכוונת בעד
 """
 
 import argparse
+import io
 import json
+import threading
 import time
+from collections import Counter
+
+from pypdf import PdfReader, PdfWriter
 
 import extract_subsidiaries as ex
 import maya_reports_client as mrc
 
+# משותף עם run_full_batch.py - run_full_batch מחליף את זה באותו
+# threading.Event שהוא עצמו בודק בלולאת as_completed שלו (לא יוצר
+# חדש), כדי ששני הצדדים יראו את אותו דגל. כשלא רצים דרך run_full_batch
+# (למשל run_small_batch.py ישירות, או test_fixed_pipeline.py) זה נשאר
+# Event רגיל שאף אחד לא מפעיל - התנהגות זהה לקודם.
+QUOTA_EXCEEDED = threading.Event()
 
-def _try_extract(pdf_url: str) -> dict | None:
-    """מוריד ומחלץ מ-URL בודד. מחזיר None בכישלון (במקום לזרוק), כדי
-    שהקורא יוכל לנסות PDF הבא באותו דוח בלי להפיל את כל התהליך.
+FORMAL_TABLE_MARKERS = ["תקנה 11", "List of Subsidiaries", "Organizational Structure"]
+FOCUSED_RECHECK_THRESHOLD = 3
+CROP_PAGES_BEFORE = 40
+CROP_PAGES_AFTER = 60
 
-    quota_retries=4 (עם max_retries=6 בקריאה הפנימית עצמה): הבאג
-    שנצפה בפועל בסקריפט האבחון - עם max_retries=2 (ברירת המחדל) ו-3
-    מפתחות במאגר, מספיק שמפתח *אחד* נכנס לקירור זמני (65s, לא מכסה
-    אמיתית) כדי שהפונקציה תזרוק GeminiQuotaExceededError בלי לתת
-    הזדמנות הוגנת לשני המפתחות האחרים. זה כנראה הסביר חלק מהכשלים
-    הספורדיים בעבר (למשל workflow #32)."""
+
+def _is_formal_table(sub: dict) -> bool:
+    for field in (sub.get("section_title"), sub.get("table_title")):
+        if field and any(m in field for m in FORMAL_TABLE_MARKERS):
+            return True
+    return False
+
+
+def _find_focused_recheck_candidate(subsidiaries: list[dict]) -> int | None:
+    """מחפש רשומה שמסומנת כטבלה פורמלית עם page_reference - ומחזיר את
+    העמוד אם רק FOCUSED_RECHECK_THRESHOLD רשומות או פחות משויכות
+    לעמוד הזה בדיוק. None אם אין חשד."""
+    formal = [s for s in subsidiaries if _is_formal_table(s) and s.get("page_reference")]
+    if not formal:
+        return None
+    page_counts = Counter(s["page_reference"] for s in formal)
+    page, count = min(page_counts.items(), key=lambda x: x[1])
+    return page if count <= FOCUSED_RECHECK_THRESHOLD else None
+
+
+def _crop_pdf_pages(pdf_bytes: bytes, center_page: int) -> bytes | None:
+    """גוזר טווח עמודים סביב center_page (1-indexed, כפי שמדווח ע"י
+    Gemini ב-page_reference). None אם center_page לא סביר או שקריאת
+    ה-PDF נכשלה."""
     try:
-        print(f"  מוריד {pdf_url} ...")
-        pdf_bytes = mrc.download_report_file(pdf_url)
+        reader = PdfReader(io.BytesIO(pdf_bytes))
     except Exception as e:
-        print(f"  שגיאת הורדה: {e}")
+        print(f"    שגיאת קריאת PDF לגזירה: {e}")
         return None
 
+    n_pages = len(reader.pages)
+    idx = center_page - 1
+    if idx < 0 or idx >= n_pages:
+        print(f"    center_page={center_page} מחוץ לטווח ({n_pages} עמודים בפועל) - מדלג.")
+        return None
+
+    start = max(0, idx - CROP_PAGES_BEFORE)
+    end = min(n_pages, idx + CROP_PAGES_AFTER)
+
+    writer = PdfWriter()
+    for i in range(start, end):
+        writer.add_page(reader.pages[i])
+
+    buf = io.BytesIO()
+    writer.write(buf)
+    print(f"    נגזר טווח עמודים {start+1}-{end} (מתוך {n_pages}) סביב עמוד {center_page}.")
+    return buf.getvalue()
+
+
+def _call_gemini_with_quota_retry(pdf_bytes: bytes, filename_hint: str,
+                                   quota_retries: int = 4) -> dict | None:
+    """עוטף call_gemini_extraction עם retry-with-cooldown מקומי על
+    מכסה. הבאג שנצפה בפועל: עם max_retries=2 (ברירת המחדל) ו-N מפתחות
+    במאגר, מספיק שמפתח *אחד* נכנס לקירור זמני (65s, לא מכסה אמיתית)
+    כדי שהפונקציה תזרוק GeminiQuotaExceededError בלי לתת הזדמנות
+    הוגנת לשאר המפתחות. כאן: max_retries=6 בקריאה עצמה (סבב מלא) +
+    שכבת retry חיצונית שממתינה קירור מלא בין ניסיונות - אבל בודקת
+    QUOTA_EXCEEDED בתחילת כל ניסיון ומוותרת מיד אם threads אחרים כבר
+    זיהו שזו מכסה אמיתית (לא מבזבזת עוד קירורים על מפתחות ריקים)."""
     last_quota_error = None
-    quota_retries = 4
     for attempt in range(quota_retries):
+        if QUOTA_EXCEEDED.is_set():
+            raise ex.GeminiQuotaExceededError(
+                "מכסה כבר זוהתה כנגמרת ב-thread אחר - מוותר מיד בלי קירור נוסף."
+            )
         try:
-            print(f"  ({len(pdf_bytes):,} bytes) שולח ל-Gemini...")
-            result = ex.call_gemini_extraction(pdf_bytes, filename_hint=pdf_url, max_retries=6)
-            break
+            raw = ex.call_gemini_extraction(pdf_bytes, filename_hint=filename_hint, max_retries=6)
+            if isinstance(raw, list):
+                print(f"  אזהרה: Gemini החזיר מערך גולמי ({len(raw)} פריטים) "
+                      f"במקום {{'subsidiaries': [...]}} - מנרמל.")
+                raw = {"subsidiaries": raw, "change_events": []}
+            return raw
         except ex.GeminiQuotaExceededError as e:
             last_quota_error = e
             print(f"    כל המפתחות בקירור (ניסיון {attempt + 1}/{quota_retries}) - "
@@ -60,22 +137,52 @@ def _try_extract(pdf_url: str) -> dict | None:
         except Exception as e:
             print(f"  שגיאת חילוץ: {e}")
             return None
-    else:
-        # אחרי כל הניסיונות - זו כנראה באמת מכסה יומית (RPD) אמיתית,
-        # לא רק קירור זמני. מעבירים הלאה - לא בולעים כמו כישלון רגיל,
-        # כדי שהריצה הכוללת (run_full_batch) תדע לעצור ולא תמשיך
-        # לבזבז זמן על חברות נוספות כשאין בכלל מפתחות זמינים.
-        raise ex.GeminiQuotaExceededError(
-            f"מכסה נגמרה גם אחרי {quota_retries} ניסיונות: {last_quota_error}"
-        )
+    raise ex.GeminiQuotaExceededError(
+        f"מכסה נגמרה גם אחרי {quota_retries} ניסיונות: {last_quota_error}"
+    )
 
-    # לפעמים Gemini מחזיר מערך גולמי [...] במקום {"subsidiaries": [...]} -
-    # קרה בפועל, הפיל את כל הריצה (candidate.get על list זורק AttributeError).
-    # מנרמלים כאן, במקור, כדי שכל הקוד שקורא ל-_try_extract תמיד יקבל dict.
-    if isinstance(result, list):
-        print(f"  אזהרה: Gemini החזיר מערך גולמי ({len(result)} פריטים) "
-              f"במקום {{'subsidiaries': [...]}} - מנרמל.")
-        result = {"subsidiaries": result, "change_events": []}
+
+def _try_extract(pdf_url: str) -> dict | None:
+    """מוריד ומחלץ מ-URL בודד. מחזיר None בכישלון (במקום לזרוק), כדי
+    שהקורא יוכל לנסות PDF הבא באותו דוח בלי להפיל את כל התהליך.
+
+    אחרי חילוץ המסמך המלא - אם נמצא חשד לטבלה פורמלית שנחתכה, גוזר
+    טווח עמודים סביבה ומריץ בדיקה ממוקדת נפרדת, וממזג (dedup לפי name)
+    כל חברה חדשה שנמצאה לתוך התוצאה. לא מחליף - רק מוסיף."""
+    try:
+        print(f"  מוריד {pdf_url} ...")
+        pdf_bytes = mrc.download_report_file(pdf_url)
+    except Exception as e:
+        print(f"  שגיאת הורדה: {e}")
+        return None
+
+    print(f"  ({len(pdf_bytes):,} bytes) שולח ל-Gemini...")
+    result = _call_gemini_with_quota_retry(pdf_bytes, pdf_url)
+    if result is None:
+        return None
+
+    candidate_page = _find_focused_recheck_candidate(result.get("subsidiaries", []))
+    if candidate_page and not QUOTA_EXCEEDED.is_set():
+        print(f"    חשד: טבלה פורמלית בעמוד {candidate_page} עם "
+              f"{FOCUSED_RECHECK_THRESHOLD} רשומות או פחות - מריץ בדיקה ממוקדת...")
+        cropped = _crop_pdf_pages(pdf_bytes, candidate_page)
+        if cropped:
+            try:
+                focused_result = _call_gemini_with_quota_retry(
+                    cropped, f"{pdf_url}#focused_page_{candidate_page}"
+                )
+            except ex.GeminiQuotaExceededError:
+                focused_result = None  # לא מפילים את כל התוצאה בגלל הבדיקה הנוספת
+            if focused_result:
+                existing_names = {s.get("name") for s in result.get("subsidiaries", [])}
+                new_subs = [
+                    s for s in focused_result.get("subsidiaries", [])
+                    if s.get("name") and s.get("name") not in existing_names
+                ]
+                if new_subs:
+                    print(f"    בדיקה ממוקדת הוסיפה {len(new_subs)} חברות בת נוספות.")
+                    result.setdefault("subsidiaries", []).extend(new_subs)
+            time.sleep(2)
 
     return result
 
@@ -83,11 +190,9 @@ def _try_extract(pdf_url: str) -> dict | None:
 def _merge_extraction_results(results: list[dict]) -> dict:
     """ממזג את תוצאות כל קבצי ה-PDF של אותו דוח לרשומה אחת:
     - subsidiaries: איחוד עם dedup לפי name (הרשומה הראשונה שנתקלים
-      בה זוכה - סדר העיבוד הוא ראשי קודם, אז אם אותה חברה מופיעה גם
-      בראשי וגם בנוסף, גרסת הראשי נשמרת).
+      בה זוכה - סדר העיבוד הוא ראשי קודם).
     - change_events: איחוד עם dedup לפי (company, event_date,
-      event_description) - אין שדה id יציב לאירועי שינוי, זה הכי קרוב
-      למפתח טבעי בלי לגרום לכפילויות בין קבצים חופפים.
+      event_description).
     - מטא-דאטה ברמת המסמך (report_format/as_of_date/document_type):
       הערך הראשון שאינו None, לפי סדר עיבוד (ראשי עדיף)."""
     merged_subs: dict[str, dict] = {}
@@ -128,6 +233,9 @@ def _process_report(
     successful_results = []
 
     for i, url in enumerate(all_pdf_urls):
+        if QUOTA_EXCEEDED.is_set():
+            print(f"  מכסה נגמרה - מוותר על שאר קבצי הדוח הזה.")
+            break
         label = "ראשי" if i == 0 else f"נוסף {i}"
         print(f"  --- מעבד PDF {label} ({i+1}/{len(all_pdf_urls)}) ---")
         candidate = _try_extract(url)
@@ -217,7 +325,6 @@ if __name__ == "__main__":
     if args.company_ids:
         ids = [cid.strip() for cid in args.company_ids.split(",")]
     else:
-        # רק חברות עם snapshot, לפי סדר הופעה בקובץ
         ids = [cid for cid, e in plan.items() if e.get("snapshot")][: args.n]
 
     print(f"מריץ על {len(ids)} חברות: {ids}\n")
