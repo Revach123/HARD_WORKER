@@ -50,6 +50,14 @@ on:
         description: "דלג לגמרי על שלב שליפת Maya - להשתמש ב-selection_plan.json הקיים כמו שהוא"
         required: false
         default: "false"
+      model:
+        description: "איזה מודל Gemini - כל אחד עוקב מכסה ו-processed_reports נפרדים, לא חוסמים זה את זה"
+        required: false
+        type: choice
+        options:
+          - gemini-3.6-flash
+          - gemini-3.5-flash-lite
+        default: gemini-3.6-flash
   # schedule מושבת זמנית (2026-08-30) - יש רגרסיה בבדיקה שעדיין
   # בטיפול (ראה diagnose_multipart.py / ab_test_results.json) בפייפליין
   # החילוץ. להחזיר את השורות למטה אחרי שהתיקון מאושר סופית:
@@ -98,13 +106,22 @@ jobs:
           GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
           GEMINI_API_KEY_3: ${{ secrets.GEMINI_API_KEY_3 }}
           GEMINI_API_KEY_4: ${{ secrets.GEMINI_API_KEY_4 }}
+          GEMINI_MODEL_OVERRIDE: ${{ github.event.inputs.model || 'gemini-3.6-flash' }}
           PYTHONUNBUFFERED: "1"
         run: |
           LIMIT_ARG=""
           if [ -n "${{ github.event.inputs.limit }}" ]; then
             LIMIT_ARG="--limit ${{ github.event.inputs.limit }}"
           fi
+          MODEL="${{ github.event.inputs.model || 'gemini-3.6-flash' }}"
+          # קובץ processed_reports נפרד לכל מודל - כל מודל עוקב אחרי
+          # ההתקדמות שלו בעצמו, לא חוסמים זה את זה. שני התורים ישתפו
+          # את אותו private_subsidiaries.jsonl (עם שדה "model" בכל
+          # רשומה כדי לדעת אחר כך מקור כל אחת).
+          PROCESSED_LOG="processed_reports_${MODEL//./_}.json"
+          echo "מודל: $MODEL | קובץ מעקב: $PROCESSED_LOG"
           python run_full_batch.py --plan selection_plan.json $LIMIT_ARG \
+            --processed-log "$PROCESSED_LOG" \
             --workers ${{ github.event.inputs.workers || '2' }} 2>&1 | tee run_log.txt
           exit ${PIPESTATUS[0]}
 
@@ -118,6 +135,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add .maya_cache/*_merged.json selection_plan.json run_log.txt \
+                  processed_reports_*.json \
                   processed_reports.json private_subsidiaries.jsonl 2>/dev/null || true
           if git diff --staged --quiet; then
             echo "אין שינויים לחיוב."
