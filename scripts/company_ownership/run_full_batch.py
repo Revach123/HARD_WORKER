@@ -133,7 +133,12 @@ if __name__ == "__main__":
     # (או לפני שדה מסוים) פשוט תיחשב גרסה 1 - נמוכה מהעדכנית, ותעובד מחדש
     # אוטומטית. זה מחליף את --force-reprocess-changes הידני הישן: לא צריך
     # לזכור לכבות דגל, וזה עובד נכון גם בהרצות schedule (בלי קלט ידני).
+    #
+    # אותו מעבר גם בונה best_known_subs (companyId -> מקסימום חברות בת
+    # שנמצא אי-פעם, מכל גרסה) - לשימוש בחישוב סדר עדיפויות למטה: חברה
+    # עם 0 ידועות כרגע חשודה יותר לפספוס אמיתי מחברה שכבר הראתה הרבה.
     schema_by_report: dict[str, int] = {}
+    best_known_subs: dict[str, int] = {}
     if os.path.exists(args.results):
         with open(args.results, encoding="utf-8") as f:
             for line in f:
@@ -149,6 +154,10 @@ if __name__ == "__main__":
                     continue
                 ver = rec.get("schema_version", 1)
                 schema_by_report[rid] = max(ver, schema_by_report.get(rid, 0))
+                cid_seen = rec.get("parent_hp")
+                if cid_seen is not None:
+                    n_subs = len(rec.get("subsidiaries", []))
+                    best_known_subs[cid_seen] = max(n_subs, best_known_subs.get(cid_seen, 0))
 
     n_stale_schema = sum(
         1 for v in schema_by_report.values() if v < ex.CURRENT_SCHEMA_VERSION
@@ -180,23 +189,53 @@ if __name__ == "__main__":
             return False
         return entry.get("attempts", 0) < MAX_RETRY_ATTEMPTS
 
+    def _snapshot_priority(cid: str, entry: dict) -> tuple:
+        """סדר עדיפות לעיבוד-מחדש: מי שהכי צפוי להיות עם נתונים חסרים
+        קודם. שלושה גורמים, בסדר יורד של משקל:
+        (1) extra_pdfs - הבאג שאושר בפועל (עוצר על הראשון שמצליח);
+            חברות כאלה כמעט בוודאות פספסו נתונים.
+        (2) 0 חברות בת ידועות כרגע - חשוד: או שאין באמת (חברה קטנה),
+            או שהחילוץ פספס הכל. גודל הקובץ (הגורם הבא) מבדיל ביניהם.
+        (3) גודל ה-PDF הראשי - מסמך גדול יותר = סיכוי גבוה יותר לדילול
+            תשומת הלב (ראה אלרוב: 19 מול 68 בקטע ממוקד).
+        מוחזר כ-tuple להשוואה ישירה (True/False ממוין נכון כ-1/0)."""
+        snap = entry.get("snapshot") or {}
+        has_extra = bool(snap.get("extra_pdfs"))
+        n_known = best_known_subs.get(cid, 0)
+        size_kb = snap.get("pdf_size_kb", 0)
+        return (has_extra, n_known == 0, size_kb)
+
     # רשימת משימות שטוחה: כל דוח (snapshot או change) הוא משימה נפרדת עם
     # report_id ייחודי משלו - אידמפוטנטיות ברמת הדוח הבודד. "failed" אינו
     # סופי - מקבל ניסיונות חוזרים (ראה _needs_processing), רק "success"
     # בסכימה עדכנית חוסם לצמיתות.
-    tasks = []
+    #
+    # משימות snapshot ממוינות לפי _snapshot_priority (יורד) - עם מכסה
+    # יומית זעירה (20 RPD/מפתח על gemini-3.6-flash), הסדר קובע מי בכלל
+    # מגיע לעיבוד היום. משימות change נשארות בסדר הטבעי בסוף - נפח קטן
+    # וערך נמוך יותר יחסית למטרה (השלמת עץ ההחזקות הפרטיות).
+    snapshot_tasks = []
+    change_tasks = []
     n_retrying = 0
     for cid, entry in plan.items():
         snap = entry.get("snapshot")
         if snap and _needs_processing(snap["report_id"], "snapshot"):
             if snap["report_id"] in processed:
                 n_retrying += 1
-            tasks.append(("snapshot", cid, entry.get("company_name"), snap["report_id"], entry))
+            snapshot_tasks.append(
+                (_snapshot_priority(cid, entry), "snapshot", cid, entry.get("company_name"), snap["report_id"], entry)
+            )
         for change in entry.get("changes", []):
             if _needs_processing(change["report_id"], "change"):
                 if change["report_id"] in processed:
                     n_retrying += 1
-                tasks.append(("change", cid, entry.get("company_name"), change["report_id"], change))
+                change_tasks.append(("change", cid, entry.get("company_name"), change["report_id"], change))
+
+    snapshot_tasks.sort(key=lambda t: t[0], reverse=True)
+    tasks = [t[1:] for t in snapshot_tasks] + change_tasks
+    print(f"משימות snapshot ממוינות לפי עדיפות: "
+          f"{sum(1 for t in snapshot_tasks if t[0][0])} עם extra_pdfs, "
+          f"{sum(1 for t in snapshot_tasks if t[0][1])} עם 0 ידועות כרגע.")
 
 
     if n_retrying:
@@ -216,6 +255,10 @@ if __name__ == "__main__":
 
     n_ok, n_fail, n_quota_hits = 0, 0, 0
     quota_exceeded_flag = threading.Event()
+    rsb.QUOTA_EXCEEDED = quota_exceeded_flag  # ראה run_small_batch.py -
+    # אותו אובייקט Event בדיוק, לא עותק - כדי שמשימות שכבר רצות בתוך
+    # thread ייתקלו באותו דגל וייכנעו מיד בלי לחכות לקירור מלא (הבאג
+    # שגרם לריצה להימשך שעות אחרי שהמכסה כבר זוהתה כנגמרת).
 
     with ThreadPoolExecutor(max_workers=args.workers) as executor:
         future_to_task = {}
