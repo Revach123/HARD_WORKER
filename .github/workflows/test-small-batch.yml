@@ -97,6 +97,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
           GEMINI_API_KEY_3: ${{ secrets.GEMINI_API_KEY_3 }}
+          GEMINI_API_KEY_4: ${{ secrets.GEMINI_API_KEY_4 }}
           PYTHONUNBUFFERED: "1"
         run: |
           LIMIT_ARG=""
