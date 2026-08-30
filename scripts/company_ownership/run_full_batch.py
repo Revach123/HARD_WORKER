@@ -160,14 +160,18 @@ if __name__ == "__main__":
     def _needs_processing(report_id: str, kind: str) -> bool:
         """True אם הדוח צריך עיבוד. שלוש סיבות אפשריות: (1) עדיין לא
         הצליח מעולם / נכשל ועדיין בתוך תקציב הניסיונות החוזרים, או
-        (2) kind=="change" והצליח בסכימה ישנה יותר מהעדכנית - יעובד
-        מחדש אוטומטית עד שיתעדכן. הבדיקה הזו מוגבלת ל-change בלבד -
-        השדות שהתווספו בגרסה 2 (event_type, ownership_pct_before)
-        רלוונטיים רק לשם, לא ל-snapshot. בלי ההגבלה הזו, כל snapshot
-        קיים (גם תקין לגמרי) היה נחשב \"ישן\" בטעות ומתעבד מחדש לשווא -
-        זה בדיוק מה שקרה בפועל."""
-        if (kind == "change"
-                and schema_by_report.get(report_id, ex.CURRENT_SCHEMA_VERSION) < ex.CURRENT_SCHEMA_VERSION):
+        (2) הצליח בסכימה ישנה יותר מהעדכנית - יעובד מחדש אוטומטית עד
+        שיתעדכן.
+
+        הערה על 2->3 (2026-08-30): בעליות גרסה קודמות (1->2) הבדיקה
+        הוגבלה ל-kind=="change" בלבד, כי השינוי (event_type,
+        ownership_pct_before) היה רלוונטי רק לשם - הרחבה ל-snapshot
+        אז הייתה גורמת לכל snapshot קיים (גם תקין לגמרי) להיחשב
+        \"ישן\" בטעות ולהתעבד מחדש לשווא (זה בדיוק מה שקרה בפועל).
+        הפעם זה הפוך: 2->3 הוא בדיוק תיקון להתנהגות חילוץ ה-snapshot
+        עצמו (עצירה-בהצלחה-ראשונה בין קבצים + בדיקה ממוקדת בתוך-קובץ) -
+        אז הבדיקה חלה גם על snapshot בכוונה, לא רק change."""
+        if schema_by_report.get(report_id, ex.CURRENT_SCHEMA_VERSION) < ex.CURRENT_SCHEMA_VERSION:
             return True
         entry = processed.get(report_id)
         if entry is None:
