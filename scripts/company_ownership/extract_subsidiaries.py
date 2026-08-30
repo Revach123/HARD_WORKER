@@ -38,7 +38,13 @@ GEMINI_MODEL = "gemini-3.5-flash-lite"  # 500 RPD מול 20 RPD ב-gemini-3.6-fl
 # הוספת event_type/ownership_pct_before. run_full_batch.py משווה מול
 # schema_version שנשמר בכל רשומה כדי לדעת אוטומטית אילו רשומות ישנות
 # צריכות עיבוד מחדש - בלי צורך בדגל ידני שאפשר לשכוח לכבות.
-CURRENT_SCHEMA_VERSION = 2
+#
+# 2->3 (2026-08-30): לא שינוי שדות - שינוי בהתנהגות החילוץ עצמו (תיקון
+# עצירה-בהצלחה-ראשונה בין קבצים + בדיקה ממוקדת בתוך-קובץ, ראה
+# diagnose_multipart.py/ab_test_results.json). רשומות snapshot ישנות
+# (schema<3) עלולות להחמיץ עשרות חברות בת אמיתיות (נצפה בפועל: 11 מול
+# 58 בדיסקונט) - מעלים גרסה כדי שהן יתעבדו מחדש אוטומטית, לא רק change.
+CURRENT_SCHEMA_VERSION = 3
 
 
 class GeminiQuotaExceededError(Exception):
