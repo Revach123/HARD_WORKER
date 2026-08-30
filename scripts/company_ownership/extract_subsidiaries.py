@@ -32,13 +32,13 @@ import urllib3
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-GEMINI_MODEL = "gemini-3.6-flash"
-# הוחלף מ-gemini-3.5-flash-lite (2026-08-30): לפי גוגל, 3.6-flash "משפר
-# דיוק בפירוק וחילוץ מובנה ממסמכים" לעומת flash-lite שמתועדף למהירות/
-# עלות בלבד ("לא מתחרה על איכות"). התפוקה יורדת (20 RPD/מפתח מול 500),
-# אבל עם 4 מפתחות = 80/יום, ו-647 חברות זה עדיין רק כ-8-9 ימי כיסוי -
-# סביר לגמרי לבאקפיל חד-פעמי, ועם דיוק גבוה משמעותית לכל קריאה בודדת.
-# שני המודלים מתעלמים מ-temperature באותה מידה - זה לא משתנה כאן.
+GEMINI_MODEL = os.environ.get("GEMINI_MODEL_OVERRIDE", "gemini-3.6-flash")
+# ברירת מחדל: gemini-3.6-flash (איכות חילוץ עדיפה, 20 RPD/מפתח).
+# ניתן לעקוף עם GEMINI_MODEL_OVERRIDE=gemini-3.5-flash-lite - למשל
+# כדי להמשיך לעבד תוך כדי שהמכסה של 3.6 מתאפסת (500 RPD/מפתח, איכות
+# פחות טובה). כל מודל עוקב אחרי processed_reports משלו (ראה
+# run_full_batch.py --processed-log) - לא חוסמים זה את זה, וכל אחד
+# יגיע בסוף לכל 647 החברות, לפי אותו סדר עדיפות.
 
 # עולה בכל פעם שהשדות בפלט (בעיקר change_events) משתנים מהותית - למשל
 # הוספת event_type/ownership_pct_before. run_full_batch.py משווה מול
@@ -648,6 +648,9 @@ def save_extraction_json(
         "report_id": report_id,
         "report_publish_date": report_publish_date,
         "schema_version": CURRENT_SCHEMA_VERSION,
+        "model": GEMINI_MODEL,  # איזה מודל ביצע את החילוץ הזה - ראה
+        # GEMINI_MODEL למעלה. חשוב כשרצים כמה תורים במקביל (3.6 ו-3.5)
+        # על אותן חברות - כדי לדעת אחר כך מקור כל רשומה.
         "source_type": source_type,
         "report_format": extracted.get("report_format"),
         "as_of_date": extracted.get("as_of_date"),
