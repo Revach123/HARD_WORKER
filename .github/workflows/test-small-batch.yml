@@ -1,0 +1,149 @@
+# .github/workflows/test-small-batch.yml
+#
+# report_selector.py + run_full_batch.py. רץ על שרתי GitHub.
+#
+# התמדה: לא מסתמכים על actions/cache יותר (התברר שהוא branch-scoped -
+# cache שנוצר על branch אחד לא נגיש מ-branch אחר, וזה איבד לנו נתונים
+# פעם אחת כבר). כל ההתקדמות נשמרת ישירות ב-git (commit+push בסוף כל
+# הרצה): .maya_cache/*_merged.json (דוחות שכבר נשלפו מ-Maya, לפי
+# manifest של חלונות-תאריכים), selection_plan.json, processed_reports.json,
+# private_subsidiaries.jsonl. כל הרצה מתחילה מ-checkout רגיל של main -
+# הקבצים כבר שם, בלי שום שחזור cache נפרד.
+#
+# שני מנגנוני הפעלה:
+# 1. workflow_dispatch - הפעלה ידנית עם שליטה על כל הפרמטרים.
+# 2. schedule (cron) - הפעלה אוטומטית כל 6 שעות, כדי להמשיך לעבד את
+#    התור הנותר בלי התערבות ידנית (GitHub Actions מגביל כל job ל-6
+#    שעות קשיח - זה עוקף את הצורך להריץ ידנית שוב ושוב).
+# מאחר ש-schedule events אינם כוללים github.event.inputs, כל הפרמטרים
+# למטה משתמשים ב-fallback (||) לברירת מחדל קבועה כשאין קלט ידני.
+#
+# כשמגיעים למכסה (מסודר: TPM זמני מטופל אוטומטית, רק RPD אמיתי עוצר),
+# ההרצה נעצרת בעדינות - ההרצה הבאה (ידנית או מתוזמנת) ממשיכה מאותה
+# נקודה בדיוק, כי הכל כבר ב-git.
+
+name: Subsidiary extraction - full batch (resumable)
+
+permissions:
+  contents: write  # נדרש כדי ש-git push יעבוד בסוף כל הרצה
+
+on:
+  workflow_dispatch:
+    inputs:
+      from_date:
+        description: "טווח - מתאריך (YYYY-MM-DD)"
+        required: true
+        default: "2026-01-01"
+      to_date:
+        description: "טווח - עד תאריך (YYYY-MM-DD) - מוגבל אוטומטית ל'אתמול'"
+        required: true
+        default: "2026-12-31"
+      limit:
+        description: "הגבלת מספר משימות לעיבוד (ריק = הכל, עד המכסה)"
+        required: false
+        default: ""
+      workers:
+        description: "כמה משימות מקביליות - זהירות: יותר מדי workers עם קבצי PDF גדולים עלול לחצות TPM שוב ושוב ולבזבז RPD אמיתי על ניסיונות כושלים (נצפה בפועל)"
+        required: false
+        default: "2"
+      skip_maya_refetch:
+        description: "דלג לגמרי על שלב שליפת Maya - להשתמש ב-selection_plan.json הקיים כמו שהוא"
+        required: false
+        default: "false"
+  # schedule מושבת זמנית (2026-08-30) - יש רגרסיה בבדיקה שעדיין
+  # בטיפול (ראה diagnose_multipart.py / ab_test_results.json) בפייפליין
+  # החילוץ. להחזיר את השורות למטה אחרי שהתיקון מאושר סופית:
+  # schedule:
+  # # כל יום בשעה 10:30 שעון ישראל (07:30 UTC בקיץ)
+  # - cron: "10 20 * * *"
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    # 350 לא 360 - משאיר מרווח ביטחון של 10 דקות לפני הקטיעה הקשיחה של
+    # GitHub (360 = מקסימום מוחלט, לא ניתן להגדלה), כדי ששלב ה-commit
+    # הסופי (if: always()) יקבל סיכוי טוב לרוץ נקי לפני שהריצה נקטעת.
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests --break-system-packages
+
+      - name: Build report selection plan
+        if: github.event.inputs.skip_maya_refetch != 'true'
+        working-directory: scripts/company_ownership
+        env:
+          PYTHONUNBUFFERED: "1"
+        run: |
+          python report_selector.py \
+            --from-date ${{ github.event.inputs.from_date || '2026-01-01' }} \
+            --to-date ${{ github.event.inputs.to_date || '2026-12-31' }} \
+            --out selection_plan.json
+
+      # חד-פעמי: ממיר תוצאות מהפורמט הישן (JSON array) לחדש (JSONL) אם
+      # קיים קובץ ישן מהרצות קודמות - לא מזיק להריץ גם כשאין מה להגר.
+      - name: Migrate old results format (one-time, safe to always run)
+        working-directory: scripts/company_ownership
+        run: python migrate_old_results.py
+
+      - name: Run full batch through Gemini (stops gracefully at quota)
+        working-directory: scripts/company_ownership
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
+          GEMINI_API_KEY_3: ${{ secrets.GEMINI_API_KEY_3 }}
+          PYTHONUNBUFFERED: "1"
+        run: |
+          LIMIT_ARG=""
+          if [ -n "${{ github.event.inputs.limit }}" ]; then
+            LIMIT_ARG="--limit ${{ github.event.inputs.limit }}"
+          fi
+          python run_full_batch.py --plan selection_plan.json $LIMIT_ARG \
+            --workers ${{ github.event.inputs.workers || '2' }}
+
+      # if: always() - קריטי: מחייב את ההתקדמות ל-git גם אם ההרצה
+      # נעצרה/נכשלה/נקטעה באמצע. זה מחליף את actions/cache - קבצים
+      # שמחויבים ל-git נגישים תמיד, לא תלויים ב-branch שרץ עליו ה-workflow.
+      - name: Commit progress to repo
+        if: always()
+        working-directory: scripts/company_ownership
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .maya_cache/*_merged.json selection_plan.json \
+                  processed_reports.json private_subsidiaries.jsonl 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "אין שינויים לחיוב."
+          else
+            git commit -m "Update extraction progress [skip ci]"
+            # retry עם rebase - הרצות ארוכות (שעות) כמעט תמיד יתנגשו עם
+            # push אחר שקרה בינתיים (תיקון קוד ידני, או הרצה מקבילה אחרת).
+            # לא כלל "אל תדחוף בזמן שרץ" - זה לא יחזיק מעמד, זה תיקון בקוד.
+            for i in 1 2 3 4 5; do
+              if git push; then
+                echo "push הצליח (ניסיון $i)."
+                break
+              fi
+              echo "push נדחה (ניסיון $i/5) - מושך ועושה rebase..."
+              git pull --rebase origin main
+              if [ $i -eq 5 ]; then
+                echo "נכשל אחרי 5 ניסיונות - ההתקדמות עדיין ב-artifact להורדה ידנית."
+              fi
+            done
+          fi
+
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: extraction-results
+          path: |
+            scripts/company_ownership/selection_plan.json
+            scripts/company_ownership/private_subsidiaries.jsonl
+            scripts/company_ownership/processed_reports.json
+          retention-days: 14
