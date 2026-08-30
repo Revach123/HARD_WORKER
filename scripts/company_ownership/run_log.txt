@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/runner/work/HARD_WORKER/HARD_WORKER/scripts/company_ownership/run_full_batch.py", line 31, in <module>
+    import run_small_batch as rsb
+  File "/home/runner/work/HARD_WORKER/HARD_WORKER/scripts/company_ownership/run_small_batch.py", line 43, in <module>
+    from pypdf import PdfReader, PdfWriter
+ModuleNotFoundError: No module named 'pypdf'
