@@ -126,17 +126,20 @@ jobs:
             # retry עם rebase - הרצות ארוכות (שעות) כמעט תמיד יתנגשו עם
             # push אחר שקרה בינתיים (תיקון קוד ידני, או הרצה מקבילה אחרת).
             # לא כלל "אל תדחוף בזמן שרץ" - זה לא יחזיק מעמד, זה תיקון בקוד.
+            PUSH_OK=0
             for i in 1 2 3 4 5; do
               if git push; then
                 echo "push הצליח (ניסיון $i)."
+                PUSH_OK=1
                 break
               fi
               echo "push נדחה (ניסיון $i/5) - מושך ועושה rebase..."
               git pull --rebase origin main
-              if [ $i -eq 5 ]; then
-                echo "נכשל אחרי 5 ניסיונות - ההתקדמות עדיין ב-artifact להורדה ידנית."
-              fi
             done
+            if [ "$PUSH_OK" -eq 0 ]; then
+              echo "::error::נכשל push אחרי 5 ניסיונות - ההתקדמות לא הגיעה ל-git. נכשל בכוונה כדי שזה לא ידווח כ-success."
+              exit 1
+            fi
           fi
 
       - name: Upload results
