@@ -26,12 +26,13 @@ import run_small_batch as rsb
 # ביטול responseSchema - הריצה תדלג עליהן (כבר ב-ab_test_results.json)
 # ותשלים רק את שאר ה-16.
 SAMPLE_COMPANY_IDS = [
-    "604", "662", "593", "691", "695", "127", "1172", "1654", "1630",
-    "387", "1628", "182", "251", "323", "1357", "1349", "1773", "1132",
-    "1327", "1006",
+    "604",   # לאומי
+    "691",   # דיסקונט
+    "1172",  # אפי נכסים
+    "387",   # אלרוב נדל"ן
 ]
 
-OUT_PATH = "ab_test_results.json"
+OUT_PATH = "ab_test_results_36flash.json"
 OLD_DIAGNOSE_PATH = "diagnose_results.json"
 
 _captured = {}
