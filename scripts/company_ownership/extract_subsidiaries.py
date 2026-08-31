@@ -435,7 +435,12 @@ def call_gemini_extraction(pdf_bytes: bytes, filename_hint: str, max_retries: in
         try:
             resp = requests.post(url, json=payload, verify=False, timeout=180)
         except (requests.exceptions.Timeout, requests.exceptions.ConnectionError) as e:
-            last_error = e
+            # מנקים את המפתח מהודעת השגיאה במקור - חריגות של requests/urllib3
+            # כוללות את ה-URL המלא (עם ?key=AIza...) בתוך str(e), וזו בדיוק
+            # ההודעה שמודפסת אחר כך ע"י run_full_batch.py ונתפסת ב-run_log.txt.
+            # ה-sed ב-workflow YAML הוא רשת ביטחון נוספת - זה התיקון במקור.
+            safe_msg = str(e).replace(key, "[REDACTED_KEY]")
+            last_error = type(e)(safe_msg)
             wait = 5 * (2 ** attempt)
             print(f"    שגיאת רשת (ניסיון {attempt + 1}/{max_retries}) - ממתין {wait}s...")
             time.sleep(wait)
@@ -476,7 +481,12 @@ def call_gemini_extraction(pdf_bytes: bytes, filename_hint: str, max_retries: in
             time.sleep(wait)
             continue
 
-        resp.raise_for_status()
+        try:
+            resp.raise_for_status()
+        except requests.exceptions.HTTPError as e:
+            raise requests.exceptions.HTTPError(
+                str(e).replace(key, "[REDACTED_KEY]"), response=e.response
+            ) from None
         break
     else:
         if last_error is not None and "exceeded your current quota" in str(last_error):
