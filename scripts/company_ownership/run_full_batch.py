@@ -59,7 +59,15 @@ def _commit_progress(results_path: str, processed_log_path: str, reason: str = "
             if subprocess.run(["git", "push"]).returncode == 0:
                 return True
             safe_print(f"    checkpoint push נדחה (ניסיון {attempt + 1}/5) - מושך ועושה rebase...")
-            subprocess.run(["git", "pull", "--rebase", "origin", "main"])
+            # מבטלים rebase תקוע מניסיון קודם לפני שמתחילים אחד חדש - בלי
+            # זה, ניסיון rebase נוסף על גבי rebase לא-גמור (למשל בגלל
+            # קונפליקט) מייצר שגיאות מבלבלות כמו "Cannot rebase onto
+            # multiple branches" (בדיוק מה שקרה לנו בשלב ה-YAML הסופי).
+            subprocess.run(["git", "rebase", "--abort"], stderr=subprocess.DEVNULL)
+            subprocess.run(["git", "fetch", "origin", "main"], check=True)
+            if subprocess.run(["git", "rebase", "origin/main"]).returncode != 0:
+                safe_print(f"    rebase נכשל (ניסיון {attempt + 1}) - מבטל ומנסה שוב בסיבוב הבא")
+                subprocess.run(["git", "rebase", "--abort"], stderr=subprocess.DEVNULL)
         safe_print("    checkpoint נכשל אחרי 5 ניסיונות - ההתקדמות עדיין על הדיסק המקומי בלבד.")
         return False
     except subprocess.CalledProcessError as e:
