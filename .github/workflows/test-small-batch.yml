@@ -27,6 +27,15 @@ name: Subsidiary extraction - full batch (resumable)
 permissions:
   contents: write  # נדרש כדי ש-git push יעבוד בסוף כל הרצה
 
+# מונע הרצות חופפות: אם הרצה כבר פעילה (יכולה לקחת עד 350 דקות) ומישהו
+# מפעיל הרצה נוספת, הריצה החדשה תמתין בתור במקום לרוץ במקביל ולהתנגש
+# עם ה-push בסוף. זה מה שגרם ל"cannot lock ref" - שתי הרצות דחפו כמעט
+# בו-זמנית ל-main. cancel-in-progress: false כי לא רוצים לבטל הרצה
+# שכבר עיבדה שעות של נתונים - רק לתזמן את הבאה אחריה.
+concurrency:
+  group: subsidiary-extraction-main
+  cancel-in-progress: false
+
 on:
   workflow_dispatch:
     inputs:
@@ -169,7 +178,16 @@ jobs:
                 break
               fi
               echo "push נדחה (ניסיון $i/5) - מושך ועושה rebase..."
-              git pull --rebase origin main
+              # אם נשאר rebase תקוע מניסיון קודם (למשל קונפליקט או
+              # clone רדוד שלא הצליח ליישר היסטוריה) - מבטלים אותו קודם.
+              # בלי זה, קריאת rebase נוספת על גבי rebase לא-גמור היא
+              # מה שגרם ל"Cannot rebase onto multiple branches".
+              git rebase --abort 2>/dev/null || true
+              git fetch origin main
+              if ! git rebase origin/main; then
+                echo "::warning::rebase נכשל (ניסיון $i) - מבטל ומנסה שוב בסיבוב הבא"
+                git rebase --abort 2>/dev/null || true
+              fi
             done
             if [ "$PUSH_OK" -eq 0 ]; then
               echo "::error::נכשל push אחרי 5 ניסיונות - ההתקדמות לא הגיעה ל-git. נכשל בכוונה כדי שזה לא ידווח כ-success."
