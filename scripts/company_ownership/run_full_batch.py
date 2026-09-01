@@ -25,7 +25,7 @@ import os
 import subprocess
 import threading
 import time
-from concurrent.futures import ThreadPoolExecutor, as_completed
+from concurrent.futures import CancelledError, ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 
 import extract_subsidiaries as ex
@@ -732,6 +732,10 @@ if __name__ == "__main__":
             kind, cid, company_name, _, _ = future_to_task[future]
             try:
                 report_id, cid_result, status, hit_quota, task_kind = future.result()
+            except CancelledError:
+                # בוטלה יזום (ראה למטה) כי עדיין לא הספיקה להתחיל לרוץ אחרי
+                # שהמכסה כבר זוהתה - לא כישלון אמיתי, תנוסה שוב בהרצה הבאה.
+                continue
             except Exception as e:
                 # רשת ביטחון אחרונה - לא אמור לקרות (run_task כבר תופס הכל),
                 # אבל אם כן: לא מפילים את כל הריצה בגלל משימה אחת.
@@ -747,6 +751,18 @@ if __name__ == "__main__":
                                f"לא שולחים משימות חדשות - ממתינים לסיום הפעילות "
                                f"הנוכחית. ***")
                 quota_exceeded_flag.set()
+                # מבטלים מיד את כל המשימות שכבר בתור אבל עדיין לא התחילו
+                # לרוץ - בלי זה, ה-executor "מרוקן" אותן אחת-אחת עד הסוף,
+                # וכל אחת רק מדפיסה "מכסה נגמרה" בלי שום עבודה אמיתית מול
+                # Gemini (זה מה שגרם לריצה להיראות כאילו היא "ממשיכה" אחרי
+                # שהמכסה כבר נגמרה - ראה תיעוד ריצה מ-2026-09-02).
+                # future.cancel() מצליח רק על משימות שעדיין לא התחילו לרוץ
+                # בפועל (thread טרם נלקח מהתור) - משימות שכבר רצות פשוט
+                # ימשיכו וייכנעו בעצמן דרך הבדיקה הפנימית ב-_process_report.
+                n_cancelled = sum(1 for f in future_to_task if f.cancel())
+                if n_cancelled:
+                    safe_print(f"  בוטלו {n_cancelled} משימות שעדיין לא התחילו "
+                               f"לרוץ (לא נשלחו ל-Gemini כלל, ינוסו שוב בהרצה הבאה).")
                 continue
 
             mark(processed, args.processed_log, report_id, cid_result, status, task_kind)
