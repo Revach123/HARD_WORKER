@@ -67,12 +67,16 @@ on:
           - gemini-3.6-flash
           - gemini-3.5-flash-lite
         default: gemini-3.6-flash
-  # schedule מושבת זמנית (2026-08-30) - יש רגרסיה בבדיקה שעדיין
-  # בטיפול (ראה diagnose_multipart.py / ab_test_results.json) בפייפליין
-  # החילוץ. להחזיר את השורות למטה אחרי שהתיקון מאושר סופית:
-  # schedule:
-  # # כל יום בשעה 10:30 שעון ישראל (07:30 UTC בקיץ)
-  # - cron: "10 20 * * *"
+  # ריצה אוטומטית יומית פעמיים - שתי שעות שונות, שני מודלים שונים
+  # (אושר 2026-09-02 - הרגרסיה שתועדה למטה נבדקה ואושרה כפתורה).
+  # schedule events לא כוללים github.event.inputs, אז הבחירה בין
+  # המודלים למטה (ב-env GEMINI_MODEL_OVERRIDE) מתבססת על github.event.schedule
+  # (מחרוזת ה-cron שהפעילה את הריצה הספציפית הזו), לא על input.
+  schedule:
+    # כל יום 10:30 שעון ישראל (07:30 UTC בקיץ) - gemini-3.6-flash
+    - cron: "30 7 * * *"
+    # כל יום 13:00 שעון ישראל (10:00 UTC בקיץ) - gemini-3.5-flash-lite
+    - cron: "0 10 * * *"
 
 jobs:
   run:
@@ -115,7 +119,7 @@ jobs:
           GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
           GEMINI_API_KEY_3: ${{ secrets.GEMINI_API_KEY_3 }}
           GEMINI_API_KEY_4: ${{ secrets.GEMINI_API_KEY_4 }}
-          GEMINI_MODEL_OVERRIDE: ${{ github.event.inputs.model || 'gemini-3.6-flash' }}
+          GEMINI_MODEL_OVERRIDE: ${{ github.event.inputs.model || (github.event.schedule == '0 10 * * *' && 'gemini-3.5-flash-lite') || 'gemini-3.6-flash' }}
           # D1 sync לדשבורד (שכבת סטטוס). נכשל-בשקט אם חסר - לא קריטי לפייפליין.
           CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
           CF_D1_TOKEN: ${{ secrets.CF_D1_TOKEN }}
@@ -126,7 +130,7 @@ jobs:
           if [ -n "${{ github.event.inputs.limit }}" ]; then
             LIMIT_ARG="--limit ${{ github.event.inputs.limit }}"
           fi
-          MODEL="${{ github.event.inputs.model || 'gemini-3.6-flash' }}"
+          MODEL="$GEMINI_MODEL_OVERRIDE"
           # קובץ processed_reports נפרד לכל מודל - כל מודל עוקב אחרי
           # ההתקדמות שלו בעצמו, לא חוסמים זה את זה. שני התורים ישתפו
           # את אותו private_subsidiaries.jsonl (עם שדה "model" בכל
