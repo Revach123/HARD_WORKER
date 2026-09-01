@@ -17361,24 +17361,24 @@
   },
   "1729521": {
     "company_id": "1724",
-    "status": "failed",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 2,
-    "at": "2026-09-01T05:14:02.560359+00:00"
+    "attempts": 3,
+    "at": "2026-09-01T07:52:13.006082+00:00"
   },
   "1731035": {
     "company_id": "2480",
-    "status": "failed",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 2,
-    "at": "2026-09-01T05:14:02.578148+00:00"
+    "attempts": 3,
+    "at": "2026-09-01T07:51:53.970662+00:00"
   },
   "1731582": {
     "company_id": "2384",
-    "status": "failed",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 2,
-    "at": "2026-09-01T05:14:02.597744+00:00"
+    "attempts": 3,
+    "at": "2026-09-01T07:52:51.368920+00:00"
   },
   "1730286": {
     "company_id": "613",
@@ -17389,9 +17389,23 @@
   },
   "1730231": {
     "company_id": "106",
-    "status": "failed",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 2,
+    "at": "2026-09-01T07:44:21.140143+00:00"
+  },
+  "1721518": {
+    "company_id": "1683",
+    "status": "success",
     "kind": "snapshot",
     "attempts": 1,
-    "at": "2026-09-01T05:14:02.543180+00:00"
+    "at": "2026-09-01T07:39:40.844196+00:00"
+  },
+  "1728295": {
+    "company_id": "1327",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-01T07:44:47.062736+00:00"
   }
 }
