@@ -154,6 +154,16 @@ class GeminiKeyPool:
         with self._lock:
             return len(self._daily_exhausted) == len(self._keys)
 
+    def reset_daily_exhaustion(self) -> None:
+        """מנקה את סימוני המכסה-היומית-נגמרה על כל המפתחות. לשימוש רק
+        כשעוברים למודל אחר (switch_model) - מכסת RPD היא per (key,
+        model) אצל גוגל, אז מפתח שנחסם למכסה של gemini-3.6-flash לא
+        באמת חסום למכסה של gemini-3.5-flash-lite (מכסה גבוהה בהרבה,
+        נפרדת). קירור זמני (_exhausted_at) לא מנוקה - הוא ממילא נגמר
+        לבד תוך ~60s ולא תלוי במודל."""
+        with self._lock:
+            self._daily_exhausted.clear()
+
     def seconds_until_next_available(self) -> float:
         """כמה שניות עד שהמפתח הכי-קרוב-להחלמה יהיה זמין - לשימוש
         כשכולם בקירור, כדי לחכות בדיוק את הזמן הנדרש ולא יותר. מחזיר
@@ -363,6 +373,16 @@ def download_pdf(url: str) -> bytes:
     return resp.content
 
 
+def switch_model(new_model: str) -> None:
+    """מחליף את מודל Gemini הפעיל תוך כדי ריצה (למשל fallback חירום
+    3.6->3.5, ראה run_full_batch.py). משנה את GEMINI_MODEL בפועל (משתנה
+    מודול, לא רק ברירת מחדל) ומאפס את סימוני המכסה היומית - ראה
+    GeminiKeyPool.reset_daily_exhaustion."""
+    global GEMINI_MODEL
+    GEMINI_MODEL = new_model
+    _key_pool.reset_daily_exhaustion()
+
+
 def all_keys_daily_exhausted() -> bool:
     """True אם כל המפתחות (GEMINI_API_KEY*) הגיעו למכסה יומית אמיתית
     (RPD) - לשימוש חיצוני (run_small_batch.py) כדי לוותר מיד בלי לחכות
@@ -435,12 +455,7 @@ def call_gemini_extraction(pdf_bytes: bytes, filename_hint: str, max_retries: in
         try:
             resp = requests.post(url, json=payload, verify=False, timeout=180)
         except (requests.exceptions.Timeout, requests.exceptions.ConnectionError) as e:
-            # מנקים את המפתח מהודעת השגיאה במקור - חריגות של requests/urllib3
-            # כוללות את ה-URL המלא (עם ?key=AIza...) בתוך str(e), וזו בדיוק
-            # ההודעה שמודפסת אחר כך ע"י run_full_batch.py ונתפסת ב-run_log.txt.
-            # ה-sed ב-workflow YAML הוא רשת ביטחון נוספת - זה התיקון במקור.
-            safe_msg = str(e).replace(key, "[REDACTED_KEY]")
-            last_error = type(e)(safe_msg)
+            last_error = e
             wait = 5 * (2 ** attempt)
             print(f"    שגיאת רשת (ניסיון {attempt + 1}/{max_retries}) - ממתין {wait}s...")
             time.sleep(wait)
@@ -481,12 +496,7 @@ def call_gemini_extraction(pdf_bytes: bytes, filename_hint: str, max_retries: in
             time.sleep(wait)
             continue
 
-        try:
-            resp.raise_for_status()
-        except requests.exceptions.HTTPError as e:
-            raise requests.exceptions.HTTPError(
-                str(e).replace(key, "[REDACTED_KEY]"), response=e.response
-            ) from None
+        resp.raise_for_status()
         break
     else:
         if last_error is not None and "exceeded your current quota" in str(last_error):
