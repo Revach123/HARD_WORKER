@@ -112,10 +112,33 @@ def _commit_progress(results_path: str, processed_log_path: str, processed: dict
             # קונפליקט) מייצר שגיאות מבלבלות כמו "Cannot rebase onto
             # multiple branches" (בדיוק מה שקרה לנו בשלב ה-YAML הסופי).
             subprocess.run(["git", "rebase", "--abort"], stderr=subprocess.DEVNULL)
+
+            # קריטי: worker threads אחרים ממשיכים לכתוב שורות חדשות ל-
+            # results_path (private_subsidiaries.jsonl) תוך כדי שאנחנו כאן -
+            # ה-fetch/rebase לוקחים זמן אמיתי (רשת, retries), וזה בדיוק
+            # החלון שבו thread אחר מסיים משימה ומוסיף שורה. baw שנצפה
+            # בפועל: "error: cannot rebase: You have unstaged changes" -
+            # git מסרב לעשות rebase כשיש שינויים לא-מחויבים בעץ העבודה.
+            # פותרים עם stash זמני: שומרים את מה שנכתב ברקע בצד, עושים
+            # rebase על עץ נקי, ומחזירים את זה בסוף כדי שייכנס ל-checkpoint
+            # הבא (לא אובד - רק נדחה).
+            stash = subprocess.run(
+                ["git", "stash", "push", "--include-untracked", "-m", "checkpoint-inflight"],
+                capture_output=True, text=True,
+            )
+            stashed = "No local changes" not in stash.stdout and stash.returncode == 0
+
             subprocess.run(["git", "fetch", "origin", "main"], check=True)
-            if subprocess.run(["git", "rebase", "origin/main"]).returncode != 0:
+            rebase_ok = subprocess.run(["git", "rebase", "origin/main"]).returncode == 0
+            if not rebase_ok:
                 safe_print(f"    rebase נכשל (ניסיון {attempt + 1}) - מבטל ומנסה שוב בסיבוב הבא")
                 subprocess.run(["git", "rebase", "--abort"], stderr=subprocess.DEVNULL)
+
+            if stashed:
+                pop = subprocess.run(["git", "stash", "pop"])
+                if pop.returncode != 0:
+                    safe_print("    אזהרה: git stash pop התנגש - התוכן שנכתב ברקע "
+                               "נשאר ב-stash (git stash list) ולא אבד, אבל דורש טיפול ידני.")
         safe_print("    checkpoint נכשל אחרי 5 ניסיונות - ההתקדמות עדיין על הדיסק המקומי בלבד.")
         return False
     except subprocess.CalledProcessError as e:

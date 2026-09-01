@@ -238,6 +238,20 @@ def _process_report(
     for i, url in enumerate(all_pdf_urls):
         if QUOTA_EXCEEDED.is_set():
             print(f"  מכסה נגמרה - מוותר על שאר קבצי הדוח הזה.")
+            if not successful_results:
+                # קריטי: זורקים GeminiQuotaExceededError ולא סתם break+return
+                # False. באג אמיתי שנצפה בפועל - החזרת False כאן גורמת
+                # ל-run_task (run_full_batch.py) לסמן status="failed" רגיל,
+                # בדיוק כמו כישלון אמיתי מול Gemini. זה "שורף" ניסיון-חוזר
+                # (מתוך MAX_RETRY_ATTEMPTS=3) על דוח שמעולם לא באמת נוסה -
+                # אחרי 3 פעמים כאלה (גם בלי שום ניסיון אמיתי) הדוח נחשב
+                # כשל-לצמיתות ולא ינוסה שוב אף פעם. זה מה שגרם ל-2,583
+                # "כישלונות" ברצף ברגע שהמכסה נגמרה - אף אחד מהם לא היה
+                # כישלון אמיתי. אם כבר יש הצלחה חלקית (PDF קודם באותו דוח
+                # כן הצליח) - לא זורקים, ממשיכים עם מה שיש (כמו קודם).
+                raise ex.GeminiQuotaExceededError(
+                    "מכסה יומית כבר זוהתה כנגמרת - הדוח לא נוסה כלל, ינוסה שוב בהרצה הבאה."
+                )
             break
         label = "ראשי" if i == 0 else f"נוסף {i}"
         print(f"  --- מעבד PDF {label} ({i+1}/{len(all_pdf_urls)}) ---")
