@@ -38,17 +38,65 @@ CHECKPOINT_EVERY = 10  # commit+push תוך כדי ריצה אחרי כל כך �
 # שההתקדמות מעולם לא הגיעה ל-git.
 
 
-def _commit_progress(results_path: str, processed_log_path: str, reason: str = "") -> bool:
+def _merge_processed_dicts(local: dict, remote: dict) -> dict:
+    """איחוד ברמת הנתונים (לא ברמת טקסט) בין הגרסה המקומית לגרסה
+    שכבר יושבת ב-origin/main. זה הפתרון האמיתי לקונפליקט תוכן שראינו
+    בפועל ב-processed_reports_*.json: git עושה diff טקסטואלי על קובץ
+    JSON, וכששני צדדים כותבים dict מחדש (סדר מפתחות/עיצוב שונה) הוא
+    מתנגש גם כשהנתונים בפועל לא סותרים. פותרים את זה בפייתון: מתחילים
+    מ-remote כבסיס, ולכל report_id מקומי - success מנצח כל דבר אחר,
+    ואם שני הצדדים לא-success, מנצח מי שיש לו יותר attempts (מתקדם יותר).
+    """
+    merged = dict(remote)
+    for rid, entry in local.items():
+        other = merged.get(rid)
+        if other is None or other.get("status") != "success":
+            if entry.get("status") == "success" or entry.get("attempts", 0) >= (other or {}).get("attempts", 0):
+                merged[rid] = entry
+    return merged
+
+
+def _fetch_remote_json(path: str) -> dict:
+    """טוען את הגרסה הנוכחית של קובץ JSON מ-origin/main בלי לגעת ב-
+    working tree (git show, לא checkout) - {} אם הקובץ לא קיים שם עדיין
+    או שה-fetch לא הביא אותו."""
+    result = subprocess.run(
+        ["git", "show", f"origin/main:./{path}"],
+        capture_output=True, text=True,
+    )
+    if result.returncode != 0:
+        return {}
+    try:
+        return json.loads(result.stdout)
+    except json.JSONDecodeError:
+        return {}
+
+
+def _commit_progress(results_path: str, processed_log_path: str, processed: dict, reason: str = "") -> bool:
     """Commit+push התקדמות חלקית תוך כדי ריצה, מה-thread הראשי בלבד
     (לא בטוח לקרוא מכמה threads בו-זמנית - כל הקריאות לפונקציה הזו
     קורות מתוך לולאת as_completed הראשית, לא מתוך worker threads).
     מחזיר True אם ה-push הצליח (או שלא היה מה לחיוב), False אם נכשל
     אחרי כל הניסיונות - ההתקדמות עדיין קיימת מקומית על הדיסק, רק לא
-    הגיעה ל-git."""
+    הגיעה ל-git. מעדכן את processed במקום (dict מועבר by reference) עם
+    המיזוג מול origin/main, כך שהלולאה הראשית ממשיכה מהגרסה המאוחדת."""
     try:
         subprocess.run(["git", "config", "user.name", "github-actions[bot]"], check=True)
         subprocess.run(["git", "config", "user.email",
                          "github-actions[bot]@users.noreply.github.com"], check=True)
+
+        # מיזוג ברמת-נתונים לפני ה-commit - ראה _merge_processed_dicts.
+        # זה מה שמונע את קונפליקט התוכן שראינו בפועל, לא רק את בעיית
+        # ה-ref-race (שהלולאה למטה כבר מטפלת בה).
+        subprocess.run(["git", "fetch", "origin", "main"], check=True)
+        remote_processed = _fetch_remote_json(processed_log_path)
+        if remote_processed:
+            merged = _merge_processed_dicts(processed, remote_processed)
+            if merged != processed:
+                processed.clear()
+                processed.update(merged)
+            save_processed(processed_log_path, processed)
+
         subprocess.run(["git", "add", results_path, processed_log_path], check=True)
         diff = subprocess.run(["git", "diff", "--staged", "--quiet"])
         if diff.returncode == 0:
@@ -343,7 +391,7 @@ if __name__ == "__main__":
 
             if (n_ok + n_fail) % CHECKPOINT_EVERY == 0:
                 safe_print(f"  --- checkpoint: מחייב התקדמות אחרי {n_ok + n_fail} משימות ---")
-                _commit_progress(args.results, args.processed_log,
+                _commit_progress(args.results, args.processed_log, processed,
                                   reason=f"after {n_ok + n_fail} tasks")
 
     print(f"\n=== סיכום הרצה זו ===")
