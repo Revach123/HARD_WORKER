@@ -157,7 +157,199 @@ def safe_print(*args, **kwargs) -> None:
         print(*args, **kwargs)
 
 
-MAX_RETRY_ATTEMPTS = 3  # כמה פעמים לנסות שוב דוח שנכשל, לאורך הרצות שונות
+MAX_RETRY_ATTEMPTS = 3  # משפיע רק על *סדר* התור (דחיפה-לסוף), לא על זכאות.
+# דוח שנכשל יותר מזה עדיין ינוסה - רק בעדיפות נמוכה. ראה _needs_processing.
+
+
+# ══════════════════════════════════════════════════════════════════════
+# D1 sync — שכבת סטטוס לדשבורד. משתמש באותו דפוס REST כמו load_companies.py:
+# POST ל-api.cloudflare.com עם CF_ACCOUNT_ID + CF_D1_TOKEN + CF_SECURITIES_DB_ID.
+# הכל נכשל-בשקט: אם אין הגדרות D1, הפייפליין ממשיך כרגיל (מקור האמת ב-git).
+# ══════════════════════════════════════════════════════════════════════
+
+def _d1_config() -> dict | None:
+    """מחזיר את הגדרות D1 מ-env, או None אם חסר משהו (אז מדלגים על סנכרון)."""
+    acc = os.environ.get("CF_ACCOUNT_ID")
+    token = os.environ.get("CF_D1_TOKEN")
+    db = os.environ.get("CF_SECURITIES_DB_ID")  # securities_db, לא company-info-db!
+    if not (acc and token and db):
+        return None
+    return {
+        "url": f"https://api.cloudflare.com/client/v4/accounts/{acc}/d1/database/{db}/query",
+        "token": token,
+    }
+
+
+def _d1_query(cfg: dict, sql: str, params: list | None = None) -> dict:
+    """שולח SQL בודד ל-D1 דרך REST. זורק על שגיאה."""
+    import urllib.request
+    import urllib.error
+    body = json.dumps({"sql": sql, "params": params or []}).encode("utf-8")
+    req = urllib.request.Request(
+        cfg["url"], data=body, method="POST",
+        headers={"Authorization": f"Bearer {cfg['token']}",
+                 "Content-Type": "application/json"},
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=60) as r:
+            res = json.loads(r.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        detail = e.read().decode("utf-8", "replace")
+        raise RuntimeError(f"D1 HTTP {e.code}: {detail[:400]}") from None
+    if not res.get("success"):
+        raise RuntimeError(f"D1 error: {json.dumps(res.get('errors'), ensure_ascii=False)}")
+    return res
+
+
+def read_priority_requests() -> list:
+    """נקרא בתחילת ריצה: מחזיר רשימת company_id שסומנו כדחופים בדשבורד
+    (request_type='urgent' או 'retry') וטרם טופלו. הפייפליין יקדים אותם
+    לראש התור. מחזיר [] אם אין D1 או אין בקשות. לא מסמן resolved כאן -
+    זה קורה רק אחרי שהחברה באמת עובדה (ראה resolve_requests)."""
+    cfg = _d1_config()
+    if not cfg:
+        return []
+    try:
+        res = _d1_query(cfg,
+            "SELECT DISTINCT company_id FROM extraction_requests "
+            "WHERE resolved_at IS NULL AND request_type IN ('urgent','retry')")
+        rows = res.get("result", [{}])[0].get("results", [])
+        return [str(r["company_id"]) for r in rows]
+    except Exception as e:
+        print(f"אזהרה: קריאת בקשות דחיפות מ-D1 נכשלה (לא קריטי): {e}")
+        return []
+
+
+def resolve_requests(cfg: dict, company_ids: set) -> None:
+    """מסמן בקשות דחיפות כ-resolved אחרי שהחברות טופלו בריצה הזו."""
+    if not company_ids:
+        return
+    now = datetime.now(timezone.utc).isoformat()
+    for cid in company_ids:
+        try:
+            _d1_query(cfg,
+                "UPDATE extraction_requests SET resolved_at=? "
+                "WHERE company_id=? AND resolved_at IS NULL",
+                [now, int(cid)])
+        except Exception:
+            pass  # לא קריטי
+
+
+def _compute_company_status(cid: str, entry: dict, processed: dict) -> dict:
+    """גוזר את סטטוס החברה משני מקורות: התוכנית (כמה דוחות יש) וה-
+    processed (מה עובד, באיזה מודל, כמה ניסיונות). מחזיר dict מוכן ל-D1.
+
+    לוגיקת הסטטוס:
+      full    = ה-snapshot עבר בהצלחה ב-3.6 (האיכות הגבוהה)
+      partial = יש הצלחה כלשהי (3.5, או חלק מהדוחות) אבל לא snapshot מלא ב-3.6
+      pending = שום דוח לא עובד בהצלחה עדיין
+      error   = כל הדוחות שנוסו נכשלו (ויש ניסיונות) - אין שום הצלחה
+    """
+    snap = entry.get("snapshot")
+    changes = entry.get("changes", [])
+    all_report_ids = ([snap["report_id"]] if snap else []) + [c["report_id"] for c in changes]
+    total = len(all_report_ids)
+
+    done = 0
+    done_36 = 0
+    max_att = 0
+    any_success = False
+    snap_full_36 = False
+    snap_any = False
+
+    for rid in all_report_ids:
+        e = processed.get(rid)
+        if not e:
+            continue
+        max_att = max(max_att, e.get("attempts", 0))
+        if e.get("status") == "success":
+            done += 1
+            any_success = True
+            model = e.get("model", "")
+            if "3.6" in model or "3_6" in model:
+                done_36 += 1
+
+    # סטטוס ה-snapshot ספציפית (הוא הקובע ל-full/partial)
+    if snap:
+        se = processed.get(snap["report_id"])
+        if se and se.get("status") == "success":
+            snap_any = True
+            model = se.get("model", "")
+            if "3.6" in model or "3_6" in model:
+                snap_full_36 = True
+
+    if snap_full_36:
+        status = "full"
+    elif any_success:
+        status = "partial"
+    elif max_att > 0:
+        status = "error"
+    else:
+        status = "pending"
+
+    return {
+        "company_id": int(cid),
+        "company_name": entry.get("company_name") or "",
+        "status": status,
+        "has_snapshot_36": 1 if snap_full_36 else 0,
+        "has_snapshot_35": 1 if (snap_any and not snap_full_36) else 0,
+        "total_reports": total,
+        "done_reports": done,
+        "done_reports_36": done_36,
+        "max_attempts": max_att,
+    }
+
+
+def _sync_status_to_d1(plan: dict, processed: dict, model: str,
+                        n_ok: int, n_fail: int, stopped_quota: bool) -> None:
+    """כותב את שכבת הסטטוס המלאה ל-D1 בסוף ריצה. בונה שורה לכל חברה,
+    שולח ב-batch (INSERT OR REPLACE), ומוסיף שורת extraction_runs לתצוגת
+    שימוש. נכשל-בשקט אם אין D1."""
+    cfg = _d1_config()
+    if not cfg:
+        print("אין הגדרות D1 (CF_SECURITIES_DB_ID) - מדלג על סנכרון סטטוס.")
+        return
+
+    now = datetime.now(timezone.utc).isoformat()
+    rows = [_compute_company_status(cid, entry, processed) for cid, entry in plan.items()]
+
+    # INSERT OR REPLACE בקבוצות - D1 מגביל גודל statement, אז ~50 שורות לבאטש.
+    cols = ("company_id, company_name, status, has_snapshot_36, has_snapshot_35, "
+            "total_reports, done_reports, done_reports_36, max_attempts, last_updated")
+    sent = 0
+    for i in range(0, len(rows), 50):
+        batch = rows[i:i + 50]
+        placeholders = []
+        params = []
+        for r in batch:
+            placeholders.append("(?,?,?,?,?,?,?,?,?,?)")
+            params += [r["company_id"], r["company_name"], r["status"],
+                       r["has_snapshot_36"], r["has_snapshot_35"],
+                       r["total_reports"], r["done_reports"], r["done_reports_36"],
+                       r["max_attempts"], now]
+        sql = f"INSERT OR REPLACE INTO extraction_status ({cols}) VALUES " + ",".join(placeholders)
+        try:
+            _d1_query(cfg, sql, params)
+            sent += len(batch)
+        except Exception as e:
+            print(f"אזהרה: באטש סטטוס ל-D1 נכשל: {e}")
+
+    print(f"סונכרנו {sent}/{len(rows)} שורות סטטוס ל-D1.")
+
+    # שורת לוג ריצה (לתצוגת שימוש)
+    is_paid = 1 if os.environ.get("GEMINI_PAID_KEY") else 0
+    try:
+        _d1_query(cfg,
+            "INSERT OR REPLACE INTO extraction_runs "
+            "(run_at, model, reports_ok, reports_fail, stopped_quota, is_paid) "
+            "VALUES (?,?,?,?,?,?)",
+            [now, model, n_ok, n_fail, 1 if stopped_quota else 0, is_paid])
+    except Exception as e:
+        print(f"אזהרה: רישום ריצה ל-D1 נכשל: {e}")
+
+    # סימון בקשות דחיפות שטופלו (חברות שעובדו בהצלחה בריצה הזו)
+    done_cids = {str(r["company_id"]) for r in rows if r["status"] in ("full", "partial")}
+    resolve_requests(cfg, done_cids)
 
 
 def load_processed(path: str) -> dict:
@@ -235,10 +427,24 @@ if __name__ == "__main__":
     parser.add_argument("--workers", type=int, default=3,
                          help="כמה משימות בו-זמנית (הורדה+Gemini). ה-RPM מוגן "
                               "בנפרד ע\"י rate limiter גלובלי, לא תלוי במספר הזה.")
+    parser.add_argument("--company-id", default=None,
+                         help="הרץ רק על חברה אחת (companyId של מאיה) - לבדיקת "
+                              "חירום מהדשבורד. מסנן את התוכנית לחברה הזו בלבד.")
     args = parser.parse_args()
 
     with open(args.plan, encoding="utf-8") as f:
         plan = json.load(f)
+
+    # מצב חירום: סינון התוכנית לחברה אחת בלבד. שאר הלוגיקה זהה - החברה
+    # הזו תעובד (snapshot + כל ה-changes שלה), הסטטוס יסונכרן ל-D1 כרגיל.
+    if args.company_id:
+        cid = str(args.company_id)
+        if cid in plan:
+            plan = {cid: plan[cid]}
+            print(f"מצב חירום: מריץ רק על חברה {cid} ({plan[cid].get('company_name')}).")
+        else:
+            print(f"מצב חירום: חברה {cid} לא נמצאה בתוכנית - אין מה להריץ.")
+            plan = {}
 
     processed = load_processed(args.processed_log)
     print(f"נטען processed_reports: {len(processed)} דוחות כבר טופלו בעבר.\n")
@@ -282,10 +488,18 @@ if __name__ == "__main__":
               f"{ex.CURRENT_SCHEMA_VERSION}) - יעובדו מחדש אוטומטית.\n")
 
     def _needs_processing(report_id: str, kind: str) -> bool:
-        """True אם הדוח צריך עיבוד. שלוש סיבות אפשריות: (1) עדיין לא
-        הצליח מעולם / נכשל ועדיין בתוך תקציב הניסיונות החוזרים, או
-        (2) הצליח בסכימה ישנה יותר מהעדכנית - יעובד מחדש אוטומטית עד
-        שיתעדכן.
+        """True אם הדוח צריך עיבוד. שתי סיבות: (1) עדיין לא הצליח מעולם
+        (או נכשל - וכעת לעולם לא מוותרים, ראה למטה), או (2) הצליח בסכימה
+        ישנה יותר מהעדכנית - יעובד מחדש אוטומטית עד שיתעדכן.
+
+        שינוי מדיניות (אי-ויתור): בעבר דוח שנכשל MAX_RETRY_ATTEMPTS פעמים
+        נחשב מת לצמיתות ולא נוסה שוב. זה גרם לאובדן קבוע של דוחות שנכשלו
+        מסיבות זמניות (מכסה, עומס Gemini) - ובמיוחד, ביחד עם באג ה-quota
+        שתוקן, נמחקו כך אלפי דוחות שמעולם לא נוסו באמת. עכשיו: כישלון
+        לעולם לא חוסם עיבוד-חוזר. במקום זה, דוחות שנכשלו הרבה נדחפים
+        לסוף התור (ראה _fail_priority) כדי לא לחסום דוחות טריים, אבל
+        תמיד יקבלו הזדמנות נוספת בסופו של דבר. MAX_RETRY_ATTEMPTS עכשיו
+        משפיע רק על *סדר* (עדיפות), לא על *זכאות*.
 
         הערה על 2->3 (2026-08-30): בעליות גרסה קודמות (1->2) הבדיקה
         הוגבלה ל-kind=="change" בלבד, כי השינוי (event_type,
@@ -302,7 +516,18 @@ if __name__ == "__main__":
             return True
         if entry.get("status") == "success":
             return False
-        return entry.get("attempts", 0) < MAX_RETRY_ATTEMPTS
+        # נכשל בעבר - תמיד ינוסה שוב (אי-ויתור). לא בודקים יותר תקרת ניסיונות.
+        return True
+
+    def _attempts_bucket(report_id: str) -> int:
+        """כמה פעמים הדוח כבר נכשל. משמש לדחיפה-לסוף: דוחות שנכשלו הרבה
+        מקבלים עדיפות נמוכה יותר (כדי לא לחסום דוחות טריים), אבל לעולם
+        לא נופלים מהתור לגמרי (אי-ויתור). דוח שנכשל פחות פעמים יטופל
+        לפני דוח שכבר נכשל הרבה - אבל שניהם יטופלו בסוף."""
+        entry = processed.get(report_id)
+        if entry is None or entry.get("status") == "success":
+            return 0
+        return entry.get("attempts", 0)
 
     def _snapshot_priority(cid: str, entry: dict) -> tuple:
         """סדר עדיפות לעיבוד-מחדש: מי שהכי צפוי להיות עם נתונים חסרים
@@ -318,7 +543,11 @@ if __name__ == "__main__":
         has_extra = bool(snap.get("extra_pdfs"))
         n_known = best_known_subs.get(cid, 0)
         size_kb = snap.get("pdf_size_kb", 0)
-        return (has_extra, n_known == 0, size_kb)
+        # דחיפה-לסוף: פחות כישלונות = עדיפות גבוהה יותר. השלילי הופך
+        # "מעט כישלונות" לערך גבוה במיון היורד. דוח טרי (0 כישלונות)
+        # תמיד לפני דוח שכבר נכשל, אבל שניהם נשארים בתור.
+        neg_attempts = -_attempts_bucket(snap.get("report_id", ""))
+        return (neg_attempts, has_extra, n_known == 0, size_kb)
 
     # רשימת משימות שטוחה: כל דוח (snapshot או change) הוא משימה נפרדת עם
     # report_id ייחודי משלו - אידמפוטנטיות ברמת הדוח הבודד. "failed" אינו
@@ -347,15 +576,30 @@ if __name__ == "__main__":
                 change_tasks.append(("change", cid, entry.get("company_name"), change["report_id"], change))
 
     snapshot_tasks.sort(key=lambda t: t[0], reverse=True)
+    # change: גם כאן דוחות שנכשלו הרבה נדחפים לסוף (אי-ויתור), אבל
+    # נשמרים בתור. פחות כישלונות קודם. בתוך אותו מספר כישלונות - הסדר
+    # הטבעי (לפי סדר הוספה) נשמר, כי sort ב-Python יציב.
+    change_tasks.sort(key=lambda t: _attempts_bucket(t[3]))
     tasks = [t[1:] for t in snapshot_tasks] + change_tasks
+
+    # ── בקשות דחיפות מהדשבורד: מקדימים חברות מסומנות לראש התור ──────────
+    # tasks כאן הם tuples שבהם אינדקס 1 = company_id (אחרי הסרת עדיפות).
+    # מבנה: (kind, cid, name, report_id, entry_or_change)
+    urgent_cids = set(read_priority_requests())
+    if urgent_cids:
+        urgent = [t for t in tasks if str(t[1]) in urgent_cids]
+        rest = [t for t in tasks if str(t[1]) not in urgent_cids]
+        tasks = urgent + rest
+        print(f"בקשות דחיפות מהדשבורד: {len(urgent)} משימות הוקדמו לראש התור "
+              f"({len(urgent_cids)} חברות סומנו).")
     print(f"משימות snapshot ממוינות לפי עדיפות: "
-          f"{sum(1 for t in snapshot_tasks if t[0][0])} עם extra_pdfs, "
-          f"{sum(1 for t in snapshot_tasks if t[0][1])} עם 0 ידועות כרגע.")
+          f"{sum(1 for t in snapshot_tasks if t[0][1])} עם extra_pdfs, "
+          f"{sum(1 for t in snapshot_tasks if t[0][2])} עם 0 ידועות כרגע.")
 
 
     if n_retrying:
         print(f"מתוכם {n_retrying} הן ניסיונות חוזרים לדוחות שנכשלו קודם "
-              f"(עד {MAX_RETRY_ATTEMPTS} ניסיונות לכל דוח).")
+              f"(אי-ויתור: מנוסים שוב תמיד, דוחות עם כשלים רבים נדחפים לסוף התור).")
 
     total_snapshot = sum(1 for t in tasks if t[0] == "snapshot")
     total_change = sum(1 for t in tasks if t[0] == "change")
@@ -418,10 +662,19 @@ if __name__ == "__main__":
                                   reason=f"after {n_ok + n_fail} tasks")
 
     print(f"\n=== סיכום הרצה זו ===")
-    print(f"הצליחו: {n_ok} | נכשלו בהרצה זו (ינוסו שוב עד {MAX_RETRY_ATTEMPTS} "
-          f"פעמים, אלא אם מוצו): {n_fail}")
+    print(f"הצליחו: {n_ok} | נכשלו בהרצה זו (ינוסו שוב תמיד - אי-ויתור): {n_fail}")
     if quota_exceeded_flag.is_set():
         n_not_submitted = len(tasks) - n_ok - n_fail
         print(f"נעצר עקב מכסה - כ-{n_not_submitted} משימות נותרו להרצה הבאה.")
     print(f"סה\"כ processed_reports מצטבר: {len(processed)}")
     print(f"תוצאות ב-private_subsidiaries.jsonl, מעקב ב-{args.processed_log}")
+
+    # ── כתיבת שכבת סטטוס ל-D1 (לדשבורד) ──────────────────────────────
+    # נגזרת מהנתונים שכבר בזיכרון/דיסק. נכשל בשקט אם אין הגדרות D1 -
+    # זו שכבת-תצוגה, לא קריטית לפייפליין עצמו (מקור האמת ב-git).
+    model = os.environ.get("GEMINI_MODEL_OVERRIDE", "gemini-3.6-flash")
+    try:
+        _sync_status_to_d1(plan, processed, model, n_ok, n_fail,
+                            quota_exceeded_flag.is_set())
+    except Exception as e:
+        print(f"אזהרה: סנכרון סטטוס ל-D1 נכשל (לא קריטי): {e}")
