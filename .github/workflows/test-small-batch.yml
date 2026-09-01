@@ -143,16 +143,13 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          # ניקוי secrets מ-run_log.txt לפני commit:
-          # הדליפה הידועה: שגיאת HTTP מ-Gemini API מדפיסה URL מלא שכולל
-          # ?key=AIza... — זה מה שחסם את ה-push (GH013, שורה 202).
-          # מנקים גם פורמטים אחרים של מפתחות למקרה שיצוצו בעתיד.
-          if [ -f run_log.txt ]; then
-            sed -i -E 's/AIza[A-Za-z0-9_-]{30,}/[REDACTED_GCP_KEY]/g' run_log.txt
-            sed -i -E 's/key=AIza[A-Za-z0-9_-]*/key=[REDACTED]/g' run_log.txt
-            sed -i -E 's/ghp_[A-Za-z0-9]{30,}/[REDACTED]/g' run_log.txt
-            sed -i -E 's/github_pat_[A-Za-z0-9_]{30,}/[REDACTED]/g' run_log.txt
-          fi
+          # run_log.txt כבר לא נכנס ל-git בכלל (הוצא בכוונה - ראה למטה
+          # ובשלב Upload results). זה גם מסיר את סיכון הדליפה (השורה
+          # תמיד השתנתה בין הרצות, וזה גרם לקונפליקטים אמיתיים ב-rebase)
+          # וגם פותר קונפליקט תוכן קבוע: כל הרצה כותבת לוג שונה, אז
+          # git text-merge בין שתי גרסאות שונות תמיד יתנגש בסופו של דבר.
+          # מפתח Gemini עדיין מנוקה במקור בתוך extract_subsidiaries.py
+          # (לא מסתמכים רק על ניקוי כאן).
           # אם יש commits קיימים שנתקעו עם secrets (מ-checkpoint קודם),
           # עושים squash של הכל ל-commit אחד נקי — מוחק את ההיסטוריה הבעייתית
           UNPUSHED=$(git log --oneline origin/main..HEAD 2>/dev/null | wc -l)
@@ -160,7 +157,7 @@ jobs:
             echo "$UNPUSHED commits לא-דחופים — עושה squash לנקות secrets מהיסטוריה"
             git reset --soft origin/main
           fi
-          git add .maya_cache/*_merged.json selection_plan.json run_log.txt \
+          git add .maya_cache/*_merged.json selection_plan.json \
                   processed_reports_*.json \
                   processed_reports.json private_subsidiaries.jsonl 2>/dev/null || true
           if git diff --staged --quiet; then
@@ -204,4 +201,5 @@ jobs:
             scripts/company_ownership/selection_plan.json
             scripts/company_ownership/private_subsidiaries.jsonl
             scripts/company_ownership/processed_reports.json
+            scripts/company_ownership/run_log.txt
           retention-days: 14
