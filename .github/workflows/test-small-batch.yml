@@ -116,6 +116,10 @@ jobs:
           GEMINI_API_KEY_3: ${{ secrets.GEMINI_API_KEY_3 }}
           GEMINI_API_KEY_4: ${{ secrets.GEMINI_API_KEY_4 }}
           GEMINI_MODEL_OVERRIDE: ${{ github.event.inputs.model || 'gemini-3.6-flash' }}
+          # D1 sync לדשבורד (שכבת סטטוס). נכשל-בשקט אם חסר - לא קריטי לפייפליין.
+          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          CF_D1_TOKEN: ${{ secrets.CF_D1_TOKEN }}
+          CF_SECURITIES_DB_ID: ${{ vars.CF_SECURITIES_DB_ID }}
           PYTHONUNBUFFERED: "1"
         run: |
           LIMIT_ARG=""

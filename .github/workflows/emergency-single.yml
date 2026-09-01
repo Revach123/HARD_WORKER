@@ -1,0 +1,96 @@
+# .github/workflows/emergency-single.yml
+#
+# בדיקת חירום על חברה בודדת, מופעל מיד מהדשבורד (דרך workflow_dispatch
+# ב-GitHub API - ראה functions/api/extraction.js). מקבל company_id
+# כפרמטר, מריץ רק אותו, ומסנכרן סטטוס ל-D1 בסוף - בדיוק כמו הריצה
+# הרגילה, רק ממוקד.
+#
+# נפרד מהריצה המלאה בכוונה: (1) מהיר - חברה אחת, לא כל התור; (2) לא
+# מתנגש עם concurrency group של הריצה המלאה (group שונה), כדי שאפשר
+# להריץ חירום גם בזמן שריצה מלאה פעילה.
+
+name: Emergency single-company extraction
+
+permissions:
+  contents: write
+
+# group נפרד מהריצה המלאה - חירום יכול לרוץ במקביל לריצה המתוזמנת.
+# אבל שתי בקשות חירום כן מסתדרות בתור זו אחרי זו (לא נדרסות).
+concurrency:
+  group: subsidiary-emergency
+  cancel-in-progress: false
+
+on:
+  workflow_dispatch:
+    inputs:
+      company_id:
+        description: "companyId של מאיה להרצת חירום"
+        required: true
+      model:
+        description: "מודל Gemini"
+        required: false
+        type: choice
+        options:
+          - gemini-3.6-flash
+          - gemini-3.5-flash-lite
+        default: gemini-3.6-flash
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30  # חברה אחת - לא צריך יותר
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests pypdf --break-system-packages
+
+      - name: Run single company (emergency)
+        working-directory: scripts/company_ownership
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
+          GEMINI_API_KEY_3: ${{ secrets.GEMINI_API_KEY_3 }}
+          GEMINI_API_KEY_4: ${{ secrets.GEMINI_API_KEY_4 }}
+          GEMINI_MODEL_OVERRIDE: ${{ github.event.inputs.model || 'gemini-3.6-flash' }}
+          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          CF_D1_TOKEN: ${{ secrets.CF_D1_TOKEN }}
+          CF_SECURITIES_DB_ID: ${{ vars.CF_SECURITIES_DB_ID }}
+          PYTHONUNBUFFERED: "1"
+        run: |
+          python run_full_batch.py --plan selection_plan.json \
+            --company-id "${{ github.event.inputs.company_id }}" \
+            --workers 2 2>&1 | tee emergency_log.txt
+          exit ${PIPESTATUS[0]}
+
+      - name: Commit progress to repo
+        if: always()
+        working-directory: scripts/company_ownership
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          UNPUSHED=$(git log --oneline origin/main..HEAD 2>/dev/null | wc -l)
+          if [ "$UNPUSHED" -gt 0 ]; then
+            git reset --soft origin/main
+          fi
+          git add .maya_cache/*_merged.json \
+                  processed_reports_*.json \
+                  private_subsidiaries.jsonl 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "אין שינויים לחיוב."
+          else
+            git commit -m "Emergency extraction: company ${{ github.event.inputs.company_id }} [skip ci]"
+            for i in 1 2 3 4 5; do
+              if git push; then echo "push הצליח (ניסיון $i)."; break; fi
+              echo "push נדחה (ניסיון $i/5) - מושך ועושה rebase..."
+              git rebase --abort 2>/dev/null || true
+              git fetch origin main
+              if ! git rebase origin/main; then
+                git rebase --abort 2>/dev/null || true
+              fi
+            done
+          fi
