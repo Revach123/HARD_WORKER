@@ -235,9 +235,60 @@ def resolve_requests(cfg: dict, company_ids: set) -> None:
             pass  # לא קריטי
 
 
-def _compute_company_status(cid: str, entry: dict, processed: dict) -> dict:
+def _load_merged_processed(current_processed: dict, current_log_path: str) -> dict:
+    """ממזג את שני קבצי ה-processed (3.6 ו-3.5) למבט אחד לכל report_id.
+    לכל דוח בוחר את ה"טוב ביותר" שנראה באיזשהו מודל: success ב-3.6 מנצח
+    success ב-3.5, ששניהם מנצחים כישלון. זה מה שמאפשר לדשבורד לדעת
+    שחברה היא "מלא" (עברה 3.6) גם אם הריצה הנוכחית הייתה 3.5.
+
+    current_processed כבר בזיכרון (הקובץ של המודל שרץ עכשיו, הכי עדכני);
+    את הקובץ של המודל השני טוענים מהדיסק. אם הוא לא קיים - פשוט משתמשים
+    במה שיש."""
+    # שמות שני הקבצים הקבועים
+    both_paths = [
+        "processed_reports_gemini-3_6-flash.json",
+        "processed_reports_gemini-3_5-flash-lite.json",
+    ]
+
+    def _rank(entry: dict) -> tuple:
+        """דירוג לבחירת ה'טוב ביותר': (הצליח?, ב-3.6?, מספר ניסיונות).
+        success מנצח כישלון; בין שתי הצלחות, 3.6 מנצח; אחרת יותר ניסיונות."""
+        is_success = entry.get("status") == "success"
+        model = entry.get("model", "")
+        is_36 = "3.6" in model or "3_6" in model
+        return (is_success, is_success and is_36, entry.get("attempts", 0))
+
+    merged: dict = {}
+
+    def _absorb(source: dict):
+        for rid, entry in source.items():
+            existing = merged.get(rid)
+            if existing is None or _rank(entry) > _rank(existing):
+                merged[rid] = entry
+
+    # קודם הגרסה שבזיכרון (המודל הנוכחי, הכי טרייה)
+    _absorb(current_processed)
+    # ואז שני הקבצים מהדיסק (כולל המודל השני)
+    for p in both_paths:
+        if os.path.abspath(p) == os.path.abspath(current_log_path):
+            continue  # כבר קלטנו את זה מהזיכרון (עדכני יותר)
+        if os.path.exists(p):
+            try:
+                with open(p, encoding="utf-8") as f:
+                    _absorb(json.load(f))
+            except Exception as e:
+                print(f"אזהרה: טעינת {p} למיזוג נכשלה (לא קריטי): {e}")
+    return merged
+
+
+def _compute_company_status(cid: str, entry: dict, merged: dict) -> dict:
     """גוזר את סטטוס החברה משני מקורות: התוכנית (כמה דוחות יש) וה-
-    processed (מה עובד, באיזה מודל, כמה ניסיונות). מחזיר dict מוכן ל-D1.
+    merged (מבט ממוזג על שני קבצי processed - 3.6 ו-3.5 יחד). מחזיר
+    dict מוכן ל-D1.
+
+    קריטי: merged חייב לכלול את *שני* המודלים. חברה נחשבת "מלא" רק אם
+    ה-snapshot שלה עבר ב-3.6, גם אם הריצה הנוכחית הייתה של 3.5 (או להפך).
+    בלי מיזוג שני הקבצים, כל הרצה הייתה רואה חצי תמונה והסטטוס היה שגוי.
 
     לוגיקת הסטטוס:
       full    = ה-snapshot עבר בהצלחה ב-3.6 (האיכות הגבוהה)
@@ -258,7 +309,7 @@ def _compute_company_status(cid: str, entry: dict, processed: dict) -> dict:
     snap_any = False
 
     for rid in all_report_ids:
-        e = processed.get(rid)
+        e = merged.get(rid)
         if not e:
             continue
         max_att = max(max_att, e.get("attempts", 0))
@@ -271,7 +322,7 @@ def _compute_company_status(cid: str, entry: dict, processed: dict) -> dict:
 
     # סטטוס ה-snapshot ספציפית (הוא הקובע ל-full/partial)
     if snap:
-        se = processed.get(snap["report_id"])
+        se = merged.get(snap["report_id"])
         if se and se.get("status") == "success":
             snap_any = True
             model = se.get("model", "")
@@ -301,17 +352,23 @@ def _compute_company_status(cid: str, entry: dict, processed: dict) -> dict:
 
 
 def _sync_status_to_d1(plan: dict, processed: dict, model: str,
-                        n_ok: int, n_fail: int, stopped_quota: bool) -> None:
+                        n_ok: int, n_fail: int, stopped_quota: bool,
+                        current_log_path: str) -> None:
     """כותב את שכבת הסטטוס המלאה ל-D1 בסוף ריצה. בונה שורה לכל חברה,
     שולח ב-batch (INSERT OR REPLACE), ומוסיף שורת extraction_runs לתצוגת
-    שימוש. נכשל-בשקט אם אין D1."""
+    שימוש. נכשל-בשקט אם אין D1.
+
+    קריטי: ממזג את שני קבצי processed (3.6 + 3.5) לפני החישוב, כדי
+    שהסטטוס ישקף את שני המודלים - לא רק זה שרץ בריצה הנוכחית."""
     cfg = _d1_config()
     if not cfg:
         print("אין הגדרות D1 (CF_SECURITIES_DB_ID) - מדלג על סנכרון סטטוס.")
         return
 
     now = datetime.now(timezone.utc).isoformat()
-    rows = [_compute_company_status(cid, entry, processed) for cid, entry in plan.items()]
+    # מבט ממוזג על שני המודלים - זה מה שמבטיח מידע מלא לגבי שתי הרשימות.
+    merged = _load_merged_processed(processed, current_log_path)
+    rows = [_compute_company_status(cid, entry, merged) for cid, entry in plan.items()]
 
     # INSERT OR REPLACE בקבוצות - D1 מגביל גודל statement, אז ~50 שורות לבאטש.
     cols = ("company_id, company_name, status, has_snapshot_36, has_snapshot_35, "
@@ -675,6 +732,6 @@ if __name__ == "__main__":
     model = os.environ.get("GEMINI_MODEL_OVERRIDE", "gemini-3.6-flash")
     try:
         _sync_status_to_d1(plan, processed, model, n_ok, n_fail,
-                            quota_exceeded_flag.is_set())
+                            quota_exceeded_flag.is_set(), args.processed_log)
     except Exception as e:
         print(f"אזהרה: סנכרון סטטוס ל-D1 נכשל (לא קריטי): {e}")
