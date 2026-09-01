@@ -220,17 +220,21 @@ def read_priority_requests() -> list:
         return []
 
 
-def resolve_requests(cfg: dict, company_ids: set) -> None:
-    """מסמן בקשות דחיפות כ-resolved אחרי שהחברות טופלו בריצה הזו."""
+def resolve_requests(cfg: dict, company_ids: set, request_types: tuple = ("urgent", "retry", "emergency")) -> None:
+    """מסמן בקשות דחיפות כ-resolved, מוגבל לסוגי בקשה מסוימים - ראה
+    הקריאות ב-_sync_status_to_d1 להסבר למה urgent/retry ו-emergency
+    צריכים קריטריון פתרון שונה."""
     if not company_ids:
         return
     now = datetime.now(timezone.utc).isoformat()
+    placeholders = ",".join("?" for _ in request_types)
     for cid in company_ids:
         try:
             _d1_query(cfg,
-                "UPDATE extraction_requests SET resolved_at=? "
-                "WHERE company_id=? AND resolved_at IS NULL",
-                [now, int(cid)])
+                f"UPDATE extraction_requests SET resolved_at=? "
+                f"WHERE company_id=? AND resolved_at IS NULL "
+                f"AND request_type IN ({placeholders})",
+                [now, int(cid), *request_types])
         except Exception:
             pass  # לא קריטי
 
@@ -396,6 +400,24 @@ def _sync_status_to_d1(plan: dict, processed: dict, model: str,
 
     print(f"סונכרנו {sent}/{len(rows)} שורות סטטוס ל-D1.")
 
+    # ── סטטיסטיקה יומית (להיסטוריית מגמה - extraction_daily_stats) ──────
+    # extraction_status הוא INSERT OR REPLACE - אין בו זיכרון של אתמול.
+    # שומרים שורה אחת ליום (מפתח = תאריך UTC), מעודכנת בכל ריצה מאותו
+    # יום (לא מצטברת - זה המצב הסופי של היום, לא סכום ריצות).
+    today = datetime.now(timezone.utc).date().isoformat()
+    daily = {"full": 0, "partial": 0, "pending": 0, "error": 0}
+    for r in rows:
+        if r["status"] in daily:
+            daily[r["status"]] += 1
+    try:
+        _d1_query(cfg,
+            "INSERT OR REPLACE INTO extraction_daily_stats "
+            "(date, full, partial, pending, error, total) VALUES (?,?,?,?,?,?)",
+            [today, daily["full"], daily["partial"], daily["pending"], daily["error"],
+             len(rows)])
+    except Exception as e:
+        print(f"אזהרה: שמירת סטטיסטיקה יומית ל-D1 נכשלה: {e}")
+
     # שורת לוג ריצה (לתצוגת שימוש)
     is_paid = 1 if os.environ.get("GEMINI_PAID_KEY") else 0
     try:
@@ -407,9 +429,22 @@ def _sync_status_to_d1(plan: dict, processed: dict, model: str,
     except Exception as e:
         print(f"אזהרה: רישום ריצה ל-D1 נכשל: {e}")
 
-    # סימון בקשות דחיפות שטופלו (חברות שעובדו בהצלחה בריצה הזו)
-    done_cids = {str(r["company_id"]) for r in rows if r["status"] in ("full", "partial")}
-    resolve_requests(cfg, done_cids)
+    # סימון בקשות דחיפות שטופלו. urgent/retry - קידום שנועד לחול על *שתי*
+    # הרשימות (3.6 ו-3.5) - נשאר פתוח (ולכן ממשיך להידחף לראש התור) עד
+    # ששני המודלים הצליחו, לא רק זה שרץ עכשיו. אחרת: 3.6 מצליח ראשון,
+    # הבקשה נסגרת, וה-3.5 הבא בתור לעולם לא רואה אותה כדחופה - בניגוד
+    # לכוונה. emergency שונה מטבעו - מטופל בנפרד למטה (תלוי הרצה בודדת).
+    both_done_cids = {
+        str(r["company_id"]) for r in rows
+        if r["has_snapshot_36"] and r["has_snapshot_35"]
+    }
+    resolve_requests(cfg, both_done_cids, request_types=("urgent", "retry"))
+
+    # emergency - מטבעה ריצה בודדת וממוקדת; נחשבת "טופלה" ברגע שיש הצלחה
+    # כלשהי (המודל שבו רצה בפועל, כולל fallback ל-3.5 אם 3.6 נכשל - ראה
+    # main()), לא ממתינה לשני המודלים.
+    emergency_done_cids = {str(r["company_id"]) for r in rows if r["status"] in ("full", "partial")}
+    resolve_requests(cfg, emergency_done_cids, request_types=("emergency",))
 
 
 def load_processed(path: str) -> dict:
@@ -735,10 +770,41 @@ if __name__ == "__main__":
     print(f"סה\"כ processed_reports מצטבר: {len(processed)}")
     print(f"תוצאות ב-private_subsidiaries.jsonl, מעקב ב-{args.processed_log}")
 
+    # ── פולבאק אוטומטי ל-3.5 (רק במצב חירום, כשל 3.6 עקב מכסה) ─────────
+    # extraction.js תמיד שולח בקשות חירום ל-3.6-flash (איכות עדיפה) בלי
+    # לציין מודל אחר. אם זה נכשל *ספציפית* עקב מכסה יומית (לא סיבה
+    # אחרת) - מנסים מיד שוב באותה ריצה עם 3.5-flash-lite (מכסה גבוהה
+    # בהרבה, 500 RPD/מפתח מול 20), כדי שהמשתמש בדשבורד עדיין יקבל
+    # תוצאה עכשיו, לא רק "נכשל, חכה למחר".
+    if (args.company_id and n_ok == 0 and quota_exceeded_flag.is_set()
+            and ex.GEMINI_MODEL == "gemini-3.6-flash"):
+        safe_print(f"\n*** 3.6-flash נכשל עקב מכסה - מנסה פולבאק אוטומטי "
+                   f"ל-3.5-flash-lite... ***")
+        ex.switch_model("gemini-3.5-flash-lite")
+        fallback_log_path = "processed_reports_gemini-3_5-flash-lite.json"
+        fallback_processed = load_processed(fallback_log_path)
+        cid = str(args.company_id)
+        entry = plan.get(cid)
+        if entry:
+            ok = rsb.process_company(cid, entry)
+            snap = entry.get("snapshot")
+            if snap:
+                mark(fallback_processed, fallback_log_path, snap["report_id"], cid,
+                     "success" if ok else "failed", "snapshot")
+            if ok:
+                n_ok, n_fail = 1, 0
+                safe_print("*** פולבאק ל-3.5-flash-lite הצליח. ***")
+            else:
+                safe_print("*** פולבאק ל-3.5-flash-lite גם נכשל. ***")
+            _commit_progress(args.results, fallback_log_path, fallback_processed,
+                              reason="emergency fallback to 3.5")
+
     # ── כתיבת שכבת סטטוס ל-D1 (לדשבורד) ──────────────────────────────
     # נגזרת מהנתונים שכבר בזיכרון/דיסק. נכשל בשקט אם אין הגדרות D1 -
     # זו שכבת-תצוגה, לא קריטית לפייפליין עצמו (מקור האמת ב-git).
-    model = os.environ.get("GEMINI_MODEL_OVERRIDE", "gemini-3.6-flash")
+    # ex.GEMINI_MODEL (לא רק GEMINI_MODEL_OVERRIDE) - כדי לשקף פולבאק
+    # אם קרה.
+    model = ex.GEMINI_MODEL
     try:
         _sync_status_to_d1(plan, processed, model, n_ok, n_fail,
                             quota_exceeded_flag.is_set(), args.processed_log)
