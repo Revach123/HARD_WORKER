@@ -436,18 +436,24 @@ def save_processed(path: str, processed: dict) -> None:
 def mark(processed: dict, path: str, report_id: str, company_id: str, status: str, kind: str) -> None:
     """מסמן ושומר מיד לדיסק, thread-safe - קריאה-שינוי-כתיבה מוגנת בלוק
     כדי שכמה threads שמסיימים כמעט יחד לא ידרסו זה את עדכוני זה.
-    status="success" הוא סופי (לא ינוסה שוב לעולם). status="failed"
-    סופר ניסיונות - יינתן retry בהרצות הבאות עד MAX_RETRY_ATTEMPTS,
-    ורק אז ייחשב סופי (כדי לא לבזבז מכסה לנצח על דוח שבאמת שבור)."""
+    status="success" סופי לגרסת הסכימה הנוכחית. status="failed" ינוסה
+    שוב (אי-ויתור).
+
+    כותב את המודל שעיבד (ex.GEMINI_MODEL) - קריטי: בלי זה הדשבורד לא
+    יכול להבחין בין "מלא" (3.6) ל"חלקי" (3.5), וכל החברות היו נראות
+    חלקי לנצח. מתייג רק על success (לכישלון אין תוצאת-מודל משמעותית)."""
     with _processed_lock:
         prev_attempts = processed.get(report_id, {}).get("attempts", 0)
-        processed[report_id] = {
+        rec = {
             "company_id": company_id,
             "status": status,
             "kind": kind,
             "attempts": prev_attempts + 1,
             "at": datetime.now(timezone.utc).isoformat(),
         }
+        if status == "success":
+            rec["model"] = ex.GEMINI_MODEL
+        processed[report_id] = rec
         save_processed(path, processed)
 
 
