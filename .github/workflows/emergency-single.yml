@@ -84,8 +84,13 @@ jobs:
             echo "אין שינויים לחיוב."
           else
             git commit -m "Emergency extraction: company ${{ github.event.inputs.company_id }} [skip ci]"
+            PUSH_OK=0
             for i in 1 2 3 4 5; do
-              if git push; then echo "push הצליח (ניסיון $i)."; break; fi
+              if git push; then
+                echo "push הצליח (ניסיון $i)."
+                PUSH_OK=1
+                break
+              fi
               echo "push נדחה (ניסיון $i/5) - מושך ועושה rebase..."
               git rebase --abort 2>/dev/null || true
               git fetch origin main
@@ -93,4 +98,8 @@ jobs:
                 git rebase --abort 2>/dev/null || true
               fi
             done
+            if [ "$PUSH_OK" -eq 0 ]; then
+              echo "::error::נכשל push אחרי 5 ניסיונות - התוצאה לא הגיעה ל-git."
+              exit 1
+            fi
           fi
