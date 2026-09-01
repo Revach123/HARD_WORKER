@@ -370,12 +370,15 @@ def _sync_status_to_d1(plan: dict, processed: dict, model: str,
     merged = _load_merged_processed(processed, current_log_path)
     rows = [_compute_company_status(cid, entry, merged) for cid, entry in plan.items()]
 
-    # INSERT OR REPLACE בקבוצות - D1 מגביל גודל statement, אז ~50 שורות לבאטש.
+    # INSERT OR REPLACE בקבוצות. D1/SQLite מגביל ל-100 משתנים (?) ל-statement
+    # יחיד. יש לנו 10 עמודות לשורה, אז מקסימום 10 שורות לבאטש (100 משתנים).
+    # 9 ליתר ביטחון (נצפה בפועל: 50 שורות = 500 משתנים = SQLITE_ERROR 7500).
+    BATCH_ROWS = 9
     cols = ("company_id, company_name, status, has_snapshot_36, has_snapshot_35, "
             "total_reports, done_reports, done_reports_36, max_attempts, last_updated")
     sent = 0
-    for i in range(0, len(rows), 50):
-        batch = rows[i:i + 50]
+    for i in range(0, len(rows), BATCH_ROWS):
+        batch = rows[i:i + BATCH_ROWS]
         placeholders = []
         params = []
         for r in batch:
