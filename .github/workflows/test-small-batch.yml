@@ -95,6 +95,26 @@ jobs:
       - name: Install dependencies
         run: pip install requests pypdf --break-system-packages
 
+      # לוק ריצה בפועל - נדחף מיד ל-git, לא רק state פנימי של ה-job.
+      # למה: concurrency (למעלה) מונע רק חפיפה בין הרצות workflow -
+      # לא מגן מפני push ידני חיצוני (כולל שלי - זה בדיוק מה שקרה
+      # ב-2026-09-02: מחקתי קבצים דרך ה-API תוך כדי שריצה כאן הייתה
+      # באמצע commit, ותקעתי את שתיהן). לפני כל push ידני ל-repo הזה,
+      # לבדוק קודם שקובץ RUNNING_LOCK הזה לא קיים ב-main.
+      - name: Create run lock
+        working-directory: scripts/company_ownership
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          echo "run_id=${{ github.run_id }}" > RUNNING_LOCK
+          echo "started_at=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> RUNNING_LOCK
+          git add RUNNING_LOCK
+          git commit -m "Lock: run ${{ github.run_id }} started [skip ci]"
+          for i in 1 2 3; do
+            git push && break
+            git fetch origin main && git rebase origin/main || git rebase --abort
+          done
+
       - name: Build report selection plan
         if: github.event.inputs.skip_maya_refetch != 'true'
         working-directory: scripts/company_ownership
@@ -211,3 +231,28 @@ jobs:
             scripts/company_ownership/processed_reports.json
             scripts/company_ownership/run_log.txt
           retention-days: 14
+
+      # מסיר את הלוק תמיד (if: always()) - גם אם הריצה נכשלה/נקטעה/
+      # timeout. בלי זה, ריצה שנכשלת משאירה לוק תקוע שחוסם push חיצוני
+      # לצמיתות עד שמישהו מסיר ידנית.
+      - name: Remove run lock
+        if: always()
+        working-directory: scripts/company_ownership
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git fetch origin main
+          git reset --hard origin/main
+          if [ -f RUNNING_LOCK ]; then
+            git rm -f RUNNING_LOCK
+            git commit -m "Lock: run ${{ github.run_id }} finished [skip ci]"
+            for i in 1 2 3 4 5; do
+              if git push; then break; fi
+              git fetch origin main
+              if ! git rebase origin/main; then
+                git rebase --abort
+                git reset --hard origin/main
+                [ -f RUNNING_LOCK ] && { git rm -f RUNNING_LOCK; git commit -m "Lock: run ${{ github.run_id }} finished [skip ci]"; }
+              fi
+            done
+          fi
