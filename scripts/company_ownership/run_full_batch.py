@@ -25,7 +25,7 @@ import os
 import subprocess
 import threading
 import time
-from concurrent.futures import CancelledError, ThreadPoolExecutor, as_completed
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 
 import extract_subsidiaries as ex
@@ -285,7 +285,34 @@ def _load_merged_processed(current_processed: dict, current_log_path: str) -> di
     return merged
 
 
-def _compute_company_status(cid: str, entry: dict, merged: dict) -> dict:
+def _load_model_success_from_jsonl(results_path: str) -> dict:
+    """קורא ישירות מ-private_subsidiaries.jsonl אילו מודלים הפיקו הצלחה
+    לכל report_id - מקור אמת עצמאי מ-processed_reports_*.json. חשוב:
+    רשומות ישנות ב-processed_reports (לפני שהוספנו תיוג model ל-mark())
+    חסרות את השדה model לגמרי, מה שגרם ל-snap_full_36 להיות תמיד False
+    (0 חברות \"מלא\" למרות הצלחות אמיתיות ב-3.6 - נצפה בפועל). jsonl
+    עצמו כן מתויג נכון תמיד (save_extraction_json כותב model בכל שורה),
+    אז זה מקור אמין יותר, בלי תלות בזמן שבו processed_reports נכתב."""
+    models_by_report: dict = {}
+    if not os.path.exists(results_path):
+        return models_by_report
+    with open(results_path, encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                rec = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            rid = rec.get("report_id")
+            model = rec.get("model")
+            if rid is not None and model:
+                models_by_report.setdefault(rid, set()).add(model)
+    return models_by_report
+
+
+def _compute_company_status(cid: str, entry: dict, merged: dict, models_by_report: dict) -> dict:
     """גוזר את סטטוס החברה משני מקורות: התוכנית (כמה דוחות יש) וה-
     merged (מבט ממוזג על שני קבצי processed - 3.6 ו-3.5 יחד). מחזיר
     dict מוכן ל-D1.
@@ -320,8 +347,8 @@ def _compute_company_status(cid: str, entry: dict, merged: dict) -> dict:
         if e.get("status") == "success":
             done += 1
             any_success = True
-            model = e.get("model", "")
-            if "3.6" in model or "3_6" in model:
+            models_seen = {e.get("model", "")} | models_by_report.get(rid, set())
+            if any("3.6" in m or "3_6" in m for m in models_seen):
                 done_36 += 1
 
     # סטטוס ה-snapshot ספציפית (הוא הקובע ל-full/partial)
@@ -329,8 +356,8 @@ def _compute_company_status(cid: str, entry: dict, merged: dict) -> dict:
         se = merged.get(snap["report_id"])
         if se and se.get("status") == "success":
             snap_any = True
-            model = se.get("model", "")
-            if "3.6" in model or "3_6" in model:
+            models_seen = {se.get("model", "")} | models_by_report.get(snap["report_id"], set())
+            if any("3.6" in m or "3_6" in m for m in models_seen):
                 snap_full_36 = True
 
     if snap_full_36:
@@ -357,7 +384,7 @@ def _compute_company_status(cid: str, entry: dict, merged: dict) -> dict:
 
 def _sync_status_to_d1(plan: dict, processed: dict, model: str,
                         n_ok: int, n_fail: int, stopped_quota: bool,
-                        current_log_path: str) -> None:
+                        current_log_path: str, results_path: str) -> None:
     """כותב את שכבת הסטטוס המלאה ל-D1 בסוף ריצה. בונה שורה לכל חברה,
     שולח ב-batch (INSERT OR REPLACE), ומוסיף שורת extraction_runs לתצוגת
     שימוש. נכשל-בשקט אם אין D1.
@@ -372,7 +399,9 @@ def _sync_status_to_d1(plan: dict, processed: dict, model: str,
     now = datetime.now(timezone.utc).isoformat()
     # מבט ממוזג על שני המודלים - זה מה שמבטיח מידע מלא לגבי שתי הרשימות.
     merged = _load_merged_processed(processed, current_log_path)
-    rows = [_compute_company_status(cid, entry, merged) for cid, entry in plan.items()]
+    models_by_report = _load_model_success_from_jsonl(results_path)
+    rows = [_compute_company_status(cid, entry, merged, models_by_report)
+            for cid, entry in plan.items()]
 
     # INSERT OR REPLACE בקבוצות. D1/SQLite מגביל ל-100 משתנים (?) ל-statement
     # יחיד. יש לנו 10 עמודות לשורה, אז מקסימום 10 שורות לבאטש (100 משתנים).
@@ -732,10 +761,6 @@ if __name__ == "__main__":
             kind, cid, company_name, _, _ = future_to_task[future]
             try:
                 report_id, cid_result, status, hit_quota, task_kind = future.result()
-            except CancelledError:
-                # בוטלה יזום (ראה למטה) כי עדיין לא הספיקה להתחיל לרוץ אחרי
-                # שהמכסה כבר זוהתה - לא כישלון אמיתי, תנוסה שוב בהרצה הבאה.
-                continue
             except Exception as e:
                 # רשת ביטחון אחרונה - לא אמור לקרות (run_task כבר תופס הכל),
                 # אבל אם כן: לא מפילים את כל הריצה בגלל משימה אחת.
@@ -751,18 +776,6 @@ if __name__ == "__main__":
                                f"לא שולחים משימות חדשות - ממתינים לסיום הפעילות "
                                f"הנוכחית. ***")
                 quota_exceeded_flag.set()
-                # מבטלים מיד את כל המשימות שכבר בתור אבל עדיין לא התחילו
-                # לרוץ - בלי זה, ה-executor "מרוקן" אותן אחת-אחת עד הסוף,
-                # וכל אחת רק מדפיסה "מכסה נגמרה" בלי שום עבודה אמיתית מול
-                # Gemini (זה מה שגרם לריצה להיראות כאילו היא "ממשיכה" אחרי
-                # שהמכסה כבר נגמרה - ראה תיעוד ריצה מ-2026-09-02).
-                # future.cancel() מצליח רק על משימות שעדיין לא התחילו לרוץ
-                # בפועל (thread טרם נלקח מהתור) - משימות שכבר רצות פשוט
-                # ימשיכו וייכנעו בעצמן דרך הבדיקה הפנימית ב-_process_report.
-                n_cancelled = sum(1 for f in future_to_task if f.cancel())
-                if n_cancelled:
-                    safe_print(f"  בוטלו {n_cancelled} משימות שעדיין לא התחילו "
-                               f"לרוץ (לא נשלחו ל-Gemini כלל, ינוסו שוב בהרצה הבאה).")
                 continue
 
             mark(processed, args.processed_log, report_id, cid_result, status, task_kind)
@@ -823,6 +836,6 @@ if __name__ == "__main__":
     model = ex.GEMINI_MODEL
     try:
         _sync_status_to_d1(plan, processed, model, n_ok, n_fail,
-                            quota_exceeded_flag.is_set(), args.processed_log)
+                            quota_exceeded_flag.is_set(), args.processed_log, args.results)
     except Exception as e:
         print(f"אזהרה: סנכרון סטטוס ל-D1 נכשל (לא קריטי): {e}")
