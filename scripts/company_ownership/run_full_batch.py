@@ -296,17 +296,22 @@ def _load_merged_processed(current_processed: dict, current_log_path: str) -> di
     return merged
 
 
-def _load_model_success_from_jsonl(results_path: str) -> dict:
-    """קורא ישירות מ-private_subsidiaries.jsonl אילו מודלים הפיקו הצלחה
-    לכל report_id - מקור אמת עצמאי מ-processed_reports_*.json. חשוב:
-    רשומות ישנות ב-processed_reports (לפני שהוספנו תיוג model ל-mark())
-    חסרות את השדה model לגמרי, מה שגרם ל-snap_full_36 להיות תמיד False
-    (0 חברות \"מלא\" למרות הצלחות אמיתיות ב-3.6 - נצפה בפועל). jsonl
-    עצמו כן מתויג נכון תמיד (save_extraction_json כותב model בכל שורה),
-    אז זה מקור אמין יותר, בלי תלות בזמן שבו processed_reports נכתב."""
+def _load_model_success_from_jsonl(results_path: str):
+    """קורא ישירות מ-private_subsidiaries.jsonl: (1) אילו מודלים הפיקו
+    הצלחה לכל report_id - מקור אמת עצמאי מ-processed_reports_*.json
+    (ראה תיעוד למטה); (2) המספר הגבוה ביותר שנמצא אי-פעם של חברות בת
+    לכל report_id - לתצוגה בדשבורד (עמודת \"חברות בת\").
+
+    חשוב: רשומות ישנות ב-processed_reports (לפני שהוספנו תיוג model
+    ל-mark()) חסרות את השדה model לגמרי, מה שגרם ל-snap_full_36 להיות
+    תמיד False (0 חברות \"מלא\" למרות הצלחות אמיתיות ב-3.6 - נצפה בפועל).
+    jsonl עצמו כן מתויג נכון תמיד (save_extraction_json כותב model בכל
+    שורה), אז זה מקור אמין יותר, בלי תלות בזמן שבו processed_reports
+    נכתב."""
     models_by_report: dict = {}
+    max_subs_by_report: dict = {}
     if not os.path.exists(results_path):
-        return models_by_report
+        return models_by_report, max_subs_by_report
     with open(results_path, encoding="utf-8") as f:
         for line in f:
             line = line.strip()
@@ -317,13 +322,18 @@ def _load_model_success_from_jsonl(results_path: str) -> dict:
             except json.JSONDecodeError:
                 continue
             rid = rec.get("report_id")
+            if rid is None:
+                continue
             model = rec.get("model")
-            if rid is not None and model:
+            if model:
                 models_by_report.setdefault(rid, set()).add(model)
-    return models_by_report
+            n_subs = len(rec.get("subsidiaries", []))
+            max_subs_by_report[rid] = max(n_subs, max_subs_by_report.get(rid, 0))
+    return models_by_report, max_subs_by_report
 
 
-def _compute_company_status(cid: str, entry: dict, merged: dict, models_by_report: dict) -> dict:
+def _compute_company_status(cid: str, entry: dict, merged: dict, models_by_report: dict,
+                             max_subs_by_report: dict) -> dict:
     """גוזר את סטטוס החברה משני מקורות: התוכנית (כמה דוחות יש) וה-
     merged (מבט ממוזג על שני קבצי processed - 3.6 ו-3.5 יחד). מחזיר
     dict מוכן ל-D1.
@@ -390,6 +400,7 @@ def _compute_company_status(cid: str, entry: dict, merged: dict, models_by_repor
         "done_reports": done,
         "done_reports_36": done_36,
         "max_attempts": max_att,
+        "n_subsidiaries": max_subs_by_report.get(snap["report_id"], 0) if snap else 0,
     }
 
 
@@ -410,8 +421,8 @@ def _sync_status_to_d1(plan: dict, processed: dict, model: str,
     now = datetime.now(timezone.utc).isoformat()
     # מבט ממוזג על שני המודלים - זה מה שמבטיח מידע מלא לגבי שתי הרשימות.
     merged = _load_merged_processed(processed, current_log_path)
-    models_by_report = _load_model_success_from_jsonl(results_path)
-    rows = [_compute_company_status(cid, entry, merged, models_by_report)
+    models_by_report, max_subs_by_report = _load_model_success_from_jsonl(results_path)
+    rows = [_compute_company_status(cid, entry, merged, models_by_report, max_subs_by_report)
             for cid, entry in plan.items()]
 
     # INSERT OR REPLACE בקבוצות. D1/SQLite מגביל ל-100 משתנים (?) ל-statement
@@ -419,18 +430,18 @@ def _sync_status_to_d1(plan: dict, processed: dict, model: str,
     # 9 ליתר ביטחון (נצפה בפועל: 50 שורות = 500 משתנים = SQLITE_ERROR 7500).
     BATCH_ROWS = 9
     cols = ("company_id, company_name, status, has_snapshot_36, has_snapshot_35, "
-            "total_reports, done_reports, done_reports_36, max_attempts, last_updated")
+            "total_reports, done_reports, done_reports_36, max_attempts, n_subsidiaries, last_updated")
     sent = 0
     for i in range(0, len(rows), BATCH_ROWS):
         batch = rows[i:i + BATCH_ROWS]
         placeholders = []
         params = []
         for r in batch:
-            placeholders.append("(?,?,?,?,?,?,?,?,?,?)")
+            placeholders.append("(?,?,?,?,?,?,?,?,?,?,?)")
             params += [r["company_id"], r["company_name"], r["status"],
                        r["has_snapshot_36"], r["has_snapshot_35"],
                        r["total_reports"], r["done_reports"], r["done_reports_36"],
-                       r["max_attempts"], now]
+                       r["max_attempts"], r["n_subsidiaries"], now]
         sql = f"INSERT OR REPLACE INTO extraction_status ({cols}) VALUES " + ",".join(placeholders)
         try:
             _d1_query(cfg, sql, params)
