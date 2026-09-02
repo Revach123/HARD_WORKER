@@ -137,8 +137,19 @@ def _commit_progress(results_path: str, processed_log_path: str, processed: dict
             if stashed:
                 pop = subprocess.run(["git", "stash", "pop"])
                 if pop.returncode != 0:
-                    safe_print("    אזהרה: git stash pop התנגש - התוכן שנכתב ברקע "
-                               "נשאר ב-stash (git stash list) ולא אבד, אבל דורש טיפול ידני.")
+                    # לא מספיק רק להדפיס אזהרה - קונפליקט ב-stash pop משאיר
+                    # קבצים עם סימוני התנגשות לא-מחויבים בעץ העבודה, וזה
+                    # בדיוק מה שתוקע כל פעולת git הבאה בתהליך (כולל שלב
+                    # ה-commit הסופי ב-YAML, בהמשך אחרי שכל הריצה נגמרת) עם
+                    # "cannot rebase: you have unstaged changes" - נצפה
+                    # בפועל. מנקים בכוח: HEAD כבר מכיל את ה-checkpoint שכן
+                    # הצליח (הקומיט למעלה), רק תוכן ה-stash (עבודה של threads
+                    # אחרים תוך כדי) הולך לאיבוד - נשאר ב-git stash list
+                    # לשחזור ידני, בדרך כלל שורה-שתיים בלבד.
+                    safe_print("    אזהרה: git stash pop התנגש - מנקה את עץ העבודה בכוח. "
+                               "התוכן נשאר ב-git stash list לשחזור ידני, לא אבד לגמרי.")
+                    subprocess.run(["git", "reset", "--hard", "HEAD"], stderr=subprocess.DEVNULL)
+                    subprocess.run(["git", "clean", "-fd"], stderr=subprocess.DEVNULL)
         safe_print("    checkpoint נכשל אחרי 5 ניסיונות - ההתקדמות עדיין על הדיסק המקומי בלבד.")
         return False
     except subprocess.CalledProcessError as e:
