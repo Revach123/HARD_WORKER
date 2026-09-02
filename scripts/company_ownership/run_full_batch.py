@@ -469,16 +469,14 @@ def _sync_status_to_d1(plan: dict, processed: dict, model: str,
     except Exception as e:
         print(f"אזהרה: רישום ריצה ל-D1 נכשל: {e}")
 
-    # סימון בקשות דחיפות שטופלו. urgent/retry - קידום שנועד לחול על *שתי*
-    # הרשימות (3.6 ו-3.5) - נשאר פתוח (ולכן ממשיך להידחף לראש התור) עד
-    # ששני המודלים הצליחו, לא רק זה שרץ עכשיו. אחרת: 3.6 מצליח ראשון,
-    # הבקשה נסגרת, וה-3.5 הבא בתור לעולם לא רואה אותה כדחופה - בניגוד
-    # לכוונה. emergency שונה מטבעו - מטופל בנפרד למטה (תלוי הרצה בודדת).
-    both_done_cids = {
-        str(r["company_id"]) for r in rows
-        if r["has_snapshot_36"] and r["has_snapshot_35"]
-    }
-    resolve_requests(cfg, both_done_cids, request_types=("urgent", "retry"))
+    # סימון בקשות דחיפות שטופלו. urgent/retry - העדיפות רלוונטית רק
+    # ל-3.6 (ראה בניית tasks למעלה), אז גם הפתרון תלוי רק בהצלחת 3.6
+    # (status=="full") - לא בשני המודלים. שינוי מ-2026-09-02: הגרסה
+    # הקודמת חיכתה ל-has_snapshot_36 וגם has_snapshot_35, אבל זה יכול
+    # להיסגר מוקדם מדי אם לחברה כבר הייתה הצלחת 3.6 ישנה מלפני שהבקשה
+    # בכלל נוצרה - ריצת 3.5 בלבד הייתה "סוגרת" את הבקשה בטעות.
+    full_now_cids = {str(r["company_id"]) for r in rows if r["status"] == "full"}
+    resolve_requests(cfg, full_now_cids, request_types=("urgent", "retry"))
 
     # emergency - מטבעה ריצה בודדת וממוקדת; נחשבת "טופלה" ברגע שיש הצלחה
     # כלשהי (המודל שבו רצה בפועל, כולל fallback ל-3.5 אם 3.6 נכשל - ראה
@@ -726,13 +724,21 @@ if __name__ == "__main__":
     # ── בקשות דחיפות מהדשבורד: מקדימים חברות מסומנות לראש התור ──────────
     # tasks כאן הם tuples שבהם אינדקס 1 = company_id (אחרי הסרת עדיפות).
     # מבנה: (kind, cid, name, report_id, entry_or_change)
-    urgent_cids = set(read_priority_requests())
-    if urgent_cids:
-        urgent = [t for t in tasks if str(t[1]) in urgent_cids]
-        rest = [t for t in tasks if str(t[1]) not in urgent_cids]
-        tasks = urgent + rest
-        print(f"בקשות דחיפות מהדשבורד: {len(urgent)} משימות הוקדמו לראש התור "
-              f"({len(urgent_cids)} חברות סומנו).")
+    #
+    # רק ל-3.6 - לא ל-3.5. שינוי מכוון (2026-09-02): במקור עדיפות הוחלה
+    # על שני המודלים, אבל בפועל זה לא עבד כמצופה - בקשה נסגרה כ"טופלה"
+    # אחרי ריצת 3.5 בלבד אם לחברה כבר היה has_snapshot_36=1 מוצלחת ישנה,
+    # לפני שריצת 3.6 בכלל הספיקה להתעדכן. במקום לתקן את זה, מפשטים:
+    # עדיפות רלוונטית רק כשבאמת רצים 3.6 (האיכות שבשבילה יש דחיפות
+    # מלכתחילה) - ל-3.5 יש תפוקה גבוהה ממילא ואינו זקוק לזה.
+    if ex.GEMINI_MODEL == "gemini-3.6-flash":
+        urgent_cids = set(read_priority_requests())
+        if urgent_cids:
+            urgent = [t for t in tasks if str(t[1]) in urgent_cids]
+            rest = [t for t in tasks if str(t[1]) not in urgent_cids]
+            tasks = urgent + rest
+            print(f"בקשות דחיפות מהדשבורד (3.6 בלבד): {len(urgent)} משימות הוקדמו "
+                  f"לראש התור ({len(urgent_cids)} חברות סומנו).")
     print(f"משימות snapshot ממוינות לפי עדיפות: "
           f"{sum(1 for t in snapshot_tasks if t[0][1])} עם extra_pdfs, "
           f"{sum(1 for t in snapshot_tasks if t[0][2])} עם 0 ידועות כרגע.")
