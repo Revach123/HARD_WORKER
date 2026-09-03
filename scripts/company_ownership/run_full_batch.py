@@ -234,18 +234,28 @@ def read_priority_requests() -> list:
 def resolve_requests(cfg: dict, company_ids: set, request_types: tuple = ("urgent", "retry", "emergency")) -> None:
     """מסמן בקשות דחיפות כ-resolved, מוגבל לסוגי בקשה מסוימים - ראה
     הקריאות ב-_sync_status_to_d1 להסבר למה urgent/retry ו-emergency
-    צריכים קריטריון פתרון שונה."""
+    צריכים קריטריון פתרון שונה.
+
+    כתיבה בקבוצות (IN (...)) ולא שאילתת UPDATE נפרדת לכל company_id -
+    בעבר זו הייתה לולאת בקשות HTTP בודדות ל-D1 (עד מאות בריצה אחת, כי
+    נקראת פעמיים - urgent/retry ו-emergency - על כל התוכנית), וזה מה
+    שצרב את מכסת ה-API/D1 היומית בפועל. כמו ה-batching הקיים ב-
+    _sync_status_to_d1: מוגבל למספר משתנים סביר לשאילתה בודדת."""
     if not company_ids:
         return
     now = datetime.now(timezone.utc).isoformat()
-    placeholders = ",".join("?" for _ in request_types)
-    for cid in company_ids:
+    type_placeholders = ",".join("?" for _ in request_types)
+    cids = [int(cid) for cid in company_ids]
+    BATCH = 50  # 1 (now) + עד 50 cid + עד 3 request_types < 100 המשתנים המותרים לשאילתה
+    for i in range(0, len(cids), BATCH):
+        chunk = cids[i:i + BATCH]
+        cid_placeholders = ",".join("?" for _ in chunk)
         try:
             _d1_query(cfg,
                 f"UPDATE extraction_requests SET resolved_at=? "
-                f"WHERE company_id=? AND resolved_at IS NULL "
-                f"AND request_type IN ({placeholders})",
-                [now, int(cid), *request_types])
+                f"WHERE company_id IN ({cid_placeholders}) AND resolved_at IS NULL "
+                f"AND request_type IN ({type_placeholders})",
+                [now, *chunk, *request_types])
         except Exception:
             pass  # לא קריטי
 
