@@ -1410,15 +1410,15 @@
     "company_id": "1095",
     "status": "failed",
     "kind": "snapshot",
-    "attempts": 6,
-    "at": "2026-09-02T11:06:14.748591+00:00"
+    "attempts": 7,
+    "at": "2026-09-03T13:59:28.924477+00:00"
   },
   "1736331": {
     "company_id": "767",
     "status": "failed",
     "kind": "snapshot",
-    "attempts": 6,
-    "at": "2026-09-02T11:06:22.345275+00:00"
+    "attempts": 7,
+    "at": "2026-09-03T13:59:32.656629+00:00"
   },
   "1727904": {
     "company_id": "475",
@@ -1550,8 +1550,8 @@
     "company_id": "1068",
     "status": "failed",
     "kind": "snapshot",
-    "attempts": 5,
-    "at": "2026-09-02T11:06:18.536586+00:00"
+    "attempts": 6,
+    "at": "2026-09-03T13:59:10.389200+00:00"
   },
   "1735515": {
     "company_id": "2385",
@@ -1585,8 +1585,8 @@
     "company_id": "1865",
     "status": "failed",
     "kind": "snapshot",
-    "attempts": 5,
-    "at": "2026-09-02T11:06:07.860548+00:00"
+    "attempts": 6,
+    "at": "2026-09-03T13:59:03.574642+00:00"
   },
   "1722944": {
     "company_id": "1858",
@@ -1620,8 +1620,8 @@
     "company_id": "224",
     "status": "failed",
     "kind": "snapshot",
-    "attempts": 5,
-    "at": "2026-09-02T11:06:10.934933+00:00"
+    "attempts": 6,
+    "at": "2026-09-03T13:59:10.201833+00:00"
   },
   "1728585": {
     "company_id": "1688",
@@ -1641,8 +1641,8 @@
     "company_id": "730",
     "status": "failed",
     "kind": "snapshot",
-    "attempts": 5,
-    "at": "2026-09-02T11:06:27.773040+00:00"
+    "attempts": 6,
+    "at": "2026-09-03T13:59:20.558108+00:00"
   },
   "1734231": {
     "company_id": "777",
@@ -1844,8 +1844,8 @@
     "company_id": "823",
     "status": "failed",
     "kind": "snapshot",
-    "attempts": 5,
-    "at": "2026-09-02T11:06:09.925969+00:00"
+    "attempts": 6,
+    "at": "2026-09-03T13:59:18.677993+00:00"
   },
   "1735659": {
     "company_id": "2304",
@@ -11552,6 +11552,30 @@
     "kind": "change",
     "attempts": 1,
     "at": "2026-09-02T12:08:59.035378+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1768206": {
+    "company_id": "2538",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-03T13:58:56.083390+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1768023": {
+    "company_id": "126",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-09-03T13:59:51.805364+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1768228": {
+    "company_id": "434",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-09-03T13:59:54.936630+00:00",
     "model": "gemini-3.5-flash-lite"
   }
 }
