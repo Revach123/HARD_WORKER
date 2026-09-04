@@ -73,8 +73,8 @@ on:
   # המודלים למטה (ב-env GEMINI_MODEL_OVERRIDE) מתבססת על github.event.schedule
   # (מחרוזת ה-cron שהפעילה את הריצה הספציפית הזו), לא על input.
   schedule:
-    # כל יום 10:30 שעון ישראל (07:30 UTC בקיץ) - gemini-3.6-flash
-    - cron: "30 7 * * *"
+    # כל יום 11:00 שעון ישראל (08:00 UTC בקיץ) - gemini-3.6-flash
+    - cron: "0 8 * * *"
     # כל יום 13:00 שעון ישראל (10:00 UTC בקיץ) - gemini-3.5-flash-lite
     - cron: "0 10 * * *"
 
