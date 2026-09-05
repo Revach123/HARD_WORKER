@@ -25,7 +25,7 @@ import os
 import subprocess
 import threading
 import time
-from concurrent.futures import ThreadPoolExecutor, as_completed
+from concurrent.futures import CancelledError, ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 
 import extract_subsidiaries as ex
@@ -799,6 +799,11 @@ if __name__ == "__main__":
             kind, cid, company_name, _, _ = future_to_task[future]
             try:
                 report_id, cid_result, status, hit_quota, task_kind = future.result()
+            except CancelledError:
+                # בוטלה ביוזמתנו (ראה למטה) כי המכסה כבר זוהתה כנגמרת לפני
+                # שהמשימה הזו הספיקה להתחיל - לא כישלון, ולא סיבה להדפיס
+                # כלום (זו בדיוק המניעה של המבול שהיה כאן).
+                continue
             except Exception as e:
                 # רשת ביטחון אחרונה - לא אמור לקרות (run_task כבר תופס הכל),
                 # אבל אם כן: לא מפילים את כל הריצה בגלל משימה אחת.
@@ -813,7 +818,21 @@ if __name__ == "__main__":
                     safe_print(f"\n*** מכסה יומית של Gemini נגמרה (זוהה ב-thread). "
                                f"לא שולחים משימות חדשות - ממתינים לסיום הפעילות "
                                f"הנוכחית. ***")
-                quota_exceeded_flag.set()
+                    quota_exceeded_flag.set()
+                    # מבטלים כל משימה שעדיין בתור ולא התחילה לרוץ בפועל -
+                    # בלי זה, כל משימה שכבר הוגשה ל-executor (כולן, כי
+                    # לולאת ההגשה למעלה רצה במלואה תוך מילישניות, הרבה
+                    # לפני שתוצאה ראשונה חוזרת) עדיין מתעכבת בתור ומתבצעת
+                    # אחת-אחת - כל אחת נכשלת מיד על בדיקת המכסה (ראה
+                    # QUOTA_EXCEEDED ב-run_small_batch.py), אבל אלפי
+                    # הדפסות/מעברי-thread כאלה ברצף הם בדיוק מה שנצפה
+                    # בפועל כ"ממשיך לנסות שוב ושוב" - לא בזבוז קריאות
+                    # Gemini אמיתיות, אבל בזבוז זמן ריצה ומבול לוג מיותר.
+                    # cancel() לא עוצר משימה שכבר רצה בפועל (thread לא ניתן
+                    # להפסיק מבחוץ) - רק מונע התחלה של כאלה שעוד בתור.
+                    for f in future_to_task:
+                        if not f.done():
+                            f.cancel()
                 continue
 
             mark(processed, args.processed_log, report_id, cid_result, status, task_kind)

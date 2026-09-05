@@ -185,9 +185,25 @@ jobs:
             echo "$UNPUSHED commits לא-דחופים — עושה squash לנקות secrets מהיסטוריה"
             git reset --soft origin/main
           fi
-          git add .maya_cache/*_merged.json selection_plan.json \
-                  processed_reports_*.json \
-                  processed_reports.json private_subsidiaries.jsonl 2>/dev/null || true
+          # shopt -s nullglob + בדיקת קיום מפורשת - קריטי: "git add" נכשל
+          # אטומית (כל הפקודה, exit 128) אם *אחד* מה-pathspecs לא תואם שום
+          # קובץ - ולא מסמן בכלל את שאר הקבצים שכן קיימים ותואמים. באג
+          # אמיתי שנצפה בפועל: processed_reports.json (בלי סיומת מודל) לא
+          # קיים אף פעם בריצה הזו (רק processed_reports_gemini-3_6-flash.json
+          # / processed_reports_gemini-3_5-flash-lite.json נוצרים כאן) - אז
+          # "git add ... processed_reports.json ..." נכשל תמיד, ה"|| true"
+          # בלע את השגיאה בשקט, ושום קובץ לא הצטרף ל-staging - כולל
+          # processed_reports_gemini-3_6-flash.json ו-private_subsidiaries.jsonl
+          # שכן השתנו בפועל. זה בדיוק מה שגרם ל"אין שינויים לחיוב" השגוי
+          # ולאובדן ההתקדמות היומית של gemini-3.6-flash (מכסה נמוכה מדי כדי
+          # להגיע אי-פעם ל-checkpoint הפנימי של כל 10 משימות).
+          shopt -s nullglob
+          FILES=(.maya_cache/*_merged.json selection_plan.json processed_reports_*.json private_subsidiaries.jsonl)
+          shopt -u nullglob
+          [ -f processed_reports.json ] && FILES+=(processed_reports.json)
+          if [ ${#FILES[@]} -gt 0 ]; then
+            git add "${FILES[@]}"
+          fi
           if git diff --staged --quiet; then
             echo "אין שינויים לחיוב."
           else

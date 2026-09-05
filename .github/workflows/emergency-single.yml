@@ -77,9 +77,16 @@ jobs:
           if [ "$UNPUSHED" -gt 0 ]; then
             git reset --soft origin/main
           fi
-          git add .maya_cache/*_merged.json \
-                  processed_reports_*.json \
-                  private_subsidiaries.jsonl 2>/dev/null || true
+          # ראה test-small-batch.yml להסבר המלא: "git add" נכשל אטומית
+          # (כל הפקודה) אם pathspec אחד לא תואם שום קובץ - ולא מסמן בכלל
+          # קבצים אחרים שכן קיימים ותואמים. עם nullglob + בדיקת קיום, קובץ
+          # חסר לעולם לא חוסם staging של קבצים שכן השתנו.
+          shopt -s nullglob
+          FILES=(.maya_cache/*_merged.json processed_reports_*.json private_subsidiaries.jsonl)
+          shopt -u nullglob
+          if [ ${#FILES[@]} -gt 0 ]; then
+            git add "${FILES[@]}"
+          fi
           if git diff --staged --quiet; then
             echo "אין שינויים לחיוב."
           else
