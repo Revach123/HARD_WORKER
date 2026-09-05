@@ -1408,17 +1408,33 @@
   },
   "1730641": {
     "company_id": "1095",
-    "status": "failed",
+    "status": "partial",
     "kind": "snapshot",
     "attempts": 9,
-    "at": "2026-09-05T13:07:08.672534+00:00"
+    "at": "2026-09-05T21:13:15.194436+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 49,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1736331": {
     "company_id": "767",
-    "status": "failed",
+    "status": "partial",
     "kind": "snapshot",
     "attempts": 9,
-    "at": "2026-09-05T13:07:24.563959+00:00"
+    "at": "2026-09-05T21:13:44.854236+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 56,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1727904": {
     "company_id": "475",
@@ -1548,10 +1564,142 @@
   },
   "1732698": {
     "company_id": "1068",
-    "status": "failed",
+    "status": "partial",
     "kind": "snapshot",
     "attempts": 8,
-    "at": "2026-09-05T13:06:30.009285+00:00"
+    "at": "2026-09-05T21:13:38.063240+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 38,
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "שיכון ובינוי אנרגיה בע\"מ",
+              "ownership_pct": 71.36,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "פרק ראשון - תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "שיכון ובינוי נדל\"ן בע\"מ",
+              "ownership_pct": 77.88,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "פרק ראשון - תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Shikun Binui Europe B.V.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "פרק ראשון - תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "שיכון ובינוי - אס.בי.איי תשתיות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "פרק ראשון - תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "SBI International Holdings AG.",
+              "ownership_pct": 100,
+              "parent": "שיכון ובינוי - אס.בי.איי תשתיות בע\"מ",
+              "page_reference": 6,
+              "section_title": "פרק ראשון - תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Shikun Binui America Inc. (S&B USA Construction)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "פרק ראשון - תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "שיכון ובינוי-סולל בונה תשתיות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "פרק ראשון - תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקון מרכז מחזור (2003) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "פרק ראשון - תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "נגב אנרגיה אשלים תרמו-סולאר בע\"מ",
+              "ownership_pct": 50,
+              "parent": "שיכון ובינוי אנרגיה בע\"מ",
+              "page_reference": 6,
+              "section_title": "פרק ראשון - תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פי אס פי השקעות בע\"מ",
+              "ownership_pct": 25.5,
+              "parent": "שיכון ובינוי אנרגיה בע\"מ",
+              "page_reference": 6,
+              "section_title": "פרק ראשון - תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "SHIKUN AND BINUI ENERGY SATU MARE S.R.L",
+              "ownership_pct": 100,
+              "parent": "שיכון ובינוי אנרגיה בע\"מ",
+              "page_reference": 6,
+              "section_title": "פרק ראשון - תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ערד הארץ תעשיות בע\"מ",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "פרק ראשון - תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
+      "attempts": {}
+    }
   },
   "1735515": {
     "company_id": "2385",
@@ -1583,10 +1731,63 @@
   },
   "1732853": {
     "company_id": "1865",
-    "status": "failed",
+    "status": "partial",
     "kind": "snapshot",
     "attempts": 8,
-    "at": "2026-09-05T13:06:28.333855+00:00"
+    "at": "2026-09-05T21:12:21.996913+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 37,
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "גלובלטק מימון בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 9,
+              "section_title": "1. חלק א' - תיאור ההתפתחות הכללית של עסקי החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "איילון חברה לביטוח בע\"מ",
+              "ownership_pct": 64.06,
+              "parent": null,
+              "page_reference": 9,
+              "section_title": "1. חלק א' - תיאור ההתפתחות הכללית של עסקי החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ווישור חברה לביטוח בע\"מ",
+              "ownership_pct": 100,
+              "parent": "איילון חברה לביטוח בע\"מ",
+              "page_reference": 10,
+              "section_title": "1. חלק א' - תיאור ההתפתחות הכללית של עסקי החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "WeSure Technologies USA Inc",
+              "ownership_pct": 39.5,
+              "parent": null,
+              "page_reference": 11,
+              "section_title": "1. חלק א' - תיאור ההתפתחות הכללית של עסקי החברה",
+              "table_title": null,
+              "note": "החברה הינה בעלת השליטה"
+            }
+          ],
+          "change_events": []
+        }
+      },
+      "attempts": {}
+    }
   },
   "1722944": {
     "company_id": "1858",
@@ -1618,10 +1819,18 @@
   },
   "1731052": {
     "company_id": "224",
-    "status": "failed",
+    "status": "partial",
     "kind": "snapshot",
     "attempts": 8,
-    "at": "2026-09-05T13:06:42.925878+00:00"
+    "at": "2026-09-05T21:12:40.617199+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 35,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1728585": {
     "company_id": "1688",
@@ -1639,10 +1848,18 @@
   },
   "1733071": {
     "company_id": "730",
-    "status": "failed",
+    "status": "partial",
     "kind": "snapshot",
     "attempts": 8,
-    "at": "2026-09-05T13:06:47.028202+00:00"
+    "at": "2026-09-05T21:12:59.385596+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 44,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1734231": {
     "company_id": "777",
@@ -1842,10 +2059,18 @@
   },
   "1734205": {
     "company_id": "823",
-    "status": "failed",
+    "status": "partial",
     "kind": "snapshot",
     "attempts": 8,
-    "at": "2026-09-05T13:06:57.199375+00:00"
+    "at": "2026-09-05T21:13:14.323471+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 32,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1735659": {
     "company_id": "2304",
@@ -15703,10 +15928,18 @@
   },
   "1767158": {
     "company_id": "1857",
-    "status": "failed",
+    "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-09-04T15:18:49.696440+00:00"
+    "at": "2026-09-05T21:13:45.186672+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 2,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1740350": {
     "company_id": "1858",
@@ -19858,5 +20091,35 @@
     "attempts": 1,
     "at": "2026-09-05T14:14:03.764948+00:00",
     "model": "gemini-3.5-flash-lite"
+  },
+  "1723693": {
+    "company_id": "2538",
+    "status": "partial",
+    "kind": "change",
+    "attempts": 0,
+    "at": "2026-09-05T21:13:38.426161+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 4,
+      "done": {},
+      "attempts": {}
+    }
+  },
+  "1746561": {
+    "company_id": "2538",
+    "status": "partial",
+    "kind": "change",
+    "attempts": 0,
+    "at": "2026-09-05T21:13:39.558218+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 1,
+      "done": {},
+      "attempts": {}
+    }
   }
 }
