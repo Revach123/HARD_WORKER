@@ -753,6 +753,13 @@ if __name__ == "__main__":
         neg_attempts = -_attempts_bucket(snap.get("report_id", ""))
         return (neg_attempts, has_extra, n_known == 0, size_kb)
 
+    # ── בקשות דחיפות מהדשבורד: נטענות *לפני* בניית התור ──────────────────
+    # קריטי: חייבים את urgent_cids כבר כאן, לא רק אחרי בניית tasks - ראה
+    # למטה. רק ל-3.6, לא ל-3.5 (הסבר בהמשך, ליד השימוש).
+    urgent_cids = set()
+    if ex.GEMINI_MODEL == "gemini-3.6-flash":
+        urgent_cids = set(read_priority_requests())
+
     # רשימת משימות שטוחה: כל דוח (snapshot או change) הוא משימה נפרדת עם
     # report_id ייחודי משלו - אידמפוטנטיות ברמת הדוח הבודד. "failed" אינו
     # סופי - מקבל ניסיונות חוזרים (ראה _needs_processing), רק "success"
@@ -762,19 +769,33 @@ if __name__ == "__main__":
     # יומית זעירה (20 RPD/מפתח על gemini-3.6-flash), הסדר קובע מי בכלל
     # מגיע לעיבוד היום. משימות change נשארות בסדר הטבעי בסוף - נפח קטן
     # וערך נמוך יותר יחסית למטרה (השלמת עץ ההחזקות הפרטיות).
+    #
+    # חברה מסומנת urgent/retry נכנסת לתור *גם* אם _needs_processing אומר
+    # "לא צריך" (snapshot כבר success בסכימה עדכנית) - באג שנצפה בפועל:
+    # סימון חברה כדחופה מהדשבורד לא עשה כלום אם היא כבר "נבדקה" בעבר, כי
+    # הסינון כאן קרה *לפני* שדחיפות-הדשבורד בכלל נבדקה - אין מה להקדים
+    # בתור משימה שמעולם לא נוצרה. אי-ויתור המשתמש (סימון ידני מפורש) גובר
+    # על "כבר טופל" - בדיוק כמו שהתיעוד של extraction.js/heter-review מבטיח
+    # ("יטופל בריצה הבאה"), לא רק "יוקדם אם ממילא אמור לרוץ".
     snapshot_tasks = []
     change_tasks = []
     n_retrying = 0
+    n_forced_urgent = 0
     for cid, entry in plan.items():
+        is_urgent = str(cid) in urgent_cids
         snap = entry.get("snapshot")
-        if snap and _needs_processing(snap["report_id"], "snapshot"):
+        if snap and (is_urgent or _needs_processing(snap["report_id"], "snapshot")):
+            if is_urgent and not _needs_processing(snap["report_id"], "snapshot"):
+                n_forced_urgent += 1
             if snap["report_id"] in processed:
                 n_retrying += 1
             snapshot_tasks.append(
                 (_snapshot_priority(cid, entry), "snapshot", cid, entry.get("company_name"), snap["report_id"], entry)
             )
         for change in entry.get("changes", []):
-            if _needs_processing(change["report_id"], "change"):
+            if is_urgent or _needs_processing(change["report_id"], "change"):
+                if is_urgent and not _needs_processing(change["report_id"], "change"):
+                    n_forced_urgent += 1
                 if change["report_id"] in processed:
                     n_retrying += 1
                 change_tasks.append(("change", cid, entry.get("company_name"), change["report_id"], change))
@@ -786,7 +807,7 @@ if __name__ == "__main__":
     change_tasks.sort(key=lambda t: _attempts_bucket(t[3]))
     tasks = [t[1:] for t in snapshot_tasks] + change_tasks
 
-    # ── בקשות דחיפות מהדשבורד: מקדימים חברות מסומנות לראש התור ──────────
+    # ── מקדימים את המשימות הדחופות לראש התור ─────────────────────────────
     # tasks כאן הם tuples שבהם אינדקס 1 = company_id (אחרי הסרת עדיפות).
     # מבנה: (kind, cid, name, report_id, entry_or_change)
     #
@@ -796,14 +817,14 @@ if __name__ == "__main__":
     # לפני שריצת 3.6 בכלל הספיקה להתעדכן. במקום לתקן את זה, מפשטים:
     # עדיפות רלוונטית רק כשבאמת רצים 3.6 (האיכות שבשבילה יש דחיפות
     # מלכתחילה) - ל-3.5 יש תפוקה גבוהה ממילא ואינו זקוק לזה.
-    if ex.GEMINI_MODEL == "gemini-3.6-flash":
-        urgent_cids = set(read_priority_requests())
-        if urgent_cids:
-            urgent = [t for t in tasks if str(t[1]) in urgent_cids]
-            rest = [t for t in tasks if str(t[1]) not in urgent_cids]
-            tasks = urgent + rest
-            print(f"בקשות דחיפות מהדשבורד (3.6 בלבד): {len(urgent)} משימות הוקדמו "
-                  f"לראש התור ({len(urgent_cids)} חברות סומנו).")
+    if urgent_cids:
+        urgent = [t for t in tasks if str(t[1]) in urgent_cids]
+        rest = [t for t in tasks if str(t[1]) not in urgent_cids]
+        tasks = urgent + rest
+        print(f"בקשות דחיפות מהדשבורד (3.6 בלבד): {len(urgent)} משימות הוקדמו "
+              f"לראש התור ({len(urgent_cids)} חברות סומנו"
+              + (f", מתוכן {n_forced_urgent} נכפו לעיבוד-חוזר למרות שכבר "
+                 f"הצליחו בעבר" if n_forced_urgent else "") + ").")
     print(f"משימות snapshot ממוינות לפי עדיפות: "
           f"{sum(1 for t in snapshot_tasks if t[0][1])} עם extra_pdfs, "
           f"{sum(1 for t in snapshot_tasks if t[0][2])} עם 0 ידועות כרגע.")
