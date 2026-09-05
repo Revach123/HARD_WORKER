@@ -57,6 +57,30 @@ FOCUSED_RECHECK_THRESHOLD = 3
 CROP_PAGES_BEFORE = 40
 CROP_PAGES_AFTER = 60
 
+# ── חיתוך עיוור (רק למודלים ב-CHUNK_MODELS, כרגע 3.5-flash-lite) ────────
+# למה עיוור ולא סביב-טבלה: ההחזקות לא תמיד בטבלה פורמלית - לפעמים בפרוזה
+# מפוזרת. חיתוך שיטתי של כל הדוח לחלונות חופפים מכסה 100% מהעמודים בלי
+# להסתמך על זיהוי טבלה. 3.6 נשאר מסלול מלא (call יקר) - לא נכנס לכאן.
+CHUNK_MODELS = {"gemini-3.5-flash-lite"}
+CHUNK_PAGES = 20            # גודל חלון (עמודים). קבוע לכוונון - לא לרדת מ-15
+CHUNK_OVERLAP = 3          # בלי סיבה. חפיפה שלא לחתוך טבלה בגבול חלון.
+MAX_WINDOW_ATTEMPTS = 3     # חלון שנכשל (לא-מכסה) כך-וכך פעמים מסומן ככשל
+                           # לצמיתות עם תוצאה ריקה, כדי שהדוח יוכל להשלים
+                           # ולא ייתקע ב-partial לנצח (אזהרה רועשת נרשמת).
+
+# ערך-סימון שמחזיר _process_report כשנתחים חסרים (לא הצלחה ולא כישלון) -
+# run_full_batch.py מזהה אותו ולא קורא ל-mark (ר' שם).
+PARTIAL = "partial"
+
+# מוזרקים מ-run_full_batch.py (כמו QUOTA_EXCEEDED) - גישה למאגר הדוחות כדי
+# לשמור התקדמות-נתחים בין ריצות. כשרצים run_small_batch.py לבד (בדיקה) אלה
+# נשארים no-op: אין resumability וה-jsonl נכתב רק אם הריצה הושלמה - התנהגות
+# סבירה להרצה ידנית.
+def CHUNK_PROGRESS_GET(report_id):          # מוחלף ע"י run_full_batch
+    return None
+def CHUNK_PROGRESS_PUT(report_id, company_id, kind, chunks):  # מוחלף
+    pass
+
 
 def _is_formal_table(sub: dict) -> bool:
     for field in (sub.get("section_title"), sub.get("table_title")):
@@ -222,6 +246,170 @@ def _merge_extraction_results(results: list[dict]) -> dict:
     }
 
 
+def _iter_page_windows(n_pages: int) -> list[tuple[int, int]]:
+    """חלונות (start,end) 0-indexed, end בלעדי, בגודל CHUNK_PAGES עם חפיפה
+    CHUNK_OVERLAP. מכסים 100% מהעמודים. דוח <= CHUNK_PAGES = חלון יחיד על
+    כל הקובץ (אין מה לחתוך)."""
+    if n_pages <= 0:
+        return []
+    if n_pages <= CHUNK_PAGES:
+        return [(0, n_pages)]
+    step = CHUNK_PAGES - CHUNK_OVERLAP
+    windows, start = [], 0
+    while start < n_pages:
+        end = min(start + CHUNK_PAGES, n_pages)
+        windows.append((start, end))
+        if end >= n_pages:
+            break
+        start += step
+    return windows
+
+
+def _slice_pdf(reader: PdfReader, start: int, end: int) -> bytes:
+    """גוזר עמודים [start,end) (0-indexed) ל-PDF חדש. reader כבר פתוח -
+    לא קוראים את הקובץ מחדש לכל חלון."""
+    writer = PdfWriter()
+    for i in range(start, end):
+        writer.add_page(reader.pages[i])
+    buf = io.BytesIO()
+    writer.write(buf)
+    return buf.getvalue()
+
+
+def _offset_page_refs(result: dict, window_start0: int) -> dict:
+    """page_reference שחוזר מ-Gemini הוא יחסי לתת-ה-PDF של החלון (עמוד 1 =
+    העמוד הראשון בחלון). ממפה חזרה לקואורדינטת המסמך המקורי:
+    עמוד-מקורי-1indexed = window_start0 + עמוד-מדווח. רק כשהערך מספרי -
+    אחרת משאירים כמות שהוא (לא ממציאים מספר "בטוח אבל שגוי")."""
+    def _fix(rec):
+        pr = rec.get("page_reference")
+        if pr is None:
+            return
+        try:
+            p = int(str(pr).strip())
+        except (ValueError, TypeError):
+            return
+        rec["page_reference"] = window_start0 + p
+    for s in result.get("subsidiaries", []):
+        _fix(s)
+    for ev in result.get("change_events", []):
+        _fix(ev)
+    return result
+
+
+def _kind_of(source_type: str) -> str:
+    """ממפה source_type ל-kind של המאגר (כמו task_kind ב-run_full_batch)."""
+    return "snapshot" if source_type == "annual_report" else "change"
+
+
+def _process_report_chunked(
+    company_id: str, company_name: str, report_id: str, publish_date: str,
+    pdf_url: str, extra_pdfs: list[str], source_type: str,
+):
+    """מסלול חיתוך עיוור (3.5): חותך את כל קבצי הדוח לחלונות CHUNK_PAGES עם
+    CHUNK_OVERLAP חפיפה, שולח כל חלון ל-Gemini וממזג. resumable בין ריצות -
+    התקדמות-החלונות נשמרת במאגר הדוחות (design A). שורת jsonl אחת נכתבת רק
+    כשכל החלונות הושלמו. מחזיר True (הושלם), PARTIAL (נתחים חסרים - ינוסה
+    שוב), או False (כישלון מוחלט - אף קובץ לא נטען)."""
+    all_pdf_urls = [pdf_url] + (extra_pdfs or [])
+
+    # שלב 1: הורדת כל הקבצים + מספר עמודים -> תוכנית חלונות מלאה. חייבים את
+    # total מראש כדי לדעת מתי "הושלם".
+    files = []  # [{"url","reader","windows":[(s,e)...],"n_pages"}]
+    for fi, url in enumerate(all_pdf_urls):
+        try:
+            pdf_bytes = mrc.download_report_file(url)
+            reader = PdfReader(io.BytesIO(pdf_bytes))
+            n_pages = len(reader.pages)
+        except Exception as e:
+            print(f"  אזהרה: קובץ {fi} ({url}) נכשל בהורדה/קריאה: {e} - מוחרג "
+                  f"מתוכנית החלונות (הדוח לא ייחשב שלם עד שהקובץ יצליח).")
+            continue
+        files.append({"url": url, "reader": reader,
+                      "windows": _iter_page_windows(n_pages), "n_pages": n_pages})
+
+    if not files:
+        print("  כישלון מוחלט: אף קובץ PDF של הדוח לא נטען.")
+        return False
+
+    window_keys = [(fi, wi) for fi, f in enumerate(files)
+                   for wi in range(len(f["windows"]))]
+    total = len(window_keys)
+
+    # שלב 2: טעינת התקדמות קודמת מהמאגר (resume).
+    prog = CHUNK_PROGRESS_GET(report_id) or {}
+    done = dict(prog.get("done", {}))              # {"fi:wi": <window result>}
+    win_attempts = dict(prog.get("attempts", {}))  # {"fi:wi": int}
+
+    def _persist():
+        CHUNK_PROGRESS_PUT(report_id, str(company_id), _kind_of(source_type), {
+            "size": CHUNK_PAGES, "overlap": CHUNK_OVERLAP,
+            "total": total, "done": done, "attempts": win_attempts,
+        })
+
+    if done:
+        print(f"  המשך: {len(done)}/{total} חלונות כבר הושלמו בריצה קודמת.")
+
+    # שלב 3: עיבוד חלונות חסרים בלבד.
+    for fi, wi in window_keys:
+        key = f"{fi}:{wi}"
+        if key in done:
+            continue
+        if QUOTA_EXCEEDED.is_set():
+            print(f"  מכסה נגמרה - נשמרו {len(done)}/{total} חלונות, הדוח נשאר "
+                  f"חלקי (ימשיך בהרצה הבאה).")
+            _persist()
+            return PARTIAL
+        f = files[fi]
+        start, end = f["windows"][wi]
+        print(f"  חלון {key} (עמ' {start+1}-{end}/{f['n_pages']}, "
+              f"{f['url'].split('/')[-1]}) -> Gemini...")
+        win_bytes = _slice_pdf(f["reader"], start, end)
+        try:
+            res = _call_gemini_with_quota_retry(win_bytes, f"{f['url']}#w{start+1}-{end}")
+        except ex.GeminiQuotaExceededError:
+            print(f"  מכסה נגמרה בחלון {key} - נשמרו {len(done)}/{total}, חלקי.")
+            _persist()
+            return PARTIAL
+        if res is None:
+            win_attempts[key] = win_attempts.get(key, 0) + 1
+            if win_attempts[key] >= MAX_WINDOW_ATTEMPTS:
+                print(f"  אזהרה: חלון {key} נכשל {win_attempts[key]} פעמים "
+                      f"(לא-מכסה) - מסומן ככשל לצמיתות (תוצאה ריקה) כדי שהדוח "
+                      f"יוכל להשלים. עמ' {start+1}-{end} לא כוסו.")
+                done[key] = {"subsidiaries": [], "change_events": [],
+                             "_window_failed": True}
+            _persist()
+            continue
+        done[key] = _offset_page_refs(res, start)
+        _persist()
+        print(f"    חלון {key}: {len(res.get('subsidiaries', []))} חברות.")
+        time.sleep(1)
+
+    # שלב 4: כל החלונות הושלמו (או סומנו ככשל לצמיתות) -> מיזוג + שורת jsonl.
+    if len(done) < total:
+        _persist()  # רשת ביטחון - לא אמור לקרות בלי quota
+        return PARTIAL
+
+    failed = [k for k, v in done.items() if v.get("_window_failed")]
+    merged = _merge_extraction_results(list(done.values()))
+    if failed:
+        print(f"  הושלם עם {len(failed)}/{total} חלונות שנכשלו לצמיתות (כיסוי "
+              f"חלקי) - {len(merged['subsidiaries'])} חברות אחרי dedup.")
+    else:
+        print(f"  הושלם: {total} חלונות, {len(merged['subsidiaries'])} חברות "
+              f"אחרי dedup.")
+
+    ex.save_extraction_json(
+        company_legal_id=str(company_id),
+        report_id=report_id,
+        source_type=source_type,
+        extracted=merged,
+        report_publish_date=publish_date,
+    )
+    return True
+
+
 def _process_report(
     company_id: str, company_name: str, report_id: str, publish_date: str,
     pdf_url: str, extra_pdfs: list[str], source_type: str,
@@ -229,6 +417,13 @@ def _process_report(
     """מעבד דוח בודד (סיכום או שינוי): מעבד את כל קבצי ה-PDF שלו (ראשי +
     extra_pdfs) - את כולם, לא רק עד ההצלחה הראשונה - וממזג את התוצאות.
     משותף בין process_company (snapshot) ל-process_change_report."""
+
+    # 3.5: מסלול חיתוך עיוור (resumable, בלי זיהוי טבלה). 3.6: מסלול מלא למטה.
+    if ex.GEMINI_MODEL in CHUNK_MODELS:
+        return _process_report_chunked(
+            company_id, company_name, report_id, publish_date,
+            pdf_url, extra_pdfs, source_type,
+        )
 
     print(f"  דוח: {report_id} ({source_type}), פורסם {publish_date}")
 
