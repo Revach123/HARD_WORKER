@@ -45,14 +45,28 @@ def _merge_processed_dicts(local: dict, remote: dict) -> dict:
     JSON, וכששני צדדים כותבים dict מחדש (סדר מפתחות/עיצוב שונה) הוא
     מתנגש גם כשהנתונים בפועל לא סותרים. פותרים את זה בפייתון: מתחילים
     מ-remote כבסיס, ולכל report_id מקומי - success מנצח כל דבר אחר,
-    ואם שני הצדדים לא-success, מנצח מי שיש לו יותר attempts (מתקדם יותר).
+    ואם שני הצדדים לא-success, מנצח מי שהתקדם יותר: קודם לפי מספר נתחי-
+    חיתוך שהושלמו (chunks.done - חיתוך עיוור 3.5), ואם שווה/לא רלוונטי -
+    לפי attempts. כך rebase באמצע ריצה מחוברת לא מאבד התקדמות-נתחים.
     """
+    def _chunks_done(rec):
+        return len(((rec or {}).get("chunks") or {}).get("done", {}))
+
     merged = dict(remote)
     for rid, entry in local.items():
         other = merged.get(rid)
-        if other is None or other.get("status") != "success":
-            if entry.get("status") == "success" or entry.get("attempts", 0) >= (other or {}).get("attempts", 0):
+        if other is not None and other.get("status") == "success":
+            continue  # success ב-remote מנצח כל דבר
+        if entry.get("status") == "success":
+            merged[rid] = entry
+            continue
+        # שני הצדדים לא-success: יותר נתחים שהושלמו מנצח, אחרת יותר attempts.
+        local_done, other_done = _chunks_done(entry), _chunks_done(other)
+        if local_done != other_done:
+            if local_done > other_done:
                 merged[rid] = entry
+        elif entry.get("attempts", 0) >= (other or {}).get("attempts", 0):
+            merged[rid] = entry
     return merged
 
 
@@ -551,6 +565,32 @@ def mark(processed: dict, path: str, report_id: str, company_id: str, status: st
         save_processed(path, processed)
 
 
+def _make_chunk_hooks(processed: dict, log_path: str):
+    """מייצר (get, put) לשמירת התקדמות-נתחים (חיתוך עיוור 3.5) לתוך dict
+    מאגר מסוים ולוג מסוים - תחת _processed_lock (כמו mark). מוזרק ל-rsb.
+    מפעל, כדי לחבר נכון גם למאגר הראשי וגם למאגר ה-fallback (3.5) שהם
+    dict/log נפרדים."""
+    def _get(report_id):
+        with _processed_lock:
+            return (processed.get(report_id) or {}).get("chunks")
+
+    def _put(report_id, company_id, kind, chunks):
+        with _processed_lock:
+            prev = processed.get(report_id, {})
+            processed[report_id] = {
+                "company_id": company_id,
+                "status": "partial",
+                "kind": kind,
+                "attempts": prev.get("attempts", 0),
+                "at": datetime.now(timezone.utc).isoformat(),
+                "model": ex.GEMINI_MODEL,
+                "chunks": chunks,
+            }
+            save_processed(log_path, processed)
+
+    return _get, _put
+
+
 def run_task(task) -> tuple:
     """מריץ משימה בודדת (בתוך thread). מחזיר (report_id, cid, status_or_None,
     quota_exceeded: bool, kind). status_or_None הוא None אם quota_exceeded=True -
@@ -567,6 +607,10 @@ def run_task(task) -> tuple:
             ok = rsb.process_company(cid, payload)
         else:
             ok = rsb.process_change_report(cid, company_name, payload)
+        # PARTIAL (חיתוך עיוור, נתחים חסרים): לא success ולא failed - המאגר
+        # כבר עודכן עם chunks ע"י run_small_batch; ינוסה שוב אוטומטית.
+        if ok == rsb.PARTIAL:
+            return (report_id, cid, "partial", False, kind)
         return (report_id, cid, "success" if ok else "failed", False, kind)
     except ex.GeminiQuotaExceededError:
         return (report_id, cid, None, True, kind)
@@ -780,12 +824,20 @@ if __name__ == "__main__":
 
     print(f"מריץ עם {args.workers} workers מקביליים (RPM מוגן ע\"י rate limiter גלובלי).\n")
 
-    n_ok, n_fail, n_quota_hits = 0, 0, 0
+    n_ok, n_fail, n_quota_hits, n_partial = 0, 0, 0, 0
     quota_exceeded_flag = threading.Event()
     rsb.QUOTA_EXCEEDED = quota_exceeded_flag  # ראה run_small_batch.py -
     # אותו אובייקט Event בדיוק, לא עותק - כדי שמשימות שכבר רצות בתוך
     # thread ייתקלו באותו דגל וייכנעו מיד בלי לחכות לקירור מלא (הבאג
     # שגרם לריצה להימשך שעות אחרי שהמכסה כבר זוהתה כנגמרת).
+
+    # ── חיתוך עיוור (3.5): גישה למאגר לשמירת התקדמות-נתחים בין ריצות ──────
+    # run_small_batch כותב התקדמות דרך ההוקים האלה, תחת אותו _processed_lock
+    # של mark(), לתוך אותו dict בדיוק שאנחנו מחייבים ל-git בצ'קפוינטים ובסוף.
+    # רשומת partial נשמרת עם chunks; כשהדוח מושלם, mark() דורס אותה ברשומת
+    # success נקייה (בלי payload) - וזה בסדר, אין צורך ב-payload אחרי השלמה.
+    rsb.CHUNK_PROGRESS_GET, rsb.CHUNK_PROGRESS_PUT = _make_chunk_hooks(
+        processed, args.processed_log)
 
     with ThreadPoolExecutor(max_workers=args.workers) as executor:
         future_to_task = {}
@@ -816,21 +868,37 @@ if __name__ == "__main__":
                 quota_exceeded_flag.set()
                 continue
 
+            if status == "partial":
+                # נתחים חסרים (חיתוך עיוור). המאגר כבר עודכן (chunks) ע"י
+                # run_small_batch - לא קוראים ל-mark (הוא היה דורס את chunks
+                # ברשומה בלי-payload). ינוסה שוב אוטומטית (status != success).
+                n_partial += 1
+                n_seen = n_ok + n_fail + n_partial
+                safe_print(f"[{n_seen}/{len(tasks)}] חלקי: {company_name} "
+                           f"({kind}) - נתחים חסרים, ימשיך בהרצה הבאה.")
+                if n_seen % CHECKPOINT_EVERY == 0:
+                    safe_print(f"  --- checkpoint: מחייב התקדמות אחרי {n_seen} משימות ---")
+                    _commit_progress(args.results, args.processed_log, processed,
+                                      reason=f"after {n_seen} tasks")
+                continue
+
             mark(processed, args.processed_log, report_id, cid_result, status, task_kind)
             if status == "success":
                 n_ok += 1
             else:
                 n_fail += 1
-            safe_print(f"[{n_ok + n_fail}/{len(tasks)}] הושלם: {company_name} "
+            n_seen = n_ok + n_fail + n_partial
+            safe_print(f"[{n_seen}/{len(tasks)}] הושלם: {company_name} "
                        f"({kind}) -> {status}")
 
-            if (n_ok + n_fail) % CHECKPOINT_EVERY == 0:
-                safe_print(f"  --- checkpoint: מחייב התקדמות אחרי {n_ok + n_fail} משימות ---")
+            if n_seen % CHECKPOINT_EVERY == 0:
+                safe_print(f"  --- checkpoint: מחייב התקדמות אחרי {n_seen} משימות ---")
                 _commit_progress(args.results, args.processed_log, processed,
-                                  reason=f"after {n_ok + n_fail} tasks")
+                                  reason=f"after {n_seen} tasks")
 
     print(f"\n=== סיכום הרצה זו ===")
-    print(f"הצליחו: {n_ok} | נכשלו בהרצה זו (ינוסו שוב תמיד - אי-ויתור): {n_fail}")
+    print(f"הצליחו: {n_ok} | נכשלו בהרצה זו (ינוסו שוב תמיד - אי-ויתור): {n_fail}"
+          + (f" | חלקיים (נתחים חסרים, ימשיכו בהרצה הבאה): {n_partial}" if n_partial else ""))
     if quota_exceeded_flag.is_set():
         n_not_submitted = len(tasks) - n_ok - n_fail
         print(f"נעצר עקב מכסה - כ-{n_not_submitted} משימות נותרו להרצה הבאה.")
@@ -850,19 +918,30 @@ if __name__ == "__main__":
         ex.switch_model("gemini-3.5-flash-lite")
         fallback_log_path = "processed_reports_gemini-3_5-flash-lite.json"
         fallback_processed = load_processed(fallback_log_path)
+        # חיתוך עיוור (3.5) עלול להיכנס ל-partial גם ב-fallback - ההתקדמות
+        # חייבת להישמר ליומן 3.5 (לא ל-3.6). מחברים מחדש למאגר ה-fallback.
+        rsb.CHUNK_PROGRESS_GET, rsb.CHUNK_PROGRESS_PUT = _make_chunk_hooks(
+            fallback_processed, fallback_log_path)
         cid = str(args.company_id)
         entry = plan.get(cid)
         if entry:
             ok = rsb.process_company(cid, entry)
             snap = entry.get("snapshot")
-            if snap:
-                mark(fallback_processed, fallback_log_path, snap["report_id"], cid,
-                     "success" if ok else "failed", "snapshot")
-            if ok:
-                n_ok, n_fail = 1, 0
-                safe_print("*** פולבאק ל-3.5-flash-lite הצליח. ***")
+            if ok == rsb.PARTIAL:
+                # חיתוך עיוור נעצר עם נתחים חסרים - ההתקדמות כבר נשמרה
+                # ליומן 3.5 (chunks). לא מסמנים success/failed; ימשיך
+                # בהרצת 3.5 המתוזמנת הבאה.
+                safe_print("*** פולבאק 3.5: נשמר חלקית (נתחים חסרים) - "
+                           "יושלם בהרצת 3.5 הבאה. ***")
             else:
-                safe_print("*** פולבאק ל-3.5-flash-lite גם נכשל. ***")
+                if snap:
+                    mark(fallback_processed, fallback_log_path, snap["report_id"], cid,
+                         "success" if ok else "failed", "snapshot")
+                if ok:
+                    n_ok, n_fail = 1, 0
+                    safe_print("*** פולבאק ל-3.5-flash-lite הצליח. ***")
+                else:
+                    safe_print("*** פולבאק ל-3.5-flash-lite גם נכשל. ***")
             _commit_progress(args.results, fallback_log_path, fallback_processed,
                               reason="emergency fallback to 3.5")
 
