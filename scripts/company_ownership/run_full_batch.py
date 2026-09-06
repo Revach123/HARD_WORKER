@@ -11,12 +11,15 @@ rate limiter גלובלי ב-extract_subsidiaries.py, משותף בין כל ה-
 concurrency לא "עוקף" את המכסה, רק מנצל טוב יותר את זמן ההמתנה
 (הורדות, I/O) בין הבקשות המוגבלות-קצב.
 
-מיועד לשימוש גם בהרצה היומית העתידית - processed_reports.json הוא קובץ
-מתמשך בין הרצות (נשמר ב-cache ב-GitHub Actions, כמו .maya_cache).
+מיועד לשימוש גם בהרצה היומית - קובץ המעקב (processed_reports_<מודל>.json)
+מתמשך בין הרצות (נשמר ב-git, כמו .maya_cache). ברירת המחדל של --processed-log
+נגזרת אוטומטית מהמודל הפעיל (GEMINI_MODEL_OVERRIDE) - כך שהרצה עם 3.6
+והרצה עם 3.5 שומרות תור עצמאי זו מזו גם בלי לציין את הדגל במפורש: דוח
+שטופל במודל אחד לא "נעלם" מהתור של המודל השני.
 
 הרצה:
     py run_full_batch.py --plan selection_plan.json
-    py run_full_batch.py --plan selection_plan.json --limit 50 --workers 3
+    GEMINI_MODEL_OVERRIDE=gemini-3.5-flash-lite py run_full_batch.py --plan selection_plan.json --limit 50 --workers 3
 """
 
 import argparse
@@ -170,7 +173,16 @@ def _commit_progress(results_path: str, processed_log_path: str, processed: dict
         safe_print(f"    שגיאת git ב-checkpoint: {e}")
         return False
 
-PROCESSED_LOG_PATH = "processed_reports.json"
+def _default_processed_log_path() -> str:
+    """שם קובץ המעקב כברירת מחדל - נגזר מהמודל הפעיל (ex.GEMINI_MODEL, כבר
+    קבוע בזמן הזה לפי GEMINI_MODEL_OVERRIDE - ראה import למעלה), לא קבוע
+    גלובלי משותף. קריטי: בעבר ברירת המחדל הייתה "processed_reports.json"
+    יחיד לשני המודלים - מי שהריץ בלי --processed-log מפורש (בדיוק כמו
+    הדוגמה בתיעוד הקובץ למעלה) קיבל את אותו קובץ מעקב גם ל-3.6 וגם ל-3.5,
+    וזה בדיוק מה שגרם לדוח שהצליח באחד להיראות "כבר טופל" ולהיעלם מהתור
+    של השני. עכשיו ברירת המחדל עצמה כבר מבודדת לפי מודל, כך שגם הרצה
+    ידנית בלי לציין את הדגל במפורש שומרת על שני התורים עצמאיים."""
+    return f"processed_reports_{ex.GEMINI_MODEL.replace('.', '_')}.json"
 
 _processed_lock = threading.Lock()
 _print_lock = threading.Lock()
@@ -623,7 +635,10 @@ def run_task(task) -> tuple:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--plan", default="selection_plan.json")
-    parser.add_argument("--processed-log", default=PROCESSED_LOG_PATH)
+    parser.add_argument("--processed-log", default=_default_processed_log_path(),
+                         help="קובץ מעקב ההתקדמות - ברירת מחדל נגזרת מהמודל הפעיל "
+                              "(GEMINI_MODEL_OVERRIDE), כדי ששני המודלים תמיד ישמרו "
+                              "תור עצמאי גם בלי לציין את הדגל הזה במפורש.")
     parser.add_argument("--results", default="private_subsidiaries.jsonl",
                          help="קובץ התוצאות - נטען כדי לבדוק גרסת סכימה לכל רשומה")
     parser.add_argument("--limit", type=int, default=None,
