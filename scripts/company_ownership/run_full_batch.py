@@ -383,7 +383,11 @@ def _compute_company_status(cid: str, entry: dict, merged: dict, models_by_repor
       partial = יש הצלחה כלשהי (3.5, או חלק מהדוחות) אבל לא snapshot מלא ב-3.6
       pending = שום דוח לא עובד בהצלחה עדיין
       error   = כל הדוחות שנוסו נכשלו (ויש ניסיונות) - אין שום הצלחה
-    """
+
+    בנוסף מחזיר snap_full_35 (לא נשלח ל-D1) - עצמאי מ-has_snapshot_35:
+    True אם ה-snapshot עבר בהצלחה ב-3.5 *גם אם* הוא כבר "מלא" ב-3.6.
+    משמש רק ב-_sync_status_to_d1 כדי לדעת ששני המודלים הצליחו יחד
+    (לצורך סגירת בקשות urgent/retry - ראה שם)."""
     snap = entry.get("snapshot")
     changes = entry.get("changes", [])
     all_report_ids = ([snap["report_id"]] if snap else []) + [c["report_id"] for c in changes]
@@ -394,6 +398,7 @@ def _compute_company_status(cid: str, entry: dict, merged: dict, models_by_repor
     max_att = 0
     any_success = False
     snap_full_36 = False
+    snap_full_35 = False
     snap_any = False
 
     for rid in all_report_ids:
@@ -413,9 +418,15 @@ def _compute_company_status(cid: str, entry: dict, merged: dict, models_by_repor
         se = merged.get(snap["report_id"])
         if se and se.get("status") == "success":
             snap_any = True
+            # models_by_report מגיע מה-jsonl המשותף וצובר את *כל* המודלים
+            # שהצליחו אי-פעם על הדוח הזה (לא רק ה"טוב ביותר" שנבחר ל-merged) -
+            # אז snap_full_36 ו-snap_full_35 עצמאיים זה מזה: שניהם יכולים
+            # להיות True יחד אם שני המודלים כבר עברו את ה-snapshot בהצלחה.
             models_seen = {se.get("model", "")} | models_by_report.get(snap["report_id"], set())
             if any("3.6" in m or "3_6" in m for m in models_seen):
                 snap_full_36 = True
+            if any("3.5" in m or "3_5" in m for m in models_seen):
+                snap_full_35 = True
 
     if snap_full_36:
         status = "full"
@@ -432,6 +443,11 @@ def _compute_company_status(cid: str, entry: dict, merged: dict, models_by_repor
         "status": status,
         "has_snapshot_36": 1 if snap_full_36 else 0,
         "has_snapshot_35": 1 if (snap_any and not snap_full_36) else 0,
+        # לא נשלח ל-D1 (לא בעמודות cols/params למטה) - משמש רק כאן, ב-
+        # _sync_status_to_d1, כדי לדעת אם *שני* המודלים עברו את ה-snapshot
+        # (ראה resolve_requests: בקשת urgent/retry נסגרת רק אם גם זה וגם
+        # has_snapshot_36 אמת - לא מספיק ש-3.6 לבד הצליח).
+        "snap_full_35": 1 if snap_full_35 else 0,
         "total_reports": total,
         "done_reports": done,
         "done_reports_36": done_36,
@@ -516,16 +532,22 @@ def _sync_status_to_d1(plan: dict, processed: dict, model: str,
     except Exception as e:
         print(f"אזהרה: רישום ריצה ל-D1 נכשל: {e}")
 
-    # סימון בקשות דחיפות שטופלו. urgent/retry נסגרות רק לפי הצלחת 3.6
-    # (status=="full") - לא בשני המודלים, ולא בהכרח באותה ריצה שדחפה
-    # אותן לראש התור (ראה בניית tasks למעלה - העדיפות עצמה חלה על שני
-    # המודלים). שינוי מ-2026-09-02: הגרסה הקודמת חיכתה ל-has_snapshot_36
-    # וגם has_snapshot_35, אבל זה יכול להיסגר מוקדם מדי אם לחברה כבר
-    # הייתה הצלחת 3.6 ישנה מלפני שהבקשה בכלל נוצרה - ריצת 3.5 בלבד הייתה
-    # "סוגרת" את הבקשה בטעות. חשוב: בקשה שרק 3.5 טיפל בה בהצלחה (עם
-    # עדיפות) תישאר פתוחה עד שגם 3.6 יצליח - זו כוונה, לא באג.
-    full_now_cids = {str(r["company_id"]) for r in rows if r["status"] == "full"}
-    resolve_requests(cfg, full_now_cids, request_types=("urgent", "retry"))
+    # סימון בקשות דחיפות שטופלו. urgent/retry נסגרות רק אחרי ששני המודלים
+    # (3.6 וגם 3.5) עברו את ה-snapshot בהצלחה - לא מספיק ש-3.6 לבד הצליח.
+    # שינוי מ-2026-09-06 (חזרה למדיניות "שני המודלים", בגרסה נכונה הפעם):
+    # has_snapshot_36/has_snapshot_35 (העמודות ל-D1) הדדית-בלעדיות בכוונה
+    # (משמשות לתצוגה - "מה המצב הכי טוב שידוע"), אז אי אפשר להשתמש בהן
+    # ישירות כדי לבדוק ששניהם הצליחו - snap_full_35 הוא שדה נפרד, עצמאי,
+    # שמחושב תמיד (גם כש-3.6 כבר "מלא") מתוך models_by_report (כל המודלים
+    # שהצליחו אי-פעם על אותו report_id, לפי private_subsidiaries.jsonl -
+    # לא רק ה"טוב ביותר" שנבחר ל-merged). זה בדיוק מה שמונע את הבאג הישן
+    # (2026-09-02): אז has_snapshot_35 עצמו היה תלוי ב"לא has_snapshot_36",
+    # כך שברגע ש-3.6 הצליח פעם, has_snapshot_35 היה נשאר 0 לצמיתות וה-
+    # AND בין השניים מעולם לא היה יוצא אמת - הבקשה הייתה נשארת פתוחה
+    # לנצח גם אחרי ששני המודלים באמת הצליחו. snap_full_35 לא סובל מזה.
+    full_both_cids = {str(r["company_id"]) for r in rows
+                       if r["has_snapshot_36"] and r["snap_full_35"]}
+    resolve_requests(cfg, full_both_cids, request_types=("urgent", "retry"))
 
     # emergency - מטבעה ריצה בודדת וממוקדת; נחשבת "טופלה" ברגע שיש הצלחה
     # כלשהי (המודל שבו רצה בפועל, כולל fallback ל-3.5 אם 3.6 נכשל - ראה
@@ -828,15 +850,17 @@ if __name__ == "__main__":
     # מבנה: (kind, cid, name, report_id, entry_or_change)
     #
     # חל על שני המודלים - שינוי חזרה (2026-09-06): גרסה קודמת הגבילה את
-    # זה ל-3.6 בלבד, כי resolve_requests (ראה _sync_status_to_d1) פעם
-    # נהג לסגור בקשת urgent/retry מוקדם מדי (סמך על has_snapshot_36 +
-    # has_snapshot_35 יחד, אז הצלחת 3.5 בלבד "גמרה" בקשה ישנה בטעות).
-    # אבל resolve_requests כבר לא עובד ככה - הוא סוגר רק לפי status=="full"
-    # (הצלחת 3.6 ספציפית, ראה שם), בלי קשר לאיזה מודל בפועל קידם את
-    # התור. אז אין יותר סיבה למנוע מ-3.5 לכבד עדיפות: בקשה שסומנה דחופה
-    # אמורה לקפוץ לראש התור בכל ריצה שתבוא - לא רק אם במקרה זו ריצת 3.6.
-    # ההתנהגות הישנה גרמה בדיוק לבאג שנצפה בפועל: סימון חברה כדחופה ואז
-    # הרצה עם 3.5 עדיין עיבדה חברות אחרות קודם.
+    # זה ל-3.6 בלבד, כי resolve_requests (ראה _sync_status_to_d1) פעם נהג
+    # לסגור בקשת urgent/retry מוקדם מדי (סמך על has_snapshot_36 + has_
+    # snapshot_35 יחד, שדות הדדית-בלעדיים, אז ה-AND ביניהם היה כמעט
+    # תמיד False בטעות - וגם כשלא, הצלחת 3.5 בלבד עלולה הייתה "לגמור"
+    # בקשה ישנה בלי ש-3.6 בכלל רץ). זה תוקן עכשיו נכון: resolve_requests
+    # דורש ששני המודלים יצליחו בפועל (has_snapshot_36 + snap_full_35,
+    # שני שדות עצמאיים - ראה שם), ולא נסגר מוקדם. אז אין יותר סיבה למנוע
+    # מ-3.5 לכבד עדיפות: בקשה שסומנה דחופה אמורה לקפוץ לראש התור בכל
+    # ריצה שתבוא - לא רק אם במקרה זו ריצת 3.6. ההתנהגות הישנה (רק 3.6)
+    # גרמה בדיוק לבאג שנצפה בפועל: סימון חברה כדחופה ואז הרצה עם 3.5
+    # עדיין עיבדה חברות אחרות קודם.
     if urgent_cids:
         urgent = [t for t in tasks if str(t[1]) in urgent_cids]
         rest = [t for t in tasks if str(t[1]) not in urgent_cids]
