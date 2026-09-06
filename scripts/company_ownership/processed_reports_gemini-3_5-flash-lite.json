@@ -2205,7 +2205,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-06T09:00:13.391812+00:00",
+    "at": "2026-09-06T09:01:14.127706+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -2337,6 +2337,65 @@
           "as_of_date": "2025-12-31",
           "subsidiaries": [],
           "change_events": []
+        },
+        "1:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "פרויקט דירה להשכיר - אלין-דירה להשכיר ראשון לציון",
+              "event_type": "increase",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 100,
+              "event_date": null,
+              "event_description": "רכישת חלקה של מרב (40%) בפרויקט",
+              "page_reference": 87,
+              "section_title": "3.5. אמות מידה פיננסיות במסגרת הסכם ההלוואה מכלל ביטוח ופיננסים בגין פרויקט 'דירה להשכיר - אלין-דירה להשכיר ראשון לציון'."
+            },
+            {
+              "company": "פרויקט דירה להשכיר-מורדות מלחה בירושלים",
+              "event_type": "increase",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 100,
+              "event_date": "2025-03-26",
+              "event_description": "רכישת חלקה של מרב (40%) בפרויקט",
+              "page_reference": 89,
+              "section_title": "3.7. אמות מידה פיננסיות במסגרת הסכם ההלוואה מכלל ביטוח ופיננסים בגין פרויקט 'דירה להשכיר-מורדות מלחה' בירושלים."
+            },
+            {
+              "company": "פרויקט דירה להשכיר באר יעקב",
+              "event_type": "increase",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 100,
+              "event_date": "2025-12-25",
+              "event_description": "רכישת חלקה של מרב (40%) בפרויקט",
+              "page_reference": 90,
+              "section_title": "3.8. אמות מידה פיננסיות במסגרת הסכם ההלוואה מכלל ביטוח ופיננסים בגין פרויקט דירה להשכיר באר יעקב."
+            }
+          ]
+        },
+        "1:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "1:7": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "1:8": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
         }
       },
       "attempts": {}
@@ -2371,7 +2430,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-06T09:00:15.792959+00:00",
+    "at": "2026-09-06T09:01:49.393204+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -2384,8 +2443,221 @@
           "as_of_date": null,
           "subsidiaries": [],
           "change_events": []
+        },
+        "0:1": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "other",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:7": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
         }
       },
+      "attempts": {}
+    }
+  },
+  "1733546": {
+    "company_id": "1830",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-09-06T09:01:28.822796+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 50,
+      "done": {
+        "0:0": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
+      "attempts": {}
+    }
+  },
+  "1729847": {
+    "company_id": "251",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-09-06T09:01:29.840695+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 20,
+      "done": {},
+      "attempts": {}
+    }
+  },
+  "1724885": {
+    "company_id": "1450",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-09-06T09:01:30.736181+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 50,
+      "done": {},
+      "attempts": {}
+    }
+  },
+  "1728295": {
+    "company_id": "1327",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-09-06T09:01:33.330217+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 69,
+      "done": {},
+      "attempts": {}
+    }
+  },
+  "1721518": {
+    "company_id": "1683",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-09-06T09:01:33.828495+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 33,
+      "done": {},
+      "attempts": {}
+    }
+  },
+  "1730231": {
+    "company_id": "106",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-09-06T09:01:34.714294+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 30,
+      "done": {},
+      "attempts": {}
+    }
+  },
+  "1729521": {
+    "company_id": "1724",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-09-06T09:01:50.262379+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 27,
+      "done": {},
+      "attempts": {}
+    }
+  },
+  "1731035": {
+    "company_id": "2480",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-09-06T09:01:51.000937+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 28,
+      "done": {},
+      "attempts": {}
+    }
+  },
+  "1731582": {
+    "company_id": "2384",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-09-06T09:01:59.509890+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 32,
+      "done": {},
       "attempts": {}
     }
   }
