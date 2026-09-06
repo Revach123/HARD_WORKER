@@ -1,0 +1,25 @@
+name: Validate /api/match reproduction
+
+# ידני בלבד. מריץ את match_subsidiary_names.py --validate מול
+# validation_sample.json (300 התאמות exact ידועות) ומוודא ש-/api/match
+# משחזר אותן. נכשל ברעש אם יש סטייה ל-id אחר. להריץ אחרי שהוגדרו
+# MATCH_KEY (Cloudflare + כאן) והאינדקסים על partnerships/associations.
+on:
+  workflow_dispatch: {}
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install deps
+        run: pip install requests --break-system-packages
+      - name: Validate
+        working-directory: scripts/company_ownership
+        env:
+          MATCH_KEY: ${{ secrets.MATCH_KEY }}
+          PYTHONUNBUFFERED: "1"
+        run: python match_subsidiary_names.py --validate
