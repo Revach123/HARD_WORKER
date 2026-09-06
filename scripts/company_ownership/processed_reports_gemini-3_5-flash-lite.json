@@ -1898,187 +1898,11 @@
   },
   "1743840": {
     "company_id": "585",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-06T08:38:42.078483+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 9,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "הראל חברה לביטוח בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "1.1 כללי",
-              "table_title": null,
-              "note": "בשליטה מלאה"
-            },
-            {
-              "name": "Interasco Societe Anonyme General Insurance Company S.A.G.I",
-              "ownership_pct": 94,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "1.1 כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Turk Nippon Sigorta A.S",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "1.1 כללי",
-              "table_title": null,
-              "note": "בשליטה מלאה"
-            },
-            {
-              "name": "בססח - החברה הישראלית לביטוח אשראי בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "1.1 כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "הראל פנסיה וגמל בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "1.1 כללי",
-              "table_title": null,
-              "note": "בשליטה מלאה"
-            },
-            {
-              "name": "קרן החיסכון לצבא הקבע - חברה לניהול קופות גמל בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "1.1 כללי",
-              "table_title": null,
-              "note": "בשליטה מלאה"
-            },
-            {
-              "name": "לעתיד חברה לניהול קרנות פנסיה בע\"מ",
-              "ownership_pct": 89.5,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "1.1 כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "הראל פיננסים אחזקות בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "1.1 כללי",
-              "table_title": null,
-              "note": "בשליטה מלאה"
-            },
-            {
-              "name": "הראל קרנות נאמנות בע\"מ",
-              "ownership_pct": null,
-              "parent": "הראל פיננסים אחזקות בע\"מ",
-              "page_reference": 4,
-              "section_title": "1.1 כללי",
-              "table_title": null,
-              "note": "חברה בת עיקרית של הראל פיננסים"
-            },
-            {
-              "name": "הראל פיננסים ניהול השקעות בע\"מ",
-              "ownership_pct": null,
-              "parent": "הראל פיננסים אחזקות בע\"מ",
-              "page_reference": 4,
-              "section_title": "1.1 כללי",
-              "table_title": null,
-              "note": "חברה בת עיקרית של הראל פיננסים"
-            },
-            {
-              "name": "הראל פיננסים אלטרנטיב בע\"מ",
-              "ownership_pct": null,
-              "parent": "הראל פיננסים אחזקות בע\"מ",
-              "page_reference": 4,
-              "section_title": "1.1 כללי",
-              "table_title": null,
-              "note": "חברה בת עיקרית של הראל פיננסים"
-            },
-            {
-              "name": "הראל פיקדון סחיר בע\"מ",
-              "ownership_pct": null,
-              "parent": "הראל פיננסים אחזקות בע\"מ",
-              "page_reference": 4,
-              "section_title": "1.1 כללי",
-              "table_title": null,
-              "note": "חברה בת עיקרית של הראל פיננסים"
-            },
-            {
-              "name": "הראל ריביות ופיקדונות בע\"מ",
-              "ownership_pct": null,
-              "parent": "הראל פיננסים אחזקות בע\"מ",
-              "page_reference": 4,
-              "section_title": "1.1 כללי",
-              "table_title": null,
-              "note": "חברה בת עיקרית של הראל פיננסים"
-            },
-            {
-              "name": "המצפן - שותפים לדרך בע\"מ",
-              "ownership_pct": 70,
-              "parent": null,
-              "page_reference": 5,
-              "section_title": "1.1 כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "גמלא הראל נדל\"ן למגורים בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 5,
-              "section_title": "1.1 כללי",
-              "table_title": null,
-              "note": "בשליטה מלאה"
-            },
-            {
-              "name": "הראל +60 בע\"מ",
-              "ownership_pct": 100,
-              "parent": "הראל חברה לביטוח בע\"מ",
-              "page_reference": 5,
-              "section_title": "1.1 כללי",
-              "table_title": null,
-              "note": "חברה בת בבעלות מלאה של הראל ביטוח"
-            },
-            {
-              "name": "אי.אם.אי - עזר חברה לביטוח משכנתאות בע\"מ",
-              "ownership_pct": 100,
-              "parent": "הראל חברה לביטוח בע\"מ",
-              "page_reference": 5,
-              "section_title": "1.1 כללי",
-              "table_title": null,
-              "note": "בשליטה מלאה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-06T08:40:38.610967+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743864": {
     "company_id": "585",
@@ -2086,6 +1910,138 @@
     "kind": "change",
     "attempts": 1,
     "at": "2026-09-06T08:38:49.504368+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1758258": {
+    "company_id": "585",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-09-06T08:38:54.197856+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1748109": {
+    "company_id": "585",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-09-06T08:40:59.884052+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1758265": {
+    "company_id": "585",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-09-06T08:38:58.872985+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1766123": {
+    "company_id": "585",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-09-06T08:41:22.446217+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1766118": {
+    "company_id": "585",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-09-06T08:41:01.662487+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1737384": {
+    "company_id": "604",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-09-06T08:41:09.189482+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1766166": {
+    "company_id": "585",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-09-06T08:41:20.828032+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1742047": {
+    "company_id": "604",
+    "status": "partial",
+    "kind": "change",
+    "attempts": 0,
+    "at": "2026-09-06T08:41:39.825459+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 15,
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
+      "attempts": {}
+    }
+  },
+  "1742051": {
+    "company_id": "604",
+    "status": "partial",
+    "kind": "change",
+    "attempts": 0,
+    "at": "2026-09-06T08:41:40.125205+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 18,
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
+      "attempts": {}
+    }
+  },
+  "1742056": {
+    "company_id": "604",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-09-06T08:41:31.517632+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1742060": {
+    "company_id": "604",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-09-06T08:41:43.128692+00:00",
     "model": "gemini-3.5-flash-lite"
   }
 }
