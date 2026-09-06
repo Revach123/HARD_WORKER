@@ -1567,7 +1567,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 8,
-    "at": "2026-09-05T21:13:38.063240+00:00",
+    "at": "2026-09-06T08:11:30.835987+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -1696,6 +1696,518 @@
           "as_of_date": null,
           "subsidiaries": [],
           "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "ריקטק בע\"מ",
+              "ownership_pct": 99.99,
+              "parent": "שיכון ובינוי נדל\"ן בע\"מ",
+              "page_reference": 81,
+              "section_title": "מגזר אחרים - הקמה ותפעול של מערכות תשתית לפינוי אשפה פנאומטיות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ריקטק רעננה נווה זמר בע\"מ",
+              "ownership_pct": 50,
+              "parent": "שיכון ובינוי נדל\"ן בע\"מ",
+              "page_reference": 82,
+              "section_title": "מגזר אחרים - הקמה ותפעול של מערכות תשתית לפינוי אשפה פנאומטיות",
+              "table_title": null,
+              "note": "סה\"כ אחזקה בשרשור 99.99%"
+            },
+            {
+              "name": "חברה בת צ'כית",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 88,
+              "section_title": "מידע כללי על תחום יזמות הנדל\"ן בחו\"ל",
+              "table_title": null,
+              "note": "מחזיקה בשרשור במלוא ההחזקות בחברות הפרויקט בפולין"
+            }
+          ],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "חברה בת צ'כית המחזיקה בפולין",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 88,
+              "section_title": "8.1.3 פעילות הקבוצה בפולין מבוצעת באמצעות חברה בת צ'כית",
+              "table_title": null,
+              "note": "מחזיקה בשרשור במלוא ההחזקות (100%) בחברות הפרויקט בפולין"
+            },
+            {
+              "name": "חברות הפרויקט בפולין (בשרשור)",
+              "ownership_pct": 100,
+              "parent": "חברה בת צ'כית",
+              "page_reference": 88,
+              "section_title": "8.1.3 פעילות הקבוצה בפולין מבוצעת באמצעות חברה בת צ'כית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "חברות הפרויקט בצ'כיה (פרויקטים חדשים)",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 88,
+              "section_title": "8.1.4 פעילות הקבוצה בצ'כיה מבוצעת באמצעות מספר חברות כלולות ומאוחדות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "חברות הפרויקט בסרביה",
+              "ownership_pct": 95,
+              "parent": null,
+              "page_reference": 88,
+              "section_title": "8.1.5 הפעילות בסרביה מנוהלת על ידי מנכ\"ל פעילות מקומי, אשר מחזיק ב-5% מחברות הפרויקטים בסרביה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "חברות ברומניה",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 88,
+              "section_title": "8.1.6 הפעילות ברומניה מבוצעת באמצעות חברות בבעלות מלאה (בעקיפין) של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "3 OC (צ'כיה, פראג)",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 97,
+              "section_title": "8.3.4 פרויקטים בתכנון",
+              "table_title": "א. נתונים כלליים - פרויקטים בתכנון - נתונים כלליים על הפרויקטים ליום 31.12.2025",
+              "note": "חברות כלולות בשליטה משותפת"
+            },
+            {
+              "name": "אאורה (צ'כיה, פראג)",
+              "ownership_pct": 45,
+              "parent": null,
+              "page_reference": 97,
+              "section_title": "8.3.4 פרויקטים בתכנון",
+              "table_title": "א. נתונים כלליים - פרויקטים בתכנון - נתונים כלליים על הפרויקטים ליום 31.12.2025",
+              "note": "חברות כלולות בשליטה משותפת"
+            },
+            {
+              "name": "אלפא (צ'כיה, פראג)",
+              "ownership_pct": 45,
+              "parent": null,
+              "page_reference": 97,
+              "section_title": "8.3.4 פרויקטים בתכנון",
+              "table_title": "א. נתונים כלליים - פרויקטים בתכנון - נתונים כלליים על הפרויקטים ליום 31.12.2025",
+              "note": "חברות כלולות בשליטה משותפת"
+            },
+            {
+              "name": "KBP (פולין, וורשה)",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 104,
+              "section_title": "8.4 פעילות ייזום לא למגורים - 8.4.1 נתונים מצרפיים",
+              "table_title": "א. נכסים מניבים (לא כולל נכסים בהקמה וקרקעות - ראו ס\"ק ב' ו- ג' להלן)",
+              "note": null
+            },
+            {
+              "name": "Besten (צ'כיה, פראג)",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 104,
+              "section_title": "8.4 פעילות ייזום לא למגורים - 8.4.1 נתונים מצרפיים",
+              "table_title": "א. נכסים מניבים (לא כולל נכסים בהקמה וקרקעות - ראו ס\"ק ב' ו- ג' להלן)",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "ניו פוינט רומניה בוקרשט",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 103,
+              "section_title": ".8.3.9 מידע על אשראי לליווי הפרויקטים",
+              "table_title": "חברות מאוחדות",
+              "note": null
+            },
+            {
+              "name": "ABC שלב 1 ו2- סרביה, בלגרד",
+              "ownership_pct": 95,
+              "parent": null,
+              "page_reference": 103,
+              "section_title": ".8.3.9 מידע על אשראי לליווי הפרויקטים",
+              "table_title": "חברות מאוחדות",
+              "note": null
+            },
+            {
+              "name": "סלונצובה צ'כיה פראג",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 103,
+              "section_title": ".8.3.9 מידע על אשראי לליווי הפרויקטים",
+              "table_title": "חברות מאוחדות",
+              "note": null
+            },
+            {
+              "name": "KBP פולין וורשה",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 104,
+              "section_title": ".8.4.1 נתונים מצרפיים",
+              "table_title": "א . נכסים מניבים (לא כולל נכסים בהקמה וקרקעות - ראו ס\"ק ב' ו- ג' להלן):",
+              "note": null
+            },
+            {
+              "name": "Besten צכיה פראג",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 104,
+              "section_title": ".8.4.1 נתונים מצרפיים",
+              "table_title": "א . נכסים מניבים (לא כולל נכסים בהקמה וקרקעות - ראו ס\"ק ב' ו- ג' להלן):",
+              "note": null
+            },
+            {
+              "name": "ערד הארץ תשתיות בע\"מ",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 115,
+              "section_title": "פרק שלישי - תיאור עסקי התאגיד לפי תחומי פעילות",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:7": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "International AG Holdings SBI",
+              "event_type": "full_disposal",
+              "ownership_pct_before": 97,
+              "ownership_pct_after": 0,
+              "event_date": "2025-11-10",
+              "event_description": "חתימה על הסכם מחייב למכירת מלוא החזקות החברה (כ-97%) בחברת International AG Holdings SBI",
+              "page_reference": 130,
+              "section_title": "10.1.1 מבנה תחום הפעילות ושינויים החלים בו"
+            }
+          ]
+        },
+        "0:8": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "שיכון ובינוי אנרגיה",
+              "ownership_pct": 66.79,
+              "parent": null,
+              "page_reference": 151,
+              "section_title": "12.1.1 מבנה תחום הפעילות ושינויים החלים בו",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Shikun & Binui USA America Inc.",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 139,
+              "section_title": "11.1.1 מבנה תחום הפעילות ושינויים החלים בו",
+              "table_title": null,
+              "note": "הפעילה תחת השם USA B&S"
+            }
+          ],
+          "change_events": []
+        },
+        "0:9": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "נגב אנרגיה אשלים תרמו-סולאר בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 162,
+              "section_title": "פרק שלישי - תיאור עסקי התאגיד לפי תחומי פעילות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "נגב אנרגיה אשלים תפעול ותחזוקה בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 163,
+              "section_title": "פרק שלישי - תיאור עסקי התאגיד לפי תחומי פעילות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "S&B US Energy Holdings",
+              "ownership_pct": 100,
+              "parent": "שיכון ובינוי אנרגיה",
+              "page_reference": 163,
+              "section_title": "פרק שלישי - תיאור עסקי התאגיד לפי תחומי פעילות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Shikun & Binui Energy Europe B.V.",
+              "ownership_pct": 100,
+              "parent": "שיכון ובינוי אנרגיה",
+              "page_reference": 163,
+              "section_title": "פרק שלישי - תיאור עסקי התאגיד לפי תחומי פעילות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "נבטים",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 169,
+              "section_title": "פרק שלישי - תיאור עסקי התאגיד לפי תחומי פעילות",
+              "table_title": "תמצית נתוני פרויקטים עיקריים ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "מתח גבוה – הליך 1",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 169,
+              "section_title": "פרק שלישי - תיאור עסקי התאגיד לפי תחומי פעילות",
+              "table_title": "תמצית נתוני פרויקטים עיקריים ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "צאלים",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 169,
+              "section_title": "פרק שלישי - תיאור עסקי התאגיד לפי תחומי פעילות",
+              "table_title": "תמצית נתוני פרויקטים עיקריים ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "אשלים סולאר",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 169,
+              "section_title": "פרק שלישי - תיאור עסקי התאגיד לפי תחומי פעילות",
+              "table_title": "תמצית נתוני פרויקטים עיקריים ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "מתח גבוה - הליך 3",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 169,
+              "section_title": "פרק שלישי - תיאור עסקי התאגיד לפי תחומי פעילות",
+              "table_title": "תמצית נתוני פרויקטים עיקריים ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "מאגר הבונים",
+              "ownership_pct": 40,
+              "parent": null,
+              "page_reference": 169,
+              "section_title": "פרק שלישי - תיאור עסקי התאגיד לפי תחומי פעילות",
+              "table_title": "תמצית נתוני פרויקטים עיקריים ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "אגירה שאובה",
+              "ownership_pct": 25.5,
+              "parent": null,
+              "page_reference": 169,
+              "section_title": "פרק שלישי - תיאור עסקי התאגיד לפי תחומי פעילות",
+              "table_title": "תמצית נתוני פרויקטים עיקריים ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "רמת חובב",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 169,
+              "section_title": "פרק שלישי - תיאור עסקי התאגיד לפי תחומי פעילות",
+              "table_title": "תמצית נתוני פרויקטים עיקריים ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "חגית מזרח",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 169,
+              "section_title": "פרק שלישי - תיאור עסקי התאגיד לפי תחומי פעילות",
+              "table_title": "תמצית נתוני פרויקטים עיקריים ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "אתגל",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 169,
+              "section_title": "פרק שלישי - תיאור עסקי התאגיד לפי תחומי פעילות",
+              "table_title": "תמצית נתוני פרויקטים עיקריים ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "Beacon 2",
+              "ownership_pct": 49.5,
+              "parent": null,
+              "page_reference": 169,
+              "section_title": "פרק שלישי - תיאור עסקי התאגיד לפי תחומי פעילות",
+              "table_title": "תמצית נתוני פרויקטים עיקריים ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "Beacon 5",
+              "ownership_pct": 49.5,
+              "parent": null,
+              "page_reference": 169,
+              "section_title": "פרק שלישי - תיאור עסקי התאגיד לפי תחומי פעילות",
+              "table_title": "תמצית נתוני פרויקטים עיקריים ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "Brazoria",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 170,
+              "section_title": "פרק שלישי - תיאור עסקי התאגיד לפי תחומי פעילות",
+              "table_title": "תמצית נתוני פרויקטים עיקריים ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "Saticoy",
+              "ownership_pct": 49,
+              "parent": null,
+              "page_reference": 170,
+              "section_title": "פרק שלישי - תיאור עסקי התאגיד לפי תחומי פעילות",
+              "table_title": "תמצית נתוני פרויקטים עיקריים ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "Satu Mare",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 170,
+              "section_title": "פרק שלישי - תיאור עסקי התאגיד לפי תחומי פעילות",
+              "table_title": "תמצית נתוני פרויקטים עיקריים ליום 31 בדצמבר 2025",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:10": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "אתגל תחנות כוח שותפות מוגבלת",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 189,
+              "section_title": "פרק שלישי - תיאור עסקי התאגיד לפי תחומי פעילות",
+              "table_title": null,
+              "note": "תחנת הכוח אתגל"
+            },
+            {
+              "name": "נגב אנרגיה פי וי בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 179,
+              "section_title": "פרק שלישי - תיאור עסקי התאגיד לפי תחומי פעילות",
+              "table_title": null,
+              "note": "פרויקט אשלים PV"
+            },
+            {
+              "name": "נגב אנרגיה - אשלים תרמו סולאר בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 179,
+              "section_title": "פרק שלישי - תיאור עסקי התאגיד לפי תחומי פעילות",
+              "table_title": null,
+              "note": "מתקן התרמו-סולארי באשלים"
+            },
+            {
+              "name": "שותפות רמת חובב",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 181,
+              "section_title": "פרק שלישי - תיאור עסקי התאגיד לפי תחומי פעילות",
+              "table_title": null,
+              "note": "תחנת הכוח רמת חובב"
+            },
+            {
+              "name": "תחנת כוח רמת חובב תפעול ותחזוקה שותפות מוגבלת",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 181,
+              "section_title": "פרק שלישי - תיאור עסקי התאגיד לפי תחומי פעילות",
+              "table_title": null,
+              "note": "קבלן התפעול של רמת חובב"
+            },
+            {
+              "name": "שותפות חגית מזרח",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 185,
+              "section_title": "פרק שלישי - תיאור עסקי התאגיד לפי תחומי פעילות",
+              "table_title": null,
+              "note": "תחנת הכוח חגית מזרח"
+            },
+            {
+              "name": "תחנת כוח חגית מזרח תפעול ותחזוקה שותפות מוגבלת",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 185,
+              "section_title": "פרק שלישי - תיאור עסקי התאגיד לפי תחומי פעילות",
+              "table_title": null,
+              "note": "קבלן התפעול של חגית מזרח"
+            },
+            {
+              "name": "סולל בונה",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 189,
+              "section_title": "פרק שלישי - תיאור עסקי התאגיד לפי תחומי פעילות",
+              "table_title": null,
+              "note": "חברה בת המוחזקת במלואה"
+            }
+          ],
+          "change_events": []
         }
       },
       "attempts": {}
@@ -1734,7 +2246,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 8,
-    "at": "2026-09-05T21:12:21.996913+00:00",
+    "at": "2026-09-06T08:11:00.819450+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -1784,6 +2296,450 @@
             }
           ],
           "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "WeSure USA Holdings, Inc",
+              "ownership_pct": 39.5,
+              "parent": null,
+              "page_reference": 52,
+              "section_title": "2.5.1 פעילות החברה בארה\"ב",
+              "table_title": null,
+              "note": "החברה בעלת שליטה וממנה את מרבית הדירקטורים"
+            },
+            {
+              "name": "WeSure Digital Insurance Services Inc",
+              "ownership_pct": 100,
+              "parent": "WeSure USA Holdings, Inc",
+              "page_reference": 52,
+              "section_title": "2.5.1 פעילות החברה בארה\"ב",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Hourly, Inc.",
+              "ownership_pct": 100,
+              "parent": "WeSure USA Holdings, Inc",
+              "page_reference": 52,
+              "section_title": "2.5.1 פעילות החברה בארה\"ב",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Media Data Solutions (MDS)",
+              "ownership_pct": 100,
+              "parent": "WeSure USA Holdings, Inc",
+              "page_reference": 52,
+              "section_title": "2.5.1 פעילות החברה בארה\"ב",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Hourly LLC",
+              "ownership_pct": 100,
+              "parent": "Hourly, Inc.",
+              "page_reference": 53,
+              "section_title": "2.5.1 פעילות החברה בארה\"ב",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "WeSure Technologies USA Inc",
+              "ownership_pct": 39.5,
+              "parent": null,
+              "page_reference": 54,
+              "section_title": ".2.5.1 פעילות החברה בארה\"ב",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "WeSure Digital Insurance Services Inc",
+              "ownership_pct": 100,
+              "parent": "WeSure Technologies USA Inc",
+              "page_reference": 54,
+              "section_title": ".2.5.1 פעילות החברה בארה\"ב",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Hourly Inc",
+              "ownership_pct": 100,
+              "parent": "WeSure Technologies USA Inc",
+              "page_reference": 54,
+              "section_title": ".2.5.1 פעילות החברה בארה\"ב",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Media Data Solutions",
+              "ownership_pct": 100,
+              "parent": "WeSure Technologies USA Inc",
+              "page_reference": 54,
+              "section_title": ".2.5.1 פעילות החברה בארה\"ב",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Hourly LLC",
+              "ownership_pct": 100,
+              "parent": "Hourly Inc",
+              "page_reference": 53,
+              "section_title": ".2.5.1 פעילות החברה בארה\"ב",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גלובלטק מימון בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 56,
+              "section_title": ".2.5.2 פעילות בתחום האשראי החוץ בנקאי - ישראל",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "weSure Insurtech Services (India) Private Limited",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 58,
+              "section_title": ".2.5.3 פעילות בית תוכנה באמצעות החברה הבת בהודו",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "קויוטי טכנולוגיות ופיתוחים בע״מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 58,
+              "section_title": ".2.5.4 פעילות פעילות אגריגאטור ומכולל להשוואת מוצרי ביטוח באמצעות החברה הבת קויוטי - ישראל",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "איילון ביטוח",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 59,
+              "section_title": ".2.5.5 פעילויות באמצעות חברות בנות עיקריות של איילון ביטוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "נכונים סוכנות לביטוח בע''מ",
+              "ownership_pct": 100,
+              "parent": "איילון ביטוח",
+              "page_reference": 59,
+              "section_title": ".2.5.5 פעילויות באמצעות חברות בנות עיקריות של איילון ביטוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "איל צבי בע\"מ",
+              "ownership_pct": 100,
+              "parent": "איילון ביטוח",
+              "page_reference": 59,
+              "section_title": ".2.5.5 פעילויות באמצעות חברות בנות עיקריות של איילון ביטוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "איילון נאמנים סוכנות לביטוח בע\"מ",
+              "ownership_pct": 100,
+              "parent": "איילון ביטוח",
+              "page_reference": 59,
+              "section_title": ".2.5.5 פעילויות באמצעות חברות בנות עיקריות של איילון ביטוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "איילון ח.ל.ב נכסים והשקעות בע\"מ",
+              "ownership_pct": 100,
+              "parent": "איילון ביטוח",
+              "page_reference": 59,
+              "section_title": ".2.5.5 פעילויות באמצעות חברות בנות עיקריות של איילון ביטוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מ. עירן בניה ואחזקות 2001 בע\"מ",
+              "ownership_pct": 100,
+              "parent": "איילון ביטוח",
+              "page_reference": 59,
+              "section_title": ".2.5.5 פעילויות באמצעות חברות בנות עיקריות של איילון ביטוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "זיסו חברה לבנין ופיתוח בע\"מ",
+              "ownership_pct": 100,
+              "parent": "איילון ביטוח",
+              "page_reference": 59,
+              "section_title": ".2.5.5 פעילויות באמצעות חברות בנות עיקריות של איילון ביטוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלון-אשכנזי סוכנות לביטוח (2011) בע\"מ",
+              "ownership_pct": 33,
+              "parent": "איילון ביטוח",
+              "page_reference": 59,
+              "section_title": ".2.5.5 פעילויות באמצעות חברות בנות עיקריות של איילון ביטוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גיל ורדי סוכנות לביטוח בע\"מ",
+              "ownership_pct": 32.4,
+              "parent": "איילון ביטוח",
+              "page_reference": 59,
+              "section_title": ".2.5.5 פעילויות באמצעות חברות בנות עיקריות של איילון ביטוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "איילון מימון בע\"מ",
+              "ownership_pct": 100,
+              "parent": "איילון ביטוח",
+              "page_reference": 59,
+              "section_title": ".2.5.5 פעילויות באמצעות חברות בנות עיקריות של איילון ביטוח",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "ווישור חברה לביטוח בע\"מ",
+              "ownership_pct": null,
+              "parent": "איילון ביטוח",
+              "page_reference": 81,
+              "section_title": "המבנה הארגוני של הקבוצה",
+              "table_title": null,
+              "note": "מוחזקת במלואה"
+            },
+            {
+              "name": "איל צבי בע\"מ",
+              "ownership_pct": null,
+              "parent": "איילון ביטוח",
+              "page_reference": 85,
+              "section_title": null,
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "איילון נאמנים סוכנות לביטוח בע\"מ",
+              "ownership_pct": null,
+              "parent": "איילון ביטוח",
+              "page_reference": 86,
+              "section_title": null,
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "נכונים סוכנות לביטוח בע\"מ",
+              "ownership_pct": null,
+              "parent": "איילון ביטוח",
+              "page_reference": 86,
+              "section_title": null,
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "איילון ח.ל.ב נכסים והשקעות בע\"מ",
+              "ownership_pct": null,
+              "parent": "איילון ביטוח",
+              "page_reference": 99,
+              "section_title": "3.9 רכוש קבוע ונכסים בלתי מוחשיים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ווישור ביטוח",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 90,
+              "section_title": "תיאור עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "איילון נאמנים סוכנות לביטוח בע\"מ",
+              "ownership_pct": null,
+              "parent": "איילון ביטוח",
+              "page_reference": 99,
+              "section_title": "3.9 רכוש קבוע ונכסים בלתי מוחשיים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "נכונים סוכנות לביטוח בע\"מ",
+              "ownership_pct": null,
+              "parent": "איילון ביטוח",
+              "page_reference": 99,
+              "section_title": "3.9 רכוש קבוע ונכסים בלתי מוחשיים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "WeSure Digital Insurance Services (WUD)",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 92,
+              "section_title": "תיאור עסקי התאגיד",
+              "table_title": null,
+              "note": "חברה נכדה"
+            },
+            {
+              "name": "גלובלטק מימון בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 92,
+              "section_title": "תיאור עסקי התאגיד",
+              "table_title": null,
+              "note": "חברת בת"
+            }
+          ],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "איילון חברה לביטוח בע\"מ",
+              "ownership_pct": 64.06,
+              "parent": null,
+              "page_reference": 118,
+              "section_title": "1. תיאור החברה והסביבה העסקית / 1.1 פרטי החברה ובעלי מניות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ווישור חברה לביטוח בע\"מ",
+              "ownership_pct": 100,
+              "parent": "איילון חברה לביטוח בע\"מ",
+              "page_reference": 118,
+              "section_title": "1. תיאור החברה והסביבה העסקית / 1.1 פרטי החברה ובעלי מניות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "USA Technologies WeSure Inc. (WUS)",
+              "ownership_pct": 39.5,
+              "parent": null,
+              "page_reference": 122,
+              "section_title": "2. מגמות, אירועים והתפתחויות בעסקי הקבוצה / 2.1 התפתחויות עיקריות במהלך תקופת הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גלובלטק מימון בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 121,
+              "section_title": "2. מגמות, אירועים והתפתחויות בעסקי הקבוצה / 2.1 התפתחויות עיקריות במהלך תקופת הדוח",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:7": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "WeSure USA Technologies Inc. (WUS)",
+              "ownership_pct": 39.5,
+              "parent": null,
+              "page_reference": 122,
+              "section_title": "2. מגמות, אירועים והתפתחויות בעסקי הקבוצה",
+              "table_title": null,
+              "note": "בעלת השליטה ב-WUS"
+            },
+            {
+              "name": "Hourly, Inc.",
+              "ownership_pct": 100,
+              "parent": "WeSure USA Technologies Inc. (WUS)",
+              "page_reference": 122,
+              "section_title": "2. מגמות, אירועים והתפתחויות בעסקי הקבוצה",
+              "table_title": null,
+              "note": "רכישת 100% על ידי חברת הבת WUS"
+            },
+            {
+              "name": "MDS",
+              "ownership_pct": 100,
+              "parent": "WeSure USA Technologies Inc. (WUS)",
+              "page_reference": 122,
+              "section_title": "2. מגמות, אירועים והתפתחויות בעסקי הקבוצה",
+              "table_title": null,
+              "note": "חברת ניהול שכר בבעלות מלאה של WUS"
+            },
+            {
+              "name": "Hourly LLC",
+              "ownership_pct": 100,
+              "parent": "WeSure USA Technologies Inc. (WUS)",
+              "page_reference": 122,
+              "section_title": "2. מגמות, אירועים והתפתחויות בעסקי הקבוצה",
+              "table_title": null,
+              "note": "סוכנות חיתום בבעלות מלאה של WUS"
+            },
+            {
+              "name": "WeSure Digital Insurance Services, Inc.",
+              "ownership_pct": 100,
+              "parent": "WeSure USA Technologies Inc. (WUS)",
+              "page_reference": 122,
+              "section_title": "2. מגמות, אירועים והתפתחויות בעסקי הקבוצה",
+              "table_title": null,
+              "note": "סוכנות חיתום בבעלות מלאה של WUS"
+            }
+          ],
+          "change_events": [
+            {
+              "company": "Hourly, Inc.",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": 0,
+              "ownership_pct_after": 100,
+              "event_date": "2025-07-16",
+              "event_description": "דיווח על הסכם רכישת מלוא הון המניות של Hourly באמצעות מיזוג משולש הופכי והשלמת העסקה בספטמבר 2025",
+              "page_reference": 122,
+              "section_title": "2. מגמות, אירועים והתפתחויות בעסקי הקבוצה"
+            }
+          ]
         }
       },
       "attempts": {}
@@ -1822,13 +2778,457 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 8,
-    "at": "2026-09-05T21:12:40.617199+00:00",
+    "at": "2026-09-06T08:11:23.782645+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 35,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "סימקס החזקות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 11,
+              "section_title": "פעילות החברה ותיאור התפתחות עסקיה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מקס איט פיננסים בע\"מ",
+              "ownership_pct": 100,
+              "parent": "סימקס החזקות בע\"מ",
+              "page_reference": 11,
+              "section_title": "פעילות החברה ותיאור התפתחות עסקיה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מקס סוכנות לביטוח (2020) בע\"מ",
+              "ownership_pct": 100,
+              "parent": "מקס איט פיננסים בע\"מ",
+              "page_reference": 11,
+              "section_title": "פעילות החברה ותיאור התפתחות עסקיה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "הייפ פתרונות תשלום בע\"מ",
+              "ownership_pct": 100,
+              "parent": "מיילו ברום הולדינגס בע\"מ",
+              "page_reference": 11,
+              "section_title": "פעילות החברה ותיאור התפתחות עסקיה",
+              "table_title": null,
+              "note": "מוחזקת במלואה על ידי מיילו ברום הולדינגס בע\"מ שהינה חברה בבעלות מלאה של סימקס"
+            },
+            {
+              "name": "כלל חברה לביטוח בע\"מ",
+              "ownership_pct": 99.98,
+              "parent": null,
+              "page_reference": 11,
+              "section_title": "פעילות החברה ותיאור התפתחות עסקיה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "כלל ביטוח אשראי בע\"מ",
+              "ownership_pct": 80,
+              "parent": "כלל חברה לביטוח בע\"מ",
+              "page_reference": 11,
+              "section_title": "פעילות החברה ותיאור התפתחות עסקיה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "כלל ביטוח גיוסי הון בע\"מ",
+              "ownership_pct": 100,
+              "parent": "כלל חברה לביטוח בע\"מ",
+              "page_reference": 11,
+              "section_title": "פעילות החברה ותיאור התפתחות עסקיה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "כנף - כלל ניהול פיננסים בע\"מ",
+              "ownership_pct": 100,
+              "parent": "כלל חברה לביטוח בע\"מ",
+              "page_reference": 11,
+              "section_title": "פעילות החברה ותיאור התפתחות עסקיה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "כלל פנסיה וגמל בע\"מ",
+              "ownership_pct": 100,
+              "parent": "כלל חברה לביטוח בע\"מ",
+              "page_reference": 11,
+              "section_title": "פעילות החברה ותיאור התפתחות עסקיה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "עתודות קרן פנסיה לשכירים ועצמאיים בע\"מ",
+              "ownership_pct": 50,
+              "parent": "כלל חברה לביטוח בע\"מ",
+              "page_reference": 11,
+              "section_title": "פעילות החברה ותיאור התפתחות עסקיה",
+              "table_title": null,
+              "note": "מוחזקת בחלקים שווים על ידי כלל ביטוח וביטוח חקלאי אגודה שיתופית מרכזית בע\"מ"
+            },
+            {
+              "name": "כללביט מערכות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 11,
+              "section_title": "פעילות החברה ותיאור התפתחות עסקיה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "כלל פיננסים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 11,
+              "section_title": "פעילות החברה ותיאור התפתחות עסקיה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מכלול מימון בע\"מ",
+              "ownership_pct": 24.9,
+              "parent": "כלל פיננסים בע\"מ",
+              "page_reference": 11,
+              "section_title": "פעילות החברה ותיאור התפתחות עסקיה",
+              "table_title": null,
+              "note": "חברה ציבורית בשליטת אוריאל פז, ירון בלנק ואיילת רוסק שמחזיקים יחד בכ-39% ממניותיה"
+            },
+            {
+              "name": "כלל החזקות סוכנויות (1998) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 11,
+              "section_title": "פעילות החברה ותיאור התפתחות עסקיה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "בטח-תורן סוכנות לביטוח בע\"מ",
+              "ownership_pct": 100,
+              "parent": "כלל החזקות סוכנויות (1998) בע\"מ",
+              "page_reference": 11,
+              "section_title": "פעילות החברה ותיאור התפתחות עסקיה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "תמורה סוכנות לביטוח (1987) בע\"מ",
+              "ownership_pct": 100,
+              "parent": "כלל החזקות סוכנויות (1998) בע\"מ",
+              "page_reference": 11,
+              "section_title": "פעילות החברה ותיאור התפתחות עסקיה",
+              "table_title": null,
+              "note": "ביתרת המניות מחזיקה חברת Atradius Participation Holdings S.L."
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "כלל ביטוח אשראי",
+              "ownership_pct": 80,
+              "parent": null,
+              "page_reference": 56,
+              "section_title": "7.1.1.4 ענף ביטוח אשראי וסיכוני סחר חוץ",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "מקס",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 87,
+              "section_title": "השקעות בחברות מוחזקות",
+              "table_title": null,
+              "note": "לפרטים בדבר החזקת החברה במקס ראה סעיף 2.1 לעיל"
+            },
+            {
+              "name": "מכלול",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 87,
+              "section_title": "השקעות בחברות מוחזקות",
+              "table_title": null,
+              "note": "לפרטים בדבר החזקת החברה במכלול ראה סעיף 16.2 להלן"
+            },
+            {
+              "name": "כלל ביטוח אשראי",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 95,
+              "section_title": "תרשים המבנה הארגוני של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "כלל פנסיה וגמל",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 95,
+              "section_title": "תרשים המבנה הארגוני של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "עתודות הותיקה",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 95,
+              "section_title": "תרשים המבנה הארגוני של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "כלל החזקות סוכנויות",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 99,
+              "section_title": "סוכנויות הקבוצה",
+              "table_title": null,
+              "note": "חברה בת בבעלות מלאה של החברה"
+            },
+            {
+              "name": "תמורה סוכנות לביטוח (1987) בע\"מ",
+              "ownership_pct": null,
+              "parent": "כלל החזקות סוכנויות",
+              "page_reference": 99,
+              "section_title": "סוכנויות הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "בטח - תורן סוכנות לביטוח בע\"מ",
+              "ownership_pct": null,
+              "parent": "כלל החזקות סוכנויות",
+              "page_reference": 99,
+              "section_title": "סוכנויות הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "כללביט מערכות",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 105,
+              "section_title": "ספקים ונותני שירותים",
+              "table_title": null,
+              "note": "חברה בת בבעלות מלאה של החברה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:7": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "סימקס החזקות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 131,
+              "section_title": "11.1 מבנה אחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מקס איתּ פיננסים בע\"מ",
+              "ownership_pct": 100,
+              "parent": "סימקס החזקות בע\"מ",
+              "page_reference": 131,
+              "section_title": "11.1 מבנה אחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מקס איתּ אשראים בע\"מ",
+              "ownership_pct": 100,
+              "parent": "מקס איתּ פיננסים בע\"מ",
+              "page_reference": 131,
+              "section_title": "11.1 מבנה אחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מקס איתּ פקדונות בע\"מ",
+              "ownership_pct": 100,
+              "parent": "מקס איתּ פיננסים בע\"מ",
+              "page_reference": 131,
+              "section_title": "11.1 מבנה אחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מקס איתּ ניירות בע\"מ",
+              "ownership_pct": 100,
+              "parent": "מקס איתּ פיננסים בע\"מ",
+              "page_reference": 131,
+              "section_title": "11.1 מבנה אחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מקס סוכנות לביטוח (2020) בע\"מ",
+              "ownership_pct": 100,
+              "parent": "מקס איתּ פיננסים בע\"מ",
+              "page_reference": 131,
+              "section_title": "11.1 מבנה אחזקות",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:8": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "מקס איט אשראים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 140,
+              "section_title": "פעילות חברות מוחזקות עיקריות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מקס איט פקדונות בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 140,
+              "section_title": "פעילות חברות מוחזקות עיקריות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מקס סוכנות לביטוח (2020) בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 144,
+              "section_title": "רישיון סוכן תאגיד",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:9": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "כלל החזקות סוכנויות",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 165,
+              "section_title": "16 מידע נוסף אודות פעילויות אחרות שלא נכללו בתחומי הפעילות",
+              "table_title": null,
+              "note": "בבעלות מלאה של החברה"
+            },
+            {
+              "name": "מכלול",
+              "ownership_pct": 24.9,
+              "parent": "כלל פיננסים",
+              "page_reference": 165,
+              "section_title": "16 מידע נוסף אודות פעילויות אחרות שלא נכללו בתחומי הפעילות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "הייפ פתרונות תשלום בע\"מ",
+              "ownership_pct": null,
+              "parent": "מיילו",
+              "page_reference": 165,
+              "section_title": "16 מידע נוסף אודות פעילויות אחרות שלא נכללו בתחומי הפעילות",
+              "table_title": null,
+              "note": "בבעלות מלאה של מיילו"
+            },
+            {
+              "name": "תמורה סוכנות לביטוח (1987) בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 166,
+              "section_title": "16.3.1 מצבת עובדים",
+              "table_title": null,
+              "note": "בבעלות מלאה של החברה"
+            },
+            {
+              "name": "בטח תורן סוכנויות ביטוח בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 166,
+              "section_title": "16.3.1 מצבת עובדים",
+              "table_title": null,
+              "note": "בבעלות מלאה של החברה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:10": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
@@ -1851,13 +3251,261 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 8,
-    "at": "2026-09-05T21:12:59.385596+00:00",
+    "at": "2026-09-06T08:11:52.125440+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 44,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "ביטוח ישיר - השקעות פיננסיות בע\"מ",
+              "ownership_pct": 87.87,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "תרשים מבנה ההחזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "נימה שפע ישראל בע\"מ",
+              "ownership_pct": 98.49,
+              "parent": "ביטוח ישיר - השקעות פיננסיות בע\"מ",
+              "page_reference": 6,
+              "section_title": "תרשים מבנה ההחזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "נימה שפע ישראל בע\"מ",
+              "ownership_pct": 3.93,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "תרשים מבנה ההחזקות של החברה",
+              "table_title": null,
+              "note": "החזקה ישירה"
+            },
+            {
+              "name": "ישיר איי.די.איי. אחזקות בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": "ביטוח ישיר - השקעות פיננסיות בע\"מ",
+              "page_reference": 6,
+              "section_title": "תרשים מבנה ההחזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אדגר השקעות ופיתוח בע\"מ",
+              "ownership_pct": 53.94,
+              "parent": "ישיר איי.די.איי. אחזקות בע\"מ",
+              "page_reference": 6,
+              "section_title": "תרשים מבנה ההחזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אדגר השקעות ופיתוח בע\"מ",
+              "ownership_pct": 3.93,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "תרשים מבנה ההחזקות של החברה",
+              "table_title": null,
+              "note": "החזקה ישירה"
+            },
+            {
+              "name": "איי.די.איי. חברה לביטוח בע\"מ",
+              "ownership_pct": 40.59,
+              "parent": "ישיר איי.די.איי. אחזקות בע\"מ",
+              "page_reference": 6,
+              "section_title": "תרשים מבנה ההחזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מימון ישיר מקבוצת ישיר (2006) בע\"מ",
+              "ownership_pct": 43.1,
+              "parent": "ישיר איי.די.איי. אחזקות בע\"מ",
+              "page_reference": 6,
+              "section_title": "תרשים מבנה ההחזקות של החברה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "איי.די.איי. הנפקות (2010) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 26,
+              "section_title": "1.1 פעילות החברה ותיאור התפתחות עסקיה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פנדה סוכנות לביטוח בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 26,
+              "section_title": "1.1 פעילות החברה ותיאור התפתחות עסקיה",
+              "table_title": null,
+              "note": "נרכשה על ידי החברה מבעליה הקודמים"
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "מימון ישיר נדל\"ן ומשכנתאות בע\"מ",
+              "ownership_pct": 85,
+              "parent": null,
+              "page_reference": 103,
+              "section_title": "1.2 מבנה החזקות",
+              "table_title": null,
+              "note": "מוכרת גם כ'חברת המשכנתאות'"
+            },
+            {
+              "name": "אוטו מגזין בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 103,
+              "section_title": "1.2 מבנה החזקות",
+              "table_title": null,
+              "note": "מוכרת גם כ'מגזין אוטו'"
+            }
+          ],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "מימון ישיר נדל\"ן ומשכנתאות בע\"מ",
+              "ownership_pct": 85,
+              "parent": null,
+              "page_reference": 103,
+              "section_title": "1.2 מבנה החזקות",
+              "table_title": null,
+              "note": "חברת המשכנתאות"
+            },
+            {
+              "name": "אוטו מגזין בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 103,
+              "section_title": "1.2 מבנה החזקות",
+              "table_title": null,
+              "note": "מגזין אוטו"
+            },
+            {
+              "name": "חברת מימון משותפת עם טרייד מוביל בע\"מ",
+              "ownership_pct": 30,
+              "parent": null,
+              "page_reference": 122,
+              "section_title": "1.14.6 חברת מימון משותפת עם טרייד מוביל בע\"מ",
+              "table_title": null,
+              "note": "החברה המשותפת"
+            }
+          ],
+          "change_events": []
+        },
+        "0:7": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "חברת מימון משותפת עם טרייד מוביל בע\"מ",
+              "ownership_pct": 30,
+              "parent": null,
+              "page_reference": 121,
+              "section_title": "1.14 שיווק והפצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אוטו מגזין",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 121,
+              "section_title": "1.14 שיווק והפצה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:8": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:9": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "מימון ישיר נדל\"ן ומשכנתאות בע\"מ",
+              "ownership_pct": 85,
+              "parent": null,
+              "page_reference": 161,
+              "section_title": "1.45 השקעות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מגזין אוטו",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 161,
+              "section_title": "1.45 השקעות",
+              "table_title": null,
+              "note": "החזקה מלאה לאחר מימוש אופציה ביום 26 באפריל 2025"
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
