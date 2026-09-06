@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>חיפוש קווי אוטובוס</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #f0f2f5;
+    --surface: #ffffff;
+    --border: #e0e4ea;
+    --text: #1a1f2e;
+    --muted: #6b7280;
+    --accent: #1e40af;
+    --accent-light: #dbeafe;
+    --pickup: #16a34a;
+    --dropoff: #dc2626;
+    --transit: #9ca3af;
+    --line-h: 2px;
+  }
+
+  body {
+    font-family: 'Heebo', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+  }
+
+  /* ─── Header ─── */
+  header {
+    background: var(--accent);
+    padding: 0 24px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .header-icon {
+    width: 32px; height: 32px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px;
+  }
+  header h1 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+  }
+
+  /* ─── Search bar ─── */
+  .search-wrap {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 16px 24px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .search-inner {
+    max-width: 720px;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+  }
+  .search-field {
+    flex: 1;
+    position: relative;
+  }
+  .search-field input {
+    width: 100%;
+    height: 48px;
+    border: 1.5px solid var(--border);
+    border-radius: 10px;
+    padding: 0 48px 0 16px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text);
+    background: var(--bg);
+    outline: none;
+    letter-spacing: 1px;
+    transition: border-color 0.15s;
+    text-align: center;
+  }
+  .search-field input:focus { border-color: var(--accent); background: #fff; }
+  .search-field input::placeholder { font-size: 15px; font-weight: 400; letter-spacing: 0; color: var(--muted); }
+  .search-icon {
+    position: absolute;
+    right: 14px; top: 50%; transform: translateY(-50%);
+    color: var(--muted); font-size: 18px; pointer-events: none;
+  }
+  .btn-search {
+    height: 48px;
+    padding: 0 22px;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background 0.15s;
+  }
+  .btn-search:hover { background: #1e3a8a; }
+  .btn-search:disabled { background: #93c5fd; cursor: not-allowed; }
+
+  /* ─── Main layout ─── */
+  .main {
+    max-width: 1100px;
+    margin: 24px auto;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 20px;
+    align-items: start;
+  }
+  @media (max-width: 700px) {
+    .main { grid-template-columns: 1fr; padding: 0 12px; }
+    header h1 { font-size: 15px; }
+  }
+
+  /* ─── Empty / loading / error states ─── */
+  .state-box {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 64px 24px;
+    color: var(--muted);
+  }
+  .state-box .state-icon { font-size: 48px; margin-bottom: 12px; }
+  .state-box p { font-size: 15px; }
+  .spinner {
+    width: 36px; height: 36px;
+    border: 3px solid var(--border);
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+    margin: 0 auto 12px;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* ─── Route list (right panel) ─── */
+  .panel-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 8px;
+  }
+  .route-list { display: flex; flex-direction: column; gap: 8px; }
+
+  .route-card {
+    background: var(--surface);
+    border: 1.5px solid var(--border);
+    border-radius: 12px;
+    padding: 14px 16px;
+    cursor: pointer;
+    transition: border-color 0.15s, box-shadow 0.15s;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  .route-card:hover { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-light); }
+  .route-card.active { border-color: var(--accent); background: var(--accent-light); }
+
+  .route-badge {
+    min-width: 48px; height: 48px;
+    background: var(--accent);
+    color: #fff;
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 17px;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+    flex-shrink: 0;
+  }
+  .route-card.active .route-badge { background: #1e3a8a; }
+
+  .route-info { flex: 1; min-width: 0; }
+  .route-agency {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 3px;
+  }
+  .route-card.active .route-agency { color: #1e3a8a; }
+  .route-direction {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: var(--text);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .route-city {
+    margin-top: 5px;
+    font-size: 11px;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  /* ─── Stops panel (left) ─── */
+  .stops-panel {
+    background: var(--surface);
+    border: 1.5px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+  }
+  .stops-header {
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg);
+  }
+  .stops-header .route-num {
+    font-size: 28px;
+    font-weight: 900;
+    color: var(--accent);
+    line-height: 1;
+  }
+  .stops-header .route-head-sign {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text);
+    margin-top: 4px;
+  }
+  .stops-header .route-meta {
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 6px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .stops-header .route-meta span { display: flex; align-items: center; gap: 4px; }
+
+  .legend {
+    display: flex;
+    gap: 14px;
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--border);
+    font-size: 11px;
+    color: var(--muted);
+  }
+  .legend-dot {
+    width: 9px; height: 9px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 4px;
+  }
+
+  /* ─── Stop timeline ─── */
+  .stops-list {
+    padding: 8px 0;
+    max-height: 72vh;
+    overflow-y: auto;
+  }
+  .stop-row {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+    padding: 0 20px;
+    position: relative;
+  }
+  .stop-row:hover { background: var(--bg); }
+
+  .stop-line-col {
+    width: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  .stop-line-top, .stop-line-bottom {
+    flex: 1;
+    width: var(--line-h);
+    background: var(--border);
+  }
+  .stop-row:first-child .stop-line-top { background: transparent; }
+  .stop-row:last-child .stop-line-bottom { background: transparent; }
+
+  .stop-dot {
+    width: 14px; height: 14px;
+    border-radius: 50%;
+    border: 2.5px solid var(--border);
+    background: #fff;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .stop-dot.pickup { border-color: var(--pickup); background: var(--pickup); }
+  .stop-dot.dropoff { border-color: var(--dropoff); background: var(--dropoff); }
+  .stop-dot.transit { border-color: var(--transit); background: var(--bg); }
+
+  .stop-content {
+    flex: 1;
+    padding: 10px 0 10px 12px;
+    min-width: 0;
+  }
+  .stop-seq {
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--muted);
+    margin-bottom: 1px;
+  }
+  .stop-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text);
+    line-height: 1.3;
+  }
+  .stop-sub {
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 2px;
+  }
+  .stop-tags {
+    display: flex;
+    gap: 4px;
+    margin-top: 4px;
+    flex-wrap: wrap;
+  }
+  .tag {
+    font-size: 10px;
+    font-weight: 600;
+    padding: 1px 6px;
+    border-radius: 4px;
+  }
+  .tag-pickup { background: #dcfce7; color: #15803d; }
+  .tag-dropoff { background: #fee2e2; color: #b91c1c; }
+
+  /* ─── Placeholder when no route selected ─── */
+  .stops-empty {
+    padding: 48px 24px;
+    text-align: center;
+    color: var(--muted);
+  }
+  .stops-empty .icon { font-size: 40px; margin-bottom: 10px; }
+  .stops-empty p { font-size: 14px; }
+
+  /* ─── CORS warning ─── */
+  .cors-warning {
+    background: #fffbeb;
+    border: 1px solid #fcd34d;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 12px;
+    color: #92400e;
+    margin-top: 12px;
+    display: none;
+  }
+  .cors-warning.show { display: block; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-icon">🚌</div>
+  <h1>חיפוש קווי אוטובוס</h1>
+</header>
+
+<div class="search-wrap">
+  <div class="search-inner">
+    <div class="search-field">
+      <span class="search-icon">🔍</span>
+      <input type="number" id="lineInput" placeholder="הקלד מספר קו, למשל 330" min="1" />
+    </div>
+    <button class="btn-search" id="searchBtn" onclick="searchLine()">חיפוש</button>
+  </div>
+  <div class="cors-warning" id="corsWarning">
+    ⚠️ בסביבת הצגה זו ה-API חסום על ידי CORS. האתר יעבוד מלא כאשר יתארח תחת Cloudflare Pages עם Worker כפרוקסי, או ישירות מ-route.bus.gov.il.
+  </div>
+</div>
+
+<div class="main" id="mainArea">
+  <div class="state-box">
+    <div class="state-icon">🗺️</div>
+    <p>הקלד מספר קו וחפש</p>
+  </div>
+</div>
+
+<script>
+  const API_SEARCH = num =>
+    `https://api.bus.gov.il/prod/route-planner-prod/api/he/AutoComplete/SearchLines?searchTerm=${num}`;
+  const API_STOPS = (routeId, date) =>
+    `https://api.bus.gov.il/prod/mot-scheduler-prod/api/he/Routes/GetRouteStops?routeId=${routeId}&date=${date}`;
+
+  let currentRoutes = [];
+  let selectedRouteId = null;
+
+  document.getElementById('lineInput').addEventListener('keydown', e => {
+    if (e.key === 'Enter') searchLine();
+  });
+
+  async function searchLine() {
+    const val = document.getElementById('lineInput').value.trim();
+    if (!val) return;
+
+    const btn = document.getElementById('searchBtn');
+    btn.disabled = true;
+    btn.textContent = '...';
+    showLoading();
+
+    try {
+      const res = await fetch(API_SEARCH(val));
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const json = await res.json();
+      currentRoutes = json.data || [];
+      selectedRouteId = null;
+      renderRouteList(currentRoutes);
+    } catch (err) {
+      if (err.name === 'TypeError' || err.message.includes('Failed to fetch') || err.message.includes('NetworkError')) {
+        document.getElementById('corsWarning').classList.add('show');
+        showError('לא ניתן לגשת ל-API מסביבה זו (CORS).<br>הכנס את הקוד לאתר שלך ב-Cloudflare Pages.');
+      } else {
+        showError('שגיאה בחיפוש: ' + err.message);
+      }
+    } finally {
+      btn.disabled = false;
+      btn.textContent = 'חיפוש';
+    }
+  }
+
+  function renderRouteList(routes) {
+    if (!routes.length) {
+      setMain(`<div class="state-box">
+        <div class="state-icon">🔍</div>
+        <p>לא נמצאו קווים תואמים</p>
+      </div>`);
+      return;
+    }
+
+    const listHtml = routes.map(r => {
+      const parts = r.routeLongName ? r.routeLongName.split('<->') : ['—', '—'];
+      const from = (parts[0] || '').trim();
+      const to = (parts[1] || '').trim();
+      return `
+        <div class="route-card" id="rc-${r.routeId}" onclick="selectRoute(${r.routeId}, '${esc(r.routeName)}', '${esc(r.agencyName)}')">
+          <div class="route-badge">${esc(r.routeName)}</div>
+          <div class="route-info">
+            <div class="route-agency">${esc(r.agencyName)}</div>
+            <div class="route-direction">${esc(from)} ← ${esc(to)}</div>
+            <div class="route-city">📍 ${esc(r.cityName)}</div>
+          </div>
+        </div>`;
+    }).join('');
+
+    setMain(`
+      <div>
+        <div class="panel-label">נמצאו ${routes.length} כיוונים</div>
+        <div class="route-list">${listHtml}</div>
+      </div>
+      <div id="stopsCol">
+        <div class="stops-panel">
+          <div class="stops-empty">
+            <div class="icon">👆</div>
+            <p>בחר כיוון כדי לראות את התחנות</p>
+          </div>
+        </div>
+      </div>
+    `);
+  }
+
+  async function selectRoute(routeId, routeName, agencyName) {
+    if (selectedRouteId === routeId) return;
+    selectedRouteId = routeId;
+
+    // highlight active card
+    document.querySelectorAll('.route-card').forEach(c => c.classList.remove('active'));
+    const card = document.getElementById(`rc-${routeId}`);
+    if (card) card.classList.add('active');
+
+    // show spinner in stops col
+    const stopsCol = document.getElementById('stopsCol');
+    if (stopsCol) {
+      stopsCol.innerHTML = `<div class="stops-panel">
+        <div class="stops-empty"><div class="spinner"></div><p>טוען תחנות...</p></div>
+      </div>`;
+    }
+
+    const date = new Date().toISOString();
+    try {
+      const res = await fetch(API_STOPS(routeId, date));
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const json = await res.json();
+      renderStops(json.data.route, routeName, agencyName, stopsCol);
+    } catch (err) {
+      if (stopsCol) {
+        stopsCol.innerHTML = `<div class="stops-panel">
+          <div class="stops-empty"><div class="icon">⚠️</div><p>שגיאה בטעינת תחנות</p></div>
+        </div>`;
+      }
+    }
+  }
+
+  function renderStops(route, routeName, agencyName, container) {
+    if (!route || !route.stops || !route.stops.length) {
+      container.innerHTML = `<div class="stops-panel">
+        <div class="stops-empty"><div class="icon">🚏</div><p>לא נמצאו תחנות לקו זה</p></div>
+      </div>`;
+      return;
+    }
+
+    const stops = route.stops;
+    const headSign = route.tripHeadSign?.he || '';
+    const totalStops = stops.length;
+
+    const pickupCount = stops.filter(s => s.isPickup).length;
+    const dropoffCount = stops.filter(s => s.isDropoff).length;
+
+    const stopsHtml = stops.map((s, i) => {
+      const isFirst = i === 0;
+      const isLast = i === stops.length - 1;
+      let dotClass = 'transit';
+      if (s.isPickup && !s.isDropoff) dotClass = 'pickup';
+      else if (s.isDropoff && !s.isPickup) dotClass = 'dropoff';
+      else if (s.isPickup && s.isDropoff) dotClass = 'pickup';
+
+      const tags = [];
+      if (s.isPickup) tags.push('<span class="tag tag-pickup">עלייה</span>');
+      if (s.isDropoff) tags.push('<span class="tag tag-dropoff">ירידה</span>');
+
+      const subParts = [];
+      if (s.cityName) subParts.push(s.cityName);
+      if (s.streetName) subParts.push(s.streetName + (s.streetNumber ? ' ' + s.streetNumber : ''));
+      const sub = subParts.join(' · ');
+
+      return `
+        <div class="stop-row">
+          <div class="stop-line-col">
+            <div class="stop-line-top"></div>
+            <div class="stop-dot ${dotClass}"></div>
+            <div class="stop-line-bottom"></div>
+          </div>
+          <div class="stop-content">
+            <div class="stop-seq">${s.stopSequence}</div>
+            <div class="stop-name">${esc(s.name?.he || '')}</div>
+            ${sub ? `<div class="stop-sub">${esc(sub)}</div>` : ''}
+            ${tags.length ? `<div class="stop-tags">${tags.join('')}</div>` : ''}
+          </div>
+        </div>`;
+    }).join('');
+
+    container.innerHTML = `
+      <div class="stops-panel">
+        <div class="stops-header">
+          <div class="route-num">קו ${esc(routeName)}</div>
+          ${headSign ? `<div class="route-head-sign">➜ ${esc(headSign)}</div>` : ''}
+          <div class="route-meta">
+            <span>🏢 ${esc(agencyName)}</span>
+            <span>🚏 ${totalStops} תחנות</span>
+            ${pickupCount ? `<span style="color:var(--pickup)">⬆ עלייה: ${pickupCount}</span>` : ''}
+            ${dropoffCount ? `<span style="color:var(--dropoff)">⬇ ירידה: ${dropoffCount}</span>` : ''}
+          </div>
+        </div>
+        <div class="legend">
+          <span><span class="legend-dot" style="background:var(--pickup)"></span> עלייה בלבד</span>
+          <span><span class="legend-dot" style="background:var(--dropoff)"></span> ירידה בלבד</span>
+          <span><span class="legend-dot" style="background:var(--transit)"></span> מעבר</span>
+        </div>
+        <div class="stops-list">${stopsHtml}</div>
+      </div>`;
+  }
+
+  function showLoading() {
+    setMain(`<div class="state-box"><div class="spinner"></div><p>מחפש...</p></div>`);
+  }
+
+  function showError(msg) {
+    setMain(`<div class="state-box"><div class="state-icon">⚠️</div><p>${msg}</p></div>`);
+  }
+
+  function setMain(html) {
+    document.getElementById('mainArea').innerHTML = html;
+  }
+
+  function esc(str) {
+    return String(str ?? '')
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+</script>
+</body>
+</html>
