@@ -11,12 +11,15 @@ rate limiter גלובלי ב-extract_subsidiaries.py, משותף בין כל ה-
 concurrency לא "עוקף" את המכסה, רק מנצל טוב יותר את זמן ההמתנה
 (הורדות, I/O) בין הבקשות המוגבלות-קצב.
 
-מיועד לשימוש גם בהרצה היומית העתידית - processed_reports.json הוא קובץ
-מתמשך בין הרצות (נשמר ב-cache ב-GitHub Actions, כמו .maya_cache).
+מיועד לשימוש גם בהרצה היומית - קובץ המעקב (processed_reports_<מודל>.json)
+מתמשך בין הרצות (נשמר ב-git, כמו .maya_cache). ברירת המחדל של --processed-log
+נגזרת אוטומטית מהמודל הפעיל (GEMINI_MODEL_OVERRIDE) - כך שהרצה עם 3.6
+והרצה עם 3.5 שומרות תור עצמאי זו מזו גם בלי לציין את הדגל במפורש: דוח
+שטופל במודל אחד לא "נעלם" מהתור של המודל השני.
 
 הרצה:
     py run_full_batch.py --plan selection_plan.json
-    py run_full_batch.py --plan selection_plan.json --limit 50 --workers 3
+    GEMINI_MODEL_OVERRIDE=gemini-3.5-flash-lite py run_full_batch.py --plan selection_plan.json --limit 50 --workers 3
 """
 
 import argparse
@@ -170,7 +173,16 @@ def _commit_progress(results_path: str, processed_log_path: str, processed: dict
         safe_print(f"    שגיאת git ב-checkpoint: {e}")
         return False
 
-PROCESSED_LOG_PATH = "processed_reports.json"
+def _default_processed_log_path() -> str:
+    """שם קובץ המעקב כברירת מחדל - נגזר מהמודל הפעיל (ex.GEMINI_MODEL, כבר
+    קבוע בזמן הזה לפי GEMINI_MODEL_OVERRIDE - ראה import למעלה), לא קבוע
+    גלובלי משותף. קריטי: בעבר ברירת המחדל הייתה "processed_reports.json"
+    יחיד לשני המודלים - מי שהריץ בלי --processed-log מפורש (בדיוק כמו
+    הדוגמה בתיעוד הקובץ למעלה) קיבל את אותו קובץ מעקב גם ל-3.6 וגם ל-3.5,
+    וזה בדיוק מה שגרם לדוח שהצליח באחד להיראות "כבר טופל" ולהיעלם מהתור
+    של השני. עכשיו ברירת המחדל עצמה כבר מבודדת לפי מודל, כך שגם הרצה
+    ידנית בלי לציין את הדגל במפורש שומרת על שני התורים עצמאיים."""
+    return f"processed_reports_{ex.GEMINI_MODEL.replace('.', '_')}.json"
 
 _processed_lock = threading.Lock()
 _print_lock = threading.Lock()
@@ -504,12 +516,14 @@ def _sync_status_to_d1(plan: dict, processed: dict, model: str,
     except Exception as e:
         print(f"אזהרה: רישום ריצה ל-D1 נכשל: {e}")
 
-    # סימון בקשות דחיפות שטופלו. urgent/retry - העדיפות רלוונטית רק
-    # ל-3.6 (ראה בניית tasks למעלה), אז גם הפתרון תלוי רק בהצלחת 3.6
-    # (status=="full") - לא בשני המודלים. שינוי מ-2026-09-02: הגרסה
-    # הקודמת חיכתה ל-has_snapshot_36 וגם has_snapshot_35, אבל זה יכול
-    # להיסגר מוקדם מדי אם לחברה כבר הייתה הצלחת 3.6 ישנה מלפני שהבקשה
-    # בכלל נוצרה - ריצת 3.5 בלבד הייתה "סוגרת" את הבקשה בטעות.
+    # סימון בקשות דחיפות שטופלו. urgent/retry נסגרות רק לפי הצלחת 3.6
+    # (status=="full") - לא בשני המודלים, ולא בהכרח באותה ריצה שדחפה
+    # אותן לראש התור (ראה בניית tasks למעלה - העדיפות עצמה חלה על שני
+    # המודלים). שינוי מ-2026-09-02: הגרסה הקודמת חיכתה ל-has_snapshot_36
+    # וגם has_snapshot_35, אבל זה יכול להיסגר מוקדם מדי אם לחברה כבר
+    # הייתה הצלחת 3.6 ישנה מלפני שהבקשה בכלל נוצרה - ריצת 3.5 בלבד הייתה
+    # "סוגרת" את הבקשה בטעות. חשוב: בקשה שרק 3.5 טיפל בה בהצלחה (עם
+    # עדיפות) תישאר פתוחה עד שגם 3.6 יצליח - זו כוונה, לא באג.
     full_now_cids = {str(r["company_id"]) for r in rows if r["status"] == "full"}
     resolve_requests(cfg, full_now_cids, request_types=("urgent", "retry"))
 
@@ -623,7 +637,10 @@ def run_task(task) -> tuple:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--plan", default="selection_plan.json")
-    parser.add_argument("--processed-log", default=PROCESSED_LOG_PATH)
+    parser.add_argument("--processed-log", default=_default_processed_log_path(),
+                         help="קובץ מעקב ההתקדמות - ברירת מחדל נגזרת מהמודל הפעיל "
+                              "(GEMINI_MODEL_OVERRIDE), כדי ששני המודלים תמיד ישמרו "
+                              "תור עצמאי גם בלי לציין את הדגל הזה במפורש.")
     parser.add_argument("--results", default="private_subsidiaries.jsonl",
                          help="קובץ התוצאות - נטען כדי לבדוק גרסת סכימה לכל רשומה")
     parser.add_argument("--limit", type=int, default=None,
@@ -755,10 +772,9 @@ if __name__ == "__main__":
 
     # ── בקשות דחיפות מהדשבורד: נטענות *לפני* בניית התור ──────────────────
     # קריטי: חייבים את urgent_cids כבר כאן, לא רק אחרי בניית tasks - ראה
-    # למטה. רק ל-3.6, לא ל-3.5 (הסבר בהמשך, ליד השימוש).
-    urgent_cids = set()
-    if ex.GEMINI_MODEL == "gemini-3.6-flash":
-        urgent_cids = set(read_priority_requests())
+    # למטה. חל על שני המודלים (3.6 ו-3.5) - ראה הסבר בהמשך, ליד השימוש,
+    # למה זה השתנה בחזרה מ"רק 3.6".
+    urgent_cids = set(read_priority_requests())
 
     # רשימת משימות שטוחה: כל דוח (snapshot או change) הוא משימה נפרדת עם
     # report_id ייחודי משלו - אידמפוטנטיות ברמת הדוח הבודד. "failed" אינו
@@ -811,17 +827,21 @@ if __name__ == "__main__":
     # tasks כאן הם tuples שבהם אינדקס 1 = company_id (אחרי הסרת עדיפות).
     # מבנה: (kind, cid, name, report_id, entry_or_change)
     #
-    # רק ל-3.6 - לא ל-3.5. שינוי מכוון (2026-09-02): במקור עדיפות הוחלה
-    # על שני המודלים, אבל בפועל זה לא עבד כמצופה - בקשה נסגרה כ"טופלה"
-    # אחרי ריצת 3.5 בלבד אם לחברה כבר היה has_snapshot_36=1 מוצלחת ישנה,
-    # לפני שריצת 3.6 בכלל הספיקה להתעדכן. במקום לתקן את זה, מפשטים:
-    # עדיפות רלוונטית רק כשבאמת רצים 3.6 (האיכות שבשבילה יש דחיפות
-    # מלכתחילה) - ל-3.5 יש תפוקה גבוהה ממילא ואינו זקוק לזה.
+    # חל על שני המודלים - שינוי חזרה (2026-09-06): גרסה קודמת הגבילה את
+    # זה ל-3.6 בלבד, כי resolve_requests (ראה _sync_status_to_d1) פעם
+    # נהג לסגור בקשת urgent/retry מוקדם מדי (סמך על has_snapshot_36 +
+    # has_snapshot_35 יחד, אז הצלחת 3.5 בלבד "גמרה" בקשה ישנה בטעות).
+    # אבל resolve_requests כבר לא עובד ככה - הוא סוגר רק לפי status=="full"
+    # (הצלחת 3.6 ספציפית, ראה שם), בלי קשר לאיזה מודל בפועל קידם את
+    # התור. אז אין יותר סיבה למנוע מ-3.5 לכבד עדיפות: בקשה שסומנה דחופה
+    # אמורה לקפוץ לראש התור בכל ריצה שתבוא - לא רק אם במקרה זו ריצת 3.6.
+    # ההתנהגות הישנה גרמה בדיוק לבאג שנצפה בפועל: סימון חברה כדחופה ואז
+    # הרצה עם 3.5 עדיין עיבדה חברות אחרות קודם.
     if urgent_cids:
         urgent = [t for t in tasks if str(t[1]) in urgent_cids]
         rest = [t for t in tasks if str(t[1]) not in urgent_cids]
         tasks = urgent + rest
-        print(f"בקשות דחיפות מהדשבורד (3.6 בלבד): {len(urgent)} משימות הוקדמו "
+        print(f"בקשות דחיפות מהדשבורד: {len(urgent)} משימות הוקדמו "
               f"לראש התור ({len(urgent_cids)} חברות סומנו"
               + (f", מתוכן {n_forced_urgent} נכפו לעיבוד-חוזר למרות שכבר "
                  f"הצליחו בעבר" if n_forced_urgent else "") + ").")
