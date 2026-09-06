@@ -122,26 +122,3 @@ jobs:
               exit 1
             fi
           fi
-
-      # ראה test-small-batch.yml להסבר המלא - אותו שלב-בונוס: מפעיל את
-      # sync-from-hard-worker.yml ב-Revach123/Revach כדי שתוצאת ריצת החירום
-      # הזו (בדיוק המקרה שבשבילו יש חירום - דחיפות) לא תחכה שוב לסנכרון
-      # ידני. continue-on-error כדי לא להפיל את ריצת החירום עצמה על זה.
-      - name: Trigger sync into Revach (company-search)
-        if: always()
-        continue-on-error: true
-        run: |
-          if [ -z "${{ secrets.REVACH_DISPATCH_TOKEN }}" ]; then
-            echo "::warning::REVACH_DISPATCH_TOKEN לא מוגדר - מדלג על הפעלת sync-from-hard-worker.yml ב-Revach123/Revach."
-            exit 0
-          fi
-          HTTP_CODE=$(curl -sS -o /tmp/dispatch_response.json -w "%{http_code}" -X POST \
-            -H "Authorization: token ${{ secrets.REVACH_DISPATCH_TOKEN }}" \
-            -H "Accept: application/vnd.github+json" \
-            https://api.github.com/repos/Revach123/Revach/actions/workflows/sync-from-hard-worker.yml/dispatches \
-            -d '{"ref":"main"}')
-          if [ "$HTTP_CODE" != "204" ]; then
-            echo "::warning::הפעלת sync-from-hard-worker.yml נכשלה (HTTP $HTTP_CODE): $(cat /tmp/dispatch_response.json)"
-          else
-            echo "sync-from-hard-worker.yml הופעל ב-Revach123/Revach."
-          fi
