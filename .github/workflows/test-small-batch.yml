@@ -272,3 +272,36 @@ jobs:
               fi
             done
           fi
+
+      # דוחף את התוצאות היקרות שהריצה הזו הפיקה (private_subsidiaries.jsonl,
+      # שכבר ב-main בזכות "Commit progress to repo" למעלה) הלאה, אל היעד
+      # הסופי שלהן ב-Revach123/Revach (control.json, ממנו company-search
+      # קורא בפועל) - בלי זה תוצאות חילוץ יכולות לשבת ב-git כאן שבועות בלי
+      # שאף אחד יריץ ידנית את ה-sync (נצפה בפועל: sync-from-hard-worker.yml
+      # שם רץ פעם אחת בלבד מאז שנוצר). if: always() - גם ריצה שנעצרה עקב
+      # מכסה/נכשלה חלקית עדיין הפיקה התקדמות אמיתית ששווה לסנכרן.
+      #
+      # GITHUB_TOKEN הרגיל מוגבל ל-repo הזה בלבד - אי אפשר להפעיל workflow
+      # ב-repo אחר (Revach123/Revach, פרטי) בלעדיו. REVACH_DISPATCH_TOKEN
+      # הוא PAT נפרד (fine-grained: Actions=write, Contents=read על
+      # Revach123/Revach בלבד) שצריך להוסיף כ-secret כאן. continue-on-error
+      # כדי שחוסר/פקיעת ה-secret לא יפיל את כל ריצת החילוץ (שכבר הצליחה
+      # והתקדמותה כבר ב-git) - זה שלב-בונוס, לא קריטי לפייפליין עצמו.
+      - name: Trigger sync into Revach (company-search)
+        if: always()
+        continue-on-error: true
+        run: |
+          if [ -z "${{ secrets.REVACH_DISPATCH_TOKEN }}" ]; then
+            echo "::warning::REVACH_DISPATCH_TOKEN לא מוגדר - מדלג על הפעלת sync-from-hard-worker.yml ב-Revach123/Revach. התוצאות נשארות כאן ב-git עד שהסנכרון ירוץ (ידנית, או כשה-secret יתווסף)."
+            exit 0
+          fi
+          HTTP_CODE=$(curl -sS -o /tmp/dispatch_response.json -w "%{http_code}" -X POST \
+            -H "Authorization: token ${{ secrets.REVACH_DISPATCH_TOKEN }}" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/Revach123/Revach/actions/workflows/sync-from-hard-worker.yml/dispatches \
+            -d '{"ref":"main"}')
+          if [ "$HTTP_CODE" != "204" ]; then
+            echo "::warning::הפעלת sync-from-hard-worker.yml נכשלה (HTTP $HTTP_CODE): $(cat /tmp/dispatch_response.json)"
+          else
+            echo "sync-from-hard-worker.yml הופעל ב-Revach123/Revach."
+          fi
