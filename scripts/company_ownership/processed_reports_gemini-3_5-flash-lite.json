@@ -1938,11 +1938,18 @@
   },
   "1766123": {
     "company_id": "585",
-    "status": "success",
+    "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-09-06T08:41:22.446217+00:00",
-    "model": "gemini-3.5-flash-lite"
+    "at": "2026-09-06T09:11:33.280679+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 11,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1766118": {
     "company_id": "585",
