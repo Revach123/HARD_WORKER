@@ -2017,82 +2017,130 @@
   },
   "1762826": {
     "company_id": "604",
+    "status": "failed",
+    "kind": "change",
+    "attempts": 2,
+    "at": "2026-09-06T09:11:36.259594+00:00"
+  },
+  "1762830": {
+    "company_id": "604",
     "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-09-06T09:11:35.209884+00:00",
+    "at": "2026-09-06T09:11:35.307652+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
-      "total": 17,
+      "total": 2,
       "done": {},
       "attempts": {}
     }
   },
-  "1762830": {
-    "company_id": "604",
-    "status": "success",
-    "kind": "change",
-    "attempts": 1,
-    "at": "2026-09-06T08:45:09.283796+00:00",
-    "model": "gemini-3.5-flash-lite"
-  },
   "1762847": {
     "company_id": "604",
-    "status": "success",
+    "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-09-06T08:49:14.825232+00:00",
-    "model": "gemini-3.5-flash-lite"
+    "at": "2026-09-06T09:11:35.825181+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 21,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1762859": {
     "company_id": "604",
-    "status": "success",
+    "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-09-06T08:46:13.614786+00:00",
-    "model": "gemini-3.5-flash-lite"
+    "at": "2026-09-06T09:11:35.896169+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 2,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1741797": {
     "company_id": "1248",
-    "status": "success",
+    "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-09-06T08:46:31.497935+00:00",
-    "model": "gemini-3.5-flash-lite"
+    "at": "2026-09-06T09:11:35.974303+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 2,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1762792": {
     "company_id": "1248",
-    "status": "success",
+    "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-09-06T08:47:01.191421+00:00",
-    "model": "gemini-3.5-flash-lite"
+    "at": "2026-09-06T09:11:36.038218+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 2,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1761312": {
     "company_id": "1266",
-    "status": "success",
+    "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-09-06T08:47:16.522452+00:00",
-    "model": "gemini-3.5-flash-lite"
+    "at": "2026-09-06T09:11:36.181332+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 2,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1762187": {
     "company_id": "1266",
-    "status": "success",
+    "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-09-06T08:50:43.698525+00:00",
-    "model": "gemini-3.5-flash-lite"
+    "at": "2026-09-06T09:11:36.514690+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 14,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1739532": {
     "company_id": "1266",
-    "status": "success",
+    "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-09-06T08:47:42.363537+00:00",
-    "model": "gemini-3.5-flash-lite"
+    "at": "2026-09-06T09:11:36.135504+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 2,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1743846": {
     "company_id": "1367",
@@ -5860,4 +5908,12 @@
     "attempts": 0,
     "at": "2026-09-06T09:05:02.821905+00:00",
     "model": "gemini-3.5-flash-lite",
-    
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 44,
+      "done": {},
+      "attempts": {}
+    }
+  }
+}
