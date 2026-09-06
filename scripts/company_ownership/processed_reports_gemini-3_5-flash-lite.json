@@ -44,7 +44,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-06T08:35:34.671169+00:00",
+    "at": "2026-09-06T08:35:54.035372+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -1771,6 +1771,20 @@
             }
           ],
           "change_events": []
+        },
+        "0:34": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:35": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
         }
       },
       "attempts": {
@@ -1788,264 +1802,11 @@
   },
   "1731082": {
     "company_id": "1566",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-06T08:35:32.874297+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 27,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "איי.די.איי הנפקות (2010) בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 61,
-              "section_title": "פרק א' - תיאור עסקי התאגיד",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "פנדה סוכנות לביטוח בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 61,
-              "section_title": "פרק א' - תיאור עסקי התאגיד",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:5": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:6": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:7": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:8": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:9": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "איי.די.איי. הנפקות (2010) בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 157,
-              "section_title": "5 אירועים מהותיים בשנת הדוח ולאחריה",
-              "table_title": null,
-              "note": "חברת הבת"
-            }
-          ],
-          "change_events": []
-        },
-        "0:10": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "איי.די.איי הנפקות (2010) בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 181,
-              "section_title": "באור :1 - כללי (המשך)",
-              "table_title": null,
-              "note": "חברה בת שדוחותיה מאוחדים במישרין עם דוחות החברה"
-            },
-            {
-              "name": "פנדה סוכנות לביטוח כללי בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 180,
-              "section_title": "באור :1 - כללי (המשך)",
-              "table_title": null,
-              "note": "חברה בת, החברה המאוחדת היחידה של החברה אשר תורמת לתוצאות פעילותה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:11": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:12": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:13": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:14": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "איי.די.איי הנפקות (2010) בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 254,
-              "section_title": "באור :8 - השקעות בחברות מוחזקות",
-              "table_title": "מידע בדבר חברות מאוחדות המוחזקות במישרין על ידי החברה",
-              "note": null
-            },
-            {
-              "name": "פנדה סוכנות לביטוח כללי בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 254,
-              "section_title": "באור :8 - השקעות בחברות מוחזקות",
-              "table_title": "מידע בדבר חברות מאוחדות המוחזקות במישרין על ידי החברה",
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:15": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:16": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:17": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:18": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "איי.די.איי הנפקות (2010) בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 468,
-              "section_title": "באור :18 - מסים על ההכנסה",
-              "table_title": null,
-              "note": "מוזכרת כחברה מאוחדת במסגרת שומות מס"
-            },
-            {
-              "name": "פנדה סוכנות לביטוח כללי בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 468,
-              "section_title": "באור :18 - מסים על ההכנסה",
-              "table_title": null,
-              "note": "מוזכרת כחברה מאוחדת במסגרת שומות מס"
-            }
-          ],
-          "change_events": []
-        },
-        "0:19": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "איי.די.איי. הנפקות (2010) בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 324,
-              "section_title": "באור 18 - מסים על ההכנסה",
-              "table_title": null,
-              "note": "חברה מאוחדת / חברה בת"
-            },
-            {
-              "name": "פנדה סוכנות לביטוח כללי בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 324,
-              "section_title": "באור 18 - מסים על ההכנסה",
-              "table_title": null,
-              "note": "חברה מאוחדת"
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-06T08:37:25.222901+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731596": {
     "company_id": "2425",
@@ -2077,6 +1838,254 @@
     "kind": "change",
     "attempts": 1,
     "at": "2026-09-06T08:35:39.497756+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1744455": {
+    "company_id": "175",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-09-06T08:36:30.397083+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1744440": {
+    "company_id": "175",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-09-06T08:36:23.196456+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1751818": {
+    "company_id": "175",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-09-06T08:36:27.208989+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1764704": {
+    "company_id": "175",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-09-06T08:37:32.737071+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1764708": {
+    "company_id": "175",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-09-06T08:37:10.454176+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1738262": {
+    "company_id": "585",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-09-06T08:37:17.519610+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1743826": {
+    "company_id": "585",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-09-06T08:38:31.857333+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1743840": {
+    "company_id": "585",
+    "status": "partial",
+    "kind": "change",
+    "attempts": 0,
+    "at": "2026-09-06T08:38:42.078483+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 9,
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "הראל חברה לביטוח בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.1 כללי",
+              "table_title": null,
+              "note": "בשליטה מלאה"
+            },
+            {
+              "name": "Interasco Societe Anonyme General Insurance Company S.A.G.I",
+              "ownership_pct": 94,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.1 כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Turk Nippon Sigorta A.S",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.1 כללי",
+              "table_title": null,
+              "note": "בשליטה מלאה"
+            },
+            {
+              "name": "בססח - החברה הישראלית לביטוח אשראי בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.1 כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "הראל פנסיה וגמל בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.1 כללי",
+              "table_title": null,
+              "note": "בשליטה מלאה"
+            },
+            {
+              "name": "קרן החיסכון לצבא הקבע - חברה לניהול קופות גמל בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.1 כללי",
+              "table_title": null,
+              "note": "בשליטה מלאה"
+            },
+            {
+              "name": "לעתיד חברה לניהול קרנות פנסיה בע\"מ",
+              "ownership_pct": 89.5,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.1 כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "הראל פיננסים אחזקות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.1 כללי",
+              "table_title": null,
+              "note": "בשליטה מלאה"
+            },
+            {
+              "name": "הראל קרנות נאמנות בע\"מ",
+              "ownership_pct": null,
+              "parent": "הראל פיננסים אחזקות בע\"מ",
+              "page_reference": 4,
+              "section_title": "1.1 כללי",
+              "table_title": null,
+              "note": "חברה בת עיקרית של הראל פיננסים"
+            },
+            {
+              "name": "הראל פיננסים ניהול השקעות בע\"מ",
+              "ownership_pct": null,
+              "parent": "הראל פיננסים אחזקות בע\"מ",
+              "page_reference": 4,
+              "section_title": "1.1 כללי",
+              "table_title": null,
+              "note": "חברה בת עיקרית של הראל פיננסים"
+            },
+            {
+              "name": "הראל פיננסים אלטרנטיב בע\"מ",
+              "ownership_pct": null,
+              "parent": "הראל פיננסים אחזקות בע\"מ",
+              "page_reference": 4,
+              "section_title": "1.1 כללי",
+              "table_title": null,
+              "note": "חברה בת עיקרית של הראל פיננסים"
+            },
+            {
+              "name": "הראל פיקדון סחיר בע\"מ",
+              "ownership_pct": null,
+              "parent": "הראל פיננסים אחזקות בע\"מ",
+              "page_reference": 4,
+              "section_title": "1.1 כללי",
+              "table_title": null,
+              "note": "חברה בת עיקרית של הראל פיננסים"
+            },
+            {
+              "name": "הראל ריביות ופיקדונות בע\"מ",
+              "ownership_pct": null,
+              "parent": "הראל פיננסים אחזקות בע\"מ",
+              "page_reference": 4,
+              "section_title": "1.1 כללי",
+              "table_title": null,
+              "note": "חברה בת עיקרית של הראל פיננסים"
+            },
+            {
+              "name": "המצפן - שותפים לדרך בע\"מ",
+              "ownership_pct": 70,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "1.1 כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גמלא הראל נדל\"ן למגורים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "1.1 כללי",
+              "table_title": null,
+              "note": "בשליטה מלאה"
+            },
+            {
+              "name": "הראל +60 בע\"מ",
+              "ownership_pct": 100,
+              "parent": "הראל חברה לביטוח בע\"מ",
+              "page_reference": 5,
+              "section_title": "1.1 כללי",
+              "table_title": null,
+              "note": "חברה בת בבעלות מלאה של הראל ביטוח"
+            },
+            {
+              "name": "אי.אם.אי - עזר חברה לביטוח משכנתאות בע\"מ",
+              "ownership_pct": 100,
+              "parent": "הראל חברה לביטוח בע\"מ",
+              "page_reference": 5,
+              "section_title": "1.1 כללי",
+              "table_title": null,
+              "note": "בשליטה מלאה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
+      "attempts": {}
+    }
+  },
+  "1743864": {
+    "company_id": "585",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-09-06T08:38:49.504368+00:00",
     "model": "gemini-3.5-flash-lite"
   }
 }
