@@ -62,8 +62,20 @@ jobs:
           CF_SECURITIES_DB_ID: ${{ vars.CF_SECURITIES_DB_ID }}
           PYTHONUNBUFFERED: "1"
         run: |
+          MODEL="$GEMINI_MODEL_OVERRIDE"
+          # קובץ processed_reports נפרד לכל מודל - בדיוק כמו בריצה המלאה
+          # (test-small-batch.yml). בלי זה, run_full_batch.py נופל ל-
+          # processed_reports.json המשותף כברירת מחדל - קובץ שאינו נשמר
+          # ב-git בכלל (ה-glob למטה תואם רק processed_reports_*.json),
+          # וגרוע מזה: הצלחה שנרשמת בו (למשל ב-3.6) יכולה להיחשב "כבר
+          # טופל" בהרצת חירום עוקבת על אותה חברה עם 3.5 אם שתיהן היו
+          # משתמשות בקובץ המשותף - בדיוק ההתנהגות שאנחנו לא רוצים יותר:
+          # טיפול במודל אחד לא יכול "למחוק" דוח מהרשימה של המודל האחר.
+          PROCESSED_LOG="processed_reports_${MODEL//./_}.json"
+          echo "מודל: $MODEL | קובץ מעקב: $PROCESSED_LOG"
           python run_full_batch.py --plan selection_plan.json \
             --company-id "${{ github.event.inputs.company_id }}" \
+            --processed-log "$PROCESSED_LOG" \
             --workers 2 2>&1 | tee emergency_log.txt
           exit ${PIPESTATUS[0]}
 
