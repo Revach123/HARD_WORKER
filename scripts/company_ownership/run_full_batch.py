@@ -108,11 +108,20 @@ def _commit_progress(results_path: str, processed_log_path: str, processed: dict
         subprocess.run(["git", "fetch", "origin", "main"], check=True)
         remote_processed = _fetch_remote_json(processed_log_path)
         if remote_processed:
-            merged = _merge_processed_dicts(processed, remote_processed)
-            if merged != processed:
-                processed.clear()
-                processed.update(merged)
-            save_processed(processed_log_path, processed)
+            # קריטי: תחת _processed_lock, כמו mark()/_make_chunk_hooks. בלי
+            # זה נצפה בפועל קובץ processed שנפגם (JSON חתוך, אמצע רשומה) -
+            # worker thread קורא ל-mark() בו-זמנית עם ה-thread הראשי כאן,
+            # ושניהם כותבים ל-processed_log_path.tmp (אותו שם קבוע!) בלי
+            # תיאום - save_processed אטומי מול קריאה אחת, לא מול שני writers
+            # בו-זמנית לאותו tmp path. אותו דבר חל על processed.clear()/
+            # update() עצמם - בלי הנעילה, mark() באמצע קריאה-שינוי-כתיבה
+            # יכול להתנגש עם ה-clear() כאן ולאבד עדכון.
+            with _processed_lock:
+                merged = _merge_processed_dicts(processed, remote_processed)
+                if merged != processed:
+                    processed.clear()
+                    processed.update(merged)
+                save_processed(processed_log_path, processed)
 
         subprocess.run(["git", "add", results_path, processed_log_path], check=True)
         diff = subprocess.run(["git", "diff", "--staged", "--quiet"])
@@ -585,9 +594,26 @@ def mark(processed: dict, path: str, report_id: str, company_id: str, status: st
 
     כותב את המודל שעיבד (ex.GEMINI_MODEL) - קריטי: בלי זה הדשבורד לא
     יכול להבחין בין "מלא" (3.6) ל"חלקי" (3.5), וכל החברות היו נראות
-    חלקי לנצח. מתייג רק על success (לכישלון אין תוצאת-מודל משמעותית)."""
+    חלקי לנצח. מתייג רק על success (לכישלון אין תוצאת-מודל משמעותית).
+
+    סטטוס לא-מתדרדר: אם הרשומה הקיימת כבר success ועכשיו מגיע status
+    לא-success, לא דורסים אותה. באג שנצפה בפועל: "אי-ויתור המשתמש"
+    (סימון urgent/retry, ראה בניית tasks) מכניס מחדש לתור דוח שכבר
+    הצליח - אם הניסיון החוזר הזה נכשל (למשל מכסה נגמרה בדיוק אז), success
+    אמיתי-וידוע היה נדרס ל-failed/partial, למרות שהחילוץ המוצלח המקורי
+    עדיין קיים לגמרי ב-private_subsidiaries.jsonl. זה בתורו גורם לדוח
+    להיכנס ללולאת ניסיונות-חוזרים מיותרת לצמיתות. רק מונים ניסיון (attempts,
+    last_retry_at) בלי לגעת ברשומת ה-success המקורית."""
     with _processed_lock:
-        prev_attempts = processed.get(report_id, {}).get("attempts", 0)
+        prev = processed.get(report_id, {})
+        prev_attempts = prev.get("attempts", 0)
+        if status != "success" and prev.get("status") == "success":
+            rec = dict(prev)
+            rec["attempts"] = prev_attempts + 1
+            rec["last_retry_at"] = datetime.now(timezone.utc).isoformat()
+            processed[report_id] = rec
+            save_processed(path, processed)
+            return
         rec = {
             "company_id": company_id,
             "status": status,
