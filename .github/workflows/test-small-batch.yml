@@ -244,6 +244,7 @@ jobs:
       # בשקט על שמות שנכשלו טכנית. continue-on-error: שלב-בונוס - כשל בו
       # (למשל מכסת D1 מוצתה) לא מפיל את החילוץ שכבר הצליח ונשמר ב-git.
       - name: Match subsidiary names against registry
+        id: match
         if: always()
         continue-on-error: true
         working-directory: scripts/company_ownership
@@ -305,3 +306,20 @@ jobs:
               fi
             done
           fi
+
+      # מפעיל את ה-sync ב-Revach מיד עם סיום ה-matching (repository_dispatch),
+      # במקום להמתין ל-cron. רץ רק אם ה-matching הצליח (steps.match) - אם הוא
+      # נכשל, אין subsidiary_name_matches.json מעודכן לסנכרן, ותתקבל התראת כשל.
+      # ה-sync ב-Revach אידמפוטנטי (gap-fill), אז dispatch כפול/מוקדם לא מזיק.
+      - name: Trigger sync into Revach
+        if: steps.match.outcome == 'success'
+        env:
+          REVACH_DISPATCH_TOKEN: ${{ secrets.REVACH_DISPATCH_TOKEN }}
+        run: |
+          curl -fsS -X POST \
+            -H "Authorization: Bearer $REVACH_DISPATCH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/Revach123/Revach/dispatches \
+            -d '{"event_type":"hard-worker-sync"}' \
+          && echo "sync dispatch נשלח ל-Revach." \
+          || echo "::warning::dispatch ל-Revach נכשל - הרץ את ה-sync ידנית (workflow_dispatch)."
