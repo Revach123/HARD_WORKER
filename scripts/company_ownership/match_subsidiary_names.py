@@ -58,21 +58,23 @@ CACHE_PATH = "subsidiary_name_matches.json"
 def normalize_a(s):
     if not s:
         return ""
+    s = str(s)
+    s = s.replace("~", '"')
     s = re.sub(r"\([^)]*\)", " ", s)
     s = re.sub(r"[\"'\u05f4\u05f3\-]", "", s)
     s = re.sub(r"[^\u05d0-\u05ea0-9A-Za-z ]", " ", s)
     s = re.sub(r"\s+", " ", s).strip()
-    s = re.sub(r"[\u05d9\u05d5]", "", s)
     return s
 
 
 def normalize_b(s):
     if not s:
         return ""
+    s = str(s)
+    s = s.replace("~", '"')
     s = re.sub(r"\([^)]*\)", " ", s)
     s = re.sub(r"[^\u05d0-\u05ea0-9A-Za-z ]", " ", s)
     s = re.sub(r"\s+", " ", s).strip()
-    s = re.sub(r"[\u05d9\u05d5]", "", s)
     return s
 
 
