@@ -48,16 +48,36 @@ SLEEP_FUZZY = 0.3           # /api/search כבד יותר; האטה קלה. exac
 CACHE_PATH = "subsidiary_name_matches.json"
 
 
-def normalize(s):
-    """זהה ל-normalize() ב-functions/api/search.js, /api/match.js
-    ו-scripts/registry/load_*.py (אותה נוסחה שבנתה את name_norm)."""
+# -- normalize two-version -- MUST stay identical across 6 files (see warning)
+# Background (2026-09-07): old normalize turned quote/hyphen (" ' * ' -) into a
+# SPACE, splitting a word in two. Fix: two versions. A deletes quote/hyphen
+# (merges word); B (old) turns them to space. D1: name_norm = B, name_norm_a = A.
+# 6 files must match byte-for-byte: functions/api/match.js, functions/api/
+# search.js, scripts/registry/load_companies.py / load_partnerships.py /
+# load_associations.py, and this file. /api/match seeks name_norm_a then name_norm.
+def normalize_a(s):
+    if not s:
+        return ""
+    s = re.sub(r"\([^)]*\)", " ", s)
+    s = re.sub(r"[\"'\u05f4\u05f3\-]", "", s)
+    s = re.sub(r"[^\u05d0-\u05ea0-9A-Za-z ]", " ", s)
+    s = re.sub(r"\s+", " ", s).strip()
+    s = re.sub(r"[\u05d9\u05d5]", "", s)
+    return s
+
+
+def normalize_b(s):
     if not s:
         return ""
     s = re.sub(r"\([^)]*\)", " ", s)
     s = re.sub(r"[^\u05d0-\u05ea0-9A-Za-z ]", " ", s)
     s = re.sub(r"\s+", " ", s).strip()
-    s = re.sub(r"[יו]", "", s)
+    s = re.sub(r"[\u05d9\u05d5]", "", s)
     return s
+
+
+# normalize() = B (used by build_search_query / is_close for the fuzzy tier).
+normalize = normalize_b
 
 
 class SearchTemporaryError(Exception):
