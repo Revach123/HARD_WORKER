@@ -43,7 +43,7 @@ if not MATCH_KEY:
 
 HEADERS = {"Origin": BASE, "Referer": BASE + "/", "X-Match-Key": MATCH_KEY}
 
-FUZZY_PER_RUN_LIMIT = 400   # תקרת קריאות fuzzy (=/api/search) להרצה. exact ללא תקרה.
+FUZZY_PER_RUN_LIMIT = 1_000_000   # ⚠ זמנית מבוטל לריצת ה-rebuild המלאה (2026-09-07). להחזיר ל-400 אחרי!
 SLEEP_FUZZY = 0.3           # /api/search כבד יותר; האטה קלה. exact ללא sleep.
 CACHE_PATH = "subsidiary_name_matches.json"
 
