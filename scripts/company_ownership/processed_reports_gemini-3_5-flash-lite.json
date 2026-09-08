@@ -9227,10 +9227,18 @@
   },
   "1732435": {
     "company_id": "2475",
-    "status": "failed",
+    "status": "partial",
     "kind": "snapshot",
     "attempts": 1,
-    "at": "2026-09-07T15:46:35.496875+00:00"
+    "at": "2026-09-08T13:59:26.847584+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 8,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1732462": {
     "company_id": "1393",
@@ -10494,10 +10502,18 @@
   },
   "1735710": {
     "company_id": "1841",
-    "status": "failed",
+    "status": "partial",
     "kind": "snapshot",
     "attempts": 1,
-    "at": "2026-09-07T15:47:51.996802+00:00"
+    "at": "2026-09-08T13:59:27.110061+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 6,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1723643": {
     "company_id": "2093",
@@ -10591,10 +10607,18 @@
   },
   "1741141": {
     "company_id": "256",
-    "status": "failed",
+    "status": "partial",
     "kind": "snapshot",
     "attempts": 1,
-    "at": "2026-09-07T15:47:56.994968+00:00"
+    "at": "2026-09-08T13:59:27.263452+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 20,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1732461": {
     "company_id": "1453",
@@ -10658,10 +10682,18 @@
   },
   "1733266": {
     "company_id": "1329",
-    "status": "failed",
+    "status": "partial",
     "kind": "snapshot",
     "attempts": 1,
-    "at": "2026-09-07T15:47:57.103981+00:00"
+    "at": "2026-09-08T13:59:27.427937+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 5,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1725551": {
     "company_id": "2028",
@@ -11050,7 +11082,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-07T15:48:13.326660+00:00",
+    "at": "2026-09-08T13:59:27.613857+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -11065,7 +11097,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-07T15:48:16.385727+00:00",
+    "at": "2026-09-08T13:59:27.801400+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -11080,7 +11112,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-07T15:48:16.772270+00:00",
+    "at": "2026-09-08T13:59:28.218422+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -11095,7 +11127,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-07T15:48:22.093086+00:00",
+    "at": "2026-09-08T13:59:28.402553+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -11110,7 +11142,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-07T15:48:22.556786+00:00",
+    "at": "2026-09-08T13:59:28.655282+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -11125,7 +11157,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-07T15:48:22.870626+00:00",
+    "at": "2026-09-08T13:59:28.841675+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
