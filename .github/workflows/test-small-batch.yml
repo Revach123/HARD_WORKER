@@ -322,4 +322,4 @@ jobs:
             https://api.github.com/repos/Revach123/Revach/dispatches \
             -d '{"event_type":"hard-worker-sync"}' \
           && echo "sync dispatch נשלח ל-Revach." \
-          || echo "::warning::dispatch ל-Revach נכשל - הרץ את ה-sync ידנית (workflow_dispatch)."
+          || { echo "::error::dispatch ל-Revach נכשל - REVACH_DISPATCH_TOKEN כנראה פג/חסר הרשאות. הרץ את ה-sync ידנית (workflow_dispatch) בינתיים."; exit 1; }
