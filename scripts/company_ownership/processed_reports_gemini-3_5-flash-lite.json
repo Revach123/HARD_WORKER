@@ -692,33 +692,11 @@
   },
   "1732342": {
     "company_id": "491",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-08T13:45:45.526246+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 8,
-      "done": {
-        "0:0": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-08T13:46:50.846676+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1735792": {
     "company_id": "1729",
@@ -730,55 +708,1225 @@
   },
   "1732026": {
     "company_id": "1269",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-07T15:29:07.877234+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 18,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-08T13:51:37.703497+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731960": {
     "company_id": "694",
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-07T15:29:09.754593+00:00",
+    "at": "2026-09-08T13:54:01.704233+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 39,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "אלקטרה בע\"מ",
+              "ownership_pct": 46,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "א. תיאור ההתפתחות הכללית של עסקי החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה מוצרי צריכה (1970) בע\"מ",
+              "ownership_pct": 45,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "א. תיאור ההתפתחות הכללית של עסקי החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה נדל\"ן בע\"מ",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "א. תיאור ההתפתחות הכללית של עסקי החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "סופרגז פאוור (2019) בע\"מ",
+              "ownership_pct": 61,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "א. תיאור ההתפתחות הכללית של עסקי החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "חברת השקעות דיסקונט בע\"מ",
+              "ownership_pct": 29.79,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "א. תיאור ההתפתחות הכללית של עסקי החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "חברה לנכסים ולבניין בע\"מ",
+              "ownership_pct": 70.48,
+              "parent": "חברת השקעות דיסקונט בע\"מ",
+              "page_reference": 10,
+              "section_title": "2. השקעה בחברת השקעות דיסקונט בע\"מ (\"דסק\"ש\")",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גב-ים לקרקעות בע\"מ",
+              "ownership_pct": 64.02,
+              "parent": "חברה לנכסים ולבניין בע\"מ",
+              "page_reference": 10,
+              "section_title": "2. השקעה בחברת השקעות דיסקונט בע\"מ (\"דסק\"ש\")",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקו הוספיטליטי 2020 בע\"מ",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 12,
+              "section_title": "ג. השקעת החברה באלקו הוספיטליטי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקו אלפא בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אלקו הוספיטליטי 2020 בע\"מ",
+              "page_reference": 12,
+              "section_title": "ג. השקעת החברה באלקו הוספיטליטי",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אלקטרה דנקו התק\"ש בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 34,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה אלקו גרינטק בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 34,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה סולל בונה- אגירה שאובה גלבוע בע\"מ",
+              "ownership_pct": 25,
+              "parent": null,
+              "page_reference": 34,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה בניה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 34,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פרויקט לנדאמרק",
+              "ownership_pct": 50,
+              "parent": "אלקטרה בניה בע\"מ",
+              "page_reference": 34,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": "בשותפות עם דניה סיבוס"
+            },
+            {
+              "name": "פרויקט כיכר המדינה",
+              "ownership_pct": 50,
+              "parent": "אלקטרה בניה בע\"מ",
+              "page_reference": 34,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": "בשותפות עם אשטרום הנדסה ובניה"
+            },
+            {
+              "name": "פרויקט DUO",
+              "ownership_pct": 50,
+              "parent": "אלקטרה בניה בע\"מ",
+              "page_reference": 34,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": "בשותפות עם דניה סיבוס"
+            },
+            {
+              "name": "אלקטרה תשתיות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 34,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "טר ארמה תעשיות בע\"מ",
+              "ownership_pct": 51,
+              "parent": "אלקטרה תשתיות בע\"מ",
+              "page_reference": 34,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "טר ארמה בע\"מ",
+              "ownership_pct": 51,
+              "parent": "טר ארמה תעשיות בע\"מ",
+              "page_reference": 34,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה תשתיות סביבה בע\"מ",
+              "ownership_pct": 70,
+              "parent": "אלקטרה תשתיות בע\"מ",
+              "page_reference": 34,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה תשתיות עפר ומחצבים",
+              "ownership_pct": 60,
+              "parent": "אלקטרה תשתיות בע\"מ",
+              "page_reference": 34,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "שותפות מחוברים לעיר",
+              "ownership_pct": 50,
+              "parent": "אלקטרה תשתיות בע\"מ",
+              "page_reference": 34,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה אקו גרין פארק למיחזור שותפות מוגבלת",
+              "ownership_pct": 51,
+              "parent": "אלקטרה תשתיות בע\"מ",
+              "page_reference": 34,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "סי.אי.טק מערכות ומעליות (2015) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 34,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ד. סער הנדסת מיזוג אוויר בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 34,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אקלימטיק בע\"מ",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 34,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מגאסון אלקטרוניקה ובקרה (1978) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 34,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אגש\"ח חנייה בע\"מ",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 34,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה תעמ\"ל בע\"מ",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 34,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה פתרונות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 34,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "א. צום מעליות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 34,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פ.ק. אלקטרה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 34,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Electra USA Inc",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 34,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Gilston Electrical Contraction LLC",
+              "ownership_pct": 51,
+              "parent": "Electra USA Inc",
+              "page_reference": 34,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Hellman Electric LLC",
+              "ownership_pct": 51,
+              "parent": "Electra USA Inc",
+              "page_reference": 34,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "F.W Sims LLC",
+              "ownership_pct": 83,
+              "parent": "Electra USA Inc",
+              "page_reference": 34,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "P.J. Mechanical",
+              "ownership_pct": 100,
+              "parent": "Electra USA Inc",
+              "page_reference": 34,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Captive New York Insurance, Inc.",
+              "ownership_pct": 100,
+              "parent": "Electra USA Inc",
+              "page_reference": 34,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה אפ.אם. אחזקת מבנים ומערכות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 34,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "נכסי אריאל בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אלקטרה אפ.אם. אחזקת מבנים ומערכות בע\"מ",
+              "page_reference": 34,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה אפ.אם חטיבת השירות הנייד בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אלקטרה אפ.אם. אחזקת מבנים ומערכות בע\"מ",
+              "page_reference": 34,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה סקיוריטי ושירותי נקיון בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אלקטרה אפ.אם. אחזקת מבנים ומערכות בע\"מ",
+              "page_reference": 34,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "טווס שמירה אבטחה בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אלקטרה סקיוריטי ושירותי נקיון בע\"מ",
+              "page_reference": 34,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מכלול פתרונות בע\"מ",
+              "ownership_pct": 90,
+              "parent": null,
+              "page_reference": 34,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה תומר בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 34,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה טרגט בע\"מ",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 34,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה מגורים בע\"מ",
+              "ownership_pct": 82,
+              "parent": null,
+              "page_reference": 34,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "עסקה משותפת אכזיב",
+              "ownership_pct": 50,
+              "parent": "אלקטרה מגורים בע\"מ",
+              "page_reference": 35,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דן אלקטרה שדה דב בע\"מ",
+              "ownership_pct": 50,
+              "parent": "אלקטרה מגורים בע\"מ",
+              "page_reference": 35,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מבנה אלקטרה מתחם האלף",
+              "ownership_pct": 50,
+              "parent": "אלקטרה מגורים בע\"מ",
+              "page_reference": 35,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Morgal Invsetments LLC",
+              "ownership_pct": 50,
+              "parent": "אלקטרה מגורים בע\"מ",
+              "page_reference": 35,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": "רוסיה"
+            },
+            {
+              "name": "אלקטרה יזמות חו\"ל שותפות מוגבלת",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 34,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Electra M&E Polska Sp.z.o.o",
+              "ownership_pct": 80,
+              "parent": "אלקטרה יזמות חו\"ל שותפות מוגבלת",
+              "page_reference": 35,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": "פולין"
+            },
+            {
+              "name": "Geo-Kat Sp.z.o.o",
+              "ownership_pct": 100,
+              "parent": "Electra M&E Polska Sp.z.o.o",
+              "page_reference": 35,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Electra M&E Deutschland GmbH",
+              "ownership_pct": 80,
+              "parent": "אלקטרה יזמות חו\"ל שותפות מוגבלת",
+              "page_reference": 35,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "EMMSA Deutschland GmbH Wolfsburg",
+              "ownership_pct": 100,
+              "parent": "Electra M&E Deutschland GmbH",
+              "page_reference": 35,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "H+V VersorgungstechnikWolfsburg GmbH",
+              "ownership_pct": 100,
+              "parent": "EMMSA Deutschland GmbH Wolfsburg",
+              "page_reference": 35,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Electra APM Sp.z.o.o",
+              "ownership_pct": 100,
+              "parent": "אלקטרה יזמות חו\"ל שותפות מוגבלת",
+              "page_reference": 35,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": "פולין"
+            },
+            {
+              "name": "Electra Poland Project 1 Sp.z.o.o",
+              "ownership_pct": 100,
+              "parent": "אלקטרה יזמות חו\"ל שותפות מוגבלת",
+              "page_reference": 35,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Suvorovo Properties Ltd",
+              "ownership_pct": 100,
+              "parent": "אלקטרה יזמות חו\"ל שותפות מוגבלת",
+              "page_reference": 35,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "SIA Unico",
+              "ownership_pct": 100,
+              "parent": "אלקטרה יזמות חו\"ל שותפות מוגבלת",
+              "page_reference": 35,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": "לטביה"
+            },
+            {
+              "name": "Electech Holding B.V",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 34,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "OTS Omni Trading Services",
+              "ownership_pct": 100,
+              "parent": "Electech Holding B.V",
+              "page_reference": 35,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ETCO ניגריה",
+              "ownership_pct": 100,
+              "parent": "Electech Holding B.V",
+              "page_reference": 35,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ELECTRA M&E ROMANIA SRL",
+              "ownership_pct": 100,
+              "parent": "Electech Holding B.V",
+              "page_reference": 35,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה זכיינות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 35,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מבט לנגב בע\"מ",
+              "ownership_pct": 14.3,
+              "parent": "אלקטרה זכיינות בע\"מ",
+              "page_reference": 35,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מבט לנגב תפעול בע\"מ",
+              "ownership_pct": 25.15,
+              "parent": "אלקטרה זכיינות בע\"מ",
+              "page_reference": 35,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "טי.אם.טי תל אביב מטרופולין טראמווי בע\"מ",
+              "ownership_pct": 40,
+              "parent": "אלקטרה זכיינות בע\"מ",
+              "page_reference": 35,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אייץ' אן - לייט רייל ליין בע\"מ",
+              "ownership_pct": 40,
+              "parent": "אלקטרה זכיינות בע\"מ",
+              "page_reference": 35,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה ייבוש בוצה בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אלקטרה זכיינות בע\"מ",
+              "page_reference": 35,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה אפיקים",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 34,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה אפיקים תחבורה 2021 בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אלקטרה אפיקים",
+              "page_reference": 35,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מרכז שירות לרכב קלינטון בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אלקטרה אפיקים",
+              "page_reference": 35,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה מוטורס",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 34,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "אלקטרה מוטורס",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 66,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה אפיקים",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 66,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה אפיקים תחבורה 2021 בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אלקטרה אפיקים",
+              "page_reference": 66,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מרכז שירות לרכב קלינטון בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אלקטרה אפיקים",
+              "page_reference": 66,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה זכיינות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 66,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מבט לנגב בע\"מ",
+              "ownership_pct": 14.3,
+              "parent": "אלקטרה זכיינות בע\"מ",
+              "page_reference": 66,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מבט לנגב תפעול בע\"מ",
+              "ownership_pct": 25.15,
+              "parent": "אלקטרה זכיינות בע\"מ",
+              "page_reference": 66,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "טי.אם.טי תל אביב בע\"מ (מטרופולין טראמווי בע\"מ)",
+              "ownership_pct": 40,
+              "parent": "אלקטרה זכיינות בע\"מ",
+              "page_reference": 66,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אייץ' אן - לייט רייל ליין בע\"מ",
+              "ownership_pct": 40,
+              "parent": "אלקטרה זכיינות בע\"מ",
+              "page_reference": 66,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה ייבוש בוצה בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אלקטרה זכיינות בע\"מ",
+              "page_reference": 66,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Electech Holding B.V",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 66,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "OTS Omni Trading Services",
+              "ownership_pct": 100,
+              "parent": "Electech Holding B.V",
+              "page_reference": 66,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ETCO",
+              "ownership_pct": 100,
+              "parent": "OTS Omni Trading Services",
+              "page_reference": 66,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ELECTRA M&E ROMANIA SRL",
+              "ownership_pct": 100,
+              "parent": "OTS Omni Trading Services",
+              "page_reference": 66,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה יזמות חו\"ל שותפות מוגבלת",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 66,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Electra M&E Polska Sp.z.o.o",
+              "ownership_pct": 80,
+              "parent": "אלקטרה יזמות חו\"ל שותפות מוגבלת",
+              "page_reference": 66,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Geo-Kat Sp.z.o.o",
+              "ownership_pct": 100,
+              "parent": "Electra M&E Polska Sp.z.o.o",
+              "page_reference": 66,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Electra M&E Deutschland GmbH",
+              "ownership_pct": 80,
+              "parent": "אלקטרה יזמות חו\"ל שותפות מוגבלת",
+              "page_reference": 66,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "EMMSA Deutschland GmbH Wolfsburg",
+              "ownership_pct": 100,
+              "parent": "Electra M&E Deutschland GmbH",
+              "page_reference": 66,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "H+V Versorgungstechnik Wolfsburg GmbH",
+              "ownership_pct": 100,
+              "parent": "EMMSA Deutschland GmbH Wolfsburg",
+              "page_reference": 66,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Electra APM Sp.z.o.o",
+              "ownership_pct": 100,
+              "parent": "אלקטרה יזמות חו\"ל שותפות מוגבלת",
+              "page_reference": 66,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Electra Poland Project 1 Sp.z.o.o",
+              "ownership_pct": 100,
+              "parent": "Electra APM Sp.z.o.o",
+              "page_reference": 66,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Suvorovo Properties Ltd",
+              "ownership_pct": 100,
+              "parent": "אלקטרה יזמות חו\"ל שותפות מוגבלת",
+              "page_reference": 66,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "SIA Unico",
+              "ownership_pct": 100,
+              "parent": "אלקטרה יזמות חו\"ל שותפות מוגבלת",
+              "page_reference": 66,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה מגורים בע\"מ",
+              "ownership_pct": 82,
+              "parent": null,
+              "page_reference": 66,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "עסקה משותפת אכזיב",
+              "ownership_pct": 50,
+              "parent": "אלקטרה מגורים בע\"מ",
+              "page_reference": 66,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דן אלקטרה שדה דב בע\"מ",
+              "ownership_pct": 50,
+              "parent": "אלקטרה מגורים בע\"מ",
+              "page_reference": 66,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מבנה אלקטרה מתחם האלף",
+              "ownership_pct": 50,
+              "parent": "אלקטרה מגורים בע\"מ",
+              "page_reference": 66,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Morgal Invsetments LLC",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 66,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "PJM Intermediate LLC",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 56,
+              "section_title": "שינויים בהיקף הפעילות",
+              "table_title": null,
+              "note": "הושלמה עסקה לרכישת 100% מהון המניות בתקופת הדוח"
+            }
+          ],
+          "change_events": [
+            {
+              "company": "PJM Intermediate LLC",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 100,
+              "event_date": null,
+              "event_description": "הושלמה עסקה לרכישת 100% מהון המניות של PJM Intermediate LLC",
+              "page_reference": 56,
+              "section_title": "שינויים בהיקף הפעילות"
+            }
+          ]
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "\"ריברסייד\" ביהוד מודיסון",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 86,
+              "section_title": "פרק 3.ד: מגזר פיתוח והקמה של נדל\"ן בייזום",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה \"לייף סטייל\" בפארק אפעל צפון",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 87,
+              "section_title": "פרק 3.ד: מגזר פיתוח והקמה של נדל\"ן בייזום",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה \"לייף סטייל\" בפארק אפעל – שלבים ג'-ו'",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 88,
+              "section_title": "פרק 3.ד: מגזר פיתוח והקמה של נדל\"ן בייזום",
+              "table_title": "ב. עתודות קרקע",
+              "note": null
+            },
+            {
+              "name": "אלקטרה \"לייף סטייל\" בהוד השרון – שלב ב'",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 89,
+              "section_title": "פרק 3.ד: מגזר פיתוח והקמה של נדל\"ן בייזום",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה בנתניה - מתחם 14",
+              "ownership_pct": 80,
+              "parent": null,
+              "page_reference": 90,
+              "section_title": "פרק 3.ד: מגזר פיתוח והקמה של נדל\"ן בייזום",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה בזכרון יעקב, שכונת זכרונה",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 91,
+              "section_title": "פרק 3.ד: מגזר פיתוח והקמה של נדל\"ן בייזום",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה בפתח תקווה, סירקין",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 92,
+              "section_title": "פרק 3.ד: מגזר פיתוח והקמה של נדל\"ן בייזום",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה באלעד",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 93,
+              "section_title": "פרק 3.ד: מגזר פיתוח והקמה של נדל\"ן בייזום",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה בנתניה - מתחם 2",
+              "ownership_pct": 82,
+              "parent": null,
+              "page_reference": 94,
+              "section_title": "פרק 3.ד: מגזר פיתוח והקמה של נדל\"ן בייזום",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה בבאר יעקב",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 95,
+              "section_title": "פרק 3.ד: מגזר פיתוח והקמה של נדל\"ן בייזום",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה בראשון לציון – שכונת נחלת עילית",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 96,
+              "section_title": "פרק 3.ד: מגזר פיתוח והקמה של נדל\"ן בייזום",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה בראשון לציון – מגרש 106",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 97,
+              "section_title": "פרק 3.ד: מגזר פיתוח והקמה של נדל\"ן בייזום",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה בראשון לציון – מגרש 1240",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 98,
+              "section_title": "פרק 3.ד: מגזר פיתוח והקמה של נדל\"ן בייזום",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אקזיב שלב ה'",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 99,
+              "section_title": "פרק 3.ד: מגזר פיתוח והקמה של נדל\"ן בייזום",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אכזיב שלב ו'",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 100,
+              "section_title": "פרק 3.ד: מגזר פיתוח והקמה של נדל\"ן בייזום",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Kalimanci-Hills",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 101,
+              "section_title": "פרק 3.ד: מגזר פיתוח והקמה של נדל\"ן בייזום",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Plauniki – שלב ג'",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 102,
+              "section_title": "פרק 3.ד: מגזר פיתוח והקמה של נדל\"ן בייזום",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pory",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 103,
+              "section_title": "פרק 3.ד: מגזר פיתוח והקמה של נדל\"ן בייזום",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Planetograd",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 104,
+              "section_title": "49.1.6 מידע בדבר פרויקטים המוחזקים על ידי חברות כלולות, ליום האחרון של תקופת הדיווח",
+              "table_title": "א. עתודות קרקע",
+              "note": null
+            },
+            {
+              "name": "SEVEN SEAS, רובע שדה דב",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 105,
+              "section_title": "פרק 3.ד: מגזר פיתוח והקמה של נדל\"ן בייזום",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
   "1732568": {
     "company_id": "2468",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-07T15:29:18.034191+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 38,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-08T13:52:54.716066+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731886": {
     "company_id": "226",
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-07T15:29:12.015732+00:00",
+    "at": "2026-09-08T13:54:03.181061+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -793,13 +1941,56 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-07T15:29:10.834872+00:00",
+    "at": "2026-09-08T13:54:03.288859+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 52,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
@@ -808,7 +1999,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-07T15:29:20.524021+00:00",
+    "at": "2026-09-08T13:54:04.748187+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -823,7 +2014,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-07T15:29:21.768922+00:00",
+    "at": "2026-09-08T13:54:07.388233+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -838,7 +2029,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-07T15:29:46.389528+00:00",
+    "at": "2026-09-08T13:54:07.600224+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -921,7 +2112,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-07T15:29:27.005649+00:00",
+    "at": "2026-09-08T13:54:03.956201+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
