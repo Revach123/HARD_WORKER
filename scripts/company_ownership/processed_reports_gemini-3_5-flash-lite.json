@@ -588,671 +588,11 @@
   },
   "1730231": {
     "company_id": "106",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-07T15:28:07.225866+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 30,
-      "done": {
-        "0:0": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:5": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:6": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:7": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:8": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:9": {
-          "report_format": "other",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:10": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:11": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:12": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:13": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:14": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:15": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:16": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-08-11",
-          "subsidiaries": [
-            {
-              "name": "CG Miami River LLC",
-              "ownership_pct": null,
-              "parent": "Canada Global (TR) LTD.",
-              "page_reference": 289,
-              "section_title": "Property & Assignment Overview",
-              "table_title": null,
-              "note": "Holds title to the subject property; controlling interest transferred in the August 11, 2025 recapitalization."
-            }
-          ],
-          "change_events": []
-        },
-        "0:17": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:18": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:19": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:20": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "1:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "Global Canada Inc.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": "חלק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Canada Global UK Ltd.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": "חלק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Wem Apt. 3",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": "חלק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Global Canada Aventura LLC",
-              "ownership_pct": 85.86,
-              "parent": "Global Canada Inc.",
-              "page_reference": 12,
-              "section_title": "חלק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Global Canada Biscayne 85 LLC",
-              "ownership_pct": 80.67,
-              "parent": "Global Canada Inc.",
-              "page_reference": 12,
-              "section_title": "חלק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Global Canada River District LLC",
-              "ownership_pct": 100,
-              "parent": "Global Canada Inc.",
-              "page_reference": 12,
-              "section_title": "חלק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Aventura Venture LLC",
-              "ownership_pct": 70.27,
-              "parent": "Global Canada Aventura LLC",
-              "page_reference": 12,
-              "section_title": "חלק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Biscayne Venture LLC",
-              "ownership_pct": 62,
-              "parent": "Global Canada Biscayne 85 LLC",
-              "page_reference": 12,
-              "section_title": "חלק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "River Venture LLC",
-              "ownership_pct": 37.8,
-              "parent": "Global Canada River District LLC",
-              "page_reference": 12,
-              "section_title": "חלק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "EEH Properties Ltd.",
-              "ownership_pct": 25,
-              "parent": "Canada Global UK Ltd.",
-              "page_reference": 12,
-              "section_title": "חלק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Aventura Opportunity Member LLC",
-              "ownership_pct": 100,
-              "parent": "Aventura Venture LLC",
-              "page_reference": 12,
-              "section_title": "חלק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Biscayne Member LLC",
-              "ownership_pct": 100,
-              "parent": "Biscayne Venture LLC",
-              "page_reference": 12,
-              "section_title": "חלק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "River Holdings I LLC",
-              "ownership_pct": 60,
-              "parent": "River Venture LLC",
-              "page_reference": 12,
-              "section_title": "חלק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "1 Burnt Oak",
-              "ownership_pct": 100,
-              "parent": "EEH Properties Ltd.",
-              "page_reference": 12,
-              "section_title": "חלק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Aventura Property Owner LLC",
-              "ownership_pct": 100,
-              "parent": "Aventura Opportunity Member LLC",
-              "page_reference": 12,
-              "section_title": "חלק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Biscayne Owner LLC",
-              "ownership_pct": 100,
-              "parent": "Biscayne Member LLC",
-              "page_reference": 12,
-              "section_title": "חלק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "CG Miami River Mezz LLC",
-              "ownership_pct": 100,
-              "parent": "River Holdings I LLC",
-              "page_reference": 12,
-              "section_title": "חלק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Aventura Corporate Center",
-              "ownership_pct": 100,
-              "parent": "Aventura Property Owner LLC",
-              "page_reference": 12,
-              "section_title": "חלק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
-              "table_title": null,
-              "note": "נכס"
-            },
-            {
-              "name": "Biscayne 85",
-              "ownership_pct": 100,
-              "parent": "Biscayne Owner LLC",
-              "page_reference": 12,
-              "section_title": "חלק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
-              "table_title": null,
-              "note": "נכס"
-            },
-            {
-              "name": "CG Miami River LLC",
-              "ownership_pct": 100,
-              "parent": "CG Miami River Mezz LLC",
-              "page_reference": 12,
-              "section_title": "חלק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "The River District",
-              "ownership_pct": 100,
-              "parent": "CG Miami River LLC",
-              "page_reference": 12,
-              "section_title": "חלק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
-              "table_title": null,
-              "note": "נכס"
-            }
-          ],
-          "change_events": []
-        },
-        "1:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "חברת נכס המחזיקה בניין בלונדון",
-              "ownership_pct": 25,
-              "parent": null,
-              "page_reference": 25,
-              "section_title": "1.8.1 מבנה תחום הפעילות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "חברת בת זרה (חברת הבת)",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 35,
-              "section_title": "1.10.1.1 נכס מניב מהותי מאוד – Aventura Corporate Center",
-              "table_title": null,
-              "note": "חברה בת זרה המוחזקת במלואה על ידי החברה"
-            },
-            {
-              "name": "חברה זרה בשרשרת ההחזקות של Aventura",
-              "ownership_pct": 85.86,
-              "parent": "חברת בת זרה (חברת הבת)",
-              "page_reference": 35,
-              "section_title": "1.10.1.1 נכס מניב מהותי מאוד – Aventura Corporate Center",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "חברת הפרויקט",
-              "ownership_pct": 70.27,
-              "parent": "חברה זרה בשרשרת ההחזקות של Aventura",
-              "page_reference": 35,
-              "section_title": "1.10.1.1 נכס מניב מהותי מאוד – Aventura Corporate Center",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Aventura Corporate Center",
-              "ownership_pct": 60.33,
-              "parent": null,
-              "page_reference": 35,
-              "section_title": "1.10.1.1 נכס מניב מהותי מאוד – Aventura Corporate Center",
-              "table_title": null,
-              "note": "חלק התאגיד בפועל בנכס"
-            }
-          ],
-          "change_events": []
-        },
-        "1:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "1:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "1:5": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "EEH Properties Ltd.",
-              "ownership_pct": 25,
-              "parent": null,
-              "page_reference": 96,
-              "section_title": "באור 8 - השקעות בחברות המטופלות בשיטת השווי המאזני",
-              "table_title": "מידע בדבר עסקאות משותפות המטופלות לפי שיטת השווי המאזני",
-              "note": null
-            },
-            {
-              "name": "Aventura Venture LLC",
-              "ownership_pct": 70,
-              "parent": null,
-              "page_reference": 96,
-              "section_title": "באור 8 - השקעות בחברות המטופלות בשיטת השווי המאזני",
-              "table_title": "מידע בדבר עסקאות משותפות המטופלות לפי שיטת השווי המאזני",
-              "note": null
-            },
-            {
-              "name": "Biscayne Venture LLC",
-              "ownership_pct": 62,
-              "parent": null,
-              "page_reference": 96,
-              "section_title": "באור 8 - השקעות בחברות המטופלות בשיטת השווי המאזני",
-              "table_title": "מידע בדבר עסקאות משותפות המטופלות לפי שיטת השווי המאזני",
-              "note": null
-            },
-            {
-              "name": "River Venture LLC",
-              "ownership_pct": 37.8,
-              "parent": null,
-              "page_reference": 96,
-              "section_title": "באור 8 - השקעות בחברות המטופלות בשיטת השווי המאזני",
-              "table_title": "מידע בדבר עסקאות משותפות המטופלות לפי שיטת השווי המאזני",
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "1:6": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "BISCAYNE VENTURE LLC",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 103,
-              "section_title": "באור 8 - השקעות בחברות המטופלות בשיטת השווי המאזני (המשך)",
-              "table_title": null,
-              "note": "מחזיקה בחברת הנכס ביסקיין בשרשור כ-50%"
-            },
-            {
-              "name": "RIVER VENTURE LLC",
-              "ownership_pct": 37.8,
-              "parent": null,
-              "page_reference": 106,
-              "section_title": "באור 8 - השקעות בחברות המטופלות בשיטת השווי המאזני (המשך)",
-              "table_title": null,
-              "note": "חברת השותפים מוחזקת על ידי החברה בשרשור באמצעות חברות בת זרות בשיעור של כ-37.8%"
-            }
-          ],
-          "change_events": []
-        },
-        "1:7": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "Global Canada Inc.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 134,
-              "section_title": "פרק ד' – פרטים נוספים על החברה",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות הכלולות",
-              "note": null
-            },
-            {
-              "name": "Global Canada Aventura LLC",
-              "ownership_pct": 85.86,
-              "parent": null,
-              "page_reference": 134,
-              "section_title": "פרק ד' – פרטים נוספים על החברה",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות הכלולות",
-              "note": null
-            },
-            {
-              "name": "Aventura Venture LLC",
-              "ownership_pct": 60.3,
-              "parent": null,
-              "page_reference": 134,
-              "section_title": "פרק ד' – פרטים נוספים על החברה",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות הכלולות",
-              "note": null
-            },
-            {
-              "name": "Aventura Opportunity Member LLC",
-              "ownership_pct": 60.3,
-              "parent": "Aventura Venture LLC",
-              "page_reference": 134,
-              "section_title": "פרק ד' – פרטים נוספים על החברה",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות הכלולות",
-              "note": null
-            },
-            {
-              "name": "Aventura Property Owner LLC",
-              "ownership_pct": 60.3,
-              "parent": "Aventura Venture LLC",
-              "page_reference": 134,
-              "section_title": "פרק ד' – פרטים נוספים על החברה",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות הכלולות",
-              "note": null
-            },
-            {
-              "name": "Global Canada Biscayne 85 LLC",
-              "ownership_pct": 80.67,
-              "parent": null,
-              "page_reference": 134,
-              "section_title": "פרק ד' – פרטים נוספים על החברה",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות הכלולות",
-              "note": null
-            },
-            {
-              "name": "Biscayne Venture LLC",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 134,
-              "section_title": "פרק ד' – פרטים נוספים על החברה",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות הכלולות",
-              "note": null
-            },
-            {
-              "name": "Biscayne Member LLC",
-              "ownership_pct": 50,
-              "parent": "Biscayne Venture LLC",
-              "page_reference": 134,
-              "section_title": "פרק ד' – פרטים נוספים על החברה",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות הכלולות",
-              "note": null
-            },
-            {
-              "name": "Biscayne Owner LLC",
-              "ownership_pct": 50,
-              "parent": "Biscayne Venture LLC",
-              "page_reference": 134,
-              "section_title": "פרק ד' – פרטים נוספים על החברה",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות הכלולות",
-              "note": null
-            },
-            {
-              "name": "Global Canada River District LLC",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 134,
-              "section_title": "פרק ד' – פרטים נוספים על החברה",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות הכלולות",
-              "note": null
-            },
-            {
-              "name": "River Venture LLC",
-              "ownership_pct": 37.8,
-              "parent": null,
-              "page_reference": 134,
-              "section_title": "פרק ד' – פרטים נוספים על החברה",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות הכלולות",
-              "note": null
-            },
-            {
-              "name": "River Holdings I LLC",
-              "ownership_pct": 23,
-              "parent": "River Venture LLC",
-              "page_reference": 134,
-              "section_title": "פרק ד' – פרטים נוספים על החברה",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות הכלולות",
-              "note": null
-            },
-            {
-              "name": "CG Miami River Mezz LLC",
-              "ownership_pct": 23,
-              "parent": "River Venture LLC",
-              "page_reference": 134,
-              "section_title": "פרק ד' – פרטים נוספים על החברה",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות הכלולות",
-              "note": null
-            },
-            {
-              "name": "CG Miami River LLC",
-              "ownership_pct": 23,
-              "parent": "River Venture LLC",
-              "page_reference": 134,
-              "section_title": "פרק ד' – פרטים נוספים על החברה",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות הכלולות",
-              "note": null
-            },
-            {
-              "name": "Canada Global UK",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 134,
-              "section_title": "פרק ד' – פרטים נוספים על החברה",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות הכלולות",
-              "note": null
-            },
-            {
-              "name": "EEH Properties Ltd.",
-              "ownership_pct": 25,
-              "parent": null,
-              "page_reference": 134,
-              "section_title": "פרק ד' – פרטים נוספים על החברה",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות הכלולות",
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "1:8": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {
-        "1:2": 1
-      }
-    }
+    "attempts": 1,
+    "at": "2026-09-08T13:15:20.852181+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1729521": {
     "company_id": "1724",
@@ -1680,7 +1020,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-07T15:28:07.923283+00:00",
+    "at": "2026-09-08T13:15:38.378747+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -2846,6 +2186,32 @@
               "section_title": "1.10.2 הלוואות מהותיות של החברה",
               "table_title": null,
               "note": "מוחזק באמצעות חברה כלולה"
+            }
+          ],
+          "change_events": []
+        },
+        "1:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "2 Office Epic",
+              "ownership_pct": 20,
+              "parent": null,
+              "page_reference": 103,
+              "section_title": "1.13.2 הסכמים עם שותפים",
+              "table_title": null,
+              "note": "שותפות המחזיקה בנכס 2 Office Epic"
+            },
+            {
+              "name": "The Stack",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 114,
+              "section_title": "3.1 ניתוח עיקרי השינויים שחלו במצבה הכספי של החברה",
+              "table_title": null,
+              "note": "העברת זכויות מבעלת המניות היחידה בחברה (WPAI)"
             }
           ],
           "change_events": []
@@ -21162,33 +20528,19 @@
   },
   "1757068": {
     "company_id": "1064",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-07T15:27:50.138388+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-08T13:11:47.076550+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763757": {
     "company_id": "1064",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-07T15:27:55.955685+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-08T13:12:41.615012+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743460": {
     "company_id": "1064",
@@ -21200,48 +20552,27 @@
   },
   "1763745": {
     "company_id": "1064",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-07T15:27:50.406993+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-08T13:12:51.034019+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763748": {
     "company_id": "1064",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-07T15:27:50.690746+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-08T13:13:01.298788+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763751": {
     "company_id": "1064",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-07T15:27:50.931548+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-08T13:13:17.905131+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744574": {
     "company_id": "1068",
