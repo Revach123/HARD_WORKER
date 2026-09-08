@@ -1,0 +1,25 @@
+name: Test REVACH_DISPATCH_TOKEN
+on:
+  workflow_dispatch: {}
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Try dispatch to Revach
+        env:
+          REVACH_DISPATCH_TOKEN: ${{ secrets.REVACH_DISPATCH_TOKEN }}
+        run: |
+          curl -isS -X POST \
+            -H "Authorization: Bearer $REVACH_DISPATCH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/Revach123/Revach/dispatches \
+            -d '{"event_type":"hard-worker-sync"}' \
+          | tee /tmp/resp.txt
+          echo "---"
+          if head -1 /tmp/resp.txt | grep -q "204"; then
+            echo "TOKEN OK - dispatch accepted (204)"
+          else
+            echo "::error::Token still rejected - see status line above"
+            exit 1
+          fi
