@@ -25025,10 +25025,18 @@
   },
   "1764849": {
     "company_id": "1588",
-    "status": "failed",
+    "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-09-08T14:40:20.992480+00:00"
+    "at": "2026-09-09T13:13:11.429680+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 5,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1742386": {
     "company_id": "1597",
@@ -25332,17 +25340,33 @@
   },
   "1759657": {
     "company_id": "1610",
-    "status": "failed",
+    "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-09-08T14:40:36.118450+00:00"
+    "at": "2026-09-09T13:13:10.881360+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 1,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1759658": {
     "company_id": "1610",
-    "status": "failed",
+    "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-09-08T14:40:36.155669+00:00"
+    "at": "2026-09-09T13:13:11.209309+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 4,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1767064": {
     "company_id": "1610",
@@ -25391,10 +25415,18 @@
   },
   "1746209": {
     "company_id": "1613",
-    "status": "failed",
+    "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-09-08T14:40:36.192525+00:00"
+    "at": "2026-09-09T13:13:11.511117+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 2,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1766472": {
     "company_id": "1613",
@@ -25458,10 +25490,18 @@
   },
   "1743444": {
     "company_id": "1616",
-    "status": "failed",
+    "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-09-08T14:40:52.806960+00:00"
+    "at": "2026-09-09T13:13:12.218607+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 2,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1764953": {
     "company_id": "1616",
@@ -25498,7 +25538,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-09-08T14:33:56.236940+00:00",
+    "at": "2026-09-09T13:13:11.741321+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -25510,10 +25550,18 @@
   },
   "1739316": {
     "company_id": "1618",
-    "status": "failed",
+    "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-09-08T14:40:52.842850+00:00"
+    "at": "2026-09-09T13:13:11.834011+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 1,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1743867": {
     "company_id": "1618",
@@ -25652,10 +25700,18 @@
   },
   "1766068": {
     "company_id": "1621",
-    "status": "failed",
+    "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-09-08T14:41:07.801214+00:00"
+    "at": "2026-09-09T13:13:12.111697+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 2,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1745241": {
     "company_id": "1622",
@@ -25869,10 +25925,18 @@
   },
   "1742536": {
     "company_id": "1635",
-    "status": "failed",
+    "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-09-08T14:41:22.752500+00:00"
+    "at": "2026-09-09T13:13:12.489107+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 6,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1745974": {
     "company_id": "1635",
@@ -25891,17 +25955,33 @@
   },
   "1763100": {
     "company_id": "1635",
-    "status": "failed",
+    "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-09-08T14:41:22.788621+00:00"
+    "at": "2026-09-09T13:13:12.360467+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 8,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1744268": {
     "company_id": "1636",
-    "status": "failed",
+    "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-09-08T14:41:22.860589+00:00"
+    "at": "2026-09-09T13:13:12.636744+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 4,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1765656": {
     "company_id": "1636",
@@ -25920,10 +26000,18 @@
   },
   "1766798": {
     "company_id": "1636",
-    "status": "failed",
+    "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-09-08T14:41:22.824473+00:00"
+    "at": "2026-09-09T13:13:12.835131+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 4,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1766808": {
     "company_id": "1636",
@@ -26272,17 +26360,33 @@
   },
   "1745723": {
     "company_id": "1662",
-    "status": "failed",
+    "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-09-08T14:41:37.918284+00:00"
+    "at": "2026-09-09T13:13:13.014108+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 6,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1743250": {
     "company_id": "1664",
-    "status": "failed",
+    "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-09-08T14:41:52.397933+00:00"
+    "at": "2026-09-09T13:13:13.142786+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 3,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1765651": {
     "company_id": "1664",
