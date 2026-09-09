@@ -389,9 +389,14 @@ def _compute_company_status(cid: str, entry: dict, merged: dict, models_by_repor
 
     לוגיקת הסטטוס:
       full    = ה-snapshot עבר בהצלחה ב-3.6 (האיכות הגבוהה)
-      partial = יש הצלחה כלשהי (3.5, או חלק מהדוחות) אבל לא snapshot מלא ב-3.6
-      pending = שום דוח לא עובד בהצלחה עדיין
-      error   = כל הדוחות שנוסו נכשלו (ויש ניסיונות) - אין שום הצלחה
+      partial = יש הצלחה כלשהי (3.5, או חלק מהדוחות) אבל לא snapshot מלא ב-3.6,
+                *או* שדוח כלשהו באמצע חיתוך עיוור (status="partial" - resumable,
+                ינוסה שוב אוטומטית) - לא כישלון, גם אם לחברה יש attempts>0
+                ישן על דוח אחר (נצפה בפועל: מאות חברות שממתינות לתור המכסה
+                הבא סווגו כ-error בטעות בגלל attempts שיירי כזה)
+      pending = שום דוח לא עובד בהצלחה עדיין, ואף אחד לא באמצע חיתוך
+      error   = כל הדוחות שנוסו נכשלו סופית (ויש ניסיונות) - אין שום הצלחה
+                ואין דוח resumable
 
     בנוסף מחזיר snap_full_35 (לא נשלח ל-D1) - עצמאי מ-has_snapshot_35:
     True אם ה-snapshot עבר בהצלחה ב-3.5 *גם אם* הוא כבר "מלא" ב-3.6.
@@ -406,6 +411,7 @@ def _compute_company_status(cid: str, entry: dict, merged: dict, models_by_repor
     done_36 = 0
     max_att = 0
     any_success = False
+    any_in_progress = False
     snap_full_36 = False
     snap_full_35 = False
     snap_any = False
@@ -421,6 +427,11 @@ def _compute_company_status(cid: str, entry: dict, merged: dict, models_by_repor
             models_seen = {e.get("model", "")} | models_by_report.get(rid, set())
             if any("3.6" in m or "3_6" in m for m in models_seen):
                 done_36 += 1
+        elif e.get("status") == "partial":
+            # חיתוך עיוור (3.5) עדיין באמצע - resumable, לא כישלון. attempts
+            # על דוח *אחר* של אותה חברה (למשל ניסיון ישן על snapshot לפני
+            # המעבר לחיתוך) לא אמור להפיל דוח כזה ל-"error" (ראה למטה).
+            any_in_progress = True
 
     # סטטוס ה-snapshot ספציפית (הוא הקובע ל-full/partial)
     if snap:
@@ -440,6 +451,8 @@ def _compute_company_status(cid: str, entry: dict, merged: dict, models_by_repor
     if snap_full_36:
         status = "full"
     elif any_success:
+        status = "partial"
+    elif any_in_progress:
         status = "partial"
     elif max_att > 0:
         status = "error"
