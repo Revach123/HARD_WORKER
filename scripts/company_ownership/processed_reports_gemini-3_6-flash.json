@@ -295,10 +295,11 @@
   },
   "1729368": {
     "company_id": "1064",
-    "status": "failed",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-08T07:50:21.122438+00:00"
+    "attempts": 2,
+    "at": "2026-09-09T11:39:44.898288+00:00",
+    "model": "gemini-3.6-flash"
   },
   "1730541": {
     "company_id": "1692",
@@ -322,6 +323,78 @@
     "kind": "snapshot",
     "attempts": 1,
     "at": "2026-09-08T12:34:24.127491+00:00",
+    "model": "gemini-3.6-flash"
+  },
+  "1731059": {
+    "company_id": "1367",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-09T11:37:53.229466+00:00",
+    "model": "gemini-3.6-flash"
+  },
+  "1738262": {
+    "company_id": "585",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-09-09T11:39:49.351754+00:00",
+    "model": "gemini-3.6-flash"
+  },
+  "1731047": {
+    "company_id": "585",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-09T11:39:52.484974+00:00",
+    "model": "gemini-3.6-flash"
+  },
+  "1743840": {
+    "company_id": "585",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-09-09T11:40:55.745209+00:00",
+    "model": "gemini-3.6-flash"
+  },
+  "1743864": {
+    "company_id": "585",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-09-09T11:41:22.588906+00:00",
+    "model": "gemini-3.6-flash"
+  },
+  "1743826": {
+    "company_id": "585",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-09-09T11:41:39.758257+00:00",
+    "model": "gemini-3.6-flash"
+  },
+  "1758258": {
+    "company_id": "585",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-09-09T11:42:06.504689+00:00",
+    "model": "gemini-3.6-flash"
+  },
+  "1758265": {
+    "company_id": "585",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-09-09T11:42:19.629878+00:00",
+    "model": "gemini-3.6-flash"
+  },
+  "1766123": {
+    "company_id": "585",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-09-09T11:43:33.892493+00:00",
     "model": "gemini-3.6-flash"
   }
 }
