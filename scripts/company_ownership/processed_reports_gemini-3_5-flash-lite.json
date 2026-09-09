@@ -788,48 +788,19 @@
   },
   "1722313": {
     "company_id": "1536",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-09T12:32:29.581088+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 23,
-      "done": {
-        "0:0": {
-          "report_format": "other",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-09T12:37:52.041449+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731485": {
     "company_id": "2477",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-08T14:20:20.162238+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 23,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-09T12:38:13.404525+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1734999": {
     "company_id": "2430",
@@ -841,18 +812,11 @@
   },
   "1728200": {
     "company_id": "323",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-08T14:20:21.056437+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 34,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-09T12:52:48.766520+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731357": {
     "company_id": "1154",
@@ -864,33 +828,19 @@
   },
   "1732426": {
     "company_id": "150",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-08T14:20:22.886727+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 24,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-09T12:59:13.516734+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731096": {
     "company_id": "2471",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-08T14:20:22.247384+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 29,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-09T12:59:21.449623+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732110": {
     "company_id": "526",
@@ -912,13 +862,234 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-08T14:20:24.354408+00:00",
+    "at": "2026-09-09T13:01:49.591012+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 15,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "Credo Fair Management GmbH",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "הגדרות",
+              "table_title": null,
+              "note": "חברת הניהול"
+            },
+            {
+              "name": "LS GP GmbH",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "הגדרות",
+              "table_title": null,
+              "note": "שותף כללי"
+            },
+            {
+              "name": "LS GER 1 GmbH",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "הגדרות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "LS GER 3 GmbH",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "הגדרות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "LS GER 2 GmbH",
+              "ownership_pct": 61.5,
+              "parent": null,
+              "page_reference": 14,
+              "section_title": "מבנה האחזקות בחברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "LS GER 4 GmbH",
+              "ownership_pct": 99.9,
+              "parent": null,
+              "page_reference": 14,
+              "section_title": "מבנה האחזקות בחברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "LS Wülfrath GmbH",
+              "ownership_pct": 99.9,
+              "parent": null,
+              "page_reference": 14,
+              "section_title": "מבנה האחזקות בחברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "LS HAMM B.V.",
+              "ownership_pct": 89.9,
+              "parent": "LS GER 1 GmbH",
+              "page_reference": 14,
+              "section_title": "מבנה האחזקות בחברה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "LS Hamm B.V.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 53,
+              "section_title": "5.9.1.5 מימון ספציפי",
+              "table_title": null,
+              "note": "נרכשה בעסקת מניות בינואר 2024"
+            }
+          ],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:7": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "LS GER 4 GMBH",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 130,
+              "section_title": "ביאור -4 נדל\"ן להשקעה: (המשך)",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:8": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "LS GER 1 GmbH",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 150,
+              "section_title": "השקעות בחברות מוחזקות",
+              "table_title": "חברות בנות",
+              "note": null
+            },
+            {
+              "name": "LS GER 2 GmbH",
+              "ownership_pct": 61.5,
+              "parent": null,
+              "page_reference": 150,
+              "section_title": "השקעות בחברות מוחזקות",
+              "table_title": "חברות בנות",
+              "note": null
+            },
+            {
+              "name": "LS GER 3 GmbH",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 150,
+              "section_title": "השקעות בחברות מוחזקות",
+              "table_title": "חברות בנות",
+              "note": null
+            },
+            {
+              "name": "LS GER 4 GmbH",
+              "ownership_pct": 99.9,
+              "parent": null,
+              "page_reference": 150,
+              "section_title": "השקעות בחברות מוחזקות",
+              "table_title": "חברות בנות",
+              "note": null
+            },
+            {
+              "name": "Credo Fair Management GmbH",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 150,
+              "section_title": "השקעות בחברות מוחזקות",
+              "table_title": "חברות בנות",
+              "note": null
+            },
+            {
+              "name": "LS GP GmbH",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 150,
+              "section_title": "השקעות בחברות מוחזקות",
+              "table_title": "חברות בנות",
+              "note": null
+            },
+            {
+              "name": "LS Wülfrath GmbH",
+              "ownership_pct": 99.9,
+              "parent": null,
+              "page_reference": 150,
+              "section_title": "השקעות בחברות מוחזקות",
+              "table_title": "חברות בנות",
+              "note": null
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
@@ -927,13 +1098,213 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-08T14:20:24.028362+00:00",
+    "at": "2026-09-09T13:02:02.611161+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 29,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "בנק יהב לעובדי מדינה בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 19,
+              "section_title": "קבוצת הבנק ותחומי פעילותה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "בנק יהב לעובדי מדינה בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 19,
+              "section_title": "קבוצת הבנק ותחומי פעילותה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מזרחי טפחות חברה להנפקות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 24,
+              "section_title": "גיוס כתבי התחייבות, איגרות חוב ושטרי הון מורכבים",
+              "table_title": null,
+              "note": "חברה בת בבעלות מלאה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "בנק יהב לעובדי המדינה בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 65,
+              "section_title": "חברות מוחזקות עיקריות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "טפחות סוכנות לביטוח (1989) בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 65,
+              "section_title": "חברות מוחזקות עיקריות",
+              "table_title": null,
+              "note": "בבעלות מלאה"
+            },
+            {
+              "name": "מזרחי טפחות ליסינג בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 65,
+              "section_title": "חברות מוחזקות עיקריות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מזרחי טפחות INVEST בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 65,
+              "section_title": "חברות מוחזקות עיקריות",
+              "table_title": null,
+              "note": "חברת השקעות בבעלות מלאה של הבנק"
+            }
+          ],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:7": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "בנק יהב לעובדי המדינה בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 129,
+              "section_title": "ביאור 1 - כללי דיווח ומדיניות חשבונאית - המשך",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:8": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:9": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "בנק יהב לעובדי המדינה בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 319,
+              "section_title": "ביאור 15 - השקעות בחברות מוחזקות ופרטים על חברות אלו",
+              "table_title": "פרטים על חברות מוחזקות עיקריות",
+              "note": null
+            },
+            {
+              "name": "טפחות סוכנות לביטוח (1989) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 319,
+              "section_title": "ביאור 15 - השקעות בחברות מוחזקות ופרטים על חברות אלו",
+              "table_title": "פרטים על חברות מוחזקות עיקריות",
+              "note": null
+            },
+            {
+              "name": "מזרחי טפחות חברה להנפקות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 319,
+              "section_title": "ביאור 15 - השקעות בחברות מוחזקות ופרטים על חברות אלו",
+              "table_title": "פרטים על חברות מוחזקות עיקריות",
+              "note": null
+            },
+            {
+              "name": "מזרחי טפחות INVEST בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 319,
+              "section_title": "ביאור 15 - השקעות בחברות מוחזקות ופרטים על חברות אלו",
+              "table_title": "פרטים על חברות מוחזקות עיקריות",
+              "note": null
+            },
+            {
+              "name": "מזרחי טפחות ליסינג בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 319,
+              "section_title": "ביאור 15 - השקעות בחברות מוחזקות ופרטים על חברות אלו",
+              "table_title": "פרטים על חברות מוחזקות עיקריות",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:10": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
@@ -942,7 +1313,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-08T14:20:27.027907+00:00",
+    "at": "2026-09-09T13:02:03.530377+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -957,7 +1328,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-08T14:20:47.604424+00:00",
+    "at": "2026-09-09T13:02:04.317566+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -987,7 +1358,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-08T14:20:27.458172+00:00",
+    "at": "2026-09-09T13:02:04.627092+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -1014,18 +1385,11 @@
   },
   "1736412": {
     "company_id": "1654",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-08T14:20:21.678290+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 32,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-09T12:49:41.151535+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732608": {
     "company_id": "1496",
