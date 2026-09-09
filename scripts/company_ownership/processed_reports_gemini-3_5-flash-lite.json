@@ -21411,10 +21411,18 @@
   },
   "1766848": {
     "company_id": "1301",
-    "status": "failed",
+    "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-09-08T14:37:12.329422+00:00"
+    "at": "2026-09-09T14:09:46.128896+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 2,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1767696": {
     "company_id": "1304",
