@@ -7834,7 +7834,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 1,
-    "at": "2026-09-08T14:25:11.775636+00:00",
+    "at": "2026-09-09T14:03:44.366905+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -7894,7 +7894,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 1,
-    "at": "2026-09-08T14:25:11.077073+00:00",
+    "at": "2026-09-09T14:03:44.611964+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -7939,7 +7939,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 1,
-    "at": "2026-09-08T14:25:11.470585+00:00",
+    "at": "2026-09-09T14:03:45.035784+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -7996,10 +7996,18 @@
   },
   "1736260": {
     "company_id": "424",
-    "status": "failed",
+    "status": "partial",
     "kind": "snapshot",
     "attempts": 1,
-    "at": "2026-09-08T14:26:15.766793+00:00"
+    "at": "2026-09-09T14:03:44.836071+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 10,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1731563": {
     "company_id": "531",
@@ -8048,10 +8056,18 @@
   },
   "1735890": {
     "company_id": "1033",
-    "status": "failed",
+    "status": "partial",
     "kind": "snapshot",
     "attempts": 1,
-    "at": "2026-09-08T14:26:19.493623+00:00"
+    "at": "2026-09-09T14:03:45.215582+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 9,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1728892": {
     "company_id": "2423",
@@ -8190,10 +8206,18 @@
   },
   "1728259": {
     "company_id": "1887",
-    "status": "failed",
+    "status": "partial",
     "kind": "snapshot",
     "attempts": 1,
-    "at": "2026-09-08T14:26:19.538025+00:00"
+    "at": "2026-09-09T14:03:45.407129+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 9,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1735019": {
     "company_id": "1876",
@@ -8392,10 +8416,18 @@
   },
   "1729957": {
     "company_id": "2491",
-    "status": "failed",
+    "status": "partial",
     "kind": "snapshot",
     "attempts": 1,
-    "at": "2026-09-08T14:26:31.888457+00:00"
+    "at": "2026-09-09T14:03:45.655717+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 10,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1729086": {
     "company_id": "1771",
@@ -8474,10 +8506,18 @@
   },
   "1729844": {
     "company_id": "2444",
-    "status": "failed",
+    "status": "partial",
     "kind": "snapshot",
     "attempts": 1,
-    "at": "2026-09-08T14:26:39.166811+00:00"
+    "at": "2026-09-09T14:03:46.112672+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 10,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1729027": {
     "company_id": "308",
@@ -8518,10 +8558,18 @@
   },
   "1728182": {
     "company_id": "1671",
-    "status": "failed",
+    "status": "partial",
     "kind": "snapshot",
     "attempts": 1,
-    "at": "2026-09-08T14:26:39.279258+00:00"
+    "at": "2026-09-09T14:03:45.919058+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 9,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1732821": {
     "company_id": "1463",
@@ -8600,10 +8648,18 @@
   },
   "1736358": {
     "company_id": "1868",
-    "status": "failed",
+    "status": "partial",
     "kind": "snapshot",
     "attempts": 1,
-    "at": "2026-09-08T14:26:39.319316+00:00"
+    "at": "2026-09-09T14:03:46.372226+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 8,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1736322": {
     "company_id": "1862",
