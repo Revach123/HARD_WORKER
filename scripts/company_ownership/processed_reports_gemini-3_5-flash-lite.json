@@ -4,7 +4,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 1,
-    "at": "2026-09-08T14:25:08.065335+00:00",
+    "at": "2026-09-09T13:05:47.743295+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -2073,7 +2073,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 1,
-    "at": "2026-09-08T14:25:06.966192+00:00",
+    "at": "2026-09-09T13:05:46.420380+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -2445,10 +2445,18 @@
   },
   "1728240": {
     "company_id": "1132",
-    "status": "failed",
+    "status": "partial",
     "kind": "snapshot",
     "attempts": 1,
-    "at": "2026-09-08T14:21:39.867761+00:00"
+    "at": "2026-09-09T13:05:46.611296+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 16,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1729171": {
     "company_id": "238",
@@ -2542,10 +2550,18 @@
   },
   "1731917": {
     "company_id": "666",
-    "status": "failed",
+    "status": "partial",
     "kind": "snapshot",
     "attempts": 1,
-    "at": "2026-09-08T14:21:45.586301+00:00"
+    "at": "2026-09-09T13:05:47.059257+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 12,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1735681": {
     "company_id": "1502",
@@ -2822,7 +2838,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 1,
-    "at": "2026-09-08T14:25:07.691141+00:00",
+    "at": "2026-09-09T13:05:47.549129+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -2834,10 +2850,18 @@
   },
   "1735963": {
     "company_id": "350",
-    "status": "failed",
+    "status": "partial",
     "kind": "snapshot",
     "attempts": 1,
-    "at": "2026-09-08T14:22:06.075657+00:00"
+    "at": "2026-09-09T13:05:46.948756+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 9,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1736388": {
     "company_id": "1870",
@@ -2871,10 +2895,18 @@
   },
   "1729754": {
     "company_id": "2358",
-    "status": "failed",
+    "status": "partial",
     "kind": "snapshot",
     "attempts": 1,
-    "at": "2026-09-08T14:22:06.702587+00:00"
+    "at": "2026-09-09T13:05:47.384304+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 12,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1731101": {
     "company_id": "1774",
