@@ -796,55 +796,19 @@
   },
   "1722313": {
     "company_id": "1536",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-09T14:00:38.525881+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 23,
-      "done": {
-        "0:0": {
-          "report_format": "other",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-10T11:58:46.681855+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731485": {
     "company_id": "2477",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-09T14:00:29.274061+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 23,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-10T12:01:09.164210+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1734999": {
     "company_id": "2430",
@@ -856,18 +820,11 @@
   },
   "1728200": {
     "company_id": "323",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-09T14:00:30.627478+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 34,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-10T12:14:15.721592+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731357": {
     "company_id": "1154",
@@ -879,33 +836,19 @@
   },
   "1732426": {
     "company_id": "150",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-09T14:00:31.654577+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 24,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-10T12:21:14.947831+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731096": {
     "company_id": "2471",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-09T14:00:31.228889+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 29,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-10T12:21:53.483671+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732110": {
     "company_id": "526",
@@ -924,63 +867,2320 @@
   },
   "1730487": {
     "company_id": "2506",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-09T14:00:32.334039+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 15,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-10T12:24:43.854276+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1724661": {
     "company_id": "695",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-09T14:00:34.106321+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 29,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-10T12:29:09.606097+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732163": {
     "company_id": "387",
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-09T14:00:34.923438+00:00",
+    "at": "2026-09-10T12:34:18.630681+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 25,
-      "done": {},
-      "attempts": {}
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "Locka Holding BV",
+              "ownership_pct": 84,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "פעילות התאגיד ותיאור התפתחות עסקיו",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "PIH Property Investment Holding BV",
+              "ownership_pct": 76,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "פעילות התאגיד ותיאור התפתחות עסקיו",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "טכנורוב אחזקות (1993) בע\"מ",
+              "ownership_pct": 80,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "פעילות התאגיד ותיאור התפתחות עסקיו",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלרוב וונצ'רס בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "פעילות התאגיד ותיאור התפתחות עסקיו",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלרוב נופש (1993) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "פעילות התאגיד ותיאור התפתחות עסקיו",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מימון מלון לוטסיה - שותפות מוגבלת",
+              "ownership_pct": 99.9,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "פעילות התאגיד ותיאור התפתחות עסקיו",
+              "table_title": null,
+              "note": "השותף המוגבל (חברת בת של החברה) משתתף ב-0.1%"
+            },
+            {
+              "name": "Epic Suisse AG",
+              "ownership_pct": 52.4,
+              "parent": "אלרוב וונצ'רס בע\"מ",
+              "page_reference": 7,
+              "section_title": "פעילות התאגיד ותיאור התפתחות עסקיו",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלרוב ממילא 2006 בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אלרוב נופש (1993) בע\"מ",
+              "page_reference": 7,
+              "section_title": "פעילות התאגיד ותיאור התפתחות עסקיו",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלרוב אזור מסחרי ממילא",
+              "ownership_pct": 100,
+              "parent": "אלרוב נופש (1993) בע\"מ",
+              "page_reference": 7,
+              "section_title": "פעילות התאגיד ותיאור התפתחות עסקיו",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלרוב מלונות יוקרה (1993) בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אלרוב נופש (1993) בע\"מ",
+              "page_reference": 7,
+              "section_title": "פעילות התאגיד ותיאור התפתחות עסקיו",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Finance UK Properties Limited",
+              "ownership_pct": 100,
+              "parent": "אלרוב מלונות יוקרה (1993) בע\"מ",
+              "page_reference": 7,
+              "section_title": "פעילות התאגיד ותיאור התפתחות עסקיו",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "L Hotel Holding (II) BV",
+              "ownership_pct": 100,
+              "parent": "Locka Holding BV",
+              "page_reference": 7,
+              "section_title": "פעילות התאגיד ותיאור התפתחות עסקיו",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Barco Investments BV",
+              "ownership_pct": 100,
+              "parent": "Locka Holding BV",
+              "page_reference": 7,
+              "section_title": "פעילות התאגיד ותיאור התפתחות עסקיו",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Conservatorium Properties BV",
+              "ownership_pct": 100,
+              "parent": "Locka Holding BV",
+              "page_reference": 7,
+              "section_title": "פעילות התאגיד ותיאור התפתחות עסקיו",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Conservatorium Hotel BV",
+              "ownership_pct": 100,
+              "parent": "Locka Holding BV",
+              "page_reference": 7,
+              "section_title": "פעילות התאגיד ותיאור התפתחות עסקיו",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Café royal Management Limited",
+              "ownership_pct": 100,
+              "parent": "Locka Holding BV",
+              "page_reference": 7,
+              "section_title": "פעילות התאגיד ותיאור התפתחות עסקיו",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "L Hotel Holding SAS",
+              "ownership_pct": 100,
+              "parent": "L Hotel Holding (II) BV",
+              "page_reference": 7,
+              "section_title": "פעילות התאגיד ותיאור התפתחות עסקיו",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "L Hotel SNC",
+              "ownership_pct": 100,
+              "parent": "L Hotel Holding SAS",
+              "page_reference": 7,
+              "section_title": "פעילות התאגיד ותיאור התפתחות עסקיו",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Properteam Regs SARL",
+              "ownership_pct": 34,
+              "parent": "PIH Property Investment Holding BV",
+              "page_reference": 8,
+              "section_title": "פעילות התאגיד ותיאור התפתחות עסקיו",
+              "table_title": null,
+              "note": "היתרה מוחזקת בידי 2 חברות בבעלות מנהלי החברה"
+            },
+            {
+              "name": "Sutton Investment Group Limited",
+              "ownership_pct": 25,
+              "parent": "PIH Property Investment Holding BV",
+              "page_reference": 8,
+              "section_title": "פעילות התאגיד ותיאור התפתחות עסקיו",
+              "table_title": null,
+              "note": "אחוז החזקה כולל אפקטיבי הינו 82%"
+            },
+            {
+              "name": "Constable Real B.V.",
+              "ownership_pct": 20,
+              "parent": "PIH Property Investment Holding BV",
+              "page_reference": 8,
+              "section_title": "פעילות התאגיד ותיאור התפתחות עסקיו",
+              "table_title": null,
+              "note": "אחוז החזקה כולל אפקטיבי הינו 80.8%"
+            },
+            {
+              "name": "Wimbeldon B.V.",
+              "ownership_pct": 20,
+              "parent": "PIH Property Investment Holding BV",
+              "page_reference": 8,
+              "section_title": "פעילות התאגיד ותיאור התפתחות עסקיו",
+              "table_title": null,
+              "note": "אחוז החזקה כולל אפקטיבי הינו 80.8%"
+            },
+            {
+              "name": "George V Project Management SAS",
+              "ownership_pct": 16,
+              "parent": "PIH Property Investment Holding BV",
+              "page_reference": 8,
+              "section_title": "פעילות התאגיד ותיאור התפתחות עסקיו",
+              "table_title": null,
+              "note": "אחוז החזקה כולל אפקטיבי הינו 79.84%"
+            },
+            {
+              "name": "EPWROTH BULIDIG LTD",
+              "ownership_pct": 16,
+              "parent": "PIH Property Investment Holding BV",
+              "page_reference": 8,
+              "section_title": "פעילות התאגיד ותיאור התפתחות עסקיו",
+              "table_title": null,
+              "note": "אחוז החזקה כולל אפקטיבי הינו 79.84%"
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "Suisse EPIC",
+              "ownership_pct": 52.38,
+              "parent": null,
+              "page_reference": 19,
+              "section_title": "מידע כללי על תחום הפעילות",
+              "table_title": null,
+              "note": "שיעור ההחזקות לאחר הנפקה מיום 4.12.2025"
+            },
+            {
+              "name": "חברת הניהול בצרפת",
+              "ownership_pct": 34,
+              "parent": null,
+              "page_reference": 22,
+              "section_title": "מידע כללי על תחום הפעילות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "חברת ניהול פנימית בשוויץ",
+              "ownership_pct": 100,
+              "parent": "Suisse EPIC",
+              "page_reference": 22,
+              "section_title": "מידע כללי על תחום הפעילות",
+              "table_title": null,
+              "note": "בבעלות מלאה של EPIC Suisse AG"
+            },
+            {
+              "name": "PIH BV",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 19,
+              "section_title": "מידע כללי על תחום הפעילות",
+              "table_title": null,
+              "note": "חברת בת המחזיקה נכסים בצרפת ובאנגליה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "Locka",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 45,
+              "section_title": "8.2.2 המלונות בחו\"ל",
+              "table_title": null,
+              "note": "לרבות באמצעות חברות בנות"
+            },
+            {
+              "name": "Barco Investments B.V. (Barco)",
+              "ownership_pct": 100,
+              "parent": "Locka",
+              "page_reference": 45,
+              "section_title": "8.2.2 המלונות בחו\"ל",
+              "table_title": null,
+              "note": "חברת בת בהחזקה מלאה"
+            },
+            {
+              "name": "L.Hotel Holding BV",
+              "ownership_pct": 100,
+              "parent": "Locka",
+              "page_reference": 46,
+              "section_title": "8.2.2 המלונות בחו\"ל",
+              "table_title": null,
+              "note": "חברת בת בהחזקה מלאה"
+            },
+            {
+              "name": "EPIC THREE",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 42,
+              "section_title": "7.13 מגבלות ופיקוח על פעילות התאגיד",
+              "table_title": null,
+              "note": "רכישת נכסי נדל\"ן למגורים בשוויץ"
+            },
+            {
+              "name": "EPIC SEVEN",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 42,
+              "section_title": "7.13 מגבלות ופיקוח על פעילות התאגיד",
+              "table_title": null,
+              "note": "רכישת נכסי נדל\"ן למגורים בשוויץ"
+            }
+          ],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "חברה המשמשת כחברת ניהול הנכסים של הקבוצה בצרפת",
+              "ownership_pct": 34,
+              "parent": "PIH",
+              "page_reference": 71,
+              "section_title": "10. פעילויות נוספות של התאגיד שאינן עולות כדי תחום פעילות",
+              "table_title": null,
+              "note": "חברה כלולה"
+            },
+            {
+              "name": "כלל ביטוח ופיננסים בע\"מ",
+              "ownership_pct": 15,
+              "parent": null,
+              "page_reference": 71,
+              "section_title": "9. תחום השקעות בניירות ערך סחירים",
+              "table_title": null,
+              "note": "החזקת אמצעי שליטה של עד 15% מכוח היתר רשות שוק ההון"
+            }
+          ],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "Suisse EPIC",
+              "ownership_pct": 52.4,
+              "parent": null,
+              "page_reference": 79,
+              "section_title": "14.2.3 יתרות מסגרות האשראי הלא מנוצלות מתאגיד בנקאיים:",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "L Hotel Holding BV",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 83,
+              "section_title": null,
+              "table_title": null,
+              "note": "החזקה מלאה / שעבוד מניות"
+            },
+            {
+              "name": "L Hotel SNC",
+              "ownership_pct": 100,
+              "parent": "L Hotel SAS Holding",
+              "page_reference": 83,
+              "section_title": null,
+              "table_title": null,
+              "note": "החזקה מלאה / שעבוד מניות"
+            }
+          ],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "L.Hotel Holding B.V.",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 115,
+              "section_title": "מידע ופרטים נוספים בהתאם לעמדת משפטית 103-29 של רשות ני\"ע",
+              "table_title": null,
+              "note": "מוחזקת בעקיפין על ידי החברה באמצעות חברת הבת 'לוקה'"
+            },
+            {
+              "name": "LHotel Holding SAS",
+              "ownership_pct": 100,
+              "parent": "L.Hotel Holding B.V.",
+              "page_reference": 115,
+              "section_title": "מידע ופרטים נוספים בהתאם לעמדת משפטית 103-29 של רשות ני\"ע",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "LHotel SNC",
+              "ownership_pct": null,
+              "parent": "LHotel Holding SAS",
+              "page_reference": 115,
+              "section_title": "מידע ופרטים נוספים בהתאם לעמדת משפטית 103-29 של רשות ני\"ע",
+              "table_title": null,
+              "note": "מוחזקת בשליטה מלאה על ידי LHotel Holding SAS ועל ידי LHotel Holding B.V"
+            }
+          ],
+          "change_events": []
+        },
+        "0:7": {
+          "report_format": "other",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "L. Hotel SNC.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 126,
+              "section_title": "NOTE 1:- GENERAL",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:8": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "LHotel Holding BV",
+              "ownership_pct": 100,
+              "parent": "Locka Holding BV",
+              "page_reference": 144,
+              "section_title": "NOTE 11:- LOANS FROM SHAREHOLDERS",
+              "table_title": null,
+              "note": "Shares held by Locka Holding BV pledged for the benefit of the trustee of the Series debentures"
+            },
+            {
+              "name": "Lutetia Hotel Financing - Limited Partnership",
+              "ownership_pct": 100,
+              "parent": "L.Hotel Holding S.A.S",
+              "page_reference": 144,
+              "section_title": "NOTE 11:- LOANS FROM SHAREHOLDERS",
+              "table_title": null,
+              "note": "Participation units held by the Parent company pledged for the benefit of the trustee of the Series debentures"
+            }
+          ],
+          "change_events": []
+        },
+        "0:9": {
+          "report_format": "other",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:10": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:11": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "Suisse EPIC",
+              "ownership_pct": 52.4,
+              "parent": null,
+              "page_reference": 207,
+              "section_title": "2.3.1 מקורות מימון",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:12": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "PIH Property Investment V.B Holding",
+              "ownership_pct": 76.0,
+              "parent": null,
+              "page_reference": 210,
+              "section_title": "פעילות המגזר בחו\"ל- כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Epic Suisse AG",
+              "ownership_pct": 52.4,
+              "parent": null,
+              "page_reference": 210,
+              "section_title": "פעילות המגזר בחו\"ל- כללי",
+              "table_title": null,
+              "note": "לאחר הנפקת מניות בבורסה בשוויץ"
+            },
+            {
+              "name": "Locka V.B Holding",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 210,
+              "section_title": "פעילות המגזר בחו\"ל- כללי",
+              "table_title": null,
+              "note": "חברת בת המחזיקה בנכס נדל\"ן להשקעה בלונדון"
+            }
+          ],
+          "change_events": [
+            {
+              "company": "Epic Suisse AG",
+              "event_type": "decrease",
+              "ownership_pct_before": 56.4,
+              "ownership_pct_after": 52.4,
+              "event_date": "2025-12-04",
+              "event_description": "הנפקת מניות נוספת של חברת בת לציבור בבורסה בשוויץ והשתתפות החברה בהנפקה, שהביאה לירידת שיעור ההחזקה מכ-56.4% לכ-52.4%.",
+              "page_reference": 210,
+              "section_title": "פעילות המגזר בחו\"ל- כללי"
+            }
+          ]
+        },
+        "0:13": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:14": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:15": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אלרוב נופש (1993) בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 263,
+              "section_title": "באור 11 - חברות מוחזקות (המשך)",
+              "table_title": "ב. פרטים נוספים בדבר חברות מאוחדות המוחזקות במישרין על ידי החברה",
+              "note": null
+            },
+            {
+              "name": "ת.צ.א. אחזקות (1994) בע\"מ",
+              "ownership_pct": 90.0,
+              "parent": null,
+              "page_reference": 263,
+              "section_title": "באור 11 - חברות מוחזקות (המשך)",
+              "table_title": "ב. פרטים נוספים בדבר חברות מאוחדות המוחזקות במישרין על ידי החברה",
+              "note": null
+            },
+            {
+              "name": "Property Investment Holding BV",
+              "ownership_pct": 76.0,
+              "parent": null,
+              "page_reference": 263,
+              "section_title": "באור 11 - חברות מוחזקות (המשך)",
+              "table_title": "ב. פרטים נוספים בדבר חברות מאוחדות המוחזקות במישרין על ידי החברה",
+              "note": null
+            },
+            {
+              "name": "Epic Suisse AG",
+              "ownership_pct": 52.38,
+              "parent": null,
+              "page_reference": 263,
+              "section_title": "באור 11 - חברות מוחזקות (המשך)",
+              "table_title": "ב. פרטים נוספים בדבר חברות מאוחדות המוחזקות במישרין על ידי החברה",
+              "note": "שיעור ההחזקה כולל החזקה במניות החברות המוחזקות הן במישרין והן בעקיפין"
+            },
+            {
+              "name": "Sutton Investment Group Limited",
+              "ownership_pct": 82.0,
+              "parent": null,
+              "page_reference": 263,
+              "section_title": "באור 11 - חברות מוחזקות (המשך)",
+              "table_title": "ב. פרטים נוספים בדבר חברות מאוחדות המוחזקות במישרין על ידי החברה",
+              "note": "שיעור ההחזקה כולל החזקה במניות החברות המוחזקות הן במישרין והן בעקיפין"
+            },
+            {
+              "name": "Constable Real BV",
+              "ownership_pct": 80.8,
+              "parent": null,
+              "page_reference": 263,
+              "section_title": "באור 11 - חברות מוחזקות (המשך)",
+              "table_title": "ב. פרטים נוספים בדבר חברות מאוחדות המוחזקות במישרין על ידי החברה",
+              "note": "שיעור ההחזקה כולל החזקה במניות החברות המוחזקות הן במישרין והן בעקיפין"
+            },
+            {
+              "name": "Wimbledon BV",
+              "ownership_pct": 80.8,
+              "parent": null,
+              "page_reference": 263,
+              "section_title": "באור 11 - חברות מוחזקות (המשך)",
+              "table_title": "ב. פרטים נוספים בדבר חברות מאוחדות המוחזקות במישרין על ידי החברה",
+              "note": "שיעור ההחזקה כולל החזקה במניות החברות המוחזקות הן במישרין והן בעקיפין"
+            },
+            {
+              "name": "George V Project Management SAS / George V Project Mangment BV",
+              "ownership_pct": 79.84,
+              "parent": null,
+              "page_reference": 263,
+              "section_title": "באור 11 - חברות מוחזקות (המשך)",
+              "table_title": "ב. פרטים נוספים בדבר חברות מאוחדות המוחזקות במישרין על ידי החברה",
+              "note": null
+            },
+            {
+              "name": "Epworth Building Limited",
+              "ownership_pct": 79.84,
+              "parent": null,
+              "page_reference": 263,
+              "section_title": "באור 11 - חברות מוחזקות (המשך)",
+              "table_title": "ב. פרטים נוספים בדבר חברות מאוחדות המוחזקות במישרין על ידי החברה",
+              "note": "שיעור ההחזקה כולל החזקה במניות החברות המוחזקות הן במישרין והן בעקיפין"
+            },
+            {
+              "name": "LOCKA Holding BV",
+              "ownership_pct": 84.0,
+              "parent": "אלרוב וונצ'רס בע\"מ",
+              "page_reference": 263,
+              "section_title": "באור 11 - חברות מוחזקות (המשך)",
+              "table_title": "ב. פרטים נוספים בדבר חברות מאוחדות המוחזקות במישרין על ידי החברה",
+              "note": null
+            },
+            {
+              "name": "מימון מלון לוטסיה - שותפות מוגבלת",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 263,
+              "section_title": "באור 11 - חברות מוחזקות (המשך)",
+              "table_title": "ב. פרטים נוספים בדבר חברות מאוחדות המוחזקות במישרין על ידי החברה",
+              "note": null
+            },
+            {
+              "name": "The SET Hotel management company limited",
+              "ownership_pct": 85.0,
+              "parent": null,
+              "page_reference": 263,
+              "section_title": "באור 11 - חברות מוחזקות (המשך)",
+              "table_title": "ב. פרטים נוספים בדבר חברות מאוחדות המוחזקות במישרין על ידי החברה",
+              "note": null
+            },
+            {
+              "name": "Lodging 2020 L.P - שותפות",
+              "ownership_pct": 99.99,
+              "parent": null,
+              "page_reference": 263,
+              "section_title": "באור 11 - חברות מוחזקות (המשך)",
+              "table_title": "ב. פרטים נוספים בדבר חברות מאוחדות המוחזקות במישרין על ידי החברה",
+              "note": null
+            },
+            {
+              "name": "Lodging Aviation L.P - שותפות",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 263,
+              "section_title": "באור 11 - חברות מוחזקות (המשך)",
+              "table_title": "ב. פרטים נוספים בדבר חברות מאוחדות המוחזקות במישרין על ידי החברה",
+              "note": null
+            },
+            {
+              "name": "נופי השרון מרכז מגורים לאוכלוסייה מבוגרת בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 263,
+              "section_title": "באור 11 - חברות מוחזקות (המשך)",
+              "table_title": "ב. פרטים נוספים בדבר חברות מאוחדות המוחזקות במישרין על ידי החברה",
+              "note": null
+            },
+            {
+              "name": "אלסקנית אחזקה וניהול בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 263,
+              "section_title": "באור 11 - חברות מוחזקות (המשך)",
+              "table_title": "ב. פרטים נוספים בדבר חברות מאוחדות המוחזקות במישרין על ידי החברה",
+              "note": null
+            },
+            {
+              "name": "שד' רוטשילד 46 ניהול ואחזקה בע\"מ",
+              "ownership_pct": 78.96,
+              "parent": null,
+              "page_reference": 263,
+              "section_title": "באור 11 - חברות מוחזקות (המשך)",
+              "table_title": "ב. פרטים נוספים בדבר חברות מאוחדות המוחזקות במישרין על ידי החברה",
+              "note": null
+            },
+            {
+              "name": "אלרוב ווונצ'רס בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 263,
+              "section_title": "באור 11 - חברות מוחזקות (המשך)",
+              "table_title": "ב. פרטים נוספים בדבר חברות מאוחדות המוחזקות במישרין על ידי החברה",
+              "note": null
+            },
+            {
+              "name": "אלרוב של' רוטשילד (1989) בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 263,
+              "section_title": "באור 11 - חברות מוחזקות (המשך)",
+              "table_title": "ב. פרטים נוספים בדבר חברות מאוחדות המוחזקות במישרין על ידי החברה",
+              "note": null
+            },
+            {
+              "name": "השדא אחזקות (1993) בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 263,
+              "section_title": "באור 11 - חברות מוחזקות (המשך)",
+              "table_title": "ב. פרטים נוספים בדבר חברות מאוחדות המוחזקות במישרין על ידי החברה",
+              "note": null
+            },
+            {
+              "name": "אלרוב נכסים ובניין (1983) בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 263,
+              "section_title": "באור 11 - חברות מוחזקות (המשך)",
+              "table_title": "ב. פרטים נוספים בדבר חברות מאוחדות המוחזקות במישרין על ידי החברה",
+              "note": null
+            },
+            {
+              "name": "מגדלי אלרוב ניהול והפעלה בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 263,
+              "section_title": "באור 11 - חברות מוחזקות (המשך)",
+              "table_title": "ב. פרטים נוספים בדבר חברות מאוחדות המוחזקות במישרין על ידי החברה",
+              "note": null
+            },
+            {
+              "name": "ח.מ. אחזקות בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 263,
+              "section_title": "באור 11 - חברות מוחזקות (המשך)",
+              "table_title": "ב. פרטים נוספים בדבר חברות מאוחדות המוחזקות במישרין על ידי החברה",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:16": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "Locka Holding B.V.",
+              "ownership_pct": 84,
+              "parent": null,
+              "page_reference": 286,
+              "section_title": "באור 30 - התחייבויות תלויות, התקשרויות ושעבודים",
+              "table_title": null,
+              "note": "שיעור ההחזקה עלה ל-84% במהלך שנת הדוח בעקבות המרת הלוואות בעלים להון"
+            },
+            {
+              "name": "SNC Hotel L",
+              "ownership_pct": 100,
+              "parent": "Locka Holding B.V.",
+              "page_reference": 277,
+              "section_title": "באור 24 - נכסים בלתי מוחשיים",
+              "table_title": null,
+              "note": "החברה הנרכשת המחזיקה במלוא הזכויות במלון לוטסיה"
+            },
+            {
+              "name": "SwissPic Holdings AG",
+              "ownership_pct": 77.8,
+              "parent": null,
+              "page_reference": 284,
+              "section_title": "באור 30 - התחייבויות תלויות, התקשרויות ושעבודים",
+              "table_title": null,
+              "note": "החברה החזיקה בהון המניות בשיעור של 77.8% ערב ההנפקה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:17": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "ממילא רובע אלרוב ניהול בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 299,
+              "section_title": "באור 36 - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אל-קנית אחזקה וניהול בערבון מוגבל",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 299,
+              "section_title": "באור 36 - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אל-רוב נופש (1993) בערבון מוגבל",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 299,
+              "section_title": "באור 36 - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אל-רוב מלונות יוקרה (1993) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 299,
+              "section_title": "באור 36 - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אל-רוב אזור מסחרי ממילא (1993) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 299,
+              "section_title": "באור 36 - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אל-רוב ממילא 2006 בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 299,
+              "section_title": "באור 36 - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אצת אחזקות (1994) בערבון מוגבל",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 299,
+              "section_title": "באור 36 - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "תעשיות צמר אוסטרליות בערבון מוגבל",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 299,
+              "section_title": "באור 36 - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "נופי השרון מרכז מגורים לאוכלוסייה מבוגרת בערבון מוגבל",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 299,
+              "section_title": "באור 36 - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "שדרות רוטשילד 46 ניהול ואחזקה בע\"מ",
+              "ownership_pct": 79,
+              "parent": null,
+              "page_reference": 299,
+              "section_title": "באור 36 - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אל-רוב נכסים ובניין (1983) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 299,
+              "section_title": "באור 36 - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מגדלי אלרוב ניהול והפעלה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 299,
+              "section_title": "באור 36 - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אל-רוב שדרות רוטשילד (1989) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 299,
+              "section_title": "באור 36 - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אינימור בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 299,
+              "section_title": "באור 36 - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "טכנורב אחזקות (1993) בע\"מ",
+              "ownership_pct": 80,
+              "parent": null,
+              "page_reference": 299,
+              "section_title": "באור 36 - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "השדרא אחזקות (1993) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 299,
+              "section_title": "באור 36 - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלרוב וונצ'רס בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 299,
+              "section_title": "באור 36 - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מגדלי אלרוב (1992) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 299,
+              "section_title": "באור 36 - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ח.מ. אחזקות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 299,
+              "section_title": "באור 36 - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "קרן אלרוב בע\"מ (חל\"צ)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 299,
+              "section_title": "באור 36 - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מימון מלון לוסטה- שותפות מוגבלת",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 299,
+              "section_title": "באור 36 - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "European property investment corporation limited",
+              "ownership_pct": 76,
+              "parent": null,
+              "page_reference": 299,
+              "section_title": "באור 36 - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "P.I.H. Property Investment Holding BV",
+              "ownership_pct": 76,
+              "parent": null,
+              "page_reference": 299,
+              "section_title": "באור 36 - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Property Investment Holding France SARL",
+              "ownership_pct": 76,
+              "parent": null,
+              "page_reference": 299,
+              "section_title": "באור 36 - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Epic france 2 Sci",
+              "ownership_pct": 76,
+              "parent": null,
+              "page_reference": 299,
+              "section_title": "באור 36 - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Property Investment Holding France SCI",
+              "ownership_pct": 76,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 36 - רשימת חברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "PIH France Pm Sarl",
+              "ownership_pct": 76,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 36 - רשימת חברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Fonciere Ventadoor SCI",
+              "ownership_pct": 76,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 36 - רשימת חברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Fonciere de Flander SCI",
+              "ownership_pct": 76,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 36 - רשימת חברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Epic one Property investment AG",
+              "ownership_pct": 52.4,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 36 - רשימת חברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Epic three Property investment AG",
+              "ownership_pct": 52.4,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 36 - רשימת חברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Epic five Property investment AG",
+              "ownership_pct": 52.4,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 36 - רשימת חברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Epic seven Property investment AG",
+              "ownership_pct": 52.4,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 36 - רשימת חברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Epic nine Property investment AG",
+              "ownership_pct": 52.4,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 36 - רשימת חברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Epic ten Property investment AG",
+              "ownership_pct": 52.4,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 36 - רשימת חברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Epic eleven Property investment AG",
+              "ownership_pct": 52.4,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 36 - רשימת חברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Epic twelve Property investment AG",
+              "ownership_pct": 52.4,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 36 - רשימת חברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Epic sixteen Property investment AG",
+              "ownership_pct": 52.4,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 36 - רשימת חברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Epic nineteen Property investmen AG",
+              "ownership_pct": 52.4,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 36 - רשימת חברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Epic twenty Property investmen AG",
+              "ownership_pct": 52.4,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 36 - רשימת חברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Epic twenty one Property investmen AG",
+              "ownership_pct": 52.4,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 36 - רשימת חברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Epic twenty two Property investmen AG",
+              "ownership_pct": 52.4,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 36 - רשימת חברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Epic twenty three Property investmen AG",
+              "ownership_pct": 52.4,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 36 - רשימת חברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Epic twenty four Property investmen AG",
+              "ownership_pct": 52.4,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 36 - רשימת חברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Epic twenty five Property investmen AG",
+              "ownership_pct": 52.4,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 36 - רשימת חברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Epic twenty six Property investmen AG",
+              "ownership_pct": 52.4,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 36 - רשימת חברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Epic Suisse Property Management GmbH",
+              "ownership_pct": 52.4,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 36 - רשימת חברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "The SET Hotel management company limited",
+              "ownership_pct": 85,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 36 - רשימת חברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": "ראו גם ביאור 30 ב' (10)"
+            },
+            {
+              "name": "Locka Holding B.V.",
+              "ownership_pct": 84,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 36 - רשימת חברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": "ראו גם ביאור 30 ב' (10)"
+            },
+            {
+              "name": "Epic Suisse AG",
+              "ownership_pct": 52.4,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 36 - רשימת חברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Barco Investments B.V.",
+              "ownership_pct": 84,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 36 - רשימת חברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": "ראו גם ביאור 30 ב' (10)"
+            },
+            {
+              "name": "Conservatium Properties B.V",
+              "ownership_pct": 84,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 36 - רשימת חברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": "ראו גם ביאור 30 ב' (10)"
+            },
+            {
+              "name": "Conservatium Hotel B.V",
+              "ownership_pct": 84,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 36 - רשימת חברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": "ראו גם ביאור 30 ב' (10)"
+            },
+            {
+              "name": "L Hotel Holding SAS",
+              "ownership_pct": 84,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 36 - רשימת חברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": "ראו גם ביאור 30 ב' (10)"
+            },
+            {
+              "name": "L Hotel Holding BV",
+              "ownership_pct": 84,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 36 - רשימת חברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": "ראו גם ביאור 30 ב' (10)"
+            },
+            {
+              "name": "Lhotel SNC",
+              "ownership_pct": 84,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 36 - רשימת חברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": "ראו גם ביאור 30 ב' (10)"
+            },
+            {
+              "name": "Lodging 2020 L.P.",
+              "ownership_pct": 99.99,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 36 - רשימת חברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Lodging aviation L.P.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 36 - רשימת חברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Cafe Royal Management Limited.",
+              "ownership_pct": 84,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 36 - רשימת חברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": "ראו גם ביאור 30 ב' (10)"
+            },
+            {
+              "name": "Sutton Investment Group Limited",
+              "ownership_pct": 82,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 36 - רשימת חברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "(CR) Constable Real BV",
+              "ownership_pct": 80.8,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 36 - רשימת חברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Wimbledon BV",
+              "ownership_pct": 80.8,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 36 - רשימת חברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "George V Project Management BV",
+              "ownership_pct": 79.84,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 36 - רשימת חברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Coccinelle SA",
+              "ownership_pct": 79.84,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 36 - רשימת חברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Epworth Building limited",
+              "ownership_pct": 79.84,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 36 - רשימת חברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "UK Finance Properties limited",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 36 - רשימת חברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "The Set Group limited",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 36 - רשימת חברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Properteam Regs Sarl",
+              "ownership_pct": 34,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 36 - רשימת חברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:18": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אלקנית אחזקה וניהול בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 325,
+              "section_title": "חלק ד' - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדוח על המצב הכספי (באלפי ש\"ח)",
+              "note": null
+            },
+            {
+              "name": "אלרוב נופש (1993) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 325,
+              "section_title": "חלק ד' - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדוח על המצב הכספי (באלפי ש\"ח)",
+              "note": null
+            },
+            {
+              "name": "אלרוב מלונות יוקרה (1993) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 325,
+              "section_title": "חלק ד' - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדוח על המצב הכספי (באלפי ש\"ח)",
+              "note": null
+            },
+            {
+              "name": "אלרוב אזור מסחרי ממילא (1993) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 325,
+              "section_title": "חלק ד' - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדוח על המצב הכספי (באלפי ש\"ח)",
+              "note": null
+            },
+            {
+              "name": "אלרוב ממילא 2006 בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 325,
+              "section_title": "חלק ד' - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדוח על המצב הכספי (באלפי ש\"ח)",
+              "note": null
+            },
+            {
+              "name": "תצ\"א אחזקות (1994) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 325,
+              "section_title": "חלק ד' - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדוח על המצב הכספי (באלפי ש\"ח)",
+              "note": null
+            },
+            {
+              "name": "תעשיות צמר אוסטרליות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 325,
+              "section_title": "חלק ד' - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדוח על המצב הכספי (באלפי ש\"ח)",
+              "note": null
+            },
+            {
+              "name": "נופי השרון מרכז מגורים לאוכלוסיה מבוגרת בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 325,
+              "section_title": "חלק ד' - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדוח על המצב הכספי (באלפי ש\"ח)",
+              "note": null
+            },
+            {
+              "name": "קרן אלרוב בע\"מ (חל\"צ)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 326,
+              "section_title": "חלק ד' - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדוח על המצב הכספי (באלפי ש\"ח)",
+              "note": null
+            },
+            {
+              "name": "שדרות רוטשילד 46 ניהול ואחזקה בע\"מ",
+              "ownership_pct": 79,
+              "parent": null,
+              "page_reference": 326,
+              "section_title": "חלק ד' - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדוח על המצב הכספי (באלפי ש\"ח)",
+              "note": null
+            },
+            {
+              "name": "ממילא רובע אלרוב ניהול בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 326,
+              "section_title": "חלק ד' - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדוח על המצב הכספי (באלפי ש\"ח)",
+              "note": null
+            },
+            {
+              "name": "אל-רוב נכסים ובנין (1983) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 326,
+              "section_title": "חלק ד' - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדוח על המצב הכספי (באלפי ש\"ח)",
+              "note": null
+            },
+            {
+              "name": "טכנורוב אחזקות (1993) בע\"מ",
+              "ownership_pct": 80,
+              "parent": null,
+              "page_reference": 326,
+              "section_title": "חלק ד' - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדוח על המצב הכספי (באלפי ש\"ח)",
+              "note": null
+            },
+            {
+              "name": "אל-רוב שד' רוטשילד (1989) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 326,
+              "section_title": "חלק ד' - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדוח על המצב הכספי (באלפי ש\"ח)",
+              "note": null
+            },
+            {
+              "name": "השדא אחזקות (1993) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 326,
+              "section_title": "חלק ד' - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדוח על המצב הכספי (באלפי ש\"ח)",
+              "note": null
+            },
+            {
+              "name": "אינימור בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 326,
+              "section_title": "חלק ד' - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדוח על המצב הכספי (באלפי ש\"ח)",
+              "note": null
+            },
+            {
+              "name": "מגדלי אלרוב (1992) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 326,
+              "section_title": "חלק ד' - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדוח על המצב הכספי (באלפי ש\"ח)",
+              "note": null
+            },
+            {
+              "name": "אלרוב וונצ'רס בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 326,
+              "section_title": "חלק ד' - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדוח על המצב הכספי (באלפי ש\"ח)",
+              "note": null
+            },
+            {
+              "name": "מגדלי אלרוב ניהול והפעלה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 326,
+              "section_title": "חלק ד' - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדוח על המצב הכספי (באלפי ש\"ח)",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:19": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אלקנית אחזקה וניהול בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 327,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "אלרוב נופש (1993) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 327,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "אלרוב מלונות יוקרה (1993) בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אלרוב נופש (1993) בע\"מ",
+              "page_reference": 327,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "אלרוב אזור מסחרי ממילא (1993) בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אלרוב נופש (1993) בע\"מ",
+              "page_reference": 327,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "אלרוב ממילא 2006 בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אלרוב נופש (1993) בע\"מ",
+              "page_reference": 327,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "תצ\"א אחזקות (1994) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 327,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "תעשיות צמר אוסטרליות בע\"מ",
+              "ownership_pct": 100,
+              "parent": "תצ\"א אחזקות (1994) בע\"מ",
+              "page_reference": 327,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "נופי השרון מרכז מגורים לאוכלוסיה מבוגרת בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אלרוב נופש (1993) בע\"מ",
+              "page_reference": 327,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "קרן אלרוב בע\"מ (חל\"צ)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 328,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "שדרות רוטשילד 46 ניהול ואחזקה בע\"מ",
+              "ownership_pct": 79,
+              "parent": null,
+              "page_reference": 328,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "ממילא רובע אלרוב ניהול בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אלרוב נופש (1993) בע\"מ",
+              "page_reference": 328,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "אל-רוב נכסים ובנין (1983) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 328,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "טכנורוב אחזקות (1993) בע\"מ",
+              "ownership_pct": 80,
+              "parent": null,
+              "page_reference": 328,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "אל-רוב שד' רוטשילד (1989) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 328,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "השדא אחזקות (1993) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 328,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "אינימור בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 328,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "מגדלי אלרוב (1992) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 328,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "אלרוב וונצ'רס בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 328,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "מגדלי אלרוב ניהול והפעלה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 328,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "ח.מ. אחזקות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 329,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "European Property Investment Corporation Limited",
+              "ownership_pct": 76,
+              "parent": null,
+              "page_reference": 329,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "אלרוב ישאל תקשורת בע\"מ (בפירוק מרצון)",
+              "ownership_pct": 90.1,
+              "parent": null,
+              "page_reference": 329,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "Property Investment Holding B.V.",
+              "ownership_pct": 76,
+              "parent": null,
+              "page_reference": 329,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "מימון מלון לוטסיה שותפות מוגבלת",
+              "ownership_pct": 99.9,
+              "parent": null,
+              "page_reference": 329,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "Locka Holding.B.V",
+              "ownership_pct": 84,
+              "parent": null,
+              "page_reference": 329,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "Barco Investments B.V.",
+              "ownership_pct": 84,
+              "parent": "Locka Holding.B.V",
+              "page_reference": 329,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "LHotel Holding B.V.",
+              "ownership_pct": 84,
+              "parent": "Locka Holding.B.V",
+              "page_reference": 329,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "Café Royal Management limited",
+              "ownership_pct": 84,
+              "parent": "Locka Holding.B.V",
+              "page_reference": 330,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "Conservatorium BV Hotel",
+              "ownership_pct": 84,
+              "parent": "Locka Holding.B.V",
+              "page_reference": 330,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "L Hotel Holding SAS",
+              "ownership_pct": 84,
+              "parent": null,
+              "page_reference": 330,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "L Hotel SNC",
+              "ownership_pct": 84,
+              "parent": null,
+              "page_reference": 330,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "Conservatorium Properties BV",
+              "ownership_pct": 84,
+              "parent": null,
+              "page_reference": 330,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "The Set Hotel Management Company Limited",
+              "ownership_pct": 85,
+              "parent": null,
+              "page_reference": 330,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "Sutton Investment Group Ltd",
+              "ownership_pct": 82,
+              "parent": null,
+              "page_reference": 330,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "Epic France SCI",
+              "ownership_pct": 76,
+              "parent": null,
+              "page_reference": 330,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "CR Constable Real B.V.",
+              "ownership_pct": 80.8,
+              "parent": "Property Investment Holding B.V.",
+              "page_reference": 331,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "Wimbledon B.V.",
+              "ownership_pct": 80.8,
+              "parent": "Property Investment Holding B.V.",
+              "page_reference": 331,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "George V Project Management SAS",
+              "ownership_pct": 79.84,
+              "parent": "Property Investment Holding B.V.",
+              "page_reference": 331,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "Epworth Building Limited",
+              "ownership_pct": 79.84,
+              "parent": "Property Investment Holding B.V.",
+              "page_reference": 331,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "Coccinelle France SA",
+              "ownership_pct": 79.84,
+              "parent": "Property Investment Holding B.V.",
+              "page_reference": 331,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "Ventadour Fonciere",
+              "ownership_pct": 76,
+              "parent": "Property Investment Holding B.V.",
+              "page_reference": 331,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "Properteam Regs SARL",
+              "ownership_pct": 25.8,
+              "parent": null,
+              "page_reference": 331,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "EPIC ONE Property Investment AG",
+              "ownership_pct": 52.4,
+              "parent": null,
+              "page_reference": 331,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "EPIC THREE Property Investment AG",
+              "ownership_pct": 52.4,
+              "parent": null,
+              "page_reference": 331,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "EPIC FIVE Property Investment AG",
+              "ownership_pct": 52.4,
+              "parent": null,
+              "page_reference": 332,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "EPIC SEVEN Property Investment AG",
+              "ownership_pct": 52.4,
+              "parent": null,
+              "page_reference": 332,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "EPIC NINE Property Investment AG",
+              "ownership_pct": 52.4,
+              "parent": null,
+              "page_reference": 332,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "EPIC TEN Property Investment AG",
+              "ownership_pct": 52.4,
+              "parent": null,
+              "page_reference": 332,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "EPIC ELEVEN Property Investment AG",
+              "ownership_pct": 52.4,
+              "parent": null,
+              "page_reference": 332,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "EPIC TWELVE Property Investment AG",
+              "ownership_pct": 52.4,
+              "parent": null,
+              "page_reference": 332,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "EPIC Suisse Property Management Gmbh",
+              "ownership_pct": 52.4,
+              "parent": null,
+              "page_reference": 332,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "Fonciere de Flander",
+              "ownership_pct": 76,
+              "parent": "Property Investment Holding B.V.",
+              "page_reference": 333,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "Property Investment Holding France PM SARL",
+              "ownership_pct": 76,
+              "parent": "Property Investment Holding B.V.",
+              "page_reference": 333,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "EPIC SIXTEEN Property Investment AG",
+              "ownership_pct": 52.4,
+              "parent": "Epic Suisse AG",
+              "page_reference": 333,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "Epic Nineteen Property Investment AG",
+              "ownership_pct": 52.4,
+              "parent": "Epic Suisse AG",
+              "page_reference": 333,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "Property Investment Holding France SARL",
+              "ownership_pct": 76,
+              "parent": "Property Investment Holding B.V.",
+              "page_reference": 333,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "- Lodging 2020 L.P.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 333,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "Lodging 2020 L.C.",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 333,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "Lodging Aviation L.P.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 333,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "Epic Suisse AG",
+              "ownership_pct": 52.4,
+              "parent": null,
+              "page_reference": 333,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "Epic Twenty Property Investment AG",
+              "ownership_pct": 52.4,
+              "parent": "Epic Suisse AG",
+              "page_reference": 334,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "Epic Twenty One Property Investment AG",
+              "ownership_pct": 52.4,
+              "parent": "Epic Suisse AG",
+              "page_reference": 334,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "Epic Twenty Two Property Investment AG",
+              "ownership_pct": 52.4,
+              "parent": "Epic Suisse AG",
+              "page_reference": 334,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "Epic Twenty Three Property Investment AG",
+              "ownership_pct": 52.4,
+              "parent": "Epic Suisse AG",
+              "page_reference": 334,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "Epic Twenty Four Property Investment AG",
+              "ownership_pct": 52.4,
+              "parent": "Epic Suisse AG",
+              "page_reference": 334,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "Finance UK Property Limited",
+              "ownership_pct": 100,
+              "parent": "אלרוב נופש (1993) בע\"מ",
+              "page_reference": 334,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "The Set Group Limited",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 334,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "Epic Twenty five Property Investment AG",
+              "ownership_pct": 52.4,
+              "parent": "Epic Suisse AG",
+              "page_reference": 334,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "Epic Twenty Six Property Investment AG",
+              "ownership_pct": 52.4,
+              "parent": "Epic Suisse AG",
+              "page_reference": 335,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדווח על המצב הכספי (באלפי ש\"ח)",
+              "table_title": "תקנה 11",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:20": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "Locka",
+              "event_type": "increase",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 84,
+              "event_date": null,
+              "event_description": "המרת חלק מהלוואות הבעלים שהעמידה החברה ל-Locka להון מניותיה כך ששיעור ההחזקה עומד על 84%",
+              "page_reference": 347,
+              "section_title": "12.3 עסקאות אחרות (שאינן מנויות בסעיף 270(4) לחוק החברות)"
+            }
+          ]
+        },
+        "0:21": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:22": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "1:0": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "1:1": {
+          "report_format": "other",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
+      "attempts": {
+        "0:5": 1
+      }
     }
   },
   "1729103": {
     "company_id": "1863",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-09T14:00:35.508066+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 24,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-10T12:35:40.067548+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731849": {
     "company_id": "1737",
@@ -1002,13 +3202,126 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-09T14:00:36.075461+00:00",
+    "at": "2026-09-10T12:35:31.348345+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 16,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "סופרגז פאוור בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 9,
+              "section_title": "חלק א - תיאור עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "סופרגז פאוור אחזקות בע\"מ",
+              "ownership_pct": 100,
+              "parent": "סופרגז פאוור בע\"מ",
+              "page_reference": 9,
+              "section_title": "חלק א - תיאור עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "סופרגז פאוור גז טבעי בע\"מ",
+              "ownership_pct": 100,
+              "parent": "סופרגז פאוור אחזקות בע\"מ",
+              "page_reference": 9,
+              "section_title": "חלק א - תיאור עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "סופרגז פאוור ס.אי.פי. בע\"מ",
+              "ownership_pct": 100,
+              "parent": "סופרגז פאוור אחזקות בע\"מ",
+              "page_reference": 9,
+              "section_title": "חלק א - תיאור עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Balanced Rock Power, LLC",
+              "ownership_pct": 21.64,
+              "parent": null,
+              "page_reference": 9,
+              "section_title": "חלק א - תיאור עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "סופרגז פאוור שותפות מוגבלת",
+              "ownership_pct": 65,
+              "parent": null,
+              "page_reference": 9,
+              "section_title": "חלק א - תיאור עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "SG Energy BRP, LLC",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 39,
+              "section_title": "9. פעילויות נוספות שאינן מהוות מגזר בר דיווח",
+              "table_title": null,
+              "note": "תאגיד בשליטה מלאה (100%) בשרשור"
+            },
+            {
+              "name": "Balanced Rock Power, LLC (BRP)",
+              "ownership_pct": 21.64,
+              "parent": "SG Energy BRP, LLC",
+              "page_reference": 40,
+              "section_title": "9.1.1 הכנסת משקיעה לפעילות BRP תוך הקטנת החזקותיה של החברה ב-BRP ועדכון הסכמי בעלי המניות ב-BRP והתחייבויות החברה בנוגע ל-BRP",
+              "table_title": null,
+              "note": "החזקה שדוללה לכ-21.64% נכון למועד הדוח"
+            }
+          ],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "Balanced Rock Power, LLC (BRP)",
+              "ownership_pct": 21.64,
+              "parent": "חברה בת",
+              "page_reference": 69,
+              "section_title": "קבלת תקבולים ממימוש פרויקט נוסף בתחום פעילות BRP והקטנת מסגרת ערבויות מול תאגיד בנקאי אמריקאי",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
@@ -1029,18 +3342,11 @@
   },
   "1736412": {
     "company_id": "1654",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-09T14:00:30.158628+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 32,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-10T12:12:21.762840+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732608": {
     "company_id": "1496",
