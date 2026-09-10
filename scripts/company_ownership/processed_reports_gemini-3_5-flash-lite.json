@@ -3938,628 +3938,86 @@
   },
   "1730441": {
     "company_id": "2344",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-10T13:20:45.097771+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 21,
-      "done": {
-        "0:0": {
-          "report_format": "other",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:5": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:6": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "1:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "פאי סיאם יפו 36 בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "פאי סיאם יפו 38 בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מלון החבצלת 2-4 שותפות מוגבלת",
-              "ownership_pct": 99,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
-              "table_title": null,
-              "note": "כ- 99%"
-            },
-            {
-              "name": "ניהול החבצלת 2-4 בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "פאי סיאם הנביאים ירושלים בע\"מ (חל\"צ)",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "פאי סיאם לינקולן בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "פאי סיאם מפרץ אמנון בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "צפון הירקון תל אביב בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "פאי סיאם תל אביב (2014) בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ניהול מלונות איביס ופולמן ירושלים בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מלונות החוף הצפוני בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "גינות המלכים בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מלונות איביס ופולמן ירושלים שותפות מוגבלת",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מלון איביס סטיילס",
-              "ownership_pct": 100,
-              "parent": "פאי סיאם יפו 36 בע\"מ",
-              "page_reference": 4,
-              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "פרויקט החבצלת",
-              "ownership_pct": 98.9,
-              "parent": "פאי סיאם יפו 38 בע\"מ",
-              "page_reference": 4,
-              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "פרויקט צפת",
-              "ownership_pct": 100,
-              "parent": "מלון החבצלת 2-4 שותפות מוגבלת",
-              "page_reference": 4,
-              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "פרויקט ים המלח",
-              "ownership_pct": 100,
-              "parent": "ניהול החבצלת 2-4 בע\"מ",
-              "page_reference": 4,
-              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "פרויקט הנביאים",
-              "ownership_pct": 100,
-              "parent": "פאי סיאם הנביאים ירושלים בע\"מ (חל\"צ)",
-              "page_reference": 4,
-              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "פרויקט ההגנה",
-              "ownership_pct": 100,
-              "parent": "פאי סיאם לינקולן בע\"מ",
-              "page_reference": 4,
-              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "פרויקט מפרץ אמנון כנרת",
-              "ownership_pct": 100,
-              "parent": "פאי סיאם מפרץ אמנון בע\"מ",
-              "page_reference": 4,
-              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "פרויקט תל אביב הקטנה",
-              "ownership_pct": 100,
-              "parent": "צפון הירקון תל אביב בע\"מ",
-              "page_reference": 4,
-              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "פרויקט המרד",
-              "ownership_pct": 93.2,
-              "parent": "פאי סיאם תל אביב (2014) בע\"מ",
-              "page_reference": 4,
-              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "פרויקט פולמן מבשרת ציון",
-              "ownership_pct": 100,
-              "parent": "מלונות החוף הצפוני בע\"מ",
-              "page_reference": 4,
-              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מלון איביס סיטי סנטר",
-              "ownership_pct": 100,
-              "parent": "גינות המלכים בע\"מ",
-              "page_reference": 4,
-              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "1:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "צפון הירקון",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 24,
-              "section_title": "9. נכסים מניבים מהותיים ונכסים מניבים בהקמה מהותיים מאוד",
-              "table_title": "הצגת הנכס",
-              "note": null
-            },
-            {
-              "name": "ניהול החבצלת 2-4 ע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 29,
-              "section_title": "9.2 פרויקט חבצלת – מלון ישרוטל \"חבצלת\" (ייעוד מלונאי)",
-              "table_title": null,
-              "note": "חברה פרטית בבעלות ובשליטה מלאה של החברה"
-            },
-            {
-              "name": "מלונות החוף הצפוני בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 34,
-              "section_title": "פרטים נוספים אודות הסכם הליווי נכון למועד הדוח",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "1:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "מלון החבצלת 2-4 (שותפות מוגבלת)",
-              "ownership_pct": 98.9,
-              "parent": null,
-              "page_reference": 69,
-              "section_title": "מענק מפעל מאושר",
-              "table_title": null,
-              "note": "החברה מחזיקה באופן אפקטיבי נכון למועד הדוח"
-            },
-            {
-              "name": "פאי סיאם מפרץ אמנון בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 73,
-              "section_title": "9.3.1 הצגת הנכס",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "פאי ת\"א",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 81,
-              "section_title": "10.1.1 הצגת הקרקע",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "1:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "פאי ת\"א",
-              "ownership_pct": 93.2,
-              "parent": null,
-              "page_reference": 52,
-              "section_title": ".10.1.6 פרטים אודות הערכות שווי",
-              "table_title": null,
-              "note": "חלק החברה בפרויקט"
-            }
-          ],
-          "change_events": []
-        },
-        "1:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "1:5": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "פאי סיאם תל אביב (2014) בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 92,
-              "section_title": "מצב כספי",
-              "table_title": null,
-              "note": "חברת בת"
-            },
-            {
-              "name": "חברת צפון הירקון בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 92,
-              "section_title": "מצב כספי",
-              "table_title": null,
-              "note": "חברה מוחזקת המטופלת לפי שיטת השווי המאזני"
-            },
-            {
-              "name": "פאי סיאם מפרץ אמנון בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 93,
-              "section_title": "מצב כספי",
-              "table_title": null,
-              "note": "חברת בת"
-            },
-            {
-              "name": "פאי סיאם הנביאים ירושלים בע\"מ (חל\"צ)",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 94,
-              "section_title": "תוצאות הפעילות",
-              "table_title": null,
-              "note": "חברת בת"
-            }
-          ],
-          "change_events": []
-        },
-        "1:6": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "1:7": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "פאי סיאם לינקולן בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 133,
-              "section_title": "ביאור 9 - השקעות בחברות ושותפויות",
-              "table_title": "א. ההרכב:",
-              "note": null
-            },
-            {
-              "name": "פאי סיאם תל אביב (2014) בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 133,
-              "section_title": "ביאור 9 - השקעות בחברות ושותפויות",
-              "table_title": "א. ההרכב:",
-              "note": null
-            },
-            {
-              "name": "צפון הירקון תל אביב בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 133,
-              "section_title": "ביאור 9 - השקעות בחברות ושותפויות",
-              "table_title": "א. ההרכב:",
-              "note": null
-            },
-            {
-              "name": "ניהול מלונות איביס ופולמן בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 133,
-              "section_title": "ביאור 9 - השקעות בחברות ושותפויות",
-              "table_title": "א. ההרכב:",
-              "note": null
-            },
-            {
-              "name": "מלונות איביס ופולמן שותפות מוגבלת",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 133,
-              "section_title": "ביאור 9 - השקעות בחברות ושותפויות",
-              "table_title": "א. ההרכב:",
-              "note": null
-            },
-            {
-              "name": "מלון החבצלת 2-4 שותפות מוגבלת",
-              "ownership_pct": 99,
-              "parent": null,
-              "page_reference": 133,
-              "section_title": "ביאור 9 - השקעות בחברות ושותפויות",
-              "table_title": "א. ההרכב:",
-              "note": "מצוין כ-99% בטבלה, באורות מפורט כאחוז אפקטיבי של 98.9%"
-            },
-            {
-              "name": "ניהול החבצלת 2-4 בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 133,
-              "section_title": "ביאור 9 - השקעות בחברות ושותפויות",
-              "table_title": "א. ההרכב:",
-              "note": null
-            },
-            {
-              "name": "מלונות החוף הצפוני בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 133,
-              "section_title": "ביאור 9 - השקעות בחברות ושותפויות",
-              "table_title": "א. ההרכב:",
-              "note": null
-            },
-            {
-              "name": "גינות המלכים בע\"מ",
-              "ownership_pct": 100,
-              "parent": "מלונות החוף הצפוני בע\"מ",
-              "page_reference": 133,
-              "section_title": "ביאור 9 - השקעות בחברות ושותפויות",
-              "table_title": "א. ההרכב:",
-              "note": "החזקה דרך מלונות החוף הצפוני בע\"מ"
-            },
-            {
-              "name": "פאי סיאם הנביאים ירושלים בע\"מ (חל\"צ)",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 133,
-              "section_title": "ביאור 9 - השקעות בחברות ושותפויות",
-              "table_title": "א. ההרכב:",
-              "note": null
-            },
-            {
-              "name": "פאי סיאם מפרץ אמנון בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 133,
-              "section_title": "ביאור 9 - השקעות בחברות ושותפויות",
-              "table_title": "א. ההרכב:",
-              "note": null
-            },
-            {
-              "name": "פאי סיאם רחוב יפו 36 בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 133,
-              "section_title": "ביאור 9 - השקעות בחברות ושותפויות",
-              "table_title": "א. ההרכב:",
-              "note": null
-            },
-            {
-              "name": "פאי סיאם יפו 38 בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 133,
-              "section_title": "ביאור 9 - השקעות בחברות ושותפויות",
-              "table_title": "א. ההרכב:",
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "1:8": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "פאי סיאם הנביאים ירושלים בע\"מ (חל\"צ)",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 137,
-              "section_title": "ביאור 9 - השקעות בחברות ושותפויות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "פאי סיאם מפרץ אמנון בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 137,
-              "section_title": "ביאור 9 - השקעות בחברות ושותפויות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "פאי סיאם רחוב יפו 36 בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 138,
-              "section_title": "ביאור 9 - השקעות בחברות ושותפויות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "פאי סיאם יפו 38 בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 138,
-              "section_title": "ביאור 9 - השקעות בחברות ושותפויות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "צפון הירקון תל אביב בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 138,
-              "section_title": "ביאור 9 - השקעות בחברות ושותפויות",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-10T13:22:31.057702+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1726713": {
     "company_id": "593",
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-09T14:00:53.109849+00:00",
+    "at": "2026-09-10T13:23:25.487447+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 28,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "בנק מסד",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "סקירה כללית, יעדים ואסטרטגיה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "החברה לנאמנות",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "סקירה כללית, יעדים ואסטרטגיה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "החברה לניהול תיקים",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "סקירה כללית, יעדים ואסטרטגיה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "מתף - מיחשוב ותפעול פיננסי בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 30,
+              "section_title": "מערך טכנולוגיות המידע",
+              "table_title": null,
+              "note": "חברה בת בבעלות מלאה"
+            },
+            {
+              "name": "הבינלאומי הראשון הנפקות בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "אגרות חוב וכתבי התחייבות נדחים",
+              "table_title": null,
+              "note": "חברה בת בבעלות מלאה"
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
@@ -4576,7 +4034,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-09T14:00:54.090015+00:00",
+    "at": "2026-09-10T13:23:39.438346+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -4591,7 +4049,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-09T14:00:53.982707+00:00",
+    "at": "2026-09-10T13:23:51.533753+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -4621,7 +4079,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-09T14:00:54.999452+00:00",
+    "at": "2026-09-10T13:23:50.089428+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -4636,13 +4094,130 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-09T14:00:51.530138+00:00",
+    "at": "2026-09-10T13:23:20.161648+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 22,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "other",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "מגדל סיפולוקס בע\"מ",
+              "ownership_pct": 45,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "בעלי הזכויות בנכס",
+              "table_title": null,
+              "note": "מוחזקת ב-45% על ידי ריט 1 בע\"מ, ב-27.5% על ידי א. ליבנטל אחזקות בע\"מ, וב-27.5% על ידי עדמית תעשיות ושירותי רכב בירושלים בע״מ"
+            },
+            {
+              "name": "לוינסקי עופר בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 1,
+              "section_title": "הערכות שווי מהותיות מאוד",
+              "table_title": null,
+              "note": "ירידה משליטה בחודש מאי 2025"
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "other",
+          "document_type": "change_events",
+          "as_of_date": "2025-11-11",
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "מגדל סיפולוקס בע\"מ",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": 0,
+              "ownership_pct_after": 45,
+              "event_date": "2025-11-11",
+              "event_description": "רכישת 45% ממניות מגדל סיפולוקס בע\"מ על ידי ריט 1 בע\"מ במסגרת הסכם מכר מניות",
+              "page_reference": 45,
+              "section_title": "עסקת מכר בנכס שבנדון"
+            }
+          ]
+        },
+        "0:3": {
+          "report_format": "other",
+          "document_type": "change_events",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "מגדל סיפולוקס בע\"מ",
+              "ownership_pct": 45,
+              "parent": null,
+              "page_reference": 65,
+              "section_title": null,
+              "table_title": null,
+              "note": "רכישת 45% מהון המניות על ידי ריט 1 בע\"מ"
+            }
+          ],
+          "change_events": [
+            {
+              "company": "מגדל סיפולוקס בע\"מ",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 45,
+              "event_date": "2025-11-11",
+              "event_description": "רכישת 45% מההון המונפק והנפרע ומכל הזכויות בחברה על ידי ריט 1 בע\"מ",
+              "page_reference": 65,
+              "section_title": null
+            }
+          ]
+        },
+        "0:4": {
+          "report_format": "other",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-05-07",
+          "subsidiaries": [
+            {
+              "name": "לוינסקי עופר בע\"מ",
+              "ownership_pct": 29,
+              "parent": "א. ליבנטל אחזקות בע\"מ",
+              "page_reference": 88,
+              "section_title": "תמצית ממצאים",
+              "table_title": null,
+              "note": "בהתאם לחלקה של ליבנטל (כ-29%)"
+            },
+            {
+              "name": "החברה החוכרת של המגרש שבנדון",
+              "ownership_pct": 45,
+              "parent": "א. ליבנטל אחזקות בע\"מ",
+              "page_reference": 83,
+              "section_title": "עסקאות בנכס הסמוכות למועד הקובע",
+              "table_title": null,
+              "note": "רכישת 45% מזכויות הבעלות בחברה החוכרת"
+            }
+          ],
+          "change_events": [
+            {
+              "company": "החברה החוכרת של המגרש שבנדון",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 45,
+              "event_date": "2025-11-11",
+              "event_description": "נחתם הסכם מכר לרכישת 45% מזכויות הבעלות בחברה החוכרת של המגרש",
+              "page_reference": 83,
+              "section_title": "עסקאות בנכס הסמוכות למועד הקובע"
+            }
+          ]
+        }
+      },
       "attempts": {}
     }
   },
@@ -4666,7 +4241,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-09T14:00:55.543789+00:00",
+    "at": "2026-09-10T13:24:01.361319+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -4681,7 +4256,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-09T14:00:55.956741+00:00",
+    "at": "2026-09-10T13:24:13.956523+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -4696,7 +4271,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-09T14:00:55.157773+00:00",
+    "at": "2026-09-10T13:24:06.481668+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -4711,7 +4286,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-09T14:00:52.879893+00:00",
+    "at": "2026-09-10T13:23:35.413405+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
