@@ -67,16 +67,10 @@ on:
           - gemini-3.6-flash
           - gemini-3.5-flash-lite
         default: gemini-3.6-flash
-  # ריצה אוטומטית יומית פעמיים - שתי שעות שונות, שני מודלים שונים
-  # (אושר 2026-09-02 - הרגרסיה שתועדה למטה נבדקה ואושרה כפתורה).
-  # schedule events לא כוללים github.event.inputs, אז הבחירה בין
-  # המודלים למטה (ב-env GEMINI_MODEL_OVERRIDE) מתבססת על github.event.schedule
-  # (מחרוזת ה-cron שהפעילה את הריצה הספציפית הזו), לא על input.
-  schedule:
-    # כל יום 11:15 שעון ישראל (08:15 UTC בקיץ) - gemini-3.6-flash
-    - cron: "15 8 * * *"
-    # כל יום 13:00 שעון ישראל (10:00 UTC בקיץ) - gemini-3.5-flash-lite
-    - cron: "0 10 * * *"
+  # ריצה יומית: מופעלת חיצונית דרך cron-job.org שקורא ל-workflow_dispatch
+  # פעמיים ביום (מודל שונה בכל פעם, מועבר ב-input "model"). ה-schedule
+  # המובנה של GitHub הוסר - הוא התעכב כאן דרך קבע ב-3-5 שעות ולפעמים נפל,
+  # אז ה-cron החיצוני יורה בזמן במקומו.
 
 jobs:
   run:
