@@ -3184,161 +3184,27 @@
   },
   "1731849": {
     "company_id": "1737",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-09T14:00:36.845107+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 19,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-10T12:44:23.009072+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731361": {
     "company_id": "1804",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-10T12:35:31.348345+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 16,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "סופרגז פאוור בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 9,
-              "section_title": "חלק א - תיאור עסקי התאגיד",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "סופרגז פאוור אחזקות בע\"מ",
-              "ownership_pct": 100,
-              "parent": "סופרגז פאוור בע\"מ",
-              "page_reference": 9,
-              "section_title": "חלק א - תיאור עסקי התאגיד",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "סופרגז פאוור גז טבעי בע\"מ",
-              "ownership_pct": 100,
-              "parent": "סופרגז פאוור אחזקות בע\"מ",
-              "page_reference": 9,
-              "section_title": "חלק א - תיאור עסקי התאגיד",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "סופרגז פאוור ס.אי.פי. בע\"מ",
-              "ownership_pct": 100,
-              "parent": "סופרגז פאוור אחזקות בע\"מ",
-              "page_reference": 9,
-              "section_title": "חלק א - תיאור עסקי התאגיד",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Balanced Rock Power, LLC",
-              "ownership_pct": 21.64,
-              "parent": null,
-              "page_reference": 9,
-              "section_title": "חלק א - תיאור עסקי התאגיד",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "סופרגז פאוור שותפות מוגבלת",
-              "ownership_pct": 65,
-              "parent": null,
-              "page_reference": 9,
-              "section_title": "חלק א - תיאור עסקי התאגיד",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "SG Energy BRP, LLC",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 39,
-              "section_title": "9. פעילויות נוספות שאינן מהוות מגזר בר דיווח",
-              "table_title": null,
-              "note": "תאגיד בשליטה מלאה (100%) בשרשור"
-            },
-            {
-              "name": "Balanced Rock Power, LLC (BRP)",
-              "ownership_pct": 21.64,
-              "parent": "SG Energy BRP, LLC",
-              "page_reference": 40,
-              "section_title": "9.1.1 הכנסת משקיעה לפעילות BRP תוך הקטנת החזקותיה של החברה ב-BRP ועדכון הסכמי בעלי המניות ב-BRP והתחייבויות החברה בנוגע ל-BRP",
-              "table_title": null,
-              "note": "החזקה שדוללה לכ-21.64% נכון למועד הדוח"
-            }
-          ],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "Balanced Rock Power, LLC (BRP)",
-              "ownership_pct": 21.64,
-              "parent": "חברה בת",
-              "page_reference": 69,
-              "section_title": "קבלת תקבולים ממימוש פרויקט נוסף בתחום פעילות BRP והקטנת מסגרת ערבויות מול תאגיד בנקאי אמריקאי",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-10T12:39:07.723755+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1729855": {
     "company_id": "2393",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-09T14:00:48.795964+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 21,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-10T12:45:33.559512+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1736412": {
     "company_id": "1654",
@@ -3350,92 +3216,724 @@
   },
   "1732608": {
     "company_id": "1496",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-09T14:00:49.870743+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 19,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-10T12:55:35.395558+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1734469": {
     "company_id": "2532",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-09T14:00:49.688249+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 15,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-10T12:50:44.644164+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1726425": {
     "company_id": "1172",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-09T14:00:50.536984+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 26,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-10T13:12:46.046452+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732495": {
     "company_id": "716",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-09T14:00:51.024191+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 14,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-10T13:08:52.652483+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1730141": {
     "company_id": "573",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-09T14:00:49.264532+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 29,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-10T12:53:35.068035+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731173": {
     "company_id": "1588",
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-09T14:00:51.102851+00:00",
+    "at": "2026-09-10T13:20:50.860099+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 22,
-      "done": {},
-      "attempts": {}
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "רני צים מגורים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "חלק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "רני צים בנגב בע\"מ",
+              "ownership_pct": 86,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "חלק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "רני צים אנרגיה מתחדשת (2022) בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "חלק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
+              "table_title": null,
+              "note": "חברת בת בבעלות החברה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "רני צים בנגב בע\"מ",
+              "ownership_pct": 86,
+              "parent": "חברת בת בבעלות מלאה של החברה",
+              "page_reference": 36,
+              "section_title": "7.6.2 להלן פרטים נוספים אודות קרקעות המסווגות כנדל\"ן להשקעה, ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "רני צים בנגב בע\"מ",
+              "ownership_pct": 86,
+              "parent": "חברת בת בבעלות מלאה של החברה",
+              "page_reference": 69,
+              "section_title": "7.6.2 להלן פרטים נוספים אודות קרקעות המסווגות כנדל\"ן להשקעה, ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "סרברז כפר סבא שותפות מוגבלת",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 83,
+              "section_title": "7.7.1 פרטים נוספים אודות המבנים המהותיים (שאינם מהותיים מאוד)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "רני צים אנרגיה מתחדשת",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 86,
+              "section_title": "7.9 מבנים מניבים מהותיים מאוד ונכסים מניבים בהקמה מהותיים מאוד",
+              "table_title": null,
+              "note": "חברת בת של החברה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "רקע מידאס שותפות מוגבלת",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 117,
+              "section_title": "7.9.4 SEVEN אום אל פאחם",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "רני צים מרכזים מסחריים רהט שותפות מוגבלת",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 77,
+              "section_title": "מרכז מסחרי \"SEVEN ברהט\"",
+              "table_title": "הצגת הנכס",
+              "note": null
+            },
+            {
+              "name": "רקע מידאס טמרה מרכזים מסחריים שותפות מוגבלת",
+              "ownership_pct": 100,
+              "parent": "רני צים מרכזים מסחריים בחברה הערבית בע\"מ",
+              "page_reference": 82,
+              "section_title": "מרכז מסחרי בטמרה",
+              "table_title": "הצגת הנכס",
+              "note": null
+            },
+            {
+              "name": "רני צים מרכזים מסחריים טייבה שותפות מוגבלת",
+              "ownership_pct": 100,
+              "parent": "רני צים מרכזים מסחריים בחברה בערבית בע\"מ",
+              "page_reference": 87,
+              "section_title": "מרכז מסחרי \"seven \"טייבה",
+              "table_title": "הצגת הנכס",
+              "note": null
+            },
+            {
+              "name": "רני צים אנרגיה מתחדשת",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 80,
+              "section_title": "השבחות ושינויים מתוכננים בנכס",
+              "table_title": null,
+              "note": "מוזכרת כחברת בת"
+            }
+          ],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "רני צים מרכזים מסחריים טייבה שותפות מוגבלת",
+              "ownership_pct": 100,
+              "parent": "רני צים מרכזים מסחריים בחברה בערבית בע\"מ",
+              "page_reference": 87,
+              "section_title": "מרכז מסחרי \"seven\" טייבה",
+              "table_title": "הצגת הנכס",
+              "note": null
+            },
+            {
+              "name": "רני צים מרכזים מסחריים טירה שותפות מוגבלת",
+              "ownership_pct": 100,
+              "parent": "רני צים גלובל מרכזים מסחריים טירה בע\"מ",
+              "page_reference": 92,
+              "section_title": "מרכז מסחרי \"seven\" טירה",
+              "table_title": "הצגת הנכס",
+              "note": null
+            },
+            {
+              "name": "רני צים בנייה רוויה בחברה הערבית בע\"מ",
+              "ownership_pct": 86,
+              "parent": null,
+              "page_reference": 98,
+              "section_title": "תיאור על פי הצעת חוק נדל\"ן יזמי",
+              "table_title": null,
+              "note": "החברה הבת"
+            },
+            {
+              "name": "הדסים א.ב. בניה ופיתוח בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 101,
+              "section_title": "פרויקטים בהקמה- גילוי בדבר פרויקטים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "רני צים השרון נכסים ויזמות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 101,
+              "section_title": "פרויקטים בהקמה- גילוי בדבר פרויקטים",
+              "table_title": null,
+              "note": "מוחזקת בשיעור של 37.5% ישירות על ידי החברה ו-62.5% על ידי הדסים א.ב. בניה ופיתוח בע\"מ"
+            }
+          ],
+          "change_events": []
+        },
+        "0:7": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "צ.ע.ד.י.ם בנגב בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 127,
+              "section_title": "2.2.2 להלן תוצאות הפעילות של החברה בהתאם לדוח רווח והפסד בדרך הצגה שונה לזו המוצגת בדוחות הכספיים המאוחדים וזאת על בסיס איחוד יחסי הכולל את תוצאותיהן של החברות המטופלות לפי שיטת השווי המאזני צ.ע.ד.י.ם בנגב בע\"מ, ריט מדף 6 בע\"מ, מעלות סנטר שותפות, וסרברז.",
+              "table_title": null,
+              "note": "מוחזקת ומטופלת לפי שיטת השווי המאזני / איחוד יחסי"
+            },
+            {
+              "name": "ריט מדף 6 בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 127,
+              "section_title": "2.2.2 להלן תוצאות הפעילות של החברה בהתאם לדוח רווח והפסד בדרך הצגה שונה לזו המוצגת בדוחות הכספיים המאוחדים וזאת על בסיס איחוד יחסי הכולל את תוצאותיהן של החברות המטופלות לפי שיטת השווי המאזני צ.ע.ד.י.ם בנגב בע\"מ, ריט מדף 6 בע\"מ, מעלות סנטר שותפות, וסרברז.",
+              "table_title": null,
+              "note": "מוחזקת ומטופלת לפי שיטת השווי המאזני / איחוד יחסי"
+            },
+            {
+              "name": "מעלות סנטר שותפות",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 127,
+              "section_title": "2.2.2 להלן תוצאות הפעילות של החברה בהתאם לדוח רווח והפסד בדרך הצגה שונה לזו המוצגת בדוחות הכספיים המאוחדים וזאת על בסיס איחוד יחסי הכולל את תוצאותיהן של החברות המטופלות לפי שיטת השווי המאזני צ.ע.ד.י.ם בנגב בע\"מ, ריט מדף 6 בע\"מ, מעלות סנטר שותפות, וסרברז.",
+              "table_title": null,
+              "note": "מוחזקת ומטופלת לפי שיטת השווי המאזני / איחוד יחסי"
+            },
+            {
+              "name": "סרברז",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 127,
+              "section_title": "2.2.2 להלן תוצאות הפעילות של החברה בהתאם לדוח רווח והפסד בדרך הצגה שונה לזו המוצגת בדוחות הכספיים המאוחדים וזאת על בסיס איחוד יחסי הכולל את תוצאותיהן של החברות המטופלות לפי שיטת השווי המאזני צ.ע.ד.י.ם בנגב בע\"מ, ריט מדף 6 בע\"מ, מעלות סנטר שותפות, וסרברז.",
+              "table_title": null,
+              "note": "מוחזקת ומטופלת לפי שיטת השווי המאזני / איחוד יחסי"
+            }
+          ],
+          "change_events": []
+        },
+        "0:8": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "נתיבות",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 142,
+              "section_title": "בהתאם לתקנה 8ב' לתקנות ניירות ערך (דוחות תקופתיים ומיידים), התש\"ל-1970, להלן פרטים אודות הערכות שווי מהותיות, כהגדרת מונח זה בתקנות הדוחות, בהתאם לתקנה 8ב'(ט) לתקנות הדוחות:",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:9": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:10": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "רני צים בנייה רוויה בחברה הערבית בע\"מ",
+              "ownership_pct": 86,
+              "parent": null,
+              "page_reference": 180,
+              "section_title": "באור 8 - מלאי קרקעות, בניינים, דירות למכירה ולוגיסטיקה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "צ.ע.ד.י.ם בנגב בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 181,
+              "section_title": "באור 9 - השקעה בישויות המטופלות לפי שיטת השווי המאזני, נטו",
+              "table_title": "יתרת ההשקעה",
+              "note": null
+            },
+            {
+              "name": "ריט מדף 6 בע\"מ",
+              "ownership_pct": 55,
+              "parent": null,
+              "page_reference": 181,
+              "section_title": "באור 9 - השקעה בישויות המטופלות לפי שיטת השווי המאזני, נטו",
+              "table_title": "יתרת ההשקעה",
+              "note": null
+            },
+            {
+              "name": "רני צים פרי מגדים בע\"מ",
+              "ownership_pct": 55,
+              "parent": null,
+              "page_reference": 181,
+              "section_title": "באור 9 - השקעה בישויות המטופלות לפי שיטת השווי המאזני, נטו",
+              "table_title": "יתרת ההשקעה",
+              "note": null
+            },
+            {
+              "name": "סרברז שותפות מוגבלת",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 181,
+              "section_title": "באור 9 - השקעה בישויות המטופלות לפי שיטת השווי המאזני, נטו",
+              "table_title": "יתרת ההשקעה",
+              "note": null
+            },
+            {
+              "name": "רני צים קרדן גבע ניהול כפ\"ס",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 181,
+              "section_title": "באור 9 - השקעה בישויות המטופלות לפי שיטת השווי המאזני, נטו",
+              "table_title": "יתרת ההשקעה",
+              "note": null
+            },
+            {
+              "name": "שותפות מעלות סנטר",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 181,
+              "section_title": "באור 9 - השקעה בישויות המטופלות לפי שיטת השווי המאזני, נטו",
+              "table_title": "יתרת ההשקעה",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:11": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "צעדים בנגב",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 188,
+              "section_title": "באור 10 - נדל\"ן להשקעה ונדל\"ן להשקעה בתכנון והקמה (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "רקע מידאס רהט מרכזים מסחריים שותפות מוגבלת",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 193,
+              "section_title": "באור 10 - נדל\"ן להשקעה ונדל\"ן להשקעה בתכנון והקמה (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "רני צים בנגב בע\"מ",
+              "ownership_pct": 86,
+              "parent": null,
+              "page_reference": 195,
+              "section_title": "באור 10 - נדל\"ן להשקעה ונדל\"ן להשקעה בתכנון והקמה (המשך)",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:12": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "רני צים ניהול נכסים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 205,
+              "section_title": "באור 17 - התקשרויות, שעבודים והתחייבויות תלויות (המשך)",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "רני צים אנרגיה מתחדשת (2022) בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 206,
+              "section_title": "באור 17 - התקשרויות, שעבודים והתחייבויות תלויות (המשך)",
+              "table_title": null,
+              "note": "חברת בת בבעלות ושליטה מלאה"
+            },
+            {
+              "name": "מגידו",
+              "ownership_pct": 36,
+              "parent": null,
+              "page_reference": 218,
+              "section_title": "באור 21 - מגזרי פעילות",
+              "table_title": null,
+              "note": "נרכשה ביום 15 באוגוסט 2022 ונמכרה במהלך הרבעון הראשון בשנת 2024"
+            }
+          ],
+          "change_events": []
+        },
+        "0:13": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "רני צים ניהול נכסים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 230,
+              "section_title": "באור 28 - רשימת חברות פעילות עיקריות מוחזקות במישרין",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "רני צים השרון נכסים ויזמות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 230,
+              "section_title": "באור 28 - רשימת חברות פעילות עיקריות מוחזקות במישרין",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "רני צים ניהול גני תקוה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 230,
+              "section_title": "באור 28 - רשימת חברות פעילות עיקריות מוחזקות במישרין",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "רני צים הדסים א.ב. בניה ופתוח בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 230,
+              "section_title": "באור 28 - רשימת חברות פעילות עיקריות מוחזקות במישרין",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "רקע מידאס טירה חברה לניהול בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 230,
+              "section_title": "באור 28 - רשימת חברות פעילות עיקריות מוחזקות במישרין",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "רני צים מגורים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 230,
+              "section_title": "באור 28 - רשימת חברות פעילות עיקריות מוחזקות במישרין",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "רני צים אנרגיה מתחדשת 2022 בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 230,
+              "section_title": "באור 28 - רשימת חברות פעילות עיקריות מוחזקות במישרין",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "רני צים מרכזיים מסחריים בחברה הערבית בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 230,
+              "section_title": "באור 28 - רשימת חברות פעילות עיקריות מוחזקות במישרין",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:14": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "צ.ע.ד.י.ם בנגב בע\"מ (\"צעדים הנגב\")",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 252,
+              "section_title": "פרק ד' לדוח התקופתי ליום 31 בדצמבר 2025 - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות כלולות מהותיות ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "רני צים ניהול נכסים בע\"מ (\"צים ניהול נכסים\")",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 252,
+              "section_title": "פרק ד' לדוח התקופתי ליום 31 בדצמבר 2025 - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות כלולות מהותיות ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "רני צים השרון נכסים ויזמות בע\"מ (\"צים השרון\")",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 252,
+              "section_title": "פרק ד' לדוח התקופתי ליום 31 בדצמבר 2025 - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות כלולות מהותיות ליום 31 בדצמבר 2025",
+              "note": "החברה מחזיקה ב- 62.5% מהון המניות המונפק והנפרע של צים השרון נכסים וב- 100% מהון המניות המונפק והנפרע של הדסים, המחזיקה 37.5% מהון המניות המונפק והנפרע של צים השרון."
+            },
+            {
+              "name": "רני צים מרכזים מסחריים בחברה הערבית בע\"מ (בשמה הקודם- רקע הר בע\"מ)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 252,
+              "section_title": "פרק ד' לדוח התקופתי ליום 31 בדצמבר 2025 - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות כלולות מהותיות ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "רני צים מרכזים מסחריים שותפות מוגבלת (\"שותפות מרכזים מסחריים\")",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 252,
+              "section_title": "פרק ד' לדוח התקופתי ליום 31 בדצמבר 2025 - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות כלולות מהותיות ליום 31 בדצמבר 2025",
+              "note": "באמצעות החברה כשותף מוגבל (כ-60%), רני צים מרכזים מסחריים בחברה הערבית בע\"מ כשותף מוגבל (כ-40%) ורני צים מרכזים מסחריים בחברה הערבית-ניהול ותפעול בע\"מ כשותף כללי."
+            },
+            {
+              "name": "רני צים מרכזים מסחריים טירה – שותפות מוגבלת (\"שותפות טירה\")",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 252,
+              "section_title": "פרק ד' לדוח התקופתי ליום 31 בדצמבר 2025 - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות כלולות מהותיות ליום 31 בדצמבר 2025",
+              "note": "באמצעות רני צים גלובל מרכזים מסחריים טירה בע\"מ כשותף כללי (כ-100%)"
+            },
+            {
+              "name": "ריט מדף 6 בע\"מ",
+              "ownership_pct": 55,
+              "parent": null,
+              "page_reference": 252,
+              "section_title": "פרק ד' לדוח התקופתי ליום 31 בדצמבר 2025 - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות כלולות מהותיות ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "רני צים אנרגיה מתחדשת (2022) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 252,
+              "section_title": "פרק ד' לדוח התקופתי ליום 31 בדצמבר 2025 - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות כלולות מהותיות ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "רני צים ניהול גני תקווה בע\"מ (\"ניהול גני תקווה\")",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 252,
+              "section_title": "פרק ד' לדוח התקופתי ליום 31 בדצמבר 2025 - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות כלולות מהותיות ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "רני צים נכסים מניבים- שותפות מוגבלת",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 252,
+              "section_title": "פרק ד' לדוח התקופתי ליום 31 בדצמבר 2025 - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות כלולות מהותיות ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "רקע מידאס טמרה מרכזים מסחריים שותפות מוגבלת",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 252,
+              "section_title": "פרק ד' לדוח התקופתי ליום 31 בדצמבר 2025 - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות כלולות מהותיות ליום 31 בדצמבר 2025",
+              "note": "החברה מחזיקה בעקיפין ברקע מידאס טמרה מרכזים מסחריים שותפות מוגבלת (באמצעות רני צים מרכזים מסחריים בחברה הערבית בע\"מ)."
+            },
+            {
+              "name": "רני צים בניה רוויה",
+              "ownership_pct": 86,
+              "parent": "רני צים מגורים בע\"מ",
+              "page_reference": 253,
+              "section_title": "פרק ד' לדוח התקופתי ליום 31 בדצמבר 2025 - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות כלולות מהותיות ליום 31 בדצמבר 2025",
+              "note": "החברה מחזיקה בעקיפין ב- 86% מהון המניות המונפק והנפרע של רני צים בניה רוויה בחברה הערבית בע\"מ (באמצעות רני צים מגורים בע\"מ)."
+            },
+            {
+              "name": "רני צים בנגב בע\"מ",
+              "ownership_pct": 86,
+              "parent": "רני צים מגורים בע\"מ",
+              "page_reference": 253,
+              "section_title": "פרק ד' לדוח התקופתי ליום 31 בדצמבר 2025 - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות כלולות מהותיות ליום 31 בדצמבר 2025",
+              "note": "החברה מחזיקה בעקיפין ב- 86% מהון המניות המונפק והנפרע של רני צים בנגב בע\"מ (באמצעות רני צים מגורים בע\"מ)"
+            }
+          ],
+          "change_events": []
+        },
+        "0:15": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:16": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "1:0": {
+          "report_format": "other",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "1:1": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "1:2": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "1:3": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "1:4": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
+      "attempts": {
+        "0:6": 1
+      }
     }
   },
   "1730441": {
@@ -3443,13 +3941,610 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-09T14:00:51.728298+00:00",
+    "at": "2026-09-10T13:20:45.097771+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 21,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "other",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "1:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "פאי סיאם יפו 36 בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פאי סיאם יפו 38 בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מלון החבצלת 2-4 שותפות מוגבלת",
+              "ownership_pct": 99,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
+              "table_title": null,
+              "note": "כ- 99%"
+            },
+            {
+              "name": "ניהול החבצלת 2-4 בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פאי סיאם הנביאים ירושלים בע\"מ (חל\"צ)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פאי סיאם לינקולן בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פאי סיאם מפרץ אמנון בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "צפון הירקון תל אביב בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פאי סיאם תל אביב (2014) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ניהול מלונות איביס ופולמן ירושלים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מלונות החוף הצפוני בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גינות המלכים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מלונות איביס ופולמן ירושלים שותפות מוגבלת",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מלון איביס סטיילס",
+              "ownership_pct": 100,
+              "parent": "פאי סיאם יפו 36 בע\"מ",
+              "page_reference": 4,
+              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פרויקט החבצלת",
+              "ownership_pct": 98.9,
+              "parent": "פאי סיאם יפו 38 בע\"מ",
+              "page_reference": 4,
+              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פרויקט צפת",
+              "ownership_pct": 100,
+              "parent": "מלון החבצלת 2-4 שותפות מוגבלת",
+              "page_reference": 4,
+              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פרויקט ים המלח",
+              "ownership_pct": 100,
+              "parent": "ניהול החבצלת 2-4 בע\"מ",
+              "page_reference": 4,
+              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פרויקט הנביאים",
+              "ownership_pct": 100,
+              "parent": "פאי סיאם הנביאים ירושלים בע\"מ (חל\"צ)",
+              "page_reference": 4,
+              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פרויקט ההגנה",
+              "ownership_pct": 100,
+              "parent": "פאי סיאם לינקולן בע\"מ",
+              "page_reference": 4,
+              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פרויקט מפרץ אמנון כנרת",
+              "ownership_pct": 100,
+              "parent": "פאי סיאם מפרץ אמנון בע\"מ",
+              "page_reference": 4,
+              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פרויקט תל אביב הקטנה",
+              "ownership_pct": 100,
+              "parent": "צפון הירקון תל אביב בע\"מ",
+              "page_reference": 4,
+              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פרויקט המרד",
+              "ownership_pct": 93.2,
+              "parent": "פאי סיאם תל אביב (2014) בע\"מ",
+              "page_reference": 4,
+              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פרויקט פולמן מבשרת ציון",
+              "ownership_pct": 100,
+              "parent": "מלונות החוף הצפוני בע\"מ",
+              "page_reference": 4,
+              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מלון איביס סיטי סנטר",
+              "ownership_pct": 100,
+              "parent": "גינות המלכים בע\"מ",
+              "page_reference": 4,
+              "section_title": "1.3 תרשים מבנה החזקות של התאגידים הפעילים המהותיים של הקבוצה למועד הדוח",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "1:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "צפון הירקון",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 24,
+              "section_title": "9. נכסים מניבים מהותיים ונכסים מניבים בהקמה מהותיים מאוד",
+              "table_title": "הצגת הנכס",
+              "note": null
+            },
+            {
+              "name": "ניהול החבצלת 2-4 ע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 29,
+              "section_title": "9.2 פרויקט חבצלת – מלון ישרוטל \"חבצלת\" (ייעוד מלונאי)",
+              "table_title": null,
+              "note": "חברה פרטית בבעלות ובשליטה מלאה של החברה"
+            },
+            {
+              "name": "מלונות החוף הצפוני בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 34,
+              "section_title": "פרטים נוספים אודות הסכם הליווי נכון למועד הדוח",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "1:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "מלון החבצלת 2-4 (שותפות מוגבלת)",
+              "ownership_pct": 98.9,
+              "parent": null,
+              "page_reference": 69,
+              "section_title": "מענק מפעל מאושר",
+              "table_title": null,
+              "note": "החברה מחזיקה באופן אפקטיבי נכון למועד הדוח"
+            },
+            {
+              "name": "פאי סיאם מפרץ אמנון בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 73,
+              "section_title": "9.3.1 הצגת הנכס",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פאי ת\"א",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 81,
+              "section_title": "10.1.1 הצגת הקרקע",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "1:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "פאי ת\"א",
+              "ownership_pct": 93.2,
+              "parent": null,
+              "page_reference": 52,
+              "section_title": ".10.1.6 פרטים אודות הערכות שווי",
+              "table_title": null,
+              "note": "חלק החברה בפרויקט"
+            }
+          ],
+          "change_events": []
+        },
+        "1:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "1:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "פאי סיאם תל אביב (2014) בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 92,
+              "section_title": "מצב כספי",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "חברת צפון הירקון בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 92,
+              "section_title": "מצב כספי",
+              "table_title": null,
+              "note": "חברה מוחזקת המטופלת לפי שיטת השווי המאזני"
+            },
+            {
+              "name": "פאי סיאם מפרץ אמנון בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 93,
+              "section_title": "מצב כספי",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "פאי סיאם הנביאים ירושלים בע\"מ (חל\"צ)",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 94,
+              "section_title": "תוצאות הפעילות",
+              "table_title": null,
+              "note": "חברת בת"
+            }
+          ],
+          "change_events": []
+        },
+        "1:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "1:7": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "פאי סיאם לינקולן בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 133,
+              "section_title": "ביאור 9 - השקעות בחברות ושותפויות",
+              "table_title": "א. ההרכב:",
+              "note": null
+            },
+            {
+              "name": "פאי סיאם תל אביב (2014) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 133,
+              "section_title": "ביאור 9 - השקעות בחברות ושותפויות",
+              "table_title": "א. ההרכב:",
+              "note": null
+            },
+            {
+              "name": "צפון הירקון תל אביב בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 133,
+              "section_title": "ביאור 9 - השקעות בחברות ושותפויות",
+              "table_title": "א. ההרכב:",
+              "note": null
+            },
+            {
+              "name": "ניהול מלונות איביס ופולמן בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 133,
+              "section_title": "ביאור 9 - השקעות בחברות ושותפויות",
+              "table_title": "א. ההרכב:",
+              "note": null
+            },
+            {
+              "name": "מלונות איביס ופולמן שותפות מוגבלת",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 133,
+              "section_title": "ביאור 9 - השקעות בחברות ושותפויות",
+              "table_title": "א. ההרכב:",
+              "note": null
+            },
+            {
+              "name": "מלון החבצלת 2-4 שותפות מוגבלת",
+              "ownership_pct": 99,
+              "parent": null,
+              "page_reference": 133,
+              "section_title": "ביאור 9 - השקעות בחברות ושותפויות",
+              "table_title": "א. ההרכב:",
+              "note": "מצוין כ-99% בטבלה, באורות מפורט כאחוז אפקטיבי של 98.9%"
+            },
+            {
+              "name": "ניהול החבצלת 2-4 בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 133,
+              "section_title": "ביאור 9 - השקעות בחברות ושותפויות",
+              "table_title": "א. ההרכב:",
+              "note": null
+            },
+            {
+              "name": "מלונות החוף הצפוני בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 133,
+              "section_title": "ביאור 9 - השקעות בחברות ושותפויות",
+              "table_title": "א. ההרכב:",
+              "note": null
+            },
+            {
+              "name": "גינות המלכים בע\"מ",
+              "ownership_pct": 100,
+              "parent": "מלונות החוף הצפוני בע\"מ",
+              "page_reference": 133,
+              "section_title": "ביאור 9 - השקעות בחברות ושותפויות",
+              "table_title": "א. ההרכב:",
+              "note": "החזקה דרך מלונות החוף הצפוני בע\"מ"
+            },
+            {
+              "name": "פאי סיאם הנביאים ירושלים בע\"מ (חל\"צ)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 133,
+              "section_title": "ביאור 9 - השקעות בחברות ושותפויות",
+              "table_title": "א. ההרכב:",
+              "note": null
+            },
+            {
+              "name": "פאי סיאם מפרץ אמנון בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 133,
+              "section_title": "ביאור 9 - השקעות בחברות ושותפויות",
+              "table_title": "א. ההרכב:",
+              "note": null
+            },
+            {
+              "name": "פאי סיאם רחוב יפו 36 בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 133,
+              "section_title": "ביאור 9 - השקעות בחברות ושותפויות",
+              "table_title": "א. ההרכב:",
+              "note": null
+            },
+            {
+              "name": "פאי סיאם יפו 38 בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 133,
+              "section_title": "ביאור 9 - השקעות בחברות ושותפויות",
+              "table_title": "א. ההרכב:",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "1:8": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "פאי סיאם הנביאים ירושלים בע\"מ (חל\"צ)",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 137,
+              "section_title": "ביאור 9 - השקעות בחברות ושותפויות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פאי סיאם מפרץ אמנון בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 137,
+              "section_title": "ביאור 9 - השקעות בחברות ושותפויות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פאי סיאם רחוב יפו 36 בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 138,
+              "section_title": "ביאור 9 - השקעות בחברות ושותפויות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פאי סיאם יפו 38 בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 138,
+              "section_title": "ביאור 9 - השקעות בחברות ושותפויות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "צפון הירקון תל אביב בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 138,
+              "section_title": "ביאור 9 - השקעות בחברות ושותפויות",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
@@ -3470,18 +4565,11 @@
   },
   "1729724": {
     "company_id": "1553",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-09T14:00:50.190891+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 22,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-10T13:03:58.913864+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1736338": {
     "company_id": "675",
