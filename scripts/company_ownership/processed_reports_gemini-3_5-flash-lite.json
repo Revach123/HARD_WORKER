@@ -38837,7 +38837,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-09-10T17:40:59.221222+00:00",
+    "at": "2026-09-11T12:17:17.382846+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -38919,7 +38919,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-09-10T17:40:42.120204+00:00",
+    "at": "2026-09-11T12:17:17.565677+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -39144,7 +39144,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-09-10T17:40:42.365724+00:00",
+    "at": "2026-09-11T12:17:17.776436+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -39376,7 +39376,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-09-10T17:40:44.620997+00:00",
+    "at": "2026-09-11T12:17:17.941059+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -39650,10 +39650,18 @@
   },
   "1765413": {
     "company_id": "2489",
-    "status": "failed",
+    "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-09-10T17:31:27.616809+00:00"
+    "at": "2026-09-11T12:17:19.632818+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 1,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1766538": {
     "company_id": "2489",
@@ -39705,7 +39713,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-09-10T17:40:53.953387+00:00",
+    "at": "2026-09-11T12:17:19.842198+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -39787,7 +39795,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-09-10T17:40:55.819587+00:00",
+    "at": "2026-09-11T12:17:20.026594+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -39832,7 +39840,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-09-10T17:40:57.694049+00:00",
+    "at": "2026-09-11T12:17:20.214908+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
