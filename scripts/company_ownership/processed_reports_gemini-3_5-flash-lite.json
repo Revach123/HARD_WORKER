@@ -1076,7 +1076,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-11T10:39:30.149193+00:00",
+    "at": "2026-09-11T10:41:34.888213+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -1816,6 +1816,584 @@
         "1:4": {
           "report_format": "israeli_periodic",
           "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "1:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "כרטיסי אשראי לישראל בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 90,
+              "section_title": "תגמול",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "בנק מרכנתיל דיסקונט בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 90,
+              "section_title": "תגמול",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דיסקונט קפיטל בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 90,
+              "section_title": "תגמול",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אי די בי ניו יורק",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 104,
+              "section_title": "תוספת ב' - איגוח",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "1:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "2:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "בנק מרכנתיל דיסקונט בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 3,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "דיסקונט ליסינג בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 3,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "דיסקונט מנפיקים בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 3,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "דיסקונט נאמנות בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 3,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "גרינלנד בע\"מ",
+              "ownership_pct": 70.0,
+              "parent": null,
+              "page_reference": 3,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "תפנית דיסקונט ניהול תיקי השקעות בע\"מ",
+              "ownership_pct": 69.0,
+              "parent": null,
+              "page_reference": 3,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "דיסקונט קפיטל בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 3,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "דיסקונט למשכנתאות לבית סוכנות לביטוח (2005) בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 3,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "\"בדל\" שרותי מחשב ומנהלה בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 3,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "חברת נדבך לנדל\"ן והשקעות בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 3,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "חברה לרישומים של בנק דיסקונט לישראל בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 3,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "ציר חברה למסחר בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 3,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "כרטיסי אשראי לישראל בע\"מ",
+              "ownership_pct": 71.83,
+              "parent": null,
+              "page_reference": 3,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": "זכויות הצבעה 79.00%"
+            },
+            {
+              "name": "פייבוקס בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 3,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "כספונט בע\"מ",
+              "ownership_pct": 20.0,
+              "parent": null,
+              "page_reference": 3,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "מרכז סליקה בנקאי בע\"מ",
+              "ownership_pct": 25.0,
+              "parent": null,
+              "page_reference": 3,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "חברת כספות הבנקים בע\"מ",
+              "ownership_pct": 50.0,
+              "parent": null,
+              "page_reference": 3,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "הופאון מוביליטי ישראל בע\"מ",
+              "ownership_pct": 20.0,
+              "parent": null,
+              "page_reference": 3,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "יוניטק טכנולוגיות בע\"מ",
+              "ownership_pct": 20.0,
+              "parent": null,
+              "page_reference": 3,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "FIMI Opportunity Fund L.P.",
+              "ownership_pct": 20.0,
+              "parent": null,
+              "page_reference": 3,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "Discount Bancorp Inc.",
+              "ownership_pct": 95.1,
+              "parent": null,
+              "page_reference": 3,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "Discount Reinsurance International Limited",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 3,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "מרביט סוכנות לביטוח (1996) בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": "בנק מרכנתיל דיסקונט בע\"מ",
+              "page_reference": 4,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "תפנית דיסקונט ניהול תיקי השקעות בע\"מ",
+              "ownership_pct": 31.0,
+              "parent": "בנק מרכנתיל דיסקונט בע\"מ",
+              "page_reference": 4,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "מרכנתיל הנפקות בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": "בנק מרכנתיל דיסקונט בע\"מ",
+              "page_reference": 4,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "אי.אף. הקרן הבינלאומית (יועצים) בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": "דיסקונט קפיטל בע\"מ",
+              "page_reference": 4,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "דיסקונט קפיטל חיתום בע\"מ",
+              "ownership_pct": 60.68,
+              "parent": "דיסקונט קפיטל בע\"מ",
+              "page_reference": 4,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "די סי אם וונצ'ר ניהול בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": "דיסקונט קפיטל בע\"מ",
+              "page_reference": 4,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "מניף - שרותים פיננסים בע\"מ",
+              "ownership_pct": 17.53,
+              "parent": "דיסקונט קפיטל בע\"מ",
+              "page_reference": 4,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "גניגר מפעלי פלסטיקה בע\"מ",
+              "ownership_pct": 15.15,
+              "parent": "דיסקונט קפיטל בע\"מ",
+              "page_reference": 4,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "אימג'סאט אינטרנשיונל (אי.אס.איי.) בע\"מ (ISI)",
+              "ownership_pct": 11.47,
+              "parent": "דיסקונט קפיטל בע\"מ",
+              "page_reference": 4,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "מ.ל.ר.ן פרויקטים ומסחר בע\"מ",
+              "ownership_pct": 12.93,
+              "parent": "דיסקונט קפיטל בע\"מ",
+              "page_reference": 4,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "מרינה גרופ בע\"מ",
+              "ownership_pct": 16.5,
+              "parent": "דיסקונט קפיטל בע\"מ",
+              "page_reference": 4,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "אבן החכמים בע\"מ",
+              "ownership_pct": 20.0,
+              "parent": "דיסקונט קפיטל בע\"מ",
+              "page_reference": 4,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "תומאטק זרעים בע\"מ",
+              "ownership_pct": 18.5,
+              "parent": "דיסקונט קפיטל בע\"מ",
+              "page_reference": 4,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "וי.אפ.אר נכסים ואחזקות בע\"מ",
+              "ownership_pct": 20.0,
+              "parent": "דיסקונט קפיטל בע\"מ",
+              "page_reference": 4,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "ויטלייף מדעי החיים בע\"מ",
+              "ownership_pct": 20.0,
+              "parent": "דיסקונט קפיטל בע\"מ",
+              "page_reference": 4,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "דיינרס קלוב ישראל בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": "כרטיסי אשראי לישראל בע\"מ",
+              "page_reference": 4,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "דיינרס (מימון) בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": "כרטיסי אשראי לישראל בע\"מ",
+              "page_reference": 4,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "כ.א.ל. (מימון) בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": "כרטיסי אשראי לישראל בע\"מ",
+              "page_reference": 4,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "ד.ק. החברה לניהול ושיווק אשראי בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": "כרטיסי אשראי לישראל בע\"מ",
+              "page_reference": 4,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "יציל פיננסים בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": "כרטיסי אשראי לישראל בע\"מ",
+              "page_reference": 4,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "כאל (פקדונות) בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": "כרטיסי אשראי לישראל בע\"מ",
+              "page_reference": 4,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "שלמה כ.א.ל. בע\"מ",
+              "ownership_pct": 20.0,
+              "parent": "כרטיסי אשראי לישראל בע\"מ",
+              "page_reference": 4,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "Israel Discount Bank Of New York U.S.A",
+              "ownership_pct": 100.0,
+              "parent": "Discount Bancorp Inc.",
+              "page_reference": 5,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "IDB Real Estate Holdings Inc",
+              "ownership_pct": 100.0,
+              "parent": "Discount Bancorp Inc.",
+              "page_reference": 5,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "IDBNY Realty (Delaware) Inc",
+              "ownership_pct": 100.0,
+              "parent": "Discount Bancorp Inc.",
+              "page_reference": 5,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "IDB Capital Corp",
+              "ownership_pct": 100.0,
+              "parent": "Discount Bancorp Inc.",
+              "page_reference": 5,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "IDB Realty LLC",
+              "ownership_pct": 100.0,
+              "parent": "Discount Bancorp Inc.",
+              "page_reference": 5,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "DB Properties, Inc",
+              "ownership_pct": 100.0,
+              "parent": "Discount Bancorp Inc.",
+              "page_reference": 5,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            },
+            {
+              "name": "IDBNY LIDO Wealth, LLC",
+              "ownership_pct": 50.0,
+              "parent": "Discount Bancorp Inc.",
+              "page_reference": 5,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות ליום 31.12.2025",
+              "note": null
+            }
+          ],
+          "change_events": [
+            {
+              "company": "רב אופק בע\"מ",
+              "event_type": "full_disposal",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 0,
+              "event_date": null,
+              "event_description": "החברה חוסלה",
+              "page_reference": 7,
+              "section_title": "תקנה 12 - פרטי השינויים בחברות בנות ובחברות כלולות בשנת 2025"
+            }
+          ]
+        },
+        "2:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-09",
+          "subsidiaries": [
+            {
+              "name": "כרטיסי אשראי לישראל בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 23,
+              "section_title": "טבלה 2 א' - תיאור המאפיינים העיקריים של מכשירי הון פיקוחיים שהונפקו",
+              "table_title": "טבלה 2 א' - תיאור המאפיינים העיקריים של מכשירי הון פיקוחיים שהונפקו",
+              "note": null
+            },
+            {
+              "name": "בנקורפ אינק.",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 23,
+              "section_title": "טבלה 2 א' - תיאור המאפיינים העיקריים של מכשירי הון פיקוחיים שהונפקו",
+              "table_title": "טבלה 2 א' - תיאור המאפיינים העיקריים של מכשירי הון פיקוחיים שהונפקו",
+              "note": null
+            },
+            {
+              "name": "דיסקונט מנפיקים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 23,
+              "section_title": "טבלה 2 א' - תיאור המאפיינים העיקריים של מכשירי הון פיקוחיים שהונפקו",
+              "table_title": "טבלה 2 א' - תיאור המאפיינים העיקריים של מכשירי הון פיקוחיים שהונפקו",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "2:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "2:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
           "as_of_date": null,
           "subsidiaries": [],
           "change_events": []
@@ -3254,33 +3832,19 @@
   },
   "1731092": {
     "company_id": "259",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-10T15:35:23.091570+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 23,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-11T10:49:50.978510+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1728569": {
     "company_id": "1773",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-10T15:35:31.867699+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 23,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-11T10:56:14.635160+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732599": {
     "company_id": "2483",
@@ -3299,33 +3863,19 @@
   },
   "1736197": {
     "company_id": "1722",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-10T15:35:17.182798+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 28,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-11T10:49:49.507743+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1733107": {
     "company_id": "1833",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-10T15:35:47.338193+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 14,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-11T11:02:18.212965+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1726223": {
     "company_id": "1490",
@@ -3344,76 +3894,261 @@
   },
   "1731590": {
     "company_id": "1515",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-10T15:35:59.585396+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 23,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-11T11:09:10.308794+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731633": {
     "company_id": "1628",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-10T15:35:34.880865+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 23,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-11T10:57:15.872410+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1729422": {
     "company_id": "2482",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-10T15:36:16.945831+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 23,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-11T11:16:17.508981+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1750253": {
     "company_id": "769",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-10T15:35:44.510041+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 18,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-11T11:04:54.250101+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1725942": {
     "company_id": "662",
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-10T15:36:18.427868+00:00",
+    "at": "2026-09-11T11:16:06.980551+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 32,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "הפועלים שוויץ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 35,
+              "section_title": "2.2 התפתחויות מהותיות בהכנסות, בהוצאות וברווח כולל אחר",
+              "table_title": null,
+              "note": "מוזכרת בהקשר של תחילת פירוק חברת בת"
+            }
+          ],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "קבוצת פועלים אקוויטי",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 61,
+              "section_title": "2.6 חברות עיקריות",
+              "table_title": null,
+              "note": "מוחזקת בבעלות מלאה"
+            },
+            {
+              "name": "קבוצת לידר",
+              "ownership_pct": 20,
+              "parent": "קבוצת פועלים אקוויטי",
+              "page_reference": 61,
+              "section_title": "2.6 חברות עיקריות",
+              "table_title": null,
+              "note": "החזקות מיעוט"
+            }
+          ],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:7": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:8": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:9": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "פועלים אקוויטי - החזקות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 171,
+              "section_title": "ביאור 15 השקעות בחברות מוחזקות ופרטים על חברות אלה",
+              "table_title": "ג. פרטים על חברות מוחזקות עיקריות",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:10": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "פועלים אקוויטי - החזקות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 171,
+              "section_title": "ביאור 15 השקעות בחברות מוחזקות ופרטים על חברות אלה",
+              "table_title": "פרטים על חברות מוחזקות עיקריות",
+              "note": null
+            },
+            {
+              "name": "קבוצת לידר",
+              "ownership_pct": 20,
+              "parent": "פועלים אקוויטי - החזקות בע\"מ",
+              "page_reference": 171,
+              "section_title": "ביאור 15 השקעות בחברות מוחזקות ופרטים על חברות אלה",
+              "table_title": null,
+              "note": "החזקת מיעוט (כ-20%)"
+            },
+            {
+              "name": "Hapoalim (Switzerland) Ltd. (הפועלים שוויץ)",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 171,
+              "section_title": "ביאור 15 השקעות בחברות מוחזקות ופרטים על חברות אלה",
+              "table_title": null,
+              "note": "בתהליך פירוק"
+            }
+          ],
+          "change_events": []
+        },
+        "0:11": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:12": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:13": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:14": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "דיור ב.פ. בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 244,
+              "section_title": "ביאור 28א מגזרי פעילות לפי גישת ההנהלה",
+              "table_title": null,
+              "note": "מוזכר במסגרת ההתאמות לתוצאות הפעילות של קבוצת הבנק"
+            },
+            {
+              "name": "פעילים ניהול תיקי השקעות בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 244,
+              "section_title": "ביאור 28א מגזרי פעילות לפי גישת ההנהלה",
+              "table_title": null,
+              "note": "מוזכר במסגרת ההתאמות לתוצאות הפעילות של קבוצת הבנק"
+            }
+          ],
+          "change_events": []
+        },
+        "0:15": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:16": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:17": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
@@ -3464,18 +4199,11 @@
   },
   "1729273": {
     "company_id": "634",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-10T15:36:05.975273+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 18,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-11T11:10:13.885764+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1727815": {
     "company_id": "1532",
