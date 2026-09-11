@@ -31065,10 +31065,18 @@
   },
   "1762632": {
     "company_id": "1796",
-    "status": "failed",
+    "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-09-10T17:10:26.736360+00:00"
+    "at": "2026-09-11T12:17:01.037698+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 2,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1764090": {
     "company_id": "1794",
@@ -31480,7 +31488,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-09-10T17:39:15.156459+00:00",
+    "at": "2026-09-11T12:17:00.082334+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -31675,7 +31683,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-09-10T17:39:15.290396+00:00",
+    "at": "2026-09-11T12:17:00.253186+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -31735,7 +31743,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-09-10T17:39:15.501284+00:00",
+    "at": "2026-09-11T12:17:00.443584+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -31765,7 +31773,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-09-10T17:39:15.982513+00:00",
+    "at": "2026-09-11T12:17:00.635159+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -31870,7 +31878,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-09-10T17:39:15.622771+00:00",
+    "at": "2026-09-11T12:17:00.736657+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -31885,7 +31893,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-09-10T17:39:15.879952+00:00",
+    "at": "2026-09-11T12:17:00.901251+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -32095,7 +32103,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-09-10T17:39:16.430214+00:00",
+    "at": "2026-09-11T12:17:01.418469+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -32140,7 +32148,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-09-10T17:39:16.673826+00:00",
+    "at": "2026-09-11T12:17:01.637198+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
