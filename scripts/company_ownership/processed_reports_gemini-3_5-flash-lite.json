@@ -2158,7 +2158,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-12T11:00:21.922527+00:00",
+    "at": "2026-09-12T13:16:38.641785+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -2188,7 +2188,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-12T11:00:28.829710+00:00",
+    "at": "2026-09-12T13:16:36.630340+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -2272,6 +2272,41 @@
           "as_of_date": "2025-12-31",
           "subsidiaries": [],
           "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "שותפות VOLTA-EDF",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 43,
+              "section_title": "10.12.1 שותפות VOLTA-EDF",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "שותפות VOLTA-EDF 2",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 45,
+              "section_title": "10.12.2 שותפות VOLTA-EDF 2",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "וולטה סולאר ספרד",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 50,
+              "section_title": "10.13.4 פעילות בספרד",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
         }
       },
       "attempts": {}
@@ -2282,7 +2317,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-12T11:00:22.433713+00:00",
+    "at": "2026-09-12T13:16:37.645024+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -2297,7 +2332,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-12T11:00:22.987635+00:00",
+    "at": "2026-09-12T13:16:38.935171+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -2312,7 +2347,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-12T11:00:22.166298+00:00",
+    "at": "2026-09-12T13:16:37.075968+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -2327,7 +2362,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-12T11:00:22.729300+00:00",
+    "at": "2026-09-12T13:16:38.201812+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -2342,7 +2377,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-12T11:00:23.636330+00:00",
+    "at": "2026-09-12T13:16:39.532565+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -2372,7 +2407,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-12T11:00:23.272628+00:00",
+    "at": "2026-09-12T13:16:39.665145+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -2387,7 +2422,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-12T11:00:24.456118+00:00",
+    "at": "2026-09-12T13:16:40.707254+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -2417,7 +2452,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-12T11:00:24.217915+00:00",
+    "at": "2026-09-12T13:16:40.220357+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
