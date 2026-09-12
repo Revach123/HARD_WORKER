@@ -1223,610 +1223,11 @@
   },
   "1731492": {
     "company_id": "2481",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-11T13:58:47.064419+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 19,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "אלמוג פינוי בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 5,
-              "section_title": "הגדרות",
-              "table_title": null,
-              "note": "חברה בת בבעלות מלאה"
-            },
-            {
-              "name": "אלמוג כ.ד.א.י. יבנה – דיור להשכרה שותפות מוגבלת",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "1.2 התפתחות עסקי החברה",
-              "table_title": null,
-              "note": "Stay 2 Rent - אלמוג יבנה"
-            },
-            {
-              "name": "אלמוג כ.ד.א.י – דיור להשכרה שותפות מוגבלת",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": "1.6 המחזיקים הנוספים בחברות הקבוצה, המחזיקים בשיעור של למעלה מ- 25% ממניות חברות הקבוצה או מהווים צד קשור הינם כדלקמן:",
-              "table_title": null,
-              "note": "אלמוג Rent 2 Stay יבנה"
-            },
-            {
-              "name": "שותפות אלמוג כ.ד.א.י ורשת טאואר",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": "1.6 המחזיקים הנוספים בחברות הקבוצה, המחזיקים בשיעור של למעלה מ- 25% ממניות חברות הקבוצה או מהווים צד קשור הינם כדלקמן:",
-              "table_title": null,
-              "note": "אלמוג סנטר תלמי מנשה"
-            },
-            {
-              "name": "מטע הזיתים רמלה בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": "1.6 המחזיקים הנוספים בחברות הקבוצה, המחזיקים בשיעור של למעלה מ- 25% ממניות חברות הקבוצה או מהווים צד קשור הינם כדלקמן:",
-              "table_title": null,
-              "note": "מטע הזיתים"
-            },
-            {
-              "name": "שותפות אלמוג ענב הרצל באר יעקב",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": "1.6 המחזיקים הנוספים בחברות הקבוצה, המחזיקים בשיעור של למעלה מ- 25% ממניות חברות הקבוצה או מהווים צד קשור הינם כדלקמן:",
-              "table_title": null,
-              "note": "הרצל מתחם A – שלב 1 ושלב 2+3"
-            },
-            {
-              "name": "פנינת ע.ל.ה שותפות מוגבלת",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": "1.6 המחזיקים הנוספים בחברות הקבוצה, המחזיקים בשיעור של למעלה מ- 25% ממניות חברות הקבוצה או מהווים צד קשור הינם כדלקמן:",
-              "table_title": null,
-              "note": "עולי הגרדום מתחם משנה א'"
-            },
-            {
-              "name": "אלמוג דיור מוגן בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": "1.6 המחזיקים הנוספים בחברות הקבוצה, המחזיקים בשיעור של למעלה מ- 25% ממניות חברות הקבוצה או מהווים צד קשור הינם כדלקמן:",
-              "table_title": null,
-              "note": "עסקה משותפת לייזום מתחם דיור מוגן"
-            },
-            {
-              "name": "אטב השקעות בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": "1.6 המחזיקים הנוספים בחברות הקבוצה, המחזיקים בשיעור של למעלה מ- 25% ממניות חברות הקבוצה או מהווים צד קשור הינם כדלקמן:",
-              "table_title": null,
-              "note": "מימון יזמות נדל\"ן בחו\"ל"
-            },
-            {
-              "name": "עסקה משותפת אלמוג (כ.ד.א.י) בע''מ איווב התחדשות עירונית מתחם פרופסור שור חולון בע''מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": "1.6 המחזיקים הנוספים בחברות הקבוצה, המחזיקים בשיעור של למעלה מ- 25% ממניות חברות הקבוצה או מהווים צד קשור הינם כדלקמן:",
-              "table_title": null,
-              "note": "עסקה משותפת לייזום פרויקט התחדשות אלמוג הסתדרות חולון"
-            },
-            {
-              "name": "עסקה משותפת (כ.ד.א.י) בע''מ טרא פרויקטים אשכול 3 בע''מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": "1.6 המחזיקים הנוספים בחברות הקבוצה, המחזיקים בשיעור של למעלה מ- 25% ממניות חברות הקבוצה או מהווים צד קשור הינם כדלקמן:",
-              "table_title": null,
-              "note": "עסקה משותפת לייזום פרויקט התחדשות עירונית בברל לוקר ירושלים"
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "מטע זיתים רמלה בע\"מ",
-              "ownership_pct": 55.5,
-              "parent": null,
-              "page_reference": 64,
-              "section_title": "6.9.6 עתודות קרקע",
-              "table_title": "עתודות קרקע",
-              "note": "מוצג בספרי החברה כהשקעה בחברה כלולה"
-            },
-            {
-              "name": "מגדלי ע.ל.ה בע\"מ",
-              "ownership_pct": 49.0,
-              "parent": null,
-              "page_reference": 67,
-              "section_title": "פרויקטים אחרים - התחדשות עירונית (תמ\"א 38/2 / פינוי בינוי)",
-              "table_title": null,
-              "note": "משמש כשותף כללי בשותפות פנינת ע.ל.ה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "אלמוג פינוי בינוי בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 83,
-              "section_title": "MALA - פרויקט בתכנון",
-              "table_title": null,
-              "note": "מוחזקת במלואה על ידי החברה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:5": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "אלמוג פינוי בינוי בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 87,
-              "section_title": "מימון ספציפי",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:6": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "אלמוג דיור מוגן בע\"מ",
-              "ownership_pct": 74,
-              "parent": null,
-              "page_reference": 109,
-              "section_title": "7.10 רכישות ומכירות נכסים – גילוי מצרפי",
-              "table_title": null,
-              "note": "התאגיד המשותף במסגרת הסכם עם מושב בן זכאי"
-            },
-            {
-              "name": "אלמוג כ.ד.א.י - שותף כללי",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 114,
-              "section_title": "8.1.1 מבנה תחום הפעילות ושינויים החלים בו",
-              "table_title": null,
-              "note": "חברה בבעלות מלאה של החברה"
-            },
-            {
-              "name": "אלמוג כדאי שותפות מוגבלת – דיור להשכרה",
-              "ownership_pct": 50.9,
-              "parent": null,
-              "page_reference": 114,
-              "section_title": "8.1.1 מבנה תחום הפעילות ושינויים החלים בו",
-              "table_title": null,
-              "note": "מוחזקת בשיעור של 50.9% על ידי החברה ו-0.1% על ידי השותף הכללי"
-            }
-          ],
-          "change_events": []
-        },
-        "0:7": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "אלמוג כ.ד.א.י. יבנה דיור להשכרת שותפות מוגבלת",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 239,
-              "section_title": "8.8 אלמוג יבנה – מבנה מניב",
-              "table_title": null,
-              "note": "הוחזקה במלואה (99.99% כשותף מוגבל באמצעות אלמוג דיור להשכרה ו-0.01% כשותף כללי באמצעות אלמוג כ.ד.א.י. - שותף כללי בע\"מ)"
-            }
-          ],
-          "change_events": []
-        },
-        "0:8": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "אלמוג 38 בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 145,
-              "section_title": "17.2",
-              "table_title": null,
-              "note": "חברה בת בבעלות מלאה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:9": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "אלמוג פינוי בינוי בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 157,
-              "section_title": "6. אירועים בתקופת הדוח ולאחר תאריך המאזן",
-              "table_title": null,
-              "note": "חברה בת בעלות מלאה"
-            },
-            {
-              "name": "אלמוג כ.ד.א.י יבנה דיור להשכרה, שותפות מוגבלת (שותפות יבנה)",
-              "ownership_pct": 50.9,
-              "parent": null,
-              "page_reference": 158,
-              "section_title": "6. אירועים בתקופת הדוח ולאחר תאריך המאזן",
-              "table_title": null,
-              "note": "מוחזקת על ידי החברה בשיעור של 50.9%"
-            }
-          ],
-          "change_events": []
-        },
-        "0:10": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:11": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:12": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "אלמוג פינוי בינוי בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 208,
-              "section_title": "ביאור 11 - השקעות בחברות מוחזקות",
-              "table_title": "א. השקעה בחברות מאוחדות:",
-              "note": null
-            },
-            {
-              "name": "אלמוג 38 בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 208,
-              "section_title": "ביאור 11 - השקעות בחברות מוחזקות",
-              "table_title": "א. השקעה בחברות מאוחדות:",
-              "note": null
-            },
-            {
-              "name": "אלמוג דיור מוגן בע\"מ",
-              "ownership_pct": 74,
-              "parent": null,
-              "page_reference": 208,
-              "section_title": "ביאור 11 - השקעות בחברות מוחזקות",
-              "table_title": "א. השקעה בחברות מאוחדות:",
-              "note": null
-            },
-            {
-              "name": "אלמוג נתניה 1 בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 208,
-              "section_title": "ביאור 11 - השקעות בחברות מוחזקות",
-              "table_title": "א. השקעה בחברות מאוחדות:",
-              "note": null
-            },
-            {
-              "name": "אלמוג נתיבות 1 בע''מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 208,
-              "section_title": "ביאור 11 - השקעות בחברות מוחזקות",
-              "table_title": "א. השקעה בחברות מאוחדות:",
-              "note": null
-            },
-            {
-              "name": "טומיברס מלונאות בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 208,
-              "section_title": "ביאור 11 - השקעות בחברות מוחזקות",
-              "table_title": "א. השקעה בחברות מאוחדות:",
-              "note": "ראה גם ביאור 13ד(2) להלן."
-            },
-            {
-              "name": "אלמוג כ.ד.א.י נכסים בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 208,
-              "section_title": "ביאור 11 - השקעות בחברות מוחזקות",
-              "table_title": "א. השקעה בחברות מאוחדות:",
-              "note": null
-            },
-            {
-              "name": "אלמוג כ.ד.א.י. - שותף כללי בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 208,
-              "section_title": "ביאור 11 - השקעות בחברות מוחזקות",
-              "table_title": "א. השקעה בחברות מאוחדות:",
-              "note": null
-            },
-            {
-              "name": "אלמוג אבטליון בע''מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 208,
-              "section_title": "ביאור 11 - השקעות בחברות מוחזקות",
-              "table_title": "א. השקעה בחברות מאוחדות:",
-              "note": null
-            },
-            {
-              "name": "אלמוג 38 (יד לבנים) בע\"מ",
-              "ownership_pct": 100,
-              "parent": "אלמוג 38 בע\"מ",
-              "page_reference": 208,
-              "section_title": "ביאור 11 - השקעות בחברות מוחזקות",
-              "table_title": "א. השקעה בחברות מאוחדות:",
-              "note": "באמצעות אלמוג 38 בע''מ"
-            },
-            {
-              "name": "אלמוג כ.ד.א.י. דיור להשכרה – שותפות מוגבלת",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 208,
-              "section_title": "ביאור 11 - השקעות בחברות מוחזקות",
-              "table_title": "א. השקעה בחברות מאוחדות:",
-              "note": "0.1% מוחזקים בידי אלמוג כ.ד.א.י. - שותף כללי בע''מ; ראה גם ביאור 30(2)ז להלן; ראה גם ביאור 13ד(3) להלן."
-            },
-            {
-              "name": "אלמוג כ.ד.א.י. יבנה דיור להשכרה שותפות מוגבלת",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 208,
-              "section_title": "ביאור 11 - השקעות בחברות מוחזקות",
-              "table_title": "א. השקעה בחברות מאוחדות:",
-              "note": "להלן: 'שותפות יבנה'; ראה גם ביאור 13ד(3) להלן."
-            },
-            {
-              "name": "אטב השקעות בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 210,
-              "section_title": "ביאור 11 - השקעות בחברות מוחזקות",
-              "table_title": "ב. השקעה בחברות כלולות:",
-              "note": "ראה גם ביאור 30(2)ד להלן."
-            },
-            {
-              "name": "מטע הזיתים רמלה בע\"מ",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 210,
-              "section_title": "ביאור 11 - השקעות בחברות מוחזקות",
-              "table_title": "ב. השקעה בחברות כלולות:",
-              "note": "זכות החברה האפקטיבית במקרקעין במטע הזיתים הוא כ-55.6%"
-            },
-            {
-              "name": "אלמוג רויאל בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 210,
-              "section_title": "ביאור 11 - השקעות בחברות מוחזקות",
-              "table_title": "ב. השקעה בחברות כלולות:",
-              "note": "החברה סיימה את פעילותה העסקית בשנת 2020."
-            },
-            {
-              "name": "עסקה משותפת אלמוג (כ.ד.א.י.) בע''מ רשת טאואר גרופ בע''מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 211,
-              "section_title": "ביאור 11 - השקעות בחברות מוחזקות",
-              "table_title": "ד. עסקאות משותפות:",
-              "note": "ראה ביאור 12ג(2)"
-            },
-            {
-              "name": "עסקה משותפת אלמוג פינוי בינוי בע''מ ענב יזום – הרצל באר יעקב שותפות כללית",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 211,
-              "section_title": "ביאור 11 - השקעות בחברות מוחזקות",
-              "table_title": "ד. עסקאות משותפות:",
-              "note": "ראה ביאור 23ד(1)"
-            },
-            {
-              "name": "עסקה משותפת אלמוג (כ.ד.א.י.) בע''מ אי.וויב. התחדשות עירונית מתחם פרופסור שור חולון בע''מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 211,
-              "section_title": "ביאור 11 - השקעות בחברות מוחזקות",
-              "table_title": "ד. עסקאות משותפות:",
-              "note": "ראה ביאור 23ד(3)"
-            },
-            {
-              "name": "עסקה משותפת אלמוג (כ.ד.א.י.) בע''מ יסודות איתנים התחדשות עירונית (ע.ע) בע''מ קרסו נדל\"ן בע''מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 211,
-              "section_title": "ביאור 11 - השקעות בחברות מוחזקות",
-              "table_title": "ד. עסקאות משותפות:",
-              "note": "ראה ביאור 23ד(4)"
-            },
-            {
-              "name": "עסקה משותפת אלמוג (כ.ד.א.י.) בע''מ הכשרת היישוב התחדשות עירונית בישראל בע''מ",
-              "ownership_pct": 49,
-              "parent": null,
-              "page_reference": 211,
-              "section_title": "ביאור 11 - השקעות בחברות מוחזקות",
-              "table_title": "ד. עסקאות משותפות:",
-              "note": "ראה ביאור 23ד(5)"
-            },
-            {
-              "name": "עסקה משותפת (כ.ד.א.י.) בע''מ טרא פרויקטים אשכול 3 בע''מ",
-              "ownership_pct": 64,
-              "parent": null,
-              "page_reference": 211,
-              "section_title": "ביאור 11 - השקעות בחברות מוחזקות",
-              "table_title": "ד. עסקאות משותפות:",
-              "note": "ראה ביאור 23ד(6)"
-            }
-          ],
-          "change_events": []
-        },
-        "0:13": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "חברה משמשת כשותף כללי / שותפות מוגבלת לייזום וביצוע פרויקט עולי הגרדום באשקלון",
-              "ownership_pct": 49,
-              "parent": null,
-              "page_reference": 226,
-              "section_title": "ביאור 23 - שעבודים, ערבויות, התחייבויות תלויות והתקשרויות",
-              "table_title": null,
-              "note": "הקמת שותפות לייזום ובניית פרויקט פינוי בינוי"
-            },
-            {
-              "name": "עסקה משותפת לפרויקט התחדשות עירונית ברחוב יעבץ, פרופסור שור וד\"ר קפלינסקי, חולון",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 227,
-              "section_title": "ביאור 23 - שעבודים, ערבויות, התחייבויות תלויות והתקשרויות (המשך)",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "עסקה משותפת לפרויקט התחדשות עירונית במתחם חרוד, נוף הגליל",
-              "ownership_pct": 33.333,
-              "parent": null,
-              "page_reference": 227,
-              "section_title": "ביאור 23 - שעבודים, ערבויות, התחייבויות תלויות והתקשרויות (המשך)",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "עסקה משותפת לייזום ובניית פרויקט פינוי בינוי ברחוב הנשיא, אשקלון",
-              "ownership_pct": 49,
-              "parent": null,
-              "page_reference": 227,
-              "section_title": "ביאור 23 - שעבודים, ערבויות, התחייבויות תלויות והתקשרויות (המשך)",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "עסקה משותפת לייזום ובניית פרויקט פינוי בינוי ברחוב ברל לוקר, בירושלים",
-              "ownership_pct": 64,
-              "parent": null,
-              "page_reference": 227,
-              "section_title": "ביאור 23 - שעבודים, ערבויות, התחייבויות תלויות והתקשרויות (המשך)",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "שותפות מוגבלת עם גופים מקבוצת הראל",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 236,
-              "section_title": "ביאור 30 - עסקאות עם צדדים קשורים ובעלי עניין (המשך)",
-              "table_title": null,
-              "note": "עוסקת ברכישה, ניהול והחזקה של נכסים המיועדים בעיקרם להשכרה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:14": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:15": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "אלמוג פינוי בינוי בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 267,
-              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11: רשימת השקעות בחברות-בנות ובחברות כלולות מהותיות למועד הדוח על המצב הכספי",
-              "note": null
-            },
-            {
-              "name": "אלמוג 38 בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 267,
-              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11: רשימת השקעות בחברות-בנות ובחברות כלולות מהותיות למועד הדוח על המצב הכספי",
-              "note": null
-            },
-            {
-              "name": "טומיברס בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 267,
-              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11: רשימת השקעות בחברות-בנות ובחברות כלולות מהותיות למועד הדוח על המצב הכספי",
-              "note": null
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-12T10:05:51.189207+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1729273": {
     "company_id": "634",
@@ -1838,115 +1239,51 @@
   },
   "1727815": {
     "company_id": "1532",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-11T13:59:01.023267+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 10,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-12T10:10:45.492345+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1735463": {
     "company_id": "796",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-11T13:59:19.426684+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 15,
-      "done": {
-        "0:0": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-12T10:08:09.432148+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732534": {
     "company_id": "2519",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-11T13:58:58.253974+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 16,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-12T10:09:21.942016+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1739807": {
     "company_id": "328",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-11T13:59:19.672524+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 14,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-12T10:12:25.089612+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1726985": {
     "company_id": "1763",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-11T13:59:31.387601+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 19,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-12T10:14:09.496309+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731188": {
     "company_id": "76",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-11T13:59:34.551137+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 9,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-12T10:17:06.904859+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731078": {
     "company_id": "1006",
@@ -1965,33 +1302,19 @@
   },
   "1730433": {
     "company_id": "174",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-11T13:59:20.337074+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 15,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-12T10:15:25.563186+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732174": {
     "company_id": "1802",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-11T13:59:35.137979+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 20,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-12T10:20:52.151349+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732153": {
     "company_id": "1082",
@@ -2013,13 +1336,288 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-11T13:59:46.769969+00:00",
+    "at": "2026-09-12T10:20:40.791308+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 22,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "Deliverz.ai Ltd.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 9,
+              "section_title": "תרשים מבנה האחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Algomizer Inc",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 9,
+              "section_title": "תרשים מבנה האחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Viewbix INC",
+              "ownership_pct": 21.13,
+              "parent": null,
+              "page_reference": 9,
+              "section_title": "תרשים מבנה האחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Metagramm Software LTD",
+              "ownership_pct": 100,
+              "parent": "Deliverz.ai Ltd.",
+              "page_reference": 9,
+              "section_title": "תרשים מבנה האחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Gix Media LTD",
+              "ownership_pct": 100,
+              "parent": "Deliverz.ai Ltd.",
+              "page_reference": 9,
+              "section_title": "תרשים מבנה האחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Quantum X Labs LTD",
+              "ownership_pct": 100,
+              "parent": "Algomizer Inc",
+              "page_reference": 9,
+              "section_title": "תרשים מבנה האחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Viewbix LTD",
+              "ownership_pct": 99.83,
+              "parent": "Viewbix INC",
+              "page_reference": 9,
+              "section_title": "תרשים מבנה האחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Metagramm Inc.",
+              "ownership_pct": 100,
+              "parent": "Metagramm Software LTD",
+              "page_reference": 9,
+              "section_title": "תרשים מבנה האחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Resoft LTD",
+              "ownership_pct": 100,
+              "parent": "Gix Media LTD",
+              "page_reference": 9,
+              "section_title": "תרשים מבנה האחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Lingofind LTD",
+              "ownership_pct": 100,
+              "parent": "Gix Media LTD",
+              "page_reference": 9,
+              "section_title": "תרשים מבנה האחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Stanis LTD",
+              "ownership_pct": 100,
+              "parent": "Resoft LTD",
+              "page_reference": 9,
+              "section_title": "תרשים מבנה האחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Veristaff.com Inc",
+              "ownership_pct": 100,
+              "parent": "Lingofind LTD",
+              "page_reference": 9,
+              "section_title": "תרשים מבנה האחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Quantum Transportation Ltd",
+              "ownership_pct": 30.23,
+              "parent": "Quantum X Labs LTD",
+              "page_reference": 9,
+              "section_title": "תרשים מבנה האחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Cliniquantum LTD",
+              "ownership_pct": 46,
+              "parent": "Quantum X Labs LTD",
+              "page_reference": 9,
+              "section_title": "תרשים מבנה האחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Nuclear Quantum Ltd",
+              "ownership_pct": 40,
+              "parent": "Quantum X Labs LTD",
+              "page_reference": 9,
+              "section_title": "תרשים מבנה האחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Quantum Gyro LTD",
+              "ownership_pct": 40,
+              "parent": "Quantum X Labs LTD",
+              "page_reference": 9,
+              "section_title": "תרשים מבנה האחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Quantum Atom Accuracy Ltd",
+              "ownership_pct": 100,
+              "parent": "Nuclear Quantum Ltd",
+              "page_reference": 9,
+              "section_title": "תרשים מבנה האחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Quantumosecurity, Ltd",
+              "ownership_pct": 100,
+              "parent": "Quantum Gyro LTD",
+              "page_reference": 9,
+              "section_title": "תרשים מבנה האחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "VB Interactive Video Technologies Inc",
+              "ownership_pct": 100,
+              "parent": "Viewbix LTD",
+              "page_reference": 9,
+              "section_title": "תרשים מבנה האחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "Viewbix Inc",
+              "ownership_pct": 21.13,
+              "parent": null,
+              "page_reference": 84,
+              "section_title": "22. השקעות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גיקס מדיה",
+              "ownership_pct": 100.0,
+              "parent": "Viewbix Inc",
+              "page_reference": 84,
+              "section_title": "22. השקעות",
+              "table_title": null,
+              "note": "בבעלות מלאה של Viewbix Inc"
+            },
+            {
+              "name": "דליברז אייאיי בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 83,
+              "section_title": "21. הון חוזר ואשראי",
+              "table_title": null,
+              "note": "השלמת רכישה ביולי 2025"
+            },
+            {
+              "name": "קוואנטם אקס מעבדות בע\"מ",
+              "ownership_pct": null,
+              "parent": "Viewbix Inc",
+              "page_reference": 84,
+              "section_title": "22. השקעות",
+              "table_title": null,
+              "note": "נרכשה על ידי Viewbix Inc במרץ 2026"
+            }
+          ],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "Viewbix Inc",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 52,
+              "section_title": "לקוחות",
+              "table_title": null,
+              "note": "הפסקת האיחוד במהלך חודש ספטמבר 2025"
+            },
+            {
+              "name": "דליברז",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 57,
+              "section_title": "התקשרות בהסכם הלוואה עם פיור קפיטל בקשר לעסקת דליברז",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גיקס מדיה",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 52,
+              "section_title": "לקוחות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "קורטקס",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 58,
+              "section_title": "הלוואות של גיקס מדיה, קורטקס וויוביקס בע\"מ - Viewbix Inc",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
@@ -2130,18 +1728,11 @@
   },
   "1732589": {
     "company_id": "771",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-11T13:59:45.098588+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 24,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-12T10:19:35.254011+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1728911": {
     "company_id": "1679",
