@@ -390,13 +390,16 @@ def _compute_company_status(cid: str, entry: dict, merged: dict, models_by_repor
     לוגיקת הסטטוס:
       full    = ה-snapshot עבר בהצלחה ב-3.6 (האיכות הגבוהה)
       partial = יש הצלחה כלשהי (3.5, או חלק מהדוחות) אבל לא snapshot מלא ב-3.6,
-                *או* שדוח כלשהו באמצע חיתוך עיוור (status="partial" - resumable,
-                ינוסה שוב אוטומטית) - לא כישלון, גם אם לחברה יש attempts>0
-                ישן על דוח אחר (נצפה בפועל: מאות חברות שממתינות לתור המכסה
-                הבא סווגו כ-error בטעות בגלל attempts שיירי כזה)
-      pending = שום דוח לא עובד בהצלחה עדיין, ואף אחד לא באמצע חיתוך
+                *או* שדוח כלשהו באמצע חיתוך עיוור *עם לפחות חלון אחד שהושלם*
+                (status="partial" - resumable) - לא כישלון, גם אם לחברה יש
+                attempts>0 ישן על דוח אחר.
+      pending = שום דוח לא עובד בהצלחה עדיין, ואף אחד לא באמצע חיתוך עם
+                התקדמות ממשית. כולל תוכניות-חיתוך שנוצרו אך 0 חלונות עובדו
+                עדיין (ממתינות בתור) - אלה לא partial אמיתי (נצפה בפועל:
+                2407 מתוך 2411 ה-partial היו עם 0 חלונות - תור, לא נתונים)
+                וגם לא error, גם אם יש attempts שיירי על דוח אחר של החברה.
       error   = כל הדוחות שנוסו נכשלו סופית (ויש ניסיונות) - אין שום הצלחה
-                ואין דוח resumable
+                ואין דוח resumable ואין תוכנית-חיתוך ממתינה
 
     בנוסף מחזיר snap_full_35 (לא נשלח ל-D1) - עצמאי מ-has_snapshot_35:
     True אם ה-snapshot עבר בהצלחה ב-3.5 *גם אם* הוא כבר "מלא" ב-3.6.
@@ -412,6 +415,7 @@ def _compute_company_status(cid: str, entry: dict, merged: dict, models_by_repor
     max_att = 0
     any_success = False
     any_in_progress = False
+    any_chunk_queued = False
     snap_full_36 = False
     snap_full_35 = False
     snap_any = False
@@ -428,10 +432,16 @@ def _compute_company_status(cid: str, entry: dict, merged: dict, models_by_repor
             if any("3.6" in m or "3_6" in m for m in models_seen):
                 done_36 += 1
         elif e.get("status") == "partial":
-            # חיתוך עיוור (3.5) עדיין באמצע - resumable, לא כישלון. attempts
-            # על דוח *אחר* של אותה חברה (למשל ניסיון ישן על snapshot לפני
-            # המעבר לחיתוך) לא אמור להפיל דוח כזה ל-"error" (ראה למטה).
-            any_in_progress = True
+            # חיתוך עיוור (3.5) - resumable, לא כישלון. מבדילים בין התקדמות
+            # אמיתית (לפחות חלון אחד הושלם) לבין תוכנית-חיתוך שנוצרה אך 0
+            # חלונות עובדו עדיין - האחרונה נוצרת מיד כשהדוח נכנס לחיתוך,
+            # לרוב לפני שהמכסה הספיקה להריץ ולו חלון אחד, אז היא "תור" ולא
+            # partial אמיתי. attempts על דוח *אחר* של אותה חברה עדיין לא
+            # מפיל אף אחד מהם ל-"error" (ראה סדר ה-if למטה).
+            if (e.get("chunks") or {}).get("done"):
+                any_in_progress = True
+            else:
+                any_chunk_queued = True
 
     # סטטוס ה-snapshot ספציפית (הוא הקובע ל-full/partial)
     if snap:
@@ -454,6 +464,10 @@ def _compute_company_status(cid: str, entry: dict, merged: dict, models_by_repor
         status = "partial"
     elif any_in_progress:
         status = "partial"
+    elif any_chunk_queued:
+        # תוכנית חיתוך קיימת אבל 0 חלונות עובדו - ממתין בתור, לא partial
+        # אמיתי ולא error (גם אם יש attempts שיירי על דוח אחר של החברה).
+        status = "pending"
     elif max_att > 0:
         status = "error"
     else:

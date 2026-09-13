@@ -10,13 +10,12 @@
 # private_subsidiaries.jsonl. כל הרצה מתחילה מ-checkout רגיל של main -
 # הקבצים כבר שם, בלי שום שחזור cache נפרד.
 #
-# שני מנגנוני הפעלה:
-# 1. workflow_dispatch - הפעלה ידנית עם שליטה על כל הפרמטרים.
-# 2. schedule (cron) - הפעלה אוטומטית כל 6 שעות, כדי להמשיך לעבד את
-#    התור הנותר בלי התערבות ידנית (GitHub Actions מגביל כל job ל-6
-#    שעות קשיח - זה עוקף את הצורך להריץ ידנית שוב ושוב).
-# מאחר ש-schedule events אינם כוללים github.event.inputs, כל הפרמטרים
-# למטה משתמשים ב-fallback (||) לברירת מחדל קבועה כשאין קלט ידני.
+# הפעלה: workflow_dispatch בלבד. ריצה יומית מופעלת חיצונית ע"י cron-job.org
+# שקורא ל-workflow_dispatch פעמיים ביום (מודל שונה בכל פעם דרך input "model").
+# ה-schedule המובנה של GitHub הוסר - הוא התעכב כאן דרך קבע ב-3-5 שעות.
+# טווח התאריכים מחושב אוטומטית כחלון מתגלגל (9 חודשים אחורה עד היום) בזמן
+# הריצה, אז אין תאריכים קבועים שמתיישנים ועוצרים הכל. override ידני לבאקפיל:
+# custom_range=true עם from_date/to_date.
 #
 # כשמגיעים למכסה (מסודר: TPM זמני מטופל אוטומטית, רק RPD אמיתי עוצר),
 # ההרצה נעצרת בעדינות - ההרצה הבאה (ידנית או מתוזמנת) ממשיכה מאותה
@@ -39,14 +38,17 @@ concurrency:
 on:
   workflow_dispatch:
     inputs:
+      # ברירת המחדל היא חלון מתגלגל אוטומטי (9 חודשים אחורה עד היום,
+      # מחושב בזמן הריצה). from_date/to_date משמשים רק ל-override ידני
+      # לבאקפיל, וגוברים רק כש-custom_range=true (ראה שלב Build plan).
       from_date:
-        description: "טווח - מתאריך (YYYY-MM-DD)"
-        required: true
-        default: "2026-01-01"
+        description: "override ידני - מתאריך (YYYY-MM-DD). ריק = אוטומטי (9 חודשים אחורה)"
+        required: false
+        default: ""
       to_date:
-        description: "טווח - עד תאריך (YYYY-MM-DD) - מוגבל אוטומטית ל'אתמול'"
-        required: true
-        default: "2026-12-31"
+        description: "override ידני - עד תאריך (YYYY-MM-DD). מוגבל אוטומטית ל'אתמול'"
+        required: false
+        default: ""
       limit:
         description: "הגבלת מספר משימות לעיבוד (ריק = הכל, עד המכסה)"
         required: false
@@ -67,16 +69,16 @@ on:
           - gemini-3.6-flash
           - gemini-3.5-flash-lite
         default: gemini-3.6-flash
-  # ריצה אוטומטית יומית פעמיים - שתי שעות שונות, שני מודלים שונים
-  # (אושר 2026-09-02 - הרגרסיה שתועדה למטה נבדקה ואושרה כפתורה).
-  # schedule events לא כוללים github.event.inputs, אז הבחירה בין
-  # המודלים למטה (ב-env GEMINI_MODEL_OVERRIDE) מתבססת על github.event.schedule
-  # (מחרוזת ה-cron שהפעילה את הריצה הספציפית הזו), לא על input.
-  schedule:
-    # כל יום 11:15 שעון ישראל (08:15 UTC בקיץ) - gemini-3.6-flash
-    - cron: "15 8 * * *"
-    # כל יום 13:00 שעון ישראל (10:00 UTC בקיץ) - gemini-3.5-flash-lite
-    - cron: "0 10 * * *"
+      custom_range:
+        description: "true = השתמש ב-from_date/to_date הידניים (באקפיל). ברירת מחדל: חלון מתגלגל אוטומטי של 9 חודשים"
+        required: false
+        type: choice
+        options:
+          - "false"
+          - "true"
+        default: "false"
+  # ה-schedule המובנה של GitHub הוסר - הריצה היומית מופעלת חיצונית דרך
+  # cron-job.org (workflow_dispatch פעמיים ביום, מודל שונה בכל פעם).
 
 jobs:
   run:
@@ -121,9 +123,24 @@ jobs:
         env:
           PYTHONUNBUFFERED: "1"
         run: |
+          # חלון מתגלגל אוטומטי: 9 חודשים אחורה עד היום, מחושב לפי תאריך
+          # הריצה בפועל - כדי שה-cron החיצוני (cron-job.org) תמיד יעבד את
+          # התקופה הרלוונטית בלי תאריכים קבועים שמתיישנים ועוצרים הכל.
+          # report_selector.py ממילא מגביל את to_date ל'אתמול' אוטומטית.
+          # override ידני לבאקפיל: custom_range=true + from_date (ו-to_date).
+          if [ "${{ github.event.inputs.custom_range }}" = "true" ] && [ -n "${{ github.event.inputs.from_date }}" ]; then
+            FROM="${{ github.event.inputs.from_date }}"
+            TO="${{ github.event.inputs.to_date }}"
+            [ -z "$TO" ] && TO=$(date -u +%Y-%m-%d)
+            echo "טווח ידני (custom_range=true): $FROM .. $TO"
+          else
+            FROM=$(date -u -d '9 months ago' +%Y-%m-%d)
+            TO=$(date -u +%Y-%m-%d)
+            echo "חלון מתגלגל אוטומטי: $FROM .. $TO"
+          fi
           python report_selector.py \
-            --from-date ${{ github.event.inputs.from_date || '2026-01-01' }} \
-            --to-date ${{ github.event.inputs.to_date || '2026-12-31' }} \
+            --from-date "$FROM" \
+            --to-date "$TO" \
             --out selection_plan.json
 
       # חד-פעמי: ממיר תוצאות מהפורמט הישן (JSON array) לחדש (JSONL) אם
