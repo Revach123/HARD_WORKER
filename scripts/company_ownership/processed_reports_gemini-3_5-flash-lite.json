@@ -2430,1353 +2430,11 @@
   },
   "1735693": {
     "company_id": "1662",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-13T11:02:15.782316+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 28,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "Pacific Oak SOR Properties LLC",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 3,
-              "section_title": "הגדרות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR Equity Holdings X LLC",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": ".1.1.2.7 עדכונים בקשר עם יתר נכסי החברה והסכמי מימון",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR US Properties II",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": ".1.1.2.7 עדכונים בקשר עם יתר נכסי החברה והסכמי מימון",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "Pacific Oak SOR (BVI) Holdings, Ltd.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 69,
-              "section_title": "א. 2 הסכם ההון המועדף בנכס",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR Properties LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR (BVI) Holdings, Ltd.",
-              "page_reference": 69,
-              "section_title": "א. 2 הסכם ההון המועדף בנכס",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak Acquisition XXV LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR Properties LLC",
-              "page_reference": 69,
-              "section_title": "א. 2 הסכם ההון המועדף בנכס",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR SREF III 110 William LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak Acquisition XXV LLC",
-              "page_reference": 69,
-              "section_title": "א. 2 הסכם ההון המועדף בנכס",
-              "table_title": null,
-              "note": "100% זכויות רגילות, 77.5% הון מועדף"
-            },
-            {
-              "name": "110 William Man III LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR SREF III 110 William LLC",
-              "page_reference": 69,
-              "section_title": "א. 2 הסכם ההון המועדף בנכס",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "110 William Property Investors III LLC",
-              "ownership_pct": 100,
-              "parent": "110 William Man III LLC",
-              "page_reference": 69,
-              "section_title": "א. 2 הסכם ההון המועדף בנכס",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "Pacific Oak SOR Properties, LLC",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 74,
-              "section_title": "ז. שעבודים ומגבלות משפטיות מהותיות בנכס",
-              "table_title": null,
-              "note": "חברה בבעלות מלאה"
-            },
-            {
-              "name": "PACIFIC OAK SOR SREF III 110 WILLIAM, LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR Properties, LLC",
-              "page_reference": 69,
-              "section_title": "א. 2 הסכם ההון המועדף בנכס",
-              "table_title": null,
-              "note": "100% מהזכויות הרגילות ו-77.5% מהזכויות בהון המועדף"
-            },
-            {
-              "name": "Pacific Oak SOR II Oakland City Center LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR II Acquisitions LLC",
-              "page_reference": 76,
-              "section_title": "1.7.9.2 מבנה מהותי מאוד – Oakland City Center",
-              "table_title": null,
-              "note": "מוחזק בשרשור בבעלות מלאה"
-            },
-            {
-              "name": "Pacific Oak SOR Marquette Plaza LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR Acquisition XXXIII LLC",
-              "page_reference": 80,
-              "section_title": "1.7.9.3 מבנה מהותי מאוד – The Marq",
-              "table_title": null,
-              "note": "מוחזק בשרשור בבעלות מלאה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:5": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "Pacific Oak SOR Properties LLC",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 91,
-              "section_title": ".1.11.2 שעבודים להבטחת המימון",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR Equity Holdings X LLC",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 91,
-              "section_title": ".1.11.2 שעבודים להבטחת המימון",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Crescent & Queen",
-              "ownership_pct": 90,
-              "parent": null,
-              "page_reference": 89,
-              "section_title": ".1.8.7 פרטים נוספים אודות נכס הנדל\"ן לשימוש מלונאי (המסווגים כרכוש קבוע)",
-              "table_title": null,
-              "note": "שיעור החזקה אפקטיבי בנכס"
-            }
-          ],
-          "change_events": []
-        },
-        "0:6": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "Pacific Oak SOR Properties LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR (BVI) Holdings, Ltd.",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "CA Capital Management Services III, Inc.",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR (BVI) Holdings, Ltd.",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak TRS Services LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR (BVI) Holdings, Ltd.",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR Park Highlands LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR (BVI) Holdings, Ltd.",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR Park Highlands JV LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR Park Highlands LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR Acquisition VII LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR Park Highlands LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR Park Highlands II LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR Park Highlands LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR Park Highlands II JV LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR Park Highlands II LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR Acquisition XXII LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR Park Highlands II LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR Acquisition XI LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR (BVI) Holdings, Ltd.",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "1180 Raymond Urban Renewal LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR Acquisition XI LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR Acquisition XXXIII LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR (BVI) Holdings, Ltd.",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR Marquette Plaza LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR Acquisition XXXIII LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "S-REIT",
-              "ownership_pct": 6.1,
-              "parent": "Pacific Oak SOR (BVI) Holdings, Ltd.",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR II, LLC (MD)",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR (BVI) Holdings, Ltd.",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak Strategic Opportunity Holdings II LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR II, LLC (MD)",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak Strategic Opportunity Limited Partnership II",
-              "ownership_pct": 99,
-              "parent": "Pacific Oak Strategic Opportunity Holdings II LLC",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": "LP ownership"
-            },
-            {
-              "name": "Pacific Oak SOR US Properties II LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak Strategic Opportunity Limited Partnership II",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak Residential Trust Inc.",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR Equity Holdings X LLC",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak Residential Trust II, Inc.",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak Opportunity Zone Fund I, LLC",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:7": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "Pacific Oak SOR Properties LLC",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "CA Capital Management Services III, Inc.",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR Properties LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak TRS Services LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR Properties LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR Park Highlands LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR Properties LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR Park Highlands JV LLC",
-              "ownership_pct": 99.75,
-              "parent": "Pacific Oak SOR Park Highlands LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR Acquisition VII LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR Properties LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR Park Highlands II LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR Properties LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR Park Highlands II JV LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR Park Highlands II LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR Acquisition XXII LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR Properties LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR Acquisition XXXIII LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR Properties LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR Marquette Plaza LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR Properties LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "S-REIT",
-              "ownership_pct": 6.1,
-              "parent": "Pacific Oak SOR Properties LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR Acquisition XI LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR Properties LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "1180 Raymond Urban Renewal LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR Acquisition XI LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR Acquisition VIII, LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR Properties LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR Richardson Portfolio JV LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR Acquisition VIII, LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "JP- Pacific Oak Richardson Holdings LLC",
-              "ownership_pct": 90,
-              "parent": "Pacific Oak SOR Richardson Portfolio JV LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "JP- Pacific Oak Richardson Acquisition I LLC",
-              "ownership_pct": 100,
-              "parent": "JP- Pacific Oak Richardson Holdings LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "JP Palisades I LLC",
-              "ownership_pct": 100,
-              "parent": "JP- Pacific Oak Richardson Acquisition I LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "JP Palisades II LLC",
-              "ownership_pct": 100,
-              "parent": "JP- Pacific Oak Richardson Acquisition I LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR Acquisition XVIII LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR Properties LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR Austin Suburban Portfolio LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR Acquisition XVIII LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR Acquisition XXXIV, LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR Properties LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR 8 & 9 Corporate Centre, Inc.",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR Acquisition XXXIV, LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR Acquisition XXV LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR Properties LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR 110 William JV LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR Acquisition XXV LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR SREF III 110 William LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR 110 William JV LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "110 William Property Investors III LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR SREF III 110 William LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "110 William Mezz III LLC",
-              "ownership_pct": 100,
-              "parent": "110 William Property Investors III LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR Acquisition XXVII LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR Properties LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR SOR Richardson Land JV, LLC",
-              "ownership_pct": 90,
-              "parent": "Pacific Oak SOR Acquisition XXVII LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR Richardson Holdings II LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR SOR Richardson Land JV, LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Palisades IV LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR Richardson Holdings II LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Richardson Land I",
-              "ownership_pct": 100,
-              "parent": "Palisades IV LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR Acquisition VIII LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR Properties LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR SOR Richardson Portfolio JV, LLC",
-              "ownership_pct": 90,
-              "parent": "Pacific Oak SOR Acquisition VIII LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR Richardson Holdings LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR SOR Richardson Portfolio JV, LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Palisades III LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR Richardson Holdings LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Richardson Land II",
-              "ownership_pct": 100,
-              "parent": "Palisades III LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak Acquisition XXXVII, LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR Properties LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR Tule Springs Village II Parcelles Owner, LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak Acquisition XXXVII, LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR Tule Springs Owner TRS LLC",
-              "ownership_pct": 0.25,
-              "parent": "Pacific Oak Acquisition XXXVII, LLC",
-              "page_reference": 121,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR II, LLC (MD)",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR (BVI) Holdings, Ltd.",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR II Holdings, LLC (MD)",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR II, LLC (MD)",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak Strategic Opportunity Holdings II LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR II Holdings, LLC (MD)",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak Strategic Opportunity Limited Partnership II",
-              "ownership_pct": 99,
-              "parent": "Pacific Oak Strategic Opportunity Holdings II LLC",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR US Properties II LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak Strategic Opportunity Limited Partnership II",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR II TRS Holdings",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR US Properties II LLC",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR II Q&C TRS JV, LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR US Properties II LLC",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR II Q&C JV, LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR US Properties II LLC",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR II Q&C Opportunity JV, LLC",
-              "ownership_pct": 90,
-              "parent": "Pacific Oak SOR US Properties II LLC",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR II Q&C Property JV, LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR US Properties II LLC",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR II Q&C Property, LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR US Properties II LLC",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR II Q&C Operations JV, LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR US Properties II LLC",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR II Q&C Operations, LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR II Q&C Operations JV, LLC",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Q&C Hotel",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR II Q&C Property, LLC",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR II Acquisition IV, LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR US Properties II LLC",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR II Acquisition II, LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR US Properties II LLC",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR II Acquisition VI, LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR US Properties II LLC",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR II Acquisition VII, LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR US Properties II LLC",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR II Acquisition VIII, LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR US Properties II LLC",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR II Lincoln Court, LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR US Properties II LLC",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Lincoln Court",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR II Lincoln Court, LLC",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR II 210 West 31st Street JV, LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR US Properties II LLC",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR II 210 West 31st Street, LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR II 210 West 31st Street JV, LLC",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "210 West 31st Street Owner, LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR II 210 West 31st Street, LLC",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "210 West 31st Street",
-              "ownership_pct": 100,
-              "parent": "210 West 31st Street Owner, LLC",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR II Oakland City Center, LLC",
-              "ownership_pct": 80,
-              "parent": "Pacific Oak SOR US Properties II LLC",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Oakland City Center",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR II Oakland City Center, LLC",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR II Grace Court JV, LLC",
-              "ownership_pct": 90,
-              "parent": "Pacific Oak SOR US Properties II LLC",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR II/VERUS Grace Court, LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR II Grace Court JV, LLC",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak/VERUS GC Phoenix, LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR II/VERUS Grace Court, LLC",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak/VERUS Armory and Land, LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR II/VERUS Grace Court, LLC",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Madison Square I, II, III, IV and Parking Garage",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak/VERUS GC Phoenix, LLC",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Madison Square Armory Building and Land",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak/VERUS Armory and Land, LLC",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Investment In Pacific Oak Opportunity Zone Fund I",
-              "ownership_pct": 5,
-              "parent": "Pacific Oak SOR US Properties II LLC",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR Equity Holdings X LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR US Properties II LLC",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR X Acquisition III LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR Equity Holdings X LLC",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "SOR Port Holdings LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR X Acquisition III LLC",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak Residential Trust Inc.",
-              "ownership_pct": 100,
-              "parent": "SOR Port Holdings LLC",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "PORT OP GP, LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak Residential Trust Inc.",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "PORT OP, LP",
-              "ownership_pct": 99.912,
-              "parent": "Pacific Oak Residential Trust Inc.",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "PORT II OP LP",
-              "ownership_pct": 100,
-              "parent": "PORT OP, LP",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak Residential Trust II, Inc.",
-              "ownership_pct": 100,
-              "parent": "PORT II OP LP",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Single Family Portfolios (6)",
-              "ownership_pct": 100,
-              "parent": "PORT OP, LP",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR X Acquisition II LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR Equity Holdings X LLC",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR PAC OAK OPP ZONE FUND I, LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR X Acquisition II LLC",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak Opportunity Zone Fund I, LLC",
-              "ownership_pct": 41.0,
-              "parent": "Pacific Oak SOR PAC OAK OPP ZONE FUND I, LLC",
-              "page_reference": 122,
-              "section_title": "נספח מבנה ההחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak SOR DEBT Holdings II LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR (BVI) Holdings LTD",
-              "page_reference": 126,
-              "section_title": "מבנה חברת הריט",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pacific Oak Finance LLC",
-              "ownership_pct": 100,
-              "parent": "Pacific Oak SOR (BVI) Holdings LTD",
-              "page_reference": 126,
-              "section_title": "מבנה חברת הריט",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:8": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "חברה כלולה (Joint Venture) המחזיקה בנכס 110 William",
-              "ownership_pct": 90,
-              "parent": null,
-              "page_reference": 144,
-              "section_title": "3.5 גילוי בהתאם לסעיף 10(ב)(14) לתקנות דוחות תקופתיים ומיידיים וגילוי תזרים המזומנים החזוי למימון פירעון התחייבויות החברה",
-              "table_title": null,
-              "note": "שיעור החזקה אפקטיבי"
-            }
-          ],
-          "change_events": []
-        },
-        "0:9": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:10": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:11": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "110 William Street Joint Venture",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 204,
-              "section_title": "באור 11 - השקעה בעסקאות משותפות לא מאוחדות",
-              "table_title": null,
-              "note": "החברה מחזיקה ב-77.5% מהמניות המועדפות ו-100% מהמניות הרגילות"
-            },
-            {
-              "name": "Pacific Oak Opportunity Zone Fund I",
-              "ownership_pct": 47.0,
-              "parent": null,
-              "page_reference": 204,
-              "section_title": "באור 11 - השקעה בעסקאות משותפות לא מאוחדות",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:12": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "Pacific Oak SOR Properties, LLC",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 205,
-              "section_title": "באור 11 - השקעה בעסקאות משותפות לא מאוחדות",
-              "table_title": null,
-              "note": "חברה בת בבעלות מלאה"
-            },
-            {
-              "name": "110 William Street Joint Venture (Pacific Oak SOR SREF III 110 William, LLC)",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 205,
-              "section_title": "באור 11 - השקעה בעסקאות משותפות לא מאוחדות",
-              "table_title": null,
-              "note": "עסקה משותפת"
-            },
-            {
-              "name": "Pacific Oak Opportunity Zone Fund I (Pacific Oak Opportunity Zone Fund I, LLC)",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 205,
-              "section_title": "באור 11 - השקעה בעסקאות משותפות לא מאוחדות",
-              "table_title": null,
-              "note": "עסקה משותפת"
-            },
-            {
-              "name": "353 Sacramento Joint Venture",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 205,
-              "section_title": "באור 11 - השקעה בעסקאות משותפות לא מאוחדות",
-              "table_title": null,
-              "note": "הופסקה השימוש בשיטת השווי המאזני ומימוש ביוני 2025"
-            },
-            {
-              "name": "Keppel Pacific Oak US REIT (S-REIT)",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 211,
-              "section_title": "באור 14 - אירועים לאחר תאריך הדיווח",
-              "table_title": null,
-              "note": "החזיקה 64 מיליון מניות, נמכרו 49 מיליון לאחר תאריך המאזן"
-            }
-          ],
-          "change_events": [
-            {
-              "company": "353 Sacramento Joint Venture",
-              "event_type": "full_disposal",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 0,
-              "event_date": "2025-06-01",
-              "event_description": "מימוש העסקה המשותפת כתוצאה מהסכם מסירה והליך עיקול עם המלווה",
-              "page_reference": 205,
-              "section_title": "באור 11 - השקעה בעסקאות משותפות לא מאוחדות"
-            },
-            {
-              "company": "Keppel Pacific Oak US REIT (S-REIT)",
-              "event_type": "decrease",
-              "ownership_pct_before": null,
-              "ownership_pct_after": null,
-              "event_date": null,
-              "event_description": "מכירה חלקית של 49 מיליון מניות מתוך 64 מיליון המניות שהחזיקה החברה",
-              "page_reference": 211,
-              "section_title": "באור 14 - אירועים לאחר תאריך הדיווח"
-            }
-          ]
-        },
-        "0:13": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-13T11:08:03.654558+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1737102": {
     "company_id": "1382",
@@ -3791,43 +2449,872 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-12T13:16:53.685293+00:00",
+    "at": "2026-09-13T11:15:40.211606+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 17,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "אאורה מחדשים את ישראל (לשעבר: אאורה ישראל - יזמות והשקעות בע״מ)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 10,
+              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ס.י. אבן יזמות בע״מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 10,
+              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אאורה החדשה פיננסים (2013) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 10,
+              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אאורה אם. אן. ג'י בטייסים (2018) בע\"מ",
+              "ownership_pct": 90,
+              "parent": "אאורה מחדשים את ישראל (לשעבר: אאורה ישראל - יזמות והשקעות בע״מ)",
+              "page_reference": 10,
+              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אם. אן. ג'י ברח' מרגולין נס ציונה בע\"מ",
+              "ownership_pct": 90,
+              "parent": "אאורה מחדשים את ישראל (לשעבר: אאורה ישראל - יזמות והשקעות בע״מ)",
+              "page_reference": 10,
+              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אאורה לוד יזמות בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אאורה מחדשים את ישראל (לשעבר: אאורה ישראל - יזמות והשקעות בע״מ)",
+              "page_reference": 10,
+              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אאורה תעשיות מרכז בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אאורה מחדשים את ישראל (לשעבר: אאורה ישראל - יזמות והשקעות בע״מ)",
+              "page_reference": 10,
+              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ק.מ.א מרכז העיר לוד בע\"מ",
+              "ownership_pct": 81,
+              "parent": "אאורה מחדשים את ישראל (לשעבר: אאורה ישראל - יזמות והשקעות בע״מ)",
+              "page_reference": 10,
+              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "A.S Europe Aura (אאורה אירופה)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 10,
+              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Chaplin Development S.R.L",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 10,
+              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Garrun IMCO center S.R.L (Garrun)",
+              "ownership_pct": 36.5,
+              "parent": "A.S Europe Aura (אאורה אירופה)",
+              "page_reference": 10,
+              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Sun Valley Company S.R.L",
+              "ownership_pct": 50,
+              "parent": "A.S Europe Aura (אאורה אירופה)",
+              "page_reference": 10,
+              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Spring Invest S.R.L",
+              "ownership_pct": 100,
+              "parent": "A.S Europe Aura (אאורה אירופה)",
+              "page_reference": 10,
+              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Aura Development S.R.L",
+              "ownership_pct": 100,
+              "parent": "A.S Europe Aura (אאורה אירופה)",
+              "page_reference": 10,
+              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Malibu Invest S.R.L",
+              "ownership_pct": 100,
+              "parent": "A.S Europe Aura (אאורה אירופה)",
+              "page_reference": 10,
+              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "BAS Development S.R.L",
+              "ownership_pct": 100,
+              "parent": "A.S Europe Aura (אאורה אירופה)",
+              "page_reference": 10,
+              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Aura Bahari K.F.T",
+              "ownership_pct": 50,
+              "parent": "A.S Europe Aura (אאורה אירופה)",
+              "page_reference": 10,
+              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "B Sami Hazak K.F.T",
+              "ownership_pct": 100,
+              "parent": "Aura Bahari K.F.T",
+              "page_reference": 10,
+              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פיבקו בת-ים בע\"מ",
+              "ownership_pct": 80,
+              "parent": null,
+              "page_reference": 10,
+              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אאורה מרכזים מסחריים בע\"מ",
+              "ownership_pct": 90,
+              "parent": "אאורה מחדשים את ישראל (לשעבר: אאורה ישראל - יזמות והשקעות בע״מ)",
+              "page_reference": 10,
+              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "שותפות אימאג'ין גבעתיים",
+              "ownership_pct": 70,
+              "parent": "אאורה מחדשים את ישראל (לשעבר: אאורה ישראל - יזמות והשקעות בע״מ)",
+              "page_reference": 10,
+              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "שותפות \"הקצין סילבר\" ירושלים",
+              "ownership_pct": 100,
+              "parent": "אאורה מחדשים את ישראל (לשעבר: אאורה ישראל - יזמות והשקעות בע״מ)",
+              "page_reference": 10,
+              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אאורה ניהול שותפויות בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אאורה מחדשים את ישראל (לשעבר: אאורה ישראל - יזמות והשקעות בע״מ)",
+              "page_reference": 10,
+              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מגידו י.ק. בע\"מ",
+              "ownership_pct": 77.11,
+              "parent": null,
+              "page_reference": 10,
+              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "הסטריפ 1 רצועת העיר החדשה אאורה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 10,
+              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "הסטריפ 2 רצועת העיר החדשה אאורה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 10,
+              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "אאורה ישראל",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 23,
+              "section_title": "7.1 מבנה תחום הפעילות ושינויים החלים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ס.י. אבן",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 23,
+              "section_title": "7.1 מבנה תחום הפעילות ושינויים החלים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אאורה פיננסים",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 23,
+              "section_title": "7.1 מבנה תחום הפעילות ושינויים החלים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מגידו",
+              "ownership_pct": 77,
+              "parent": null,
+              "page_reference": 23,
+              "section_title": "7.1 מבנה תחום הפעילות ושינויים החלים",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "מגידו י.ק. בע\"מ",
+              "ownership_pct": 76.8,
+              "parent": null,
+              "page_reference": 102,
+              "section_title": "1.6 חברת מגידו י.ק. בע\"מ",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אאורה מרכזים מסחריים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 103,
+              "section_title": "1.7 אאורה מרכזים מסחריים בע\"מ",
+              "table_title": null,
+              "note": "הפניקס מחזיקה ב-17.5%"
+            },
+            {
+              "name": "אאורה מחדשים את ישראל בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 103,
+              "section_title": "1.8.1 חתימה על מזכר עקרונות עם כלל חברה לביטוח בע\"מ",
+              "table_title": null,
+              "note": "חברת בת בבעלות מלאה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אאורה מחדשים את ישראל בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 103,
+              "section_title": "עיקרי פעילות החברה בתקופת הדוח ולאחריה",
+              "table_title": null,
+              "note": "חברת בת בבעלות מלאה"
+            },
+            {
+              "name": "מגידו",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 103,
+              "section_title": "דוח הדירקטוריון",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "אאורה מרכזים מסחריים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 103,
+              "section_title": "אאורה מרכזים מסחריים בע\"מ",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "אאורה אימג'ין גבעתיים, שותפות מוגבלת",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 113,
+              "section_title": "הסכמי מימון",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "חברות פרויקט 'הסטריפ רצועת העיר החדשה של נתניה'",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 114,
+              "section_title": "הסכמי מימון",
+              "table_title": null,
+              "note": "הנמצאות בבעלותה המלאה של החברה"
+            },
+            {
+              "name": "פיבקו בת ים בע\"מ",
+              "ownership_pct": 80,
+              "parent": null,
+              "page_reference": 121,
+              "section_title": "אאורה פיבקו בת-ים",
+              "table_title": null,
+              "note": "הקצאת מניות המהוות 80% מהונה המונפק והנפרע"
+            }
+          ],
+          "change_events": []
+        },
+        "0:7": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "אאורה מרכזי מסחר בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 120,
+              "section_title": "2.5.1 מידע נוסף",
+              "table_title": null,
+              "note": "מוזכרת כחברת בת"
+            },
+            {
+              "name": "פיבקו בת ים בע\"מ",
+              "ownership_pct": 80,
+              "parent": null,
+              "page_reference": 121,
+              "section_title": "2.5.1 מידע נוסף",
+              "table_title": null,
+              "note": "הקצאת מניות המהווינה 80% מהונה המונפק והנפרע"
+            },
+            {
+              "name": "ק.מ.א",
+              "ownership_pct": 81,
+              "parent": null,
+              "page_reference": 124,
+              "section_title": "2.5.1 מידע נוסף",
+              "table_title": null,
+              "note": "לאחר רכישה נוספת, החברה מחזיקה בשיעור של 81%"
+            },
+            {
+              "name": "סי אבן יזמות והשקעות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 125,
+              "section_title": "2.6.1 מידע נוסף",
+              "table_title": null,
+              "note": "חברה בת בבעלות מלאה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:8": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:9": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:10": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:11": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אאורה מחדשים את ישראל בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 202,
+              "section_title": "באור 8 - השקעות בחברות מאוחדות",
+              "table_title": "א. מידע כללי כמופיע במידע הכספי הנפרד של החברה",
+              "note": null
+            },
+            {
+              "name": "מגידו י.ק. בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 202,
+              "section_title": "באור 8 - השקעות בחברות מאוחדות",
+              "table_title": "א. מידע כללי כמופיע במידע הכספי הנפרד של החברה",
+              "note": null
+            },
+            {
+              "name": "ס.י אבן בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 202,
+              "section_title": "באור 8 - השקעות בחברות מאוחדות",
+              "table_title": "א. מידע כללי כמופיע במידע הכספי הנפרד של החברה",
+              "note": null
+            },
+            {
+              "name": "אאורה החדשה פיננסים (2013) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 202,
+              "section_title": "באור 8 - השקעות בחברות מאוחדות",
+              "table_title": "א. מידע כללי כמופיע במידע הכספי הנפרד של החברה",
+              "note": null
+            },
+            {
+              "name": "אאורה פיבקו בת ים בע\"מ",
+              "ownership_pct": 80,
+              "parent": null,
+              "page_reference": 202,
+              "section_title": "באור 8 - השקעות בחברות מאוחדות",
+              "table_title": "א. מידע כללי כמופיע במידע הכספי הנפרד של החברה",
+              "note": null
+            },
+            {
+              "name": "סטריפ 1 רצועת העיר החדשה אאורה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 202,
+              "section_title": "באור 8 - השקעות בחברות מאוחדות",
+              "table_title": "א. מידע כללי כמופיע במידע הכספי הנפרד של החברה",
+              "note": null
+            },
+            {
+              "name": "סטריפ 2 רצועת העיר החדשה אאורה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 202,
+              "section_title": "באור 8 - השקעות בחברות מאוחדות",
+              "table_title": "א. מידע כללי כמופיע במידע הכספי הנפרד של החברה",
+              "note": null
+            },
+            {
+              "name": "Aura Europe S.A.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 202,
+              "section_title": "באור 8 - השקעות בחברות מאוחדות",
+              "table_title": "א. מידע כללי כמופיע במידע הכספי הנפרד של החברה",
+              "note": null
+            },
+            {
+              "name": "Chaplin Development S.R.L.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 202,
+              "section_title": "באור 8 - השקעות בחברות מאוחדות",
+              "table_title": "א. מידע כללי כמופיע במידע הכספי הנפרד של החברה",
+              "note": null
+            },
+            {
+              "name": "איי.בי.סי – עפולה ביזיס סנטר בע\"מ",
+              "ownership_pct": 33,
+              "parent": null,
+              "page_reference": 204,
+              "section_title": "באור 9 - השקעה בחברות המטופלות לפי שיטת השווי המאזני",
+              "table_title": "א. מידע בדבר חברות המטופלות לפי שיטת השווי המאזני",
+              "note": null
+            },
+            {
+              "name": "אה-בה-ציגלה-מה בע\"מ",
+              "ownership_pct": 5.1,
+              "parent": null,
+              "page_reference": 204,
+              "section_title": "באור 9 - השקעה בחברות המטופלות לפי שיטת השווי המאזני",
+              "table_title": "א. מידע בדבר חברות המטופלות לפי שיטת השווי המאזני",
+              "note": null
+            },
+            {
+              "name": "דיורים בע''מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 204,
+              "section_title": "באור 9 - השקעה בחברות המטופלות לפי שיטת השווי המאזני",
+              "table_title": "א. מידע בדבר חברות המטופלות לפי שיטת השווי המאזני",
+              "note": null
+            },
+            {
+              "name": "אאורה אימאג'ין גבעתיים, ש.מ",
+              "ownership_pct": 70,
+              "parent": null,
+              "page_reference": 204,
+              "section_title": "באור 9 - השקעה בחברות המטופלות לפי שיטת השווי המאזני",
+              "table_title": "א. מידע בדבר חברות המטופלות לפי שיטת השווי המאזני",
+              "note": null
+            },
+            {
+              "name": "Garrun IMCO Centre S.R.L.",
+              "ownership_pct": 36.5,
+              "parent": null,
+              "page_reference": 204,
+              "section_title": "באור 9 - השקעה בחברות המטופלות לפי שיטת השווי המאזני",
+              "table_title": "א. מידע בדבר חברות המטופלות לפי שיטת השווי המאזני",
+              "note": null
+            },
+            {
+              "name": "Sun Valley Company S.R.L.",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 204,
+              "section_title": "באור 9 - השקעה בחברות המטופלות לפי שיטת השווי המאזני",
+              "table_title": "א. מידע בדבר חברות המטופלות לפי שיטת השווי המאזני",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:12": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "Garrun IMCO centre S.R.L",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 205,
+              "section_title": "באור 9 - השקעה בחברות המטופלות לפי שיטת השווי המאזני (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Sun Valley Company S.R.L",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 205,
+              "section_title": "באור 9 - השקעה בחברות המטופלות לפי שיטת השווי המאזני (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אאורה אימאג'ין גבעתיים, ש.מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 205,
+              "section_title": "באור 9 - השקעה בחברות המטופלות לפי שיטת השווי המאזני (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דיורים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 205,
+              "section_title": "באור 9 - השקעה בחברות המטופלות לפי שיטת השווי המאזני (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אאורה מרכזים מסחריים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 207,
+              "section_title": "באור 10 - נדל\"ן להשקעה בהקמה (המשך)",
+              "table_title": null,
+              "note": "חברה מאוחדת, השקעת הפניקס בשיעור 17.5%"
+            },
+            {
+              "name": "מגידו י.ק. יזום בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 209,
+              "section_title": "באור 10 - נדל\"ן להשקעה בהקמה (המשך)",
+              "table_title": null,
+              "note": "חברת בת בבעלות מלאה"
+            },
+            {
+              "name": "אאורה יורופ אס.אי",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 224,
+              "section_title": "באור 20 - מסים על הכנסה",
+              "table_title": null,
+              "note": "חברה בת"
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
   "1732715": {
     "company_id": "1820",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-12T13:16:54.371216+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 12,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-13T11:14:47.507314+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1730151": {
     "company_id": "2417",
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-12T13:16:55.347183+00:00",
+    "at": "2026-09-13T11:15:27.615677+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 15,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "אנשי העיר מירב בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 10,
+              "section_title": "1.3 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פרויקט מירב על היום בע\"מ",
+              "ownership_pct": 65,
+              "parent": "אנשי העיר מירב בע\"מ",
+              "page_reference": 10,
+              "section_title": "1.3 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אנשי העיר ניהול בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 10,
+              "section_title": "1.3 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אנשי העיר פרויקטים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 10,
+              "section_title": "1.3 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אנשי העיר ביצוע בע\"מ",
+              "ownership_pct": 49,
+              "parent": "אנשי העיר פרויקטים בע\"מ",
+              "page_reference": 10,
+              "section_title": "1.3 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אנשי העיר במודיעין 10 שותפות מוגבלת",
+              "ownership_pct": null,
+              "parent": "אנשי העיר ניהול בע\"מ ואנשי העיר פרויקטים בע\"מ",
+              "page_reference": 10,
+              "section_title": "1.3 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אנשי העיר בנקסק 11-13 שותפות מוגבלת",
+              "ownership_pct": null,
+              "parent": "אנשי העיר ניהול בע\"מ ואנשי העיר פרויקטים בע\"מ",
+              "page_reference": 10,
+              "section_title": "1.3 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אנשי העיר ברמז 21 שותפות מוגבלת",
+              "ownership_pct": null,
+              "parent": "אנשי העיר ניהול בע\"מ ואנשי העיר פרויקטים בע\"מ",
+              "page_reference": 10,
+              "section_title": "1.3 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אנשי העיר ביכורן יעקב 12 שותפות מוגבלת",
+              "ownership_pct": null,
+              "parent": "אנשי העיר ניהול בע\"מ ואנשי העיר פרויקטים בע\"מ",
+              "page_reference": 10,
+              "section_title": "1.3 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אנשי העיר בז'בוטינסקי 146 שותפות מוגבלת",
+              "ownership_pct": null,
+              "parent": "אנשי העיר ניהול בע\"מ ואנשי העיר פרויקטים בע\"מ",
+              "page_reference": 10,
+              "section_title": "1.3 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אנשי העיר בעמוס 10-12 שותפות מוגבלת",
+              "ownership_pct": null,
+              "parent": "אנשי העיר ניהול בע\"מ ואנשי העיר פרויקטים בע\"מ",
+              "page_reference": 10,
+              "section_title": "1.3 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אנשי העיר ברמז 19 שותפות מוגבלת",
+              "ownership_pct": null,
+              "parent": "אנשי העיר ניהול בע\"מ ואנשי העיר פרויקטים בע\"מ",
+              "page_reference": 10,
+              "section_title": "1.3 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אנשי העיר בסוקולוב 13 שותפות מוגבלת",
+              "ownership_pct": null,
+              "parent": "אנשי העיר ניהול בע\"מ ואנשי העיר פרויקטים בע\"מ",
+              "page_reference": 10,
+              "section_title": "1.3 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אנשי העיר בבצלאל 1 שותפות מוגבלת",
+              "ownership_pct": null,
+              "parent": "אנשי העיר ניהול בע\"מ ואנשי העיר פרויקטים בע\"מ",
+              "page_reference": 10,
+              "section_title": "1.3 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "אנשי העיר ביצוע בע\"מ",
+              "ownership_pct": 49,
+              "parent": "חברת הבת",
+              "page_reference": 21,
+              "section_title": "3.1 מבנה תחום הפעילות והשינויים החלים בו",
+              "table_title": null,
+              "note": "מוחזקת באמצעות חברת בת בבעלות ושליטה מלאה של החברה"
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
@@ -3836,7 +3323,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-12T13:17:28.189283+00:00",
+    "at": "2026-09-13T11:15:40.653872+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -3848,25 +3335,18 @@
   },
   "1729031": {
     "company_id": "1644",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-12T13:16:54.856972+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 15,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-13T11:09:02.011024+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1725670": {
     "company_id": "1891",
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-12T13:16:58.835162+00:00",
+    "at": "2026-09-13T11:15:44.821508+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -3881,7 +3361,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-12T13:17:01.127151+00:00",
+    "at": "2026-09-13T11:15:46.889553+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -3896,7 +3376,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-12T13:17:00.237842+00:00",
+    "at": "2026-09-13T11:15:45.831337+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -3911,7 +3391,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-12T13:17:02.907545+00:00",
+    "at": "2026-09-13T11:15:48.737401+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -3926,7 +3406,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-12T13:17:03.478721+00:00",
+    "at": "2026-09-13T11:15:49.215504+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -3941,7 +3421,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-12T13:17:02.231340+00:00",
+    "at": "2026-09-13T11:15:47.966898+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
