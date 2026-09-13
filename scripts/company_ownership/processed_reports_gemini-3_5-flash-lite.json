@@ -1586,172 +1586,85 @@
   },
   "1735681": {
     "company_id": "1502",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-13T10:05:34.024486+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1728468": {
+    "company_id": "1130",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-13T10:08:50.907542+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1730519": {
+    "company_id": "1902",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-13T10:08:26.884255+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1732691": {
+    "company_id": "1115",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-13T10:10:35.590666+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1728078": {
+    "company_id": "1403",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-13T10:12:19.770636+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1732753": {
+    "company_id": "1933",
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-12T13:16:27.787819+00:00",
+    "at": "2026-09-13T10:14:29.626794+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
-      "total": 15,
+      "total": 10,
       "done": {
         "0:0": {
           "report_format": "israeli_periodic",
           "document_type": "ownership_snapshot",
           "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "Bastwick Investments Limited",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 14,
-              "section_title": "תרשים מבנה החזקות הקבוצה למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Rusinvest Limited",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 14,
-              "section_title": "תרשים מבנה החזקות הקבוצה למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Irmasinvest Limited",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 14,
-              "section_title": "תרשים מבנה החזקות הקבוצה למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Parnas Investment LLC",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 14,
-              "section_title": "תרשים מבנה החזקות הקבוצה למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Ers Investment LLC",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 14,
-              "section_title": "תרשים מבנה החזקות הקבוצה למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Avtoprioritet P-LLC",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 14,
-              "section_title": "תרשים מבנה החזקות הקבוצה למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Dumitrola Holding Limited",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 14,
-              "section_title": "תרשים מבנה החזקות הקבוצה למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "BDS Real Estate Services Ltd",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 14,
-              "section_title": "תרשים מבנה החזקות הקבוצה למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Petra-9 LLC",
-              "ownership_pct": 100,
-              "parent": "Ers Investment LLC",
-              "page_reference": 14,
-              "section_title": "תרשים מבנה החזקות הקבוצה למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Autoprioritet LLC",
-              "ownership_pct": 100,
-              "parent": "Ers Investment LLC",
-              "page_reference": 14,
-              "section_title": "תרשים מבנה החזקות הקבוצה למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Ligas LLC",
-              "ownership_pct": 100,
-              "parent": "Ers Investment LLC",
-              "page_reference": 14,
-              "section_title": "תרשים מבנה החזקות הקבוצה למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "CreativeCom LLC",
-              "ownership_pct": 100,
-              "parent": "Ers Investment LLC",
-              "page_reference": 14,
-              "section_title": "תרשים מבנה החזקות הקבוצה למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Tamir LLC",
-              "ownership_pct": 100,
-              "parent": "Dumitrola Holding Limited",
-              "page_reference": 14,
-              "section_title": "תרשים מבנה החזקות הקבוצה למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Soshedary King LLC",
-              "ownership_pct": 100,
-              "parent": "Dumitrola Holding Limited",
-              "page_reference": 14,
-              "section_title": "תרשים מבנה החזקות הקבוצה למועד הדוח",
-              "table_title": null,
-              "note": null
-            }
-          ],
+          "subsidiaries": [],
           "change_events": []
         },
         "0:1": {
           "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "CreativeCom",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 34,
-              "section_title": "3.3.1 פרויקט Western Residence",
-              "table_title": null,
-              "note": "חברה בבעלות מלאה"
-            }
-          ],
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
           "change_events": []
         },
         "0:2": {
           "report_format": "israeli_periodic",
           "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "Buff Technologies Inc.",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 50,
+              "section_title": "14.5 שעבודים",
+              "table_title": null,
+              "note": "חברה בת מאוגדת בארה\"ב"
+            }
+          ],
           "change_events": []
         },
         "0:3": {
@@ -1765,567 +1678,76 @@
           "report_format": "israeli_periodic",
           "document_type": "ownership_snapshot",
           "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "Avtoprioritet L.L.C.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 73,
-              "section_title": "9.24 גילוי למחזיקי ניירות הערך שהונפקו במסגרת תכנית הסדר 2021",
-              "table_title": "טבלת נכסים והתחייבויות (באלפי דולר)",
-              "note": null
-            },
-            {
-              "name": "Petra-8 L.L.C.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 73,
-              "section_title": "9.24 גילוי למחזיקי ניירות הערך שהונפקו במסגרת תכנית הסדר 2021",
-              "table_title": "טבלת נכסים והתחייבויות (באלפי דולר)",
-              "note": null
-            },
-            {
-              "name": "Liga-45 L.L.C.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 73,
-              "section_title": "9.24 גילוי למחזיקי ניירות הערך שהונפקו במסגרת תכנית הסדר 2021",
-              "table_title": "טבלת נכסים והתחייבויות (באלפי דולר)",
-              "note": null
-            },
-            {
-              "name": "CreativeCom L.L.C.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 73,
-              "section_title": "9.24 גילוי למחזיקי ניירות הערך שהונפקו במסגרת תכנית הסדר 2021",
-              "table_title": "טבלת נכסים והתחייבויות (באלפי דולר)",
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:5": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "Saratov Logistic",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 86,
-              "section_title": "נדל\"ן להשקעה בהקמה",
-              "table_title": null,
-              "note": "נכס נדל\"ן להשקעה בהקמה"
-            }
-          ],
+          "subsidiaries": [],
           "change_events": []
         },
         "0:6": {
           "report_format": "israeli_periodic",
           "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "Avtoprioritet LLC",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 122,
-              "section_title": "באור 1 - כללי",
-              "table_title": null,
-              "note": "מחזיקה בפרויקט Century 8"
-            },
-            {
-              "name": "פטרה",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 119,
-              "section_title": "באור 1 - כללי",
-              "table_title": null,
-              "note": "חברת פרויקט"
-            },
-            {
-              "name": "אווטו",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 119,
-              "section_title": "באור 1 - כללי",
-              "table_title": null,
-              "note": "חברת פרויקט"
-            },
-            {
-              "name": "קריאייטיבקום",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 119,
-              "section_title": "באור 1 - כללי",
-              "table_title": null,
-              "note": "חברת פרויקט"
-            }
-          ],
+          "as_of_date": null,
+          "subsidiaries": [],
           "change_events": []
         },
         "0:7": {
           "report_format": "israeli_periodic",
           "document_type": "ownership_snapshot",
           "as_of_date": "2025-12-31",
-          "subsidiaries": [],
+          "subsidiaries": [
+            {
+              "name": "Buff Technologies Inc.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 135,
+              "section_title": "תקנה 13 - רווחים והפסדים של חברות בת וחברות כלולות מהותית של החברה והכנסות החברה מהן בשנת 2025",
+              "table_title": null,
+              "note": "החברה מחזיקה במלוא הון המניות המונפק והנפרע"
+            }
+          ],
           "change_events": []
         },
         "0:8": {
           "report_format": "israeli_periodic",
           "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "AVTOPRIORITET LLC",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 143,
-              "section_title": "באור 22 - מידע תמציתי על חברות משועבדות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "PETRA-8 LLC",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 147,
-              "section_title": "באור 22 - מידע תמציתי על חברות משועבדות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "BOUTEENE INVESTMENTS LIMITED",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 152,
-              "section_title": "באור 22 - מידע תמציתי על חברות משועבדות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "BOUTONNE INVESTMENT LIMITED",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 154,
-              "section_title": "באור 22 - מידע תמציתי על חברות משועבדות",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:9": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:10": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "Petra-8 L.I.C.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 178,
-              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות קשורות לתאריך המאזן (באלפי דולר)",
-              "note": null
-            },
-            {
-              "name": "CreativeCom L.I.C.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 178,
-              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות קשורות לתאריך המאזן (באלפי דולר)",
-              "note": null
-            },
-            {
-              "name": "IRS Real Estate Services Ltd.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 178,
-              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות קשורות לתאריך המאזן (באלפי דולר)",
-              "note": null
-            },
-            {
-              "name": "Dunchoille Holdings Limited.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 178,
-              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות קשורות לתאריך המאזן (באלפי דולר)",
-              "note": null
-            },
-            {
-              "name": "Inverton Enterprises Limited",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 178,
-              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות קשורות לתאריך המאזן (באלפי דולר)",
-              "note": null
-            },
-            {
-              "name": "Mall Mortgage Co. Limited.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 179,
-              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות קשורות לתאריך המאזן (באלפי דולר)",
-              "note": null
-            },
-            {
-              "name": "Liga-45 L.I.C.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 179,
-              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות קשורות לתאריך המאזן (באלפי דולר)",
-              "note": null
-            },
-            {
-              "name": "Tamiz L.I.C.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 179,
-              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות קשורות לתאריך המאזן (באלפי דולר)",
-              "note": null
-            },
-            {
-              "name": "Avtoprioritet L.I.C.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 179,
-              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות קשורות לתאריך המאזן (באלפי דולר)",
-              "note": null
-            },
-            {
-              "name": "Rymar Holding S.A.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 179,
-              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות קשורות לתאריך המאזן (באלפי דולר)",
-              "note": null
-            },
-            {
-              "name": "Boutenne Investments Ltd.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 179,
-              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות קשורות לתאריך המאזן (באלפי דולר)",
-              "note": null
-            },
-            {
-              "name": "Boutonne Investments Ltd.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 179,
-              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות קשורות לתאריך המאזן (באלפי דולר)",
-              "note": null
-            },
-            {
-              "name": "Pareus Investment LLC.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 179,
-              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות קשורות לתאריך המאזן (באלפי דולר)",
-              "note": null
-            },
-            {
-              "name": "Arsenous FZ-LLC",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 179,
-              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות קשורות לתאריך המאזן (באלפי דולר)",
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:11": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
+          "as_of_date": null,
           "subsidiaries": [],
           "change_events": []
         },
         "1:0": {
           "report_format": "other",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "Petra-8 LLC",
-              "ownership_pct": null,
-              "parent": "Mirland Development Corporation PLC",
-              "page_reference": 3,
-              "section_title": "1 INSTRUCTIONS",
-              "table_title": null,
-              "note": "Russian subsidiary"
-            }
-          ],
-          "change_events": []
-        },
-        "1:1": {
-          "report_format": "other",
           "document_type": "unknown",
           "as_of_date": "2025-12-31",
           "subsidiaries": [],
           "change_events": []
         }
       },
-      "attempts": {}
-    }
-  },
-  "1728468": {
-    "company_id": "1130",
-    "status": "partial",
-    "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-12T13:16:28.302274+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 11,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1730519": {
-    "company_id": "1902",
-    "status": "partial",
-    "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-12T13:16:28.909290+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 10,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1732691": {
-    "company_id": "1115",
-    "status": "partial",
-    "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-12T13:16:30.027558+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 10,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1728078": {
-    "company_id": "1403",
-    "status": "partial",
-    "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-12T13:16:29.525071+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 13,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1732753": {
-    "company_id": "1933",
-    "status": "partial",
-    "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-12T13:16:38.641785+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 10,
-      "done": {},
-      "attempts": {}
+      "attempts": {
+        "0:5": 1
+      }
     }
   },
   "1731746": {
     "company_id": "753",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-12T13:16:30.659169+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 12,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-13T10:13:40.910940+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1749257": {
     "company_id": "2569",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-12T13:16:36.630340+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 11,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "וולטה ניהול סולארי בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 7,
-              "section_title": "תרשים החזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "וולטה אנרגיות מתחדשות",
-              "ownership_pct": 100,
-              "parent": "וולטה ניהול סולארי בע\"מ",
-              "page_reference": 7,
-              "section_title": "תרשים החזקות",
-              "table_title": null,
-              "note": "שותפות הבת"
-            },
-            {
-              "name": "VOLTA SOLAR SPAIN SL",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 7,
-              "section_title": "תרשים החזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "א.ד.אף - וולטה גי.פי בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 7,
-              "section_title": "תרשים החזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "א.ד.אף - וולטה אנרגיות מתחדשות, שותפות מוגבלת",
-              "ownership_pct": 0.01,
-              "parent": "א.ד.אף - וולטה גי.פי בע\"מ",
-              "page_reference": 7,
-              "section_title": "תרשים החזקות",
-              "table_title": null,
-              "note": "שותפות VOLTA-EDF"
-            },
-            {
-              "name": "א.ד.אף - וולטה גי.פי. 2 בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 7,
-              "section_title": "תרשים החזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "א.ד.אף - וולטה אנרגיות מתחדשות 2, שותפות מוגבלת",
-              "ownership_pct": 0.01,
-              "parent": "א.ד.אף - וולטה גי.פי. 2 בע\"מ",
-              "page_reference": 7,
-              "section_title": "תרשים החזקות",
-              "table_title": null,
-              "note": "שותפות 2 VOLTA-EDF"
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "שותפות VOLTA-EDF",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 43,
-              "section_title": "10.12.1 שותפות VOLTA-EDF",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "שותפות VOLTA-EDF 2",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 45,
-              "section_title": "10.12.2 שותפות VOLTA-EDF 2",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "וולטה סולאר ספרד",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 50,
-              "section_title": "10.13.4 פעילות בספרד",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-13T10:07:00.467713+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1733098": {
     "company_id": "235",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-12T13:16:37.645024+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 13,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-13T10:17:47.387563+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731495": {
     "company_id": "290",
@@ -2347,14 +1769,276 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-12T13:16:37.075968+00:00",
+    "at": "2026-09-13T10:15:49.790520+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 11,
-      "done": {},
-      "attempts": {}
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "Cleveland Diagnostics Inc. (CD'X)",
+              "ownership_pct": 4.06,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "פעילות החברה ותיאור התפתחות עסקיה",
+              "table_title": null,
+              "note": "בהון: 4.06%, בהצבעה: 4.06%, בדילול מלא: 3.19%"
+            },
+            {
+              "name": "קארדיאקסנס בע\"מ",
+              "ownership_pct": 4.07,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "פעילות החברה ותיאור התפתחות עסקיה",
+              "table_title": null,
+              "note": "בהון: 4.07%, בהצבעה: 5.76%, בדילול מלא: 5.76%"
+            },
+            {
+              "name": "אי.אפ.איי הנדסה לכל בע\"מ (E.F.A)",
+              "ownership_pct": 3.85,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "פעילות החברה ותיאור התפתחות עסקיה",
+              "table_title": null,
+              "note": "בהון: 3.85%, בהצבעה: 3.85%, בדילול מלא: 3.55%"
+            },
+            {
+              "name": "נרוויו בע\"מ",
+              "ownership_pct": 4.29,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "פעילות החברה ותיאור התפתחות עסקיה",
+              "table_title": null,
+              "note": "בהון: 4.29%, בהצבעה: 4.29%, בדילול מלא: 3.61%"
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "קארדיאקסנס",
+              "ownership_pct": 4.07,
+              "parent": null,
+              "page_reference": 50,
+              "section_title": "9.1 כללי",
+              "table_title": null,
+              "note": "בדילול מלא"
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "קארדיאקסנס",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 70,
+              "section_title": null,
+              "table_title": null,
+              "note": "החזקות החברה בקארדיאקסנס הוערכו לפי שווי הוגן של כ-461 אלפי דולר נכון ליום 31 בדצמבר 2025"
+            }
+          ],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "חיות טוביאס פיתוח והשקעות בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 70,
+              "section_title": "10.7.2",
+              "table_title": null,
+              "note": "מחצית ממניותיה מוחזקות על ידי החברה"
+            },
+            {
+              "name": "X'CD",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 77,
+              "section_title": "1.3",
+              "table_title": null,
+              "note": "חברת פורטפוליו מוחזקת"
+            },
+            {
+              "name": "קארדיאקסנס",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 79,
+              "section_title": "1.7.3 חברת קארדיאקסנס",
+              "table_title": null,
+              "note": "חברת פורטפוליו מוחזקת"
+            },
+            {
+              "name": "EFA",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 79,
+              "section_title": "1.7.4 חברת EFA",
+              "table_title": null,
+              "note": "חברת פורטפוליו מוחזקת"
+            },
+            {
+              "name": "נרוויו",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 80,
+              "section_title": "1.7.5 חברת נרוויו",
+              "table_title": null,
+              "note": "חברת פורטפוליו מוחזקת"
+            }
+          ],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "חיות טוביאס פיתוח והשקעות בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 99,
+              "section_title": "באור 1 - כללי",
+              "table_title": null,
+              "note": "הוחזקה בעקיפין באמצעות חברה מוחזקת שאינה פעילה; החברה אינה פעילה וההשקעה בה הופחתה במלואה ב-2019"
+            }
+          ],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "CD'X",
+              "ownership_pct": 4.06,
+              "parent": null,
+              "page_reference": 110,
+              "section_title": "באור 7 - השקעות בחברות פורטפוליו",
+              "table_title": "הרכב ההשקעה בחברות פורטפוליו לתאריכי הדיווח:",
+              "note": null
+            },
+            {
+              "name": "קארדיאקסנס בע\"מ",
+              "ownership_pct": 5.76,
+              "parent": null,
+              "page_reference": 110,
+              "section_title": "באור 7 - השקעות בחברות פורטפוליו",
+              "table_title": "הרכב ההשקעה בחברות פורטפוליו לתאריכי הדיווח:",
+              "note": null
+            },
+            {
+              "name": "EFA",
+              "ownership_pct": 4.57,
+              "parent": null,
+              "page_reference": 110,
+              "section_title": "באור 7 - השקעות בחברות פורטפוליו",
+              "table_title": "הרכב ההשקעה בחברות פורטפוליו לתאריכי הדיווח:",
+              "note": null
+            },
+            {
+              "name": "נרוויו",
+              "ownership_pct": 4.29,
+              "parent": null,
+              "page_reference": 110,
+              "section_title": "באור 7 - השקעות בחברות פורטפוליו",
+              "table_title": "הרכב ההשקעה בחברות פורטפוליו לתאריכי הדיווח:",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:7": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "חיות טוביאס פיתוח והשקעות בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 120,
+              "section_title": "באור 10 - התחייבויות תלויות והתקשרויות",
+              "table_title": null,
+              "note": "שמחצית ממניותיה מוחזקות על ידי החברה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:8": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "1:0": {
+          "report_format": "other",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "Cleveland Diagnostics, Inc",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "2.2 ממצאים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Cardiacsense LTD",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "2.2 ממצאים",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "1:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "קרדיאקסנס",
+              "ownership_pct": null,
+              "parent": "מרחביה",
+              "page_reference": 37,
+              "section_title": "5.1 תיאור קרדיאקסנס",
+              "table_title": null,
+              "note": "החזקת מניות בכורה מסוג A ו-B"
+            }
+          ],
+          "change_events": []
+        }
+      },
+      "attempts": {
+        "0:3": 1
+      }
     }
   },
   "1736407": {
@@ -2362,13 +2046,312 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-12T13:16:38.201812+00:00",
+    "at": "2026-09-13T10:17:41.536555+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 11,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אירודרום בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 9,
+              "section_title": "2.1 תרשים מבנה החזקות של החברה",
+              "table_title": null,
+              "note": "חברה פרטית בבעלות מלאה של החברה שהתאגדה בישראל ומרכזת את פעילות החברה בשוק הכטב\"מ הביטחוני."
+            },
+            {
+              "name": "אירודרום מערכות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 9,
+              "section_title": "2.1 תרשים מבנה החזקות של החברה",
+              "table_title": null,
+              "note": "חברה פרטית בבעלות מלאה של החברה שהתאגדה בישראל ועוסקת בשיווק ומכירה של מערכות כטב\"מים ללקוחות זרים."
+            },
+            {
+              "name": "אס.ג'י.סי העברת ידע בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 9,
+              "section_title": "2.1 תרשים מבנה החזקות של החברה",
+              "table_title": null,
+              "note": "חברה פרטית בבעלות מלאה של החברה שהתאגדה בישראל ומרכזת את פעילות החברה בשוק הכטב\"מ האזרחי."
+            },
+            {
+              "name": "אף.טי פתרונות אוויריים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 9,
+              "section_title": "2.1 תרשים מבנה החזקות של החברה",
+              "table_title": null,
+              "note": "חברה פרטית ישראלית בבעלות מלאה של החברה, העוסקת בניהול תהליכי העברת ידע וטכנולוגיה בתחומי הייצור עבור כטב\"מים ומערכות צבאיות מורכבות אחרות."
+            },
+            {
+              "name": "BLUEBAY TRADE PTE. LTD.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 9,
+              "section_title": "2.1 תרשים מבנה החזקות של החברה",
+              "table_title": null,
+              "note": "חברה פרטית סינגפורית בבעלותה המלאה של החברה, העוסקת בשיווק ללקוחות זרים מחו״ל וכן בניהול רכש והצטיידות עבור הקבוצה."
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "אירודרום בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 19,
+              "section_title": "מידע כללי על תחום הפעילות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "FlyTech",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 19,
+              "section_title": "מידע כללי על תחום הפעילות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "BLUEBAY",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 22,
+              "section_title": "שינויים במערך הספקים וחומרי הגלם לתחום הפעילות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "SGC",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 30,
+              "section_title": "מידע כללי על תחום הפעילות",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "SGC",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 35,
+              "section_title": "6.16 עונתיות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אירודרום בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 40,
+              "section_title": "7.8 מגבלות, חקיקה, תקינה ואילוצים מיוחדים החלים על תחומי הפעילות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אף.טי. פתרונות אוויריים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 43,
+              "section_title": "7.9.3 הסכם מסגרת נתיבי תחבורה עירוניים להסעת המונים (\"נת\"ע\")",
+              "table_title": null,
+              "note": "חברה בת בבעלות מלאה"
+            },
+            {
+              "name": "אירודרום מערכות בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 47,
+              "section_title": "7.10.4",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אס.ג'י.סי העברת ידע בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 73,
+              "section_title": "פרטים אודות הערכות שווי מהותיות מאוד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אף.טי.פתרונות אוויריים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 73,
+              "section_title": "פרטים אודות הערכות שווי מהותיות מאוד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אירודרום מערכות בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 86,
+              "section_title": "ביאור 1 - כללי",
+              "table_title": null,
+              "note": "חברת בת בבעלות מלאה"
+            },
+            {
+              "name": "BLUEBAY TRADE PTE. LTD.",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 86,
+              "section_title": "ביאור 1 - כללי",
+              "table_title": null,
+              "note": "בבעלות מלאה של החברה"
+            },
+            {
+              "name": "אן. פי. או מערכות בע\"מ",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 86,
+              "section_title": "ביאור 1 - כללי",
+              "table_title": null,
+              "note": "הסכם אופציה לרכישת 51% ממניות החברה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "אס ג'י סי העברת ידע בע\"מ (SGC)",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 86,
+              "section_title": "ביאור 1 - כללי: א. תיאור כללי של הקבוצה ופעילותה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אירודרום מערכות בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 86,
+              "section_title": "ביאור 1 - כללי: א. תיאור כללי של הקבוצה ופעילותה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Aerial T.F Solutions Ltd (FlyTech / פלייטק)",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 86,
+              "section_title": "ביאור 1 - כללי: א. תיאור כללי של הקבוצה ופעילותה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "BLUEBAY TRADE PTE. LTD.",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 86,
+              "section_title": "ביאור 1 - כללי: א. תיאור כללי של הקבוצה ופעילותה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אן. פי. או מערכות בע\"מ (NPO)",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 86,
+              "section_title": "ביאור 1 - כללי: א. תיאור כללי של הקבוצה ופעילותה",
+              "table_title": null,
+              "note": "הסכם אופציה לרכישת 51% ממניות"
+            },
+            {
+              "name": "פלייקום נטוורקס בע\"מ (פלייקום)",
+              "ownership_pct": 2.25,
+              "parent": "FlyTech",
+              "page_reference": 96,
+              "section_title": "ביאור 4 - מכשירים פיננסיים וניהול סיכונים פיננסיים",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אירודרום בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 122,
+              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בת מהותיות ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "אירודרום מערכות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 122,
+              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בת מהותיות ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "אס.ג'י.סי העברת ידע בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 122,
+              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בת מהותיות ליום 31 בדצמבר 2025",
+              "note": null
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
