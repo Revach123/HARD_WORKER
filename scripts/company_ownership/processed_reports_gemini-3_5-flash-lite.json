@@ -1626,104 +1626,11 @@
   },
   "1732753": {
     "company_id": "1933",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-13T10:14:29.626794+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 10,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "Buff Technologies Inc.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 50,
-              "section_title": "14.5 שעבודים",
-              "table_title": null,
-              "note": "חברה בת מאוגדת בארה\"ב"
-            }
-          ],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:6": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:7": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "Buff Technologies Inc.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 135,
-              "section_title": "תקנה 13 - רווחים והפסדים של חברות בת וחברות כלולות מהותית של החברה והכנסות החברה מהן בשנת 2025",
-              "table_title": null,
-              "note": "החברה מחזיקה במלוא הון המניות המונפק והנפרע"
-            }
-          ],
-          "change_events": []
-        },
-        "0:8": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "1:0": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {
-        "0:5": 1
-      }
-    }
+    "attempts": 1,
+    "at": "2026-09-13T13:59:06.636551+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731746": {
     "company_id": "753",
@@ -1759,280 +1666,11 @@
   },
   "1733029": {
     "company_id": "257",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-13T10:15:49.790520+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 11,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "Cleveland Diagnostics Inc. (CD'X)",
-              "ownership_pct": 4.06,
-              "parent": null,
-              "page_reference": 5,
-              "section_title": "פעילות החברה ותיאור התפתחות עסקיה",
-              "table_title": null,
-              "note": "בהון: 4.06%, בהצבעה: 4.06%, בדילול מלא: 3.19%"
-            },
-            {
-              "name": "קארדיאקסנס בע\"מ",
-              "ownership_pct": 4.07,
-              "parent": null,
-              "page_reference": 5,
-              "section_title": "פעילות החברה ותיאור התפתחות עסקיה",
-              "table_title": null,
-              "note": "בהון: 4.07%, בהצבעה: 5.76%, בדילול מלא: 5.76%"
-            },
-            {
-              "name": "אי.אפ.איי הנדסה לכל בע\"מ (E.F.A)",
-              "ownership_pct": 3.85,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "פעילות החברה ותיאור התפתחות עסקיה",
-              "table_title": null,
-              "note": "בהון: 3.85%, בהצבעה: 3.85%, בדילול מלא: 3.55%"
-            },
-            {
-              "name": "נרוויו בע\"מ",
-              "ownership_pct": 4.29,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "פעילות החברה ותיאור התפתחות עסקיה",
-              "table_title": null,
-              "note": "בהון: 4.29%, בהצבעה: 4.29%, בדילול מלא: 3.61%"
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "קארדיאקסנס",
-              "ownership_pct": 4.07,
-              "parent": null,
-              "page_reference": 50,
-              "section_title": "9.1 כללי",
-              "table_title": null,
-              "note": "בדילול מלא"
-            }
-          ],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "קארדיאקסנס",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 70,
-              "section_title": null,
-              "table_title": null,
-              "note": "החזקות החברה בקארדיאקסנס הוערכו לפי שווי הוגן של כ-461 אלפי דולר נכון ליום 31 בדצמבר 2025"
-            }
-          ],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "חיות טוביאס פיתוח והשקעות בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 70,
-              "section_title": "10.7.2",
-              "table_title": null,
-              "note": "מחצית ממניותיה מוחזקות על ידי החברה"
-            },
-            {
-              "name": "X'CD",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 77,
-              "section_title": "1.3",
-              "table_title": null,
-              "note": "חברת פורטפוליו מוחזקת"
-            },
-            {
-              "name": "קארדיאקסנס",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 79,
-              "section_title": "1.7.3 חברת קארדיאקסנס",
-              "table_title": null,
-              "note": "חברת פורטפוליו מוחזקת"
-            },
-            {
-              "name": "EFA",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 79,
-              "section_title": "1.7.4 חברת EFA",
-              "table_title": null,
-              "note": "חברת פורטפוליו מוחזקת"
-            },
-            {
-              "name": "נרוויו",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 80,
-              "section_title": "1.7.5 חברת נרוויו",
-              "table_title": null,
-              "note": "חברת פורטפוליו מוחזקת"
-            }
-          ],
-          "change_events": []
-        },
-        "0:5": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "חיות טוביאס פיתוח והשקעות בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 99,
-              "section_title": "באור 1 - כללי",
-              "table_title": null,
-              "note": "הוחזקה בעקיפין באמצעות חברה מוחזקת שאינה פעילה; החברה אינה פעילה וההשקעה בה הופחתה במלואה ב-2019"
-            }
-          ],
-          "change_events": []
-        },
-        "0:6": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "CD'X",
-              "ownership_pct": 4.06,
-              "parent": null,
-              "page_reference": 110,
-              "section_title": "באור 7 - השקעות בחברות פורטפוליו",
-              "table_title": "הרכב ההשקעה בחברות פורטפוליו לתאריכי הדיווח:",
-              "note": null
-            },
-            {
-              "name": "קארדיאקסנס בע\"מ",
-              "ownership_pct": 5.76,
-              "parent": null,
-              "page_reference": 110,
-              "section_title": "באור 7 - השקעות בחברות פורטפוליו",
-              "table_title": "הרכב ההשקעה בחברות פורטפוליו לתאריכי הדיווח:",
-              "note": null
-            },
-            {
-              "name": "EFA",
-              "ownership_pct": 4.57,
-              "parent": null,
-              "page_reference": 110,
-              "section_title": "באור 7 - השקעות בחברות פורטפוליו",
-              "table_title": "הרכב ההשקעה בחברות פורטפוליו לתאריכי הדיווח:",
-              "note": null
-            },
-            {
-              "name": "נרוויו",
-              "ownership_pct": 4.29,
-              "parent": null,
-              "page_reference": 110,
-              "section_title": "באור 7 - השקעות בחברות פורטפוליו",
-              "table_title": "הרכב ההשקעה בחברות פורטפוליו לתאריכי הדיווח:",
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:7": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "חיות טוביאס פיתוח והשקעות בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 120,
-              "section_title": "באור 10 - התחייבויות תלויות והתקשרויות",
-              "table_title": null,
-              "note": "שמחצית ממניותיה מוחזקות על ידי החברה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:8": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "1:0": {
-          "report_format": "other",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "Cleveland Diagnostics, Inc",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "2.2 ממצאים",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Cardiacsense LTD",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "2.2 ממצאים",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "1:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "קרדיאקסנס",
-              "ownership_pct": null,
-              "parent": "מרחביה",
-              "page_reference": 37,
-              "section_title": "5.1 תיאור קרדיאקסנס",
-              "table_title": null,
-              "note": "החזקת מניות בכורה מסוג A ו-B"
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {
-        "0:3": 1
-      }
-    }
+    "attempts": 1,
+    "at": "2026-09-13T13:59:06.537821+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1736407": {
     "company_id": "363",
@@ -2449,7 +2087,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-13T11:15:40.211606+00:00",
+    "at": "2026-09-13T13:59:29.871878+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -3138,6 +2776,275 @@
             }
           ],
           "change_events": []
+        },
+        "0:13": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אאורה מחדשים את ישראל בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 239,
+              "section_title": "רשימת חברות מוחזקות עיקריות",
+              "table_title": "רשימת חברות מוחזקות עיקריות",
+              "note": null
+            },
+            {
+              "name": "ס.י אבן בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 239,
+              "section_title": "רשימת חברות מוחזקות עיקריות",
+              "table_title": "רשימת חברות מוחזקות עיקריות",
+              "note": null
+            },
+            {
+              "name": "אאורה החדשה פיננסים (2013) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 239,
+              "section_title": "רשימת חברות מוחזקות עיקריות",
+              "table_title": "רשימת חברות מוחזקות עיקריות",
+              "note": null
+            },
+            {
+              "name": "Aura Europe S.A.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 239,
+              "section_title": "רשימת חברות מוחזקות עיקריות",
+              "table_title": "רשימת חברות מוחזקות עיקריות",
+              "note": null
+            },
+            {
+              "name": "Chaplin Development S.R.L.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 239,
+              "section_title": "רשימת חברות מוחזקות עיקריות",
+              "table_title": "רשימת חברות מוחזקות עיקריות",
+              "note": null
+            },
+            {
+              "name": "פיבקו בת ים בע\"מ",
+              "ownership_pct": 80,
+              "parent": null,
+              "page_reference": 239,
+              "section_title": "רשימת חברות מוחזקות עיקריות",
+              "table_title": "רשימת חברות מוחזקות עיקריות",
+              "note": null
+            },
+            {
+              "name": "מגידו י.ק. בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 239,
+              "section_title": "רשימת חברות מוחזקות עיקריות",
+              "table_title": "רשימת חברות מוחזקות עיקריות",
+              "note": null
+            },
+            {
+              "name": "הסטריפ 1 רצועת העיר החדשה אאורה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 239,
+              "section_title": "רשימת חברות מוחזקות עיקריות",
+              "table_title": "רשימת חברות מוחזקות עיקריות",
+              "note": null
+            },
+            {
+              "name": "הסטריפ 2 רצועת העיר החדשה אאורה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 239,
+              "section_title": "רשימת חברות מוחזקות עיקריות",
+              "table_title": "רשימת חברות מוחזקות עיקריות",
+              "note": null
+            },
+            {
+              "name": "Garrun IMCO Centre S.R.L",
+              "ownership_pct": 36.5,
+              "parent": "Aura Europe S.A.",
+              "page_reference": 239,
+              "section_title": "רשימת חברות מוחזקות עיקריות",
+              "table_title": "רשימת חברות מוחזקות עיקריות",
+              "note": null
+            },
+            {
+              "name": "Bas Development S.R.L",
+              "ownership_pct": 100,
+              "parent": "Aura Europe S.A.",
+              "page_reference": 239,
+              "section_title": "רשימת חברות מוחזקות עיקריות",
+              "table_title": "רשימת חברות מוחזקות עיקריות",
+              "note": null
+            },
+            {
+              "name": "Malibu Invest S.R.L",
+              "ownership_pct": 100,
+              "parent": "Aura Europe S.A.",
+              "page_reference": 239,
+              "section_title": "רשימת חברות מוחזקות עיקריות",
+              "table_title": "רשימת חברות מוחזקות עיקריות",
+              "note": null
+            },
+            {
+              "name": "Sun Valley Company S.R.L",
+              "ownership_pct": 50,
+              "parent": "Aura Europe S.A.",
+              "page_reference": 239,
+              "section_title": "רשימת חברות מוחזקות עיקריות",
+              "table_title": "רשימת חברות מוחזקות עיקריות",
+              "note": null
+            },
+            {
+              "name": "Spring Invest S.R.L",
+              "ownership_pct": 100,
+              "parent": "Aura Europe S.A.",
+              "page_reference": 239,
+              "section_title": "רשימת חברות מוחזקות עיקריות",
+              "table_title": "רשימת חברות מוחזקות עיקריות",
+              "note": null
+            },
+            {
+              "name": "Aura Development S.R.L",
+              "ownership_pct": 100,
+              "parent": "Aura Europe S.A.",
+              "page_reference": 239,
+              "section_title": "רשימת חברות מוחזקות עיקריות",
+              "table_title": "רשימת חברות מוחזקות עיקריות",
+              "note": null
+            },
+            {
+              "name": "ק.מ.א מרכז העיר לוד בע\"מ",
+              "ownership_pct": 81,
+              "parent": "אאורה מחדשים את ישראל בע\"מ",
+              "page_reference": 239,
+              "section_title": "רשימת חברות מוחזקות עיקריות",
+              "table_title": "רשימת חברות מוחזקות עיקריות",
+              "note": null
+            },
+            {
+              "name": "אאורה לוד יזמות בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אאורה מחדשים את ישראל בע\"מ",
+              "page_reference": 239,
+              "section_title": "רשימת חברות מוחזקות עיקריות",
+              "table_title": "רשימת חברות מוחזקות עיקריות",
+              "note": null
+            },
+            {
+              "name": "אאורה מרכזים מסחריים בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אאורה מחדשים את ישראל בע\"מ",
+              "page_reference": 239,
+              "section_title": "רשימת חברות מוחזקות עיקריות",
+              "table_title": "רשימת חברות מוחזקות עיקריות",
+              "note": null
+            },
+            {
+              "name": "אם. אן. ג'י ברח' מרגולין נס ציונה בע\"מ",
+              "ownership_pct": 90,
+              "parent": "אאורה מחדשים את ישראל בע\"מ",
+              "page_reference": 239,
+              "section_title": "רשימת חברות מוחזקות עיקריות",
+              "table_title": "רשימת חברות מוחזקות עיקריות",
+              "note": null
+            },
+            {
+              "name": "אאורה אם. אן. ג'י בטייסים (2018) בע\"מ",
+              "ownership_pct": 90,
+              "parent": "אאורה מחדשים את ישראל בע\"מ",
+              "page_reference": 239,
+              "section_title": "רשימת חברות מוחזקות עיקריות",
+              "table_title": "רשימת חברות מוחזקות עיקריות",
+              "note": null
+            },
+            {
+              "name": "אאורה אימאג'ין גבעתיים שותפות מוגבלת",
+              "ownership_pct": 70,
+              "parent": "אאורה מחדשים את ישראל בע\"מ",
+              "page_reference": 239,
+              "section_title": "רשימת חברות מוחזקות עיקריות",
+              "table_title": "רשימת חברות מוחזקות עיקריות",
+              "note": null
+            },
+            {
+              "name": "אאורה תעשיות מרכז בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אאורה מרכזים מסחריים בע\"מ",
+              "page_reference": 239,
+              "section_title": "רשימת חברות מוחזקות עיקריות",
+              "table_title": "רשימת חברות מוחזקות עיקריות",
+              "note": null
+            },
+            {
+              "name": "ק.מ.א מרכז העיר לוד מסחר בע\"מ",
+              "ownership_pct": 81,
+              "parent": "אאורה מרכזים מסחריים בע\"מ",
+              "page_reference": 239,
+              "section_title": "רשימת חברות מוחזקות עיקריות",
+              "table_title": "רשימת חברות מוחזקות עיקריות",
+              "note": null
+            },
+            {
+              "name": "אשדן אגמים בבן צבי מסחר בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אאורה מרכזים מסחריים בע\"מ",
+              "page_reference": 239,
+              "section_title": "רשימת חברות מוחזקות עיקריות",
+              "table_title": "רשימת חברות מוחזקות עיקריות",
+              "note": null
+            },
+            {
+              "name": "אשדן התחדשות עירונית מסחר בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אאורה מרכזים מסחריים בע\"מ",
+              "page_reference": 239,
+              "section_title": "רשימת חברות מוחזקות עיקריות",
+              "table_title": "רשימת חברות מוחזקות עיקריות",
+              "note": null
+            },
+            {
+              "name": "סי אבן יזמות מסחר בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אאורה מרכזים מסחריים בע\"מ",
+              "page_reference": 239,
+              "section_title": "רשימת חברות מוחזקות עיקריות",
+              "table_title": "רשימת חברות מוחזקות עיקריות",
+              "note": null
+            },
+            {
+              "name": "אאורה מרכזים מסחריים בבני עייש בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אאורה מרכזים מסחריים בע\"מ",
+              "page_reference": 239,
+              "section_title": "רשימת חברות מוחזקות עיקריות",
+              "table_title": "רשימת חברות מוחזקות עיקריות",
+              "note": null
+            },
+            {
+              "name": "אאורה מרכזים מסחריים כפר יונה בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אאורה מרכזים מסחריים בע\"מ",
+              "page_reference": 239,
+              "section_title": "רשימת חברות מוחזקות עיקריות",
+              "table_title": "רשימת חברות מוחזקות עיקריות",
+              "note": null
+            },
+            {
+              "name": "אאורה ניהול שותפויות בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אאורה מחדשים את ישראל בע\"מ",
+              "page_reference": 239,
+              "section_title": "רשימת חברות מוחזקות עיקריות",
+              "table_title": "רשימת חברות מוחזקות עיקריות",
+              "note": null
+            }
+          ],
+          "change_events": []
         }
       },
       "attempts": {}
@@ -3156,7 +3063,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-13T11:16:24.401168+00:00",
+    "at": "2026-09-13T13:59:28.234879+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -3313,6 +3220,30 @@
             }
           ],
           "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אנשי העיר ביצוע בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 65,
+              "section_title": "מידע נוסף על פרויקטים שאינם מהותיים מאוד",
+              "table_title": null,
+              "note": "מוזכרת כחברת בת לא בשליטה"
+            }
+          ],
+          "change_events": []
         }
       },
       "attempts": {}
@@ -3323,7 +3254,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-13T11:15:40.653872+00:00",
+    "at": "2026-09-13T13:59:34.751619+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -3346,7 +3277,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-13T11:15:44.821508+00:00",
+    "at": "2026-09-13T13:59:34.463926+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -3361,7 +3292,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-13T11:15:46.889553+00:00",
+    "at": "2026-09-13T13:59:37.038326+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -3376,7 +3307,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-13T11:15:45.831337+00:00",
+    "at": "2026-09-13T13:59:36.331398+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -3391,7 +3322,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-13T11:15:48.737401+00:00",
+    "at": "2026-09-13T13:59:38.893726+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -3406,7 +3337,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-13T11:15:49.215504+00:00",
+    "at": "2026-09-13T13:59:39.255033+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -3421,7 +3352,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-13T11:15:47.966898+00:00",
+    "at": "2026-09-13T13:59:38.088228+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
