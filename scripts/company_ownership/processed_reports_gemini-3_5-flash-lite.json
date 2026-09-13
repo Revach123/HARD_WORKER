@@ -2350,93 +2350,43 @@
   },
   "1733046": {
     "company_id": "2530",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-13T10:51:12.240148+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {
-        "0:0": {
-          "report_format": "other",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-13T10:53:40.370460+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1738586": {
     "company_id": "1579",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-12T13:16:50.866306+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-13T10:54:14.149422+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732560": {
     "company_id": "2134",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-12T13:16:50.924143+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-13T10:53:45.146955+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1723073": {
     "company_id": "2177",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-12T13:16:51.045465+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-13T10:53:49.580943+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1721589": {
     "company_id": "2496",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-12T13:16:50.712985+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-13T10:51:49.200749+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1736328": {
     "company_id": "1485",
@@ -2448,93 +2398,1393 @@
   },
   "1728508": {
     "company_id": "1040",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-12T13:16:51.211641+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-13T10:54:02.521458+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1768206": {
     "company_id": "2538",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-12T13:16:51.263697+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-13T10:54:07.834936+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1736433": {
     "company_id": "2135",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-12T13:16:51.379383+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-13T10:54:11.913412+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1728195": {
     "company_id": "2240",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-12T13:16:51.092126+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-13T10:53:58.074159+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1735693": {
     "company_id": "1662",
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-12T13:16:52.242624+00:00",
+    "at": "2026-09-13T11:02:15.782316+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 28,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "Pacific Oak SOR Properties LLC",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 3,
+              "section_title": "הגדרות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR Equity Holdings X LLC",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 10,
+              "section_title": ".1.1.2.7 עדכונים בקשר עם יתר נכסי החברה והסכמי מימון",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR US Properties II",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 10,
+              "section_title": ".1.1.2.7 עדכונים בקשר עם יתר נכסי החברה והסכמי מימון",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "Pacific Oak SOR (BVI) Holdings, Ltd.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 69,
+              "section_title": "א. 2 הסכם ההון המועדף בנכס",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR Properties LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR (BVI) Holdings, Ltd.",
+              "page_reference": 69,
+              "section_title": "א. 2 הסכם ההון המועדף בנכס",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak Acquisition XXV LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR Properties LLC",
+              "page_reference": 69,
+              "section_title": "א. 2 הסכם ההון המועדף בנכס",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR SREF III 110 William LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak Acquisition XXV LLC",
+              "page_reference": 69,
+              "section_title": "א. 2 הסכם ההון המועדף בנכס",
+              "table_title": null,
+              "note": "100% זכויות רגילות, 77.5% הון מועדף"
+            },
+            {
+              "name": "110 William Man III LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR SREF III 110 William LLC",
+              "page_reference": 69,
+              "section_title": "א. 2 הסכם ההון המועדף בנכס",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "110 William Property Investors III LLC",
+              "ownership_pct": 100,
+              "parent": "110 William Man III LLC",
+              "page_reference": 69,
+              "section_title": "א. 2 הסכם ההון המועדף בנכס",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "Pacific Oak SOR Properties, LLC",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 74,
+              "section_title": "ז. שעבודים ומגבלות משפטיות מהותיות בנכס",
+              "table_title": null,
+              "note": "חברה בבעלות מלאה"
+            },
+            {
+              "name": "PACIFIC OAK SOR SREF III 110 WILLIAM, LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR Properties, LLC",
+              "page_reference": 69,
+              "section_title": "א. 2 הסכם ההון המועדף בנכס",
+              "table_title": null,
+              "note": "100% מהזכויות הרגילות ו-77.5% מהזכויות בהון המועדף"
+            },
+            {
+              "name": "Pacific Oak SOR II Oakland City Center LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR II Acquisitions LLC",
+              "page_reference": 76,
+              "section_title": "1.7.9.2 מבנה מהותי מאוד – Oakland City Center",
+              "table_title": null,
+              "note": "מוחזק בשרשור בבעלות מלאה"
+            },
+            {
+              "name": "Pacific Oak SOR Marquette Plaza LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR Acquisition XXXIII LLC",
+              "page_reference": 80,
+              "section_title": "1.7.9.3 מבנה מהותי מאוד – The Marq",
+              "table_title": null,
+              "note": "מוחזק בשרשור בבעלות מלאה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "Pacific Oak SOR Properties LLC",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 91,
+              "section_title": ".1.11.2 שעבודים להבטחת המימון",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR Equity Holdings X LLC",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 91,
+              "section_title": ".1.11.2 שעבודים להבטחת המימון",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Crescent & Queen",
+              "ownership_pct": 90,
+              "parent": null,
+              "page_reference": 89,
+              "section_title": ".1.8.7 פרטים נוספים אודות נכס הנדל\"ן לשימוש מלונאי (המסווגים כרכוש קבוע)",
+              "table_title": null,
+              "note": "שיעור החזקה אפקטיבי בנכס"
+            }
+          ],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "Pacific Oak SOR Properties LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR (BVI) Holdings, Ltd.",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "CA Capital Management Services III, Inc.",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR (BVI) Holdings, Ltd.",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak TRS Services LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR (BVI) Holdings, Ltd.",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR Park Highlands LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR (BVI) Holdings, Ltd.",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR Park Highlands JV LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR Park Highlands LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR Acquisition VII LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR Park Highlands LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR Park Highlands II LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR Park Highlands LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR Park Highlands II JV LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR Park Highlands II LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR Acquisition XXII LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR Park Highlands II LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR Acquisition XI LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR (BVI) Holdings, Ltd.",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "1180 Raymond Urban Renewal LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR Acquisition XI LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR Acquisition XXXIII LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR (BVI) Holdings, Ltd.",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR Marquette Plaza LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR Acquisition XXXIII LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "S-REIT",
+              "ownership_pct": 6.1,
+              "parent": "Pacific Oak SOR (BVI) Holdings, Ltd.",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR II, LLC (MD)",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR (BVI) Holdings, Ltd.",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak Strategic Opportunity Holdings II LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR II, LLC (MD)",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak Strategic Opportunity Limited Partnership II",
+              "ownership_pct": 99,
+              "parent": "Pacific Oak Strategic Opportunity Holdings II LLC",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": "LP ownership"
+            },
+            {
+              "name": "Pacific Oak SOR US Properties II LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak Strategic Opportunity Limited Partnership II",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak Residential Trust Inc.",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR Equity Holdings X LLC",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak Residential Trust II, Inc.",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak Opportunity Zone Fund I, LLC",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:7": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "Pacific Oak SOR Properties LLC",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "CA Capital Management Services III, Inc.",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR Properties LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak TRS Services LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR Properties LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR Park Highlands LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR Properties LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR Park Highlands JV LLC",
+              "ownership_pct": 99.75,
+              "parent": "Pacific Oak SOR Park Highlands LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR Acquisition VII LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR Properties LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR Park Highlands II LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR Properties LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR Park Highlands II JV LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR Park Highlands II LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR Acquisition XXII LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR Properties LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR Acquisition XXXIII LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR Properties LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR Marquette Plaza LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR Properties LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "S-REIT",
+              "ownership_pct": 6.1,
+              "parent": "Pacific Oak SOR Properties LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR Acquisition XI LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR Properties LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "1180 Raymond Urban Renewal LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR Acquisition XI LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR Acquisition VIII, LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR Properties LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR Richardson Portfolio JV LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR Acquisition VIII, LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "JP- Pacific Oak Richardson Holdings LLC",
+              "ownership_pct": 90,
+              "parent": "Pacific Oak SOR Richardson Portfolio JV LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "JP- Pacific Oak Richardson Acquisition I LLC",
+              "ownership_pct": 100,
+              "parent": "JP- Pacific Oak Richardson Holdings LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "JP Palisades I LLC",
+              "ownership_pct": 100,
+              "parent": "JP- Pacific Oak Richardson Acquisition I LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "JP Palisades II LLC",
+              "ownership_pct": 100,
+              "parent": "JP- Pacific Oak Richardson Acquisition I LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR Acquisition XVIII LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR Properties LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR Austin Suburban Portfolio LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR Acquisition XVIII LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR Acquisition XXXIV, LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR Properties LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR 8 & 9 Corporate Centre, Inc.",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR Acquisition XXXIV, LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR Acquisition XXV LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR Properties LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR 110 William JV LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR Acquisition XXV LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR SREF III 110 William LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR 110 William JV LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "110 William Property Investors III LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR SREF III 110 William LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "110 William Mezz III LLC",
+              "ownership_pct": 100,
+              "parent": "110 William Property Investors III LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR Acquisition XXVII LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR Properties LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR SOR Richardson Land JV, LLC",
+              "ownership_pct": 90,
+              "parent": "Pacific Oak SOR Acquisition XXVII LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR Richardson Holdings II LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR SOR Richardson Land JV, LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Palisades IV LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR Richardson Holdings II LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Richardson Land I",
+              "ownership_pct": 100,
+              "parent": "Palisades IV LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR Acquisition VIII LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR Properties LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR SOR Richardson Portfolio JV, LLC",
+              "ownership_pct": 90,
+              "parent": "Pacific Oak SOR Acquisition VIII LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR Richardson Holdings LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR SOR Richardson Portfolio JV, LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Palisades III LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR Richardson Holdings LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Richardson Land II",
+              "ownership_pct": 100,
+              "parent": "Palisades III LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak Acquisition XXXVII, LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR Properties LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR Tule Springs Village II Parcelles Owner, LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak Acquisition XXXVII, LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR Tule Springs Owner TRS LLC",
+              "ownership_pct": 0.25,
+              "parent": "Pacific Oak Acquisition XXXVII, LLC",
+              "page_reference": 121,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR II, LLC (MD)",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR (BVI) Holdings, Ltd.",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR II Holdings, LLC (MD)",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR II, LLC (MD)",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak Strategic Opportunity Holdings II LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR II Holdings, LLC (MD)",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak Strategic Opportunity Limited Partnership II",
+              "ownership_pct": 99,
+              "parent": "Pacific Oak Strategic Opportunity Holdings II LLC",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR US Properties II LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak Strategic Opportunity Limited Partnership II",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR II TRS Holdings",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR US Properties II LLC",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR II Q&C TRS JV, LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR US Properties II LLC",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR II Q&C JV, LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR US Properties II LLC",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR II Q&C Opportunity JV, LLC",
+              "ownership_pct": 90,
+              "parent": "Pacific Oak SOR US Properties II LLC",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR II Q&C Property JV, LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR US Properties II LLC",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR II Q&C Property, LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR US Properties II LLC",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR II Q&C Operations JV, LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR US Properties II LLC",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR II Q&C Operations, LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR II Q&C Operations JV, LLC",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Q&C Hotel",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR II Q&C Property, LLC",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR II Acquisition IV, LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR US Properties II LLC",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR II Acquisition II, LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR US Properties II LLC",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR II Acquisition VI, LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR US Properties II LLC",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR II Acquisition VII, LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR US Properties II LLC",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR II Acquisition VIII, LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR US Properties II LLC",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR II Lincoln Court, LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR US Properties II LLC",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Lincoln Court",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR II Lincoln Court, LLC",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR II 210 West 31st Street JV, LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR US Properties II LLC",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR II 210 West 31st Street, LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR II 210 West 31st Street JV, LLC",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "210 West 31st Street Owner, LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR II 210 West 31st Street, LLC",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "210 West 31st Street",
+              "ownership_pct": 100,
+              "parent": "210 West 31st Street Owner, LLC",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR II Oakland City Center, LLC",
+              "ownership_pct": 80,
+              "parent": "Pacific Oak SOR US Properties II LLC",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Oakland City Center",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR II Oakland City Center, LLC",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR II Grace Court JV, LLC",
+              "ownership_pct": 90,
+              "parent": "Pacific Oak SOR US Properties II LLC",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR II/VERUS Grace Court, LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR II Grace Court JV, LLC",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak/VERUS GC Phoenix, LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR II/VERUS Grace Court, LLC",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak/VERUS Armory and Land, LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR II/VERUS Grace Court, LLC",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Madison Square I, II, III, IV and Parking Garage",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak/VERUS GC Phoenix, LLC",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Madison Square Armory Building and Land",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak/VERUS Armory and Land, LLC",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Investment In Pacific Oak Opportunity Zone Fund I",
+              "ownership_pct": 5,
+              "parent": "Pacific Oak SOR US Properties II LLC",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR Equity Holdings X LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR US Properties II LLC",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR X Acquisition III LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR Equity Holdings X LLC",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "SOR Port Holdings LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR X Acquisition III LLC",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak Residential Trust Inc.",
+              "ownership_pct": 100,
+              "parent": "SOR Port Holdings LLC",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "PORT OP GP, LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak Residential Trust Inc.",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "PORT OP, LP",
+              "ownership_pct": 99.912,
+              "parent": "Pacific Oak Residential Trust Inc.",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "PORT II OP LP",
+              "ownership_pct": 100,
+              "parent": "PORT OP, LP",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak Residential Trust II, Inc.",
+              "ownership_pct": 100,
+              "parent": "PORT II OP LP",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Single Family Portfolios (6)",
+              "ownership_pct": 100,
+              "parent": "PORT OP, LP",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR X Acquisition II LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR Equity Holdings X LLC",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR PAC OAK OPP ZONE FUND I, LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR X Acquisition II LLC",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak Opportunity Zone Fund I, LLC",
+              "ownership_pct": 41.0,
+              "parent": "Pacific Oak SOR PAC OAK OPP ZONE FUND I, LLC",
+              "page_reference": 122,
+              "section_title": "נספח מבנה ההחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak SOR DEBT Holdings II LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR (BVI) Holdings LTD",
+              "page_reference": 126,
+              "section_title": "מבנה חברת הריט",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific Oak Finance LLC",
+              "ownership_pct": 100,
+              "parent": "Pacific Oak SOR (BVI) Holdings LTD",
+              "page_reference": 126,
+              "section_title": "מבנה חברת הריט",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:8": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "חברה כלולה (Joint Venture) המחזיקה בנכס 110 William",
+              "ownership_pct": 90,
+              "parent": null,
+              "page_reference": 144,
+              "section_title": "3.5 גילוי בהתאם לסעיף 10(ב)(14) לתקנות דוחות תקופתיים ומיידיים וגילוי תזרים המזומנים החזוי למימון פירעון התחייבויות החברה",
+              "table_title": null,
+              "note": "שיעור החזקה אפקטיבי"
+            }
+          ],
+          "change_events": []
+        },
+        "0:9": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:10": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:11": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "110 William Street Joint Venture",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 204,
+              "section_title": "באור 11 - השקעה בעסקאות משותפות לא מאוחדות",
+              "table_title": null,
+              "note": "החברה מחזיקה ב-77.5% מהמניות המועדפות ו-100% מהמניות הרגילות"
+            },
+            {
+              "name": "Pacific Oak Opportunity Zone Fund I",
+              "ownership_pct": 47.0,
+              "parent": null,
+              "page_reference": 204,
+              "section_title": "באור 11 - השקעה בעסקאות משותפות לא מאוחדות",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:12": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "Pacific Oak SOR Properties, LLC",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 205,
+              "section_title": "באור 11 - השקעה בעסקאות משותפות לא מאוחדות",
+              "table_title": null,
+              "note": "חברה בת בבעלות מלאה"
+            },
+            {
+              "name": "110 William Street Joint Venture (Pacific Oak SOR SREF III 110 William, LLC)",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 205,
+              "section_title": "באור 11 - השקעה בעסקאות משותפות לא מאוחדות",
+              "table_title": null,
+              "note": "עסקה משותפת"
+            },
+            {
+              "name": "Pacific Oak Opportunity Zone Fund I (Pacific Oak Opportunity Zone Fund I, LLC)",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 205,
+              "section_title": "באור 11 - השקעה בעסקאות משותפות לא מאוחדות",
+              "table_title": null,
+              "note": "עסקה משותפת"
+            },
+            {
+              "name": "353 Sacramento Joint Venture",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 205,
+              "section_title": "באור 11 - השקעה בעסקאות משותפות לא מאוחדות",
+              "table_title": null,
+              "note": "הופסקה השימוש בשיטת השווי המאזני ומימוש ביוני 2025"
+            },
+            {
+              "name": "Keppel Pacific Oak US REIT (S-REIT)",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 211,
+              "section_title": "באור 14 - אירועים לאחר תאריך הדיווח",
+              "table_title": null,
+              "note": "החזיקה 64 מיליון מניות, נמכרו 49 מיליון לאחר תאריך המאזן"
+            }
+          ],
+          "change_events": [
+            {
+              "company": "353 Sacramento Joint Venture",
+              "event_type": "full_disposal",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 0,
+              "event_date": "2025-06-01",
+              "event_description": "מימוש העסקה המשותפת כתוצאה מהסכם מסירה והליך עיקול עם המלווה",
+              "page_reference": 205,
+              "section_title": "באור 11 - השקעה בעסקאות משותפות לא מאוחדות"
+            },
+            {
+              "company": "Keppel Pacific Oak US REIT (S-REIT)",
+              "event_type": "decrease",
+              "ownership_pct_before": null,
+              "ownership_pct_after": null,
+              "event_date": null,
+              "event_description": "מכירה חלקית של 49 מיליון מניות מתוך 64 מיליון המניות שהחזיקה החברה",
+              "page_reference": 211,
+              "section_title": "באור 14 - אירועים לאחר תאריך הדיווח"
+            }
+          ]
+        },
+        "0:13": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
   "1737102": {
     "company_id": "1382",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-12T13:16:52.527303+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 20,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-13T11:02:50.261069+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1729852": {
     "company_id": "373",
