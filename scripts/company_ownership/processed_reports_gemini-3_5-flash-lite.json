@@ -1751,18 +1751,11 @@
   },
   "1731495": {
     "company_id": "290",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-12T13:16:38.935171+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 11,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-13T10:21:25.138030+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1733029": {
     "company_id": "257",
@@ -2043,407 +2036,59 @@
   },
   "1736407": {
     "company_id": "363",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-13T10:17:41.536555+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 11,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "אירודרום בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 9,
-              "section_title": "2.1 תרשים מבנה החזקות של החברה",
-              "table_title": null,
-              "note": "חברה פרטית בבעלות מלאה של החברה שהתאגדה בישראל ומרכזת את פעילות החברה בשוק הכטב\"מ הביטחוני."
-            },
-            {
-              "name": "אירודרום מערכות בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 9,
-              "section_title": "2.1 תרשים מבנה החזקות של החברה",
-              "table_title": null,
-              "note": "חברה פרטית בבעלות מלאה של החברה שהתאגדה בישראל ועוסקת בשיווק ומכירה של מערכות כטב\"מים ללקוחות זרים."
-            },
-            {
-              "name": "אס.ג'י.סי העברת ידע בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 9,
-              "section_title": "2.1 תרשים מבנה החזקות של החברה",
-              "table_title": null,
-              "note": "חברה פרטית בבעלות מלאה של החברה שהתאגדה בישראל ומרכזת את פעילות החברה בשוק הכטב\"מ האזרחי."
-            },
-            {
-              "name": "אף.טי פתרונות אוויריים בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 9,
-              "section_title": "2.1 תרשים מבנה החזקות של החברה",
-              "table_title": null,
-              "note": "חברה פרטית ישראלית בבעלות מלאה של החברה, העוסקת בניהול תהליכי העברת ידע וטכנולוגיה בתחומי הייצור עבור כטב\"מים ומערכות צבאיות מורכבות אחרות."
-            },
-            {
-              "name": "BLUEBAY TRADE PTE. LTD.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 9,
-              "section_title": "2.1 תרשים מבנה החזקות של החברה",
-              "table_title": null,
-              "note": "חברה פרטית סינגפורית בבעלותה המלאה של החברה, העוסקת בשיווק ללקוחות זרים מחו״ל וכן בניהול רכש והצטיידות עבור הקבוצה."
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "אירודרום בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 19,
-              "section_title": "מידע כללי על תחום הפעילות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "FlyTech",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 19,
-              "section_title": "מידע כללי על תחום הפעילות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "BLUEBAY",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 22,
-              "section_title": "שינויים במערך הספקים וחומרי הגלם לתחום הפעילות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "SGC",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 30,
-              "section_title": "מידע כללי על תחום הפעילות",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "SGC",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 35,
-              "section_title": "6.16 עונתיות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אירודרום בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 40,
-              "section_title": "7.8 מגבלות, חקיקה, תקינה ואילוצים מיוחדים החלים על תחומי הפעילות של החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אף.טי. פתרונות אוויריים בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 43,
-              "section_title": "7.9.3 הסכם מסגרת נתיבי תחבורה עירוניים להסעת המונים (\"נת\"ע\")",
-              "table_title": null,
-              "note": "חברה בת בבעלות מלאה"
-            },
-            {
-              "name": "אירודרום מערכות בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 47,
-              "section_title": "7.10.4",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "אס.ג'י.סי העברת ידע בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 73,
-              "section_title": "פרטים אודות הערכות שווי מהותיות מאוד",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אף.טי.פתרונות אוויריים בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 73,
-              "section_title": "פרטים אודות הערכות שווי מהותיות מאוד",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אירודרום מערכות בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 86,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": "חברת בת בבעלות מלאה"
-            },
-            {
-              "name": "BLUEBAY TRADE PTE. LTD.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 86,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": "בבעלות מלאה של החברה"
-            },
-            {
-              "name": "אן. פי. או מערכות בע\"מ",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 86,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": "הסכם אופציה לרכישת 51% ממניות החברה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:5": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "אס ג'י סי העברת ידע בע\"מ (SGC)",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 86,
-              "section_title": "ביאור 1 - כללי: א. תיאור כללי של הקבוצה ופעילותה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אירודרום מערכות בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 86,
-              "section_title": "ביאור 1 - כללי: א. תיאור כללי של הקבוצה ופעילותה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Aerial T.F Solutions Ltd (FlyTech / פלייטק)",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 86,
-              "section_title": "ביאור 1 - כללי: א. תיאור כללי של הקבוצה ופעילותה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "BLUEBAY TRADE PTE. LTD.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 86,
-              "section_title": "ביאור 1 - כללי: א. תיאור כללי של הקבוצה ופעילותה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אן. פי. או מערכות בע\"מ (NPO)",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 86,
-              "section_title": "ביאור 1 - כללי: א. תיאור כללי של הקבוצה ופעילותה",
-              "table_title": null,
-              "note": "הסכם אופציה לרכישת 51% ממניות"
-            },
-            {
-              "name": "פלייקום נטוורקס בע\"מ (פלייקום)",
-              "ownership_pct": 2.25,
-              "parent": "FlyTech",
-              "page_reference": 96,
-              "section_title": "ביאור 4 - מכשירים פיננסיים וניהול סיכונים פיננסיים",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:6": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "אירודרום בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 122,
-              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11 - רשימת השקעות בחברות בת מהותיות ליום 31 בדצמבר 2025",
-              "note": null
-            },
-            {
-              "name": "אירודרום מערכות בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 122,
-              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11 - רשימת השקעות בחברות בת מהותיות ליום 31 בדצמבר 2025",
-              "note": null
-            },
-            {
-              "name": "אס.ג'י.סי העברת ידע בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 122,
-              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11 - רשימת השקעות בחברות בת מהותיות ליום 31 בדצמבר 2025",
-              "note": null
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-13T10:18:33.612239+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1735646": {
     "company_id": "1274",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-12T13:16:39.532565+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 12,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-13T10:27:07.701738+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1738173": {
     "company_id": "1968",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-12T13:16:43.919487+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 10,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-13T10:24:34.156557+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731026": {
     "company_id": "142",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-12T13:16:39.665145+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 11,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-13T10:21:21.702681+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1736414": {
     "company_id": "1827",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-12T13:16:40.707254+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 9,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-13T10:30:05.889344+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1733044": {
     "company_id": "1842",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-12T13:16:44.710985+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 11,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-13T10:36:17.445595+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1733936": {
     "company_id": "1057",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-12T13:16:40.220357+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 11,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-13T10:30:35.914933+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731844": {
     "company_id": "1847",
@@ -2477,33 +2122,19 @@
   },
   "1736388": {
     "company_id": "1870",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-12T13:16:44.450938+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 12,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-13T10:33:51.533469+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1736345": {
     "company_id": "1859",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-12T13:16:44.891137+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 9,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-13T10:37:16.226710+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1729754": {
     "company_id": "2358",
@@ -2525,13 +2156,28 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-12T13:16:45.203404+00:00",
+    "at": "2026-09-13T10:36:45.794766+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 10,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
