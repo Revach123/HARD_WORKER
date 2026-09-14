@@ -7355,13 +7355,121 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-13T19:16:14.564582+00:00",
+    "at": "2026-09-14T11:20:13.595857+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 16,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "מספנות ישראל בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "תרשים מבנה ההחזקות המהותיות של החברה ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "נמל מספנות ישראל בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "תרשים מבנה ההחזקות המהותיות של החברה ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מ.י. מרכבי ישראל בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "תרשים מבנה ההחזקות המהותיות של החברה ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אירונאוס סיסטמס בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "תרשים מבנה ההחזקות המהותיות של החברה ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "בלו שיפינג פיננסים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "תרשים מבנה ההחזקות המהותיות של החברה ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ISCO TRADING SA",
+              "ownership_pct": 95.3,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "תרשים מבנה ההחזקות המהותיות של החברה ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "סימנט אי.אס. בע\"מ",
+              "ownership_pct": 70.3,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "תרשים מבנה ההחזקות המהותיות של החברה ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פ.ס - ב.מ.י בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "תרשים מבנה ההחזקות המהותיות של החברה ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אונת סימנט בע\"מ",
+              "ownership_pct": 70,
+              "parent": "סימנט אי.אס. בע\"מ",
+              "page_reference": 20,
+              "section_title": "תרשים מבנה ההחזקות המהותיות של החברה ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פרימה סימנט בע\"מ",
+              "ownership_pct": null,
+              "parent": "סימנט אי.אס. בע\"מ",
+              "page_reference": 20,
+              "section_title": "תרשים מבנה ההחזקות המהותיות של החברה ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "נדיר תעשיות צבע (1996) בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אונת סימנט בע\"מ",
+              "page_reference": 20,
+              "section_title": "תרשים מבנה ההחזקות המהותיות של החברה ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": "הפעילות הועברה ב-31.12.25"
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
@@ -7378,7 +7486,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-14T11:19:37.794620+00:00",
+    "at": "2026-09-14T11:20:20.751637+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -7457,6 +7565,41 @@
           "as_of_date": null,
           "subsidiaries": [],
           "change_events": []
+        },
+        "0:5": {
+          "report_format": "20-F",
+          "document_type": "change_events",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "Sunlight Cluster",
+              "event_type": "decrease",
+              "ownership_pct_before": null,
+              "ownership_pct_after": null,
+              "event_date": "2025-01-01",
+              "event_description": "Sale of 44% of the Sunlight Cluster of renewable energy projects in Israel to Harel and Amitim.",
+              "page_reference": 89,
+              "section_title": "Access to and cost of capital"
+            }
+          ]
+        },
+        "0:6": {
+          "report_format": "20-F",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "Clenera Holdings LLC",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 108,
+              "section_title": "Mezzanine facility agreement",
+              "table_title": null,
+              "note": "Mentioned as a subsidiary"
+            }
+          ],
+          "change_events": []
         }
       },
       "attempts": {}
@@ -7467,7 +7610,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-13T19:16:15.048488+00:00",
+    "at": "2026-09-14T11:20:13.970594+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -7482,7 +7625,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-13T19:16:15.604517+00:00",
+    "at": "2026-09-14T11:20:14.426710+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -7497,7 +7640,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-13T19:16:16.984519+00:00",
+    "at": "2026-09-14T11:20:15.280352+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -7527,7 +7670,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-13T19:16:16.187595+00:00",
+    "at": "2026-09-14T11:20:14.791070+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -7542,7 +7685,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-13T19:16:38.562593+00:00",
+    "at": "2026-09-14T11:20:21.762851+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -7572,7 +7715,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-13T19:16:32.986420+00:00",
+    "at": "2026-09-14T11:20:22.612705+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -7587,7 +7730,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-13T19:16:32.312574+00:00",
+    "at": "2026-09-14T11:20:22.193438+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -7602,7 +7745,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-13T19:16:33.760786+00:00",
+    "at": "2026-09-14T11:20:23.202572+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -7857,7 +8000,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-13T19:16:34.572931+00:00",
+    "at": "2026-09-14T11:20:23.808842+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
