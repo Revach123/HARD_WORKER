@@ -2084,971 +2084,11 @@
   },
   "1729852": {
     "company_id": "373",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-13T19:14:36.084263+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 17,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "אאורה מחדשים את ישראל (לשעבר: אאורה ישראל - יזמות והשקעות בע״מ)",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ס.י. אבן יזמות בע״מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אאורה החדשה פיננסים (2013) בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אאורה אם. אן. ג'י בטייסים (2018) בע\"מ",
-              "ownership_pct": 90,
-              "parent": "אאורה מחדשים את ישראל (לשעבר: אאורה ישראל - יזמות והשקעות בע״מ)",
-              "page_reference": 10,
-              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אם. אן. ג'י ברח' מרגולין נס ציונה בע\"מ",
-              "ownership_pct": 90,
-              "parent": "אאורה מחדשים את ישראל (לשעבר: אאורה ישראל - יזמות והשקעות בע״מ)",
-              "page_reference": 10,
-              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אאורה לוד יזמות בע\"מ",
-              "ownership_pct": 100,
-              "parent": "אאורה מחדשים את ישראל (לשעבר: אאורה ישראל - יזמות והשקעות בע״מ)",
-              "page_reference": 10,
-              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אאורה תעשיות מרכז בע\"מ",
-              "ownership_pct": 100,
-              "parent": "אאורה מחדשים את ישראל (לשעבר: אאורה ישראל - יזמות והשקעות בע״מ)",
-              "page_reference": 10,
-              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ק.מ.א מרכז העיר לוד בע\"מ",
-              "ownership_pct": 81,
-              "parent": "אאורה מחדשים את ישראל (לשעבר: אאורה ישראל - יזמות והשקעות בע״מ)",
-              "page_reference": 10,
-              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "A.S Europe Aura (אאורה אירופה)",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Chaplin Development S.R.L",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Garrun IMCO center S.R.L (Garrun)",
-              "ownership_pct": 36.5,
-              "parent": "A.S Europe Aura (אאורה אירופה)",
-              "page_reference": 10,
-              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Sun Valley Company S.R.L",
-              "ownership_pct": 50,
-              "parent": "A.S Europe Aura (אאורה אירופה)",
-              "page_reference": 10,
-              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Spring Invest S.R.L",
-              "ownership_pct": 100,
-              "parent": "A.S Europe Aura (אאורה אירופה)",
-              "page_reference": 10,
-              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Aura Development S.R.L",
-              "ownership_pct": 100,
-              "parent": "A.S Europe Aura (אאורה אירופה)",
-              "page_reference": 10,
-              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Malibu Invest S.R.L",
-              "ownership_pct": 100,
-              "parent": "A.S Europe Aura (אאורה אירופה)",
-              "page_reference": 10,
-              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "BAS Development S.R.L",
-              "ownership_pct": 100,
-              "parent": "A.S Europe Aura (אאורה אירופה)",
-              "page_reference": 10,
-              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Aura Bahari K.F.T",
-              "ownership_pct": 50,
-              "parent": "A.S Europe Aura (אאורה אירופה)",
-              "page_reference": 10,
-              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "B Sami Hazak K.F.T",
-              "ownership_pct": 100,
-              "parent": "Aura Bahari K.F.T",
-              "page_reference": 10,
-              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "פיבקו בת-ים בע\"מ",
-              "ownership_pct": 80,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אאורה מרכזים מסחריים בע\"מ",
-              "ownership_pct": 90,
-              "parent": "אאורה מחדשים את ישראל (לשעבר: אאורה ישראל - יזמות והשקעות בע״מ)",
-              "page_reference": 10,
-              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "שותפות אימאג'ין גבעתיים",
-              "ownership_pct": 70,
-              "parent": "אאורה מחדשים את ישראל (לשעבר: אאורה ישראל - יזמות והשקעות בע״מ)",
-              "page_reference": 10,
-              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "שותפות \"הקצין סילבר\" ירושלים",
-              "ownership_pct": 100,
-              "parent": "אאורה מחדשים את ישראל (לשעבר: אאורה ישראל - יזמות והשקעות בע״מ)",
-              "page_reference": 10,
-              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אאורה ניהול שותפויות בע\"מ",
-              "ownership_pct": 100,
-              "parent": "אאורה מחדשים את ישראל (לשעבר: אאורה ישראל - יזמות והשקעות בע״מ)",
-              "page_reference": 10,
-              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מגידו י.ק. בע\"מ",
-              "ownership_pct": 77.11,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "הסטריפ 1 רצועת העיר החדשה אאורה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "הסטריפ 2 רצועת העיר החדשה אאורה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "1.5 תרשים מבנה ההחזקות של הקבוצה",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "אאורה ישראל",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 23,
-              "section_title": "7.1 מבנה תחום הפעילות ושינויים החלים",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ס.י. אבן",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 23,
-              "section_title": "7.1 מבנה תחום הפעילות ושינויים החלים",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אאורה פיננסים",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 23,
-              "section_title": "7.1 מבנה תחום הפעילות ושינויים החלים",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מגידו",
-              "ownership_pct": 77,
-              "parent": null,
-              "page_reference": 23,
-              "section_title": "7.1 מבנה תחום הפעילות ושינויים החלים",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:5": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "מגידו י.ק. בע\"מ",
-              "ownership_pct": 76.8,
-              "parent": null,
-              "page_reference": 102,
-              "section_title": "1.6 חברת מגידו י.ק. בע\"מ",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אאורה מרכזים מסחריים בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 103,
-              "section_title": "1.7 אאורה מרכזים מסחריים בע\"מ",
-              "table_title": null,
-              "note": "הפניקס מחזיקה ב-17.5%"
-            },
-            {
-              "name": "אאורה מחדשים את ישראל בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 103,
-              "section_title": "1.8.1 חתימה על מזכר עקרונות עם כלל חברה לביטוח בע\"מ",
-              "table_title": null,
-              "note": "חברת בת בבעלות מלאה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:6": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "אאורה מחדשים את ישראל בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 103,
-              "section_title": "עיקרי פעילות החברה בתקופת הדוח ולאחריה",
-              "table_title": null,
-              "note": "חברת בת בבעלות מלאה"
-            },
-            {
-              "name": "מגידו",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 103,
-              "section_title": "דוח הדירקטוריון",
-              "table_title": null,
-              "note": "חברת בת"
-            },
-            {
-              "name": "אאורה מרכזים מסחריים בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 103,
-              "section_title": "אאורה מרכזים מסחריים בע\"מ",
-              "table_title": null,
-              "note": "חברת בת"
-            },
-            {
-              "name": "אאורה אימג'ין גבעתיים, שותפות מוגבלת",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 113,
-              "section_title": "הסכמי מימון",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "חברות פרויקט 'הסטריפ רצועת העיר החדשה של נתניה'",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 114,
-              "section_title": "הסכמי מימון",
-              "table_title": null,
-              "note": "הנמצאות בבעלותה המלאה של החברה"
-            },
-            {
-              "name": "פיבקו בת ים בע\"מ",
-              "ownership_pct": 80,
-              "parent": null,
-              "page_reference": 121,
-              "section_title": "אאורה פיבקו בת-ים",
-              "table_title": null,
-              "note": "הקצאת מניות המהוות 80% מהונה המונפק והנפרע"
-            }
-          ],
-          "change_events": []
-        },
-        "0:7": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "אאורה מרכזי מסחר בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 120,
-              "section_title": "2.5.1 מידע נוסף",
-              "table_title": null,
-              "note": "מוזכרת כחברת בת"
-            },
-            {
-              "name": "פיבקו בת ים בע\"מ",
-              "ownership_pct": 80,
-              "parent": null,
-              "page_reference": 121,
-              "section_title": "2.5.1 מידע נוסף",
-              "table_title": null,
-              "note": "הקצאת מניות המהווינה 80% מהונה המונפק והנפרע"
-            },
-            {
-              "name": "ק.מ.א",
-              "ownership_pct": 81,
-              "parent": null,
-              "page_reference": 124,
-              "section_title": "2.5.1 מידע נוסף",
-              "table_title": null,
-              "note": "לאחר רכישה נוספת, החברה מחזיקה בשיעור של 81%"
-            },
-            {
-              "name": "סי אבן יזמות והשקעות בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 125,
-              "section_title": "2.6.1 מידע נוסף",
-              "table_title": null,
-              "note": "חברה בת בבעלות מלאה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:8": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:9": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:10": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:11": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "אאורה מחדשים את ישראל בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 202,
-              "section_title": "באור 8 - השקעות בחברות מאוחדות",
-              "table_title": "א. מידע כללי כמופיע במידע הכספי הנפרד של החברה",
-              "note": null
-            },
-            {
-              "name": "מגידו י.ק. בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 202,
-              "section_title": "באור 8 - השקעות בחברות מאוחדות",
-              "table_title": "א. מידע כללי כמופיע במידע הכספי הנפרד של החברה",
-              "note": null
-            },
-            {
-              "name": "ס.י אבן בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 202,
-              "section_title": "באור 8 - השקעות בחברות מאוחדות",
-              "table_title": "א. מידע כללי כמופיע במידע הכספי הנפרד של החברה",
-              "note": null
-            },
-            {
-              "name": "אאורה החדשה פיננסים (2013) בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 202,
-              "section_title": "באור 8 - השקעות בחברות מאוחדות",
-              "table_title": "א. מידע כללי כמופיע במידע הכספי הנפרד של החברה",
-              "note": null
-            },
-            {
-              "name": "אאורה פיבקו בת ים בע\"מ",
-              "ownership_pct": 80,
-              "parent": null,
-              "page_reference": 202,
-              "section_title": "באור 8 - השקעות בחברות מאוחדות",
-              "table_title": "א. מידע כללי כמופיע במידע הכספי הנפרד של החברה",
-              "note": null
-            },
-            {
-              "name": "סטריפ 1 רצועת העיר החדשה אאורה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 202,
-              "section_title": "באור 8 - השקעות בחברות מאוחדות",
-              "table_title": "א. מידע כללי כמופיע במידע הכספי הנפרד של החברה",
-              "note": null
-            },
-            {
-              "name": "סטריפ 2 רצועת העיר החדשה אאורה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 202,
-              "section_title": "באור 8 - השקעות בחברות מאוחדות",
-              "table_title": "א. מידע כללי כמופיע במידע הכספי הנפרד של החברה",
-              "note": null
-            },
-            {
-              "name": "Aura Europe S.A.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 202,
-              "section_title": "באור 8 - השקעות בחברות מאוחדות",
-              "table_title": "א. מידע כללי כמופיע במידע הכספי הנפרד של החברה",
-              "note": null
-            },
-            {
-              "name": "Chaplin Development S.R.L.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 202,
-              "section_title": "באור 8 - השקעות בחברות מאוחדות",
-              "table_title": "א. מידע כללי כמופיע במידע הכספי הנפרד של החברה",
-              "note": null
-            },
-            {
-              "name": "איי.בי.סי – עפולה ביזיס סנטר בע\"מ",
-              "ownership_pct": 33,
-              "parent": null,
-              "page_reference": 204,
-              "section_title": "באור 9 - השקעה בחברות המטופלות לפי שיטת השווי המאזני",
-              "table_title": "א. מידע בדבר חברות המטופלות לפי שיטת השווי המאזני",
-              "note": null
-            },
-            {
-              "name": "אה-בה-ציגלה-מה בע\"מ",
-              "ownership_pct": 5.1,
-              "parent": null,
-              "page_reference": 204,
-              "section_title": "באור 9 - השקעה בחברות המטופלות לפי שיטת השווי המאזני",
-              "table_title": "א. מידע בדבר חברות המטופלות לפי שיטת השווי המאזני",
-              "note": null
-            },
-            {
-              "name": "דיורים בע''מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 204,
-              "section_title": "באור 9 - השקעה בחברות המטופלות לפי שיטת השווי המאזני",
-              "table_title": "א. מידע בדבר חברות המטופלות לפי שיטת השווי המאזני",
-              "note": null
-            },
-            {
-              "name": "אאורה אימאג'ין גבעתיים, ש.מ",
-              "ownership_pct": 70,
-              "parent": null,
-              "page_reference": 204,
-              "section_title": "באור 9 - השקעה בחברות המטופלות לפי שיטת השווי המאזני",
-              "table_title": "א. מידע בדבר חברות המטופלות לפי שיטת השווי המאזני",
-              "note": null
-            },
-            {
-              "name": "Garrun IMCO Centre S.R.L.",
-              "ownership_pct": 36.5,
-              "parent": null,
-              "page_reference": 204,
-              "section_title": "באור 9 - השקעה בחברות המטופלות לפי שיטת השווי המאזני",
-              "table_title": "א. מידע בדבר חברות המטופלות לפי שיטת השווי המאזני",
-              "note": null
-            },
-            {
-              "name": "Sun Valley Company S.R.L.",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 204,
-              "section_title": "באור 9 - השקעה בחברות המטופלות לפי שיטת השווי המאזני",
-              "table_title": "א. מידע בדבר חברות המטופלות לפי שיטת השווי המאזני",
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:12": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "Garrun IMCO centre S.R.L",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 205,
-              "section_title": "באור 9 - השקעה בחברות המטופלות לפי שיטת השווי המאזני (המשך)",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Sun Valley Company S.R.L",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 205,
-              "section_title": "באור 9 - השקעה בחברות המטופלות לפי שיטת השווי המאזני (המשך)",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אאורה אימאג'ין גבעתיים, ש.מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 205,
-              "section_title": "באור 9 - השקעה בחברות המטופלות לפי שיטת השווי המאזני (המשך)",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "דיורים בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 205,
-              "section_title": "באור 9 - השקעה בחברות המטופלות לפי שיטת השווי המאזני (המשך)",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אאורה מרכזים מסחריים בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 207,
-              "section_title": "באור 10 - נדל\"ן להשקעה בהקמה (המשך)",
-              "table_title": null,
-              "note": "חברה מאוחדת, השקעת הפניקס בשיעור 17.5%"
-            },
-            {
-              "name": "מגידו י.ק. יזום בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 209,
-              "section_title": "באור 10 - נדל\"ן להשקעה בהקמה (המשך)",
-              "table_title": null,
-              "note": "חברת בת בבעלות מלאה"
-            },
-            {
-              "name": "אאורה יורופ אס.אי",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 224,
-              "section_title": "באור 20 - מסים על הכנסה",
-              "table_title": null,
-              "note": "חברה בת"
-            }
-          ],
-          "change_events": []
-        },
-        "0:13": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "אאורה מחדשים את ישראל בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 239,
-              "section_title": "רשימת חברות מוחזקות עיקריות",
-              "table_title": "רשימת חברות מוחזקות עיקריות",
-              "note": null
-            },
-            {
-              "name": "ס.י אבן בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 239,
-              "section_title": "רשימת חברות מוחזקות עיקריות",
-              "table_title": "רשימת חברות מוחזקות עיקריות",
-              "note": null
-            },
-            {
-              "name": "אאורה החדשה פיננסים (2013) בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 239,
-              "section_title": "רשימת חברות מוחזקות עיקריות",
-              "table_title": "רשימת חברות מוחזקות עיקריות",
-              "note": null
-            },
-            {
-              "name": "Aura Europe S.A.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 239,
-              "section_title": "רשימת חברות מוחזקות עיקריות",
-              "table_title": "רשימת חברות מוחזקות עיקריות",
-              "note": null
-            },
-            {
-              "name": "Chaplin Development S.R.L.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 239,
-              "section_title": "רשימת חברות מוחזקות עיקריות",
-              "table_title": "רשימת חברות מוחזקות עיקריות",
-              "note": null
-            },
-            {
-              "name": "פיבקו בת ים בע\"מ",
-              "ownership_pct": 80,
-              "parent": null,
-              "page_reference": 239,
-              "section_title": "רשימת חברות מוחזקות עיקריות",
-              "table_title": "רשימת חברות מוחזקות עיקריות",
-              "note": null
-            },
-            {
-              "name": "מגידו י.ק. בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 239,
-              "section_title": "רשימת חברות מוחזקות עיקריות",
-              "table_title": "רשימת חברות מוחזקות עיקריות",
-              "note": null
-            },
-            {
-              "name": "הסטריפ 1 רצועת העיר החדשה אאורה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 239,
-              "section_title": "רשימת חברות מוחזקות עיקריות",
-              "table_title": "רשימת חברות מוחזקות עיקריות",
-              "note": null
-            },
-            {
-              "name": "הסטריפ 2 רצועת העיר החדשה אאורה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 239,
-              "section_title": "רשימת חברות מוחזקות עיקריות",
-              "table_title": "רשימת חברות מוחזקות עיקריות",
-              "note": null
-            },
-            {
-              "name": "Garrun IMCO Centre S.R.L",
-              "ownership_pct": 36.5,
-              "parent": "Aura Europe S.A.",
-              "page_reference": 239,
-              "section_title": "רשימת חברות מוחזקות עיקריות",
-              "table_title": "רשימת חברות מוחזקות עיקריות",
-              "note": null
-            },
-            {
-              "name": "Bas Development S.R.L",
-              "ownership_pct": 100,
-              "parent": "Aura Europe S.A.",
-              "page_reference": 239,
-              "section_title": "רשימת חברות מוחזקות עיקריות",
-              "table_title": "רשימת חברות מוחזקות עיקריות",
-              "note": null
-            },
-            {
-              "name": "Malibu Invest S.R.L",
-              "ownership_pct": 100,
-              "parent": "Aura Europe S.A.",
-              "page_reference": 239,
-              "section_title": "רשימת חברות מוחזקות עיקריות",
-              "table_title": "רשימת חברות מוחזקות עיקריות",
-              "note": null
-            },
-            {
-              "name": "Sun Valley Company S.R.L",
-              "ownership_pct": 50,
-              "parent": "Aura Europe S.A.",
-              "page_reference": 239,
-              "section_title": "רשימת חברות מוחזקות עיקריות",
-              "table_title": "רשימת חברות מוחזקות עיקריות",
-              "note": null
-            },
-            {
-              "name": "Spring Invest S.R.L",
-              "ownership_pct": 100,
-              "parent": "Aura Europe S.A.",
-              "page_reference": 239,
-              "section_title": "רשימת חברות מוחזקות עיקריות",
-              "table_title": "רשימת חברות מוחזקות עיקריות",
-              "note": null
-            },
-            {
-              "name": "Aura Development S.R.L",
-              "ownership_pct": 100,
-              "parent": "Aura Europe S.A.",
-              "page_reference": 239,
-              "section_title": "רשימת חברות מוחזקות עיקריות",
-              "table_title": "רשימת חברות מוחזקות עיקריות",
-              "note": null
-            },
-            {
-              "name": "ק.מ.א מרכז העיר לוד בע\"מ",
-              "ownership_pct": 81,
-              "parent": "אאורה מחדשים את ישראל בע\"מ",
-              "page_reference": 239,
-              "section_title": "רשימת חברות מוחזקות עיקריות",
-              "table_title": "רשימת חברות מוחזקות עיקריות",
-              "note": null
-            },
-            {
-              "name": "אאורה לוד יזמות בע\"מ",
-              "ownership_pct": 100,
-              "parent": "אאורה מחדשים את ישראל בע\"מ",
-              "page_reference": 239,
-              "section_title": "רשימת חברות מוחזקות עיקריות",
-              "table_title": "רשימת חברות מוחזקות עיקריות",
-              "note": null
-            },
-            {
-              "name": "אאורה מרכזים מסחריים בע\"מ",
-              "ownership_pct": 100,
-              "parent": "אאורה מחדשים את ישראל בע\"מ",
-              "page_reference": 239,
-              "section_title": "רשימת חברות מוחזקות עיקריות",
-              "table_title": "רשימת חברות מוחזקות עיקריות",
-              "note": null
-            },
-            {
-              "name": "אם. אן. ג'י ברח' מרגולין נס ציונה בע\"מ",
-              "ownership_pct": 90,
-              "parent": "אאורה מחדשים את ישראל בע\"מ",
-              "page_reference": 239,
-              "section_title": "רשימת חברות מוחזקות עיקריות",
-              "table_title": "רשימת חברות מוחזקות עיקריות",
-              "note": null
-            },
-            {
-              "name": "אאורה אם. אן. ג'י בטייסים (2018) בע\"מ",
-              "ownership_pct": 90,
-              "parent": "אאורה מחדשים את ישראל בע\"מ",
-              "page_reference": 239,
-              "section_title": "רשימת חברות מוחזקות עיקריות",
-              "table_title": "רשימת חברות מוחזקות עיקריות",
-              "note": null
-            },
-            {
-              "name": "אאורה אימאג'ין גבעתיים שותפות מוגבלת",
-              "ownership_pct": 70,
-              "parent": "אאורה מחדשים את ישראל בע\"מ",
-              "page_reference": 239,
-              "section_title": "רשימת חברות מוחזקות עיקריות",
-              "table_title": "רשימת חברות מוחזקות עיקריות",
-              "note": null
-            },
-            {
-              "name": "אאורה תעשיות מרכז בע\"מ",
-              "ownership_pct": 100,
-              "parent": "אאורה מרכזים מסחריים בע\"מ",
-              "page_reference": 239,
-              "section_title": "רשימת חברות מוחזקות עיקריות",
-              "table_title": "רשימת חברות מוחזקות עיקריות",
-              "note": null
-            },
-            {
-              "name": "ק.מ.א מרכז העיר לוד מסחר בע\"מ",
-              "ownership_pct": 81,
-              "parent": "אאורה מרכזים מסחריים בע\"מ",
-              "page_reference": 239,
-              "section_title": "רשימת חברות מוחזקות עיקריות",
-              "table_title": "רשימת חברות מוחזקות עיקריות",
-              "note": null
-            },
-            {
-              "name": "אשדן אגמים בבן צבי מסחר בע\"מ",
-              "ownership_pct": 100,
-              "parent": "אאורה מרכזים מסחריים בע\"מ",
-              "page_reference": 239,
-              "section_title": "רשימת חברות מוחזקות עיקריות",
-              "table_title": "רשימת חברות מוחזקות עיקריות",
-              "note": null
-            },
-            {
-              "name": "אשדן התחדשות עירונית מסחר בע\"מ",
-              "ownership_pct": 100,
-              "parent": "אאורה מרכזים מסחריים בע\"מ",
-              "page_reference": 239,
-              "section_title": "רשימת חברות מוחזקות עיקריות",
-              "table_title": "רשימת חברות מוחזקות עיקריות",
-              "note": null
-            },
-            {
-              "name": "סי אבן יזמות מסחר בע\"מ",
-              "ownership_pct": 100,
-              "parent": "אאורה מרכזים מסחריים בע\"מ",
-              "page_reference": 239,
-              "section_title": "רשימת חברות מוחזקות עיקריות",
-              "table_title": "רשימת חברות מוחזקות עיקריות",
-              "note": null
-            },
-            {
-              "name": "אאורה מרכזים מסחריים בבני עייש בע\"מ",
-              "ownership_pct": 100,
-              "parent": "אאורה מרכזים מסחריים בע\"מ",
-              "page_reference": 239,
-              "section_title": "רשימת חברות מוחזקות עיקריות",
-              "table_title": "רשימת חברות מוחזקות עיקריות",
-              "note": null
-            },
-            {
-              "name": "אאורה מרכזים מסחריים כפר יונה בע\"מ",
-              "ownership_pct": 100,
-              "parent": "אאורה מרכזים מסחריים בע\"מ",
-              "page_reference": 239,
-              "section_title": "רשימת חברות מוחזקות עיקריות",
-              "table_title": "רשימת חברות מוחזקות עיקריות",
-              "note": null
-            },
-            {
-              "name": "אאורה ניהול שותפויות בע\"מ",
-              "ownership_pct": 100,
-              "parent": "אאורה מחדשים את ישראל בע\"מ",
-              "page_reference": 239,
-              "section_title": "רשימת חברות מוחזקות עיקריות",
-              "table_title": "רשימת חברות מוחזקות עיקריות",
-              "note": null
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-14T10:20:34.588742+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732715": {
     "company_id": "1820",
@@ -3060,216 +2100,19 @@
   },
   "1730151": {
     "company_id": "2417",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-13T19:16:31.576284+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 15,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "אנשי העיר מירב בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "1.3 מבנה החזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "פרויקט מירב על היום בע\"מ",
-              "ownership_pct": 65,
-              "parent": "אנשי העיר מירב בע\"מ",
-              "page_reference": 10,
-              "section_title": "1.3 מבנה החזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אנשי העיר ניהול בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "1.3 מבנה החזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אנשי העיר פרויקטים בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "1.3 מבנה החזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אנשי העיר ביצוע בע\"מ",
-              "ownership_pct": 49,
-              "parent": "אנשי העיר פרויקטים בע\"מ",
-              "page_reference": 10,
-              "section_title": "1.3 מבנה החזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אנשי העיר במודיעין 10 שותפות מוגבלת",
-              "ownership_pct": null,
-              "parent": "אנשי העיר ניהול בע\"מ ואנשי העיר פרויקטים בע\"מ",
-              "page_reference": 10,
-              "section_title": "1.3 מבנה החזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אנשי העיר בנקסק 11-13 שותפות מוגבלת",
-              "ownership_pct": null,
-              "parent": "אנשי העיר ניהול בע\"מ ואנשי העיר פרויקטים בע\"מ",
-              "page_reference": 10,
-              "section_title": "1.3 מבנה החזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אנשי העיר ברמז 21 שותפות מוגבלת",
-              "ownership_pct": null,
-              "parent": "אנשי העיר ניהול בע\"מ ואנשי העיר פרויקטים בע\"מ",
-              "page_reference": 10,
-              "section_title": "1.3 מבנה החזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אנשי העיר ביכורן יעקב 12 שותפות מוגבלת",
-              "ownership_pct": null,
-              "parent": "אנשי העיר ניהול בע\"מ ואנשי העיר פרויקטים בע\"מ",
-              "page_reference": 10,
-              "section_title": "1.3 מבנה החזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אנשי העיר בז'בוטינסקי 146 שותפות מוגבלת",
-              "ownership_pct": null,
-              "parent": "אנשי העיר ניהול בע\"מ ואנשי העיר פרויקטים בע\"מ",
-              "page_reference": 10,
-              "section_title": "1.3 מבנה החזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אנשי העיר בעמוס 10-12 שותפות מוגבלת",
-              "ownership_pct": null,
-              "parent": "אנשי העיר ניהול בע\"מ ואנשי העיר פרויקטים בע\"מ",
-              "page_reference": 10,
-              "section_title": "1.3 מבנה החזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אנשי העיר ברמז 19 שותפות מוגבלת",
-              "ownership_pct": null,
-              "parent": "אנשי העיר ניהול בע\"מ ואנשי העיר פרויקטים בע\"מ",
-              "page_reference": 10,
-              "section_title": "1.3 מבנה החזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אנשי העיר בסוקולוב 13 שותפות מוגבלת",
-              "ownership_pct": null,
-              "parent": "אנשי העיר ניהול בע\"מ ואנשי העיר פרויקטים בע\"מ",
-              "page_reference": 10,
-              "section_title": "1.3 מבנה החזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אנשי העיר בבצלאל 1 שותפות מוגבלת",
-              "ownership_pct": null,
-              "parent": "אנשי העיר ניהול בע\"מ ואנשי העיר פרויקטים בע\"מ",
-              "page_reference": 10,
-              "section_title": "1.3 מבנה החזקות החברה",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "אנשי העיר ביצוע בע\"מ",
-              "ownership_pct": 49,
-              "parent": "חברת הבת",
-              "page_reference": 21,
-              "section_title": "3.1 מבנה תחום הפעילות והשינויים החלים בו",
-              "table_title": null,
-              "note": "מוחזקת באמצעות חברת בת בבעלות ושליטה מלאה של החברה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "אנשי העיר ביצוע בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 65,
-              "section_title": "מידע נוסף על פרויקטים שאינם מהותיים מאוד",
-              "table_title": null,
-              "note": "מוזכרת כחברת בת לא בשליטה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-14T10:22:00.291583+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1728522": {
     "company_id": "390",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-13T19:14:36.866669+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 20,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-14T10:25:22.985365+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1729031": {
     "company_id": "1644",
@@ -3281,48 +2124,27 @@
   },
   "1725670": {
     "company_id": "1891",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-13T19:14:41.353819+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 15,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-14T10:28:56.118541+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1730561": {
     "company_id": "746",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-13T19:14:44.073932+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 29,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-14T10:35:32.887250+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1727173": {
     "company_id": "1457",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-13T19:14:43.123367+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 19,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-14T10:29:34.499182+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732976": {
     "company_id": "2478",
@@ -3359,13 +2181,1398 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-13T19:14:45.463370+00:00",
+    "at": "2026-09-14T10:34:58.395959+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 25,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "פאוורג'ן בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 15,
+              "section_title": "1.1 פורטפוליו נכסים תזרימי, מבוזר היטב, חסין וצומח",
+              "table_title": "פורטפוליו הנכסים של ג'נריישן",
+              "note": null
+            },
+            {
+              "name": "בלוג'ן בע\"מ",
+              "ownership_pct": 80,
+              "parent": null,
+              "page_reference": 15,
+              "section_title": "1.1 פורטפוליו נכסים תזרימי, מבוזר היטב, חסין וצומח",
+              "table_title": "פורטפוליו הנכסים של ג'נריישן",
+              "note": null
+            },
+            {
+              "name": "בון תור בע\"מ",
+              "ownership_pct": 75.7,
+              "parent": null,
+              "page_reference": 15,
+              "section_title": "1.1 פורטפוליו נכסים תזרימי, מבוזר היטב, חסין וצומח",
+              "table_title": "פורטפוליו הנכסים של ג'נריישן",
+              "note": null
+            },
+            {
+              "name": "מטרופולין בע\"מ",
+              "ownership_pct": 75.7,
+              "parent": null,
+              "page_reference": 15,
+              "section_title": "1.1 פורטפוליו נכסים תזרימי, מבוזר היטב, חסין וצומח",
+              "table_title": "פורטפוליו הנכסים של ג'נריישן",
+              "note": null
+            },
+            {
+              "name": "נגב גז טבעי בע\"מ",
+              "ownership_pct": 33,
+              "parent": null,
+              "page_reference": 15,
+              "section_title": "1.1 פורטפוליו נכסים תזרימי, מבוזר היטב, חסין וצומח",
+              "table_title": "פורטפוליו הנכסים של ג'נריישן",
+              "note": null
+            },
+            {
+              "name": "גז טבעי דרום בע\"מ",
+              "ownership_pct": 33,
+              "parent": null,
+              "page_reference": 15,
+              "section_title": "1.1 פורטפוליו נכסים תזרימי, מבוזר היטב, חסין וצומח",
+              "table_title": "פורטפוליו הנכסים של ג'נריישן",
+              "note": null
+            },
+            {
+              "name": "אי.פי.סי בע\"מ",
+              "ownership_pct": 33,
+              "parent": null,
+              "page_reference": 15,
+              "section_title": "1.1 פורטפוליו נכסים תזרימי, מבוזר היטב, חסין וצומח",
+              "table_title": "פורטפוליו הנכסים של ג'נריישן",
+              "note": null
+            },
+            {
+              "name": "פרידנזון-ג'נריישן מרכזים לוגיסטיים בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 15,
+              "section_title": "1.1 פורטפוליו נכסים תזרימי, מבוזר היטב, חסין וצומח",
+              "table_title": "פורטפוליו הנכסים של ג'נריישן",
+              "note": null
+            },
+            {
+              "name": "GreenWay",
+              "ownership_pct": 13.2,
+              "parent": null,
+              "page_reference": 15,
+              "section_title": "1.1 פורטפוליו נכסים תזרימי, מבוזר היטב, חסין וצומח",
+              "table_title": "פורטפוליו הנכסים של ג'נריישן",
+              "note": null
+            },
+            {
+              "name": "Porterbrook Holding I Limited",
+              "ownership_pct": 10,
+              "parent": null,
+              "page_reference": 15,
+              "section_title": "1.1 פורטפוליו נכסים תזרימי, מבוזר היטב, חסין וצומח",
+              "table_title": "פורטפוליו הנכסים של ג'נריישן",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "BlueGen",
+              "ownership_pct": 80.01,
+              "parent": null,
+              "page_reference": 21,
+              "section_title": "1.4.1 נתונים עיקריים אודות פורטפוליו הנכסים ממועד רכישתו ועד ליום 31 בדצמבר 2025",
+              "table_title": "נתונים עיקריים אודות פורטפוליו הנכסים ממועד רכישתו ועד ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "בון תור",
+              "ownership_pct": 75.7,
+              "parent": null,
+              "page_reference": 21,
+              "section_title": "1.4.1 נתונים עיקריים אודות פורטפוליו הנכסים ממועד רכישתו ועד ליום 31 בדצמבר 2025",
+              "table_title": "נתונים עיקריים אודות פורטפוליו הנכסים ממועד רכישתו ועד ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "PowerGen",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 21,
+              "section_title": "1.4.1 נתונים עיקריים אודות פורטפוליו הנכסים ממועד רכישתו ועד ליום 31 בדצמבר 2025",
+              "table_title": "נתונים עיקריים אודות פורטפוליו הנכסים ממועד רכישתו ועד ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "פורטרברוק",
+              "ownership_pct": 10.0,
+              "parent": null,
+              "page_reference": 21,
+              "section_title": "1.4.1 נתונים עיקריים אודות פורטפוליו הנכסים ממועד רכישתו ועד ליום 31 בדצמבר 2025",
+              "table_title": "נתונים עיקריים אודות פורטפוליו הנכסים ממועד רכישתו ועד ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "חברות חלוקת הגז",
+              "ownership_pct": 33.33,
+              "parent": null,
+              "page_reference": 21,
+              "section_title": "1.4.1 נתונים עיקריים אודות פורטפוליו הנכסים ממועד רכישתו ועד ליום 31 בדצמבר 2025",
+              "table_title": "נתונים עיקריים אודות פורטפוליו הנכסים ממועד רכישתו ועד ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "פרידנזון-ג'נריישן",
+              "ownership_pct": 50.0,
+              "parent": null,
+              "page_reference": 21,
+              "section_title": "1.4.1 נתונים עיקריים אודות פורטפוליו הנכסים ממועד רכישתו ועד ליום 31 בדצמבר 2025",
+              "table_title": "נתונים עיקריים אודות פורטפוליו הנכסים ממועד רכישתו ועד ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "גרין-ווי",
+              "ownership_pct": 13.2,
+              "parent": null,
+              "page_reference": 21,
+              "section_title": "1.4.1 נתונים עיקריים אודות פורטפוליו הנכסים ממועד רכישתו ועד ליום 31 בדצמבר 2025",
+              "table_title": "נתונים עיקריים אודות פורטפוליו הנכסים ממועד רכישתו ועד ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "Waste BlueGen",
+              "ownership_pct": 70.0,
+              "parent": "BlueGen",
+              "page_reference": 31,
+              "section_title": "1.11 השקעות הקרן בנכסי תשתיות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "סייקל",
+              "ownership_pct": 24.75,
+              "parent": "BlueGen",
+              "page_reference": 32,
+              "section_title": "1.11 השקעות הקרן בנכסי תשתיות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מתקן סמארט ווייסט",
+              "ownership_pct": 50.0,
+              "parent": "BlueGen",
+              "page_reference": 31,
+              "section_title": "1.11 השקעות הקרן בנכסי תשתיות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מתקן דיה",
+              "ownership_pct": 50.0,
+              "parent": "BlueGen",
+              "page_reference": 32,
+              "section_title": "1.11 השקעות הקרן בנכסי תשתיות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מתקן השבת אנרגיה מפסולת (WTE) נאות חובב",
+              "ownership_pct": 54.5,
+              "parent": "BlueGen",
+              "page_reference": 32,
+              "section_title": "1.11 השקעות הקרן בנכסי תשתיות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מתקן התפלה בפלמחים",
+              "ownership_pct": 51.0,
+              "parent": "BlueGen",
+              "page_reference": 32,
+              "section_title": "1.11 השקעות הקרן בנכסי תשתיות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מתקן התפלה אשדוד ותחנת הכוח",
+              "ownership_pct": 50.0,
+              "parent": "BlueGen",
+              "page_reference": 33,
+              "section_title": "1.11 השקעות הקרן בנכסי תשתיות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מתקן טיפול במי תהום באזור תעש רמת השרון",
+              "ownership_pct": 100.0,
+              "parent": "BlueGen",
+              "page_reference": 33,
+              "section_title": "1.11 השקעות הקרן בנכסי תשתיות",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "מתקן ההתפלה באשדוד",
+              "ownership_pct": 50.0,
+              "parent": null,
+              "page_reference": 35,
+              "section_title": "זכיינות מים",
+              "table_title": null,
+              "note": "איחוד יחסי"
+            },
+            {
+              "name": "בון תור",
+              "ownership_pct": 75.7,
+              "parent": null,
+              "page_reference": 38,
+              "section_title": "תחבורה בישראל (בון תור - 75.7%) | תמצית פרטים עיקריים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מטרופולין",
+              "ownership_pct": 100.0,
+              "parent": "בון תור",
+              "page_reference": 38,
+              "section_title": "תחבורה בישראל (בון תור - 75.7%) | תמצית פרטים עיקריים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "בי.ג'י מוטורס",
+              "ownership_pct": 45.0,
+              "parent": "בון תור",
+              "page_reference": 39,
+              "section_title": "תחבורה בישראל (בון תור - 75.7%) | תמצית פרטים עיקריים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פאוורג'ן בע\"מ (PowerGen)",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 42,
+              "section_title": "ייצור, אגירה ואספקת חשמל (PowerGen - 100%) תמצית פרטים עיקריים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "התחנות הצפוניות (רמת גבריאל ואלון תבור)",
+              "ownership_pct": 86.2,
+              "parent": "פאוורג'ן בע\"מ (PowerGen)",
+              "page_reference": 42,
+              "section_title": "תחום הייצור ואגירת חשמל מורכב מהנכסים הבאים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "MRC",
+              "ownership_pct": 16.67,
+              "parent": "פאוורג'ן בע\"מ (PowerGen)",
+              "page_reference": 42,
+              "section_title": "תחום הייצור ואגירת חשמל מורכב מהנכסים הבאים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "התחנות החופיות",
+              "ownership_pct": 35.0,
+              "parent": "פאוורג'ן בע\"מ (PowerGen)",
+              "page_reference": 43,
+              "section_title": "תחום הייצור ואגירת חשמל מורכב מהנכסים הבאים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אנרגיות מתחדשות",
+              "ownership_pct": 100.0,
+              "parent": "פאוורג'ן בע\"מ (PowerGen)",
+              "page_reference": 43,
+              "section_title": "תחום הייצור ואגירת חשמל מורכב מהנכסים הבאים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אגירה שאובה בגלבוע",
+              "ownership_pct": 25.5,
+              "parent": "פאוורג'ן בע\"מ (PowerGen)",
+              "page_reference": 43,
+              "section_title": "תחום הייצור ואגירת חשמל מורכב מהנכסים הבאים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ריינדיר",
+              "ownership_pct": 27.51,
+              "parent": "פאוורג'ן בע\"מ (PowerGen)",
+              "page_reference": 43,
+              "section_title": "תחום הייצור ואגירת חשמל מורכב מהנכסים הבאים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "בזק-ג'ן",
+              "ownership_pct": 50.0,
+              "parent": "פאוורג'ן בע\"מ (PowerGen)",
+              "page_reference": 44,
+              "section_title": "תחום אספקת החשמל בקבוצה מורכב מ",
+              "table_title": null,
+              "note": "אספקה ללקוחות ביתיים"
+            },
+            {
+              "name": "זאן טעינה",
+              "ownership_pct": 50.0,
+              "parent": "פאוורג'ן בע\"מ (PowerGen)",
+              "page_reference": 44,
+              "section_title": "תחום אספקת החשמל בקבוצה מורכב מ",
+              "table_title": null,
+              "note": "עמדות טעינה ואספקת חשמל לרכבים"
+            },
+            {
+              "name": "פורטרברוק",
+              "ownership_pct": 10.0,
+              "parent": null,
+              "page_reference": 49,
+              "section_title": "תחבורה רכבתית באנגליה (פורטרברוק - 10%) תמצית פרטים עיקריים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פרידנזון-ג'נריישן",
+              "ownership_pct": 50.0,
+              "parent": null,
+              "page_reference": 52,
+              "section_title": "אחסון לוגיסטי (פרידנזון ג'נריישן - 50%) | תמצית פרטים עיקריים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "חברות חלוקת גז טבעי (נגב גז וגז טבעי דרום)",
+              "ownership_pct": 33.33,
+              "parent": null,
+              "page_reference": 54,
+              "section_title": "חלוקת הגז הטבעי (חברות חלוקת גז טבעי - 33.33%) תמצית פרטים עיקריים",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "פרידנזון-ג'נריישן",
+              "ownership_pct": 50.0,
+              "parent": null,
+              "page_reference": 52,
+              "section_title": "פרק א' - דוח דירקטוריון",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "חברות חלוקת הגז הטבעי",
+              "ownership_pct": 33.33,
+              "parent": null,
+              "page_reference": 54,
+              "section_title": "פרק א' - דוח דירקטוריון",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "GreenWay",
+              "ownership_pct": 13.2,
+              "parent": null,
+              "page_reference": 56,
+              "section_title": "פרק א' - דוח דירקטוריון",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "PowerGen",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 65,
+              "section_title": "פרק א' - דוח דירקטוריון",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "BlueGen",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 65,
+              "section_title": "פרק א' - דוח דירקטוריון",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "בון תור",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 65,
+              "section_title": "פרק א' - דוח דירקטוריון",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מטרופולין",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 65,
+              "section_title": "פרק א' - דוח דירקטוריון",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פורטרברוק",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 67,
+              "section_title": "פרק א' - דוח דירקטוריון",
+              "table_title": "פרטים אודות הערכת שווי מהותיות ומהותית מאוד",
+              "note": "סווגה לנכס מוחזק למכירה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "פרידנזון-ג'נריישן מרכזים לוגיסטיים בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 75,
+              "section_title": "התאגדות ומבנה",
+              "table_title": "תרשים מבנה ההחזקות בנכסי תשתיות בהם השקיעה הקרן (\"נכסי הפורטפוליו\") נכון למועד פרסום הדוח",
+              "note": null
+            },
+            {
+              "name": "Porterbrook Holding I Limited",
+              "ownership_pct": 10,
+              "parent": null,
+              "page_reference": 75,
+              "section_title": "התאגדות ומבנה",
+              "table_title": "תרשים מבנה ההחזקות בנכסי תשתיות בהם השקיעה הקרן (\"נכסי הפורטפוליו\") נכון למועד פרסום הדוח",
+              "note": "באמצעות תאגיד אנגלי בו מחזיקה הקרן ב-33.33%"
+            },
+            {
+              "name": "נגב גז טבעי בע\"מ",
+              "ownership_pct": 33.33,
+              "parent": null,
+              "page_reference": 75,
+              "section_title": "התאגדות ומבנה",
+              "table_title": "תרשים מבנה ההחזקות בנכסי תשתיות בהם השקיעה הקרן (\"נכסי הפורטפוליו\") נכון למועד פרסום הדוח",
+              "note": null
+            },
+            {
+              "name": "גז טבעי דרום בע\"מ",
+              "ownership_pct": 33.33,
+              "parent": null,
+              "page_reference": 75,
+              "section_title": "התאגדות ומבנה",
+              "table_title": "תרשים מבנה ההחזקות בנכסי תשתיות בהם השקיעה הקרן (\"נכסי הפורטפוליו\") נכון למועד פרסום הדוח",
+              "note": null
+            },
+            {
+              "name": "אי.פי.סי בע\"מ",
+              "ownership_pct": 33.33,
+              "parent": null,
+              "page_reference": 75,
+              "section_title": "התאגדות ומבנה",
+              "table_title": "תרשים מבנה ההחזקות בנכסי תשתיות בהם השקיעה הקרן (\"נכסי הפורטפוליו\") נכון למועד פרסום הדוח",
+              "note": null
+            },
+            {
+              "name": "PowerGen בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 75,
+              "section_title": "התאגדות ומבנה",
+              "table_title": "תרשים מבנה ההחזקות בנכסי תשתיות בהם השקיעה הקרן (\"נכסי הפורטפוליו\") נכון למועד פרסום הדוח",
+              "note": null
+            },
+            {
+              "name": "בון תור בע\"מ",
+              "ownership_pct": 75.7,
+              "parent": null,
+              "page_reference": 75,
+              "section_title": "התאגדות ומבנה",
+              "table_title": "תרשים מבנה ההחזקות בנכסי תשתיות בהם השקיעה הקרן (\"נכסי הפורטפוליו\") נכון למועד פרסום הדוח",
+              "note": null
+            },
+            {
+              "name": "מטרופולין - תחבורה ציבורית בע\"מ",
+              "ownership_pct": 75.7,
+              "parent": null,
+              "page_reference": 75,
+              "section_title": "התאגדות ומבנה",
+              "table_title": "תרשים מבנה ההחזקות בנכסי תשתיות בהם השקיעה הקרן (\"נכסי הפורטפוליו\") נכון למועד פרסום הדוח",
+              "note": null
+            },
+            {
+              "name": "GreenWay Holding S.A.",
+              "ownership_pct": 13.2,
+              "parent": null,
+              "page_reference": 75,
+              "section_title": "התאגדות ומבנה",
+              "table_title": "תרשים מבנה ההחזקות בנכסי תשתיות בהם השקיעה הקרן (\"נכסי הפורטפוליו\") נכון למועד פרסום הדוח",
+              "note": "באמצעות תאגיד פולני בו מחזיקה הקרן ב-50%"
+            },
+            {
+              "name": "BlueGen בע\"מ",
+              "ownership_pct": 80.01,
+              "parent": null,
+              "page_reference": 75,
+              "section_title": "התאגדות ומבנה",
+              "table_title": "תרשים מבנה ההחזקות בנכסי תשתיות בהם השקיעה הקרן (\"נכסי הפורטפוליו\") נכון למועד פרסום הדוח",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "בלוג'ן בע\"מ (BlueGen)",
+              "ownership_pct": 80.01,
+              "parent": null,
+              "page_reference": 89,
+              "section_title": "חלק שני – פרטים אודות פורטפוליו ההשקעות של הקרן",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "בון תור בע\"מ (בון תור)",
+              "ownership_pct": 75.7,
+              "parent": null,
+              "page_reference": 89,
+              "section_title": "חלק שני – פרטים אודות פורטפוליו ההשקעות של הקרן",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פאוורג'ן בע\"מ (PowerGen)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 90,
+              "section_title": "חלק שני – פרטים אודות פורטפוליו ההשקעות של הקרן",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "תאגיד אנגלי (התאגיד המשותף)",
+              "ownership_pct": 33.33,
+              "parent": null,
+              "page_reference": 90,
+              "section_title": "חלק שני – פרטים אודות פורטפוליו ההשקעות של הקרן",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Porterbrook Holding Limited (פורטרברוק)",
+              "ownership_pct": 30,
+              "parent": "תאגיד אנגלי (התאגיד המשותף)",
+              "page_reference": 90,
+              "section_title": "חלק שני – פרטים אודות פורטפוליו ההשקעות של הקרן",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פרידנזון-ג'נריישן מרכזים לוגיסטיים בע\"מ (פרידנזון-ג'נריישן)",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 90,
+              "section_title": "חלק שני – פרטים אודות פורטפוליו ההשקעות של הקרן",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "קבוצת חברות חלוקת הגז (נגב גז טבעי בע\"מ, גז טבעי דרום בע\"מ ונגב החברה לתשתיות גז טבעי אי.פי.סי בע\"מ)",
+              "ownership_pct": 33.33,
+              "parent": null,
+              "page_reference": 90,
+              "section_title": "חלק שני – פרטים אודות פורטפוליו ההשקעות של הקרן",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "תאגיד פולני",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 90,
+              "section_title": "חלק שני – פרטים אודות פורטפוליו ההשקעות של הקרן",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "GreenWay Holding S.A. (Greenway)",
+              "ownership_pct": 13.2,
+              "parent": "תאגיד פולני",
+              "page_reference": 90,
+              "section_title": "חלק שני – פרטים אודות פורטפוליו ההשקעות של הקרן",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "BlueGen Waste Management Ltd (Waste BlueGen)",
+              "ownership_pct": 70,
+              "parent": "בלוג'ן בע\"מ (BlueGen)",
+              "page_reference": 99,
+              "section_title": "נספח א' – תיאור עסקי הקרן בתחום הסביבה",
+              "table_title": null,
+              "note": "צפויה להיות בשליטת BlueGen עם השלמת העסקה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "סמארט וויסט אקו בע\"מ",
+              "ownership_pct": 31.5,
+              "parent": null,
+              "page_reference": 107,
+              "section_title": "3.2.6 תיאור פעילות זרוע הפסולת",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דקל דיה בע\"מ",
+              "ownership_pct": 50.0,
+              "parent": "דקל תשתיות",
+              "page_reference": 107,
+              "section_title": "3.2.6 תיאור פעילות זרוע הפסולת",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דאבליו.טי.אי. נגב בע\"מ",
+              "ownership_pct": 36.5,
+              "parent": null,
+              "page_reference": 107,
+              "section_title": "3.2.6 תיאור פעילות זרוע הפסולת",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גרין נט מחזור וטיפול בפסולת בע\"מ",
+              "ownership_pct": 50.0,
+              "parent": "דקל תשתיות",
+              "page_reference": 109,
+              "section_title": "3.2.6 תיאור פעילות זרוע הפסולת",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גרין דקל טי.אל.וי. בע\"מ",
+              "ownership_pct": 50.0,
+              "parent": "דקל תשתיות",
+              "page_reference": 109,
+              "section_title": "3.2.6 תיאור פעילות זרוע הפסולת",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "קממ - מחזור אריזות בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": "קממ",
+              "page_reference": 109,
+              "section_title": "3.2.6 תיאור פעילות זרוע הפסולת",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "סייקל כלכלה מעגלית למכלי משקה בע\"מ",
+              "ownership_pct": 24.75,
+              "parent": null,
+              "page_reference": 110,
+              "section_title": "ג. פעילות בתחום הטיפול בפסולת יבשה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דרכו הים התפלה בע\"מ",
+              "ownership_pct": 51.0,
+              "parent": null,
+              "page_reference": 119,
+              "section_title": "4.3 תיאור BlueGen במקטע פעילות זכיינות מים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אשדוד התפלה בע\"מ",
+              "ownership_pct": 50.0,
+              "parent": null,
+              "page_reference": 119,
+              "section_title": "4.3 תיאור BlueGen במקטע פעילות זכיינות מים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "בלוג'ן טיפול ביולוגי רמת השרון בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 119,
+              "section_title": "4.3 תיאור BlueGen במקטע פעילות זכיינות מים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מתקן התפלה כפר מסריק",
+              "ownership_pct": 50.0,
+              "parent": null,
+              "page_reference": 120,
+              "section_title": "4.3.3 תיאור פעילות BlueGen במקטע טיפול במים ושפכים (BOT)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מט\"ש עכו",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 120,
+              "section_title": "4.3.3 תיאור פעילות BlueGen במקטע טיפול במים ושפכים (BOT)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מט\"ש בזן",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 120,
+              "section_title": "4.3.3 תיאור פעילות BlueGen במקטע טיפול במים ושפכים (BOT)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מט\"ש בית שאן",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 120,
+              "section_title": "4.3.3 תיאור פעילות BlueGen במקטע טיפול במים ושפכים (BOT)",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:7": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "BlueGen",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 120,
+              "section_title": "תיאור עסקי הקרן – נספח א', תחום המים, השפכים והסביבה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "בון תור בע\"מ",
+              "ownership_pct": 75.66,
+              "parent": null,
+              "page_reference": 132,
+              "section_title": "נספח ב' – תיאור עסקי הקרן בתחום התחבורה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מטרופולין – תחבורה ציבורית בע\"מ",
+              "ownership_pct": 100,
+              "parent": "בון תור בע\"מ",
+              "page_reference": 132,
+              "section_title": "1.1.2 תחבורה ציבורית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ב.ג מוטורס (2017) בע\"מ",
+              "ownership_pct": 45,
+              "parent": "בון תור בע\"מ",
+              "page_reference": 132,
+              "section_title": "1.2",
+              "table_title": null,
+              "note": "בדילול מלא"
+            }
+          ],
+          "change_events": [
+            {
+              "company": "בון תור בע\"מ",
+              "event_type": "increase",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 75.66,
+              "event_date": null,
+              "event_description": "רכישת כ-2.5% מהון מניותיה של בון תור מידי השותפים ברבעון השני לשנת 2025",
+              "page_reference": 132,
+              "section_title": "נספח ב' – תיאור עסקי הקרן בתחום התחבורה"
+            }
+          ]
+        },
+        "0:8": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "פאוורג'ן בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 152,
+              "section_title": "נספח ג' – תיאור עסקי הקרן בתחום ייצור, אגירה ואספקת חשמל",
+              "table_title": null,
+              "note": "מלוא הון מניותיה"
+            },
+            {
+              "name": "פאוורג'ן פאוור פלנטס בע\"מ",
+              "ownership_pct": 100,
+              "parent": "פאוורג'ן בע\"מ",
+              "page_reference": 153,
+              "section_title": "הגדרות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פאוורג'ן סולאר איי בע\"מ",
+              "ownership_pct": 100,
+              "parent": "פאוורג'ן בע\"מ",
+              "page_reference": 153,
+              "section_title": "הגדרות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פאוורג'ן אלון תבור בע\"מ",
+              "ownership_pct": 86.2,
+              "parent": "פאוורג'ן פאוור פלנטס בע\"מ",
+              "page_reference": 153,
+              "section_title": "הגדרות",
+              "table_title": null,
+              "note": "מהמניות הרגילות (85.71% ממניות ההנהלה)"
+            },
+            {
+              "name": "פאוורג'ן רמת גבריאל בע\"מ",
+              "ownership_pct": 86.2,
+              "parent": "פאוורג'ן פאוור פלנטס בע\"מ",
+              "page_reference": 153,
+              "section_title": "הגדרות",
+              "table_title": null,
+              "note": "מהמניות הרגילות (85.71% ממניות ההנהלה)"
+            },
+            {
+              "name": "ריינדיר אנרגיה בע\"מ",
+              "ownership_pct": 27.51,
+              "parent": "פאוורג'ן פאוור פלנטס בע\"מ",
+              "page_reference": 153,
+              "section_title": "הגדרות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "בזק-ג'ן בע\"מ",
+              "ownership_pct": 50,
+              "parent": "פאוורג'ן בע\"מ",
+              "page_reference": 153,
+              "section_title": "הגדרות",
+              "table_title": null,
+              "note": "בחלקים שווים"
+            },
+            {
+              "name": "זאן אנרגיה טעינה בע\"מ",
+              "ownership_pct": 50,
+              "parent": "פאוורג'ן בע\"מ",
+              "page_reference": 153,
+              "section_title": "הגדרות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פאוורג'ן פי.אס.פי. בע\"מ",
+              "ownership_pct": 100,
+              "parent": "פאוורג'ן בע\"מ",
+              "page_reference": 153,
+              "section_title": "הגדרות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פי אס פי השקעות בע\"מ (PSP)",
+              "ownership_pct": 25.5,
+              "parent": "פאוורג'ן פי.אס.פי. בע\"מ",
+              "page_reference": 153,
+              "section_title": "הגדרות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ג'נריישן רפק אחזקות אם.אר.סי שותפות כללית (תאגיד MRC)",
+              "ownership_pct": 50,
+              "parent": "פאוורג'ן בע\"מ",
+              "page_reference": 154,
+              "section_title": "הגדרות",
+              "table_title": null,
+              "note": "בחלקים שווים"
+            },
+            {
+              "name": "יובלי רעם אנרגיה שותפות מוגבלת",
+              "ownership_pct": 35,
+              "parent": "פאוורג'ן פאוור פלנטס בע\"מ",
+              "page_reference": 154,
+              "section_title": "הגדרות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פאוורג'ן אשקלון בע\"מ",
+              "ownership_pct": 100,
+              "parent": "יובלי רעם אנרגיה שותפות מוגבלת",
+              "page_reference": 154,
+              "section_title": "הגדרות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פאוורג'ן שורק בע\"מ",
+              "ownership_pct": 100,
+              "parent": "יובלי רעם אנרגיה שותפות מוגבלת",
+              "page_reference": 154,
+              "section_title": "הגדרות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "בון תור",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 144,
+              "section_title": "5. הון אנושי",
+              "table_title": null,
+              "note": "חברה מוחזקת בתחום התחבורה"
+            },
+            {
+              "name": "מטרופולין",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 144,
+              "section_title": "5. הון אנושי",
+              "table_title": null,
+              "note": "חברה מוחזקת בתחום התחבורה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:9": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "פאוורג'ן אשקלון בע\"מ",
+              "ownership_pct": 100,
+              "parent": "שותפות התחנות החופיות",
+              "page_reference": 154,
+              "section_title": "תיאור עסקי הקרן – נספח ג' , תחום ייצור, אגירה ואספקת חשמל",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פאוורג'ן שורק בע\"מ",
+              "ownership_pct": 100,
+              "parent": "שותפות התחנות החופיות",
+              "page_reference": 154,
+              "section_title": "תיאור עסקי הקרן – נספח ג' , תחום ייצור, אגירה ואספקת חשמל",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "רעם אנרגיה חופית שותפות מוגבלת",
+              "ownership_pct": 35,
+              "parent": "פאוורג'ן פאוור פלנטס",
+              "page_reference": 154,
+              "section_title": "תיאור עסקי הקרן – נספח ג' , תחום ייצור, אגירה ואספקת חשמל",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "יובלי רעם אנרגיה שותפות מוגבלת",
+              "ownership_pct": 35,
+              "parent": "רעם אנרגיה חופית שותפות מוגבלת",
+              "page_reference": 154,
+              "section_title": "תיאור עסקי הקרן – נספח ג' , תחום ייצור, אגירה ואספקת חשמל",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": [
+            {
+              "company": "יבולי שמש אנרגיה מתחדשת בע\"מ",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 100,
+              "event_date": "2025-12-30",
+              "event_description": "התקשרות PowerGen בהסכם לרכישת מלוא החזקותיהם בהון מניותיה של יבולי שמש אנרגיה מתחדשת בע\"מ",
+              "page_reference": 166,
+              "section_title": "תיאור עסקי הקרן – נספח ג' , תחום ייצור, אגירה ואספקת חשמל"
+            }
+          ]
+        },
+        "0:10": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "זאן אנרגיה",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 185,
+              "section_title": "5.1.3 טעינת רכבים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "בזק-ג'ן",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 184,
+              "section_title": "5.1.2 בזק-ג'ן",
+              "table_title": null,
+              "note": "נוסדה כשיתוף פעולה בחלקים שווים"
+            },
+            {
+              "name": "פאוורג'ן פי.אס.פי. בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 178,
+              "section_title": "4.8 הסכמים מהותיים",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:11": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "Porterbrook Holdings Limited",
+              "ownership_pct": 30,
+              "parent": null,
+              "page_reference": 197,
+              "section_title": "תיאור עסקי הקרן – נספח ד', תחום התחבורה הרכבתית בבריטניה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פרידנזון-ג'נריישן מרכזים לוגיסטיים בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 204,
+              "section_title": "נספח ה' – תיאור עסקי הקרן בתחום האחסון הלוגיסטי",
+              "table_title": null,
+              "note": "מוחזק במחצית על ידי הקרן"
+            },
+            {
+              "name": "פאוורג'ן ניהול בע\"מ",
+              "ownership_pct": 100,
+              "parent": "PowerGen",
+              "page_reference": 188,
+              "section_title": "תיאור עסקי הקרן – נספח ג', תחום ייצור, אגירה ואספקת חשמל",
+              "table_title": null,
+              "note": "מוחזק באופן מלא על ידי PowerGen"
+            },
+            {
+              "name": "PowerGen",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 188,
+              "section_title": "תיאור עסקי הקרן – נספח ג', תחום ייצור, אגירה ואספקת חשמל",
+              "table_title": null,
+              "note": "פעילות/מגזר של הקרן"
+            }
+          ],
+          "change_events": []
+        },
+        "0:12": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "נגב גז טבעי בע\"מ",
+              "ownership_pct": 33.33,
+              "parent": null,
+              "page_reference": 209,
+              "section_title": "נספח ו' – תיאור עסקי הקרן בתחום חלוקת גז טבעי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גז טבעי דרום בע\"מ",
+              "ownership_pct": 33.33,
+              "parent": null,
+              "page_reference": 209,
+              "section_title": "נספח ו' – תיאור עסקי הקרן בתחום חלוקת גז טבעי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "החברה לתשתיות גז טבעי אי.פי.סי בע\"מ",
+              "ownership_pct": 33.33,
+              "parent": null,
+              "page_reference": 209,
+              "section_title": "נספח ו' – תיאור עסקי הקרן בתחום חלוקת גז טבעי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Greenway A.S Holdings",
+              "ownership_pct": 13.2,
+              "parent": "תאגיד פולני",
+              "page_reference": 219,
+              "section_title": "נספח ז' – תיאור עסקי הקרן בתחום הטענת רכבים חשמליים במזרח אירופה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:13": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "בון תור",
+              "ownership_pct": 76,
+              "parent": null,
+              "page_reference": 240,
+              "section_title": "באור 6 - השקעות בחברות",
+              "table_title": "א. הרכב ההשקעה בחברות:",
+              "note": null
+            },
+            {
+              "name": "PowerGen",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 240,
+              "section_title": "באור 6 - השקעות בחברות",
+              "table_title": "א. הרכב ההשקעה בחברות:",
+              "note": null
+            },
+            {
+              "name": "חברות חלוקת הגז הטבעי",
+              "ownership_pct": 33,
+              "parent": null,
+              "page_reference": 240,
+              "section_title": "באור 6 - השקעות בחברות",
+              "table_title": "א. הרכב ההשקעה בחברות:",
+              "note": null
+            },
+            {
+              "name": "BlueGen",
+              "ownership_pct": 80,
+              "parent": null,
+              "page_reference": 240,
+              "section_title": "באור 6 - השקעות בחברות",
+              "table_title": "א. הרכב ההשקעה בחברות:",
+              "note": null
+            },
+            {
+              "name": "פרידנזון-ג'נריישן מרכזים לוגיסטיים",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 240,
+              "section_title": "באור 6 - השקעות בחברות",
+              "table_title": "א. הרכב ההשקעה בחברות:",
+              "note": null
+            },
+            {
+              "name": "Greenway Holdings S.A.",
+              "ownership_pct": 13,
+              "parent": null,
+              "page_reference": 240,
+              "section_title": "באור 6 - השקעות בחברות",
+              "table_title": "א. הרכב ההשקעה בחברות:",
+              "note": null
+            },
+            {
+              "name": "Porterbrook Holdings I Limited",
+              "ownership_pct": 10,
+              "parent": null,
+              "page_reference": 240,
+              "section_title": "באור 6 - השקעות בחברות",
+              "table_title": "א. הרכב ההשקעה בחברות:",
+              "note": "נכס מוחזק למכירה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:14": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "בון תור בע\"מ",
+              "ownership_pct": 76,
+              "parent": null,
+              "page_reference": 240,
+              "section_title": "באור 6 - השקעות בחברות",
+              "table_title": "א. הרכב ההשקעה בחברות:",
+              "note": null
+            },
+            {
+              "name": "PowerGen בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 240,
+              "section_title": "באור 6 - השקעות בחברות",
+              "table_title": "א. הרכב ההשקעה בחברות:",
+              "note": null
+            },
+            {
+              "name": "חברות חלוקת הגז הטבעי",
+              "ownership_pct": 33,
+              "parent": null,
+              "page_reference": 240,
+              "section_title": "באור 6 - השקעות בחברות",
+              "table_title": "א. הרכב ההשקעה בחברות:",
+              "note": "כולל נגב גז בע\"מ, גז טבעי דרום בע\"מ ונגב החברה לתשתיות גז טבעי אי.פי.סי בע\"מ"
+            },
+            {
+              "name": "BlueGen",
+              "ownership_pct": 80.01,
+              "parent": null,
+              "page_reference": 240,
+              "section_title": "באור 6 - השקעות בחברות",
+              "table_title": "א. הרכב ההשקעה בחברות:",
+              "note": "בטבלה מצוין 80%, בטקסט מצוין 80.01%"
+            },
+            {
+              "name": "פרידנזון - ג'נריישן מרכזים לוגיסטיים בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 240,
+              "section_title": "באור 6 - השקעות בחברות",
+              "table_title": "א. הרכב ההשקעה בחברות:",
+              "note": null
+            },
+            {
+              "name": "Greenway Holdings S.A. (גרין-ווי)",
+              "ownership_pct": 13,
+              "parent": null,
+              "page_reference": 240,
+              "section_title": "באור 6 - השקעות בחברות",
+              "table_title": "א. הרכב ההשקעה בחברות:",
+              "note": "החזקה בשרשור באמצעות GCH Mobility"
+            },
+            {
+              "name": "Porterbrook Holdings I Limited (פורטרברוק)",
+              "ownership_pct": 10,
+              "parent": "ג'נריישן אינפרא בע\"מ",
+              "page_reference": 240,
+              "section_title": "באור 6 - השקעות בחברות",
+              "table_title": "א. הרכב ההשקעה בחברות:",
+              "note": "סווג כנכס מוחזק למכירה"
+            },
+            {
+              "name": "מטרופולין תחבורה ציבורית בע\"מ",
+              "ownership_pct": 100,
+              "parent": "בון תור בע\"מ",
+              "page_reference": 244,
+              "section_title": "באור 6 - השקעות בחברות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ב.ג מוטורס (2017) בע\"מ",
+              "ownership_pct": 45,
+              "parent": "בון תור בע\"מ",
+              "page_reference": 244,
+              "section_title": "באור 6 - השקעות בחברות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "זאן אנרגיה",
+              "ownership_pct": 50,
+              "parent": "PowerGen בע\"מ",
+              "page_reference": 244,
+              "section_title": "באור 6 - השקעות בחברות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "GCH Mobility",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 242,
+              "section_title": "באור 6 - השקעות בחברות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "קממ מפעלי מחזור בע\"מ (קמ\"מ)",
+              "ownership_pct": 100,
+              "parent": "BlueGen",
+              "page_reference": 246,
+              "section_title": "באור 6 - השקעות בחברות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Waste BlueGen",
+              "ownership_pct": 70,
+              "parent": "BlueGen",
+              "page_reference": 246,
+              "section_title": "באור 6 - השקעות בחברות",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
@@ -39202,5 +39409,37 @@
       "done": {},
       "attempts": {}
     }
+  },
+  "1733349": {
+    "company_id": "2515",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-14T10:12:50.622803+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1733353": {
+    "company_id": "1648",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-14T10:18:59.506155+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1731674": {
+    "company_id": "1484",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-14T10:19:42.739997+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1713653": {
+    "company_id": "2230",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-14T10:19:40.456908+00:00",
+    "model": "gemini-3.5-flash-lite"
   }
 }
