@@ -6034,7 +6034,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-15T11:17:25.321492+00:00",
+    "at": "2026-09-15T11:19:59.020826+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -6519,10 +6519,511 @@
           "as_of_date": "2025-12-31",
           "subsidiaries": [],
           "change_events": []
+        },
+        "0:17": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:18": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:19": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "ש. שלמה חברה לביטוח בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 331,
+              "section_title": "ביאור 5 - חברות מוחזקות",
+              "table_title": null,
+              "note": "חברה פרטית בבעלות מלאה של החברה (בעקיפין)"
+            },
+            {
+              "name": "Ashtoh Properties 2012 B.V",
+              "ownership_pct": 50,
+              "parent": "ש. שלמה חברה לביטוח בע\"מ",
+              "page_reference": 333,
+              "section_title": "ביאור 5 - חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "FS Rocket Leeuwarden Cooperatief U. A",
+              "ownership_pct": 33,
+              "parent": "ש. שלמה חברה לביטוח בע\"מ",
+              "page_reference": 333,
+              "section_title": "ביאור 5 - חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "תלמה שלמה טראוול סולושנס בע\"מ",
+              "ownership_pct": 30,
+              "parent": null,
+              "page_reference": 333,
+              "section_title": "ביאור 5 - חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "HOEK 3",
+              "ownership_pct": 33,
+              "parent": "ש. שלמה חברה לביטוח בע\"מ",
+              "page_reference": 333,
+              "section_title": "ביאור 5 - חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "CDH UK Holdings",
+              "ownership_pct": 30,
+              "parent": "ש. שלמה חברה לביטוח בע\"מ",
+              "page_reference": 333,
+              "section_title": "ביאור 5 - חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גל אלמגור-סוכנות לביטוח (2008) בע\"מ",
+              "ownership_pct": 49,
+              "parent": "ש. שלמה חברה לביטוח בע\"מ",
+              "page_reference": 333,
+              "section_title": "ביאור 5 - חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:20": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:21": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "שלמה רכב",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 360,
+              "section_title": "ביאור 13 - אשראי, הלוואות, אגרות חוב והתחייבויות בגין חכירות",
+              "table_title": null,
+              "note": "מוזכרת בהתחייבויות ובאמות מידה פיננסיות (covenants) כמחויבות החברה להחזק בשיעור שלא יפחת מ-75%"
+            },
+            {
+              "name": "שלמה תחבורה",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 369,
+              "section_title": "ביאור 13 - אשראי, הלוואות, אגרות חוב והתחייבויות בגין חכירות",
+              "table_title": null,
+              "note": "מוזכרת בהתחייבויות ובאמות מידה פיננסיות כמחויבות החברה להחזק בשיעור שלא יפחת מ-75%"
+            },
+            {
+              "name": "שלמה מימון בע\"מ (לשעבר דרך האשראי בע\"מ)",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 367,
+              "section_title": "ביאור 13 - אשראי, הלוואות, אגרות חוב והתחייבויות בגין חכירות",
+              "table_title": null,
+              "note": "מוזכרת בהתחייבויות ובאמות מידה פיננסיות כמחויבות החברה להחזק בשיעור שלא יפחת מ-75%"
+            }
+          ],
+          "change_events": []
+        },
+        "0:23": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "ש. שלמה החזקות עסקי ביטוח בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 392,
+              "section_title": "ביאור 18 - התקשרויות והתחייבויות תלויות",
+              "table_title": null,
+              "note": "חברה בת בבעלות מלאה"
+            },
+            {
+              "name": "שלמה ביטוח",
+              "ownership_pct": null,
+              "parent": "ש. שלמה החזקות עסקי ביטוח בע\"מ",
+              "page_reference": 397,
+              "section_title": "ביאור 18 - התקשרויות והתחייבויות תלויות",
+              "table_title": null,
+              "note": "חברה בת של שלמה עסקי ביטוח"
+            },
+            {
+              "name": "שלמה החזקות רכב בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 393,
+              "section_title": "ביאור 18 - התקשרויות והתחייבויות תלויות",
+              "table_title": null,
+              "note": "לשעבר - שלמה תחבורה כשירות (2023) בע\"מ"
+            },
+            {
+              "name": "שלמה מכירת רכב",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 402,
+              "section_title": "ביאור 18 - התקשרויות והתחייבויות תלויות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "שלמה שירותים",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 403,
+              "section_title": "ביאור 18 - התקשרויות והתחייבויות תלויות",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:24": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:25": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "שלמה החזקות רכב בע\"מ (לשעבר – שלמה כשירות (2023) בע\"מ)",
+              "ownership_pct": 85,
+              "parent": null,
+              "page_reference": 611,
+              "section_title": "נספח חברות מוחזקות פעילות",
+              "table_title": "נספח חברות מוחזקות פעילות",
+              "note": null
+            },
+            {
+              "name": "ש. שלמה החזקות עסקי ביטוח בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 611,
+              "section_title": "נספח חברות מוחזקות פעילות",
+              "table_title": "נספח חברות מוחזקות פעילות",
+              "note": null
+            },
+            {
+              "name": "S.C. New Kopel Romania S.R.L",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 611,
+              "section_title": "נספח חברות מוחזקות פעילות",
+              "table_title": "נספח חברות מוחזקות פעילות",
+              "note": null
+            },
+            {
+              "name": "Union Motors Romana S.R.L",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 611,
+              "section_title": "נספח חברות מוחזקות פעילות",
+              "table_title": "נספח חברות מוחזקות פעילות",
+              "note": null
+            },
+            {
+              "name": "Union Motors Cars Sale S.R.L",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 611,
+              "section_title": "נספח חברות מוחזקות פעילות",
+              "table_title": "נספח חברות מוחזקות פעילות",
+              "note": null
+            },
+            {
+              "name": "דרך האשראי בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 611,
+              "section_title": "נספח חברות מוחזקות פעילות",
+              "table_title": "נספח חברות מוחזקות פעילות",
+              "note": null
+            },
+            {
+              "name": "דרך האשראי (בטוחות א) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 611,
+              "section_title": "נספח חברות מוחזקות פעילות",
+              "table_title": "נספח חברות מוחזקות פעילות",
+              "note": null
+            },
+            {
+              "name": "תלמה שלמה טרוואל סולושנס בע\"מ",
+              "ownership_pct": 30,
+              "parent": null,
+              "page_reference": 611,
+              "section_title": "נספח חברות מוחזקות פעילות",
+              "table_title": "נספח חברות מוחזקות פעילות",
+              "note": null
+            },
+            {
+              "name": "Human Extension Ltd.",
+              "ownership_pct": 13.2,
+              "parent": null,
+              "page_reference": 611,
+              "section_title": "נספח חברות מוחזקות פעילות",
+              "table_title": "נספח חברות מוחזקות פעילות",
+              "note": null
+            },
+            {
+              "name": "Aurora Labs Ltd.",
+              "ownership_pct": 2.26,
+              "parent": null,
+              "page_reference": 611,
+              "section_title": "נספח חברות מוחזקות פעילות",
+              "table_title": "נספח חברות מוחזקות פעילות",
+              "note": null
+            },
+            {
+              "name": "Click-Ins Ltd.",
+              "ownership_pct": 6.02,
+              "parent": null,
+              "page_reference": 611,
+              "section_title": "נספח חברות מוחזקות פעילות",
+              "table_title": "נספח חברות מוחזקות פעילות",
+              "note": null
+            },
+            {
+              "name": "Hailo Technologies Ltd",
+              "ownership_pct": 0.42,
+              "parent": null,
+              "page_reference": 611,
+              "section_title": "נספח חברות מוחזקות פעילות",
+              "table_title": "נספח חברות מוחזקות פעילות",
+              "note": "מתייחס להחזקה של החברה במישרין בלבד."
+            },
+            {
+              "name": "IRP Nexus Group Ltd",
+              "ownership_pct": 0.7,
+              "parent": null,
+              "page_reference": 611,
+              "section_title": "נספח חברות מוחזקות פעילות",
+              "table_title": "נספח חברות מוחזקות פעילות",
+              "note": null
+            },
+            {
+              "name": "ש. שלמה רכב בע\"מ",
+              "ownership_pct": 100,
+              "parent": "שלמה החזקות רכב בע\"מ",
+              "page_reference": 611,
+              "section_title": "נספח חברות מוחזקות פעילות",
+              "table_title": "נספח חברות מוחזקות פעילות",
+              "note": null
+            },
+            {
+              "name": "שלמה תחבורה (2007) בע\"מ",
+              "ownership_pct": 100,
+              "parent": "שלמה החזקות רכב בע\"מ",
+              "page_reference": 611,
+              "section_title": "נספח חברות מוחזקות פעילות",
+              "table_title": "נספח חברות מוחזקות פעילות",
+              "note": null
+            },
+            {
+              "name": "שלמה פסגה בע\"מ",
+              "ownership_pct": 100,
+              "parent": "שלמה החזקות רכב בע\"מ",
+              "page_reference": 611,
+              "section_title": "נספח חברות מוחזקות פעילות",
+              "table_title": "נספח חברות מוחזקות פעילות",
+              "note": null
+            },
+            {
+              "name": "ש. שלמה חשבון מרכז בע\"מ",
+              "ownership_pct": 100,
+              "parent": "שלמה החזקות רכב בע\"מ",
+              "page_reference": 611,
+              "section_title": "נספח חברות מוחזקות פעילות",
+              "table_title": "נספח חברות מוחזקות פעילות",
+              "note": null
+            },
+            {
+              "name": "ש. שלמה מכירת רכב (2000) בע\"מ",
+              "ownership_pct": 100,
+              "parent": "שלמה החזקות רכב בע\"מ",
+              "page_reference": 611,
+              "section_title": "נספח חברות מוחזקות פעילות",
+              "table_title": "נספח חברות מוחזקות פעילות",
+              "note": null
+            },
+            {
+              "name": "ש. שלמה ליסינג לפרטיים בע\"מ",
+              "ownership_pct": 100,
+              "parent": "שלמה החזקות רכב בע\"מ",
+              "page_reference": 611,
+              "section_title": "נספח חברות מוחזקות פעילות",
+              "table_title": "נספח חברות מוחזקות פעילות",
+              "note": null
+            },
+            {
+              "name": "ש. שלמה שירותים בענף הרכב בע\"מ",
+              "ownership_pct": 100,
+              "parent": "שלמה החזקות רכב בע\"מ",
+              "page_reference": 611,
+              "section_title": "נספח חברות מוחזקות פעילות",
+              "table_title": "נספח חברות מוחזקות פעילות",
+              "note": null
+            },
+            {
+              "name": "ניו קופל שלמה בע\"מ",
+              "ownership_pct": 100,
+              "parent": "שלמה החזקות רכב בע\"מ",
+              "page_reference": 611,
+              "section_title": "נספח חברות מוחזקות פעילות",
+              "table_title": "נספח חברות מוחזקות פעילות",
+              "note": null
+            },
+            {
+              "name": "שלמה כ.א.ל בע\"מ",
+              "ownership_pct": 80,
+              "parent": "שלמה החזקות רכב בע\"מ",
+              "page_reference": 611,
+              "section_title": "נספח חברות מוחזקות פעילות",
+              "table_title": "נספח חברות מוחזקות פעילות",
+              "note": null
+            },
+            {
+              "name": "ש. שלמה חברה לביטוח בע\"מ",
+              "ownership_pct": 100,
+              "parent": "ש. שלמה החזקות עסקי ביטוח בע\"מ",
+              "page_reference": 611,
+              "section_title": "נספח חברות מוחזקות פעילות",
+              "table_title": "נספח חברות מוחזקות פעילות",
+              "note": "כ-1.47% מההחזקות בש. שלמה חברה לביטוח בע\"מ מוחזקות במישרין בידי החברה."
+            },
+            {
+              "name": "ש.פ. שווקים פיננסים סוכנות לביטוח (1998) בע\"מ",
+              "ownership_pct": 100,
+              "parent": "ש. שלמה החזקות עסקי ביטוח בע\"מ",
+              "page_reference": 611,
+              "section_title": "נספח חברות מוחזקות פעילות",
+              "table_title": "נספח חברות מוחזקות פעילות",
+              "note": null
+            },
+            {
+              "name": "ש. שלמה ליסינג לפרטיים בע\"מ",
+              "ownership_pct": 100,
+              "parent": "ש. שלמה החזקות עסקי ביטוח בע\"מ",
+              "page_reference": 611,
+              "section_title": "נספח חברות מוחזקות פעילות",
+              "table_title": "נספח חברות מוחזקות פעילות",
+              "note": null
+            },
+            {
+              "name": "Ashtoh Properties B.V",
+              "ownership_pct": 50,
+              "parent": "ש. שלמה החזקות עסקי ביטוח בע\"מ",
+              "page_reference": 611,
+              "section_title": "נספח חברות מוחזקות פעילות",
+              "table_title": "נספח חברות מוחזקות פעילות",
+              "note": null
+            },
+            {
+              "name": "Aspen Real Estate 6 B.V",
+              "ownership_pct": 30,
+              "parent": "ש. שלמה החזקות עסקי ביטוח בע\"מ",
+              "page_reference": 611,
+              "section_title": "נספח חברות מוחזקות פעילות",
+              "table_title": "נספח חברות מוחזקות פעילות",
+              "note": null
+            },
+            {
+              "name": "FS Rocket Leeuwarden Cooperatief U. A",
+              "ownership_pct": 33,
+              "parent": "ש. שלמה החזקות עסקי ביטוח בע\"מ",
+              "page_reference": 611,
+              "section_title": "נספח חברות מוחזקות פעילות",
+              "table_title": "נספח חברות מוחזקות פעילות",
+              "note": null
+            },
+            {
+              "name": "MDGO LTD (former – Endovitech Ltd.)",
+              "ownership_pct": 1.34,
+              "parent": "ש. שלמה החזקות עסקי ביטוח בע\"מ",
+              "page_reference": 611,
+              "section_title": "נספח חברות מוחזקות פעילות",
+              "table_title": "נספח חברות מוחזקות פעילות",
+              "note": null
+            },
+            {
+              "name": "HOEK 3",
+              "ownership_pct": 33,
+              "parent": "ש. שלמה החזקות עסקי ביטוח בע\"מ",
+              "page_reference": 611,
+              "section_title": "נספח חברות מוחזקות פעילות",
+              "table_title": "נספח חברות מוחזקות פעילות",
+              "note": null
+            },
+            {
+              "name": "CDH UK Holdings",
+              "ownership_pct": 30,
+              "parent": "ש. שלמה החזקות עסקי ביטוח בע\"מ",
+              "page_reference": 611,
+              "section_title": "נספח חברות מוחזקות פעילות",
+              "table_title": "נספח חברות מוחזקות פעילות",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:26": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "ש. שלמה רכב בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 456,
+              "section_title": "ביאור 6 - התקשרויות ועסקאות מהותיות בין החברה לחברות המוחזקות שלה",
+              "table_title": null,
+              "note": "חברה בת מאוחדת"
+            },
+            {
+              "name": "שלמה ביטוח",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 453,
+              "section_title": "ביאור 1 - אופן עריכת המידע הכספי הנפרד המובא לפי תקנה 9ג' לתקנות ניירות ערך (דוחות תקופתיים ומיידיים), התש\"ל-1970 (המשך)",
+              "table_title": null,
+              "note": "חברת ביטוח בת"
+            }
+          ],
+          "change_events": []
         }
       },
       "attempts": {
-        "0:16": 1
+        "0:16": 1,
+        "0:22": 1
       }
     }
   },
@@ -6531,13 +7032,538 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-14T11:20:27.123764+00:00",
+    "at": "2026-09-15T11:19:47.510088+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 37,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "איילון חברה לביטוח בע\"מ",
+              "ownership_pct": 64.06,
+              "parent": null,
+              "page_reference": 9,
+              "section_title": "1.1 פעילות החברה ותיאור התפתחות עסקיה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גלובלטק מימון בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 9,
+              "section_title": "1.1 פעילות החברה ותיאור התפתחות עסקיה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "קלאסיק טכנולוגיות ופיתוחים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 9,
+              "section_title": "1.1 פעילות החברה ותיאור התפתחות עסקיה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "WeSure Technologies USA, Inc.",
+              "ownership_pct": 39.5,
+              "parent": null,
+              "page_reference": 11,
+              "section_title": "השלמת עסקת Hourly והמשך התרחבות עסקי החברה מחוץ לישראל",
+              "table_title": null,
+              "note": "בדילול מלא"
+            },
+            {
+              "name": "ווישור חברה לביטוח בע\"מ",
+              "ownership_pct": 100,
+              "parent": "איילון חברה לביטוח בע\"מ",
+              "page_reference": 10,
+              "section_title": "מכירת ווישור ביטוח לאיילון ביטוח כנגד הקצאת מניות באיילון ביטוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "WeSure Digital Insurance Services, Inc.",
+              "ownership_pct": 100,
+              "parent": "WeSure Technologies USA, Inc.",
+              "page_reference": 9,
+              "section_title": "1.1 פעילות החברה ותיאור התפתחות עסקיה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Media Data Solutions Payroll Company in NJ",
+              "ownership_pct": 100,
+              "parent": "WeSure Technologies USA, Inc.",
+              "page_reference": 9,
+              "section_title": "1.1 פעילות החברה ותיאור התפתחות עסקיה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Hourly, Inc.",
+              "ownership_pct": 100,
+              "parent": "WeSure Technologies USA, Inc.",
+              "page_reference": 9,
+              "section_title": "1.1 פעילות החברה ותיאור התפתחות עסקיה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Hourly LLC",
+              "ownership_pct": 100,
+              "parent": "Hourly, Inc.",
+              "page_reference": 9,
+              "section_title": "1.1 פעילות החברה ותיאור התפתחות עסקיה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "איילון ביטוח",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 22,
+              "section_title": "איילון ביטוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ווישור ביטוח",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 23,
+              "section_title": "ווישור ביטוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גלובלטק מימון",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 33,
+              "section_title": "תיאור עסקי התאגיד",
+              "table_title": null,
+              "note": "חברת בת"
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "WeSure USA Holdings, Inc (WUS)",
+              "ownership_pct": 39.5,
+              "parent": null,
+              "page_reference": 52,
+              "section_title": "2.5.1 פעילות החברה בארה\"ב",
+              "table_title": null,
+              "note": "בשמה הקודם WeSure Technologies USA Inc"
+            },
+            {
+              "name": "WeSure Digital Insurance Services Inc (WUD)",
+              "ownership_pct": 100,
+              "parent": "WeSure USA Holdings, Inc (WUS)",
+              "page_reference": 52,
+              "section_title": "2.5.1 פעילות החברה בארה\"ב",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Media Data Solutions (MDS)",
+              "ownership_pct": 100,
+              "parent": "WeSure USA Holdings, Inc (WUS)",
+              "page_reference": 52,
+              "section_title": "2.5.1 פעילות החברה בארה\"ב",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Hourly, Inc.",
+              "ownership_pct": 100,
+              "parent": "WeSure USA Holdings, Inc (WUS)",
+              "page_reference": 52,
+              "section_title": "2.5.1 פעילות החברה בארה\"ב",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Hourly LLC",
+              "ownership_pct": 100,
+              "parent": "Hourly, Inc.",
+              "page_reference": 52,
+              "section_title": "2.5.1 פעילות החברה בארה\"ב",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "WeSure Technologies USA Inc (WUS)",
+              "ownership_pct": 39.5,
+              "parent": null,
+              "page_reference": 105,
+              "section_title": "2.5.1 פעילות החברה בארה\"ב",
+              "table_title": null,
+              "note": "בדילול מלא"
+            },
+            {
+              "name": "WeSure Digital Insurance Services Inc (WUD)",
+              "ownership_pct": 100,
+              "parent": "WeSure Technologies USA Inc (WUS)",
+              "page_reference": 105,
+              "section_title": "2.5.1 פעילות החברה בארה\"ב",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Hourly, Inc.",
+              "ownership_pct": 100,
+              "parent": "WeSure Technologies USA Inc (WUS)",
+              "page_reference": 105,
+              "section_title": "2.5.1 פעילות החברה בארה\"ב",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Media Data Solutions (MDS)",
+              "ownership_pct": 100,
+              "parent": "WeSure Technologies USA Inc (WUS)",
+              "page_reference": 105,
+              "section_title": "2.5.1 פעילות החברה בארה\"ב",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Hourly LLC",
+              "ownership_pct": 100,
+              "parent": "Hourly, Inc.",
+              "page_reference": 105,
+              "section_title": "2.5.1 פעילות החברה בארה\"ב",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גלובלטק מימון בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 107,
+              "section_title": "2.5.2 פעילות בתחום האשראי החוץ בנקאי - ישראל",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "weSure Insurtech Services (India) Private Limited",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 109,
+              "section_title": "2.5.3 פעילות בית תוכנה באמצעות החברה הבת בהודו",
+              "table_title": null,
+              "note": "בבעלות מלאה"
+            },
+            {
+              "name": "קויוטי טכנולוגיות ופיתוחים בע״מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 109,
+              "section_title": "2.5.4 פעילות פעילות אגריגאטור ומכולל להשוואת מוצרי ביטוח באמצעות החברה הבת קויוטי - ישראל",
+              "table_title": null,
+              "note": "החל ממועד 31 בדצמבר 2025 לאחר מימוש אופציית רכש"
+            },
+            {
+              "name": "נכונים סוכנות לביטוח בע\"מ",
+              "ownership_pct": 100,
+              "parent": "איילון ביטוח",
+              "page_reference": 110,
+              "section_title": "2.5.5 פעילויות באמצעות חברות בנות עיקריות של איילון ביטוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "איל צבי בע\"מ",
+              "ownership_pct": 100,
+              "parent": "איילון ביטוח",
+              "page_reference": 110,
+              "section_title": "2.5.5 פעילויות באמצעות חברות בנות עיקריות של איילון ביטוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "איילון נאמנים סוכנות לביטוח בע\"מ",
+              "ownership_pct": 100,
+              "parent": "איילון ביטוח",
+              "page_reference": 110,
+              "section_title": "2.5.5 פעילויות באמצעות חברות בנות עיקריות של איילון ביטוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "איילון ח.ל.ב נכסים והשקעות בע\"מ",
+              "ownership_pct": 100,
+              "parent": "איילון ביטוח",
+              "page_reference": 110,
+              "section_title": "2.5.5 פעילויות באמצעות חברות בנות עיקריות של איילון ביטוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מ. עירן בניה ואחזקות 2001 בע\"מ",
+              "ownership_pct": 100,
+              "parent": "איילון ביטוח",
+              "page_reference": 110,
+              "section_title": "2.5.5 פעילויות באמצעות חברות בנות עיקריות של איילון ביטוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "זיסו חברה לבנין ופיתוח בע\"מ",
+              "ownership_pct": 100,
+              "parent": "איילון ביטוח",
+              "page_reference": 110,
+              "section_title": "2.5.5 פעילויות באמצעות חברות בנות עיקריות של איילון ביטוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלון-אשכנזי סוכנות לביטוח (2011) בע\"מ",
+              "ownership_pct": 33,
+              "parent": "איילון ביטוח",
+              "page_reference": 110,
+              "section_title": "2.5.5 פעילויות באמצעות חברות בנות עיקריות של איילון ביטוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גיל ורדי סוכנות לביטוח בע\"מ",
+              "ownership_pct": 32.4,
+              "parent": "איילון ביטוח",
+              "page_reference": 110,
+              "section_title": "2.5.5 פעילויות באמצעות חברות בנות עיקריות של איילון ביטוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "איילון מימון בע\"מ",
+              "ownership_pct": 100,
+              "parent": "איילון ביטוח",
+              "page_reference": 110,
+              "section_title": "2.5.5 פעילויות באמצעות חברות בנות עיקריות של איילון ביטוח",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "ווישור חברה לביטוח בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 81,
+              "section_title": "המבנה הארגוני של הקבוצה",
+              "table_title": null,
+              "note": "חברת בת המוחזקת במלואה"
+            },
+            {
+              "name": "איל צבי בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 85,
+              "section_title": "איילון ביטוח",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "איילון נאמנים סוכנות לביטוח בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 86,
+              "section_title": "תיאור עסקי התאגיד",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "נכונים סוכנות לביטוח בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 86,
+              "section_title": "תיאור עסקי התאגיד",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "WUS",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 82,
+              "section_title": "תיאור עסקי התאגיד",
+              "table_title": null,
+              "note": "חברת בת"
+            }
+          ],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "איילון ח.ל.ב נכסים והשקעות בע\"מ",
+              "ownership_pct": null,
+              "parent": "איילון ביטוח",
+              "page_reference": 184,
+              "section_title": "3.9 רכוש קבוע ונכסים בלתי מוחשיים",
+              "table_title": null,
+              "note": "חברה בת"
+            },
+            {
+              "name": "איילון נאמנים סוכנות לביטוח בע\"מ",
+              "ownership_pct": null,
+              "parent": "איילון ביטוח",
+              "page_reference": 171,
+              "section_title": "תיאור עסקי התאגיד",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "נכונים סוכנות לביטוח בע\"מ",
+              "ownership_pct": null,
+              "parent": "איילון ביטוח",
+              "page_reference": 171,
+              "section_title": "תיאור עסקי התאגיד",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "ווישור ביטוח",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 175,
+              "section_title": "תיאור עסקי התאגיד",
+              "table_title": null,
+              "note": "חברת בת / מבטחת בקבוצה"
+            },
+            {
+              "name": "WeSure Digital Insurance Services (WUD)",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "תיאור עסקי התאגיד",
+              "table_title": null,
+              "note": "חברה נכדה"
+            },
+            {
+              "name": "Hourly LLC",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 178,
+              "section_title": "תיאור עסקי התאגיד",
+              "table_title": null,
+              "note": "סוכנות חיתום / חברה נכדה בארה\"ב"
+            },
+            {
+              "name": "WDS",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 178,
+              "section_title": "תיאור עסקי התאגיד",
+              "table_title": null,
+              "note": "סוכנות חיתום / חברה נכדה בארה\"ב"
+            },
+            {
+              "name": "גלובלטק מימון בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "תיאור עסקי התאגיד",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "weSure Insurtech Services (India) Private Limited (weSure India)",
+              "ownership_pct": null,
+              "parent": "ווישור גלובלטק",
+              "page_reference": 182,
+              "section_title": "תיאור עסקי התאגיד",
+              "table_title": null,
+              "note": "חברה בת של ווישור גלובלטק"
+            }
+          ],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "איילון חברה לביטוח בע\"מ",
+              "ownership_pct": 64.06,
+              "parent": null,
+              "page_reference": 118,
+              "section_title": "1.1 פרטי החברה ובעלי מניות החברה",
+              "table_title": null,
+              "note": "בדילול מלא 57.91%"
+            },
+            {
+              "name": "ווישור חברה לביטוח בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": "איילון חברה לביטוח בע\"מ",
+              "page_reference": 118,
+              "section_title": "1.1 פרטי החברה ובעלי מניות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "USA WeSure Technologies Inc. (WUS)",
+              "ownership_pct": 39.5,
+              "parent": null,
+              "page_reference": 122,
+              "section_title": "2.1 התפתחויות עיקריות במהלך תקופת הדוח",
+              "table_title": null,
+              "note": "שיעור אחזקה בדילול מלא לאחר השלמת עסקת Hourly"
+            },
+            {
+              "name": "גלובלטק מימון בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 121,
+              "section_title": "2.1 התפתחויות עיקריות במהלך תקופת הדוח",
+              "table_title": null,
+              "note": "חברת בת שהוקמה במהלך תקופת הדוח"
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
@@ -6546,7 +7572,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-14T11:20:28.145083+00:00",
+    "at": "2026-09-15T11:20:00.589968+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -6561,7 +7587,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-14T11:20:28.621893+00:00",
+    "at": "2026-09-15T11:20:01.199739+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -6576,7 +7602,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-14T11:20:29.168208+00:00",
+    "at": "2026-09-15T11:20:01.806305+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -6591,7 +7617,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-14T11:20:29.662529+00:00",
+    "at": "2026-09-15T11:20:02.608509+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -6606,7 +7632,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-14T11:20:30.051126+00:00",
+    "at": "2026-09-15T11:20:03.102818+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -6621,7 +7647,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-14T11:20:30.745702+00:00",
+    "at": "2026-09-15T11:20:03.689853+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -6636,7 +7662,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-14T11:20:31.330489+00:00",
+    "at": "2026-09-15T11:20:04.381455+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -6651,7 +7677,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-14T11:20:32.160232+00:00",
+    "at": "2026-09-15T11:20:05.154057+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -6704,7 +7730,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-14T11:20:32.857437+00:00",
+    "at": "2026-09-15T11:20:05.993140+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -6727,7 +7753,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-14T11:20:33.310814+00:00",
+    "at": "2026-09-15T11:20:06.645212+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
