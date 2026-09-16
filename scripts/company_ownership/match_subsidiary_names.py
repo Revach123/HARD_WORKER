@@ -129,7 +129,12 @@ def build_search_query(name, min_words=3, min_chars=10):
 
 
 def _get_json(url, params, max_retries=3):
-    """GET עם retry על כשל טכני בלבד. זורק SearchTemporaryError אחרי max."""
+    """GET עם retry על כשל טכני בלבד. זורק SearchTemporaryError אחרי max.
+
+    בכשל HTTP: מצרף את גוף התשובה (חתוך) להודעה - search.js/match.js מחזירים
+    {"error": "..."} עם הודעת השגיאה האמיתית של SQLite/D1 בכשל 500, וזה בדיוק
+    מה ש-raise_for_status() לבד היה משליך (רק "500 Server Error" גנרי) - בלי
+    הגוף אין דרך לדעת אם זו בעיית FTS/index ספציפית או משהו אחר."""
     last = None
     for attempt in range(max_retries):
         try:
@@ -138,9 +143,16 @@ def _get_json(url, params, max_retries=3):
             return r.json()
         except Exception as e:
             last = e
+            body = ""
+            resp = getattr(e, "response", None)
+            if resp is not None:
+                try:
+                    body = f" | body: {resp.text[:300]}"
+                except Exception:
+                    pass
             wait = 2 * (attempt + 1)
             print(f"    כשל ({url.rsplit('/', 1)[-1]}, ניסיון {attempt + 1}/{max_retries}) "
-                  f"- ממתין {wait}s: {e}")
+                  f"- ממתין {wait}s: {e}{body}")
             time.sleep(wait)
     raise SearchTemporaryError(f"{url} נכשל אחרי {max_retries} ניסיונות: {last}")
 
