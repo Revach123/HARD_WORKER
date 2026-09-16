@@ -775,16 +775,82 @@
   },
   "1727666": {
     "company_id": "2467",
-    "status": "failed",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-15T08:28:02.245965+00:00"
+    "attempts": 2,
+    "at": "2026-09-16T08:17:10.045239+00:00",
+    "model": "gemini-3.6-flash"
   },
   "1729430": {
     "company_id": "2446",
-    "status": "failed",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 2,
+    "at": "2026-09-16T08:16:56.011268+00:00",
+    "model": "gemini-3.6-flash"
+  },
+  "1725454": {
+    "company_id": "748",
+    "status": "success",
     "kind": "snapshot",
     "attempts": 1,
-    "at": "2026-09-15T08:32:31.072244+00:00"
+    "at": "2026-09-16T08:14:16.548658+00:00",
+    "model": "gemini-3.6-flash"
+  },
+  "1731223": {
+    "company_id": "1736",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-16T08:14:23.083188+00:00",
+    "model": "gemini-3.6-flash"
+  },
+  "1721589": {
+    "company_id": "2496",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-16T08:14:25.534142+00:00",
+    "model": "gemini-3.6-flash"
+  },
+  "1728508": {
+    "company_id": "1040",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-16T08:14:28.426163+00:00",
+    "model": "gemini-3.6-flash"
+  },
+  "1731082": {
+    "company_id": "1566",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-16T08:15:38.974539+00:00",
+    "model": "gemini-3.6-flash"
+  },
+  "1733770": {
+    "company_id": "175",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-09-16T08:17:14.846149+00:00",
+    "model": "gemini-3.6-flash"
+  },
+  "1729786": {
+    "company_id": "175",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-16T08:17:25.117670+00:00",
+    "model": "gemini-3.6-flash"
+  },
+  "1744455": {
+    "company_id": "175",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-09-16T08:17:48.200749+00:00",
+    "model": "gemini-3.6-flash"
   }
 }
