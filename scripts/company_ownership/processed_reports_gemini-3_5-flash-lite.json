@@ -2441,164 +2441,27 @@
   },
   "1728585": {
     "company_id": "1688",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-16T10:28:32.187534+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 31,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "Navitas Petroleum Holdings LLC (נאוויטס ארה\"ב החזקות)",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "1.2 להלן תרשים ההחזקות העיקריות של השותפות למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Navitas Petroleum Limited (נאוויטס אנגליה)",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "1.2 להלן תרשים ההחזקות העיקריות של השותפות למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Navitas Petroleum Development and Production Ltd. (NPDP)",
-              "ownership_pct": 100,
-              "parent": "Navitas Petroleum Limited (נאוויטס אנגליה)",
-              "page_reference": 6,
-              "section_title": "1.2 להלן תרשים ההחזקות העיקריות של השותפות למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Navitas Petroleum Atlantic Limited",
-              "ownership_pct": 100,
-              "parent": "Navitas Petroleum Limited (נאוויטס אנגליה)",
-              "page_reference": 6,
-              "section_title": "1.2 להלן תרשים ההחזקות העיקריות של השותפות למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Navitas Monument US LLC (נאוויטס מוניומנט)",
-              "ownership_pct": 100,
-              "parent": "Navitas Petroleum Holdings LLC (נאוויטס ארה\"ב החזקות)",
-              "page_reference": 6,
-              "section_title": "1.2 להלן תרשים ההחזקות העיקריות של השותפות למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Navitas Monument II US LLC (נאוויטס מוניומנט II)",
-              "ownership_pct": 100,
-              "parent": "Navitas Petroleum Holdings LLC (נאוויטס ארה\"ב החזקות)",
-              "page_reference": 6,
-              "section_title": "1.2 להלן תרשים ההחזקות העיקריות של השותפות למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Navitas Buckskin US LLC (נאוויטס בקסקין)",
-              "ownership_pct": 100,
-              "parent": "Navitas Petroleum Holdings LLC (נאוויטס ארה\"ב החזקות)",
-              "page_reference": 6,
-              "section_title": "1.2 להלן תרשים ההחזקות העיקריות של השותפות למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Navitas Petroleum US LLC (נאוויטס ארה\"ב)",
-              "ownership_pct": 100,
-              "parent": "Navitas Petroleum Holdings LLC (נאוויטס ארה\"ב החזקות)",
-              "page_reference": 6,
-              "section_title": "1.2 להלן תרשים ההחזקות העיקריות של השותפות למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Peles LLC",
-              "ownership_pct": 100,
-              "parent": "Navitas Petroleum Holdings LLC (נאוויטס ארה\"ב החזקות)",
-              "page_reference": 6,
-              "section_title": "1.2 להלן תרשים ההחזקות העיקריות של השותפות למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ShenHai LLC",
-              "ownership_pct": 100,
-              "parent": "Navitas Petroleum Holdings LLC (נאוויטס ארה\"ב החזקות)",
-              "page_reference": 6,
-              "section_title": "1.2 להלן תרשים ההחזקות העיקריות של השותפות למועד הדוח",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "ShenHai LLC",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 19,
-              "section_title": "7.2 שננדואה",
-              "table_title": null,
-              "note": "חברה בת בשרשור בבעלות מלאה של השותפות"
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-16T10:52:02.611444+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1730709": {
     "company_id": "1930",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-15T11:20:04.381455+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 28,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-16T10:40:41.964789+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1733071": {
     "company_id": "730",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-15T11:20:05.154057+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 44,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-16T10:57:23.854748+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1736371": {
     "company_id": "2488",
@@ -2640,18 +2503,11 @@
   },
   "1730567": {
     "company_id": "1041",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-15T11:20:05.993140+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 31,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-16T11:03:46.251651+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1729368": {
     "company_id": "1064",
@@ -2663,18 +2519,11 @@
   },
   "1729338": {
     "company_id": "1083",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-15T11:20:06.645212+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 17,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-16T11:03:47.690031+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732580": {
     "company_id": "810",
@@ -2693,47 +2542,1013 @@
   },
   "1732578": {
     "company_id": "121",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-15T11:20:07.456781+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 20,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-16T11:15:37.296021+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1730944": {
     "company_id": "1974",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-15T11:20:08.690710+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 18,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-16T11:22:29.255902+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732120": {
     "company_id": "1072",
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-15T11:20:07.975159+00:00",
+    "at": "2026-09-16T11:15:24.862373+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 22,
-      "done": {},
-      "attempts": {}
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אלוני ים אחזקות בע\"מ",
+              "ownership_pct": 74,
+              "parent": null,
+              "page_reference": 11,
+              "section_title": "1.3 מבנה האחזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אברך אלון ג'י.אס בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 11,
+              "section_title": "1.3 מבנה האחזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דור אלון ניהול מתחמים קמעונאיים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 11,
+              "section_title": "1.3 מבנה האחזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלון אינטרייד בתי קפה בע\"מ",
+              "ownership_pct": 50,
+              "parent": "דור אלון ניהול מתחמים קמעונאיים בע\"מ",
+              "page_reference": 11,
+              "section_title": "1.3 מבנה האחזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דוכן גן שמואל החדש (ש.מ)",
+              "ownership_pct": 50,
+              "parent": "אלון אינטרייד בתי קפה בע\"מ",
+              "page_reference": 11,
+              "section_title": "1.3 מבנה האחזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלון דלק ניהול ותפעול רשתות (1999) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 11,
+              "section_title": "1.3 מבנה האחזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דור אלון תעופה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 11,
+              "section_title": "1.3 מבנה האחזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דור אלון טכנולוגיות גז בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 11,
+              "section_title": "1.3 מבנה האחזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דור גז החדשה בע\"מ",
+              "ownership_pct": 100,
+              "parent": "דור אלון טכנולוגיות גז בע\"מ",
+              "page_reference": 11,
+              "section_title": "1.3 מבנה האחזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אמגזית ד.ג בע\"מ",
+              "ownership_pct": 100,
+              "parent": "דור נכסים ותחנות דלק (1992) בע\"מ",
+              "page_reference": 11,
+              "section_title": "1.3 מבנה האחזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דור נכסים ותחנות דלק (1992) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 11,
+              "section_title": "1.3 מבנה האחזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דור אנרגיה אחזקות (2004) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 11,
+              "section_title": "1.3 מבנה האחזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "עין שמר אלון אחזקות בע\"מ",
+              "ownership_pct": 50,
+              "parent": "דור אנרגיה אחזקות (2004) בע\"מ",
+              "page_reference": 11,
+              "section_title": "1.3 מבנה האחזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "משמר השרון אלון אחזקות בע\"מ",
+              "ownership_pct": 50,
+              "parent": "דור אנרגיה אחזקות (2004) בע\"מ",
+              "page_reference": 11,
+              "section_title": "1.3 מבנה האחזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "עינת אלון אחזקות בע\"מ",
+              "ownership_pct": 50,
+              "parent": "דור אנרגיה אחזקות (2004) בע\"מ",
+              "page_reference": 11,
+              "section_title": "1.3 מבנה האחזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "בי.בי.בי מסעדות בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 11,
+              "section_title": "1.3 מבנה האחזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "קפוא זן 2024 בע\"מ",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 11,
+              "section_title": "1.3 מבנה האחזקות של החברה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "אלון דלק ניהול ותפעול רשתות (1999) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 44,
+              "section_title": "תחנות תדלוק על כביש 6",
+              "table_title": null,
+              "note": "חברה בת בשליטה ובעלות מלאים"
+            },
+            {
+              "name": "אברך-אלון ג'י. אס. בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 45,
+              "section_title": "תחנות תדלוק פנימיות",
+              "table_title": null,
+              "note": "חברה משותפת"
+            },
+            {
+              "name": "עין שמר – אלון החזקות בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 48,
+              "section_title": "מידע אודות נדל\"ן להשקעה",
+              "table_title": null,
+              "note": "חברה משותפת"
+            }
+          ],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "מרקורי תעופה (ישראל) בע\"מ",
+              "ownership_pct": 31,
+              "parent": null,
+              "page_reference": 73,
+              "section_title": "5.4.4 חברות תעופה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "מרקורי תעופה (ישראל) בע\"מ",
+              "ownership_pct": 31,
+              "parent": null,
+              "page_reference": 112,
+              "section_title": "השקעות",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:7": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:8": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "קפוא זן (2024) בע\"מ",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": 0,
+              "ownership_pct_after": 75,
+              "event_date": "2025-06-08",
+              "event_description": "השלמת עסקה לרכישה ולהקצאת מניות המהוות 75% מהונה המונפק והנפרע של חברת קפוא זן",
+              "page_reference": 146,
+              "section_title": "1.3.7 השלמת עסקה לרכישת קפוא זן"
+            }
+          ]
+        },
+        "0:9": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:10": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:11": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:12": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:13": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:14": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:15": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "עין שמר - אלון אחזקות בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 271,
+              "section_title": "ביאור 13 - השקעות בחברות המטופלות בשיטת שווי מאזני",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "משמר השרון - אלון אחזקות בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 271,
+              "section_title": "ביאור 13 - השקעות בחברות המטופלות בשיטת שווי מאזני",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "עינת - אלון אחזקות בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 271,
+              "section_title": "ביאור 13 - השקעות בחברות המטופלות בשיטת שווי מאזני",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "בי.בי.בי מסעדות בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 272,
+              "section_title": "ביאור 13 - השקעות בחברות המטופלות בשיטת שווי מאזני",
+              "table_title": null,
+              "note": "נרכשה בחודש מרס 2021"
+            }
+          ],
+          "change_events": []
+        },
+        "0:16": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "אלוני ים אחזקות בע\"מ",
+              "ownership_pct": 74,
+              "parent": null,
+              "page_reference": 278,
+              "section_title": "ביאור 18 - נדל\"ן להשקעה",
+              "table_title": null,
+              "note": "החברה מחזיקה במניות המהוות 74% מהון המניות המונפק והנפרע"
+            }
+          ],
+          "change_events": []
+        },
+        "0:17": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "דור אלון טכנולוגיות גז בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דור אלון ניהול מתחמים קמעונאיים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלון דלק ניהול ותפעול רשתות (1999) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דור חדש הובלות בע\"מ (1995)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "קונספציה השקעות ונכסים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דור נכסים ותחנות דלק 1992 בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דור אנרגיה אחזקות בע\"מ (2004)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "נחשון - אלון המסעדה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דור אנרגיה מודיעין (2004) בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": "בין החברה ובין צד ג' המחזיק עמה במשותף בדור אנרגיה מודיעין (2004) בע\"מ סוכם כי מלוא הזכויות מכוח תקנון החברה וחוק החברות יהיו בידי החברה, וזאת עד ליום 30.04.2037"
+            },
+            {
+              "name": "דור אלון שמנים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דור יזום תחנות כח בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דור אלון תעופה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דור אלון פינאנסים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מעלה צפת בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "קפוא-זן (2024) בע\"מ",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלוני ים אחזקות בע\"מ",
+              "ownership_pct": 74,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "יזרעאל - אלון אחזקות בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אברך אלון ג'י. אס בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דור העמק בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלון - הזרע אחזקות בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "קדרים - אלון החזקות בע\"מ",
+              "ownership_pct": 49,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דור עבד אלקאדר - שפרעם (שותפות כללית)",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "בי.בי.בי מסעדות בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מרקורי תעופה ישראל (בע\"מ)",
+              "ownership_pct": 31.25,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:18": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "דור אלון טכנולוגיות גז בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "דור אלון ניהול מתחמים קמעונאיים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "אלון דלק ניהול ותפעול רשתות (1999) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "דור חדש הובלות בע\"מ (1995)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "קונספציה השקעות ונכסים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "דור נכסים ותחנות דלק 1992 בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "דור אנרגיה אחזקות בע\"מ (2004)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "נחשון - אלון המסעדה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "דור אנרגיה מודיעין (2004) בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "note": "בין החברה ובין צד ג' המחזיק עמה במשותף בדור אנרגיה מודיעין (2004) בע\"מ סוכם כי מלוא הזכויות מכוח תקנון החברה וחוק החברות יהיו בידי החברה, וזאת עד ליום 30.04.2037"
+            },
+            {
+              "name": "דור אלון שמנים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "דור יזום תחנות כח בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "דור אלון תעופה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "דור אלון פינאנסים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "מעלה צפת בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "קפוא-זן (2024) בע\"מ",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "אלוני ים אחזקות בע\"מ",
+              "ownership_pct": 74,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "יזרעאל - אלון אחזקות בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "אברך אלון גי'. אס בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "דור העמק בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "אלון - הזרע אחזקות בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "קדרים - אלון החזקות בע\"מ",
+              "ownership_pct": 49,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "דור עבד אלקאדר - שפרעם (שותפות כללית)",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "בי.בי.בי מסעדות בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "note": "ראה ביאור 13ג'"
+            },
+            {
+              "name": "מרקורי תעופה ישראל (בע\"מ)",
+              "ownership_pct": 31.25,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:19": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "דור אלון טכנולוגיות גז בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 331,
+              "section_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות כלולות לתאריך הדוח על המצב הכספי בהתאם לתקנות 11(1), 11(2) ו-11(3)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "דור אלון ניהול מתחמים קמעונאים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 331,
+              "section_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות כלולות לתאריך הדוח על המצב הכספי בהתאם לתקנות 11(1), 11(2) ו-11(3)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "אברך אלון ג'י.אס.בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 331,
+              "section_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות כלולות לתאריך הדוח על המצב הכספי בהתאם לתקנות 11(1), 11(2) ו-11(3)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "אלון דלק ניהול ותפעול רשתות (1999) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 331,
+              "section_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות כלולות לתאריך הדוח על המצב הכספי בהתאם לתקנות 11(1), 11(2) ו-11(3)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "דור אנרגיה אחזקות (2004) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 331,
+              "section_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות כלולות לתאריך הדוח על המצב הכספי בהתאם לתקנות 11(1), 11(2) ו-11(3)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "דור אלון תעופה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 331,
+              "section_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות כלולות לתאריך הדוח על המצב הכספי בהתאם לתקנות 11(1), 11(2) ו-11(3)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "אלוני ים אחזקות בע\"מ",
+              "ownership_pct": 74,
+              "parent": null,
+              "page_reference": 332,
+              "section_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות כלולות לתאריך הדוח על המצב הכספי בהתאם לתקנות 11(1), 11(2) ו-11(3)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "דור נכסים ותחנות דלק (1992) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 332,
+              "section_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות כלולות לתאריך הדוח על המצב הכספי בהתאם לתקנות 11(1), 11(2) ו-11(3)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "בי.בי.בי מסעדות בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 332,
+              "section_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות כלולות לתאריך הדוח על המצב הכספי בהתאם לתקנות 11(1), 11(2) ו-11(3)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "אלון אינטרייד בתי קפה בע\"מ",
+              "ownership_pct": 50,
+              "parent": "דור אלון ניהול מתחמים קמעונאים בע\"מ",
+              "page_reference": 332,
+              "section_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות כלולות לתאריך הדוח על המצב הכספי בהתאם לתקנות 11(1), 11(2) ו-11(3)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "דוכן גן שמואל החדש, ש.מ.",
+              "ownership_pct": 50,
+              "parent": "דור אלון ניהול מתחמים קמעונאים בע\"מ",
+              "page_reference": 332,
+              "section_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות כלולות לתאריך הדוח על המצב הכספי בהתאם לתקנות 11(1), 11(2) ו-11(3)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "עין שמר - אלון החזקות בע\"מ",
+              "ownership_pct": 49,
+              "parent": "דור אנרגיה אחזקות (2004) בע\"מ",
+              "page_reference": 332,
+              "section_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות כלולות לתאריך הדוח על המצב הכספי בהתאם לתקנות 11(1), 11(2) ו-11(3)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "משמר השרון - אלון החזקות בע\"מ",
+              "ownership_pct": 49,
+              "parent": "דור אנרגיה אחזקות (2004) בע\"מ",
+              "page_reference": 332,
+              "section_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות כלולות לתאריך הדוח על המצב הכספי בהתאם לתקנות 11(1), 11(2) ו-11(3)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "עינת - אלון החזקות בע\"מ",
+              "ownership_pct": 49,
+              "parent": "דור אנרגיה אחזקות (2004) בע\"מ",
+              "page_reference": 332,
+              "section_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות כלולות לתאריך הדוח על המצב הכספי בהתאם לתקנות 11(1), 11(2) ו-11(3)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "קפוא זן (2024) בע\"מ",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 332,
+              "section_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות כלולות לתאריך הדוח על המצב הכספי בהתאם לתקנות 11(1), 11(2) ו-11(3)",
+              "table_title": "תקנה 11",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:20": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:21": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
+      "attempts": {
+        "0:5": 1
+      }
     }
   },
   "1730209": {
@@ -2741,30 +3556,1356 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-15T11:20:09.410095+00:00",
+    "at": "2026-09-16T11:28:38.140746+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 30,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "פאנגאיה ישראל בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 12,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "בוב מדף 28 בע\"מ",
+              "ownership_pct": 100,
+              "parent": "פאנגאיה ישראל בע\"מ",
+              "page_reference": 12,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ב.ו.ב מדף 6 ר.א.א שותפות מוגבלת",
+              "ownership_pct": 100,
+              "parent": "פאנגאיה ישראל בע\"מ",
+              "page_reference": 12,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ק.א ניהול דה וינ'צי בכנרית בע\"מ",
+              "ownership_pct": 50,
+              "parent": "פאנגאיה ישראל בע\"מ",
+              "page_reference": 12,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פאנגאיה שדה דב משרדים, שותפות מוגבלת",
+              "ownership_pct": 100,
+              "parent": "פאנגאיה ישראל בע\"מ",
+              "page_reference": 12,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מידטאון ירושלים (ישראל קנדה) בע\"מ",
+              "ownership_pct": 37,
+              "parent": "פאנגאיה ישראל בע\"מ",
+              "page_reference": 12,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מגדל דובנוב תעסוקה, שותפות מוגבלת",
+              "ownership_pct": 80,
+              "parent": "פאנגאיה ישראל בע\"מ",
+              "page_reference": 12,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מגדל דובנוב מגורים, שותפות מוגבלת",
+              "ownership_pct": 80,
+              "parent": "פאנגאיה ישראל בע\"מ",
+              "page_reference": 12,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מגדל דובנוב תעסוקה ומגורים, עסקה משותפת",
+              "ownership_pct": 75,
+              "parent": "פאנגאיה ישראל בע\"מ",
+              "page_reference": 12,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פאנגיה ישראל פרויקט עמק ברכה בע\"מ",
+              "ownership_pct": 100,
+              "parent": "פאנגאיה ישראל בע\"מ",
+              "page_reference": 12,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ישראל קנדה עמק ברכה (2022) בע\"מ",
+              "ownership_pct": 63,
+              "parent": "פאנגיה ישראל פרויקט עמק ברכה בע\"מ",
+              "page_reference": 12,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "הרצליה פיתוח על הים שותפות מוגבלת",
+              "ownership_pct": 92,
+              "parent": "פאנגאיה ישראל בע\"מ",
+              "page_reference": 12,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "א.ק.מ דה וינצי בכנרית",
+              "ownership_pct": 50,
+              "parent": "הרצליה פיתוח על הים שותפות מוגבלת",
+              "page_reference": 12,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "בוב מדף 56 בע\"מ",
+              "ownership_pct": 100,
+              "parent": "פאנגאיה ישראל בע\"מ",
+              "page_reference": 12,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "סי טוואר, עסקה משותפת",
+              "ownership_pct": 24.13,
+              "parent": "בוב מדף 56 בע\"מ",
+              "page_reference": 12,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "4 בוב, שותפות מוגבלת",
+              "ownership_pct": 100,
+              "parent": "פאנגאיה ישראל בע\"מ",
+              "page_reference": 12,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ישראל קנדה בסיטי שותפות מוגבלת",
+              "ownership_pct": 49.95,
+              "parent": "4 בוב, שותפות מוגבלת",
+              "page_reference": 12,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "GRANIAK INVEST",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 13,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ABELIE INVEST",
+              "ownership_pct": 100,
+              "parent": "GRANIAK INVEST",
+              "page_reference": 13,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "TEISE",
+              "ownership_pct": 65.414,
+              "parent": "ABELIE INVEST",
+              "page_reference": 13,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ב.ו.ב מדף 83 בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 13,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "קנדה ישראל בשביל התפוזים, שותפות מוגבלת",
+              "ownership_pct": 80,
+              "parent": "ב.ו.ב מדף 83 בע\"מ",
+              "page_reference": 13,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דבליו פריים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 13,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "הצלחת השרון בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 13,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אגח פאנגאיה שותפות מוגבלת",
+              "ownership_pct": 80,
+              "parent": "הצלחת השרון בע\"מ",
+              "page_reference": 13,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אחזקות ישראל קנדה (ט.ר) בנתניה בע\"מ",
+              "ownership_pct": 75,
+              "parent": "הצלחת השרון בע\"מ",
+              "page_reference": 13,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ישראל קנדה ביזנס וילאג' בע\"מ",
+              "ownership_pct": 80,
+              "parent": "אחזקות ישראל קנדה (ט.ר) בנתניה בע\"מ",
+              "page_reference": 13,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "שותפות לפיתוח רמת השרון הצעירה, שותפות מוגבלת",
+              "ownership_pct": 81,
+              "parent": null,
+              "page_reference": 13,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ישראל קנדה דיור מוגן",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 13,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ישראל קנדה בית בכפר שמריהו בע\"מ",
+              "ownership_pct": 80,
+              "parent": null,
+              "page_reference": 13,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ג.ז מדף 20 בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 13,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ישראל קנדה טק בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 13,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ישראל קנדה שדה דב בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 13,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ישראל קנדה בית מרס בע\"מ",
+              "ownership_pct": 96,
+              "parent": null,
+              "page_reference": 13,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "א.ק.א בית מרס פרויקט הרצל 156-160 בע\"מ",
+              "ownership_pct": 40,
+              "parent": "ישראל קנדה בית מרס בע\"מ",
+              "page_reference": 13,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ישראל קנדה סאנסט בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 13,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מדף 2016 בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 13,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ישראל קנדה (ט.ר) לפיד בע\"מ",
+              "ownership_pct": 60.1,
+              "parent": null,
+              "page_reference": 13,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "סיטי הול ישראל קנדה, שותפות מוגבלת",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 13,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "סיטי הול ניהול 2 נכסים סי וויו בע\"מ",
+              "ownership_pct": 100,
+              "parent": "סיטי הול ישראל קנדה, שותפות מוגבלת",
+              "page_reference": 13,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "סיטי הול ניהול מידטאון בע\"מ",
+              "ownership_pct": 100,
+              "parent": "סיטי הול ישראל קנדה, שותפות מוגבלת",
+              "page_reference": 13,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "סיטי הול חניונים בע\"מ",
+              "ownership_pct": 100,
+              "parent": "סיטי הול ישראל קנדה, שותפות מוגבלת",
+              "page_reference": 13,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "סיטי הול ניהול קווארטר בע\"מ",
+              "ownership_pct": 100,
+              "parent": "סיטי הול ישראל קנדה, שותפות מוגבלת",
+              "page_reference": 13,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "סיטי הול ניהול האחד בע\"מ",
+              "ownership_pct": 100,
+              "parent": "סיטי הול ישראל קנדה, שותפות מוגבלת",
+              "page_reference": 13,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פרויקט פיפל ישראל קנדה, שותפות מוגבלת",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 13,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פלנטוגראד בע\"מ",
+              "ownership_pct": 89,
+              "parent": null,
+              "page_reference": 14,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Morgal LLC",
+              "ownership_pct": 44.5,
+              "parent": null,
+              "page_reference": 14,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ג.ז. מדף 13 בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 14,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ישראל קנדה (ט.ר) התחדשות עירונית בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 14,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ישראל קנדה (ט.ר) התחדשות עירונית בבלי בע\"מ",
+              "ownership_pct": 100,
+              "parent": "ישראל קנדה (ט.ר) התחדשות עירונית בע\"מ",
+              "page_reference": 14,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "לב בבלי בע\"מ",
+              "ownership_pct": 50,
+              "parent": "ישראל קנדה (ט.ר) התחדשות עירונית בבלי בע\"מ",
+              "page_reference": 14,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ישראל קנדה (ט.ר) מתחם לוינסקי בע\"מ",
+              "ownership_pct": 90,
+              "parent": null,
+              "page_reference": 14,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ישראל קנדה בית הנערה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 14,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "עסקה משותפת פרויקט בית הנערה",
+              "ownership_pct": 50,
+              "parent": "ישראל קנדה בית הנערה בע\"מ",
+              "page_reference": 14,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "שותפות אפטאון מתחם גלילות",
+              "ownership_pct": 64,
+              "parent": null,
+              "page_reference": 14,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פינת גלילות בע\"מ",
+              "ownership_pct": 27.335,
+              "parent": "שותפות אפטאון מתחם גלילות",
+              "page_reference": 14,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פי גלילות בע\"מ מסופי נפט וצינורות בע\"מ",
+              "ownership_pct": 40.156,
+              "parent": "שותפות אפטאון מתחם גלילות",
+              "page_reference": 14,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Gold Tree Casa LTD",
+              "ownership_pct": 13,
+              "parent": "שותפות אפטאון מתחם גלילות",
+              "page_reference": 14,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Silver Gate",
+              "ownership_pct": 100,
+              "parent": "Gold Tree Casa LTD",
+              "page_reference": 14,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "SG Zurich Developers LTD",
+              "ownership_pct": 100,
+              "parent": "Gold Tree Casa LTD",
+              "page_reference": 14,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ישראל קנדה לייג'ר בע\"מ",
+              "ownership_pct": 31.52,
+              "parent": null,
+              "page_reference": 15,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ישראל קנדה מלונות בע\"מ",
+              "ownership_pct": 24.14,
+              "parent": null,
+              "page_reference": 15,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ביממד בע\"מ",
+              "ownership_pct": 43,
+              "parent": null,
+              "page_reference": 15,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אנטרה בע\"מ",
+              "ownership_pct": 8,
+              "parent": null,
+              "page_reference": 15,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ישראל קנדה מלונות 2019 בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 15,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ישראל קנדה מלונות החזקות בע\"מ",
+              "ownership_pct": 100,
+              "parent": "ישראל קנדה מלונות 2019 בע\"מ",
+              "page_reference": 15,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "א.ר.נ מלונות בע\"מ",
+              "ownership_pct": 100,
+              "parent": "ישראל קנדה מלונות 2019 בע\"מ",
+              "page_reference": 15,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "א.ר.נ מלונות טבריה בע\"מ",
+              "ownership_pct": 100,
+              "parent": "א.ר.נ מלונות בע\"מ",
+              "page_reference": 15,
+              "section_title": "1.4 להלן תרשים מבנה ההחזקות (של החברות הפעילות) של החברה נכון למועד דוח זה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "רמת השרון החדשה / Four & Five",
+              "ownership_pct": 81,
+              "parent": null,
+              "page_reference": 29,
+              "section_title": "חלק שלישי - פעילות תחומי לפיתיאור עסקי התאגיד - 6. תחום הנדל\"ן היזמי (השקעה בקרקעות)",
+              "table_title": "עתודות קרקע עיקריות",
+              "note": null
+            },
+            {
+              "name": "מתחם לפיד",
+              "ownership_pct": 60,
+              "parent": null,
+              "page_reference": 29,
+              "section_title": "חלק שלישי - פעילות תחומי לפיתיאור עסקי התאגיד - 6. תחום הנדל\"ן היזמי (השקעה בקרקעות)",
+              "table_title": "עתודות קרקע עיקריות",
+              "note": null
+            },
+            {
+              "name": "פרויקט אפטאון, מתחם פי גלילות",
+              "ownership_pct": 16,
+              "parent": null,
+              "page_reference": 29,
+              "section_title": "חלק שלישי - פעילות תחומי לפיתיאור עסקי התאגיד - 6. תחום הנדל\"ן היזמי (השקעה בקרקעות)",
+              "table_title": "עתודות קרקע עיקריות",
+              "note": null
+            },
+            {
+              "name": "פרויקט אפטאון מתחם פי גלילות (אחזקה באמצעות חברת פינת גלילות)",
+              "ownership_pct": 100,
+              "parent": "חברת פינת גלילות",
+              "page_reference": 29,
+              "section_title": "חלק שלישי - פעילות תחומי לפיתיאור עסקי התאגיד - 6. תחום הנדל\"ן היזמי (השקעה בקרקעות)",
+              "table_title": "עתודות קרקע עיקריות",
+              "note": null
+            },
+            {
+              "name": "ביזנס וילאג' נתניה",
+              "ownership_pct": 63,
+              "parent": null,
+              "page_reference": 29,
+              "section_title": "חלק שלישי - פעילות תחומי לפיתיאור עסקי התאגיד - 6. תחום הנדל\"ן היזמי (השקעה בקרקעות)",
+              "table_title": "עתודות קרקע עיקריות",
+              "note": null
+            },
+            {
+              "name": "בית מרס",
+              "ownership_pct": 38.4,
+              "parent": null,
+              "page_reference": 29,
+              "section_title": "חלק שלישי - פעילות תחומי לפיתיאור עסקי התאגיד - 6. תחום הנדל\"ן היזמי (השקעה בקרקעות)",
+              "table_title": "עתודות קרקע עיקריות",
+              "note": null
+            },
+            {
+              "name": "הרובע הצפוני הרצליה",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 30,
+              "section_title": "חלק שלישי - פעילות תחומי לפיתיאור עסקי התאגיד - 6. תחום הנדל\"ן היזמי (השקעה בקרקעות)",
+              "table_title": "עתודות קרקע עיקריות",
+              "note": null
+            },
+            {
+              "name": "ICR",
+              "ownership_pct": 42.5,
+              "parent": null,
+              "page_reference": 35,
+              "section_title": "מהחזקות 15% מכירת ICR לגופים מקבוצת כלל חברה לביטוח בע\"מ",
+              "table_title": null,
+              "note": "לאחר הקצאת מניות לגופים מקבוצת כלל"
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "ICR",
+              "ownership_pct": 42.5,
+              "parent": null,
+              "page_reference": 35,
+              "section_title": null,
+              "table_title": null,
+              "note": "בשרשור סופי"
+            },
+            {
+              "name": "הצלחת השרון בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 46,
+              "section_title": "6.3.3 Five & Four, רמת השרון",
+              "table_title": null,
+              "note": "חברה בת בבעלות ובשליטה מלאות"
+            }
+          ],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "מורגל הרוסיה",
+              "ownership_pct": 44.5,
+              "parent": null,
+              "page_reference": 56,
+              "section_title": "עתודת קרקע",
+              "table_title": "עתודת קרקע",
+              "note": "תאגיד המוחזק על ידי החברה בשיעור של 44.5%, אלקטרה 50% ושותף נוסף 5.5%"
+            },
+            {
+              "name": "פרויקט Five & Four, רמת השרון",
+              "ownership_pct": 81.0,
+              "parent": null,
+              "page_reference": 52,
+              "section_title": "ניתוחי רגישות לרווח גולמי שטרם הוכר מהפרויקט",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פרויקט Rainbow (מתחם שדה דב)",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 59,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים בהקמה",
+              "note": null
+            },
+            {
+              "name": "פרויקט מידטאון ירושלים",
+              "ownership_pct": 73.0,
+              "parent": null,
+              "page_reference": 59,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים בהקמה",
+              "note": null
+            },
+            {
+              "name": "פרויקט מידטאון ירושלים - זכויות משרדים לשיווק",
+              "ownership_pct": 73.0,
+              "parent": null,
+              "page_reference": 60,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים בהקמה",
+              "note": null
+            },
+            {
+              "name": "פרויקט SHE",
+              "ownership_pct": 81.0,
+              "parent": null,
+              "page_reference": 60,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים בהקמה",
+              "note": null
+            },
+            {
+              "name": "ורטיקל סיטי",
+              "ownership_pct": 56.0,
+              "parent": null,
+              "page_reference": 60,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים בהקמה",
+              "note": null
+            },
+            {
+              "name": "לב בבלי",
+              "ownership_pct": 50.0,
+              "parent": null,
+              "page_reference": 60,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים בהקמה",
+              "note": null
+            },
+            {
+              "name": "הסתדרות (Air)",
+              "ownership_pct": 42.5,
+              "parent": null,
+              "page_reference": 60,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים בהקמה",
+              "note": null
+            },
+            {
+              "name": "פארק צפון שלב א' (נווה גן)",
+              "ownership_pct": 21.25,
+              "parent": null,
+              "page_reference": 60,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים בהקמה",
+              "note": null
+            },
+            {
+              "name": "פארק צפון שלב א' (נווה גן) מגרש 27",
+              "ownership_pct": 31.88,
+              "parent": null,
+              "page_reference": 61,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים בהקמה",
+              "note": null
+            },
+            {
+              "name": "פארק צפון שלב ב' (איב) מגרשים 24-26",
+              "ownership_pct": 21.25,
+              "parent": null,
+              "page_reference": 61,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים בהקמה",
+              "note": null
+            },
+            {
+              "name": "פרויקט People, קרמינצקי, תל אביב",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 61,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים בתכנון",
+              "note": null
+            },
+            {
+              "name": "דובנוב",
+              "ownership_pct": 80.0,
+              "parent": null,
+              "page_reference": 61,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים בתכנון",
+              "note": null
+            },
+            {
+              "name": "בית הנערה - המתחם הנוסף, הוד השרון",
+              "ownership_pct": 50.0,
+              "parent": null,
+              "page_reference": 62,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים בתכנון",
+              "note": null
+            },
+            {
+              "name": "בית הנערה, הוד השרון",
+              "ownership_pct": 50.0,
+              "parent": null,
+              "page_reference": 62,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים בתכנון",
+              "note": null
+            },
+            {
+              "name": "תל השומר (SERENITY), רמת גן",
+              "ownership_pct": 42.5,
+              "parent": null,
+              "page_reference": 62,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים בתכנון",
+              "note": null
+            },
+            {
+              "name": "פסטורל (הנטקה), קרית יובל, ירושלים",
+              "ownership_pct": 42.5,
+              "parent": null,
+              "page_reference": 62,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים בתכנון",
+              "note": null
+            },
+            {
+              "name": "אידמית (JASMIN), גבעתיים",
+              "ownership_pct": 42.5,
+              "parent": null,
+              "page_reference": 62,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים בתכנון",
+              "note": null
+            },
+            {
+              "name": "ברודצקי, תל אביב",
+              "ownership_pct": 42.5,
+              "parent": null,
+              "page_reference": 62,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים בתכנון",
+              "note": null
+            },
+            {
+              "name": "מגרש 29 פארק צפון, רמת השרון",
+              "ownership_pct": 21.25,
+              "parent": null,
+              "page_reference": 62,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים בתכנון",
+              "note": null
+            },
+            {
+              "name": "פארק צפון - (נווה גן) שלב ג', רמת השרון",
+              "ownership_pct": 42.5,
+              "parent": null,
+              "page_reference": 62,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "עתודות קרקע",
+              "note": null
+            },
+            {
+              "name": "פארק צפון, נווה גן, רמת השרון (שלב ב' - מגרש 23)",
+              "ownership_pct": 21.25,
+              "parent": null,
+              "page_reference": 62,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "עתודות קרקע",
+              "note": null
+            },
+            {
+              "name": "מתחם 12 (עסקת קומבינציה), נתניה",
+              "ownership_pct": 42.5,
+              "parent": null,
+              "page_reference": 62,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "עתודות קרקע",
+              "note": null
+            },
+            {
+              "name": "הארי (עסקת קומבינציה), נתניה",
+              "ownership_pct": 42.5,
+              "parent": null,
+              "page_reference": 62,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "עתודות קרקע",
+              "note": null
+            },
+            {
+              "name": "לוינסקי / לבנדה",
+              "ownership_pct": 45.0,
+              "parent": null,
+              "page_reference": 63,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים אחרים עיקריים (התחדשות עירונית אחרים - פרויקטים מעל 67% חתימות)",
+              "note": null
+            },
+            {
+              "name": "מתחם הצופים, לוד",
+              "ownership_pct": 42.5,
+              "parent": null,
+              "page_reference": 63,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים אחרים עיקריים (התחדשות עירונית אחרים - פרויקטים מעל 67% חתימות)",
+              "note": null
+            },
+            {
+              "name": "מתחם דיזינגוף המייסדים, נתניה",
+              "ownership_pct": 42.5,
+              "parent": null,
+              "page_reference": 63,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים אחרים עיקריים (התחדשות עירונית אחרים - פרויקטים מעל 67% חתימות)",
+              "note": null
+            },
+            {
+              "name": "מתחם גאפונוב, אשדוד",
+              "ownership_pct": 42.5,
+              "parent": null,
+              "page_reference": 63,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים אחרים עיקריים (התחדשות עירונית אחרים - פרויקטים מעל 67% חתימות)",
+              "note": null
+            },
+            {
+              "name": "רוטשילד בת ים",
+              "ownership_pct": 21.25,
+              "parent": null,
+              "page_reference": 63,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים אחרים עיקריים (התחדשות עירונית אחרים - פרויקטים מעל 67% חתימות)",
+              "note": null
+            },
+            {
+              "name": "יצחק שדה - קטמונים, ירושלים",
+              "ownership_pct": 42.5,
+              "parent": null,
+              "page_reference": 63,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים אחרים עיקריים (התחדשות עירונית אחרים - פרויקטים מעל 67% חתימות)",
+              "note": null
+            },
+            {
+              "name": "בר כוכבא 86, הרצליה",
+              "ownership_pct": 42.5,
+              "parent": null,
+              "page_reference": 63,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים אחרים עיקריים (התחדשות עירונית אחרים - פרויקטים מעל 67% חתימות)",
+              "note": null
+            },
+            {
+              "name": "רבי עקיבא (גורדון), הרצליה",
+              "ownership_pct": 42.5,
+              "parent": null,
+              "page_reference": 63,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים אחרים עיקריים (התחדשות עירונית אחרים - פרויקטים מעל 67% חתימות)",
+              "note": null
+            },
+            {
+              "name": "וקופוקיס, בת ים",
+              "ownership_pct": 42.5,
+              "parent": null,
+              "page_reference": 63,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים אחרים עיקריים (התחדשות עירונית אחרים - פרויקטים מעל 67% חתימות)",
+              "note": null
+            },
+            {
+              "name": "כצנלסון, יהוד",
+              "ownership_pct": 42.5,
+              "parent": null,
+              "page_reference": 63,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים אחרים עיקריים (התחדשות עירונית אחרים - פרויקטים מעל 67% חתימות)",
+              "note": null
+            },
+            {
+              "name": "אבא הלל רש\"י, רמת גן",
+              "ownership_pct": 42.5,
+              "parent": null,
+              "page_reference": 64,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים אחרים עיקריים (התחדשות עירונית אחרים - פרויקטים מעל 67% חתימות)",
+              "note": null
+            },
+            {
+              "name": "סולומון, נתניה",
+              "ownership_pct": 42.5,
+              "parent": null,
+              "page_reference": 64,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים אחרים עיקריים (התחדשות עירונית אחרים - פרויקטים מעל 67% חתימות)",
+              "note": null
+            },
+            {
+              "name": "סומקן, תל אביב",
+              "ownership_pct": 42.5,
+              "parent": null,
+              "page_reference": 64,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים אחרים עיקריים (התחדשות עירונית אחרים - פרויקטים מעל 67% חתימות)",
+              "note": null
+            },
+            {
+              "name": "פרוג, רמת גן",
+              "ownership_pct": 42.5,
+              "parent": null,
+              "page_reference": 64,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים אחרים עיקריים (התחדשות עירונית אחרים - פרויקטים מעל 67% חתימות)",
+              "note": null
+            },
+            {
+              "name": "פנינת איילון, תל אביב",
+              "ownership_pct": 42.5,
+              "parent": null,
+              "page_reference": 64,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים אחרים עיקריים (התחדשות עירונית אחרים - פרויקטים מעל 67% חתימות)",
+              "note": null
+            },
+            {
+              "name": "מעונות שרה, הרצליה",
+              "ownership_pct": 42.5,
+              "parent": null,
+              "page_reference": 64,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים אחרים עיקריים (התחדשות עירונית אחרים - פרויקטים מעל 67% חתימות)",
+              "note": null
+            },
+            {
+              "name": "נגבה, רמת גן",
+              "ownership_pct": 42.5,
+              "parent": null,
+              "page_reference": 64,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים אחרים עיקריים (התחדשות עירונית אחרים - פרויקטים מעל 67% חתימות)",
+              "note": null
+            },
+            {
+              "name": "חיפה, סטרומה (שלב א')",
+              "ownership_pct": 42.5,
+              "parent": null,
+              "page_reference": 64,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים אחרים עיקריים (התחדשות עירונית אחרים - פרויקטים מעל 67% חתימות)",
+              "note": null
+            },
+            {
+              "name": "חיפה, סטרומה (שלב ב')",
+              "ownership_pct": 42.5,
+              "parent": null,
+              "page_reference": 64,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים אחרים עיקריים (התחדשות עירונית אחרים - פרויקטים מעל 67% חתימות)",
+              "note": null
+            },
+            {
+              "name": "חיפה, סטרומה (שלב ג')",
+              "ownership_pct": 42.5,
+              "parent": null,
+              "page_reference": 64,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים אחרים עיקריים (התחדשות עירונית אחרים - פרויקטים מעל 67% חתימות)",
+              "note": null
+            },
+            {
+              "name": "דרך ההגנה, תל אביב",
+              "ownership_pct": 42.5,
+              "parent": null,
+              "page_reference": 64,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים אחרים עיקריים (התחדשות עירונית אחרים - פרויקטים מעל 67% חתימות)",
+              "note": null
+            },
+            {
+              "name": "הורד א', אור יהודה",
+              "ownership_pct": 42.5,
+              "parent": null,
+              "page_reference": 64,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים אחרים עיקריים (התחדשות עירונית אחרים - פרויקטים מעל 67% חתימות)",
+              "note": null
+            },
+            {
+              "name": "רבי עקיבא, חולון",
+              "ownership_pct": 42.5,
+              "parent": null,
+              "page_reference": 64,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים אחרים עיקריים (התחדשות עירונית אחרים - פרויקטים מעל 67% חתימות)",
+              "note": null
+            },
+            {
+              "name": "משמר הירדן, גבעתיים",
+              "ownership_pct": 42.5,
+              "parent": null,
+              "page_reference": 64,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים אחרים עיקריים (התחדשות עירונית אחרים - פרויקטים מעל 67% חתימות)",
+              "note": null
+            },
+            {
+              "name": "הגיבור האלמוני, תל אביב",
+              "ownership_pct": 42.5,
+              "parent": null,
+              "page_reference": 64,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים אחרים עיקריים (התחדשות עירונית אחרים - פרויקטים מעל 67% חתימות)",
+              "note": null
+            },
+            {
+              "name": "ששת הימים, נתניה",
+              "ownership_pct": 42.5,
+              "parent": null,
+              "page_reference": 64,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים אחרים עיקריים (התחדשות עירונית אחרים - פרויקטים מעל 67% חתימות)",
+              "note": null
+            },
+            {
+              "name": "רוטשילד ראשון לציון",
+              "ownership_pct": 42.5,
+              "parent": null,
+              "page_reference": 64,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים אחרים עיקריים (התחדשות עירונית אחרים - פרויקטים מעל 67% חתימות)",
+              "note": null
+            },
+            {
+              "name": "הורד ב', אור יהודה",
+              "ownership_pct": 42.5,
+              "parent": null,
+              "page_reference": 65,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים מתחת ל-67% חתימות:",
+              "note": null
+            },
+            {
+              "name": "אנצ'ו סירני, גבעתיים",
+              "ownership_pct": 21.25,
+              "parent": null,
+              "page_reference": 65,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים מתחת ל-67% חתימות:",
+              "note": null
+            },
+            {
+              "name": "פנקס, תל אביב",
+              "ownership_pct": 42.5,
+              "parent": null,
+              "page_reference": 65,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים מתחת ל-67% חתימות:",
+              "note": null
+            },
+            {
+              "name": "הר ציון/העמל, תל אביב",
+              "ownership_pct": 42.5,
+              "parent": null,
+              "page_reference": 65,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים מתחת ל-67% חתימות:",
+              "note": null
+            },
+            {
+              "name": "פרחי אביב, תל אביב",
+              "ownership_pct": 42.5,
+              "parent": null,
+              "page_reference": 65,
+              "section_title": "הקמת פרויקטים בישראל",
+              "table_title": "פרויקטים מתחת ל-67% חתימות:",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "ישראל קנדה שדה דב בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 96,
+              "section_title": "גילוי אודות פרויקטים מהותיים מאוד - פרויקט Rainbow מתחם שדה דב, תל אביב",
+              "table_title": null,
+              "note": "לשעבר ג.ז. מדף 35 בע\"מ"
+            }
+          ],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "ורטיקל סיטי בע\"מ",
+              "ownership_pct": 55.9,
+              "parent": "ישראל קנדה הבורסה בע\"מ",
+              "page_reference": 113,
+              "section_title": "VERTICAL פרויקט בהקמה",
+              "table_title": null,
+              "note": "חלק החברה האפקטיבי בפרויקט"
+            }
+          ],
+          "change_events": []
+        },
+        "0:7": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "ישראל קנדה מלונאות בע\"מ",
+              "ownership_pct": 55.7,
+              "parent": null,
+              "page_reference": 120,
+              "section_title": "תחום הנדל\"ן המניב בישראל",
+              "table_title": "נדל\"ן מניב",
+              "note": null
+            },
+            {
+              "name": "חברת מידטאון בע\"מ",
+              "ownership_pct": 81,
+              "parent": null,
+              "page_reference": 138,
+              "section_title": "רכוש קבוע ומשרדי החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ישראל קנדה (ט.ר) דיור מוגן בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 136,
+              "section_title": "דיור מוגן",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "חברת כפר שמריהו",
+              "ownership_pct": 80,
+              "parent": null,
+              "page_reference": 136,
+              "section_title": "דיור מוגן",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
   "1726488": {
     "company_id": "625",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-15T11:20:08.952991+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 14,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-16T11:21:59.865536+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732797": {
     "company_id": "345",
@@ -2783,18 +4924,11 @@
   },
   "1729098": {
     "company_id": "1993",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-15T11:20:10.127958+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 12,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-16T11:28:39.066064+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1733050": {
     "company_id": "755",
