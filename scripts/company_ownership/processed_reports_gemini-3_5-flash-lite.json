@@ -2654,1940 +2654,11 @@
   },
   "1732740": {
     "company_id": "1848",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-17T10:34:46.994743+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 24,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "סול נטו גגות בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "1. הגדרות",
-              "table_title": null,
-              "note": "מוחזקת בחלקים שווים על ידי החברה (בשרשור) והליוס"
-            },
-            {
-              "name": "סול נטו החזקות בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 9,
-              "section_title": "1. הגדרות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "סול נטו לוד בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 9,
-              "section_title": "1. הגדרות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "סול נטו בית השיטה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 9,
-              "section_title": "1. הגדרות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "סול נטו 2 שותפות מוגבלת",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 9,
-              "section_title": "1. הגדרות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "סולאיר נטו שפיר בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 9,
-              "section_title": "1. הגדרות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "סול נטו כיל בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 9,
-              "section_title": "1. הגדרות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "סולפרויקט 11 בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 9,
-              "section_title": "1. הגדרות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "רה סולאר (Resolar S.a.r.l.)",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 9,
-              "section_title": "1. הגדרות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Solproject Himin 2 Ltd.",
-              "ownership_pct": 88.2,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "2.2 תרשימים עיקרי מבנה החזקות של הקבוצה למועד הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Solaer Intersol Ltd.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "2.2 תרשימים עיקרי מבנה החזקות של הקבוצה למועד הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Solproject 12 Ltd.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "2.2 תרשימים עיקרי מבנה החזקות של הקבוצה למועד הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Sol Neto Roofs Ltd.",
-              "ownership_pct": 50,
-              "parent": "Solproject 12 Ltd.",
-              "page_reference": 10,
-              "section_title": "2.2 תרשימים עיקרי מבנה החזקות של הקבוצה למועד הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Ayit Pumped Storage Ltd.",
-              "ownership_pct": 80.1,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "2.2 תרשימים עיקרי מבנה החזקות של הקבוצה למועד הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ASH Industries Ltd.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "2.2 תרשימים עיקרי מבנה החזקות של הקבוצה למועד הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "T.D.I.- Solaer Poland Power GP Ltd.",
-              "ownership_pct": 70,
-              "parent": null,
-              "page_reference": 14,
-              "section_title": "2.2 תרשימים עיקרי מבנה החזקות של הקבוצה למועד הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "T.D.I.- Solaer Poland Power LP",
-              "ownership_pct": 69.99,
-              "parent": "T.D.I.- Solaer Poland Power GP Ltd.",
-              "page_reference": 14,
-              "section_title": "2.2 תרשימים עיקרי מבנה החזקות של הקבוצה למועד הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Varese sp. z o.o.",
-              "ownership_pct": 100,
-              "parent": "T.D.I.- Solaer Poland Power LP",
-              "page_reference": 14,
-              "section_title": "2.2 תרשימים עיקרי מבנה החזקות של הקבוצה למועד הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "SEWNI spółka z ograniczoną odpowiedzialnością",
-              "ownership_pct": 100,
-              "parent": "T.D.I.- Solaer Poland Power LP",
-              "page_reference": 14,
-              "section_title": "2.2 תרשימים עיקרי מבנה החזקות של הקבוצה למועד הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "PV Energia 7 spółka z ograniczoną odpowiedzialnością",
-              "ownership_pct": 100,
-              "parent": "T.D.I.- Solaer Poland Power LP",
-              "page_reference": 14,
-              "section_title": "2.2 תרשימים עיקרי מבנה החזקות של הקבוצה למועד הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Alizarsun",
-              "ownership_pct": 91,
-              "parent": null,
-              "page_reference": 18,
-              "section_title": "2.4 להלן המערכות הנמצאות בבעלות החברה (או תחת בלעדיות):",
-              "table_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים מחוברים למועד פרסום הדוח",
-              "note": null
-            },
-            {
-              "name": "Calasparra",
-              "ownership_pct": 84,
-              "parent": null,
-              "page_reference": 18,
-              "section_title": "2.4 להלן המערכות הנמצאות בבעלות החברה (או תחת בלעדיות):",
-              "table_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים מחוברים למועד פרסום הדוח",
-              "note": null
-            },
-            {
-              "name": "Esmeralda & Hortensias",
-              "ownership_pct": 84,
-              "parent": null,
-              "page_reference": 18,
-              "section_title": "2.4 להלן המערכות הנמצאות בבעלות החברה (או תחת בלעדיות):",
-              "table_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים מחוברים למועד פרסום הדוח",
-              "note": null
-            },
-            {
-              "name": "Poland 1a",
-              "ownership_pct": 55,
-              "parent": null,
-              "page_reference": 18,
-              "section_title": "2.4 להלן המערכות הנמצאות בבעלות החברה (או תחת בלעדיות):",
-              "table_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים מחוברים למועד פרסום הדוח",
-              "note": null
-            },
-            {
-              "name": "Poland 3",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 18,
-              "section_title": "2.4 להלן המערכות הנמצאות בבעלות החברה (או תחת בלעדיות):",
-              "table_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים מחוברים למועד פרסום הדוח",
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "Alizarsun",
-              "ownership_pct": 65,
-              "parent": null,
-              "page_reference": 18,
-              "section_title": "להלן המערכות הנמצאות בבעלות החברה (או תחת בלעדיות):",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "גגות",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 18,
-              "section_title": "להלן המערכות הנמצאות בבעלות החברה (או תחת בלעדיות):",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Calasparra",
-              "ownership_pct": 70,
-              "parent": null,
-              "page_reference": 18,
-              "section_title": "להלן המערכות הנמצאות בבעלות החברה (או תחת בלעדיות):",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Esmeralda & Hortensias",
-              "ownership_pct": 55,
-              "parent": null,
-              "page_reference": 18,
-              "section_title": "להלן המערכות הנמצאות בבעלות החברה (או תחת בלעדיות):",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Poland 1a",
-              "ownership_pct": 70,
-              "parent": null,
-              "page_reference": 18,
-              "section_title": "להלן המערכות הנמצאות בבעלות החברה (או תחת בלעדיות):",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Poland 3",
-              "ownership_pct": 70,
-              "parent": null,
-              "page_reference": 18,
-              "section_title": "להלן המערכות הנמצאות בבעלות החברה (או תחת בלעדיות):",
-              "table_title": null,
-              "note": "טרם נרכש ונמצא בהליך בחינה תחת בלעדיות"
-            },
-            {
-              "name": "Cacin",
-              "ownership_pct": 70,
-              "parent": null,
-              "page_reference": 20,
-              "section_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים בהקמה ולקראת הקמה למועד פרסום הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Fargue",
-              "ownership_pct": 70,
-              "parent": null,
-              "page_reference": 20,
-              "section_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים בהקמה ולקראת הקמה למועד פרסום הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Tarazona",
-              "ownership_pct": 70,
-              "parent": null,
-              "page_reference": 20,
-              "section_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים בהקמה ולקראת הקמה למועד פרסום הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Espartales",
-              "ownership_pct": 70,
-              "parent": null,
-              "page_reference": 20,
-              "section_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים בהקמה ולקראת הקמה למועד פרסום הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Sancho",
-              "ownership_pct": 70,
-              "parent": null,
-              "page_reference": 20,
-              "section_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים בהקמה ולקראת הקמה למועד פרסום הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Villena",
-              "ownership_pct": 70,
-              "parent": null,
-              "page_reference": 20,
-              "section_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים בהקמה ולקראת הקמה למועד פרסום הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Alcantara",
-              "ownership_pct": 70,
-              "parent": null,
-              "page_reference": 20,
-              "section_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים בהקמה ולקראת הקמה למועד פרסום הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ENAPAC PV 1",
-              "ownership_pct": 65,
-              "parent": null,
-              "page_reference": 20,
-              "section_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים בהקמה ולקראת הקמה למועד פרסום הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Calbuco Wind",
-              "ownership_pct": 75,
-              "parent": null,
-              "page_reference": 20,
-              "section_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים בהקמה ולקראת הקמה למועד פרסום הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Mequinenza",
-              "ownership_pct": 85,
-              "parent": null,
-              "page_reference": 21,
-              "section_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים בהקמה ולקראת הקמה למועד פרסום הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Alizarsun 1b",
-              "ownership_pct": 85,
-              "parent": null,
-              "page_reference": 21,
-              "section_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים בהקמה ולקראת הקמה למועד פרסום הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Elche 1",
-              "ownership_pct": 85,
-              "parent": null,
-              "page_reference": 21,
-              "section_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים בהקמה ולקראת הקמה למועד פרסום הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Alfonso El Sabio 1a",
-              "ownership_pct": 85,
-              "parent": null,
-              "page_reference": 21,
-              "section_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים בהקמה ולקראת הקמה למועד פרסום הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Alfonso El Sabio 1b",
-              "ownership_pct": 85,
-              "parent": null,
-              "page_reference": 21,
-              "section_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים בהקמה ולקראת הקמה למועד פרסום הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Cachiyuyo",
-              "ownership_pct": 65,
-              "parent": null,
-              "page_reference": 21,
-              "section_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים בהקמה ולקראת הקמה למועד פרסום הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Qanqina",
-              "ownership_pct": 65,
-              "parent": null,
-              "page_reference": 21,
-              "section_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים בהקמה ולקראת הקמה למועד פרסום הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ENAPAC PV2",
-              "ownership_pct": 85,
-              "parent": null,
-              "page_reference": 21,
-              "section_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים בהקמה ולקראת הקמה למועד פרסום הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Gravinia de Puglia",
-              "ownership_pct": 85,
-              "parent": null,
-              "page_reference": 21,
-              "section_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים בהקמה ולקראת הקמה למועד פרסום הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Matera Energia PV",
-              "ownership_pct": 85,
-              "parent": null,
-              "page_reference": 21,
-              "section_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים בהקמה ולקראת הקמה למועד פרסום הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Matera Energia BESS1+2",
-              "ownership_pct": 85,
-              "parent": null,
-              "page_reference": 21,
-              "section_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים בהקמה ולקראת הקמה למועד פרסום הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Alfonso El Sabio 2-3",
-              "ownership_pct": 85,
-              "parent": null,
-              "page_reference": 22,
-              "section_title": "צבר פרויקטים פוטו-וולטאים בפיתוח מתקדם וייזום למועד פרסום הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Elche 2+3",
-              "ownership_pct": 85,
-              "parent": null,
-              "page_reference": 22,
-              "section_title": "צבר פרויקטים פוטו-וולטאים בפיתוח מתקדם וייזום למועד פרסום הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Ferrandina",
-              "ownership_pct": 85,
-              "parent": null,
-              "page_reference": 22,
-              "section_title": "צבר פרויקטים פוטו-וולטאים בפיתוח מתקדם וייזום למועד פרסום הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Genzano Energia",
-              "ownership_pct": 85,
-              "parent": null,
-              "page_reference": 22,
-              "section_title": "צבר פרויקטים פוטו-וולטאים בפיתוח מתקדם וייזום למועד פרסום הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "נווה חריף",
-              "ownership_pct": 70,
-              "parent": null,
-              "page_reference": 22,
-              "section_title": "צבר פרויקטים פוטו-וולטאים בפיתוח מתקדם וייזום למועד פרסום הדוח",
-              "table_title": null,
-              "note": "חלק החברה בהנחת דילול מלא עתידי"
-            },
-            {
-              "name": "Elche 4-6",
-              "ownership_pct": 85,
-              "parent": null,
-              "page_reference": 22,
-              "section_title": "צבר פרויקטים פוטו-וולטאים בפיתוח מתקדם וייזום למועד פרסום הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Toledo",
-              "ownership_pct": 85,
-              "parent": null,
-              "page_reference": 22,
-              "section_title": "צבר פרויקטים פוטו-וולטאים בפיתוח מתקדם וייזום למועד פרסום הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Alizarsun 2",
-              "ownership_pct": 85,
-              "parent": null,
-              "page_reference": 22,
-              "section_title": "צבר פרויקטים פוטו-וולטאים בפיתוח מתקדם וייזום למועד פרסום הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Poland 1+2",
-              "ownership_pct": 70,
-              "parent": null,
-              "page_reference": 22,
-              "section_title": "צבר פרויקטים פוטו-וולטאים בפיתוח מתקדם וייזום למועד פרסום הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "עיט",
-              "ownership_pct": 81,
-              "parent": null,
-              "page_reference": 22,
-              "section_title": "צבר פרויקטים פוטו-וולטאים בפיתוח מתקדם וייזום למועד פרסום הדוח",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "סול נטו גגות",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 63,
-              "section_title": "תחום הפעילות הפוטו-וולטאי בישראל",
-              "table_title": null,
-              "note": "הון מניותיה הרגילות מוחזק בחלקים שווים (50% כ\"א) על ידי החברה והליוס"
-            }
-          ],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "חברת סול נטו בית השיטה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 72,
-              "section_title": "7.3.6 אסדרת ייצור חשמל מבוזר באנרגיה מתחדשת בשיטת מונה נטו",
-              "table_title": null,
-              "note": "חברת בת בבעלות מלאה, החברה מחזיקה ב-74% מהזכויות בשותפות הפרויקט"
-            },
-            {
-              "name": "סרגוסה ישראל פרויקט סולאר בע\"מ",
-              "ownership_pct": 97.4,
-              "parent": null,
-              "page_reference": 88,
-              "section_title": "א. פרויקט אליזרסאן",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אליזרסאן (Alizarsun S.L.U.)",
-              "ownership_pct": 71.3,
-              "parent": null,
-              "page_reference": 88,
-              "section_title": "א. פרויקט אליזרסאן",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "חימין 3 (Himin Investment 3 S.L.)",
-              "ownership_pct": 44,
-              "parent": null,
-              "page_reference": 88,
-              "section_title": "א. פרויקט אליזרסאן",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": [
-            {
-              "company": "אליזרסאן",
-              "event_type": "full_disposal",
-              "ownership_pct_before": 71.3,
-              "ownership_pct_after": 0,
-              "event_date": "2025-05-27",
-              "event_description": "התקשרות בהסכם מחייב למכירת מלוא האחזקות בחברת אליזרסאן",
-              "page_reference": 88,
-              "section_title": "א. פרויקט אליזרסאן"
-            }
-          ]
-        },
-        "0:5": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "Alizarsun, S.L.U.",
-              "ownership_pct": 71.3,
-              "parent": null,
-              "page_reference": 88,
-              "section_title": "א. פרויקט אליזרסאן",
-              "table_title": null,
-              "note": "מוחזקת בשרשור"
-            },
-            {
-              "name": "סרגוסה ישראל פרויקט סולאר בע\"מ",
-              "ownership_pct": 97.4,
-              "parent": null,
-              "page_reference": 88,
-              "section_title": "א. פרויקט אליזרסאן",
-              "table_title": null,
-              "note": "מוחזקת בשרשור בישראל"
-            },
-            {
-              "name": "אלצ'ה 1",
-              "ownership_pct": 51.0,
-              "parent": null,
-              "page_reference": 92,
-              "section_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
-              "table_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
-              "note": null
-            },
-            {
-              "name": "אליזרסאן 1ב",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 92,
-              "section_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
-              "table_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
-              "note": null
-            },
-            {
-              "name": "סאנצ'ו",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 92,
-              "section_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
-              "table_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
-              "note": null
-            },
-            {
-              "name": "ויינה",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 92,
-              "section_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
-              "table_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
-              "note": null
-            },
-            {
-              "name": "אלקנטרה",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 92,
-              "section_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
-              "table_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
-              "note": null
-            },
-            {
-              "name": "אלפונסו",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 92,
-              "section_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
-              "table_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
-              "note": null
-            },
-            {
-              "name": "אל סביו 1",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 92,
-              "section_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
-              "table_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
-              "note": null
-            },
-            {
-              "name": "מקיננזה 3-1",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 92,
-              "section_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
-              "table_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
-              "note": null
-            },
-            {
-              "name": "קסין",
-              "ownership_pct": 11.9,
-              "parent": null,
-              "page_reference": 92,
-              "section_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
-              "table_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
-              "note": null
-            },
-            {
-              "name": "פרגוי",
-              "ownership_pct": 11.9,
-              "parent": null,
-              "page_reference": 92,
-              "section_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
-              "table_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
-              "note": null
-            },
-            {
-              "name": "Los Espartales",
-              "ownership_pct": 11.9,
-              "parent": null,
-              "page_reference": 92,
-              "section_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
-              "table_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
-              "note": null
-            },
-            {
-              "name": "Tarazona",
-              "ownership_pct": 11.9,
-              "parent": null,
-              "page_reference": 92,
-              "section_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
-              "table_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
-              "note": null
-            },
-            {
-              "name": "Resolar 17 S.a.r.l.",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 94,
-              "section_title": "א. פרויקטים חדשים",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Resolar 11 S.a.r.l.",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 97,
-              "section_title": "8.2.2 מכירת פרויקטים בספרד",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Resolar 12 S.a.r.l.",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 97,
-              "section_title": "8.2.2 מכירת פרויקטים בספרד",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Gravina de Puglia",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 99,
-              "section_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
-              "table_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
-              "note": null
-            },
-            {
-              "name": "Matera Energia",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 99,
-              "section_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
-              "table_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
-              "note": null
-            },
-            {
-              "name": "Brindisi Energia 1",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 99,
-              "section_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
-              "table_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
-              "note": null
-            },
-            {
-              "name": "Brindisi Energia 8",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 99,
-              "section_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
-              "table_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
-              "note": null
-            },
-            {
-              "name": "Brindisi Energia 3",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 99,
-              "section_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
-              "table_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
-              "note": null
-            },
-            {
-              "name": "Brindisi Energia 6",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 99,
-              "section_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
-              "table_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
-              "note": null
-            },
-            {
-              "name": "Brindisi Energia 5",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 99,
-              "section_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
-              "table_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
-              "note": null
-            },
-            {
-              "name": "Brindisi Energia 4",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 99,
-              "section_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
-              "table_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
-              "note": null
-            },
-            {
-              "name": "Brindisi Energia 7",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 99,
-              "section_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
-              "table_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
-              "note": null
-            },
-            {
-              "name": "Tito Energia Group",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 99,
-              "section_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
-              "table_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
-              "note": null
-            },
-            {
-              "name": "Ferrandina",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 99,
-              "section_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
-              "table_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
-              "note": null
-            },
-            {
-              "name": "Melfi Energia Group",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 99,
-              "section_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
-              "table_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
-              "note": null
-            },
-            {
-              "name": "Guardia Perticara",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 99,
-              "section_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
-              "table_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
-              "note": null
-            },
-            {
-              "name": "Genzano Energia 1",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 99,
-              "section_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
-              "table_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
-              "note": null
-            },
-            {
-              "name": "Genzano 8",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 99,
-              "section_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
-              "table_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
-              "note": null
-            },
-            {
-              "name": "Genzano di Lucanina",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 99,
-              "section_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
-              "table_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
-              "note": null
-            },
-            {
-              "name": "Genzano Energia 3",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 99,
-              "section_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
-              "table_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
-              "note": null
-            },
-            {
-              "name": "Craco Energia",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 99,
-              "section_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
-              "table_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
-              "note": null
-            },
-            {
-              "name": "השותפות בפולין",
-              "ownership_pct": 70.0,
-              "parent": null,
-              "page_reference": 103,
-              "section_title": "9.1.2 אופן פעילות החברה בפולין",
-              "table_title": null,
-              "note": "שותפות להקמת פרויקטים פוטו-וולטאיים בפולין"
-            }
-          ],
-          "change_events": []
-        },
-        "0:6": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "השותפות בפולין",
-              "ownership_pct": 70,
-              "parent": null,
-              "page_reference": 103,
-              "section_title": "9.1.2 אופן פעילות החברה בפולין",
-              "table_title": null,
-              "note": "שותפות שהוקמה במסגרת הסכם מייסדים מיום 7 באפריל 2021"
-            },
-            {
-              "name": "Agua-Sol Development S.L. (אגווה סול)",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 116,
-              "section_title": "10.3.1.2 פרויקטים מהותיים לחברה בצ'ילה: א. פרויקט אנפק",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "San Camilo Transmisión SpA",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 122,
-              "section_title": "10.3.1.2 פרויקטים מהותיים לחברה בצ'ילה",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:7": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "Esmeralda + Hortencias",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 243,
-              "section_title": "10.3.2 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח הושלמה רכישת הזכויות בהם על ידי החברה:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Calbuco",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 243,
-              "section_title": "10.3.2 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח הושלמה רכישת הזכויות בהם על ידי החברה:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ENAPAC PV 1",
-              "ownership_pct": 51.0,
-              "parent": null,
-              "page_reference": 243,
-              "section_title": "10.3.2 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח הושלמה רכישת הזכויות בהם על ידי החברה:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Enapac PV 2",
-              "ownership_pct": 51.0,
-              "parent": null,
-              "page_reference": 243,
-              "section_title": "10.3.2 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח הושלמה רכישת הזכויות בהם על ידי החברה:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Qanqina",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 243,
-              "section_title": "10.3.2 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח הושלמה רכישת הזכויות בהם על ידי החברה:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Cachiyuyo",
-              "ownership_pct": 47.4,
-              "parent": "Resolar S.a.r.l.",
-              "page_reference": 243,
-              "section_title": "10.3.2 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח הושלמה רכישת הזכויות בהם על ידי החברה:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "San Camilo Transmisión SpA",
-              "ownership_pct": 51.0,
-              "parent": null,
-              "page_reference": 236,
-              "section_title": null,
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Agua-Sol Development S.L",
-              "ownership_pct": 51.0,
-              "parent": null,
-              "page_reference": 236,
-              "section_title": null,
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Trends Industrial SA",
-              "ownership_pct": 51.0,
-              "parent": null,
-              "page_reference": 238,
-              "section_title": null,
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Resolar S.a.r.l.",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 241,
-              "section_title": null,
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:8": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "עיט אגירה שאובה בע\"מ",
-              "ownership_pct": 80.1,
-              "parent": null,
-              "page_reference": 145,
-              "section_title": "12.1.2 פרויקט עיט",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "תאגיד הפרויקט",
-              "ownership_pct": 74.0,
-              "parent": "עיט אגירה שאובה בע\"מ",
-              "page_reference": 146,
-              "section_title": "12.1.2 פרויקט עיט",
-              "table_title": null,
-              "note": "תאגידים ייעודיים המוקמים מול הקיבוצים"
-            }
-          ],
-          "change_events": []
-        },
-        "0:9": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "LIBIENRGY HORIZONTES U.L.S",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 313,
-              "section_title": "12.6.10 הלוואת פרויקטים",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "FOTOVOLTAICA BRAZATORTAS, S.L,U",
-              "ownership_pct": 12.0,
-              "parent": null,
-              "page_reference": 313,
-              "section_title": "12.6.10 הלוואת פרויקטים",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "FOTOVOLTAICA PUERTO CRUZ II",
-              "ownership_pct": 12.0,
-              "parent": null,
-              "page_reference": 313,
-              "section_title": "12.6.10 הלוואת פרויקטים",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Resolar S.L.",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 313,
-              "section_title": "12.6.10 הלוואת פרויקטים",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ENERGY INTERSOL CALBUCO Spa",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 315,
-              "section_title": "12.8.2 הסכמים למכירת חשמל",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Parque Solar Cachiyuyo SpA",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 316,
-              "section_title": "12.8.2 הסכמים למכירת חשמל",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Qanquiña SpA",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 316,
-              "section_title": "12.8.2 הסכמים למכירת חשמל",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:10": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "קאסין",
-              "ownership_pct": 25,
-              "parent": null,
-              "page_reference": 171,
-              "section_title": null,
-              "table_title": null,
-              "note": "פרויקט השקעה משותף עם קרן ההשקעות"
-            },
-            {
-              "name": "פרגוי",
-              "ownership_pct": 25,
-              "parent": null,
-              "page_reference": 171,
-              "section_title": null,
-              "table_title": null,
-              "note": "פרויקט השקעה משותף עם קרן ההשקעות"
-            },
-            {
-              "name": "טרזונה",
-              "ownership_pct": 25,
-              "parent": null,
-              "page_reference": 171,
-              "section_title": null,
-              "table_title": null,
-              "note": "פרויקט השקעה משותף עם קרן ההשקעות"
-            },
-            {
-              "name": "לס אספרטלס",
-              "ownership_pct": 25,
-              "parent": null,
-              "page_reference": 171,
-              "section_title": null,
-              "table_title": null,
-              "note": "פרויקט השקעה משותף עם קרן ההשקעות"
-            },
-            {
-              "name": "סול-נטו גגות בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 177,
-              "section_title": "12.11 הליכים משפטיים",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "8 Intersol Energy L.S (EI8)",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 177,
-              "section_title": "12.11 הליכים משפטיים",
-              "table_title": null,
-              "note": "חברה בת ספרדית המוחזקת בשרשור"
-            }
-          ],
-          "change_events": []
-        },
-        "0:11": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": [
-            {
-              "company": "LIBIENRGY HORIZONTES, S.L.U",
-              "event_type": "other",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 47.4,
-              "event_date": "2025-12-12",
-              "event_description": "ניצול מסגרת אשראי ממסגרת האשראי של פרויקט קלספארה",
-              "page_reference": 195,
-              "section_title": "ה. אירועים עיקריים בתקופת הדו\"ח ולמועד אישור הדו\"ח"
-            },
-            {
-              "company": "L.S Development Sol-Agua",
-              "event_type": "other",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 51.0,
-              "event_date": "2025-12-24",
-              "event_description": "חתימה על הסכם EPC לפרויקט הסולארי סן קמילו בצ'ילה",
-              "page_reference": 196,
-              "section_title": "ה. אירועים עיקריים בתקופת הדו\"ח ולמועד אישור הדו\"ח"
-            },
-            {
-              "company": "שותפות סול נטו 1",
-              "event_type": "full_disposal",
-              "ownership_pct_before": 100.0,
-              "ownership_pct_after": 0.0,
-              "event_date": "2025-12-29",
-              "event_description": "מכירת מלוא זכויות החברה בשותפות סול נטו 1",
-              "page_reference": 196,
-              "section_title": "ה. אירועים עיקריים בתקופת הדו\"ח ולמועד אישור הדו\"ח"
-            },
-            {
-              "company": "סולאיר נט-מטרינג בע\"מ",
-              "event_type": "full_disposal",
-              "ownership_pct_before": 100.0,
-              "ownership_pct_after": 0.0,
-              "event_date": "2025-12-29",
-              "event_description": "מכירת מלוא זכויות החברה והתחייבויותיה בסולאיר נט-מטרינג בע\"מ",
-              "page_reference": 196,
-              "section_title": "ה. אירועים עיקריים בתקופת הדו\"ח ולמועד אישור הדו\"ח"
-            },
-            {
-              "company": "Calbuco Intersol Energy SpA",
-              "event_type": "other",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 47.4,
-              "event_date": "2026-01-27",
-              "event_description": "חתימה על מזכר הבנות לא מחייב למימון בכיר להקמת פרויקט הרוח קאלבוקו בצ'ילה",
-              "page_reference": 197,
-              "section_title": "ה. אירועים עיקריים בתקופת הדו\"ח ולמועד אישור הדו\"ח"
-            },
-            {
-              "company": "Acebuche Solar ו-Aliaga Solar, S.L.U",
-              "event_type": "other",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 47.4,
-              "event_date": "2026-02-12",
-              "event_description": "חתימה על הסכם למתן מימון בכיר להקמת פרויקט סאנצ'ו בספרד",
-              "page_reference": 197,
-              "section_title": "ה. אירועים עיקריים בתקופת הדו\"ח ולמועד אישור הדו\"ח"
-            },
-            {
-              "company": "חברות ייעודיות לפרויקטים בפולין (שותפות עם כלל חברה לביטוח)",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": 0.0,
-              "ownership_pct_after": 51.0,
-              "event_date": "2026-03-20",
-              "event_description": "חתימה על מזכר הבנות לרכישת 100% ממניות חברות ייעודיות בפולין במסגרת שותפות בה סולאיר תחזיק לפחות 51%",
-              "page_reference": 198,
-              "section_title": "ה. אירועים עיקריים בתקופת הדו\"ח ולמועד אישור הדו\"ח"
-            },
-            {
-              "company": "L.S Development Sol-Agua",
-              "event_type": "other",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 51.0,
-              "event_date": "2026-03-24",
-              "event_description": "חתימה על מזכר הבנות לא מחייב עם חברת כרייה גלובאלית בקשר לפרויקט אנפק בצ'ילה",
-              "page_reference": 198,
-              "section_title": "ה. אירועים עיקריים בתקופת הדו\"ח ולמועד אישור הדו\"ח"
-            }
-          ]
-        },
-        "0:12": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:13": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:14": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:15": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "סולנטו 1 ש.מ.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 262,
-              "section_title": "באור 8 - השקעה בחברות מוחזקות\nא. חברות בנות מאוחדות",
-              "table_title": "להלן רשימה של חברות הבנות והשותפויות המאוחדות המהותיות של החברה:",
-              "note": "החזקה ליום 31 בדצמבר 2024 הייתה 100%, נמכרה ביום 29 בדצמבר 2025"
-            },
-            {
-              "name": "Himin investment 2 L.S",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 262,
-              "section_title": "באור 8 - השקעה בחברות מוחזקות\nא. חברות בנות מאוחדות",
-              "table_title": "להלן רשימה של חברות הבנות והשותפויות המאוחדות המהותיות של החברה:",
-              "note": null
-            },
-            {
-              "name": "Alizarsun S.L",
-              "ownership_pct": 71.2,
-              "parent": null,
-              "page_reference": 262,
-              "section_title": "באור 8 - השקעה בחברות מוחזקות\nא. חברות בנות מאוחדות",
-              "table_title": "להלן רשימה של חברות הבנות והשותפויות המאוחדות המהותיות של החברה:",
-              "note": null
-            },
-            {
-              "name": "סולאיר - טי.די.אי פולין פאוור שותפות מוגבלת",
-              "ownership_pct": 70,
-              "parent": null,
-              "page_reference": 262,
-              "section_title": "באור 8 - השקעה בחברות מוחזקות\nא. חברות בנות מאוחדות",
-              "table_title": "להלן רשימה של חברות הבנות והשותפויות המאוחדות המהותיות של החברה:",
-              "note": null
-            },
-            {
-              "name": "Resolar SARL",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 262,
-              "section_title": "באור 8 - השקעה בחברות מוחזקות\nא. חברות בנות מאוחדות",
-              "table_title": "להלן רשימה של חברות הבנות והשותפויות המאוחדות המהותיות של החברה:",
-              "note": null
-            },
-            {
-              "name": "Agua-Sol Development S.L",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 262,
-              "section_title": "באור 8 - השקעה בחברות מוחזקות\nא. חברות בנות מאוחדות",
-              "table_title": "להלן רשימה של חברות הבנות והשותפויות המאוחדות המהותיות של החברה:",
-              "note": null
-            },
-            {
-              "name": "Energy Intersol L.S",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 262,
-              "section_title": "באור 8 - השקעה בחברות מוחזקות\nא. חברות בנות מאוחדות",
-              "table_title": "להלן רשימה של חברות הבנות והשותפויות המאוחדות המהותיות של החברה:",
-              "note": null
-            },
-            {
-              "name": "סול נטו אינטרסול ש.מ.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 262,
-              "section_title": "באור 8 - השקעה בחברות מוחזקות\nא. חברות בנות מאוחדות",
-              "table_title": "להלן רשימה של חברות הבנות והשותפויות המאוחדות המהותיות של החברה:",
-              "note": null
-            },
-            {
-              "name": "סול נטו גגות בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 266,
-              "section_title": "באור 8 - השקעה בחברות מוחזקות\nב. חברות מוחזקות לפי שיטת השווי המאזני",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "סול-נטו גגות אי פי סי בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 266,
-              "section_title": "באור 8 - השקעה בחברות מוחזקות\nב. חברות מוחזקות לפי שיטת השווי המאזני",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Solsticio SARL",
-              "ownership_pct": 11.9,
-              "parent": "רה-סולאר",
-              "page_reference": 266,
-              "section_title": "באור 8 - השקעה בחברות מוחזקות\nב. חברות מוחזקות לפי שיטת השווי המאזני",
-              "table_title": null,
-              "note": "שיעור החזקה של החברה בשרשור הינו כ-11.9% (מוחזקת 25% על ידי רה-סולאר)"
-            },
-            {
-              "name": "BRAZATORTAS RENOVABLES 400KV, AIE",
-              "ownership_pct": 9.32,
-              "parent": null,
-              "page_reference": 266,
-              "section_title": "באור 8 - השקעה בחברות מוחזקות\nב. חברות מוחזקות לפי שיטת השווי המאזני",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:16": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "רה סולאר",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 280,
-              "section_title": "באור 16 - מימון פרויקטים, בטחונות ואמות מידה פיננסיות (המשך)",
-              "table_title": null,
-              "note": "החברה המחזיקה שיעור של 47.4%"
-            }
-          ],
-          "change_events": []
-        },
-        "0:17": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "סול נטו גגות בע\"מ",
-              "ownership_pct": 50.0,
-              "parent": null,
-              "page_reference": 297,
-              "section_title": "באור 19 - התקשרויות, תלויות, שעבודים וערבויות - א. התקשרויות - 1. ישראל",
-              "table_title": null,
-              "note": "החזקה בחלקים שווים על ידי החברה והליוס"
-            },
-            {
-              "name": "סולנטו 1 שותפות מוגבלת וסול נטו 2 שותפות מוגבלת",
-              "ownership_pct": 99.9,
-              "parent": "סולאיר נט-מטרינג בע\"מ",
-              "page_reference": 297,
-              "section_title": "באור 19 - התקשרויות, תלויות, שעבודים וערבויות - א. התקשרויות - 1. ישראל",
-              "table_title": null,
-              "note": "נמכרו ביום 29 בדצמבר 2025"
-            },
-            {
-              "name": "סרגוסה ישראל פרויקט סולאר בע\"מ",
-              "ownership_pct": 97.4,
-              "parent": null,
-              "page_reference": 299,
-              "section_title": "באור 19 - התקשרויות, תלויות, שעבודים וערבויות - א. התקשרויות - 2. ספרד",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Torrejon IV ו-Valdemoro V",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 300,
-              "section_title": "באור 19 - התקשרויות, תלויות, שעבודים וערבויות - א. התקשרויות - 2. ספרד - ג. פרויקטים נוספים בספרד",
-              "table_title": "שם הפרויקט שנת רכישה שעור אחזקה מגה וואט",
-              "note": null
-            },
-            {
-              "name": "Torrejon I ו-Valdemoro IV",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 300,
-              "section_title": "באור 19 - התקשרויות, תלויות, שעבודים וערבויות - א. התקשרויות - 2. ספרד - ג. פרויקטים נוספים בספרד",
-              "table_title": "שם הפרויקט שנת רכישה שעור אחזקה מגה וואט",
-              "note": null
-            },
-            {
-              "name": "Bierzo 3 ו-Bierzo, Bierzo 1, Bierzo 2",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 300,
-              "section_title": "באור 19 - התקשרויות, תלויות, שעבודים וערבויות - א. התקשרויות - 2. ספרד - ג. פרויקטים נוספים בספרד",
-              "table_title": "שם הפרויקט שנת רכישה שעור אחזקה מגה וואט",
-              "note": null
-            },
-            {
-              "name": "Mequinenza",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 300,
-              "section_title": "באור 19 - התקשרויות, תלויות, שעבודים וערבויות - א. התקשרויות - 2. ספרד - ג. פרויקטים נוספים בספרד",
-              "table_title": "שם הפרויקט שנת רכישה שעור אחזקה מגה וואט",
-              "note": null
-            },
-            {
-              "name": "Villena",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 300,
-              "section_title": "באור 19 - התקשרויות, תלויות, שעבודים וערבויות - א. התקשרויות - 2. ספרד - ג. פרויקטים נוספים בספרד",
-              "table_title": "שם הפרויקט שנת רכישה שעור אחזקה מגה וואט",
-              "note": null
-            },
-            {
-              "name": "Calasparra",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 300,
-              "section_title": "באור 19 - התקשרויות, תלויות, שעבודים וערבויות - א. התקשרויות - 2. ספרד - ג. פרויקטים נוספים בספרד",
-              "table_title": "שם הפרויקט שנת רכישה שעור אחזקה מגה וואט",
-              "note": null
-            },
-            {
-              "name": "Cisne",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 300,
-              "section_title": "באור 19 - התקשרויות, תלויות, שעבודים וערבויות - א. התקשרויות - 2. ספרד - ג. פרויקטים נוספים בספרד",
-              "table_title": "שם הפרויקט שנת רכישה שעור אחזקה מגה וואט",
-              "note": null
-            },
-            {
-              "name": "Toledo",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 300,
-              "section_title": "באור 19 - התקשרויות, תלויות, שעבודים וערבויות - א. התקשרויות - 2. ספרד - ג. פרויקטים נוספים בספרד",
-              "table_title": "שם הפרויקט שנת רכישה שעור אחזקה מגה וואט",
-              "note": null
-            },
-            {
-              "name": "Solsticio S.a.r.l",
-              "ownership_pct": 25.0,
-              "parent": "רה סולאר",
-              "page_reference": 301,
-              "section_title": "באור 19 - התקשרויות, תלויות, שעבודים וערבויות - א. התקשרויות - 2. ספרד - ד. פרויקטי Tarazona, Cacin, Fargue, Espartales",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Resolar 12 S.a.r.l (Libienergy Horizontes S.L)",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 302,
-              "section_title": "באור 19 - התקשרויות, תלויות, שעבודים וערבויות - א. התקשרויות - 2. ספרד - ה. פרויקט Calasparra",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Resolar 17 S.a.r.l",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 302,
-              "section_title": "באור 19 - התקשרויות, תלויות, שעבודים וערבויות - א. התקשרויות - 2. ספרד - ו. פרויקט Sancho (Acebuche & Aliaga)",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "BRAZATORTAS RENOVABLES 400KV, AIE",
-              "ownership_pct": 9.32,
-              "parent": null,
-              "page_reference": 303,
-              "section_title": "באור 19 - התקשרויות, תלויות, שעבודים וערבויות - א. התקשרויות - 2. ספרד - ו. פרויקט Aliaga & Acebuche (Sancho) (המשך)",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Energy Intersol SL",
-              "ownership_pct": 51.0,
-              "parent": null,
-              "page_reference": 303,
-              "section_title": "באור 19 - התקשרויות, תלויות, שעבודים וערבויות - א. התקשרויות - 2. ספרד - ז. הסכמי EPC",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Qanquina",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 306,
-              "section_title": "באור 19 - התקשרויות, תלויות, שעבודים וערבויות - א. התקשרויות - 3. צ'ילה - א. פרויקטים בצ'ילה",
-              "table_title": "שם הפרויקט שנת רכישה שעור אחזקה מגה וואט שלב הפרויקט",
-              "note": null
-            },
-            {
-              "name": "Cachiyuyo",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 306,
-              "section_title": "באור 19 - התקשרויות, תלויות, שעבודים וערבויות - א. התקשרויות - 3. צ'ילה - א. פרויקטים בצ'ילה",
-              "table_title": "שם הפרויקט שנת רכישה שעור אחזקה מגה וואט שלב הפרויקט",
-              "note": null
-            },
-            {
-              "name": "Calbuco",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 306,
-              "section_title": "באור 19 - התקשרויות, תלויות, שעבודים וערבויות - א. התקשרויות - 3. צ'ילה - א. פרויקטים בצ'ילה",
-              "table_title": "שם הפרויקט שנת רכישה שעור אחזקה מגה וואט שלב הפרויקט",
-              "note": null
-            },
-            {
-              "name": "ESMERALDA & Hortensia",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 306,
-              "section_title": "באור 19 - התקשרויות, תלויות, שעבודים וערבויות - א. התקשרויות - 3. צ'ילה - א. פרויקטים בצ'ילה",
-              "table_title": "שם הפרויקט שנת רכישה שעור אחזקה מגה וואט שלב הפרויקט",
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:18": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "Transmision San Camilo SpA",
-              "ownership_pct": 51.0,
-              "parent": null,
-              "page_reference": 307,
-              "section_title": "באור 19 - התקשרויות, תלויות, שעבודים וערבויות (המשך)",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Energy Intersol Calbuco SpA",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 308,
-              "section_title": "באור 19 - התקשרויות, תלויות, שעבודים וערבויות (המשך)",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "שותפות סולאיר –טי.די.איי",
-              "ownership_pct": 70.0,
-              "parent": null,
-              "page_reference": 310,
-              "section_title": "באור 19 - התקשרויות, תלויות, שעבודים וערבויות (המשך)",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "רה סולאר",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 321,
-              "section_title": "באור 26 - יתרות ועסקאות עם בעלי עניין וצדדים קשורים (המשך)",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אגווה סול",
-              "ownership_pct": 51.0,
-              "parent": null,
-              "page_reference": 321,
-              "section_title": "באור 26 - יתרות ועסקאות עם בעלי עניין וצדדים קשורים (המשך)",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:19": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "SpA Calbuco Intersol Energy",
-              "ownership_pct": 47.4,
-              "parent": null,
-              "page_reference": 327,
-              "section_title": "באור 28 - אירועים לאחר תאריך המאזן",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Trends Industrial SpA",
-              "ownership_pct": 51.0,
-              "parent": null,
-              "page_reference": 328,
-              "section_title": "באור 28 - אירועים לאחר תאריך המאזן (המשך)",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "L.S Development Sol-Agua S.L",
-              "ownership_pct": 51.0,
-              "parent": null,
-              "page_reference": 328,
-              "section_title": "באור 28 - אירועים לאחר תאריך המאזן (המשך)",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:20": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "Investment 2 S.L Himin",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 358,
-              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות קשורות מהותיות לתאריך הדוח על המצב הכספי",
-              "note": null
-            },
-            {
-              "name": "Alizarsun S.L",
-              "ownership_pct": 71,
-              "parent": null,
-              "page_reference": 358,
-              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות קשורות מהותיות לתאריך הדוח על המצב הכספי",
-              "note": null
-            },
-            {
-              "name": "Re-Solar",
-              "ownership_pct": 47.43,
-              "parent": null,
-              "page_reference": 358,
-              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות קשורות מהותיות לתאריך הדוח על המצב הכספי",
-              "note": null
-            },
-            {
-              "name": "Intersol S.L Energy",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 358,
-              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות קשורות מהותיות לתאריך הדוח על המצב הכספי",
-              "note": null
-            },
-            {
-              "name": "סול נטו 1 ש.מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 358,
-              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות קשורות מהותיות לתאריך הדוח על המצב הכספי",
-              "note": "החברה מכרה את זכויות ההחזקה סולנטו 1 ביום 29/12/2025"
-            },
-            {
-              "name": "Solsticio Holding SSARL",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 360,
-              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 12: שינויים בהשקעות בחברות בנות ובחברות כלולות מהותיות בתקופת הדוח",
-              "note": "בשנת 2025 בוצע החזר השקעה באמצעות הלוואה חיצונית שהתקבלה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:21": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "Investment 2 S.L Himin",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 358,
-              "section_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות קשורות מהותיות לתאריך הדוח על המצב הכספי",
-              "table_title": "תקנה 11",
-              "note": "מחזיקה בפרויקט אלצ'ה ובזכויות בפרויקט אנפק"
-            },
-            {
-              "name": "Alizarsun S.L",
-              "ownership_pct": 71,
-              "parent": null,
-              "page_reference": 358,
-              "section_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות קשורות מהותיות לתאריך הדוח על המצב הכספי",
-              "table_title": "תקנה 11",
-              "note": null
-            },
-            {
-              "name": "Re-Solar",
-              "ownership_pct": 47.43,
-              "parent": null,
-              "page_reference": 358,
-              "section_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות קשורות מהותיות לתאריך הדוח על המצב הכספי",
-              "table_title": "תקנה 11",
-              "note": null
-            },
-            {
-              "name": "Intersol S.L Energy",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 358,
-              "section_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות קשורות מהותיות לתאריך הדוח על המצב הכספי",
-              "table_title": "תקנה 11",
-              "note": "חברת הקבלנות לפרויקטי ספרד"
-            },
-            {
-              "name": "סול נטו 1 ש.מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 358,
-              "section_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות קשורות מהותיות לתאריך הדוח על המצב הכספי",
-              "table_title": "תקנה 11",
-              "note": "החברה מכרה את זכויות ההחזקה סולנטו 1 ביום 29/12/2025"
-            },
-            {
-              "name": "Solsticio Holding SSARL",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 360,
-              "section_title": "תקנה 12: שינויים בהשקעות בחברות בנות ובחברות כלולות מהותיות בתקופת הדוח",
-              "table_title": "תקנה 12",
-              "note": "בשנת 2025 בוצע החזר השקעה באמצעות הלוואה חיצונית שהתקבלה"
-            }
-          ],
-          "change_events": [
-            {
-              "company": "סול נטו 1 ש.מ",
-              "event_type": "full_disposal",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 0,
-              "event_date": "2025-12-29",
-              "event_description": "החברה מכרה את זכויות ההחזקה סולנטו 1 ביום 29/12/2025",
-              "page_reference": 359,
-              "section_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות קשורות מהותיות לתאריך הדוח על המצב הכספי"
-            }
-          ]
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-17T10:35:20.126197+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732651": {
     "company_id": "2063",
@@ -4599,18 +2670,11 @@
   },
   "1731305": {
     "company_id": "382",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-16T11:52:05.747190+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 14,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-17T10:39:55.588652+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1730038": {
     "company_id": "1980",
@@ -4629,136 +2693,420 @@
   },
   "1727580": {
     "company_id": "431",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-16T11:52:06.574911+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 13,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-17T10:39:45.507891+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1729334": {
     "company_id": "600",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-16T11:52:07.084794+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 28,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-17T10:47:55.755502+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1730758": {
     "company_id": "1794",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-16T11:52:07.573675+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 17,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-17T10:43:09.321118+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1734205": {
     "company_id": "823",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-16T11:52:08.083395+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 32,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-17T10:54:13.345051+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1729822": {
     "company_id": "136",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-16T11:52:08.786479+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 33,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-17T11:00:53.384542+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1735659": {
     "company_id": "2304",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-16T11:52:08.373147+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 8,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-17T10:49:42.109364+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1727906": {
     "company_id": "1896",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-16T11:52:09.069754+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 13,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-17T10:57:21.921791+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1733186": {
     "company_id": "1801",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-16T11:52:09.524445+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 27,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-17T11:05:22.763362+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1727141": {
     "company_id": "1267",
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-16T11:52:10.084982+00:00",
+    "at": "2026-09-17T11:05:22.855195+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 17,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "20-F",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "20-F",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "20-F",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "Kamada Inc.",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 41,
+              "section_title": "Item 3. Key Information — D. Risk Factors",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Kamada Plasma LLC",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 41,
+              "section_title": "Item 3. Key Information — D. Risk Factors",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "20-F",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "Kamada Plasma LLC",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 115,
+              "section_title": "Plasma Collection",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "20-F",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "Kamada Plasma LLC",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 71,
+              "section_title": "Plasma Collection",
+              "table_title": null,
+              "note": "wholly owned subsidiary"
+            },
+            {
+              "name": "Kamada Inc.",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 82,
+              "section_title": "Marketing and Distribution",
+              "table_title": null,
+              "note": "wholly owned U.S. subsidiary"
+            }
+          ],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "20-F",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "KI Biopharma LLC",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 94,
+              "section_title": "C. Organizational Structure",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Kamada Inc.",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 94,
+              "section_title": "C. Organizational Structure",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Kamada Plasma LLC",
+              "ownership_pct": null,
+              "parent": "Kamada Inc.",
+              "page_reference": 94,
+              "section_title": "C. Organizational Structure",
+              "table_title": null,
+              "note": "wholly owned by Kamada Inc."
+            },
+            {
+              "name": "Kamada Assets (2001) Ltd.",
+              "ownership_pct": 74,
+              "parent": null,
+              "page_reference": 95,
+              "section_title": "D. Property, Plants and Equipment",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Kamada Ireland Limited",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 94,
+              "section_title": "C. Organizational Structure",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "20-F",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "Kamada Inc.",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 109,
+              "section_title": "E. Critical Accounting Estimates",
+              "table_title": null,
+              "note": "Wholly owned subsidiary"
+            },
+            {
+              "name": "Kamada Plasma LLC",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 117,
+              "section_title": "A. Directors and Senior Management",
+              "table_title": null,
+              "note": "U.S. subsidiary"
+            }
+          ],
+          "change_events": []
+        },
+        "0:7": {
+          "report_format": "20-F",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-10",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:8": {
+          "report_format": "20-F",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:9": {
+          "report_format": "20-F",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:10": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "Kamada Inc.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "Note 1: - General (Cont.)",
+              "table_title": null,
+              "note": "Wholly-owned subsidiary"
+            },
+            {
+              "name": "Kamada Plasma LLC",
+              "ownership_pct": 100,
+              "parent": "Kamada Inc.",
+              "page_reference": 177,
+              "section_title": "Note 1: - General (Cont.)",
+              "table_title": null,
+              "note": "Wholly owned by Kamada Inc."
+            },
+            {
+              "name": "KI Biopharma LLC",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "Note 1: - General (Cont.)",
+              "table_title": null,
+              "note": "Wholly-owned subsidiary"
+            },
+            {
+              "name": "Kamada Ireland Limited",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "Note 1: - General (Cont.)",
+              "table_title": null,
+              "note": "Wholly-owned subsidiary"
+            },
+            {
+              "name": "Kamada Assets Ltd.",
+              "ownership_pct": 74,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "Note 1: - General (Cont.)",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:11": {
+          "report_format": "20-F",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "Kamada Assets Ltd.",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 193,
+              "section_title": "Note 9: - Property, Plant And Equipment",
+              "table_title": null,
+              "note": "Subsidiary of the Company"
+            },
+            {
+              "name": "Kamada Plasma LLC",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 200,
+              "section_title": "Note 14: - Leases",
+              "table_title": null,
+              "note": "U.S. subsidiary of the Company"
+            }
+          ],
+          "change_events": []
+        },
+        "0:12": {
+          "report_format": "20-F",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "Kamada Inc",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 222,
+              "section_title": "Note 21: - Taxes on Income",
+              "table_title": null,
+              "note": "US subsidiary"
+            },
+            {
+              "name": "Kamada Plasma LLC",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 222,
+              "section_title": "Note 21: - Taxes on Income",
+              "table_title": null,
+              "note": "US subsidiary"
+            },
+            {
+              "name": "KI Biopharma LLC",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 222,
+              "section_title": "Note 21: - Taxes on Income",
+              "table_title": null,
+              "note": "wholly owned subsidiary"
+            }
+          ],
+          "change_events": []
+        },
+        "0:13": {
+          "report_format": "20-F",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "Kamada Inc",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 222,
+              "section_title": "Note 21: - Taxes on Income (Cont.)",
+              "table_title": null,
+              "note": "US subsidiary"
+            },
+            {
+              "name": "Kamada Plasma LLC",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 222,
+              "section_title": "Note 21: - Taxes on Income (Cont.)",
+              "table_title": null,
+              "note": "US subsidiary"
+            },
+            {
+              "name": "KI Biopharma LLC",
+              "ownership_pct": null,
+              "parent": "Kamada Ltd.",
+              "page_reference": 222,
+              "section_title": "Note 21: - Taxes on Income (Cont.)",
+              "table_title": null,
+              "note": "Wholly owned subsidiary"
+            }
+          ],
+          "change_events": []
+        },
+        "0:14": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
