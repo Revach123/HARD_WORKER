@@ -2757,195 +2757,213 @@
   },
   "1727141": {
     "company_id": "1267",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-17T11:05:44.526915+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1733262": {
+    "company_id": "1289",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-17T11:08:28.764639+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1732151": {
+    "company_id": "209",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-17T11:13:24.290378+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1730885": {
+    "company_id": "1583",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-17T11:10:38.385107+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1732191": {
+    "company_id": "1621",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-17T11:19:15.694934+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1730974": {
+    "company_id": "1300",
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-17T11:05:22.855195+00:00",
+    "at": "2026-09-17T11:19:23.257817+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
-      "total": 17,
+      "total": 21,
       "done": {
         "0:0": {
-          "report_format": "20-F",
+          "report_format": "israeli_periodic",
           "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "נצבא החזקות 1995 בע\"מ",
+              "ownership_pct": 42.74,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "1.1.3 להלן תרשים מבנה החזקותיה המהותיות של החברה, נכון למועד הדוח:",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "נצבא חברה להתנחלות בע\"מ",
+              "ownership_pct": 49.34,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "1.1.3 להלן תרשים מבנה החזקותיה המהותיות של החברה, נכון למועד הדוח:",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "משגב חברה להשקעות בע\"מ",
+              "ownership_pct": 92.46,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "1.1.3 להלן תרשים מבנה החזקותיה המהותיות של החברה, נכון למועד הדוח:",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "משגבית החזקות (1995) בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": "משגב חברה להשקעות בע\"מ",
+              "page_reference": 6,
+              "section_title": "1.1.3 להלן תרשים מבנה החזקותיה המהותיות של החברה, נכון למועד הדוח:",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Nitsba Europe S.A.",
+              "ownership_pct": 100.0,
+              "parent": "נצבא החזקות 1995 בע\"מ",
+              "page_reference": 7,
+              "section_title": "להלן תרשים מבנה החזקותיה המהותיות של נצבא, נכון למועד הדוח:",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מפעלי תחנות בע\"מ",
+              "ownership_pct": 99.7,
+              "parent": "נצבא החזקות 1995 בע\"מ",
+              "page_reference": 7,
+              "section_title": "להלן תרשים מבנה החזקותיה המהותיות של נצבא, נכון למועד הדוח:",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "תפוז ייזום ופיתוח תחנות בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": "מפעלי תחנות בע\"מ",
+              "page_reference": 7,
+              "section_title": "להלן תרשים מבנה החזקותיה המהותיות של נצבא, נכון למועד הדוח:",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "לקסן ישראל בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": "נצבא החזקות 1995 בע\"מ",
+              "page_reference": 7,
+              "section_title": "להלן תרשים מבנה החזקותיה המהותיות של נצבא, נכון למועד הדוח:",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "נכסים ייזום ופיתוח (נ.י.פ.) בע\"מ",
+              "ownership_pct": 99.9,
+              "parent": "נצבא החזקות 1995 בע\"מ",
+              "page_reference": 7,
+              "section_title": "להלן תרשים מבנה החזקותיה המהותיות של נצבא, נכון למועד הדוח:",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "התחנה המרכזית החדשה בתל-אביב בע\"מ",
+              "ownership_pct": 99.75,
+              "parent": "נכסים ייזום ופיתוח (נ.י.פ.) בע\"מ",
+              "page_reference": 7,
+              "section_title": "להלן תרשים מבנה החזקותיה המהותיות של נצבא, נכון למועד הדוח:",
+              "table_title": null,
+              "note": null
+            }
+          ],
           "change_events": []
         },
         "0:1": {
-          "report_format": "20-F",
+          "report_format": "israeli_periodic",
           "document_type": "ownership_snapshot",
-          "as_of_date": null,
+          "as_of_date": "2025-12-31",
           "subsidiaries": [],
           "change_events": []
         },
         "0:2": {
-          "report_format": "20-F",
+          "report_format": "israeli_periodic",
           "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "Kamada Inc.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 41,
-              "section_title": "Item 3. Key Information — D. Risk Factors",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Kamada Plasma LLC",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 41,
-              "section_title": "Item 3. Key Information — D. Risk Factors",
-              "table_title": null,
-              "note": null
-            }
-          ],
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
           "change_events": []
         },
         "0:3": {
-          "report_format": "20-F",
+          "report_format": "israeli_periodic",
           "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "Kamada Plasma LLC",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 115,
-              "section_title": "Plasma Collection",
-              "table_title": null,
-              "note": null
-            }
-          ],
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
           "change_events": []
         },
         "0:4": {
-          "report_format": "20-F",
+          "report_format": "israeli_periodic",
           "document_type": "ownership_snapshot",
           "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "Kamada Plasma LLC",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 71,
-              "section_title": "Plasma Collection",
-              "table_title": null,
-              "note": "wholly owned subsidiary"
-            },
-            {
-              "name": "Kamada Inc.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 82,
-              "section_title": "Marketing and Distribution",
-              "table_title": null,
-              "note": "wholly owned U.S. subsidiary"
-            }
-          ],
+          "subsidiaries": [],
           "change_events": []
         },
         "0:5": {
-          "report_format": "20-F",
+          "report_format": "israeli_periodic",
           "document_type": "ownership_snapshot",
           "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "KI Biopharma LLC",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 94,
-              "section_title": "C. Organizational Structure",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Kamada Inc.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 94,
-              "section_title": "C. Organizational Structure",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Kamada Plasma LLC",
-              "ownership_pct": null,
-              "parent": "Kamada Inc.",
-              "page_reference": 94,
-              "section_title": "C. Organizational Structure",
-              "table_title": null,
-              "note": "wholly owned by Kamada Inc."
-            },
-            {
-              "name": "Kamada Assets (2001) Ltd.",
-              "ownership_pct": 74,
-              "parent": null,
-              "page_reference": 95,
-              "section_title": "D. Property, Plants and Equipment",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Kamada Ireland Limited",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 94,
-              "section_title": "C. Organizational Structure",
-              "table_title": null,
-              "note": null
-            }
-          ],
+          "subsidiaries": [],
           "change_events": []
         },
         "0:6": {
-          "report_format": "20-F",
-          "document_type": "unknown",
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
           "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "Kamada Inc.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 109,
-              "section_title": "E. Critical Accounting Estimates",
-              "table_title": null,
-              "note": "Wholly owned subsidiary"
-            },
-            {
-              "name": "Kamada Plasma LLC",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 117,
-              "section_title": "A. Directors and Senior Management",
-              "table_title": null,
-              "note": "U.S. subsidiary"
-            }
-          ],
+          "subsidiaries": [],
           "change_events": []
         },
         "0:7": {
-          "report_format": "20-F",
+          "report_format": "israeli_periodic",
           "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-10",
+          "as_of_date": null,
           "subsidiaries": [],
           "change_events": []
         },
         "0:8": {
-          "report_format": "20-F",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": "2025-12-31",
           "subsidiaries": [],
           "change_events": []
         },
         "0:9": {
-          "report_format": "20-F",
-          "document_type": "unknown",
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
           "as_of_date": null,
           "subsidiaries": [],
           "change_events": []
@@ -2954,147 +2972,108 @@
           "report_format": "israeli_periodic",
           "document_type": "ownership_snapshot",
           "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "Kamada Inc.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 177,
-              "section_title": "Note 1: - General (Cont.)",
-              "table_title": null,
-              "note": "Wholly-owned subsidiary"
-            },
-            {
-              "name": "Kamada Plasma LLC",
-              "ownership_pct": 100,
-              "parent": "Kamada Inc.",
-              "page_reference": 177,
-              "section_title": "Note 1: - General (Cont.)",
-              "table_title": null,
-              "note": "Wholly owned by Kamada Inc."
-            },
-            {
-              "name": "KI Biopharma LLC",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 177,
-              "section_title": "Note 1: - General (Cont.)",
-              "table_title": null,
-              "note": "Wholly-owned subsidiary"
-            },
-            {
-              "name": "Kamada Ireland Limited",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 177,
-              "section_title": "Note 1: - General (Cont.)",
-              "table_title": null,
-              "note": "Wholly-owned subsidiary"
-            },
-            {
-              "name": "Kamada Assets Ltd.",
-              "ownership_pct": 74,
-              "parent": null,
-              "page_reference": 177,
-              "section_title": "Note 1: - General (Cont.)",
-              "table_title": null,
-              "note": null
-            }
-          ],
+          "subsidiaries": [],
           "change_events": []
         },
         "0:11": {
-          "report_format": "20-F",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "Kamada Assets Ltd.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 193,
-              "section_title": "Note 9: - Property, Plant And Equipment",
-              "table_title": null,
-              "note": "Subsidiary of the Company"
-            },
-            {
-              "name": "Kamada Plasma LLC",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 200,
-              "section_title": "Note 14: - Leases",
-              "table_title": null,
-              "note": "U.S. subsidiary of the Company"
-            }
-          ],
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
           "change_events": []
         },
         "0:12": {
-          "report_format": "20-F",
+          "report_format": "israeli_periodic",
           "document_type": "ownership_snapshot",
           "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "Kamada Inc",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 222,
-              "section_title": "Note 21: - Taxes on Income",
-              "table_title": null,
-              "note": "US subsidiary"
-            },
-            {
-              "name": "Kamada Plasma LLC",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 222,
-              "section_title": "Note 21: - Taxes on Income",
-              "table_title": null,
-              "note": "US subsidiary"
-            },
-            {
-              "name": "KI Biopharma LLC",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 222,
-              "section_title": "Note 21: - Taxes on Income",
-              "table_title": null,
-              "note": "wholly owned subsidiary"
-            }
-          ],
+          "subsidiaries": [],
           "change_events": []
         },
         "0:13": {
-          "report_format": "20-F",
+          "report_format": "israeli_periodic",
           "document_type": "ownership_snapshot",
           "as_of_date": "2025-12-31",
           "subsidiaries": [
             {
-              "name": "Kamada Inc",
-              "ownership_pct": null,
+              "name": "נצבא החזקות 1995 בע\"מ",
+              "ownership_pct": 42.74,
               "parent": null,
-              "page_reference": 222,
-              "section_title": "Note 21: - Taxes on Income (Cont.)",
-              "table_title": null,
-              "note": "US subsidiary"
+              "page_reference": 250,
+              "section_title": "באור 12 - השקעות בחברות מוחזקות",
+              "table_title": "פרטים נוספים בדבר חברות מאוחדות המוחזקות במישרין על ידי החברה",
+              "note": "אחזקה נוספת דרך נצבא חברה להתנחלות בע\"מ בשיעור של 57.26%."
             },
             {
-              "name": "Kamada Plasma LLC",
-              "ownership_pct": null,
+              "name": "נצבא חברה להתנחלות בע\"מ",
+              "ownership_pct": 96.36,
               "parent": null,
-              "page_reference": 222,
-              "section_title": "Note 21: - Taxes on Income (Cont.)",
-              "table_title": null,
-              "note": "US subsidiary"
+              "page_reference": 250,
+              "section_title": "באור 12 - השקעות בחברות מוחזקות",
+              "table_title": "פרטים נוספים בדבר חברות מאוחדות המוחזקות במישרין על ידי החברה",
+              "note": "אחזקה אפקטיבית, כולל אחזקה באמצעות חברת משגב חברה להשקעות בע\"מ."
             },
             {
-              "name": "KI Biopharma LLC",
-              "ownership_pct": null,
-              "parent": "Kamada Ltd.",
-              "page_reference": 222,
-              "section_title": "Note 21: - Taxes on Income (Cont.)",
-              "table_title": null,
-              "note": "Wholly owned subsidiary"
+              "name": "משגב חברה להשקעות בע\"מ",
+              "ownership_pct": 92.46,
+              "parent": null,
+              "page_reference": 250,
+              "section_title": "באור 12 - השקעות בחברות מוחזקות",
+              "table_title": "פרטים נוספים בדבר חברות מאוחדות המוחזקות במישרין על ידי החברה",
+              "note": null
+            },
+            {
+              "name": "קשת מלונאות בע\"מ",
+              "ownership_pct": 93,
+              "parent": null,
+              "page_reference": 250,
+              "section_title": "באור 12 - השקעות בחברות מוחזקות",
+              "table_title": "פרטים נוספים בדבר חברות מאוחדות המוחזקות במישרין על ידי החברה",
+              "note": null
+            },
+            {
+              "name": "קשת ניהול ואחזקה (1999) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 250,
+              "section_title": "באור 12 - השקעות בחברות מוחזקות",
+              "table_title": "פרטים נוספים בדבר חברות מאוחדות המוחזקות במישרין על ידי החברה",
+              "note": null
+            },
+            {
+              "name": "קשת ייזום ופיתוח בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 250,
+              "section_title": "באור 12 - השקעות בחברות מוחזקות",
+              "table_title": "פרטים נוספים בדבר חברות מאוחדות המוחזקות במישרין על ידי החברה",
+              "note": null
+            },
+            {
+              "name": "תנובות קשת בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 250,
+              "section_title": "באור 12 - השקעות בחברות מוחזקות",
+              "table_title": "פרטים נוספים בדבר חברות מאוחדות המוחזקות במישרין על ידי החברה",
+              "note": null
+            },
+            {
+              "name": "קשת קונגרסים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 250,
+              "section_title": "באור 12 - השקעות בחברות מוחזקות",
+              "table_title": "פרטים נוספים בדבר חברות מאוחדות המוחזקות במישרין על ידי החברה",
+              "note": null
+            },
+            {
+              "name": "איירפורט סיטי ייזום ופיתוח שותפות מוגבלת",
+              "ownership_pct": 99.9,
+              "parent": null,
+              "page_reference": 250,
+              "section_title": "באור 12 - השקעות בחברות מוחזקות",
+              "table_title": "פרטים נוספים בדבר חברות מאוחדות המוחזקות במישרין על ידי החברה",
+              "note": null
             }
           ],
           "change_events": []
@@ -3102,86 +3081,54 @@
         "0:14": {
           "report_format": "israeli_periodic",
           "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "נצבא התנחלות",
+              "ownership_pct": 99.3,
+              "parent": null,
+              "page_reference": 281,
+              "section_title": "באור 22 - התחייבות לרכישת זכויות שאינן מקנות שליטה בחברות מאוחדות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "בית אגד בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 281,
+              "section_title": "באור 22 - התחייבות לרכישת זכויות שאינן מקנות שליטה בחברות מאוחדות",
+              "table_title": null,
+              "note": "בעלי מיעוט מחזיקים בכ-1.4%"
+            }
+          ],
+          "change_events": []
+        },
+        "0:15": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
           "as_of_date": null,
           "subsidiaries": [],
           "change_events": []
+        },
+        "0:16": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "נצבא התנחלות",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 291,
+              "section_title": "באור 7 - השקעה בחברות מוחזקות",
+              "table_title": "ב. תנועה",
+              "note": "פקיעת התחייבות לרכישת מניות נצבא התנחלות"
+            }
+          ],
+          "change_events": []
         }
       },
-      "attempts": {}
-    }
-  },
-  "1733262": {
-    "company_id": "1289",
-    "status": "partial",
-    "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-16T11:52:10.489684+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 13,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1732151": {
-    "company_id": "209",
-    "status": "partial",
-    "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-16T11:52:10.818173+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 31,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1730885": {
-    "company_id": "1583",
-    "status": "partial",
-    "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-16T11:52:11.240157+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 11,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1732191": {
-    "company_id": "1621",
-    "status": "partial",
-    "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-16T11:52:11.531015+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 20,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1730974": {
-    "company_id": "1300",
-    "status": "partial",
-    "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-16T11:52:11.866683+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 21,
-      "done": {},
       "attempts": {}
     }
   },
@@ -3205,7 +3152,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-16T11:52:12.225495+00:00",
+    "at": "2026-09-17T11:19:23.935422+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -3220,7 +3167,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-16T11:52:12.696211+00:00",
+    "at": "2026-09-17T11:19:24.437551+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -3235,7 +3182,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-16T11:52:12.858398+00:00",
+    "at": "2026-09-17T11:19:24.939703+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -3250,7 +3197,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-16T11:52:13.122759+00:00",
+    "at": "2026-09-17T11:19:25.297754+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
