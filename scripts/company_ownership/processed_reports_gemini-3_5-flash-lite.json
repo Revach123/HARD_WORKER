@@ -2558,998 +2558,11 @@
   },
   "1732120": {
     "company_id": "1072",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-16T11:15:24.862373+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 22,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "אלוני ים אחזקות בע\"מ",
-              "ownership_pct": 74,
-              "parent": null,
-              "page_reference": 11,
-              "section_title": "1.3 מבנה האחזקות של החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אברך אלון ג'י.אס בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 11,
-              "section_title": "1.3 מבנה האחזקות של החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "דור אלון ניהול מתחמים קמעונאיים בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 11,
-              "section_title": "1.3 מבנה האחזקות של החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אלון אינטרייד בתי קפה בע\"מ",
-              "ownership_pct": 50,
-              "parent": "דור אלון ניהול מתחמים קמעונאיים בע\"מ",
-              "page_reference": 11,
-              "section_title": "1.3 מבנה האחזקות של החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "דוכן גן שמואל החדש (ש.מ)",
-              "ownership_pct": 50,
-              "parent": "אלון אינטרייד בתי קפה בע\"מ",
-              "page_reference": 11,
-              "section_title": "1.3 מבנה האחזקות של החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אלון דלק ניהול ותפעול רשתות (1999) בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 11,
-              "section_title": "1.3 מבנה האחזקות של החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "דור אלון תעופה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 11,
-              "section_title": "1.3 מבנה האחזקות של החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "דור אלון טכנולוגיות גז בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 11,
-              "section_title": "1.3 מבנה האחזקות של החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "דור גז החדשה בע\"מ",
-              "ownership_pct": 100,
-              "parent": "דור אלון טכנולוגיות גז בע\"מ",
-              "page_reference": 11,
-              "section_title": "1.3 מבנה האחזקות של החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אמגזית ד.ג בע\"מ",
-              "ownership_pct": 100,
-              "parent": "דור נכסים ותחנות דלק (1992) בע\"מ",
-              "page_reference": 11,
-              "section_title": "1.3 מבנה האחזקות של החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "דור נכסים ותחנות דלק (1992) בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 11,
-              "section_title": "1.3 מבנה האחזקות של החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "דור אנרגיה אחזקות (2004) בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 11,
-              "section_title": "1.3 מבנה האחזקות של החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "עין שמר אלון אחזקות בע\"מ",
-              "ownership_pct": 50,
-              "parent": "דור אנרגיה אחזקות (2004) בע\"מ",
-              "page_reference": 11,
-              "section_title": "1.3 מבנה האחזקות של החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "משמר השרון אלון אחזקות בע\"מ",
-              "ownership_pct": 50,
-              "parent": "דור אנרגיה אחזקות (2004) בע\"מ",
-              "page_reference": 11,
-              "section_title": "1.3 מבנה האחזקות של החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "עינת אלון אחזקות בע\"מ",
-              "ownership_pct": 50,
-              "parent": "דור אנרגיה אחזקות (2004) בע\"מ",
-              "page_reference": 11,
-              "section_title": "1.3 מבנה האחזקות של החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "בי.בי.בי מסעדות בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 11,
-              "section_title": "1.3 מבנה האחזקות של החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "קפוא זן 2024 בע\"מ",
-              "ownership_pct": 75,
-              "parent": null,
-              "page_reference": 11,
-              "section_title": "1.3 מבנה האחזקות של החברה",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "אלון דלק ניהול ותפעול רשתות (1999) בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 44,
-              "section_title": "תחנות תדלוק על כביש 6",
-              "table_title": null,
-              "note": "חברה בת בשליטה ובעלות מלאים"
-            },
-            {
-              "name": "אברך-אלון ג'י. אס. בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 45,
-              "section_title": "תחנות תדלוק פנימיות",
-              "table_title": null,
-              "note": "חברה משותפת"
-            },
-            {
-              "name": "עין שמר – אלון החזקות בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 48,
-              "section_title": "מידע אודות נדל\"ן להשקעה",
-              "table_title": null,
-              "note": "חברה משותפת"
-            }
-          ],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "מרקורי תעופה (ישראל) בע\"מ",
-              "ownership_pct": 31,
-              "parent": null,
-              "page_reference": 73,
-              "section_title": "5.4.4 חברות תעופה",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:6": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "מרקורי תעופה (ישראל) בע\"מ",
-              "ownership_pct": 31,
-              "parent": null,
-              "page_reference": 112,
-              "section_title": "השקעות",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:7": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:8": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": [
-            {
-              "company": "קפוא זן (2024) בע\"מ",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": 0,
-              "ownership_pct_after": 75,
-              "event_date": "2025-06-08",
-              "event_description": "השלמת עסקה לרכישה ולהקצאת מניות המהוות 75% מהונה המונפק והנפרע של חברת קפוא זן",
-              "page_reference": 146,
-              "section_title": "1.3.7 השלמת עסקה לרכישת קפוא זן"
-            }
-          ]
-        },
-        "0:9": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:10": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:11": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:12": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:13": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:14": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:15": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "עין שמר - אלון אחזקות בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 271,
-              "section_title": "ביאור 13 - השקעות בחברות המטופלות בשיטת שווי מאזני",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "משמר השרון - אלון אחזקות בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 271,
-              "section_title": "ביאור 13 - השקעות בחברות המטופלות בשיטת שווי מאזני",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "עינת - אלון אחזקות בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 271,
-              "section_title": "ביאור 13 - השקעות בחברות המטופלות בשיטת שווי מאזני",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "בי.בי.בי מסעדות בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 272,
-              "section_title": "ביאור 13 - השקעות בחברות המטופלות בשיטת שווי מאזני",
-              "table_title": null,
-              "note": "נרכשה בחודש מרס 2021"
-            }
-          ],
-          "change_events": []
-        },
-        "0:16": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "אלוני ים אחזקות בע\"מ",
-              "ownership_pct": 74,
-              "parent": null,
-              "page_reference": 278,
-              "section_title": "ביאור 18 - נדל\"ן להשקעה",
-              "table_title": null,
-              "note": "החברה מחזיקה במניות המהוות 74% מהון המניות המונפק והנפרע"
-            }
-          ],
-          "change_events": []
-        },
-        "0:17": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "דור אלון טכנולוגיות גז בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "דור אלון ניהול מתחמים קמעונאיים בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אלון דלק ניהול ותפעול רשתות (1999) בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "דור חדש הובלות בע\"מ (1995)",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "קונספציה השקעות ונכסים בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "דור נכסים ותחנות דלק 1992 בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "דור אנרגיה אחזקות בע\"מ (2004)",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "נחשון - אלון המסעדה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "דור אנרגיה מודיעין (2004) בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": "בין החברה ובין צד ג' המחזיק עמה במשותף בדור אנרגיה מודיעין (2004) בע\"מ סוכם כי מלוא הזכויות מכוח תקנון החברה וחוק החברות יהיו בידי החברה, וזאת עד ליום 30.04.2037"
-            },
-            {
-              "name": "דור אלון שמנים בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "דור יזום תחנות כח בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "דור אלון תעופה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "דור אלון פינאנסים בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מעלה צפת בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "קפוא-זן (2024) בע\"מ",
-              "ownership_pct": 75,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אלוני ים אחזקות בע\"מ",
-              "ownership_pct": 74,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "יזרעאל - אלון אחזקות בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אברך אלון ג'י. אס בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "דור העמק בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אלון - הזרע אחזקות בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "קדרים - אלון החזקות בע\"מ",
-              "ownership_pct": 49,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "דור עבד אלקאדר - שפרעם (שותפות כללית)",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "בי.בי.בי מסעדות בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מרקורי תעופה ישראל (בע\"מ)",
-              "ownership_pct": 31.25,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:18": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "דור אלון טכנולוגיות גז בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "note": null
-            },
-            {
-              "name": "דור אלון ניהול מתחמים קמעונאיים בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "note": null
-            },
-            {
-              "name": "אלון דלק ניהול ותפעול רשתות (1999) בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "note": null
-            },
-            {
-              "name": "דור חדש הובלות בע\"מ (1995)",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "note": null
-            },
-            {
-              "name": "קונספציה השקעות ונכסים בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "note": null
-            },
-            {
-              "name": "דור נכסים ותחנות דלק 1992 בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "note": null
-            },
-            {
-              "name": "דור אנרגיה אחזקות בע\"מ (2004)",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "note": null
-            },
-            {
-              "name": "נחשון - אלון המסעדה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "note": null
-            },
-            {
-              "name": "דור אנרגיה מודיעין (2004) בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "note": "בין החברה ובין צד ג' המחזיק עמה במשותף בדור אנרגיה מודיעין (2004) בע\"מ סוכם כי מלוא הזכויות מכוח תקנון החברה וחוק החברות יהיו בידי החברה, וזאת עד ליום 30.04.2037"
-            },
-            {
-              "name": "דור אלון שמנים בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "note": null
-            },
-            {
-              "name": "דור יזום תחנות כח בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "note": null
-            },
-            {
-              "name": "דור אלון תעופה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "note": null
-            },
-            {
-              "name": "דור אלון פינאנסים בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "note": null
-            },
-            {
-              "name": "מעלה צפת בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "note": null
-            },
-            {
-              "name": "קפוא-זן (2024) בע\"מ",
-              "ownership_pct": 75,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "note": null
-            },
-            {
-              "name": "אלוני ים אחזקות בע\"מ",
-              "ownership_pct": 74,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "note": null
-            },
-            {
-              "name": "יזרעאל - אלון אחזקות בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "note": null
-            },
-            {
-              "name": "אברך אלון גי'. אס בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "note": null
-            },
-            {
-              "name": "דור העמק בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "note": null
-            },
-            {
-              "name": "אלון - הזרע אחזקות בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "note": null
-            },
-            {
-              "name": "קדרים - אלון החזקות בע\"מ",
-              "ownership_pct": 49,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "note": null
-            },
-            {
-              "name": "דור עבד אלקאדר - שפרעם (שותפות כללית)",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "note": null
-            },
-            {
-              "name": "בי.בי.בי מסעדות בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "note": "ראה ביאור 13ג'"
-            },
-            {
-              "name": "מרקורי תעופה ישראל (בע\"מ)",
-              "ownership_pct": 31.25,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "ביאור 39 - פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "table_title": "פרטים על תאגידים המוחזקים ישירות על ידי החברה ליום 31 בדצמבר 2025",
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:19": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "דור אלון טכנולוגיות גז בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 331,
-              "section_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות כלולות לתאריך הדוח על המצב הכספי בהתאם לתקנות 11(1), 11(2) ו-11(3)",
-              "table_title": "תקנה 11",
-              "note": null
-            },
-            {
-              "name": "דור אלון ניהול מתחמים קמעונאים בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 331,
-              "section_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות כלולות לתאריך הדוח על המצב הכספי בהתאם לתקנות 11(1), 11(2) ו-11(3)",
-              "table_title": "תקנה 11",
-              "note": null
-            },
-            {
-              "name": "אברך אלון ג'י.אס.בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 331,
-              "section_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות כלולות לתאריך הדוח על המצב הכספי בהתאם לתקנות 11(1), 11(2) ו-11(3)",
-              "table_title": "תקנה 11",
-              "note": null
-            },
-            {
-              "name": "אלון דלק ניהול ותפעול רשתות (1999) בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 331,
-              "section_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות כלולות לתאריך הדוח על המצב הכספי בהתאם לתקנות 11(1), 11(2) ו-11(3)",
-              "table_title": "תקנה 11",
-              "note": null
-            },
-            {
-              "name": "דור אנרגיה אחזקות (2004) בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 331,
-              "section_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות כלולות לתאריך הדוח על המצב הכספי בהתאם לתקנות 11(1), 11(2) ו-11(3)",
-              "table_title": "תקנה 11",
-              "note": null
-            },
-            {
-              "name": "דור אלון תעופה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 331,
-              "section_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות כלולות לתאריך הדוח על המצב הכספי בהתאם לתקנות 11(1), 11(2) ו-11(3)",
-              "table_title": "תקנה 11",
-              "note": null
-            },
-            {
-              "name": "אלוני ים אחזקות בע\"מ",
-              "ownership_pct": 74,
-              "parent": null,
-              "page_reference": 332,
-              "section_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות כלולות לתאריך הדוח על המצב הכספי בהתאם לתקנות 11(1), 11(2) ו-11(3)",
-              "table_title": "תקנה 11",
-              "note": null
-            },
-            {
-              "name": "דור נכסים ותחנות דלק (1992) בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 332,
-              "section_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות כלולות לתאריך הדוח על המצב הכספי בהתאם לתקנות 11(1), 11(2) ו-11(3)",
-              "table_title": "תקנה 11",
-              "note": null
-            },
-            {
-              "name": "בי.בי.בי מסעדות בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 332,
-              "section_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות כלולות לתאריך הדוח על המצב הכספי בהתאם לתקנות 11(1), 11(2) ו-11(3)",
-              "table_title": "תקנה 11",
-              "note": null
-            },
-            {
-              "name": "אלון אינטרייד בתי קפה בע\"מ",
-              "ownership_pct": 50,
-              "parent": "דור אלון ניהול מתחמים קמעונאים בע\"מ",
-              "page_reference": 332,
-              "section_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות כלולות לתאריך הדוח על המצב הכספי בהתאם לתקנות 11(1), 11(2) ו-11(3)",
-              "table_title": "תקנה 11",
-              "note": null
-            },
-            {
-              "name": "דוכן גן שמואל החדש, ש.מ.",
-              "ownership_pct": 50,
-              "parent": "דור אלון ניהול מתחמים קמעונאים בע\"מ",
-              "page_reference": 332,
-              "section_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות כלולות לתאריך הדוח על המצב הכספי בהתאם לתקנות 11(1), 11(2) ו-11(3)",
-              "table_title": "תקנה 11",
-              "note": null
-            },
-            {
-              "name": "עין שמר - אלון החזקות בע\"מ",
-              "ownership_pct": 49,
-              "parent": "דור אנרגיה אחזקות (2004) בע\"מ",
-              "page_reference": 332,
-              "section_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות כלולות לתאריך הדוח על המצב הכספי בהתאם לתקנות 11(1), 11(2) ו-11(3)",
-              "table_title": "תקנה 11",
-              "note": null
-            },
-            {
-              "name": "משמר השרון - אלון החזקות בע\"מ",
-              "ownership_pct": 49,
-              "parent": "דור אנרגיה אחזקות (2004) בע\"מ",
-              "page_reference": 332,
-              "section_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות כלולות לתאריך הדוח על המצב הכספי בהתאם לתקנות 11(1), 11(2) ו-11(3)",
-              "table_title": "תקנה 11",
-              "note": null
-            },
-            {
-              "name": "עינת - אלון החזקות בע\"מ",
-              "ownership_pct": 49,
-              "parent": "דור אנרגיה אחזקות (2004) בע\"מ",
-              "page_reference": 332,
-              "section_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות כלולות לתאריך הדוח על המצב הכספי בהתאם לתקנות 11(1), 11(2) ו-11(3)",
-              "table_title": "תקנה 11",
-              "note": null
-            },
-            {
-              "name": "קפוא זן (2024) בע\"מ",
-              "ownership_pct": 75,
-              "parent": null,
-              "page_reference": 332,
-              "section_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות כלולות לתאריך הדוח על המצב הכספי בהתאם לתקנות 11(1), 11(2) ו-11(3)",
-              "table_title": "תקנה 11",
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:20": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:21": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {
-        "0:5": 1
-      }
-    }
+    "attempts": 1,
+    "at": "2026-09-17T10:05:40.386287+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1730209": {
     "company_id": "434",
@@ -3585,1111 +2598,2004 @@
   },
   "1733050": {
     "company_id": "755",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-16T11:52:09.823768+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 30,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "י.ו.א.ל. ירושלים אויל אקספלוריישין בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "פעילות התאגיד ותיאור התפתחות עסקיו",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "איירפורט סיטי בע\"מ",
-              "ownership_pct": 52.91,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "פעילות התאגיד ותיאור התפתחות עסקיו",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "נפטא חברה ישראלית לנפט בע\"מ",
-              "ownership_pct": 88.36,
-              "parent": "י.ו.א.ל. ירושלים אויל אקספלוריישין בע\"מ",
-              "page_reference": 6,
-              "section_title": "פעילות התאגיד ותיאור התפתחות עסקיו",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "נצבא החזקות 1995 בע\"מ",
-              "ownership_pct": 99.06,
-              "parent": "איירפורט סיטי בע\"מ",
-              "page_reference": 6,
-              "section_title": "פעילות התאגיד ותיאור התפתחות עסקיו",
-              "table_title": null,
-              "note": "57.26% ממניות נצבא החזקות 1995 מוחזקות ע\"י נצבא חברה להתנחלות בע\"מ ו-42.74% במישרין ע\"י איירפורט סיטי"
-            },
-            {
-              "name": "NITSBA EUROPE SA",
-              "ownership_pct": 100,
-              "parent": "נצבא החזקות 1995 בע\"מ",
-              "page_reference": 6,
-              "section_title": "פעילות התאגיד ותיאור התפתחות עסקיו",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ישראמקו אינק.",
-              "ownership_pct": 100,
-              "parent": "נפטא חברה ישראלית לנפט בע\"מ",
-              "page_reference": 6,
-              "section_title": "פעילות התאגיד ותיאור התפתחות עסקיו",
-              "table_title": null,
-              "note": "באמצעות חברות בנות פרטיות בבעלות ובשליטה מלאה של נפטא"
-            },
-            {
-              "name": "חנ\"ל - חברת הנפט לישראל בע\"מ",
-              "ownership_pct": 99.99,
-              "parent": "נפטא חברה ישראלית לנפט בע\"מ",
-              "page_reference": 6,
-              "section_title": "פעילות התאגיד ותיאור התפתחות עסקיו",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ישראמקו נגב 2, שותפות מוגבלת",
-              "ownership_pct": 18.38,
-              "parent": "חנ\"ל - חברת הנפט לישראל בע\"מ",
-              "page_reference": 6,
-              "section_title": "פעילות התאגיד ותיאור התפתחות עסקיו",
-              "table_title": null,
-              "note": "כולל כ-0.22% ע\"י חברות בבעלות מלאה של נפטא. בנוסף החברה מחזיקה באופן ישיר 3.82%."
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "ישראמקו נגב 2, שותפות מוגבלת",
-              "ownership_pct": 20.1,
-              "parent": "נפטא",
-              "page_reference": 82,
-              "section_title": "תחום הנפט והגז בישראל",
-              "table_title": null,
-              "note": "החזקה בשרשור בשיעור של כ-20.1% במישרין ובעקיפין"
-            }
-          ],
-          "change_events": []
-        },
-        "0:5": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:6": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:7": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "נפטא",
-              "ownership_pct": 88.36,
-              "parent": null,
-              "page_reference": 126,
-              "section_title": "9.2.2.9 שיעור השתתפות מחזיקי הזכויות ההוניות של החברה בהכנסות מפרויקט \"תמר\" וחזקת דלית",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ישראמקו נגב 2, שותפות מוגבלת",
-              "ownership_pct": 20.06,
-              "parent": null,
-              "page_reference": 125,
-              "section_title": "9.2.2.8 שיעור ההשתתפות בפועל בהוצאות ובהכנסות בפרויקט \"תמר\" וחזקת דלית",
-              "table_title": "פרויקט תמר",
-              "note": "החזקה משורשרת לקבוצה"
-            },
-            {
-              "name": "ישראמקו אינק",
-              "ownership_pct": 100,
-              "parent": "נפטא",
-              "page_reference": 126,
-              "section_title": "9.2.2.9 שיעור השתתפות מחזיקי הזכויות ההוניות של החברה בהכנסות מפרויקט \"תמר\" וחזקת דלית",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:8": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:9": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:10": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:11": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:12": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "נפטא",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 216,
-              "section_title": "10.1 מידע כללי על תחום הפעילות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ישראמקו אינק.",
-              "ownership_pct": 100,
-              "parent": "נפטא",
-              "page_reference": 220,
-              "section_title": "10.4.2 פרטים כלליים אודות חלקה של החברה בנכס הנפט",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:13": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:14": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:15": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:16": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:17": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "איירפורט סיטי בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 303,
-              "section_title": "פרק ב' - דוח הדירקטוריון על מצב ענייני התאגיד לשנה שנסתיימה ביום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "י.ו.א.ל ירושלים אויל אקספלוריישיין בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 305,
-              "section_title": "פרק ב' - דוח הדירקטוריון על מצב ענייני התאגיד לשנה שנסתיימה ביום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "נפטא חברה ישראלית לנפט בע\"מ",
-              "ownership_pct": 88.3,
-              "parent": "י.ו.א.ל ירושלים אויל אקספלוריישיין בע\"מ",
-              "page_reference": 305,
-              "section_title": "פרק ב' - דוח הדירקטוריון על מצב ענייני התאגיד לשנה שנסתיימה ביום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ישראמקו נגב 2, שותפות מוגבלת",
-              "ownership_pct": null,
-              "parent": "נפטא חברה ישראלית לנפט בע\"מ",
-              "page_reference": 303,
-              "section_title": "פרק ב' - דוח הדירקטוריון על מצב ענייני התאגיד לשנה שנסתיימה ביום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ישראמקו אינק.",
-              "ownership_pct": null,
-              "parent": "נפטא חברה ישראלית לנפט בע\"מ",
-              "page_reference": 303,
-              "section_title": "פרק ב' - דוח הדירקטוריון על מצב ענייני התאגיד לשנה שנסתיימה ביום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:18": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "ישראמקו נגב 2",
-              "ownership_pct": 3.82,
-              "parent": "נפטא",
-              "page_reference": 315,
-              "section_title": "עיקרי תוצאות פעילות – נפטא",
-              "table_title": null,
-              "note": "החזקה במישרין ביחידות השתתפות, בנוסף להחזקה בשרשור של כ-18.4% באמצעות נפטא"
-            }
-          ],
-          "change_events": [
-            {
-              "company": "חברת המטרה",
-              "event_type": "decrease",
-              "ownership_pct_before": 10,
-              "ownership_pct_after": 6,
-              "event_date": null,
-              "event_description": "ירידת שיעור האחזקה של נפטא בחברת המטרה עקב גיוס הון מדורג המותנה בהתממשות אבני דרך",
-              "page_reference": 320,
-              "section_title": "השקעה בחברת הזנק"
-            }
-          ]
-        },
-        "0:19": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "איירפורט סיטי",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 345,
-              "section_title": null,
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "נצבא יורופ",
-              "ownership_pct": null,
-              "parent": "איירפורט סיטי",
-              "page_reference": 346,
-              "section_title": null,
-              "table_title": "שכר הטרחה של רואי החשבון המבקרים של החברה ושל חברות מאוחדות מהותיות בקבוצה (באלפי ש\"ח)",
-              "note": null
-            },
-            {
-              "name": "נפטא חברה ישראלית לנפט בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 345,
-              "section_title": null,
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ישראמקו אינק.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 346,
-              "section_title": null,
-              "table_title": "שכר הטרחה של רואי החשבון המבקרים של החברה ושל חברות מאוחדות מהותיות בקבוצה (באלפי ש\"ח)",
-              "note": null
-            },
-            {
-              "name": "ישראמקו נגב 2",
-              "ownership_pct": 3.82,
-              "parent": null,
-              "page_reference": 351,
-              "section_title": "נספח א' - גילוי בדבר אמצעים נזילים, חוב פיננסי ותנועות בהם בקבוצה (באלפי ש\"ח)",
-              "table_title": null,
-              "note": "החזקה ישירה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:20": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-30",
-          "subsidiaries": [
-            {
-              "name": "נפטא חברה ישראלית לנפט בע\"מ",
-              "ownership_pct": 88.36,
-              "parent": "י.ו.א.ל. ירושלים אויל אקספלוריישין בע\"מ",
-              "page_reference": 354,
-              "section_title": "באור 1 - כללי",
-              "table_title": null,
-              "note": "מחזיקה בה החברה באמצעות יואל"
-            }
-          ],
-          "change_events": []
-        },
-        "0:21": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "י.ו.א.ל. ירושלים אויל אקספלוריישין בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 370,
-              "section_title": "באור 13 - השקעה בחברות מוחזקות",
-              "table_title": "פרטים נוספים בדבר חברות מאוחדות מהותיות ליום 31 בדצמבר 2025 וליום 31 בדצמבר 2024",
-              "note": null
-            },
-            {
-              "name": "איירפורט סיטי בע\"מ",
-              "ownership_pct": 51.69,
-              "parent": "י.ו.א.ל. ירושלים אויל אקספלוריישין בע\"מ",
-              "page_reference": 370,
-              "section_title": "באור 13 - השקעה בחברות מוחזקות",
-              "table_title": "פרטים נוספים בדבר חברות מאוחדות מהותיות ליום 31 בדצמבר 2025 וליום 31 בדצמבר 2024",
-              "note": "ליום 31 בדצמבר 2024: 50.82%"
-            },
-            {
-              "name": "נפטא חברה ישראלית לנפט בע\"מ",
-              "ownership_pct": 88.33,
-              "parent": null,
-              "page_reference": 370,
-              "section_title": "באור 13 - השקעה בחברות מוחזקות",
-              "table_title": "פרטים נוספים בדבר חברות מאוחדות מהותיות ליום 31 בדצמבר 2025 וליום 31 בדצמבר 2024",
-              "note": "ליום 31 בדצמבר 2024: 88.29%"
-            },
-            {
-              "name": "ישראמקו נגב 2, שותפות מוגבלת",
-              "ownership_pct": 20.08,
-              "parent": "נפטא חברה ישראלית לנפט בע\"מ",
-              "page_reference": 370,
-              "section_title": "באור 13 - השקעה בחברות מוחזקות",
-              "table_title": "פרטים נוספים בדבר חברות מאוחדות מהותיות ליום 31 בדצמבר 2025 וליום 31 בדצמבר 2024",
-              "note": "ליום 31 בדצמבר 2024: 20.10%"
-            }
-          ],
-          "change_events": []
-        },
-        "0:22": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": [
-            {
-              "company": "חברת הניהול של מרכז חורב",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 50,
-              "event_date": null,
-              "event_description": "רכישת 50% ממניות בחברת הניהול של מרכז חורב",
-              "page_reference": 380,
-              "section_title": "באור 16 - נדל\"ן להשקעה"
-            }
-          ]
-        },
-        "0:23": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "נצבא התנחלות",
-              "ownership_pct": 99.3,
-              "parent": "איירפורט סיטי",
-              "page_reference": 398,
-              "section_title": "באור 24 - התחייבות לרכישת זכויות שאינן מקנות שליטה בחברות מאוחדות",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-17T10:07:14.137512+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731538": {
     "company_id": "2507",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-16T11:52:00.775052+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 25,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "AMTRUST RE Holdco, LLC",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 11,
-              "section_title": "תרשים מבנה ההחזקות בחברה ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "59 Maiden Lane Member LLC",
-              "ownership_pct": 100,
-              "parent": "AMTRUST RE Holdco, LLC",
-              "page_reference": 11,
-              "section_title": "תרשים מבנה ההחזקות בחברה ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "250 Broadway Holdings LLC",
-              "ownership_pct": 100,
-              "parent": "AMTRUST RE Holdco, LLC",
-              "page_reference": 11,
-              "section_title": "תרשים מבנה ההחזקות בחברה ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "203 Jay St. Partners, LLC",
-              "ownership_pct": 100,
-              "parent": "AMTRUST RE Holdco, LLC",
-              "page_reference": 11,
-              "section_title": "תרשים מבנה ההחזקות בחברה ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "AMCAP 360 HOLDINGS LLC",
-              "ownership_pct": 100,
-              "parent": "AMTRUST RE Holdco, LLC",
-              "page_reference": 11,
-              "section_title": "תרשים מבנה ההחזקות בחברה ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "One East Wacker Partners Mezz LLC",
-              "ownership_pct": 100,
-              "parent": "AMTRUST RE Holdco, LLC",
-              "page_reference": 11,
-              "section_title": "תרשים מבנה ההחזקות בחברה ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "North Dearborn Building Company LP",
-              "ownership_pct": 100,
-              "parent": "AMTRUST RE Holdco, LLC",
-              "page_reference": 11,
-              "section_title": "תרשים מבנה ההחזקות בחברה ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "303 South Broadway Owners LLC",
-              "ownership_pct": 100,
-              "parent": "AMTRUST RE Holdco, LLC",
-              "page_reference": 11,
-              "section_title": "תרשים מבנה ההחזקות בחברה ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "AM 260 Madison Member LLC",
-              "ownership_pct": 100,
-              "parent": "AMTRUST RE Holdco, LLC",
-              "page_reference": 11,
-              "section_title": "תרשים מבנה ההחזקות בחברה ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "Maiden Lane 59 Member LLC",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 62,
-              "section_title": "1.7.7.1 נכס מניב מהותי מאוד – 59 Maiden Lane – נכס מספר 1",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "59 Maiden Lane Associates, LLC",
-              "ownership_pct": 100,
-              "parent": "Maiden Lane 59 Member LLC",
-              "page_reference": 62,
-              "section_title": "1.7.7.1 נכס מניב מהותי מאוד – 59 Maiden Lane – נכס מספר 1",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "250 Broadway Holdings LLC",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 67,
-              "section_title": "1.7.7.2 נכס מניב מהותי מאוד – 250 Broadway – נכס מספר 2",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "250 Broadway Owner LLC",
-              "ownership_pct": 100,
-              "parent": "250 Broadway Holdings LLC",
-              "page_reference": 67,
-              "section_title": "1.7.7.2 נכס מניב מהותי מאוד – 250 Broadway – נכס מספר 2",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "203 Jay St. Associates LLC",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 71,
-              "section_title": "1.7.7.3 נכס מניב מהותי מאוד – The Amberly – נכס מספר 3",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "Broadway 250",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 69,
-              "section_title": null,
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "203 Jay Street Associates LLC",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 71,
-              "section_title": "1.7.7.3 נכס מניב מהותי מאוד – The Amberly נכס מספר 3",
-              "table_title": null,
-              "note": "חברת הנכס"
-            },
-            {
-              "name": "AM 260 Madison Member LLC",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 75,
-              "section_title": "1.7.7.4 נכס מניב מהותי מאוד – 260 Madison Avenue נכס מספר 8",
-              "table_title": null,
-              "note": "חברת הבת המחזיקה בתאגיד הנכס"
-            },
-            {
-              "name": "260 AM Madison LLC",
-              "ownership_pct": 100,
-              "parent": "AM 260 Madison Member LLC",
-              "page_reference": 75,
-              "section_title": "1.7.7.4 נכס מניב מהותי מאוד – 260 Madison Avenue נכס מספר 8",
-              "table_title": null,
-              "note": "תאגיד הנכס"
-            },
-            {
-              "name": "59 Maiden Lane Associates, LLC",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 87,
-              "section_title": "1.9.9 הלוואות מהותיות של החברה",
-              "table_title": "הלוואה בנכס 59 Maiden Lane",
-              "note": "תאגיד לווה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:5": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "59 Maiden Lane Associates, LLC",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 87,
-              "section_title": "1.9.9 הלוואות מהותיות של החברה",
-              "table_title": null,
-              "note": "הלוואה בנכס 59 Maiden Lane"
-            },
-            {
-              "name": "250 BROADWAY OWNER LLC",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 89,
-              "section_title": "1.9.9 הלוואות מהותיות של החברה",
-              "table_title": null,
-              "note": "הלוואה בנכס 250 Broadway"
-            },
-            {
-              "name": "203 JAY ST. ASSOCIATES, LLC",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 90,
-              "section_title": "1.9.9 הלוואות מהותיות של החברה",
-              "table_title": null,
-              "note": "הלוואה בנכס 203 Jay Street"
-            },
-            {
-              "name": "One East Wacker Partners LLC",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 91,
-              "section_title": "1.9.9 הלוואות מהותיות של החברה",
-              "table_title": null,
-              "note": "הלוואה בכירה בנכס One East Wacker"
-            },
-            {
-              "name": "One East Wacker Partners Mezz LLC",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 91,
-              "section_title": "1.9.9 הלוואות מהותיות של החברה",
-              "table_title": null,
-              "note": "הלוואת מזנין בנכס One East Wacker"
-            },
-            {
-              "name": "North Dearborn Building Company LP",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 92,
-              "section_title": "1.9.9 הלוואות מהותיות של החברה",
-              "table_title": null,
-              "note": "הלוואה בנכס 33 N Dearborn"
-            }
-          ],
-          "change_events": []
-        },
-        "0:6": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:7": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:8": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "59 Maiden Lane",
-              "ownership_pct": 100,
-              "parent": "59 Maiden Lane Member, LLC",
-              "page_reference": 153,
-              "section_title": "באור 5 - השקעות בחברות בנות",
-              "table_title": "א. הרכב הקבוצה:",
-              "note": null
-            },
-            {
-              "name": "250 Broadway",
-              "ownership_pct": 100,
-              "parent": "250 Broadway Holdings LLC",
-              "page_reference": 153,
-              "section_title": "באור 5 - השקעות בחברות בנות",
-              "table_title": "א. הרכב הקבוצה:",
-              "note": null
-            },
-            {
-              "name": "203 Jay Street Offices",
-              "ownership_pct": 100,
-              "parent": "203 Jay St. Associates LLC",
-              "page_reference": 153,
-              "section_title": "באור 5 - השקעות בחברות בנות",
-              "table_title": "א. הרכב הקבוצה:",
-              "note": null
-            },
-            {
-              "name": "203 Jay Street Residential",
-              "ownership_pct": 100,
-              "parent": "203 Jay Street",
-              "page_reference": 153,
-              "section_title": "באור 5 - השקעות בחברות בנות",
-              "table_title": "א. הרכב הקבוצה:",
-              "note": null
-            },
-            {
-              "name": "360 Lexington",
-              "ownership_pct": 100,
-              "parent": "AMCAP 360 Holdings LLC",
-              "page_reference": 153,
-              "section_title": "באור 5 - השקעות בחברות בנות",
-              "table_title": "א. הרכב הקבוצה:",
-              "note": null
-            },
-            {
-              "name": "One East Wacker",
-              "ownership_pct": 100,
-              "parent": "One East Wacker Partners Mezz LLC",
-              "page_reference": 153,
-              "section_title": "באור 5 - השקעות בחברות בנות",
-              "table_title": "א. הרכב הקבוצה:",
-              "note": null
-            },
-            {
-              "name": "33 N Dearborn",
-              "ownership_pct": 100,
-              "parent": "North Dearborn Building Company LP",
-              "page_reference": 153,
-              "section_title": "באור 5 - השקעות בחברות בנות",
-              "table_title": "א. הרכב הקבוצה:",
-              "note": null
-            },
-            {
-              "name": "303 S Broadway",
-              "ownership_pct": 100,
-              "parent": "303 South Broadway Owners LLC",
-              "page_reference": 153,
-              "section_title": "באור 5 - השקעות בחברות בנות",
-              "table_title": "א. הרכב הקבוצה:",
-              "note": null
-            },
-            {
-              "name": "260 Madison",
-              "ownership_pct": 100,
-              "parent": "AM 260 Madison LLC",
-              "page_reference": 153,
-              "section_title": "באור 5 - השקעות בחברות בנות",
-              "table_title": "א. הרכב הקבוצה:",
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:9": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "AmTrust RE Holdco LLC",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 168,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": "חברת בת בבעלות מלאה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:10": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:11": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:12": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:13": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:14": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:15": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:16": {
-          "report_format": "other",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "250 BROADWAY ASSOCIATES CORP",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 286,
-              "section_title": "Introduction",
-              "table_title": null,
-              "note": "Current owner of record"
-            }
-          ],
-          "change_events": []
-        },
-        "0:17": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:18": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:19": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:20": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:21": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:22": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-17T10:06:02.409945+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1733108": {
     "company_id": "829",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-16T11:52:01.986788+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 30,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-17T10:17:11.783447+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731570": {
     "company_id": "1445",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-16T11:52:02.376298+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 15,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-17T10:12:59.637214+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1730599": {
     "company_id": "1618",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-16T11:52:03.253118+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 32,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-17T10:23:03.492668+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1728139": {
     "company_id": "1907",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-16T11:52:03.823722+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 32,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-17T10:25:59.150360+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732795": {
     "company_id": "1187",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-16T11:52:04.439581+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 21,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-17T10:27:37.262846+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732740": {
     "company_id": "1848",
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-16T11:52:05.319738+00:00",
+    "at": "2026-09-17T10:34:46.994743+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 24,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "סול נטו גגות בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1. הגדרות",
+              "table_title": null,
+              "note": "מוחזקת בחלקים שווים על ידי החברה (בשרשור) והליוס"
+            },
+            {
+              "name": "סול נטו החזקות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 9,
+              "section_title": "1. הגדרות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "סול נטו לוד בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 9,
+              "section_title": "1. הגדרות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "סול נטו בית השיטה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 9,
+              "section_title": "1. הגדרות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "סול נטו 2 שותפות מוגבלת",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 9,
+              "section_title": "1. הגדרות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "סולאיר נטו שפיר בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 9,
+              "section_title": "1. הגדרות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "סול נטו כיל בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 9,
+              "section_title": "1. הגדרות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "סולפרויקט 11 בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 9,
+              "section_title": "1. הגדרות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "רה סולאר (Resolar S.a.r.l.)",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 9,
+              "section_title": "1. הגדרות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Solproject Himin 2 Ltd.",
+              "ownership_pct": 88.2,
+              "parent": null,
+              "page_reference": 10,
+              "section_title": "2.2 תרשימים עיקרי מבנה החזקות של הקבוצה למועד הדו\"ח:",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Solaer Intersol Ltd.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 10,
+              "section_title": "2.2 תרשימים עיקרי מבנה החזקות של הקבוצה למועד הדו\"ח:",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Solproject 12 Ltd.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 10,
+              "section_title": "2.2 תרשימים עיקרי מבנה החזקות של הקבוצה למועד הדו\"ח:",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Sol Neto Roofs Ltd.",
+              "ownership_pct": 50,
+              "parent": "Solproject 12 Ltd.",
+              "page_reference": 10,
+              "section_title": "2.2 תרשימים עיקרי מבנה החזקות של הקבוצה למועד הדו\"ח:",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Ayit Pumped Storage Ltd.",
+              "ownership_pct": 80.1,
+              "parent": null,
+              "page_reference": 10,
+              "section_title": "2.2 תרשימים עיקרי מבנה החזקות של הקבוצה למועד הדו\"ח:",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ASH Industries Ltd.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 10,
+              "section_title": "2.2 תרשימים עיקרי מבנה החזקות של הקבוצה למועד הדו\"ח:",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "T.D.I.- Solaer Poland Power GP Ltd.",
+              "ownership_pct": 70,
+              "parent": null,
+              "page_reference": 14,
+              "section_title": "2.2 תרשימים עיקרי מבנה החזקות של הקבוצה למועד הדו\"ח:",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "T.D.I.- Solaer Poland Power LP",
+              "ownership_pct": 69.99,
+              "parent": "T.D.I.- Solaer Poland Power GP Ltd.",
+              "page_reference": 14,
+              "section_title": "2.2 תרשימים עיקרי מבנה החזקות של הקבוצה למועד הדו\"ח:",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Varese sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": "T.D.I.- Solaer Poland Power LP",
+              "page_reference": 14,
+              "section_title": "2.2 תרשימים עיקרי מבנה החזקות של הקבוצה למועד הדו\"ח:",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "SEWNI spółka z ograniczoną odpowiedzialnością",
+              "ownership_pct": 100,
+              "parent": "T.D.I.- Solaer Poland Power LP",
+              "page_reference": 14,
+              "section_title": "2.2 תרשימים עיקרי מבנה החזקות של הקבוצה למועד הדו\"ח:",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "PV Energia 7 spółka z ograniczoną odpowiedzialnością",
+              "ownership_pct": 100,
+              "parent": "T.D.I.- Solaer Poland Power LP",
+              "page_reference": 14,
+              "section_title": "2.2 תרשימים עיקרי מבנה החזקות של הקבוצה למועד הדו\"ח:",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Alizarsun",
+              "ownership_pct": 91,
+              "parent": null,
+              "page_reference": 18,
+              "section_title": "2.4 להלן המערכות הנמצאות בבעלות החברה (או תחת בלעדיות):",
+              "table_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים מחוברים למועד פרסום הדוח",
+              "note": null
+            },
+            {
+              "name": "Calasparra",
+              "ownership_pct": 84,
+              "parent": null,
+              "page_reference": 18,
+              "section_title": "2.4 להלן המערכות הנמצאות בבעלות החברה (או תחת בלעדיות):",
+              "table_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים מחוברים למועד פרסום הדוח",
+              "note": null
+            },
+            {
+              "name": "Esmeralda & Hortensias",
+              "ownership_pct": 84,
+              "parent": null,
+              "page_reference": 18,
+              "section_title": "2.4 להלן המערכות הנמצאות בבעלות החברה (או תחת בלעדיות):",
+              "table_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים מחוברים למועד פרסום הדוח",
+              "note": null
+            },
+            {
+              "name": "Poland 1a",
+              "ownership_pct": 55,
+              "parent": null,
+              "page_reference": 18,
+              "section_title": "2.4 להלן המערכות הנמצאות בבעלות החברה (או תחת בלעדיות):",
+              "table_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים מחוברים למועד פרסום הדוח",
+              "note": null
+            },
+            {
+              "name": "Poland 3",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 18,
+              "section_title": "2.4 להלן המערכות הנמצאות בבעלות החברה (או תחת בלעדיות):",
+              "table_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים מחוברים למועד פרסום הדוח",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "Alizarsun",
+              "ownership_pct": 65,
+              "parent": null,
+              "page_reference": 18,
+              "section_title": "להלן המערכות הנמצאות בבעלות החברה (או תחת בלעדיות):",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גגות",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 18,
+              "section_title": "להלן המערכות הנמצאות בבעלות החברה (או תחת בלעדיות):",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Calasparra",
+              "ownership_pct": 70,
+              "parent": null,
+              "page_reference": 18,
+              "section_title": "להלן המערכות הנמצאות בבעלות החברה (או תחת בלעדיות):",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Esmeralda & Hortensias",
+              "ownership_pct": 55,
+              "parent": null,
+              "page_reference": 18,
+              "section_title": "להלן המערכות הנמצאות בבעלות החברה (או תחת בלעדיות):",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Poland 1a",
+              "ownership_pct": 70,
+              "parent": null,
+              "page_reference": 18,
+              "section_title": "להלן המערכות הנמצאות בבעלות החברה (או תחת בלעדיות):",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Poland 3",
+              "ownership_pct": 70,
+              "parent": null,
+              "page_reference": 18,
+              "section_title": "להלן המערכות הנמצאות בבעלות החברה (או תחת בלעדיות):",
+              "table_title": null,
+              "note": "טרם נרכש ונמצא בהליך בחינה תחת בלעדיות"
+            },
+            {
+              "name": "Cacin",
+              "ownership_pct": 70,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים בהקמה ולקראת הקמה למועד פרסום הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Fargue",
+              "ownership_pct": 70,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים בהקמה ולקראת הקמה למועד פרסום הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Tarazona",
+              "ownership_pct": 70,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים בהקמה ולקראת הקמה למועד פרסום הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Espartales",
+              "ownership_pct": 70,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים בהקמה ולקראת הקמה למועד פרסום הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Sancho",
+              "ownership_pct": 70,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים בהקמה ולקראת הקמה למועד פרסום הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Villena",
+              "ownership_pct": 70,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים בהקמה ולקראת הקמה למועד פרסום הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Alcantara",
+              "ownership_pct": 70,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים בהקמה ולקראת הקמה למועד פרסום הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ENAPAC PV 1",
+              "ownership_pct": 65,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים בהקמה ולקראת הקמה למועד פרסום הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Calbuco Wind",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים בהקמה ולקראת הקמה למועד פרסום הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Mequinenza",
+              "ownership_pct": 85,
+              "parent": null,
+              "page_reference": 21,
+              "section_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים בהקמה ולקראת הקמה למועד פרסום הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Alizarsun 1b",
+              "ownership_pct": 85,
+              "parent": null,
+              "page_reference": 21,
+              "section_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים בהקמה ולקראת הקמה למועד פרסום הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Elche 1",
+              "ownership_pct": 85,
+              "parent": null,
+              "page_reference": 21,
+              "section_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים בהקמה ולקראת הקמה למועד פרסום הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Alfonso El Sabio 1a",
+              "ownership_pct": 85,
+              "parent": null,
+              "page_reference": 21,
+              "section_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים בהקמה ולקראת הקמה למועד פרסום הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Alfonso El Sabio 1b",
+              "ownership_pct": 85,
+              "parent": null,
+              "page_reference": 21,
+              "section_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים בהקמה ולקראת הקמה למועד פרסום הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Cachiyuyo",
+              "ownership_pct": 65,
+              "parent": null,
+              "page_reference": 21,
+              "section_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים בהקמה ולקראת הקמה למועד פרסום הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Qanqina",
+              "ownership_pct": 65,
+              "parent": null,
+              "page_reference": 21,
+              "section_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים בהקמה ולקראת הקמה למועד פרסום הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ENAPAC PV2",
+              "ownership_pct": 85,
+              "parent": null,
+              "page_reference": 21,
+              "section_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים בהקמה ולקראת הקמה למועד פרסום הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Gravinia de Puglia",
+              "ownership_pct": 85,
+              "parent": null,
+              "page_reference": 21,
+              "section_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים בהקמה ולקראת הקמה למועד פרסום הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Matera Energia PV",
+              "ownership_pct": 85,
+              "parent": null,
+              "page_reference": 21,
+              "section_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים בהקמה ולקראת הקמה למועד פרסום הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Matera Energia BESS1+2",
+              "ownership_pct": 85,
+              "parent": null,
+              "page_reference": 21,
+              "section_title": "להלן נתונים פיננסיים וביצועים חזויים מצרפיים בעניין פרויקטים בהקמה ולקראת הקמה למועד פרסום הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Alfonso El Sabio 2-3",
+              "ownership_pct": 85,
+              "parent": null,
+              "page_reference": 22,
+              "section_title": "צבר פרויקטים פוטו-וולטאים בפיתוח מתקדם וייזום למועד פרסום הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Elche 2+3",
+              "ownership_pct": 85,
+              "parent": null,
+              "page_reference": 22,
+              "section_title": "צבר פרויקטים פוטו-וולטאים בפיתוח מתקדם וייזום למועד פרסום הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Ferrandina",
+              "ownership_pct": 85,
+              "parent": null,
+              "page_reference": 22,
+              "section_title": "צבר פרויקטים פוטו-וולטאים בפיתוח מתקדם וייזום למועד פרסום הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Genzano Energia",
+              "ownership_pct": 85,
+              "parent": null,
+              "page_reference": 22,
+              "section_title": "צבר פרויקטים פוטו-וולטאים בפיתוח מתקדם וייזום למועד פרסום הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "נווה חריף",
+              "ownership_pct": 70,
+              "parent": null,
+              "page_reference": 22,
+              "section_title": "צבר פרויקטים פוטו-וולטאים בפיתוח מתקדם וייזום למועד פרסום הדוח",
+              "table_title": null,
+              "note": "חלק החברה בהנחת דילול מלא עתידי"
+            },
+            {
+              "name": "Elche 4-6",
+              "ownership_pct": 85,
+              "parent": null,
+              "page_reference": 22,
+              "section_title": "צבר פרויקטים פוטו-וולטאים בפיתוח מתקדם וייזום למועד פרסום הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Toledo",
+              "ownership_pct": 85,
+              "parent": null,
+              "page_reference": 22,
+              "section_title": "צבר פרויקטים פוטו-וולטאים בפיתוח מתקדם וייזום למועד פרסום הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Alizarsun 2",
+              "ownership_pct": 85,
+              "parent": null,
+              "page_reference": 22,
+              "section_title": "צבר פרויקטים פוטו-וולטאים בפיתוח מתקדם וייזום למועד פרסום הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Poland 1+2",
+              "ownership_pct": 70,
+              "parent": null,
+              "page_reference": 22,
+              "section_title": "צבר פרויקטים פוטו-וולטאים בפיתוח מתקדם וייזום למועד פרסום הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "עיט",
+              "ownership_pct": 81,
+              "parent": null,
+              "page_reference": 22,
+              "section_title": "צבר פרויקטים פוטו-וולטאים בפיתוח מתקדם וייזום למועד פרסום הדוח",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "סול נטו גגות",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 63,
+              "section_title": "תחום הפעילות הפוטו-וולטאי בישראל",
+              "table_title": null,
+              "note": "הון מניותיה הרגילות מוחזק בחלקים שווים (50% כ\"א) על ידי החברה והליוס"
+            }
+          ],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "חברת סול נטו בית השיטה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 72,
+              "section_title": "7.3.6 אסדרת ייצור חשמל מבוזר באנרגיה מתחדשת בשיטת מונה נטו",
+              "table_title": null,
+              "note": "חברת בת בבעלות מלאה, החברה מחזיקה ב-74% מהזכויות בשותפות הפרויקט"
+            },
+            {
+              "name": "סרגוסה ישראל פרויקט סולאר בע\"מ",
+              "ownership_pct": 97.4,
+              "parent": null,
+              "page_reference": 88,
+              "section_title": "א. פרויקט אליזרסאן",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אליזרסאן (Alizarsun S.L.U.)",
+              "ownership_pct": 71.3,
+              "parent": null,
+              "page_reference": 88,
+              "section_title": "א. פרויקט אליזרסאן",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "חימין 3 (Himin Investment 3 S.L.)",
+              "ownership_pct": 44,
+              "parent": null,
+              "page_reference": 88,
+              "section_title": "א. פרויקט אליזרסאן",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": [
+            {
+              "company": "אליזרסאן",
+              "event_type": "full_disposal",
+              "ownership_pct_before": 71.3,
+              "ownership_pct_after": 0,
+              "event_date": "2025-05-27",
+              "event_description": "התקשרות בהסכם מחייב למכירת מלוא האחזקות בחברת אליזרסאן",
+              "page_reference": 88,
+              "section_title": "א. פרויקט אליזרסאן"
+            }
+          ]
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "Alizarsun, S.L.U.",
+              "ownership_pct": 71.3,
+              "parent": null,
+              "page_reference": 88,
+              "section_title": "א. פרויקט אליזרסאן",
+              "table_title": null,
+              "note": "מוחזקת בשרשור"
+            },
+            {
+              "name": "סרגוסה ישראל פרויקט סולאר בע\"מ",
+              "ownership_pct": 97.4,
+              "parent": null,
+              "page_reference": 88,
+              "section_title": "א. פרויקט אליזרסאן",
+              "table_title": null,
+              "note": "מוחזקת בשרשור בישראל"
+            },
+            {
+              "name": "אלצ'ה 1",
+              "ownership_pct": 51.0,
+              "parent": null,
+              "page_reference": 92,
+              "section_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
+              "table_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
+              "note": null
+            },
+            {
+              "name": "אליזרסאן 1ב",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 92,
+              "section_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
+              "table_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
+              "note": null
+            },
+            {
+              "name": "סאנצ'ו",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 92,
+              "section_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
+              "table_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
+              "note": null
+            },
+            {
+              "name": "ויינה",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 92,
+              "section_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
+              "table_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
+              "note": null
+            },
+            {
+              "name": "אלקנטרה",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 92,
+              "section_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
+              "table_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
+              "note": null
+            },
+            {
+              "name": "אלפונסו",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 92,
+              "section_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
+              "table_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
+              "note": null
+            },
+            {
+              "name": "אל סביו 1",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 92,
+              "section_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
+              "table_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
+              "note": null
+            },
+            {
+              "name": "מקיננזה 3-1",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 92,
+              "section_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
+              "table_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
+              "note": null
+            },
+            {
+              "name": "קסין",
+              "ownership_pct": 11.9,
+              "parent": null,
+              "page_reference": 92,
+              "section_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
+              "table_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
+              "note": null
+            },
+            {
+              "name": "פרגוי",
+              "ownership_pct": 11.9,
+              "parent": null,
+              "page_reference": 92,
+              "section_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
+              "table_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
+              "note": null
+            },
+            {
+              "name": "Los Espartales",
+              "ownership_pct": 11.9,
+              "parent": null,
+              "page_reference": 92,
+              "section_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
+              "table_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
+              "note": null
+            },
+            {
+              "name": "Tarazona",
+              "ownership_pct": 11.9,
+              "parent": null,
+              "page_reference": 92,
+              "section_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
+              "table_title": "8.2.1 פרויקטים בהקמה ולקראת הקמה בספרד",
+              "note": null
+            },
+            {
+              "name": "Resolar 17 S.a.r.l.",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 94,
+              "section_title": "א. פרויקטים חדשים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Resolar 11 S.a.r.l.",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 97,
+              "section_title": "8.2.2 מכירת פרויקטים בספרד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Resolar 12 S.a.r.l.",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 97,
+              "section_title": "8.2.2 מכירת פרויקטים בספרד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Gravina de Puglia",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 99,
+              "section_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
+              "table_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
+              "note": null
+            },
+            {
+              "name": "Matera Energia",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 99,
+              "section_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
+              "table_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
+              "note": null
+            },
+            {
+              "name": "Brindisi Energia 1",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 99,
+              "section_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
+              "table_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
+              "note": null
+            },
+            {
+              "name": "Brindisi Energia 8",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 99,
+              "section_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
+              "table_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
+              "note": null
+            },
+            {
+              "name": "Brindisi Energia 3",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 99,
+              "section_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
+              "table_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
+              "note": null
+            },
+            {
+              "name": "Brindisi Energia 6",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 99,
+              "section_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
+              "table_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
+              "note": null
+            },
+            {
+              "name": "Brindisi Energia 5",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 99,
+              "section_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
+              "table_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
+              "note": null
+            },
+            {
+              "name": "Brindisi Energia 4",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 99,
+              "section_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
+              "table_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
+              "note": null
+            },
+            {
+              "name": "Brindisi Energia 7",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 99,
+              "section_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
+              "table_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
+              "note": null
+            },
+            {
+              "name": "Tito Energia Group",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 99,
+              "section_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
+              "table_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
+              "note": null
+            },
+            {
+              "name": "Ferrandina",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 99,
+              "section_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
+              "table_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
+              "note": null
+            },
+            {
+              "name": "Melfi Energia Group",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 99,
+              "section_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
+              "table_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
+              "note": null
+            },
+            {
+              "name": "Guardia Perticara",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 99,
+              "section_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
+              "table_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
+              "note": null
+            },
+            {
+              "name": "Genzano Energia 1",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 99,
+              "section_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
+              "table_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
+              "note": null
+            },
+            {
+              "name": "Genzano 8",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 99,
+              "section_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
+              "table_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
+              "note": null
+            },
+            {
+              "name": "Genzano di Lucanina",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 99,
+              "section_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
+              "table_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
+              "note": null
+            },
+            {
+              "name": "Genzano Energia 3",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 99,
+              "section_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
+              "table_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
+              "note": null
+            },
+            {
+              "name": "Craco Energia",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 99,
+              "section_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
+              "table_title": "8.2.4 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח רכשו הזכויות לגביהם על ידי החברה באיטליה",
+              "note": null
+            },
+            {
+              "name": "השותפות בפולין",
+              "ownership_pct": 70.0,
+              "parent": null,
+              "page_reference": 103,
+              "section_title": "9.1.2 אופן פעילות החברה בפולין",
+              "table_title": null,
+              "note": "שותפות להקמת פרויקטים פוטו-וולטאיים בפולין"
+            }
+          ],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "השותפות בפולין",
+              "ownership_pct": 70,
+              "parent": null,
+              "page_reference": 103,
+              "section_title": "9.1.2 אופן פעילות החברה בפולין",
+              "table_title": null,
+              "note": "שותפות שהוקמה במסגרת הסכם מייסדים מיום 7 באפריל 2021"
+            },
+            {
+              "name": "Agua-Sol Development S.L. (אגווה סול)",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 116,
+              "section_title": "10.3.1.2 פרויקטים מהותיים לחברה בצ'ילה: א. פרויקט אנפק",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "San Camilo Transmisión SpA",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 122,
+              "section_title": "10.3.1.2 פרויקטים מהותיים לחברה בצ'ילה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:7": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "Esmeralda + Hortencias",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 243,
+              "section_title": "10.3.2 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח הושלמה רכישת הזכויות בהם על ידי החברה:",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Calbuco",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 243,
+              "section_title": "10.3.2 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח הושלמה רכישת הזכויות בהם על ידי החברה:",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ENAPAC PV 1",
+              "ownership_pct": 51.0,
+              "parent": null,
+              "page_reference": 243,
+              "section_title": "10.3.2 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח הושלמה רכישת הזכויות בהם על ידי החברה:",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Enapac PV 2",
+              "ownership_pct": 51.0,
+              "parent": null,
+              "page_reference": 243,
+              "section_title": "10.3.2 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח הושלמה רכישת הזכויות בהם על ידי החברה:",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Qanqina",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 243,
+              "section_title": "10.3.2 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח הושלמה רכישת הזכויות בהם על ידי החברה:",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Cachiyuyo",
+              "ownership_pct": 47.4,
+              "parent": "Resolar S.a.r.l.",
+              "page_reference": 243,
+              "section_title": "10.3.2 להלן פרטים בדבר הפרויקטים שנכון למועד הדו\"ח הושלמה רכישת הזכויות בהם על ידי החברה:",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "San Camilo Transmisión SpA",
+              "ownership_pct": 51.0,
+              "parent": null,
+              "page_reference": 236,
+              "section_title": null,
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Agua-Sol Development S.L",
+              "ownership_pct": 51.0,
+              "parent": null,
+              "page_reference": 236,
+              "section_title": null,
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Trends Industrial SA",
+              "ownership_pct": 51.0,
+              "parent": null,
+              "page_reference": 238,
+              "section_title": null,
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Resolar S.a.r.l.",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 241,
+              "section_title": null,
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:8": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "עיט אגירה שאובה בע\"מ",
+              "ownership_pct": 80.1,
+              "parent": null,
+              "page_reference": 145,
+              "section_title": "12.1.2 פרויקט עיט",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "תאגיד הפרויקט",
+              "ownership_pct": 74.0,
+              "parent": "עיט אגירה שאובה בע\"מ",
+              "page_reference": 146,
+              "section_title": "12.1.2 פרויקט עיט",
+              "table_title": null,
+              "note": "תאגידים ייעודיים המוקמים מול הקיבוצים"
+            }
+          ],
+          "change_events": []
+        },
+        "0:9": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "LIBIENRGY HORIZONTES U.L.S",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 313,
+              "section_title": "12.6.10 הלוואת פרויקטים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "FOTOVOLTAICA BRAZATORTAS, S.L,U",
+              "ownership_pct": 12.0,
+              "parent": null,
+              "page_reference": 313,
+              "section_title": "12.6.10 הלוואת פרויקטים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "FOTOVOLTAICA PUERTO CRUZ II",
+              "ownership_pct": 12.0,
+              "parent": null,
+              "page_reference": 313,
+              "section_title": "12.6.10 הלוואת פרויקטים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Resolar S.L.",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 313,
+              "section_title": "12.6.10 הלוואת פרויקטים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ENERGY INTERSOL CALBUCO Spa",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 315,
+              "section_title": "12.8.2 הסכמים למכירת חשמל",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Parque Solar Cachiyuyo SpA",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 316,
+              "section_title": "12.8.2 הסכמים למכירת חשמל",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Qanquiña SpA",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 316,
+              "section_title": "12.8.2 הסכמים למכירת חשמל",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:10": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "קאסין",
+              "ownership_pct": 25,
+              "parent": null,
+              "page_reference": 171,
+              "section_title": null,
+              "table_title": null,
+              "note": "פרויקט השקעה משותף עם קרן ההשקעות"
+            },
+            {
+              "name": "פרגוי",
+              "ownership_pct": 25,
+              "parent": null,
+              "page_reference": 171,
+              "section_title": null,
+              "table_title": null,
+              "note": "פרויקט השקעה משותף עם קרן ההשקעות"
+            },
+            {
+              "name": "טרזונה",
+              "ownership_pct": 25,
+              "parent": null,
+              "page_reference": 171,
+              "section_title": null,
+              "table_title": null,
+              "note": "פרויקט השקעה משותף עם קרן ההשקעות"
+            },
+            {
+              "name": "לס אספרטלס",
+              "ownership_pct": 25,
+              "parent": null,
+              "page_reference": 171,
+              "section_title": null,
+              "table_title": null,
+              "note": "פרויקט השקעה משותף עם קרן ההשקעות"
+            },
+            {
+              "name": "סול-נטו גגות בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "12.11 הליכים משפטיים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "8 Intersol Energy L.S (EI8)",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "12.11 הליכים משפטיים",
+              "table_title": null,
+              "note": "חברה בת ספרדית המוחזקת בשרשור"
+            }
+          ],
+          "change_events": []
+        },
+        "0:11": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "LIBIENRGY HORIZONTES, S.L.U",
+              "event_type": "other",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 47.4,
+              "event_date": "2025-12-12",
+              "event_description": "ניצול מסגרת אשראי ממסגרת האשראי של פרויקט קלספארה",
+              "page_reference": 195,
+              "section_title": "ה. אירועים עיקריים בתקופת הדו\"ח ולמועד אישור הדו\"ח"
+            },
+            {
+              "company": "L.S Development Sol-Agua",
+              "event_type": "other",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 51.0,
+              "event_date": "2025-12-24",
+              "event_description": "חתימה על הסכם EPC לפרויקט הסולארי סן קמילו בצ'ילה",
+              "page_reference": 196,
+              "section_title": "ה. אירועים עיקריים בתקופת הדו\"ח ולמועד אישור הדו\"ח"
+            },
+            {
+              "company": "שותפות סול נטו 1",
+              "event_type": "full_disposal",
+              "ownership_pct_before": 100.0,
+              "ownership_pct_after": 0.0,
+              "event_date": "2025-12-29",
+              "event_description": "מכירת מלוא זכויות החברה בשותפות סול נטו 1",
+              "page_reference": 196,
+              "section_title": "ה. אירועים עיקריים בתקופת הדו\"ח ולמועד אישור הדו\"ח"
+            },
+            {
+              "company": "סולאיר נט-מטרינג בע\"מ",
+              "event_type": "full_disposal",
+              "ownership_pct_before": 100.0,
+              "ownership_pct_after": 0.0,
+              "event_date": "2025-12-29",
+              "event_description": "מכירת מלוא זכויות החברה והתחייבויותיה בסולאיר נט-מטרינג בע\"מ",
+              "page_reference": 196,
+              "section_title": "ה. אירועים עיקריים בתקופת הדו\"ח ולמועד אישור הדו\"ח"
+            },
+            {
+              "company": "Calbuco Intersol Energy SpA",
+              "event_type": "other",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 47.4,
+              "event_date": "2026-01-27",
+              "event_description": "חתימה על מזכר הבנות לא מחייב למימון בכיר להקמת פרויקט הרוח קאלבוקו בצ'ילה",
+              "page_reference": 197,
+              "section_title": "ה. אירועים עיקריים בתקופת הדו\"ח ולמועד אישור הדו\"ח"
+            },
+            {
+              "company": "Acebuche Solar ו-Aliaga Solar, S.L.U",
+              "event_type": "other",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 47.4,
+              "event_date": "2026-02-12",
+              "event_description": "חתימה על הסכם למתן מימון בכיר להקמת פרויקט סאנצ'ו בספרד",
+              "page_reference": 197,
+              "section_title": "ה. אירועים עיקריים בתקופת הדו\"ח ולמועד אישור הדו\"ח"
+            },
+            {
+              "company": "חברות ייעודיות לפרויקטים בפולין (שותפות עם כלל חברה לביטוח)",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": 0.0,
+              "ownership_pct_after": 51.0,
+              "event_date": "2026-03-20",
+              "event_description": "חתימה על מזכר הבנות לרכישת 100% ממניות חברות ייעודיות בפולין במסגרת שותפות בה סולאיר תחזיק לפחות 51%",
+              "page_reference": 198,
+              "section_title": "ה. אירועים עיקריים בתקופת הדו\"ח ולמועד אישור הדו\"ח"
+            },
+            {
+              "company": "L.S Development Sol-Agua",
+              "event_type": "other",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 51.0,
+              "event_date": "2026-03-24",
+              "event_description": "חתימה על מזכר הבנות לא מחייב עם חברת כרייה גלובאלית בקשר לפרויקט אנפק בצ'ילה",
+              "page_reference": 198,
+              "section_title": "ה. אירועים עיקריים בתקופת הדו\"ח ולמועד אישור הדו\"ח"
+            }
+          ]
+        },
+        "0:12": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:13": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:14": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:15": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "סולנטו 1 ש.מ.",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 262,
+              "section_title": "באור 8 - השקעה בחברות מוחזקות\nא. חברות בנות מאוחדות",
+              "table_title": "להלן רשימה של חברות הבנות והשותפויות המאוחדות המהותיות של החברה:",
+              "note": "החזקה ליום 31 בדצמבר 2024 הייתה 100%, נמכרה ביום 29 בדצמבר 2025"
+            },
+            {
+              "name": "Himin investment 2 L.S",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 262,
+              "section_title": "באור 8 - השקעה בחברות מוחזקות\nא. חברות בנות מאוחדות",
+              "table_title": "להלן רשימה של חברות הבנות והשותפויות המאוחדות המהותיות של החברה:",
+              "note": null
+            },
+            {
+              "name": "Alizarsun S.L",
+              "ownership_pct": 71.2,
+              "parent": null,
+              "page_reference": 262,
+              "section_title": "באור 8 - השקעה בחברות מוחזקות\nא. חברות בנות מאוחדות",
+              "table_title": "להלן רשימה של חברות הבנות והשותפויות המאוחדות המהותיות של החברה:",
+              "note": null
+            },
+            {
+              "name": "סולאיר - טי.די.אי פולין פאוור שותפות מוגבלת",
+              "ownership_pct": 70,
+              "parent": null,
+              "page_reference": 262,
+              "section_title": "באור 8 - השקעה בחברות מוחזקות\nא. חברות בנות מאוחדות",
+              "table_title": "להלן רשימה של חברות הבנות והשותפויות המאוחדות המהותיות של החברה:",
+              "note": null
+            },
+            {
+              "name": "Resolar SARL",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 262,
+              "section_title": "באור 8 - השקעה בחברות מוחזקות\nא. חברות בנות מאוחדות",
+              "table_title": "להלן רשימה של חברות הבנות והשותפויות המאוחדות המהותיות של החברה:",
+              "note": null
+            },
+            {
+              "name": "Agua-Sol Development S.L",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 262,
+              "section_title": "באור 8 - השקעה בחברות מוחזקות\nא. חברות בנות מאוחדות",
+              "table_title": "להלן רשימה של חברות הבנות והשותפויות המאוחדות המהותיות של החברה:",
+              "note": null
+            },
+            {
+              "name": "Energy Intersol L.S",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 262,
+              "section_title": "באור 8 - השקעה בחברות מוחזקות\nא. חברות בנות מאוחדות",
+              "table_title": "להלן רשימה של חברות הבנות והשותפויות המאוחדות המהותיות של החברה:",
+              "note": null
+            },
+            {
+              "name": "סול נטו אינטרסול ש.מ.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 262,
+              "section_title": "באור 8 - השקעה בחברות מוחזקות\nא. חברות בנות מאוחדות",
+              "table_title": "להלן רשימה של חברות הבנות והשותפויות המאוחדות המהותיות של החברה:",
+              "note": null
+            },
+            {
+              "name": "סול נטו גגות בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 266,
+              "section_title": "באור 8 - השקעה בחברות מוחזקות\nב. חברות מוחזקות לפי שיטת השווי המאזני",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "סול-נטו גגות אי פי סי בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 266,
+              "section_title": "באור 8 - השקעה בחברות מוחזקות\nב. חברות מוחזקות לפי שיטת השווי המאזני",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Solsticio SARL",
+              "ownership_pct": 11.9,
+              "parent": "רה-סולאר",
+              "page_reference": 266,
+              "section_title": "באור 8 - השקעה בחברות מוחזקות\nב. חברות מוחזקות לפי שיטת השווי המאזני",
+              "table_title": null,
+              "note": "שיעור החזקה של החברה בשרשור הינו כ-11.9% (מוחזקת 25% על ידי רה-סולאר)"
+            },
+            {
+              "name": "BRAZATORTAS RENOVABLES 400KV, AIE",
+              "ownership_pct": 9.32,
+              "parent": null,
+              "page_reference": 266,
+              "section_title": "באור 8 - השקעה בחברות מוחזקות\nב. חברות מוחזקות לפי שיטת השווי המאזני",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:16": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "רה סולאר",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 280,
+              "section_title": "באור 16 - מימון פרויקטים, בטחונות ואמות מידה פיננסיות (המשך)",
+              "table_title": null,
+              "note": "החברה המחזיקה שיעור של 47.4%"
+            }
+          ],
+          "change_events": []
+        },
+        "0:17": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "סול נטו גגות בע\"מ",
+              "ownership_pct": 50.0,
+              "parent": null,
+              "page_reference": 297,
+              "section_title": "באור 19 - התקשרויות, תלויות, שעבודים וערבויות - א. התקשרויות - 1. ישראל",
+              "table_title": null,
+              "note": "החזקה בחלקים שווים על ידי החברה והליוס"
+            },
+            {
+              "name": "סולנטו 1 שותפות מוגבלת וסול נטו 2 שותפות מוגבלת",
+              "ownership_pct": 99.9,
+              "parent": "סולאיר נט-מטרינג בע\"מ",
+              "page_reference": 297,
+              "section_title": "באור 19 - התקשרויות, תלויות, שעבודים וערבויות - א. התקשרויות - 1. ישראל",
+              "table_title": null,
+              "note": "נמכרו ביום 29 בדצמבר 2025"
+            },
+            {
+              "name": "סרגוסה ישראל פרויקט סולאר בע\"מ",
+              "ownership_pct": 97.4,
+              "parent": null,
+              "page_reference": 299,
+              "section_title": "באור 19 - התקשרויות, תלויות, שעבודים וערבויות - א. התקשרויות - 2. ספרד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Torrejon IV ו-Valdemoro V",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 19 - התקשרויות, תלויות, שעבודים וערבויות - א. התקשרויות - 2. ספרד - ג. פרויקטים נוספים בספרד",
+              "table_title": "שם הפרויקט שנת רכישה שעור אחזקה מגה וואט",
+              "note": null
+            },
+            {
+              "name": "Torrejon I ו-Valdemoro IV",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 19 - התקשרויות, תלויות, שעבודים וערבויות - א. התקשרויות - 2. ספרד - ג. פרויקטים נוספים בספרד",
+              "table_title": "שם הפרויקט שנת רכישה שעור אחזקה מגה וואט",
+              "note": null
+            },
+            {
+              "name": "Bierzo 3 ו-Bierzo, Bierzo 1, Bierzo 2",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 19 - התקשרויות, תלויות, שעבודים וערבויות - א. התקשרויות - 2. ספרד - ג. פרויקטים נוספים בספרד",
+              "table_title": "שם הפרויקט שנת רכישה שעור אחזקה מגה וואט",
+              "note": null
+            },
+            {
+              "name": "Mequinenza",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 19 - התקשרויות, תלויות, שעבודים וערבויות - א. התקשרויות - 2. ספרד - ג. פרויקטים נוספים בספרד",
+              "table_title": "שם הפרויקט שנת רכישה שעור אחזקה מגה וואט",
+              "note": null
+            },
+            {
+              "name": "Villena",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 19 - התקשרויות, תלויות, שעבודים וערבויות - א. התקשרויות - 2. ספרד - ג. פרויקטים נוספים בספרד",
+              "table_title": "שם הפרויקט שנת רכישה שעור אחזקה מגה וואט",
+              "note": null
+            },
+            {
+              "name": "Calasparra",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 19 - התקשרויות, תלויות, שעבודים וערבויות - א. התקשרויות - 2. ספרד - ג. פרויקטים נוספים בספרד",
+              "table_title": "שם הפרויקט שנת רכישה שעור אחזקה מגה וואט",
+              "note": null
+            },
+            {
+              "name": "Cisne",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 19 - התקשרויות, תלויות, שעבודים וערבויות - א. התקשרויות - 2. ספרד - ג. פרויקטים נוספים בספרד",
+              "table_title": "שם הפרויקט שנת רכישה שעור אחזקה מגה וואט",
+              "note": null
+            },
+            {
+              "name": "Toledo",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 300,
+              "section_title": "באור 19 - התקשרויות, תלויות, שעבודים וערבויות - א. התקשרויות - 2. ספרד - ג. פרויקטים נוספים בספרד",
+              "table_title": "שם הפרויקט שנת רכישה שעור אחזקה מגה וואט",
+              "note": null
+            },
+            {
+              "name": "Solsticio S.a.r.l",
+              "ownership_pct": 25.0,
+              "parent": "רה סולאר",
+              "page_reference": 301,
+              "section_title": "באור 19 - התקשרויות, תלויות, שעבודים וערבויות - א. התקשרויות - 2. ספרד - ד. פרויקטי Tarazona, Cacin, Fargue, Espartales",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Resolar 12 S.a.r.l (Libienergy Horizontes S.L)",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 302,
+              "section_title": "באור 19 - התקשרויות, תלויות, שעבודים וערבויות - א. התקשרויות - 2. ספרד - ה. פרויקט Calasparra",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Resolar 17 S.a.r.l",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 302,
+              "section_title": "באור 19 - התקשרויות, תלויות, שעבודים וערבויות - א. התקשרויות - 2. ספרד - ו. פרויקט Sancho (Acebuche & Aliaga)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "BRAZATORTAS RENOVABLES 400KV, AIE",
+              "ownership_pct": 9.32,
+              "parent": null,
+              "page_reference": 303,
+              "section_title": "באור 19 - התקשרויות, תלויות, שעבודים וערבויות - א. התקשרויות - 2. ספרד - ו. פרויקט Aliaga & Acebuche (Sancho) (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Energy Intersol SL",
+              "ownership_pct": 51.0,
+              "parent": null,
+              "page_reference": 303,
+              "section_title": "באור 19 - התקשרויות, תלויות, שעבודים וערבויות - א. התקשרויות - 2. ספרד - ז. הסכמי EPC",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Qanquina",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 306,
+              "section_title": "באור 19 - התקשרויות, תלויות, שעבודים וערבויות - א. התקשרויות - 3. צ'ילה - א. פרויקטים בצ'ילה",
+              "table_title": "שם הפרויקט שנת רכישה שעור אחזקה מגה וואט שלב הפרויקט",
+              "note": null
+            },
+            {
+              "name": "Cachiyuyo",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 306,
+              "section_title": "באור 19 - התקשרויות, תלויות, שעבודים וערבויות - א. התקשרויות - 3. צ'ילה - א. פרויקטים בצ'ילה",
+              "table_title": "שם הפרויקט שנת רכישה שעור אחזקה מגה וואט שלב הפרויקט",
+              "note": null
+            },
+            {
+              "name": "Calbuco",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 306,
+              "section_title": "באור 19 - התקשרויות, תלויות, שעבודים וערבויות - א. התקשרויות - 3. צ'ילה - א. פרויקטים בצ'ילה",
+              "table_title": "שם הפרויקט שנת רכישה שעור אחזקה מגה וואט שלב הפרויקט",
+              "note": null
+            },
+            {
+              "name": "ESMERALDA & Hortensia",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 306,
+              "section_title": "באור 19 - התקשרויות, תלויות, שעבודים וערבויות - א. התקשרויות - 3. צ'ילה - א. פרויקטים בצ'ילה",
+              "table_title": "שם הפרויקט שנת רכישה שעור אחזקה מגה וואט שלב הפרויקט",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:18": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "Transmision San Camilo SpA",
+              "ownership_pct": 51.0,
+              "parent": null,
+              "page_reference": 307,
+              "section_title": "באור 19 - התקשרויות, תלויות, שעבודים וערבויות (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Energy Intersol Calbuco SpA",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 308,
+              "section_title": "באור 19 - התקשרויות, תלויות, שעבודים וערבויות (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "שותפות סולאיר –טי.די.איי",
+              "ownership_pct": 70.0,
+              "parent": null,
+              "page_reference": 310,
+              "section_title": "באור 19 - התקשרויות, תלויות, שעבודים וערבויות (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "רה סולאר",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 321,
+              "section_title": "באור 26 - יתרות ועסקאות עם בעלי עניין וצדדים קשורים (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אגווה סול",
+              "ownership_pct": 51.0,
+              "parent": null,
+              "page_reference": 321,
+              "section_title": "באור 26 - יתרות ועסקאות עם בעלי עניין וצדדים קשורים (המשך)",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:19": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "SpA Calbuco Intersol Energy",
+              "ownership_pct": 47.4,
+              "parent": null,
+              "page_reference": 327,
+              "section_title": "באור 28 - אירועים לאחר תאריך המאזן",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Trends Industrial SpA",
+              "ownership_pct": 51.0,
+              "parent": null,
+              "page_reference": 328,
+              "section_title": "באור 28 - אירועים לאחר תאריך המאזן (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "L.S Development Sol-Agua S.L",
+              "ownership_pct": 51.0,
+              "parent": null,
+              "page_reference": 328,
+              "section_title": "באור 28 - אירועים לאחר תאריך המאזן (המשך)",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:20": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "Investment 2 S.L Himin",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 358,
+              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות קשורות מהותיות לתאריך הדוח על המצב הכספי",
+              "note": null
+            },
+            {
+              "name": "Alizarsun S.L",
+              "ownership_pct": 71,
+              "parent": null,
+              "page_reference": 358,
+              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות קשורות מהותיות לתאריך הדוח על המצב הכספי",
+              "note": null
+            },
+            {
+              "name": "Re-Solar",
+              "ownership_pct": 47.43,
+              "parent": null,
+              "page_reference": 358,
+              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות קשורות מהותיות לתאריך הדוח על המצב הכספי",
+              "note": null
+            },
+            {
+              "name": "Intersol S.L Energy",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 358,
+              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות קשורות מהותיות לתאריך הדוח על המצב הכספי",
+              "note": null
+            },
+            {
+              "name": "סול נטו 1 ש.מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 358,
+              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות קשורות מהותיות לתאריך הדוח על המצב הכספי",
+              "note": "החברה מכרה את זכויות ההחזקה סולנטו 1 ביום 29/12/2025"
+            },
+            {
+              "name": "Solsticio Holding SSARL",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 360,
+              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 12: שינויים בהשקעות בחברות בנות ובחברות כלולות מהותיות בתקופת הדוח",
+              "note": "בשנת 2025 בוצע החזר השקעה באמצעות הלוואה חיצונית שהתקבלה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:21": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "Investment 2 S.L Himin",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 358,
+              "section_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות קשורות מהותיות לתאריך הדוח על המצב הכספי",
+              "table_title": "תקנה 11",
+              "note": "מחזיקה בפרויקט אלצ'ה ובזכויות בפרויקט אנפק"
+            },
+            {
+              "name": "Alizarsun S.L",
+              "ownership_pct": 71,
+              "parent": null,
+              "page_reference": 358,
+              "section_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות קשורות מהותיות לתאריך הדוח על המצב הכספי",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "Re-Solar",
+              "ownership_pct": 47.43,
+              "parent": null,
+              "page_reference": 358,
+              "section_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות קשורות מהותיות לתאריך הדוח על המצב הכספי",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "Intersol S.L Energy",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 358,
+              "section_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות קשורות מהותיות לתאריך הדוח על המצב הכספי",
+              "table_title": "תקנה 11",
+              "note": "חברת הקבלנות לפרויקטי ספרד"
+            },
+            {
+              "name": "סול נטו 1 ש.מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 358,
+              "section_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות קשורות מהותיות לתאריך הדוח על המצב הכספי",
+              "table_title": "תקנה 11",
+              "note": "החברה מכרה את זכויות ההחזקה סולנטו 1 ביום 29/12/2025"
+            },
+            {
+              "name": "Solsticio Holding SSARL",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 360,
+              "section_title": "תקנה 12: שינויים בהשקעות בחברות בנות ובחברות כלולות מהותיות בתקופת הדוח",
+              "table_title": "תקנה 12",
+              "note": "בשנת 2025 בוצע החזר השקעה באמצעות הלוואה חיצונית שהתקבלה"
+            }
+          ],
+          "change_events": [
+            {
+              "company": "סול נטו 1 ש.מ",
+              "event_type": "full_disposal",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 0,
+              "event_date": "2025-12-29",
+              "event_description": "החברה מכרה את זכויות ההחזקה סולנטו 1 ביום 29/12/2025",
+              "page_reference": 359,
+              "section_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות קשורות מהותיות לתאריך הדוח על המצב הכספי"
+            }
+          ]
+        }
+      },
       "attempts": {}
     }
   },
   "1732651": {
     "company_id": "2063",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-16T11:52:04.933254+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 29,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-17T10:34:52.785644+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731305": {
     "company_id": "382",
