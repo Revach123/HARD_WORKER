@@ -2797,132 +2797,100 @@
   },
   "1730974": {
     "company_id": "1300",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-18T10:10:23.109202+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1741853": {
+    "company_id": "211",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-18T10:10:15.696689+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1731531": {
+    "company_id": "1467",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-18T10:14:02.576808+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1733223": {
+    "company_id": "486",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-18T10:15:13.881817+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1731521": {
+    "company_id": "2386",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-18T10:18:12.999302+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1731106": {
+    "company_id": "2536",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-18T10:16:29.413070+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1759948": {
+    "company_id": "1581",
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-17T11:19:23.257817+00:00",
+    "at": "2026-09-18T10:21:01.425768+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
-      "total": 21,
+      "total": 20,
       "done": {
         "0:0": {
           "report_format": "israeli_periodic",
           "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "נצבא החזקות 1995 בע\"מ",
-              "ownership_pct": 42.74,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "1.1.3 להלן תרשים מבנה החזקותיה המהותיות של החברה, נכון למועד הדוח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "נצבא חברה להתנחלות בע\"מ",
-              "ownership_pct": 49.34,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "1.1.3 להלן תרשים מבנה החזקותיה המהותיות של החברה, נכון למועד הדוח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "משגב חברה להשקעות בע\"מ",
-              "ownership_pct": 92.46,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "1.1.3 להלן תרשים מבנה החזקותיה המהותיות של החברה, נכון למועד הדוח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "משגבית החזקות (1995) בע\"מ",
-              "ownership_pct": 100.0,
-              "parent": "משגב חברה להשקעות בע\"מ",
-              "page_reference": 6,
-              "section_title": "1.1.3 להלן תרשים מבנה החזקותיה המהותיות של החברה, נכון למועד הדוח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Nitsba Europe S.A.",
-              "ownership_pct": 100.0,
-              "parent": "נצבא החזקות 1995 בע\"מ",
-              "page_reference": 7,
-              "section_title": "להלן תרשים מבנה החזקותיה המהותיות של נצבא, נכון למועד הדוח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מפעלי תחנות בע\"מ",
-              "ownership_pct": 99.7,
-              "parent": "נצבא החזקות 1995 בע\"מ",
-              "page_reference": 7,
-              "section_title": "להלן תרשים מבנה החזקותיה המהותיות של נצבא, נכון למועד הדוח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "תפוז ייזום ופיתוח תחנות בע\"מ",
-              "ownership_pct": 100.0,
-              "parent": "מפעלי תחנות בע\"מ",
-              "page_reference": 7,
-              "section_title": "להלן תרשים מבנה החזקותיה המהותיות של נצבא, נכון למועד הדוח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "לקסן ישראל בע\"מ",
-              "ownership_pct": 100.0,
-              "parent": "נצבא החזקות 1995 בע\"מ",
-              "page_reference": 7,
-              "section_title": "להלן תרשים מבנה החזקותיה המהותיות של נצבא, נכון למועד הדוח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "נכסים ייזום ופיתוח (נ.י.פ.) בע\"מ",
-              "ownership_pct": 99.9,
-              "parent": "נצבא החזקות 1995 בע\"מ",
-              "page_reference": 7,
-              "section_title": "להלן תרשים מבנה החזקותיה המהותיות של נצבא, נכון למועד הדוח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "התחנה המרכזית החדשה בתל-אביב בע\"מ",
-              "ownership_pct": 99.75,
-              "parent": "נכסים ייזום ופיתוח (נ.י.פ.) בע\"מ",
-              "page_reference": 7,
-              "section_title": "להלן תרשים מבנה החזקותיה המהותיות של נצבא, נכון למועד הדוח:",
-              "table_title": null,
-              "note": null
-            }
-          ],
+          "as_of_date": null,
+          "subsidiaries": [],
           "change_events": []
         },
         "0:1": {
           "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
+          "document_type": "change_events",
+          "as_of_date": null,
           "subsidiaries": [],
-          "change_events": []
+          "change_events": [
+            {
+              "company": "ביזם המשותף ארה\"ב",
+              "event_type": "increase",
+              "ownership_pct_before": 58,
+              "ownership_pct_after": null,
+              "event_date": null,
+              "event_description": "רכישת זכויות המיעוט ביזם המשותף ארה\"ב",
+              "page_reference": 37,
+              "section_title": "ג. פעילות החברה בתחום הפוטו-וולטאי בארצות הברית"
+            }
+          ]
         },
         "0:2": {
           "report_format": "israeli_periodic",
           "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
+          "as_of_date": null,
           "subsidiaries": [],
           "change_events": []
         },
         "0:3": {
           "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
+          "document_type": "unknown",
+          "as_of_date": null,
           "subsidiaries": [],
           "change_events": []
         },
@@ -2936,14 +2904,14 @@
         "0:5": {
           "report_format": "israeli_periodic",
           "document_type": "ownership_snapshot",
-          "as_of_date": null,
+          "as_of_date": "2025-12-31",
           "subsidiaries": [],
           "change_events": []
         },
         "0:6": {
           "report_format": "israeli_periodic",
           "document_type": "ownership_snapshot",
-          "as_of_date": null,
+          "as_of_date": "2025-12-31",
           "subsidiaries": [],
           "change_events": []
         },
@@ -2955,22 +2923,22 @@
           "change_events": []
         },
         "0:8": {
-          "report_format": "other",
-          "document_type": "unknown",
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
           "as_of_date": "2025-12-31",
           "subsidiaries": [],
           "change_events": []
         },
         "0:9": {
           "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
+          "document_type": "unknown",
           "as_of_date": null,
           "subsidiaries": [],
           "change_events": []
         },
         "0:10": {
           "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
+          "document_type": "unknown",
           "as_of_date": "2025-12-31",
           "subsidiaries": [],
           "change_events": []
@@ -2978,15 +2946,161 @@
         "0:11": {
           "report_format": "israeli_periodic",
           "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
+          "as_of_date": "2023-12-31",
+          "subsidiaries": [
+            {
+              "name": "אנרג'יקס פרויקטים אנרגיות מתחדשות (לשעבר-המיזם המשותף ישראל)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 192,
+              "section_title": "ביאור 1 - כללי (המשך)",
+              "table_title": null,
+              "note": "שותפות מוגבלת בבעלות מלאה של החברה"
+            },
+            {
+              "name": "אנרג'יקס פרויקטים 2",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 192,
+              "section_title": "ביאור 1 - כללי (המשך)",
+              "table_title": null,
+              "note": "למעט זכויות ישובים בהתאם להוראות רמ\"י"
+            },
+            {
+              "name": "אנרג'יקס מכרז 2",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 192,
+              "section_title": "ביאור 1 - כללי (המשך)",
+              "table_title": null,
+              "note": "למעט זכויות ישובים בהתאם להוראות רמ\"י"
+            },
+            {
+              "name": "אנרג'יקס מכרז 3-4",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 192,
+              "section_title": "ביאור 1 - כללי (המשך)",
+              "table_title": null,
+              "note": "למעט זכויות ישובים בהתאם להוראות רמ\"י"
+            },
+            {
+              "name": "אנרג'יקס פרויקטים 1",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 193,
+              "section_title": "ביאור 1 - כללי (המשך)",
+              "table_title": null,
+              "note": null
+            }
+          ],
           "change_events": []
         },
         "0:12": {
           "report_format": "israeli_periodic",
           "document_type": "ownership_snapshot",
           "as_of_date": "2025-12-31",
-          "subsidiaries": [],
+          "subsidiaries": [
+            {
+              "name": "פרויקטים פוטו-וולטאיים ופוטו-וולטאיים בשילוב אגירה (ישראל)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 219,
+              "section_title": "ביאור 10 - מערכות לייצור חשמל מחוברות, בהקמה ורכוש קבוע אחר",
+              "table_title": "מערכות לייצור חשמל מחוברות",
+              "note": null
+            },
+            {
+              "name": "פרויקטי רוח (פולין)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 219,
+              "section_title": "ביאור 10 - מערכות לייצור חשמל מחוברות, בהקמה ורכוש קבוע אחר",
+              "table_title": "מערכות לייצור חשמל מחוברות",
+              "note": "כולל את חוות הרוח Banie1, Banie2, Banie3, Banie4, Sepopol, Ilawa"
+            },
+            {
+              "name": "פרויקט Lubanowo (פולין)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 219,
+              "section_title": "ביאור 10 - מערכות לייצור חשמל מחוברות, בהקמה ורכוש קבוע אחר",
+              "table_title": "מערכות לייצור חשמל מחוברות",
+              "note": null
+            },
+            {
+              "name": "Nowe Czarnowo 1 (פולין)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 219,
+              "section_title": "ביאור 10 - מערכות לייצור חשמל מחוברות, בהקמה ורכוש קבוע אחר",
+              "table_title": "מערכות לייצור חשמל מחוברות",
+              "note": null
+            },
+            {
+              "name": "פרויקטים פוטו-וולטאיים (ארה\"ב)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 219,
+              "section_title": "ביאור 10 - מערכות לייצור חשמל מחוברות, בהקמה ורכוש קבוע אחר",
+              "table_title": "מערכות לייצור חשמל מחוברות",
+              "note": null
+            },
+            {
+              "name": "פרויקטים פוטו-וולטאיים בשילוב אגירה (ישראל - בהקמה)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 221,
+              "section_title": "ביאור 10 - מערכות לייצור חשמל מחוברות, בהקמה ורכוש קבוע אחר",
+              "table_title": "מערכות לייצור חשמל בהקמה ולקראת הקמה",
+              "note": null
+            },
+            {
+              "name": "אר\"ן (ישראל - בהקמה)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 221,
+              "section_title": "ביאור 10 - מערכות לייצור חשמל מחוברות, בהקמה ורכוש קבוע אחר",
+              "table_title": "מערכות לייצור חשמל בהקמה ולקראת הקמה",
+              "note": null
+            },
+            {
+              "name": "פרויקט PV בפולין (בהקמה)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 221,
+              "section_title": "ביאור 10 - מערכות לייצור חשמל מחוברות, בהקמה ורכוש קבוע אחר",
+              "table_title": "מערכות לייצור חשמל בהקמה ולקראת הקמה",
+              "note": null
+            },
+            {
+              "name": "Nowe Czarnowo 2 (פולין - בהקמה)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 221,
+              "section_title": "ביאור 10 - מערכות לייצור חשמל מחוברות, בהקמה ורכוש קבוע אחר",
+              "table_title": "מערכות לייצור חשמל בהקמה ולקראת הקמה",
+              "note": null
+            },
+            {
+              "name": "פרויקט רוח (פולין - בהקמה)",
+              "ownership_pct": 80.5,
+              "parent": null,
+              "page_reference": 221,
+              "section_title": "ביאור 10 - מערכות לייצור חשמל מחוברות, בהקמה ורכוש קבוע אחר",
+              "table_title": "מערכות לייצור חשמל בהקמה ולקראת הקמה",
+              "note": null
+            },
+            {
+              "name": "צבר פרויקטים E4,E5,E6 (ארה\"ב - בהקמה)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 221,
+              "section_title": "ביאור 10 - מערכות לייצור חשמל מחוברות, בהקמה ורכוש קבוע אחר",
+              "table_title": "מערכות לייצור חשמל בהקמה ולקראת הקמה",
+              "note": null
+            }
+          ],
           "change_events": []
         },
         "0:13": {
@@ -2995,84 +3109,129 @@
           "as_of_date": "2025-12-31",
           "subsidiaries": [
             {
-              "name": "נצבא החזקות 1995 בע\"מ",
-              "ownership_pct": 42.74,
-              "parent": null,
-              "page_reference": 250,
-              "section_title": "באור 12 - השקעות בחברות מוחזקות",
-              "table_title": "פרטים נוספים בדבר חברות מאוחדות המוחזקות במישרין על ידי החברה",
-              "note": "אחזקה נוספת דרך נצבא חברה להתנחלות בע\"מ בשיעור של 57.26%."
-            },
-            {
-              "name": "נצבא חברה להתנחלות בע\"מ",
-              "ownership_pct": 96.36,
-              "parent": null,
-              "page_reference": 250,
-              "section_title": "באור 12 - השקעות בחברות מוחזקות",
-              "table_title": "פרטים נוספים בדבר חברות מאוחדות המוחזקות במישרין על ידי החברה",
-              "note": "אחזקה אפקטיבית, כולל אחזקה באמצעות חברת משגב חברה להשקעות בע\"מ."
-            },
-            {
-              "name": "משגב חברה להשקעות בע\"מ",
-              "ownership_pct": 92.46,
-              "parent": null,
-              "page_reference": 250,
-              "section_title": "באור 12 - השקעות בחברות מוחזקות",
-              "table_title": "פרטים נוספים בדבר חברות מאוחדות המוחזקות במישרין על ידי החברה",
-              "note": null
-            },
-            {
-              "name": "קשת מלונאות בע\"מ",
-              "ownership_pct": 93,
-              "parent": null,
-              "page_reference": 250,
-              "section_title": "באור 12 - השקעות בחברות מוחזקות",
-              "table_title": "פרטים נוספים בדבר חברות מאוחדות המוחזקות במישרין על ידי החברה",
-              "note": null
-            },
-            {
-              "name": "קשת ניהול ואחזקה (1999) בע\"מ",
+              "name": "Fieldon investments Sp. z o.o Wiatromill Sp. J (פרויקט 1+2 Banie)",
               "ownership_pct": 100,
               "parent": null,
-              "page_reference": 250,
-              "section_title": "באור 12 - השקעות בחברות מוחזקות",
-              "table_title": "פרטים נוספים בדבר חברות מאוחדות המוחזקות במישרין על ידי החברה",
+              "page_reference": 234,
+              "section_title": "ביאור 11 - השקעות בחברות מוחזקות - א. חברות בנות - (1) פרטים בדבר חברות מאוחדות",
+              "table_title": null,
               "note": null
             },
             {
-              "name": "קשת ייזום ופיתוח בע\"מ",
+              "name": "Glavent Investments Sp. z o.o Orlik J .Sp. (פרויקט Ilawa)",
               "ownership_pct": 100,
               "parent": null,
-              "page_reference": 250,
-              "section_title": "באור 12 - השקעות בחברות מוחזקות",
-              "table_title": "פרטים נוספים בדבר חברות מאוחדות המוחזקות במישרין על ידי החברה",
+              "page_reference": 234,
+              "section_title": "ביאור 11 - השקעות בחברות מוחזקות - א. חברות בנות - (1) פרטים בדבר חברות מאוחדות",
+              "table_title": null,
               "note": null
             },
             {
-              "name": "תנובות קשת בע\"מ",
+              "name": "Eneal J .Sp (פרויקט Sepopol)",
               "ownership_pct": 100,
               "parent": null,
-              "page_reference": 250,
-              "section_title": "באור 12 - השקעות בחברות מוחזקות",
-              "table_title": "פרטים נוספים בדבר חברות מאוחדות המוחזקות במישרין על ידי החברה",
+              "page_reference": 234,
+              "section_title": "ביאור 11 - השקעות בחברות מוחזקות - א. חברות בנות - (1) פרטים בדבר חברות מאוחדות",
+              "table_title": null,
               "note": null
             },
             {
-              "name": "קשת קונגרסים בע\"מ",
+              "name": "3 Banie J .Sp (פרויקט באני 3)",
               "ownership_pct": 100,
               "parent": null,
-              "page_reference": 250,
-              "section_title": "באור 12 - השקעות בחברות מוחזקות",
-              "table_title": "פרטים נוספים בדבר חברות מאוחדות המוחזקות במישרין על ידי החברה",
+              "page_reference": 234,
+              "section_title": "ביאור 11 - השקעות בחברות מוחזקות - א. חברות בנות - (1) פרטים בדבר חברות מאוחדות",
+              "table_title": null,
               "note": null
             },
             {
-              "name": "איירפורט סיטי ייזום ופיתוח שותפות מוגבלת",
-              "ownership_pct": 99.9,
+              "name": "Enertrag Krajnik Sp. Z.o.o (פרויקט 4 Banie)",
+              "ownership_pct": 100,
               "parent": null,
-              "page_reference": 250,
-              "section_title": "באור 12 - השקעות בחברות מוחזקות",
-              "table_title": "פרטים נוספים בדבר חברות מאוחדות המוחזקות במישרין על ידי החברה",
+              "page_reference": 234,
+              "section_title": "ביאור 11 - השקעות בחברות מוחזקות - א. חברות בנות - (1) פרטים בדבר חברות מאוחדות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Energix US LLC",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 234,
+              "section_title": "ביאור 11 - השקעות בחברות מוחזקות - א. חברות בנות - (1) פרטים בדבר חברות מאוחדות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Energix US Parent LLC",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 234,
+              "section_title": "ביאור 11 - השקעות בחברות מוחזקות - א. חברות בנות - (1) פרטים בדבר חברות מאוחדות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אנרג'יקס ישראל, שותפות מוגבלת",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 234,
+              "section_title": "ביאור 11 - השקעות בחברות מוחזקות - א. חברות בנות - (1) פרטים בדבר חברות מאוחדות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אנרג'יקס מכרזים א', שותפות מוגבלת",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 234,
+              "section_title": "ביאור 11 - השקעות בחברות מוחזקות - א. חברות בנות - (1) פרטים בדבר חברות מאוחדות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אנרג'יקס הקמה, שותפות מוגבלת",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 234,
+              "section_title": "ביאור 11 - השקעות בחברות מוחזקות - א. חברות בנות - (1) פרטים בדבר חברות מאוחדות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אנרג'יקס נאות חובב בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 234,
+              "section_title": "ביאור 11 - השקעות בחברות מוחזקות - א. חברות בנות - (1) פרטים בדבר חברות מאוחדות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אנרג'יקס פרויקטים, 2 שותפות מוגבלת",
+              "ownership_pct": 97,
+              "parent": null,
+              "page_reference": 234,
+              "section_title": "ביאור 11 - השקעות בחברות מוחזקות - א. חברות בנות - (1) פרטים בדבר חברות מאוחדות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אנרגית רוח נקייה בע\"מ (אר\"ן)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 234,
+              "section_title": "ביאור 11 - השקעות בחברות מוחזקות - א. חברות בנות - (1) פרטים בדבר חברות מאוחדות",
+              "table_title": null,
+              "note": "שיעור החזקה אפקטיבי (המשפטי הינו 80.5%)"
+            },
+            {
+              "name": "אנרג'יקס אנרגיות מתחדשות, שותפות מוגבלת (המיזם המשותף)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 234,
+              "section_title": "ביאור 11 - השקעות בחברות מוחזקות - א. חברות בנות - (1) פרטים בדבר חברות מאוחדות",
+              "table_title": null,
               "note": null
             }
           ],
@@ -3084,22 +3243,22 @@
           "as_of_date": "2025-12-31",
           "subsidiaries": [
             {
-              "name": "נצבא התנחלות",
-              "ownership_pct": 99.3,
+              "name": "פעילות החברה בארה\"ב (מיזם ארה\"ב)",
+              "ownership_pct": 100,
               "parent": null,
-              "page_reference": 281,
-              "section_title": "באור 22 - התחייבות לרכישת זכויות שאינן מקנות שליטה בחברות מאוחדות",
+              "page_reference": 253,
+              "section_title": "ביאור 15 - התקשרויות ומידע נוסף אודות פעילות הייזום והפיתוח של החברה",
               "table_title": null,
-              "note": null
+              "note": "בבעלות מלאה (100%) נכון למועד הדוח. עד לחודש אפריל 2023 הוחזקו 58% במסגרת מיזם משותף."
             },
             {
-              "name": "בית אגד בע\"מ",
-              "ownership_pct": null,
+              "name": "פעילות החברה בישראל בתחום הפוטו-וולטאי",
+              "ownership_pct": 100,
               "parent": null,
-              "page_reference": 281,
-              "section_title": "באור 22 - התחייבות לרכישת זכויות שאינן מקנות שליטה בחברות מאוחדות",
+              "page_reference": 252,
+              "section_title": "ביאור 15 - התקשרויות ומידע נוסף אודות פעילות הייזום והפיתוח של החברה",
               "table_title": null,
-              "note": "בעלי מיעוט מחזיקים בכ-1.4%"
+              "note": "מלוא פעילות החברה בתחום הפוטו-וולטאי בישראל בבעלות מלאה (למעט זכויות יישובים במקרקעין בהתאם לדרישות רמ\"י)."
             }
           ],
           "change_events": []
@@ -3113,17 +3272,112 @@
         },
         "0:16": {
           "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:17": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:18": {
+          "report_format": "israeli_periodic",
           "document_type": "ownership_snapshot",
           "as_of_date": "2025-12-31",
           "subsidiaries": [
             {
-              "name": "נצבא התנחלות",
-              "ownership_pct": null,
+              "name": "אנרג'יקס מכרזים א' , שותפות מוגבלת",
+              "ownership_pct": 100,
               "parent": null,
-              "page_reference": 291,
-              "section_title": "באור 7 - השקעה בחברות מוחזקות",
-              "table_title": "ב. תנועה",
-              "note": "פקיעת התחייבות לרכישת מניות נצבא התנחלות"
+              "page_reference": 627,
+              "section_title": "פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 - השקעות בחברות בנות ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי",
+              "note": null
+            },
+            {
+              "name": "Energix Renewable energies Holding B.V",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 627,
+              "section_title": "פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 - השקעות בחברות בנות ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי",
+              "note": null
+            },
+            {
+              "name": "Energix US LLC",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 627,
+              "section_title": "פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 - השקעות בחברות בנות ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי",
+              "note": null
+            },
+            {
+              "name": "אנרגי'קס נאות חובב בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 627,
+              "section_title": "פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 - השקעות בחברות בנות ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי",
+              "note": null
+            },
+            {
+              "name": "אנרג'יקס הקמה, שותפות מוגבלת",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 627,
+              "section_title": "פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 - השקעות בחברות בנות ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי",
+              "note": null
+            },
+            {
+              "name": "אנרגיית רוח נקייה בע\"מ",
+              "ownership_pct": 81,
+              "parent": null,
+              "page_reference": 627,
+              "section_title": "פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 - השקעות בחברות בנות ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי",
+              "note": null
+            },
+            {
+              "name": "אנרג'יקס אנרגיות מתחדשות, שותפות מוגבלת",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 627,
+              "section_title": "פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 - השקעות בחברות בנות ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי",
+              "note": null
+            },
+            {
+              "name": "אנרג'יקס פרויקטים ,2 שותפות מוגבלת",
+              "ownership_pct": 97,
+              "parent": null,
+              "page_reference": 627,
+              "section_title": "פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 - השקעות בחברות בנות ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי",
+              "note": null
+            },
+            {
+              "name": "אנרג'יקס ישראל, שותפות מוגבלת",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 627,
+              "section_title": "פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 - השקעות בחברות בנות ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי",
+              "note": null
+            },
+            {
+              "name": "אנרג'יקס הנדסה, שותפות מוגבלת",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 627,
+              "section_title": "פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 - השקעות בחברות בנות ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי",
+              "note": null
             }
           ],
           "change_events": []
@@ -3132,110 +3386,13 @@
       "attempts": {}
     }
   },
-  "1741853": {
-    "company_id": "211",
-    "status": "partial",
-    "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-17T11:19:28.317219+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1731531": {
-    "company_id": "1467",
-    "status": "partial",
-    "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-17T11:19:23.935422+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 15,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1733223": {
-    "company_id": "486",
-    "status": "partial",
-    "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-17T11:19:24.437551+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 20,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1731521": {
-    "company_id": "2386",
-    "status": "partial",
-    "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-17T11:19:24.939703+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 18,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1731106": {
-    "company_id": "2536",
-    "status": "partial",
-    "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-17T11:19:25.297754+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 7,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1759948": {
-    "company_id": "1581",
-    "status": "partial",
-    "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-17T11:19:40.584320+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 20,
-      "done": {},
-      "attempts": {}
-    }
-  },
   "1732159": {
     "company_id": "1786",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-17T11:19:28.802320+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 12,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-18T10:20:53.958140+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731658": {
     "company_id": "756",
@@ -3257,13 +3414,40 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-17T11:19:29.416807+00:00",
+    "at": "2026-09-18T10:21:09.592277+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 29,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "מקורות פיתוח וייזום בע\"מ",
+              "ownership_pct": 99.7,
+              "parent": null,
+              "page_reference": 18,
+              "section_title": "מבנה האחזקות של קבוצת מקורות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "שח\"מ מקורות ביצוע בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 19,
+              "section_title": "מבנה האחזקות של קבוצת מקורות",
+              "table_title": null,
+              "note": "בבעלות מלאה"
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
@@ -38030,5 +38214,21 @@
       "done": {},
       "attempts": {}
     }
+  },
+  "1771493": {
+    "company_id": "2559",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-18T10:09:50.516542+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1771526": {
+    "company_id": "2532",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-18T10:09:31.843731+00:00",
+    "model": "gemini-3.5-flash-lite"
   }
 }
