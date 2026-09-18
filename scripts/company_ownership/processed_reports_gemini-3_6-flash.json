@@ -897,8 +897,8 @@
     "company_id": "2580",
     "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-09-17T08:05:32.522611+00:00",
+    "attempts": 2,
+    "at": "2026-09-18T08:13:27.977939+00:00",
     "model": "gemini-3.6-flash"
   },
   "1729229": {
@@ -907,6 +907,30 @@
     "kind": "snapshot",
     "attempts": 1,
     "at": "2026-09-17T08:24:14.273703+00:00",
+    "model": "gemini-3.6-flash"
+  },
+  "1729772": {
+    "company_id": "1264",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-18T08:15:39.652877+00:00",
+    "model": "gemini-3.6-flash"
+  },
+  "1730633": {
+    "company_id": "539",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-18T08:19:13.825654+00:00",
+    "model": "gemini-3.6-flash"
+  },
+  "1736197": {
+    "company_id": "1722",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-18T08:22:23.086573+00:00",
     "model": "gemini-3.6-flash"
   }
 }
