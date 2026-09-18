@@ -5511,406 +5511,43 @@
   },
   "1724382": {
     "company_id": "1152",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-18T10:45:52.564779+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 16,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-02-23",
-          "subsidiaries": [
-            {
-              "name": "סאן דור נתיבי אויר בינלאומיים בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "1.3 תרשים החזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ת.מ.מ. תעשיות מזון מטוסים (נמל תעופה בן גוריון) בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "1.3 תרשים החזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Borenstein Carerers, Inc.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "1.3 תרשים החזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אל על הנוסע המתמיד בע\"מ",
-              "ownership_pct": 75,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "1.3 תרשים החזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "קוקפיט חדשנות בע\"מ",
-              "ownership_pct": 80.9,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "1.3 תרשים החזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אייר קונסורטירס ישראל בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "1.3 תרשים החזקות",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "סאן דור נתיבי אויר בינלאומיים בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 32,
-              "section_title": "8.7.1 תיאור תמציתי של עסקי החברות הבנות העיקריות",
-              "table_title": null,
-              "note": "חברה בבעלות מלאה"
-            },
-            {
-              "name": "ת.מ.מ. – תעשיות מזון מטוסים (נמל תעופה בן גוריון) בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 32,
-              "section_title": "8.7.1 תיאור תמציתי של עסקי החברות הבנות העיקריות",
-              "table_title": null,
-              "note": "חברה בבעלות מלאה"
-            },
-            {
-              "name": "BORENSTEIN CATERERS, INC.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 32,
-              "section_title": "8.7.1 תיאור תמציתי של עסקי החברות הבנות העיקריות",
-              "table_title": null,
-              "note": "חברה בבעלות מלאה"
-            },
-            {
-              "name": "קוקפיט חדשנות בע\"מ",
-              "ownership_pct": 80.9,
-              "parent": null,
-              "page_reference": 33,
-              "section_title": "8.7.1 תיאור תמציתי של עסקי החברות הבנות העיקריות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אייר קונסולידטורס ישראל בע\"מ (אק\"י)",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 33,
-              "section_title": "8.7.1 תיאור תמציתי של עסקי החברות הבנות העיקריות",
-              "table_title": null,
-              "note": "מחזיקה בכלל מניותיה מסוג ב'"
-            },
-            {
-              "name": "אל על הנוסע המתמיד בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 33,
-              "section_title": "8.7.1 תיאור תמציתי של עסקי החברות הבנות העיקריות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ELAL ISRAEL AIRLINES GULF FZCO",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 33,
-              "section_title": "8.7.1 תיאור תמציתי של עסקי החברות הבנות העיקריות",
-              "table_title": null,
-              "note": "בהליכי פירוק מרצון"
-            },
-            {
-              "name": "פליי אין שותפות מוגבלת",
-              "ownership_pct": 50.09,
-              "parent": null,
-              "page_reference": 33,
-              "section_title": "8.7.2 תיאור תמציתי של החזקות נוספות של החברה",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "סאן דור נתיבי אויר בינלאומיים בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 67,
-              "section_title": "פעילות הקבוצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אל על הנוסע המתמיד בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 67,
-              "section_title": "פעילות הקבוצה",
-              "table_title": null,
-              "note": "חברת המועדון"
-            },
-            {
-              "name": "ת.מ.מ. - תעשיות מזון מטוסים (נמל תעופה בן גוריון) בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 67,
-              "section_title": "פעילות הקבוצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Borenstein Caterers Inc.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 67,
-              "section_title": "פעילות הקבוצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "קוקפיט חדשנות בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 67,
-              "section_title": "פעילות הקבוצה",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": [
-            {
-              "company": "אל על הנוסע המתמיד בע\"מ",
-              "event_type": "increase",
-              "ownership_pct_before": null,
-              "ownership_pct_after": null,
-              "event_date": "2026-02-19",
-              "event_description": "מימוש אופציה לרכישת 5.1% מהון המניות של חברת המועדון",
-              "page_reference": 70,
-              "section_title": "דוח הדירקטוריון על מצב ענייני התאגיד"
-            }
-          ]
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "אל על הנוסע המתמיד בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 69,
-              "section_title": "פרק ב | דוח הדירקטוריון",
-              "table_title": null,
-              "note": "חברת בת, מוזכרת רכישת 5.1% מהון המניות במסגרת מימוש אופציה"
-            },
-            {
-              "name": "סאן דור",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 71,
-              "section_title": "פרק ב | דוח הדירקטוריון",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": [
-            {
-              "company": "אל על הנוסע המתמיד בע\"מ",
-              "event_type": "increase",
-              "ownership_pct_before": null,
-              "ownership_pct_after": null,
-              "event_date": "2026-02-19",
-              "event_description": "מימוש אופציה לרכישת 5.1% מהון המניות של חברת המועדון",
-              "page_reference": 70,
-              "section_title": "פרק ב | דוח הדירקטוריון"
-            }
-          ]
-        },
-        "0:5": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:6": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "ת.מ.מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 106,
-              "section_title": "א.7 נכסים שאינם משועבדים",
-              "table_title": null,
-              "note": "מוזכרת כחברת בת"
-            }
-          ],
-          "change_events": []
-        },
-        "0:7": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "סאן דור נתיבי אויר בינלאומיים בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 133,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אל על הנוסע המתמיד בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 133,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ת.מ.מ. - תעשיות מזון מטוסים (נמל תעופה בן גוריון) בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 133,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Borenstein Inc Caterers",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 133,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "קוקפיט חדשנות בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 133,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-18T10:47:47.536037+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1735986": {
     "company_id": "1212",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-17T11:19:43.348195+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 13,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-18T10:49:34.228937+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1729715": {
     "company_id": "1871",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-17T11:19:43.740833+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 17,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-18T10:53:09.162391+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731061": {
     "company_id": "1608",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-17T11:19:44.844233+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 24,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-18T11:00:25.507979+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1730981": {
     "company_id": "1903",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-17T11:19:44.239086+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 22,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-18T10:56:03.247832+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732082": {
     "company_id": "506",
@@ -5929,91 +5566,290 @@
   },
   "1732551": {
     "company_id": "504",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-17T11:19:58.400326+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 17,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-18T11:02:36.216871+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1729108": {
     "company_id": "1689",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-17T11:19:45.986771+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 19,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-18T11:04:36.771125+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732640": {
     "company_id": "2490",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-17T11:19:56.101110+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 17,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-18T11:08:12.225216+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731528": {
     "company_id": "644",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-17T11:19:46.366438+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 13,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-18T11:06:18.286049+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732189": {
     "company_id": "2234",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-17T11:19:56.572116+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 9,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-18T11:08:37.065296+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1729251": {
     "company_id": "155",
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-17T11:19:57.049939+00:00",
+    "at": "2026-09-18T11:08:33.219333+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 17,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "מנרב באושה שותפות כללית",
+              "ownership_pct": 70.0,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "2.3 מבנה אחזקות הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פארק תשתיות אושה שותפות מוגבלת",
+              "ownership_pct": 64.5,
+              "parent": "מנרב באושה שותפות כללית",
+              "page_reference": 4,
+              "section_title": "2.3 מבנה אחזקות הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "טרף אגרמי - מנרב",
+              "ownership_pct": 80.0,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "2.3 מבנה אחזקות הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מנרב אף.אם בע\"מ",
+              "ownership_pct": 60.0,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "2.3 מבנה אחזקות הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מבט לנגב לקמו, שותפות כללית",
+              "ownership_pct": 51.0,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "2.3 מבנה אחזקות הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מנרב ארה\"ב בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "2.3 מבנה אחזקות הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Minrav NY LP",
+              "ownership_pct": 100.0,
+              "parent": "מנרב ארה\"ב בע\"מ",
+              "page_reference": 4,
+              "section_title": "2.3 מבנה אחזקות הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Minrav 368 Third LP",
+              "ownership_pct": 100.0,
+              "parent": "Minrav NY LP",
+              "page_reference": 4,
+              "section_title": "2.3 מבנה אחזקות הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "368 Third Member LLC",
+              "ownership_pct": 99.0,
+              "parent": "Minrav 368 Third LP",
+              "page_reference": 4,
+              "section_title": "2.3 מבנה אחזקות הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "368 Third Mezz LLC",
+              "ownership_pct": 99.24,
+              "parent": "368 Third Member LLC",
+              "page_reference": 4,
+              "section_title": "2.3 מבנה אחזקות הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "368 Third Owners LLC",
+              "ownership_pct": 100.0,
+              "parent": "368 Third Mezz LLC",
+              "page_reference": 4,
+              "section_title": "2.3 מבנה אחזקות הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Minrav 244 E LP",
+              "ownership_pct": 91.0,
+              "parent": "Minrav NY LP",
+              "page_reference": 4,
+              "section_title": "2.3 מבנה אחזקות הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "244 E52 MEMBER LLC",
+              "ownership_pct": 33.33,
+              "parent": "Minrav 244 E LP",
+              "page_reference": 4,
+              "section_title": "2.3 מבנה אחזקות הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "244 E 52 OWNER LLC",
+              "ownership_pct": 100.0,
+              "parent": "244 E52 MEMBER LLC",
+              "page_reference": 4,
+              "section_title": "2.3 מבנה אחזקות הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Minrav 343 E 17 St LP",
+              "ownership_pct": 79.0,
+              "parent": "Minrav NY LP",
+              "page_reference": 4,
+              "section_title": "2.3 מבנה אחזקות הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "343 E 17 St Member LLC",
+              "ownership_pct": 100.0,
+              "parent": "Minrav 343 E 17 St LP",
+              "page_reference": 4,
+              "section_title": "2.3 מבנה אחזקות הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "343 E 17 St Owner LLC",
+              "ownership_pct": 100.0,
+              "parent": "343 E 17 St Member LLC",
+              "page_reference": 4,
+              "section_title": "2.3 מבנה אחזקות הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Minrav 305 First Ave LP",
+              "ownership_pct": 67.0,
+              "parent": "Minrav NY LP",
+              "page_reference": 4,
+              "section_title": "2.3 מבנה אחזקות הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "305 First Ave Member LLC",
+              "ownership_pct": 100.0,
+              "parent": "Minrav 305 First Ave LP",
+              "page_reference": 4,
+              "section_title": "2.3 מבנה אחזקות הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "305 First Ave Owner LLC",
+              "ownership_pct": 100.0,
+              "parent": "305 First Ave Member LLC",
+              "page_reference": 4,
+              "section_title": "2.3 מבנה אחזקות הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מבט לנגב בע\"מ",
+              "ownership_pct": 32.18,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "2.3 מבנה אחזקות הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מבט לנגב תפעול בע\"מ",
+              "ownership_pct": 56.5,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "2.3 מבנה אחזקות הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דרך עפר בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "2.3 מבנה אחזקות הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "איי.א אם מנרב סדות",
+              "ownership_pct": 33.4,
+              "parent": "דרך עפר בע\"מ",
+              "page_reference": 4,
+              "section_title": "2.3 מבנה אחזקות הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "משב ארדן מערכות בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "2.3 מבנה אחזקות הקבוצה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
