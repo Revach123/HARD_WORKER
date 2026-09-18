@@ -897,9 +897,10 @@
     "company_id": "2580",
     "status": "success",
     "kind": "change",
-    "attempts": 2,
+    "attempts": 3,
     "at": "2026-09-18T08:13:27.977939+00:00",
-    "model": "gemini-3.6-flash"
+    "model": "gemini-3.6-flash",
+    "last_retry_at": "2026-09-18T10:32:30.736825+00:00"
   },
   "1729229": {
     "company_id": "169",
