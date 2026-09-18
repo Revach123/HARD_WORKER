@@ -5609,7 +5609,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-18T11:08:33.219333+00:00",
+    "at": "2026-09-18T11:09:00.269961+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -5848,6 +5848,20 @@
             }
           ],
           "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
         }
       },
       "attempts": {}
@@ -5858,13 +5872,49 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-17T11:19:57.467557+00:00",
+    "at": "2026-09-18T11:08:57.866738+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 15,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "ישראייר תעופה ותיירות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "הגדרות",
+              "table_title": null,
+              "note": "החברה הבת בבעלות מלאה"
+            },
+            {
+              "name": "Bird Aviation Ltd",
+              "ownership_pct": 87.5,
+              "parent": "ישראייר תעופה ותיירות בע\"מ",
+              "page_reference": 10,
+              "section_title": "אופיו ותוצאותיו של כל שינוי מבני, מיזוג או רכישה מהותיים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "חברות נכס ביוון (מלונות בראון)",
+              "ownership_pct": 25,
+              "parent": "ישראייר תעופה ותיירות בע\"מ",
+              "page_reference": 11,
+              "section_title": "אופיו ותוצאותיו של כל שינוי מבני, מיזוג או רכישה מהותיים",
+              "table_title": null,
+              "note": "25% מהון המניות של 5 חברות נכס שונות ביוון"
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
@@ -5888,7 +5938,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-17T11:19:57.977873+00:00",
+    "at": "2026-09-18T11:09:00.774632+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -5903,7 +5953,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-17T11:20:10.811818+00:00",
+    "at": "2026-09-18T11:09:01.540665+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -5918,7 +5968,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-17T11:19:58.844438+00:00",
+    "at": "2026-09-18T11:09:01.881138+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -5933,7 +5983,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-17T11:19:59.429491+00:00",
+    "at": "2026-09-18T11:09:02.441096+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -5948,7 +5998,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-17T11:19:59.932445+00:00",
+    "at": "2026-09-18T11:09:02.915529+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -5978,7 +6028,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-17T11:20:00.369626+00:00",
+    "at": "2026-09-18T11:09:03.609868+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -5993,7 +6043,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-17T11:20:01.365710+00:00",
+    "at": "2026-09-18T11:09:04.791611+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -6008,7 +6058,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-17T11:20:00.949860+00:00",
+    "at": "2026-09-18T11:09:04.130171+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -6038,7 +6088,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-17T11:20:02.142358+00:00",
+    "at": "2026-09-18T11:09:05.566258+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -6053,7 +6103,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-17T11:20:02.694190+00:00",
+    "at": "2026-09-18T11:09:06.158855+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
