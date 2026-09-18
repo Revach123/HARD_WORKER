@@ -2845,546 +2845,11 @@
   },
   "1759948": {
     "company_id": "1581",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-18T10:21:01.425768+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 20,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": [
-            {
-              "company": "ביזם המשותף ארה\"ב",
-              "event_type": "increase",
-              "ownership_pct_before": 58,
-              "ownership_pct_after": null,
-              "event_date": null,
-              "event_description": "רכישת זכויות המיעוט ביזם המשותף ארה\"ב",
-              "page_reference": 37,
-              "section_title": "ג. פעילות החברה בתחום הפוטו-וולטאי בארצות הברית"
-            }
-          ]
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:5": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:6": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:7": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:8": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:9": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:10": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:11": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2023-12-31",
-          "subsidiaries": [
-            {
-              "name": "אנרג'יקס פרויקטים אנרגיות מתחדשות (לשעבר-המיזם המשותף ישראל)",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 192,
-              "section_title": "ביאור 1 - כללי (המשך)",
-              "table_title": null,
-              "note": "שותפות מוגבלת בבעלות מלאה של החברה"
-            },
-            {
-              "name": "אנרג'יקס פרויקטים 2",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 192,
-              "section_title": "ביאור 1 - כללי (המשך)",
-              "table_title": null,
-              "note": "למעט זכויות ישובים בהתאם להוראות רמ\"י"
-            },
-            {
-              "name": "אנרג'יקס מכרז 2",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 192,
-              "section_title": "ביאור 1 - כללי (המשך)",
-              "table_title": null,
-              "note": "למעט זכויות ישובים בהתאם להוראות רמ\"י"
-            },
-            {
-              "name": "אנרג'יקס מכרז 3-4",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 192,
-              "section_title": "ביאור 1 - כללי (המשך)",
-              "table_title": null,
-              "note": "למעט זכויות ישובים בהתאם להוראות רמ\"י"
-            },
-            {
-              "name": "אנרג'יקס פרויקטים 1",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 193,
-              "section_title": "ביאור 1 - כללי (המשך)",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:12": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "פרויקטים פוטו-וולטאיים ופוטו-וולטאיים בשילוב אגירה (ישראל)",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 219,
-              "section_title": "ביאור 10 - מערכות לייצור חשמל מחוברות, בהקמה ורכוש קבוע אחר",
-              "table_title": "מערכות לייצור חשמל מחוברות",
-              "note": null
-            },
-            {
-              "name": "פרויקטי רוח (פולין)",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 219,
-              "section_title": "ביאור 10 - מערכות לייצור חשמל מחוברות, בהקמה ורכוש קבוע אחר",
-              "table_title": "מערכות לייצור חשמל מחוברות",
-              "note": "כולל את חוות הרוח Banie1, Banie2, Banie3, Banie4, Sepopol, Ilawa"
-            },
-            {
-              "name": "פרויקט Lubanowo (פולין)",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 219,
-              "section_title": "ביאור 10 - מערכות לייצור חשמל מחוברות, בהקמה ורכוש קבוע אחר",
-              "table_title": "מערכות לייצור חשמל מחוברות",
-              "note": null
-            },
-            {
-              "name": "Nowe Czarnowo 1 (פולין)",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 219,
-              "section_title": "ביאור 10 - מערכות לייצור חשמל מחוברות, בהקמה ורכוש קבוע אחר",
-              "table_title": "מערכות לייצור חשמל מחוברות",
-              "note": null
-            },
-            {
-              "name": "פרויקטים פוטו-וולטאיים (ארה\"ב)",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 219,
-              "section_title": "ביאור 10 - מערכות לייצור חשמל מחוברות, בהקמה ורכוש קבוע אחר",
-              "table_title": "מערכות לייצור חשמל מחוברות",
-              "note": null
-            },
-            {
-              "name": "פרויקטים פוטו-וולטאיים בשילוב אגירה (ישראל - בהקמה)",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 221,
-              "section_title": "ביאור 10 - מערכות לייצור חשמל מחוברות, בהקמה ורכוש קבוע אחר",
-              "table_title": "מערכות לייצור חשמל בהקמה ולקראת הקמה",
-              "note": null
-            },
-            {
-              "name": "אר\"ן (ישראל - בהקמה)",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 221,
-              "section_title": "ביאור 10 - מערכות לייצור חשמל מחוברות, בהקמה ורכוש קבוע אחר",
-              "table_title": "מערכות לייצור חשמל בהקמה ולקראת הקמה",
-              "note": null
-            },
-            {
-              "name": "פרויקט PV בפולין (בהקמה)",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 221,
-              "section_title": "ביאור 10 - מערכות לייצור חשמל מחוברות, בהקמה ורכוש קבוע אחר",
-              "table_title": "מערכות לייצור חשמל בהקמה ולקראת הקמה",
-              "note": null
-            },
-            {
-              "name": "Nowe Czarnowo 2 (פולין - בהקמה)",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 221,
-              "section_title": "ביאור 10 - מערכות לייצור חשמל מחוברות, בהקמה ורכוש קבוע אחר",
-              "table_title": "מערכות לייצור חשמל בהקמה ולקראת הקמה",
-              "note": null
-            },
-            {
-              "name": "פרויקט רוח (פולין - בהקמה)",
-              "ownership_pct": 80.5,
-              "parent": null,
-              "page_reference": 221,
-              "section_title": "ביאור 10 - מערכות לייצור חשמל מחוברות, בהקמה ורכוש קבוע אחר",
-              "table_title": "מערכות לייצור חשמל בהקמה ולקראת הקמה",
-              "note": null
-            },
-            {
-              "name": "צבר פרויקטים E4,E5,E6 (ארה\"ב - בהקמה)",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 221,
-              "section_title": "ביאור 10 - מערכות לייצור חשמל מחוברות, בהקמה ורכוש קבוע אחר",
-              "table_title": "מערכות לייצור חשמל בהקמה ולקראת הקמה",
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:13": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "Fieldon investments Sp. z o.o Wiatromill Sp. J (פרויקט 1+2 Banie)",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 234,
-              "section_title": "ביאור 11 - השקעות בחברות מוחזקות - א. חברות בנות - (1) פרטים בדבר חברות מאוחדות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Glavent Investments Sp. z o.o Orlik J .Sp. (פרויקט Ilawa)",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 234,
-              "section_title": "ביאור 11 - השקעות בחברות מוחזקות - א. חברות בנות - (1) פרטים בדבר חברות מאוחדות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Eneal J .Sp (פרויקט Sepopol)",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 234,
-              "section_title": "ביאור 11 - השקעות בחברות מוחזקות - א. חברות בנות - (1) פרטים בדבר חברות מאוחדות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "3 Banie J .Sp (פרויקט באני 3)",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 234,
-              "section_title": "ביאור 11 - השקעות בחברות מוחזקות - א. חברות בנות - (1) פרטים בדבר חברות מאוחדות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Enertrag Krajnik Sp. Z.o.o (פרויקט 4 Banie)",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 234,
-              "section_title": "ביאור 11 - השקעות בחברות מוחזקות - א. חברות בנות - (1) פרטים בדבר חברות מאוחדות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Energix US LLC",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 234,
-              "section_title": "ביאור 11 - השקעות בחברות מוחזקות - א. חברות בנות - (1) פרטים בדבר חברות מאוחדות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Energix US Parent LLC",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 234,
-              "section_title": "ביאור 11 - השקעות בחברות מוחזקות - א. חברות בנות - (1) פרטים בדבר חברות מאוחדות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אנרג'יקס ישראל, שותפות מוגבלת",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 234,
-              "section_title": "ביאור 11 - השקעות בחברות מוחזקות - א. חברות בנות - (1) פרטים בדבר חברות מאוחדות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אנרג'יקס מכרזים א', שותפות מוגבלת",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 234,
-              "section_title": "ביאור 11 - השקעות בחברות מוחזקות - א. חברות בנות - (1) פרטים בדבר חברות מאוחדות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אנרג'יקס הקמה, שותפות מוגבלת",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 234,
-              "section_title": "ביאור 11 - השקעות בחברות מוחזקות - א. חברות בנות - (1) פרטים בדבר חברות מאוחדות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אנרג'יקס נאות חובב בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 234,
-              "section_title": "ביאור 11 - השקעות בחברות מוחזקות - א. חברות בנות - (1) פרטים בדבר חברות מאוחדות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אנרג'יקס פרויקטים, 2 שותפות מוגבלת",
-              "ownership_pct": 97,
-              "parent": null,
-              "page_reference": 234,
-              "section_title": "ביאור 11 - השקעות בחברות מוחזקות - א. חברות בנות - (1) פרטים בדבר חברות מאוחדות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אנרגית רוח נקייה בע\"מ (אר\"ן)",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 234,
-              "section_title": "ביאור 11 - השקעות בחברות מוחזקות - א. חברות בנות - (1) פרטים בדבר חברות מאוחדות",
-              "table_title": null,
-              "note": "שיעור החזקה אפקטיבי (המשפטי הינו 80.5%)"
-            },
-            {
-              "name": "אנרג'יקס אנרגיות מתחדשות, שותפות מוגבלת (המיזם המשותף)",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 234,
-              "section_title": "ביאור 11 - השקעות בחברות מוחזקות - א. חברות בנות - (1) פרטים בדבר חברות מאוחדות",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:14": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "פעילות החברה בארה\"ב (מיזם ארה\"ב)",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 253,
-              "section_title": "ביאור 15 - התקשרויות ומידע נוסף אודות פעילות הייזום והפיתוח של החברה",
-              "table_title": null,
-              "note": "בבעלות מלאה (100%) נכון למועד הדוח. עד לחודש אפריל 2023 הוחזקו 58% במסגרת מיזם משותף."
-            },
-            {
-              "name": "פעילות החברה בישראל בתחום הפוטו-וולטאי",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 252,
-              "section_title": "ביאור 15 - התקשרויות ומידע נוסף אודות פעילות הייזום והפיתוח של החברה",
-              "table_title": null,
-              "note": "מלוא פעילות החברה בתחום הפוטו-וולטאי בישראל בבעלות מלאה (למעט זכויות יישובים במקרקעין בהתאם לדרישות רמ\"י)."
-            }
-          ],
-          "change_events": []
-        },
-        "0:15": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:16": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:17": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:18": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "אנרג'יקס מכרזים א' , שותפות מוגבלת",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 627,
-              "section_title": "פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11 - השקעות בחברות בנות ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי",
-              "note": null
-            },
-            {
-              "name": "Energix Renewable energies Holding B.V",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 627,
-              "section_title": "פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11 - השקעות בחברות בנות ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי",
-              "note": null
-            },
-            {
-              "name": "Energix US LLC",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 627,
-              "section_title": "פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11 - השקעות בחברות בנות ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי",
-              "note": null
-            },
-            {
-              "name": "אנרגי'קס נאות חובב בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 627,
-              "section_title": "פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11 - השקעות בחברות בנות ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי",
-              "note": null
-            },
-            {
-              "name": "אנרג'יקס הקמה, שותפות מוגבלת",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 627,
-              "section_title": "פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11 - השקעות בחברות בנות ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי",
-              "note": null
-            },
-            {
-              "name": "אנרגיית רוח נקייה בע\"מ",
-              "ownership_pct": 81,
-              "parent": null,
-              "page_reference": 627,
-              "section_title": "פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11 - השקעות בחברות בנות ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי",
-              "note": null
-            },
-            {
-              "name": "אנרג'יקס אנרגיות מתחדשות, שותפות מוגבלת",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 627,
-              "section_title": "פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11 - השקעות בחברות בנות ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי",
-              "note": null
-            },
-            {
-              "name": "אנרג'יקס פרויקטים ,2 שותפות מוגבלת",
-              "ownership_pct": 97,
-              "parent": null,
-              "page_reference": 627,
-              "section_title": "פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11 - השקעות בחברות בנות ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי",
-              "note": null
-            },
-            {
-              "name": "אנרג'יקס ישראל, שותפות מוגבלת",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 627,
-              "section_title": "פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11 - השקעות בחברות בנות ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי",
-              "note": null
-            },
-            {
-              "name": "אנרג'יקס הנדסה, שותפות מוגבלת",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 627,
-              "section_title": "פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11 - השקעות בחברות בנות ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי",
-              "note": null
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-18T10:21:26.742505+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732159": {
     "company_id": "1786",
@@ -3396,25 +2861,18 @@
   },
   "1731658": {
     "company_id": "756",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-17T11:19:29.856870+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 17,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-18T10:25:39.621758+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732935": {
     "company_id": "1150",
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-18T10:21:09.592277+00:00",
+    "at": "2026-09-18T10:28:09.324001+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -3446,9 +2904,696 @@
             }
           ],
           "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "מקורות פיתוח וייזום בע\"מ",
+              "ownership_pct": 99.7,
+              "parent": null,
+              "page_reference": 18,
+              "section_title": "מבנה האחזקות של קבוצת מקורות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "שח\"מ מקורות ביצוע בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 19,
+              "section_title": "מבנה האחזקות של קבוצת מקורות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מים שומרון בע\"מ",
+              "ownership_pct": 99.99,
+              "parent": null,
+              "page_reference": 21,
+              "section_title": "מבנה האחזקות של קבוצת מקורות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "שותפות מתקן טיפול בשפכי אשקלון",
+              "ownership_pct": 50,
+              "parent": "מקורות פיתוח וייזום בע\"מ",
+              "page_reference": 21,
+              "section_title": "מבנה האחזקות של קבוצת מקורות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "M.N Limassol Water Co. Limited (SPC)",
+              "ownership_pct": 50.1,
+              "parent": "מקורות פיתוח וייזום בע\"מ",
+              "page_reference": 21,
+              "section_title": "מבנה האחזקות של קבוצת מקורות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "M.N.E.P.C Water Co. (EPC)",
+              "ownership_pct": 50.1,
+              "parent": "מקורות פיתוח וייזום בע\"מ",
+              "page_reference": 21,
+              "section_title": "מבנה האחזקות של קבוצת מקורות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "M.N Larnaca Destination co. Limited (SPC+O&M)",
+              "ownership_pct": 50.1,
+              "parent": "מקורות פיתוח וייזום בע\"מ",
+              "page_reference": 21,
+              "section_title": "מבנה האחזקות של קבוצת מקורות",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "חברת הייזום",
+              "ownership_pct": 99.7,
+              "parent": null,
+              "page_reference": 68,
+              "section_title": "11.1.1.1 כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "שח\"מ מקורות ביצוע בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 68,
+              "section_title": "10.20.2.1 הידרוקום מערכות שליטה ובקרה בע\"מ (קונטאל)",
+              "table_title": null,
+              "note": "חברה בת בבעלות מלאה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "אשדוד התפלה",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 77,
+              "section_title": "מתווה מכירת מתקן ההתפלה באשדוד",
+              "table_title": null,
+              "note": "ההחזקות נמכרו באוגוסט 2022"
+            },
+            {
+              "name": "אשדוד תפעול",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 77,
+              "section_title": "מתווה מכירת מתקן ההתפלה באשדוד",
+              "table_title": null,
+              "note": "ההחזקות נמכרו באוגוסט 2022"
+            }
+          ],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "חברת הייזום",
+              "ownership_pct": 99.7,
+              "parent": null,
+              "page_reference": 99,
+              "section_title": "חברות בנות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "שח\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 99,
+              "section_title": "חברות בנות",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "שח\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 112,
+              "section_title": "השקעות בחברות בת",
+              "table_title": "להלן פרטים אודות רווחי (הפסד) חברות בנות לשנים שנסתיימו ביום 31 בדצמבר 2024 ו- 2025 במיליוני ש\"ח:",
+              "note": null
+            },
+            {
+              "name": "ייזום",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 112,
+              "section_title": "השקעות בחברות בת",
+              "table_title": "להלן פרטים אודות רווחי (הפסד) חברות בנות לשנים שנסתיימו ביום 31 בדצמבר 2024 ו- 2025 במיליוני ש\"ח:",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:7": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:8": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:10": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "שח\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 190,
+              "section_title": "32. החוק לקידום התחרות ולצמצום הריכוזיות, התשע\"ד - 2013",
+              "table_title": null,
+              "note": "חברת בת המצוינת בטקסט"
+            },
+            {
+              "name": "חברת הייזום",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 190,
+              "section_title": "32. החוק לקידום התחרות ולצמצום הריכוזיות, התשע\"ד - 2013",
+              "table_title": null,
+              "note": "חברת בת המצוינת בטקסט"
+            }
+          ],
+          "change_events": []
+        },
+        "0:11": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:12": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "מקורות פיתוח וייזום בע\"מ",
+              "ownership_pct": 99.7,
+              "parent": null,
+              "page_reference": 212,
+              "section_title": "1.1 תיאור תמציתי של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "שח\"מ מקורות ביצוע בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 212,
+              "section_title": "1.1 תיאור תמציתי של החברה",
+              "table_title": null,
+              "note": "בבעלות מלאה של החברה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:13": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:14": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "Larnaca N.M",
+              "ownership_pct": 50,
+              "parent": "מקורות פיתוח וייזום",
+              "page_reference": 258,
+              "section_title": "6.4 מצבו הכספי של מיזם בשליטה משותפת – לרנקה",
+              "table_title": null,
+              "note": "מיזם בשליטה משותפת"
+            }
+          ],
+          "change_events": []
+        },
+        "0:15": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "Larnaca N.M",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 258,
+              "section_title": "6.5.4.2 לרנקה ולימסול",
+              "table_title": null,
+              "note": "מיזם משותף בשליטה משותפת"
+            }
+          ],
+          "change_events": []
+        },
+        "0:16": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:17": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2024-12-31",
+          "subsidiaries": [
+            {
+              "name": "שח\"מ מקורות ביצוע בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 295,
+              "section_title": "ביאור 1 - כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "חברת מקורות פיתוח וייזום בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 295,
+              "section_title": "ביאור 1 - כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "חברת מקורות המוביל הארצי ונכסים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 295,
+              "section_title": "ביאור 1 - כללי",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:18": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "שח\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 310,
+              "section_title": "ביאור 1 - כללי: (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מקורות ייזום",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 310,
+              "section_title": "ביאור 1 - כללי: (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "כרמיאל",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 323,
+              "section_title": "ביאור 2 - עיקרי המדיניות החשבונאית: (המשך)",
+              "table_title": null,
+              "note": "הסדר משותף"
+            },
+            {
+              "name": "מנרה",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 323,
+              "section_title": "ביאור 2 - עיקרי המדיניות החשבונאית: (המשך)",
+              "table_title": null,
+              "note": "הסדר משותף"
+            },
+            {
+              "name": "לרנקה",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 323,
+              "section_title": "ביאור 2 - עיקרי המדיניות החשבונאית: (המשך)",
+              "table_title": null,
+              "note": "הסדר משותף"
+            },
+            {
+              "name": "לימסול",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 323,
+              "section_title": "ביאור 2 - עיקרי המדיניות החשבונאית: (המשך)",
+              "table_title": null,
+              "note": "הסדר משותף"
+            },
+            {
+              "name": "עיריית אשקלון",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 323,
+              "section_title": "ביאור 2 - עיקרי המדיניות החשבונאית: (המשך)",
+              "table_title": null,
+              "note": "פעילות משותפת"
+            }
+          ],
+          "change_events": []
+        },
+        "0:19": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "מקורות ייזום",
+              "ownership_pct": 99.7,
+              "parent": null,
+              "page_reference": 337,
+              "section_title": "ביאור 5 - השקעה בחברות מוחזקות",
+              "table_title": "(1) פירוט החברות המאוחדות המהותיות המוחזקות על ידי החברה:",
+              "note": null
+            },
+            {
+              "name": "שח\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 337,
+              "section_title": "ביאור 5 - השקעה בחברות מוחזקות",
+              "table_title": "(1) פירוט החברות המאוחדות המהותיות המוחזקות על ידי החברה:",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:20": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "לימסול",
+              "ownership_pct": 50,
+              "parent": "מקורות פיתוח וייזום בע\"מ",
+              "page_reference": 347,
+              "section_title": "השקעות בישויות בשליטה משותפת:",
+              "table_title": "פירוט העסקאות המשותפות של הקבוצה (בחברת הייזום)",
+              "note": "באמצעות חברת הייזום"
+            },
+            {
+              "name": "לרנקה",
+              "ownership_pct": 50,
+              "parent": "מקורות פיתוח וייזום בע\"מ",
+              "page_reference": 347,
+              "section_title": "השקעות בישויות בשליטה משותפת:",
+              "table_title": "פירוט העסקאות המשותפות של הקבוצה (בחברת הייזום)",
+              "note": "באמצעות חברת הייזום"
+            }
+          ],
+          "change_events": []
+        },
+        "0:21": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "מקורות בינוי ופיתוח בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 358,
+              "section_title": "ביאור 13 - הון: מבקשי מניות",
+              "table_title": null,
+              "note": "חברה מאוחדת"
+            },
+            {
+              "name": "מקורות פיתוח וייזום בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 362,
+              "section_title": "ביאור 16 - מסים על ההכנסה",
+              "table_title": null,
+              "note": "חברה בת"
+            },
+            {
+              "name": "שח\"מ מקורות ביצוע בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 362,
+              "section_title": "ביאור 16 - מסים על ההכנסה",
+              "table_title": null,
+              "note": "חברה בת"
+            },
+            {
+              "name": "המוביל הארצי נכסים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 363,
+              "section_title": "ביאור 16 - מסים על ההכנסה: מיסוי מיזוג המפא\"ר",
+              "table_title": null,
+              "note": "התמזגה עם ולתוך החברה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:22": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "שח\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 394,
+              "section_title": "ביאור 24 - צדדים קשורים ובעלי עניין",
+              "table_title": null,
+              "note": "חברה בת (מוצג בדוח סולו)"
+            },
+            {
+              "name": "חברת הייזום",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 394,
+              "section_title": "ביאור 24 - צדדים קשורים ובעלי עניין",
+              "table_title": null,
+              "note": "חברה בת (מוצג בדוח סולו)"
+            },
+            {
+              "name": "לימסול",
+              "ownership_pct": null,
+              "parent": "חברת הייזום",
+              "page_reference": 389,
+              "section_title": "ביאור 22 - הפרשות, התחייבויות תלויות והתקשרויות: (המשך)",
+              "table_title": null,
+              "note": "חברה נכדה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:23": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "שח\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 394,
+              "section_title": "ביאור 24 - צדדים קשורים ובעלי עניין",
+              "table_title": "א. יתרות מאזניות בגין צדדים קשורים:",
+              "note": "מוגדרת כחברת בת בדוחות"
+            },
+            {
+              "name": "חברת הייזום",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 394,
+              "section_title": "ביאור 24 - צדדים קשורים ובעלי עניין",
+              "table_title": "א. יתרות מאזניות בגין צדדים קשורים:",
+              "note": "מוגדרת כחברת בת"
+            },
+            {
+              "name": "מקורות המוביל הארצי ונכסים בע\"מ (המפא\"ר)",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 395,
+              "section_title": "ביאור 24 - צדדים קשורים ובעלי עניין: (המשך)",
+              "table_title": "ב. הכנסות (הוצאות) בדוח רווח והפסד בגין צדדים קשורים:",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:24": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "שח\"מ מקורות ביצוע בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 423,
+              "section_title": "תקנה 11: השקעות בחברות בת ובחברות כלולות מהותיות ליום 31 בדצמבר 2025",
+              "table_title": "תקנה 11: השקעות בחברות בת ובחברות כלולות מהותיות ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "מקורות פיתוח וייזום בע\"מ",
+              "ownership_pct": 99.7,
+              "parent": null,
+              "page_reference": 423,
+              "section_title": "תקנה 11: השקעות בחברות בת ובחברות כלולות מהותיות ליום 31 בדצמבר 2025",
+              "table_title": "תקנה 11: השקעות בחברות בת ובחברות כלולות מהותיות ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "חברת מים שומרון בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 426,
+              "section_title": "תקנה 24: החזקות בעלי עניין ונושאי משרה",
+              "table_title": null,
+              "note": "מוזכרת כחברת בת במסגרת הערה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:25": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "חברת מים שומרון בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 426,
+              "section_title": "תקנה 24: החזקות בעלי עניין ונושאי משרה",
+              "table_title": null,
+              "note": "חברה בת של מקורות"
+            },
+            {
+              "name": "שח\"מ מקורות ביצוע בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 435,
+              "section_title": "תקנה 26א: נושאי משרה בכירה בחברה",
+              "table_title": null,
+              "note": "חברה בת של מקורות"
+            },
+            {
+              "name": "מקורות פיתוח ויזום",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 435,
+              "section_title": "תקנה 26א: נושאי משרה בכירה בחברה",
+              "table_title": null,
+              "note": "חברה בת של מקורות"
+            }
+          ],
+          "change_events": []
+        },
+        "0:26": {
+          "report_format": "other",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "שח\"מ מקורות ביצוע בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 457,
+              "section_title": "פרק ב' – תיאור מקורות והסביבה העסקית",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "מקורות פיתוח וייזום בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 457,
+              "section_title": "פרק ב' – תיאור מקורות והסביבה העסקית",
+              "table_title": null,
+              "note": "חברת בת"
+            }
+          ],
+          "change_events": []
+        },
+        "0:27": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:28": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
         }
       },
-      "attempts": {}
+      "attempts": {
+        "0:9": 1
+      }
     }
   },
   "1731493": {
@@ -3456,14 +3601,628 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-17T11:19:31.328839+00:00",
+    "at": "2026-09-18T10:35:59.764037+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 13,
-      "done": {},
-      "attempts": {}
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "ד. דניאל חברה לבנין בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 3,
+              "section_title": "פרק א' - תיאור עסקי התאגיד",
+              "table_title": null,
+              "note": "חברה בת בבעלות מלאה"
+            },
+            {
+              "name": "מצפה הראל יזמות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "1.1.5 ריכוז פרויקטים",
+              "table_title": "תחום הנדל\"ן היזמי בישראל - פרויקטים שהקמתם הסתיימה ושמכירתם טרם הושלמה במלואה נכון למועד המאזן"
+            },
+            {
+              "name": "מצפה מבשרת יזמות בע\"מ",
+              "ownership_pct": 90,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "1.1.5 ריכוז פרויקטים",
+              "table_title": "תחום הנדל\"ן היזמי בישראל - פרויקטים שהקמתם הסתיימה ושמכירתם טרם הושלמה במלואה נכון למועד המאזן"
+            },
+            {
+              "name": "מצפה השחר יזמות בע\"מ",
+              "ownership_pct": 70,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.1.5 ריכוז פרויקטים",
+              "table_title": "תחום הנדל\"ן היזמי בישראל - פרויקטים בהקמה נכון למועד המאזן"
+            },
+            {
+              "name": "מצפה בית הכרם בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.1.5 ריכוז פרויקטים",
+              "table_title": "תחום הנדל\"ן היזמי בישראל - פרויקטים בהקמה נכון למועד המאזן"
+            },
+            {
+              "name": "ע.ט. החברה להתחדשות עירונית לישראל (הגיבורים) בע\"מ",
+              "ownership_pct": 49,
+              "parent": null,
+              "page_reference": 9,
+              "section_title": "1.1.5 ריכוז פרויקטים",
+              "table_title": "תחום הנדל\"ן היזמי בישראל - פרויקטים בהקמה נכון למועד המאזן"
+            },
+            {
+              "name": "בעל התניא מכרזים בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 9,
+              "section_title": "1.1.5 ריכוז פרויקטים",
+              "table_title": "תחום הנדל\"ן היזמי בישראל - פרויקטים בהקמה נכון למועד המאזן"
+            },
+            {
+              "name": "מצפה תלמים יזמות בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 10,
+              "section_title": "1.1.5 ריכוז פרויקטים",
+              "table_title": "תחום הנדל\"ן היזמי בישראל - פרויקטים בהקמה נכון למועד המאזן"
+            },
+            {
+              "name": "מצפה אלעד יזמות בע\"מ",
+              "ownership_pct": 80,
+              "parent": null,
+              "page_reference": 11,
+              "section_title": "1.1.5 ריכוז פרויקטים",
+              "table_title": "תחום הנדל\"ן היזמי בישראל - פרויקטים בהקמה נכון למועד המאזן"
+            },
+            {
+              "name": "מצפה ירושלים השקעות בע\"מ",
+              "ownership_pct": 35,
+              "parent": null,
+              "page_reference": 12,
+              "section_title": "1.1.5 ריכוז פרויקטים",
+              "table_title": "תחום הנדל\"ן היזמי בישראל - פרויקטים בהקמה נכון למועד המאזן",
+              "note": "החברה מחזיקה ב-35% ובעלת זכויות למינוי דירקטורים"
+            },
+            {
+              "name": "אחוזת שנלר בע\"מ",
+              "ownership_pct": 17.5,
+              "parent": "מצפה ירושלים השקעות בע\"מ",
+              "page_reference": 11,
+              "section_title": "1.1.5 ריכוז פרויקטים",
+              "table_title": "תחום הנדל\"ן היזמי בישראל - פרויקטים בהקמה נכון למועד המאזן",
+              "note": "בשרשור באמצעות החזקת 49.99% ע\"י מצפה ירושלים השקעות בע\"מ"
+            },
+            {
+              "name": "מרכז הדר גנים בע\"מ",
+              "ownership_pct": 85,
+              "parent": null,
+              "page_reference": 12,
+              "section_title": "1.1.5 ריכוז פרויקטים",
+              "table_title": "תחום הנדל\"ן היזמי בישראל - פרויקטים בתכנון נכון למועד המאזן",
+              "note": "85% בהון ו-100% בהצבעה"
+            },
+            {
+              "name": "מצפה החורש יזמות בע\"מ",
+              "ownership_pct": 70,
+              "parent": null,
+              "page_reference": 12,
+              "section_title": "1.1.5 ריכוז פרויקטים",
+              "table_title": "תחום הנדל\"ן היזמי בישראל - פרויקטים בתכנון נכון למועד המאזן"
+            },
+            {
+              "name": "מצפה העיר יזמות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 12,
+              "section_title": "1.1.5 ריכוז פרויקטים",
+              "table_title": "תחום הנדל\"ן היזמי בישראל - פרויקטים בתכנון נכון למועד המאזן"
+            },
+            {
+              "name": "אי.אס.איי אבן הבנים בנייה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 13,
+              "section_title": "1.1.5 ריכוז פרויקטים",
+              "table_title": "תחום הנדל\"ן היזמי בישראל - פרויקטים בתכנון נכון למועד המאזן"
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "ד. דניאל",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 18,
+              "section_title": "1.3.1.1.1 כללי",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "מצפה החורש יזמות בע\"מ",
+              "ownership_pct": 70,
+              "parent": null,
+              "page_reference": 31,
+              "section_title": "1.3.3.3 פרויקטים בתכנון",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פרויקט יפו 93-95 בע\"מ",
+              "ownership_pct": 80,
+              "parent": null,
+              "page_reference": 33,
+              "section_title": "1.3.3.4 עתודות קרקע",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מצפה המושבה בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 34,
+              "section_title": "1.3.3.5 פרויקטי התחדשות עירונית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פרויקט חזון ציון 7-9 בע\"מ",
+              "ownership_pct": 78,
+              "parent": null,
+              "page_reference": 34,
+              "section_title": "1.3.3.5 פרויקטי התחדשות עירונית",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "מצפה שדה יזמות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "1.3.3.8 התקשרויות נוספות",
+              "table_title": null,
+              "note": "חברה בת בבעלות מלאה"
+            },
+            {
+              "name": "מצפה השחר יזמות בע\"מ",
+              "ownership_pct": 70,
+              "parent": null,
+              "page_reference": 38,
+              "section_title": "1.3.4.1.1 הצגת הפרויקט",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מצפה בית הכרם בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 41,
+              "section_title": "1.3.4.2.1 הצגת הפרויקט",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ע.ט. החברה להתחדשות עירונית לישראל (הגיבורים) בע\"מ",
+              "ownership_pct": 49,
+              "parent": null,
+              "page_reference": 45,
+              "section_title": "1.3.4.3.1 הצגת הפרויקט",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "בעל התניא מכרזים בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 49,
+              "section_title": "1.3.4.4.1 הצגת הפרויקט",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מצפה תלמים יזמות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 53,
+              "section_title": "1.3.4.5.1 הצגת הפרויקט",
+              "table_title": null,
+              "note": "חברה בת בבעלות מלאה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "ד. דניאל חברה לבניין בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 112,
+              "section_title": "ביאור 12 - השקעות בחברות המטופלות בשיטת השווי המאזני, נטו",
+              "table_title": "פירוט החברות המוחזקות על ידי הקבוצה",
+              "note": null
+            },
+            {
+              "name": "מצפה בית הכרם בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 112,
+              "section_title": "ביאור 12 - השקעות בחברות המטופלות בשיטת השווי המאזני, נטו",
+              "table_title": "פירוט החברות המוחזקות על ידי הקבוצה",
+              "note": null
+            },
+            {
+              "name": "מצפה הראל יזמות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 112,
+              "section_title": "ביאור 12 - השקעות בחברות המטופלות בשיטת השווי המאזני, נטו",
+              "table_title": "פירוט החברות המוחזקות על ידי הקבוצה",
+              "note": null
+            },
+            {
+              "name": "מצפה האלה יזמות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 112,
+              "section_title": "ביאור 12 - השקעות בחברות המטופלות בשיטת השווי המאזני, נטו",
+              "table_title": "פירוט החברות המוחזקות על ידי הקבוצה",
+              "note": null
+            },
+            {
+              "name": "מצפה החורש יזמות בע\"מ",
+              "ownership_pct": 70,
+              "parent": null,
+              "page_reference": 112,
+              "section_title": "ביאור 12 - השקעות בחברות המטופלות בשיטת השווי המאזני, נטו",
+              "table_title": "פירוט החברות המוחזקות על ידי הקבוצה",
+              "note": null
+            },
+            {
+              "name": "מרכז הדר גנים בע\"מ",
+              "ownership_pct": 85,
+              "parent": null,
+              "page_reference": 112,
+              "section_title": "ביאור 12 - השקעות בחברות המטופלות בשיטת השווי המאזני, נטו",
+              "table_title": "פירוט החברות המוחזקות על ידי הקבוצה",
+              "note": null
+            },
+            {
+              "name": "מצפה השחר יזמות בע\"מ",
+              "ownership_pct": 70,
+              "parent": null,
+              "page_reference": 112,
+              "section_title": "ביאור 12 - השקעות בחברות המטופלות בשיטת השווי המאזני, נטו",
+              "table_title": "פירוט החברות המוחזקות על ידי הקבוצה",
+              "note": null
+            },
+            {
+              "name": "מרכז מסחרי השחר בע\"מ",
+              "ownership_pct": 70,
+              "parent": null,
+              "page_reference": 112,
+              "section_title": "ביאור 12 - השקעות בחברות המטופלות בשיטת השווי המאזני, נטו",
+              "table_title": "פירוט החברות המוחזקות על ידי הקבוצה",
+              "note": null
+            },
+            {
+              "name": "מצפה מבשרת יזמות בע\"מ",
+              "ownership_pct": 90,
+              "parent": null,
+              "page_reference": 112,
+              "section_title": "ביאור 12 - השקעות בחברות המטופלות בשיטת השווי המאזני, נטו",
+              "table_title": "פירוט החברות המוחזקות על ידי הקבוצה",
+              "note": null
+            },
+            {
+              "name": "איי.אס.איי אבן הבונים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 112,
+              "section_title": "ביאור 12 - השקעות בחברות המטופלות בשיטת השווי המאזני, נטו",
+              "table_title": "פירוט החברות המוחזקות על ידי הקבוצה",
+              "note": null
+            },
+            {
+              "name": "מצפה תלמים יזמות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 112,
+              "section_title": "ביאור 12 - השקעות בחברות המטופלות בשיטת השווי המאזני, נטו",
+              "table_title": "פירוט החברות המוחזקות על ידי הקבוצה",
+              "note": null
+            },
+            {
+              "name": "מצפה אלעד יזמות בע\"מ",
+              "ownership_pct": 80,
+              "parent": null,
+              "page_reference": 112,
+              "section_title": "ביאור 12 - השקעות בחברות המטופלות בשיטת השווי המאזני, נטו",
+              "table_title": "פירוט החברות המוחזקות על ידי הקבוצה",
+              "note": null
+            },
+            {
+              "name": "יפו 93-95 בע\"מ",
+              "ownership_pct": 80,
+              "parent": null,
+              "page_reference": 112,
+              "section_title": "ביאור 12 - השקעות בחברות המטופלות בשיטת השווי המאזני, נטו",
+              "table_title": "פירוט החברות המוחזקות על ידי הקבוצה",
+              "note": null
+            },
+            {
+              "name": "מצפה העיר יזמות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 112,
+              "section_title": "ביאור 12 - השקעות בחברות המטופלות בשיטת השווי המאזני, נטו",
+              "table_title": "פירוט החברות המוחזקות על ידי הקבוצה",
+              "note": null
+            },
+            {
+              "name": "פרויקט חזון ציון 7-9 בע\"מ",
+              "ownership_pct": 78,
+              "parent": null,
+              "page_reference": 112,
+              "section_title": "ביאור 12 - השקעות בחברות המטופלות בשיטת השווי המאזני, נטו",
+              "table_title": "פירוט החברות המוחזקות על ידי הקבוצה",
+              "note": null
+            },
+            {
+              "name": "החברה להתחדשות ירושלים ש.ע.ט. בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 113,
+              "section_title": "ביאור 12 - השקעות והלוואות בחברות המטופלות בשיטת השווי המאזני, נטו - המשך",
+              "table_title": "פירוט החברות המוחזקות על ידי הקבוצה",
+              "note": null
+            },
+            {
+              "name": "ע.ט החברה להתחדשות עירונית לישראל (הגיבורים) בע\"מ",
+              "ownership_pct": 49,
+              "parent": null,
+              "page_reference": 113,
+              "section_title": "ביאור 12 - השקעות והלוואות בחברות המטופלות בשיטת השווי המאזני, נטו - המשך",
+              "table_title": "פירוט החברות המוחזקות על ידי הקבוצה",
+              "note": null
+            },
+            {
+              "name": "בעל התניא מכרזים בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 113,
+              "section_title": "ביאור 12 - השקעות והלוואות בחברות המטופלות בשיטת השווי המאזני, נטו - המשך",
+              "table_title": "פירוט החברות המוחזקות על ידי הקבוצה",
+              "note": null
+            },
+            {
+              "name": "מצפה המושבה בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 113,
+              "section_title": "ביאור 12 - השקעות והלוואות בחברות המטופלות בשיטת השווי המאזני, נטו - המשך",
+              "table_title": "פירוט החברות המוחזקות על ידי הקבוצה",
+              "note": null
+            },
+            {
+              "name": "מצפה גת יזמות בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 113,
+              "section_title": "ביאור 12 - השקעות והלוואות בחברות המטופלות בשיטת השווי המאזני, נטו - המשך",
+              "table_title": "פירוט החברות המוחזקות על ידי הקבוצה",
+              "note": null
+            },
+            {
+              "name": "מצפה ירושלים בע\"מ",
+              "ownership_pct": 35,
+              "parent": null,
+              "page_reference": 113,
+              "section_title": "ביאור 12 - השקעות והלוואות בחברות המטופלות בשיטת השווי המאזני, נטו - המשך",
+              "table_title": "פירוט החברות המוחזקות על ידי הקבוצה",
+              "note": null
+            },
+            {
+              "name": "קרדו דלי בע\"מ",
+              "ownership_pct": 25.5,
+              "parent": null,
+              "page_reference": 113,
+              "section_title": "ביאור 12 - השקעות והלוואות בחברות המטופלות בשיטת השווי המאזני, נטו - המשך",
+              "table_title": "פירוט החברות המוחזקות על ידי הקבוצה",
+              "note": null
+            },
+            {
+              "name": "ע.ט החברה להתחדשות עירונית (נופי ירושלים) בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 113,
+              "section_title": "ביאור 12 - השקעות והלוואות בחברות המטופלות בשיטת השווי המאזני, נטו - המשך",
+              "table_title": "פירוט החברות המוחזקות על ידי הקבוצה",
+              "note": null
+            },
+            {
+              "name": "הצוף ש.ע.ט בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 113,
+              "section_title": "ביאור 12 - השקעות והלוואות בחברות המטופלות בשיטת השווי המאזני, נטו - המשך",
+              "table_title": "פירוט החברות המוחזקות על ידי הקבוצה",
+              "note": null
+            },
+            {
+              "name": "ברזיל ירושלים שותפות מוגבלת",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 113,
+              "section_title": "ביאור 12 - השקעות והלוואות בחברות המטופלות בשיטת השווי המאזני, נטו - המשך",
+              "table_title": "פירוט החברות המוחזקות על ידי הקבוצה",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:7": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "מצפה שדה יזמות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 125,
+              "section_title": "ביאור 18 – התקשרויות, שעבודים ערבויות והתחייבויות תלויות",
+              "table_title": null,
+              "note": "חברה בת בבעלות מלאה"
+            },
+            {
+              "name": "ד. דניאל חברה לבניין בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 126,
+              "section_title": "ביאור 18 – התקשרויות, שעבודים ערבויות והתחייבויות תלויות - המשך",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "התחדשות ירושלים ש.ע.ט. בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 132,
+              "section_title": "ביאור 20 - צדדים קשורים ובעלי עניין - המשך",
+              "table_title": null,
+              "note": "מוחזקת על ידי החברה"
+            },
+            {
+              "name": "חברת בעל התניא מכרזים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 136,
+              "section_title": "ביאור 22 – אירועים לאחר תאריך הדוח על המצב הכספי",
+              "table_title": null,
+              "note": "חברה כלולה"
+            },
+            {
+              "name": "חברת פרויקט ביאליק",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 136,
+              "section_title": "ביאור 22 – אירועים לאחר תאריך הדוח על המצב הכספי",
+              "table_title": null,
+              "note": "חברת פרויקט"
+            },
+            {
+              "name": "חברת פרויקט הגיבורים",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 136,
+              "section_title": "ביאור 22 – אירועים לאחר תאריך הדוח על המצב הכספי",
+              "table_title": null,
+              "note": "חברת פרויקט"
+            }
+          ],
+          "change_events": []
+        },
+        "0:8": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "ד.דניאל חברה לבניין בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 150,
+              "section_title": "פרק ד' - פרטים נוספים על החברה",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות מהותיות המוחזקות במישרין על ידי החברה לתאריך הדוח על המצב הכספי",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:9": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "מצפה בית הכרם בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 162,
+              "section_title": "1. מטרת חוות הדעת",
+              "table_title": null,
+              "note": "חברת בת"
+            }
+          ],
+          "change_events": []
+        },
+        "0:10": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:11": {
+          "report_format": "other",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:12": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
+      "attempts": {
+        "0:3": 1
+      }
     }
   },
   "1732710": {
@@ -3471,60 +4230,1261 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-17T11:19:30.458756+00:00",
+    "at": "2026-09-18T10:33:01.611656+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 26,
-      "done": {},
-      "attempts": {}
+      "done": {
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "יו.אם.איי מרכז שירות חיפה בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 52,
+              "section_title": "מוצרים ושירותים",
+              "table_title": null,
+              "note": "בבעלות מלאה של החברה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "יו.אם.איי מרכז שירות חיפה בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 103,
+              "section_title": "שירותים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דן ליס",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 108,
+              "section_title": "9.1 מידע כללי על תחום הפעילות",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "דן ליס",
+              "ownership_pct": null,
+              "parent": "פתרונות תחבורה",
+              "page_reference": 176,
+              "section_title": "11.1 מידע כללי על תחום הפעילות",
+              "table_title": null,
+              "note": "חברת בת בבעלותה המלאה"
+            },
+            {
+              "name": "G1",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 183,
+              "section_title": "12.1 מידע כללי על תחום הפעילות",
+              "table_title": null,
+              "note": "השלמת רכישת השליטה"
+            },
+            {
+              "name": "ג'י וואן טכנולוגיות מיגון בע\"מ",
+              "ownership_pct": null,
+              "parent": "G1",
+              "page_reference": 190,
+              "section_title": "12.14.2 שירותי מוקדים",
+              "table_title": null,
+              "note": "חברה בת של G1"
+            }
+          ],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "פוליסיטי בע\"מ",
+              "ownership_pct": 50.0,
+              "parent": null,
+              "page_reference": 208,
+              "section_title": "12.18 הסכמים עיקריים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פוליסיטי המפעיל בע\"מ",
+              "ownership_pct": 50.0,
+              "parent": null,
+              "page_reference": 208,
+              "section_title": "12.18 הסכמים עיקריים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פאל אלקטרוניקס מערכות בע\"מ",
+              "ownership_pct": 50.0,
+              "parent": null,
+              "page_reference": 209,
+              "section_title": "12.18 הסכמים עיקריים",
+              "table_title": null,
+              "note": "הושלמה ב-28 בינואר 2026"
+            },
+            {
+              "name": "דנאל",
+              "ownership_pct": 22.82,
+              "parent": null,
+              "page_reference": 210,
+              "section_title": "13.תחום פעילות מתן שירותי סיעוד, כוח אדם, הפעלת מסגרות לאנשים עם צרכים מיוחדים ושירותים רפואיים",
+              "table_title": null,
+              "note": "23.08% ביכולת ההצבעה"
+            },
+            {
+              "name": "ג'י וואן טכנולוגיות מיגון בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 207,
+              "section_title": "12.14.2 שירותי מוקדים",
+              "table_title": null,
+              "note": "חברה בת של 1G"
+            },
+            {
+              "name": "אופיס דיפו",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 220,
+              "section_title": "14.4 פעילות קמעונאית בתחום ציוד משרדי, אלקטרוניקה, ריהוט ומוצרי אומנות",
+              "table_title": null,
+              "note": "מלוא ההחזקות"
+            },
+            {
+              "name": "פתרונות מימון",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 221,
+              "section_title": "14.5 פעילות מתן אשראי",
+              "table_title": null,
+              "note": "מוחזקת באופן מלא על ידי החברה"
+            },
+            {
+              "name": "UTI",
+              "ownership_pct": 50.0,
+              "parent": null,
+              "page_reference": 223,
+              "section_title": "14.6 פעילות הרכב הכבד",
+              "table_title": null,
+              "note": "בשליטה משותפת עם תעבורה אחזקות"
+            }
+          ],
+          "change_events": []
+        },
+        "0:7": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "UTI",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 121,
+              "section_title": "14.6 פעילות הרכב הכבד - הקבוצה",
+              "table_title": null,
+              "note": "שליטה משותפת"
+            },
+            {
+              "name": "Avis אוקראינה",
+              "ownership_pct": 100,
+              "parent": "פתרונות תחבורה",
+              "page_reference": 123,
+              "section_title": "14.7 פעילות ליסינג והשכרה באוקראינה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אנקור חברה לביטוח בע\"מ",
+              "ownership_pct": 8.68,
+              "parent": null,
+              "page_reference": 135,
+              "section_title": "17.1 השקעה באנקור חברה לביטוח בע“מ",
+              "table_title": null,
+              "note": "4.5% מזכויות ההצבעה ו-8.68% מהזכויות ההוניות"
+            }
+          ],
+          "change_events": []
+        },
+        "0:8": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:9": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "מרכז לחלפי רכב בע\"מ (המאגר חלפים)",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": 0,
+              "ownership_pct_after": 65,
+              "event_date": "2025-12-29",
+              "event_description": "התקשרות בהסכם רכישת 65% ממניות חברת מרכז לחלפי רכב בע\"מ",
+              "page_reference": 164,
+              "section_title": "22.7 עסקת המאגר"
+            }
+          ]
+        },
+        "0:10": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "יו.טי.אס - יוניברסל פתרונות תחבורה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "27. חברות בנות וקשורות",
+              "table_title": "27.1.1 החזקות ישירות - סכום ההשקעות כולל הלוואות/ שטרי הון",
+              "note": null
+            },
+            {
+              "name": "יו.אמ.אי. סוכנות לביטוח (1994) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "27. חברות בנות וקשורות",
+              "table_title": "27.1.1 החזקות ישירות - סכום ההשקעות כולל הלוואות/ שטרי הון",
+              "note": null
+            },
+            {
+              "name": "יו.אם.איי מרכז שירות חיפה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "27. חברות בנות וקשורות",
+              "table_title": "27.1.1 החזקות ישירות - סכום ההשקעות כולל הלוואות/ שטרי הון",
+              "note": null
+            },
+            {
+              "name": "יוניברסל יבוא יו.אמ.אי בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "27. חברות בנות וקשורות",
+              "table_title": "27.1.1 החזקות ישירות - סכום ההשקעות כולל הלוואות/ שטרי הון",
+              "note": null
+            },
+            {
+              "name": "יוניברסל משאיות ישראל בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "27. חברות בנות וקשורות",
+              "table_title": "27.1.1 החזקות ישירות - סכום ההשקעות כולל הלוואות/ שטרי הון",
+              "note": null
+            },
+            {
+              "name": "יוניברסל מוטורס ישראל - צ'ק פוסט חיפה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "27. חברות בנות וקשורות",
+              "table_title": "27.1.1 החזקות ישירות - סכום ההשקעות כולל הלוואות/ שטרי הון",
+              "note": null
+            },
+            {
+              "name": "גי.אם - יו.אם.איי-. טכנולוגיות מחקר ופיתוח בע\"מ",
+              "ownership_pct": 49,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "27. חברות בנות וקשורות",
+              "table_title": "27.1.1 החזקות ישירות - סכום ההשקעות כולל הלוואות/ שטרי הון",
+              "note": null
+            },
+            {
+              "name": "יוניברסל מוביליטי טכנולוג'י בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "27. חברות בנות וקשורות",
+              "table_title": "27.1.1 החזקות ישירות - סכום ההשקעות כולל הלוואות/ שטרי הון",
+              "note": "ביום 5 בינואר 2026 עודכן סטטוס החברה לבפירוק מרצון בהליך מזורז"
+            },
+            {
+              "name": "פתרונות מימון",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "27. חברות בנות וקשורות",
+              "table_title": "27.1.1 החזקות ישירות - סכום ההשקעות כולל הלוואות/ שטרי הון",
+              "note": null
+            },
+            {
+              "name": "אופיס דיפו",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 178,
+              "section_title": "27. חברות בנות וקשורות",
+              "table_title": "27.1.1 החזקות ישירות - סכום ההשקעות כולל הלוואות/ שטרי הון",
+              "note": null
+            },
+            {
+              "name": "ג'י וואן פתרונות אבטחה בע\"מ",
+              "ownership_pct": 68.45,
+              "parent": null,
+              "page_reference": 178,
+              "section_title": "27. חברות בנות וקשורות",
+              "table_title": "27.1.1 החזקות ישירות - סכום ההשקעות כולל הלוואות/ שטרי הון",
+              "note": null
+            },
+            {
+              "name": "דן ליס א-קאר 1988 (טרייד אין) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 178,
+              "section_title": "27. חברות בנות וקשורות",
+              "table_title": "27.1.2 החזקות עקיפות - השקעות ללא הלוואות",
+              "note": "בהון 99%, בהצבעה 100%"
+            },
+            {
+              "name": "Dan Rent a Car (USA) Inc",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 178,
+              "section_title": "27. חברות בנות וקשורות",
+              "table_title": "27.1.2 החזקות עקיפות - השקעות ללא הלוואות",
+              "note": null
+            },
+            {
+              "name": "בית קבוצת יוניברסל מוטורס ישראל בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 178,
+              "section_title": "27. חברות בנות וקשורות",
+              "table_title": "27.1.2 החזקות עקיפות - השקעות ללא הלוואות",
+              "note": null
+            },
+            {
+              "name": "Foreign investments VIP rent",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 178,
+              "section_title": "27. חברות בנות וקשורות",
+              "table_title": "27.1.2 החזקות עקיפות - השקעות ללא הלוואות",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:11": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "דנאל",
+              "ownership_pct": 23.0,
+              "parent": null,
+              "page_reference": 375,
+              "section_title": "דוח דירקטוריון של מצב ענייני התאגיד",
+              "table_title": null,
+              "note": "נכון לסמוך למועד אישור הדוחות הכספיים (19.46% נכון ליום 31 בדצמבר 2025)"
+            },
+            {
+              "name": "ג' וואן פתרונות אבטחה בע\"מ (1G)",
+              "ownership_pct": 68.0,
+              "parent": null,
+              "page_reference": 375,
+              "section_title": "6.2 רכישת השליטה בג'י וואן פתרונות אבטחה בע\"מ",
+              "table_title": null,
+              "note": "נכון ליום 31 בדצמבר 2025"
+            },
+            {
+              "name": "אנקור חברה לביטוח בע\"מ",
+              "ownership_pct": 8.68,
+              "parent": null,
+              "page_reference": 376,
+              "section_title": "6.3 השקעה באנקור חברה לביטוח בע\"מ",
+              "table_title": null,
+              "note": "זכויות הוניות (4.5% מזכויות ההצבעה) לאחר מכירת מניות ביום 15 בינואר 2026"
+            },
+            {
+              "name": "פאל אלקטרוניקס מערכות בע\"מ",
+              "ownership_pct": 50.0,
+              "parent": "ג' וואן פתרונות אבטחה בע\"מ (1G)",
+              "page_reference": 376,
+              "section_title": "6.4 התקשרות 1G בהסכם לרכישת 50% ממניות חברת פאל אלקטרוניקס מערכות בע\"מ",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "המאגר - מרכז לחלפי רכב בע\"מ",
+              "ownership_pct": 65.0,
+              "parent": null,
+              "page_reference": 376,
+              "section_title": "6.6 התקשרות בהסכם לרכישת 65% ממניות חברת המאגר - מרכז לחלפי רכב בע\"מ ולרכישת פעילות המאגר ליסינג בע\"מ",
+              "table_title": null,
+              "note": "השלמה צפויה באפריל 2026"
+            }
+          ],
+          "change_events": [
+            {
+              "company": "ג' וואן פתרונות אבטחה בע\"מ (1G)",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": 0.0,
+              "ownership_pct_after": 50.2,
+              "event_date": "2024-02-15",
+              "event_description": "רכישת השליטה (כ-50.2% מהון המניות)",
+              "page_reference": 375,
+              "section_title": "6.2 רכישת השליטה בג'י וואן פתרונות אבטחה בע\"מ"
+            },
+            {
+              "company": "ג' וואן פתרונות אבטחה בע\"מ (1G)",
+              "event_type": "increase",
+              "ownership_pct_before": 50.2,
+              "ownership_pct_after": 68.0,
+              "event_date": null,
+              "event_description": "השקעות נוספות והגדלת החזקה לכ-68% עד ליום 31 בדצמבר 2025",
+              "page_reference": 375,
+              "section_title": "6.2 רכישת השליטה בג'י וואן פתרונות אבטחה בע\"מ"
+            },
+            {
+              "company": "אנקור חברה לביטוח בע\"מ",
+              "event_type": "decrease",
+              "ownership_pct_before": 24.0,
+              "ownership_pct_after": 8.68,
+              "event_date": "2026-01-15",
+              "event_description": "מכירת 64% מהחזקותיה באנקור לצדדים שלישיים",
+              "page_reference": 376,
+              "section_title": "6.3 השקעה באנקור חברה לביטוח בע\"מ"
+            },
+            {
+              "company": "פאל אלקטרוניקס מערכות בע\"מ",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": 0.0,
+              "ownership_pct_after": 50.0,
+              "event_date": "2026-01-28",
+              "event_description": "השלמת הסכם לרכישת 50% מהון המניות על ידי 1G",
+              "page_reference": 376,
+              "section_title": "6.4 התקשרות 1G בהסכם לרכישת 50% ממניות חברת פאל אלקטרוניקס מערכות בע\"מ"
+            },
+            {
+              "company": "המאגר - מרכז לחלפי רכב בע\"מ",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": 0.0,
+              "ownership_pct_after": 65.0,
+              "event_date": null,
+              "event_description": "התקשרות בהסכם לרכישת 65% ממניות חברת המאגר (צפוי להסתיים באפריל 2026)",
+              "page_reference": 376,
+              "section_title": "6.6 התקשרות בהסכם לרכישת 65% ממניות חברת המאגר - מרכז לחלפי רכב בע\"מ ולרכישת פעילות המאגר ליסינג בע\"מ"
+            }
+          ]
+        },
+        "0:12": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "פתרונות תחבורה",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 219,
+              "section_title": "גילוי בדבר המבקר הפנימי בחברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Avis אוקראינה",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 219,
+              "section_title": "גילוי בדבר המבקר הפנימי בחברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אופיס 3000 בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 219,
+              "section_title": "גילוי בדבר המבקר הפנימי בחברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "יוניברסל פתרונות מימון בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 219,
+              "section_title": "גילוי בדבר המבקר הפנימי בחברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "יו.אמ.איי סוכנות לביטוח (1994) בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 219,
+              "section_title": "גילוי בדבר המבקר הפנימי בחברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "1G",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 206,
+              "section_title": "פתרונות אבטחה",
+              "table_title": null,
+              "note": "איחוד מלא"
+            },
+            {
+              "name": "דנאל",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 206,
+              "section_title": "סיעוד, משאבי אנוש ושירותים לאוכלוסיות מיוחדות",
+              "table_title": null,
+              "note": "רכישת מניות לאורך שנת 2025"
+            }
+          ],
+          "change_events": []
+        },
+        "0:13": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:14": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:15": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "יוניברסל מוביליטי טכנולוג'י בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 270,
+              "section_title": "באור 13 - השקעות בחברות המטופלות לפי שיטת השווי המאזני - ד. השקעה בחברות כלולות - מידע נוסף בדבר חברות כלולות המוחזקות על ידי החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דנאל (אדיר יהושע) בע\"מ",
+              "ownership_pct": 19.46,
+              "parent": null,
+              "page_reference": 270,
+              "section_title": "באור 13 - השקעות בחברות המטופלות לפי שיטת השווי המאזני - ד. השקעה בחברות כלולות - מידע נוסף בדבר חברות כלולות המוחזקות על ידי החברה",
+              "table_title": null,
+              "note": "בסמוך למועד אישור הדוחות ההחזקה הינה כ-23%"
+            },
+            {
+              "name": "יו.טי.אס - יוניברסל פתרונות תחבורה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 271,
+              "section_title": "באור 13 - השקעות בחברות המטופלות לפי שיטת השווי המאזני - ו. השקעות בחברות מאוחדות - 1. מידע בדבר חברות מאוחדות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "יו.אם.אי. סוכנות לביטוח (1994) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 271,
+              "section_title": "באור 13 - השקעות בחברות המטופלות לפי שיטת השווי המאזני - ו. השקעות בחברות מאוחדות - 1. מידע בדבר חברות מאוחדות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "יו.אם.איי. מרכז שירות חיפה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 271,
+              "section_title": "באור 13 - השקעות בחברות המטופלות לפי שיטת השווי המאזני - ו. השקעות בחברות מאוחדות - 1. מידע בדבר חברות מאוחדות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "יוניברסל מוטורס ישראל - צ'ק פוסט חיפה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 271,
+              "section_title": "באור 13 - השקעות בחברות המטופלות לפי שיטת השווי המאזני - ו. השקעות בחברות מאוחדות - 1. מידע בדבר חברות מאוחדות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "יוניברסל פתרונות מימון בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 271,
+              "section_title": "באור 13 - השקעות בחברות המטופלות לפי שיטת השווי המאזני - ו. השקעות בחברות מאוחדות - 1. מידע בדבר חברות מאוחדות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אופיס 3000 בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 271,
+              "section_title": "באור 13 - השקעות בחברות המטופלות לפי שיטת השווי המאזני - ו. השקעות בחברות מאוחדות - 1. מידע בדבר חברות מאוחדות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "יוניברסל יבוא יו.אמ.איי בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 271,
+              "section_title": "באור 13 - השקעות בחברות המטופלות לפי שיטת השווי המאזני - ו. השקעות בחברות מאוחדות - 1. מידע בדבר חברות מאוחדות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ג'י וואן פתרונות אבטחה בע\"מ",
+              "ownership_pct": 68,
+              "parent": null,
+              "page_reference": 271,
+              "section_title": "באור 13 - השקעות בחברות המטופלות לפי שיטת השווי המאזני - ו. השקעות בחברות מאוחדות - 1. מידע בדבר חברות מאוחדות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דן ליס-א-קאר 1988 (טרייד אין) בע\"מ",
+              "ownership_pct": 100,
+              "parent": "יו.טי.אס - יוניברסל פתרונות תחבורה בע\"מ",
+              "page_reference": 271,
+              "section_title": "באור 13 - השקעות בחברות המטופלות לפי שיטת השווי המאזני - ו. השקעות בחברות מאוחדות - 1. מידע בדבר חברות מאוחדות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "בית קבוצת יוניברסל מוטורס ישראל בע\"מ",
+              "ownership_pct": 100,
+              "parent": "יו.טי.אס - יוניברסל פתרונות תחבורה בע\"מ",
+              "page_reference": 271,
+              "section_title": "באור 13 - השקעות בחברות המטופלות לפי שיטת השווי המאזני - ו. השקעות בחברות מאוחדות - 1. מידע בדבר חברות מאוחדות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Avis אוקראינה",
+              "ownership_pct": 100,
+              "parent": "יו.טי.אס - יוניברסל פתרונות תחבורה בע\"מ",
+              "page_reference": 271,
+              "section_title": "באור 13 - השקעות בחברות המטופלות לפי שיטת השווי המאזני - ו. השקעות בחברות מאוחדות - 1. מידע בדבר חברות מאוחדות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ג'י וואן טכנולוגיות מיגון בע\"מ",
+              "ownership_pct": 100,
+              "parent": "ג'י וואן פתרונות אבטחה בע\"מ",
+              "page_reference": 271,
+              "section_title": "באור 13 - השקעות בחברות המטופלות לפי שיטת השווי המאזני - ו. השקעות בחברות מאוחדות - 1. מידע בדבר חברות מאוחדות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ג'י וואן הוטלו מערכות ממוחשבות בע\"מ",
+              "ownership_pct": 100,
+              "parent": "ג'י וואן פתרונות אבטחה בע\"מ",
+              "page_reference": 271,
+              "section_title": "באור 13 - השקעות בחברות המטופלות לפי שיטת השווי המאזני - ו. השקעות בחברות מאוחדות - 1. מידע בדבר חברות מאוחדות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מוקד אמון (1995) בקרה וסיור בע\"מ",
+              "ownership_pct": 100,
+              "parent": "ג'י וואן פתרונות אבטחה בע\"מ",
+              "page_reference": 271,
+              "section_title": "באור 13 - השקעות בחברות המטופלות לפי שיטת השווי המאזני - ו. השקעות בחברות מאוחדות - 1. מידע בדבר חברות מאוחדות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ג'י וואן מוקד שחר בע\"מ",
+              "ownership_pct": 100,
+              "parent": "ג'י וואן פתרונות אבטחה בע\"מ",
+              "page_reference": 271,
+              "section_title": "באור 13 - השקעות בחברות המטופלות לפי שיטת השווי המאזני - ו. השקעות בחברות מאוחדות - 1. מידע בדבר חברות מאוחדות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ג'י וואן מיזוג פלוס בע\"מ",
+              "ownership_pct": 51,
+              "parent": "ג'י וואן פתרונות אבטחה בע\"מ",
+              "page_reference": 271,
+              "section_title": "באור 13 - השקעות בחברות המטופלות לפי שיטת השווי המאזני - ו. השקעות בחברות מאוחדות - 1. מידע בדבר חברות מאוחדות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ג'י וואן פתרונות ניקיון בע\"מ",
+              "ownership_pct": 100,
+              "parent": "ג'י וואן פתרונות אבטחה בע\"מ",
+              "page_reference": 271,
+              "section_title": "באור 13 - השקעות בחברות המטופלות לפי שיטת השווי המאזני - ו. השקעות בחברות מאוחדות - 1. מידע בדבר חברות מאוחדות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ג'י וואן משאבי אנוש בע\"מ",
+              "ownership_pct": 100,
+              "parent": "ג'י וואן פתרונות אבטחה בע\"מ",
+              "page_reference": 271,
+              "section_title": "באור 13 - השקעות בחברות המטופלות לפי שיטת השווי המאזני - ו. השקעות בחברות מאוחדות - 1. מידע בדבר חברות מאוחדות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פוליסיטי בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 269,
+              "section_title": "באור 13 - השקעות בחברות המטופלות לפי שיטת השווי המאזני - א. הרכב",
+              "table_title": null,
+              "note": "עסקה משותפת"
+            },
+            {
+              "name": "יוניברסל משאיות ישראל בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 271,
+              "section_title": "באור 13 - השקעות בחברות המטופלות לפי שיטת השווי המאזני - ה. עסקאות משותפות (השקעות בחברות בשליטה משותפת)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אנקור-חברה לביטוח בע\"מ",
+              "ownership_pct": 8.68,
+              "parent": null,
+              "page_reference": 275,
+              "section_title": "באור 14 - השקעה בנכסים פיננסיים",
+              "table_title": null,
+              "note": "זכויות הוניות לאחר מימוש חלקי בינואר 2026 (זכויות הצבעה 4.5%)"
+            },
+            {
+              "name": "הופ און- חברה העוסקת בפיתוח מערכות לתשלום דיגיטלי בתחבורה ציבורית",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 275,
+              "section_title": "באור 14 - השקעה בנכסים פיננסיים",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:16": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "יו.אם.אי. סוכנות לביטוח (1994) בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 273,
+              "section_title": "באור -:13 השקעות בחברות המטופלות לפי שיטת השווי המאזני (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "יו.אם.איי. מרכז שירות חיפה בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 273,
+              "section_title": "באור -:13 השקעות בחברות המטופלות לפי שיטת השווי המאזני (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "יוניברסל מוטורס ישראל - צ'ק פוסט חיפה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 273,
+              "section_title": "באור -:13 השקעות בחברות המטופלות לפי שיטת השווי המאזני (המשך)",
+              "table_title": null,
+              "note": "נרכשה מלוא ההחזקה לאחר שכל צד החזיק 50%"
+            },
+            {
+              "name": "פתרונות מימון",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 273,
+              "section_title": "באור -:13 השקעות בחברות המטופלות לפי שיטת השווי המאזני (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אופיס 3000 בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 273,
+              "section_title": "באור -:13 השקעות בחברות המטופלות לפי שיטת השווי המאזני (המשך)",
+              "table_title": null,
+              "note": "רכישת מלוא מניותיה"
+            },
+            {
+              "name": "יוניברסל יבוא יו.אמ.איי בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 273,
+              "section_title": "באור -:13 השקעות בחברות המטופלות לפי שיטת השווי המאזני (המשך)",
+              "table_title": null,
+              "note": "בבעלות מלאה של החברה"
+            },
+            {
+              "name": "ג'י וואן פתרונות אבטחה בע\"מ (1G)",
+              "ownership_pct": 68.46,
+              "parent": null,
+              "page_reference": 273,
+              "section_title": "באור -:13 השקעות בחברות המטופלות לפי שיטת השווי המאזני (המשך)",
+              "table_title": null,
+              "note": "מצוין כ- 68% בבאור 13 ו- 68.46% בבאור 17"
+            },
+            {
+              "name": "דן ליס-א-קאר 1988 (טרייד אין) בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 274,
+              "section_title": "באור -:13 השקעות בחברות המטופלות לפי שיטת השווי המאזני (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "בית קבוצת יוניברסל מוטורס ישראל בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 274,
+              "section_title": "באור -:13 השקעות בחברות המטופלות לפי שיטת השווי המאזני (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "AVIS אוקראינה",
+              "ownership_pct": 100,
+              "parent": "פתרונות תחבורה",
+              "page_reference": 274,
+              "section_title": "באור -:13 השקעות בחברות המטופלות לפי שיטת השווי המאזני (המשך)",
+              "table_title": null,
+              "note": "החברה מחזיקה באמצעות פתרונות תחבורה ב- 100% מהון המניות"
+            },
+            {
+              "name": "הופ און",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 275,
+              "section_title": "באור -:14 השקעה בנכסים פיננסיים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אנקור-חברה לביטוח בע\"מ",
+              "ownership_pct": 8.68,
+              "parent": null,
+              "page_reference": 275,
+              "section_title": "באור -:14 השקעה בנכסים פיננסיים",
+              "table_title": null,
+              "note": "החזקה הונית נכון למועד שלאחר מכירת 65% ביום 15 בינואר 2026"
+            }
+          ],
+          "change_events": [
+            {
+              "company": "אנקור-חברה לביטוח בע\"מ",
+              "event_type": "decrease",
+              "ownership_pct_before": 73.68,
+              "ownership_pct_after": 8.68,
+              "event_date": "2026-01-15",
+              "event_description": "מכירת 65% מהחזקותיה באנקור לצדדים שלישיים, כך שלאחר מכן מחזיקה החברה ב-4.5% זכויות הצבעה ו-8.68% זכויות הוניות",
+              "page_reference": 275,
+              "section_title": "באור -:14 השקעה בנכסים פיננסיים"
+            }
+          ]
+        },
+        "0:17": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:18": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "פוליסיטי בע\"מ",
+              "event_type": "increase",
+              "ownership_pct_before": 25,
+              "ownership_pct_after": 50,
+              "event_date": "2024-07-01",
+              "event_description": "רכישת 25% נוספים ממניות החברות על ידי ג'י וואן פתרונות אבטחה, כך שההחזקות עלו ל-50%.",
+              "page_reference": 314,
+              "section_title": "באור 28 - התחייבויות תלויות, התקשרויות, שעבודים וערבויות (המשך)"
+            },
+            {
+              "company": "פוליסיטי המפעיל בע\"מ",
+              "event_type": "increase",
+              "ownership_pct_before": 25,
+              "ownership_pct_after": 50,
+              "event_date": "2024-07-01",
+              "event_description": "רכישת 25% נוספים ממניות החברות על ידי ג'י וואן פתרונות אבטחה, כך שההחזקות עלו ל-50%.",
+              "page_reference": 314,
+              "section_title": "באור 28 - התחייבויות תלויות, התקשרויות, שעבודים וערבויות (המשך)"
+            },
+            {
+              "company": "מוקד שחר בע\"מ",
+              "event_type": "increase",
+              "ownership_pct_before": 70,
+              "ownership_pct_after": 100,
+              "event_date": "2025-07-13",
+              "event_description": "השלמת רכישת מלוא החזקותיו של בעל הזכויות שאינן מקנות שליטה במוקד שחר על ידי טכנולוגיות מיגון לגלי 100%.",
+              "page_reference": 315,
+              "section_title": "באור 28 - התחייבויות תלויות, התקשרויות, שעבודים וערבויות (המשך)"
+            },
+            {
+              "company": "פאל אלקטרוניקס מערכות בע\"מ",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": 0,
+              "ownership_pct_after": 50,
+              "event_date": "2026-01-28",
+              "event_description": "השלמת עסקה לרכישת 50% מהון המניות המונפק והנפרע של פאל על ידי 1G.",
+              "page_reference": 315,
+              "section_title": "באור 28 - התחייבויות תלויות, התקשרויות, שעבודים וערבויות (המשך)"
+            },
+            {
+              "company": "המאגר - מרכז לחלפי רכב בע\"מ",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": 0,
+              "ownership_pct_after": 65,
+              "event_date": "2025-12-29",
+              "event_description": "התקשרות בהסכם לרכישת 65% מהחזקות חברת האם בהון המניות הרגילות (ו-65% ממלוא הזכויות בהמשך).",
+              "page_reference": 316,
+              "section_title": "באור 28 - התחייבויות תלויות, התקשרויות, שעבודים וערבויות (המשך)"
+            }
+          ]
+        },
+        "0:19": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "ג'י וואן פתרונות אבטחה",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 324,
+              "section_title": "באור 29 - הון (המשך)",
+              "table_title": null,
+              "note": "חברה מאוחדת המטופלת לפי שיטת השווי המאזני"
+            }
+          ],
+          "change_events": []
+        },
+        "0:20": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "ג'י וואן פתרונות אבטחה בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 347,
+              "section_title": "באור 36 - מגזרי פעילות",
+              "table_title": null,
+              "note": "חברה מאוחדת"
+            },
+            {
+              "name": "דנאל (אדיר יהושע) בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 347,
+              "section_title": "באור 36 - מגזרי פעילות",
+              "table_title": null,
+              "note": "מגזר פעילות מדווח"
+            },
+            {
+              "name": "פאל אלקטרוניקס מערכות בע\"מ",
+              "ownership_pct": 50,
+              "parent": "ג'י וואן פתרונות אבטחה בע\"מ",
+              "page_reference": 352,
+              "section_title": "באור 38 - אירועים מהותיים בתקופת הדווח ולאחריה",
+              "table_title": null,
+              "note": "נרכשה על ידי חברה מאוחדת ג'י וואן"
+            },
+            {
+              "name": "המאגר חלפים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 352,
+              "section_title": "באור 38 - אירועים מהותיים בתקופת הדווח ולאחריה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "המאגר ליסינג בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 352,
+              "section_title": "באור 38 - אירועים מהותיים בתקופת הדווח ולאחריה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אנקור חברה לביטוח",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 352,
+              "section_title": "באור 38 - אירועים מהותיים בתקופת הדווח ולאחריה",
+              "table_title": null,
+              "note": "מכירת חלק מהחזקות החברה לאחר תאריך המאזן"
+            }
+          ],
+          "change_events": []
+        },
+        "0:21": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:22": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "יוניברסל פתרונות תחבורה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 381,
+              "section_title": "ט. אירועים מהותיים בזמן תקופת הדיווח ולאחריה",
+              "table_title": "דיבידנדים שחולקו ושולמו לחברה על ידי חברות מוחזקות בשנת 2025",
+              "note": null
+            },
+            {
+              "name": "דנאל (אדיר יהושע) בע\"מ",
+              "ownership_pct": 19.46,
+              "parent": null,
+              "page_reference": 381,
+              "section_title": "ט. אירועים מהותיים בזמן תקופת הדיווח ולאחריה",
+              "table_title": "דיבידנדים שחולקו ושולמו לחברה על ידי חברות מוחזקות בשנת 2025",
+              "note": "נכון למועד פרסום הדוח שיעור ההחזקה עומד על כ-22.82%"
+            },
+            {
+              "name": "ג'י וואן פתרונות אבטחה בע\"מ",
+              "ownership_pct": 68.0,
+              "parent": null,
+              "page_reference": 381,
+              "section_title": "ט. אירועים מהותיים בזמן תקופת הדיווח ולאחריה",
+              "table_title": "דיבידנדים שחולקו ושולמו לחברה על ידי חברות מוחזקות בשנת 2025",
+              "note": "נכון למועד פרסום הדוח שיעור ההחזקה עומד על כ-68.45%"
+            },
+            {
+              "name": "יוניברסל משאיות ישראל בע\"מ",
+              "ownership_pct": 50.0,
+              "parent": null,
+              "page_reference": 381,
+              "section_title": "ט. אירועים מהותיים בזמן תקופת הדיווח ולאחריה",
+              "table_title": "דיבידנדים שחולקו ושולמו לחברה על ידי חברות מוחזקות בשנת 2025",
+              "note": null
+            }
+          ],
+          "change_events": [
+            {
+              "company": "ג'י וואן פתרונות אבטחה בע\"מ (G1)",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": null,
+              "event_date": "2024-02-01",
+              "event_description": "רכישת השליטה בחברה בחודש פברואר 2024",
+              "page_reference": 382,
+              "section_title": "פרק ד' - פרטים נוספים על התאגיד"
+            },
+            {
+              "company": "ג'י וואן פתרונות אבטחה בע\"מ (G1)",
+              "event_type": "increase",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 68.45,
+              "event_date": "2025-12-31",
+              "event_description": "רכישת מניות נוספות במהלך שנת 2025 בסכום של כ-63 מיליון ש\"ח, הגעה לשיעור החזקה של כ-68.45%",
+              "page_reference": 382,
+              "section_title": "פרק ד' - פרטים נוספים על התאגיד"
+            },
+            {
+              "company": "דנאל (אדיר יהושע) בע\"מ",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": null,
+              "event_date": "2023-12-31",
+              "event_description": "רכישת מניות בחברת דנאל בתמורה כוללת של כ-207 מיליון ש\"ח ומעבר לטיפול לפי שיטת השווי המאזני החל מיום 9 בינואר 2024",
+              "page_reference": 382,
+              "section_title": "פרק ד' - פרטים נוספים על התאגיד"
+            },
+            {
+              "company": "דנאל (אדיר יהושע) בע\"מ",
+              "event_type": "increase",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 22.82,
+              "event_date": "2025-12-31",
+              "event_description": "רכישת מניות נוספות של דנאל במהלך שנת 2025 בסכום כולל של 104 מיליון ש\"ח, הגעה לשיעור החזקה של כ-22.82%",
+              "page_reference": 383,
+              "section_title": "פרק ד' - פרטים נוספים על התאגיד"
+            }
+          ]
+        },
+        "0:23": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:24": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "יו.טי.אס. - יוניברסל פתרונות תחבורה בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 426,
+              "section_title": "פרק ו' – דוח בדבר הבקרה הפנימית על הדיווח הכספי והגילוי",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "AVIS-ukraine",
+              "ownership_pct": null,
+              "parent": "יו.טי.אס. - יוניברסל פתרונות תחבורה בע\"מ",
+              "page_reference": 426,
+              "section_title": "פרק ו' – דוח בדבר הבקרה הפנימית על הדיווח הכספי והגילוי",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "יוניברסל פתרונות מימון בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 426,
+              "section_title": "פרק ו' – דוח בדבר הבקרה הפנימית על הדיווח הכספי והגילוי",
+              "table_title": null,
+              "note": "חברת בת"
+            }
+          ],
+          "change_events": []
+        },
+        "0:25": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "יו.טי.אס - יוניברסל פתרונות תחבורה בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 426,
+              "section_title": "פרק ו'- דוח בדבר הבקרה הפנימית על הדיווח הכספי והגילוי",
+              "table_title": null,
+              "note": "מוזכרת בהקשר של AVIS-ukraine"
+            },
+            {
+              "name": "יוניברסל פתרונות מימון בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 426,
+              "section_title": "פרק ו'- דוח בדבר הבקרה הפנימית על הדיווח הכספי והגילוי",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        }
+      },
+      "attempts": {
+        "0:0": 1
+      }
     }
   },
   "1731403": {
     "company_id": "643",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-17T11:19:45.408937+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 22,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-18T10:40:39.104570+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1735965": {
     "company_id": "536",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-17T11:19:41.202832+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 27,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-18T10:43:46.470726+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1733256": {
     "company_id": "1853",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-17T11:19:41.674110+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 14,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-18T10:43:09.050221+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732265": {
     "company_id": "642",
@@ -3543,31 +5503,352 @@
   },
   "1736401": {
     "company_id": "1386",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-17T11:19:42.283691+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 15,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-18T10:45:58.822127+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1724382": {
     "company_id": "1152",
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-17T11:19:42.820527+00:00",
+    "at": "2026-09-18T10:45:52.564779+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 16,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-02-23",
+          "subsidiaries": [
+            {
+              "name": "סאן דור נתיבי אויר בינלאומיים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.3 תרשים החזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ת.מ.מ. תעשיות מזון מטוסים (נמל תעופה בן גוריון) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.3 תרשים החזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Borenstein Carerers, Inc.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.3 תרשים החזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אל על הנוסע המתמיד בע\"מ",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.3 תרשים החזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "קוקפיט חדשנות בע\"מ",
+              "ownership_pct": 80.9,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.3 תרשים החזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אייר קונסורטירס ישראל בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.3 תרשים החזקות",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "סאן דור נתיבי אויר בינלאומיים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 32,
+              "section_title": "8.7.1 תיאור תמציתי של עסקי החברות הבנות העיקריות",
+              "table_title": null,
+              "note": "חברה בבעלות מלאה"
+            },
+            {
+              "name": "ת.מ.מ. – תעשיות מזון מטוסים (נמל תעופה בן גוריון) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 32,
+              "section_title": "8.7.1 תיאור תמציתי של עסקי החברות הבנות העיקריות",
+              "table_title": null,
+              "note": "חברה בבעלות מלאה"
+            },
+            {
+              "name": "BORENSTEIN CATERERS, INC.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 32,
+              "section_title": "8.7.1 תיאור תמציתי של עסקי החברות הבנות העיקריות",
+              "table_title": null,
+              "note": "חברה בבעלות מלאה"
+            },
+            {
+              "name": "קוקפיט חדשנות בע\"מ",
+              "ownership_pct": 80.9,
+              "parent": null,
+              "page_reference": 33,
+              "section_title": "8.7.1 תיאור תמציתי של עסקי החברות הבנות העיקריות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אייר קונסולידטורס ישראל בע\"מ (אק\"י)",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 33,
+              "section_title": "8.7.1 תיאור תמציתי של עסקי החברות הבנות העיקריות",
+              "table_title": null,
+              "note": "מחזיקה בכלל מניותיה מסוג ב'"
+            },
+            {
+              "name": "אל על הנוסע המתמיד בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 33,
+              "section_title": "8.7.1 תיאור תמציתי של עסקי החברות הבנות העיקריות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ELAL ISRAEL AIRLINES GULF FZCO",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 33,
+              "section_title": "8.7.1 תיאור תמציתי של עסקי החברות הבנות העיקריות",
+              "table_title": null,
+              "note": "בהליכי פירוק מרצון"
+            },
+            {
+              "name": "פליי אין שותפות מוגבלת",
+              "ownership_pct": 50.09,
+              "parent": null,
+              "page_reference": 33,
+              "section_title": "8.7.2 תיאור תמציתי של החזקות נוספות של החברה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "סאן דור נתיבי אויר בינלאומיים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 67,
+              "section_title": "פעילות הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אל על הנוסע המתמיד בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 67,
+              "section_title": "פעילות הקבוצה",
+              "table_title": null,
+              "note": "חברת המועדון"
+            },
+            {
+              "name": "ת.מ.מ. - תעשיות מזון מטוסים (נמל תעופה בן גוריון) בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 67,
+              "section_title": "פעילות הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Borenstein Caterers Inc.",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 67,
+              "section_title": "פעילות הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "קוקפיט חדשנות בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 67,
+              "section_title": "פעילות הקבוצה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": [
+            {
+              "company": "אל על הנוסע המתמיד בע\"מ",
+              "event_type": "increase",
+              "ownership_pct_before": null,
+              "ownership_pct_after": null,
+              "event_date": "2026-02-19",
+              "event_description": "מימוש אופציה לרכישת 5.1% מהון המניות של חברת המועדון",
+              "page_reference": 70,
+              "section_title": "דוח הדירקטוריון על מצב ענייני התאגיד"
+            }
+          ]
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "אל על הנוסע המתמיד בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 69,
+              "section_title": "פרק ב | דוח הדירקטוריון",
+              "table_title": null,
+              "note": "חברת בת, מוזכרת רכישת 5.1% מהון המניות במסגרת מימוש אופציה"
+            },
+            {
+              "name": "סאן דור",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 71,
+              "section_title": "פרק ב | דוח הדירקטוריון",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": [
+            {
+              "company": "אל על הנוסע המתמיד בע\"מ",
+              "event_type": "increase",
+              "ownership_pct_before": null,
+              "ownership_pct_after": null,
+              "event_date": "2026-02-19",
+              "event_description": "מימוש אופציה לרכישת 5.1% מהון המניות של חברת המועדון",
+              "page_reference": 70,
+              "section_title": "פרק ב | דוח הדירקטוריון"
+            }
+          ]
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "ת.מ.מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 106,
+              "section_title": "א.7 נכסים שאינם משועבדים",
+              "table_title": null,
+              "note": "מוזכרת כחברת בת"
+            }
+          ],
+          "change_events": []
+        },
+        "0:7": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "סאן דור נתיבי אויר בינלאומיים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 133,
+              "section_title": "ביאור 1 - כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אל על הנוסע המתמיד בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 133,
+              "section_title": "ביאור 1 - כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ת.מ.מ. - תעשיות מזון מטוסים (נמל תעופה בן גוריון) בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 133,
+              "section_title": "ביאור 1 - כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Borenstein Inc Caterers",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 133,
+              "section_title": "ביאור 1 - כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "קוקפיט חדשנות בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 133,
+              "section_title": "ביאור 1 - כללי",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
@@ -37999,18 +40280,11 @@
   },
   "1733352": {
     "company_id": "2385",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-17T11:19:30.959854+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 21,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-18T10:35:31.654877+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1733357": {
     "company_id": "421",
