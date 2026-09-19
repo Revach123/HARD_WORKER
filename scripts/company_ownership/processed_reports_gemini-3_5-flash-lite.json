@@ -8572,7 +8572,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-19T11:14:52.569480+00:00",
+    "at": "2026-09-19T11:15:04.716386+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -8738,6 +8738,41 @@
           "document_type": "ownership_snapshot",
           "as_of_date": "2025-12-31",
           "subsidiaries": [],
+          "change_events": []
+        },
+        "0:8": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "מרדכי אביב מפעלי בניה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 152,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדוח",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "פלפלון סנטר בע\"מ",
+              "ownership_pct": 38,
+              "parent": "מרדכי אביב מפעלי בניה בע\"מ",
+              "page_reference": 152,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדוח",
+              "table_title": "תקנה 11",
+              "note": "מוחזק באמצעות מרדכי אביב מפעלי בניה בע\"מ, חברת בת."
+            },
+            {
+              "name": "Tavasz Invest Kft",
+              "ownership_pct": 100,
+              "parent": "מרדכי אביב מפעלי בניה בע\"מ",
+              "page_reference": 152,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדוח",
+              "table_title": "תקנה 11",
+              "note": "מוחזק באמצעות מרדכי אביב מפעלי בניה בע\"מ, חברת בת."
+            }
+          ],
           "change_events": []
         }
       },
@@ -9064,7 +9099,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-18T11:09:23.017815+00:00",
+    "at": "2026-09-19T11:15:02.909923+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -9079,7 +9114,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-18T11:09:23.456736+00:00",
+    "at": "2026-09-19T11:15:03.277586+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -9094,7 +9129,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-18T11:09:23.831142+00:00",
+    "at": "2026-09-19T11:15:03.655614+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -9124,7 +9159,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-18T11:09:24.201913+00:00",
+    "at": "2026-09-19T11:15:04.032248+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -9139,7 +9174,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-18T11:09:24.723566+00:00",
+    "at": "2026-09-19T11:15:04.511674+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -9154,7 +9189,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-18T11:09:24.908512+00:00",
+    "at": "2026-09-19T11:15:04.758644+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -9169,7 +9204,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-18T11:09:25.096064+00:00",
+    "at": "2026-09-19T11:15:04.922723+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -9214,7 +9249,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-18T11:09:26.286217+00:00",
+    "at": "2026-09-19T11:15:05.519900+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
