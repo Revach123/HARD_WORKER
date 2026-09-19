@@ -3819,1110 +3819,11 @@
   },
   "1742786": {
     "company_id": "1979",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-19T10:20:21.352139+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 16,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "גרניט יזמות נדל\"ן בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "חלק ראשון - תיאור ההתפתחות הכללית של עסקי התאגיד",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל בניה",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "חלק ראשון - תיאור ההתפתחות הכללית של עסקי התאגיד",
-              "table_title": null,
-              "note": "לשעבר: אפי קפיטל בראל ביצוע בע\"מ"
-            },
-            {
-              "name": "אחוזת אריה 2015 בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "חלק ראשון - תיאור ההתפתחות הכללית של עסקי התאגיד",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "אופק חופים בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 28,
-              "section_title": "6.2 הסכמים עם שותפים - תיאור כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אחוזת אריה 2015 בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 28,
-              "section_title": "6.2 הסכמים עם שותפים - תיאור כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "נסא נתניה בע\"מ",
-              "ownership_pct": 33.33,
-              "parent": null,
-              "page_reference": 28,
-              "section_title": "6.2 הסכמים עם שותפים - תיאור כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "גבעת בראשית שלב ב', ירושלים",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 28,
-              "section_title": "6.2 הסכמים עם שותפים - תיאור כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל סלעית בע\"מ",
-              "ownership_pct": 33,
-              "parent": null,
-              "page_reference": 29,
-              "section_title": "6.2 הסכמים עם שותפים - תיאור כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל בינוי בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 30,
-              "section_title": "6.2 הסכמים עם שותפים - תיאור כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מרכז עסקי ומסחרי אורות 2017 בע\"מ",
-              "ownership_pct": 33.33,
-              "parent": null,
-              "page_reference": 31,
-              "section_title": "6.2 הסכמים עם שותפים - תיאור כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אפי בהר יונה - שלב א'",
-              "ownership_pct": 16,
-              "parent": null,
-              "page_reference": 31,
-              "section_title": "6.2 הסכמים עם שותפים - תיאור כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל שובל נחשון בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 31,
-              "section_title": "6.2 הסכמים עם שותפים - תיאור כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל נופי בן שמן בע\"מ",
-              "ownership_pct": 57,
-              "parent": null,
-              "page_reference": 31,
-              "section_title": "6.2 הסכמים עם שותפים - תיאור כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל השקעות ובניה בע\"מ",
-              "ownership_pct": 93,
-              "parent": null,
-              "page_reference": 32,
-              "section_title": "6.2 הסכמים עם שותפים - תיאור כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל מכרזים בע\"מ",
-              "ownership_pct": 90,
-              "parent": null,
-              "page_reference": 32,
-              "section_title": "6.2 הסכמים עם שותפים - תיאור כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל נדל\"ן גמלא הראל בע\"מ",
-              "ownership_pct": 80,
-              "parent": null,
-              "page_reference": 33,
-              "section_title": "6.2 הסכמים עם שותפים - תיאור כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל פלוק החזקות בע\"מ",
-              "ownership_pct": 75,
-              "parent": null,
-              "page_reference": 33,
-              "section_title": "6.2 הסכמים עם שותפים - תיאור כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל ומיכמן מימון יזמות בע\"מ",
-              "ownership_pct": 80,
-              "parent": null,
-              "page_reference": 33,
-              "section_title": "6.2 הסכמים עם שותפים - תיאור כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל ומיכמן השקעות בע\"מ",
-              "ownership_pct": 60,
-              "parent": null,
-              "page_reference": 34,
-              "section_title": "6.2 הסכמים עם שותפים - תיאור כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "פעילות משותפת – קרית אתא",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 34,
-              "section_title": "6.2 הסכמים עם שותפים - תיאור כללי",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "אפי קפיטל בניה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 111,
-              "section_title": "6.8 פרויקט אפי על הפארק - נהריה - פרויקט בביצוע",
-              "table_title": null,
-              "note": "חברה בת המוחזקת 100% המשמשת כקבלן ביצוע לפרויקטים"
-            }
-          ],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "אפי קפיטל בניה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 70,
-              "section_title": "6.10 הרמוני בית שמש - שלב א' - פרויקט בביצוע",
-              "table_title": null,
-              "note": "חברה בת בבעלות מלאה"
-            },
-            {
-              "name": "אפי קפיטל בינוי בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 81,
-              "section_title": "6.12 פרויקט אפי באפיקי נחל, שלב א' - A - פרויקט בביצוע",
-              "table_title": null,
-              "note": "חברת פרויקט"
-            },
-            {
-              "name": "אחוזת אריה 2015 בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 77,
-              "section_title": "מועד התחלת עבודות הקמה: רבעון 1 לשנת 2024",
-              "table_title": null,
-              "note": "חברה כלולה מוחזקת"
-            }
-          ],
-          "change_events": []
-        },
-        "0:5": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "אפי קפיטל בינוי בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 171,
-              "section_title": "6.13.1 הצגת הפרויקט",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל שובל נחשון בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 176,
-              "section_title": "6.14.1 הצגת הפרויקט",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל נדל\"ן בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 185,
-              "section_title": "6.15.9 פרטים אודות הלוואת מזנין",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל סלעית בע\"מ",
-              "ownership_pct": 33,
-              "parent": null,
-              "page_reference": 187,
-              "section_title": "6.16.1 הצגת הפרויקט",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:6": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "אפי קפיטל שובל נחשון בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 107,
-              "section_title": "פרויקט INTRO, תל אביב",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל פרויקטים בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 115,
-              "section_title": "פרויקט אפי בכרמי גת - מתחם 13",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל ומיכמן מימון יזמות בע\"מ",
-              "ownership_pct": 80,
-              "parent": null,
-              "page_reference": 119,
-              "section_title": "התקשרויות שהושלמו לאחר תאריך הדוח או שטרם הושלמו",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל ומיכמן השקעות בע\"מ",
-              "ownership_pct": 60,
-              "parent": null,
-              "page_reference": 119,
-              "section_title": "התקשרויות שהושלמו לאחר תאריך הדוח או שטרם הושלמו",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל אקיווטי בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 120,
-              "section_title": "התקשרויות שהושלמו לאחר תאריך הדוח או שטרם הושלמו",
-              "table_title": null,
-              "note": "לשעבר: אפי קפיטל מדף 5"
-            }
-          ],
-          "change_events": []
-        },
-        "0:7": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "אפי קפיטל אקיווטי בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 120,
-              "section_title": "6.23.3 פרויקט \"מחיר מטרה\" בשכונת מערב קרית גת – קרית גת",
-              "table_title": null,
-              "note": "לשעבר: אפי קפיטל מדף 5"
-            },
-            {
-              "name": "אפי קפיטל ומיכמן השקעות בע\"מ",
-              "ownership_pct": 60,
-              "parent": null,
-              "page_reference": 120,
-              "section_title": "6.23.4 פרויקט אפי בנהריה – מתחם סער",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מרכז עסקי ומסחרי אורות 2017 בע\"מ",
-              "ownership_pct": 33,
-              "parent": null,
-              "page_reference": 123,
-              "section_title": "12. השקעות",
-              "table_title": null,
-              "note": "בשרשור סופי"
-            },
-            {
-              "name": "אפי קפיטל פ. אחזקות בע\"מ",
-              "ownership_pct": 75,
-              "parent": null,
-              "page_reference": 135,
-              "section_title": "2. להלן תיאור התפתחויות עיקריות בעסקי החברה בשנת הדוח ועד למועד פרסומו",
-              "table_title": null,
-              "note": "לשעבר: אפי קפיטל פלוק אחזקות בע\"מ"
-            },
-            {
-              "name": "אפי קפיטל נדל\"ן גמלא הראל בע\"מ",
-              "ownership_pct": 80,
-              "parent": null,
-              "page_reference": 135,
-              "section_title": "2. להלן תיאור התפתחויות עיקריות בעסקי החברה בשנת הדוח ועד למועד פרסומו",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל ומיכמן יזמות בע\"מ",
-              "ownership_pct": 80,
-              "parent": null,
-              "page_reference": 135,
-              "section_title": "2. להלן תיאור התפתחויות עיקריות בעסקי החברה בשנת הדוח ועד למועד פרסומו",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "נווה אור ש.פ יזמות בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 128,
-              "section_title": "16. הליכים משפטיים",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:8": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "אפי קפיטל ומיכמן השקעות בע\"מ",
-              "ownership_pct": 60,
-              "parent": null,
-              "page_reference": 137,
-              "section_title": "אירועים מהותיים נוספים בתקופת הדוח ולאחריה עד למועד אישור הדוח",
-              "table_title": null,
-              "note": "מוחזקת ע\"י החברה (60%) ועל ידי שותף (40%)"
-            },
-            {
-              "name": "אפי קפיטל אקווטי בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 137,
-              "section_title": "אירועים מהותיים נוספים בתקופת הדוח ולאחריה עד למועד אישור הדוח",
-              "table_title": null,
-              "note": "לשעבר: אפי קפיטל מדף 5 בע\"מ"
-            },
-            {
-              "name": "נווה אור ש.פ יזמות בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 139,
-              "section_title": "הליכים משפטיים",
-              "table_title": null,
-              "note": "חברה מוחזקת בשרשור על ידי החברה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:9": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "אפי קפיטל התחדשות עיורנית בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 171,
-              "section_title": "באור :1 - כללי - א. תיאור כללי של הקבוצה ופעילותה - 2. פעילות הקבוצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "גרניט יזמות נדל\"ן בע\"מ",
-              "ownership_pct": 50,
-              "parent": "אפי קפיטל התחדשות עיורנית בע\"מ",
-              "page_reference": 171,
-              "section_title": "באור :1 - כללי - א. תיאור כללי של הקבוצה ופעילותה - 2. פעילות הקבוצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל בניה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 171,
-              "section_title": "באור :1 - כללי - א. תיאור כללי של הקבוצה ופעילותה - 2. פעילות הקבוצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אחוזת אריה 2015 בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 171,
-              "section_title": "באור :1 - כללי - א. תיאור כללי של הקבוצה ופעילותה - 2. פעילות הקבוצה",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:10": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "אפי קפיטל התחדשות עירונית בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 187,
-              "section_title": "באור 9 - השקעות בחברות מוחזקות",
-              "table_title": "א. חברות מאוחדות מהותיות:",
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל בעיר היין בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 187,
-              "section_title": "באור 9 - השקעות בחברות מוחזקות",
-              "table_title": "א. חברות מאוחדות מהותיות:",
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 187,
-              "section_title": "באור 9 - השקעות בחברות מוחזקות",
-              "table_title": "א. חברות מאוחדות מהותיות:",
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל מתחמים בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 187,
-              "section_title": "באור 9 - השקעות בחברות מוחזקות",
-              "table_title": "א. חברות מאוחדות מהותיות:",
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל פרוייקטים בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 187,
-              "section_title": "באור 9 - השקעות בחברות מוחזקות",
-              "table_title": "א. חברות מאוחדות מהותיות:",
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל בניה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 187,
-              "section_title": "באור 9 - השקעות בחברות מוחזקות",
-              "table_title": "א. חברות מאוחדות מהותיות:",
-              "note": null
-            },
-            {
-              "name": "אופק חופים בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 187,
-              "section_title": "באור 9 - השקעות בחברות מוחזקות",
-              "table_title": "1. פירוט החברות הכלולות ועסקאות משותפות פעילות המוחזקות על ידי הקבוצה ופועלות בישראל",
-              "note": "חברה בשליטה משותפת לפי הסכם בין השותפים"
-            },
-            {
-              "name": "אחוזת אריה 2015 בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 187,
-              "section_title": "באור 9 - השקעות בחברות מוחזקות",
-              "table_title": "1. פירוט החברות הכלולות ועסקאות משותפות פעילות המוחזקות על ידי הקבוצה ופועלות בישראל",
-              "note": "חברה בשליטה משותפת לפי הסכם בין השותפים"
-            },
-            {
-              "name": "אפי קפיטל בינוי בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 187,
-              "section_title": "באור 9 - השקעות בחברות מוחזקות",
-              "table_title": "1. פירוט החברות הכלולות ועסקאות משותפות פעילות המוחזקות על ידי הקבוצה ופועלות בישראל",
-              "note": "חברה בשליטה משותפת לפי הסכם בין השותפים"
-            },
-            {
-              "name": "מרכז עיסקי ומסחרי אורות 2017 בע\"מ",
-              "ownership_pct": 33,
-              "parent": null,
-              "page_reference": 187,
-              "section_title": "באור 9 - השקעות בחברות מוחזקות",
-              "table_title": "1. פירוט החברות הכלולות ועסקאות משותפות פעילות המוחזקות על ידי הקבוצה ופועלות בישראל",
-              "note": "חברה בשליטה משותפת לפי הסכם בין השותפים"
-            },
-            {
-              "name": "אפי קפיטל סלעית בע\"מ",
-              "ownership_pct": 33,
-              "parent": null,
-              "page_reference": 187,
-              "section_title": "באור 9 - השקעות בחברות מוחזקות",
-              "table_title": "1. פירוט החברות הכלולות ועסקאות משותפות פעילות המוחזקות על ידי הקבוצה ופועלות בישראל",
-              "note": "חברה בשליטה משותפת לפי הסכם בין השותפים"
-            },
-            {
-              "name": "אפי קפיטל שובל נחשון בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 187,
-              "section_title": "באור 9 - השקעות בחברות מוחזקות",
-              "table_title": "1. פירוט החברות הכלולות ועסקאות משותפות פעילות המוחזקות על ידי הקבוצה ופועלות בישראל",
-              "note": "חברה בשליטה משותפת לפי הסכם בין השותפים"
-            },
-            {
-              "name": "אפי קפיטל נופי בן שמן בע\"מ",
-              "ownership_pct": 57,
-              "parent": null,
-              "page_reference": 187,
-              "section_title": "באור 9 - השקעות בחברות מוחזקות",
-              "table_title": "1. פירוט החברות הכלולות ועסקאות משותפות פעילות המוחזקות על ידי הקבוצה ופועלות בישראל",
-              "note": "חברה בשליטה משותפת לפי הסכם בין השותפים"
-            },
-            {
-              "name": "גרניט יזמות נדל\"ן בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 187,
-              "section_title": "באור 9 - השקעות בחברות מוחזקות",
-              "table_title": "1. פירוט החברות הכלולות ועסקאות משותפות פעילות המוחזקות על ידי הקבוצה ופועלות בישראל",
-              "note": "חברה בשליטה משותפת לפי הסכם בין השותפים"
-            },
-            {
-              "name": "אפי קפיטל השקעות ובניה בע\"מ",
-              "ownership_pct": 93,
-              "parent": null,
-              "page_reference": 187,
-              "section_title": "באור 9 - השקעות בחברות מוחזקות",
-              "table_title": "1. פירוט החברות הכלולות ועסקאות משותפות פעילות המוחזקות על ידי הקבוצה ופועלות בישראל",
-              "note": "חברה בשליטה משותפת לפי הסכם בין השותפים"
-            },
-            {
-              "name": "אפי קפיטל מכרזים בע\"מ",
-              "ownership_pct": 90,
-              "parent": null,
-              "page_reference": 187,
-              "section_title": "באור 9 - השקעות בחברות מוחזקות",
-              "table_title": "1. פירוט החברות הכלולות ועסקאות משותפות פעילות המוחזקות על ידי הקבוצה ופועלות בישראל",
-              "note": "חברה בשליטה משותפת לפי הסכם בין השותפים"
-            },
-            {
-              "name": "אפי קפיטל פ. אחזקות בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 187,
-              "section_title": "באור 9 - השקעות בחברות מוחזקות",
-              "table_title": "1. פירוט החברות הכלולות ועסקאות משותפות פעילות המוחזקות על ידי הקבוצה ופועלות בישראל",
-              "note": "ללא יתרה ליום 31 בדצמבר 2025"
-            },
-            {
-              "name": "אפי קפיטל נדל\"ן גמלא הראל בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 187,
-              "section_title": "באור 9 - השקעות בחברות מוחזקות",
-              "table_title": "1. פירוט החברות הכלולות ועסקאות משותפות פעילות המוחזקות על ידי הקבוצה ופועלות בישראל",
-              "note": "ללא יתרה ליום 31 בדצמבר 2025"
-            },
-            {
-              "name": "אפי קפיטל ומיכמן מימון יזמות בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 187,
-              "section_title": "באור 9 - השקעות בחברות מוחזקות",
-              "table_title": "1. פירוט החברות הכלולות ועסקאות משותפות פעילות המוחזקות על ידי הקבוצה ופועלות בישראל",
-              "note": "ללא יתרה ליום 31 בדצמבר 2025"
-            },
-            {
-              "name": "אפי קפיטל ומיכמן השקעות בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 187,
-              "section_title": "באור 9 - השקעות בחברות מוחזקות",
-              "table_title": "1. פירוט החברות הכלולות ועסקאות משותפות פעילות המוחזקות על ידי הקבוצה ופועלות בישראל",
-              "note": "ללא יתרה ליום 31 בדצמבר 2025"
-            }
-          ],
-          "change_events": []
-        },
-        "0:11": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "מרכז עיסקי ומסחרי אורות 2017 בע\"מ",
-              "ownership_pct": 33.33,
-              "parent": null,
-              "page_reference": 188,
-              "section_title": "באור 9 - השקעות בחברות מוחזקות",
-              "table_title": null,
-              "note": "חלק החברה למועד הדוח"
-            },
-            {
-              "name": "גרניט יזמות נדל\"ן בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 190,
-              "section_title": "באור 9 - השקעות בחברות מוחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל בינוי בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 194,
-              "section_title": "באור 9 - השקעות בחברות מוחזקות",
-              "table_title": "תמצית מידע כספי של חברות כלולות ועסקאות משותפות מהותיות",
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל שובל נחשון בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 195,
-              "section_title": "באור 9 - השקעות בחברות מוחזקות",
-              "table_title": "תמצית מידע כספי של חברות כלולות ועסקאות משותפות מהותיות",
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל נופי בן שמן בע\"מ",
-              "ownership_pct": 57,
-              "parent": null,
-              "page_reference": 196,
-              "section_title": "באור 9 - השקעות בחברות מוחזקות",
-              "table_title": "תמצית מידע כספי של חברות כלולות ועסקאות משותפות מהותיות",
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל סלעית בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 191,
-              "section_title": "באור 9 - השקעות בחברות מוחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל השקעות ובניה בע\"מ",
-              "ownership_pct": 89,
-              "parent": null,
-              "page_reference": 191,
-              "section_title": "באור 9 - השקעות בחברות מוחזקות",
-              "table_title": null,
-              "note": "עשוי להתדלדל ל-80% עקב המרת הלוואת שותף"
-            },
-            {
-              "name": "אפי קפיטל מכרזים בע\"מ",
-              "ownership_pct": 90,
-              "parent": null,
-              "page_reference": 191,
-              "section_title": "באור 9 - השקעות בחברות מוחזקות",
-              "table_title": null,
-              "note": "השותף מחזיק 10%"
-            },
-            {
-              "name": "אפי קפיטל פ. אחזקות בע\"מ",
-              "ownership_pct": 75,
-              "parent": null,
-              "page_reference": 192,
-              "section_title": "באור 9 - השקעות בחברות מוחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל נדל\"ן גמלא הראל בע\"מ",
-              "ownership_pct": 80,
-              "parent": null,
-              "page_reference": 192,
-              "section_title": "באור 9 - השקעות בחברות מוחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל ומיכמן מימון יזמות בע\"מ",
-              "ownership_pct": 80,
-              "parent": null,
-              "page_reference": 192,
-              "section_title": "באור 9 - השקעות בחברות מוחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל ומיכמן השקעות בע\"מ",
-              "ownership_pct": 60,
-              "parent": null,
-              "page_reference": 192,
-              "section_title": "באור 9 - השקעות בחברות מוחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל נדל\"ן בע\"מ – שובל נחשון ביצוע בע\"מ - פעילות משותפת - \"אפי קפיטל ושובל בגבעת בראשית\"",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 196,
-              "section_title": "באור 9 - השקעות בחברות מוחזקות",
-              "table_title": "פירוט הפעילויות המשותפות הפעילות של החברה",
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל נדל\"ן בע\"מ - ספלנדיד אחזקות בע\"מ - פעילות משותפת - \"הר יונה\"",
-              "ownership_pct": 84,
-              "parent": null,
-              "page_reference": 196,
-              "section_title": "באור 9 - השקעות בחברות מוחזקות",
-              "table_title": "פירוט הפעילויות המשותפות הפעילות של החברה",
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל נדל\"ן בע\"מ – ש.ברוך בע\"מ - פעילות משותפת - \"קרית אתא\"",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 196,
-              "section_title": "באור 9 - השקעות בחברות מוחזקות",
-              "table_title": "פירוט הפעילויות המשותפות הפעילות של החברה",
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:12": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "אחוזת אריה",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 214,
-              "section_title": "באור :26 - התקשרויות, שעבודים, ערבויות והתחייבויות תלויות",
-              "table_title": null,
-              "note": "בשליטה משותפת עם עמרם אברהם חברה לבנין בע\"מ"
-            },
-            {
-              "name": "אפי קפיטל בניה",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 214,
-              "section_title": "באור :26 - התקשרויות, שעבודים, ערבויות והתחייבויות תלויות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אופק חופים בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 216,
-              "section_title": "באור :26 - התקשריות, שעבודים, ערבויות והתחייבויות תלויות",
-              "table_title": null,
-              "note": "מוחזקת בחלקים שווים יחד עם עמרם"
-            },
-            {
-              "name": "נווה אור ש.פ יזמות בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 216,
-              "section_title": "באור :26 - התקשריות, שעבודים, ערבויות והתחייבויות תלויות",
-              "table_title": null,
-              "note": "חברה כלולה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:13": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "אפי קפיטל בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 227,
-              "section_title": "ד. התקשרויות עם צדדים קשורים ובעל השליטה",
-              "table_title": null,
-              "note": "חברה מאוחדת המוחזקת במלואה על ידי החברה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:14": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "אפי קפיטל בעיר היין בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 246,
-              "section_title": "פרק ד': פרטים נוספים על התאגיד",
-              "table_title": ".3 רשימת השקעות בחברות-בת ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי (תקנה 11)",
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל מגורים בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 246,
-              "section_title": "פרק ד': פרטים נוספים על התאגיד",
-              "table_title": ".3 רשימת השקעות בחברות-בת ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי (תקנה 11)",
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 246,
-              "section_title": "פרק ד': פרטים נוספים על התאגיד",
-              "table_title": ".3 רשימת השקעות בחברות-בת ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי (תקנה 11)",
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל מתחמים בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 246,
-              "section_title": "פרק ד': פרטים נוספים על התאגיד",
-              "table_title": ".3 רשימת השקעות בחברות-בת ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי (תקנה 11)",
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל פרויקטים בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 246,
-              "section_title": "פרק ד': פרטים נוספים על התאגיד",
-              "table_title": ".3 רשימת השקעות בחברות-בת ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי (תקנה 11)",
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל בניה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 246,
-              "section_title": "פרק ד': פרטים נוספים על התאגיד",
-              "table_title": ".3 רשימת השקעות בחברות-בת ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי (תקנה 11)",
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל יזמות ובניה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 246,
-              "section_title": "פרק ד': פרטים נוספים על התאגיד",
-              "table_title": ".3 רשימת השקעות בחברות-בת ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי (תקנה 11)",
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל התחדשות עירונית בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 246,
-              "section_title": "פרק ד': פרטים נוספים על התאגיד",
-              "table_title": ".3 רשימת השקעות בחברות-בת ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי (תקנה 11)",
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל אקוויטי בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 246,
-              "section_title": "פרק ד': פרטים נוספים על התאגיד",
-              "table_title": ".3 רשימת השקעות בחברות-בת ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי (תקנה 11)",
-              "note": null
-            },
-            {
-              "name": "אופק חופים בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 246,
-              "section_title": "פרק ד': פרטים נוספים על התאגיד",
-              "table_title": ".3 רשימת השקעות בחברות-בת ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי (תקנה 11)",
-              "note": null
-            },
-            {
-              "name": "מרכז עסקי ומסחרי אורות 2017 בע\"מ",
-              "ownership_pct": 33,
-              "parent": null,
-              "page_reference": 246,
-              "section_title": "פרק ד': פרטים נוספים על התאגיד",
-              "table_title": ".3 רשימת השקעות בחברות-בת ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי (תקנה 11)",
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל בינוי בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 246,
-              "section_title": "פרק ד': פרטים נוספים על התאגיד",
-              "table_title": ".3 רשימת השקעות בחברות-בת ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי (תקנה 11)",
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל סלעית בע\"מ",
-              "ownership_pct": 33,
-              "parent": null,
-              "page_reference": 246,
-              "section_title": "פרק ד': פרטים נוספים על התאגיד",
-              "table_title": ".3 רשימת השקעות בחברות-בת ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי (תקנה 11)",
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל שובל נחשון בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 247,
-              "section_title": "פרק ד': פרטים נוספים על התאגיד",
-              "table_title": ".3 רשימת השקעות בחברות-בת ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי (תקנה 11)",
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל נופי בן שמן בע\"מ",
-              "ownership_pct": 57,
-              "parent": null,
-              "page_reference": 247,
-              "section_title": "פרק ד': פרטים נוספים על התאגיד",
-              "table_title": ".3 רשימת השקעות בחברות-בת ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי (תקנה 11)",
-              "note": null
-            },
-            {
-              "name": "גרניט יזמות נדל\"ן בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 247,
-              "section_title": "פרק ד': פרטים נוספים על התאגיד",
-              "table_title": ".3 רשימת השקעות בחברות-בת ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי (תקנה 11)",
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל מכרזים בע\"מ",
-              "ownership_pct": 90,
-              "parent": null,
-              "page_reference": 247,
-              "section_title": "פרק ד': פרטים נוספים על התאגיד",
-              "table_title": ".3 רשימת השקעות בחברות-בת ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי (תקנה 11)",
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל נדל\"ן גמלא הראל בע\"מ",
-              "ownership_pct": 80,
-              "parent": null,
-              "page_reference": 247,
-              "section_title": "פרק ד': פרטים נוספים על התאגיד",
-              "table_title": ".3 רשימת השקעות בחברות-בת ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי (תקנה 11)",
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל פ. אחזקות בע\"מ",
-              "ownership_pct": 75,
-              "parent": null,
-              "page_reference": 247,
-              "section_title": "פרק ד': פרטים נוספים על התאגיד",
-              "table_title": ".3 רשימת השקעות בחברות-בת ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי (תקנה 11)",
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל ומיכמן מימון יזמות בע\"מ",
-              "ownership_pct": 80,
-              "parent": null,
-              "page_reference": 247,
-              "section_title": "פרק ד': פרטים נוספים על התאגיד",
-              "table_title": ".3 רשימת השקעות בחברות-בת ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי (תקנה 11)",
-              "note": null
-            },
-            {
-              "name": "אפי קפיטל ומיכמן השקעות בע\"מ",
-              "ownership_pct": 60,
-              "parent": null,
-              "page_reference": 247,
-              "section_title": "פרק ד': פרטים נוספים על התאגיד",
-              "table_title": ".3 רשימת השקעות בחברות-בת ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי (תקנה 11)",
-              "note": null
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-19T10:20:34.361170+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1728258": {
     "company_id": "1062",
@@ -4941,48 +3842,1433 @@
   },
   "1728206": {
     "company_id": "1110",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-18T11:09:03.609868+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 14,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-19T10:25:16.503820+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1729835": {
     "company_id": "578",
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-18T11:09:04.791611+00:00",
+    "at": "2026-09-19T10:29:22.677633+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 18,
-      "done": {},
-      "attempts": {}
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "אפקון התקנות ושירותים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.3 מבנה ההחזקות בקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אפקון ההנדסי מרכז בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אפקון התקנות ושירותים בע\"מ",
+              "page_reference": 8,
+              "section_title": "1.3 מבנה ההחזקות בקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אפקון תחזוקה והעמסת תשתית בע\"מ",
+              "ownership_pct": 50,
+              "parent": "אפקון התקנות ושירותים בע\"מ",
+              "page_reference": 8,
+              "section_title": "1.3 מבנה ההחזקות בקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "שרות הוגן חיפה - תכנון ובצוע בע\"מ",
+              "ownership_pct": 88,
+              "parent": "אפקון תחזוקה והעמסת תשתית בע\"מ",
+              "page_reference": 8,
+              "section_title": "1.3 מבנה ההחזקות בקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אפקון אחזקה וניהול מתקנים בע\"מ",
+              "ownership_pct": 75,
+              "parent": "שרות הוגן חיפה - תכנון ובצוע בע\"מ",
+              "page_reference": 8,
+              "section_title": "1.3 מבנה ההחזקות בקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "איי.אמ.אס פתרונות הולכה וסינון אוויר בע\"מ",
+              "ownership_pct": 52,
+              "parent": "שרות הוגן חיפה - תכנון ובצוע בע\"מ",
+              "page_reference": 8,
+              "section_title": "1.3 מבנה ההחזקות בקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אפקון בקרה ואוטומציה בע\"מ",
+              "ownership_pct": 70,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.3 מבנה ההחזקות בקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מגאסטיקס מערכות בע\"מ",
+              "ownership_pct": 34,
+              "parent": "אפקון בקרה ואוטומציה בע\"מ",
+              "page_reference": 8,
+              "section_title": "1.3 מבנה ההחזקות בקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מאגמא הנדסה בע\"מ",
+              "ownership_pct": 60,
+              "parent": "אפקון בקרה ואוטומציה בע\"מ",
+              "page_reference": 8,
+              "section_title": "1.3 מבנה ההחזקות בקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Wanger BV",
+              "ownership_pct": 100,
+              "parent": "מאגמא הנדסה בע\"מ",
+              "page_reference": 8,
+              "section_title": "1.3 מבנה ההחזקות בקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Afcon M&E GmbH",
+              "ownership_pct": 100,
+              "parent": "Wanger BV",
+              "page_reference": 8,
+              "section_title": "1.3 מבנה ההחזקות בקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ג.מ. אפקון (2013) בע\"מ",
+              "ownership_pct": 70,
+              "parent": "אפקון בקרה ואוטומציה בע\"מ",
+              "page_reference": 8,
+              "section_title": "1.3 מבנה ההחזקות בקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ג.מ. אפקון טכנולוגיות בטחון ש.מ.",
+              "ownership_pct": 69.3,
+              "parent": "ג.מ. אפקון (2013) בע\"מ",
+              "page_reference": 8,
+              "section_title": "1.3 מבנה ההחזקות בקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ה.מ. הנדסה (2000) בע\"מ",
+              "ownership_pct": 69.5,
+              "parent": "ג.מ. אפקון טכנולוגיות בטחון ש.מ.",
+              "page_reference": 8,
+              "section_title": "1.3 מבנה ההחזקות בקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גל נס מהדמות תקשורת בע\"מ",
+              "ownership_pct": 100,
+              "parent": "ה.מ. הנדסה (2000) בע\"מ",
+              "page_reference": 8,
+              "section_title": "1.3 מבנה ההחזקות בקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלגרונט בע\"מ",
+              "ownership_pct": 55,
+              "parent": "ה.מ. הנדסה (2000) בע\"מ",
+              "page_reference": 8,
+              "section_title": "1.3 מבנה ההחזקות בקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אטקה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.3 מבנה ההחזקות בקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ר.ב.ס טלקום בע\"מ",
+              "ownership_pct": 77.5,
+              "parent": "אטקה בע\"מ",
+              "page_reference": 8,
+              "section_title": "1.3 מבנה ההחזקות בקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "י. מור-בי.די בע\"מ",
+              "ownership_pct": 55,
+              "parent": "ר.ב.ס טלקום בע\"מ",
+              "page_reference": 8,
+              "section_title": "1.3 מבנה ההחזקות בקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "תדיראן טלקום (תקשורת) (2011) בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אטקה בע\"מ",
+              "page_reference": 8,
+              "section_title": "1.3 מבנה ההחזקות בקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Tadiran Telecom Inc.",
+              "ownership_pct": 100,
+              "parent": "תדיראן טלקום (תקשורת) (2011) בע\"מ",
+              "page_reference": 8,
+              "section_title": "1.3 מבנה ההחזקות בקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אפקון אנרגיות מתחדשות (א.א.מ) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.3 מבנה ההחזקות בקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אפקון קרן אירופה שותף כללי בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אפקון אנרגיות מתחדשות (א.א.מ) בע\"מ",
+              "page_reference": 8,
+              "section_title": "1.3 מבנה ההחזקות בקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אפקון אנרגיות מתחדשות אירופה, שותפות מוגבלת",
+              "ownership_pct": 20,
+              "parent": "אפקון אנרגיות מתחדשות (א.א.מ) בע\"מ",
+              "page_reference": 8,
+              "section_title": "1.3 מבנה ההחזקות בקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "TRILO Investment Ltd",
+              "ownership_pct": 100,
+              "parent": "אפקון אנרגיות מתחדשות (א.א.מ) בע\"מ",
+              "page_reference": 8,
+              "section_title": "1.3 מבנה ההחזקות בקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אפקון אנרגית רוח בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אפקון אנרגיות מתחדשות (א.א.מ) בע\"מ",
+              "page_reference": 8,
+              "section_title": "1.3 מבנה ההחזקות בקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "חוות רוח סירין ולגלבוע בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אפקון אנרגית רוח בע\"מ",
+              "page_reference": 8,
+              "section_title": "1.3 מבנה ההחזקות בקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ניהול רוח סירין בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אפקון אנרגית רוח בע\"מ",
+              "page_reference": 8,
+              "section_title": "1.3 מבנה ההחזקות בקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אפקון זכיינות חברה וצנעת בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.3 מבנה ההחזקות בקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מועונית שלמה נ' בע\"מ",
+              "ownership_pct": 50,
+              "parent": "אפקון זכיינות חברה וצנעת בע\"מ",
+              "page_reference": 8,
+              "section_title": "1.3 מבנה ההחזקות בקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אקלים כח אדם בע\"מ",
+              "ownership_pct": 75,
+              "parent": "אפקון זכיינות חברה וצנעת בע\"מ",
+              "page_reference": 8,
+              "section_title": "1.3 מבנה ההחזקות בקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "תדיראן טלקום שירותי תשתיות בישראל בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אפקון זכיינות חברה וצנעת בע\"מ",
+              "page_reference": 8,
+              "section_title": "1.3 מבנה ההחזקות בקבוצה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "מאגמא",
+              "ownership_pct": 60,
+              "parent": null,
+              "page_reference": 22,
+              "section_title": ".7.1.3 שינויים בהיקף הפעילות בתחום וברווחיות",
+              "table_title": null,
+              "note": "רכישת 60% מזכויות ההון וההצבעה בתוקף מיום 1.1.2025"
+            },
+            {
+              "name": "איי.אמ.אס",
+              "ownership_pct": 52,
+              "parent": null,
+              "page_reference": 33,
+              "section_title": ".8.1.2 שינויים בהיקף הפעילות בתחום וברווחיות",
+              "table_title": null,
+              "note": "רכישת 52% מהון המניות"
+            },
+            {
+              "name": "רבס טלקום",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 33,
+              "section_title": ".8.1.2 שינויים בהיקף הפעילות בתחום וברווחיות",
+              "table_title": null,
+              "note": "רכישת השליטה"
+            },
+            {
+              "name": "י. מור",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 33,
+              "section_title": ".8.1.2 שינויים בהיקף הפעילות בתחום וברווחיות",
+              "table_title": null,
+              "note": "רכישת השליטה"
+            },
+            {
+              "name": "מאגוס",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 29,
+              "section_title": "7.9 מחקר ופיתוח",
+              "table_title": null,
+              "note": "חברה כלולה"
+            }
+          ],
+          "change_events": [
+            {
+              "company": "מאגמא",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 60,
+              "event_date": "2025-01-01",
+              "event_description": "רכישת 60% מזכויות ההון וההצבעה במאגמא",
+              "page_reference": 22,
+              "section_title": ".7.1.3 שינויים בהיקף הפעילות בתחום וברווחיות"
+            },
+            {
+              "company": "איי.אמ.אס",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 52,
+              "event_date": null,
+              "event_description": "רכישת 52% מהון המניות של איי.אמ.אס",
+              "page_reference": 33,
+              "section_title": ".8.1.2 שינויים בהיקף הפעילות בתחום וברווחיות"
+            },
+            {
+              "company": "רבס טלקום",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": null,
+              "event_date": null,
+              "event_description": "רכישת השליטה ברבס טלקום",
+              "page_reference": 33,
+              "section_title": ".8.1.2 שינויים בהיקף הפעילות בתחום וברווחיות"
+            },
+            {
+              "company": "י. מור",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": null,
+              "event_date": null,
+              "event_description": "רכישת השליטה בחברת י. מור",
+              "page_reference": 33,
+              "section_title": ".8.1.2 שינויים בהיקף הפעילות בתחום וברווחיות"
+            }
+          ]
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "רבס טלקום",
+              "ownership_pct": 77.5,
+              "parent": "אטקה",
+              "page_reference": 39,
+              "section_title": "8.10.2 הסכם רכישת מניות ברבס טלקום",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "שרות הוגן",
+              "ownership_pct": 88.0,
+              "parent": "אפקון התקנות ושירותים",
+              "page_reference": 51,
+              "section_title": "הסכמים עם שותפים בחברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אפקון FM",
+              "ownership_pct": 75.0,
+              "parent": "שרות הוגן",
+              "page_reference": 51,
+              "section_title": "הסכמים עם שותפים בחברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "איי.אמ.אס",
+              "ownership_pct": 52.0,
+              "parent": "שרות הוגן",
+              "page_reference": 39,
+              "section_title": "8.10.3 הסכם רכישת מניות באיי.אם.אס",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "י.מור",
+              "ownership_pct": 55.0,
+              "parent": "אטקה",
+              "page_reference": 39,
+              "section_title": "8.10.4 הסכם רכישת מניות בחברת י.מור",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אקלים כ\"א בע\"מ",
+              "ownership_pct": 75.0,
+              "parent": null,
+              "page_reference": 44,
+              "section_title": "כוח אדם של עובדים זרים בענף הבניין:",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "מיזם משותף בסין",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 64,
+              "section_title": "10.13 הסכמים מהותיים ופרוייקטים עיקריים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "חברה בהודו",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 64,
+              "section_title": "10.13 הסכמים מהותיים ופרוייקטים עיקריים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלגרונט בע\"מ",
+              "ownership_pct": 55,
+              "parent": "חברת DM",
+              "page_reference": 64,
+              "section_title": "10.13 הסכמים מהותיים ופרוייקטים עיקריים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "חברת DM",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 64,
+              "section_title": "10.13 הסכמים מהותיים ופרוייקטים עיקריים",
+              "table_title": null,
+              "note": "בעלת מניות נוספת מחזיקה 30.5%"
+            }
+          ],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "פרויקט סירין & גלבוע",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 92,
+              "section_title": "11.12 מימון",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "תאגידי פרויקטי Pozarowo",
+              "ownership_pct": 23,
+              "parent": null,
+              "page_reference": 92,
+              "section_title": "11.12 מימון",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "תאגידי פרויקטי Boguszyn",
+              "ownership_pct": 11.5,
+              "parent": null,
+              "page_reference": 92,
+              "section_title": "11.12 מימון",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "תאגיד פרויקט Arjona",
+              "ownership_pct": 23,
+              "parent": null,
+              "page_reference": 92,
+              "section_title": "11.12 מימון",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "תאגידי פרויקטי גרבנו",
+              "ownership_pct": 61.5,
+              "parent": null,
+              "page_reference": 92,
+              "section_title": "11.12 מימון",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מיזם האנרגיה המשותף בארצות הברית",
+              "ownership_pct": 25,
+              "parent": "חברה בת",
+              "page_reference": 96,
+              "section_title": "11.15.2 הקמת מיזם משותף לפרויקטי אנרגיה מתחדשת בארצות הברית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "התאגיד המשותף (מעונות הסטודנטים - המכללה למינהל)",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 98,
+              "section_title": "מעונות הסטודנטים - המכללה למינהל",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אפקון תחבורה חשמלית",
+              "ownership_pct": 50,
+              "parent": "אפקון התקנות ושירותים",
+              "page_reference": 101,
+              "section_title": "11.3.5.1 התקשרות בהסכם השקעה עם הליוס",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:7": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "מאגמא הנדסה בע\"מ",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 60,
+              "event_date": "2025-02-23",
+              "event_description": "רכישת 60% מזכויות ההון וההצבעה בחברת מאגמא הנדסה בע\"מ",
+              "page_reference": 124,
+              "section_title": "2. אירועים עיקריים בתקופת הדוח ולאחר מועד הדיווח"
+            },
+            {
+              "company": "שרות הוגן חיפה – תכנון וביצוע בע\"מ",
+              "event_type": "increase",
+              "ownership_pct_before": 82,
+              "ownership_pct_after": 88,
+              "event_date": "2025-07-01",
+              "event_description": "רכישת 6% נוספים מחברת שרות הוגן חיפה",
+              "page_reference": 124,
+              "section_title": "2. אירועים עיקריים בתקופת הדוח ולאחר מועד הדיווח"
+            },
+            {
+              "company": "איי.אמ.אס פתרונות הולכה וסינון אוויר בע\"מ",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 52,
+              "event_date": "2025-03-26",
+              "event_description": "רכישת 52% מהון המניות של חברת איי.אמ.אס פתרונות הולכה וסינון אוויר בע\"מ על ידי חברת הבת שרות הוגן",
+              "page_reference": 124,
+              "section_title": "2. אירועים עיקריים בתקופת הדוח ולאחר מועד הדיווח"
+            }
+          ]
+        },
+        "0:8": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:9": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:10": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "חברה א'",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 185,
+              "section_title": "באור 11 - השקעה בישויות המטופלות לפי שיטת השווי המאזני (המשך)",
+              "table_title": "תמצית מידע פיננסי של חברות כלולות מהותיות",
+              "note": null
+            },
+            {
+              "name": "חברה ב'",
+              "ownership_pct": 20,
+              "parent": null,
+              "page_reference": 185,
+              "section_title": "באור 11 - השקעה בישויות המטופלות לפי שיטת השווי המאזני (המשך)",
+              "table_title": "תמצית מידע פיננסי של חברות כלולות מהותיות",
+              "note": null
+            }
+          ],
+          "change_events": [
+            {
+              "company": "רונימור ניהול נכסים בע\"מ",
+              "event_type": "full_disposal",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 0,
+              "event_date": "2025-12-01",
+              "event_description": "סיום ההתקשרות כך שהחברה לא תהיה עוד בעלת מניות ברונימור",
+              "page_reference": 177,
+              "section_title": "באור 5 - צירופי עסקים"
+            },
+            {
+              "company": "שרות הוגן חיפה – תכנון וביצוע בע\"מ",
+              "event_type": "increase",
+              "ownership_pct_before": 82,
+              "ownership_pct_after": 88,
+              "event_date": "2025-07-01",
+              "event_description": "רכישת 6% נוספים ממניות המוכר כך שהחברה הבת מחזיקה ב-88% משרות הוגן",
+              "page_reference": 177,
+              "section_title": "באור 5 - צירופי עסקים"
+            },
+            {
+              "company": "מאגמא הנדסה בע\"מ",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": 0,
+              "ownership_pct_after": 60,
+              "event_date": "2025-02-23",
+              "event_description": "רכישת 60% מזכויות ההון וההצבעה במאגמא הנדסה בע\"מ",
+              "page_reference": 178,
+              "section_title": "באור 5 - צירופי עסקים (המשך)"
+            },
+            {
+              "company": "איי.אמ.אס פתרונות הולכה וסינון אוויר בע\"מ",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": 0,
+              "ownership_pct_after": 52,
+              "event_date": "2025-03-26",
+              "event_description": "רכישת 52% מהון המניות של חברת איי.אמ.אס פתרונות הולכה וסינון אוויר בע\"מ",
+              "page_reference": 180,
+              "section_title": "באור 5 - צירופי עסקים (המשך)"
+            },
+            {
+              "company": "י.מור בי-די בע\"מ",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": 0,
+              "ownership_pct_after": 55,
+              "event_date": "2024-10-01",
+              "event_description": "רכישת 55% מזכויות ההון וההצבעה בי.מור",
+              "page_reference": 178,
+              "section_title": "באור 5 - צירופי עסקים (המשך)"
+            },
+            {
+              "company": "רבס טלקום בע\"מ",
+              "event_type": "increase",
+              "ownership_pct_before": 55,
+              "ownership_pct_after": 77.5,
+              "event_date": "2024-01-07",
+              "event_description": "רכישת החזקות נוספות ברבס טלקום כך שאטקה מחזיקה ב-77.5%",
+              "page_reference": 178,
+              "section_title": "באור 5 - צירופי עסקים (המשך)"
+            }
+          ]
+        },
+        "0:11": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:12": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:13": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אפקון תחבורה חשמלית בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 296,
+              "section_title": "באור 23 - שעבודים, ערבויות, התחייבויות תלויות והתקשרויות (המשך)",
+              "table_title": null,
+              "note": "החזקה בעקיפין"
+            },
+            {
+              "name": "מיזם האנרגיה המשותף",
+              "ownership_pct": 25,
+              "parent": "חברה בת",
+              "page_reference": 300,
+              "section_title": "באור 23 - שעבודים, ערבויות, התחייבויות תלויות והתקשרויות (המשך)",
+              "table_title": null,
+              "note": "מוחזק על ידי החברה הבת"
+            },
+            {
+              "name": "אפקון אנרגיות מתחדשות",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 291,
+              "section_title": "באור 23 - שעבודים, ערבויות, התחייבויות תלויות והתקשרויות (המשך)",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:14": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "אפקון תחבורה חשמלית בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 251,
+              "section_title": "באור 28 - יתרות ועסקאות עם בעלי עניין וצדדים קשורים (המשך)",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:15": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אפקון טכנולוגיות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 260,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "אפקון התקנות ושירותים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 260,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "אטקה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 260,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "ארז קירור והנדסה ייצור ושירות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 260,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "אפקון מקרקעי מרכז בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 260,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "אפקון בקרה ואוטומציה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 260,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "Wanger B.V. (חברה רשומה בהולנד)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 260,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "תדיראן טלקום טכנולוגיות (2011) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 260,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "תדיראן טלקום (תטל) שותפות מוגבלת",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 260,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "Tadiran Telecom Inc. USA (חברה רשומה בארה\"ב)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 260,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "אפקון הידרומקס בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 260,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "תדיראן טלקום שירותי תקשורת בישראל (שותפות מוגבלת)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 260,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "אפקון אנרגיית רוח בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 260,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "חוות רוח סירין וגלבוע בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 260,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "ניהול חוות רוח סירין בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 260,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "חוות רוח סירין 2011 שותפות מוגבלת",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 260,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "אפקון זכיינות טבריה וצפת בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 260,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "א.ת. אפק השקעות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 260,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "ג.מ אפקון טכנולוגיות בטחון - שותפות מוגבלת",
+              "ownership_pct": 70,
+              "parent": null,
+              "page_reference": 260,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "אפקון אלמור - שותפות כללית",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 260,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "ד.מ. (3000) הנדסה בע\"מ",
+              "ownership_pct": 69.5,
+              "parent": null,
+              "page_reference": 260,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "גל-נט פתרונות תקשורת בע\"מ",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 260,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "אלגרונט בע\"מ",
+              "ownership_pct": 55,
+              "parent": null,
+              "page_reference": 260,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "שרות הוגן חיפה- תכנון וביצוע בע\"מ",
+              "ownership_pct": 82,
+              "parent": null,
+              "page_reference": 260,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "אפקון אנרגיות מתחדשות (א.א.מ.) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 260,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "שותפות אפקון-אגדים - פרויקט יהוד מונוסון",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 260,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "אפקון - מנרב בנק הדם עסקה משותפת",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 260,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "אפקון סולאיר ניהול (2012) בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 260,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "סולאיר - אפקון שותפות מוגבלת",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 260,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "א.א. פרוייקט קריית עתידים מיזם משותף - שותפות כללית",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 260,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "אנ.ג'י.ניר בע\"מ",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 260,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "חיזוק ובינוי ביאליק 6 רעננה בע\"מ",
+              "ownership_pct": 49,
+              "parent": null,
+              "page_reference": 260,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "בסט-אפקון-גלובל טאואר, שותפות כללית",
+              "ownership_pct": 35,
+              "parent": null,
+              "page_reference": 260,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": "זכויות הצבעה: 50%"
+            },
+            {
+              "name": "אפקון טכנולוגיות גז מיזם משותף (לשעבר Afcon RMG Gas - Technologies JV)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 261,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות (המשך)",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "Kunming Tadiran Telecommunication Equipment Co. Ltd - Joint Venture (רשום בסין)",
+              "ownership_pct": 42.7,
+              "parent": null,
+              "page_reference": 261,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות (המשך)",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": "זכויות הצבעה: 51%"
+            },
+            {
+              "name": "4D Desalination Ltd.",
+              "ownership_pct": 20,
+              "parent": null,
+              "page_reference": 261,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות (המשך)",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "אפקון תחבורה חשמלית בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 261,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות (המשך)",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "TRILO INVESTMENT LTD (חברה רשומה בקפריסין)",
+              "ownership_pct": 20,
+              "parent": null,
+              "page_reference": 261,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות (המשך)",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": "זכויות הצבעה: 36%"
+            },
+            {
+              "name": "אפקון קרן אירופה שותף כללי בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 261,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות (המשך)",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "אפקון אנרגיות מתחדשות אירופה שותפות מוגבלת",
+              "ownership_pct": 20,
+              "parent": null,
+              "page_reference": 261,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות (המשך)",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "רבס טלקום בע\"מ",
+              "ownership_pct": 78,
+              "parent": null,
+              "page_reference": 261,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות (המשך)",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "Grabno",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 261,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות (המשך)",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "אפקון-אהרון את גלעדי, שותפות כללית",
+              "ownership_pct": 30,
+              "parent": null,
+              "page_reference": 261,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות (המשך)",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "אפקון פולדמיר",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 261,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות (המשך)",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "מאגוסיס מערכות בע\"מ",
+              "ownership_pct": 35,
+              "parent": null,
+              "page_reference": 261,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות (המשך)",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "מעונות שלמה ש. בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 261,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות (המשך)",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "UTUAOL ZITA",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 261,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות (המשך)",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "אקלים כח אדם בע\"מ",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 261,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות (המשך)",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "אפקון פולדמיר- מרכז אנרגיה אוניברסיטת פרויקט בן גוריון מיזם משותף",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 261,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות (המשך)",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "י. מור – בי.די בע\"מ",
+              "ownership_pct": 55,
+              "parent": null,
+              "page_reference": 261,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות (המשך)",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "אפקון טכנולוגיות מים שותפות מוגבלת",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 261,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות (המשך)",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "אפקון אחזקה וניהול מתקנים בע\"מ",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 261,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות (המשך)",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "איי.אמ.אס אוורור תעשייתי בע\"מ",
+              "ownership_pct": 52,
+              "parent": null,
+              "page_reference": 261,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות (המשך)",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            },
+            {
+              "name": "מאגמא הנדסה בע\"מ",
+              "ownership_pct": 60,
+              "parent": null,
+              "page_reference": 261,
+              "section_title": "רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות (המשך)",
+              "table_title": "נספח א' - לדוחות הכספיים המאוחדים",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:16": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אפקון טכנולוגיות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 280,
+              "section_title": "פרק ה' - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות וקשורות מהותיות לתאריך המאזן",
+              "note": null
+            },
+            {
+              "name": "אטקה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 280,
+              "section_title": "פרק ה' - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות וקשורות מהותיות לתאריך המאזן",
+              "note": null
+            },
+            {
+              "name": "תדיראן טלקום שרותי תקשורת בישראל (שותפות מוגבלת)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 280,
+              "section_title": "פרק ה' - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות וקשורות מהותיות לתאריך המאזן",
+              "note": null
+            },
+            {
+              "name": "א.ת. אפק השקעות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 280,
+              "section_title": "פרק ה' - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות וקשורות מהותיות לתאריך המאזן",
+              "note": null
+            },
+            {
+              "name": "אפקון אנרגיות מתחדשות (א.א.מ.) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 280,
+              "section_title": "פרק ה' - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות וקשורות מהותיות לתאריך המאזן",
+              "note": null
+            },
+            {
+              "name": "אפקון זכיינות טבריה וצפת בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 280,
+              "section_title": "פרק ה' - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות וקשורות מהותיות לתאריך המאזן",
+              "note": null
+            },
+            {
+              "name": "תדיראן טלקום (תטל) (שותפות מוגבלת)",
+              "ownership_pct": 100,
+              "parent": "אפקון אנרגיות מתחדשות (א.א.מ.) בע\"מ",
+              "page_reference": 280,
+              "section_title": "פרק ה' - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות וקשורות מהותיות לתאריך המאזן",
+              "note": "מוחזקת באמצעות אפקון אנרגיות מתחדשות (א.א.מ) בע\"מ"
+            },
+            {
+              "name": "אפקון בקרה ואוטומציה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 280,
+              "section_title": "פרק ה' - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות וקשורות מהותיות לתאריך המאזן",
+              "note": null
+            },
+            {
+              "name": "אפקון התקנות ושירותים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 280,
+              "section_title": "פרק ה' - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות וקשורות מהותיות לתאריך המאזן",
+              "note": null
+            },
+            {
+              "name": "TRILO INVESTMENT LTD",
+              "ownership_pct": 36,
+              "parent": "אפקון אנרגיות מתחדשות (א.א.מ.) בע\"מ",
+              "page_reference": 280,
+              "section_title": "פרק ה' - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות וקשורות מהותיות לתאריך המאזן",
+              "note": "מוחזקת באמצעות אפקון אנרגיות מתחדשות (א.א.מ) בע\"מ"
+            },
+            {
+              "name": "אפקון אנרגיות מתחדשות אירופה 2 שותפות מוגבלת",
+              "ownership_pct": 20,
+              "parent": null,
+              "page_reference": 280,
+              "section_title": "פרק ה' - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בנות וקשורות מהותיות לתאריך המאזן",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:17": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
+      "attempts": {
+        "0:4": 1
+      }
     }
   },
   "1732709": {
     "company_id": "1706",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-18T11:09:04.130171+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 12,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-19T10:23:39.048444+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1728283": {
     "company_id": "2387",
@@ -5001,106 +5287,530 @@
   },
   "1726372": {
     "company_id": "1813",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-18T11:09:05.566258+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 9,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-19T10:28:24.190487+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1728853": {
     "company_id": "232",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-18T11:09:06.158855+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 19,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-19T10:31:53.090011+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1726974": {
     "company_id": "1901",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-18T11:09:06.479803+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 12,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-19T10:32:42.400287+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731523": {
     "company_id": "2522",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-18T11:09:06.927580+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 14,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-19T10:35:25.334881+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1726162": {
     "company_id": "1778",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-18T11:09:07.383902+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 17,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-19T10:36:04.522136+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1733747": {
     "company_id": "543",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-18T11:09:07.776198+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 16,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-19T10:39:19.939605+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1729455": {
     "company_id": "1840",
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-18T11:09:08.217331+00:00",
+    "at": "2026-09-19T10:39:02.010879+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 23,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אשכול אנרגיות כוח בע\"מ",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 10,
+              "section_title": "2.2 תרשים מבנה החזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אשכול תפעול אנרגיות שותף כללי בע\"מ",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 10,
+              "section_title": "2.2 תרשים מבנה החזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אשכול אבשל אנרגיות בע\"מ",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 10,
+              "section_title": "2.2 תרשים מבנה החזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אשכול ייצור אנרגיות בע\"מ",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 10,
+              "section_title": "2.2 תרשים מבנה החזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דליה אנרגיות כח בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 10,
+              "section_title": "2.2 תרשים מבנה החזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דליה אנרגיות הרחבה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 10,
+              "section_title": "2.2 תרשים מבנה החזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דליה אנרגיות סחר בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 10,
+              "section_title": "2.2 תרשים מבנה החזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אשכול המפעיל שותפות מוגבלת",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 10,
+              "section_title": "2.2 תרשים מבנה החזקות של החברה",
+              "table_title": null,
+              "note": "שותף מוגבל"
+            },
+            {
+              "name": "מבוא דליה בע\"מ",
+              "ownership_pct": 74,
+              "parent": "דליה אנרגיות כח בע\"מ",
+              "page_reference": 10,
+              "section_title": "2.2 תרשים מבנה החזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "כרמי דליה בע\"מ",
+              "ownership_pct": 74,
+              "parent": "דליה אנרגיות סחר בע\"מ",
+              "page_reference": 10,
+              "section_title": "2.2 תרשים מבנה החזקות של החברה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אשכול ייצור",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 18,
+              "section_title": "מידע כספי לגבי תחומי הפעילות",
+              "table_title": null,
+              "note": "חלק החברה באשכול ייצור לפי ביאור לטבלה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "מבוא דליה",
+              "ownership_pct": 74,
+              "parent": null,
+              "page_reference": 53,
+              "section_title": "10.8.2 הסכם החכירה בתחנת דליה",
+              "table_title": null,
+              "note": "היתרה (26%) מוחזקת על ידי המושב"
+            }
+          ],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "מבוא דליה",
+              "ownership_pct": 74,
+              "parent": null,
+              "page_reference": 53,
+              "section_title": "10.8.2 הסכם החכירה בתחנת דליה",
+              "table_title": null,
+              "note": "המושב מחזיק ב-26% הנותרים"
+            }
+          ],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אשכול ייצור",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 146,
+              "section_title": "11.12.5.1",
+              "table_title": null,
+              "note": "חלקה של החברה בהזרמות האמורות עומד על 75%"
+            },
+            {
+              "name": "אשכול אנרגיות",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 146,
+              "section_title": "11.12.5.2",
+              "table_title": null,
+              "note": "חלקה של החברה בהזרמות האמורות עומד על 75%"
+            },
+            {
+              "name": "דליה הרחבה",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 148,
+              "section_title": "12.1 היערכות להקמת פרויקט דליה 2",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אשכול אבשל",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 155,
+              "section_title": "12.2 קידום הקמת יחידת ייצור חדשה באתר אשכול על ידי אשכול אבשל",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מבוא דליה",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 148,
+              "section_title": "12.1.2",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אשכול אנרגיות",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 98,
+              "section_title": "12.4 נדל\"ן להשקעה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אשכול אבשל",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 89,
+              "section_title": "12.2 קידום הקמת יחידת ייצור חדשה באתר אשכול על ידי אשכול אבשל",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דליה הרחבה",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 86,
+              "section_title": "12.1.15.3 בטוחות עיקריות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דליה סחר",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 96,
+              "section_title": "12.3 מתקן אגירה לצורך מכירת חשמל במודל השוק - דליה סחר",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "אשכול אנרגיות",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 118,
+              "section_title": "19.1 רכישת אתר אשכול",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אשכול ייצור",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 118,
+              "section_title": "19.1 רכישת אתר אשכול",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אשכול אבשל",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 120,
+              "section_title": "19.2 הסדרים בין בעלי המניות בתאגידי אשכול",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אשכול תפעול שותף כללי",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 120,
+              "section_title": "19.2 הסדרים בין בעלי המניות בתאגידי אשכול",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דליה 2",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 122,
+              "section_title": "22.6 התקשרות בהסכם לרכישת גז מאנרג'יאן",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דליה סחר",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 106,
+              "section_title": "13.4 התחרות במקטע ההספקה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:7": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "דליה אנרגיות כח בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 134,
+              "section_title": "27. חברות בנות וקשורות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דליה אנרגיות הרחבה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 134,
+              "section_title": "27. חברות בנות וקשורות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלה אנרגיות כוח בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 134,
+              "section_title": "27. חברות בנות וקשורות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דליה אנרגיות סחר בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 134,
+              "section_title": "27. חברות בנות וקשורות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אשכול אנרגיות כוח בע\"מ",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 134,
+              "section_title": "27. חברות בנות וקשורות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אשכול ייצור אנרגיות בע\"מ",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 134,
+              "section_title": "27. חברות בנות וקשורות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אשכול אבשל אנרגיות בע\"מ",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 134,
+              "section_title": "27. חברות בנות וקשורות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אשכול תפעול אנרגיות שותף כללי בע\"מ",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 134,
+              "section_title": "27. חברות בנות וקשורות",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:8": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אשכול אנרגיות כוח בע\"מ",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 144,
+              "section_title": "חלק הקבוצה ב-EBITDA יחסי של חברות כלולות",
+              "table_title": "חלק הקבוצה ב-EBITDA יחסי של חברות כלולות",
+              "note": null
+            },
+            {
+              "name": "אשכול ייצור אנרגיות בע\"מ",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 144,
+              "section_title": "חלק הקבוצה ב-EBITDA יחסי של חברות כלולות",
+              "table_title": "חלק הקבוצה ב-EBITDA יחסי של חברות כלולות",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:9": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:10": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אשכול אנרגיות כוח בע\"מ",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 179,
+              "section_title": "באור 1 - כללי (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אשכול ייצור אנרגיות בע\"מ",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 181,
+              "section_title": "באור 1 - כללי (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אשכול תפעול אנרגיות שותף כללי בע\"מ",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 181,
+              "section_title": "באור 1 - כללי (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אשכול אבשל אנרגיות בע\"מ",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 181,
+              "section_title": "באור 1 - כללי (המשך)",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
