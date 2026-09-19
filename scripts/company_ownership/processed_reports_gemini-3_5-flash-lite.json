@@ -7924,69 +7924,115 @@
   },
   "1728461": {
     "company_id": "2441",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-18T11:09:12.630578+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 17,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-19T11:11:18.988329+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731073": {
     "company_id": "1370",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-19T11:06:16.710269+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1728578": {
+    "company_id": "258",
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-19T11:05:17.295089+00:00",
+    "at": "2026-09-19T11:14:55.245535+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
-      "total": 9,
+      "total": 15,
       "done": {
         "0:0": {
           "report_format": "israeli_periodic",
           "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
+          "as_of_date": "2026-03-17",
           "subsidiaries": [
             {
-              "name": "ג'ין טכנולוגיות בינה בע\"מ",
+              "name": "תדיראן מוצרי צריכה וטכנולוגיה בע\"מ",
               "ownership_pct": 100,
               "parent": null,
-              "page_reference": 11,
-              "section_title": "החזקה בניירות הערך של החברה:",
+              "page_reference": 7,
+              "section_title": "2. תיאור ההתפתחות הכללית של עסקי התאגיד",
               "table_title": null,
               "note": null
             },
             {
-              "name": "ג'ין דיפנס מערכות בינה מלאכותית בע\"מ",
+              "name": "תדיראן אנרגיה מתחדשת בע\"מ",
               "ownership_pct": 100,
-              "parent": "ג'ין טכנולוגיות בינה בע\"מ",
-              "page_reference": 11,
-              "section_title": "החזקה בניירות הערך של החברה:",
+              "parent": "תדיראן מוצרי צריכה וטכנולוגיה בע\"מ",
+              "page_reference": 7,
+              "section_title": "2. תיאור ההתפתחות הכללית של עסקי התאגיד",
               "table_title": null,
               "note": null
             },
             {
-              "name": "Jean AI Technologies US LLC",
-              "ownership_pct": 100,
-              "parent": "ג'ין טכנולוגיות בינה בע\"מ",
-              "page_reference": 11,
-              "section_title": "החזקה בניירות הערך של החברה:",
+              "name": "Tadiran Italia S.R.L",
+              "ownership_pct": 70,
+              "parent": "תדיראן מוצרי צריכה וטכנולוגיה בע\"מ",
+              "page_reference": 7,
+              "section_title": "2. תיאור ההתפתחות הכללית של עסקי התאגיד",
               "table_title": null,
               "note": null
             },
             {
-              "name": "Jean AI Technologies UK Limited",
+              "name": "תדיראן פתרונות אנרגיה בע\"מ",
               "ownership_pct": 100,
-              "parent": "ג'ין טכנולוגיות בינה בע\"מ",
-              "page_reference": 11,
-              "section_title": "החזקה בניירות הערך של החברה:",
+              "parent": "תדיראן אנרגיה מתחדשת בע\"מ",
+              "page_reference": 7,
+              "section_title": "2. תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "תדיראן סולאר בע\"מ",
+              "ownership_pct": 100,
+              "parent": "תדיראן אנרגיה מתחדשת בע\"מ",
+              "page_reference": 7,
+              "section_title": "2. תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "VP Solar Srl",
+              "ownership_pct": 70,
+              "parent": "תדיראן אנרגיה מתחדשת בע\"מ",
+              "page_reference": 7,
+              "section_title": "2. תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "תדיראן אלומיניום בע\"מ",
+              "ownership_pct": 90,
+              "parent": "תדיראן אנרגיה מתחדשת בע\"מ",
+              "page_reference": 7,
+              "section_title": "2. תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "EFS",
+              "ownership_pct": 50,
+              "parent": "תדיראן אנרגיה מתחדשת בע\"מ",
+              "page_reference": 7,
+              "section_title": "2. תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "תדיראן ערבה בע\"מ",
+              "ownership_pct": 70,
+              "parent": "תדיראן אלומיניום בע\"מ",
+              "page_reference": 7,
+              "section_title": "2. תיאור ההתפתחות הכללית של עסקי התאגיד",
               "table_title": null,
               "note": null
             }
@@ -8002,17 +8048,601 @@
         },
         "0:2": {
           "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
           "document_type": "ownership_snapshot",
           "as_of_date": null,
           "subsidiaries": [
             {
-              "name": "ג'ין דיפנס",
+              "name": "Southern Israel Bridging Fund Two, L.P.",
+              "ownership_pct": 4.43,
+              "parent": null,
+              "page_reference": 71,
+              "section_title": "35 הסכמים מהותיים והסכמי שיתוף פעולה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "EFS",
+              "ownership_pct": 50.0,
+              "parent": "חברת בת בבעלות מלאה של החברה",
+              "page_reference": 71,
+              "section_title": "35 הסכמים מהותיים והסכמי שיתוף פעולה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Solar VP",
+              "ownership_pct": 60.0,
+              "parent": "תדיראן אנרגיה מתחדשת",
+              "page_reference": 71,
+              "section_title": "35 הסכמים מהותיים והסכמי שיתוף פעולה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "Southern Israel Bridging Fund Two, L.P.",
+              "ownership_pct": 4.43,
+              "parent": null,
+              "page_reference": 71,
+              "section_title": ".35 הסכמים מהותיים והסכמי שיתוף פעולה",
+              "table_title": null,
+              "note": "הושקעו על ידי החברה בקרן עד למועד הדוח סך של 6 מיליוני דולר ארה\"ב, המייצג שיעור החזקה של כ-4.43%"
+            },
+            {
+              "name": "EFS",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 71,
+              "section_title": ".35 הסכמים מהותיים והסכמי שיתוף פעולה",
+              "table_title": null,
+              "note": "רכישת 50% מהון המניות על ידי חברת בת בבעלות מלאה של החברה"
+            },
+            {
+              "name": "Solar VP",
+              "ownership_pct": 60,
+              "parent": "תדיראן אנרגיה מתחדשת",
+              "page_reference": 71,
+              "section_title": ".35 הסכמים מהותיים והסכמי שיתוף פעולה",
+              "table_title": null,
+              "note": "רכישת 60% ממניות החברה, עם אופציות רכישה/מכירה ליתרת המניות"
+            }
+          ],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "תדיראן איטליה",
+              "ownership_pct": 70,
+              "parent": "חברת בת של החברה",
+              "page_reference": 89,
+              "section_title": "מגזר מוצרי צריכה",
+              "table_title": null,
+              "note": "הוקמה בחודש ינואר 2025"
+            },
+            {
+              "name": "Solar VP",
+              "ownership_pct": 70,
+              "parent": null,
+              "page_reference": 89,
+              "section_title": "מגזר האנרגיה",
+              "table_title": null,
+              "note": "נרכשו 60% ב-2022 ומומשה אופציה ל-10% נוספים בשנת 2025"
+            },
+            {
+              "name": "תדיראן מוצרי צריכה וטכנולוגיה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 89,
+              "section_title": "מגזר מוצרי צריכה",
+              "table_title": null,
+              "note": "חברה בת בבעלות מלאה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "Solar VP",
+              "event_type": "increase",
+              "ownership_pct_before": null,
+              "ownership_pct_after": null,
+              "event_date": "2025-12-31",
+              "event_description": "תשלום עבור רכישת 10% מחברת Solar VP בתקופת הדוח",
+              "page_reference": 105,
+              "section_title": "9.2 להלן עיקרי תזרים המזומנים"
+            }
+          ]
+        },
+        "0:7": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:8": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "תדיראן מוצרי צריכה וטכנולוגיה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 145,
+              "section_title": "באור 10 - נדל\"ן להשקעה",
+              "table_title": null,
+              "note": "חברה בת בבעלות מלאה"
+            },
+            {
+              "name": "Southern Israel Bridging Fund Two, L.P",
+              "ownership_pct": 4.43,
+              "parent": null,
+              "page_reference": 154,
+              "section_title": "באור 15 - השקעות לזמן ארוך",
+              "table_title": null,
+              "note": "השקעה בקרן כשותף מוגבל"
+            }
+          ],
+          "change_events": []
+        },
+        "0:9": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "Southern Israel Bridging Fund Two, L.P",
+              "ownership_pct": 4.43,
+              "parent": null,
+              "page_reference": 192,
+              "section_title": "באור 15 - השקעות לזמן ארוך",
+              "table_title": null,
+              "note": "הושקעו על ידי החברה כשותף מוגבל"
+            },
+            {
+              "name": "תדיראן מוצרי צריכה וטכנולוגיה בע\"מ",
               "ownership_pct": null,
               "parent": null,
-              "page_reference": 54,
-              "section_title": "הקמת ג'ין דיפנס ובניית הנהלה ייעודית",
+              "page_reference": 195,
+              "section_title": "באור 19 - אשראי מתאגידים בנקאיים ואחרים",
               "table_title": null,
-              "note": "חברת בת ייעודית שהוקמה בדצמבר 2025"
+              "note": "חברת בת בבעלות מלאה"
+            },
+            {
+              "name": "תדיראן אלומיניום בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 196,
+              "section_title": "באור 19 - אשראי מתאגידים בנקאיים ואחרים (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "VP Solar",
+              "ownership_pct": null,
+              "parent": "תדיראן אנרגיה מתחדשת",
+              "page_reference": 211,
+              "section_title": "באור 23 - התחייבות בגין אופציית מכר לזכויות שאינן מקנות שליטה ותמורה מותנית",
+              "table_title": null,
+              "note": "מוחזקת באמצעות תדיראן אנרגיה מתחדשת"
+            }
+          ],
+          "change_events": []
+        },
+        "0:10": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "Solar VP",
+              "event_type": "increase",
+              "ownership_pct_before": null,
+              "ownership_pct_after": null,
+              "event_date": null,
+              "event_description": "רכישת 10% נוספים ממניות חברת Solar VP עקב מימוש אופציה בשנת 2025",
+              "page_reference": 174,
+              "section_title": "באור :23 - התחייבות בגין אופציית מכר לזכויות שאינן מקנות שליטה ותמורה מותנית (המשך)"
+            }
+          ]
+        },
+        "0:11": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:12": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "תדיראן מוצרי צריכה וטכנולוגיה בע\"מ",
+              "ownership_pct": 100,
+              "parent": "תדיראן גרופ בע\"מ",
+              "page_reference": 212,
+              "section_title": "נספח לדוחות הכספיים המאוחדים",
+              "table_title": "רשימת חברות מאוחדות ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "תדיראן אנרגיה מתחדשת בע\"מ",
+              "ownership_pct": 100,
+              "parent": "תדיראן מוצרי צריכה וטכנולוגיה בע\"מ",
+              "page_reference": 212,
+              "section_title": "נספח לדוחות הכספיים המאוחדים",
+              "table_title": "רשימת חברות מאוחדות ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "תדיראן פרוייקטים בע\"מ (לשעבר: תדיראן אסקו-טק בע\"מ)",
+              "ownership_pct": 100,
+              "parent": "תדיראן אנרגיה מתחדשת בע\"מ",
+              "page_reference": 212,
+              "section_title": "נספח לדוחות הכספיים המאוחדים",
+              "table_title": "רשימת חברות מאוחדות ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "תדיראן סולאר בע\"מ",
+              "ownership_pct": 100,
+              "parent": "תדיראן אנרגיה מתחדשת בע\"מ",
+              "page_reference": 212,
+              "section_title": "נספח לדוחות הכספיים המאוחדים",
+              "table_title": "רשימת חברות מאוחדות ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "תדיראן פתרונות אנרגיה בע\"מ (לשעבר: אביאם מערכות בע\"מ)",
+              "ownership_pct": 100,
+              "parent": "תדיראן אנרגיה מתחדשת בע\"מ",
+              "page_reference": 212,
+              "section_title": "נספח לדוחות הכספיים המאוחדים",
+              "table_title": "רשימת חברות מאוחדות ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "תדיראן אלומיניום בע\"מ",
+              "ownership_pct": 90,
+              "parent": "תדיראן אנרגיה מתחדשת בע\"מ",
+              "page_reference": 212,
+              "section_title": "נספח לדוחות הכספיים המאוחדים",
+              "table_title": "רשימת חברות מאוחדות ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "תדיראן ערבה בע\"מ (לשעבר: ערבה פתרונות חיפוי מבנים בע\"מ)",
+              "ownership_pct": 70,
+              "parent": "תדיראן אלומיניום בע\"מ",
+              "page_reference": 212,
+              "section_title": "נספח לדוחות הכספיים המאוחדים",
+              "table_title": "רשימת חברות מאוחדות ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "מידן ת.ס. בע\"מ",
+              "ownership_pct": 47.5,
+              "parent": "תדיראן אנרגיה מתחדשת בע\"מ",
+              "page_reference": 212,
+              "section_title": "נספח לדוחות הכספיים המאוחדים",
+              "table_title": "רשימת חברות מאוחדות ליום 31 בדצמבר 2025",
+              "note": "לחברה שליטה בחברה זו."
+            },
+            {
+              "name": "Vp Solar S.r.l",
+              "ownership_pct": 70,
+              "parent": "תדיראן אנרגיה מתחדשת בע\"מ",
+              "page_reference": 212,
+              "section_title": "נספח לדוחות הכספיים המאוחדים",
+              "table_title": "רשימת חברות מאוחדות ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "אי.אפ.אס הנדסה בע\"מ",
+              "ownership_pct": 50,
+              "parent": "תדיראן אנרגיה מתחדשת בע\"מ",
+              "page_reference": 212,
+              "section_title": "נספח לדוחות הכספיים המאוחדים",
+              "table_title": "רשימת חברות מאוחדות ליום 31 בדצמבר 2025",
+              "note": "לחברה שליטה בחברה זו."
+            },
+            {
+              "name": "תדיראן ג'י.פי בע\"מ",
+              "ownership_pct": 100,
+              "parent": "תדיראן אנרגיה מתחדשת בע\"מ",
+              "page_reference": 212,
+              "section_title": "נספח לדוחות הכספיים המאוחדים",
+              "table_title": "רשימת חברות מאוחדות ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "Volta Spain SLU",
+              "ownership_pct": 50,
+              "parent": "תדיראן קפיטל 2024 שותפות מוגבלת",
+              "page_reference": 212,
+              "section_title": "נספח לדוחות הכספיים המאוחדים",
+              "table_title": "רשימת חברות מאוחדות ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "Tadiran Italia SRL",
+              "ownership_pct": 70,
+              "parent": "תדיראן מוצרי צריכה וטכנולוגיה בע\"מ",
+              "page_reference": 212,
+              "section_title": "נספח לדוחות הכספיים המאוחדים",
+              "table_title": "רשימת חברות מאוחדות ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "תדיראן קפיטל 2024 שותפות מוגבלת",
+              "ownership_pct": 100,
+              "parent": "תדיראן אנרגיה מתחדשת בע\"מ ותדיראן ג'י.פי בע\"מ",
+              "page_reference": 212,
+              "section_title": "נספח לדוחות הכספיים המאוחדים",
+              "table_title": "רשימת חברות מאוחדות ליום 31 בדצמבר 2025",
+              "note": "תדיראן אנרגיה מתחדשת בע\"מ הינה \"שותף מוגבל\" בשותפות ותדיראן ג'י.פי בע\"מ הינה \"שותף כללי\" בשותפות"
+            },
+            {
+              "name": "תדיראן מכונות בע\"מ",
+              "ownership_pct": 100,
+              "parent": "תדיראן גרופ בע\"מ",
+              "page_reference": 212,
+              "section_title": "נספח לדוחות הכספיים המאוחדים",
+              "table_title": "רשימת חברות מאוחדות ליום 31 בדצמבר 2025",
+              "note": "חברה שאינה פעילות"
+            },
+            {
+              "name": "קריסטל נדל\"ן בע\"מ",
+              "ownership_pct": 100,
+              "parent": "תדיראן גרופ בע\"מ",
+              "page_reference": 212,
+              "section_title": "נספח לדוחות הכספיים המאוחדים",
+              "table_title": "רשימת חברות מאוחדות ליום 31 בדצמבר 2025",
+              "note": "חברה שאינה פעילות"
+            },
+            {
+              "name": "תדיראן נדל\"ן בע\"מ",
+              "ownership_pct": 100,
+              "parent": "תדיראן גרופ בע\"מ",
+              "page_reference": 212,
+              "section_title": "נספח לדוחות הכספיים המאוחדים",
+              "table_title": "רשימת חברות מאוחדות ליום 31 בדצמבר 2025",
+              "note": "חברה שאינה פעילות"
+            },
+            {
+              "name": "קריסטל השרון בע\"מ",
+              "ownership_pct": 100,
+              "parent": "תדיראן גרופ בע\"מ",
+              "page_reference": 212,
+              "section_title": "נספח לדוחות הכספיים המאוחדים",
+              "table_title": "רשימת חברות מאוחדות ליום 31 בדצמבר 2025",
+              "note": "חברה שאינה פעילות"
+            },
+            {
+              "name": "קריסטל מוצרי צריכה נתניה (1992) בע\"מ",
+              "ownership_pct": 100,
+              "parent": "תדיראן גרופ בע\"מ",
+              "page_reference": 212,
+              "section_title": "נספח לדוחות הכספיים המאוחדים",
+              "table_title": "רשימת חברות מאוחדות ליום 31 בדצמבר 2025",
+              "note": "חברה שאינה פעילות"
+            },
+            {
+              "name": "תדיראן המרכז בע\"מ",
+              "ownership_pct": 100,
+              "parent": "תדיראן מכונות בע\"מ",
+              "page_reference": 212,
+              "section_title": "נספח לדוחות הכספיים המאוחדים",
+              "table_title": "רשימת חברות מאוחדות ליום 31 בדצמבר 2025",
+              "note": "חברה שאינה פעילות"
+            },
+            {
+              "name": "אלקטרו ויסטה בע\"מ",
+              "ownership_pct": 100,
+              "parent": "תדיראן מוצרי צריכה וטכנולוגיה בע\"מ",
+              "page_reference": 212,
+              "section_title": "נספח לדוחות הכספיים המאוחדים",
+              "table_title": "רשימת חברות מאוחדות ליום 31 בדצמבר 2025",
+              "note": "חברה שאינה פעילות"
+            }
+          ],
+          "change_events": []
+        },
+        "0:13": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "תדיראן מכונות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 232,
+              "section_title": "תקנה 11 : רשימת השקעות בחברות בת ובחברות כלולות נכון ליום 31 בדצמבר 2025",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "תדיראן נדל\"ן בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 232,
+              "section_title": "תקנה 11 : רשימת השקעות בחברות בת ובחברות כלולות נכון ליום 31 בדצמבר 2025",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "קריסטל השרון בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 232,
+              "section_title": "תקנה 11 : רשימת השקעות בחברות בת ובחברות כלולות נכון ליום 31 בדצמבר 2025",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "קריסטל מוצרי צריכה נתניה (1992) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 233,
+              "section_title": "תקנה 11 : רשימת השקעות בחברות בת ובחברות כלולות נכון ליום 31 בדצמבר 2025",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "קריסטל נדל\"ן בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 233,
+              "section_title": "תקנה 11 : רשימת השקעות בחברות בת ובחברות כלולות נכון ליום 31 בדצמבר 2025",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "תדיראן טכנולוגיות אוויר בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 233,
+              "section_title": "תקנה 11 : רשימת השקעות בחברות בת ובחברות כלולות נכון ליום 31 בדצמבר 2025",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "תדיראן מוצרי צריכה וטכנולוגיה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 233,
+              "section_title": "תקנה 11 : רשימת השקעות בחברות בת ובחברות כלולות נכון ליום 31 בדצמבר 2025",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "L.R.S Italia Tadiran",
+              "ownership_pct": 70,
+              "parent": "תדיראן מוצרי צריכה וטכנולוגיה בע\"מ",
+              "page_reference": 233,
+              "section_title": "תקנה 12 : שינויים בהשקעות בחברות בת ובחברות כלולות",
+              "table_title": null,
+              "note": "הוקמה בחודש ינואר 2025"
+            }
+          ],
+          "change_events": []
+        }
+      },
+      "attempts": {}
+    }
+  },
+  "1732613": {
+    "company_id": "1330",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-19T11:12:34.436032+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1732769": {
+    "company_id": "444",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-09-19T11:14:52.569480+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 10,
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "מרדכי אביב מפעלי בניה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "TAVASZ INVEST KFT",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פלפלון סנטר בע\"מ",
+              "ownership_pct": 38,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "פרק 1: תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": null,
+              "note": "יתרת המניות בשיעור 62% מוחזקות על-ידי צד ג' (אוטו חן בע\"מ)"
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "מרדכי אביב מפעלי בניה בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "3.8.4 פרויקט אביב בחבצלת - נתניה 136 יח\"ד",
+              "table_title": null,
+              "note": "מוצגת כחברת בת"
+            },
+            {
+              "name": "טאבז",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 43,
+              "section_title": "3.9.2 הונגריה",
+              "table_title": null,
+              "note": "חברה זרה בשליטה של החברה"
             }
           ],
           "change_events": []
@@ -8023,98 +8653,94 @@
           "as_of_date": "2025-12-31",
           "subsidiaries": [
             {
-              "name": "ג'ין דיפנס",
+              "name": "מרדכי אביב מפעלי בניה בע\"מ",
               "ownership_pct": null,
               "parent": null,
-              "page_reference": 54,
-              "section_title": "הקמת ג'ין דיפנס ובניית הנהלה ייעודית",
+              "page_reference": 67,
+              "section_title": "1. הסברי הדירקטוריון לגבי מצב עסקי תאגיד",
               "table_title": null,
-              "note": "חברת בת ייעודית"
+              "note": "חברת בת עיקרית"
+            },
+            {
+              "name": "Tavasz Invest",
+              "ownership_pct": null,
+              "parent": "מרדכי אביב תעשיות בניה (1973) בע\"מ",
+              "page_reference": 71,
+              "section_title": "1.1.7 מכירת מגרשים בהונגריה",
+              "table_title": null,
+              "note": "חברה נכדה בהונגריה"
             }
           ],
           "change_events": []
         },
         "0:4": {
           "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "Tavasz Invest",
+              "event_type": "full_disposal",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 0,
+              "event_date": "2026-03-02",
+              "event_description": "מכירת מלוא זכויותיה של החברה הנכדה Tavasz Invest במקרקעין בבודפשט, הונגריה",
+              "page_reference": 71,
+              "section_title": "1.1.7 מכירת מגרשים בהונגריה"
+            }
+          ]
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "israeli_periodic",
           "document_type": "ownership_snapshot",
           "as_of_date": "2025-12-31",
           "subsidiaries": [
             {
-              "name": "ai.Jeen",
-              "ownership_pct": null,
+              "name": "מרדכי אביב מפעלי בניה בע\"מ",
+              "ownership_pct": 100,
               "parent": null,
-              "page_reference": 78,
-              "section_title": "6.5 מידע בדבר אירועים מהותיים בתקופת הדוח ולאחריה",
+              "page_reference": 128,
+              "section_title": "ביאור 9 - השקעות בחברות מוחזקות",
               "table_title": null,
-              "note": "חברת בת"
+              "note": "חברה מאוחדת"
             },
             {
-              "name": "חברה נכדה ייעודית",
-              "ownership_pct": null,
-              "parent": "ai.Jeen",
-              "page_reference": 80,
-              "section_title": "6.5 מידע בדבר אירועים מהותיים בתקופת הדוח ולאחריה",
+              "name": "פלפלון סנטר בע\"מ",
+              "ownership_pct": 38,
+              "parent": "מרדכי אביב מפעלי בניה בע\"מ",
+              "page_reference": 128,
+              "section_title": "ביאור 9 - השקעות בחברות מוחזקות",
               "table_title": null,
-              "note": "הוקמה לצורך קידום פעילות בתחום הביטחוני"
+              "note": "חברה כלולה"
             },
             {
-              "name": "ג'ין דיפנס",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 81,
-              "section_title": "6.5 מידע בדבר אירועים מהותיים בתקופת הדוח ולאחריה",
+              "name": "Tavazs invest ingatlanforgalmazo kft",
+              "ownership_pct": 100,
+              "parent": "מרדכי אביב מפעלי בניה בע\"מ",
+              "page_reference": 128,
+              "section_title": "ביאור 9 - השקעות בחברות מוחזקות",
               "table_title": null,
-              "note": null
+              "note": "חברה מאוחדת"
             }
           ],
           "change_events": []
+        },
+        "0:7": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
         }
       },
-      "attempts": {}
-    }
-  },
-  "1728578": {
-    "company_id": "258",
-    "status": "partial",
-    "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-18T11:09:13.419532+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 15,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1732613": {
-    "company_id": "1330",
-    "status": "partial",
-    "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-18T11:09:13.067018+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 21,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1732769": {
-    "company_id": "444",
-    "status": "partial",
-    "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-18T11:09:13.827233+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 10,
-      "done": {},
       "attempts": {}
     }
   },
@@ -8123,7 +8749,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-18T11:09:14.289178+00:00",
+    "at": "2026-09-19T11:14:55.603679+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -8138,7 +8764,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-18T11:09:15.091065+00:00",
+    "at": "2026-09-19T11:14:55.982693+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -8153,7 +8779,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-18T11:09:15.680390+00:00",
+    "at": "2026-09-19T11:14:56.369089+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -8168,7 +8794,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-18T11:09:16.082308+00:00",
+    "at": "2026-09-19T11:14:56.744006+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -8183,7 +8809,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-18T11:09:16.644358+00:00",
+    "at": "2026-09-19T11:14:56.932880+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -8213,7 +8839,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-18T11:09:17.029268+00:00",
+    "at": "2026-09-19T11:14:57.309899+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -8228,7 +8854,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-18T11:09:18.024374+00:00",
+    "at": "2026-09-19T11:14:58.088038+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -8243,7 +8869,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-18T11:09:17.315244+00:00",
+    "at": "2026-09-19T11:14:57.582493+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
