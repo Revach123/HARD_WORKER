@@ -5335,15 +5335,39 @@
   },
   "1729455": {
     "company_id": "1840",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-19T10:42:27.661844+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1729220": {
+    "company_id": "1978",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-19T10:45:14.440308+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1729407": {
+    "company_id": "1831",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-19T10:51:50.795163+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1735753": {
+    "company_id": "1703",
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-19T10:39:02.010879+00:00",
+    "at": "2026-09-19T10:50:57.254791+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
-      "total": 23,
+      "total": 16,
       "done": {
         "0:0": {
           "report_format": "israeli_periodic",
@@ -5351,92 +5375,209 @@
           "as_of_date": "2025-12-31",
           "subsidiaries": [
             {
-              "name": "אשכול אנרגיות כוח בע\"מ",
-              "ownership_pct": 75,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "2.2 תרשים מבנה החזקות של החברה",
+              "name": "אקסלרייט תנועה חכמה בע\"מ",
+              "ownership_pct": 100,
+              "parent": "ליד בקרה בע\"מ",
+              "page_reference": 4,
+              "section_title": "חלק ראשון - תיאור התפתחות עסקי התאגיד",
               "table_title": null,
-              "note": null
+              "note": "בבעלות מלאה של החברה בשרשור סופי"
             },
             {
-              "name": "אשכול תפעול אנרגיות שותף כללי בע\"מ",
-              "ownership_pct": 75,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "2.2 תרשים מבנה החזקות של החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אשכול אבשל אנרגיות בע\"מ",
-              "ownership_pct": 75,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "2.2 תרשים מבנה החזקות של החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אשכול ייצור אנרגיות בע\"מ",
-              "ownership_pct": 75,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "2.2 תרשים מבנה החזקות של החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "דליה אנרגיות כח בע\"מ",
+              "name": "אריאל וימאזור בקרת תנועה וחניה בע\"מ",
               "ownership_pct": 100,
               "parent": null,
-              "page_reference": 10,
-              "section_title": "2.2 תרשים מבנה החזקות של החברה",
+              "page_reference": 4,
+              "section_title": "חלק ראשון - תיאור התפתחות עסקי התאגיד",
               "table_title": null,
               "note": null
             },
             {
-              "name": "דליה אנרגיות הרחבה בע\"מ",
+              "name": "גרין דקל טי.אל.וי בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "חלק ראשון - תיאור התפתחות עסקי התאגיד",
+              "table_title": null,
+              "note": "מוחזקת בשיעור של 50% על ידי החברה בשרשור סופי"
+            },
+            {
+              "name": "גרין גליל מחזור בע\"מ",
+              "ownership_pct": 25,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "חלק ראשון - תיאור התפתחות עסקי התאגיד",
+              "table_title": null,
+              "note": "מוחזקת בשיעור של 25% על ידי החברה בשרשור סופי"
+            },
+            {
+              "name": "גרין נט מחזור וטיפול בפסולת בע\"מ",
+              "ownership_pct": 50,
+              "parent": "ד.ט גרין נט השקעות בע\"מ",
+              "page_reference": 4,
+              "section_title": "חלק ראשון - תיאור התפתחות עסקי התאגיד",
+              "table_title": null,
+              "note": "מוחזקת בשיעור של 50% על ידי החברה בשרשור סופי"
+            },
+            {
+              "name": "די.אנדי.איי פיתוח ויישום בע\"מ",
+              "ownership_pct": 100,
+              "parent": "מדולייד – חירות מערכות בע\"מ",
+              "page_reference": 5,
+              "section_title": "חלק ראשון - תיאור התפתחות עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "די.ויי.בי. שותפות לא רשומה",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "חלק ראשון - תיאור התפתחות עסקי התאגיד",
+              "table_title": null,
+              "note": "מוחזקת בשיעור של 50% על ידי החברה ו-50% על ידי בלוג'ן"
+            },
+            {
+              "name": "דקל גרינסויל בע\"מ",
+              "ownership_pct": 50,
+              "parent": "ד.ט גרין נט השקעות בע\"מ",
+              "page_reference": 5,
+              "section_title": "חלק ראשון - תיאור התפתחות עסקי התאגיד",
+              "table_title": null,
+              "note": "מוחזקת בשיעור של 50% על ידי החברה בשרשור סופי"
+            },
+            {
+              "name": "דקל דיה בע\"מ",
+              "ownership_pct": 50,
+              "parent": "גרין נט מחזור וטיפול בפסולת בע\"מ",
+              "page_reference": 5,
+              "section_title": "חלק ראשון - תיאור התפתחות עסקי התאגיד",
+              "table_title": null,
+              "note": "מוחזקת בשיעור של 50% על ידי החברה בשרשור סופי"
+            },
+            {
+              "name": "דקל תשתיות (2001) בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "חלק ראשון - תיאור התפתחות עסקי התאגיד",
+              "table_title": null,
+              "note": "מוחזקת בשיעור של 50% על ידי החברה"
+            },
+            {
+              "name": "י.ש אחים יעקובי בע\"מ",
               "ownership_pct": 100,
               "parent": null,
-              "page_reference": 10,
-              "section_title": "2.2 תרשים מבנה החזקות של החברה",
+              "page_reference": 5,
+              "section_title": "חלק ראשון - תיאור התפתחות עסקי התאגיד",
               "table_title": null,
               "note": null
             },
             {
-              "name": "דליה אנרגיות סחר בע\"מ",
+              "name": "חברת י.אנד.ב עומר נכסים בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אחים יעקובי יזמות בע\"מ",
+              "page_reference": 5,
+              "section_title": "חלק ראשון - תיאור התפתחות עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ליד בקרה בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אריאל וימאזור בקרת תנועה וחניה בע\"מ",
+              "page_reference": 5,
+              "section_title": "חלק ראשון - תיאור התפתחות עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מדולייד – חירות מערכות בע\"מ",
               "ownership_pct": 100,
               "parent": null,
-              "page_reference": 10,
-              "section_title": "2.2 תרשים מבנה החזקות של החברה",
+              "page_reference": 5,
+              "section_title": "חלק ראשון - תיאור התפתחות עסקי התאגיד",
               "table_title": null,
               "note": null
             },
             {
-              "name": "אשכול המפעיל שותפות מוגבלת",
-              "ownership_pct": 75,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "2.2 תרשים מבנה החזקות של החברה",
-              "table_title": null,
-              "note": "שותף מוגבל"
-            },
-            {
-              "name": "מבוא דליה בע\"מ",
-              "ownership_pct": 74,
-              "parent": "דליה אנרגיות כח בע\"מ",
-              "page_reference": 10,
-              "section_title": "2.2 תרשים מבנה החזקות של החברה",
+              "name": "מדובילד אף. אם. פתרונות הנדסה בע\"מ",
+              "ownership_pct": 100,
+              "parent": "מדולייד – חירות מערכות בע\"מ",
+              "page_reference": 6,
+              "section_title": "חלק ראשון - תיאור התפתחות עסקי התאגיד",
               "table_title": null,
               "note": null
             },
             {
-              "name": "כרמי דליה בע\"מ",
-              "ownership_pct": 74,
-              "parent": "דליה אנרגיות סחר בע\"מ",
-              "page_reference": 10,
-              "section_title": "2.2 תרשים מבנה החזקות של החברה",
+              "name": "פיקה תשתית - עבודות פיתוח בע\"מ",
+              "ownership_pct": 100,
+              "parent": "מדולייד – חירות מערכות בע\"מ",
+              "page_reference": 6,
+              "section_title": "חלק ראשון - תיאור התפתחות עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "י.אנד.ב. השקעות ונכסים (2015) בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אחים יעקובי יזמות בע\"מ",
+              "page_reference": 6,
+              "section_title": "חלק ראשון - תיאור התפתחות עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פיקה יזמות ונכסים בע\"מ",
+              "ownership_pct": 78,
+              "parent": "מדולייד – חירות מערכות בע\"מ",
+              "page_reference": 8,
+              "section_title": "חלק ראשון - תיאור התפתחות עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אפיקים ירוקים בע\"מ",
+              "ownership_pct": 100,
+              "parent": "מדולייד – חירות מערכות בע\"מ",
+              "page_reference": 8,
+              "section_title": "חלק ראשון - תיאור התפתחות עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ד.ט גרין נט השקעות בע\"מ",
+              "ownership_pct": 100,
+              "parent": "דקל תשתיות (2001) בע\"מ",
+              "page_reference": 8,
+              "section_title": "חלק ראשון - תיאור התפתחות עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פאי א.י. 2011 יזמות בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אחים יעקובי יזמות בע\"מ",
+              "page_reference": 8,
+              "section_title": "חלק ראשון - תיאור התפתחות עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "י. אנד ב.שקד נכסים בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אחים יעקובי יזמות בע\"מ",
+              "page_reference": 8,
+              "section_title": "חלק ראשון - תיאור התפתחות עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פ.א. בצוותא עובדי בניין ותשתיות בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אחים יעקובי יזמות בע\"מ",
+              "page_reference": 8,
+              "section_title": "חלק ראשון - תיאור התפתחות עסקי התאגיד",
               "table_title": null,
               "note": null
             }
@@ -5446,16 +5587,61 @@
         "0:1": {
           "report_format": "israeli_periodic",
           "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
+          "as_of_date": null,
           "subsidiaries": [
             {
-              "name": "אשכול ייצור",
-              "ownership_pct": 75,
+              "name": "מוליד מערכות",
+              "ownership_pct": null,
               "parent": null,
-              "page_reference": 18,
-              "section_title": "מידע כספי לגבי תחומי הפעילות",
+              "page_reference": 23,
+              "section_title": "(ד) תקניה ישראלית",
               "table_title": null,
-              "note": "חלק החברה באשכול ייצור לפי ביאור לטבלה"
+              "note": null
+            },
+            {
+              "name": "מובובילד",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 23,
+              "section_title": "(ד) תקניה ישראלית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פיקה",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 23,
+              "section_title": "(ד) תקניה ישראלית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "די.אנד.אי",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 23,
+              "section_title": "(ד) תקניה ישראלית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "י.ש. אחים יעקובי",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 23,
+              "section_title": "(ד) תקניה ישראלית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "DYB",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "1.6.17 פרויקט אתר דיה",
+              "table_title": null,
+              "note": "שותפות פעילות משותפת"
             }
           ],
           "change_events": []
@@ -5466,13 +5652,31 @@
           "as_of_date": null,
           "subsidiaries": [
             {
-              "name": "מבוא דליה",
-              "ownership_pct": 74,
+              "name": "Waste Management BlueGen",
+              "ownership_pct": 15,
               "parent": null,
-              "page_reference": 53,
-              "section_title": "10.8.2 הסכם החכירה בתחנת דליה",
+              "page_reference": 48,
+              "section_title": "1.8.1 מידע כללי על תחום הפעילות",
               "table_title": null,
-              "note": "היתרה (26%) מוחזקת על ידי המושב"
+              "note": null
+            },
+            {
+              "name": "גרין גליל",
+              "ownership_pct": 25,
+              "parent": "דקל תשתיות",
+              "page_reference": 49,
+              "section_title": "1.8.1 מידע כללי על תחום הפעילות",
+              "table_title": null,
+              "note": "מוחזקת בשרשור סופי"
+            },
+            {
+              "name": "שותפות הפעילות המשותפת בפרויקט אתר דיה",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "1.6.17 פרויקט אתר דיה",
+              "table_title": null,
+              "note": null
             }
           ],
           "change_events": []
@@ -5483,13 +5687,67 @@
           "as_of_date": null,
           "subsidiaries": [
             {
-              "name": "מבוא דליה",
-              "ownership_pct": 74,
+              "name": "גרין נט",
+              "ownership_pct": null,
               "parent": null,
               "page_reference": 53,
-              "section_title": "10.8.2 הסכם החכירה בתחנת דליה",
+              "section_title": "1.8.1",
               "table_title": null,
-              "note": "המושב מחזיק ב-26% הנותרים"
+              "note": "חברת בת בקבוצה"
+            },
+            {
+              "name": "דקל תשתיות",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 53,
+              "section_title": "1.8.1",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "דקל גרינסויל בע\"מ",
+              "ownership_pct": null,
+              "parent": "דקל תשתיות",
+              "page_reference": 54,
+              "section_title": "1.8.1.2",
+              "table_title": "שם החברה תקן ISO 9001 תקן ISO 14001 תחום מועד קבלת אישור עקרוני תוקף",
+              "note": null
+            },
+            {
+              "name": "אפיקים ירוקים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 71,
+              "section_title": "1.8.15.1",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דקל דיה בע\"מ",
+              "ownership_pct": null,
+              "parent": "דקל תשתיות",
+              "page_reference": 62,
+              "section_title": "התקשרות עם מועצה אזורית אשכול להקמה ותפעול דקל דיה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גרין דן",
+              "ownership_pct": null,
+              "parent": "דקל תשתיות",
+              "page_reference": 64,
+              "section_title": "התקשרות עם איגוד ערים דן (תברואה וסילוק אשפה)",
+              "table_title": null,
+              "note": "ישות ייעודית בבעלות מלאה של דקל תשתיות"
+            },
+            {
+              "name": "דקל-דיה תפעול בע\"מ",
+              "ownership_pct": null,
+              "parent": "דקל תשתיות",
+              "page_reference": 63,
+              "section_title": null,
+              "table_title": null,
+              "note": "חברה ייעודית, בבעלות ובשליטה מלאה של דקל תשתיות"
             }
           ],
           "change_events": []
@@ -5497,52 +5755,70 @@
         "0:4": {
           "report_format": "israeli_periodic",
           "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
+          "as_of_date": null,
           "subsidiaries": [
             {
-              "name": "אשכול ייצור",
-              "ownership_pct": 75,
+              "name": "דקל תשתיות",
+              "ownership_pct": 50,
               "parent": null,
-              "page_reference": 146,
-              "section_title": "11.12.5.1",
+              "page_reference": 75,
+              "section_title": "1.8.17 הסכמים מהותיים",
               "table_title": null,
-              "note": "חלקה של החברה בהזרמות האמורות עומד על 75%"
+              "note": "מוחזקת בחלקים שווים על ידי החברה ובלוג'ן"
             },
             {
-              "name": "אשכול אנרגיות",
-              "ownership_pct": 75,
+              "name": "חברה חדשה בתחום הפסולת (בלוג'ן וויסט מנג'מנט)",
+              "ownership_pct": 15.9,
               "parent": null,
-              "page_reference": 146,
-              "section_title": "11.12.5.2",
+              "page_reference": 75,
+              "section_title": "1.8.17 הסכמים מהותיים",
               "table_title": null,
-              "note": "חלקה של החברה בהזרמות האמורות עומד על 75%"
+              "note": "התקשרות להקמת חברה חדשה שתאחד את פעילותן בתחום הפסולת"
             },
             {
-              "name": "דליה הרחבה",
+              "name": "גרין נט",
               "ownership_pct": null,
               "parent": null,
-              "page_reference": 148,
-              "section_title": "12.1 היערכות להקמת פרויקט דליה 2",
+              "page_reference": 69,
+              "section_title": "1.8.13.1 גרין נט",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "אפיקים ירוקים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 71,
+              "section_title": "1.8.15.1 הסכם בקשר עם הקמת המפעל בראש העין",
+              "table_title": null,
+              "note": "חברה שהוקמה לצורך פעילות זו"
+            },
+            {
+              "name": "דקל דיה",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 70,
+              "section_title": "1.8.13.2 דקל דיה",
               "table_title": null,
               "note": null
             },
             {
-              "name": "אשכול אבשל",
+              "name": "מנוליד",
               "ownership_pct": null,
               "parent": null,
-              "page_reference": 155,
-              "section_title": "12.2 קידום הקמת יחידת ייצור חדשה באתר אשכול על ידי אשכול אבשל",
-              "table_title": null,
-              "note": null
+              "page_reference": 86,
+              "section_title": "1.14.4.2 הסכמי הלוואה מתאגיד פיננסי",
+              "table_title": "אופן חישוב אמת המידה ליום 31.12.2025",
+              "note": "חברה מוחזקת בדוחות הכספיים"
             },
             {
-              "name": "מבוא דליה",
+              "name": "וימאזור (אריאל-וימאזור)",
               "ownership_pct": null,
               "parent": null,
-              "page_reference": 148,
-              "section_title": "12.1.2",
-              "table_title": null,
-              "note": null
+              "page_reference": 86,
+              "section_title": "1.14.4.2 הסכמי הלוואה מתאגיד פיננסי",
+              "table_title": "אופן חישוב אמת המידה ליום 31.12.2025",
+              "note": "חברה מוחזקת בדוחות הכספיים"
             }
           ],
           "change_events": []
@@ -5553,102 +5829,68 @@
           "as_of_date": "2025-12-31",
           "subsidiaries": [
             {
-              "name": "אשכול אנרגיות",
-              "ownership_pct": 75,
+              "name": "מוליד מערכות",
+              "ownership_pct": 100,
               "parent": null,
-              "page_reference": 98,
-              "section_title": "12.4 נדל\"ן להשקעה",
-              "table_title": null,
+              "page_reference": 176,
+              "section_title": "הלוואות שהועמדו לחברות מוחזקות",
+              "table_title": "הלוואות שהועמדו לחברות מוחזקות",
               "note": null
             },
             {
-              "name": "אשכול אבשל",
-              "ownership_pct": null,
+              "name": "דקל תשתיות (2001) בע\"מ",
+              "ownership_pct": 100,
               "parent": null,
-              "page_reference": 89,
-              "section_title": "12.2 קידום הקמת יחידת ייצור חדשה באתר אשכול על ידי אשכול אבשל",
+              "page_reference": 171,
+              "section_title": "1.14.4.2 הסכמי הלוואה מתאגיד פיננסי",
               "table_title": null,
-              "note": null
-            },
-            {
-              "name": "דליה הרחבה",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 86,
-              "section_title": "12.1.15.3 בטוחות עיקריות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "דליה סחר",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 96,
-              "section_title": "12.3 מתקן אגירה לצורך מכירת חשמל במודל השוק - דליה סחר",
-              "table_title": null,
-              "note": null
+              "note": "מצוין בסעיף הבטוחות והערבויות"
             }
           ],
-          "change_events": []
+          "change_events": [
+            {
+              "company": "B&Y 2015",
+              "event_type": "increase",
+              "ownership_pct_before": 50,
+              "ownership_pct_after": 100,
+              "event_date": "2025-12-01",
+              "event_description": "רכישת מניות השותף בחברת B&Y 2015 באופן שיעקובי יזמות מחזיקה במלוא מניותיה",
+              "page_reference": 179,
+              "section_title": null
+            }
+          ]
         },
         "0:6": {
           "report_format": "israeli_periodic",
           "document_type": "ownership_snapshot",
-          "as_of_date": null,
+          "as_of_date": "2025-12-31",
           "subsidiaries": [
             {
-              "name": "אשכול אנרגיות",
-              "ownership_pct": null,
+              "name": "חברה חדשה בתחום הטיפול בפסולת",
+              "ownership_pct": 15.9,
               "parent": null,
-              "page_reference": 118,
-              "section_title": "19.1 רכישת אתר אשכול",
+              "page_reference": 110,
+              "section_title": "1.8 אירועים מהותיים בתקופת הדוח ועד למועד פרסום דוח זה",
               "table_title": null,
-              "note": null
+              "note": "הקמת חברה משותפת עם בלוג'ן"
             },
             {
-              "name": "אשכול ייצור",
+              "name": "חברת דקל תשתיות (2001) בע\"מ",
               "ownership_pct": null,
               "parent": null,
-              "page_reference": 118,
-              "section_title": "19.1 רכישת אתר אשכול",
+              "page_reference": 103,
+              "section_title": "1.2 תוצאות הפעילות",
               "table_title": null,
-              "note": null
+              "note": "מוחזקת בחלקים שווים עם בלוג'ן"
             },
             {
-              "name": "אשכול אבשל",
+              "name": "דקל דיה בע\"מ",
               "ownership_pct": null,
               "parent": null,
-              "page_reference": 120,
-              "section_title": "19.2 הסדרים בין בעלי המניות בתאגידי אשכול",
+              "page_reference": 110,
+              "section_title": "1.8 אירועים מהותיים בתקופת הדוח ועד למועד פרסום דוח זה",
               "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אשכול תפעול שותף כללי",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 120,
-              "section_title": "19.2 הסדרים בין בעלי המניות בתאגידי אשכול",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "דליה 2",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 122,
-              "section_title": "22.6 התקשרות בהסכם לרכישת גז מאנרג'יאן",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "דליה סחר",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 106,
-              "section_title": "13.4 התחרות במקטע ההספקה",
-              "table_title": null,
-              "note": null
+              "note": "חברה בבעלות ובשליטה מלאה של דקל"
             }
           ],
           "change_events": []
@@ -5657,80 +5899,7 @@
           "report_format": "israeli_periodic",
           "document_type": "ownership_snapshot",
           "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "דליה אנרגיות כח בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 134,
-              "section_title": "27. חברות בנות וקשורות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "דליה אנרגיות הרחבה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 134,
-              "section_title": "27. חברות בנות וקשורות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אלה אנרגיות כוח בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 134,
-              "section_title": "27. חברות בנות וקשורות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "דליה אנרגיות סחר בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 134,
-              "section_title": "27. חברות בנות וקשורות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אשכול אנרגיות כוח בע\"מ",
-              "ownership_pct": 75,
-              "parent": null,
-              "page_reference": 134,
-              "section_title": "27. חברות בנות וקשורות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אשכול ייצור אנרגיות בע\"מ",
-              "ownership_pct": 75,
-              "parent": null,
-              "page_reference": 134,
-              "section_title": "27. חברות בנות וקשורות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אשכול אבשל אנרגיות בע\"מ",
-              "ownership_pct": 75,
-              "parent": null,
-              "page_reference": 134,
-              "section_title": "27. חברות בנות וקשורות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אשכול תפעול אנרגיות שותף כללי בע\"מ",
-              "ownership_pct": 75,
-              "parent": null,
-              "page_reference": 134,
-              "section_title": "27. חברות בנות וקשורות",
-              "table_title": null,
-              "note": null
-            }
-          ],
+          "subsidiaries": [],
           "change_events": []
         },
         "0:8": {
@@ -5739,32 +5908,1480 @@
           "as_of_date": "2025-12-31",
           "subsidiaries": [
             {
-              "name": "אשכול אנרגיות כוח בע\"מ",
-              "ownership_pct": 75,
+              "name": "דקל תשתיות (2001) בע\"מ",
+              "ownership_pct": 50,
               "parent": null,
-              "page_reference": 144,
-              "section_title": "חלק הקבוצה ב-EBITDA יחסי של חברות כלולות",
-              "table_title": "חלק הקבוצה ב-EBITDA יחסי של חברות כלולות",
+              "page_reference": 149,
+              "section_title": "ביאור 12 - השקעה בחברות המטופלות לפי שיטת השווי המאזני",
+              "table_title": "זכויות החברה בהון ובזכויות הצבעה",
               "note": null
             },
             {
-              "name": "אשכול ייצור אנרגיות בע\"מ",
-              "ownership_pct": 75,
+              "name": "י.אנד.בי השקעות ונכסים (2015) בע\"מ",
+              "ownership_pct": null,
               "parent": null,
-              "page_reference": 144,
-              "section_title": "חלק הקבוצה ב-EBITDA יחסי של חברות כלולות",
-              "table_title": "חלק הקבוצה ב-EBITDA יחסי של חברות כלולות",
+              "page_reference": 149,
+              "section_title": "ביאור 12 - השקעה בחברות המטופלות לפי שיטת השווי המאזני",
+              "table_title": "זכויות החברה בהון ובזכויות הצבעה",
+              "note": "מוחזקת ב-50% נכון ליום 31 בדצמבר 2024, הפכה לחברה בת בבעלות מלאה בדצמבר 2025"
+            },
+            {
+              "name": "אורלג פסגות יזמות בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 149,
+              "section_title": "ביאור 12 - השקעה בחברות המטופלות לפי שיטת השווי המאזני",
+              "table_title": "זכויות החברה בהון ובזכויות הצבעה",
+              "note": null
+            }
+          ],
+          "change_events": [
+            {
+              "company": "י.אנד.בי השקעות ונכסים (2015) בע\"מ",
+              "event_type": "increase",
+              "ownership_pct_before": 50,
+              "ownership_pct_after": null,
+              "event_date": "2025-12-01",
+              "event_description": "רכישת 50% הנותרים ועלייה לשליטה מלאה בחברה",
+              "page_reference": 148,
+              "section_title": "ביאור 10 - מלאי מקרקעין"
+            }
+          ]
+        },
+        "0:9": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "דקל תשתיות (2001) בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 156,
+              "section_title": "ביאור 12 - השקעה בחברות המטופלות לפי שיטת השווי המאזני (המשך)",
+              "table_title": "תמצית מידע פיננסי של חברות המטופלות לפי שיטת השווי המאזני מהותיות",
+              "note": null
+            },
+            {
+              "name": "רותם אנרגיה משאבים (ר.א.מ) שותפות מוגבלת",
+              "ownership_pct": 1.8,
+              "parent": null,
+              "page_reference": 158,
+              "section_title": "ביאור 14 - השקעה בחברה אחרת",
+              "table_title": "ההרכב",
+              "note": null
+            },
+            {
+              "name": "נוורת'ווד אקספלוריישן ישראל בע\"מ",
+              "ownership_pct": 4.99,
+              "parent": null,
+              "page_reference": 158,
+              "section_title": "ביאור 14 - השקעה בחברה אחרת",
+              "table_title": null,
+              "note": "החזקה בשותף הכללי"
+            }
+          ],
+          "change_events": [
+            {
+              "company": "פרץ לוזון אחים יעקובי בע\"מ",
+              "event_type": "full_disposal",
+              "ownership_pct_before": 50,
+              "ownership_pct_after": 0,
+              "event_date": "2023-02-01",
+              "event_description": "מכירת מלוא אחזקותיה (50%) של חברה מאוחדת",
+              "page_reference": 156,
+              "section_title": "ביאור 12 - השקעה בחברות המטופלות לפי שיטת השווי המאזני (המשך)"
+            }
+          ]
+        },
+        "0:11": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "י.ש אחים יעקובי בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 202,
+              "section_title": "נספח לדוחות הכספיים המאוחדים - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": "(1)"
+            },
+            {
+              "name": "אריאל וימאזור בקרת תנועה וחניה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 202,
+              "section_title": "נספח לדוחות הכספיים המאוחדים - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אחים יעקובי יזמות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 202,
+              "section_title": "נספח לדוחות הכספיים המאוחדים - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פאי א.י 2011 יזמות בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אחים יעקובי יזמות בע\"מ",
+              "page_reference": 202,
+              "section_title": "נספח לדוחות הכספיים המאוחדים - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "י.אנד.בי עומר נכסים בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אחים יעקובי יזמות בע\"מ",
+              "page_reference": 202,
+              "section_title": "נספח לדוחות הכספיים המאוחדים - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "י.אנד.בי השקעות ונכסים (2015) בע\"מ",
+              "ownership_pct": 50,
+              "parent": "אחים יעקובי יזמות בע\"מ",
+              "page_reference": 202,
+              "section_title": "נספח לדוחות הכספיים המאוחדים - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": "(3)"
+            },
+            {
+              "name": "מנובילד אף אם פתרונות הנדסה בע\"מ",
+              "ownership_pct": 100,
+              "parent": "מנוליד חירות- מערכות בע\"מ",
+              "page_reference": 202,
+              "section_title": "נספח לדוחות הכספיים המאוחדים - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "די אנד אי פיתוח ויישום בע\"מ",
+              "ownership_pct": 100,
+              "parent": "מנוליד חירות- מערכות בע\"מ",
+              "page_reference": 202,
+              "section_title": "נספח לדוחות הכספיים המאוחדים - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דיינה סקאן ישראל בע\"מ",
+              "ownership_pct": 100,
+              "parent": "מנוליד חירות- מערכות בע\"מ",
+              "page_reference": 202,
+              "section_title": "נספח לדוחות הכספיים המאוחדים - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פיקה יזמות ונכסים בע\"מ",
+              "ownership_pct": 100,
+              "parent": "פיקה תשתית עבודות פיתוח בע\"מ",
+              "page_reference": 202,
+              "section_title": "נספח לדוחות הכספיים המאוחדים - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אפיקים ירוקים בע\"מ",
+              "ownership_pct": 78,
+              "parent": "פיקה תשתית עבודות פיתוח בע\"מ",
+              "page_reference": 202,
+              "section_title": "נספח לדוחות הכספיים המאוחדים - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ליד בקרה בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אריאל וימאזור בקרת תנועה וחניה בע\"מ",
+              "page_reference": 202,
+              "section_title": "נספח לדוחות הכספיים המאוחדים - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אקסלרייט תנועה חכמה בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אריאל וימאזור בקרת תנועה וחניה בע\"מ",
+              "page_reference": 202,
+              "section_title": "נספח לדוחות הכספיים המאוחדים - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ס.פ.י פתרונות חניה 2014 בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אריאל וימאזור בקרת תנועה וחניה בע\"מ",
+              "page_reference": 202,
+              "section_title": "נספח לדוחות הכספיים המאוחדים - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": "(5)"
+            },
+            {
+              "name": "דינם טק בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אריאל וימאזור בקרת תנועה וחניה בע\"מ",
+              "page_reference": 202,
+              "section_title": "נספח לדוחות הכספיים המאוחדים - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מנוליד חירות- מערכות בע\"מ",
+              "ownership_pct": 100,
+              "parent": "י.ש אחים יעקובי בע\"מ",
+              "page_reference": 202,
+              "section_title": "נספח לדוחות הכספיים המאוחדים - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": "(1)"
+            },
+            {
+              "name": "פיקה תשתית עבודות פיתוח בע\"מ",
+              "ownership_pct": 100,
+              "parent": "י.ש אחים יעקובי בע\"מ",
+              "page_reference": 202,
+              "section_title": "נספח לדוחות הכספיים המאוחדים - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": "(1)"
+            },
+            {
+              "name": "י.אנד.בי השקעות ונכסים (2015) בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 202,
+              "section_title": "נספח לדוחות הכספיים המאוחדים - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": "(3)"
+            },
+            {
+              "name": "אורלג פסגות יזמות בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 202,
+              "section_title": "נספח לדוחות הכספיים המאוחדים - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דקל תשתיות (2001) בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 202,
+              "section_title": "נספח לדוחות הכספיים המאוחדים - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גרין נט מחזור וטיפול בפסולת בע\"מ",
+              "ownership_pct": 100,
+              "parent": "דקל תשתיות (2001) בע\"מ",
+              "page_reference": 203,
+              "section_title": "נספח לדוחות הכספיים המאוחדים - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ד.ט גרין נט השקעות בע\"מ",
+              "ownership_pct": 100,
+              "parent": "דקל תשתיות (2001) בע\"מ",
+              "page_reference": 203,
+              "section_title": "נספח לדוחות הכספיים המאוחדים - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דקל גרינסויל בע\"מ",
+              "ownership_pct": 100,
+              "parent": "דקל תשתיות (2001) בע\"מ",
+              "page_reference": 203,
+              "section_title": "נספח לדוחות הכספיים המאוחדים - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דקל דיה בע\"מ",
+              "ownership_pct": 100,
+              "parent": "דקל תשתיות (2001) בע\"מ",
+              "page_reference": 203,
+              "section_title": "נספח לדוחות הכספיים המאוחדים - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דקל דיה תפעול בע\"מ",
+              "ownership_pct": 100,
+              "parent": "דקל תשתיות (2001) בע\"מ",
+              "page_reference": 203,
+              "section_title": "נספח לדוחות הכספיים המאוחדים - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גרין דן טי.אל.וי. בע\"מ",
+              "ownership_pct": 100,
+              "parent": "דקל תשתיות (2001) בע\"מ",
+              "page_reference": 203,
+              "section_title": "נספח לדוחות הכספיים המאוחדים - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מיזם משותף עם נכסי אריאל פרויקטים בע\"מ (הרכבת הקלה)",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 203,
+              "section_title": "נספח לדוחות הכספיים המאוחדים - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "LEAD CONTROL TRINIDAD. LTD.",
+              "ownership_pct": 50.1,
+              "parent": null,
+              "page_reference": 203,
+              "section_title": "נספח לדוחות הכספיים המאוחדים - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מנוליד חירות פרויקטים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 203,
+              "section_title": "נספח לדוחות הכספיים המאוחדים - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": "(4)"
+            },
+            {
+              "name": "אלקו- מנוליד מיזם משותף",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 203,
+              "section_title": "נספח לדוחות הכספיים המאוחדים - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "שותפות חירות אינטר התפלה חדרה- מיזם משותף",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 203,
+              "section_title": "נספח לדוחות הכספיים המאוחדים - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ILLUMINATING TRADING GMBH",
+              "ownership_pct": 50,
+              "parent": "ליד בקרה בע\"מ",
+              "page_reference": 203,
+              "section_title": "נספח לדוחות הכספיים המאוחדים - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": "חברה מוחזקת של ליד בקרה בע\"מ"
+            },
+            {
+              "name": "לוגוטק (1997) בע\"מ בהליכי פירוק מרצון",
+              "ownership_pct": 38.5,
+              "parent": null,
+              "page_reference": 203,
+              "section_title": "נספח לדוחות הכספיים המאוחדים - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "LEAD CONTROL USA. INC.",
+              "ownership_pct": 100,
+              "parent": "ליד בקרה בע\"מ",
+              "page_reference": 203,
+              "section_title": "נספח לדוחות הכספיים המאוחדים - רשימת חברות מוחזקות",
+              "table_title": null,
+              "note": "חברה מוחזקת של ליד בקרה בע\"מ"
+            }
+          ],
+          "change_events": []
+        },
+        "0:12": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "גרין נט מחזור וטיפול בפסולת בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 214,
+              "section_title": "באור 1 - כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ד.ט גרין נט השקעות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 214,
+              "section_title": "באור 1 - כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דקל גרינסויל בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 214,
+              "section_title": "באור 1 - כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דקל דיה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 214,
+              "section_title": "באור 1 - כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דקל דיה תפעול בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 214,
+              "section_title": "באור 1 - כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גרין דן טי.אל.וי. בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 214,
+              "section_title": "באור 1 - כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דאבליו.טי.אי נגב בע\"מ",
+              "ownership_pct": 18,
+              "parent": null,
+              "page_reference": 214,
+              "section_title": "באור 1 - כללי",
+              "table_title": null,
               "note": null
             }
           ],
           "change_events": []
         },
-        "0:9": {
+        "0:13": {
           "report_format": "israeli_periodic",
-          "document_type": "unknown",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "דקל גרינסויל בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 238,
+              "section_title": "באור 21 - התקשרויות, התחייבויות תלויות, ערבויות ושעבודים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גרין נט מיחזור וטיפול בפסולת בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 228,
+              "section_title": "באור 13 - נכסים בלתי מוחשיים, נטו",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דקל דיה",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 223,
+              "section_title": "באור 8 - חייבים בגין הסדרי זיכיון למתן שירותים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גרין דן טי.אל.וי בע\"מ",
+              "ownership_pct": null,
+              "parent": "גרין נט מיחזור וטיפול בפסולת בע\"מ",
+              "page_reference": 224,
+              "section_title": "באור 8 - חייבים בגין הסדרי זיכיון למתן שירותים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גרין דקל טי.אל.וי בע\"מ",
+              "ownership_pct": null,
+              "parent": "גרין נט מיחזור וטיפול בפסולת בע\"מ",
+              "page_reference": 240,
+              "section_title": "באור 21 - התקשרויות, התחייבויות תלויות, ערבויות ושעבודים",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:14": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "מנוליד חירות מערכות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 250,
+              "section_title": "פרק ד': פרטים נוספים על התאגיד על פי תקנות ניירות ערך (דוחות תקופתיים ומיידיים), תש\"ל-1970 (\"התקנות\")",
+              "table_title": "רשימת השקעות בחברות-בת מהותיות ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי (תקנה 11)",
+              "note": null
+            },
+            {
+              "name": "אריאל וימאזור בקרת תנועה וחניה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 250,
+              "section_title": "פרק ד': פרטים נוספים על התאגיד על פי תקנות ניירות ערך (דוחות תקופתיים ומיידיים), תש\"ל-1970 (\"התקנות\")",
+              "table_title": "רשימת השקעות בחברות-בת מהותיות ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי (תקנה 11)",
+              "note": null
+            },
+            {
+              "name": "אחים יעקובי יזמות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 250,
+              "section_title": "פרק ד': פרטים נוספים על התאגיד על פי תקנות ניירות ערך (דוחות תקופתיים ומיידיים), תש\"ל-1970 (\"התקנות\")",
+              "table_title": "רשימת השקעות בחברות-בת מהותיות ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי (תקנה 11)",
+              "note": null
+            },
+            {
+              "name": "דקל תשתיות (2001) בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 250,
+              "section_title": "פרק ד': פרטים נוספים על התאגיד על פי תקנות ניירות ערך (דוחות תקופתיים ומיידיים), תש\"ל-1970 (\"התקנות\")",
+              "table_title": "רשימת השקעות בחברות-בת מהותיות ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי (תקנה 11)",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:15": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "אריאל וימאזור בקרת תנועה וחניה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 262,
+              "section_title": "6.10 יניב פרנקל",
+              "table_title": null,
+              "note": "חברת בת בבעלות מלאה"
+            },
+            {
+              "name": "י.ש אחים יעקובי בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 266,
+              "section_title": "9.2 התחייבות בעלי השליטה לתיחום פעילות",
+              "table_title": "עסקאות עם בעלי שליטה לפי סעיף 270(4) לחוק החברות",
+              "note": "חברת בת בבעלות מלאה"
+            },
+            {
+              "name": "מנוליד חירות מערכות בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 265,
+              "section_title": "13. נושאי משרה בכירה של התאגיד (תקנה 26א)",
+              "table_title": null,
+              "note": "חברת בת"
+            }
+          ],
+          "change_events": []
+        }
+      },
+      "attempts": {
+        "0:10": 1
+      }
+    }
+  },
+  "1728564": {
+    "company_id": "749",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-19T10:55:17.337869+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1726308": {
+    "company_id": "1661",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-19T10:56:39.828549+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1729020": {
+    "company_id": "1633",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-19T11:01:42.517612+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1730563": {
+    "company_id": "739",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-09-19T11:01:44.464103+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 18,
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אלקטרה דנקו בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "אלקטרה אלקו התק\"ש בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "אלקטרה גרינטק בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "אלקטרה בניה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "אלקטרה סולל בונה - אגירה שאובה גלבוע",
+              "ownership_pct": 25,
+              "parent": "אלקטרה בניה בע\"מ",
+              "page_reference": 6,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "פרויקט לנדאמרק (בשותפות עם דניה סיבוס)",
+              "ownership_pct": 50,
+              "parent": "אלקטרה בניה בע\"מ",
+              "page_reference": 6,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "פרויקט כיכר המדינה (בשותפות עם אשטרום הנדסה ובניה)",
+              "ownership_pct": 50,
+              "parent": "אלקטרה בניה בע\"מ",
+              "page_reference": 6,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "פרויקט DUO (בשותפות עם דניה סיבוס)",
+              "ownership_pct": 50,
+              "parent": "אלקטרה בניה בע\"מ",
+              "page_reference": 6,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "אלקטרה תשתיות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "טר ארמה בע\"מ",
+              "ownership_pct": 51,
+              "parent": "אלקטרה תשתיות בע\"מ",
+              "page_reference": 6,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "טר ארמה תעשיות בע\"מ",
+              "ownership_pct": 51,
+              "parent": "טר ארמה בע\"מ",
+              "page_reference": 6,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "אלקטרה תשתיות סביבה בע\"מ",
+              "ownership_pct": 70,
+              "parent": "אלקטרה תשתיות בע\"מ",
+              "page_reference": 6,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "אלקטרה תשתיות עפר ומחצבים",
+              "ownership_pct": 60,
+              "parent": "אלקטרה תשתיות בע\"מ",
+              "page_reference": 6,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "שותפות מחוברים לעיר",
+              "ownership_pct": 50,
+              "parent": "אלקטרה תשתיות בע\"מ",
+              "page_reference": 6,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "אלקטרה אקו גרין פארק למיחזור שותפות מוגבלת",
+              "ownership_pct": 51,
+              "parent": "אלקטרה תשתיות בע\"מ",
+              "page_reference": 6,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "סי.אי.טק מערכות (2015) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "ד. סער הנדסת מיזוג אוויר בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "אקלימטיק בע\"מ",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "מגאסון אלקטרוניקה ובקרה (1978) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "אלקטרה תעמ\"ל אגש\"ח בע\"מ",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "אלקטרה פתרונות חנייה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "א. צום מעליות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "פ.ק. אלקטרה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "Electra USA Inc",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "Gilston Electrical Contraction LLC",
+              "ownership_pct": 51,
+              "parent": "Electra USA Inc",
+              "page_reference": 6,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "Hellman Electric LLC",
+              "ownership_pct": 51,
+              "parent": "Electra USA Inc",
+              "page_reference": 6,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "F.W Sims LLC",
+              "ownership_pct": 83,
+              "parent": "Electra USA Inc",
+              "page_reference": 6,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "P.J. Mechanical",
+              "ownership_pct": 100,
+              "parent": "Electra USA Inc",
+              "page_reference": 6,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "Captive New York Insurance, Inc.",
+              "ownership_pct": 100,
+              "parent": "Electra USA Inc",
+              "page_reference": 6,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "אלקטרה אפ.אם אחזקת מבנים ומערכות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "נכסי אריאל בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אלקטרה אפ.אם אחזקת מבנים ומערכות בע\"מ",
+              "page_reference": 6,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "אלקטרה אפ.אם חטיבת השירות הנייד בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אלקטרה אפ.אם אחזקת מבנים ומערכות בע\"מ",
+              "page_reference": 6,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "אלקטרה סקיוריטי בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "טווס שמירה אבטחה ושירותי נקיון בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אלקטרה סקיוריטי בע\"מ",
+              "page_reference": 6,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "מכלול פתרונות בע\"מ",
+              "ownership_pct": 90,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "אלקטרה תומר בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "אלקטרה טרגט בע\"מ",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "אלקטרה מגורים בע\"מ",
+              "ownership_pct": 82,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "אלקטרה יזמות חו\"ל שותפות מוגבלת",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "Electech Holding B.V",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "אלקטרה אפיקים",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "אלקטרה מוטורס",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "אלקטרה אפיקים תחבורה 2021 בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אלקטרה אפיקים",
+              "page_reference": 7,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "מרכז שירות לרכב קלינטון בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אלקטרה אפיקים תחבורה 2021 בע\"מ",
+              "page_reference": 7,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "אלקטרה זכיינות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "מבט לנגב בע\"מ",
+              "ownership_pct": 14.3,
+              "parent": "אלקטרה זכיינות בע\"מ",
+              "page_reference": 7,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "מבט לנגב תפעול בע\"מ",
+              "ownership_pct": 25.15,
+              "parent": "אלקטרה זכיינות בע\"מ",
+              "page_reference": 7,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "טי.אם.טי תל אביב מטרופולין טראמווי בע\"מ",
+              "ownership_pct": 40,
+              "parent": "אלקטרה זכיינות בע\"מ",
+              "page_reference": 7,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "אייץ' אן - לייט רייל ליין בע\"מ",
+              "ownership_pct": 40,
+              "parent": "אלקטרה זכיינות בע\"מ",
+              "page_reference": 7,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "אלקטרה ייבוש בוצה בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אלקטרה זכיינות בע\"מ",
+              "page_reference": 7,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "Electech Holding הולנד B.V",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "OTS Omni Trading Services",
+              "ownership_pct": 100,
+              "parent": "Electech Holding הולנד B.V",
+              "page_reference": 7,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "ETCO ניגריה",
+              "ownership_pct": 100,
+              "parent": "OTS Omni Trading Services",
+              "page_reference": 7,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "ELECTRA M&E ROMANIA SRL",
+              "ownership_pct": 100,
+              "parent": "Electech Holding הולנד B.V",
+              "page_reference": 7,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "Electra M&E Polska Sp.z.o.o פולין",
+              "ownership_pct": 80,
+              "parent": "אלקטרה יזמות חו\"ל שותפות מוגבלת",
+              "page_reference": 7,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "Geo-Kat Sp.z.o.o",
+              "ownership_pct": 100,
+              "parent": "Electra M&E Polska Sp.z.o.o פולין",
+              "page_reference": 7,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "Electra M&E Deutschland GmbH",
+              "ownership_pct": 80,
+              "parent": "אלקטרה יזמות חו\"ל שותפות מוגבלת",
+              "page_reference": 7,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "EMMSA Deutschland GmbH Wolfsburg",
+              "ownership_pct": 100,
+              "parent": "Electra M&E Deutschland GmbH",
+              "page_reference": 7,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "H+V VersorgungstechnikWolfsburg GmbH",
+              "ownership_pct": 100,
+              "parent": "EMMSA Deutschland GmbH Wolfsburg",
+              "page_reference": 7,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "Electra APM Sp.z.o.o פולין",
+              "ownership_pct": 100,
+              "parent": "אלקטרה יזמות חו\"ל שותפות מוגבלת",
+              "page_reference": 7,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "Electra Poland Project 1 Sp.z.o.o",
+              "ownership_pct": 100,
+              "parent": "אלקטרה יזמות חו\"ל שותפות מוגבלת",
+              "page_reference": 7,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "Suvorovo Properties Ltd",
+              "ownership_pct": 100,
+              "parent": "אלקטרה יזמות חו\"ל שותפות מוגבלת",
+              "page_reference": 7,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "SIA Unico לטביה",
+              "ownership_pct": 100,
+              "parent": "אלקטרה יזמות חו\"ל שותפות מוגבלת",
+              "page_reference": 7,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "עסקה משותפת אכזיב",
+              "ownership_pct": 50,
+              "parent": "אלקטרה מגורים בע\"מ",
+              "page_reference": 7,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "דן אלקטרה שדה דב בע\"מ",
+              "ownership_pct": 50,
+              "parent": "אלקטרה מגורים בע\"מ",
+              "page_reference": 7,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "מבנה אלקטרה מתחם האלף",
+              "ownership_pct": 50,
+              "parent": "אלקטרה מגורים בע\"מ",
+              "page_reference": 7,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            },
+            {
+              "name": "Morgal Invsetments LLC רוסיה",
+              "ownership_pct": 50,
+              "parent": "אלקטרה מגורים בע\"מ",
+              "page_reference": 7,
+              "section_title": "פרק :1 תיאור ההתפתחות הכללית של עסקי התאגיד",
+              "table_title": "מבנה ההחזקות בקבוצה",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "M.J.P. Intermediate LLC (PJM)",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 100,
+              "event_date": null,
+              "event_description": "הושלמה עסקה לרכישת 100% מהון המניות של PJM",
+              "page_reference": 28,
+              "section_title": "21.2 שינויים בהיקף הפעילות",
+              "table_title": null
+            }
+          ]
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
           "as_of_date": "2025-12-31",
           "subsidiaries": [],
           "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "אלקטרה מוטורס",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 87,
+              "section_title": "חומרי גלם וספקים",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": [
+            {
+              "company": "קמפוס אלקטרום בע\"מ",
+              "event_type": "full_disposal",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 0,
+              "event_date": null,
+              "event_description": "הושלמה עסקה למכירת מלוא החזקות החברה בחברת קמפוס אלקטרום בע\"מ",
+              "page_reference": 83,
+              "section_title": "שינויים בהיקף הפעילות"
+            },
+            {
+              "company": "אלקטרה אפיקים",
+              "event_type": "decrease",
+              "ownership_pct_before": null,
+              "ownership_pct_after": null,
+              "event_date": null,
+              "event_description": "התקשרות החברה עם קרן תשתיות לישראל – תש\"י להכנסתה כמשקיעה באלקטרה אפיקים במסגרת עסקה לרכישת חלק ממניותיה",
+              "page_reference": 83,
+              "section_title": "שינויים בהיקף הפעילות"
+            },
+            {
+              "company": "אלקטרה מוטורס",
+              "event_type": "decrease",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 51,
+              "event_date": null,
+              "event_description": "התקשרות החברה עם קרן תשתיות לישראל – תש\"י להכנסתה כמשקיעה באלקטרה מוטורס במסגרת עסקה לרכישת חלק ממניותיה",
+              "page_reference": 83,
+              "section_title": "שינויים בהיקף הפעילות"
+            }
+          ]
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אלקטרה מוטורס",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 87,
+              "section_title": "63. חומרי גלם וספקים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "הקו הירוק בגוש דן",
+              "ownership_pct": 40.05,
+              "parent": null,
+              "page_reference": 89,
+              "section_title": "67. הסכמים מהותיים",
+              "table_title": "להלן ריכוז התקשרויות במסגרת הסכמי זכיינות ליום 31 בדצמבר 2025 (ללא אשכולות להפעלת תחבורה ציבורית):",
+              "note": "שיעור החזקה ב- SPC"
+            },
+            {
+              "name": "נתיבים מהירים- גוש דן",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 89,
+              "section_title": "67. הסכמים מהותיים",
+              "table_title": "להלן ריכוז התקשרויות במסגרת הסכמי זכיינות ליום 31 בדצמבר 2025 (ללא אשכולות להפעלת תחבורה ציבורית):",
+              "note": "שיעור החזקה ב- SPC"
+            },
+            {
+              "name": "קו הרכבת הקלה חיפה- נצרת",
+              "ownership_pct": 40.05,
+              "parent": null,
+              "page_reference": 89,
+              "section_title": "67. הסכמים מהותיים",
+              "table_title": "להלן ריכוז התקשרויות במסגרת הסכמי זכיינות ליום 31 בדצמבר 2025 (ללא אשכולות להפעלת תחבורה ציבורית):",
+              "note": "שיעור החזקה ב- SPC"
+            },
+            {
+              "name": "ייבוש בוצה בשפד\"ן",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 89,
+              "section_title": "67. הסכמים מהותיים",
+              "table_title": "להלן ריכוז התקשרויות במסגרת הסכמי זכיינות ליום 31 בדצמבר 2025 (ללא אשכולות להפעלת תחבורה ציבורית):",
+              "note": "שיעור החזקה ב- SPC"
+            },
+            {
+              "name": "עיר הבה\"דים",
+              "ownership_pct": 14.3,
+              "parent": null,
+              "page_reference": 89,
+              "section_title": "67. הסכמים מהותיים",
+              "table_title": "להלן ריכוז התקשרויות במסגרת הסכמי זכיינות ליום 31 בדצמבר 2025 (ללא אשכולות להפעלת תחבורה ציבורית):",
+              "note": "שיעור החזקה ב- SPC"
+            },
+            {
+              "name": "אגרת גודש בגוש דן",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 89,
+              "section_title": "67. הסכמים מהותיים",
+              "table_title": "להלן ריכוז התקשרויות במסגרת הסכמי זכיינות ליום 31 בדצמבר 2025 (ללא אשכולות להפעלת תחבורה ציבורית):",
+              "note": "שיעור החזקה ב- SPC"
+            },
+            {
+              "name": "מט\"ש דימונה",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 89,
+              "section_title": "67. הסכמים מהותיים",
+              "table_title": "להלן ריכוז התקשרויות במסגרת הסכמי זכיינות ליום 31 בדצמבר 2025 (ללא אשכולות להפעלת תחבורה ציבורית):",
+              "note": "שיעור החזקה ב- SPC"
+            },
+            {
+              "name": "מט\"ש ערד",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 89,
+              "section_title": "67. הסכמים מהותיים",
+              "table_title": "להלן ריכוז התקשרויות במסגרת הסכמי זכיינות ליום 31 בדצמבר 2025 (ללא אשכולות להפעלת תחבורה ציבורית):",
+              "note": "שיעור החזקה ב- SPC"
+            }
+          ],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:7": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:8": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:9": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "P.J.M. intermediate, LLC",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 100,
+              "event_date": "2025-01-24",
+              "event_description": "רכישת 100% מהון המניות של P.J.M. intermediate, LLC",
+              "page_reference": 166,
+              "section_title": "באור 5 - צירוף עסקים"
+            },
+            {
+              "company": "חברת טר ארמה בע\"מ וחברת טר ארמה תעשיות בע\"מ",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 51,
+              "event_date": "2025-09-18",
+              "event_description": "רכישת 51% מהון המניות של כל אחת מהחברות טר ארמה בע\"מ וטר ארמה תעשיות בע\"מ",
+              "page_reference": 167,
+              "section_title": "באור 5 - צירוף עסקים"
+            }
+          ]
         },
         "0:10": {
           "report_format": "israeli_periodic",
@@ -5772,182 +7389,538 @@
           "as_of_date": "2025-12-31",
           "subsidiaries": [
             {
-              "name": "אשכול אנרגיות כוח בע\"מ",
-              "ownership_pct": 75,
+              "name": "Morgal Investment Limited",
+              "ownership_pct": 50,
               "parent": null,
-              "page_reference": 179,
-              "section_title": "באור 1 - כללי (המשך)",
+              "page_reference": 176,
+              "section_title": "באור 14 - השקעות בישויות המטופלות לפי שיטת השווי המאזני - ג. מידע נוסף על ההשקעות העיקריות בחברות כלולות במגזר פיתוח והקמה של נדל\"ן בייזום בתקופת הדוח",
               "table_title": null,
               "note": null
             },
             {
-              "name": "אשכול ייצור אנרגיות בע\"מ",
-              "ownership_pct": 75,
+              "name": "אלקטרה אפיקים בע\"מ",
+              "ownership_pct": 51,
               "parent": null,
-              "page_reference": 181,
-              "section_title": "באור 1 - כללי (המשך)",
+              "page_reference": 182,
+              "section_title": "באור 14 - השקעות בישויות המטופלות לפי שיטת השווי המאזני - ד. מידע נוסף על ההשקעות העיקריות בחברות כלולות במגזר הזכיינות בתקופת הדוח",
               "table_title": null,
               "note": null
             },
             {
-              "name": "אשכול תפעול אנרגיות שותף כללי בע\"מ",
-              "ownership_pct": 75,
+              "name": "מבט לנגב בע\"מ",
+              "ownership_pct": 14.3,
               "parent": null,
               "page_reference": 181,
-              "section_title": "באור 1 - כללי (המשך)",
+              "section_title": "באור 14 - השקעות בישויות המטופלות לפי שיטת השווי המאזני - ד. מידע נוסף על ההשקעות העיקריות בחברות כלולות במגזר הזכיינות בתקופת הדוח",
+              "table_title": null,
+              "note": "זכיין: 14.3%, קבלן: 30%, תפעול: 25.19%"
+            },
+            {
+              "name": "נתיב לעיר בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 181,
+              "section_title": "באור 14 - השקעות בישויות המטופלות לפי שיטת השווי המאזני - ד. מידע נוסף על ההשקעות העיקריות בחברות כלולות במגזר הזכיינות בתקופת הדוח",
+              "table_title": null,
+              "note": "זכיין: 50%, קבלן: 50%, החברה מחזיקה 25% ישירות ו-25% באמצעות אלקטרה אפיקים"
+            },
+            {
+              "name": "טי. אמ. טי - תל אביב מטרופוליטן טראמווי בע\"מ",
+              "ownership_pct": 40.05,
+              "parent": null,
+              "page_reference": 181,
+              "section_title": "באור 14 - השקעות בישויות המטופלות לפי שיטת השווי המאזני - ד. מידע נוסף על ההשקעות העיקריות בחברות כלולות במגזר הזכיינות בתקופת הדוח",
+              "table_title": null,
+              "note": "זכיין: 40.05%, קבלן: 51.5%, תפעול: 20%"
+            },
+            {
+              "name": "אייץ' אן - לייט רייל ליין בע\"מ",
+              "ownership_pct": 40.05,
+              "parent": null,
+              "page_reference": 181,
+              "section_title": "באור 14 - השקעות בישויות המטופלות לפי שיטת השווי המאזני - ד. מידע נוסף על ההשקעות העיקריות בחברות כלולות במגזר הזכיינות בתקופת הדוח",
+              "table_title": null,
+              "note": "זכיין: 40.05%, קבלן: 21.5%, תפעול: 50%"
+            }
+          ],
+          "change_events": []
+        },
+        "0:12": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "אלקטרה תשתיות בע\"מ",
+              "event_type": "increase",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 100,
+              "event_date": "2024-01-01",
+              "event_description": "תשלום עבור 15% הנותרים ממניות אלקטרה תשתיות כך שלאחר המימוש מחזיקה החברה 100%.",
+              "page_reference": 208,
+              "section_title": "באור 29 - התחייבויות אחרות לזמן ארוך"
+            },
+            {
+              "company": "מכלול פתרונות בע\"מ",
+              "event_type": "increase",
+              "ownership_pct_before": 51,
+              "ownership_pct_after": 90,
+              "event_date": null,
+              "event_description": "מימוש אופציה א' בשנת 2025 כך שלאחר מכן אלקטרה אפ.אם מחזיקה ב-90% מהון המניות.",
+              "page_reference": 209,
+              "section_title": "באור 29 - התחייבויות אחרות לזמן ארוך"
+            },
+            {
+              "company": "אקלימטיק בע\"מ",
+              "event_type": "increase",
+              "ownership_pct_before": 51,
+              "ownership_pct_after": 75,
+              "event_date": null,
+              "event_description": "מימוש האופציה הראשונה בשנת 2025 כך שלאחר מכן החברה מחזיקה ב-75% מאקלימטיק.",
+              "page_reference": 209,
+              "section_title": "באור 29 - התחייבויות אחרות לזמן ארוך"
+            },
+            {
+              "company": "טרגט א.מ.ן בע\"מ",
+              "event_type": "increase",
+              "ownership_pct_before": 51,
+              "ownership_pct_after": 75.5,
+              "event_date": "2025-08-01",
+              "event_description": "מימוש האופציה הראשונה באוגוסט 2025 כך שלאחר מכן אלקטרה אפ.אם מחזיקה ב-75.5% מטרגט.",
+              "page_reference": 209,
+              "section_title": "באור 29 - התחייבויות אחרות לזמן ארוך"
+            },
+            {
+              "company": "Hellman Electric",
+              "event_type": "increase",
+              "ownership_pct_before": 51,
+              "ownership_pct_after": 100,
+              "event_date": "2026-02-01",
+              "event_description": "מימוש אופציה לרכישת 49% נוספים בחודש פברואר 2026 כך שהחברה הבת מחזיקה ב-100% מהלמן.",
+              "page_reference": 209,
+              "section_title": "באור 29 - התחייבויות אחרות לזמן ארוך"
+            },
+            {
+              "company": "אלקטרה אפיקים בע\"מ",
+              "event_type": "decrease",
+              "ownership_pct_before": 51,
+              "ownership_pct_after": 33.33,
+              "event_date": "2025-09-07",
+              "event_description": "התקשרות לעסקת הכנסת משקיעה (קרן תש\"י) בשני שלבים, הפחתת החזקה מ-51% ל-33.33%.",
+              "page_reference": 218,
+              "section_title": "באור 32 - התחייבויות תלויות, התקשרויות ושעבודים"
+            },
+            {
+              "company": "אלקטרה מוטורס בע\"מ",
+              "event_type": "decrease",
+              "ownership_pct_before": 51,
+              "ownership_pct_after": 33.33,
+              "event_date": "2025-09-07",
+              "event_description": "התקשרות לעסקת הכנסת משקיעה (קרן תש\"י) בשני שלבים, הפחתת החזקה מ-51% ל-33.33%.",
+              "page_reference": 218,
+              "section_title": "באור 32 - התחייבויות תלויות, התקשרויות ושעבודים"
+            }
+          ]
+        },
+        "0:13": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:14": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אלקטרה בניה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 248,
+              "section_title": "רשימת ישויות פעילות עיקריות מוחזקות במישרין",
               "table_title": null,
               "note": null
             },
             {
-              "name": "אשכול אבשל אנרגיות בע\"מ",
+              "name": "אלקטרה אלקו התק\"ש בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 248,
+              "section_title": "רשימת ישויות פעילות עיקריות מוחזקות במישרין",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "סי.אי.טק מערכות (2015) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 248,
+              "section_title": "רשימת ישויות פעילות עיקריות מוחזקות במישרין",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "א. צום מעליות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 248,
+              "section_title": "רשימת ישויות פעילות עיקריות מוחזקות במישרין",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה אפ אם - אחזקת מבנים ומערכות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 248,
+              "section_title": "רשימת ישויות פעילות עיקריות מוחזקות במישרין",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אקלימטיק בע\"מ",
               "ownership_pct": 75,
               "parent": null,
-              "page_reference": 181,
-              "section_title": "באור 1 - כללי (המשך)",
+              "page_reference": 248,
+              "section_title": "רשימת ישויות פעילות עיקריות מוחזקות במישרין",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה דנקו בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 248,
+              "section_title": "רשימת ישויות פעילות עיקריות מוחזקות במישרין",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מגאסון אלקטרוניקה ובקרה 1978 בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 248,
+              "section_title": "רשימת ישויות פעילות עיקריות מוחזקות במישרין",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה מגורים בע\"מ",
+              "ownership_pct": 82,
+              "parent": null,
+              "page_reference": 248,
+              "section_title": "רשימת ישויות פעילות עיקריות מוחזקות במישרין",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה זכיינות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 248,
+              "section_title": "רשימת ישויות פעילות עיקריות מוחזקות במישרין",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה אפיקים בע\"מ",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 248,
+              "section_title": "רשימת ישויות פעילות עיקריות מוחזקות במישרין",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה מוטורס בע\"מ",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 248,
+              "section_title": "רשימת ישויות פעילות עיקריות מוחזקות במישרין",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה תשתיות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 248,
+              "section_title": "רשימת ישויות פעילות עיקריות מוחזקות במישרין",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פ.ק. אלקטרה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 248,
+              "section_title": "רשימת ישויות פעילות עיקריות מוחזקות במישרין",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה תעמל - אגודה שיתופית חקלאית בע\"מ",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 248,
+              "section_title": "רשימת ישויות פעילות עיקריות מוחזקות במישרין",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה פתרונות חנייה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 248,
+              "section_title": "רשימת ישויות פעילות עיקריות מוחזקות במישרין",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מבט לנגב בע\"מ",
+              "ownership_pct": 14.3,
+              "parent": null,
+              "page_reference": 248,
+              "section_title": "רשימת ישויות פעילות עיקריות מוחזקות במישרין",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "טי. אם. טי - תל אביב מטרופוליטן טראמווי בע\"מ",
+              "ownership_pct": 40,
+              "parent": null,
+              "page_reference": 248,
+              "section_title": "רשימת ישויות פעילות עיקריות מוחזקות במישרין",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "נתיב לעיר בע\"מ",
+              "ownership_pct": 25,
+              "parent": null,
+              "page_reference": 248,
+              "section_title": "רשימת ישויות פעילות עיקריות מוחזקות במישרין",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה ייבוש בוצה",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 248,
+              "section_title": "רשימת ישויות פעילות עיקריות מוחזקות במישרין",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלקטרה י.ח שותפות מוגבלת",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 248,
+              "section_title": "רשימת ישויות פעילות עיקריות מוחזקות במישרין",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Electra USA INC.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 248,
+              "section_title": "רשימת ישויות פעילות עיקריות מוחזקות במישרין",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Electech Holdings BV",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 248,
+              "section_title": "רשימת ישויות פעילות עיקריות מוחזקות במישרין",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Morgal Investments LLC",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 248,
+              "section_title": "רשימת ישויות פעילות עיקריות מוחזקות במישרין",
               "table_title": null,
               "note": null
             }
           ],
           "change_events": []
+        },
+        "0:15": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אלקטרה בניה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 265,
+              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
+              "table_title": "רשימת השקעות בחברות בת מהותיות המוחזקות במישרין על-ידי החברה, לתאריך המאזן",
+              "note": null
+            },
+            {
+              "name": "אלקטרה אלקו התק\"ש בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 265,
+              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
+              "table_title": "רשימת השקעות בחברות בת מהותיות המוחזקות במישרין על-ידי החברה, לתאריך המאזן",
+              "note": null
+            },
+            {
+              "name": "אלקטרה תשתיות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 265,
+              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
+              "table_title": "רשימת השקעות בחברות בת מהותיות המוחזקות במישרין על-ידי החברה, לתאריך המאזן",
+              "note": null
+            },
+            {
+              "name": "אלקטרה אפ.אם אחזקת מבנים ומערכות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 265,
+              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
+              "table_title": "רשימת השקעות בחברות בת מהותיות המוחזקות במישרין על-ידי החברה, לתאריך המאזן",
+              "note": null
+            },
+            {
+              "name": "אלקטרה מגורים בע\"מ",
+              "ownership_pct": 82,
+              "parent": null,
+              "page_reference": 265,
+              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
+              "table_title": "רשימת השקעות בחברות בת מהותיות המוחזקות במישרין על-ידי החברה, לתאריך המאזן",
+              "note": null
+            },
+            {
+              "name": "אלקטרה אפיקים בע\"מ",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 265,
+              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
+              "table_title": "רשימת השקעות בחברות בת מהותיות המוחזקות במישרין על-ידי החברה, לתאריך המאזן",
+              "note": null
+            },
+            {
+              "name": "Electra USA Inc.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 265,
+              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
+              "table_title": "רשימת השקעות בחברות בת מהותיות המוחזקות במישרין על-ידי החברה, לתאריך המאזן",
+              "note": null
+            }
+          ],
+          "change_events": [
+            {
+              "company": "P.J.M. intermediate, LLC",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 100,
+              "event_date": null,
+              "event_description": "רכישת 100% מהמניות על ידי Electra USA Inc.",
+              "page_reference": 265,
+              "section_title": "שינויים בהשקעות בחברות בת ובחברות כלולות"
+            },
+            {
+              "company": "טר ארמה בע\"מ",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 51,
+              "event_date": null,
+              "event_description": "רכישת 51% מהון המניות על ידי אלקטרה תשתיות",
+              "page_reference": 265,
+              "section_title": "שינויים בהשקעות בחברות בת ובחברות כלולות"
+            },
+            {
+              "company": "טר ארמה תעשיות בע\"מ",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 51,
+              "event_date": null,
+              "event_description": "רכישת 51% מהון המניות על ידי אלקטרה תשתיות",
+              "page_reference": 265,
+              "section_title": "שינויים בהשקעות בחברות בת ובחברות כלולות"
+            },
+            {
+              "company": "אלקטרה אפיקים בע\"מ",
+              "event_type": "decrease",
+              "ownership_pct_before": 51,
+              "ownership_pct_after": 33.33,
+              "event_date": null,
+              "event_description": "מכירת 16.67% מהון המניות בשני שלבים כך שלאחר ההשלמה תחזיק 33.33%",
+              "page_reference": 265,
+              "section_title": "שינויים בהשקעות בחברות בת ובחברות כלולות"
+            },
+            {
+              "company": "אלקטרה מוטורס בע\"מ",
+              "event_type": "decrease",
+              "ownership_pct_before": 51,
+              "ownership_pct_after": 33.33,
+              "event_date": null,
+              "event_description": "מכירת 16.67% מהון המניות בשני שלבים כך שלאחר ההשלמה תחזיק 33.33%",
+              "page_reference": 265,
+              "section_title": "שינויים בהשקעות בחברות בת ובחברות כלולות"
+            },
+            {
+              "company": "קמפוס אלקטרום בע\"מ",
+              "event_type": "full_disposal",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 0,
+              "event_date": null,
+              "event_description": "הושלמה עסקה למכירת מלוא החזקות החברה בחברת קמפוס אלקטרום בע\"מ",
+              "page_reference": 265,
+              "section_title": "שינויים בהשקעות בחברות בת ובחברות כלולות"
+            }
+          ]
+        },
+        "0:16": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-24",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:17": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2026-03-24",
+          "subsidiaries": [],
+          "change_events": []
         }
       },
-      "attempts": {}
-    }
-  },
-  "1729220": {
-    "company_id": "1978",
-    "status": "partial",
-    "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-18T11:09:08.625943+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 18,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1729407": {
-    "company_id": "1831",
-    "status": "partial",
-    "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-18T11:09:08.979159+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 24,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1735753": {
-    "company_id": "1703",
-    "status": "partial",
-    "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-18T11:09:09.277656+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 16,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1728564": {
-    "company_id": "749",
-    "status": "partial",
-    "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-18T11:09:09.770538+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 12,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1726308": {
-    "company_id": "1661",
-    "status": "partial",
-    "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-18T11:09:10.125521+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 15,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1729020": {
-    "company_id": "1633",
-    "status": "partial",
-    "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-18T11:09:10.535418+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 22,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1730563": {
-    "company_id": "739",
-    "status": "partial",
-    "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-18T11:09:11.129302+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 18,
-      "done": {},
-      "attempts": {}
+      "attempts": {
+        "0:11": 1
+      }
     }
   },
   "1727700": {
     "company_id": "445",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-18T11:09:11.614066+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 15,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-19T11:05:25.012205+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1730482": {
     "company_id": "2474",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-18T11:09:12.018112+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 11,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-19T11:04:16.680250+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1728461": {
     "company_id": "2441",
@@ -5969,13 +7942,134 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-18T11:09:12.375100+00:00",
+    "at": "2026-09-19T11:05:17.295089+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 9,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "ג'ין טכנולוגיות בינה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 11,
+              "section_title": "החזקה בניירות הערך של החברה:",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ג'ין דיפנס מערכות בינה מלאכותית בע\"מ",
+              "ownership_pct": 100,
+              "parent": "ג'ין טכנולוגיות בינה בע\"מ",
+              "page_reference": 11,
+              "section_title": "החזקה בניירות הערך של החברה:",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Jean AI Technologies US LLC",
+              "ownership_pct": 100,
+              "parent": "ג'ין טכנולוגיות בינה בע\"מ",
+              "page_reference": 11,
+              "section_title": "החזקה בניירות הערך של החברה:",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Jean AI Technologies UK Limited",
+              "ownership_pct": 100,
+              "parent": "ג'ין טכנולוגיות בינה בע\"מ",
+              "page_reference": 11,
+              "section_title": "החזקה בניירות הערך של החברה:",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "ג'ין דיפנס",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 54,
+              "section_title": "הקמת ג'ין דיפנס ובניית הנהלה ייעודית",
+              "table_title": null,
+              "note": "חברת בת ייעודית שהוקמה בדצמבר 2025"
+            }
+          ],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "ג'ין דיפנס",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 54,
+              "section_title": "הקמת ג'ין דיפנס ובניית הנהלה ייעודית",
+              "table_title": null,
+              "note": "חברת בת ייעודית"
+            }
+          ],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "ai.Jeen",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 78,
+              "section_title": "6.5 מידע בדבר אירועים מהותיים בתקופת הדוח ולאחריה",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "חברה נכדה ייעודית",
+              "ownership_pct": null,
+              "parent": "ai.Jeen",
+              "page_reference": 80,
+              "section_title": "6.5 מידע בדבר אירועים מהותיים בתקופת הדוח ולאחריה",
+              "table_title": null,
+              "note": "הוקמה לצורך קידום פעילות בתחום הביטחוני"
+            },
+            {
+              "name": "ג'ין דיפנס",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 81,
+              "section_title": "6.5 מידע בדבר אירועים מהותיים בתקופת הדוח ולאחריה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
