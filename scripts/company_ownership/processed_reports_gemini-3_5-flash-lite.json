@@ -5490,676 +5490,27 @@
   },
   "1728825": {
     "company_id": "1908",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-20T11:05:26.941284+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 14,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "Retailors Sports Inc.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "1.2.2 מבנה ההחזקות של החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Retailors Netherlands B.V.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "1.2.2 מבנה ההחזקות של החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Retailors-NA Sports Ventures GP Inc.",
-              "ownership_pct": 51,
-              "parent": "Retailors Sports Inc.",
-              "page_reference": 8,
-              "section_title": "1.2.2 מבנה ההחזקות של החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Retailors-NA Sports Ventures Limited Partnership",
-              "ownership_pct": 51,
-              "parent": "Retailors Sports Inc.",
-              "page_reference": 8,
-              "section_title": "1.2.2 מבנה ההחזקות של החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Retailors Finland OY",
-              "ownership_pct": 100,
-              "parent": "Retailors Netherlands B.V.",
-              "page_reference": 8,
-              "section_title": "1.2.2 מבנה ההחזקות של החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Retailors Sweden AB",
-              "ownership_pct": 100,
-              "parent": "Retailors Netherlands B.V.",
-              "page_reference": 8,
-              "section_title": "1.2.2 מבנה ההחזקות של החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Retailors Norway AS",
-              "ownership_pct": 100,
-              "parent": "Retailors Netherlands B.V.",
-              "page_reference": 8,
-              "section_title": "1.2.2 מבנה ההחזקות של החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Retailors Denmark ApS",
-              "ownership_pct": 100,
-              "parent": "Retailors Netherlands B.V.",
-              "page_reference": 8,
-              "section_title": "1.2.2 מבנה ההחזקות של החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Retailors Hungary Kft",
-              "ownership_pct": 100,
-              "parent": "Retailors Netherlands B.V.",
-              "page_reference": 8,
-              "section_title": "1.2.2 מבנה ההחזקות של החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Retailors Slovakia s.r.o.",
-              "ownership_pct": 100,
-              "parent": "Retailors Netherlands B.V.",
-              "page_reference": 8,
-              "section_title": "1.2.2 מבנה ההחזקות של החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Retailors Czech Republic s.r.o.",
-              "ownership_pct": 100,
-              "parent": "Retailors Netherlands B.V.",
-              "page_reference": 8,
-              "section_title": "1.2.2 מבנה ההחזקות של החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Retailors Poland sp. z o.o.",
-              "ownership_pct": 100,
-              "parent": "Retailors Netherlands B.V.",
-              "page_reference": 8,
-              "section_title": "1.2.2 מבנה ההחזקות של החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Retailors Belgium B.V.",
-              "ownership_pct": 100,
-              "parent": "Retailors Netherlands B.V.",
-              "page_reference": 8,
-              "section_title": "1.2.2 מבנה ההחזקות של החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Retailors Austria NK GmbH",
-              "ownership_pct": 100,
-              "parent": "Retailors Netherlands B.V.",
-              "page_reference": 8,
-              "section_title": "1.2.2 מבנה ההחזקות של החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Retailors Switzerland GmbH",
-              "ownership_pct": 100,
-              "parent": "Retailors Netherlands B.V.",
-              "page_reference": 8,
-              "section_title": "1.2.2 מבנה ההחזקות של החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Retailors Adria d.o.o.",
-              "ownership_pct": 100,
-              "parent": "Retailors Netherlands B.V.",
-              "page_reference": 8,
-              "section_title": "1.2.2 מבנה ההחזקות של החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Retailors Luxembourg SARL",
-              "ownership_pct": 100,
-              "parent": "Retailors Netherlands B.V.",
-              "page_reference": 8,
-              "section_title": "1.2.2 מבנה ההחזקות של החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Retailors Germany GmbH",
-              "ownership_pct": 100,
-              "parent": "Retailors Netherlands B.V.",
-              "page_reference": 8,
-              "section_title": "1.2.2 מבנה ההחזקות של החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Retailors NK SVN d.o.o.",
-              "ownership_pct": 100,
-              "parent": "Retailors Netherlands B.V.",
-              "page_reference": 8,
-              "section_title": "1.2.2 מבנה ההחזקות של החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Retailors France SAS",
-              "ownership_pct": 100,
-              "parent": "Retailors Netherlands B.V.",
-              "page_reference": 8,
-              "section_title": "1.2.2 מבנה ההחזקות של החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "RTL Australia",
-              "ownership_pct": 92.5,
-              "parent": "Retailors Netherlands B.V.",
-              "page_reference": 8,
-              "section_title": "1.2.2 מבנה ההחזקות של החברה",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "Retailors Sport Inc.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 79,
-              "section_title": "3.15.1.3 פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
-              "table_title": "פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
-              "note": null
-            },
-            {
-              "name": "Retailors Germany GmbH",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 79,
-              "section_title": "3.15.1.3 פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
-              "table_title": "פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
-              "note": null
-            },
-            {
-              "name": "Retailors Netherlands BV",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 79,
-              "section_title": "3.15.1.3 פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
-              "table_title": "פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
-              "note": null
-            },
-            {
-              "name": "Retailors Belgium B.V",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 79,
-              "section_title": "3.15.1.3 פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
-              "table_title": "פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
-              "note": null
-            },
-            {
-              "name": "Retailors Poland sp. z o.o.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 79,
-              "section_title": "3.15.1.3 פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
-              "table_title": "פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
-              "note": null
-            },
-            {
-              "name": "Retailors Czech Republic",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 79,
-              "section_title": "3.15.1.3 פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
-              "table_title": "פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
-              "note": null
-            },
-            {
-              "name": "Retailors Slovakia s.r.o",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 79,
-              "section_title": "3.15.1.3 פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
-              "table_title": "פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
-              "note": null
-            },
-            {
-              "name": "Retailors Hungary Kft.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 79,
-              "section_title": "3.15.1.3 פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
-              "table_title": "פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
-              "note": null
-            },
-            {
-              "name": "Retailors Austria NK GmbH (AU)",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 79,
-              "section_title": "3.15.1.3 פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
-              "table_title": "פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
-              "note": null
-            },
-            {
-              "name": "Retailors Denmark APS",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 79,
-              "section_title": "3.15.1.3 פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
-              "table_title": "פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
-              "note": null
-            },
-            {
-              "name": "Retailors Sweden AB",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 79,
-              "section_title": "3.15.1.3 פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
-              "table_title": "פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
-              "note": null
-            },
-            {
-              "name": "Retailors Norway AS",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 79,
-              "section_title": "3.15.1.3 פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
-              "table_title": "פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
-              "note": null
-            },
-            {
-              "name": "Retailors Finland Oy",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 79,
-              "section_title": "3.15.1.3 פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
-              "table_title": "פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
-              "note": null
-            },
-            {
-              "name": "Retailors Switzerland GmbH",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 79,
-              "section_title": "3.15.1.3 פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
-              "table_title": "פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
-              "note": null
-            },
-            {
-              "name": "Retailors Adria d.o.o",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 79,
-              "section_title": "3.15.1.3 פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
-              "table_title": "פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
-              "note": null
-            },
-            {
-              "name": "Retailors NK SVN d.o.o",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 79,
-              "section_title": "3.15.1.3 פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
-              "table_title": "פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
-              "note": null
-            },
-            {
-              "name": "Retailors France SAS",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 79,
-              "section_title": "3.15.1.3 פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
-              "table_title": "פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
-              "note": null
-            },
-            {
-              "name": "RTL Australia",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 79,
-              "section_title": "3.15.1.3 פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
-              "table_title": "פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "קבוצת RPG",
-              "ownership_pct": 92.5,
-              "parent": null,
-              "page_reference": 112,
-              "section_title": "3.24 הסכמי שיתופי פעולה והסכמים מהותיים",
-              "table_title": null,
-              "note": "החברה מחזיקה בעקיפין כ-92.5% מקבוצת RPG"
-            }
-          ],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "Retailors -NA Sports Ventures",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 74,
-              "section_title": "תרשים מבנה הפעילות בחברה לפי הצגתן בדיווח המגזרי והחשבונאי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Retailors-NA Sports Ventures GP Inc.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 74,
-              "section_title": "תרשים מבנה הפעילות בחברה לפי הצגתן בדיווח המגזרי והחשבונאי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Retailors Sports Inc.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 74,
-              "section_title": "תרשים מבנה הפעילות בחברה לפי הצגתן בדיווח המגזרי והחשבונאי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Retailors Netherlands B.V.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 74,
-              "section_title": "תרשים מבנה הפעילות בחברה לפי הצגתן בדיווח המגזרי והחשבונאי",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:5": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:6": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "RTL Australia PTY Ltd.",
-              "ownership_pct": 92.5,
-              "parent": "V.B Netherlands Retailors",
-              "page_reference": 113,
-              "section_title": "באור 1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "V.B Netherlands Retailors",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 113,
-              "section_title": "באור 1 - כללי",
-              "table_title": null,
-              "note": "חברת בת שעמה מוחזקות חברות בנות נוספות בקבוצה"
-            },
-            {
-              "name": "תאגיד צרפתי ייעודי",
-              "ownership_pct": null,
-              "parent": "V.B Netherlands Retailors",
-              "page_reference": 113,
-              "section_title": "באור 1 - כללי",
-              "table_title": null,
-              "note": "מפעיל 12 חנויות נייקי בצרפת"
-            }
-          ],
-          "change_events": []
-        },
-        "0:7": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "Retailors Sports Inc",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 132,
-              "section_title": "באור 13 - השקעות בחברות מוחזקות",
-              "table_title": null,
-              "note": "הוקמה כחברת בת בקנדה בשליטה מלאה"
-            },
-            {
-              "name": "Retailors Europe B.V",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 131,
-              "section_title": "באור 13 - השקעות בחברות מוחזקות",
-              "table_title": null,
-              "note": "הוקמה כחברת בת בהולנד בשליטה מלאה ומוזגה בהמשך אל תוך Retailors Netherlands B.V."
-            },
-            {
-              "name": "Retailors Netherlands B.V.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 132,
-              "section_title": "באור 13 - השקעות בחברות מוחזקות",
-              "table_title": null,
-              "note": "הוחזקה תחילה ב-51% ולאחר רכישת יתרת המניות מחזיקה החברה ב-100%"
-            },
-            {
-              "name": "Australia RTL",
-              "ownership_pct": 92.5,
-              "parent": "Retailors Netherlands B.V.",
-              "page_reference": 123,
-              "section_title": "באור 5 - צירופי עסקים",
-              "table_title": null,
-              "note": "רכישת קבוצת RPG באוסטרליה ובניו זילנד"
-            },
-            {
-              "name": "תאגיד צרפתי ייעודי וחברות בנות (12 חנויות נייקי בצרפת)",
-              "ownership_pct": 100,
-              "parent": "Retailors Netherlands B.V.",
-              "page_reference": 123,
-              "section_title": "באור 5 - צירופי עסקים",
-              "table_title": null,
-              "note": "רכישת בעלות מלאה (100%) בתאגיד צרפתי ייעודי המרכז 12 חנויות בצרפת"
-            }
-          ],
-          "change_events": []
-        },
-        "0:8": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2024-12-31",
-          "subsidiaries": [
-            {
-              "name": "Sport Retailors Inc.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 143,
-              "section_title": "באור 17 - התחייבויות תלויות, התקשרויות, שעבודים וערבויות (המשך)",
-              "table_title": null,
-              "note": "חברת בת קנדית בשליטה מלאה"
-            },
-            {
-              "name": "V.B Europe Retailors B.V.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 145,
-              "section_title": "באור 17 - התחייבויות תלויות, התקשרויות, שעבודים וערבויות (המשך)",
-              "table_title": null,
-              "note": "הוחזקה 100% על ידי החברה, מוזגה בהמשך לתוך Retailors Netherlands B.V."
-            },
-            {
-              "name": "Retailors Netherlands B.V.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 145,
-              "section_title": "באור 17 - התחייבויות תלויות, התקשרויות, שעבודים וערבויות (המשך)",
-              "table_title": null,
-              "note": "חברת בת שאליה מוזגו חברות בנות"
-            },
-            {
-              "name": "חברת נייקי המשותפת (V.B Ventures NK FL-Retailors)",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 145,
-              "section_title": "באור 17 - התחייבויות תלויות, התקשרויות, שעבודים וערבויות (המשך)",
-              "table_title": null,
-              "note": "הוחזקה במקור 51% ולאחר רכישת יתרת המניות הוחזקה ב-100%"
-            },
-            {
-              "name": "Australia RTL",
-              "ownership_pct": 92.5,
-              "parent": "Retailors Netherlands B.V.",
-              "page_reference": 147,
-              "section_title": "באור 17 - התחייבויות תלויות, התקשרויות, שעבודים וערבויות (המשך)",
-              "table_title": null,
-              "note": "החברה ההולנדית מחזיקה ב-92.5%"
-            },
-            {
-              "name": "תאגיד צרפתי ייעודי",
-              "ownership_pct": 100,
-              "parent": "Retailors V.B Netherlands",
-              "page_reference": 146,
-              "section_title": "באור 17 - התחייבויות תלויות, התקשרויות, שעבודים וערבויות (המשך)",
-              "table_title": null,
-              "note": "נרכש בבעלות מלאה (100%)"
-            }
-          ],
-          "change_events": []
-        },
-        "0:9": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "Retailors Netheraland B.V.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 314,
-              "section_title": "באור 17 - התחייבויות תלויות, התקשרויות, שעבודים וערבויות",
-              "table_title": null,
-              "note": "חברת בת"
-            },
-            {
-              "name": "חברה נכדה בלגית",
-              "ownership_pct": null,
-              "parent": "Retailors Netheraland B.V.",
-              "page_reference": 314,
-              "section_title": "באור 17 - התחייבויות תלויות, התקשרויות, שעבודים וערבויות",
-              "table_title": null,
-              "note": "חברה נכדה"
-            },
-            {
-              "name": "Australia RTL",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 314,
-              "section_title": "באור 17 - התחייבויות תלויות, התקשרויות, שעבודים וערבויות",
-              "table_title": null,
-              "note": "חברה נכדה"
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-20T11:08:40.493180+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1728615": {
     "company_id": "1948",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-19T11:15:04.922723+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 13,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-20T11:11:40.720538+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1733328": {
     "company_id": "1928",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-19T11:15:06.334222+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 20,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-20T11:18:21.063870+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1738554": {
     "company_id": "1748",
@@ -6178,48 +5529,27 @@
   },
   "1731048": {
     "company_id": "1945",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-19T11:15:05.519900+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 10,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-20T11:16:13.039961+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1736105": {
     "company_id": "1369",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-19T11:15:06.589449+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 9,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-20T11:23:01.653789+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731452": {
     "company_id": "1839",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-19T11:15:05.972931+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 9,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-20T11:21:23.817004+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1733303": {
     "company_id": "2392",
@@ -6238,61 +5568,905 @@
   },
   "1731504": {
     "company_id": "1032",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-19T11:15:06.915752+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 12,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-20T11:25:54.900119+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732042": {
     "company_id": "1559",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-19T11:15:07.151818+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 9,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-20T11:26:17.419912+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732872": {
     "company_id": "2449",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-19T11:15:07.506697+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 16,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-20T11:35:51.235483+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1729914": {
     "company_id": "1680",
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-19T11:15:07.848487+00:00",
+    "at": "2026-09-20T11:35:32.221602+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 16,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "לסיכוצנרת התהליכית בע\"מ",
+              "ownership_pct": 87.5,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "מבנה האחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Lesico Process Piping BV",
+              "ownership_pct": 100,
+              "parent": "לסיכוצנרת התהליכית בע\"מ",
+              "page_reference": 6,
+              "section_title": "מבנה האחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Lesico Process Piping GmbH",
+              "ownership_pct": 100,
+              "parent": "לסיכוצנרת התהליכית בע\"מ",
+              "page_reference": 6,
+              "section_title": "מבנה האחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פולדמיר בניין (1986) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "מבנה האחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "שותפות פולדמיר אלקטרה",
+              "ownership_pct": 50,
+              "parent": "פולדמיר בניין (1986) בע\"מ",
+              "page_reference": 6,
+              "section_title": "מבנה האחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "שותפות פולדמיר אפקון",
+              "ownership_pct": 50,
+              "parent": "פולדמיר בניין (1986) בע\"מ",
+              "page_reference": 6,
+              "section_title": "מבנה האחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "LESICO INFRASTRUCTURES SRL",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "מבנה האחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "LESICO (GHANA) LIMITED",
+              "ownership_pct": 100,
+              "parent": "LESICO INFRASTRUCTURES SRL",
+              "page_reference": 6,
+              "section_title": "מבנה האחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "לסיכו טכנולוגיות בע\"מ",
+              "ownership_pct": 100,
+              "parent": "LESICO (GHANA) LIMITED",
+              "page_reference": 6,
+              "section_title": "מבנה האחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "לסיכו אינדן טכנולוגיות בניה בע\"מ",
+              "ownership_pct": 70,
+              "parent": "לסיכו טכנולוגיות בע\"מ",
+              "page_reference": 6,
+              "section_title": "מבנה האחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ל.ה. החברה לשירותי רכבת בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "מבנה האחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ל.מ. וורק 4 יו בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "מבנה האחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "הלשכה המרכזית לעובדים זרים בע\"מ",
+              "ownership_pct": 33.3,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "מבנה האחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "לסיכו ארה\"ב (Lesico US. Inc)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "מבנה האחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "A-1 Pavement Marking LLC",
+              "ownership_pct": 100,
+              "parent": "לסיכו ארה\"ב (Lesico US. Inc)",
+              "page_reference": 6,
+              "section_title": "מבנה האחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "TMI Service Inc.",
+              "ownership_pct": 95,
+              "parent": "לסיכו ארה\"ב (Lesico US. Inc)",
+              "page_reference": 6,
+              "section_title": "מבנה האחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "טיבכו",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "מבנה האחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pan-Mediterranean Engineering Company Ltd",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "מבנה האחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "זוקו פאוור גז בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "מבנה האחזקות של הקבוצה",
+              "table_title": null,
+              "note": "מיזם משותף במסגרת לסיכו - זוקו מיזם משותף"
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "פולדמיר",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 18,
+              "section_title": ".7.8 השקעות בבתי חולים",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "צנרת תהליכית",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 21,
+              "section_title": ".8.1.2.3 צנרת תהליכית ותעשיה",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "חברת בת באיטליה",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 31,
+              "section_title": ".8.3.6.1 פרויקט גאנה",
+              "table_title": null,
+              "note": "התאגדה באיטליה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "צנרת תהליכית",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 42,
+              "section_title": "כושר ייצור",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "חברה נכדה",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 42,
+              "section_title": "כושר ייצור",
+              "table_title": null,
+              "note": "מוחזקות בשרשור באמצעות חברה בת"
+            }
+          ],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "פולדמיר בניין (1986) בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 65,
+              "section_title": "17.3 רישיונות קבלן וסיווגים קבלניים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "לסיכו צנרת תהליכית בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 65,
+              "section_title": "17.3 רישיונות קבלן וסיווגים קבלניים",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "חברה חדשה בתחום תיעוש הבניה",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": 0,
+              "ownership_pct_after": 70,
+              "event_date": "2025-05-15",
+              "event_description": "הקמת חברה חדשה במסגרת הסכם שיתוף פעולה בה החברה מחזיקה ב-70% מהונה המונפק והנפרע",
+              "page_reference": 102,
+              "section_title": "7.2"
+            },
+            {
+              "company": "לסיכו טכנולוגיות בע\"מ",
+              "event_type": "increase",
+              "ownership_pct_before": null,
+              "ownership_pct_after": null,
+              "event_date": "2025-04-28",
+              "event_description": "רכישת יתרת ההחזקות בחברה מוחזקת ללא פעילות ללא תמורה",
+              "page_reference": 103,
+              "section_title": "7.4"
+            }
+          ]
+        },
+        "0:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:7": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "החברות הנרכשות בארה\"ב",
+              "event_type": "decrease",
+              "ownership_pct_before": 100,
+              "ownership_pct_after": 95,
+              "event_date": "2022-09-14",
+              "event_description": "מכירת 5% מהחזקות חברת הבת בארה\"ב למנכ\"ל החברות הבנות בארה\"ב, כך שלאחר המכירה מחזיקה חברת הבת ב-95%.",
+              "page_reference": 137,
+              "section_title": "באור 3 - הלוואה לבעלי זכויות שאינן מקנות שליטה"
+            },
+            {
+              "company": "לסיכו-אינדן בנייה בע\"מ",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": 0,
+              "ownership_pct_after": 70,
+              "event_date": "2025-07-01",
+              "event_description": "הקמת חברה בת חדשה לצורך רכישת פעילות אינדן והקצאת 30% למוכרת במועד ההשלמה, כך שלאחר ההקצאה מוחזקת בשיעור 70% על ידי לסיכו טכנולוגיות.",
+              "page_reference": 138,
+              "section_title": "באור 4 - צירופי עסקים"
+            }
+          ]
+        },
+        "0:8": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "ל.מ. וורק 4 יו בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 147,
+              "section_title": "באור 9 - חברות מוחזקות",
+              "table_title": "א. חברות כלולות המטופלות לפי שיטת השווי המאזני",
+              "note": null
+            },
+            {
+              "name": "טיבכו- החברה לטיפול בקרקעות בע\"מ",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 147,
+              "section_title": "באור 9 - חברות מוחזקות",
+              "table_title": "א. חברות כלולות המטופלות לפי שיטת השווי המאזני",
+              "note": null
+            },
+            {
+              "name": "הלשכה המרכזית לעובדים זרים בע\"מ",
+              "ownership_pct": 33.33,
+              "parent": null,
+              "page_reference": 147,
+              "section_title": "באור 9 - חברות מוחזקות",
+              "table_title": "א. חברות כלולות המטופלות לפי שיטת השווי המאזני",
+              "note": null
+            },
+            {
+              "name": "לסיכו-אינדן בנייה בע\"מ",
+              "ownership_pct": 100,
+              "parent": "לסיכו טכנולוגיות בע\"מ",
+              "page_reference": 138,
+              "section_title": "באור 4 - צירופי עסקים",
+              "table_title": null,
+              "note": "חברה בת חדשה שהוקמה לצורך רכישת הפעילות"
+            },
+            {
+              "name": "לסיכו טכנולוגיות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 152,
+              "section_title": "באור 9 - חברות מוחזקות - המשך",
+              "table_title": "ג. חברות בנות",
+              "note": null
+            },
+            {
+              "name": "לסיכו צנרת תהליכית בע\"מ",
+              "ownership_pct": 87.5,
+              "parent": null,
+              "page_reference": 152,
+              "section_title": "באור 9 - חברות מוחזקות - המשך",
+              "table_title": "ג. חברות בנות",
+              "note": null
+            },
+            {
+              "name": "ל.מ. החברה לשירותי רכבת בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 152,
+              "section_title": "באור 9 - חברות מוחזקות - המשך",
+              "table_title": "ג. חברות בנות",
+              "note": null
+            },
+            {
+              "name": "אורמידן בע\"מ",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 152,
+              "section_title": "באור 9 - חברות מוחזקות - המשך",
+              "table_title": "ג. חברות בנות",
+              "note": null
+            },
+            {
+              "name": "לסיכו-זוקו שירותי אחזקה",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 152,
+              "section_title": "באור 9 - חברות מוחזקות - המשך",
+              "table_title": "ג. חברות בנות",
+              "note": null
+            },
+            {
+              "name": "פולדמיר בניין (1986) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 152,
+              "section_title": "באור 9 - חברות מוחזקות - המשך",
+              "table_title": "ג. חברות בנות",
+              "note": null
+            },
+            {
+              "name": "אלבר הנדסה פיקוח וניהול פרויקטים בע\"מ (בפירוק מרצון)",
+              "ownership_pct": 70,
+              "parent": null,
+              "page_reference": 152,
+              "section_title": "באור 9 - חברות מוחזקות - המשך",
+              "table_title": "ג. חברות בנות",
+              "note": null
+            },
+            {
+              "name": "טיבכו - החברה לטיפול בקרקעות בע\"מ",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 152,
+              "section_title": "באור 9 - חברות מוחזקות - המשך",
+              "table_title": "ג. חברות בנות",
+              "note": null
+            },
+            {
+              "name": "Ghana LTD Lesico",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 152,
+              "section_title": "באור 9 - חברות מוחזקות - המשך",
+              "table_title": "ג. חברות בנות",
+              "note": null
+            },
+            {
+              "name": "US Inc Lesico",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 152,
+              "section_title": "באור 9 - חברות מוחזקות - המשך",
+              "table_title": "ג. חברות בנות",
+              "note": null
+            },
+            {
+              "name": "INFRASTRUCTURES Lesico SRL",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 152,
+              "section_title": "באור 9 - חברות מוחזקות - המשך",
+              "table_title": "ג. חברות בנות",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:9": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "Lesico US Inc.",
+              "event_type": "increase",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 100,
+              "event_date": "2024-01-11",
+              "event_description": "הסדר פשרה לפיו רכשה החברה את מלוא מניות השותף בחברת הבת ללא תמורה, ולאחריו מחזיקה החברה ב-100% מהון המניות.",
+              "page_reference": 202,
+              "section_title": "באור 9 - חברות מוחזקות - המשך"
+            },
+            {
+              "company": "ל.מ. שירותי רכבת בע\"מ",
+              "event_type": "increase",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 100,
+              "event_date": "2022-12-08",
+              "event_description": "רכישת מניות נוספות ועלייה לשליטה מלאה (100%) לראשונה.",
+              "page_reference": 204,
+              "section_title": "באור 9 - חברות מוחזקות - המשך"
+            },
+            {
+              "company": "לסיכו טכנולוגיות בע\"מ",
+              "event_type": "increase",
+              "ownership_pct_before": 51,
+              "ownership_pct_after": 100,
+              "event_date": "2025-04-28",
+              "event_description": "רכישת יתרת ההחזקות בחברת בת ללא תמורה וויתור על הלוואות של בעלי זכויות שאינן מקנות שליטה.",
+              "page_reference": 205,
+              "section_title": "באור 9 - חברות מוחזקות - המשך"
+            }
+          ]
+        },
+        "0:10": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "חברת בת באיטליה",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 185,
+              "section_title": "באור 21 - התקשרויות, שעבודים, ערבויות והתחייבויות תלויות - המשך",
+              "table_title": null,
+              "note": "התאגדה באיטליה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:11": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "פולדמיר בניין (1986) בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 188,
+              "section_title": "באור 21 - התקשרויות, שעבודים, ערבויות והתחייבויות תלויות - המשך",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אורמידן בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 192,
+              "section_title": "באור 22 - הלוואות מבעלי זכויות שאינן מקנות שליטה בחברות מאוחדות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "לסיכו צנרת תהליכית",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 193,
+              "section_title": "באור 23 - הון - המשך",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:12": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "פולדמיר בניין (1986) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 221,
+              "section_title": "נספח לדוחות הכספיים המאוחדים – רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "לסיכו צנרת תהליכית בע\"מ",
+              "ownership_pct": 87.5,
+              "parent": null,
+              "page_reference": 221,
+              "section_title": "נספח לדוחות הכספיים המאוחדים – רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Lesico US INC",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 221,
+              "section_title": "נספח לדוחות הכספיים המאוחדים – רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ל.מ. החברה לשירותי רכבת בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 221,
+              "section_title": "נספח לדוחות הכספיים המאוחדים – רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלבר הנדסה פיקוח וניהול פרייקטים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 221,
+              "section_title": "נספח לדוחות הכספיים המאוחדים – רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אורמידן בע\"מ",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 221,
+              "section_title": "נספח לדוחות הכספיים המאוחדים – רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "לסיכו טכנולוגיות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 221,
+              "section_title": "נספח לדוחות הכספיים המאוחדים – רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Lesico Ghana LTD",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 221,
+              "section_title": "נספח לדוחות הכספיים המאוחדים – רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Lesico INFRASTRUCTURES SRL",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 221,
+              "section_title": "נספח לדוחות הכספיים המאוחדים – רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מסוע גרעינים",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 221,
+              "section_title": "נספח לדוחות הכספיים המאוחדים – רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "לסיכו-זוקו מיזם משותף",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 221,
+              "section_title": "נספח לדוחות הכספיים המאוחדים – רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "טיבכו החברה לטיפול בקרקעות בע\"מ",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 221,
+              "section_title": "נספח לדוחות הכספיים המאוחדים – רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "א.ל.א. תשתיות לאיכות הסביבה בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 221,
+              "section_title": "נספח לדוחות הכספיים המאוחדים – רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ל.מ. וורק 4 יו בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 221,
+              "section_title": "נספח לדוחות הכספיים המאוחדים – רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "הלשכה המרכזית לעובדים זרים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 221,
+              "section_title": "נספח לדוחות הכספיים המאוחדים – רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "שותפות סולל בונה- פולדמיר לעבודות",
+              "ownership_pct": 51,
+              "parent": "פולדמיר בניין (1986) בע\"מ",
+              "page_reference": 221,
+              "section_title": "נספח לדוחות הכספיים המאוחדים – רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פרויקט מבנים ותשתיות פלוגות- מיזם משותף",
+              "ownership_pct": 50,
+              "parent": "פולדמיר בניין (1986) בע\"מ",
+              "page_reference": 221,
+              "section_title": "נספח לדוחות הכספיים המאוחדים – רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אפקון פולדמיר- פרויקט 2024 מיזם משותף",
+              "ownership_pct": 50,
+              "parent": "פולדמיר בניין (1986) בע\"מ",
+              "page_reference": 221,
+              "section_title": "נספח לדוחות הכספיים המאוחדים – רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פולדמיר-ארדן מבנה 8 מיזם משותף",
+              "ownership_pct": 50,
+              "parent": "פולדמיר בניין (1986) בע\"מ",
+              "page_reference": 221,
+              "section_title": "נספח לדוחות הכספיים המאוחדים – רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אפקון פולדמיר – מרכז אנרגיה מיזם משותף",
+              "ownership_pct": 50,
+              "parent": "פולדמיר בניין (1986) בע\"מ",
+              "page_reference": 221,
+              "section_title": "נספח לדוחות הכספיים המאוחדים – רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מיזם משותף שניידר",
+              "ownership_pct": 50,
+              "parent": "פולדמיר בניין (1986) בע\"מ",
+              "page_reference": 221,
+              "section_title": "נספח לדוחות הכספיים המאוחדים – רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "לסיכו היי פיוריטי בע\"מ",
+              "ownership_pct": 100,
+              "parent": "לסיכו צנרת תהליכית בע\"מ",
+              "page_reference": 221,
+              "section_title": "נספח לדוחות הכספיים המאוחדים – רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Lesico Process piping GMBH",
+              "ownership_pct": 100,
+              "parent": "לסיכו צנרת תהליכית בע\"מ",
+              "page_reference": 221,
+              "section_title": "נספח לדוחות הכספיים המאוחדים – רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Lesico Process piping Belgie BV",
+              "ownership_pct": 100,
+              "parent": "לסיכו צנרת תהליכית בע\"מ",
+              "page_reference": 221,
+              "section_title": "נספח לדוחות הכספיים המאוחדים – רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "TMI services, INC",
+              "ownership_pct": 95,
+              "parent": "Lesico US IMC",
+              "page_reference": 221,
+              "section_title": "נספח לדוחות הכספיים המאוחדים – רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "A-1 Pavament",
+              "ownership_pct": 100,
+              "parent": "Lesico US IMC",
+              "page_reference": 221,
+              "section_title": "נספח לדוחות הכספיים המאוחדים – רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "לסיכו-אינדן טכנולוגיות בניה בע\"מ",
+              "ownership_pct": null,
+              "parent": "לסיכו טכנולוגיות בע\"מ",
+              "page_reference": 221,
+              "section_title": "נספח לדוחות הכספיים המאוחדים – רשימת חברות מאוחדות, חברות בשליטה משותפת וחברות כלולות",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:13": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "פולדמיר בניין (1986) בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 240,
+              "section_title": "ו. קשרים, התקשרויות ועסקאות מהותיות עם חברות מוחזקות",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "לסיכו טכנולוגיות בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 241,
+              "section_title": "ו. קשרים, התקשרויות ועסקאות מהותיות עם חברות מוחזקות",
+              "table_title": "הלוואות ושטרי הון לזמן ארוך שניתנו לתאגידים מוחזקים",
+              "note": null
+            },
+            {
+              "name": "ל.מ. החברה לשירותי רכבת בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 241,
+              "section_title": "ו. קשרים, התקשרויות ועסקאות מהותיות עם חברות מוחזקות",
+              "table_title": "הלוואות ושטרי הון לזמן ארוך שניתנו לתאגידים מוחזקים",
+              "note": null
+            },
+            {
+              "name": "טיבכו -החברה לטיפול בקרקעות בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 241,
+              "section_title": "ו. קשרים, התקשרויות ועסקאות מהותיות עם חברות מוחזקות",
+              "table_title": "הלוואות ושטרי הון לזמן ארוך שניתנו לתאגידים מוחזקים",
+              "note": null
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
@@ -6301,7 +6475,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-19T11:15:08.320540+00:00",
+    "at": "2026-09-20T11:35:52.256743+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -6316,7 +6490,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-19T11:15:08.720772+00:00",
+    "at": "2026-09-20T11:35:52.685985+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
