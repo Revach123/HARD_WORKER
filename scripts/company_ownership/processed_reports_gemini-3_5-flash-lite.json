@@ -4558,753 +4558,11 @@
   },
   "1729935": {
     "company_id": "1081",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-20T10:21:04.124016+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 9,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "אקסיומה פתרונות תוכנה בע\"מ",
-              "ownership_pct": 77.0,
-              "parent": null,
-              "page_reference": 5,
-              "section_title": "פעילות החברה ותיאור התפתחות עסקיה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "טופ אקס אר טכנולוגיות מתקדמות בע\"מ",
-              "ownership_pct": 100.0,
-              "parent": null,
-              "page_reference": 5,
-              "section_title": "פעילות החברה ותיאור התפתחות עסקיה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "זיו מערכות לניהול בניה (מסד-דרום) 1992 בע\"מ",
-              "ownership_pct": 99.0,
-              "parent": null,
-              "page_reference": 5,
-              "section_title": "פעילות החברה ותיאור התפתחות עסקיה",
-              "table_title": null,
-              "note": "במישרין על בסיס דילול מלא"
-            },
-            {
-              "name": "טופ ניפנדו בע\"מ",
-              "ownership_pct": 100.0,
-              "parent": null,
-              "page_reference": 5,
-              "section_title": "פעילות החברה ותיאור התפתחות עסקיה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "טופ סופטוור סקיוגייט בע\"מ",
-              "ownership_pct": 100.0,
-              "parent": null,
-              "page_reference": 5,
-              "section_title": "פעילות החברה ותיאור התפתחות עסקיה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "טופ סולושינס (ל.ה.ב) בע\"מ",
-              "ownership_pct": 100.0,
-              "parent": null,
-              "page_reference": 5,
-              "section_title": "פעילות החברה ותיאור התפתחות עסקיה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "טכנוסופט בע\"מ",
-              "ownership_pct": 100.0,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "פעילות החברה ותיאור התפתחות עסקיה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "סופיסטיק אמ.אי בע\"מ",
-              "ownership_pct": 50.4,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "פעילות החברה ותיאור התפתחות עסקיה",
-              "table_title": null,
-              "note": "רכישתה הושלמה ב-1 בינואר 2026"
-            },
-            {
-              "name": "סמרט-איקס שירותי מומחה בע\"מ",
-              "ownership_pct": 100.0,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "פעילות החברה ותיאור התפתחות עסקיה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "פנורמה תוכנה (ישראל 2002) בע\"מ",
-              "ownership_pct": 100.0,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "פעילות החברה ותיאור התפתחות עסקיה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "קונסטרו בע\"מ",
-              "ownership_pct": 100.0,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "פעילות החברה ותיאור התפתחות עסקיה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "קיי.סי.אס. ניהול ידע בע\"מ",
-              "ownership_pct": 90.0,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "פעילות החברה ותיאור התפתחות עסקיה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "קליגל-טק בע\"מ",
-              "ownership_pct": 100.0,
-              "parent": "אקסיומה פתרונות תוכנה בע\"מ",
-              "page_reference": 6,
-              "section_title": "פעילות החברה ותיאור התפתחות עסקיה",
-              "table_title": null,
-              "note": "בעקיפין באמצעות אקסיומה"
-            },
-            {
-              "name": "שביל קיואם 7 בע\"מ",
-              "ownership_pct": 100.0,
-              "parent": "טופ סולושינס (ל.ה.ב) בע\"מ",
-              "page_reference": 6,
-              "section_title": "פעילות החברה ותיאור התפתחות עסקיה",
-              "table_title": null,
-              "note": "בעקיפין באמצעות טופסולושינס"
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "זיו מערכות",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 18,
-              "section_title": null,
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "טופ אקס אר",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 18,
-              "section_title": null,
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אקסיומה",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 18,
-              "section_title": null,
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "פנורמה",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 21,
-              "section_title": null,
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "סמרטאיקס",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 21,
-              "section_title": null,
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "טכנוסופט",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 27,
-              "section_title": "טכנוסופט (פעילות רמדור פתרונות תוכנה)",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "טופסולושינס",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 31,
-              "section_title": "קיי.סי.אס – (GRC-TOP)",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "קומפוזדוק",
-              "ownership_pct": null,
-              "parent": "טופסולושינס",
-              "page_reference": 29,
-              "section_title": "קומפוזדוק",
-              "table_title": null,
-              "note": "נרכשה על ידי טופ סולושיינס ומוזגה אליה"
-            }
-          ],
-          "change_events": [
-            {
-              "company": "קומפוזדוק",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": null,
-              "event_date": "2025-01-01",
-              "event_description": "רכישת חברת קומפוזדוק על ידי טופ סולושיינס ומיזוגה בהמשך",
-              "page_reference": 29,
-              "section_title": "קומפוזדוק"
-            }
-          ]
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "טופ סופטוור",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 44,
-              "section_title": "שיווק והפצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "טופסולושינס",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 44,
-              "section_title": "שיווק והפצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "שביל",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 44,
-              "section_title": "שיווק והפצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "זיו מערכות",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 44,
-              "section_title": "שיווק והפצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "טופ אקס אר",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 44,
-              "section_title": "שיווק והפצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "טכנוסופט",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 44,
-              "section_title": "שיווק והפצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "פנורמה",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 50,
-              "section_title": "מחקר ופיתוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "קליגל",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 50,
-              "section_title": "מחקר ופיתוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "טופ ניפנדו",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 51,
-              "section_title": "מחקר ופיתוח",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": [
-            {
-              "company": "קומפוזדוק בע\"מ",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": null,
-              "event_date": "2025-04-01",
-              "event_description": "רכישת מלוא הון המניות המונפק והנפרע",
-              "page_reference": 69,
-              "section_title": "6. ארועים מהותיים בתקופת הדוח"
-            },
-            {
-              "company": "חברת נציגויות של מוצרי תוכנה",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 50.4,
-              "event_date": "2026-01-01",
-              "event_description": "רכישה של 50.4% מהון המניות המונפק (במישרין ובעקיפין)",
-              "page_reference": 70,
-              "section_title": "6. ארועים מהותיים בתקופת הדוח"
-            }
-          ]
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": [
-            {
-              "company": "קומפוזדוק בע\"מ",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 100,
-              "event_date": "2025-04-01",
-              "event_description": "התקשרות והשלמת הסכם לרכישת מלוא הון המניות המונפק והנפרע של חברת קומפוזדוק בע\"מ",
-              "page_reference": 69,
-              "section_title": "ארועים מהותיים בתקופת הדוח"
-            },
-            {
-              "company": "נציגויות של מוצרי תוכנה",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 50.4,
-              "event_date": "2026-01-01",
-              "event_description": "התקשרות והשלמת הסכם לרכישה של 50.4% מהון המניות המונפק (במישרין ובעקיפין) של חברת נציגויות של מוצרי תוכנה",
-              "page_reference": 70,
-              "section_title": "ארועים מהותיים בתקופת הדוח"
-            }
-          ]
-        },
-        "0:5": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "קומפוזדוק",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 101,
-              "section_title": "באור 3 - חברות הקבוצה",
-              "table_title": "א. רשימת החברות המוחזקות על ידי החברה",
-              "note": "מוזגה ביום 1 בינואר 2026 לחברה המאוחדת טופסולושינס"
-            },
-            {
-              "name": "סמרטאיקס",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 101,
-              "section_title": "באור 3 - חברות הקבוצה",
-              "table_title": "א. רשימת החברות המוחזקות על ידי החברה",
-              "note": null
-            },
-            {
-              "name": "טופ ניפדו",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 101,
-              "section_title": "באור 3 - חברות הקבוצה",
-              "table_title": "א. רשימת החברות המוחזקות על ידי החברה",
-              "note": null
-            },
-            {
-              "name": "קונסטרו",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 101,
-              "section_title": "באור 3 - חברות הקבוצה",
-              "table_title": "א. רשימת החברות המוחזקות על ידי החברה",
-              "note": null
-            },
-            {
-              "name": "טכנוסופט",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 101,
-              "section_title": "באור 3 - חברות הקבוצה",
-              "table_title": "א. רשימת החברות המוחזקות על ידי החברה",
-              "note": "מוזגו אליה החברות המאוחדות רמדור פתרונות תוכנה וכאסטורי ב-1 בינואר 2025"
-            },
-            {
-              "name": "קליגל",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 101,
-              "section_title": "באור 3 - חברות הקבוצה",
-              "table_title": "א. רשימת החברות המוחזקות על ידי החברה",
-              "note": null
-            },
-            {
-              "name": "אקסיומה",
-              "ownership_pct": 76.7,
-              "parent": null,
-              "page_reference": 101,
-              "section_title": "באור 3 - חברות הקבוצה",
-              "table_title": "א. רשימת החברות המוחזקות על ידי החברה",
-              "note": null
-            },
-            {
-              "name": "זיו מערכות",
-              "ownership_pct": 99,
-              "parent": null,
-              "page_reference": 101,
-              "section_title": "באור 3 - חברות הקבוצה",
-              "table_title": "א. רשימת החברות המוחזקות על ידי החברה",
-              "note": "שיעור ההחזקה בדילול מלא"
-            },
-            {
-              "name": "טום סופט",
-              "ownership_pct": 90,
-              "parent": null,
-              "page_reference": 101,
-              "section_title": "באור 3 - חברות הקבוצה",
-              "table_title": "א. רשימת החברות המוחזקות על ידי החברה",
-              "note": "שיעור ההחזקה בדילול מלא"
-            },
-            {
-              "name": "פדורמה תוכנה",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 101,
-              "section_title": "באור 3 - חברות הקבוצה",
-              "table_title": "א. רשימת החברות המוחזקות על ידי החברה",
-              "note": null
-            },
-            {
-              "name": "שביל קיואם",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 101,
-              "section_title": "באור 3 - חברות הקבוצה",
-              "table_title": "א. רשימת החברות המוחזקות על ידי החברה",
-              "note": null
-            },
-            {
-              "name": "טופ אקס אר",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 101,
-              "section_title": "באור 3 - חברות הקבוצה",
-              "table_title": "א. רשימת החברות המוחזקות על ידי החברה",
-              "note": null
-            },
-            {
-              "name": "טופסולושינס",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 101,
-              "section_title": "באור 3 - חברות הקבוצה",
-              "table_title": "א. רשימת החברות המוחזקות על ידי החברה",
-              "note": "מוזגה אליה החברה המאוחדת אקשן בייס ב-1 בינואר 2025"
-            },
-            {
-              "name": "טופ סופטוור",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 101,
-              "section_title": "באור 3 - חברות הקבוצה",
-              "table_title": "א. רשימת החברות המוחזקות על ידי החברה",
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:6": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": [
-            {
-              "company": "טרהוורקס - שירותי יעוץ ופיתוח תוכנה בע\"מ",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": null,
-              "event_date": "2025-07-01",
-              "event_description": "רכישת פעילות של חברת טרהוורקס על ידי החברה המאוחדת סמרט-איקס שירותי מומחה בע\"מ",
-              "page_reference": 103,
-              "section_title": "באור 3 - חברות הקבוצה (המשך)"
-            },
-            {
-              "company": "ניפדו בע\"מ",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": null,
-              "event_date": "2024-04-01",
-              "event_description": "רכישת פעילות ניפדו באספקת מוצר תוכנה מבוסס SAAS על ידי החברה המאוחדת טופ ניפדו בע\"מ",
-              "page_reference": 104,
-              "section_title": "באור 3 - חברות הקבוצה (המשך)"
-            },
-            {
-              "company": "קונסטרו בע\"מ",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 100,
-              "event_date": "2024-07-31",
-              "event_description": "רכישת מלוא הון המניות המונפק והנפרע של חברת קונסטרו בע\"מ",
-              "page_reference": 104,
-              "section_title": "באור 3 - חברות הקבוצה (המשך)"
-            },
-            {
-              "company": "כאסטורי בע\"מ",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 100,
-              "event_date": "2023-07-24",
-              "event_description": "רכישת מלוא הון המניות המונפק והנפרע של חברת כאסטורי בע\"מ",
-              "page_reference": 105,
-              "section_title": "באור 3 - חברות הקבוצה (המשך)"
-            },
-            {
-              "company": "קליגל-טק בע\"מ",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 100,
-              "event_date": "2022-06-01",
-              "event_description": "רכישת מלוא הון המניות המונפק והנפרע של חברת קליגל-טק בע\"מ על ידי החברה המאוחדת אקסיומה",
-              "page_reference": 105,
-              "section_title": "באור 3 - חברות הקבוצה (המשך)"
-            },
-            {
-              "company": "סמרט-איקס שירותי מומחה בע\"מ",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 100,
-              "event_date": "2022-11-01",
-              "event_description": "רכישת מלוא הון המניות המונפק והנפרע של חברת סמרטאיקס",
-              "page_reference": 105,
-              "section_title": "באור 3 - חברות הקבוצה (המשך)"
-            },
-            {
-              "company": "זיו מערכות",
-              "event_type": "increase",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 99,
-              "event_date": "2023-02-01",
-              "event_description": "רכישת מניות המהוות כ- 12.4% מהון המניות בזיו מערכות, העלאת שיעור ההחזקה בדילול מלא לכ- 99%",
-              "page_reference": 106,
-              "section_title": "מימוש אופציות בחברה מאוחדת"
-            }
-          ]
-        },
-        "0:7": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "טופ ניפנדו בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 131,
-              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות קשורות לתאריך הדוח על המצב הכספי",
-              "note": null
-            },
-            {
-              "name": "טופסטוור (סקיוגייט) בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 131,
-              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות קשורות לתאריך הדוח על המצב הכספי",
-              "note": null
-            },
-            {
-              "name": "טופסלושיינס (ל.ה.ב) בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 131,
-              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות קשורות לתאריך הדוח על המצב הכספי",
-              "note": null
-            },
-            {
-              "name": "טכנוסופט בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 131,
-              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות קשורות לתאריך הדוח על המצב הכספי",
-              "note": null
-            },
-            {
-              "name": "זיו מערכות לניהול בניה (מסד-דרום) 1992 בע\"מ",
-              "ownership_pct": 98.95,
-              "parent": null,
-              "page_reference": 131,
-              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות קשורות לתאריך הדוח על המצב הכספי",
-              "note": "שיעור החזקות החברה בדילול מלא הינו 98.95%"
-            },
-            {
-              "name": "טופ אקס אר טכנולוגיות מתקדמות בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 131,
-              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות קשורות לתאריך הדוח על המצב הכספי",
-              "note": null
-            },
-            {
-              "name": "שביל קיואם 7 בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 131,
-              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות קשורות לתאריך הדוח על המצב הכספי",
-              "note": null
-            },
-            {
-              "name": "פנורמה סופטוור בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 131,
-              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות קשורות לתאריך הדוח על המצב הכספי",
-              "note": null
-            },
-            {
-              "name": "קוואנטום אחזקות בע\"מ",
-              "ownership_pct": 80.02,
-              "parent": null,
-              "page_reference": 131,
-              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות קשורות לתאריך הדוח על המצב הכספי",
-              "note": null
-            },
-            {
-              "name": "אקסיומה פתרונות מידע בע\"מ",
-              "ownership_pct": 100,
-              "parent": "קוואנטום אחזקות בע\"מ",
-              "page_reference": 131,
-              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות קשורות לתאריך הדוח על המצב הכספי",
-              "note": "באמצעות חברת הבת קוואנטום אחזקות בע\"מ"
-            },
-            {
-              "name": "קבוצת טום סופט בע\"מ",
-              "ownership_pct": 76.67,
-              "parent": null,
-              "page_reference": 132,
-              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות קשורות לתאריך הדוח על המצב הכספי",
-              "note": null
-            },
-            {
-              "name": "קיי.סי.אס ניהול ידע בע\"מ",
-              "ownership_pct": 90,
-              "parent": "קבוצת טום סופט בע\"מ",
-              "page_reference": 132,
-              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות קשורות לתאריך הדוח על המצב הכספי",
-              "note": "באמצעות קבוצת טום סופט בע\"מ"
-            },
-            {
-              "name": "קליגל-טק בע\"מ",
-              "ownership_pct": 100,
-              "parent": "אקסיומה פתרונות מידע בע\"מ",
-              "page_reference": 132,
-              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות קשורות לתאריך הדוח על המצב הכספי",
-              "note": "באמצעות אקסיומה פתרונות מידע בע\"מ"
-            },
-            {
-              "name": "סמרט-איקס שירותי מומחה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 132,
-              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות קשורות לתאריך הדוח על המצב הכספי",
-              "note": null
-            },
-            {
-              "name": "קונסטרו בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 132,
-              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות קשורות לתאריך הדוח על המצב הכספי",
-              "note": null
-            },
-            {
-              "name": "קומפוזדוק בע\"מ",
-              "ownership_pct": 100,
-              "parent": "טופסולושינס ל.ה.ב בע\"מ",
-              "page_reference": 132,
-              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות קשורות לתאריך הדוח על המצב הכספי",
-              "note": "באמצעות חברת הבת טופסולושינס ל.ה.ב בע\"מ. חברת קומפוזדוק מוזגה לטופסולושינס בתוקף מיום 1.1.2026"
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-20T10:21:14.201167+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1729864": {
     "company_id": "338",
@@ -5323,151 +4581,245 @@
   },
   "1733171": {
     "company_id": "1920",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-19T11:14:57.309899+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 10,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-20T10:23:07.961166+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732543": {
     "company_id": "1809",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-19T11:14:58.088038+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 17,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-20T10:26:52.868058+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732229": {
     "company_id": "1459",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-19T11:14:57.582493+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 11,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-20T10:23:44.718591+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731822": {
     "company_id": "1975",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-19T11:14:58.513538+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 13,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-20T10:26:34.008290+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1723615": {
     "company_id": "699",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-19T11:14:58.785446+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 15,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-20T10:31:04.789514+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731014": {
     "company_id": "1641",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-19T11:14:59.220611+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 19,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-20T10:31:21.595626+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1733180": {
     "company_id": "1338",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-19T11:14:59.588816+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 17,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-20T10:36:54.549062+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1753169": {
     "company_id": "2190",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-19T11:15:00.480656+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 13,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-20T10:34:47.401681+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732234": {
     "company_id": "368",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-19T11:15:00.863267+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 13,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-20T10:38:26.475379+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1736339": {
     "company_id": "1001",
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-19T11:15:01.217022+00:00",
+    "at": "2026-09-20T10:38:26.506050+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 11,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "Gamatronic U.S.A",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 15,
+              "section_title": "1.4 תרשים מבנה אחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אספן גרופ בע\"מ",
+              "ownership_pct": 28.47,
+              "parent": null,
+              "page_reference": 15,
+              "section_title": "1.4 תרשים מבנה אחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "בית חרות – ליש חברה לפיתוח בע\"מ",
+              "ownership_pct": 36.85,
+              "parent": null,
+              "page_reference": 15,
+              "section_title": "1.4 תרשים מבנה אחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "בית חרות ליש חברה לפיתוח בע\"מ",
+              "ownership_pct": 36.85,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "7 מידע על תחום פעילות החברה",
+              "table_title": null,
+              "note": "לחברה 50% בזכויות הכלכליות בחברה הכלולה בית חרות, החל ממועד השלמת הרכישה, על אף החזקה במניות בשיעור של 36.85%"
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "בית חרות – ליש חברה לפיתוח בע\"מ",
+              "ownership_pct": 36.85,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "קניון M הדרך – באמצעות החזקה בכ- 36.85% ממניות בית חרות ליש חברה לפיתוח בע\"מ",
+              "table_title": null,
+              "note": "לחברה 50% בזכויות הכלכליות בחברה הכלולה בית חרות"
+            },
+            {
+              "name": "אספן גרופ בע\"מ",
+              "ownership_pct": 29.0,
+              "parent": null,
+              "page_reference": 51,
+              "section_title": "דוח הדירקטוריון על מצב ענייני התאגיד לתקופה שנסתיימה ביום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": "חברה ציבורית אשר החברה מחזיקה בכ-29% מהון המניות המונפק של אספן ובזכויות ההצבעה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אספן גרופ בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 60,
+              "section_title": "השקעה בחברות מוחזקות המטופלות לפי שיטת השווי המאזני – השקעה באספן גרופ בע\"מ",
+              "table_title": null,
+              "note": "מטופלת לפי שיטת השווי המאזני"
+            },
+            {
+              "name": "בית חרות",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 55,
+              "section_title": null,
+              "table_title": null,
+              "note": "רכישת חלק חברה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אספן גרופ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 74,
+              "section_title": "ביאור 1 - כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "בית חרות",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 75,
+              "section_title": "ביאור 1 - כללי",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "בית חרות - ליש חברה לפיתוח בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 91,
+              "section_title": "ביאור 7 - השקעה בחברות מוחזקו ת המטופלו ת לפי שיטת השווי המאזני",
+              "table_title": "מידע פיננסי מתומצת על המצב הכספי:",
+              "note": "שיעור ההחזקה במניות הינו 36.85% אך זכאות החברה ברווחים מחושבת לפי 50% בהתבסס על חוות דעת משפטית."
+            },
+            {
+              "name": "אספן גרופ בע\"מ",
+              "ownership_pct": 28.47,
+              "parent": null,
+              "page_reference": 97,
+              "section_title": "ביאור 7 - השקעה בחברות מוחזקו ת המטופלו ת לפי שיטת השווי המאזני (המשך)",
+              "table_title": "מידע פיננסי מתומצת על המצב הכספי:",
+              "note": null
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
