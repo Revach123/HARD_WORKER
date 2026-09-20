@@ -4653,220 +4653,35 @@
   },
   "1736339": {
     "company_id": "1001",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-20T10:38:26.506050+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 11,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "Gamatronic U.S.A",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 15,
-              "section_title": "1.4 תרשים מבנה אחזקות של הקבוצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אספן גרופ בע\"מ",
-              "ownership_pct": 28.47,
-              "parent": null,
-              "page_reference": 15,
-              "section_title": "1.4 תרשים מבנה אחזקות של הקבוצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "בית חרות – ליש חברה לפיתוח בע\"מ",
-              "ownership_pct": 36.85,
-              "parent": null,
-              "page_reference": 15,
-              "section_title": "1.4 תרשים מבנה אחזקות של הקבוצה",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "בית חרות ליש חברה לפיתוח בע\"מ",
-              "ownership_pct": 36.85,
-              "parent": null,
-              "page_reference": 36,
-              "section_title": "7 מידע על תחום פעילות החברה",
-              "table_title": null,
-              "note": "לחברה 50% בזכויות הכלכליות בחברה הכלולה בית חרות, החל ממועד השלמת הרכישה, על אף החזקה במניות בשיעור של 36.85%"
-            }
-          ],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "בית חרות – ליש חברה לפיתוח בע\"מ",
-              "ownership_pct": 36.85,
-              "parent": null,
-              "page_reference": 36,
-              "section_title": "קניון M הדרך – באמצעות החזקה בכ- 36.85% ממניות בית חרות ליש חברה לפיתוח בע\"מ",
-              "table_title": null,
-              "note": "לחברה 50% בזכויות הכלכליות בחברה הכלולה בית חרות"
-            },
-            {
-              "name": "אספן גרופ בע\"מ",
-              "ownership_pct": 29.0,
-              "parent": null,
-              "page_reference": 51,
-              "section_title": "דוח הדירקטוריון על מצב ענייני התאגיד לתקופה שנסתיימה ביום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": "חברה ציבורית אשר החברה מחזיקה בכ-29% מהון המניות המונפק של אספן ובזכויות ההצבעה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "אספן גרופ בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 60,
-              "section_title": "השקעה בחברות מוחזקות המטופלות לפי שיטת השווי המאזני – השקעה באספן גרופ בע\"מ",
-              "table_title": null,
-              "note": "מטופלת לפי שיטת השווי המאזני"
-            },
-            {
-              "name": "בית חרות",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 55,
-              "section_title": null,
-              "table_title": null,
-              "note": "רכישת חלק חברה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "אספן גרופ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 74,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "בית חרות",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 75,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:5": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "בית חרות - ליש חברה לפיתוח בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 91,
-              "section_title": "ביאור 7 - השקעה בחברות מוחזקו ת המטופלו ת לפי שיטת השווי המאזני",
-              "table_title": "מידע פיננסי מתומצת על המצב הכספי:",
-              "note": "שיעור ההחזקה במניות הינו 36.85% אך זכאות החברה ברווחים מחושבת לפי 50% בהתבסס על חוות דעת משפטית."
-            },
-            {
-              "name": "אספן גרופ בע\"מ",
-              "ownership_pct": 28.47,
-              "parent": null,
-              "page_reference": 97,
-              "section_title": "ביאור 7 - השקעה בחברות מוחזקו ת המטופלו ת לפי שיטת השווי המאזני (המשך)",
-              "table_title": "מידע פיננסי מתומצת על המצב הכספי:",
-              "note": null
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-20T10:39:47.448450+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1729790": {
     "company_id": "1140",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-19T11:15:01.694141+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 21,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-20T10:47:18.744658+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1730880": {
     "company_id": "1636",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-19T11:15:02.057502+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 14,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-20T10:43:18.844660+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1728781": {
     "company_id": "2356",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-19T11:15:02.256584+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 9,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-20T10:46:11.788524+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732262": {
     "company_id": "1926",
@@ -4885,63 +4700,762 @@
   },
   "1731105": {
     "company_id": "1949",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-19T11:15:02.618632+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 19,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-20T10:52:32.475736+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732054": {
     "company_id": "2487",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-19T11:15:02.909923+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 16,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-20T10:53:01.142284+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732694": {
     "company_id": "1585",
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-19T11:15:03.277586+00:00",
+    "at": "2026-09-20T10:58:13.427283+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 18,
-      "done": {},
-      "attempts": {}
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "פסיפיק רכב ותחבורה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 9,
+              "section_title": "2.4 השקעות",
+              "table_title": "טבלת מבנה אחזקות החברה:",
+              "note": null
+            },
+            {
+              "name": "פריסבי מימון בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 9,
+              "section_title": "2.4 השקעות",
+              "table_title": "טבלת מבנה אחזקות החברה:",
+              "note": null
+            },
+            {
+              "name": "מרחבים ניהול ותפעול ציי רכב בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 9,
+              "section_title": "2.4 השקעות",
+              "table_title": "טבלת מבנה אחזקות החברה:",
+              "note": null
+            },
+            {
+              "name": "פריסבי סוכנות לביטוח בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 9,
+              "section_title": "2.4 השקעות",
+              "table_title": "טבלת מבנה אחזקות החברה:",
+              "note": null
+            },
+            {
+              "name": "צ.מ.ד חברה להספקת ציוד הנדסי בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 9,
+              "section_title": "2.4 השקעות",
+              "table_title": "טבלת מבנה אחזקות החברה:",
+              "note": null
+            },
+            {
+              "name": "ג'ינרג'י בע\"מ",
+              "ownership_pct": 86.6,
+              "parent": null,
+              "page_reference": 9,
+              "section_title": "2.4 השקעות",
+              "table_title": "טבלת מבנה אחזקות החברה:",
+              "note": null
+            },
+            {
+              "name": "פריסבי אנרגיה בע\"מ",
+              "ownership_pct": 100,
+              "parent": "ג'ינרג'י בע\"מ",
+              "page_reference": 9,
+              "section_title": "2.4 השקעות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מטרו מוטור (אחזקות) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 9,
+              "section_title": "2.4 השקעות",
+              "table_title": "טבלת מבנה אחזקות החברה:",
+              "note": null
+            },
+            {
+              "name": "Freesbe GmbH",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 9,
+              "section_title": "2.4 השקעות",
+              "table_title": "טבלת מבנה אחזקות החברה:",
+              "note": null
+            },
+            {
+              "name": "מוסך רכב אומגה חדרה (1991) בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 9,
+              "section_title": "2.4 השקעות",
+              "table_title": null,
+              "note": "חברה כלולה"
+            },
+            {
+              "name": "עפיפי קרסו מוטורס בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 9,
+              "section_title": "2.4 השקעות",
+              "table_title": null,
+              "note": "חברה כלולה"
+            },
+            {
+              "name": "בייבי ארק בע\"מ",
+              "ownership_pct": 21,
+              "parent": null,
+              "page_reference": 9,
+              "section_title": "2.4 השקעות",
+              "table_title": null,
+              "note": "חברה כלולה"
+            },
+            {
+              "name": "בי-אי ווי מוטורס בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 9,
+              "section_title": "2.4 השקעות",
+              "table_title": null,
+              "note": "חברה כלולה"
+            },
+            {
+              "name": "הילוך שישי קרסו בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 9,
+              "section_title": "2.4 השקעות",
+              "table_title": null,
+              "note": "חברה כלולה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "מרחבים",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 22,
+              "section_title": "7.1.1.1 ייבוא, הפצה ומכירה של כלי רכב",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "צמד",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 23,
+              "section_title": "7.1.1.4 ציוד מכני הנדסי (צמ\"ה)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מטרו מוטור",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 22,
+              "section_title": "7.1.1.3 יבוא, שיווק ומכירה של כלי רכב דו-גלגליים",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "אומגה",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 44,
+              "section_title": "8.2.1.1 מוסכים בניהול הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "הילוך שישי קרסו בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 44,
+              "section_title": "8.2.1.1 מוסכים בניהול הקבוצה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "פסיפיק רכב ותחבורה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 102,
+              "section_title": "1. כללי:",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ג'ינרג'י בע\"מ",
+              "ownership_pct": 86.6,
+              "parent": null,
+              "page_reference": 102,
+              "section_title": "1. כללי:",
+              "table_title": null,
+              "note": "עד ליום 26 בדצמבר 2025 החזיקה החברה 60%"
+            },
+            {
+              "name": "מטרו מוטור (אחזקות) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 102,
+              "section_title": "1. כללי:",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "בי-אי ווי מוטורס בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 102,
+              "section_title": "1. כללי:",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "עפיפי קרסו",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 93,
+              "section_title": "20.1 הסכם מייסדים בין החברה לבין משפחת עפיפי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מוסך רכב אומגה חדרה (1991) בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 94,
+              "section_title": "20.2 הסכם עם מרכז שירות אומגה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "הלוך שישי יפו בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 94,
+              "section_title": "20.3 הסכם עם מרכז שירות הילוך שישי",
+              "table_title": null,
+              "note": "מרכז שירות משותף באחזקה של 50%"
+            }
+          ],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:7": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "פריסבי מימון בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 121,
+              "section_title": "6.2 פרטים בדבר רואה החשבון המבקר",
+              "table_title": null,
+              "note": "מוזכרת במסגרת שכר טרחת רואה החשבון המבקר"
+            },
+            {
+              "name": "מטרו מוטור (אחזקות) בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 121,
+              "section_title": "6.2 פרטים בדבר רואה החשבון המבקר",
+              "table_title": null,
+              "note": "מוזכרת במסגרת שכר טרחת רואה החשבון המבקר"
+            },
+            {
+              "name": "פריסבי סוכנות לביטוח בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 121,
+              "section_title": "6.2 פרטים בדבר רואה החשבון המבקר",
+              "table_title": null,
+              "note": "מוזכרת במסגרת שכר טרחת רואה החשבון המבקר"
+            },
+            {
+              "name": "צ.מ.ד חברה להספקת ציוד הנדסי בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 121,
+              "section_title": "6.2 פרטים בדבר רואה החשבון המבקר",
+              "table_title": null,
+              "note": "מוזכרת במסגרת שכר טרחת רואה החשבון המבקר"
+            },
+            {
+              "name": "פריסבי אנרגיה בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 121,
+              "section_title": "6.2 פרטים בדבר רואה החשבון המבקר",
+              "table_title": null,
+              "note": "מוזכרת במסגרת שכר טרחת רואה החשבון המבקר"
+            },
+            {
+              "name": "ג'ינרג'י בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 121,
+              "section_title": "6.2 פרטים בדבר רואה החשבון המבקר",
+              "table_title": null,
+              "note": "מוזכרת במסגרת שכר טרחת רואה החשבון המבקר"
+            },
+            {
+              "name": "פסיפיק רכב ותחבורה בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 121,
+              "section_title": "6.2 פרטים בדבר רואה החשבון המבקר",
+              "table_title": null,
+              "note": "מוזכרת במסגרת שכר טרחת רואה החשבון המבקר"
+            },
+            {
+              "name": "מרחבים ניהול ותפעול ציי רכב בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 121,
+              "section_title": "6.2 פרטים בדבר רואה החשבון המבקר",
+              "table_title": null,
+              "note": "מוזכרת במסגרת שכר טרחת רואה החשבון המבקר"
+            }
+          ],
+          "change_events": []
+        },
+        "0:8": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "מטרו מוטור",
+              "event_type": "increase",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 100,
+              "event_date": "2025-03-30",
+              "event_description": "השלמת רכישת כ-66.67% מהון המניות המונפק והנפרע של מטרו מוטור, כך שהחברה מחזיקה ב-100% מהון המניות.",
+              "page_reference": 142,
+              "section_title": "חלק ה' - הוראות גילוי בקשר עם הדיווח הפיננסי של התאגיד"
+            }
+          ]
+        },
+        "0:9": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "צ.מ.ד חברה להספקת ציוד הנדסי בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 158,
+              "section_title": "ביאור 1 - כללי:",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "מרחבים ניהול ותפעול ציי רכב בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 158,
+              "section_title": "ביאור 1 - כללי:",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "מטרו מוטור בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 158,
+              "section_title": "ביאור 1 - כללי:",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "ג'ינרג'י בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 158,
+              "section_title": "ביאור 1 - כללי:",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "פריסבי אנרגיה בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 158,
+              "section_title": "ביאור 1 - כללי:",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "פסיפיק רכב ותחבורה בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 158,
+              "section_title": "ביאור 1 - כללי:",
+              "table_title": null,
+              "note": "חברת בת"
+            }
+          ],
+          "change_events": []
+        },
+        "0:10": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "פסיפיק רכב ותחבורה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 207,
+              "section_title": "ביאור 8 - זכויות בישויות אחרות",
+              "table_title": "א. חברות בנות: 1. הרכב הקבוצה",
+              "note": null
+            },
+            {
+              "name": "פריסבי סוכנות לביטוח (1989) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 207,
+              "section_title": "ביאור 8 - זכויות בישויות אחרות",
+              "table_title": "א. חברות בנות: 1. הרכב הקבוצה",
+              "note": "לשעבר קרסו סוכנות לביטוח (1989) בע\"מ"
+            },
+            {
+              "name": "פריסבי מימון בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 207,
+              "section_title": "ביאור 8 - זכויות בישויות אחרות",
+              "table_title": "א. חברות בנות: 1. הרכב הקבוצה",
+              "note": "לשעבר אוטו קאש שירותי מימון בע\"מ"
+            },
+            {
+              "name": "מרחבים ניהול ותפעול ציי רכב בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 207,
+              "section_title": "ביאור 8 - זכויות בישויות אחרות",
+              "table_title": "א. חברות בנות: 1. הרכב הקבוצה",
+              "note": null
+            },
+            {
+              "name": "צ.מ.ד חברה להספקת ציוד הנדסי בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 207,
+              "section_title": "ביאור 8 - זכויות בישויות אחרות",
+              "table_title": "א. חברות בנות: 1. הרכב הקבוצה",
+              "note": null
+            },
+            {
+              "name": "פריסבי אנרגיה בע\"מ",
+              "ownership_pct": 86.6,
+              "parent": null,
+              "page_reference": 207,
+              "section_title": "ביאור 8 - זכויות בישויות אחרות",
+              "table_title": "א. חברות בנות: 1. הרכב הקבוצה",
+              "note": null
+            },
+            {
+              "name": "ג'ינרג'י בע\"מ",
+              "ownership_pct": 86.6,
+              "parent": null,
+              "page_reference": 207,
+              "section_title": "ביאור 8 - זכויות בישויות אחרות",
+              "table_title": "א. חברות בנות: 1. הרכב הקבוצה",
+              "note": null
+            },
+            {
+              "name": "מטרו מוטור (אחזקות) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 207,
+              "section_title": "ביאור 8 - זכויות בישויות אחרות",
+              "table_title": "א. חברות בנות: 1. הרכב הקבוצה",
+              "note": null
+            },
+            {
+              "name": "Freesbe Gmbh",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 207,
+              "section_title": "ביאור 8 - זכויות בישויות אחרות",
+              "table_title": "א. חברות בנות: 1. הרכב הקבוצה",
+              "note": null
+            },
+            {
+              "name": "בייבי ארק",
+              "ownership_pct": 20.95,
+              "parent": null,
+              "page_reference": 212,
+              "section_title": "ביאור 8 - זכויות בישויות אחרות",
+              "table_title": null,
+              "note": "חברה כלולה"
+            },
+            {
+              "name": "בי-אי-ווי מוטורס בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 213,
+              "section_title": "ביאור 8 - זכויות בישויות אחרות",
+              "table_title": null,
+              "note": "חברה בשליטה משותפת"
+            },
+            {
+              "name": "מטרו דגן סוכנות לביטוח כללי (2008) בע\"מ",
+              "ownership_pct": 49,
+              "parent": "מטרו מוטור (אחזקות) בע\"מ",
+              "page_reference": 214,
+              "section_title": "ביאור 8 - זכויות בישויות אחרות",
+              "table_title": null,
+              "note": "מוחזקת על ידי חברת הבת מטרו"
+            }
+          ],
+          "change_events": []
+        },
+        "0:11": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "מטרו דגן סוכנות לביטוח כללי (2008) בע\"מ",
+              "ownership_pct": 49,
+              "parent": "מטרו",
+              "page_reference": 231,
+              "section_title": "ביאור 8 - זכויות בישויות אחרות",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:12": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "מרחבים ניהול ותפעול ציי רכב בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 211,
+              "section_title": "ביאור 25 - שעבודים, ערבויות, התחייבויות תלויות והתקשרויות (המשך):",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פסיפיק רכב ותחבורה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 212,
+              "section_title": "ביאור 25 - שעבודים, ערבויות, התחייבויות תלויות והתקשרויות (המשך):",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:13": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:14": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:15": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "פסיפיק רכב ותחבורה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 262,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות",
+              "note": null
+            },
+            {
+              "name": "פריסבי מימון בע\"מ (לשעבר \"אוטו קאש שירותי מימון בע\"מ\")",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 262,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות",
+              "note": null
+            },
+            {
+              "name": "מטרו מוטור (אחזקות) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 262,
+              "section_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות",
+              "table_title": "תקנה 11 - רשימת השקעות בחברות בת ובחברות כלולות",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:16": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:17": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "פסיפיק רכב ותחבורה בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 298,
+              "section_title": "6. מכלול הקשרים, ההתקשרויות, ההלוואות, ההשקעות והעסקאות המהותיות הקיימים בין החברה לבין חברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פריסבי סוכנות לביטוח (1989) בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 304,
+              "section_title": "6. מכלול הקשרים, ההתקשרויות, ההלוואות, ההשקעות והעסקאות המהותיות הקיימים בין החברה לבין חברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": "לשעבר קרסו סוכנות לביטוח (1989) בע\"מ"
+            },
+            {
+              "name": "פריסבי מימון",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 304,
+              "section_title": "6. מכלול הקשרים, ההתקשרויות, ההלוואות, ההשקעות והעסקאות המהותיות הקיימים בין החברה לבין חברות מוחזקות (המשך)",
+              "table_title": "שטרי הון מפריסבי מימון",
+              "note": null
+            },
+            {
+              "name": "קל אוטו פרוייקטים (2001) בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 305,
+              "section_title": "6. מכלול הקשרים, ההתקשרויות, ההלוואות, ההשקעות והעסקאות המהותיות הקיימים בין החברה לבין חברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": "חברה בת בבעלות מלאה שמוזגה לתוך החברה ופסיפיק"
+            },
+            {
+              "name": "פריסבי אנרגיה בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 305,
+              "section_title": "6. מכלול הקשרים, ההתקשרויות, ההלוואות, ההשקעות והעסקאות המהותיות הקיימים בין החברה לבין חברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ג'ינרג'י בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 305,
+              "section_title": "6. מכלול הקשרים, ההתקשרויות, ההלוואות, ההשקעות והעסקאות המהותיות הקיימים בין החברה לבין חברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        }
+      },
+      "attempts": {
+        "0:4": 1
+      }
     }
   },
   "1729179": {
     "company_id": "2429",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-19T11:15:03.655614+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 14,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-20T10:57:58.438394+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1730166": {
     "company_id": "1924",
@@ -4960,46 +5474,660 @@
   },
   "1727131": {
     "company_id": "1363",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-19T11:15:04.032248+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 20,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-20T11:05:47.401141+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1733334": {
     "company_id": "1465",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-19T11:15:04.511674+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 9,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-20T11:02:37.056154+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1728825": {
     "company_id": "1908",
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-19T11:15:04.758644+00:00",
+    "at": "2026-09-20T11:05:26.941284+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 14,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "Retailors Sports Inc.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.2.2 מבנה ההחזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Retailors Netherlands B.V.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.2.2 מבנה ההחזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Retailors-NA Sports Ventures GP Inc.",
+              "ownership_pct": 51,
+              "parent": "Retailors Sports Inc.",
+              "page_reference": 8,
+              "section_title": "1.2.2 מבנה ההחזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Retailors-NA Sports Ventures Limited Partnership",
+              "ownership_pct": 51,
+              "parent": "Retailors Sports Inc.",
+              "page_reference": 8,
+              "section_title": "1.2.2 מבנה ההחזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Retailors Finland OY",
+              "ownership_pct": 100,
+              "parent": "Retailors Netherlands B.V.",
+              "page_reference": 8,
+              "section_title": "1.2.2 מבנה ההחזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Retailors Sweden AB",
+              "ownership_pct": 100,
+              "parent": "Retailors Netherlands B.V.",
+              "page_reference": 8,
+              "section_title": "1.2.2 מבנה ההחזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Retailors Norway AS",
+              "ownership_pct": 100,
+              "parent": "Retailors Netherlands B.V.",
+              "page_reference": 8,
+              "section_title": "1.2.2 מבנה ההחזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Retailors Denmark ApS",
+              "ownership_pct": 100,
+              "parent": "Retailors Netherlands B.V.",
+              "page_reference": 8,
+              "section_title": "1.2.2 מבנה ההחזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Retailors Hungary Kft",
+              "ownership_pct": 100,
+              "parent": "Retailors Netherlands B.V.",
+              "page_reference": 8,
+              "section_title": "1.2.2 מבנה ההחזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Retailors Slovakia s.r.o.",
+              "ownership_pct": 100,
+              "parent": "Retailors Netherlands B.V.",
+              "page_reference": 8,
+              "section_title": "1.2.2 מבנה ההחזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Retailors Czech Republic s.r.o.",
+              "ownership_pct": 100,
+              "parent": "Retailors Netherlands B.V.",
+              "page_reference": 8,
+              "section_title": "1.2.2 מבנה ההחזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Retailors Poland sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": "Retailors Netherlands B.V.",
+              "page_reference": 8,
+              "section_title": "1.2.2 מבנה ההחזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Retailors Belgium B.V.",
+              "ownership_pct": 100,
+              "parent": "Retailors Netherlands B.V.",
+              "page_reference": 8,
+              "section_title": "1.2.2 מבנה ההחזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Retailors Austria NK GmbH",
+              "ownership_pct": 100,
+              "parent": "Retailors Netherlands B.V.",
+              "page_reference": 8,
+              "section_title": "1.2.2 מבנה ההחזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Retailors Switzerland GmbH",
+              "ownership_pct": 100,
+              "parent": "Retailors Netherlands B.V.",
+              "page_reference": 8,
+              "section_title": "1.2.2 מבנה ההחזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Retailors Adria d.o.o.",
+              "ownership_pct": 100,
+              "parent": "Retailors Netherlands B.V.",
+              "page_reference": 8,
+              "section_title": "1.2.2 מבנה ההחזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Retailors Luxembourg SARL",
+              "ownership_pct": 100,
+              "parent": "Retailors Netherlands B.V.",
+              "page_reference": 8,
+              "section_title": "1.2.2 מבנה ההחזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Retailors Germany GmbH",
+              "ownership_pct": 100,
+              "parent": "Retailors Netherlands B.V.",
+              "page_reference": 8,
+              "section_title": "1.2.2 מבנה ההחזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Retailors NK SVN d.o.o.",
+              "ownership_pct": 100,
+              "parent": "Retailors Netherlands B.V.",
+              "page_reference": 8,
+              "section_title": "1.2.2 מבנה ההחזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Retailors France SAS",
+              "ownership_pct": 100,
+              "parent": "Retailors Netherlands B.V.",
+              "page_reference": 8,
+              "section_title": "1.2.2 מבנה ההחזקות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "RTL Australia",
+              "ownership_pct": 92.5,
+              "parent": "Retailors Netherlands B.V.",
+              "page_reference": 8,
+              "section_title": "1.2.2 מבנה ההחזקות של החברה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "Retailors Sport Inc.",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 79,
+              "section_title": "3.15.1.3 פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
+              "table_title": "פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
+              "note": null
+            },
+            {
+              "name": "Retailors Germany GmbH",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 79,
+              "section_title": "3.15.1.3 פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
+              "table_title": "פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
+              "note": null
+            },
+            {
+              "name": "Retailors Netherlands BV",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 79,
+              "section_title": "3.15.1.3 פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
+              "table_title": "פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
+              "note": null
+            },
+            {
+              "name": "Retailors Belgium B.V",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 79,
+              "section_title": "3.15.1.3 פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
+              "table_title": "פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
+              "note": null
+            },
+            {
+              "name": "Retailors Poland sp. z o.o.",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 79,
+              "section_title": "3.15.1.3 פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
+              "table_title": "פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
+              "note": null
+            },
+            {
+              "name": "Retailors Czech Republic",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 79,
+              "section_title": "3.15.1.3 פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
+              "table_title": "פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
+              "note": null
+            },
+            {
+              "name": "Retailors Slovakia s.r.o",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 79,
+              "section_title": "3.15.1.3 פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
+              "table_title": "פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
+              "note": null
+            },
+            {
+              "name": "Retailors Hungary Kft.",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 79,
+              "section_title": "3.15.1.3 פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
+              "table_title": "פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
+              "note": null
+            },
+            {
+              "name": "Retailors Austria NK GmbH (AU)",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 79,
+              "section_title": "3.15.1.3 פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
+              "table_title": "פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
+              "note": null
+            },
+            {
+              "name": "Retailors Denmark APS",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 79,
+              "section_title": "3.15.1.3 פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
+              "table_title": "פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
+              "note": null
+            },
+            {
+              "name": "Retailors Sweden AB",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 79,
+              "section_title": "3.15.1.3 פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
+              "table_title": "פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
+              "note": null
+            },
+            {
+              "name": "Retailors Norway AS",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 79,
+              "section_title": "3.15.1.3 פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
+              "table_title": "פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
+              "note": null
+            },
+            {
+              "name": "Retailors Finland Oy",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 79,
+              "section_title": "3.15.1.3 פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
+              "table_title": "פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
+              "note": null
+            },
+            {
+              "name": "Retailors Switzerland GmbH",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 79,
+              "section_title": "3.15.1.3 פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
+              "table_title": "פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
+              "note": null
+            },
+            {
+              "name": "Retailors Adria d.o.o",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 79,
+              "section_title": "3.15.1.3 פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
+              "table_title": "פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
+              "note": null
+            },
+            {
+              "name": "Retailors NK SVN d.o.o",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 79,
+              "section_title": "3.15.1.3 פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
+              "table_title": "פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
+              "note": null
+            },
+            {
+              "name": "Retailors France SAS",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 79,
+              "section_title": "3.15.1.3 פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
+              "table_title": "פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
+              "note": null
+            },
+            {
+              "name": "RTL Australia",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 79,
+              "section_title": "3.15.1.3 פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
+              "table_title": "פירוט אודות הפריסה הגיאוגרפית של חנויות הקבוצה",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "קבוצת RPG",
+              "ownership_pct": 92.5,
+              "parent": null,
+              "page_reference": 112,
+              "section_title": "3.24 הסכמי שיתופי פעולה והסכמים מהותיים",
+              "table_title": null,
+              "note": "החברה מחזיקה בעקיפין כ-92.5% מקבוצת RPG"
+            }
+          ],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "Retailors -NA Sports Ventures",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 74,
+              "section_title": "תרשים מבנה הפעילות בחברה לפי הצגתן בדיווח המגזרי והחשבונאי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Retailors-NA Sports Ventures GP Inc.",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 74,
+              "section_title": "תרשים מבנה הפעילות בחברה לפי הצגתן בדיווח המגזרי והחשבונאי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Retailors Sports Inc.",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 74,
+              "section_title": "תרשים מבנה הפעילות בחברה לפי הצגתן בדיווח המגזרי והחשבונאי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Retailors Netherlands B.V.",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 74,
+              "section_title": "תרשים מבנה הפעילות בחברה לפי הצגתן בדיווח המגזרי והחשבונאי",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "RTL Australia PTY Ltd.",
+              "ownership_pct": 92.5,
+              "parent": "V.B Netherlands Retailors",
+              "page_reference": 113,
+              "section_title": "באור 1 - כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "V.B Netherlands Retailors",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 113,
+              "section_title": "באור 1 - כללי",
+              "table_title": null,
+              "note": "חברת בת שעמה מוחזקות חברות בנות נוספות בקבוצה"
+            },
+            {
+              "name": "תאגיד צרפתי ייעודי",
+              "ownership_pct": null,
+              "parent": "V.B Netherlands Retailors",
+              "page_reference": 113,
+              "section_title": "באור 1 - כללי",
+              "table_title": null,
+              "note": "מפעיל 12 חנויות נייקי בצרפת"
+            }
+          ],
+          "change_events": []
+        },
+        "0:7": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "Retailors Sports Inc",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 132,
+              "section_title": "באור 13 - השקעות בחברות מוחזקות",
+              "table_title": null,
+              "note": "הוקמה כחברת בת בקנדה בשליטה מלאה"
+            },
+            {
+              "name": "Retailors Europe B.V",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 131,
+              "section_title": "באור 13 - השקעות בחברות מוחזקות",
+              "table_title": null,
+              "note": "הוקמה כחברת בת בהולנד בשליטה מלאה ומוזגה בהמשך אל תוך Retailors Netherlands B.V."
+            },
+            {
+              "name": "Retailors Netherlands B.V.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 132,
+              "section_title": "באור 13 - השקעות בחברות מוחזקות",
+              "table_title": null,
+              "note": "הוחזקה תחילה ב-51% ולאחר רכישת יתרת המניות מחזיקה החברה ב-100%"
+            },
+            {
+              "name": "Australia RTL",
+              "ownership_pct": 92.5,
+              "parent": "Retailors Netherlands B.V.",
+              "page_reference": 123,
+              "section_title": "באור 5 - צירופי עסקים",
+              "table_title": null,
+              "note": "רכישת קבוצת RPG באוסטרליה ובניו זילנד"
+            },
+            {
+              "name": "תאגיד צרפתי ייעודי וחברות בנות (12 חנויות נייקי בצרפת)",
+              "ownership_pct": 100,
+              "parent": "Retailors Netherlands B.V.",
+              "page_reference": 123,
+              "section_title": "באור 5 - צירופי עסקים",
+              "table_title": null,
+              "note": "רכישת בעלות מלאה (100%) בתאגיד צרפתי ייעודי המרכז 12 חנויות בצרפת"
+            }
+          ],
+          "change_events": []
+        },
+        "0:8": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2024-12-31",
+          "subsidiaries": [
+            {
+              "name": "Sport Retailors Inc.",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 143,
+              "section_title": "באור 17 - התחייבויות תלויות, התקשרויות, שעבודים וערבויות (המשך)",
+              "table_title": null,
+              "note": "חברת בת קנדית בשליטה מלאה"
+            },
+            {
+              "name": "V.B Europe Retailors B.V.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 145,
+              "section_title": "באור 17 - התחייבויות תלויות, התקשרויות, שעבודים וערבויות (המשך)",
+              "table_title": null,
+              "note": "הוחזקה 100% על ידי החברה, מוזגה בהמשך לתוך Retailors Netherlands B.V."
+            },
+            {
+              "name": "Retailors Netherlands B.V.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 145,
+              "section_title": "באור 17 - התחייבויות תלויות, התקשרויות, שעבודים וערבויות (המשך)",
+              "table_title": null,
+              "note": "חברת בת שאליה מוזגו חברות בנות"
+            },
+            {
+              "name": "חברת נייקי המשותפת (V.B Ventures NK FL-Retailors)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 145,
+              "section_title": "באור 17 - התחייבויות תלויות, התקשרויות, שעבודים וערבויות (המשך)",
+              "table_title": null,
+              "note": "הוחזקה במקור 51% ולאחר רכישת יתרת המניות הוחזקה ב-100%"
+            },
+            {
+              "name": "Australia RTL",
+              "ownership_pct": 92.5,
+              "parent": "Retailors Netherlands B.V.",
+              "page_reference": 147,
+              "section_title": "באור 17 - התחייבויות תלויות, התקשרויות, שעבודים וערבויות (המשך)",
+              "table_title": null,
+              "note": "החברה ההולנדית מחזיקה ב-92.5%"
+            },
+            {
+              "name": "תאגיד צרפתי ייעודי",
+              "ownership_pct": 100,
+              "parent": "Retailors V.B Netherlands",
+              "page_reference": 146,
+              "section_title": "באור 17 - התחייבויות תלויות, התקשרויות, שעבודים וערבויות (המשך)",
+              "table_title": null,
+              "note": "נרכש בבעלות מלאה (100%)"
+            }
+          ],
+          "change_events": []
+        },
+        "0:9": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "Retailors Netheraland B.V.",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 314,
+              "section_title": "באור 17 - התחייבויות תלויות, התקשרויות, שעבודים וערבויות",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "חברה נכדה בלגית",
+              "ownership_pct": null,
+              "parent": "Retailors Netheraland B.V.",
+              "page_reference": 314,
+              "section_title": "באור 17 - התחייבויות תלויות, התקשרויות, שעבודים וערבויות",
+              "table_title": null,
+              "note": "חברה נכדה"
+            },
+            {
+              "name": "Australia RTL",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 314,
+              "section_title": "באור 17 - התחייבויות תלויות, התקשרויות, שעבודים וערבויות",
+              "table_title": null,
+              "note": "חברה נכדה"
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
