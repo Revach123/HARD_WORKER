@@ -3731,250 +3731,83 @@
   },
   "1730774": {
     "company_id": "440",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-21T10:19:46.677995+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 9,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "כרמית מזון בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 7,
-              "section_title": "2. פעילות התאגיד ותיאור התפתחות עסקיו",
-              "table_title": "תרשים מבנה אחזקות של הקבוצה ליום 31 בדצמבר, 2025",
-              "note": null
-            },
-            {
-              "name": "רפאל'ס בריא וטעים בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 7,
-              "section_title": "2. פעילות התאגיד ותיאור התפתחות עסקיו",
-              "table_title": "תרשים מבנה אחזקות של הקבוצה ליום 31 בדצמבר, 2025",
-              "note": null
-            },
-            {
-              "name": "טעם ישראל (מנוף) 92 בע\"מ",
-              "ownership_pct": 99,
-              "parent": null,
-              "page_reference": 7,
-              "section_title": "2. פעילות התאגיד ותיאור התפתחות עסקיו",
-              "table_title": null,
-              "note": "למיטב ידיעת החברה, למועד הדוח אינה פעילה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "רפאלס",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 65,
-              "section_title": "1. נתונים עיקריים מתוך תיאור עסקי התאגיד",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "כרמית מזון",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 65,
-              "section_title": "1. נתונים עיקריים מתוך תיאור עסקי התאגיד",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:5": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:6": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-21T10:20:11.299681+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732590": {
     "company_id": "384",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-20T11:36:21.353390+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 9,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-21T10:22:35.206737+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1730998": {
     "company_id": "576",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-20T11:36:16.484998+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 18,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-21T10:24:03.696883+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1724615": {
     "company_id": "1390",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-20T11:36:25.350392+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 12,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-21T10:25:02.241908+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1729743": {
     "company_id": "394",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-20T11:36:21.677586+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 19,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-21T10:28:00.264775+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732738": {
     "company_id": "1331",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-20T11:36:22.069027+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 13,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-21T10:28:33.278421+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731151": {
     "company_id": "282",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-20T11:36:22.404716+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 10,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-21T10:30:28.440652+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1733174": {
     "company_id": "2418",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-20T11:36:22.791160+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 21,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-21T10:34:48.597738+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732660": {
     "company_id": "1473",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-20T11:36:31.711701+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 9,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-21T10:32:56.607190+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1730002": {
     "company_id": "1609",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-20T11:36:33.642075+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 16,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-21T10:37:27.244144+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732129": {
     "company_id": "1209",
@@ -3996,13 +3829,336 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-20T11:36:32.111738+00:00",
+    "at": "2026-09-21T10:37:15.935533+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 14,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "אגיש סוכנות לביטוח ימי (1996) בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.1.2 החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "עמיטל דאטה בע\"מ",
+              "ownership_pct": 8.42,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.1.2 החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "או.סי.איי מטענים בע\"מ",
+              "ownership_pct": 7.7,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.1.2 החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "קונספט ליין בע\"מ",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.1.2 החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אוריין לוגיסטיקה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.1.2 החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "לבה ספנות ישראל בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.1.2 החזקות החברה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "לבה ישראל ספנות בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 23,
+              "section_title": "1.7.3 פילוח הכנסות השירותים בתחום השילוח – יבוא",
+              "table_title": null,
+              "note": "מוזכרת כחברה בת בהערת שוליים"
+            },
+            {
+              "name": "עמיטל",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 28,
+              "section_title": "1.7.8.5 הסכמים לקבלת שירותי מחשוב",
+              "table_title": null,
+              "note": "מוזכרת בהקשר להחזקות החברה בהערת שוליים"
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "קונספטליין",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 38,
+              "section_title": "1.10.1.2 מגבלות, חקיקה, תקינה ואילוצים מיוחדים החלים על תחום הפעילות",
+              "table_title": null,
+              "note": "חברת בת"
+            }
+          ],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "מיבאך",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 63,
+              "section_title": "1.12.6 השקעות",
+              "table_title": null,
+              "note": "מוחזקת בשליטה משותפת עם תאגיד גרמני זר, בכוונת הצדדים לפעול לפירוקה מרצון"
+            },
+            {
+              "name": "קונספטליין",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 59,
+              "section_title": "1.12.2.1 צי כלי רכב",
+              "table_title": null,
+              "note": "מוזכרת בהקשר לצי רכב בבעלות/פעילות החברה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "עמיטל דאטה בע\"מ",
+              "ownership_pct": 8.42,
+              "parent": null,
+              "page_reference": 72,
+              "section_title": "1.12.11.1הסכם עם עמיטל דאטה בע\"מ (\"עמיטל\") וההחזקה במניותיה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "קונספטליין בע\"מ",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 85,
+              "section_title": "1.3 תוצאות הפעילות של חברת קונספטליין",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אוריין לוגיסטיקה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 85,
+              "section_title": "1.4 תוצאות הפעילות של חברת אוריין לוגיסטיקה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:7": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "קונספט ליין בע\"מ",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 130,
+              "section_title": "ביאור 2 - עיקרי המדיניות החשבונאית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אוריין לוגיסטיקה בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 130,
+              "section_title": "ביאור 2 - עיקרי המדיניות החשבונאית",
+              "table_title": null,
+              "note": "חברה מאוחדת"
+            }
+          ],
+          "change_events": []
+        },
+        "0:8": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "E-House Ltd.",
+              "ownership_pct": 0.75,
+              "parent": null,
+              "page_reference": 146,
+              "section_title": "ביאור 8 - השקעות, הלוואות ויתרות חובה",
+              "table_title": "הרכב ההשקעה בחברות אחרות",
+              "note": null
+            },
+            {
+              "name": "עמיטל דאטה בע\"מ",
+              "ownership_pct": 8.42,
+              "parent": null,
+              "page_reference": 146,
+              "section_title": "ביאור 8 - השקעות, הלוואות ויתרות חובה",
+              "table_title": "הרכב ההשקעה בחברות אחרות",
+              "note": null
+            },
+            {
+              "name": "או.סי.איי. מטענים בע\"מ",
+              "ownership_pct": 7.7,
+              "parent": null,
+              "page_reference": 146,
+              "section_title": "ביאור 8 - השקעות, הלוואות ויתרות חובה",
+              "table_title": "הרכב ההשקעה בחברות אחרות",
+              "note": null
+            },
+            {
+              "name": "לבה ספנות בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 147,
+              "section_title": "ביאור 9 - השקעות המטופלות לפי שיטת השווי המאזני",
+              "table_title": "פירוט החברות הכלולות של הקבוצה",
+              "note": null
+            },
+            {
+              "name": "אגיש סוכנות לביטוח ימי (1996) בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 147,
+              "section_title": "ביאור 9 - השקעות המטופלות לפי שיטת השווי המאזני",
+              "table_title": "פירוט החברות הכלולות של הקבוצה",
+              "note": null
+            },
+            {
+              "name": "מיבאך אוריין יעוץ בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 147,
+              "section_title": "ביאור 9 - השקעות המטופלות לפי שיטת השווי המאזני",
+              "table_title": "פירוט החברות הכלולות של הקבוצה",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:9": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:10": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "קונספט ליין בע\"מ",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 176,
+              "section_title": "ביאור 19 - התחייבויות תלויות והתקשרויות (המשך)",
+              "table_title": null,
+              "note": "תוצאותיה כוללות גם את שוהם הסעים בע\"מ"
+            },
+            {
+              "name": "שוהם הסעים בע\"מ",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 176,
+              "section_title": "ביאור 19 - התחייבויות תלויות והתקשרויות (המשך)",
+              "table_title": null,
+              "note": "נרכשה כחלק מעסקת קונספט ליין"
+            }
+          ],
+          "change_events": [
+            {
+              "company": "שפיר אוריין לוגיסטיקה בע\"מ",
+              "event_type": "full_disposal",
+              "ownership_pct_before": 40,
+              "ownership_pct_after": 0,
+              "event_date": "2024-12-30",
+              "event_description": "מכירת מלוא החזקות החברה (40%) לחברת שפיר הנדסה",
+              "page_reference": 174,
+              "section_title": "ביאור 19 - התחייבויות תלויות והתקשרויות (המשך)"
+            },
+            {
+              "company": "שפיר אוריין תפעול ותחזוקה בע\"מ",
+              "event_type": "full_disposal",
+              "ownership_pct_before": 40,
+              "ownership_pct_after": 0,
+              "event_date": "2024-12-30",
+              "event_description": "מכירת מלוא החזקות החברה (40%) לחברת שפיר הנדסה",
+              "page_reference": 174,
+              "section_title": "ביאור 19 - התחייבויות תלויות והתקשרויות (המשך)"
+            }
+          ]
+        }
+      },
       "attempts": {}
     }
   },
