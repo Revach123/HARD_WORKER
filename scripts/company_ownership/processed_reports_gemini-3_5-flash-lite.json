@@ -3957,7 +3957,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-21T11:07:39.887741+00:00",
+    "at": "2026-09-21T11:07:56.211388+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -7094,6 +7094,176 @@
             }
           ],
           "change_events": []
+        },
+        "0:26": {
+          "report_format": "10-K",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "First Tower, LLC",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 458,
+              "section_title": "Note 1. Description of Business",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Tower Loan of Mississippi, LLC",
+              "ownership_pct": null,
+              "parent": "First Tower, LLC",
+              "page_reference": 458,
+              "section_title": "Note 1. Description of Business",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Tower Loan of Illinois, LLC",
+              "ownership_pct": null,
+              "parent": "First Tower, LLC",
+              "page_reference": 458,
+              "section_title": "Note 1. Description of Business",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Tower Loan of Texas, LLC",
+              "ownership_pct": null,
+              "parent": "First Tower, LLC",
+              "page_reference": 458,
+              "section_title": "Note 1. Description of Business",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "First Tower Loan, LLC",
+              "ownership_pct": null,
+              "parent": "First Tower, LLC",
+              "page_reference": 458,
+              "section_title": "Note 1. Description of Business",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Gulfco of Mississippi, LLC",
+              "ownership_pct": null,
+              "parent": "First Tower, LLC",
+              "page_reference": 458,
+              "section_title": "Note 1. Description of Business",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Gulfco of Alabama, LLC",
+              "ownership_pct": null,
+              "parent": "First Tower, LLC",
+              "page_reference": 458,
+              "section_title": "Note 1. Description of Business",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Gulfco of Louisiana, LLC",
+              "ownership_pct": null,
+              "parent": "First Tower, LLC",
+              "page_reference": 458,
+              "section_title": "Note 1. Description of Business",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Tower Loan of Missouri, LLC",
+              "ownership_pct": null,
+              "parent": "First Tower, LLC",
+              "page_reference": 458,
+              "section_title": "Note 1. Description of Business",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Harrison Finance, LLC",
+              "ownership_pct": null,
+              "parent": "First Tower, LLC",
+              "page_reference": 458,
+              "section_title": "Note 1. Description of Business",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Harrison Loan LLC",
+              "ownership_pct": null,
+              "parent": "Harrison Finance, LLC",
+              "page_reference": 458,
+              "section_title": "Note 1. Description of Business",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Tower Loan of Florida LLC",
+              "ownership_pct": null,
+              "parent": "First Tower, LLC",
+              "page_reference": 458,
+              "section_title": "Note 1. Description of Business",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Tower Loan of Tennessee",
+              "ownership_pct": null,
+              "parent": "First Tower, LLC",
+              "page_reference": 458,
+              "section_title": "Note 1. Description of Business",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Tower Auto Loan, LLC",
+              "ownership_pct": null,
+              "parent": "First Tower, LLC",
+              "page_reference": 458,
+              "section_title": "Note 1. Description of Business",
+              "table_title": null,
+              "note": "Dissolved December, 2024"
+            },
+            {
+              "name": "Tower Funding Trust",
+              "ownership_pct": null,
+              "parent": "Tower Loan of Mississippi, LLC",
+              "page_reference": 458,
+              "section_title": "Note 1. Description of Business",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "American Federated Holding Company",
+              "ownership_pct": null,
+              "parent": "Tower Loan of Mississippi, LLC",
+              "page_reference": 458,
+              "section_title": "Note 1. Description of Business",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "American Federated Insurance Company (AFIC)",
+              "ownership_pct": null,
+              "parent": "American Federated Holding Company",
+              "page_reference": 458,
+              "section_title": "Note 1. Description of Business",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "American Federated Life Insurance Company (AFLIC)",
+              "ownership_pct": null,
+              "parent": "American Federated Holding Company",
+              "page_reference": 458,
+              "section_title": "Note 1. Description of Business",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
         }
       },
       "attempts": {}
@@ -7303,7 +7473,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-20T11:37:19.893997+00:00",
+    "at": "2026-09-21T11:07:53.699408+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -7318,7 +7488,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-20T11:37:20.329146+00:00",
+    "at": "2026-09-21T11:07:54.311205+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -7363,7 +7533,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-20T11:37:40.055108+00:00",
+    "at": "2026-09-21T11:07:55.077615+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -7378,7 +7548,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-20T11:37:27.172705+00:00",
+    "at": "2026-09-21T11:07:54.730887+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -7393,7 +7563,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-20T11:37:33.938393+00:00",
+    "at": "2026-09-21T11:07:55.333544+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -7408,7 +7578,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-20T11:37:42.747542+00:00",
+    "at": "2026-09-21T11:07:55.742840+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -7423,7 +7593,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-20T11:37:47.326143+00:00",
+    "at": "2026-09-21T11:07:56.026094+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -7438,7 +7608,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-20T11:37:50.081648+00:00",
+    "at": "2026-09-21T11:07:56.416942+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -7453,7 +7623,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-20T11:37:54.373941+00:00",
+    "at": "2026-09-21T11:07:56.636119+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
