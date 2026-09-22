@@ -4182,574 +4182,19 @@
   },
   "1732721": {
     "company_id": "2397",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-22T10:38:22.889772+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 11,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "דורסל (ב.א.ז.) בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 5,
-              "section_title": "תיאור עסקי התאגיד",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "תורן חברה לפיתוח ונכסים בע\"מ",
-              "ownership_pct": 100,
-              "parent": "דורסל (ב.א.ז.) בע\"מ",
-              "page_reference": 5,
-              "section_title": "תיאור עסקי התאגיד",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "דורסל בונדד בע\"מ",
-              "ownership_pct": 100,
-              "parent": "דורסל (ב.א.ז.) בע\"מ",
-              "page_reference": 5,
-              "section_title": "תיאור עסקי התאגיד",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Dorsel UK Ltd",
-              "ownership_pct": 100,
-              "parent": "דורסל (ב.א.ז.) בע\"מ",
-              "page_reference": 5,
-              "section_title": "תיאור עסקי התאגיד",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Dorsel UK 1 Ltd",
-              "ownership_pct": 100,
-              "parent": "Dorsel UK Ltd",
-              "page_reference": 5,
-              "section_title": "תיאור עסקי התאגיד",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Dorsel UK 2 Ltd",
-              "ownership_pct": 100,
-              "parent": "Dorsel UK Ltd",
-              "page_reference": 5,
-              "section_title": "תיאור עסקי התאגיד",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Dorsel UK 3 Ltd",
-              "ownership_pct": 100,
-              "parent": "Dorsel UK Ltd",
-              "page_reference": 5,
-              "section_title": "תיאור עסקי התאגיד",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Dorsel UK 4 Ltd",
-              "ownership_pct": 100,
-              "parent": "Dorsel UK Ltd",
-              "page_reference": 5,
-              "section_title": "תיאור עסקי התאגיד",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "קרית יבנה בע\"מ",
-              "ownership_pct": 50,
-              "parent": "דורסל (ב.א.ז.) בע\"מ",
-              "page_reference": 5,
-              "section_title": "תיאור עסקי התאגיד",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "LIMASSOL MALL LTD",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 5,
-              "section_title": "תיאור עסקי התאגיד",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Dorsel Suna Co Ltd",
-              "ownership_pct": 75,
-              "parent": null,
-              "page_reference": 5,
-              "section_title": "תיאור עסקי התאגיד",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מעלות סנטר שותפות מוגבלת",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 5,
-              "section_title": "תיאור עסקי התאגיד",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מעלות תרשיחא סטאר שותף כללי בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 5,
-              "section_title": "תיאור עסקי התאגיד",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2024-12-31",
-          "subsidiaries": [
-            {
-              "name": "קריית יבנה",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 18,
-              "section_title": "1.6.2 פילוח שווי נדל\"ן מניב לפי אזורים ושימושים, ליום 31/12/2024",
-              "table_title": null,
-              "note": "הסדר משותף"
-            },
-            {
-              "name": "תורן",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 32,
-              "section_title": "1.6.3.2 בית אומגה",
-              "table_title": null,
-              "note": "חברת בת"
-            },
-            {
-              "name": "דורסל בונדד",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 36,
-              "section_title": "1.6.3.3 מתחם נמל אשדוד",
-              "table_title": null,
-              "note": "חברת בת"
-            }
-          ],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "דורסל בונדד בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 70,
-              "section_title": "1.6.3.3 מתחם נמל אשדוד",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "קריית יבנה",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 80,
-              "section_title": "1.6.4.3 קרית יבנה",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "לימסול מול בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 66,
-              "section_title": "1.8.2 מצב המשק בקפריסין",
-              "table_title": null,
-              "note": "בעלות ושליטה משותפת עם ארי נדל\"ן השקעות בע\"מ"
-            }
-          ],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "דורסל (ב.א.ז) בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 81,
-              "section_title": "1. התאגיד",
-              "table_title": null,
-              "note": "חברה בת בבעלות מלאה"
-            },
-            {
-              "name": "Tiffany Investments Ltd",
-              "ownership_pct": 41.5,
-              "parent": null,
-              "page_reference": 86,
-              "section_title": "6. ניתוח התוצאות ע\"פ תחומי פעילות",
-              "table_title": null,
-              "note": "החברה המחזיקה בקניון My Mall Limassol, בשיעור אחזקה בשרשור"
-            }
-          ],
-          "change_events": []
-        },
-        "0:5": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "חברה מוחזקת בקפריסין (הקניון)",
-              "ownership_pct": 41.5,
-              "parent": null,
-              "page_reference": 92,
-              "section_title": "ניתוח התוצאות ע\"פ תחומי פעילות",
-              "table_title": null,
-              "note": "בשיעור אחזקה בשרשור"
-            }
-          ],
-          "change_events": []
-        },
-        "0:6": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "דורסל יעד מיזוג בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 110,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "דורסל (ב.א.ז) בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 110,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "תורן חברה לפיתוח ונכסים (1989) בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 110,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "דורסל בונדד בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 110,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Dorsel UK 1 Ltd",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 110,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Dorsel UK 2 Ltd",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 110,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Dorsel UK 3 Ltd",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 110,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Dorsel UK 4 Ltd",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 110,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Dorsel UK CYPRUS Ltd",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 110,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "DORSEL & SHUNA",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 110,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "קרית יבנה בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 110,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "LIMASSOL MALL LTD",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 110,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:7": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "דורסל ב.א.ז",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 123,
-              "section_title": "ביאור 7 - השקעה בחברות מוחזקות",
-              "table_title": "א. חברות מאוחדות",
-              "note": null
-            },
-            {
-              "name": "תורן",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 123,
-              "section_title": "ביאור 7 - השקעה בחברות מוחזקות",
-              "table_title": "א. חברות מאוחדות",
-              "note": null
-            },
-            {
-              "name": "דורסל בונדד",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 123,
-              "section_title": "ביאור 7 - השקעה בחברות מוחזקות",
-              "table_title": "א. חברות מאוחדות",
-              "note": null
-            },
-            {
-              "name": "UK Dorsel",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 123,
-              "section_title": "ביאור 7 - השקעה בחברות מוחזקות",
-              "table_title": "א. חברות מאוחדות",
-              "note": null
-            },
-            {
-              "name": "1 UK Dorsel",
-              "ownership_pct": 100,
-              "parent": "UK Dorsel",
-              "page_reference": 123,
-              "section_title": "ביאור 7 - השקעה בחברות מוחזקות",
-              "table_title": "א. חברות מאוחדות",
-              "note": null
-            },
-            {
-              "name": "2 UK Dorsel",
-              "ownership_pct": 100,
-              "parent": "UK Dorsel",
-              "page_reference": 123,
-              "section_title": "ביאור 7 - השקעה בחברות מוחזקות",
-              "table_title": "א. חברות מאוחדות",
-              "note": null
-            },
-            {
-              "name": "3 UK Dorsel",
-              "ownership_pct": 100,
-              "parent": "UK Dorsel",
-              "page_reference": 123,
-              "section_title": "ביאור 7 - השקעה בחברות מוחזקות",
-              "table_title": "א. חברות מאוחדות",
-              "note": null
-            },
-            {
-              "name": "4 UK Dorsel",
-              "ownership_pct": 100,
-              "parent": "UK Dorsel",
-              "page_reference": 123,
-              "section_title": "ביאור 7 - השקעה בחברות מוחזקות",
-              "table_title": "א. חברות מאוחדות",
-              "note": null
-            },
-            {
-              "name": "DORSEL & SHUNA Ltd",
-              "ownership_pct": 75,
-              "parent": null,
-              "page_reference": 123,
-              "section_title": "ביאור 7 - השקעה בחברות מוחזקות",
-              "table_title": "א. חברות מאוחדות",
-              "note": null
-            },
-            {
-              "name": "קריית יבנה",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 124,
-              "section_title": "ביאור 7 - השקעה בחברות מוחזקות",
-              "table_title": "ב. השקעות המטופלות לפי שיטת השווי המאזני",
-              "note": "חברה כלולה המטופלת לפי שיטת השווי המאזני"
-            },
-            {
-              "name": "לימסול מול",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 124,
-              "section_title": "ביאור 7 - השקעה בחברות מוחזקות",
-              "table_title": "ב. השקעות המטופלות לפי שיטת השווי המאזני",
-              "note": "חברה כלולה המטופלת לפי שיטת השווי המאזני"
-            }
-          ],
-          "change_events": []
-        },
-        "0:8": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "תורן",
-              "ownership_pct": 100,
-              "parent": "דורסל החזקות בע\"מ",
-              "page_reference": 196,
-              "section_title": "ביאור 27 - אירועים מהותיים בתקופת הדיווח ולאחריה",
-              "table_title": null,
-              "note": "חברה נכדה בבעלות מלאה"
-            },
-            {
-              "name": "דורסל בונדד",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 177,
-              "section_title": "ביאור 13 - הלוואות מתאגידים בנקאיים ומנותני אשראי אחרים (המשך)",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "דורסל ב.א.ז",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 179,
-              "section_title": "ביאור 14 - אגרות חוב",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "1 UK Dorsel",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 178,
-              "section_title": "ביאור 13 - הלוואות מתאגידים בנקאיים ומנותני אשראי אחרים (המשך)",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "2 UK Dorsel",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 184,
-              "section_title": "ביאור 16 - התחייבויות תלויות, התקשרויות ושיעבודים",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "3 UK Dorsel",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 184,
-              "section_title": "ביאור 16 - התחייבויות תלויות, התקשרויות ושיעבודים",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "4 UK Dorsel",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 184,
-              "section_title": "ביאור 16 - התחייבויות תלויות, התקשרויות ושיעבודים",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-22T10:38:57.974069+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1733212": {
     "company_id": "797",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-21T11:07:58.717918+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 9,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-22T10:40:28.156882+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731818": {
     "company_id": "2505",
@@ -4768,48 +4213,27 @@
   },
   "1730011": {
     "company_id": "1298",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-21T11:07:58.971998+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 12,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-22T10:42:10.237109+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1729769": {
     "company_id": "454",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-21T11:07:59.243675+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 13,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-22T10:43:55.006820+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731005": {
     "company_id": "1911",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-21T11:07:59.478711+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 7,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-22T10:43:29.462422+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731813": {
     "company_id": "1063",
@@ -4828,18 +4252,11 @@
   },
   "1730139": {
     "company_id": "1182",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-21T11:08:00.095025+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 8,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-22T10:45:16.578985+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1733187": {
     "company_id": "485",
@@ -4858,76 +4275,304 @@
   },
   "1727611": {
     "company_id": "1294",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-21T11:08:00.210699+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-22T10:46:41.906641+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732631": {
     "company_id": "299",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-21T11:07:59.802428+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 8,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-22T10:45:29.333459+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1726454": {
     "company_id": "1221",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-21T11:08:00.421126+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 9,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-22T10:47:44.221782+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1730504": {
     "company_id": "1447",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-21T11:08:00.619033+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 12,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-22T10:49:36.087215+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1739162": {
     "company_id": "462",
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-21T11:08:00.884512+00:00",
+    "at": "2026-09-22T10:49:20.574258+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 11,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "קנאבליס בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "תרשים מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גלובוס פארמה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "תרשים מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ג'ובוקיט טכנולוגיות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "תרשים מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ירוק תוצרת רפואית בע\"מ",
+              "ownership_pct": 100,
+              "parent": "גלובוס פארמה בע\"מ",
+              "page_reference": 7,
+              "section_title": "תרשים מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גידול צמחי קנאביס רפואי, שותפות מוגבלת",
+              "ownership_pct": 67,
+              "parent": "גלובוס פארמה בע\"מ",
+              "page_reference": 7,
+              "section_title": "תרשים מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Industrial Globus Uganda Ltd",
+              "ownership_pct": 80.5,
+              "parent": "גלובוס פארמה בע\"מ",
+              "page_reference": 7,
+              "section_title": "תרשים מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "גלובוס פארמה",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 32,
+              "section_title": "6.20 הון אנושי",
+              "table_title": "שינויים במצבת ההון האנושי",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "גלובוס פארמה בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 46,
+              "section_title": "6.29 הליכים משפטיים",
+              "table_title": null,
+              "note": "תאגיד שבשליטת החברה"
+            },
+            {
+              "name": "ירוק תוצרת רפואית בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 46,
+              "section_title": "6.29 הליכים משפטיים",
+              "table_title": null,
+              "note": "תאגיד שבשליטת החברה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "חברת הבת באוגנדה",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 56,
+              "section_title": "מצב כספי",
+              "table_title": null,
+              "note": "רכישת כ- 20% מזכויות המיעוט בחברת הבת באוגנדה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2024-12-31",
+          "subsidiaries": [
+            {
+              "name": "גלובוס פארמה בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 85,
+              "section_title": "ביאור 1 - כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "קנאבליס בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 85,
+              "section_title": "ביאור 1 - כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ג'ובוקיט טכנולוגיות בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 85,
+              "section_title": "ביאור 1 - כללי",
+              "table_title": null,
+              "note": "בעלות מלאה"
+            },
+            {
+              "name": "ירוק תוצרת רפואית בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 85,
+              "section_title": "ביאור 1 - כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "חברת בת באוגנדה",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 85,
+              "section_title": "ביאור 1 - כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "שותפות גידול צמחי קנאביס רפואי, שותפות מוגבלת",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 85,
+              "section_title": "ביאור 1 - כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "טוגדר קנאביס בע\"מ",
+              "ownership_pct": 50,
+              "parent": "ג'ובוקיט טכנולוגיות בע\"מ",
+              "page_reference": 85,
+              "section_title": "ביאור 1 - כללי",
+              "table_title": null,
+              "note": "הוחזקה באמצעות ג'ובוקיט ונמכרה בדצמבר 2023"
+            }
+          ],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "ג'ובוקיט טכנולוגיות בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 100,
+              "section_title": "ביאור 4 - השקעה בחברות מוחזקות",
+              "table_title": "להלן פרטי חברות מוחזקות:",
+              "note": null
+            },
+            {
+              "name": "גלובוס פארמה בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 100,
+              "section_title": "ביאור 4 - השקעה בחברות מוחזקות",
+              "table_title": "להלן פרטי חברות מוחזקות:",
+              "note": null
+            },
+            {
+              "name": "קנאבליס בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 100,
+              "section_title": "ביאור 4 - השקעה בחברות מוחזקות",
+              "table_title": "להלן פרטי חברות מוחזקות:",
+              "note": null
+            },
+            {
+              "name": "גידול צמחי קנאביס רפואי שותפות מוגבלת",
+              "ownership_pct": 66.67,
+              "parent": "גלובוס פארמה בע\"מ",
+              "page_reference": 100,
+              "section_title": "ביאור 4 - השקעה בחברות מוחזקות",
+              "table_title": "להלן פרטי חברות מוחזקות:",
+              "note": null
+            },
+            {
+              "name": "ירוק תוצרת רפואית בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": "גלובוס פארמה בע\"מ",
+              "page_reference": 100,
+              "section_title": "ביאור 4 - השקעה בחברות מוחזקות",
+              "table_title": "להלן פרטי חברות מוחזקות:",
+              "note": null
+            },
+            {
+              "name": "Industrial Globus Uganda",
+              "ownership_pct": 80.5,
+              "parent": "גלובוס פארמה בע\"מ",
+              "page_reference": 100,
+              "section_title": "ביאור 4 - השקעה בחברות מוחזקות",
+              "table_title": "להלן פרטי חברות מוחזקות:",
+              "note": "שיעור ההחזקה עודכן מ-61% ל-80.5% במהלך התקופה"
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
