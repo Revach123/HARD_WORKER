@@ -4441,151 +4441,11 @@
   },
   "1732730": {
     "company_id": "2357",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-22T11:13:32.518076+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 8,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "אימאג'סאט אינטרנשיונל אן. וי.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "חלק ב' - תיאור ההתפתחות הכללית של עסקי החברה",
-              "table_title": null,
-              "note": "החברה אינה פעילה."
-            },
-            {
-              "name": "ISI USA LLC",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "חלק ב' - תיאור ההתפתחות הכללית של עסקי החברה",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "אימאג'סט NV",
-              "ownership_pct": 99.996,
-              "parent": null,
-              "page_reference": 87,
-              "section_title": "באור 10: - השקעות בחברות מוחזקות",
-              "table_title": null,
-              "note": "החברה מחזיקה באימאג'סט NV בשיעור של 99.996%. ראה גם ביאור 20 ד'."
-            },
-            {
-              "name": "ISI USA LLC",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 87,
-              "section_title": "באור 10: - השקעות בחברות מוחזקות",
-              "table_title": null,
-              "note": "חברה לא פעילה."
-            }
-          ],
-          "change_events": []
-        },
-        "0:5": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "אימאג'סט NV",
-              "ownership_pct": 99.996,
-              "parent": null,
-              "page_reference": 87,
-              "section_title": "באור :10 - השקעות בחברות מוחזקות",
-              "table_title": "השקעות בחברות מוחזקות",
-              "note": "החברה מחזיקה באימאג'סט NV בשיעור של 99.996%"
-            },
-            {
-              "name": "ISI USA LLC",
-              "ownership_pct": 100.0,
-              "parent": null,
-              "page_reference": 87,
-              "section_title": "באור :10 - השקעות בחברות מוחזקות",
-              "table_title": "השקעות בחברות מוחזקות",
-              "note": "חברה לא פעילה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:6": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "אימאג'סט אינטרנשיונל אן.וי (אימאג'סט NV)",
-              "ownership_pct": 99.996,
-              "parent": null,
-              "page_reference": 112,
-              "section_title": "תקנה 11 – רשימת השקעות בחברות בת ובחברות קשורות",
-              "table_title": "תקנה 11 – רשימת השקעות בחברות בת ובחברות קשורות",
-              "note": null
-            },
-            {
-              "name": "ISI USA LLC",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 112,
-              "section_title": "תקנה 11 – רשימת השקעות בחברות בת ובחברות קשורות",
-              "table_title": "תקנה 11 – רשימת השקעות בחברות בת ובחברות קשורות",
-              "note": "חברת הבת, אשר מאוגדת בארה\"ב, הינה בבעלות מלאה של החברה ונכון למועד זה אינה פעילה."
-            }
-          ],
-          "change_events": []
-        },
-        "0:7": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-22T11:13:34.090863+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1725685": {
     "company_id": "333",
@@ -5779,7 +5639,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-21T11:08:28.026867+00:00",
+    "at": "2026-09-22T11:13:32.860411+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -5809,7 +5669,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-21T11:08:28.187357+00:00",
+    "at": "2026-09-22T11:13:33.134379+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -5824,7 +5684,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-21T11:08:28.461344+00:00",
+    "at": "2026-09-22T11:13:33.478815+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -5839,7 +5699,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-21T11:08:28.685284+00:00",
+    "at": "2026-09-22T11:13:33.684626+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -5854,7 +5714,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-21T11:08:28.948499+00:00",
+    "at": "2026-09-22T11:13:33.899706+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -5869,7 +5729,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-21T11:08:29.208496+00:00",
+    "at": "2026-09-22T11:13:34.233440+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -5884,7 +5744,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-21T11:08:29.434787+00:00",
+    "at": "2026-09-22T11:13:34.455071+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -5899,7 +5759,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-21T11:08:29.602378+00:00",
+    "at": "2026-09-22T11:13:34.645779+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -5914,7 +5774,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-21T11:08:29.779248+00:00",
+    "at": "2026-09-22T11:13:34.815441+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -5929,7 +5789,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-21T11:08:29.931847+00:00",
+    "at": "2026-09-22T11:13:35.021863+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
