@@ -4307,334 +4307,43 @@
   },
   "1739162": {
     "company_id": "462",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-22T10:49:20.574258+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 11,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "קנאבליס בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 7,
-              "section_title": "תרשים מבנה החזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "גלובוס פארמה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 7,
-              "section_title": "תרשים מבנה החזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ג'ובוקיט טכנולוגיות בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 7,
-              "section_title": "תרשים מבנה החזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ירוק תוצרת רפואית בע\"מ",
-              "ownership_pct": 100,
-              "parent": "גלובוס פארמה בע\"מ",
-              "page_reference": 7,
-              "section_title": "תרשים מבנה החזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "גידול צמחי קנאביס רפואי, שותפות מוגבלת",
-              "ownership_pct": 67,
-              "parent": "גלובוס פארמה בע\"מ",
-              "page_reference": 7,
-              "section_title": "תרשים מבנה החזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Industrial Globus Uganda Ltd",
-              "ownership_pct": 80.5,
-              "parent": "גלובוס פארמה בע\"מ",
-              "page_reference": 7,
-              "section_title": "תרשים מבנה החזקות החברה",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "גלובוס פארמה",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 32,
-              "section_title": "6.20 הון אנושי",
-              "table_title": "שינויים במצבת ההון האנושי",
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "גלובוס פארמה בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 46,
-              "section_title": "6.29 הליכים משפטיים",
-              "table_title": null,
-              "note": "תאגיד שבשליטת החברה"
-            },
-            {
-              "name": "ירוק תוצרת רפואית בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 46,
-              "section_title": "6.29 הליכים משפטיים",
-              "table_title": null,
-              "note": "תאגיד שבשליטת החברה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "חברת הבת באוגנדה",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 56,
-              "section_title": "מצב כספי",
-              "table_title": null,
-              "note": "רכישת כ- 20% מזכויות המיעוט בחברת הבת באוגנדה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2024-12-31",
-          "subsidiaries": [
-            {
-              "name": "גלובוס פארמה בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 85,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "קנאבליס בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 85,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ג'ובוקיט טכנולוגיות בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 85,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": "בעלות מלאה"
-            },
-            {
-              "name": "ירוק תוצרת רפואית בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 85,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "חברת בת באוגנדה",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 85,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "שותפות גידול צמחי קנאביס רפואי, שותפות מוגבלת",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 85,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "טוגדר קנאביס בע\"מ",
-              "ownership_pct": 50,
-              "parent": "ג'ובוקיט טכנולוגיות בע\"מ",
-              "page_reference": 85,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": "הוחזקה באמצעות ג'ובוקיט ונמכרה בדצמבר 2023"
-            }
-          ],
-          "change_events": []
-        },
-        "0:5": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "ג'ובוקיט טכנולוגיות בע\"מ",
-              "ownership_pct": 100.0,
-              "parent": null,
-              "page_reference": 100,
-              "section_title": "ביאור 4 - השקעה בחברות מוחזקות",
-              "table_title": "להלן פרטי חברות מוחזקות:",
-              "note": null
-            },
-            {
-              "name": "גלובוס פארמה בע\"מ",
-              "ownership_pct": 100.0,
-              "parent": null,
-              "page_reference": 100,
-              "section_title": "ביאור 4 - השקעה בחברות מוחזקות",
-              "table_title": "להלן פרטי חברות מוחזקות:",
-              "note": null
-            },
-            {
-              "name": "קנאבליס בע\"מ",
-              "ownership_pct": 100.0,
-              "parent": null,
-              "page_reference": 100,
-              "section_title": "ביאור 4 - השקעה בחברות מוחזקות",
-              "table_title": "להלן פרטי חברות מוחזקות:",
-              "note": null
-            },
-            {
-              "name": "גידול צמחי קנאביס רפואי שותפות מוגבלת",
-              "ownership_pct": 66.67,
-              "parent": "גלובוס פארמה בע\"מ",
-              "page_reference": 100,
-              "section_title": "ביאור 4 - השקעה בחברות מוחזקות",
-              "table_title": "להלן פרטי חברות מוחזקות:",
-              "note": null
-            },
-            {
-              "name": "ירוק תוצרת רפואית בע\"מ",
-              "ownership_pct": 100.0,
-              "parent": "גלובוס פארמה בע\"מ",
-              "page_reference": 100,
-              "section_title": "ביאור 4 - השקעה בחברות מוחזקות",
-              "table_title": "להלן פרטי חברות מוחזקות:",
-              "note": null
-            },
-            {
-              "name": "Industrial Globus Uganda",
-              "ownership_pct": 80.5,
-              "parent": "גלובוס פארמה בע\"מ",
-              "page_reference": 100,
-              "section_title": "ביאור 4 - השקעה בחברות מוחזקות",
-              "table_title": "להלן פרטי חברות מוחזקות:",
-              "note": "שיעור ההחזקה עודכן מ-61% ל-80.5% במהלך התקופה"
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-22T10:51:27.939931+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1735805": {
     "company_id": "1944",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-21T11:08:01.446043+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 14,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-22T10:53:37.656568+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732623": {
     "company_id": "1675",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-21T11:08:01.165799+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 14,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-22T10:55:16.630277+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732160": {
     "company_id": "2535",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-21T11:08:01.654775+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 11,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-22T10:56:01.827447+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732123": {
     "company_id": "673",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-21T11:08:01.977592+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 11,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-22T10:58:53.391866+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1736408": {
     "company_id": "266",
@@ -4653,18 +4362,11 @@
   },
   "1730724": {
     "company_id": "2486",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-21T11:08:02.334415+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 13,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-22T10:59:43.331644+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731154": {
     "company_id": "1943",
@@ -4683,76 +4385,98 @@
   },
   "1730171": {
     "company_id": "2371",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-21T11:08:02.616686+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 14,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-22T11:01:58.390656+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1727025": {
     "company_id": "2464",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-21T11:08:02.928253+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 17,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-22T11:06:22.895870+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1726188": {
     "company_id": "2534",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-21T11:08:03.393415+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 7,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-22T11:04:24.895234+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732716": {
     "company_id": "1025",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-21T11:08:03.243058+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 11,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-22T11:08:07.980996+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1736370": {
     "company_id": "1936",
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-21T11:08:03.619963+00:00",
+    "at": "2026-09-22T11:07:59.787374+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 9,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
