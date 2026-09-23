@@ -5333,10 +5333,34 @@
   },
   "1736500": {
     "company_id": "2250",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-23T10:59:00.344376+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1733440": {
+    "company_id": "1318",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-23T10:59:54.396400+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1729733": {
+    "company_id": "1765",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-23T11:02:53.898771+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1732015": {
+    "company_id": "1226",
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-23T10:57:14.360268+00:00",
+    "at": "2026-09-23T11:04:09.846194+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -5344,519 +5368,177 @@
       "total": 12,
       "done": {
         "0:0": {
-          "report_format": "10-K",
+          "report_format": "israeli_periodic",
           "document_type": "ownership_snapshot",
           "as_of_date": "2025-12-31",
           "subsidiaries": [
             {
-              "name": "OPC LLC",
-              "ownership_pct": null,
+              "name": "S.I.K Holding ApS",
+              "ownership_pct": 100,
               "parent": null,
-              "page_reference": 16,
-              "section_title": "Glossary of Terms",
-              "table_title": null,
-              "note": "A consolidated subsidiary of the Company"
-            },
-            {
-              "name": "OrCal Geothermal Inc.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 16,
-              "section_title": "Glossary of Terms",
-              "table_title": null,
-              "note": "A wholly owned subsidiary of the Company"
-            },
-            {
-              "name": "Ormat International Inc.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 17,
-              "section_title": "Glossary of Terms",
-              "table_title": null,
-              "note": "A wholly owned subsidiary of the Company"
-            },
-            {
-              "name": "Ormat Nevada Inc.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 17,
-              "section_title": "Glossary of Terms",
-              "table_title": null,
-              "note": "A wholly owned subsidiary of the Company"
-            },
-            {
-              "name": "Ormat Systems Ltd.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 17,
-              "section_title": "Glossary of Terms",
-              "table_title": null,
-              "note": "A wholly owned subsidiary of the Company"
-            },
-            {
-              "name": "ORPD LLC",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 17,
-              "section_title": "Glossary of Terms",
-              "table_title": null,
-              "note": "A holding company subsidiary of the Company in which Northleaf Geothermal Holdings, LLC holds a 36.75% equity interest"
-            },
-            {
-              "name": "OrPower 4 Inc.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 17,
-              "section_title": "Glossary of Terms",
-              "table_title": null,
-              "note": "A wholly owned subsidiary of the Company"
-            },
-            {
-              "name": "Ortitlan Limitada",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 17,
-              "section_title": "Glossary of Terms",
-              "table_title": null,
-              "note": "A wholly owned subsidiary of the Company"
-            },
-            {
-              "name": "ORTP, LLC",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 17,
-              "section_title": "Glossary of Terms",
-              "table_title": null,
-              "note": "A consolidated subsidiary of the Company"
-            },
-            {
-              "name": "Orzunil I de Electricidad, Limitada",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 17,
-              "section_title": "Glossary of Terms",
-              "table_title": null,
-              "note": "A wholly owned subsidiary of the Company"
-            },
-            {
-              "name": "Puna Geothermal Venture",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 17,
-              "section_title": "Glossary of Terms",
-              "table_title": null,
-              "note": "A wholly owned subsidiary of the Company"
-            },
-            {
-              "name": "Sarulla Operations Ltd.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 18,
-              "section_title": "Glossary of Terms",
+              "page_reference": 5,
+              "section_title": "פרק 1: תאור עסקי התאגיד",
               "table_title": null,
               "note": null
             },
             {
-              "name": "Viridity Energy Solutions Inc.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 18,
-              "section_title": "Glossary of Terms",
+              "name": "Golan Pipe Systems A.S",
+              "ownership_pct": 100,
+              "parent": "S.I.K Holding ApS",
+              "page_reference": 5,
+              "section_title": "פרק 1: תאור עסקי התאגיד",
               "table_title": null,
-              "note": "A wholly owned subsidiary of the Company"
+              "note": null
+            },
+            {
+              "name": "Golan Plastic Chile A.S",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "פרק 1: תאור עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Crosspipe Systems S.A.",
+              "ownership_pct": 50,
+              "parent": "Golan Plastic Chile A.S",
+              "page_reference": 5,
+              "section_title": "פרק 1: תאור עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ARGPEX S.A.",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "פרק 1: תאור עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Quickpipes Systems S.A. de C.V.",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "פרק 1: תאור עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Golan USA Inc",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "פרק 1: תאור עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "GOLCHIEF, LLC",
+              "ownership_pct": 51,
+              "parent": "Golan USA Inc",
+              "page_reference": 6,
+              "section_title": "פרק 1: תאור עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "וויזסול בע\"מ",
+              "ownership_pct": 31.9,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "פרק 1: תאור עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פלאגול בע\"מ",
+              "ownership_pct": 31.9,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "פרק 1: תאור עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גולן השקעות מתחדשות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "פרק 1: תאור עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גולן רוסיה",
+              "ownership_pct": 26,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "תרשים מבנה אחזקות של הקבוצה למועד הדוח",
+              "table_title": null,
+              "note": "לחברה אין השפעה מהותית בחברה זו"
             }
           ],
           "change_events": []
         },
         "0:1": {
-          "report_format": "10-K",
+          "report_format": "israeli_periodic",
           "document_type": "ownership_snapshot",
-          "as_of_date": "2026-02-25",
+          "as_of_date": null,
           "subsidiaries": [
             {
-              "name": "Viridity Energy Solutions Inc.",
-              "ownership_pct": null,
+              "name": "GOLCHIEF, LLC",
+              "ownership_pct": 51,
               "parent": null,
-              "page_reference": 18,
-              "section_title": null,
+              "page_reference": 35,
+              "section_title": "השקעות",
               "table_title": null,
-              "note": "wholly owned subsidiary of the Company"
+              "note": null
             },
             {
-              "name": "Ormesa Complex",
+              "name": "S.I.K. Holdings ApS",
               "ownership_pct": 100,
               "parent": null,
-              "page_reference": 25,
-              "section_title": "Power Plants in Operation",
+              "page_reference": 35,
+              "section_title": "השקעות",
+              "table_title": null,
+              "note": "חברת הבת בדנמרק"
+            },
+            {
+              "name": "וויזסול בע\"מ",
+              "ownership_pct": 31.9,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "השקעות",
               "table_title": null,
               "note": null
             },
             {
-              "name": "Heber Complex",
-              "ownership_pct": 100,
+              "name": "QUICKPIPES SYSTEMS S A DE CV",
+              "ownership_pct": 51,
               "parent": null,
-              "page_reference": 25,
-              "section_title": "Power Plants in Operation",
+              "page_reference": 37,
+              "section_title": "השקעות",
               "table_title": null,
               "note": null
             },
             {
-              "name": "Mammoth Complex",
-              "ownership_pct": 100,
+              "name": "CROSSPIPE SYSTEMS S.A",
+              "ownership_pct": 50,
               "parent": null,
-              "page_reference": 25,
-              "section_title": "Power Plants in Operation",
+              "page_reference": 23,
+              "section_title": "הפצה באמצעות חברות מוחזקות",
               "table_title": null,
               "note": null
             },
             {
-              "name": "Brawley",
-              "ownership_pct": 100,
+              "name": "Argpex",
+              "ownership_pct": 51,
               "parent": null,
-              "page_reference": 25,
-              "section_title": "Power Plants in Operation",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Steamboat Complex",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 25,
-              "section_title": "Power Plants in Operation",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Brady Complex",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 25,
-              "section_title": "Power Plants in Operation",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Tuscarora",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 25,
-              "section_title": "Power Plants in Operation",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Jersey Valley",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 25,
-              "section_title": "Power Plants in Operation",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "McGinness Hills",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 25,
-              "section_title": "Power Plants in Operation",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Don A. Campbell",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 25,
-              "section_title": "Power Plants in Operation",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Tungsten Mountain",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 25,
-              "section_title": "Power Plants in Operation",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Dixie Valley",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 25,
-              "section_title": "Power Plants in Operation",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Blue Mountain",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 25,
-              "section_title": "Power Plants in Operation",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Beowawe",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 25,
-              "section_title": "Power Plants in Operation",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Neal Hot Springs",
-              "ownership_pct": 60,
-              "parent": null,
-              "page_reference": 25,
-              "section_title": "Power Plants in Operation",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Raft River",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 25,
-              "section_title": "Power Plants in Operation",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "San Emidio",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 25,
-              "section_title": "Power Plants in Operation",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Still Water Complex",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 25,
-              "section_title": "Power Plants in Operation",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Salt Wells",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 25,
-              "section_title": "Power Plants in Operation",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Puna",
-              "ownership_pct": 63.3,
-              "parent": null,
-              "page_reference": 25,
-              "section_title": "Power Plants in Operation",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Cove Fort",
-              "ownership_pct": 100.0,
-              "parent": null,
-              "page_reference": 26,
-              "section_title": "Power Plants in Operation",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Amatitlan (Guatemala)",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 26,
-              "section_title": "Power Plants in Operation",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Zunil (Guatemala)",
-              "ownership_pct": 97,
-              "parent": null,
-              "page_reference": 26,
-              "section_title": "Power Plants in Operation",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Olkaria III Complex (Kenya)",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 26,
-              "section_title": "Power Plants in Operation",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Bouillante (Guadeloupe, France)",
-              "ownership_pct": 63.75,
-              "parent": null,
-              "page_reference": 26,
-              "section_title": "Power Plants in Operation",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Platanares (Honduras)",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 26,
-              "section_title": "Power Plants in Operation",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "OREG 1",
-              "ownership_pct": 100.0,
-              "parent": null,
-              "page_reference": 26,
-              "section_title": "Power Plants in Operation",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "OREG 2",
-              "ownership_pct": 100.0,
-              "parent": null,
-              "page_reference": 26,
-              "section_title": "Power Plants in Operation",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "OREG 3",
-              "ownership_pct": 100.0,
-              "parent": null,
-              "page_reference": 26,
-              "section_title": "Power Plants in Operation",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Tungsten Mountain (Solar)",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 26,
-              "section_title": "Power Plants in Operation",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Wister",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 26,
-              "section_title": "Power Plants in Operation",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Steamboat Solar",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 26,
-              "section_title": "Power Plants in Operation",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Stillwater Solar PV",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 26,
-              "section_title": "Power Plants in Operation",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Stillwater Solar PV II",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 26,
-              "section_title": "Power Plants in Operation",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Woods Hill",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 26,
-              "section_title": "Power Plants in Operation",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "North Valley",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 26,
-              "section_title": "Power Plants in Operation",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Beowawe (Solar)",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 26,
-              "section_title": "Power Plants in Operation",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Arrowleaf",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 26,
-              "section_title": "Power Plants in Operation",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Brady (Solar)",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 26,
-              "section_title": "Power Plants in Operation",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Hoku",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 26,
-              "section_title": "Power Plants in Operation",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Sarulla Complex",
-              "ownership_pct": 12.75,
-              "parent": null,
-              "page_reference": 26,
-              "section_title": "Power Plants in Operation",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Ijen",
-              "ownership_pct": 49,
-              "parent": null,
-              "page_reference": 26,
-              "section_title": "Power Plants in Operation",
+              "page_reference": 23,
+              "section_title": "הפצה באמצעות חברות מוחזקות",
               "table_title": null,
               "note": null
             }
@@ -5864,98 +5546,911 @@
           "change_events": []
         },
         "0:2": {
-          "report_format": "20-F",
+          "report_format": "israeli_periodic",
           "document_type": "ownership_snapshot",
-          "as_of_date": null,
+          "as_of_date": "2025-12-31",
           "subsidiaries": [
             {
-              "name": "Two Energy Storage facilities in Israel",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 38,
-              "section_title": "Energy Storage",
+              "name": "GOLCHIEF, LLC",
+              "ownership_pct": 51,
+              "parent": "גולן ארה\"ב",
+              "page_reference": 67,
+              "section_title": "23. השקעות",
               "table_title": null,
-              "note": "Shared 50/50 between Ormat and Allied Infrastructure LTD"
+              "note": null
             },
             {
-              "name": "Ijen (Indonesia)",
-              "ownership_pct": 49,
+              "name": "S.I.K. Holdings ApS",
+              "ownership_pct": 100,
               "parent": null,
-              "page_reference": 46,
-              "section_title": "Foreign Power plants",
-              "table_title": "Foreign Power plants",
-              "note": "Represents Ormat's equity share in the project"
-            }
-          ],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "20-F",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "Sarulla complex",
-              "ownership_pct": 12.75,
-              "parent": null,
-              "page_reference": 106,
-              "section_title": "Our use of joint ventures may limit our flexibility with jointly owned investments.",
+              "page_reference": 67,
+              "section_title": "23. השקעות",
               "table_title": null,
-              "note": "Minority interest"
+              "note": null
+            },
+            {
+              "name": "וויזסול בע\"מ",
+              "ownership_pct": 31.9,
+              "parent": null,
+              "page_reference": 68,
+              "section_title": "23.3 וויזסול בע\"מ",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "QUICKPIPES SYSTEMS S A DE CV",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 69,
+              "section_title": "QUICKPIPES SYSTEMS S A DE CV",
+              "table_title": null,
+              "note": null
             }
           ],
           "change_events": []
         },
         "0:4": {
-          "report_format": "20-F",
-          "document_type": "change_events",
-          "as_of_date": null,
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
           "subsidiaries": [],
-          "change_events": [
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
             {
-              "company": "Blue Mountain geothermal power plant",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 100,
-              "event_date": "2025-06-01",
-              "event_description": "Closed the acquisition of 100% of the equity interest in the Blue Mountain geothermal power plant from Cyrq Energy.",
-              "page_reference": 85,
-              "section_title": "ITEM 7. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+              "name": "גולן שירותי הקרנה שותפות מוגבלת",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 116,
+              "section_title": "באור 11 - השקעות בחברות מוחזקות",
+              "table_title": "רשימת חברות המוחזקות ע\"י החברה:",
+              "note": "לא פעילה"
             },
             {
-              "company": "Two Energy Storage facilities (Israel)",
+              "name": "S.I.K. Holdings ApS",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 116,
+              "section_title": "באור 11 - השקעות בחברות מוחזקות",
+              "table_title": "רשימת חברות המוחזקות ע\"י החברה:",
+              "note": null
+            },
+            {
+              "name": "GOLAN PIPE SYSTEMS",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 116,
+              "section_title": "באור 11 - השקעות בחברות מוחזקות",
+              "table_title": "רשימת חברות המוחזקות ע\"י החברה:",
+              "note": null
+            },
+            {
+              "name": "OOO Golan Plast",
+              "ownership_pct": 26,
+              "parent": null,
+              "page_reference": 116,
+              "section_title": "באור 11 - השקעות בחברות מוחזקות",
+              "table_title": "רשימת חברות המוחזקות ע\"י החברה:",
+              "note": "לא פעילה"
+            },
+            {
+              "name": "Pexgol North America",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 116,
+              "section_title": "באור 11 - השקעות בחברות מוחזקות",
+              "table_title": "רשימת חברות המוחזקות ע\"י החברה:",
+              "note": "לא פעילה"
+            },
+            {
+              "name": "Golan Chile SPA",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 116,
+              "section_title": "באור 11 - השקעות בחברות מוחזקות",
+              "table_title": "רשימת חברות המוחזקות ע\"י החברה:",
+              "note": null
+            },
+            {
+              "name": "גולן השקעות מתחדשות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 116,
+              "section_title": "באור 11 - השקעות בחברות מוחזקות",
+              "table_title": "רשימת חברות המוחזקות ע\"י החברה:",
+              "note": null
+            },
+            {
+              "name": "ארגנטינה ARGPEX S.A",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 116,
+              "section_title": "באור 11 - השקעות בחברות מוחזקות",
+              "table_title": "רשימת חברות המוחזקות ע\"י החברה:",
+              "note": null
+            },
+            {
+              "name": "Crospipe System S.A",
+              "ownership_pct": 50,
+              "parent": "Golan Chile SPA",
+              "page_reference": 116,
+              "section_title": "באור 11 - השקעות בחברות מוחזקות",
+              "table_title": "רשימת חברות המוחזקות ע\"י החברה:",
+              "note": "מוחזקת 100% באמצעות Golan Chile SPA"
+            },
+            {
+              "name": "וויזסול בע\"מ",
+              "ownership_pct": 31.9,
+              "parent": null,
+              "page_reference": 116,
+              "section_title": "באור 11 - השקעות בחברות מוחזקות",
+              "table_title": "רשימת חברות המוחזקות ע\"י החברה:",
+              "note": null
+            },
+            {
+              "name": "פלאגול בע\"מ",
+              "ownership_pct": 31.9,
+              "parent": null,
+              "page_reference": 116,
+              "section_title": "באור 11 - השקעות בחברות מוחזקות",
+              "table_title": "רשימת חברות המוחזקות ע\"י החברה:",
+              "note": null
+            },
+            {
+              "name": "Quickpipes Systems SA",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 116,
+              "section_title": "באור 11 - השקעות בחברות מוחזקות",
+              "table_title": "רשימת חברות המוחזקות ע\"י החברה:",
+              "note": null
+            },
+            {
+              "name": "Golan USA Inc",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 116,
+              "section_title": "באור 11 - השקעות בחברות מוחזקות",
+              "table_title": "רשימת חברות המוחזקות ע\"י החברה:",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:7": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "וויזסול בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 124,
+              "section_title": "באור 21 - התקשרות, התחייבויות תלויות ושעבודים (המשך)",
+              "table_title": null,
+              "note": "חברה כלולה"
+            },
+            {
+              "name": "גולן דנמרק",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 138,
+              "section_title": "באור 27 - יתרות ועסקאות עם בעלי עניין וצדדים קשורים (המשך)",
+              "table_title": null,
+              "note": "חברה מאוחדת"
+            }
+          ],
+          "change_events": []
+        },
+        "0:8": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:9": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "S.I.K. holdings ApS",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 161,
+              "section_title": "פרק 5 - פרטים נוספים על החברה",
+              "table_title": "תקנה 11- רשימת השקעות בחברות-בנות ובחברות כלולות (לתאריך הדוח)",
+              "note": null
+            },
+            {
+              "name": "Golan Plastic Chile SPA",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 161,
+              "section_title": "פרק 5 - פרטים נוספים על החברה",
+              "table_title": "תקנה 11- רשימת השקעות בחברות-בנות ובחברות כלולות (לתאריך הדוח)",
+              "note": null
+            },
+            {
+              "name": "גולן השקעות מתחדשות בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 161,
+              "section_title": "פרק 5 - פרטים נוספים על החברה",
+              "table_title": "תקנה 11- רשימת השקעות בחברות-בנות ובחברות כלולות (לתאריך הדוח)",
+              "note": null
+            },
+            {
+              "name": "ARGPEX S.A",
+              "ownership_pct": 51.0,
+              "parent": null,
+              "page_reference": 161,
+              "section_title": "פרק 5 - פרטים נוספים על החברה",
+              "table_title": "תקנה 11- רשימת השקעות בחברות-בנות ובחברות כלולות (לתאריך הדוח)",
+              "note": null
+            },
+            {
+              "name": "פלאגול בע\"מ",
+              "ownership_pct": 31.9,
+              "parent": null,
+              "page_reference": 161,
+              "section_title": "פרק 5 - פרטים נוספים על החברה",
+              "table_title": "תקנה 11- רשימת השקעות בחברות-בנות ובחברות כלולות (לתאריך הדוח)",
+              "note": null
+            },
+            {
+              "name": "וויזסול בע\"מ",
+              "ownership_pct": 31.9,
+              "parent": null,
+              "page_reference": 161,
+              "section_title": "פרק 5 - פרטים נוספים על החברה",
+              "table_title": "תקנה 11- רשימת השקעות בחברות-בנות ובחברות כלולות (לתאריך הדוח)",
+              "note": null
+            },
+            {
+              "name": "Quickpipes Systems SA",
+              "ownership_pct": 51.0,
+              "parent": null,
+              "page_reference": 161,
+              "section_title": "פרק 5 - פרטים נוספים על החברה",
+              "table_title": "תקנה 11- רשימת השקעות בחברות-בנות ובחברות כלולות (לתאריך הדוח)",
+              "note": null
+            },
+            {
+              "name": "Golan USA Inc",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 161,
+              "section_title": "פרק 5 - פרטים נוספים על החברה",
+              "table_title": "תקנה 11- רשימת השקעות בחברות-בנות ובחברות כלולות (לתאריך הדוח)",
+              "note": null
+            },
+            {
+              "name": "Golchief Llc",
+              "ownership_pct": 51.0,
+              "parent": "Golan USA Inc",
+              "page_reference": 161,
+              "section_title": "פרק 5 - פרטים נוספים על החברה",
+              "table_title": "תקנה 11- רשימת השקעות בחברות-בנות ובחברות כלולות (לתאריך הדוח)",
+              "note": null
+            }
+          ],
+          "change_events": [
+            {
+              "company": "Golchief Llc",
               "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 50,
-              "event_date": "2025-02-01",
-              "event_description": "Awarded two separate 15-year tolling agreements for energy storage facilities in Israel with 50/50 shared ownership between Ormat and Allied Infrastructure LTD.",
-              "page_reference": 85,
-              "section_title": "ITEM 7. MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS"
+              "ownership_pct_before": 0.0,
+              "ownership_pct_after": 51.0,
+              "event_date": "2025-09-21",
+              "event_description": "התקשרות Golan USA Inc להקמת תאגיד משותף GOLCHIEF LLC המוחזק בשיעור של 51%",
+              "page_reference": 162,
+              "section_title": "תקנה 12 - שינויים בהשקעות בחברות-בנות ובחברות כלולות בשנת הדיווח"
             }
           ]
         },
-        "0:5": {
-          "report_format": "10-K",
+        "0:10": {
+          "report_format": "israeli_periodic",
           "document_type": "ownership_snapshot",
           "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:11": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-29",
           "subsidiaries": [
             {
-              "name": "Sarulla project",
-              "ownership_pct": 12.75,
+              "name": "S.I.K Holding ApS",
+              "ownership_pct": null,
               "parent": null,
-              "page_reference": 98,
-              "section_title": "Equity in Earnings (losses) of Investees, net",
+              "page_reference": 191,
+              "section_title": "תקנה 26א – נושאי משרה בכירה של התאגיד, נכון למועד הדוח",
               "table_title": null,
               "note": null
             },
             {
-              "name": "Ijen geothermal project",
-              "ownership_pct": 49.0,
+              "name": "Golan Pipe Systems ApS",
+              "ownership_pct": null,
               "parent": null,
-              "page_reference": 98,
-              "section_title": "Equity in Earnings (losses) of Investees, net",
+              "page_reference": 191,
+              "section_title": "תקנה 26א – נושאי משרה בכירה של התאגיד, נכון למועד הדוח",
               "table_title": null,
               "note": null
+            },
+            {
+              "name": "QuickPipes Systems",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 191,
+              "section_title": "תקנה 26א – נושאי משרה בכירה של התאגיד, נכון למועד הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ARGPEX",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 191,
+              "section_title": "תקנה 26א – נושאי משרה בכירה של התאגיד, נכון למועד הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Crosspipe Systems S.A",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 191,
+              "section_title": "תקנה 26א – נושאי משרה בכירה של התאגיד, נכון למועד הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Golan Chile S.P.A",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 191,
+              "section_title": "תקנה 26א – נושאי משרה בכירה של התאגיד, נכון למועד הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Golan USA Inc",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 191,
+              "section_title": "תקנה 26א – נושאי משרה בכירה של התאגיד, נכון למועד הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Golchief Llc",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 191,
+              "section_title": "תקנה 26א – נושאי משרה בכירה של התאגיד, נכון למועד הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פלאגול בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 191,
+              "section_title": "תקנה 26א – נושאי משרה בכירה של התאגיד, נכון למועד הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "וויזסול בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 191,
+              "section_title": "תקנה 26א – נושאי משרה בכירה של התאגיד, נכון למועד הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גולן השקעות מתחדשות בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 191,
+              "section_title": "תקנה 26א – נושאי משרה בכירה של התאגיד, נכון למועד הדוח",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        }
+      },
+      "attempts": {
+        "0:3": 1
+      }
+    }
+  },
+  "1730546": {
+    "company_id": "1039",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-23T11:07:50.884878+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1728707": {
+    "company_id": "1905",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-23T11:06:48.068687+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1729781": {
+    "company_id": "2463",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-23T11:08:16.936577+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1733313": {
+    "company_id": "1325",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-09-23T11:09:01.121267+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 7,
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "FDNA Inc.",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "1.3.1 תרשים ההחזקות של חברות הפורטפוליו של הקבוצה נכון ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": "השקעה באמצעות מנגנון SAFE"
+            },
+            {
+              "name": "פיוריר אופטיקס בע\"מ",
+              "ownership_pct": 1.67,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "1.3.1 תרשים ההחזקות של חברות הפורטפוליו של הקבוצה נכון ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "רג'ינטיס בימטריאלס בע\"מ",
+              "ownership_pct": 1.31,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "1.3.1 תרשים ההחזקות של חברות הפורטפוליו של הקבוצה נכון ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אוסיו בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "1.3.1 תרשים ההחזקות של חברות הפורטפוליו של הקבוצה נכון ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": "שיעור אחזקות הקבוצה קטן מ-1%"
+            },
+            {
+              "name": "נאסוס פארמה בע\"מ",
+              "ownership_pct": 6.05,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "1.3.1 תרשים ההחזקות של חברות הפורטפוליו של הקבוצה נכון ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "בית זיקוק אשדוד בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "1.3.1 תרשים ההחזקות של חברות הפורטפוליו של הקבוצה נכון ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": "שיעור אחזקות הקבוצה קטן מ-1%"
+            },
+            {
+              "name": "אינטואישן רובוטיקס בע\"מ",
+              "ownership_pct": 1.57,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "1.3.1 תרשים ההחזקות של חברות הפורטפוליו של הקבוצה נכון ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "צים שירותי ספנות משולבים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "1.3.1 תרשים ההחזקות של חברות הפורטפוליו של הקבוצה נכון ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": "שיעור אחזקות הקבוצה קטן מ-1%"
+            },
+            {
+              "name": "גלולי בע\"מ",
+              "ownership_pct": 1.12,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "1.3.1 תרשים ההחזקות של חברות הפורטפוליו של הקבוצה נכון ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ויזו ספאקס בע\"מ",
+              "ownership_pct": 2.01,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "1.3.1 תרשים ההחזקות של חברות הפורטפוליו של הקבוצה נכון ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אאורה השקעות בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "1.3.1 תרשים ההחזקות של חברות הפורטפוליו של הקבוצה נכון ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": "שיעור אחזקות הקבוצה קטן מ-1%"
+            },
+            {
+              "name": "מבטח שמיר אחזקות בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "1.3.1 תרשים ההחזקות של חברות הפורטפוליו של הקבוצה נכון ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": "שיעור אחזקות הקבוצה קטן מ-1%"
+            },
+            {
+              "name": "Electrical Grid Monitoring Inc. (EGM)",
+              "ownership_pct": 1.65,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "1.3.1 תרשים ההחזקות של חברות הפורטפוליו של הקבוצה נכון ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "איירפורט סיטי בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "1.3.1 תרשים ההחזקות של חברות הפורטפוליו של הקבוצה נכון ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": "שיעור אחזקות הקבוצה קטן מ-1%"
+            },
+            {
+              "name": "אל על נתיבי אוויר לישראל בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "1.3.1 תרשים ההחזקות של חברות הפורטפוליו של הקבוצה נכון ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": "שיעור אחזקות הקבוצה קטן מ-1%"
+            },
+            {
+              "name": "קונטיפי מדיקל בע\"מ",
+              "ownership_pct": 6.84,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "1.3.1 תרשים ההחזקות של חברות הפורטפוליו של הקבוצה נכון ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ויז'נארי אי.איי בע\"מ",
+              "ownership_pct": 3.74,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "1.3.1 תרשים ההחזקות של חברות הפורטפוליו של הקבוצה נכון ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מניף שירותים פיננסים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "1.3.1 תרשים ההחזקות של חברות הפורטפוליו של הקבוצה נכון ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": "שיעור אחזקות הקבוצה קטן מ-1%"
+            },
+            {
+              "name": "ננוגוסט בע\"מ",
+              "ownership_pct": 2.42,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "1.3.1 תרשים ההחזקות של חברות הפורטפוליו של הקבוצה נכון ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "קונטיפי מדיקל בע\"מ",
+              "ownership_pct": 6.34,
+              "parent": null,
+              "page_reference": 30,
+              "section_title": "פרק שני : תיאור חברות פורטפוליו פעילות המוחזקות על ידי הקבוצה",
+              "table_title": "להלן פרטים אודות חברות הפורטפוליו של הקבוצה (באלפי ש\"ח) ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "ויז'נארי אי.איי בע\"מ (לשעבר: ברייטר ויז'ן איי.או)",
+              "ownership_pct": 3.36,
+              "parent": null,
+              "page_reference": 30,
+              "section_title": "פרק שני : תיאור חברות פורטפוליו פעילות המוחזקות על ידי הקבוצה",
+              "table_title": "להלן פרטים אודות חברות הפורטפוליו של הקבוצה (באלפי ש\"ח) ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "אוסיו בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 31,
+              "section_title": "פרק שני : תיאור חברות פורטפוליו פעילות המוחזקות על ידי הקבוצה",
+              "table_title": "להלן פרטים אודות חברות הפורטפוליו של הקבוצה (באלפי ש\"ח) ליום 31 בדצמבר 2025",
+              "note": "שיעור החזקה מצוין כקטן מ-1%"
+            },
+            {
+              "name": "אינטוישן רובוטיקס בע\"מ",
+              "ownership_pct": 1.01,
+              "parent": null,
+              "page_reference": 31,
+              "section_title": "פרק שני : תיאור חברות פורטפוליו פעילות המוחזקות על ידי הקבוצה",
+              "table_title": "להלן פרטים אודות חברות הפורטפוליו של הקבוצה (באלפי ש\"ח) ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "אל על נתיבי אוויר לישראל בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 32,
+              "section_title": "פרק שני : תיאור חברות פורטפוליו פעילות המוחזקות על ידי הקבוצה",
+              "table_title": "להלן פרטים אודות חברות הפורטפוליו של הקבוצה (באלפי ש\"ח) ליום 31 בדצמבר 2025",
+              "note": "שיעור החזקה מצוין כקטן מ-1%"
+            },
+            {
+              "name": "אאורה השקעות בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 32,
+              "section_title": "פרק שני : תיאור חברות פורטפוליו פעילות המוחזקות על ידי הקבוצה",
+              "table_title": "להלן פרטים אודות חברות הפורטפוליו של הקבוצה (באלפי ש\"ח) ליום 31 בדצמבר 2025",
+              "note": "שיעור החזקה מצוין כקטן מ-1%"
+            },
+            {
+              "name": "צים שירותי ספנות משולבים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 32,
+              "section_title": "פרק שני : תיאור חברות פורטפוליו פעילות המוחזקות על ידי הקבוצה",
+              "table_title": "להלן פרטים אודות חברות הפורטפוליו של הקבוצה (באלפי ש\"ח) ליום 31 בדצמבר 2025",
+              "note": "שיעור החזקה מצוין כקטן מ-1%"
+            },
+            {
+              "name": "רג'ינטיס בימטריאלס בע\"מ",
+              "ownership_pct": 1.14,
+              "parent": null,
+              "page_reference": 33,
+              "section_title": "פרק שני : תיאור חברות פורטפוליו פעילות המוחזקות על ידי הקבוצה",
+              "table_title": "להלן פרטים אודות חברות הפורטפוליו של הקבוצה (באלפי ש\"ח) ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "איירפורט סיטי בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 33,
+              "section_title": "פרק שני : תיאור חברות פורטפוליו פעילות המוחזקות על ידי הקבוצה",
+              "table_title": "להלן פרטים אודות חברות הפורטפוליו של הקבוצה (באלפי ש\"ח) ליום 31 בדצמבר 2025",
+              "note": "שיעור החזקה מצוין כקטן מ-1%"
+            },
+            {
+              "name": "מבטח שמיר אחזקות בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 34,
+              "section_title": "פרק שני : תיאור חברות פורטפוליו פעילות המוחזקות על ידי הקבוצה",
+              "table_title": "להלן פרטים אודות חברות הפורטפוליו של הקבוצה (באלפי ש\"ח) ליום 31 בדצמבר 2025",
+              "note": "שיעור החזקה מצוין כקטן מ-1%"
+            },
+            {
+              "name": "ננוגוסט בע\"מ",
+              "ownership_pct": 2.15,
+              "parent": null,
+              "page_reference": 35,
+              "section_title": "פרק שני : תיאור חברות פורטפוליו פעילות המוחזקות על ידי הקבוצה",
+              "table_title": "להלן פרטים אודות חברות הפורטפוליו של הקבוצה (באלפי ש\"ח) ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "גלולי בע\"מ",
+              "ownership_pct": 1.03,
+              "parent": null,
+              "page_reference": 35,
+              "section_title": "פרק שני : תיאור חברות פורטפוליו פעילות המוחזקות על ידי הקבוצה",
+              "table_title": "להלן פרטים אודות חברות הפורטפוליו של הקבוצה (באלפי ש\"ח) ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "Electrical Grid Monitoring Inc.",
+              "ownership_pct": 1.37,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "פרק שני : תיאור חברות פורטפוליו פעילות המוחזקות על ידי הקבוצה",
+              "table_title": "להלן פרטים אודות חברות הפורטפוליו של הקבוצה (באלפי ש\"ח) ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "בית זיקוק אשדוד בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "פרק שני : תיאור חברות פורטפוליו פעילות המוחזקות על ידי הקבוצה",
+              "table_title": "להלן פרטים אודות חברות הפורטפוליו של הקבוצה (באלפי ש\"ח) ליום 31 בדצמבר 2025",
+              "note": "שיעור החזקה מצוין כקטן מ-1%"
+            },
+            {
+              "name": "FDNA",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "פרק שני : תיאור חברות פורטפוליו פעילות המוחזקות על ידי הקבוצה",
+              "table_title": "להלן פרטים אודות חברות הפורטפוליו של הקבוצה (באלפי ש\"ח) ליום 31 בדצמבר 2025",
+              "note": null
+            },
+            {
+              "name": "ויזו ספקס בע\"מ",
+              "ownership_pct": 1.74,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "פרק שני : תיאור חברות פורטפוליו פעילות המוחזקות על ידי הקבוצה",
+              "table_title": "להלן פרטים אודות חברות הפורטפוליו של הקבוצה (באלפי ש\"ח) ליום 31 בדצמבר 2025",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "ננוגוסט בע\"מ",
+              "ownership_pct": 2.15,
+              "parent": null,
+              "page_reference": 35,
+              "section_title": "חברות פורטפוליו",
+              "table_title": "חברות פורטפוליו עיקריות",
+              "note": null
+            },
+            {
+              "name": "גלולי בע\"מ",
+              "ownership_pct": 1.03,
+              "parent": null,
+              "page_reference": 35,
+              "section_title": "חברות פורטפוליו",
+              "table_title": "חברות פורטפוליו עיקריות",
+              "note": null
+            },
+            {
+              "name": "Electrical Grid Monitoring Inc.",
+              "ownership_pct": 1.37,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "חברות פורטפוליו",
+              "table_title": "חברות פורטפוליו עיקריות",
+              "note": null
+            },
+            {
+              "name": "בית זיקוק אשדוד בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "חברות פורטפוליו",
+              "table_title": "חברות פורטפוליו עיקריות",
+              "note": "קטן מ-1%"
+            },
+            {
+              "name": "FDNA Inc.",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "חברות פורטפוליו",
+              "table_title": "חברות פורטפוליו עיקריות",
+              "note": null
+            },
+            {
+              "name": "ויזו ספקס בע\"מ",
+              "ownership_pct": 1.74,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "חברות פורטפוליו",
+              "table_title": "חברות פורטפוליו עיקריות",
+              "note": null
+            },
+            {
+              "name": "נאסוס פארמה בע\"מ",
+              "ownership_pct": 5.53,
+              "parent": null,
+              "page_reference": 38,
+              "section_title": "חברות פורטפוליו",
+              "table_title": "חברות פורטפוליו עיקריות",
+              "note": null
+            },
+            {
+              "name": "Fourier Optics Ltd",
+              "ownership_pct": 1.67,
+              "parent": null,
+              "page_reference": 38,
+              "section_title": "חברות פורטפוליו",
+              "table_title": "חברות פורטפוליו עיקריות",
+              "note": null
+            },
+            {
+              "name": "מניף שירותים פיננסים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 38,
+              "section_title": "חברות פורטפוליו",
+              "table_title": "חברות פורטפוליו עיקריות",
+              "note": "קטן מ-1%"
+            },
+            {
+              "name": "סייט דיאגנוסטיקה בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 41,
+              "section_title": "חברות פורטפוליו אשר ההשקעה בהן הופחתה במלואה",
+              "table_title": null,
+              "note": "ההשקעה הופחתה במלואה"
+            },
+            {
+              "name": "אקסטירה",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 41,
+              "section_title": "חברות פורטפוליו אשר ההשקעה בהן הופחתה במלואה",
+              "table_title": null,
+              "note": "ההשקעה הופחתה במלואה"
             }
           ],
           "change_events": []
@@ -5964,123 +6459,54 @@
       "attempts": {}
     }
   },
-  "1733440": {
-    "company_id": "1318",
-    "status": "partial",
-    "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-22T11:13:23.477110+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 10,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1729733": {
-    "company_id": "1765",
-    "status": "partial",
-    "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-22T11:13:23.708197+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 10,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1732015": {
-    "company_id": "1226",
-    "status": "partial",
-    "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-22T11:13:23.955259+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 12,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1730546": {
-    "company_id": "1039",
-    "status": "partial",
-    "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-22T11:13:25.816544+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 14,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1728707": {
-    "company_id": "1905",
-    "status": "partial",
-    "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-22T11:13:26.215814+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 11,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1729781": {
-    "company_id": "2463",
-    "status": "partial",
-    "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-22T11:13:26.373175+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 7,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1733313": {
-    "company_id": "1325",
-    "status": "partial",
-    "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-22T11:13:26.609173+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 7,
-      "done": {},
-      "attempts": {}
-    }
-  },
   "1726200": {
     "company_id": "1514",
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-22T11:13:26.901111+00:00",
+    "at": "2026-09-23T11:09:08.306987+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 9,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
@@ -6104,7 +6530,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-22T11:13:27.137555+00:00",
+    "at": "2026-09-23T11:09:08.574204+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -6119,7 +6545,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-22T11:13:27.958061+00:00",
+    "at": "2026-09-23T11:09:09.369822+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -6134,7 +6560,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-22T11:13:27.419066+00:00",
+    "at": "2026-09-23T11:09:08.826412+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -37768,7 +38194,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-22T11:13:27.652118+00:00",
+    "at": "2026-09-23T11:09:09.064243+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
