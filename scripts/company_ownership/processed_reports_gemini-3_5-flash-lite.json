@@ -4631,155 +4631,89 @@
   },
   "1732612": {
     "company_id": "507",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-23T10:36:19.459727+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1730576": {
+    "company_id": "1361",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-23T10:36:27.120259+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1728854": {
+    "company_id": "1672",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-23T10:39:33.488183+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1729045": {
+    "company_id": "1287",
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-23T10:34:09.683129+00:00",
+    "at": "2026-09-23T10:40:01.063602+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
-      "total": 11,
+      "total": 13,
       "done": {
         "0:0": {
           "report_format": "israeli_periodic",
           "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
+          "as_of_date": "2026-03-18",
           "subsidiaries": [
             {
-              "name": "וואן טכנולוגיות תוכנה בע\"מ",
-              "ownership_pct": 34.88,
-              "parent": null,
-              "page_reference": 3,
-              "section_title": "1.2 מבנה אחזקות התאגיד",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "טקליס שירותי מימון בע\"מ",
+              "name": "אופל בלאנס (2006) בע\"מ",
               "ownership_pct": 100,
               "parent": null,
-              "page_reference": 3,
-              "section_title": "1.2 מבנה אחזקות התאגיד",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "וואן ליין בע\"מ",
-              "ownership_pct": 100,
-              "parent": "וואן טכנולוגיות תוכנה בע\"מ",
               "page_reference": 5,
-              "section_title": "1.4 מיזוגים ורכישות בוואן טכנולוגיות אשר הושלמו בשנת הדיווח ולאחר מכן",
+              "section_title": "2. פעילות החברה ותיאור התפתחות עסקיה",
               "table_title": null,
               "note": null
             },
             {
-              "name": "ש. קרני מהנדסים בע\"מ",
-              "ownership_pct": 60,
-              "parent": "וואן סיטי אי טי בע\"מ",
-              "page_reference": 5,
-              "section_title": "1.4 מיזוגים ורכישות בוואן טכנולוגיות אשר הושלמו בשנת הדיווח ולאחר מכן",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "יוביטק סולושנס בע\"מ",
-              "ownership_pct": 90.1,
-              "parent": "וואן טכנולוגיות תוכנה בע\"מ",
-              "page_reference": 5,
-              "section_title": "1.4 מיזוגים ורכישות בוואן טכנולוגיות אשר הושלמו בשנת הדיווח ולאחר מכן",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "וואן בי.איי. דאטה",
+              "name": "אופל בלאנס חולון בע\"מ",
               "ownership_pct": 100,
-              "parent": "וואן טכנולוגיות תוכנה בע\"מ",
-              "page_reference": 6,
-              "section_title": "1.4 מיזוגים ורכישות בוואן טכנולוגיות אשר הושלמו בשנת הדיווח ולאחר מכן",
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "2. פעילות החברה ותיאור התפתחות עסקיה",
               "table_title": null,
               "note": null
             },
             {
-              "name": "ג'ין טכנולוגיות בינה מלאכותית בע\"מ",
-              "ownership_pct": 15.52,
-              "parent": "וואן טכנולוגיות תוכנה בע\"מ",
-              "page_reference": 6,
-              "section_title": "1.4 מיזוגים ורכישות בוואן טכנולוגיות אשר הושלמו בשנת הדיווח ולאחר מכן",
-              "table_title": null,
-              "note": "שיעור החזקה מצרפי נכון למועד פרסום הדוח"
-            },
-            {
-              "name": "אף בי סי בע\"מ",
-              "ownership_pct": 100,
-              "parent": "וואן טכנולוגיות תוכנה בע\"מ",
-              "page_reference": 6,
-              "section_title": "1.4 מיזוגים ורכישות בוואן טכנולוגיות אשר הושלמו בשנת הדיווח ולאחר מכן",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "בריליקס בע\"מ",
+              "name": "א. דורון אחזקות מימון והשקעות בע\"מ",
               "ownership_pct": 70,
-              "parent": "וואן טכנולוגיות תוכנה בע\"מ",
-              "page_reference": 6,
-              "section_title": "1.4 מיזוגים ורכישות בוואן טכנולוגיות אשר הושלמו בשנת הדיווח ולאחר מכן",
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "2. פעילות החברה ותיאור התפתחות עסקיה",
+              "table_title": null,
+              "note": "מוכר גם בשם DOI"
+            },
+            {
+              "name": "א. דורון מימון והשקעות בע\"מ",
+              "ownership_pct": 100,
+              "parent": "א. דורון אחזקות מימון והשקעות בע\"מ",
+              "page_reference": 5,
+              "section_title": "2. פעילות החברה ותיאור התפתחות עסקיה",
               "table_title": null,
               "note": null
             },
             {
-              "name": "טודוטק בע\"מ",
-              "ownership_pct": 80,
-              "parent": "וואן טכנולוגיות תוכנה בע\"מ",
-              "page_reference": 6,
-              "section_title": "1.4 מיזוגים ורכישות בוואן טכנולוגיות אשר הושלמו בשנת הדיווח ולאחר מכן",
+              "name": "די. או. איי קפיטל בע\"מ",
+              "ownership_pct": 100,
+              "parent": "א. דורון אחזקות מימון והשקעות בע\"מ",
+              "page_reference": 5,
+              "section_title": "2. פעילות החברה ותיאור התפתחות עסקיה",
               "table_title": null,
               "note": null
-            },
-            {
-              "name": "פרקטיפרוגקט פי.אר בע\"מ",
-              "ownership_pct": 51,
-              "parent": "וואן טכנולוגיות תוכנה בע\"מ",
-              "page_reference": 6,
-              "section_title": "1.4 מיזוגים ורכישות בוואן טכנולוגיות אשר הושלמו בשנת הדיווח ולאחר מכן",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אד און אקספרט סנטר בע\"מ",
-              "ownership_pct": 51,
-              "parent": "וואן טכנולוגיות תוכנה בע\"מ",
-              "page_reference": 6,
-              "section_title": "1.4 מיזוגים ורכישות בוואן טכנולוגיות אשר הושלמו בשנת הדיווח ולאחר מכן",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "סולידב מ.ו. בע\"מ",
-              "ownership_pct": 51,
-              "parent": "וואן טכנולוגיות תוכנה בע\"מ",
-              "page_reference": 6,
-              "section_title": "1.4 מיזוגים ורכישות בוואן טכנולוגיות אשר הושלמו בשנת הדיווח ולאחר מכן",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "סטרטגי'קליר",
-              "ownership_pct": 60,
-              "parent": "וואן טכנולוגיות תוכנה בע\"מ",
-              "page_reference": 6,
-              "section_title": "1.4 מיזוגים ורכישות בוואן טכנולוגיות אשר הושלמו בשנת הדיווח ולאחר מכן",
-              "table_title": null,
-              "note": "לאחר תאריך המאזן"
-            },
-            {
-              "name": "שטראוס אסטרטגיה ייעוץ ומערכות בע\"מ",
-              "ownership_pct": 70,
-              "parent": "וואן טכנולוגיות תוכנה בע\"מ",
-              "page_reference": 6,
-              "section_title": "1.4 מיזוגים ורכישות בוואן טכנולוגיות אשר הושלמו בשנת הדיווח ולאחר מכן",
-              "table_title": null,
-              "note": "לאחר תאריך המאזן"
             }
           ],
           "change_events": []
@@ -4787,234 +4721,429 @@
         "0:1": {
           "report_format": "israeli_periodic",
           "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אופל 2006",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 25,
+              "section_title": "10.2 תחום המשכנתאות",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "אופל חולון",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 25,
+              "section_title": "10.2 תחום המשכנתאות",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "DOI",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 18,
+              "section_title": "10. לקוחות",
+              "table_title": null,
+              "note": "רכישת חברה בתקופת הדוח"
+            },
+            {
+              "name": "א. דורון",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 34,
+              "section_title": "20.2 פירוט אודות שיעורי הריבית בקשר עם הלוואות הקבוצה",
+              "table_title": null,
+              "note": "במסגרת האיחוד לראשונה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
           "as_of_date": null,
           "subsidiaries": [
             {
-              "name": "סטנגה",
-              "ownership_pct": null,
+              "name": "אופל 2006",
+              "ownership_pct": 100,
               "parent": null,
-              "page_reference": 21,
-              "section_title": "פעילות offshore",
-              "table_title": null,
-              "note": "חברה בת בבעלות פרטית"
+              "page_reference": 69,
+              "section_title": "20.3.1.1 תאגיד בנקאי ב'",
+              "table_title": "תאגיד בנקאי ב' -החברה, אופל 2006 ואופל חולון",
+              "note": "חברת בת בבעלות מלאה לפי תנאי מסגרת אשראי"
             },
             {
-              "name": "וואן שילוב מערכות",
-              "ownership_pct": null,
+              "name": "אופל חולון",
+              "ownership_pct": 100,
               "parent": null,
-              "page_reference": 27,
-              "section_title": "3.2.1 מידע כללי על תחום הפעילות חסמי כניסה ויציאה",
-              "table_title": null,
-              "note": "חברה בת"
+              "page_reference": 69,
+              "section_title": "20.3.1.1 תאגיד בנקאי ב'",
+              "table_title": "תאגיד בנקאי ב' -החברה, אופל 2006 ואופל חולון",
+              "note": "חברת בת בבעלות מלאה לפי תנאי מסגרת אשראי"
             },
             {
-              "name": "הראל טכנולוגיות",
-              "ownership_pct": null,
+              "name": "אופל בלאנס משכנתאות לעסק ולבית בע\"מ",
+              "ownership_pct": 50,
               "parent": null,
-              "page_reference": 27,
-              "section_title": "3.2.1 מידע כללי על תחום הפעילות חסמי כניסה ויציאה",
+              "page_reference": 84,
+              "section_title": "22. מגבלות ופיקוח על פעילות התאגיד",
               "table_title": null,
-              "note": "חברה בת"
-            },
-            {
-              "name": "טלדור מערכות חטיבת שירותים מנוהלים",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 27,
-              "section_title": "3.2.1 מידע כללי על תחום הפעילות חסמי כניסה ויציאה",
-              "table_title": null,
-              "note": "חברה בת"
-            },
-            {
-              "name": "טלדור תקשורת ואבטחת מידע",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 27,
-              "section_title": "3.2.1 מידע כללי על תחום הפעילות חסמי כניסה ויציאה",
-              "table_title": null,
-              "note": "חברה בת"
-            },
-            {
-              "name": "כלנית איי.טי בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 34,
-              "section_title": "3.3 תחום הפעילות מיקור חוץ של תהליכים עסקיים (“BPO) “ומרכזי תמיכה טכנולוגיים",
-              "table_title": null,
-              "note": "לשעבר: וואן מרכזי תמיכה בע\"מ"
-            },
-            {
-              "name": "וואן ליין בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 34,
-              "section_title": "3.3 תחום הפעילות מיקור חוץ של תהליכים עסקיים (“BPO) “ומרכזי תמיכה טכנולוגיים",
-              "table_title": null,
-              "note": "לשעבר: בזק און ליין בע\"מ"
+              "note": "אושר פירוקה מרצון באפריל 2025"
             }
           ],
           "change_events": [
             {
-              "company": "וואן ליין בע\"מ",
+              "company": "אופל בלאנס משכנתאות לעסק ולבית בע\"מ",
+              "event_type": "full_disposal",
+              "ownership_pct_before": 50,
+              "ownership_pct_after": 0,
+              "event_date": "2025-04-01",
+              "event_description": "פירוקה מרצון של החברה ע\"י רשות התאגידים",
+              "page_reference": 84,
+              "section_title": "22. מגבלות ופיקוח על פעילות התאגיד"
+            }
+          ]
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "א. דורון אחזקות מימון והשקעות בע\"מ",
               "event_type": "new_acquisition",
               "ownership_pct_before": null,
               "ownership_pct_after": null,
               "event_date": null,
-              "event_description": "רכישת וואן ליין בע\"מ (לשעבר: בזק און ליין בע\"מ) במהלך שנת 2025",
-              "page_reference": 34,
-              "section_title": "3.3 תחום הפעילות מיקור חוץ של תהליכים עסקיים (“BPO) “ומרכזי תמיכה טכנולוגיים"
+              "event_description": "רכישת חברת בת במהלך תקופת הדוח, הכוללת אופציות Call ו-Put ביחס ל-30% ממניות החברה המאפשרות לאופל להגיע לאחזקה של 100%.",
+              "page_reference": 82,
+              "section_title": "מצב כספי - התחייבויות שאינן שוטפות",
+              "table_title": null
             }
           ]
         },
-        "0:2": {
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "א. דורון אחזקות מימון והשקעות בע\"מ (DOI)",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 70,
+              "event_date": "2025-10-05",
+              "event_description": "הושלמה עסקת רכישת השליטה בחברת א. דורון אחזקות מימון והשקעות בע\"מ (DOI) ברכישת 70% מהון המניות בתמורה כוללת של כ-5 מיליון ש\"ח.",
+              "page_reference": 93,
+              "section_title": ".8 אירועים בתקופת הדוח"
+            }
+          ]
+        },
+        "0:6": {
           "report_format": "israeli_periodic",
           "document_type": "ownership_snapshot",
           "as_of_date": "2025-12-31",
           "subsidiaries": [
             {
-              "name": "וואן טכנולוגיות בע\"מ",
-              "ownership_pct": 34.88,
+              "name": "אופל בלאנס משכנתאות לעסק ולבית בע\"מ",
+              "ownership_pct": 50,
               "parent": null,
-              "page_reference": 52,
-              "section_title": "חלק א' - הסברי הדירקטוריון למצב עסקי החברה, תוצאות פעילותה, הונה העצמי ותזרימי המזומנים שלה",
+              "page_reference": 122,
+              "section_title": "באור 1 - כללי",
+              "table_title": null,
+              "note": "בבעלות משותפת, נמצאת בהליך פירוק מרצון מזורז החל מ-15 בינואר 2025"
+            },
+            {
+              "name": "א.דורון אחזקות - מימון והשקעות בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 122,
+              "section_title": "באור 1 - כללי",
+              "table_title": null,
+              "note": "חברה בת"
+            },
+            {
+              "name": "אופל חולון",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 122,
+              "section_title": "באור 1 - כללי",
+              "table_title": null,
+              "note": "חברת בת של הקבוצה"
+            },
+            {
+              "name": "אופל 2006",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 122,
+              "section_title": "באור 1 - כללי",
+              "table_title": null,
+              "note": "חברת בת של הקבוצה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:7": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אופל בלאנס (2006) בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 135,
+              "section_title": "באור 1 - כללי (המשך)",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "אופל בלאנס חולון בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 135,
+              "section_title": "באור 1 - כללי (המשך)",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "א.דורון אחזקות - מימון והשקעות בע\"מ",
+              "ownership_pct": 70,
+              "parent": null,
+              "page_reference": 135,
+              "section_title": "באור 1 - כללי (המשך)",
+              "table_title": null,
+              "note": "חברת בת, נרכשה ב-5 באוקטובר 2025"
+            },
+            {
+              "name": "אופל בלאנס משכנתאות לעסק ולבית בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 135,
+              "section_title": "באור 1 - כללי (המשך)",
+              "table_title": null,
+              "note": "חברה בבעלות משותפת (50% החברה, 50% מרקורי פיננסים בע\"מ)"
+            }
+          ],
+          "change_events": []
+        },
+        "0:8": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אופל חולון",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 139,
+              "section_title": "באור 10 - נכס מוחזק למכירה",
               "table_title": null,
               "note": null
             },
             {
-              "name": "טקליס שירותי מימון בע\"מ",
+              "name": "אופל 2006",
               "ownership_pct": null,
               "parent": null,
-              "page_reference": 52,
-              "section_title": "חלק א' - הסברי הדירקטוריון למצב עסקי החברה, תוצאות פעילותה, הונה העצמי ותזרימי המזומנים שלה",
+              "page_reference": 141,
+              "section_title": "באור -11 אשראי מתאגידים בנקאיים והלוואות מאחרים (המשך)",
               "table_title": null,
               "note": null
+            },
+            {
+              "name": "א.דורון",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 142,
+              "section_title": "באור -11 אשראי מתאגידים בנקאיים והלוואות מאחרים (המשך)",
+              "table_title": null,
+              "note": "אוחדה לראשונה בדוחות הכספיים המאוחדים ברבעון הרביעי של שנת 2025"
+            }
+          ],
+          "change_events": []
+        },
+        "0:9": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "אופל משכנתאות לעסק ולבית בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 158,
+              "section_title": "באור 18 - התקשרויות, שעבודים והתחייבויות תלויות",
+              "table_title": null,
+              "note": "תוחזק בחלקים שווים על ידי החברה ועל ידי מרקורי; נמצאה בהליך פירוק מרצון מזורז החל מ-15 בינואר 2025"
+            },
+            {
+              "name": "אופל 2006",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 158,
+              "section_title": "באור 18 - התקשרויות, שעבודים והתחייבויות תלויות",
+              "table_title": null,
+              "note": "פעילות המשכנתאות מבוצעת באמצעותה"
+            },
+            {
+              "name": "אופל חולון",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 158,
+              "section_title": "באור 18 - התקשרויות, שעבודים והתחייבויות תלויות",
+              "table_title": null,
+              "note": "פעילות המשכנתאות מבוצעת באמצעותה"
+            },
+            {
+              "name": "א. דורון",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 163,
+              "section_title": "באור 25 - צדדים קשורים ובעלי עניין",
+              "table_title": null,
+              "note": "חברה נרכשת במסגרת צירוף עסקים"
+            }
+          ],
+          "change_events": []
+        },
+        "0:10": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אופל בלאנס (2006) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 176,
+              "section_title": "פרק ד' – פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדוח על המצב הכספי",
+              "note": null
+            },
+            {
+              "name": "אופל בלאנס חולון בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 176,
+              "section_title": "פרק ד' – פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדוח על המצב הכספי",
+              "note": null
+            },
+            {
+              "name": "א. דורון אחזקות מימון והשקעות בע\"מ (\"DOI\")",
+              "ownership_pct": 70,
+              "parent": null,
+              "page_reference": 176,
+              "section_title": "פרק ד' – פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדוח על המצב הכספי",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:11": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "DOI",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 201,
+              "section_title": "תקנה 24 (ב): החזקות בעלי ענין בתאריך הדוח, במניות של חברה מוחזקת של התאגיד אשר פעילותה מהותית לפעילות התאגיד",
+              "table_title": null,
+              "note": "מר אורן דורון מחזיק ב-30%, יתר המניות מוחזקות על ידי החברה"
+            },
+            {
+              "name": "אופל 2006",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 202,
+              "section_title": "תקנה 26: הדירקטורים של התאגיד",
+              "table_title": "תקנה 26: הדירקטורים של התאגיד",
+              "note": "חברת בת של החברה"
+            },
+            {
+              "name": "אופל חולון",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 202,
+              "section_title": "תקנה 26: הדירקטורים של התאגיד",
+              "table_title": "תקנה 26: הדירקטורים של התאגיד",
+              "note": "חברת בת של החברה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:12": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "א. דורון אחזקות מימון והשקעות בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 205,
+              "section_title": null,
+              "table_title": null,
+              "note": "מוגדרת כחברה בת של החברה"
             }
           ],
           "change_events": []
         }
       },
-      "attempts": {}
-    }
-  },
-  "1730576": {
-    "company_id": "1361",
-    "status": "partial",
-    "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-22T11:13:17.333064+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 13,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1728854": {
-    "company_id": "1672",
-    "status": "partial",
-    "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-22T11:13:17.797865+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 13,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1729045": {
-    "company_id": "1287",
-    "status": "partial",
-    "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-22T11:13:18.136763+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 13,
-      "done": {},
-      "attempts": {}
+      "attempts": {
+        "0:3": 1
+      }
     }
   },
   "1726567": {
     "company_id": "1894",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-22T11:13:18.420393+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 14,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-23T10:42:25.723035+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1730169": {
     "company_id": "130",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-22T11:13:18.750348+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 10,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-23T10:41:45.462461+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1730559": {
     "company_id": "1054",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-22T11:13:19.323047+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 10,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-23T10:44:18.939826+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731121": {
     "company_id": "1433",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-22T11:13:19.621635+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 9,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-23T10:44:39.346076+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731990": {
     "company_id": "1821",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-22T11:13:19.889166+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 9,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-23T10:45:50.829383+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731829": {
     "company_id": "200",
@@ -5036,30 +5165,353 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-22T11:13:20.215610+00:00",
+    "at": "2026-09-23T10:47:23.452970+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 13,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "קטה גרופ - חטיבת היזום בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 9,
+              "section_title": "מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "קטה גרופ - חטיבת הביצוע בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 9,
+              "section_title": "מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "קטה גרופ - חטיבת ההתחדשות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 9,
+              "section_title": "מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "קטה גרופ - חטיבת המניבים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 9,
+              "section_title": "מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "גיל קטה בניה",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 40,
+              "section_title": "6.1.12 הסכמים עם דיירים בפרויקט פינוי בינוי/תמ\"א 38/2",
+              "table_title": null,
+              "note": "חברת קבוצה"
+            },
+            {
+              "name": "קטה גרופ - חטיבת הביצוע",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "6.1.9 אופי התקשרות עם קבלנים מבצעים",
+              "table_title": null,
+              "note": "חברת קבוצה וחברת ביצוע"
+            }
+          ],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "גיל קטה בניה והשקעות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 76,
+              "section_title": "קטה גליל ים - פרויקט גליל ים ,107 הרצליה - פרויקט בתכנון",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גיל קטה ייזום",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 72,
+              "section_title": "פרויקט SQUARE - פרויקט תעש השלום, תל אביב - פרויקט בתכנון",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "קטה גרופ ייזום",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 80,
+              "section_title": "פרויקט עוזיאל, ר\"ג - פרויקט בתכנון",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "קטה גרופ - חטיבת המניבים",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 87,
+              "section_title": "תחום הנדל\"ן המניב בישראל (נכסים מסחריים)",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "קטה גרופ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 172,
+              "section_title": "מבנה תחום הפעילות ושינויים החלים בו",
+              "table_title": null,
+              "note": "מוזכרת כחברת בת בתחומים השונים (חטיבת המניבים, חברת הביצוע, ייזום)"
+            }
+          ],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "קטה גרופ ייזום",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 108,
+              "section_title": "13.4 אמות מידה פיננסיות ומגבלות בנטילת אשראי",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "קטה גרופ מניבים",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 108,
+              "section_title": "13.4 אמות מידה פיננסיות ומגבלות בנטילת אשראי",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "קטה גרופ התחדשות",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 108,
+              "section_title": "13.4 אמות מידה פיננסיות ומגבלות בנטילת אשראי",
+              "table_title": null,
+              "note": "חברת בת"
+            }
+          ],
+          "change_events": []
+        },
+        "0:7": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "קטה גרופ - חטיבת כח אדם",
+              "event_type": "full_disposal",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 0,
+              "event_date": "2025-01-01",
+              "event_description": "מכירת מלוא החזקות החברה בחברת הבת לבעל השליטה",
+              "page_reference": 123,
+              "section_title": "הון"
+            }
+          ]
+        },
+        "0:8": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "קטה גרופ חטיבת היזום בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 142,
+              "section_title": "ביאור 1 - כללי",
+              "table_title": null,
+              "note": "מוחזקת במלואה ובאופן ישיר על ידי החברה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:9": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "קטה גרופ חטיבת היזום בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 161,
+              "section_title": "ביאור 8 - מלאי קרקעות, בניינים בהקמה ודירות למכירה",
+              "table_title": null,
+              "note": "מוזכרת כחברת בת"
+            }
+          ],
+          "change_events": []
+        },
+        "0:10": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "קטה גרופ חטיבת היזום בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 220,
+              "section_title": "ביאור 19 - חברות מאוחדות",
+              "table_title": "פירוט חברות מאוחדות פעילות המוחזקות על ידי החברה:",
+              "note": null
+            },
+            {
+              "name": "קטה גרופ חטיבת הביצוע בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 220,
+              "section_title": "ביאור 19 - חברות מאוחדות",
+              "table_title": "פירוט חברות מאוחדות פעילות המוחזקות על ידי החברה:",
+              "note": null
+            },
+            {
+              "name": "קטה גרופ חטיבת המניבים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 220,
+              "section_title": "ביאור 19 - חברות מאוחדות",
+              "table_title": "פירוט חברות מאוחדות פעילות המוחזקות על ידי החברה:",
+              "note": null
+            },
+            {
+              "name": "קטה גרופ חטיבת ההתחדשות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 220,
+              "section_title": "ביאור 19 - חברות מאוחדות",
+              "table_title": "פירוט חברות מאוחדות פעילות המוחזקות על ידי החברה:",
+              "note": null
+            },
+            {
+              "name": "קטה גרופ - כח אדם בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 220,
+              "section_title": "ביאור 19 - חברות מאוחדות",
+              "table_title": "פירוט חברות מאוחדות פעילות המוחזקות על ידי החברה:",
+              "note": "לעניין מכירת חברה זו לבעל השליטה במהלך תקופת הדוח ראה ביאור 21(ב)(9)."
+            }
+          ],
+          "change_events": []
+        },
+        "0:11": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "קטה גרופ – חטיבת המניבים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 201,
+              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11: רשימת השקעות בחברות- בנות ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי",
+              "note": null
+            },
+            {
+              "name": "קטה גרופ – חטיבת הייזום בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 201,
+              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11: רשימת השקעות בחברות- בנות ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי",
+              "note": null
+            },
+            {
+              "name": "קטה גרופ – חטיבת ההתחדשות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 201,
+              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11: רשימת השקעות בחברות- בנות ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי",
+              "note": null
+            },
+            {
+              "name": "קטה גרופ – חטיבת הביצוע בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 201,
+              "section_title": "פרק ד' - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11: רשימת השקעות בחברות- בנות ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי",
+              "note": null
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
   "1730908": {
     "company_id": "1451",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-22T11:13:20.531657+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 7,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-23T10:47:26.759605+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1730693": {
     "company_id": "1050",
