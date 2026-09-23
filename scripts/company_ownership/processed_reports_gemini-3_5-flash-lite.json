@@ -4449,15 +4449,87 @@
   },
   "1725685": {
     "company_id": "333",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-23T10:08:21.903728+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1733176": {
+    "company_id": "2389",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-23T10:09:20.349285+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1727885": {
+    "company_id": "1122",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-23T10:10:52.318412+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1738311": {
+    "company_id": "1651",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-23T10:11:24.534934+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1727880": {
+    "company_id": "161",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-23T10:14:32.156715+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1730598": {
+    "company_id": "1074",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-23T10:16:19.886924+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1731482": {
+    "company_id": "1982",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-23T10:16:11.592817+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1727308": {
+    "company_id": "2009",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-23T10:18:01.409858+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1723159": {
+    "company_id": "627",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-23T10:20:50.835783+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1732591": {
+    "company_id": "589",
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-22T11:13:08.177436+00:00",
+    "at": "2026-09-23T10:20:36.118980+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
-      "total": 12,
+      "total": 13,
       "done": {
         "0:0": {
           "report_format": "israeli_periodic",
@@ -4465,38 +4537,74 @@
           "as_of_date": null,
           "subsidiaries": [
             {
-              "name": "פנינסולה בע\"מ",
-              "ownership_pct": 100,
+              "name": "מנדלסון תשתיות ותעשיות בע\"מ",
+              "ownership_pct": 53.91,
               "parent": null,
-              "page_reference": 7,
-              "section_title": "תרשים מבנה החזקות",
+              "page_reference": 3,
+              "section_title": "פרק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
               "table_title": null,
               "note": null
             },
             {
-              "name": "פנינסולה מימון נדל\"ן בע\"מ",
-              "ownership_pct": 100,
+              "name": "אוברסיז קומרס בע\"מ",
+              "ownership_pct": 53.33,
               "parent": null,
-              "page_reference": 7,
-              "section_title": "תרשים מבנה החזקות",
+              "page_reference": 3,
+              "section_title": "פרק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
               "table_title": null,
-              "note": "לשעבר פנינסולה אשראי מסחרי בע\"מ"
+              "note": null
             },
             {
-              "name": "פנינסולה מימון עודפים והשלמת הון בע\"מ",
+              "name": "כימוביל (אחזקות) בע\"מ",
               "ownership_pct": 100,
               "parent": null,
-              "page_reference": 7,
-              "section_title": "תרשים מבנה החזקות",
+              "page_reference": 4,
+              "section_title": "פרק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
               "table_title": null,
-              "note": "למועד פרסום הדוח, טרם התחילה את פעילותה"
+              "note": null
             },
             {
-              "name": "החברה לאשראי נקוב יהלומים בע\"מ",
+              "name": "כימוטל",
               "ownership_pct": 100,
+              "parent": "כימוביל (אחזקות) בע\"מ",
+              "page_reference": 4,
+              "section_title": "פרק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פלעד ח.י תעשיות בע\"מ",
+              "ownership_pct": 65,
+              "parent": "מנדלסון תשתיות ותעשיות בע\"מ",
+              "page_reference": 4,
+              "section_title": "פרק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "טביב - איכות לסביבה בע\"מ",
+              "ownership_pct": 100,
+              "parent": "כימוטל",
+              "page_reference": 4,
+              "section_title": "פרק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
+              "table_title": null,
+              "note": "בבעלות מלאה"
+            },
+            {
+              "name": "פלציב עין הנציב אגש\"ח בע\"מ",
+              "ownership_pct": 25,
               "parent": null,
-              "page_reference": 7,
-              "section_title": "תרשים מבנה החזקות",
+              "page_reference": 4,
+              "section_title": "פרק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "קרן טנא הון צמיחה פי.אי.אף, ש.מ",
+              "ownership_pct": 1.84,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "פרק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
               "table_title": null,
               "note": null
             }
@@ -4509,11 +4617,189 @@
           "as_of_date": null,
           "subsidiaries": [
             {
-              "name": "פנינסולה מימון נדל\"ן בע\"מ",
+              "name": "פלעד",
+              "ownership_pct": 65,
+              "parent": null,
+              "page_reference": 24,
+              "section_title": "הסכם מייסדים בפלעד",
+              "table_title": null,
+              "note": "מנדלסון מחזיקה ב-65% מהון המניות המונפק של פלעד"
+            },
+            {
+              "name": "טביב",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 30,
+              "section_title": "פתרונות לטיפול בחומרים מסוכנים",
+              "table_title": null,
+              "note": "מחצית מהון המניות המונפק והנפרע"
+            },
+            {
+              "name": "טביב אקולוגיה בע\"מ",
+              "ownership_pct": 100,
+              "parent": "טביב",
+              "page_reference": 32,
+              "section_title": "התפתחויות בשווקים של תחום הפעילות או שינויים במאפייני הלקוחות שלו",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אקו מדיקל בע\"מ",
+              "ownership_pct": 100,
+              "parent": "טביב",
+              "page_reference": 32,
+              "section_title": "התפתחויות בשווקים של תחום הפעילות או שינויים במאפייני הלקוחות שלו",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אקוכם איכות הסביבה בע\"מ",
+              "ownership_pct": 100,
+              "parent": "טביב",
+              "page_reference": 32,
+              "section_title": "התפתחויות בשווקים של תחום הפעילות או שינויים במאפייני הלקוחות שלו",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "רותם טכנולוגיות ופתרונות אקולוגיים בע\"מ",
+              "ownership_pct": 50,
+              "parent": "טביב",
+              "page_reference": 32,
+              "section_title": "התפתחויות בשווקים של תחום הפעילות או שינויים במאפייני הלקוחות שלו",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דשנים עין צורים - אגודה שיתופית בע\"מ",
+              "ownership_pct": 50,
+              "parent": "טביב",
+              "page_reference": 32,
+              "section_title": "התפתחויות בשווקים של תחום הפעילות או שינויים במאפייני הלקוחות שלו",
+              "table_title": null,
+              "note": "מכרה את חלקה ב-31 בדצמבר 2025"
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "רותם",
+              "ownership_pct": 50,
+              "parent": "טביב",
+              "page_reference": 41,
+              "section_title": "4.9 פילוח הכנסות הקבוצה משירותים בתחום הפעילות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דרך המעבדה",
+              "ownership_pct": 100,
+              "parent": "בקטוכם",
+              "page_reference": 50,
+              "section_title": "4.17.5 אתרי נס ציונה ורחובות",
+              "table_title": null,
+              "note": "חברה בת בבעלות מלאה"
+            },
+            {
+              "name": "המבדקה הכימית",
+              "ownership_pct": 100,
+              "parent": "בקטוכם",
+              "page_reference": 50,
+              "section_title": "4.17.5 אתרי נס ציונה ורחובות",
+              "table_title": null,
+              "note": "חברה בת בבעלות מלאה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "דיפוכם",
               "ownership_pct": null,
               "parent": null,
-              "page_reference": 37,
-              "section_title": "תחום פעילות ליווי פרויקטים לבניה",
+              "page_reference": 52,
+              "section_title": "4.19 נכסים בלתי מוחשיים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "כימוטל",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 52,
+              "section_title": "4.20 הון אנושי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "טביב",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 52,
+              "section_title": "4.20 הון אנושי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "בקטוכם",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 52,
+              "section_title": "4.20 הון אנושי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דרך המעבדה",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 52,
+              "section_title": "4.20 הון אנושי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "המבדקה הכימית",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 52,
+              "section_title": "4.20 הון אנושי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אקוכם",
+              "ownership_pct": null,
+              "parent": "טביב",
+              "page_reference": 62,
+              "section_title": "חוק אוויר נקי, תשס\"ח-2008",
+              "table_title": null,
+              "note": "חברה פרטית בשליטתה ובבעלותה המלאה של טביב"
+            },
+            {
+              "name": "אקו מדיקל",
+              "ownership_pct": null,
+              "parent": "טביב",
+              "page_reference": 67,
+              "section_title": "תקינה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "רותם",
+              "ownership_pct": 50,
+              "parent": "טביב",
+              "page_reference": 70,
+              "section_title": "4.30 צפי להתפתחות בשנה הקרובה",
               "table_title": null,
               "note": null
             }
@@ -4524,155 +4810,13 @@
       "attempts": {}
     }
   },
-  "1733176": {
-    "company_id": "2389",
-    "status": "partial",
-    "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-22T11:13:08.526157+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 12,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1727885": {
-    "company_id": "1122",
-    "status": "partial",
-    "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-22T11:13:08.888740+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 8,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1738311": {
-    "company_id": "1651",
-    "status": "partial",
-    "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-22T11:13:09.055102+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 10,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1727880": {
-    "company_id": "161",
-    "status": "partial",
-    "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-22T11:13:09.325720+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 13,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1730598": {
-    "company_id": "1074",
-    "status": "partial",
-    "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-22T11:13:12.980095+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 9,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1731482": {
-    "company_id": "1982",
-    "status": "partial",
-    "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-22T11:13:12.712140+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 15,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1727308": {
-    "company_id": "2009",
-    "status": "partial",
-    "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-22T11:13:13.224783+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 8,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1723159": {
-    "company_id": "627",
-    "status": "partial",
-    "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-22T11:13:13.534711+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 14,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1732591": {
-    "company_id": "589",
-    "status": "partial",
-    "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-22T11:13:14.283232+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 13,
-      "done": {},
-      "attempts": {}
-    }
-  },
   "1735375": {
     "company_id": "1864",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-22T11:13:13.908759+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 8,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-23T10:19:24.102829+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1730213": {
     "company_id": "2170",
