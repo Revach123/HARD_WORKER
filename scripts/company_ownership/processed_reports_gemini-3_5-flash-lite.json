@@ -4521,294 +4521,11 @@
   },
   "1732591": {
     "company_id": "589",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-23T10:20:36.118980+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 13,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "מנדלסון תשתיות ותעשיות בע\"מ",
-              "ownership_pct": 53.91,
-              "parent": null,
-              "page_reference": 3,
-              "section_title": "פרק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אוברסיז קומרס בע\"מ",
-              "ownership_pct": 53.33,
-              "parent": null,
-              "page_reference": 3,
-              "section_title": "פרק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "כימוביל (אחזקות) בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "פרק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "כימוטל",
-              "ownership_pct": 100,
-              "parent": "כימוביל (אחזקות) בע\"מ",
-              "page_reference": 4,
-              "section_title": "פרק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "פלעד ח.י תעשיות בע\"מ",
-              "ownership_pct": 65,
-              "parent": "מנדלסון תשתיות ותעשיות בע\"מ",
-              "page_reference": 4,
-              "section_title": "פרק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "טביב - איכות לסביבה בע\"מ",
-              "ownership_pct": 100,
-              "parent": "כימוטל",
-              "page_reference": 4,
-              "section_title": "פרק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
-              "table_title": null,
-              "note": "בבעלות מלאה"
-            },
-            {
-              "name": "פלציב עין הנציב אגש\"ח בע\"מ",
-              "ownership_pct": 25,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "פרק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "קרן טנא הון צמיחה פי.אי.אף, ש.מ",
-              "ownership_pct": 1.84,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "פרק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "פלעד",
-              "ownership_pct": 65,
-              "parent": null,
-              "page_reference": 24,
-              "section_title": "הסכם מייסדים בפלעד",
-              "table_title": null,
-              "note": "מנדלסון מחזיקה ב-65% מהון המניות המונפק של פלעד"
-            },
-            {
-              "name": "טביב",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 30,
-              "section_title": "פתרונות לטיפול בחומרים מסוכנים",
-              "table_title": null,
-              "note": "מחצית מהון המניות המונפק והנפרע"
-            },
-            {
-              "name": "טביב אקולוגיה בע\"מ",
-              "ownership_pct": 100,
-              "parent": "טביב",
-              "page_reference": 32,
-              "section_title": "התפתחויות בשווקים של תחום הפעילות או שינויים במאפייני הלקוחות שלו",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אקו מדיקל בע\"מ",
-              "ownership_pct": 100,
-              "parent": "טביב",
-              "page_reference": 32,
-              "section_title": "התפתחויות בשווקים של תחום הפעילות או שינויים במאפייני הלקוחות שלו",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אקוכם איכות הסביבה בע\"מ",
-              "ownership_pct": 100,
-              "parent": "טביב",
-              "page_reference": 32,
-              "section_title": "התפתחויות בשווקים של תחום הפעילות או שינויים במאפייני הלקוחות שלו",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "רותם טכנולוגיות ופתרונות אקולוגיים בע\"מ",
-              "ownership_pct": 50,
-              "parent": "טביב",
-              "page_reference": 32,
-              "section_title": "התפתחויות בשווקים של תחום הפעילות או שינויים במאפייני הלקוחות שלו",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "דשנים עין צורים - אגודה שיתופית בע\"מ",
-              "ownership_pct": 50,
-              "parent": "טביב",
-              "page_reference": 32,
-              "section_title": "התפתחויות בשווקים של תחום הפעילות או שינויים במאפייני הלקוחות שלו",
-              "table_title": null,
-              "note": "מכרה את חלקה ב-31 בדצמבר 2025"
-            }
-          ],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "רותם",
-              "ownership_pct": 50,
-              "parent": "טביב",
-              "page_reference": 41,
-              "section_title": "4.9 פילוח הכנסות הקבוצה משירותים בתחום הפעילות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "דרך המעבדה",
-              "ownership_pct": 100,
-              "parent": "בקטוכם",
-              "page_reference": 50,
-              "section_title": "4.17.5 אתרי נס ציונה ורחובות",
-              "table_title": null,
-              "note": "חברה בת בבעלות מלאה"
-            },
-            {
-              "name": "המבדקה הכימית",
-              "ownership_pct": 100,
-              "parent": "בקטוכם",
-              "page_reference": 50,
-              "section_title": "4.17.5 אתרי נס ציונה ורחובות",
-              "table_title": null,
-              "note": "חברה בת בבעלות מלאה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "דיפוכם",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 52,
-              "section_title": "4.19 נכסים בלתי מוחשיים",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "כימוטל",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 52,
-              "section_title": "4.20 הון אנושי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "טביב",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 52,
-              "section_title": "4.20 הון אנושי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "בקטוכם",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 52,
-              "section_title": "4.20 הון אנושי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "דרך המעבדה",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 52,
-              "section_title": "4.20 הון אנושי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "המבדקה הכימית",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 52,
-              "section_title": "4.20 הון אנושי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אקוכם",
-              "ownership_pct": null,
-              "parent": "טביב",
-              "page_reference": 62,
-              "section_title": "חוק אוויר נקי, תשס\"ח-2008",
-              "table_title": null,
-              "note": "חברה פרטית בשליטתה ובבעלותה המלאה של טביב"
-            },
-            {
-              "name": "אקו מדיקל",
-              "ownership_pct": null,
-              "parent": "טביב",
-              "page_reference": 67,
-              "section_title": "תקינה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "רותם",
-              "ownership_pct": 50,
-              "parent": "טביב",
-              "page_reference": 70,
-              "section_title": "4.30 צפי להתפתחות בשנה הקרובה",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-23T10:22:59.691050+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1735375": {
     "company_id": "1864",
@@ -4820,78 +4537,43 @@
   },
   "1730213": {
     "company_id": "2170",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-22T11:13:14.577114+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 8,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-23T10:22:21.936293+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732881": {
     "company_id": "1872",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-22T11:13:14.730670+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 9,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-23T10:24:42.223150+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1728715": {
     "company_id": "813",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-22T11:13:14.969832+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 11,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-23T10:26:19.204625+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1730754": {
     "company_id": "1664",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-22T11:13:15.256589+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 10,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-23T10:27:11.470483+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732798": {
     "company_id": "2391",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-22T11:13:15.449991+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 8,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-23T10:27:43.161809+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1729052": {
     "company_id": "2367",
@@ -4910,48 +4592,27 @@
   },
   "1720840": {
     "company_id": "759",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-22T11:13:15.709273+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 11,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-23T10:30:05.888325+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1726160": {
     "company_id": "216",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-22T11:13:16.015636+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 14,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-23T10:31:11.808202+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731698": {
     "company_id": "208",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-22T11:13:16.297116+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 14,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-23T10:33:11.887179+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732520": {
     "company_id": "1028",
@@ -4973,13 +4634,265 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-22T11:13:17.035475+00:00",
+    "at": "2026-09-23T10:34:09.683129+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 11,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "וואן טכנולוגיות תוכנה בע\"מ",
+              "ownership_pct": 34.88,
+              "parent": null,
+              "page_reference": 3,
+              "section_title": "1.2 מבנה אחזקות התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "טקליס שירותי מימון בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 3,
+              "section_title": "1.2 מבנה אחזקות התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "וואן ליין בע\"מ",
+              "ownership_pct": 100,
+              "parent": "וואן טכנולוגיות תוכנה בע\"מ",
+              "page_reference": 5,
+              "section_title": "1.4 מיזוגים ורכישות בוואן טכנולוגיות אשר הושלמו בשנת הדיווח ולאחר מכן",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ש. קרני מהנדסים בע\"מ",
+              "ownership_pct": 60,
+              "parent": "וואן סיטי אי טי בע\"מ",
+              "page_reference": 5,
+              "section_title": "1.4 מיזוגים ורכישות בוואן טכנולוגיות אשר הושלמו בשנת הדיווח ולאחר מכן",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "יוביטק סולושנס בע\"מ",
+              "ownership_pct": 90.1,
+              "parent": "וואן טכנולוגיות תוכנה בע\"מ",
+              "page_reference": 5,
+              "section_title": "1.4 מיזוגים ורכישות בוואן טכנולוגיות אשר הושלמו בשנת הדיווח ולאחר מכן",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "וואן בי.איי. דאטה",
+              "ownership_pct": 100,
+              "parent": "וואן טכנולוגיות תוכנה בע\"מ",
+              "page_reference": 6,
+              "section_title": "1.4 מיזוגים ורכישות בוואן טכנולוגיות אשר הושלמו בשנת הדיווח ולאחר מכן",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ג'ין טכנולוגיות בינה מלאכותית בע\"מ",
+              "ownership_pct": 15.52,
+              "parent": "וואן טכנולוגיות תוכנה בע\"מ",
+              "page_reference": 6,
+              "section_title": "1.4 מיזוגים ורכישות בוואן טכנולוגיות אשר הושלמו בשנת הדיווח ולאחר מכן",
+              "table_title": null,
+              "note": "שיעור החזקה מצרפי נכון למועד פרסום הדוח"
+            },
+            {
+              "name": "אף בי סי בע\"מ",
+              "ownership_pct": 100,
+              "parent": "וואן טכנולוגיות תוכנה בע\"מ",
+              "page_reference": 6,
+              "section_title": "1.4 מיזוגים ורכישות בוואן טכנולוגיות אשר הושלמו בשנת הדיווח ולאחר מכן",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "בריליקס בע\"מ",
+              "ownership_pct": 70,
+              "parent": "וואן טכנולוגיות תוכנה בע\"מ",
+              "page_reference": 6,
+              "section_title": "1.4 מיזוגים ורכישות בוואן טכנולוגיות אשר הושלמו בשנת הדיווח ולאחר מכן",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "טודוטק בע\"מ",
+              "ownership_pct": 80,
+              "parent": "וואן טכנולוגיות תוכנה בע\"מ",
+              "page_reference": 6,
+              "section_title": "1.4 מיזוגים ורכישות בוואן טכנולוגיות אשר הושלמו בשנת הדיווח ולאחר מכן",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פרקטיפרוגקט פי.אר בע\"מ",
+              "ownership_pct": 51,
+              "parent": "וואן טכנולוגיות תוכנה בע\"מ",
+              "page_reference": 6,
+              "section_title": "1.4 מיזוגים ורכישות בוואן טכנולוגיות אשר הושלמו בשנת הדיווח ולאחר מכן",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אד און אקספרט סנטר בע\"מ",
+              "ownership_pct": 51,
+              "parent": "וואן טכנולוגיות תוכנה בע\"מ",
+              "page_reference": 6,
+              "section_title": "1.4 מיזוגים ורכישות בוואן טכנולוגיות אשר הושלמו בשנת הדיווח ולאחר מכן",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "סולידב מ.ו. בע\"מ",
+              "ownership_pct": 51,
+              "parent": "וואן טכנולוגיות תוכנה בע\"מ",
+              "page_reference": 6,
+              "section_title": "1.4 מיזוגים ורכישות בוואן טכנולוגיות אשר הושלמו בשנת הדיווח ולאחר מכן",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "סטרטגי'קליר",
+              "ownership_pct": 60,
+              "parent": "וואן טכנולוגיות תוכנה בע\"מ",
+              "page_reference": 6,
+              "section_title": "1.4 מיזוגים ורכישות בוואן טכנולוגיות אשר הושלמו בשנת הדיווח ולאחר מכן",
+              "table_title": null,
+              "note": "לאחר תאריך המאזן"
+            },
+            {
+              "name": "שטראוס אסטרטגיה ייעוץ ומערכות בע\"מ",
+              "ownership_pct": 70,
+              "parent": "וואן טכנולוגיות תוכנה בע\"מ",
+              "page_reference": 6,
+              "section_title": "1.4 מיזוגים ורכישות בוואן טכנולוגיות אשר הושלמו בשנת הדיווח ולאחר מכן",
+              "table_title": null,
+              "note": "לאחר תאריך המאזן"
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "סטנגה",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 21,
+              "section_title": "פעילות offshore",
+              "table_title": null,
+              "note": "חברה בת בבעלות פרטית"
+            },
+            {
+              "name": "וואן שילוב מערכות",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 27,
+              "section_title": "3.2.1 מידע כללי על תחום הפעילות חסמי כניסה ויציאה",
+              "table_title": null,
+              "note": "חברה בת"
+            },
+            {
+              "name": "הראל טכנולוגיות",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 27,
+              "section_title": "3.2.1 מידע כללי על תחום הפעילות חסמי כניסה ויציאה",
+              "table_title": null,
+              "note": "חברה בת"
+            },
+            {
+              "name": "טלדור מערכות חטיבת שירותים מנוהלים",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 27,
+              "section_title": "3.2.1 מידע כללי על תחום הפעילות חסמי כניסה ויציאה",
+              "table_title": null,
+              "note": "חברה בת"
+            },
+            {
+              "name": "טלדור תקשורת ואבטחת מידע",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 27,
+              "section_title": "3.2.1 מידע כללי על תחום הפעילות חסמי כניסה ויציאה",
+              "table_title": null,
+              "note": "חברה בת"
+            },
+            {
+              "name": "כלנית איי.טי בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 34,
+              "section_title": "3.3 תחום הפעילות מיקור חוץ של תהליכים עסקיים (“BPO) “ומרכזי תמיכה טכנולוגיים",
+              "table_title": null,
+              "note": "לשעבר: וואן מרכזי תמיכה בע\"מ"
+            },
+            {
+              "name": "וואן ליין בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 34,
+              "section_title": "3.3 תחום הפעילות מיקור חוץ של תהליכים עסקיים (“BPO) “ומרכזי תמיכה טכנולוגיים",
+              "table_title": null,
+              "note": "לשעבר: בזק און ליין בע\"מ"
+            }
+          ],
+          "change_events": [
+            {
+              "company": "וואן ליין בע\"מ",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": null,
+              "event_date": null,
+              "event_description": "רכישת וואן ליין בע\"מ (לשעבר: בזק און ליין בע\"מ) במהלך שנת 2025",
+              "page_reference": 34,
+              "section_title": "3.3 תחום הפעילות מיקור חוץ של תהליכים עסקיים (“BPO) “ומרכזי תמיכה טכנולוגיים"
+            }
+          ]
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "וואן טכנולוגיות בע\"מ",
+              "ownership_pct": 34.88,
+              "parent": null,
+              "page_reference": 52,
+              "section_title": "חלק א' - הסברי הדירקטוריון למצב עסקי החברה, תוצאות פעילותה, הונה העצמי ותזרימי המזומנים שלה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "טקליס שירותי מימון בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 52,
+              "section_title": "חלק א' - הסברי הדירקטוריון למצב עסקי החברה, תוצאות פעילותה, הונה העצמי ותזרימי המזומנים שלה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
@@ -36527,14 +36440,574 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-22T11:13:16.677107+00:00",
+    "at": "2026-09-23T10:34:19.910977+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 13,
-      "done": {},
-      "attempts": {}
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "נ. נתנאל בניה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.3 תרשים החזקות עיקריות ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": "החברה מהווה זרוע ביצועית נוספת לקבוצה ותפעל לקבל סיווג ג' 5"
+            },
+            {
+              "name": "א.ד נתנאל גרופ (כח אדם) בע\"מ",
+              "ownership_pct": 100,
+              "parent": "נ. נתנאל בניה בע\"מ",
+              "page_reference": 4,
+              "section_title": "1.3 תרשים החזקות עיקריות ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": "חברה המהווה קבלן כח אדם להעסקת עובדים זרים בענף הבניה. בחודש יוני 2024, קיבלה היתר להעסקת 350 עובדים זרים."
+            },
+            {
+              "name": "נתנאל גרופ (א.ד) התחדשות עירונית",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.3 תרשים החזקות עיקריות ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": "חברה המהווה זרוע לפעילות ההתחדשות העירונית של החברה."
+            },
+            {
+              "name": "netanel group cyprus",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.3 תרשים החזקות עיקריות ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": "חברה המהווה זרוע לפעילות ייזום נדלן בקפריסין ומקום מושבה הוא לרנקה."
+            },
+            {
+              "name": "netanel & huna cyprus",
+              "ownership_pct": 75,
+              "parent": "netanel group cyprus",
+              "page_reference": 4,
+              "section_title": "1.3 תרשים החזקות עיקריות ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "netanel & huna investment cyprus LTD",
+              "ownership_pct": 75,
+              "parent": "netanel group cyprus",
+              "page_reference": 4,
+              "section_title": "1.3 תרשים החזקות עיקריות ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "נתנאל נופי עתלית בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.3 תרשים החזקות עיקריות ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "הבית ברחוב אנילביץ 50 בתל אביב בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.3 תרשים החזקות עיקריות ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "נ. נתנאל בנייה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 44,
+              "section_title": "7.14 פרויקט ביתר עילית - חלק החברה בפרויקט 50%",
+              "table_title": null,
+              "note": "חברה פרטית בבעלות מלאה של החברה"
+            },
+            {
+              "name": "נתנאל נופי עתלית בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 54,
+              "section_title": "7.16 פרויקט עתלית – ליום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": "החברה מחזיקה ב-50% ומיכמן מימון בע\"מ מחזיקה ב-50%"
+            }
+          ],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "נ. נתנאל בנייה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 63,
+              "section_title": "7.18 פרויקט ביתר עילית שלב ב' - חלק החברה בפרויקט 50%",
+              "table_title": null,
+              "note": "חברה פרטית בבעלות ובשליטה מלאה של החברה"
+            },
+            {
+              "name": "נתנאל נופי עתלית בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 54,
+              "section_title": "7.16 פרויקט עתלית – ליום 31 בדצמבר 2025, חלק החברה בפרויקט % 50",
+              "table_title": null,
+              "note": "החזקה משותפת (50% לאחר מכירת מחצית המניות בנובמבר 2025)"
+            }
+          ],
+          "change_events": [
+            {
+              "company": "נתנאל נופי עתלית בע\"מ",
+              "event_type": "decrease",
+              "ownership_pct_before": 100,
+              "ownership_pct_after": 50,
+              "event_date": "2025-11-17",
+              "event_description": "מכירת 50% ממניות חברת נופי עתלית למיכמן מימון בע\"מ",
+              "page_reference": 58,
+              "section_title": "פרק ד': עניינים הנוגעים לפעילות הקבוצה בכללותה"
+            }
+          ]
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "נ. נתנאל בנייה בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 112,
+              "section_title": "באור 1 - כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "נתנאל גרופ (א.ד.) התחדשות עירונית בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 112,
+              "section_title": "באור 1 - כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "חברת הבית ברחוב אנילביץ' 50 בתל אביב בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 112,
+              "section_title": "באור 1 - כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "NETANEL INVESTMENT U.S.A INC",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 112,
+              "section_title": "באור 1 - כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "א.ד. נתנאל גרופ כח אדם בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 112,
+              "section_title": "באור 1 - כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "NETANEL GROUP CYPRUS",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 112,
+              "section_title": "באור 1 - כללי",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:7": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "חבצלת השרון השבה בע\"מ",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 134,
+              "section_title": "באור 10 - השקעות והלוואות לחברות מוחזקות המטופלות לפי שיטת השווי המאזני",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "נתנאל נופי עתלית בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 135,
+              "section_title": "באור 10 - השקעות והלוואות לחברות מוחזקות המטופלות לפי שיטת השווי המאזני",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Netanel Group Cyprus LTD",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 131,
+              "section_title": "באור 8 - מלאי בניינים בהקמה ודירות למכירה (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "חברת הבית ברחוב אנילביץ' 50 בתל אביב בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 138,
+              "section_title": "באור 11 - מלאי מקרקעין וזכויות במקרקעין בלתי שוטף (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "נתנאל גרופ (א.ד.) התחדשות עירונית בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 132,
+              "section_title": "באור 8 - מלאי בניינים בהקמה ודירות למכירה (המשך)",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:8": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "חברת הבית ברחוב אנילביץ' 50 בתל אביב בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 171,
+              "section_title": "באור 11 - מלאי מקרקעין וזכויות במקרקעין בלתי שוטף (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "נ.א ניצן ביצוע יזמות 2004 בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 174,
+              "section_title": "באור 16 - נכס בלתי מוחשי",
+              "table_title": null,
+              "note": "בשליטתה המלאה של החברה"
+            },
+            {
+              "name": "נ. נתנאל בניה בע\"מ",
+              "ownership_pct": null,
+              "parent": "נ.א ניצן ביצוע יזמות 2004 בע\"מ",
+              "page_reference": 174,
+              "section_title": "באור 16 - נכס בלתי מוחשי",
+              "table_title": null,
+              "note": "מלוא הון המניות נרכש באמצעות חברת הבת"
+            },
+            {
+              "name": "נתנאל תל דן",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 175,
+              "section_title": "באור 19 - זכאים אחרים ויתרות זכות",
+              "table_title": null,
+              "note": "חברה מאוחדת"
+            },
+            {
+              "name": "נתנאל קפריסין",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 175,
+              "section_title": "באור 19 - זכאים אחרים ויתרות זכות",
+              "table_title": null,
+              "note": "חברה מאוחדת"
+            },
+            {
+              "name": "נתנאל גרופ (א.ד) התחדשות עירונית",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 176,
+              "section_title": "באור 20 - הלוואות מתאגיד בנקאי ואחרים בניכוי חלויות שוטפות",
+              "table_title": null,
+              "note": "חברת בת של החברה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:9": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "נ. נתנאל בנייה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 167,
+              "section_title": "באור 30 - חברות בנות",
+              "table_title": "פרטים בדבר חברות מאוחדות",
+              "note": null
+            },
+            {
+              "name": "נתנאל גרופ (א.ד.) התחדשות עירונית בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 167,
+              "section_title": "באור 30 - חברות בנות",
+              "table_title": "פרטים בדבר חברות מאוחדות",
+              "note": null
+            },
+            {
+              "name": "NETANEL INVESTMENT U.S.A INC",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 167,
+              "section_title": "באור 30 - חברות בנות",
+              "table_title": "פרטים בדבר חברות מאוחדות",
+              "note": "תושבת ארה\"ב"
+            },
+            {
+              "name": "א.ד. נתנאל גרופ (כוח אדם) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 167,
+              "section_title": "באור 30 - חברות בנות",
+              "table_title": "פרטים בדבר חברות מאוחדות",
+              "note": null
+            },
+            {
+              "name": "נתנאל אופק ובניה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 167,
+              "section_title": "באור 30 - חברות בנות",
+              "table_title": "פרטים בדבר חברות מאוחדות",
+              "note": null
+            },
+            {
+              "name": "Netanel Group Cyprus LTD",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 167,
+              "section_title": "באור 30 - חברות בנות",
+              "table_title": "פרטים בדבר חברות מאוחדות",
+              "note": "תושבת קפריסין"
+            }
+          ],
+          "change_events": [
+            {
+              "company": "חברת הבית ברחוב אנילביץ' 50 בתל אביב בע\"מ",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 100,
+              "event_date": "2025-04-24",
+              "event_description": "רכישת 100% ממניות ומזכויות ההצבעה בחברה מחברה קשורה",
+              "page_reference": 166,
+              "section_title": "באור 29 - אירועים מהותיים בתקופת הדוח"
+            }
+          ]
+        },
+        "0:11": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "נ.א. ניצן ביצוע ויזמות 2014 בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 193,
+              "section_title": "פרק ד' לדוח התקופתי ליום 31 בדצמבר 2025 - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 : רשימת השקעות בחברות בנות ובחברות כלולות ולכלול תאריך הדוח על המצב הכספי",
+              "note": null
+            },
+            {
+              "name": "נ. נתנאל בנייה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 193,
+              "section_title": "פרק ד' לדוח התקופתי ליום 31 בדצמבר 2025 - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 : רשימת השקעות בחברות בנות ובחברות כלולות ולכלול תאריך הדוח על המצב הכספי",
+              "note": null
+            },
+            {
+              "name": "נתנאל תל דן בע\"מ",
+              "ownership_pct": 60,
+              "parent": null,
+              "page_reference": 193,
+              "section_title": "פרק ד' לדוח התקופתי ליום 31 בדצמבר 2025 - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 : רשימת השקעות בחברות בנות ובחברות כלולות ולכלול תאריך הדוח על המצב הכספי",
+              "note": null
+            },
+            {
+              "name": "NETANEL INVEST USA INC",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 193,
+              "section_title": "פרק ד' לדוח התקופתי ליום 31 בדצמבר 2025 - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 : רשימת השקעות בחברות בנות ובחברות כלולות ולכלול תאריך הדוח על המצב הכספי",
+              "note": null
+            },
+            {
+              "name": "נתנאל א.ד התחדשות עירונית בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 193,
+              "section_title": "פרק ד' לדוח התקופתי ליום 31 בדצמבר 2025 - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 : רשימת השקעות בחברות בנות ובחברות כלולות ולכלול תאריך הדוח על המצב הכספי",
+              "note": null
+            },
+            {
+              "name": "נתנאל אופק ובניה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 193,
+              "section_title": "פרק ד' לדוח התקופתי ליום 31 בדצמבר 2025 - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 : רשימת השקעות בחברות בנות ובחברות כלולות ולכלול תאריך הדוח על המצב הכספי",
+              "note": null
+            },
+            {
+              "name": "Netanel Group Cyprus",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 193,
+              "section_title": "פרק ד' לדוח התקופתי ליום 31 בדצמבר 2025 - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 : רשימת השקעות בחברות בנות ובחברות כלולות ולכלול תאריך הדוח על המצב הכספי",
+              "note": null
+            },
+            {
+              "name": "Netanel & Huna Cyprus",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 193,
+              "section_title": "פרק ד' לדוח התקופתי ליום 31 בדצמבר 2025 - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 : רשימת השקעות בחברות בנות ובחברות כלולות ולכלול תאריך הדוח על המצב הכספי",
+              "note": null
+            },
+            {
+              "name": "Netanel & Huna Investment Cyprus",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 193,
+              "section_title": "פרק ד' לדוח התקופתי ליום 31 בדצמבר 2025 - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 : רשימת השקעות בחברות בנות ובחברות כלולות ולכלול תאריך הדוח על המצב הכספי",
+              "note": null
+            },
+            {
+              "name": "חבצלת השרון השבה בע\"מ",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 193,
+              "section_title": "פרק ד' לדוח התקופתי ליום 31 בדצמבר 2025 - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 : רשימת השקעות בחברות בנות ובחברות כלולות ולכלול תאריך הדוח על המצב הכספי",
+              "note": null
+            },
+            {
+              "name": "א.ד נתנאל גרופ (כח אדם) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 193,
+              "section_title": "פרק ד' לדוח התקופתי ליום 31 בדצמבר 2025 - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 : רשימת השקעות בחברות בנות ובחברות כלולות ולכלול תאריך הדוח על המצב הכספי",
+              "note": null
+            },
+            {
+              "name": "הבית ברחוב אנילביץ' 50 בתל אביב בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 193,
+              "section_title": "פרק ד' לדוח התקופתי ליום 31 בדצמבר 2025 - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 : רשימת השקעות בחברות בנות ובחברות כלולות ולכלול תאריך הדוח על המצב הכספי",
+              "note": null
+            },
+            {
+              "name": "נתנאל נופי עתלית בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 193,
+              "section_title": "פרק ד' לדוח התקופתי ליום 31 בדצמבר 2025 - פרטים נוספים על התאגיד",
+              "table_title": "תקנה 11 : רשימת השקעות בחברות בנות ובחברות כלולות ולכלול תאריך הדוח על המצב הכספי",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:12": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "הבית ברחוב אנילביץ' 50 בתל אביב בע\"מ",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": 0,
+              "ownership_pct_after": 100,
+              "event_date": "2025-04-24",
+              "event_description": "רכישת מלוא הון המניות (100%) של הבית ברחוב אנילביץ'",
+              "page_reference": 207,
+              "section_title": "10. הסכם שכירות - אנילביץ' 50"
+            }
+          ]
+        }
+      },
+      "attempts": {
+        "0:10": 1
+      }
     }
   },
   "1733347": {
