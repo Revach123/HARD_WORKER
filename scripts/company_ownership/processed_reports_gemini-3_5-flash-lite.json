@@ -6010,7 +6010,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-23T11:09:01.121267+00:00",
+    "at": "2026-09-23T11:09:14.615806+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -6454,6 +6454,32 @@
             }
           ],
           "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "מיט\"ג היטק ונצ'רס בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 69,
+              "section_title": "באור 1 - כללי",
+              "table_title": null,
+              "note": "נקראת גם 'קצרין'"
+            },
+            {
+              "name": "אופקים הייטק ונצ'רס בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 69,
+              "section_title": "באור 1 - כללי",
+              "table_title": null,
+              "note": "נקראת גם 'אופקים'"
+            }
+          ],
+          "change_events": []
         }
       },
       "attempts": {}
@@ -6815,7 +6841,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-22T11:13:31.728432+00:00",
+    "at": "2026-09-23T11:09:13.000238+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -6830,7 +6856,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-22T11:13:31.976472+00:00",
+    "at": "2026-09-23T11:09:13.251706+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -6845,7 +6871,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-22T11:13:32.256430+00:00",
+    "at": "2026-09-23T11:09:13.510001+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -6860,7 +6886,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-22T11:13:32.475174+00:00",
+    "at": "2026-09-23T11:09:13.727559+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -6875,7 +6901,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-22T11:13:32.860411+00:00",
+    "at": "2026-09-23T11:09:14.060304+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -6905,7 +6931,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-22T11:13:33.134379+00:00",
+    "at": "2026-09-23T11:09:14.253480+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -6920,7 +6946,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-22T11:13:33.478815+00:00",
+    "at": "2026-09-23T11:09:14.577046+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
