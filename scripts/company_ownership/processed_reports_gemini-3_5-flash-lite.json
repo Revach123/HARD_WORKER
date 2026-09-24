@@ -5770,168 +5770,83 @@
   },
   "1736130": {
     "company_id": "1562",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-24T10:38:18.877400+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 7,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-24T10:39:30.844376+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1725057": {
     "company_id": "1610",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-23T11:09:15.406535+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 13,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-24T10:42:20.842705+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732130": {
     "company_id": "1912",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-23T11:09:15.644992+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 12,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-24T10:43:29.087134+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731143": {
     "company_id": "249",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-23T11:09:15.907561+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 10,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-24T10:45:05.703667+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731626": {
     "company_id": "1305",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-23T11:09:16.099262+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 8,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-24T10:44:55.829242+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732195": {
     "company_id": "1431",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-23T11:09:16.279989+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-24T10:45:47.267963+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732095": {
     "company_id": "1307",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-23T11:09:16.550111+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 8,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-24T10:47:11.883797+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1730596": {
     "company_id": "1185",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-23T11:09:16.718147+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 8,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-24T10:47:30.681849+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731111": {
     "company_id": "1861",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-23T11:09:17.142035+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 7,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-24T10:49:45.507255+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1736400": {
     "company_id": "341",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-23T11:09:16.861406+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 11,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-24T10:50:35.488522+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1729957": {
     "company_id": "2491",
@@ -5953,13 +5868,119 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-23T11:09:17.286201+00:00",
+    "at": "2026-09-24T10:50:23.945132+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 7,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "יוטרון סיסטמס אינק",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "1.2 חברות בנות ותרשים מבנה אחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "קאסאד בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "1.2 חברות בנות ותרשים מבנה אחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "קאסאד סרוויסס אינק",
+              "ownership_pct": 100,
+              "parent": "קאסאד בע\"מ",
+              "page_reference": 5,
+              "section_title": "1.2 חברות בנות ותרשים מבנה אחזקות",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "יוטרון סיסטמס אינק",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 28,
+              "section_title": "18.2 יוטרון סיסטמס",
+              "table_title": null,
+              "note": "חברה בת"
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "יוטרון פתרונות אוטומטיים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 41,
+              "section_title": "33. חברות בנות",
+              "table_title": null,
+              "note": "היתה בבעלות מלאה של החברה עד ליום 2 בנובמבר 2023 שאז מוזגה לתוך החברה"
+            },
+            {
+              "name": "יוטרון סיסטמס אינק",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 42,
+              "section_title": "33. חברות בנות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "קאסאד בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 42,
+              "section_title": "33. חברות בנות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "קאסאד אינק",
+              "ownership_pct": 100,
+              "parent": "קאסאד בע\"מ",
+              "page_reference": 42,
+              "section_title": "33. חברות בנות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "קאסאד סרוויסס אינק",
+              "ownership_pct": 100,
+              "parent": "קאסאד בע\"מ",
+              "page_reference": 49,
+              "section_title": "1. מבוא",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
