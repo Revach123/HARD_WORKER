@@ -4655,455 +4655,11 @@
   },
   "1729045": {
     "company_id": "1287",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-23T10:40:01.063602+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 13,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-18",
-          "subsidiaries": [
-            {
-              "name": "אופל בלאנס (2006) בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 5,
-              "section_title": "2. פעילות החברה ותיאור התפתחות עסקיה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אופל בלאנס חולון בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 5,
-              "section_title": "2. פעילות החברה ותיאור התפתחות עסקיה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "א. דורון אחזקות מימון והשקעות בע\"מ",
-              "ownership_pct": 70,
-              "parent": null,
-              "page_reference": 5,
-              "section_title": "2. פעילות החברה ותיאור התפתחות עסקיה",
-              "table_title": null,
-              "note": "מוכר גם בשם DOI"
-            },
-            {
-              "name": "א. דורון מימון והשקעות בע\"מ",
-              "ownership_pct": 100,
-              "parent": "א. דורון אחזקות מימון והשקעות בע\"מ",
-              "page_reference": 5,
-              "section_title": "2. פעילות החברה ותיאור התפתחות עסקיה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "די. או. איי קפיטל בע\"מ",
-              "ownership_pct": 100,
-              "parent": "א. דורון אחזקות מימון והשקעות בע\"מ",
-              "page_reference": 5,
-              "section_title": "2. פעילות החברה ותיאור התפתחות עסקיה",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "אופל 2006",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 25,
-              "section_title": "10.2 תחום המשכנתאות",
-              "table_title": null,
-              "note": "חברת בת"
-            },
-            {
-              "name": "אופל חולון",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 25,
-              "section_title": "10.2 תחום המשכנתאות",
-              "table_title": null,
-              "note": "חברת בת"
-            },
-            {
-              "name": "DOI",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 18,
-              "section_title": "10. לקוחות",
-              "table_title": null,
-              "note": "רכישת חברה בתקופת הדוח"
-            },
-            {
-              "name": "א. דורון",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 34,
-              "section_title": "20.2 פירוט אודות שיעורי הריבית בקשר עם הלוואות הקבוצה",
-              "table_title": null,
-              "note": "במסגרת האיחוד לראשונה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "אופל 2006",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 69,
-              "section_title": "20.3.1.1 תאגיד בנקאי ב'",
-              "table_title": "תאגיד בנקאי ב' -החברה, אופל 2006 ואופל חולון",
-              "note": "חברת בת בבעלות מלאה לפי תנאי מסגרת אשראי"
-            },
-            {
-              "name": "אופל חולון",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 69,
-              "section_title": "20.3.1.1 תאגיד בנקאי ב'",
-              "table_title": "תאגיד בנקאי ב' -החברה, אופל 2006 ואופל חולון",
-              "note": "חברת בת בבעלות מלאה לפי תנאי מסגרת אשראי"
-            },
-            {
-              "name": "אופל בלאנס משכנתאות לעסק ולבית בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 84,
-              "section_title": "22. מגבלות ופיקוח על פעילות התאגיד",
-              "table_title": null,
-              "note": "אושר פירוקה מרצון באפריל 2025"
-            }
-          ],
-          "change_events": [
-            {
-              "company": "אופל בלאנס משכנתאות לעסק ולבית בע\"מ",
-              "event_type": "full_disposal",
-              "ownership_pct_before": 50,
-              "ownership_pct_after": 0,
-              "event_date": "2025-04-01",
-              "event_description": "פירוקה מרצון של החברה ע\"י רשות התאגידים",
-              "page_reference": 84,
-              "section_title": "22. מגבלות ופיקוח על פעילות התאגיד"
-            }
-          ]
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": [
-            {
-              "company": "א. דורון אחזקות מימון והשקעות בע\"מ",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": null,
-              "event_date": null,
-              "event_description": "רכישת חברת בת במהלך תקופת הדוח, הכוללת אופציות Call ו-Put ביחס ל-30% ממניות החברה המאפשרות לאופל להגיע לאחזקה של 100%.",
-              "page_reference": 82,
-              "section_title": "מצב כספי - התחייבויות שאינן שוטפות",
-              "table_title": null
-            }
-          ]
-        },
-        "0:5": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": [
-            {
-              "company": "א. דורון אחזקות מימון והשקעות בע\"מ (DOI)",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 70,
-              "event_date": "2025-10-05",
-              "event_description": "הושלמה עסקת רכישת השליטה בחברת א. דורון אחזקות מימון והשקעות בע\"מ (DOI) ברכישת 70% מהון המניות בתמורה כוללת של כ-5 מיליון ש\"ח.",
-              "page_reference": 93,
-              "section_title": ".8 אירועים בתקופת הדוח"
-            }
-          ]
-        },
-        "0:6": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "אופל בלאנס משכנתאות לעסק ולבית בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 122,
-              "section_title": "באור 1 - כללי",
-              "table_title": null,
-              "note": "בבעלות משותפת, נמצאת בהליך פירוק מרצון מזורז החל מ-15 בינואר 2025"
-            },
-            {
-              "name": "א.דורון אחזקות - מימון והשקעות בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 122,
-              "section_title": "באור 1 - כללי",
-              "table_title": null,
-              "note": "חברה בת"
-            },
-            {
-              "name": "אופל חולון",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 122,
-              "section_title": "באור 1 - כללי",
-              "table_title": null,
-              "note": "חברת בת של הקבוצה"
-            },
-            {
-              "name": "אופל 2006",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 122,
-              "section_title": "באור 1 - כללי",
-              "table_title": null,
-              "note": "חברת בת של הקבוצה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:7": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "אופל בלאנס (2006) בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 135,
-              "section_title": "באור 1 - כללי (המשך)",
-              "table_title": null,
-              "note": "חברת בת"
-            },
-            {
-              "name": "אופל בלאנס חולון בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 135,
-              "section_title": "באור 1 - כללי (המשך)",
-              "table_title": null,
-              "note": "חברת בת"
-            },
-            {
-              "name": "א.דורון אחזקות - מימון והשקעות בע\"מ",
-              "ownership_pct": 70,
-              "parent": null,
-              "page_reference": 135,
-              "section_title": "באור 1 - כללי (המשך)",
-              "table_title": null,
-              "note": "חברת בת, נרכשה ב-5 באוקטובר 2025"
-            },
-            {
-              "name": "אופל בלאנס משכנתאות לעסק ולבית בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 135,
-              "section_title": "באור 1 - כללי (המשך)",
-              "table_title": null,
-              "note": "חברה בבעלות משותפת (50% החברה, 50% מרקורי פיננסים בע\"מ)"
-            }
-          ],
-          "change_events": []
-        },
-        "0:8": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "אופל חולון",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 139,
-              "section_title": "באור 10 - נכס מוחזק למכירה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אופל 2006",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 141,
-              "section_title": "באור -11 אשראי מתאגידים בנקאיים והלוואות מאחרים (המשך)",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "א.דורון",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 142,
-              "section_title": "באור -11 אשראי מתאגידים בנקאיים והלוואות מאחרים (המשך)",
-              "table_title": null,
-              "note": "אוחדה לראשונה בדוחות הכספיים המאוחדים ברבעון הרביעי של שנת 2025"
-            }
-          ],
-          "change_events": []
-        },
-        "0:9": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "אופל משכנתאות לעסק ולבית בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 158,
-              "section_title": "באור 18 - התקשרויות, שעבודים והתחייבויות תלויות",
-              "table_title": null,
-              "note": "תוחזק בחלקים שווים על ידי החברה ועל ידי מרקורי; נמצאה בהליך פירוק מרצון מזורז החל מ-15 בינואר 2025"
-            },
-            {
-              "name": "אופל 2006",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 158,
-              "section_title": "באור 18 - התקשרויות, שעבודים והתחייבויות תלויות",
-              "table_title": null,
-              "note": "פעילות המשכנתאות מבוצעת באמצעותה"
-            },
-            {
-              "name": "אופל חולון",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 158,
-              "section_title": "באור 18 - התקשרויות, שעבודים והתחייבויות תלויות",
-              "table_title": null,
-              "note": "פעילות המשכנתאות מבוצעת באמצעותה"
-            },
-            {
-              "name": "א. דורון",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 163,
-              "section_title": "באור 25 - צדדים קשורים ובעלי עניין",
-              "table_title": null,
-              "note": "חברה נרכשת במסגרת צירוף עסקים"
-            }
-          ],
-          "change_events": []
-        },
-        "0:10": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "אופל בלאנס (2006) בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 176,
-              "section_title": "פרק ד' – פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדוח על המצב הכספי",
-              "note": null
-            },
-            {
-              "name": "אופל בלאנס חולון בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 176,
-              "section_title": "פרק ד' – פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדוח על המצב הכספי",
-              "note": null
-            },
-            {
-              "name": "א. דורון אחזקות מימון והשקעות בע\"מ (\"DOI\")",
-              "ownership_pct": 70,
-              "parent": null,
-              "page_reference": 176,
-              "section_title": "פרק ד' – פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11: רשימת השקעות בחברות בת ובחברות כלולות לתאריך הדוח על המצב הכספי",
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:11": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "DOI",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 201,
-              "section_title": "תקנה 24 (ב): החזקות בעלי ענין בתאריך הדוח, במניות של חברה מוחזקת של התאגיד אשר פעילותה מהותית לפעילות התאגיד",
-              "table_title": null,
-              "note": "מר אורן דורון מחזיק ב-30%, יתר המניות מוחזקות על ידי החברה"
-            },
-            {
-              "name": "אופל 2006",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 202,
-              "section_title": "תקנה 26: הדירקטורים של התאגיד",
-              "table_title": "תקנה 26: הדירקטורים של התאגיד",
-              "note": "חברת בת של החברה"
-            },
-            {
-              "name": "אופל חולון",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 202,
-              "section_title": "תקנה 26: הדירקטורים של התאגיד",
-              "table_title": "תקנה 26: הדירקטורים של התאגיד",
-              "note": "חברת בת של החברה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:12": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "א. דורון אחזקות מימון והשקעות בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 205,
-              "section_title": null,
-              "table_title": null,
-              "note": "מוגדרת כחברה בת של החברה"
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {
-        "0:3": 1
-      }
-    }
+    "attempts": 1,
+    "at": "2026-09-24T10:05:40.836261+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1726567": {
     "company_id": "1894",
@@ -5242,94 +4798,11 @@
   },
   "1735943": {
     "company_id": "1899",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-23T10:54:49.204390+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 6,
-      "done": {
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2024-12-31",
-          "subsidiaries": [
-            {
-              "name": "Aura Smart Air Inc.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 57,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": "הרכב הקבוצה",
-              "note": null
-            },
-            {
-              "name": "AURAAIR PRIVATE LIMITED",
-              "ownership_pct": 99.99,
-              "parent": null,
-              "page_reference": 57,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": "הרכב הקבוצה",
-              "note": "מנוהל באמצעות כתב המחאה בלתי חוזר על זכויות מניה אחת המוחזקת ע\"י המנכ\"ל המקומי"
-            }
-          ],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-04-19",
-          "subsidiaries": [
-            {
-              "name": "Aura Smart Air Inc.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 84,
-              "section_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות כלולות",
-              "table_title": "תקנה 11",
-              "note": null
-            },
-            {
-              "name": "Aura air Private Limited",
-              "ownership_pct": 99.9,
-              "parent": null,
-              "page_reference": 84,
-              "section_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות כלולות",
-              "table_title": "תקנה 11",
-              "note": "ההון המונפק הכולל מחולק ל-50,000 מניות רגילות, כאשר מניה אחת מוחזקת על ידי צד שלישי אשר המחה את כל זכויותיו לחברה באופן בלתי חוזר"
-            }
-          ],
-          "change_events": []
-        },
-        "0:5": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {
-        "0:0": 1
-      }
-    }
+    "attempts": 1,
+    "at": "2026-09-24T10:06:00.038098+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1736500": {
     "company_id": "2250",
@@ -5360,7 +4833,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-23T11:04:09.846194+00:00",
+    "at": "2026-09-24T10:05:55.785616+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -5977,7 +5450,7 @@
         }
       },
       "attempts": {
-        "0:3": 1
+        "0:3": 2
       }
     }
   },
@@ -6007,534 +5480,19 @@
   },
   "1733313": {
     "company_id": "1325",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-23T11:09:15.699628+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 7,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "FDNA Inc.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 7,
-              "section_title": "1.3.1 תרשים ההחזקות של חברות הפורטפוליו של הקבוצה נכון ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": "השקעה באמצעות מנגנון SAFE"
-            },
-            {
-              "name": "פיוריר אופטיקס בע\"מ",
-              "ownership_pct": 1.67,
-              "parent": null,
-              "page_reference": 7,
-              "section_title": "1.3.1 תרשים ההחזקות של חברות הפורטפוליו של הקבוצה נכון ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "רג'ינטיס בימטריאלס בע\"מ",
-              "ownership_pct": 1.31,
-              "parent": null,
-              "page_reference": 7,
-              "section_title": "1.3.1 תרשים ההחזקות של חברות הפורטפוליו של הקבוצה נכון ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אוסיו בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 7,
-              "section_title": "1.3.1 תרשים ההחזקות של חברות הפורטפוליו של הקבוצה נכון ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": "שיעור אחזקות הקבוצה קטן מ-1%"
-            },
-            {
-              "name": "נאסוס פארמה בע\"מ",
-              "ownership_pct": 6.05,
-              "parent": null,
-              "page_reference": 7,
-              "section_title": "1.3.1 תרשים ההחזקות של חברות הפורטפוליו של הקבוצה נכון ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "בית זיקוק אשדוד בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 7,
-              "section_title": "1.3.1 תרשים ההחזקות של חברות הפורטפוליו של הקבוצה נכון ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": "שיעור אחזקות הקבוצה קטן מ-1%"
-            },
-            {
-              "name": "אינטואישן רובוטיקס בע\"מ",
-              "ownership_pct": 1.57,
-              "parent": null,
-              "page_reference": 7,
-              "section_title": "1.3.1 תרשים ההחזקות של חברות הפורטפוליו של הקבוצה נכון ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "צים שירותי ספנות משולבים בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 7,
-              "section_title": "1.3.1 תרשים ההחזקות של חברות הפורטפוליו של הקבוצה נכון ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": "שיעור אחזקות הקבוצה קטן מ-1%"
-            },
-            {
-              "name": "גלולי בע\"מ",
-              "ownership_pct": 1.12,
-              "parent": null,
-              "page_reference": 7,
-              "section_title": "1.3.1 תרשים ההחזקות של חברות הפורטפוליו של הקבוצה נכון ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ויזו ספאקס בע\"מ",
-              "ownership_pct": 2.01,
-              "parent": null,
-              "page_reference": 7,
-              "section_title": "1.3.1 תרשים ההחזקות של חברות הפורטפוליו של הקבוצה נכון ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אאורה השקעות בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 7,
-              "section_title": "1.3.1 תרשים ההחזקות של חברות הפורטפוליו של הקבוצה נכון ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": "שיעור אחזקות הקבוצה קטן מ-1%"
-            },
-            {
-              "name": "מבטח שמיר אחזקות בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 7,
-              "section_title": "1.3.1 תרשים ההחזקות של חברות הפורטפוליו של הקבוצה נכון ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": "שיעור אחזקות הקבוצה קטן מ-1%"
-            },
-            {
-              "name": "Electrical Grid Monitoring Inc. (EGM)",
-              "ownership_pct": 1.65,
-              "parent": null,
-              "page_reference": 7,
-              "section_title": "1.3.1 תרשים ההחזקות של חברות הפורטפוליו של הקבוצה נכון ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "איירפורט סיטי בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 7,
-              "section_title": "1.3.1 תרשים ההחזקות של חברות הפורטפוליו של הקבוצה נכון ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": "שיעור אחזקות הקבוצה קטן מ-1%"
-            },
-            {
-              "name": "אל על נתיבי אוויר לישראל בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 7,
-              "section_title": "1.3.1 תרשים ההחזקות של חברות הפורטפוליו של הקבוצה נכון ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": "שיעור אחזקות הקבוצה קטן מ-1%"
-            },
-            {
-              "name": "קונטיפי מדיקל בע\"מ",
-              "ownership_pct": 6.84,
-              "parent": null,
-              "page_reference": 7,
-              "section_title": "1.3.1 תרשים ההחזקות של חברות הפורטפוליו של הקבוצה נכון ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ויז'נארי אי.איי בע\"מ",
-              "ownership_pct": 3.74,
-              "parent": null,
-              "page_reference": 7,
-              "section_title": "1.3.1 תרשים ההחזקות של חברות הפורטפוליו של הקבוצה נכון ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מניף שירותים פיננסים בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 7,
-              "section_title": "1.3.1 תרשים ההחזקות של חברות הפורטפוליו של הקבוצה נכון ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": "שיעור אחזקות הקבוצה קטן מ-1%"
-            },
-            {
-              "name": "ננוגוסט בע\"מ",
-              "ownership_pct": 2.42,
-              "parent": null,
-              "page_reference": 7,
-              "section_title": "1.3.1 תרשים ההחזקות של חברות הפורטפוליו של הקבוצה נכון ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "קונטיפי מדיקל בע\"מ",
-              "ownership_pct": 6.34,
-              "parent": null,
-              "page_reference": 30,
-              "section_title": "פרק שני : תיאור חברות פורטפוליו פעילות המוחזקות על ידי הקבוצה",
-              "table_title": "להלן פרטים אודות חברות הפורטפוליו של הקבוצה (באלפי ש\"ח) ליום 31 בדצמבר 2025",
-              "note": null
-            },
-            {
-              "name": "ויז'נארי אי.איי בע\"מ (לשעבר: ברייטר ויז'ן איי.או)",
-              "ownership_pct": 3.36,
-              "parent": null,
-              "page_reference": 30,
-              "section_title": "פרק שני : תיאור חברות פורטפוליו פעילות המוחזקות על ידי הקבוצה",
-              "table_title": "להלן פרטים אודות חברות הפורטפוליו של הקבוצה (באלפי ש\"ח) ליום 31 בדצמבר 2025",
-              "note": null
-            },
-            {
-              "name": "אוסיו בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 31,
-              "section_title": "פרק שני : תיאור חברות פורטפוליו פעילות המוחזקות על ידי הקבוצה",
-              "table_title": "להלן פרטים אודות חברות הפורטפוליו של הקבוצה (באלפי ש\"ח) ליום 31 בדצמבר 2025",
-              "note": "שיעור החזקה מצוין כקטן מ-1%"
-            },
-            {
-              "name": "אינטוישן רובוטיקס בע\"מ",
-              "ownership_pct": 1.01,
-              "parent": null,
-              "page_reference": 31,
-              "section_title": "פרק שני : תיאור חברות פורטפוליו פעילות המוחזקות על ידי הקבוצה",
-              "table_title": "להלן פרטים אודות חברות הפורטפוליו של הקבוצה (באלפי ש\"ח) ליום 31 בדצמבר 2025",
-              "note": null
-            },
-            {
-              "name": "אל על נתיבי אוויר לישראל בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 32,
-              "section_title": "פרק שני : תיאור חברות פורטפוליו פעילות המוחזקות על ידי הקבוצה",
-              "table_title": "להלן פרטים אודות חברות הפורטפוליו של הקבוצה (באלפי ש\"ח) ליום 31 בדצמבר 2025",
-              "note": "שיעור החזקה מצוין כקטן מ-1%"
-            },
-            {
-              "name": "אאורה השקעות בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 32,
-              "section_title": "פרק שני : תיאור חברות פורטפוליו פעילות המוחזקות על ידי הקבוצה",
-              "table_title": "להלן פרטים אודות חברות הפורטפוליו של הקבוצה (באלפי ש\"ח) ליום 31 בדצמבר 2025",
-              "note": "שיעור החזקה מצוין כקטן מ-1%"
-            },
-            {
-              "name": "צים שירותי ספנות משולבים בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 32,
-              "section_title": "פרק שני : תיאור חברות פורטפוליו פעילות המוחזקות על ידי הקבוצה",
-              "table_title": "להלן פרטים אודות חברות הפורטפוליו של הקבוצה (באלפי ש\"ח) ליום 31 בדצמבר 2025",
-              "note": "שיעור החזקה מצוין כקטן מ-1%"
-            },
-            {
-              "name": "רג'ינטיס בימטריאלס בע\"מ",
-              "ownership_pct": 1.14,
-              "parent": null,
-              "page_reference": 33,
-              "section_title": "פרק שני : תיאור חברות פורטפוליו פעילות המוחזקות על ידי הקבוצה",
-              "table_title": "להלן פרטים אודות חברות הפורטפוליו של הקבוצה (באלפי ש\"ח) ליום 31 בדצמבר 2025",
-              "note": null
-            },
-            {
-              "name": "איירפורט סיטי בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 33,
-              "section_title": "פרק שני : תיאור חברות פורטפוליו פעילות המוחזקות על ידי הקבוצה",
-              "table_title": "להלן פרטים אודות חברות הפורטפוליו של הקבוצה (באלפי ש\"ח) ליום 31 בדצמבר 2025",
-              "note": "שיעור החזקה מצוין כקטן מ-1%"
-            },
-            {
-              "name": "מבטח שמיר אחזקות בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 34,
-              "section_title": "פרק שני : תיאור חברות פורטפוליו פעילות המוחזקות על ידי הקבוצה",
-              "table_title": "להלן פרטים אודות חברות הפורטפוליו של הקבוצה (באלפי ש\"ח) ליום 31 בדצמבר 2025",
-              "note": "שיעור החזקה מצוין כקטן מ-1%"
-            },
-            {
-              "name": "ננוגוסט בע\"מ",
-              "ownership_pct": 2.15,
-              "parent": null,
-              "page_reference": 35,
-              "section_title": "פרק שני : תיאור חברות פורטפוליו פעילות המוחזקות על ידי הקבוצה",
-              "table_title": "להלן פרטים אודות חברות הפורטפוליו של הקבוצה (באלפי ש\"ח) ליום 31 בדצמבר 2025",
-              "note": null
-            },
-            {
-              "name": "גלולי בע\"מ",
-              "ownership_pct": 1.03,
-              "parent": null,
-              "page_reference": 35,
-              "section_title": "פרק שני : תיאור חברות פורטפוליו פעילות המוחזקות על ידי הקבוצה",
-              "table_title": "להלן פרטים אודות חברות הפורטפוליו של הקבוצה (באלפי ש\"ח) ליום 31 בדצמבר 2025",
-              "note": null
-            },
-            {
-              "name": "Electrical Grid Monitoring Inc.",
-              "ownership_pct": 1.37,
-              "parent": null,
-              "page_reference": 36,
-              "section_title": "פרק שני : תיאור חברות פורטפוליו פעילות המוחזקות על ידי הקבוצה",
-              "table_title": "להלן פרטים אודות חברות הפורטפוליו של הקבוצה (באלפי ש\"ח) ליום 31 בדצמבר 2025",
-              "note": null
-            },
-            {
-              "name": "בית זיקוק אשדוד בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 36,
-              "section_title": "פרק שני : תיאור חברות פורטפוליו פעילות המוחזקות על ידי הקבוצה",
-              "table_title": "להלן פרטים אודות חברות הפורטפוליו של הקבוצה (באלפי ש\"ח) ליום 31 בדצמבר 2025",
-              "note": "שיעור החזקה מצוין כקטן מ-1%"
-            },
-            {
-              "name": "FDNA",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 37,
-              "section_title": "פרק שני : תיאור חברות פורטפוליו פעילות המוחזקות על ידי הקבוצה",
-              "table_title": "להלן פרטים אודות חברות הפורטפוליו של הקבוצה (באלפי ש\"ח) ליום 31 בדצמבר 2025",
-              "note": null
-            },
-            {
-              "name": "ויזו ספקס בע\"מ",
-              "ownership_pct": 1.74,
-              "parent": null,
-              "page_reference": 37,
-              "section_title": "פרק שני : תיאור חברות פורטפוליו פעילות המוחזקות על ידי הקבוצה",
-              "table_title": "להלן פרטים אודות חברות הפורטפוליו של הקבוצה (באלפי ש\"ח) ליום 31 בדצמבר 2025",
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "ננוגוסט בע\"מ",
-              "ownership_pct": 2.15,
-              "parent": null,
-              "page_reference": 35,
-              "section_title": "חברות פורטפוליו",
-              "table_title": "חברות פורטפוליו עיקריות",
-              "note": null
-            },
-            {
-              "name": "גלולי בע\"מ",
-              "ownership_pct": 1.03,
-              "parent": null,
-              "page_reference": 35,
-              "section_title": "חברות פורטפוליו",
-              "table_title": "חברות פורטפוליו עיקריות",
-              "note": null
-            },
-            {
-              "name": "Electrical Grid Monitoring Inc.",
-              "ownership_pct": 1.37,
-              "parent": null,
-              "page_reference": 36,
-              "section_title": "חברות פורטפוליו",
-              "table_title": "חברות פורטפוליו עיקריות",
-              "note": null
-            },
-            {
-              "name": "בית זיקוק אשדוד בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 36,
-              "section_title": "חברות פורטפוליו",
-              "table_title": "חברות פורטפוליו עיקריות",
-              "note": "קטן מ-1%"
-            },
-            {
-              "name": "FDNA Inc.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 37,
-              "section_title": "חברות פורטפוליו",
-              "table_title": "חברות פורטפוליו עיקריות",
-              "note": null
-            },
-            {
-              "name": "ויזו ספקס בע\"מ",
-              "ownership_pct": 1.74,
-              "parent": null,
-              "page_reference": 37,
-              "section_title": "חברות פורטפוליו",
-              "table_title": "חברות פורטפוליו עיקריות",
-              "note": null
-            },
-            {
-              "name": "נאסוס פארמה בע\"מ",
-              "ownership_pct": 5.53,
-              "parent": null,
-              "page_reference": 38,
-              "section_title": "חברות פורטפוליו",
-              "table_title": "חברות פורטפוליו עיקריות",
-              "note": null
-            },
-            {
-              "name": "Fourier Optics Ltd",
-              "ownership_pct": 1.67,
-              "parent": null,
-              "page_reference": 38,
-              "section_title": "חברות פורטפוליו",
-              "table_title": "חברות פורטפוליו עיקריות",
-              "note": null
-            },
-            {
-              "name": "מניף שירותים פיננסים בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 38,
-              "section_title": "חברות פורטפוליו",
-              "table_title": "חברות פורטפוליו עיקריות",
-              "note": "קטן מ-1%"
-            },
-            {
-              "name": "סייט דיאגנוסטיקה בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 41,
-              "section_title": "חברות פורטפוליו אשר ההשקעה בהן הופחתה במלואה",
-              "table_title": null,
-              "note": "ההשקעה הופחתה במלואה"
-            },
-            {
-              "name": "אקסטירה",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 41,
-              "section_title": "חברות פורטפוליו אשר ההשקעה בהן הופחתה במלואה",
-              "table_title": null,
-              "note": "ההשקעה הופחתה במלואה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "מיט\"ג היטק ונצ'רס בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 69,
-              "section_title": "באור 1 - כללי",
-              "table_title": null,
-              "note": "נקראת גם 'קצרין'"
-            },
-            {
-              "name": "אופקים הייטק ונצ'רס בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 69,
-              "section_title": "באור 1 - כללי",
-              "table_title": null,
-              "note": "נקראת גם 'אופקים'"
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-24T10:07:05.305021+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1726200": {
     "company_id": "1514",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-23T11:09:08.306987+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 9,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-24T10:06:42.304872+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732236": {
     "company_id": "2479",
@@ -6553,48 +5511,27 @@
   },
   "1736364": {
     "company_id": "1832",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-23T11:09:08.574204+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 10,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-24T10:09:45.125898+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731038": {
     "company_id": "1696",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-23T11:09:09.369822+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 12,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-24T10:14:28.810627+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1729174": {
     "company_id": "654",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-23T11:09:08.826412+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 10,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-24T10:11:21.725951+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1730108": {
     "company_id": "1855",
@@ -6616,13 +5553,85 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-23T11:09:09.667491+00:00",
+    "at": "2026-09-24T10:13:52.725960+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 11,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "זפירוס ניהול בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 10,
+              "section_title": "1.3 תרשים מבנה החזקות מהותיות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "איולוס אנרגיה שותפות מוגבלת",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.1 הגדרות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Mashav Management sp. Z. o. o.",
+              "ownership_pct": 100,
+              "parent": "איולוס אנרגיה שותפות מוגבלת",
+              "page_reference": 4,
+              "section_title": "1.1 הגדרות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Mashav Last Mile Wind Limited",
+              "ownership_pct": 100,
+              "parent": "איולוס אנרגיה שותפות מוגבלת",
+              "page_reference": 5,
+              "section_title": "1.1 הגדרות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Potegowo Mashav sp. Z. o. o.",
+              "ownership_pct": 100,
+              "parent": "Mashav Last Mile Wind Limited",
+              "page_reference": 5,
+              "section_title": "1.1 הגדרות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Mashav Hama sp. Z. o. o.",
+              "ownership_pct": 100,
+              "parent": "Mashav Management sp. Z. o. o.",
+              "page_reference": 5,
+              "section_title": "1.1 הגדרות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Mashav Yesodot sp. Z. o. o.",
+              "ownership_pct": 100,
+              "parent": "Mashav Management sp. Z. o. o.",
+              "page_reference": 10,
+              "section_title": "1.3 תרשים מבנה החזקות מהותיות של החברה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
@@ -37642,593 +36651,19 @@
   },
   "1733357": {
     "company_id": "421",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-23T10:34:19.910977+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 13,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "נ. נתנאל בניה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "1.3 תרשים החזקות עיקריות ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": "החברה מהווה זרוע ביצועית נוספת לקבוצה ותפעל לקבל סיווג ג' 5"
-            },
-            {
-              "name": "א.ד נתנאל גרופ (כח אדם) בע\"מ",
-              "ownership_pct": 100,
-              "parent": "נ. נתנאל בניה בע\"מ",
-              "page_reference": 4,
-              "section_title": "1.3 תרשים החזקות עיקריות ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": "חברה המהווה קבלן כח אדם להעסקת עובדים זרים בענף הבניה. בחודש יוני 2024, קיבלה היתר להעסקת 350 עובדים זרים."
-            },
-            {
-              "name": "נתנאל גרופ (א.ד) התחדשות עירונית",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "1.3 תרשים החזקות עיקריות ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": "חברה המהווה זרוע לפעילות ההתחדשות העירונית של החברה."
-            },
-            {
-              "name": "netanel group cyprus",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "1.3 תרשים החזקות עיקריות ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": "חברה המהווה זרוע לפעילות ייזום נדלן בקפריסין ומקום מושבה הוא לרנקה."
-            },
-            {
-              "name": "netanel & huna cyprus",
-              "ownership_pct": 75,
-              "parent": "netanel group cyprus",
-              "page_reference": 4,
-              "section_title": "1.3 תרשים החזקות עיקריות ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "netanel & huna investment cyprus LTD",
-              "ownership_pct": 75,
-              "parent": "netanel group cyprus",
-              "page_reference": 4,
-              "section_title": "1.3 תרשים החזקות עיקריות ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "נתנאל נופי עתלית בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "1.3 תרשים החזקות עיקריות ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "הבית ברחוב אנילביץ 50 בתל אביב בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "1.3 תרשים החזקות עיקריות ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "נ. נתנאל בנייה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 44,
-              "section_title": "7.14 פרויקט ביתר עילית - חלק החברה בפרויקט 50%",
-              "table_title": null,
-              "note": "חברה פרטית בבעלות מלאה של החברה"
-            },
-            {
-              "name": "נתנאל נופי עתלית בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 54,
-              "section_title": "7.16 פרויקט עתלית – ליום 31 בדצמבר 2025",
-              "table_title": null,
-              "note": "החברה מחזיקה ב-50% ומיכמן מימון בע\"מ מחזיקה ב-50%"
-            }
-          ],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "נ. נתנאל בנייה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 63,
-              "section_title": "7.18 פרויקט ביתר עילית שלב ב' - חלק החברה בפרויקט 50%",
-              "table_title": null,
-              "note": "חברה פרטית בבעלות ובשליטה מלאה של החברה"
-            },
-            {
-              "name": "נתנאל נופי עתלית בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 54,
-              "section_title": "7.16 פרויקט עתלית – ליום 31 בדצמבר 2025, חלק החברה בפרויקט % 50",
-              "table_title": null,
-              "note": "החזקה משותפת (50% לאחר מכירת מחצית המניות בנובמבר 2025)"
-            }
-          ],
-          "change_events": [
-            {
-              "company": "נתנאל נופי עתלית בע\"מ",
-              "event_type": "decrease",
-              "ownership_pct_before": 100,
-              "ownership_pct_after": 50,
-              "event_date": "2025-11-17",
-              "event_description": "מכירת 50% ממניות חברת נופי עתלית למיכמן מימון בע\"מ",
-              "page_reference": 58,
-              "section_title": "פרק ד': עניינים הנוגעים לפעילות הקבוצה בכללותה"
-            }
-          ]
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:5": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:6": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "נ. נתנאל בנייה בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 112,
-              "section_title": "באור 1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "נתנאל גרופ (א.ד.) התחדשות עירונית בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 112,
-              "section_title": "באור 1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "חברת הבית ברחוב אנילביץ' 50 בתל אביב בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 112,
-              "section_title": "באור 1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "NETANEL INVESTMENT U.S.A INC",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 112,
-              "section_title": "באור 1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "א.ד. נתנאל גרופ כח אדם בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 112,
-              "section_title": "באור 1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "NETANEL GROUP CYPRUS",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 112,
-              "section_title": "באור 1 - כללי",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:7": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "חבצלת השרון השבה בע\"מ",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 134,
-              "section_title": "באור 10 - השקעות והלוואות לחברות מוחזקות המטופלות לפי שיטת השווי המאזני",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "נתנאל נופי עתלית בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 135,
-              "section_title": "באור 10 - השקעות והלוואות לחברות מוחזקות המטופלות לפי שיטת השווי המאזני",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Netanel Group Cyprus LTD",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 131,
-              "section_title": "באור 8 - מלאי בניינים בהקמה ודירות למכירה (המשך)",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "חברת הבית ברחוב אנילביץ' 50 בתל אביב בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 138,
-              "section_title": "באור 11 - מלאי מקרקעין וזכויות במקרקעין בלתי שוטף (המשך)",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "נתנאל גרופ (א.ד.) התחדשות עירונית בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 132,
-              "section_title": "באור 8 - מלאי בניינים בהקמה ודירות למכירה (המשך)",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:8": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "חברת הבית ברחוב אנילביץ' 50 בתל אביב בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 171,
-              "section_title": "באור 11 - מלאי מקרקעין וזכויות במקרקעין בלתי שוטף (המשך)",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "נ.א ניצן ביצוע יזמות 2004 בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 174,
-              "section_title": "באור 16 - נכס בלתי מוחשי",
-              "table_title": null,
-              "note": "בשליטתה המלאה של החברה"
-            },
-            {
-              "name": "נ. נתנאל בניה בע\"מ",
-              "ownership_pct": null,
-              "parent": "נ.א ניצן ביצוע יזמות 2004 בע\"מ",
-              "page_reference": 174,
-              "section_title": "באור 16 - נכס בלתי מוחשי",
-              "table_title": null,
-              "note": "מלוא הון המניות נרכש באמצעות חברת הבת"
-            },
-            {
-              "name": "נתנאל תל דן",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 175,
-              "section_title": "באור 19 - זכאים אחרים ויתרות זכות",
-              "table_title": null,
-              "note": "חברה מאוחדת"
-            },
-            {
-              "name": "נתנאל קפריסין",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 175,
-              "section_title": "באור 19 - זכאים אחרים ויתרות זכות",
-              "table_title": null,
-              "note": "חברה מאוחדת"
-            },
-            {
-              "name": "נתנאל גרופ (א.ד) התחדשות עירונית",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 176,
-              "section_title": "באור 20 - הלוואות מתאגיד בנקאי ואחרים בניכוי חלויות שוטפות",
-              "table_title": null,
-              "note": "חברת בת של החברה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:9": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "נ. נתנאל בנייה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 167,
-              "section_title": "באור 30 - חברות בנות",
-              "table_title": "פרטים בדבר חברות מאוחדות",
-              "note": null
-            },
-            {
-              "name": "נתנאל גרופ (א.ד.) התחדשות עירונית בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 167,
-              "section_title": "באור 30 - חברות בנות",
-              "table_title": "פרטים בדבר חברות מאוחדות",
-              "note": null
-            },
-            {
-              "name": "NETANEL INVESTMENT U.S.A INC",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 167,
-              "section_title": "באור 30 - חברות בנות",
-              "table_title": "פרטים בדבר חברות מאוחדות",
-              "note": "תושבת ארה\"ב"
-            },
-            {
-              "name": "א.ד. נתנאל גרופ (כוח אדם) בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 167,
-              "section_title": "באור 30 - חברות בנות",
-              "table_title": "פרטים בדבר חברות מאוחדות",
-              "note": null
-            },
-            {
-              "name": "נתנאל אופק ובניה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 167,
-              "section_title": "באור 30 - חברות בנות",
-              "table_title": "פרטים בדבר חברות מאוחדות",
-              "note": null
-            },
-            {
-              "name": "Netanel Group Cyprus LTD",
-              "ownership_pct": 75,
-              "parent": null,
-              "page_reference": 167,
-              "section_title": "באור 30 - חברות בנות",
-              "table_title": "פרטים בדבר חברות מאוחדות",
-              "note": "תושבת קפריסין"
-            }
-          ],
-          "change_events": [
-            {
-              "company": "חברת הבית ברחוב אנילביץ' 50 בתל אביב בע\"מ",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 100,
-              "event_date": "2025-04-24",
-              "event_description": "רכישת 100% ממניות ומזכויות ההצבעה בחברה מחברה קשורה",
-              "page_reference": 166,
-              "section_title": "באור 29 - אירועים מהותיים בתקופת הדוח"
-            }
-          ]
-        },
-        "0:11": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "נ.א. ניצן ביצוע ויזמות 2014 בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 193,
-              "section_title": "פרק ד' לדוח התקופתי ליום 31 בדצמבר 2025 - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11 : רשימת השקעות בחברות בנות ובחברות כלולות ולכלול תאריך הדוח על המצב הכספי",
-              "note": null
-            },
-            {
-              "name": "נ. נתנאל בנייה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 193,
-              "section_title": "פרק ד' לדוח התקופתי ליום 31 בדצמבר 2025 - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11 : רשימת השקעות בחברות בנות ובחברות כלולות ולכלול תאריך הדוח על המצב הכספי",
-              "note": null
-            },
-            {
-              "name": "נתנאל תל דן בע\"מ",
-              "ownership_pct": 60,
-              "parent": null,
-              "page_reference": 193,
-              "section_title": "פרק ד' לדוח התקופתי ליום 31 בדצמבר 2025 - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11 : רשימת השקעות בחברות בנות ובחברות כלולות ולכלול תאריך הדוח על המצב הכספי",
-              "note": null
-            },
-            {
-              "name": "NETANEL INVEST USA INC",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 193,
-              "section_title": "פרק ד' לדוח התקופתי ליום 31 בדצמבר 2025 - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11 : רשימת השקעות בחברות בנות ובחברות כלולות ולכלול תאריך הדוח על המצב הכספי",
-              "note": null
-            },
-            {
-              "name": "נתנאל א.ד התחדשות עירונית בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 193,
-              "section_title": "פרק ד' לדוח התקופתי ליום 31 בדצמבר 2025 - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11 : רשימת השקעות בחברות בנות ובחברות כלולות ולכלול תאריך הדוח על המצב הכספי",
-              "note": null
-            },
-            {
-              "name": "נתנאל אופק ובניה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 193,
-              "section_title": "פרק ד' לדוח התקופתי ליום 31 בדצמבר 2025 - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11 : רשימת השקעות בחברות בנות ובחברות כלולות ולכלול תאריך הדוח על המצב הכספי",
-              "note": null
-            },
-            {
-              "name": "Netanel Group Cyprus",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 193,
-              "section_title": "פרק ד' לדוח התקופתי ליום 31 בדצמבר 2025 - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11 : רשימת השקעות בחברות בנות ובחברות כלולות ולכלול תאריך הדוח על המצב הכספי",
-              "note": null
-            },
-            {
-              "name": "Netanel & Huna Cyprus",
-              "ownership_pct": 75,
-              "parent": null,
-              "page_reference": 193,
-              "section_title": "פרק ד' לדוח התקופתי ליום 31 בדצמבר 2025 - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11 : רשימת השקעות בחברות בנות ובחברות כלולות ולכלול תאריך הדוח על המצב הכספי",
-              "note": null
-            },
-            {
-              "name": "Netanel & Huna Investment Cyprus",
-              "ownership_pct": 75,
-              "parent": null,
-              "page_reference": 193,
-              "section_title": "פרק ד' לדוח התקופתי ליום 31 בדצמבר 2025 - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11 : רשימת השקעות בחברות בנות ובחברות כלולות ולכלול תאריך הדוח על המצב הכספי",
-              "note": null
-            },
-            {
-              "name": "חבצלת השרון השבה בע\"מ",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 193,
-              "section_title": "פרק ד' לדוח התקופתי ליום 31 בדצמבר 2025 - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11 : רשימת השקעות בחברות בנות ובחברות כלולות ולכלול תאריך הדוח על המצב הכספי",
-              "note": null
-            },
-            {
-              "name": "א.ד נתנאל גרופ (כח אדם) בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 193,
-              "section_title": "פרק ד' לדוח התקופתי ליום 31 בדצמבר 2025 - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11 : רשימת השקעות בחברות בנות ובחברות כלולות ולכלול תאריך הדוח על המצב הכספי",
-              "note": null
-            },
-            {
-              "name": "הבית ברחוב אנילביץ' 50 בתל אביב בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 193,
-              "section_title": "פרק ד' לדוח התקופתי ליום 31 בדצמבר 2025 - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11 : רשימת השקעות בחברות בנות ובחברות כלולות ולכלול תאריך הדוח על המצב הכספי",
-              "note": null
-            },
-            {
-              "name": "נתנאל נופי עתלית בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 193,
-              "section_title": "פרק ד' לדוח התקופתי ליום 31 בדצמבר 2025 - פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11 : רשימת השקעות בחברות בנות ובחברות כלולות ולכלול תאריך הדוח על המצב הכספי",
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:12": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [],
-          "change_events": [
-            {
-              "company": "הבית ברחוב אנילביץ' 50 בתל אביב בע\"מ",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": 0,
-              "ownership_pct_after": 100,
-              "event_date": "2025-04-24",
-              "event_description": "רכישת מלוא הון המניות (100%) של הבית ברחוב אנילביץ'",
-              "page_reference": 207,
-              "section_title": "10. הסכם שכירות - אנילביץ' 50"
-            }
-          ]
-        }
-      },
-      "attempts": {
-        "0:10": 1
-      }
-    }
+    "attempts": 1,
+    "at": "2026-09-24T10:05:38.420256+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1733347": {
     "company_id": "2497",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-23T11:09:09.064243+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 14,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-24T10:13:36.684901+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1770230": {
     "company_id": "1569",
