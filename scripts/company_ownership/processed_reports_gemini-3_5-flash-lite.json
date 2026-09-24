@@ -5675,343 +5675,59 @@
   },
   "1732634": {
     "company_id": "1301",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-24T10:26:12.962895+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 11,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-30",
-          "subsidiaries": [
-            {
-              "name": "Ginegar Iberica S.L",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "1.3 תרשים מבנה אחזקות הקבוצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Flextech S.R.L",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "1.3 תרשים מבנה אחזקות הקבוצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Ginegar industria de plasticos LTDA",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "1.3 תרשים מבנה אחזקות הקבוצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Ginegar Plastics Inc. USA",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "1.3 תרשים מבנה אחזקות הקבוצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Ginegar Specialty Plastic Private Limited India",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "1.3 תרשים מבנה אחזקות הקבוצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Agriplast Tech India Private Limited",
-              "ownership_pct": 55,
-              "parent": "Ginegar Specialty Plastic Private Limited India",
-              "page_reference": 8,
-              "section_title": "1.3 תרשים מבנה אחזקות הקבוצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Ginegar Agricultural Inputs - South Ltd.",
-              "ownership_pct": 60,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "1.3 תרשים מבנה אחזקות הקבוצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "גניגר מקסיקו (ביסוד)",
-              "ownership_pct": 50.1,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "1.2 מקרא",
-              "table_title": null,
-              "note": "חברה ביסוד"
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "אגריפלסט",
-              "ownership_pct": 25,
-              "parent": null,
-              "page_reference": 21,
-              "section_title": "3.1 מידע כללי על תחום הפעילות - כיסויים לשימושים חקלאיים",
-              "table_title": null,
-              "note": "הסכם מחייב להגדלת החזקות ל-55%"
-            },
-            {
-              "name": "גניגר מקסיקו",
-              "ownership_pct": 50.1,
-              "parent": null,
-              "page_reference": 21,
-              "section_title": "3.1 מידע כללי על תחום הפעילות - כיסויים לשימושים חקלאיים",
-              "table_title": null,
-              "note": "הסכם להקמת חברה משותפת"
-            },
-            {
-              "name": "פלקסטק",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 26,
-              "section_title": "3.6.1 פעילות שיווק, הפצה ומכירה בחו\"ל",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "גניגר ברזיל",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 26,
-              "section_title": "3.6.1 פעילות שיווק, הפצה ומכירה בחו\"ל",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "גניגר ספרד",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 26,
-              "section_title": "3.6.1 פעילות שיווק, הפצה ומכירה בחו\"ל",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "גניגר ארה\"ב",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 26,
-              "section_title": "3.6.1 פעילות שיווק, הפצה ומכירה בחו\"ל",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "גניגר דרום",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 21,
-              "section_title": "3.1 מידע כללי על תחום הפעילות - כיסויים לשימושים חקלאיים",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "גניגר הודו",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 26,
-              "section_title": "3.6.1 פעילות שיווק, הפצה ומכירה בחו\"ל",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": [
-            {
-              "company": "אגריפלסט",
-              "event_type": "increase",
-              "ownership_pct_before": 25,
-              "ownership_pct_after": 55,
-              "event_date": "2025-09-25",
-              "event_description": "חתימה על הסכם מחייב להגדלת החזקות באגריפלסט ל-55%",
-              "page_reference": 26,
-              "section_title": "3.6.1.1 עובדי הקבוצה:"
-            },
-            {
-              "company": "גניגר מקסיקו",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 50.1,
-              "event_date": "2025-11-06",
-              "event_description": "התקשרות בהסכם להקמת חברה משותפת במקסיקו בה תחזיק החברה 50.1%",
-              "page_reference": 26,
-              "section_title": "3.6.1.1 עובדי הקבוצה:"
-            }
-          ]
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "פלקסטק (Flextech S.r.l.)",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 83,
-              "section_title": "5.8 השקעות",
-              "table_title": null,
-              "note": "רכישת 60% במאי 2017 ויתרת הון המניות ביוני 2022, הכרה ב-100% החל ממועד הרכישה"
-            },
-            {
-              "name": "גניגר ברזיל",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 42,
-              "section_title": "5.5.6 עובדי גניגר ברזיל",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "גניגר ארה\"ב",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 42,
-              "section_title": "5.5.5 עובדי גניגר ארה\"ב",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "גניגר ספרד",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 43,
-              "section_title": "5.5.8 עובדי גניגר ספרד",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "גניגר דרום",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 43,
-              "section_title": "5.5.9 עובדי גניגר דרום",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-24T10:28:22.763984+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731433": {
     "company_id": "1194",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-23T11:09:12.706773+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 10,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-24T10:28:26.324041+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1728738": {
     "company_id": "1846",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-23T11:09:13.000238+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 9,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-24T10:30:47.878786+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732059": {
     "company_id": "532",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-23T11:09:13.251706+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 11,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-24T10:31:31.597286+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731139": {
     "company_id": "587",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-23T11:09:13.510001+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 9,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-24T10:33:04.056365+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1725043": {
     "company_id": "1828",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-23T11:09:13.727559+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 11,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-24T10:33:27.716141+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731687": {
     "company_id": "1741",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-23T11:09:14.060304+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 12,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-24T10:36:14.806367+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1728259": {
     "company_id": "1887",
@@ -6030,61 +5746,55 @@
   },
   "1735019": {
     "company_id": "1876",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-23T11:09:14.253480+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 11,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-24T10:36:02.326703+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1730453": {
     "company_id": "354",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-23T11:09:14.577046+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 9,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-24T10:38:00.185279+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1727302": {
     "company_id": "1682",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-23T11:09:14.836648+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 7,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-24T10:38:19.309752+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1736130": {
     "company_id": "1562",
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-23T11:09:15.100658+00:00",
+    "at": "2026-09-24T10:38:18.877400+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 7,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
