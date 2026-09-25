@@ -5994,171 +5994,11 @@
   },
   "1729429": {
     "company_id": "2174",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-25T11:21:42.195527+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 9,
-      "done": {
-        "0:0": {
-          "report_format": "20-F",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "20-F",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "Camtek H.K. Ltd.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 29,
-              "section_title": "C. Organizational Structure",
-              "table_title": null,
-              "note": "Wholly owned by us or by our subsidiaries, except for Camtek HK Ltd., in which Priortech holds no more than one percent of the voting rights"
-            },
-            {
-              "name": "Camtek USA Inc.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 29,
-              "section_title": "C. Organizational Structure",
-              "table_title": null,
-              "note": "Wholly owned by us or by our subsidiaries"
-            },
-            {
-              "name": "Camtek (Europe) NV",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 29,
-              "section_title": "C. Organizational Structure",
-              "table_title": null,
-              "note": "Wholly owned by us or by our subsidiaries"
-            },
-            {
-              "name": "Camtek Germany GmbH",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 29,
-              "section_title": "C. Organizational Structure",
-              "table_title": null,
-              "note": "Wholly owned by us or by our subsidiaries"
-            },
-            {
-              "name": "Camtek Inspection Technology (Suzhou) Ltd.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 29,
-              "section_title": "C. Organizational Structure",
-              "table_title": null,
-              "note": "Wholly owned by us or by our subsidiaries"
-            },
-            {
-              "name": "Camtek Japan Ltd.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 29,
-              "section_title": "C. Organizational Structure",
-              "table_title": null,
-              "note": "Wholly owned by us or by our subsidiaries"
-            },
-            {
-              "name": "Camtek Inspection Technology Limited",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 29,
-              "section_title": "C. Organizational Structure",
-              "table_title": null,
-              "note": "Wholly owned by us or by our subsidiaries"
-            },
-            {
-              "name": "Camtek South East Asia Pte Ltd.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 29,
-              "section_title": "C. Organizational Structure",
-              "table_title": null,
-              "note": "Wholly owned by us or by our subsidiaries"
-            },
-            {
-              "name": "Camtek Korea Ltd.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 29,
-              "section_title": "C. Organizational Structure",
-              "table_title": null,
-              "note": "Wholly owned by us or by our subsidiaries"
-            },
-            {
-              "name": "Camtek Germany Holding GmbH",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 29,
-              "section_title": "C. Organizational Structure",
-              "table_title": null,
-              "note": "Wholly owned by us or by our subsidiaries"
-            },
-            {
-              "name": "FRT GmbH",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 29,
-              "section_title": "C. Organizational Structure",
-              "table_title": null,
-              "note": "Wholly owned by us or by our subsidiaries"
-            }
-          ],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "20-F",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "20-F",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "20-F",
-          "document_type": "unknown",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:5": {
-          "report_format": "20-F",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "FRT GmbH",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 97,
-              "section_title": "Note 1 - Nature of Operations",
-              "table_title": null,
-              "note": "Acquired in October 2023"
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-25T11:23:27.720918+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1729437": {
     "company_id": "2501",
@@ -6177,106 +6017,181 @@
   },
   "1736936": {
     "company_id": "501",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-24T11:13:18.025729+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-25T11:24:41.482913+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1730125": {
     "company_id": "2369",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-24T11:13:18.209153+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-25T11:26:18.999961+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1720750": {
     "company_id": "629",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-24T11:13:18.333397+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 14,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-25T11:33:56.048285+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1729519": {
     "company_id": "2438",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-24T11:13:18.503958+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 7,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-25T11:32:46.037874+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1727688": {
     "company_id": "1825",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-24T11:13:18.805245+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-25T11:35:50.224912+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1729200": {
     "company_id": "1091",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-24T11:13:18.908208+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-25T11:35:29.682334+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1733039": {
     "company_id": "2252",
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-24T11:13:18.979375+00:00",
+    "at": "2026-09-25T11:36:03.961518+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 3,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "20-F",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "Allot Communications, Inc.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 18,
+              "section_title": "NOTE 1: - GENERAL",
+              "table_title": null,
+              "note": "U.S. subsidiary"
+            },
+            {
+              "name": "Allot Communication Europe SARL",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 18,
+              "section_title": "NOTE 1: - GENERAL",
+              "table_title": null,
+              "note": "European subsidiary"
+            },
+            {
+              "name": "Allot Communications Japan K.K.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 18,
+              "section_title": "NOTE 1: - GENERAL",
+              "table_title": null,
+              "note": "Japanese subsidiary"
+            },
+            {
+              "name": "Allot Communication (UK) Limited",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 18,
+              "section_title": "NOTE 1: - GENERAL",
+              "table_title": null,
+              "note": "UK subsidiary"
+            },
+            {
+              "name": "Allot Communications (Asia Pacific) Pte. Ltd.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 18,
+              "section_title": "NOTE 1: - GENERAL",
+              "table_title": null,
+              "note": "Singaporean subsidiary"
+            },
+            {
+              "name": "Allot India Private Limited.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 18,
+              "section_title": "NOTE 1: - GENERAL",
+              "table_title": null,
+              "note": "Indian subsidiary"
+            },
+            {
+              "name": "Allot Communications Africa (PTY) Ltd.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 18,
+              "section_title": "NOTE 1: - GENERAL",
+              "table_title": null,
+              "note": "African subsidiary"
+            },
+            {
+              "name": "Allot Communications Spain, S.L. Sociedad Unipersonal",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 18,
+              "section_title": "NOTE 1: - GENERAL",
+              "table_title": null,
+              "note": "Spanish subsidiary"
+            },
+            {
+              "name": "Allot Communications (Colombia) S.A.S",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 18,
+              "section_title": "NOTE 1: - GENERAL",
+              "table_title": null,
+              "note": "Colombian subsidiary"
+            },
+            {
+              "name": "Allot MexSub",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 18,
+              "section_title": "NOTE 1: - GENERAL",
+              "table_title": null,
+              "note": "Mexican subsidiary"
+            },
+            {
+              "name": "Allot Turkey Komunikasion Hizmeleri limited",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 18,
+              "section_title": "NOTE 1: - GENERAL",
+              "table_title": null,
+              "note": "Turkish subsidiary"
+            },
+            {
+              "name": "Allot Australia (PTY) LTD",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 18,
+              "section_title": "NOTE 1: - GENERAL",
+              "table_title": null,
+              "note": "Australian subsidiary"
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
@@ -6312,33 +6227,19 @@
   },
   "1734428": {
     "company_id": "1829",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-24T11:13:19.106609+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-25T11:36:00.287436+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731826": {
     "company_id": "1394",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-24T11:13:19.061414+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-25T11:36:12.918345+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732459": {
     "company_id": "1635",
@@ -35542,18 +35443,11 @@
   },
   "1770230": {
     "company_id": "1569",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-24T11:13:17.765661+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 9,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-25T11:26:49.656814+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1769250": {
     "company_id": "642",
