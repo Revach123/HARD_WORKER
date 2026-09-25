@@ -4830,629 +4830,11 @@
   },
   "1732015": {
     "company_id": "1226",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-24T10:05:55.785616+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 12,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "S.I.K Holding ApS",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 5,
-              "section_title": "פרק 1: תאור עסקי התאגיד",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Golan Pipe Systems A.S",
-              "ownership_pct": 100,
-              "parent": "S.I.K Holding ApS",
-              "page_reference": 5,
-              "section_title": "פרק 1: תאור עסקי התאגיד",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Golan Plastic Chile A.S",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 5,
-              "section_title": "פרק 1: תאור עסקי התאגיד",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Crosspipe Systems S.A.",
-              "ownership_pct": 50,
-              "parent": "Golan Plastic Chile A.S",
-              "page_reference": 5,
-              "section_title": "פרק 1: תאור עסקי התאגיד",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ARGPEX S.A.",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "פרק 1: תאור עסקי התאגיד",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Quickpipes Systems S.A. de C.V.",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "פרק 1: תאור עסקי התאגיד",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Golan USA Inc",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "פרק 1: תאור עסקי התאגיד",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "GOLCHIEF, LLC",
-              "ownership_pct": 51,
-              "parent": "Golan USA Inc",
-              "page_reference": 6,
-              "section_title": "פרק 1: תאור עסקי התאגיד",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "וויזסול בע\"מ",
-              "ownership_pct": 31.9,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "פרק 1: תאור עסקי התאגיד",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "פלאגול בע\"מ",
-              "ownership_pct": 31.9,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "פרק 1: תאור עסקי התאגיד",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "גולן השקעות מתחדשות בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 7,
-              "section_title": "פרק 1: תאור עסקי התאגיד",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "גולן רוסיה",
-              "ownership_pct": 26,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "תרשים מבנה אחזקות של הקבוצה למועד הדוח",
-              "table_title": null,
-              "note": "לחברה אין השפעה מהותית בחברה זו"
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "GOLCHIEF, LLC",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 35,
-              "section_title": "השקעות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "S.I.K. Holdings ApS",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 35,
-              "section_title": "השקעות",
-              "table_title": null,
-              "note": "חברת הבת בדנמרק"
-            },
-            {
-              "name": "וויזסול בע\"מ",
-              "ownership_pct": 31.9,
-              "parent": null,
-              "page_reference": 36,
-              "section_title": "השקעות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "QUICKPIPES SYSTEMS S A DE CV",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 37,
-              "section_title": "השקעות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "CROSSPIPE SYSTEMS S.A",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 23,
-              "section_title": "הפצה באמצעות חברות מוחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Argpex",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 23,
-              "section_title": "הפצה באמצעות חברות מוחזקות",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "GOLCHIEF, LLC",
-              "ownership_pct": 51,
-              "parent": "גולן ארה\"ב",
-              "page_reference": 67,
-              "section_title": "23. השקעות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "S.I.K. Holdings ApS",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 67,
-              "section_title": "23. השקעות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "וויזסול בע\"מ",
-              "ownership_pct": 31.9,
-              "parent": null,
-              "page_reference": 68,
-              "section_title": "23.3 וויזסול בע\"מ",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "QUICKPIPES SYSTEMS S A DE CV",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 69,
-              "section_title": "QUICKPIPES SYSTEMS S A DE CV",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:5": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "גולן שירותי הקרנה שותפות מוגבלת",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 116,
-              "section_title": "באור 11 - השקעות בחברות מוחזקות",
-              "table_title": "רשימת חברות המוחזקות ע\"י החברה:",
-              "note": "לא פעילה"
-            },
-            {
-              "name": "S.I.K. Holdings ApS",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 116,
-              "section_title": "באור 11 - השקעות בחברות מוחזקות",
-              "table_title": "רשימת חברות המוחזקות ע\"י החברה:",
-              "note": null
-            },
-            {
-              "name": "GOLAN PIPE SYSTEMS",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 116,
-              "section_title": "באור 11 - השקעות בחברות מוחזקות",
-              "table_title": "רשימת חברות המוחזקות ע\"י החברה:",
-              "note": null
-            },
-            {
-              "name": "OOO Golan Plast",
-              "ownership_pct": 26,
-              "parent": null,
-              "page_reference": 116,
-              "section_title": "באור 11 - השקעות בחברות מוחזקות",
-              "table_title": "רשימת חברות המוחזקות ע\"י החברה:",
-              "note": "לא פעילה"
-            },
-            {
-              "name": "Pexgol North America",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 116,
-              "section_title": "באור 11 - השקעות בחברות מוחזקות",
-              "table_title": "רשימת חברות המוחזקות ע\"י החברה:",
-              "note": "לא פעילה"
-            },
-            {
-              "name": "Golan Chile SPA",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 116,
-              "section_title": "באור 11 - השקעות בחברות מוחזקות",
-              "table_title": "רשימת חברות המוחזקות ע\"י החברה:",
-              "note": null
-            },
-            {
-              "name": "גולן השקעות מתחדשות בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 116,
-              "section_title": "באור 11 - השקעות בחברות מוחזקות",
-              "table_title": "רשימת חברות המוחזקות ע\"י החברה:",
-              "note": null
-            },
-            {
-              "name": "ארגנטינה ARGPEX S.A",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 116,
-              "section_title": "באור 11 - השקעות בחברות מוחזקות",
-              "table_title": "רשימת חברות המוחזקות ע\"י החברה:",
-              "note": null
-            },
-            {
-              "name": "Crospipe System S.A",
-              "ownership_pct": 50,
-              "parent": "Golan Chile SPA",
-              "page_reference": 116,
-              "section_title": "באור 11 - השקעות בחברות מוחזקות",
-              "table_title": "רשימת חברות המוחזקות ע\"י החברה:",
-              "note": "מוחזקת 100% באמצעות Golan Chile SPA"
-            },
-            {
-              "name": "וויזסול בע\"מ",
-              "ownership_pct": 31.9,
-              "parent": null,
-              "page_reference": 116,
-              "section_title": "באור 11 - השקעות בחברות מוחזקות",
-              "table_title": "רשימת חברות המוחזקות ע\"י החברה:",
-              "note": null
-            },
-            {
-              "name": "פלאגול בע\"מ",
-              "ownership_pct": 31.9,
-              "parent": null,
-              "page_reference": 116,
-              "section_title": "באור 11 - השקעות בחברות מוחזקות",
-              "table_title": "רשימת חברות המוחזקות ע\"י החברה:",
-              "note": null
-            },
-            {
-              "name": "Quickpipes Systems SA",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 116,
-              "section_title": "באור 11 - השקעות בחברות מוחזקות",
-              "table_title": "רשימת חברות המוחזקות ע\"י החברה:",
-              "note": null
-            },
-            {
-              "name": "Golan USA Inc",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 116,
-              "section_title": "באור 11 - השקעות בחברות מוחזקות",
-              "table_title": "רשימת חברות המוחזקות ע\"י החברה:",
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:6": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:7": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "וויזסול בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 124,
-              "section_title": "באור 21 - התקשרות, התחייבויות תלויות ושעבודים (המשך)",
-              "table_title": null,
-              "note": "חברה כלולה"
-            },
-            {
-              "name": "גולן דנמרק",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 138,
-              "section_title": "באור 27 - יתרות ועסקאות עם בעלי עניין וצדדים קשורים (המשך)",
-              "table_title": null,
-              "note": "חברה מאוחדת"
-            }
-          ],
-          "change_events": []
-        },
-        "0:8": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:9": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "S.I.K. holdings ApS",
-              "ownership_pct": 100.0,
-              "parent": null,
-              "page_reference": 161,
-              "section_title": "פרק 5 - פרטים נוספים על החברה",
-              "table_title": "תקנה 11- רשימת השקעות בחברות-בנות ובחברות כלולות (לתאריך הדוח)",
-              "note": null
-            },
-            {
-              "name": "Golan Plastic Chile SPA",
-              "ownership_pct": 100.0,
-              "parent": null,
-              "page_reference": 161,
-              "section_title": "פרק 5 - פרטים נוספים על החברה",
-              "table_title": "תקנה 11- רשימת השקעות בחברות-בנות ובחברות כלולות (לתאריך הדוח)",
-              "note": null
-            },
-            {
-              "name": "גולן השקעות מתחדשות בע\"מ",
-              "ownership_pct": 100.0,
-              "parent": null,
-              "page_reference": 161,
-              "section_title": "פרק 5 - פרטים נוספים על החברה",
-              "table_title": "תקנה 11- רשימת השקעות בחברות-בנות ובחברות כלולות (לתאריך הדוח)",
-              "note": null
-            },
-            {
-              "name": "ARGPEX S.A",
-              "ownership_pct": 51.0,
-              "parent": null,
-              "page_reference": 161,
-              "section_title": "פרק 5 - פרטים נוספים על החברה",
-              "table_title": "תקנה 11- רשימת השקעות בחברות-בנות ובחברות כלולות (לתאריך הדוח)",
-              "note": null
-            },
-            {
-              "name": "פלאגול בע\"מ",
-              "ownership_pct": 31.9,
-              "parent": null,
-              "page_reference": 161,
-              "section_title": "פרק 5 - פרטים נוספים על החברה",
-              "table_title": "תקנה 11- רשימת השקעות בחברות-בנות ובחברות כלולות (לתאריך הדוח)",
-              "note": null
-            },
-            {
-              "name": "וויזסול בע\"מ",
-              "ownership_pct": 31.9,
-              "parent": null,
-              "page_reference": 161,
-              "section_title": "פרק 5 - פרטים נוספים על החברה",
-              "table_title": "תקנה 11- רשימת השקעות בחברות-בנות ובחברות כלולות (לתאריך הדוח)",
-              "note": null
-            },
-            {
-              "name": "Quickpipes Systems SA",
-              "ownership_pct": 51.0,
-              "parent": null,
-              "page_reference": 161,
-              "section_title": "פרק 5 - פרטים נוספים על החברה",
-              "table_title": "תקנה 11- רשימת השקעות בחברות-בנות ובחברות כלולות (לתאריך הדוח)",
-              "note": null
-            },
-            {
-              "name": "Golan USA Inc",
-              "ownership_pct": 100.0,
-              "parent": null,
-              "page_reference": 161,
-              "section_title": "פרק 5 - פרטים נוספים על החברה",
-              "table_title": "תקנה 11- רשימת השקעות בחברות-בנות ובחברות כלולות (לתאריך הדוח)",
-              "note": null
-            },
-            {
-              "name": "Golchief Llc",
-              "ownership_pct": 51.0,
-              "parent": "Golan USA Inc",
-              "page_reference": 161,
-              "section_title": "פרק 5 - פרטים נוספים על החברה",
-              "table_title": "תקנה 11- רשימת השקעות בחברות-בנות ובחברות כלולות (לתאריך הדוח)",
-              "note": null
-            }
-          ],
-          "change_events": [
-            {
-              "company": "Golchief Llc",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": 0.0,
-              "ownership_pct_after": 51.0,
-              "event_date": "2025-09-21",
-              "event_description": "התקשרות Golan USA Inc להקמת תאגיד משותף GOLCHIEF LLC המוחזק בשיעור של 51%",
-              "page_reference": 162,
-              "section_title": "תקנה 12 - שינויים בהשקעות בחברות-בנות ובחברות כלולות בשנת הדיווח"
-            }
-          ]
-        },
-        "0:10": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:11": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-29",
-          "subsidiaries": [
-            {
-              "name": "S.I.K Holding ApS",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 191,
-              "section_title": "תקנה 26א – נושאי משרה בכירה של התאגיד, נכון למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Golan Pipe Systems ApS",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 191,
-              "section_title": "תקנה 26א – נושאי משרה בכירה של התאגיד, נכון למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "QuickPipes Systems",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 191,
-              "section_title": "תקנה 26א – נושאי משרה בכירה של התאגיד, נכון למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ARGPEX",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 191,
-              "section_title": "תקנה 26א – נושאי משרה בכירה של התאגיד, נכון למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Crosspipe Systems S.A",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 191,
-              "section_title": "תקנה 26א – נושאי משרה בכירה של התאגיד, נכון למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Golan Chile S.P.A",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 191,
-              "section_title": "תקנה 26א – נושאי משרה בכירה של התאגיד, נכון למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Golan USA Inc",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 191,
-              "section_title": "תקנה 26א – נושאי משרה בכירה של התאגיד, נכון למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Golchief Llc",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 191,
-              "section_title": "תקנה 26א – נושאי משרה בכירה של התאגיד, נכון למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "פלאגול בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 191,
-              "section_title": "תקנה 26א – נושאי משרה בכירה של התאגיד, נכון למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "וויזסול בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 191,
-              "section_title": "תקנה 26א – נושאי משרה בכירה של התאגיד, נכון למועד הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "גולן השקעות מתחדשות בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 191,
-              "section_title": "תקנה 26א – נושאי משרה בכירה של התאגיד, נכון למועד הדוח",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {
-        "0:3": 2
-      }
-    }
+    "attempts": 1,
+    "at": "2026-09-25T10:05:54.818756+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1730546": {
     "company_id": "1039",
@@ -6028,117 +5410,11 @@
   },
   "1736322": {
     "company_id": "1862",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-24T11:08:23.264912+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 9,
-      "done": {
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "איירטאצ' הודו",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 53,
-              "section_title": "23. מימון",
-              "table_title": null,
-              "note": "מוזכרת בהקשר של שעבוד מניותיה להבטחת מסגרת אשראי, ללא ציון אחוז החזקה מפורש"
-            }
-          ],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "איירטאצ' הודו",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 53,
-              "section_title": "23 מימון",
-              "table_title": null,
-              "note": "מניותיה משועבודות כבטוחה למסגרת אשראי"
-            }
-          ],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:5": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "איירטאצ' הודו",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 97,
-              "section_title": "ביאור 9 - הלוואות",
-              "table_title": null,
-              "note": "חברת בת בהודו"
-            }
-          ],
-          "change_events": []
-        },
-        "0:6": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "איירטאצ' הודו",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 115,
-              "section_title": "תקנה 11 - רשימת השקעות בחברות בנות ובחברות כלולות מהותיות לתאריך הדוח על המצב הכספי",
-              "table_title": "תקנה 11",
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:7": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:8": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-04-19",
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {
-        "0:0": 1
-      }
-    }
+    "attempts": 1,
+    "at": "2026-09-25T10:05:37.114287+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1730278": {
     "company_id": "1939",
@@ -6189,78 +5465,11 @@
   },
   "1732582": {
     "company_id": "278",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-24T11:13:09.035504+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 7,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "וילק טכנולוגיות אינטרנשיונל בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 11,
-              "section_title": "1.3 מבנה האחזקות של החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "קנאדורף בע\"מ",
-              "ownership_pct": 24,
-              "parent": null,
-              "page_reference": 11,
-              "section_title": "1.3 מבנה האחזקות של החברה",
-              "table_title": null,
-              "note": "פעילות מופסקת - הועבר לקופת ההסדר למימוש על ידי נאמן"
-            },
-            {
-              "name": "אופריין",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 11,
-              "section_title": "1.3 מבנה האחזקות של החברה",
-              "table_title": null,
-              "note": "פעילות מופסקת - הועבר לקופת ההסדר למימוש על ידי נאמן"
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "וילק טכנולוגיות אינטרנשיונל בע״מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 54,
-              "section_title": "1.6 פעילות החברה",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-25T10:06:37.728467+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732136": {
     "company_id": "1460",
@@ -6279,97 +5488,35 @@
   },
   "1728235": {
     "company_id": "2428",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-24T11:13:18.418217+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 9,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "מיטב טרייד בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "פרק א' - תיאור עסקי התאגיד",
-              "table_title": null,
-              "note": "הועברה לבעלות מלאה במסגרת הסכם החלפת מניות"
-            },
-            {
-              "name": "מיטב ברוקראז' בע\"מ",
-              "ownership_pct": 82.47,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "פרק א' - תיאור עסקי התאגיד",
-              "table_title": null,
-              "note": "נרכשה במסגרת הסכם מיום 30 בנובמבר 2025 והפכה לחברה בת"
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-25T10:08:18.787088+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1738808": {
     "company_id": "1102",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-24T11:13:09.543426+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 7,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-25T10:10:56.284703+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1730710": {
     "company_id": "1878",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-24T11:13:09.307161+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 8,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-25T10:09:35.671242+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1736394": {
     "company_id": "494",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-24T11:13:09.744812+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 9,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-25T10:13:26.199950+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732069": {
     "company_id": "1304",
@@ -6388,61 +5535,90 @@
   },
   "1733087": {
     "company_id": "397",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-24T11:13:09.909414+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 6,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-25T10:13:34.122988+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1728194": {
     "company_id": "2030",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-24T11:13:10.129280+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 10,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-25T10:16:24.776533+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1725441": {
     "company_id": "2188",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-24T11:13:10.432785+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 11,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-25T10:18:26.431308+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1730531": {
     "company_id": "1925",
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-24T11:13:10.632944+00:00",
+    "at": "2026-09-25T10:17:36.146503+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 7,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "בול נדלן בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": ".1.3 להלן תרשים מבנה החזקות במועד פרסום דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "א.ר בול ליווי ומימון מט\"ח בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": ".1.3 להלן תרשים מבנה החזקות במועד פרסום דוח זה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "בול ר.ב ליווי ומימון רכבים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": ".1.3 להלן תרשים מבנה החזקות במועד פרסום דוח זה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
