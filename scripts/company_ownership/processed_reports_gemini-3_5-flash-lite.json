@@ -5559,83 +5559,19 @@
   },
   "1730531": {
     "company_id": "1925",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-25T10:17:36.146503+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 7,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "בול נדלן בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 5,
-              "section_title": ".1.3 להלן תרשים מבנה החזקות במועד פרסום דוח זה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "א.ר בול ליווי ומימון מט\"ח בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 5,
-              "section_title": ".1.3 להלן תרשים מבנה החזקות במועד פרסום דוח זה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "בול ר.ב ליווי ומימון רכבים בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 5,
-              "section_title": ".1.3 להלן תרשים מבנה החזקות במועד פרסום דוח זה",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-25T10:19:49.233771+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1738846": {
     "company_id": "111",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-24T11:13:10.804762+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 7,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-25T10:23:06.829591+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1730159": {
     "company_id": "371",
@@ -5654,18 +5590,11 @@
   },
   "1734953": {
     "company_id": "1922",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-24T11:13:11.015011+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 7,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-25T10:23:51.060812+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732619": {
     "company_id": "2528",
@@ -5684,63 +5613,35 @@
   },
   "1736353": {
     "company_id": "1756",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-24T11:13:11.378488+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 7,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-25T10:25:18.900691+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1723892": {
     "company_id": "1977",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-24T11:13:11.558392+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 8,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-25T10:26:53.362191+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731339": {
     "company_id": "1964",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-24T11:13:11.738012+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 6,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-25T10:28:38.915704+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731816": {
     "company_id": "1866",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-24T11:13:11.910707+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 13,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-25T10:32:32.572087+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731635": {
     "company_id": "1461",
@@ -5759,18 +5660,11 @@
   },
   "1731066": {
     "company_id": "1940",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-24T11:13:12.116465+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 9,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-25T10:32:34.470692+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731689": {
     "company_id": "1232",
@@ -5792,45 +5686,1316 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-24T11:13:13.289597+00:00",
+    "at": "2026-09-25T10:39:05.755838+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 18,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "גשם בראל בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.5 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם שטובה אינטרשיונל בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.5 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אמפא - גשם בקרית גת בע\"מ",
+              "ownership_pct": 40.0,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.5 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אמפא ישראל - גשם למשתכן בע\"מ",
+              "ownership_pct": 50.0,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.5 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אמפא גשם עתלית בע\"מ",
+              "ownership_pct": 70.0,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.5 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם א.פ.ל. התחדשות עירונית בע\"מ",
+              "ownership_pct": 60.0,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.5 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם התחדשות עירונית בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.5 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "שלג אדריכלים בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.5 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם א.פ.ל. נתן אלבז בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.5 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם התחדשות עירונית אצל בע\"מ",
+              "ownership_pct": 40.0,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.5 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם בנהריה מתחם א' בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.5 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם במעיינות בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.5 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם בנהריה מתחם ב' בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.5 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם בהדסים בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.5 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם בחומות בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.5 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם ניהול מניבים בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.5 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם בנגב בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.5 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "משכנות אשקלון הצעירה בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.5 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם בחוף בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.5 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "משכנות גשם הארץ בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.5 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם בשדות בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.5 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם באומנים בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.5 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם ברמון בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.5 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם בעיר בע\"מ",
+              "ownership_pct": 70.0,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.5 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם רוקה נדל\"ן ויזמות בע\"מ",
+              "ownership_pct": 65.0,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.5 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם תמליו התחדשות עירונית בע\"מ",
+              "ownership_pct": 50.0,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.5 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם התחדשות עירונית הרצל בית שמש בע\"מ",
+              "ownership_pct": 70.0,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.5 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם במגדל העמק",
+              "ownership_pct": 50.1,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.5 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם במגדל העמק ב' בע\"מ",
+              "ownership_pct": 50.0,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.5 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם בשדרות בע\"מ",
+              "ownership_pct": 50.0,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.5 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם בגליל בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.5 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם את שי חי באבוקדו בע\"מ",
+              "ownership_pct": 50.0,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.5 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "יורו גשם בע\"מ",
+              "ownership_pct": 50.0,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.5 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם פרימיום בע\"מ",
+              "ownership_pct": 70.0,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.5 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם ברמות בים בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.5 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם מכתש האומנים בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.5 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם בחורש בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.5 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם ביחד בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.5 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם בביאליק בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.5 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם הירדן רכסים בע\"מ",
+              "ownership_pct": 51.0,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.5 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם בים בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.5 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם שותף כללי בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "1.5 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם בפארק בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": "יש גשם מימון בע\"מ",
+              "page_reference": 8,
+              "section_title": "1.5 מבנה החזקות החברה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "משכנות גשם הארץ בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 18,
+              "section_title": "חלק שלישי – תיאור עסקי התאגיד לפי תחומי הפעילות",
+              "table_title": "א. פרויקטים שהקמתם הושלמה ומכירתם טרם הושלמה",
+              "note": null
+            },
+            {
+              "name": "גשם בהדסים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 19,
+              "section_title": "חלק שלישי – תיאור עסקי התאגיד לפי תחומי הפעילות",
+              "table_title": "ב. פרויקטים בהקמה",
+              "note": null
+            },
+            {
+              "name": "גשם במעיינות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 19,
+              "section_title": "חלק שלישי – תיאור עסקי התאגיד לפי תחומי הפעילות",
+              "table_title": "ב. פרויקטים בהקמה",
+              "note": null
+            },
+            {
+              "name": "גשם בחומות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 19,
+              "section_title": "חלק שלישי – תיאור עסקי התאגיד לפי תחומי הפעילות",
+              "table_title": "ב. פרויקטים בהקמה",
+              "note": null
+            },
+            {
+              "name": "גשם בחוף בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 19,
+              "section_title": "חלק שלישי – תיאור עסקי התאגיד לפי תחומי הפעילות",
+              "table_title": "ב. פרויקטים בהקמה",
+              "note": null
+            },
+            {
+              "name": "גשם בנגב בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "חלק שלישי – תיאור עסקי התאגיד לפי תחומי הפעילות",
+              "table_title": "ב. פרויקטים בהקמה",
+              "note": "דימונה, מחיר מופחת, מתחם א'"
+            },
+            {
+              "name": "משכנות אשקלון הצעירה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "חלק שלישי – תיאור עסקי התאגיד לפי תחומי הפעילות",
+              "table_title": "ב. פרויקטים בהקמה",
+              "note": null
+            },
+            {
+              "name": "גשם בנגב בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "חלק שלישי – תיאור עסקי התאגיד לפי תחומי הפעילות",
+              "table_title": "ב. פרויקטים בהקמה",
+              "note": "דימונה, מחיר מופחת, מתחם ב'"
+            },
+            {
+              "name": "גשם תמליו",
+              "ownership_pct": 65,
+              "parent": null,
+              "page_reference": 26,
+              "section_title": "חלק שלישי – תיאור עסקי התאגיד לפי תחומי הפעילות",
+              "table_title": "ה. התחדשות עירונית (פרויקטי תמ\"א 38/2, פינוי בינוי וקומבינציה)",
+              "note": "עמק ברכה, תל אביב"
+            },
+            {
+              "name": "גשם תמליו",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 26,
+              "section_title": "חלק שלישי – תיאור עסקי התאגיד לפי תחומי הפעילות",
+              "table_title": "ה. התחדשות עירונית (פרויקטי תמ\"א 38/2, פינוי בינוי וקומבינציה)",
+              "note": "חפץ חיים, תל אביב"
+            },
+            {
+              "name": "גשם רוקה",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 26,
+              "section_title": "חלק שלישי – תיאור עסקי התאגיד לפי תחומי הפעילות",
+              "table_title": "ה. התחדשות עירונית (פרויקטי תמ\"א 38/2, פינוי בינוי וקומבינציה)",
+              "note": "דרך הים, חיפה"
+            },
+            {
+              "name": "גשם רוקה",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 26,
+              "section_title": "חלק שלישי – תיאור עסקי התאגיד לפי תחומי הפעילות",
+              "table_title": "ה. התחדשות עירונית (פרויקטי תמ\"א 38/2, פינוי בינוי וקומבינציה)",
+              "note": "התשבי, חיפה"
+            },
+            {
+              "name": "גשם בעיר",
+              "ownership_pct": 70,
+              "parent": null,
+              "page_reference": 26,
+              "section_title": "חלק שלישי – תיאור עסקי התאגיד לפי תחומי הפעילות",
+              "table_title": "ה. התחדשות עירונית (פרויקטי תמ\"א 38/2, פינוי בינוי וקומבינציה)",
+              "note": "ההגנה, נהריה"
+            },
+            {
+              "name": "גשם בעיר",
+              "ownership_pct": 70,
+              "parent": null,
+              "page_reference": 26,
+              "section_title": "חלק שלישי – תיאור עסקי התאגיד לפי תחומי הפעילות",
+              "table_title": "ה. התחדשות עירונית (פרויקטי תמ\"א 38/2, פינוי בינוי וקומבינציה)",
+              "note": "השקמה, נוף הגליל"
+            },
+            {
+              "name": "גשם א.פ.ל",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 27,
+              "section_title": "חלק שלישי – תיאור עסקי התאגיד לפי תחומי הפעילות",
+              "table_title": "ה. התחדשות עירונית (פרויקטי תמ\"א 38/2, פינוי בינוי וקומבינציה)",
+              "note": "נתן אלבז, טירת כרמל"
+            },
+            {
+              "name": "גשם התחדשות עירונית",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 27,
+              "section_title": "חלק שלישי – תיאור עסקי התאגיד לפי תחומי הפעילות",
+              "table_title": "ה. התחדשות עירונית (פרויקטי תמ\"א 38/2, פינוי בינוי וקומבינציה)",
+              "note": "העצמאות, קרית אתא"
+            },
+            {
+              "name": "גשם התחדשות עירונית",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 27,
+              "section_title": "חלק שלישי – תיאור עסקי התאגיד לפי תחומי הפעילות",
+              "table_title": "ה. התחדשות עירונית (פרויקטי תמ\"א 38/2, פינוי בינוי וקומבינציה)",
+              "note": "סוקולוב-טוביהו, באר שבע"
+            },
+            {
+              "name": "גשם התחדשות עירונית",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 27,
+              "section_title": "חלק שלישי – תיאור עסקי התאגיד לפי תחומי הפעילות",
+              "table_title": "ה. התחדשות עירונית (פרויקטי תמ\"א 38/2, פינוי בינוי וקומבינציה)",
+              "note": "לכיש, קרית ים"
+            },
+            {
+              "name": "גשם א.פ.ל",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 27,
+              "section_title": "חלק שלישי – תיאור עסקי התאגיד לפי תחומי הפעילות",
+              "table_title": "ה. התחדשות עירונית (פרויקטי תמ\"א 38/2, פינוי בינוי וקומבינציה)",
+              "note": "האצ\"ל, טירת הכרמל"
+            },
+            {
+              "name": "גשם התחדשות עירונית",
+              "ownership_pct": 80,
+              "parent": null,
+              "page_reference": 27,
+              "section_title": "חלק שלישי – תיאור עסקי התאגיד לפי תחומי הפעילות",
+              "table_title": "ה. התחדשות עירונית (פרויקטי תמ\"א 38/2, פינוי בינוי וקומבינציה)",
+              "note": "שנקר חולון"
+            },
+            {
+              "name": "גשם התחדשות עירונית",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 27,
+              "section_title": "חלק שלישי – תיאור עסקי התאגיד לפי תחומי הפעילות",
+              "table_title": "ה. התחדשות עירונית (פרויקטי תמ\"א 38/2, פינוי בינוי וקומבינציה)",
+              "note": "קדיש לוז – קרית מוצקין (מתחם צפוני)"
+            },
+            {
+              "name": "גשם בביאליק בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 27,
+              "section_title": "חלק שלישי – תיאור עסקי התאגיד לפי תחומי הפעילות",
+              "table_title": "ה. התחדשות עירונית (פרויקטי תמ\"א 38/2, פינוי בינוי וקומבינציה)",
+              "note": "קריית ביאליק"
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "שלג אדריכלים בע\"מ",
+              "ownership_pct": 40,
+              "parent": null,
+              "page_reference": 86,
+              "section_title": "6.9 הסכמי שיתוף פעולה עיקריים עם שותפים",
+              "table_title": null,
+              "note": "חברה כלולה"
+            },
+            {
+              "name": "אמפא - גשם בקריית גת בע\"מ",
+              "ownership_pct": 40,
+              "parent": null,
+              "page_reference": 86,
+              "section_title": "6.9 הסכמי שיתוף פעולה עיקריים עם שותפים",
+              "table_title": null,
+              "note": "חברה כלולה"
+            },
+            {
+              "name": "גשם במגדל העמק א' בע\"מ",
+              "ownership_pct": 50.1,
+              "parent": null,
+              "page_reference": 86,
+              "section_title": "6.9 הסכמי שיתוף פעולה עיקריים עם שותפים",
+              "table_title": null,
+              "note": "חברה מאוחדת"
+            },
+            {
+              "name": "יורו גשם בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 87,
+              "section_title": "6.9 הסכמי שיתוף פעולה עיקריים עם שותפים",
+              "table_title": null,
+              "note": "חברה כלולה"
+            },
+            {
+              "name": "גשם פרימיום בע\"מ",
+              "ownership_pct": 70,
+              "parent": null,
+              "page_reference": 88,
+              "section_title": "6.9 הסכמי שיתוף פעולה עיקריים עם שותפים",
+              "table_title": null,
+              "note": "חברה מאוחדת"
+            },
+            {
+              "name": "מלון במצפה רמון",
+              "ownership_pct": 50,
+              "parent": "גשם ברמון בע\"מ",
+              "page_reference": 88,
+              "section_title": "6.9 הסכמי שיתוף פעולה עיקריים עם שותפים",
+              "table_title": null,
+              "note": "חברה מאוחדת"
+            },
+            {
+              "name": "גשם הירדן רכסים בע\"מ",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 88,
+              "section_title": "6.9 הסכמי שיתוף פעולה עיקריים עם שותפים",
+              "table_title": null,
+              "note": "חברה כלולה"
+            },
+            {
+              "name": "עתלית עין הכרמל",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 88,
+              "section_title": "6.9 הסכמי שיתוף פעולה עיקריים עם שותפים",
+              "table_title": null,
+              "note": "איחוד יחסי"
+            }
+          ],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "שלג אדריכלים בע\"מ",
+              "ownership_pct": 40,
+              "parent": null,
+              "page_reference": 103,
+              "section_title": "6.9 הסכמי שיתוף פעולה עיקריים עם שותפים",
+              "table_title": null,
+              "note": "פירוק מרצון"
+            },
+            {
+              "name": "אמפא - גשם בקריית גת בע\"מ",
+              "ownership_pct": 40,
+              "parent": null,
+              "page_reference": 103,
+              "section_title": "6.9 הסכמי שיתוף פעולה עיקריים עם שותפים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם במגדל העמק בע\"מ",
+              "ownership_pct": 50.1,
+              "parent": null,
+              "page_reference": 104,
+              "section_title": "6.9 הסכמי שיתוף פעולה עיקריים עם שותפים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "יורו גשם בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 104,
+              "section_title": "6.9 הסכמי שיתוף פעולה עיקריים עם שותפים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם פרימיום בע\"מ",
+              "ownership_pct": 70,
+              "parent": null,
+              "page_reference": 105,
+              "section_title": "6.9 הסכמי שיתוף פעולה עיקריים עם שותפים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מלון במצפה רמון",
+              "ownership_pct": 50,
+              "parent": "גשם ברמון בע\"מ",
+              "page_reference": 105,
+              "section_title": "6.9 הסכמי שיתוף פעולה עיקריים עם שותפים",
+              "table_title": null,
+              "note": "באמצעות גשם ברמון בע\"מ"
+            },
+            {
+              "name": "גשם הירדן רכסים בע\"מ",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 105,
+              "section_title": "6.9 הסכמי שיתוף פעולה עיקריים עם שותפים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "עתלית עין הכרמל",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 105,
+              "section_title": "6.9 הסכמי שיתוף פעולה עיקריים עם שותפים",
+              "table_title": null,
+              "note": "עסקה משותפת - החברה ועלות השחר יזמות ובניה בע\"מ"
+            },
+            {
+              "name": "גשם בעיר בע\"מ",
+              "ownership_pct": 70,
+              "parent": null,
+              "page_reference": 106,
+              "section_title": "6.9 הסכמי שיתוף פעולה עיקריים עם שותפים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם תמליו התחדשות עירונית בע\"מ",
+              "ownership_pct": 65,
+              "parent": null,
+              "page_reference": 106,
+              "section_title": "6.9 הסכמי שיתוף פעולה עיקריים עם שותפים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם רוקה נדל\"ן ויזמות בע\"מ",
+              "ownership_pct": 50.1,
+              "parent": null,
+              "page_reference": 106,
+              "section_title": "6.9 הסכמי שיתוף פעולה עיקריים עם שותפים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם א.פ.ל. התחדשות עירונית בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 106,
+              "section_title": "6.9 הסכמי שיתוף פעולה עיקריים עם שותפים",
+              "table_title": null,
+              "note": "50% מניות ניהול, 60% מניות רגילות"
+            },
+            {
+              "name": "גשם את שי חי באבוקדו בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 106,
+              "section_title": "6.9 הסכמי שיתוף פעולה עיקריים עם שותפים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם התחדשות עירונית הרצל בית שמש",
+              "ownership_pct": 70,
+              "parent": null,
+              "page_reference": 107,
+              "section_title": "6.9 הסכמי שיתוף פעולה עיקריים עם שותפים",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "משכנות גשם הארץ בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 73,
+              "section_title": "6.16 פרויקט אונו סנטר, אור יהודה (עירוב שימושים - מחיר למשתכן, מסחר ותעסוקה) - פרויקט בביצוע",
+              "table_title": null,
+              "note": "חברה פרטית בבעלות מלאה של החברה"
+            },
+            {
+              "name": "גשם באומנים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 81,
+              "section_title": "6.17 פרויקט SQUARE, שכונת משכנות האומנים, קריית מוצקין (מסחר ותעסוקה) - פרויקט בביצוע",
+              "table_title": null,
+              "note": "חברה פרטית בבעלות מלאה של החברה"
+            },
+            {
+              "name": "גשם בנגב בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 87,
+              "section_title": "6.18 פרויקט דימונה (מתחם א') (מחיר מופחת) – פרויקט בביצוע",
+              "table_title": null,
+              "note": "חברה פרטית בבעלות מלאה של החברה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "גשם בנגב בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 87,
+              "section_title": "6.18.1 הצגת הפרויקט",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם בחוף בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 93,
+              "section_title": "6.19.1 הצגת הפרויקט",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם במגדל העמק ב' בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 98,
+              "section_title": "6.20.1 הצגת הפרויקט",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם בגליל בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 102,
+              "section_title": "6.21.1 הצגת הפרויקט",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם למשתכן בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 105,
+              "section_title": "ב. להלן פרטים אודות הלוואת מזנין",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "גשם ברמון בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 210,
+              "section_title": ".7.1.2 נכסי פעילות הנדל\"ן המניב",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם בשדות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 221,
+              "section_title": ".10.8 אשראי בר דיווח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם בהדסים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 222,
+              "section_title": ".10.8 אשראי בר דיווח",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:7": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "גשם בהדסים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 120,
+              "section_title": null,
+              "table_title": null,
+              "note": "מחזיקה בפרויקט ארנונה מתחם ה' בירושלים"
+            },
+            {
+              "name": "גשם במעיינות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 130,
+              "section_title": "13.1 מימון באמצעות וולת'סטון גשם קפיטל בע\"מ, חברה המוחזקת בשיעור של 50% על ידי בעלי השליטה, והתחייבות לחלוקת רווחים",
+              "table_title": null,
+              "note": "מחזיקה בפרויקט ירושלים מתחם ו'"
+            },
+            {
+              "name": "גשם בחומות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 130,
+              "section_title": "13.1 מימון באמצעות וולת'סטון גשם קפיטל בע\"מ, חברה המוחזקת בשיעור של 50% על ידי בעלי השליטה, והתחייבות לחלוקת רווחים",
+              "table_title": null,
+              "note": "מחזיקה בפרויקט ירושלים מתחם ז'"
+            }
+          ],
+          "change_events": []
+        },
+        "0:8": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:9": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "גשם בפארק בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 170,
+              "section_title": "באור 1 - כללי: ב. שינוי מבנה החברה",
+              "table_title": null,
+              "note": "הועברה לחברה במסגרת צירוף עסקים תחת אותה שליטה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:10": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "גשם בנהריה מתחם א' בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "באור :1 - כללי (המשך): ד. הגדרות:",
+              "table_title": null,
+              "note": "חברה מאוחדת"
+            },
+            {
+              "name": "גשם בנהריה מתחם ב' בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "באור :1 - כללי (המשך): ד. הגדרות:",
+              "table_title": null,
+              "note": "חברה מאוחדת"
+            },
+            {
+              "name": "משכנות אשקלון הצעירה בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "באור :1 - כללי (המשך): ד. הגדרות:",
+              "table_title": null,
+              "note": "חברה מאוחדת"
+            },
+            {
+              "name": "משכנות גשם הארץ בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "באור :1 - כללי (המשך): ד. הגדרות:",
+              "table_title": null,
+              "note": "חברה מאוחדת"
+            },
+            {
+              "name": "גשם בהדסים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "באור :1 - כללי (המשך): ד. הגדרות:",
+              "table_title": null,
+              "note": "חברה מאוחדת"
+            },
+            {
+              "name": "גשם במעיינות בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "באור :1 - כללי (המשך): ד. הגדרות:",
+              "table_title": null,
+              "note": "חברה מאוחדת"
+            },
+            {
+              "name": "גשם בחומות בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "באור :1 - כללי (המשך): ד. הגדרות:",
+              "table_title": null,
+              "note": "חברה מאוחדת"
+            },
+            {
+              "name": "גשם בחוף בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "באור :1 - כללי (המשך): ד. הגדרות:",
+              "table_title": null,
+              "note": "חברה מאוחדת"
+            },
+            {
+              "name": "גשם בנגב בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "באור :1 - כללי (המשך): ד. הגדרות:",
+              "table_title": null,
+              "note": "חברה מאוחדת"
+            },
+            {
+              "name": "גשם בשדרות בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "באור :1 - כללי (המשך): ד. הגדרות:",
+              "table_title": null,
+              "note": "חברה מאוחדת"
+            },
+            {
+              "name": "גשם ברמון בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "באור :1 - כללי (המשך): ד. הגדרות:",
+              "table_title": null,
+              "note": "חברה מאוחדת"
+            },
+            {
+              "name": "גשם באומנים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "באור :1 - כללי (המשך): ד. הגדרות:",
+              "table_title": null,
+              "note": "חברה מאוחדת"
+            },
+            {
+              "name": "גשם בעיר בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "באור :1 - כללי (המשך): ד. הגדרות:",
+              "table_title": null,
+              "note": "חברה מאוחדת"
+            },
+            {
+              "name": "גשם התחדשות עירונית בע''מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "באור :1 - כללי (המשך): ד. הגדרות:",
+              "table_title": null,
+              "note": "חברה מאוחדת"
+            },
+            {
+              "name": "גשם במגדל העמק בע''מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "באור :1 - כללי (המשך): ד. הגדרות:",
+              "table_title": null,
+              "note": "חברה מאוחדת"
+            },
+            {
+              "name": "גשם במגדל העמק ב' בע''מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "באור :1 - כללי (המשך): ד. הגדרות:",
+              "table_title": null,
+              "note": "חברה מאוחדת"
+            },
+            {
+              "name": "גשם בשדות בע''מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "באור :1 - כללי (המשך): ד. הגדרות:",
+              "table_title": null,
+              "note": "חברה מאוחדת"
+            },
+            {
+              "name": "גשם בגליל בע''מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "באור :1 - כללי (המשך): ד. הגדרות:",
+              "table_title": null,
+              "note": "חברה מאוחדת"
+            },
+            {
+              "name": "גשם ברמות בים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "באור :1 - כללי (המשך): ד. הגדרות:",
+              "table_title": null,
+              "note": "חברה מאוחדת"
+            },
+            {
+              "name": "גשם בביאליק בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "באור :1 - כללי (המשך): ד. הגדרות:",
+              "table_title": null,
+              "note": "חברה מאוחדת"
+            },
+            {
+              "name": "גשם בפארק בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "באור :1 - כללי (המשך): ד. הגדרות:",
+              "table_title": null,
+              "note": "חברה מאוחדת"
+            },
+            {
+              "name": "גשם במכתש האומנים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "באור :1 - כללי (המשך): ד. הגדרות:",
+              "table_title": null,
+              "note": "חברה מאוחדת"
+            },
+            {
+              "name": "גשם בראל בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "באור :1 - כללי (המשך): ד. הגדרות:",
+              "table_title": null,
+              "note": "חברה מוחזקת המטופלת בשיטת השווי המאזני"
+            },
+            {
+              "name": "אמפא ישראל – גשם למשתכן בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "באור :1 - כללי (המשך): ד. הגדרות:",
+              "table_title": null,
+              "note": "חברה מוחזקת המטופלת בשיטת השווי המאזני"
+            },
+            {
+              "name": "שלג אדריכלים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "באור :1 - כללי (המשך): ד. הגדרות:",
+              "table_title": null,
+              "note": "חברה מוחזקת המטופלת בשיטת השווי המאזני"
+            },
+            {
+              "name": "גשם הירדן רכסים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "באור :1 - כללי (המשך): ד. הגדרות:",
+              "table_title": null,
+              "note": "חברה מוחזקת המטופלת בשיטת השווי המאזני"
+            },
+            {
+              "name": "גשם תמליו התחדשות עירונית בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "באור :1 - כללי (המשך): ד. הגדרות:",
+              "table_title": null,
+              "note": "חברה מוחזקת המטופלת בשיטת השווי המאזני"
+            },
+            {
+              "name": "גשם רוקה נדל\"ן ויזמות בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "באור :1 - כללי (המשך): ד. הגדרות:",
+              "table_title": null,
+              "note": "חברה מוחזקת המטופלת בשיטת השווי המאזני"
+            },
+            {
+              "name": "יורו גשם בע''מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "באור :1 - כללי (המשך): ד. הגדרות:",
+              "table_title": null,
+              "note": "חברה מוחזקת המטופלת בשיטת השווי המאזני"
+            },
+            {
+              "name": "גשם את שי חי באבוקדו בע''מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "באור :1 - כללי (המשך): ד. הגדרות:",
+              "table_title": null,
+              "note": "חברה מוחזקת המטופלת בשיטת השווי המאזני"
+            },
+            {
+              "name": "אמפא – גשם בקריית גת בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 177,
+              "section_title": "באור :1 - כללי (המשך): ד. הגדרות:",
+              "table_title": null,
+              "note": "חברה מוחזקת המטופלת בשיטת השווי המאזני"
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
   "1727770": {
     "company_id": "826",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-24T11:13:13.491876+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 6,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-25T10:36:07.286552+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1723508": {
     "company_id": "399",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-24T11:13:13.731582+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 8,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-25T10:39:08.250165+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731605": {
     "company_id": "412",
