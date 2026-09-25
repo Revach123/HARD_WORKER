@@ -5816,534 +5816,11 @@
   },
   "1732438": {
     "company_id": "822",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-25T11:00:30.053052+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 8,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "מלונות גני שולמית בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 2,
-              "section_title": "להלן תרשים מבנה החזקות של הקבוצה*",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מלון דן אכדיה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 2,
-              "section_title": "להלן תרשים מבנה החזקות של הקבוצה*",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "סוויטס אמריקה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 2,
-              "section_title": "להלן תרשים מבנה החזקות של הקבוצה*",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מ.ד.ל. בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 2,
-              "section_title": "להלן תרשים מבנה החזקות של הקבוצה*",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מגדלי דן – שותפות מוגבלת",
-              "ownership_pct": 99.6,
-              "parent": "מ.ד.ל. בע\"מ",
-              "page_reference": 2,
-              "section_title": "להלן תרשים מבנה החזקות של הקבוצה*",
-              "table_title": null,
-              "note": "0.4% נוספים מוחזקים על ידי רגעי קסם בע\"מ"
-            },
-            {
-              "name": "רגעי קסם בע\"מ",
-              "ownership_pct": 100,
-              "parent": "מ.ד.ל. בע\"מ",
-              "page_reference": 2,
-              "section_title": "להלן תרשים מבנה החזקות של הקבוצה*",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Nigoce Holdings Ltd.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 2,
-              "section_title": "להלן תרשים מבנה החזקות של הקבוצה*",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Dan Hospitality India Pvt. Ltd.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 2,
-              "section_title": "להלן תרשים מבנה החזקות של הקבוצה*",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מקומות טובים בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 2,
-              "section_title": "להלן תרשים מבנה החזקות של הקבוצה*",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Israel Hotels Rep. 1",
-              "ownership_pct": 100,
-              "parent": "מקומות טובים בע\"מ",
-              "page_reference": 2,
-              "section_title": "להלן תרשים מבנה החזקות של הקבוצה*",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ש.א.י שירותי אירוח ישראליים בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 2,
-              "section_title": "להלן תרשים מבנה החזקות של הקבוצה*",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "טרקליני אח\"מ מבית מלונות דן וקיו.איי.אס ישראל – שותפות מוגבלת",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 2,
-              "section_title": "להלן תרשים מבנה החזקות של הקבוצה*",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מרכז פנורמה",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 2,
-              "section_title": "להלן תרשים מבנה החזקות של הקבוצה*",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "עידית לוגיסטיקת מזון בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 2,
-              "section_title": "להלן תרשים מבנה החזקות של הקבוצה*",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "טיב וטעים 2013 הסעדה בע\"מ",
-              "ownership_pct": 100,
-              "parent": "עידית לוגיסטיקת מזון בע\"מ",
-              "page_reference": 2,
-              "section_title": "להלן תרשים מבנה החזקות של הקבוצה*",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אורט דן גורמה – שותפות מוגבלת",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 2,
-              "section_title": "להלן תרשים מבנה החזקות של הקבוצה*",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "גו דן באילת – שותפות מוגבלת",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 2,
-              "section_title": "להלן תרשים מבנה החזקות של הקבוצה*",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "DH USA LP",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 2,
-              "section_title": "להלן תרשים מבנה החזקות של הקבוצה*",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "DH USA NYC Holdings Inc.",
-              "ownership_pct": 100,
-              "parent": "DH USA LP",
-              "page_reference": 2,
-              "section_title": "להלן תרשים מבנה החזקות של הקבוצה*",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "DH 9 Crosby St.",
-              "ownership_pct": 100,
-              "parent": "DH USA NYC Holdings Inc.",
-              "page_reference": 2,
-              "section_title": "להלן תרשים מבנה החזקות של הקבוצה*",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "טרקליני אח\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 22,
-              "section_title": "7.19 הסכמי שיתוף פעולה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "המרכז הקולינארי הגבוה לאומנויות הבישול, דן גורמה ת\"א",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 22,
-              "section_title": "7.19 הסכמי שיתוף פעולה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "עידית",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 26,
-              "section_title": "8 פעילות ההסעדה",
-              "table_title": null,
-              "note": "חברה פרטית בבעלות ובשליטה מלאה של הקבוצה"
-            },
-            {
-              "name": "טיב וטעים",
-              "ownership_pct": null,
-              "parent": "עידית",
-              "page_reference": 26,
-              "section_title": "8 פעילות ההסעדה",
-              "table_title": null,
-              "note": "חברה פרטית בבעלות ובשליטה מלאה של עידית"
-            }
-          ],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "מלון נפטון, אילת",
-              "ownership_pct": 33.33,
-              "parent": null,
-              "page_reference": 44,
-              "section_title": "באור 1 - כללי (המשך)",
-              "table_title": null,
-              "note": "מוחזק בבעלות של 33.33% על ידי החברה"
-            },
-            {
-              "name": "טרקליני אח\"מ מבית מלונות דן וקיו.אי.אס שותפות מוגבלת",
-              "ownership_pct": 50.0,
-              "parent": null,
-              "page_reference": 45,
-              "section_title": "באור 1 - כללי (המשך)",
-              "table_title": null,
-              "note": "הפעילות הסתיימה ביום 31 בדצמבר 2025"
-            }
-          ],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "מלונות גני שולמית בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 58,
-              "section_title": "באור :6 - השקעות בחברות מוחזקות\nא. השקעות בחברות מאוחדות",
-              "table_title": "מידע כללי",
-              "note": null
-            },
-            {
-              "name": "מלון דן אכדיה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 58,
-              "section_title": "באור :6 - השקעות בחברות מוחזקות\nא. השקעות בחברות מאוחדות",
-              "table_title": "מידע כללי",
-              "note": null
-            },
-            {
-              "name": "סוויטס אמריקה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 58,
-              "section_title": "באור :6 - השקעות בחברות מוחזקות\nא. השקעות בחברות מאוחדות",
-              "table_title": "מידע כללי",
-              "note": null
-            },
-            {
-              "name": "מקומות טובים בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 58,
-              "section_title": "באור :6 - השקעות בחברות מוחזקות\nא. השקעות בחברות מאוחדות",
-              "table_title": "מידע כללי",
-              "note": null
-            },
-            {
-              "name": "עידית לוגיסטיקת מזון בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 58,
-              "section_title": "באור :6 - השקעות בחברות מוחזקות\nא. השקעות בחברות מאוחדות",
-              "table_title": "מידע כללי",
-              "note": null
-            },
-            {
-              "name": "מ.ד.ל בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 58,
-              "section_title": "באור :6 - השקעות בחברות מוחזקות\nא. השקעות בחברות מאוחדות",
-              "table_title": "מידע כללי",
-              "note": null
-            },
-            {
-              "name": "Dan Hospitality India Private Limited",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 58,
-              "section_title": "באור :6 - השקעות בחברות מוחזקות\nא. השקעות בחברות מאוחדות",
-              "table_title": "מידע כללי",
-              "note": null
-            },
-            {
-              "name": "לידינג הוטלס לימיטד",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 58,
-              "section_title": "באור :6 - השקעות בחברות מוחזקות\nא. השקעות בחברות מאוחדות",
-              "table_title": "מידע כללי",
-              "note": null
-            },
-            {
-              "name": "Israel Hotels Rep.1",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 58,
-              "section_title": "באור :6 - השקעות בחברות מוחזקות\nא. השקעות בחברות מאוחדות",
-              "table_title": "מידע כללי",
-              "note": null
-            },
-            {
-              "name": "מלונות דן הספקות ושירותים בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 58,
-              "section_title": "באור :6 - השקעות בחברות מוחזקות\nא. השקעות בחברות מאוחדות",
-              "table_title": "מידע כללי",
-              "note": null
-            },
-            {
-              "name": "מלונות דן - מימון והנפקות בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 58,
-              "section_title": "באור :6 - השקעות בחברות מוחזקות\nא. השקעות בחברות מאוחדות",
-              "table_title": "מידע כללי",
-              "note": null
-            },
-            {
-              "name": "אורנת החן בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 58,
-              "section_title": "באור :6 - השקעות בחברות מוחזקות\nא. השקעות בחברות מאוחדות",
-              "table_title": "מידע כללי",
-              "note": null
-            },
-            {
-              "name": "טרקליני אח\"מ מבית מלונות דן ו- קיו.איי.אס ישראל - שותפות מוגבלת",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 60,
-              "section_title": "באור :6 - השקעות בחברות מוחזקות (המשך)\nב. השקעה או עודף התחייבות על השקעה בתאגידים המטופלים לפי שיטת השווי המאזני",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אורט דן גורמה תל אביב – שותפות מוגבלת",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 60,
-              "section_title": "באור :6 - השקעות בחברות מוחזקות (המשך)\nב. השקעה או עודף התחייבות על השקעה בתאגידים המטופלים לפי שיטת השווי המאזני",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "גו דן באילת – שותפות מוגבלת",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 60,
-              "section_title": "באור :6 - השקעות בחברות מוחזקות (המשך)\nב. השקעה או עודף התחייבות על השקעה בתאגידים המטופלים לפי שיטת השווי המאזני",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:5": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "מלונות גני שולמית בע\"מ",
-              "ownership_pct": 100.0,
-              "parent": null,
-              "page_reference": 100,
-              "section_title": "פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11",
-              "note": null
-            },
-            {
-              "name": "מלון דן אכדיה בע\"מ",
-              "ownership_pct": 100.0,
-              "parent": null,
-              "page_reference": 100,
-              "section_title": "פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11",
-              "note": null
-            },
-            {
-              "name": "מ.ד.ל. בע\"מ",
-              "ownership_pct": 100.0,
-              "parent": null,
-              "page_reference": 100,
-              "section_title": "פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11",
-              "note": null
-            },
-            {
-              "name": "מקומות טובים בע\"מ",
-              "ownership_pct": 100.0,
-              "parent": null,
-              "page_reference": 100,
-              "section_title": "פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11",
-              "note": null
-            },
-            {
-              "name": "סוויטס אמריקה בע\"מ",
-              "ownership_pct": 100.0,
-              "parent": null,
-              "page_reference": 100,
-              "section_title": "פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11",
-              "note": null
-            },
-            {
-              "name": "עידית לוגיסטיקת מזון בע\"מ",
-              "ownership_pct": 100.0,
-              "parent": null,
-              "page_reference": 100,
-              "section_title": "פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11",
-              "note": null
-            },
-            {
-              "name": "אורט דן גורמה תל-אביב - שותפות מוגבלת",
-              "ownership_pct": 50.0,
-              "parent": null,
-              "page_reference": 100,
-              "section_title": "פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11",
-              "note": null
-            },
-            {
-              "name": "Dan Hospitality India Private Limited",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 100,
-              "section_title": "פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11",
-              "note": null
-            },
-            {
-              "name": "Nigoce Holdings Ltd.",
-              "ownership_pct": 100.0,
-              "parent": null,
-              "page_reference": 100,
-              "section_title": "פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11",
-              "note": null
-            },
-            {
-              "name": "טרקליני אח\"מ מבית מלונות דן וקיו.איי.אס – שותפות מוגבלת",
-              "ownership_pct": 50.0,
-              "parent": null,
-              "page_reference": 100,
-              "section_title": "פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11",
-              "note": null
-            },
-            {
-              "name": "גו דן באילת שותפות מוגבלת",
-              "ownership_pct": 50.0,
-              "parent": null,
-              "page_reference": 100,
-              "section_title": "פרטים נוספים על התאגיד",
-              "table_title": "תקנה 11",
-              "note": null
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-25T11:01:31.642701+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1741141": {
     "company_id": "256",
@@ -6385,33 +5862,19 @@
   },
   "1731414": {
     "company_id": "1550",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-24T11:13:15.889829+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 7,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-25T11:06:22.814825+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1729117": {
     "company_id": "765",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-24T11:13:15.706775+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 14,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-25T11:08:19.449229+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1733266": {
     "company_id": "1329",
@@ -6430,63 +5893,35 @@
   },
   "1725551": {
     "company_id": "2028",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-24T11:13:16.042733+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-25T11:08:52.659337+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731494": {
     "company_id": "442",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-24T11:13:16.295554+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 11,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-25T11:12:29.131957+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1733120": {
     "company_id": "1476",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-24T11:13:16.407168+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-25T11:11:10.374509+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1738596": {
     "company_id": "1480",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-24T11:13:16.527713+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 12,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-25T11:16:14.008234+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731084": {
     "company_id": "1527",
@@ -6505,48 +5940,27 @@
   },
   "1726440": {
     "company_id": "230",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-24T11:13:16.676670+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-25T11:13:05.669762+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1733083": {
     "company_id": "1921",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-24T11:13:17.395813+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 7,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-25T11:17:40.497540+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1729678": {
     "company_id": "1998",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-09-24T11:13:17.539967+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 9,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-25T11:21:50.816734+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1736880": {
     "company_id": "1569",
@@ -6583,13 +5997,166 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-09-24T11:13:17.651047+00:00",
+    "at": "2026-09-25T11:21:42.195527+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 9,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "20-F",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "20-F",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "Camtek H.K. Ltd.",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 29,
+              "section_title": "C. Organizational Structure",
+              "table_title": null,
+              "note": "Wholly owned by us or by our subsidiaries, except for Camtek HK Ltd., in which Priortech holds no more than one percent of the voting rights"
+            },
+            {
+              "name": "Camtek USA Inc.",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 29,
+              "section_title": "C. Organizational Structure",
+              "table_title": null,
+              "note": "Wholly owned by us or by our subsidiaries"
+            },
+            {
+              "name": "Camtek (Europe) NV",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 29,
+              "section_title": "C. Organizational Structure",
+              "table_title": null,
+              "note": "Wholly owned by us or by our subsidiaries"
+            },
+            {
+              "name": "Camtek Germany GmbH",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 29,
+              "section_title": "C. Organizational Structure",
+              "table_title": null,
+              "note": "Wholly owned by us or by our subsidiaries"
+            },
+            {
+              "name": "Camtek Inspection Technology (Suzhou) Ltd.",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 29,
+              "section_title": "C. Organizational Structure",
+              "table_title": null,
+              "note": "Wholly owned by us or by our subsidiaries"
+            },
+            {
+              "name": "Camtek Japan Ltd.",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 29,
+              "section_title": "C. Organizational Structure",
+              "table_title": null,
+              "note": "Wholly owned by us or by our subsidiaries"
+            },
+            {
+              "name": "Camtek Inspection Technology Limited",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 29,
+              "section_title": "C. Organizational Structure",
+              "table_title": null,
+              "note": "Wholly owned by us or by our subsidiaries"
+            },
+            {
+              "name": "Camtek South East Asia Pte Ltd.",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 29,
+              "section_title": "C. Organizational Structure",
+              "table_title": null,
+              "note": "Wholly owned by us or by our subsidiaries"
+            },
+            {
+              "name": "Camtek Korea Ltd.",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 29,
+              "section_title": "C. Organizational Structure",
+              "table_title": null,
+              "note": "Wholly owned by us or by our subsidiaries"
+            },
+            {
+              "name": "Camtek Germany Holding GmbH",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 29,
+              "section_title": "C. Organizational Structure",
+              "table_title": null,
+              "note": "Wholly owned by us or by our subsidiaries"
+            },
+            {
+              "name": "FRT GmbH",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 29,
+              "section_title": "C. Organizational Structure",
+              "table_title": null,
+              "note": "Wholly owned by us or by our subsidiaries"
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "20-F",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "20-F",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "20-F",
+          "document_type": "unknown",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "20-F",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "FRT GmbH",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 97,
+              "section_title": "Note 1 - Nature of Operations",
+              "table_title": null,
+              "note": "Acquired in October 2023"
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
