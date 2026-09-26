@@ -1036,954 +1036,11 @@
   },
   "1731732": {
     "company_id": "127",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-25T12:07:01.200357+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 21,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "קבוצת שמיר אנרגיה (2023) בע\"מ",
-              "ownership_pct": 79.74,
-              "parent": null,
-              "page_reference": 11,
-              "section_title": "3.1 השקעות בתחום האנרגיה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "MRC Alon Tavor Power Ltd.",
-              "ownership_pct": 33.33,
-              "parent": "קבוצת שמיר אנרגיה (2023) בע\"מ",
-              "page_reference": 11,
-              "section_title": "3.1 השקעות בתחום האנרגיה",
-              "table_title": null,
-              "note": "מוחזקת באמצעות שמיר אנרגיה"
-            },
-            {
-              "name": "קסם אנרגיה בע\"מ",
-              "ownership_pct": 52.86,
-              "parent": "קבוצת שמיר אנרגיה (2023) בע\"מ",
-              "page_reference": 11,
-              "section_title": "3.1 השקעות בתחום האנרגיה",
-              "table_title": null,
-              "note": "מוחזקת באמצעות שמיר אנרגיה"
-            },
-            {
-              "name": "סינרג'י רמת הגליל, שותפות מוגבלת",
-              "ownership_pct": 25.0,
-              "parent": "קבוצת שמיר אנרגיה (2023) בע\"מ",
-              "page_reference": 11,
-              "section_title": "3.1 השקעות בתחום האנרגיה",
-              "table_title": null,
-              "note": "מוחזקת באמצעות שמיר אנרגיה"
-            },
-            {
-              "name": "מבטח שמיר - אנרטי, ביוגז אוהד שותפות מוגבלת",
-              "ownership_pct": 50.0,
-              "parent": "קבוצת שמיר אנרגיה (2023) בע\"מ",
-              "page_reference": 11,
-              "section_title": "3.1 השקעות בתחום האנרגיה",
-              "table_title": null,
-              "note": "מוחזקת באמצעות שמיר אנרגיה"
-            },
-            {
-              "name": "אשטרום-רפק-מבטח אנרגיה מתחדשת, רמת הגולן שותפות מוגבלת",
-              "ownership_pct": 33.0,
-              "parent": "קבוצת שמיר אנרגיה (2023) בע\"מ",
-              "page_reference": 11,
-              "section_title": "3.1 השקעות בתחום האנרגיה",
-              "table_title": null,
-              "note": "מוחזקת באמצעות שמיר אנרגיה"
-            },
-            {
-              "name": "מניף-שירותים פיננסים בע\"מ",
-              "ownership_pct": 48.67,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": "3.2 השקעות בתחום המימון",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Davidson Technology Growth",
-              "ownership_pct": 42.4,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": "3.2 השקעות בתחום המימון",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Finergy LLC",
-              "ownership_pct": 70.0,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": "3.2 השקעות בתחום המימון",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מגדלי הוד השרון בע\"מ",
-              "ownership_pct": 42.33,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": "3.3 השקעות בתחום הנדל\"ן",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Jarvinia (Cyprus) Ltd.",
-              "ownership_pct": 35.0,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": "3.3 השקעות בתחום הנדל\"ן",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "נכסי נדל\"ן מניבים בארה\"ב",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": "3.3 השקעות בתחום הנדל\"ן",
-              "table_title": null,
-              "note": "צוין בטווח של 30%-33%"
-            },
-            {
-              "name": "מבטח אור (2021) לגיל השלישי בע\"מ",
-              "ownership_pct": 50.0,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": "3.3 השקעות בתחום הנדל\"ן",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Mivtach MS Holdings Ltd.",
-              "ownership_pct": 77.5,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": "3.3 השקעות בתחום הנדל\"ן",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Eatos Group Real Estate Ltd",
-              "ownership_pct": 50.0,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": "3.3 השקעות בתחום הנדל\"ן",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "נכס נדל\"ן מניב בהרצליה פיתוח",
-              "ownership_pct": 55.95,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": "3.3 השקעות בתחום הנדל\"ן",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "נכס נדל\"ן מניב ברמת גן",
-              "ownership_pct": 20.0,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": "3.3 השקעות בתחום הנדל\"ן",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "שמיר אנרגיה",
-              "ownership_pct": 80,
-              "parent": null,
-              "page_reference": 20,
-              "section_title": "8. השקעות בתחום האנרגיה",
-              "table_title": null,
-              "note": "נכון ליום 31 בדצמבר 2025 ההחזקה עמדה על כ-80%, ולמועד הדוח על כ-72%"
-            },
-            {
-              "name": "MRC",
-              "ownership_pct": 33.33,
-              "parent": "שמיר אנרגיה",
-              "page_reference": 52,
-              "section_title": "8.2.2 להלן מידע כספי אודות החזקות שמיר אנרגיה במניות של חברות המפעילות ו/או העוסקות בקידום פרויקטים להקמת תחנות כוח המופעלות בגז טבעי ואנרגיה מתחדשת",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "קסם",
-              "ownership_pct": 52.86,
-              "parent": "שמיר אנרגיה",
-              "page_reference": 52,
-              "section_title": "8.2.2 להלן מידע כספי אודות החזקות שמיר אנרגיה במניות של חברות המפעילות ו/או העוסקות בקידום פרויקטים להקמת תחנות כוח המופעלות בגז טבעי ואנרגיה מתחדשת",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "סינרג'י רמת הגליל, שותפות מוגבלת",
-              "ownership_pct": 25.0,
-              "parent": "שמיר אנרגיה",
-              "page_reference": 52,
-              "section_title": "8.2.2 להלן מידע כספי אודות החזקות שמיר אנרגיה במניות של חברות המפעילות ו/או העוסקות בקידום פרויקטים להקמת תחנות כוח המופעלות בגז טבעי ואנרגיה מתחדשת",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אשטרום -רפק-מבטח אנרגיה מתחדשת, רמת הגולן שותפות מוגבלת",
-              "ownership_pct": 33.33,
-              "parent": "שמיר אנרגיה",
-              "page_reference": 52,
-              "section_title": "8.2.2 להלן מידע כספי אודות החזקות שמיר אנרגיה במניות של חברות המפעילות ו/או העוסקות בקידום פרויקטים להקמת תחנות כוח המופעלות בגז טבעי ואנרגיה מתחדשת",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מבטח שמיר - אנרטי, ביוגז אוהד שותפות מוגבלת",
-              "ownership_pct": 50.0,
-              "parent": "שמיר אנרגיה",
-              "page_reference": 52,
-              "section_title": "8.2.2 להלן מידע כספי אודות החזקות שמיר אנרגיה במניות של חברות המפעילות ו/או העוסקות בקידום פרויקטים להקמת תחנות כוח המופעלות בגז טבעי ואנרגיה מתחדשת",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "MRC",
-              "ownership_pct": 33.33,
-              "parent": null,
-              "page_reference": 69,
-              "section_title": "8.2.2 להלן מידע כספי אודות החזקות שמיר אנרגיה במניות של חברות המפעילות ו/או העוסקות בקידום פרויקטים להקמת תחנות כוח המופעלות בגז טבעי ואנרגיה מתחדשת",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "קסם",
-              "ownership_pct": 52.86,
-              "parent": null,
-              "page_reference": 69,
-              "section_title": "8.2.2 להלן מידע כספי אודות החזקות שמיר אנרגיה במניות של חברות המפעילות ו/או העוסקות בקידום פרויקטים להקמת תחנות כוח המופעלות בגז טבעי ואנרגיה מתחדשת",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "סינרג'י רמת הגליל, שותפות מוגבלת",
-              "ownership_pct": 25.0,
-              "parent": null,
-              "page_reference": 69,
-              "section_title": "8.2.2 להלן מידע כספי אודות החזקות שמיר אנרגיה במניות של חברות המפעילות ו/או העוסקות בקידום פרויקטים להקמת תחנות כוח המופעלות בגז טבעי ואנרגיה מתחדשת",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אשטרום -רפק-מבטח אנרגיה מתחדשת, רמת הגולן שותפות מוגבלת",
-              "ownership_pct": 33.33,
-              "parent": null,
-              "page_reference": 69,
-              "section_title": "8.2.2 להלן מידע כספי אודות החזקות שמיר אנרגיה במניות של חברות המפעילות ו/או העוסקות בקידום פרויקטים להקמת תחנות כוח המופעלות בגז טבעי ואנרגיה מתחדשת",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מבטח שמיר - אנרטי, ביוגז אוהד שותפות מוגבלת",
-              "ownership_pct": 50.0,
-              "parent": null,
-              "page_reference": 69,
-              "section_title": "8.2.2 להלן מידע כספי אודות החזקות שמיר אנרגיה במניות של חברות המפעילות ו/או העוסקות בקידום פרויקטים להקמת תחנות כוח המופעלות בגז טבעי ואנרגיה מתחדשת",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "ביוגז אוהד",
-              "ownership_pct": 50.0,
-              "parent": null,
-              "page_reference": 53,
-              "section_title": "8.4.2 מבטח שמיר - אנרטי , ביוגז אוהד שותפות מוגבלת (\"ביוגז אוהד\")",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "קסם אנרגיה",
-              "ownership_pct": 53.0,
-              "parent": null,
-              "page_reference": 54,
-              "section_title": "8.5.2 התחום הקונבנציונלי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מניף",
-              "ownership_pct": 48.67,
-              "parent": null,
-              "page_reference": 69,
-              "section_title": "9.1 פרטים אודות השקעות החברה בתחום המימון",
-              "table_title": "להלן מידע כספי אודות החזקות החברה במניות של חברות בתחום המימון ליום 31 בדצמבר 2025 ולמועד הדוח (באלפי ש\"ח):",
-              "note": null
-            },
-            {
-              "name": "דוידסון",
-              "ownership_pct": 42.4,
-              "parent": null,
-              "page_reference": 69,
-              "section_title": "9.1 פרטים אודות השקעות החברה בתחום המימון",
-              "table_title": "להלן מידע כספי אודות החזקות החברה במניות של חברות בתחום המימון ליום 31 בדצמבר 2025 ולמועד הדוח (באלפי ש\"ח):",
-              "note": null
-            },
-            {
-              "name": "Finergy",
-              "ownership_pct": 70.0,
-              "parent": null,
-              "page_reference": 69,
-              "section_title": "9.1 פרטים אודות השקעות החברה בתחום המימון",
-              "table_title": "להלן מידע כספי אודות החזקות החברה במניות של חברות בתחום המימון ליום 31 בדצמבר 2025 ולמועד הדוח (באלפי ש\"ח):",
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "מניף",
-              "ownership_pct": 48.67,
-              "parent": null,
-              "page_reference": 136,
-              "section_title": "9.1 פרטים אודות השקעות החברה בתחום המימון",
-              "table_title": "להלן מידע כספי אודות החזקות החברה במניות של חברות בתחום המימון ליום 31 בדצמבר 2025 ולמועד הדוח (באלפי ש\"ח):",
-              "note": null
-            },
-            {
-              "name": "דוידסון",
-              "ownership_pct": 42.4,
-              "parent": null,
-              "page_reference": 136,
-              "section_title": "9.1 פרטים אודות השקעות החברה בתחום המימון",
-              "table_title": "להלן מידע כספי אודות החזקות החברה במניות של חברות בתחום המימון ליום 31 בדצמבר 2025 ולמועד הדוח (באלפי ש\"ח):",
-              "note": null
-            },
-            {
-              "name": "Finergy",
-              "ownership_pct": 70.0,
-              "parent": null,
-              "page_reference": 136,
-              "section_title": "9.1 פרטים אודות השקעות החברה בתחום המימון",
-              "table_title": "להלן מידע כספי אודות החזקות החברה במניות של חברות בתחום המימון ליום 31 בדצמבר 2025 ולמועד הדוח (באלפי ש\"ח):",
-              "note": null
-            },
-            {
-              "name": "מגדלי הוד השרון",
-              "ownership_pct": 42.34,
-              "parent": null,
-              "page_reference": 149,
-              "section_title": "10.1.1 מידע כספי אודות החזקות החברה במניות של חברות פרטיות בתחום הנדל\"ן ליום 31 בדצמבר 2025 (באלפי ש\"ח)",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "JC",
-              "ownership_pct": 35.0,
-              "parent": null,
-              "page_reference": 149,
-              "section_title": "10.1.1 מידע כספי אודות החזקות החברה במניות של חברות פרטיות בתחום הנדל\"ן ליום 31 בדצמבר 2025 (באלפי ש\"ח)",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "השקעה בנדל\"ן בארה\"ב",
-              "ownership_pct": 33.33,
-              "parent": null,
-              "page_reference": 149,
-              "section_title": "10.1.1 מידע כספי אודות החזקות החברה במניות של חברות פרטיות בתחום הנדל\"ן ליום 31 בדצמבר 2025 (באלפי ש\"ח)",
-              "table_title": null,
-              "note": "מוחזק בשיעורים של 33.33% ו-30%"
-            },
-            {
-              "name": "מבטח אור",
-              "ownership_pct": 50.0,
-              "parent": null,
-              "page_reference": 149,
-              "section_title": "10.1.1 מידע כספי אודות החזקות החברה במניות של חברות פרטיות בתחום הנדל\"ן ליום 31 בדצמבר 2025 (באלפי ש\"ח)",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Mivtach MS",
-              "ownership_pct": 70.0,
-              "parent": null,
-              "page_reference": 149,
-              "section_title": "10.1.1 מידע כספי אודות החזקות החברה במניות של חברות פרטיות בתחום הנדל\"ן ליום 31 בדצמבר 2025 (באלפי ש\"ח)",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "EATOS",
-              "ownership_pct": 50.0,
-              "parent": null,
-              "page_reference": 149,
-              "section_title": "10.1.1 מידע כספי אודות החזקות החברה במניות של חברות פרטיות בתחום הנדל\"ן ליום 31 בדצמבר 2025 (באלפי ש\"ח)",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:5": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "מגדלי הוד השרון בע\"מ",
-              "ownership_pct": 42.33,
-              "parent": null,
-              "page_reference": 87,
-              "section_title": ".10.3 גילוי בהתאם להנחיית נדל\"ן להשקעה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "JC",
-              "ownership_pct": 35,
-              "parent": null,
-              "page_reference": 96,
-              "section_title": ".10.4.2 השקעה ב-JC",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Bhalakh Realtors Private Limited",
-              "ownership_pct": 92.24,
-              "parent": "JC",
-              "page_reference": 96,
-              "section_title": ".10.4.2 השקעה ב-JC",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Bon MS Holdings LLC",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 97,
-              "section_title": ".10.5.1 מידע כללי על תחום הפעילות",
-              "table_title": null,
-              "note": "השקעה בשותפות בשיעור של 30%-33%"
-            },
-            {
-              "name": "Bon MS Evanston LLC",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 97,
-              "section_title": ".10.5.1 מידע כללי על תחום הפעילות",
-              "table_title": null,
-              "note": "השקעה בשותפות בשיעור של 30%-33%"
-            },
-            {
-              "name": "Bon MS Greensburg LLC",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 98,
-              "section_title": ".10.5.1 מידע כללי על תחום הפעילות",
-              "table_title": null,
-              "note": "השקעה בשותפות בשיעור של 30%-33%"
-            },
-            {
-              "name": "Bon MS Davis LLC",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 98,
-              "section_title": ".10.5.1 מידע כללי על תחום הפעילות",
-              "table_title": null,
-              "note": "השקעה בשותפות בשיעור של 30%-33%"
-            },
-            {
-              "name": "מבטח אור (2021) לגיל השלישי בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 100,
-              "section_title": ".10.6 מבטח אור (2021) לגיל השלישי בע\"מ (\"מבטח אור\")",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מבטח קין (Mivtach MS Holdings Ltd)",
-              "ownership_pct": 77.5,
-              "parent": null,
-              "page_reference": 101,
-              "section_title": ".10.7 השקעה בנדל\"ן בקנדה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Mivtach Capital Holdings Inc",
-              "ownership_pct": 100,
-              "parent": "Mivtach MS Holdings Ltd",
-              "page_reference": 101,
-              "section_title": ".10.7 השקעה בנדל\"ן בקנדה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Eatos Group Real Estate Ltd",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 104,
-              "section_title": "Eatos Group Real Estate Ltd .10.9.1",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:6": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "Eatos Group Real Estate Ltd",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 104,
-              "section_title": "10.9.1 Eatos Group Real Estate Ltd",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Bean & Co",
-              "ownership_pct": 23.98,
-              "parent": null,
-              "page_reference": 108,
-              "section_title": "11.2.1 השקעות המטופלות לפי שיטת השווי המאזני",
-              "table_title": "השקעות המטופלות לפי שיטת השווי המאזני",
-              "note": null
-            },
-            {
-              "name": "Supplant Ltd",
-              "ownership_pct": 29.293,
-              "parent": null,
-              "page_reference": 108,
-              "section_title": "11.2.1 השקעות המטופלות לפי שיטת השווי המאזני",
-              "table_title": "השקעות המטופלות לפי שיטת השווי המאזני",
-              "note": null
-            },
-            {
-              "name": "Stardom Media Ventures L.P",
-              "ownership_pct": 10.55,
-              "parent": null,
-              "page_reference": 108,
-              "section_title": "11.2.1 השקעות המטופלות לפי שיטת השווי המאזני",
-              "table_title": "השקעות המטופלות לפי שיטת השווי המאזני",
-              "note": null
-            },
-            {
-              "name": "UNBOX Investments Limited Partnership",
-              "ownership_pct": 75,
-              "parent": null,
-              "page_reference": 109,
-              "section_title": "11.2.1 השקעות המטופלות לפי שיטת השווי המאזני",
-              "table_title": "השקעות המטופלות לפי שיטת השווי המאזני",
-              "note": null
-            },
-            {
-              "name": "KDCP GP KDC Media Fund Ltd",
-              "ownership_pct": 26,
-              "parent": null,
-              "page_reference": 111,
-              "section_title": "Stardom Media Ventures L.P (\"Stardom\") .11.2.1.3",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "State of Mind Ventures (\"SOMV\")",
-              "ownership_pct": 10.667,
-              "parent": null,
-              "page_reference": 113,
-              "section_title": "11.2.2.1 השקעה בקרנות",
-              "table_title": "השקעה בקרנות",
-              "note": null
-            },
-            {
-              "name": "State of Mind Ventures קרן 2",
-              "ownership_pct": 5.8,
-              "parent": null,
-              "page_reference": 113,
-              "section_title": "11.2.2.1 השקעה בקרנות",
-              "table_title": "השקעה בקרנות",
-              "note": null
-            },
-            {
-              "name": "Target .Ltd",
-              "ownership_pct": 11.84,
-              "parent": null,
-              "page_reference": 113,
-              "section_title": "11.2.2.1 השקעה בקרנות",
-              "table_title": "השקעה בקרנות",
-              "note": null
-            },
-            {
-              "name": "Lendbuzz Ltd.",
-              "ownership_pct": 7.83,
-              "parent": null,
-              "page_reference": 114,
-              "section_title": "11.2.2.2 השקעות נוספות",
-              "table_title": "השקעות נוספות",
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:7": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "קבוצת שמיר אנרגיה (2023) בע\"מ",
-              "ownership_pct": 80,
-              "parent": null,
-              "page_reference": 132,
-              "section_title": "*) תוצאות כספיות – תחום האנרגיה",
-              "table_title": null,
-              "note": "מוחזקת בשיעור של כ-80%"
-            },
-            {
-              "name": "סינרג'י רמת הגליל שותפות מוגבלת",
-              "ownership_pct": 25,
-              "parent": "שמיר אנרגיה",
-              "page_reference": 126,
-              "section_title": "1.2.2 אירועים מהותיים בתקופת הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Eatos Group Real-Estate Ltd",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 127,
-              "section_title": "1.2.2 אירועים מהותיים בתקופת הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "MRC Alon Tavor",
-              "ownership_pct": 33,
-              "parent": "שמיר אנרגיה",
-              "page_reference": 130,
-              "section_title": "4. תוצאות הפעילות העסקית",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:8": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "מניף",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 149,
-              "section_title": "דוח סולו מורחב",
-              "table_title": "השקעות בחברות המטופלות לפי שיטת השווי המאזני וחיובים לזמן ארוך",
-              "note": null
-            },
-            {
-              "name": "מגדלי הוד השרון",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 149,
-              "section_title": "דוח סולו מורחב",
-              "table_title": "השקעות בחברות המטופלות לפי שיטת השווי המאזני וחיובים לזמן ארוך",
-              "note": null
-            },
-            {
-              "name": "קבוצת שמיר אנרגיה",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 149,
-              "section_title": "דוח סולו מורחב",
-              "table_title": "השקעות בחברות המטופלות לפי שיטת השווי המאזני וחיובים לזמן ארוך",
-              "note": "השקעה בחברות קסם אנרגיה ו-MRC Alon Tavor הינן חלק מהשקעת החברה בקבוצת שמיר אנרגיה"
-            },
-            {
-              "name": "דוידסון",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 149,
-              "section_title": "דוח סולו מורחב",
-              "table_title": "השקעות בחברות המטופלות לפי שיטת השווי המאזני וחיובים לזמן ארוך",
-              "note": null
-            },
-            {
-              "name": "BEAN",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 149,
-              "section_title": "דוח סולו מורחב",
-              "table_title": "השקעות בחברות המטופלות לפי שיטת השווי המאזני וחיובים לזמן ארוך",
-              "note": null
-            },
-            {
-              "name": "Supplant",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 149,
-              "section_title": "דוח סולו מורחב",
-              "table_title": "השקעות בחברות המטופלות לפי שיטת השווי המאזני וחיובים לזמן ארוך",
-              "note": null
-            },
-            {
-              "name": "Supplant Argo Project",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 149,
-              "section_title": "דוח סולו מורחב",
-              "table_title": "השקעות בחברות המטופלות לפי שיטת השווי המאזני וחיובים לזמן ארוך",
-              "note": null
-            },
-            {
-              "name": "מירוס",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 149,
-              "section_title": "דוח סולו מורחב",
-              "table_title": "השקעות בחברות המטופלות לפי שיטת השווי המאזני וחיובים לזמן ארוך",
-              "note": null
-            },
-            {
-              "name": "Bon MS Holdings",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 149,
-              "section_title": "דוח סולו מורחב",
-              "table_title": "השקעות בחברות המטופלות לפי שיטת השווי המאזני וחיובים לזמן ארוך",
-              "note": null
-            },
-            {
-              "name": "Bon MS Evanston",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 149,
-              "section_title": "דוח סולו מורחב",
-              "table_title": "השקעות בחברות המטופלות לפי שיטת השווי המאזני וחיובים לזמן ארוך",
-              "note": null
-            },
-            {
-              "name": "Bon MS Greensburg",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 149,
-              "section_title": "דוח סולו מורחב",
-              "table_title": "השקעות בחברות המטופלות לפי שיטת השווי המאזני וחיובים לזמן ארוך",
-              "note": null
-            },
-            {
-              "name": "Bon MS Davis",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 149,
-              "section_title": "דוח סולו מורחב",
-              "table_title": "השקעות בחברות המטופלות לפי שיטת השווי המאזני וחיובים לזמן ארוך",
-              "note": null
-            },
-            {
-              "name": "Target Ytrium",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 149,
-              "section_title": "דוח סולו מורחב",
-              "table_title": "השקעות בחברות המטופלות לפי שיטת השווי המאזני וחיובים לזמן ארוך",
-              "note": null
-            },
-            {
-              "name": "Accelario",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 149,
-              "section_title": "דוח סולו מורחב",
-              "table_title": "השקעות בחברות המטופלות לפי שיטת השווי המאזני וחיובים לזמן ארוך",
-              "note": null
-            },
-            {
-              "name": "Stardom",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 149,
-              "section_title": "דוח סולו מורחב",
-              "table_title": "השקעות בחברות המטופלות לפי שיטת השווי המאזני וחיובים לזמן ארוך",
-              "note": null
-            },
-            {
-              "name": "ג'רביניה",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 149,
-              "section_title": "דוח סולו מורחב",
-              "table_title": "השקעות בחברות המטופלות לפי שיטת השווי המאזני וחיובים לזמן ארוך",
-              "note": null
-            },
-            {
-              "name": "מבטח אור לגיל השלישי",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 149,
-              "section_title": "דוח סולו מורחב",
-              "table_title": "השקעות בחברות המטופלות לפי שיטת השווי המאזני וחיובים לזמן ארוך",
-              "note": null
-            },
-            {
-              "name": "Mivtach MS Holdings (נכסים בקנדה)",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 149,
-              "section_title": "דוח סולו מורחב",
-              "table_title": "השקעות בחברות המטופלות לפי שיטת השווי המאזני וחיובים לזמן ארוך",
-              "note": null
-            },
-            {
-              "name": "Eatos Group Real-Estae Limited (נכסים באנגליה)",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 149,
-              "section_title": "דוח סולו מורחב",
-              "table_title": "השקעות בחברות המטופלות לפי שיטת השווי המאזני וחיובים לזמן ארוך",
-              "note": null
-            },
-            {
-              "name": "Finergy Capital LLC",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 149,
-              "section_title": "דוח סולו מורחב",
-              "table_title": "השקעות בחברות המטופלות לפי שיטת השווי המאזני וחיובים לזמן ארוך",
-              "note": null
-            },
-            {
-              "name": "UNBOX Investments",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 149,
-              "section_title": "דוח סולו מורחב",
-              "table_title": "השקעות בחברות המטופלות לפי שיטת השווי המאזני וחיובים לזמן ארוך",
-              "note": null
-            },
-            {
-              "name": "גילת",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 150,
-              "section_title": "דוח סולו מורחב",
-              "table_title": "נכסים פיננסים בשווי הוגן דרך רווח והפסד",
-              "note": "ההשקעה מומשה במהלך התקופה בתמורה לסך של כ-72 מיליון ש\"ח."
-            },
-            {
-              "name": "קרן SOMV",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 150,
-              "section_title": "דוח סולו מורחב",
-              "table_title": "נכסים פיננסים בשווי הוגן דרך רווח והפסד",
-              "note": null
-            },
-            {
-              "name": "קרן SOMV2",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 150,
-              "section_title": "דוח סולו מורחב",
-              "table_title": "נכסים פיננסים בשווי הוגן דרך רווח והפסד",
-              "note": null
-            },
-            {
-              "name": "קרן Target",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 150,
-              "section_title": "דוח סולו מורחב",
-              "table_title": "נכסים פיננסים בשווי הוגן דרך רווח והפסד",
-              "note": null
-            },
-            {
-              "name": "Lendbuzz",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 150,
-              "section_title": "דוח סולו מורחב",
-              "table_title": "נכסים פיננסים בשווי הוגן דרך רווח והפסד",
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:9": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "מניף שירותים פיננסיים בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 154,
-              "section_title": "דוח רואי החשבון המבקרים הבלתי תלויים לבעלי המניות של מבטח אחזקות בע\"מ",
-              "table_title": null,
-              "note": "חברת בת"
-            },
-            {
-              "name": "MRC Alon Power Tavor Ltd.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 169,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": "חברה הפועלת בתחום האנרגיה המוחזקת ע\"י החברה"
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-26T10:08:55.618610+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1729772": {
     "company_id": "1264",
@@ -2043,524 +1100,11 @@
   },
   "1732599": {
     "company_id": "2483",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-25T12:06:29.861862+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 22,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "גבאי אריגה אירופה ישראל בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "מבנה אחזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "טאג מלונות ישראל בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "מבנה אחזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "גבאי ייזום וביצוע מרכז בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "מבנה אחזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ארי ייזום דירות בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "מבנה אחזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "קבוצת גבאי התחדשות עירונית בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "מבנה אחזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אלה אמה יזמות (2004) בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "מבנה אחזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "גבאי אשדוד התחדשות עירונית בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "מבנה אחזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "נגאי ההולדנגס 47 תל אביב בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "מבנה אחזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "יהודה טופף בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "מבנה אחזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "סברוני טופף בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "מבנה אחזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "גבאי-גי החדשה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "מבנה אחזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "גבאי ייזום וביצוע (הד השרון) בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "מבנה אחזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "גבאי ייזום וביצוע תל-אביב בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "מבנה אחזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אליאתמר ניהול בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "מבנה אחזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "לוטו 14 תל אביב בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "מבנה אחזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "גבאי בנייה והנדסה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "מבנה אחזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "גבאי בניה, ביצוע והיון בע\"מ",
-              "ownership_pct": 49.99,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "מבנה אחזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ייאור חסן חברה לבניין בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "מבנה אחזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אתרי חסן חברה לבניין בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "מבנה אחזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "י.מ. יזמות ופיתוח - כנרת (1989) בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "מבנה אחזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אתרי חסן (1993) חברה להשקעות ובניין בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "מבנה אחזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "חב' פריט ש. חסן בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "מבנה אחזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "י. מריוט - ש. חסן בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "מבנה אחזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "גבאי מניבים ופיתוח בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "מבנה אחזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "גבאי עניינים בע\"מ",
-              "ownership_pct": 99.9,
-              "parent": "טאג מלונות ישראל בע\"מ",
-              "page_reference": 8,
-              "section_title": "מבנה אחזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "נוף ים כבאי-מבט אל המדינה בע\"מ",
-              "ownership_pct": 99.9,
-              "parent": "גבאי ייזום וביצוע מרכז בע\"מ",
-              "page_reference": 8,
-              "section_title": "מבנה אחזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "שמשון-בתול והשקעות (1993) בע\"מ",
-              "ownership_pct": 99.09,
-              "parent": "ארי ייזום דירות בע\"מ",
-              "page_reference": 8,
-              "section_title": "מבנה אחזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "גבאי ז'בוטינסקי (תל אביב) בע\"מ",
-              "ownership_pct": 100,
-              "parent": "גבאי מניבים ופיתוח בע\"מ",
-              "page_reference": 8,
-              "section_title": "מבנה אחזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "גבאי עמל (רמת גן) בע\"מ",
-              "ownership_pct": 100,
-              "parent": "גבאי מניבים ופיתוח בע\"מ",
-              "page_reference": 8,
-              "section_title": "מבנה אחזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "קבוצת גבאי-מאדאבה 17 תל אביב בע\"מ",
-              "ownership_pct": 100,
-              "parent": "גבאי מניבים ופיתוח בע\"מ",
-              "page_reference": 8,
-              "section_title": "מבנה אחזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "גבאי - פינוי בינוי בת ים בע\"מ",
-              "ownership_pct": 100,
-              "parent": "גבאי מניבים ופיתוח בע\"מ",
-              "page_reference": 8,
-              "section_title": "מבנה אחזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "גבאי ארלוזורוב מתחם תקווה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "מבנה אחזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "גבאי לוי שער העיר מתחם תקווה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "מבנה אחזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "קבוצת גבאי - שער העיר קרית אונו בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "מבנה אחזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "קבוצת גבאי פינוי בינוי נווה שרת ת\"א בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "מבנה אחזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ארדיטיאן פינוי בינוי יהושע בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "מבנה אחזקות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "גבאי תמ\"א 38 (יהושע) בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "מבנה אחזקות החברה",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "מיי-טאון התחדשות עירונית בע\"מ",
-              "ownership_pct": 75,
-              "parent": "גבאי מניבים",
-              "page_reference": 37,
-              "section_title": "7.3 הסכמים עם שותפים בתחום הנדל\"ן היזמי למגורים",
-              "table_title": null,
-              "note": "חברה מאוחדת"
-            }
-          ],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "מיי-טאון התחדשות עירונית בע\"מ",
-              "ownership_pct": 75,
-              "parent": "גבאי מניבים",
-              "page_reference": 37,
-              "section_title": "7.3 הסכמים עם שותפים בתחום הנדל\"ן היזמי למגורים",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "בניין וסביבה מגורים בע\"מ",
-              "ownership_pct": 50,
-              "parent": "גבאי מניבים",
-              "page_reference": 38,
-              "section_title": "7.3 הסכמים עם שותפים בתחום הנדל\"ן היזמי למגורים",
-              "table_title": null,
-              "note": "לאחר תאריך הדוח עלה חלקה של החברה לבסוף ל-100%"
-            },
-            {
-              "name": "גבאי מניבים",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 43,
-              "section_title": "8.3.1 כללי",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "קבוצת גבאי יזום וביצוע מרכז בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 88,
-              "section_title": "9.2 פרויקט קהילת ורשה, 51-57 ת\"א – פרויקט בהקמה",
-              "table_title": null,
-              "note": "חברה המוחזקת במלואה על ידי החברה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:5": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "קבוצת גבאי יזום וביצוע מרכז בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 88,
-              "section_title": "9.2.1 הצגת הפרוייקט",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "חוף לידו אשדוד (2004) בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 101,
-              "section_title": "9.4.1 הצגת הפרוייקט",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:6": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "אנגל לינקולן בע\"מ",
-              "ownership_pct": 100,
-              "parent": "גבאי מניבים",
-              "page_reference": 114,
-              "section_title": "10. תחום הנכסים המניבים",
-              "table_title": null,
-              "note": "חברה בת של גבאי מניבים"
-            },
-            {
-              "name": "גבאי פארקי מדע (99) בע\"מ",
-              "ownership_pct": 100,
-              "parent": "גבאי מניבים",
-              "page_reference": 115,
-              "section_title": "10. תחום הנכסים המניבים",
-              "table_title": null,
-              "note": "חברה בת של גבאי מניבים"
-            },
-            {
-              "name": "י.מ. מועדון ים כנרת",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 115,
-              "section_title": "10. תחום הנכסים המניבים",
-              "table_title": null,
-              "note": "חברה בת של החברה"
-            },
-            {
-              "name": "אליתמר ניהול בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 115,
-              "section_title": "10. תחום הנכסים המניבים",
-              "table_title": null,
-              "note": "חברה בת של החברה"
-            },
-            {
-              "name": "גבאי בניה, ביצוע והנדסה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 115,
-              "section_title": "10. תחום הנכסים המניבים",
-              "table_title": null,
-              "note": "חברה בת של החברה"
-            },
-            {
-              "name": "חוף לידו אשדוד (2004) בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 122,
-              "section_title": "10.5.12 הסכמים עם שותפים בתחום הנכסים המניבים",
-              "table_title": null,
-              "note": "החברה מחזיקה 100% בחוף לידו"
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-26T10:09:34.666895+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1736197": {
     "company_id": "1722",
@@ -2580,18 +1124,11 @@
   },
   "1726223": {
     "company_id": "1490",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-25T12:06:31.116858+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 25,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-26T10:15:47.788359+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731590": {
     "company_id": "1515",
@@ -2715,18 +1252,11 @@
   },
   "1731078": {
     "company_id": "1006",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-25T12:06:31.626450+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 16,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-26T10:13:24.458581+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1730433": {
     "company_id": "174",
@@ -2778,18 +1308,11 @@
   },
   "1724934": {
     "company_id": "1320",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-25T12:06:31.991601+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 9,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-26T10:15:19.131621+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1729742": {
     "company_id": "1625",
@@ -2873,18 +1396,11 @@
   },
   "1732145": {
     "company_id": "2516",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-25T12:06:32.398624+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 13,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-26T10:19:06.304533+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1735323": {
     "company_id": "719",
@@ -2939,14 +1455,141 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 1,
-    "at": "2026-09-25T12:06:32.945331+00:00",
+    "at": "2026-09-26T10:18:22.226002+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 16,
-      "done": {},
-      "attempts": {}
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:7": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:8": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:10": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "NuRAN Wireless Inc.",
+              "ownership_pct": 4.5,
+              "parent": null,
+              "page_reference": 182,
+              "section_title": "באור 26 - התחייבויות מותנות, התקשרויות ושעבודים (המשך)",
+              "table_title": null,
+              "note": "נכון ליום 31 בדצמבר 2025, החברה מחזיקה בהיקף של כ-4.5%"
+            },
+            {
+              "name": "ארץ ומעבר וונצרס שותף כללי בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 182,
+              "section_title": "באור 26 - התחייבויות מותנות, התקשרויות ושעבודים (המשך)",
+              "table_title": null,
+              "note": "החברה מחזיקה בשיעור לא מהותי"
+            }
+          ],
+          "change_events": []
+        },
+        "0:11": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:12": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "1:0": {
+          "report_format": "other",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "1:1": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "1:2": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
+      "attempts": {
+        "0:9": 1
+      }
     }
   },
   "1729171": {
@@ -2999,18 +1642,11 @@
   },
   "1731917": {
     "company_id": "666",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-25T12:06:33.346279+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 12,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-26T10:20:48.466303+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1735681": {
     "company_id": "1502",
@@ -3158,33 +1794,19 @@
   },
   "1731844": {
     "company_id": "1847",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-25T12:06:34.408599+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-26T10:21:38.465073+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1735963": {
     "company_id": "350",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-25T12:06:34.114398+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 9,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-26T10:21:12.556962+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1736388": {
     "company_id": "1870",
