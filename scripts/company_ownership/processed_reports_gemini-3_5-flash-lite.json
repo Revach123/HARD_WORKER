@@ -3421,277 +3421,11 @@
   },
   "1730166": {
     "company_id": "1924",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-26T10:52:25.060596+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 12,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "הדפסה תלת ממדית 3דיאם בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "1.3 תרשים מבנה ההחזקות של הקבוצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "סולרום אלקטרוניקה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "1.3 תרשים מבנה ההחזקות של הקבוצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ישראטק - הנדסת מערכות אלקטרוניות בע\"מ",
-              "ownership_pct": 100,
-              "parent": "סולרום אלקטרוניקה בע\"מ",
-              "page_reference": 6,
-              "section_title": "1.3 תרשים מבנה ההחזקות של הקבוצה",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "סולרום אלקטרוניקה",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 43,
-              "section_title": "15.2 הסכמי שכירות של יתר חברות הקבוצה",
-              "table_title": null,
-              "note": "חברת קבוצה"
-            },
-            {
-              "name": "ישראטק",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 44,
-              "section_title": "15.2 הסכמי שכירות של יתר חברות הקבוצה",
-              "table_title": null,
-              "note": "חברת קבוצה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": [
-            {
-              "company": "חברה בתחום הביטחוני (החברה הנרכשת)",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 100,
-              "event_date": "2026-03-22",
-              "event_description": "חתימה על מזכר הבנות לא מחייב לרכישת מלוא (100%) הון המניות המונפק של חברה בתחום הביטחוני",
-              "page_reference": 56,
-              "section_title": "אירועים לאחר תאריך הדוח על המצב הכספי"
-            }
-          ]
-        },
-        "0:4": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:5": {
-          "report_format": "other",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:6": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:7": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "סולרום אלקטרוניקה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 131,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": "חברת בת"
-            },
-            {
-              "name": "ישראטק - הנדסת מערכות אלקטרוניות בע\"מ",
-              "ownership_pct": 100,
-              "parent": "סולרום אלקטרוניקה בע\"מ",
-              "page_reference": 131,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "גרין ריזרב אנרג'י בע\"מ",
-              "ownership_pct": 99.4,
-              "parent": "סולרום אלקטרוניקה בע\"מ",
-              "page_reference": 131,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": "פורקה מרצון באפריל 2024"
-            },
-            {
-              "name": "גלובל ביו פאוור 1 בע\"מ",
-              "ownership_pct": 40.8,
-              "parent": "גרין ריזרב אנרג'י בע\"מ",
-              "page_reference": 131,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": "החזקה נמכרה בשנת 2023"
-            },
-            {
-              "name": "הדפסה תלת ממדית 3דיאם בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 131,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": "הוקמה ב-19 במרץ 2025 כחברת בת בבעלות מלאה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:8": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "סולרום אלקטרוניקה",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 152,
-              "section_title": "ביאור 13 - מוניטין",
-              "table_title": null,
-              "note": "פעילות הקבוצה / יחידות מניבות מזומנים"
-            },
-            {
-              "name": "ישראטק",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 153,
-              "section_title": "ביאור 14 - חכירות",
-              "table_title": null,
-              "note": "חברת קבוצה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:9": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "סולרום אלקטרוניקה",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 156,
-              "section_title": "ביאור 17 - אשראי מתאגידים בנקאיים ואחרים",
-              "table_title": null,
-              "note": "חברת בת"
-            },
-            {
-              "name": "ישראטק",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 156,
-              "section_title": "ביאור 17 - אשראי מתאגידים בנקאיים ואחרים",
-              "table_title": null,
-              "note": "חברת בת"
-            }
-          ],
-          "change_events": []
-        },
-        "0:10": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "סולרום אלקטרוניקה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 179,
-              "section_title": "3. רשימת השקעות בחברות-בת ובחברות כלולות לתאריך הדוח על המצב הכספי (באלפי ש\"ח) (תקנה 11)",
-              "table_title": "תקנה 11",
-              "note": null
-            },
-            {
-              "name": "ישראטק - הנדסת מערכות אלקטרוניות בע\"מ",
-              "ownership_pct": 100,
-              "parent": "סולרום אלקטרוניקה בע\"מ",
-              "page_reference": 179,
-              "section_title": "3. רשימת השקעות בחברות-בת ובחברות כלולות לתאריך הדוח על המצב הכספי (באלפי ש\"ח) (תקנה 11)",
-              "table_title": "תקנה 11",
-              "note": "באמצעות סולרום אלקטרוניקה בע\"מ"
-            },
-            {
-              "name": "הדפסה תלת ממדית 3דיאם בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 179,
-              "section_title": "3. רשימת השקעות בחברות-בת ובחברות כלולות לתאריך הדוח על המצב הכספי (באלפי ש\"ח) (תקנה 11)",
-              "table_title": "תקנה 11",
-              "note": null
-            }
-          ],
-          "change_events": [
-            {
-              "company": "הדפסה תלת ממדית 3דיאם בע\"מ",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 100,
-              "event_date": "2025-03-19",
-              "event_description": "הקמה",
-              "page_reference": 179,
-              "section_title": "5. שינויים בהשקעות בחברות-בת ובחברות כלולות בשנת הדוח (תקנה 12)"
-            }
-          ]
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-26T10:52:34.434887+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1727131": {
     "company_id": "1363",
@@ -3735,18 +3469,11 @@
   },
   "1738554": {
     "company_id": "1748",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-25T12:06:45.280679+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 18,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-26T10:57:10.738941+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731048": {
     "company_id": "1945",
@@ -3774,18 +3501,11 @@
   },
   "1733303": {
     "company_id": "2392",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-25T12:06:45.699049+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 12,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-26T10:55:10.148536+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731504": {
     "company_id": "1032",
@@ -4069,18 +3789,11 @@
   },
   "1731625": {
     "company_id": "400",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-25T12:06:46.086913+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 13,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-26T10:58:06.029919+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1730457": {
     "company_id": "660",
@@ -4175,13 +3888,630 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 1,
-    "at": "2026-09-25T12:06:46.519532+00:00",
+    "at": "2026-09-26T11:01:28.733719+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 17,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "ג'י סיטי בע\"מ",
+              "ownership_pct": 49.8,
+              "parent": null,
+              "page_reference": 3,
+              "section_title": "א. תיאור ההתפתחות הכללית של עסקי החברה ותיאור תמציתי של תחומי הפעילות של החברה",
+              "table_title": null,
+              "note": "בעלת שליטה"
+            },
+            {
+              "name": "CTY (Citycon Oyj)",
+              "ownership_pct": 59.1,
+              "parent": "ג'י סיטי בע\"מ",
+              "page_reference": 6,
+              "section_title": "1.4. נכסי קבוצת ג'י סיטי ליום 31 בדצמבר 2025:",
+              "table_title": "נכסי קבוצת ג'י סיטי ליום 31 בדצמבר 2025:",
+              "note": null
+            },
+            {
+              "name": "G Europe (European Real Estate Limited)",
+              "ownership_pct": 100.0,
+              "parent": "ג'י סיטי בע\"מ",
+              "page_reference": 6,
+              "section_title": "1.4. נכסי קבוצת ג'י סיטי ליום 31 בדצמבר 2025:",
+              "table_title": "נכסי קבוצת ג'י סיטי ליום 31 בדצמבר 2025:",
+              "note": null
+            },
+            {
+              "name": "Gazit Brasil (FII Malls Gazit)",
+              "ownership_pct": 82.5,
+              "parent": "ג'י סיטי בע\"מ",
+              "page_reference": 6,
+              "section_title": "1.4. נכסי קבוצת ג'י סיטי ליום 31 בדצמבר 2025:",
+              "table_title": "נכסי קבוצת ג'י סיטי ליום 31 בדצמבר 2025:",
+              "note": null
+            },
+            {
+              "name": "ג'י ישראל",
+              "ownership_pct": 100.0,
+              "parent": "ג'י סיטי בע\"מ",
+              "page_reference": 6,
+              "section_title": "1.4. נכסי קבוצת ג'י סיטי ליום 31 בדצמבר 2025:",
+              "table_title": "נכסי קבוצת ג'י סיטי ליום 31 בדצמבר 2025:",
+              "note": null
+            },
+            {
+              "name": "Gazit Horizons",
+              "ownership_pct": 100.0,
+              "parent": "ג'י סיטי בע\"מ",
+              "page_reference": 6,
+              "section_title": "1.4. נכסי קבוצת ג'י סיטי ליום 31 בדצמבר 2025:",
+              "table_title": "נכסי קבוצת ג'י סיטי ליום 31 בדצמבר 2025:",
+              "note": null
+            },
+            {
+              "name": "G Tripllle (Tripllle Gazit)",
+              "ownership_pct": 60.0,
+              "parent": "ג'י סיטי בע\"מ",
+              "page_reference": 9,
+              "section_title": "קנדה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "CTY",
+              "ownership_pct": 59.09,
+              "parent": "ג'י סיטי",
+              "page_reference": 19,
+              "section_title": "רכישה, פיתוח וניהול של מרכזים מסחריים בצפון אירופה",
+              "table_title": null,
+              "note": "נכון ליום 31 בדצמבר 2025 החזיקה כ-59.09%, ונכון למועד פרסום הדוח 86.4%"
+            },
+            {
+              "name": "G Europe",
+              "ownership_pct": 100,
+              "parent": "ג'י סיטי",
+              "page_reference": 29,
+              "section_title": "רכישה, פיתוח וניהול של מרכזים מסחריים במרכז אירופה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "Europe G",
+              "ownership_pct": null,
+              "parent": "ג'י סיטי",
+              "page_reference": 35,
+              "section_title": "תיאור עסקי החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ג'י ישראל",
+              "ownership_pct": null,
+              "parent": "ג'י סיטי",
+              "page_reference": 39,
+              "section_title": "8. ג'י ישראל",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Gazit Malls",
+              "ownership_pct": 82.5,
+              "parent": "ג'י סיטי",
+              "page_reference": 45,
+              "section_title": "9. גזית ברזיל",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "חברות בנות נוספות בברזיל",
+              "ownership_pct": 100,
+              "parent": "ג'י סיטי",
+              "page_reference": 45,
+              "section_title": "9. גזית ברזיל",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Gazit Horizons",
+              "ownership_pct": null,
+              "parent": "ג'י סיטי",
+              "page_reference": 49,
+              "section_title": "10. Gazit Horizons",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "GHI Alpha Portfolio LLC (ג'י אלפא)",
+              "ownership_pct": 100,
+              "parent": "Gazit Horizons",
+              "page_reference": 49,
+              "section_title": "10.1. Gazit Horizons",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "שותפות גזית קנדה (טורונטו)",
+              "ownership_pct": 60,
+              "parent": "ג'י סיטי",
+              "page_reference": 54,
+              "section_title": "11.1. גזית קנדה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "ג'י סיטי",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 60,
+              "section_title": "מימון בקבוצת נורסטאר אינק.",
+              "table_title": null,
+              "note": "חברת הבת המרכזית של הקבוצה"
+            },
+            {
+              "name": "אוריון",
+              "ownership_pct": 9.8,
+              "parent": null,
+              "page_reference": 59,
+              "section_title": "השקעות נוספות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "שותפות בטורונטו (גזית קנדה)",
+              "ownership_pct": 60,
+              "parent": "ג'י סיטי",
+              "page_reference": 54,
+              "section_title": "גזית קנדה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "נורסטאר ישראל",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 69,
+              "section_title": "24.1 הסכם רה-ארגון עם ג‘י סיטי",
+              "table_title": null,
+              "note": "חברה בבעלות מלאה"
+            },
+            {
+              "name": "ג'י סיטי בע\"מ",
+              "ownership_pct": 49.8,
+              "parent": null,
+              "page_reference": 82,
+              "section_title": "1.1 מבוא",
+              "table_title": null,
+              "note": "מחזיקה באמצעות חברה בבעלותה המלאה"
+            },
+            {
+              "name": "CTY",
+              "ownership_pct": 59.1,
+              "parent": "ג'י סיטי בע\"מ",
+              "page_reference": 85,
+              "section_title": "1. החברה ופעילותה",
+              "table_title": "נכסי קבוצת ג'י סיטי ליום 31 בדצמבר 2025 (לרבות נכסים בשליטה משותפת):",
+              "note": null
+            },
+            {
+              "name": "G Europe",
+              "ownership_pct": 100.0,
+              "parent": "ג'י סיטי בע\"מ",
+              "page_reference": 85,
+              "section_title": "1. החברה ופעילותה",
+              "table_title": "נכסי קבוצת ג'י סיטי ליום 31 בדצמבר 2025 (לרבות נכסים בשליטה משותפת):",
+              "note": null
+            },
+            {
+              "name": "Gazit Brasil",
+              "ownership_pct": 82.5,
+              "parent": "ג'י סיטי בע\"מ",
+              "page_reference": 85,
+              "section_title": "1. החברה ופעילותה",
+              "table_title": "נכסי קבוצת ג'י סיטי ליום 31 בדצמבר 2025 (לרבות נכסים בשליטה משותפת):",
+              "note": null
+            },
+            {
+              "name": "ג'י ישראל",
+              "ownership_pct": 100.0,
+              "parent": "ג'י סיטי בע\"מ",
+              "page_reference": 85,
+              "section_title": "1. החברה ופעילותה",
+              "table_title": "נכסי קבוצת ג'י סיטי ליום 31 בדצמבר 2025 (לרבות נכסים בשליטה משותפת):",
+              "note": null
+            },
+            {
+              "name": "Gazit Horizons",
+              "ownership_pct": 100.0,
+              "parent": "ג'י סיטי בע\"מ",
+              "page_reference": 85,
+              "section_title": "1. החברה ופעילותה",
+              "table_title": "נכסי קבוצת ג'י סיטי ליום 31 בדצמבר 2025 (לרבות נכסים בשליטה משותפת):",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "ג'י סיטי",
+              "ownership_pct": 52.1,
+              "parent": null,
+              "page_reference": 181,
+              "section_title": "מהלכים הוניים ומבנה אחזקות",
+              "table_title": null,
+              "note": "שיעור החזקת החברה בסוף תקופת הדוח"
+            },
+            {
+              "name": "CTY",
+              "ownership_pct": 57.4,
+              "parent": "ג'י סיטי",
+              "page_reference": 181,
+              "section_title": "מהלכים הוניים ומבנה אחזקות",
+              "table_title": null,
+              "note": "שיעור החזקת קבוצת ג'י סיטי בסוף תקופת הדוח"
+            }
+          ],
+          "change_events": [
+            {
+              "company": "CTY",
+              "event_type": "increase",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 57.4,
+              "event_date": null,
+              "event_description": "ג'י סיטי רכשה במסגרת עסקה מחוץ לבורסה כ-7.7% ממניות CTY והעלתה את שיעור החזקתה ל-57.4%",
+              "page_reference": 181,
+              "section_title": "מהלכים הוניים ומבנה אחזקות"
+            },
+            {
+              "company": "ג'י סיטי",
+              "event_type": "increase",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 52.1,
+              "event_date": null,
+              "event_description": "שיעור החזקת החברה בג'י סיטי עלה לכ-52.1% בעקבות רכישת מניות עצמית על ידי ג'י סיטי",
+              "page_reference": 181,
+              "section_title": "מהלכים הוניים ומבנה אחזקות"
+            }
+          ]
+        },
+        "0:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:7": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "ג'י סיטי בע\"מ",
+              "ownership_pct": 49.8,
+              "parent": null,
+              "page_reference": 249,
+              "section_title": "באור 1 - כללי",
+              "table_title": null,
+              "note": "מחזיקה באמצעות חברה בת בבעלות מלאה, מאוחדת בשל שליטה אפקטיבית"
+            },
+            {
+              "name": "אוריון נכסים מסחריים בע\"מ",
+              "ownership_pct": 9.8,
+              "parent": null,
+              "page_reference": 250,
+              "section_title": "באור 1 - כללי (המשך)",
+              "table_title": null,
+              "note": "נכון למועד פרסום הדוח"
+            },
+            {
+              "name": "CTY",
+              "ownership_pct": 59.1,
+              "parent": "ג'י סיטי בע\"מ",
+              "page_reference": 255,
+              "section_title": "באור 2 - עיקרי המדיניות החשבונאית (המשך)",
+              "table_title": null,
+              "note": "בשנת 2025 עלה שיעור ההחזקה לכ-59.1% ומאוחדת בדוחות הקבוצה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:8": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "ג'י סיטי בע\"מ",
+              "ownership_pct": 49.8,
+              "parent": null,
+              "page_reference": 150,
+              "section_title": "באור 9 – השקעות בחברות מוחזקות (המשך) - ג. השקעה בג'י סיטי בע\"מ (מאוחדת)",
+              "table_title": null,
+              "note": "בהנחת דילול מלא 41.4%"
+            },
+            {
+              "name": "G Europe",
+              "ownership_pct": 100.0,
+              "parent": "ג'י סיטי בע\"מ",
+              "page_reference": 153,
+              "section_title": "מידע נוסף בגין השקעות בחברות מוחזקות - ד. השקעה ב-G Europe (חברה מאוחדת)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "CTY",
+              "ownership_pct": 59.1,
+              "parent": "ג'י סיטי בע\"מ",
+              "page_reference": 154,
+              "section_title": "באור 9 – השקעות בחברות מוחזקות (המשך) - ה. השקעה ב-CTY (חברה מאוחדת)",
+              "table_title": null,
+              "note": "בהנחת דילול מלא כ-58.8%"
+            }
+          ],
+          "change_events": [
+            {
+              "company": "ג'י סיטי בע\"מ",
+              "event_type": "increase",
+              "ownership_pct_before": 46.3,
+              "ownership_pct_after": 49.8,
+              "event_date": null,
+              "event_description": "רכישת מניות שהעלתה את שיעור ההחזקה מ-46.3% ל-49.8%",
+              "page_reference": 153,
+              "section_title": "באור 9 – השקעות בחברות מוחזקות (המשך)"
+            }
+          ]
+        },
+        "0:9": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "CTY",
+              "ownership_pct": 59.1,
+              "parent": "ג'י סיטי",
+              "page_reference": 154,
+              "section_title": "באור 9 – השקעות בחברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": "כ-58.8% בדילול מלא נכון ליום 31 בדצמבר 2025"
+            },
+            {
+              "name": "Gazit Malls",
+              "ownership_pct": 82.5,
+              "parent": "גזית ברזיל",
+              "page_reference": 158,
+              "section_title": "באור 9 – השקעות בחברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": "נכון למועד הדיווח מחזיקה גזית ברזיל בכ-82.5% מהון המניות"
+            },
+            {
+              "name": "Europe G",
+              "ownership_pct": null,
+              "parent": "ג'י סיטי",
+              "page_reference": 154,
+              "section_title": "באור 9 – השקעות בחברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": "אחזקות באגרות חוב היברידיות"
+            },
+            {
+              "name": "אוריון",
+              "ownership_pct": null,
+              "parent": "ג'י סיטי",
+              "page_reference": 157,
+              "section_title": "באור 9 – השקעות בחברות מוחזקות (המשך)",
+              "table_title": null,
+              "note": "אין לג'י סיטי החזקה בהון המניות נכון ליום 31 בדצמבר 2025, מחזיקה באגרות חוב ומניות סחירות"
+            }
+          ],
+          "change_events": []
+        },
+        "0:10": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:11": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:12": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "נורסטאר ישראל בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 426,
+              "section_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות כלולות",
+              "table_title": "תקנה 11",
+              "note": "מוחזקת במישרין על ידי החברה"
+            },
+            {
+              "name": "ג'י סיטי בע\"מ",
+              "ownership_pct": 49.8,
+              "parent": "נורסטאר ישראל בע\"מ",
+              "page_reference": 423,
+              "section_title": "רשימת החברות המוחזקות העיקריות בקבוצה ליום 31 בדצמבר, 2025",
+              "table_title": null,
+              "note": "מוחזקת באמצעות חברה מאוחדת בבעלותה המלאה של החברה"
+            },
+            {
+              "name": "M.G.N USA INC.",
+              "ownership_pct": 100,
+              "parent": "ג'י סיטי בע\"מ",
+              "page_reference": 424,
+              "section_title": "רשימת החברות המוחזקות העיקריות בקבוצת ג'י סיטי ליום 31 בדצמבר, 2025",
+              "table_title": null,
+              "note": "מוחזקת במישרין על ידי ג'י סיטי"
+            },
+            {
+              "name": "GAZIT HORIZONS INC.",
+              "ownership_pct": 100,
+              "parent": "ג'י סיטי בע\"מ",
+              "page_reference": 424,
+              "section_title": "רשימת החברות המוחזקות העיקריות בקבוצת ג'י סיטי ליום 31 בדצמבר, 2025",
+              "table_title": null,
+              "note": "מוחזקת באמצעות חברות מאוחדות"
+            },
+            {
+              "name": "GAZIT CANADA INC.",
+              "ownership_pct": 100,
+              "parent": "ג'י סיטי בע\"מ",
+              "page_reference": 424,
+              "section_title": "רשימת החברות המוחזקות העיקריות בקבוצת ג'י סיטי ליום 31 בדצמבר, 2025",
+              "table_title": null,
+              "note": "מוחזקת במישרין על ידי ג'י סיטי"
+            },
+            {
+              "name": "CITYCON OYJ.",
+              "ownership_pct": 59.09,
+              "parent": "ג'י סיטי בע\"מ",
+              "page_reference": 424,
+              "section_title": "רשימת החברות המוחזקות העיקריות בקבוצת ג'י סיטי ליום 31 בדצמבר, 2025",
+              "table_title": null,
+              "note": "מוחזקת במישרין ובאמצעות חברות מאוחדות"
+            },
+            {
+              "name": "GAZIT BRASIL LP.",
+              "ownership_pct": 100,
+              "parent": "ג'י סיטי בע\"מ",
+              "page_reference": 424,
+              "section_title": "רשימת החברות המוחזקות העיקריות בקבוצת ג'י סיטי ליום 31 בדצמבר, 2025",
+              "table_title": null,
+              "note": "מוחזקת באמצעות חברות מאוחדות"
+            },
+            {
+              "name": "G CITY EUROPE LIMITED",
+              "ownership_pct": 100,
+              "parent": "ג'י סיטי בע\"מ",
+              "page_reference": 424,
+              "section_title": "רשימת החברות המוחזקות העיקריות בקבוצת ג'י סיטי ליום 31 בדצמבר, 2025",
+              "table_title": null,
+              "note": "מוחזקת באמצעות חברות מאוחדות"
+            },
+            {
+              "name": "CH Targowek sp. Z o. o.",
+              "ownership_pct": 100,
+              "parent": "ג'י סיטי בע\"מ",
+              "page_reference": 424,
+              "section_title": "רשימת החברות המוחזקות העיקריות בקבוצת ג'י סיטי ליום 31 בדצמבר, 2025",
+              "table_title": null,
+              "note": "מוחזקת באמצעות חברות מאוחדות"
+            },
+            {
+              "name": "GHI Alpha LLC",
+              "ownership_pct": 100,
+              "parent": "ג'י סיטי בע\"מ",
+              "page_reference": 424,
+              "section_title": "רשימת החברות המוחזקות העיקריות בקבוצת ג'י סיטי ליום 31 בדצמבר, 2025",
+              "table_title": null,
+              "note": "מוחזקת באמצעות חברות מאוחדות"
+            }
+          ],
+          "change_events": []
+        },
+        "0:13": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "נורסטאר ישראל בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 222,
+              "section_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות כלולות",
+              "table_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות כלולות",
+              "note": null
+            },
+            {
+              "name": "ג'י סיטי",
+              "ownership_pct": 49.82,
+              "parent": "נורסטאר ישראל בע\"מ",
+              "page_reference": 222,
+              "section_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות כלולות",
+              "table_title": "תקנה 11: רשימת השקעות בחברות בנות ובחברות כלולות",
+              "note": "מוחזקת באמצעות נורסטאר ישראל בע\"מ"
+            }
+          ],
+          "change_events": []
+        },
+        "0:14": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "אוריון נכסים מסחרים בע\"מ",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 49.7,
+              "event_date": "2025-11-27",
+              "event_description": "קבלת כ-12 מיליון מניות המהוות כ-49.7% מהון המניות של חברת אוריון כדיבידנד בעין מג'י סיטי.",
+              "page_reference": 240,
+              "section_title": "תקנה 29: המלצות והחלטות הדירקטורים"
+            }
+          ]
+        },
+        "0:15": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
@@ -4190,13 +4520,109 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 1,
-    "at": "2026-09-25T12:06:46.966981+00:00",
+    "at": "2026-09-26T10:58:41.569031+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 15,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "סלקום אנרג'י ש.מ.",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "מבנה ההחזקות המהותיות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "סלקום אנרג'י (שותפות מוגבלת)",
+              "ownership_pct": 50,
+              "parent": "סלקום אנרג'י ש.מ.",
+              "page_reference": 8,
+              "section_title": "מבנה ההחזקות המהותיות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גולן טלקום בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "מבנה ההחזקות המהותיות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "סלקום אחזקות (2001) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "מבנה ההחזקות המהותיות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "סלקום תקשורת קווית (שותפות מוגבלת)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "מבנה ההחזקות המהותיות של הקבוצה",
+              "table_title": null,
+              "note": "מוחזקת ב-99.9996% ישירות על ידי החברה וב-0.0004% על ידי סלקום אחזקות (2001) בע\"מ"
+            },
+            {
+              "name": "דינמיקה רשת חנויות תקשורת בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "מבנה ההחזקות המהותיות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "סי.אמ.ג'י נטוורק ש.מ.",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "מבנה ההחזקות המהותיות של הקבוצה",
+              "table_title": null,
+              "note": "התאגיד המשותף שבאמצעותו מתקיים שיתוף רשתות הרדיו בין סלקום לבין וויקום"
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "סלקום אנרג'י",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 39,
+              "section_title": "9.10.1 התקשרות בהסכם מייסדים",
+              "table_title": null,
+              "note": "מוחזקת בחלקים שווים (50% - 50%) על ידי החברה ומשק אנרגיה"
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
@@ -4269,7 +4695,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 1,
-    "at": "2026-09-25T12:06:47.535262+00:00",
+    "at": "2026-09-26T11:01:29.149663+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -4300,7 +4726,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 1,
-    "at": "2026-09-25T12:06:47.794607+00:00",
+    "at": "2026-09-26T11:01:29.464041+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -4347,7 +4773,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 1,
-    "at": "2026-09-25T12:06:48.189855+00:00",
+    "at": "2026-09-26T11:01:35.947789+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -4386,7 +4812,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 1,
-    "at": "2026-09-25T12:06:48.621730+00:00",
+    "at": "2026-09-26T11:01:36.332382+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -4409,7 +4835,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 1,
-    "at": "2026-09-25T12:06:49.116459+00:00",
+    "at": "2026-09-26T11:01:36.550352+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -4496,7 +4922,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 1,
-    "at": "2026-09-25T12:06:49.406975+00:00",
+    "at": "2026-09-26T11:01:36.890361+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
