@@ -2445,350 +2445,11 @@
   },
   "1734231": {
     "company_id": "777",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-26T10:32:34.627209+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 15,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "גדרון תעשיות בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 18,
-              "section_title": "3.3 תרשים מבנה החזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "שופרסל סטוק בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 18,
-              "section_title": "3.3 תרשים מבנה החזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "שופרסל אמיגה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 18,
-              "section_title": "3.3 תרשים מבנה החזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "לארו נדל\"ן בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 18,
-              "section_title": "3.3 תרשים מבנה החזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ארבעת המינים בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 18,
-              "section_title": "3.3 תרשים מבנה החזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "קטיף בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 18,
-              "section_title": "3.3 תרשים מבנה החזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "שופרסל טרוול בע\"מ",
-              "ownership_pct": 53,
-              "parent": null,
-              "page_reference": 18,
-              "section_title": "3.3 תרשים מבנה החזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "היפרכל בע\"מ",
-              "ownership_pct": 100,
-              "parent": "לארו נדל\"ן בע\"מ",
-              "page_reference": 18,
-              "section_title": "3.3 תרשים מבנה החזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "שופרסל ביילסול השקעות בע\"מ",
-              "ownership_pct": 100,
-              "parent": "לארו נדל\"ן בע\"מ",
-              "page_reference": 18,
-              "section_title": "3.3 תרשים מבנה החזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "חברת הנכסים של שופרסל בע\"מ",
-              "ownership_pct": 100,
-              "parent": "לארו נדל\"ן בע\"מ",
-              "page_reference": 18,
-              "section_title": "3.3 תרשים מבנה החזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "הנץ יבואנים ויצואנים בע\"מ",
-              "ownership_pct": 100,
-              "parent": "לארו נדל\"ן בע\"מ",
-              "page_reference": 18,
-              "section_title": "3.3 תרשים מבנה החזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "עורבני חברה להשקעות בע\"מ",
-              "ownership_pct": 100,
-              "parent": "לארו נדל\"ן בע\"מ",
-              "page_reference": 18,
-              "section_title": "3.3 תרשים מבנה החזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "לב המפרץ בע\"מ",
-              "ownership_pct": 58.73,
-              "parent": "לארו נדל\"ן בע\"מ",
-              "page_reference": 18,
-              "section_title": "3.3 תרשים מבנה החזקות",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "שופרסל סטוק בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 18,
-              "section_title": ".3.3 תרשים מבנה החזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "שופרסל אמיגה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 18,
-              "section_title": ".3.3 תרשים מבנה החזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "לארו נדל\"ן בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 18,
-              "section_title": ".3.3 תרשים מבנה החזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ארבעת המינים בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 18,
-              "section_title": ".3.3 תרשים מבנה החזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "גדרון תעשיות בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 18,
-              "section_title": ".3.3 תרשים מבנה החזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "קטיף בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 18,
-              "section_title": ".3.3 תרשים מבנה החזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "שופרסל טרוול בע\"מ",
-              "ownership_pct": 53,
-              "parent": null,
-              "page_reference": 18,
-              "section_title": ".3.3 תרשים מבנה החזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "היפרכל בע\"מ",
-              "ownership_pct": 100,
-              "parent": "לארו נדל\"ן בע\"מ",
-              "page_reference": 18,
-              "section_title": ".3.3 תרשים מבנה החזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "שופרסל ביילסול השקעות בע\"מ",
-              "ownership_pct": 100,
-              "parent": "לארו נדל\"ן בע\"מ",
-              "page_reference": 18,
-              "section_title": ".3.3 תרשים מבנה החזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "חברת הנכסים של שופרסל בע\"מ",
-              "ownership_pct": 100,
-              "parent": "לארו נדל\"ן בע\"מ",
-              "page_reference": 18,
-              "section_title": ".3.3 תרשים מבנה החזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "הנץ יבואנים ויצואנים בע\"מ",
-              "ownership_pct": 100,
-              "parent": "לארו נדל\"ן בע\"מ",
-              "page_reference": 18,
-              "section_title": ".3.3 תרשים מבנה החזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "עורבני חברה להשקעות בע\"מ",
-              "ownership_pct": 100,
-              "parent": "לארו נדל\"ן בע\"מ",
-              "page_reference": 18,
-              "section_title": ".3.3 תרשים מבנה החזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "לב המפרץ",
-              "ownership_pct": 58.73,
-              "parent": "לארו נדל\"ן בע\"מ",
-              "page_reference": 18,
-              "section_title": ".3.3 תרשים מבנה החזקות",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "לארו נדל\"ן",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 52,
-              "section_title": "9. תחום הנדל\"ן",
-              "table_title": null,
-              "note": "חברת בת בבעלות מלאה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "לארו נדל\"ן",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 52,
-              "section_title": "9. תחום הנדל\"ן",
-              "table_title": null,
-              "note": "חברת בת בבעלות מלאה"
-            },
-            {
-              "name": "לב המפרץ",
-              "ownership_pct": 58.73,
-              "parent": null,
-              "page_reference": 65,
-              "section_title": "9.20 הסכמים מהותיים",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:5": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:6": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:7": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "לארו נדל\"ן בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 132,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": "לשעבר שופרסל נדל\"ן בע\"מ, חברה בת בבעלות מלאה"
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-26T10:34:11.662669+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1730567": {
     "company_id": "1041",
@@ -2816,18 +2477,11 @@
   },
   "1732580": {
     "company_id": "810",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-25T12:06:39.477059+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 27,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-26T10:37:53.974023+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732578": {
     "company_id": "121",
@@ -2967,18 +2621,11 @@
   },
   "1730038": {
     "company_id": "1980",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-25T12:06:41.067552+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 12,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-26T10:37:03.560241+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1727580": {
     "company_id": "431",
@@ -3206,18 +2853,11 @@
   },
   "1732265": {
     "company_id": "642",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-25T12:06:41.628816+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 28,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-26T10:45:04.964012+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1736401": {
     "company_id": "1386",
@@ -3269,18 +2909,11 @@
   },
   "1732082": {
     "company_id": "506",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-25T12:06:41.995908+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 13,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-26T10:39:59.302933+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732551": {
     "company_id": "504",
@@ -3340,18 +2973,11 @@
   },
   "1729379": {
     "company_id": "763",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-25T12:06:42.462039+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 21,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-26T10:44:18.075555+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1729215": {
     "company_id": "1008",
@@ -3395,18 +3021,11 @@
   },
   "1728258": {
     "company_id": "1062",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-25T12:06:42.847398+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 13,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-26T10:47:46.089071+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1728206": {
     "company_id": "1110",
@@ -3434,18 +3053,11 @@
   },
   "1728283": {
     "company_id": "2387",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-25T12:06:43.259577+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 19,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-26T10:49:43.411580+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1726372": {
     "company_id": "1813",
@@ -3657,18 +3269,11 @@
   },
   "1729864": {
     "company_id": "338",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-25T12:06:44.048096+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 11,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-26T10:50:12.230587+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1733171": {
     "company_id": "1920",
@@ -3776,18 +3381,11 @@
   },
   "1732262": {
     "company_id": "1926",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-25T12:06:44.509865+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 16,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-26T10:52:29.289212+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731105": {
     "company_id": "1949",
@@ -3826,13 +3424,272 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 1,
-    "at": "2026-09-25T12:06:44.936225+00:00",
+    "at": "2026-09-26T10:52:25.060596+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 12,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "הדפסה תלת ממדית 3דיאם בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "1.3 תרשים מבנה ההחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "סולרום אלקטרוניקה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "1.3 תרשים מבנה ההחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ישראטק - הנדסת מערכות אלקטרוניות בע\"מ",
+              "ownership_pct": 100,
+              "parent": "סולרום אלקטרוניקה בע\"מ",
+              "page_reference": 6,
+              "section_title": "1.3 תרשים מבנה ההחזקות של הקבוצה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "סולרום אלקטרוניקה",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 43,
+              "section_title": "15.2 הסכמי שכירות של יתר חברות הקבוצה",
+              "table_title": null,
+              "note": "חברת קבוצה"
+            },
+            {
+              "name": "ישראטק",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 44,
+              "section_title": "15.2 הסכמי שכירות של יתר חברות הקבוצה",
+              "table_title": null,
+              "note": "חברת קבוצה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "חברה בתחום הביטחוני (החברה הנרכשת)",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 100,
+              "event_date": "2026-03-22",
+              "event_description": "חתימה על מזכר הבנות לא מחייב לרכישת מלוא (100%) הון המניות המונפק של חברה בתחום הביטחוני",
+              "page_reference": 56,
+              "section_title": "אירועים לאחר תאריך הדוח על המצב הכספי"
+            }
+          ]
+        },
+        "0:4": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "other",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:7": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "סולרום אלקטרוניקה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 131,
+              "section_title": "ביאור 1 - כללי",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "ישראטק - הנדסת מערכות אלקטרוניות בע\"מ",
+              "ownership_pct": 100,
+              "parent": "סולרום אלקטרוניקה בע\"מ",
+              "page_reference": 131,
+              "section_title": "ביאור 1 - כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גרין ריזרב אנרג'י בע\"מ",
+              "ownership_pct": 99.4,
+              "parent": "סולרום אלקטרוניקה בע\"מ",
+              "page_reference": 131,
+              "section_title": "ביאור 1 - כללי",
+              "table_title": null,
+              "note": "פורקה מרצון באפריל 2024"
+            },
+            {
+              "name": "גלובל ביו פאוור 1 בע\"מ",
+              "ownership_pct": 40.8,
+              "parent": "גרין ריזרב אנרג'י בע\"מ",
+              "page_reference": 131,
+              "section_title": "ביאור 1 - כללי",
+              "table_title": null,
+              "note": "החזקה נמכרה בשנת 2023"
+            },
+            {
+              "name": "הדפסה תלת ממדית 3דיאם בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 131,
+              "section_title": "ביאור 1 - כללי",
+              "table_title": null,
+              "note": "הוקמה ב-19 במרץ 2025 כחברת בת בבעלות מלאה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:8": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "סולרום אלקטרוניקה",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 152,
+              "section_title": "ביאור 13 - מוניטין",
+              "table_title": null,
+              "note": "פעילות הקבוצה / יחידות מניבות מזומנים"
+            },
+            {
+              "name": "ישראטק",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 153,
+              "section_title": "ביאור 14 - חכירות",
+              "table_title": null,
+              "note": "חברת קבוצה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:9": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "סולרום אלקטרוניקה",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 156,
+              "section_title": "ביאור 17 - אשראי מתאגידים בנקאיים ואחרים",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "ישראטק",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 156,
+              "section_title": "ביאור 17 - אשראי מתאגידים בנקאיים ואחרים",
+              "table_title": null,
+              "note": "חברת בת"
+            }
+          ],
+          "change_events": []
+        },
+        "0:10": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "סולרום אלקטרוניקה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 179,
+              "section_title": "3. רשימת השקעות בחברות-בת ובחברות כלולות לתאריך הדוח על המצב הכספי (באלפי ש\"ח) (תקנה 11)",
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "ישראטק - הנדסת מערכות אלקטרוניות בע\"מ",
+              "ownership_pct": 100,
+              "parent": "סולרום אלקטרוניקה בע\"מ",
+              "page_reference": 179,
+              "section_title": "3. רשימת השקעות בחברות-בת ובחברות כלולות לתאריך הדוח על המצב הכספי (באלפי ש\"ח) (תקנה 11)",
+              "table_title": "תקנה 11",
+              "note": "באמצעות סולרום אלקטרוניקה בע\"מ"
+            },
+            {
+              "name": "הדפסה תלת ממדית 3דיאם בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 179,
+              "section_title": "3. רשימת השקעות בחברות-בת ובחברות כלולות לתאריך הדוח על המצב הכספי (באלפי ש\"ח) (תקנה 11)",
+              "table_title": "תקנה 11",
+              "note": null
+            }
+          ],
+          "change_events": [
+            {
+              "company": "הדפסה תלת ממדית 3דיאם בע\"מ",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 100,
+              "event_date": "2025-03-19",
+              "event_description": "הקמה",
+              "page_reference": 179,
+              "section_title": "5. שינויים בהשקעות בחברות-בת ובחברות כלולות בשנת הדוח (תקנה 12)"
+            }
+          ]
+        }
+      },
       "attempts": {}
     }
   },
