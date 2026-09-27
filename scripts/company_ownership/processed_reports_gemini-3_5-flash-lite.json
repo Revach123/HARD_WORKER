@@ -33,18 +33,11 @@
   },
   "1722475": {
     "company_id": "1248",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 2,
-    "at": "2026-09-26T11:01:57.919167+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 3,
+    "at": "2026-09-27T10:47:19.186000+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731047": {
     "company_id": "585",
@@ -4351,18 +4344,11 @@
   },
   "1731829": {
     "company_id": "200",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 2,
-    "at": "2026-09-26T11:01:58.206916+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 13,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 3,
+    "at": "2026-09-27T10:50:04.739568+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1733152": {
     "company_id": "2521",
@@ -4902,18 +4888,11 @@
   },
   "1729354": {
     "company_id": "1247",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 2,
-    "at": "2026-09-26T11:01:58.396133+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 9,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 3,
+    "at": "2026-09-27T10:49:22.823332+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731190": {
     "company_id": "315",
@@ -5468,84 +5447,11 @@
   },
   "1729437": {
     "company_id": "2501",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-27T10:46:51.004956+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 8,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "AXON VISION INC.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "מבנה ההחזקות של החברה",
-              "table_title": null,
-              "note": "ידועה גם כ'אקסון ארה\"ב'"
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "אקסון ויז'ן אינק",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 63,
-              "section_title": "הון המיוחס לבעלי מניות החברה",
-              "table_title": null,
-              "note": "הישות האמריקאית, חברת בת של החברה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "אקסון ויז'ן אינק",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 82,
-              "section_title": "באור 1 - כללי",
-              "table_title": null,
-              "note": "הוקמה בחודש אפריל 2025, מאוגדת בדלוואר ארה\"ב"
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-27T10:47:23.036589+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1736936": {
     "company_id": "501",
@@ -5661,106 +5567,126 @@
   },
   "1745637": {
     "company_id": "76",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-26T11:01:58.519709+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-27T10:49:44.026042+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765831": {
     "company_id": "76",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-26T11:01:58.613721+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-27T10:50:16.114240+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743880": {
     "company_id": "103",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-26T11:01:58.860643+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-27T10:50:51.564346+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743874": {
     "company_id": "103",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-26T11:01:58.912524+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-27T10:50:28.574157+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766158": {
     "company_id": "103",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-26T11:01:59.236178+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-27T10:51:28.023869+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766152": {
     "company_id": "103",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-26T11:01:59.119423+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-27T10:50:59.888053+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744895": {
     "company_id": "106",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-26T11:01:59.452387+00:00",
+    "at": "2026-09-27T10:51:22.692817+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 3,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "חברת נכס המחזיקה בבניין בן 5 קומות בלונדון",
+              "ownership_pct": 25,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "1.3 תחומי פעילות החברה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "EEH Properties Ltd.",
+              "ownership_pct": 25,
+              "parent": null,
+              "page_reference": 27,
+              "section_title": "באור :4 - השקעות בחברות המטופלות בשיטת השווי המאזני",
+              "table_title": "מידע בדבר עסקאות משותפות המטופלות לפי שיטת השווי המאזני",
+              "note": null
+            },
+            {
+              "name": "Aventura Venture LLC",
+              "ownership_pct": 70,
+              "parent": null,
+              "page_reference": 27,
+              "section_title": "באור :4 - השקעות בחברות המטופלות בשיטת השווי המאזני",
+              "table_title": "מידע בדבר עסקאות משותפות המטופלות לפי שיטת השווי המאזני",
+              "note": null
+            },
+            {
+              "name": "Biscayne Venture LLC",
+              "ownership_pct": 62,
+              "parent": null,
+              "page_reference": 27,
+              "section_title": "באור :4 - השקעות בחברות המטופלות בשיטת השווי המאזני",
+              "table_title": "מידע בדבר עסקאות משותפות המטופלות לפי שיטת השווי המאזני",
+              "note": null
+            },
+            {
+              "name": "River Venture LLC",
+              "ownership_pct": 37.8,
+              "parent": null,
+              "page_reference": 27,
+              "section_title": "באור :4 - השקעות בחברות המטופלות בשיטת השווי המאזני",
+              "table_title": "מידע בדבר עסקאות משותפות המטופלות לפי שיטת השווי המאזני",
+              "note": null
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
