@@ -5237,78 +5237,11 @@
   },
   "1730875": {
     "company_id": "393",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-27T10:39:25.407889+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 6,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "ראלקו מוצרי צריכה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "1. פעילות הקבוצה ותיאור התפתחות עסקיה – כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "זן סוכנויות בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "1. פעילות הקבוצה ותיאור התפתחות עסקיה – כללי",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "ראלקו מוצרי צריכה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 32,
-              "section_title": "הקבוצה והסביבה העסקית",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "זן סוכנויות בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 32,
-              "section_title": "הקבוצה והסביבה העסקית",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-27T10:40:01.243437+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731419": {
     "company_id": "1272",
@@ -5320,18 +5253,11 @@
   },
   "1726234": {
     "company_id": "1561",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-26T11:01:52.492433+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 9,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-27T10:41:43.870771+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732828": {
     "company_id": "168",
@@ -5343,18 +5269,11 @@
   },
   "1735710": {
     "company_id": "1841",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-26T11:01:55.814563+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 6,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-27T10:41:19.483430+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1723643": {
     "company_id": "2093",
@@ -5406,18 +5325,11 @@
   },
   "1741141": {
     "company_id": "256",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-26T11:01:54.341333+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 20,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-27T10:46:39.140518+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732461": {
     "company_id": "1453",
@@ -5429,18 +5341,11 @@
   },
   "1723167": {
     "company_id": "1823",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-26T11:01:57.604269+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 9,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-27T10:43:22.658654+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731414": {
     "company_id": "1550",
@@ -5460,18 +5365,11 @@
   },
   "1733266": {
     "company_id": "1329",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-26T11:01:56.032376+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-27T10:44:40.425482+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1725551": {
     "company_id": "2028",
@@ -5507,18 +5405,11 @@
   },
   "1731084": {
     "company_id": "1527",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-26T11:01:56.309047+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-27T10:45:27.886109+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1726440": {
     "company_id": "230",
@@ -5561,18 +5452,11 @@
   },
   "1731123": {
     "company_id": "1324",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-26T11:01:56.567109+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-27T10:46:03.971408+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1729429": {
     "company_id": "2174",
@@ -5587,13 +5471,79 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 1,
-    "at": "2026-09-26T11:01:56.762247+00:00",
+    "at": "2026-09-27T10:46:51.004956+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 8,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "AXON VISION INC.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "מבנה ההחזקות של החברה",
+              "table_title": null,
+              "note": "ידועה גם כ'אקסון ארה\"ב'"
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אקסון ויז'ן אינק",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 63,
+              "section_title": "הון המיוחס לבעלי מניות החברה",
+              "table_title": null,
+              "note": "הישות האמריקאית, חברת בת של החברה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אקסון ויז'ן אינק",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 82,
+              "section_title": "באור 1 - כללי",
+              "table_title": null,
+              "note": "הוקמה בחודש אפריל 2025, מאוגדת בדלוואר ארה\"ב"
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
@@ -5655,33 +5605,19 @@
   },
   "1738664": {
     "company_id": "2101",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-26T11:01:57.744824+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-27T10:46:50.287887+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732446": {
     "company_id": "1895",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-26T11:01:57.775265+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-27T10:46:56.475496+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1734428": {
     "company_id": "1829",
