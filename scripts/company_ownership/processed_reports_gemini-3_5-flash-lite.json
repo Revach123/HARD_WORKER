@@ -4239,168 +4239,11 @@
   },
   "1729052": {
     "company_id": "2367",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-27T10:16:47.392586+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 16,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "אלטשולר שחם אלטרנטיב בע\"מ",
-              "ownership_pct": 97.0,
-              "parent": null,
-              "page_reference": 9,
-              "section_title": "1.4 מבנה אחזקות החברה למועד אישור הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אלטשולר שחם גמל ופנסיה בע\"מ",
-              "ownership_pct": 100.0,
-              "parent": null,
-              "page_reference": 9,
-              "section_title": "1.4 מבנה אחזקות החברה למועד אישור הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אלטשולר שחם אשראי בע\"מ",
-              "ownership_pct": 80.0,
-              "parent": null,
-              "page_reference": 9,
-              "section_title": "1.4 מבנה אחזקות החברה למועד אישור הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אלטשולר שחם קרנות השקעה אלטרנטיביות בע\"מ",
-              "ownership_pct": 100.0,
-              "parent": "אלטשולר שחם אלטרנטיב בע\"מ",
-              "page_reference": 9,
-              "section_title": "1.4 מבנה אחזקות החברה למועד אישור הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אלטשולר שחם אופורטיוניטיז בע\"מ",
-              "ownership_pct": 50.0,
-              "parent": "אלטשולר שחם אלטרנטיב בע\"מ",
-              "page_reference": 9,
-              "section_title": "1.4 מבנה אחזקות החברה למועד אישור הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "איי פאנדס קפיטל בע\"מ",
-              "ownership_pct": 80.0,
-              "parent": "אלטשולר שחם אופורטיוניטיז בע\"מ",
-              "page_reference": 9,
-              "section_title": "1.4 מבנה אחזקות החברה למועד אישור הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אלטשולר שחם נדל\"ן בע\"מ",
-              "ownership_pct": 80.75,
-              "parent": "אלטשולר שחם גמל ופנסיה בע\"מ",
-              "page_reference": 9,
-              "section_title": "1.4 מבנה אחזקות החברה למועד אישור הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אלטשולר שחם לבניה בע\"מ",
-              "ownership_pct": 100.0,
-              "parent": "אלטשולר שחם אשראי בע\"מ",
-              "page_reference": 9,
-              "section_title": "1.4 מבנה אחזקות החברה למועד אישור הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אלטשולר שחם אשראי לעסקים בע\"מ",
-              "ownership_pct": 100.0,
-              "parent": "אלטשולר שחם אשראי בע\"מ",
-              "page_reference": 9,
-              "section_title": "1.4 מבנה אחזקות החברה למועד אישור הדוח",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "אלטשולר שחם אלטרנטיב בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 52,
-              "section_title": "3.2 מגזר פעילות השקעות אלטרנטיביות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אלטשולר שחם נדל\"ן בע\"מ",
-              "ownership_pct": 80.75,
-              "parent": "אלטשולר שחם אלטרנטיב בע\"מ",
-              "page_reference": 52,
-              "section_title": "3.2.1.1 מבנה תחום הפעילות ושינויים החלים בו",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אלטשולר שחם קרנות השקעה אלטרנטיביות בע\"מ",
-              "ownership_pct": 100,
-              "parent": "אלטשולר שחם אלטרנטיב בע\"מ",
-              "page_reference": 53,
-              "section_title": "3.2.1.1 מבנה תחום הפעילות ושינויים החלים בו",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אלטשולר שחם גלובל אופורטיוניטיז בע\"מ",
-              "ownership_pct": 50,
-              "parent": "אלטשולר שחם אלטרנטיב בע\"מ",
-              "page_reference": 53,
-              "section_title": "3.2.1.1 מבנה תחום הפעילות ושינויים החלים בו",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "איי פאנדס קפיטל בע\"מ",
-              "ownership_pct": 40,
-              "parent": "אלטשולר שחם גלובל אופורטיוניטיז בע\"מ",
-              "page_reference": 53,
-              "section_title": "3.2.1.1 מבנה תחום הפעילות ושינויים החלים בו",
-              "table_title": null,
-              "note": "החזקה עקיפה באמצעות א.ש. גלובל המחזיקה ב-80%"
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-27T10:20:12.568687+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1720840": {
     "company_id": "759",
@@ -4428,18 +4271,11 @@
   },
   "1732520": {
     "company_id": "1028",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-26T11:01:37.882132+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 10,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-27T10:19:25.420790+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732612": {
     "company_id": "507",
@@ -4690,18 +4526,11 @@
   },
   "1732236": {
     "company_id": "2479",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-26T11:01:42.954896+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 10,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-27T10:21:33.404697+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1736364": {
     "company_id": "1832",
@@ -4729,18 +4558,11 @@
   },
   "1730108": {
     "company_id": "1855",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-26T11:01:43.217462+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 12,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-27T10:23:02.474992+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1727068": {
     "company_id": "2413",
@@ -4760,18 +4582,11 @@
   },
   "1732435": {
     "company_id": "2475",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-26T11:01:48.652438+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 8,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-27T10:23:22.003167+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732462": {
     "company_id": "1393",
@@ -4799,18 +4614,11 @@
   },
   "1736260": {
     "company_id": "424",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-26T11:01:48.102243+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 10,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-27T10:25:09.668167+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731563": {
     "company_id": "531",
@@ -4838,18 +4646,11 @@
   },
   "1735890": {
     "company_id": "1033",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-26T11:01:48.425419+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 9,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-27T10:25:28.339243+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1728892": {
     "company_id": "2423",
@@ -4925,18 +4726,11 @@
   },
   "1728259": {
     "company_id": "1887",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-26T11:01:48.851055+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 9,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-27T10:26:48.040093+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1735019": {
     "company_id": "1876",
@@ -5044,18 +4838,11 @@
   },
   "1729957": {
     "company_id": "2491",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-26T11:01:49.045511+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 10,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-27T10:28:01.226688+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1729086": {
     "company_id": "1771",
@@ -5099,18 +4886,11 @@
   },
   "1729844": {
     "company_id": "2444",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-26T11:01:49.252811+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 10,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-27T10:29:13.861977+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1729027": {
     "company_id": "308",
@@ -5148,13 +4928,143 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 1,
-    "at": "2026-09-26T11:01:49.435023+00:00",
+    "at": "2026-09-27T10:29:07.180573+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 9,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "אוברסיז שינוע והפצה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "חלק ב' - תיאור ההתפתחות הכללית של עסקי החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Overseas Commerce Ghana Ltd.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "חלק ב' - תיאור ההתפתחות הכללית של עסקי החברה",
+              "table_title": null,
+              "note": "חברה המאוגדת בגאנה, התקבלה החלטה על פירוקה"
+            },
+            {
+              "name": "ח.ל קריור ותפעול בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "חלק ב' - תיאור ההתפתחות הכללית של עסקי החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אקסלוט בע\"מ",
+              "ownership_pct": 12,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "חלק ב' - תיאור ההתפתחות הכללית של עסקי החברה",
+              "table_title": null,
+              "note": "כ-11% בדילול מלא"
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אוברסיז שינוע",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 30,
+              "section_title": "5.4 הון אנושי",
+              "table_title": null,
+              "note": "מוזכרת כחברת בת במסגרת מצבת עובדי הקבוצה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אקסלוט",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 50,
+              "section_title": "מצב כספי",
+              "table_title": null,
+              "note": "השקעה בחברה מוחזקת"
+            }
+          ],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "ח.ל קירור ותיפעול בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 86,
+              "section_title": "ביאור 8 - חברות מאוחדות",
+              "table_title": "חלקה של החברה לקבלת רווחים וזכויות הצבעה",
+              "note": null
+            },
+            {
+              "name": "אוברסיז קומרס גאנה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 86,
+              "section_title": "ביאור 8 - חברות מאוחדות",
+              "table_title": "חלקה של החברה לקבלת רווחים וזכויות הצבעה",
+              "note": "הוחלט על פירוק החברה בפברואר 2024"
+            },
+            {
+              "name": "אוברסיז שינוע והפצה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 86,
+              "section_title": "ביאור 8 - חברות מאוחדות",
+              "table_title": "חלקה של החברה לקבלת רווחים וזכויות הצבעה",
+              "note": null
+            },
+            {
+              "name": "אקסלוט בע\"מ",
+              "ownership_pct": 12,
+              "parent": null,
+              "page_reference": 88,
+              "section_title": "ביאור 10 – השקעה בנכסים פיננסיים לזמן ארוך",
+              "table_title": null,
+              "note": "כ-11% בדילול מלא"
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
