@@ -5695,111 +5695,27 @@
   },
   "1743454": {
     "company_id": "126",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T10:54:18.800188+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "CTY",
-              "ownership_pct": 86.4,
-              "parent": null,
-              "page_reference": 5,
-              "section_title": ".1.5 נכסי הקבוצה ליום 31 במרס 2026 (לרבות נכסים בשליטה משותפת):",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "G Europe",
-              "ownership_pct": 100.0,
-              "parent": null,
-              "page_reference": 5,
-              "section_title": ".1.5 נכסי הקבוצה ליום 31 במרס 2026 (לרבות נכסים בשליטה משותפת):",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Gazit Brasil",
-              "ownership_pct": 83.5,
-              "parent": null,
-              "page_reference": 5,
-              "section_title": ".1.5 נכסי הקבוצה ליום 31 במרס 2026 (לרבות נכסים בשליטה משותפת):",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ג'י ישראל",
-              "ownership_pct": 100.0,
-              "parent": null,
-              "page_reference": 5,
-              "section_title": ".1.5 נכסי הקבוצה ליום 31 במרס 2026 (לרבות נכסים בשליטה משותפת):",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Gazit Horizons",
-              "ownership_pct": 100.0,
-              "parent": null,
-              "page_reference": 5,
-              "section_title": ".1.5 נכסי הקבוצה ליום 31 במרס 2026 (לרבות נכסים בשליטה משותפת):",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "G Tripllle",
-              "ownership_pct": 60.0,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": ".1.7 להלן מבנה ההחזקות העיקריות של החברה (מבנה ההחזקות ושיעור ההחזקה הינו ליום 31 במרס 2026):",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-27T10:55:12.662389+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743473": {
     "company_id": "126",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-26T11:02:08.409098+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-27T10:54:40.182357+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1746586": {
     "company_id": "126",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-26T11:02:08.707887+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-27T10:55:48.677767+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1762747": {
     "company_id": "126",
@@ -5818,33 +5734,19 @@
   },
   "1763130": {
     "company_id": "126",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-26T11:02:11.771909+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-27T10:55:30.347927+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763133": {
     "company_id": "126",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-26T11:02:08.925656+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-27T10:55:52.805767+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764715": {
     "company_id": "126",
@@ -5863,48 +5765,27 @@
   },
   "1764718": {
     "company_id": "126",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-26T11:02:09.558848+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-27T10:56:13.266458+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1737830": {
     "company_id": "127",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-26T11:02:09.947886+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-27T10:56:17.806588+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745214": {
     "company_id": "127",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-26T11:02:10.208224+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-27T10:57:07.580397+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766990": {
     "company_id": "127",
@@ -5926,30 +5807,31 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-26T11:02:10.427906+00:00",
+    "at": "2026-09-27T10:57:17.886906+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 2,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
   "1762623": {
     "company_id": "130",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-26T11:02:10.638974+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-27T10:57:24.335788+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763462": {
     "company_id": "130",
@@ -6073,18 +5955,11 @@
   },
   "1768023": {
     "company_id": "126",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-26T11:02:09.801362+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 6,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-27T10:57:19.175914+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745183": {
     "company_id": "141",
