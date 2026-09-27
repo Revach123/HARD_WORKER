@@ -4925,148 +4925,11 @@
   },
   "1728182": {
     "company_id": "1671",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-27T10:29:07.180573+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 9,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "אוברסיז שינוע והפצה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "חלק ב' - תיאור ההתפתחות הכללית של עסקי החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Overseas Commerce Ghana Ltd.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "חלק ב' - תיאור ההתפתחות הכללית של עסקי החברה",
-              "table_title": null,
-              "note": "חברה המאוגדת בגאנה, התקבלה החלטה על פירוקה"
-            },
-            {
-              "name": "ח.ל קריור ותפעול בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "חלק ב' - תיאור ההתפתחות הכללית של עסקי החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אקסלוט בע\"מ",
-              "ownership_pct": 12,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "חלק ב' - תיאור ההתפתחות הכללית של עסקי החברה",
-              "table_title": null,
-              "note": "כ-11% בדילול מלא"
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "אוברסיז שינוע",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 30,
-              "section_title": "5.4 הון אנושי",
-              "table_title": null,
-              "note": "מוזכרת כחברת בת במסגרת מצבת עובדי הקבוצה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "אקסלוט",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 50,
-              "section_title": "מצב כספי",
-              "table_title": null,
-              "note": "השקעה בחברה מוחזקת"
-            }
-          ],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "ח.ל קירור ותיפעול בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 86,
-              "section_title": "ביאור 8 - חברות מאוחדות",
-              "table_title": "חלקה של החברה לקבלת רווחים וזכויות הצבעה",
-              "note": null
-            },
-            {
-              "name": "אוברסיז קומרס גאנה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 86,
-              "section_title": "ביאור 8 - חברות מאוחדות",
-              "table_title": "חלקה של החברה לקבלת רווחים וזכויות הצבעה",
-              "note": "הוחלט על פירוק החברה בפברואר 2024"
-            },
-            {
-              "name": "אוברסיז שינוע והפצה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 86,
-              "section_title": "ביאור 8 - חברות מאוחדות",
-              "table_title": "חלקה של החברה לקבלת רווחים וזכויות הצבעה",
-              "note": null
-            },
-            {
-              "name": "אקסלוט בע\"מ",
-              "ownership_pct": 12,
-              "parent": null,
-              "page_reference": 88,
-              "section_title": "ביאור 10 – השקעה בנכסים פיננסיים לזמן ארוך",
-              "table_title": null,
-              "note": "כ-11% בדילול מלא"
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-27T10:29:48.565204+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1732821": {
     "company_id": "1463",
@@ -5102,33 +4965,19 @@
   },
   "1728463": {
     "company_id": "727",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-26T11:01:49.632906+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 9,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-27T10:31:24.759432+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1736358": {
     "company_id": "1868",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-26T11:01:49.823304+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 8,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-27T10:31:35.909041+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1736322": {
     "company_id": "1862",
@@ -5148,18 +4997,11 @@
   },
   "1729639": {
     "company_id": "621",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-26T11:01:54.099624+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 10,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-27T10:33:41.063779+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1737628": {
     "company_id": "1893",
@@ -5195,18 +5037,11 @@
   },
   "1732136": {
     "company_id": "1460",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-26T11:01:50.110901+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 11,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-27T10:34:05.928130+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1728235": {
     "company_id": "2428",
@@ -5242,18 +5077,11 @@
   },
   "1732069": {
     "company_id": "1304",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-26T11:01:50.762274+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 6,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-27T10:35:15.713850+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1733087": {
     "company_id": "397",
@@ -5297,18 +5125,11 @@
   },
   "1730159": {
     "company_id": "371",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-26T11:01:51.048304+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 8,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-27T10:35:42.449575+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1734953": {
     "company_id": "1922",
@@ -5320,18 +5141,11 @@
   },
   "1732619": {
     "company_id": "2528",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-26T11:01:51.300388+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 10,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-27T10:36:49.682194+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1736353": {
     "company_id": "1756",
@@ -5367,18 +5181,11 @@
   },
   "1731635": {
     "company_id": "1461",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-26T11:01:51.622914+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 18,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-27T10:39:33.197570+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1731066": {
     "company_id": "1940",
@@ -5390,18 +5197,11 @@
   },
   "1731689": {
     "company_id": "1232",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 1,
-    "at": "2026-09-26T11:01:51.915076+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 9,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-09-27T10:38:58.486740+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1733292": {
     "company_id": "2440",
@@ -5440,13 +5240,73 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 1,
-    "at": "2026-09-26T11:01:52.178615+00:00",
+    "at": "2026-09-27T10:39:25.407889+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 6,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "ראלקו מוצרי צריכה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1. פעילות הקבוצה ותיאור התפתחות עסקיה – כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "זן סוכנויות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1. פעילות הקבוצה ותיאור התפתחות עסקיה – כללי",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "ראלקו מוצרי צריכה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 32,
+              "section_title": "הקבוצה והסביבה העסקית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "זן סוכנויות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 32,
+              "section_title": "הקבוצה והסביבה העסקית",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
