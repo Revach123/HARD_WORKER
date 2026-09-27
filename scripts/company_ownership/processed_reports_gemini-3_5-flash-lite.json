@@ -5615,15 +5615,95 @@
   },
   "1744895": {
     "company_id": "106",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-09-27T10:51:35.047766+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1764222": {
+    "company_id": "106",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-09-27T10:52:11.053023+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1767282": {
+    "company_id": "111",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-09-27T10:51:56.114679+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1744415": {
+    "company_id": "121",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-09-27T10:53:06.423057+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1744790": {
+    "company_id": "121",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-09-27T10:53:16.982355+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1766447": {
+    "company_id": "121",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-09-27T10:54:18.298138+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1740692": {
+    "company_id": "126",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-09-27T10:53:22.042041+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1741161": {
+    "company_id": "126",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-09-27T10:53:40.081371+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1741469": {
+    "company_id": "126",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-09-27T10:53:58.867978+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1742748": {
+    "company_id": "126",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-09-27T10:54:04.124668+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1743454": {
+    "company_id": "126",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-27T10:51:22.692817+00:00",
+    "at": "2026-09-27T10:54:18.800188+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
-      "total": 3,
+      "total": 5,
       "done": {
         "0:0": {
           "report_format": "israeli_periodic",
@@ -5631,212 +5711,63 @@
           "as_of_date": "2026-03-31",
           "subsidiaries": [
             {
-              "name": "חברת נכס המחזיקה בבניין בן 5 קומות בלונדון",
-              "ownership_pct": 25,
+              "name": "CTY",
+              "ownership_pct": 86.4,
               "parent": null,
               "page_reference": 5,
-              "section_title": "1.3 תחומי פעילות החברה",
+              "section_title": ".1.5 נכסי הקבוצה ליום 31 במרס 2026 (לרבות נכסים בשליטה משותפת):",
               "table_title": null,
               "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
+            },
             {
-              "name": "EEH Properties Ltd.",
-              "ownership_pct": 25,
+              "name": "G Europe",
+              "ownership_pct": 100.0,
               "parent": null,
-              "page_reference": 27,
-              "section_title": "באור :4 - השקעות בחברות המטופלות בשיטת השווי המאזני",
-              "table_title": "מידע בדבר עסקאות משותפות המטופלות לפי שיטת השווי המאזני",
+              "page_reference": 5,
+              "section_title": ".1.5 נכסי הקבוצה ליום 31 במרס 2026 (לרבות נכסים בשליטה משותפת):",
+              "table_title": null,
               "note": null
             },
             {
-              "name": "Aventura Venture LLC",
-              "ownership_pct": 70,
+              "name": "Gazit Brasil",
+              "ownership_pct": 83.5,
               "parent": null,
-              "page_reference": 27,
-              "section_title": "באור :4 - השקעות בחברות המטופלות בשיטת השווי המאזני",
-              "table_title": "מידע בדבר עסקאות משותפות המטופלות לפי שיטת השווי המאזני",
+              "page_reference": 5,
+              "section_title": ".1.5 נכסי הקבוצה ליום 31 במרס 2026 (לרבות נכסים בשליטה משותפת):",
+              "table_title": null,
               "note": null
             },
             {
-              "name": "Biscayne Venture LLC",
-              "ownership_pct": 62,
+              "name": "ג'י ישראל",
+              "ownership_pct": 100.0,
               "parent": null,
-              "page_reference": 27,
-              "section_title": "באור :4 - השקעות בחברות המטופלות בשיטת השווי המאזני",
-              "table_title": "מידע בדבר עסקאות משותפות המטופלות לפי שיטת השווי המאזני",
+              "page_reference": 5,
+              "section_title": ".1.5 נכסי הקבוצה ליום 31 במרס 2026 (לרבות נכסים בשליטה משותפת):",
+              "table_title": null,
               "note": null
             },
             {
-              "name": "River Venture LLC",
-              "ownership_pct": 37.8,
+              "name": "Gazit Horizons",
+              "ownership_pct": 100.0,
               "parent": null,
-              "page_reference": 27,
-              "section_title": "באור :4 - השקעות בחברות המטופלות בשיטת השווי המאזני",
-              "table_title": "מידע בדבר עסקאות משותפות המטופלות לפי שיטת השווי המאזני",
+              "page_reference": 5,
+              "section_title": ".1.5 נכסי הקבוצה ליום 31 במרס 2026 (לרבות נכסים בשליטה משותפת):",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "G Tripllle",
+              "ownership_pct": 60.0,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": ".1.7 להלן מבנה ההחזקות העיקריות של החברה (מבנה ההחזקות ושיעור ההחזקה הינו ליום 31 במרס 2026):",
+              "table_title": null,
               "note": null
             }
           ],
           "change_events": []
         }
       },
-      "attempts": {}
-    }
-  },
-  "1764222": {
-    "company_id": "106",
-    "status": "partial",
-    "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-26T11:02:08.632533+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1767282": {
-    "company_id": "111",
-    "status": "partial",
-    "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-26T11:01:59.698277+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1744415": {
-    "company_id": "121",
-    "status": "partial",
-    "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-26T11:01:59.972391+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1744790": {
-    "company_id": "121",
-    "status": "partial",
-    "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-26T11:02:00.283817+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1766447": {
-    "company_id": "121",
-    "status": "partial",
-    "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-26T11:02:04.461423+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1740692": {
-    "company_id": "126",
-    "status": "partial",
-    "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-26T11:02:04.687070+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1741161": {
-    "company_id": "126",
-    "status": "partial",
-    "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-26T11:02:04.949163+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1741469": {
-    "company_id": "126",
-    "status": "partial",
-    "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-26T11:02:07.269802+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1742748": {
-    "company_id": "126",
-    "status": "partial",
-    "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-26T11:02:07.403066+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1743454": {
-    "company_id": "126",
-    "status": "partial",
-    "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-26T11:02:07.665657+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
       "attempts": {}
     }
   },
