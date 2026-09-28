@@ -6994,171 +6994,11 @@
   },
   "1765851": {
     "company_id": "251",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T10:38:28.409803+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {
-        "0:0": {
-          "report_format": "other",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "הייטק פארק שלב א'",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 9,
-              "section_title": "פרויקטים בתכנון וביצוע - מניבים מנועי צמיחה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מתחם האלף (RISHO)",
-              "ownership_pct": 26,
-              "parent": null,
-              "page_reference": 9,
-              "section_title": "פרויקטים בתכנון וביצוע - מניבים מנועי צמיחה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "C LYFE",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 9,
-              "section_title": "פרויקטים בתכנון וביצוע - מניבים מנועי צמיחה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מגדלי הוד השרון בע\"מ",
-              "ownership_pct": 42.3,
-              "parent": null,
-              "page_reference": 9,
-              "section_title": "פרויקטים בתכנון וביצוע - מניבים מנועי צמיחה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "COLMORE",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 9,
-              "section_title": "פרויקטים בתכנון וביצוע - מניבים מנועי צמיחה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "הייטק פארק שלב ב'",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "קרקעות בקידום תב\"ע וזכויות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מתחם היצירה",
-              "ownership_pct": 80,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "קרקעות בקידום תב\"ע וזכויות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "נס ודגל נס ציונה",
-              "ownership_pct": 33,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "קרקעות בקידום תב\"ע וזכויות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "קריית המדע נס ציונה",
-              "ownership_pct": 87,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "קרקעות בקידום תב\"ע וזכויות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מתחם האורגים",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "קרקעות בקידום תב\"ע וזכויות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "פתח תקוה - גבעת שמואל",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "קרקעות בקידום תב\"ע וזכויות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "באר שבע - גרשפלד",
-              "ownership_pct": 73,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "קרקעות בקידום תב\"ע וזכויות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מתחם ה-1000 RISHO",
-              "ownership_pct": 26.07,
-              "parent": null,
-              "page_reference": 17,
-              "section_title": "מתחם ה-1000 ראשל\"צ",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "THE capital ירושלים",
-              "ownership_pct": 22.5,
-              "parent": null,
-              "page_reference": 18,
-              "section_title": "פרויקט THE capital ירושלים",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Comm U ירושלים",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 19,
-              "section_title": "פרויקט Comm U ירושלים",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "LYFE בת ים",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 20,
-              "section_title": "פרויקט LYFE בת ים",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:38:40.192215+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744465": {
     "company_id": "256",
@@ -7170,108 +7010,59 @@
   },
   "1765795": {
     "company_id": "256",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:32.874104+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:38:50.153588+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766921": {
     "company_id": "257",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:33.013222+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:39:00.122546+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742148": {
     "company_id": "258",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:33.153969+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:39:47.591644+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742153": {
     "company_id": "258",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:33.493951+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:39:20.746976+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742156": {
     "company_id": "258",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:33.893531+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:39:45.222124+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763164": {
     "company_id": "258",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:34.051182+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:41:42.031051+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763153": {
     "company_id": "258",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:34.480437+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:40:19.408183+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763154": {
     "company_id": "258",
@@ -7290,33 +7081,19 @@
   },
   "1742406": {
     "company_id": "259",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:34.646157+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:41:09.172596+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742438": {
     "company_id": "259",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:34.801215+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:41:29.964062+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1762840": {
     "company_id": "259",
