@@ -7644,133 +7644,11 @@
   },
   "1763116": {
     "company_id": "333",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T10:56:45.477846+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "פנינסולה בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "הסברי הדירקטוריון לעסקי הקבוצה",
-              "table_title": null,
-              "note": "חברה בת בבעלות ובשליטה מלאה"
-            },
-            {
-              "name": "פנינסולה מימון נדל\"ן בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "הסברי הדירקטוריון לעסקי הקבוצה",
-              "table_title": null,
-              "note": "לשעבר פנינסולה אשראי מסחרי בע\"מ, חברה בת בבעלות ובשליטה מלאה"
-            },
-            {
-              "name": "החברה לאשראי נקוב יהלומים בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "הסברי הדירקטוריון לעסקי הקבוצה",
-              "table_title": null,
-              "note": "חברה בת בבעלות ובשליטה מלאה"
-            },
-            {
-              "name": "פנינסולה השלמת הון ועודפים בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "הסברי הדירקטוריון לעסקי הקבוצה",
-              "table_title": null,
-              "note": "חברה בת בבעלות ובשליטה מלאה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "פנינסולה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 34,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": "בבעלות מלאה"
-            },
-            {
-              "name": "פנינסולה מימון נדל\"ן בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 34,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": "בבעלות מלאה"
-            },
-            {
-              "name": "החברה לאשראי נקוב יהלומים בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 34,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": "בבעלות מלאה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "פנינסולה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 53,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "פנינסולה מימון נדל\"ן בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 53,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "החברה לאשראי נקוב יהלומים בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 53,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:56:57.247970+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1741926": {
     "company_id": "338",
@@ -7790,18 +7668,11 @@
   },
   "1743130": {
     "company_id": "338",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:43.228873+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:57:45.387482+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743252": {
     "company_id": "338",
@@ -7820,33 +7691,19 @@
   },
   "1761924": {
     "company_id": "338",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:43.145491+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:57:01.650434+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764763": {
     "company_id": "338",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:43.464075+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:57:30.459430+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764996": {
     "company_id": "338",
@@ -7865,48 +7722,27 @@
   },
   "1745548": {
     "company_id": "341",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:43.779158+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:58:26.469659+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745208": {
     "company_id": "345",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:43.981631+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:58:49.446233+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765141": {
     "company_id": "345",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:44.199501+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:59:53.635461+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767723": {
     "company_id": "350",
@@ -7940,48 +7776,27 @@
   },
   "1765332": {
     "company_id": "351",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:44.288769+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:59:30.941252+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743353": {
     "company_id": "354",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:44.391988+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:59:59.269081+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1755677": {
     "company_id": "354",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:44.440950+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T11:00:00.620690+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763934": {
     "company_id": "354",
