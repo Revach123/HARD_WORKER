@@ -7925,31 +7925,67 @@
   },
   "1759021": {
     "company_id": "373",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:46.349091+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T11:03:55.210936+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743923": {
     "company_id": "373",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-27T11:00:46.487070+00:00",
+    "at": "2026-09-28T11:04:02.962410+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 5,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "מגידו י.ק. בע\"מ",
+              "ownership_pct": 76.8,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "1.6 חברת מגידו י.ק. בע\"מ",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אאורה מרכזים מסחריים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "1.1 תחומי הפעילות",
+              "table_title": null,
+              "note": "הפניקס מחזיקה ב-17.5%"
+            },
+            {
+              "name": "אאורה מחדשים את ישראל בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "1.8.2 מכירת דירות לחברת רט איט מגורים בע\"מ",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
@@ -7958,13 +7994,49 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-27T11:00:46.705880+00:00",
+    "at": "2026-09-28T11:04:10.030237+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 5,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "מגידו י.ק. בע\"מ",
+              "ownership_pct": 77,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "1.6 חברת מגידו י.ק. בע\"מ",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אאורה מרכזים מסחריים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "1.1 תחומי הפעילות",
+              "table_title": null,
+              "note": "חברת בת בה מחזיקה הפניקס 17.5%"
+            },
+            {
+              "name": "רנט איט - ריט מגורים בע\"מ",
+              "ownership_pct": 5.87,
+              "parent": "אאורה מחדשים את ישראל בע\"מ",
+              "page_reference": 7,
+              "section_title": "1.8.2 מכירת דירות לחברת רנט איט- ריט מגורים בע\"מ",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
@@ -7988,7 +8060,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-27T11:00:46.909005+00:00",
+    "at": "2026-09-28T11:04:10.245174+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -8003,7 +8075,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-27T11:00:47.072546+00:00",
+    "at": "2026-09-28T11:04:10.384266+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -8018,7 +8090,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-27T11:00:47.209234+00:00",
+    "at": "2026-09-28T11:04:10.588030+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -8048,7 +8120,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-27T11:00:47.537926+00:00",
+    "at": "2026-09-28T11:04:10.893634+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -8063,7 +8135,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-27T11:00:47.657685+00:00",
+    "at": "2026-09-28T11:04:11.062232+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -8078,7 +8150,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-27T11:00:47.716447+00:00",
+    "at": "2026-09-28T11:04:11.140370+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -8108,7 +8180,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-27T11:00:47.914571+00:00",
+    "at": "2026-09-28T11:04:11.333135+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -8123,7 +8195,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-27T11:00:48.129583+00:00",
+    "at": "2026-09-28T11:04:11.577157+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -8138,7 +8210,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-27T11:00:49.283002+00:00",
+    "at": "2026-09-28T11:04:12.115918+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
