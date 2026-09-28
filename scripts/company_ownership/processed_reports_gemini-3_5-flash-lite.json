@@ -7397,45 +7397,11 @@
   },
   "1764371": {
     "company_id": "312",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T10:49:52.181239+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "Reliance Gear Corp.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "דוח הדירקטוריון על מצב עסקי הקבוצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "החברה לפיתוח תעשיות (1996) אי די סי בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "דוח הדירקטוריון על מצב עסקי הקבוצה",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:50:12.673831+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743143": {
     "company_id": "312",
@@ -7462,48 +7428,27 @@
   },
   "1745072": {
     "company_id": "313",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:40.160273+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:53:38.572995+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1747016": {
     "company_id": "313",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:40.341919+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:50:43.029750+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767312": {
     "company_id": "313",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:40.848432+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:52:08.318270+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742284": {
     "company_id": "314",
@@ -7525,14 +7470,42 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-27T11:00:40.578999+00:00",
+    "at": "2026-09-28T10:52:42.621883+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 3,
-      "done": {},
-      "attempts": {}
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "מ.ל מקבוצת מנור רפואה - החברה לטיפולים וניתוחים בישראל בע\"מ",
+              "event_type": "other",
+              "ownership_pct_before": 100,
+              "ownership_pct_after": 0,
+              "event_date": "2026-06-29",
+              "event_description": "מיזוג סטטוטורי שאינו מהותי במסגרתו התמזגה חברת הבת בבעלות מלאה עם ולתוך החברה ללא תמורה כלשהי",
+              "page_reference": 3,
+              "section_title": "1.5 מיזוג מנור"
+            }
+          ]
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
+      "attempts": {
+        "0:1": 1
+      }
     }
   },
   "1763697": {
@@ -7552,63 +7525,35 @@
   },
   "1744934": {
     "company_id": "315",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:40.703740+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:53:04.738208+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766803": {
     "company_id": "315",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:40.962458+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:53:22.058004+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1739510": {
     "company_id": "323",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:41.011430+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:53:27.061296+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1739680": {
     "company_id": "323",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:41.062361+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:53:31.927231+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742372": {
     "company_id": "323",
@@ -7630,30 +7575,31 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-27T11:00:41.368365+00:00",
+    "at": "2026-09-28T10:53:44.311997+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 3,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "other",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
   "1756141": {
     "company_id": "323",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:41.415609+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:53:44.048120+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763108": {
     "company_id": "323",
