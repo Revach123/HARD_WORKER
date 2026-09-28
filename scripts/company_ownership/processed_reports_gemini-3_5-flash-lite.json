@@ -5988,7 +5988,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-28T10:09:57.779792+00:00",
+    "at": "2026-09-28T10:10:47.256807+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -6135,9 +6135,86 @@
           "as_of_date": "2026-06-30",
           "subsidiaries": [],
           "change_events": []
+        },
+        "0:7": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "מבט לנגב תפעול בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 133,
+              "section_title": "באור 4 - השקעות בחברות מוחזקות המטופלות לפי שיטת השווי המאזני",
+              "table_title": null,
+              "note": "מידע כספי בדבר מבט לנגב תפעול בע\"מ"
+            }
+          ],
+          "change_events": []
+        },
+        "0:8": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "שותפות מוגבלת ייעודית (פרויקטים למגורים עם כלל)",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 70,
+              "event_date": "2026-05-13",
+              "event_description": "התקשרות עם כלל חברה לביטוח להקמת שותפויות מוגבלות ייעודיות לפרויקטים בתחום הנדל\"ן למגורים, כאשר החברה תחזיק ב-70% מהשותפים המוגבלים.",
+              "page_reference": 142,
+              "section_title": "באור 6 - אירועים בתקופת הדוח ולאחריו"
+            },
+            {
+              "company": "פרויקט פינוי בינוי לה גוארדיה",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 49,
+              "event_date": "2026-05-20",
+              "event_description": "רכישת 49% מזכויות אנשי העיר בפרויקט פינוי בינוי ברח' לה גוארדיה 35-45 בת\"א.",
+              "page_reference": 142,
+              "section_title": "באור 6 - אירועים בתקופת הדוח ולאחריו"
+            },
+            {
+              "company": "חברה ייעודית להלוואת הבעלים למבט לנגב",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 100,
+              "event_date": "2026-06-30",
+              "event_description": "הקמת חברה ייעודית בבעלות מלאה (100%) של החברה לשם עסקה להמחאת זכויות בהלוואת הבעלים למבט לנגב בע\"מ.",
+              "page_reference": 143,
+              "section_title": "באור 6 - אירועים בתקופת הדוח ולאחריו"
+            },
+            {
+              "company": "אייץ' אן – לייט רייל ליין בע\"מ",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 40.05,
+              "event_date": "2026-07-27",
+              "event_description": "השלמת הסגירה הפיננסית של פרויקט קו הרכבת הקלה \"נופית\", חברה ייעודית המוחזקת על ידי החברה בשיעור של 40.05%.",
+              "page_reference": 143,
+              "section_title": "באור 6 - אירועים בתקופת הדוח ולאחריו"
+            },
+            {
+              "company": "טיקו בניה מתקדמת בע\"מ",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 51,
+              "event_date": null,
+              "event_description": "השלמת רכישת 51% ממניות חברת טיקו בניה מתקדמת בע\"מ המספקת פתרונות בנייה מודולריים (Tek-B).",
+              "page_reference": 143,
+              "section_title": "באור 6 - אירועים בתקופת הדוח ולאחריו"
+            }
+          ]
         }
       },
-      "attempts": {}
+      "attempts": {
+        "0:9": 1
+      }
     }
   },
   "1764165": {
@@ -6173,18 +6250,11 @@
   },
   "1764347": {
     "company_id": "161",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:11.926511+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:10:43.069638+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764417": {
     "company_id": "161",
@@ -6203,33 +6273,19 @@
   },
   "1744955": {
     "company_id": "168",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:12.155548+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:11:16.522346+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764805": {
     "company_id": "168",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:12.413902+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:11:23.026537+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767299": {
     "company_id": "149",
@@ -6321,48 +6377,27 @@
   },
   "1762653": {
     "company_id": "169",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:12.610243+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:12:02.594248+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767484": {
     "company_id": "174",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:12.795003+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:12:12.037544+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766824": {
     "company_id": "180",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:13.218192+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:12:37.861056+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742327": {
     "company_id": "182",
@@ -6381,48 +6416,27 @@
   },
   "1742366": {
     "company_id": "182",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:13.434238+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:13:03.256719+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765652": {
     "company_id": "182",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:13.741281+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:13:45.742982+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763509": {
     "company_id": "199",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:13.845585+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:13:57.266655+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763510": {
     "company_id": "199",
@@ -6609,13 +6623,145 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-27T11:00:13.096429+00:00",
+    "at": "2026-09-28T10:13:39.935814+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 10,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "דנקנר קנלוב התחדשות עירונית בע\"מ",
+              "ownership_pct": 50.8,
+              "parent": null,
+              "page_reference": 3,
+              "section_title": "סעיף 1.5 לדוח התקופתי - תיאור החברה והתפתחות עסקיה",
+              "table_title": null,
+              "note": "נרכשה על ידי חברת בת בבעלות מלאה ביום 31.03.2026"
+            }
+          ],
+          "change_events": [
+            {
+              "company": "דנקנר קנלוב התחדשות עירונית בע\"מ",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 50.8,
+              "event_date": "2026-03-31",
+              "event_description": "השלמת רכישת כ-50.8% מהון המניות של החברה על ידי חברת בת בבעלות מלאה",
+              "page_reference": 3,
+              "section_title": "סעיף 1.5 לדוח התקופתי - תיאור החברה והתפתחות עסקיה"
+            }
+          ]
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "דנקנר קנלוב התחדשות עירונית בע\"מ",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 50.8,
+              "event_date": "2026-03-31",
+              "event_description": "השלמת רכישת כ-50.8% מהון המניות של חברת דנקנר קנלוב התחדשות עירונית בע\"מ על ידי חברת בת בבעלות מלאה של החברה",
+              "page_reference": 52,
+              "section_title": "אירועים מהותיים בתקופת הדוח ולאחריו"
+            }
+          ]
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "דנקנר קנלוב התחדשות עירונית בע\"מ",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": 0,
+              "ownership_pct_after": 50.8,
+              "event_date": "2026-03-31",
+              "event_description": "השלמת רכישת כ-50.8% מהון המניות המונפק של החברה הנרכשת על ידי חברת בת בבעלות מלאה",
+              "page_reference": 71,
+              "section_title": "באור 6 - חברות בנות"
+            }
+          ]
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "דנקנר קנלוב התחדשות עירונית בע\"מ",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 50.8,
+              "event_date": "2026-03-31",
+              "event_description": "רכישת כ-50.8% מהון המניות המונפק של החברה הנרכשת",
+              "page_reference": 71,
+              "section_title": "באור 6 - חברות בנות"
+            }
+          ]
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "דנקנר קנלוב התחדשות עירונית בע\"מ",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": 0,
+              "ownership_pct_after": 50.8,
+              "event_date": "2026-03-31",
+              "event_description": "רכישת השליטה (כ-50.8%) בחברת דנקנר קנלוב התחדשות עירונית בע\"מ",
+              "page_reference": 102,
+              "section_title": "הנדון: מתן שירותי הערכת שווי בקשר עם הקצאת תמורת צירוף עסקים בגין רכישת דנקנר קנלוב התחדשות עירונית בע\"מ"
+            }
+          ]
+        },
+        "0:6": {
+          "report_format": "other",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "דנקנר קנלוב התחדשות עירונית בע\"מ",
+              "ownership_pct": 50.8,
+              "parent": null,
+              "page_reference": 109,
+              "section_title": "תיאור עסקת הרכישה",
+              "table_title": null,
+              "note": "רכישת 50.8% מהון המניות המונפק של החברה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:7": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
