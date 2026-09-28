@@ -5876,36 +5876,11 @@
   },
   "1765944": {
     "company_id": "138",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:08.304504+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "קלדור",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "1.3 סיכוני שוק",
-              "table_title": null,
-              "note": "חברה בת בבעלות מלאה"
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:05:42.082616+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1768023": {
     "company_id": "126",
@@ -5917,56 +5892,27 @@
   },
   "1745183": {
     "company_id": "141",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:15.313179+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 6,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:06:42.357913+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764797": {
     "company_id": "141",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:08.627344+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 7,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:08:43.062973+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765628": {
     "company_id": "142",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:08.757374+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:07:09.425087+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744880": {
     "company_id": "149",
@@ -6000,33 +5946,19 @@
   },
   "1744772": {
     "company_id": "150",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:09.085535+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:08:04.561211+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764539": {
     "company_id": "150",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:09.264723+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:08:28.181567+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742331": {
     "company_id": "155",
@@ -6045,48 +5977,176 @@
   },
   "1742336": {
     "company_id": "155",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:10.454764+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:09:08.469455+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764162": {
     "company_id": "155",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-27T11:00:10.614696+00:00",
+    "at": "2026-09-28T10:09:57.779792+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 10,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "368 Third Member LLC",
+              "ownership_pct": 99.2,
+              "parent": null,
+              "page_reference": 19,
+              "section_title": "נספח א' - גילוי נוסף ביחס לאגרות החוב (סדרה ה')",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "תאגיד החזקה לנכס 427 East 90th Street",
+              "ownership_pct": 97.33,
+              "parent": null,
+              "page_reference": 19,
+              "section_title": "נספח א' - גילוי נוסף ביחס לאגרות החוב (סדרה ה')",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "368 Third Mezz LLC",
+              "ownership_pct": 100.0,
+              "parent": "368 Third Member LLC",
+              "page_reference": 20,
+              "section_title": "נספח א' - 1. פרויקט '368 Third' - 1.1 הצגת הפרויקט",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "368 Third Owners LLC",
+              "ownership_pct": 100.0,
+              "parent": "368 Third Mezz LLC",
+              "page_reference": 20,
+              "section_title": "נספח א' - 1. פרויקט '368 Third' - 1.1 הצגת הפרויקט",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "368 Third Member LLC",
+              "ownership_pct": 99.2,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "1. פרויקט 368 Third",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "368 Third Mezz LLC",
+              "ownership_pct": 100.0,
+              "parent": "368 Third Member LLC",
+              "page_reference": 20,
+              "section_title": "1. פרויקט 368 Third",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "368 Third Owners LLC",
+              "ownership_pct": 100.0,
+              "parent": "368 Third Mezz LLC",
+              "page_reference": 20,
+              "section_title": "1. פרויקט 368 Third",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "427 E 90 LP Minrav",
+              "ownership_pct": 97.33,
+              "parent": null,
+              "page_reference": 23,
+              "section_title": "2. פרויקט 427 East 90th",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "427 E 90 Member LLC",
+              "ownership_pct": 100.0,
+              "parent": "427 E 90 LP Minrav",
+              "page_reference": 23,
+              "section_title": "2. פרויקט 427 East 90th",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "427 E 90 Owner LLC",
+              "ownership_pct": 100.0,
+              "parent": "427 E 90 Member LLC",
+              "page_reference": 23,
+              "section_title": "2. פרויקט 427 East 90th",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
   "1764165": {
     "company_id": "155",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:11.543841+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:09:47.519011+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1741686": {
     "company_id": "161",
@@ -6105,18 +6165,11 @@
   },
   "1741755": {
     "company_id": "161",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:11.760524+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:10:04.782616+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764347": {
     "company_id": "161",
@@ -6183,14 +6236,87 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-27T11:00:08.902608+00:00",
+    "at": "2026-09-28T10:07:43.595388+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 3,
-      "done": {},
-      "attempts": {}
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "סי.די.אל קונטרם קווי הפצה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 2,
+              "section_title": "דו\"ח הדירקטוריון על מצב ענייני החברה לתקופה שנסתיימה ביום 30 ביוני, 2026",
+              "table_title": null,
+              "note": "חברה בת בבעלות מלאה"
+            },
+            {
+              "name": "אי גולד פתרונות תוכנה בע\"מ",
+              "ownership_pct": 77.78,
+              "parent": null,
+              "page_reference": 2,
+              "section_title": "דו\"ח הדירקטוריון על מצב ענייני החברה לתקופה שנסתיימה ביום 30 ביוני, 2026",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "תעשיות מספנות ישראל בע\"מ",
+              "ownership_pct": 20,
+              "parent": null,
+              "page_reference": 2,
+              "section_title": "דו\"ח הדירקטוריון על מצב ענייני החברה לתקופה שנסתיימה ביום 30 ביוני, 2026",
+              "table_title": null,
+              "note": "החברה מחזיקה בעצמה ובאמצעות סי.די.אל"
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "סי.די.אל. קונטרם קווי הפצה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 30,
+              "section_title": "ביאור 1 - כללי",
+              "table_title": null,
+              "note": "חברה בת פרטית בבעלות מלאה"
+            },
+            {
+              "name": "תעשיות מספנות ישראל בע\"מ",
+              "ownership_pct": 20,
+              "parent": null,
+              "page_reference": 30,
+              "section_title": "ביאור 1 - כללי",
+              "table_title": null,
+              "note": "חברה כלולה המטופלת בשיטת השווי המאזני"
+            },
+            {
+              "name": "אי גולד פתרונות תוכנה בע\"מ",
+              "ownership_pct": 77.78,
+              "parent": null,
+              "page_reference": 30,
+              "section_title": "ביאור 1 - כללי",
+              "table_title": null,
+              "note": "מוחזקת יחד עם שותף צד ג'"
+            }
+          ],
+          "change_events": []
+        }
+      },
+      "attempts": {
+        "0:2": 1
+      }
     }
   },
   "1762653": {
