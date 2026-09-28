@@ -6599,173 +6599,11 @@
   },
   "1764938": {
     "company_id": "209",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T10:20:55.369281+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 11,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "איילון קופות גמל בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 5,
-              "section_title": "1. תיאור החברה",
-              "table_title": null,
-              "note": "חברה בת בבעלות מלאה"
-            },
-            {
-              "name": "ווישור חברה לביטוח בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 5,
-              "section_title": "1. תיאור החברה",
-              "table_title": null,
-              "note": "נרכשה על ידי החברה"
-            },
-            {
-              "name": "איילון נאמנים סוכנות לביטוח בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 5,
-              "section_title": "1. תיאור החברה",
-              "table_title": null,
-              "note": "סוכנות ביטוח בבעלות החברה"
-            },
-            {
-              "name": "נכונים סוכנות לביטוח בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 5,
-              "section_title": "1. תיאור החברה",
-              "table_title": null,
-              "note": "סוכנות ביטוח בבעלות החברה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "נכונים סוכנות לביטוח בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 65,
-              "section_title": "באור :1 - כללי",
-              "table_title": null,
-              "note": "חברת בת בבעלות מלאה"
-            },
-            {
-              "name": "איילון נאמנים סוכנות לביטוח בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 65,
-              "section_title": "באור :1 - כללי",
-              "table_title": null,
-              "note": "חברת בת בבעלות מלאה"
-            },
-            {
-              "name": "איילון קופות גמל בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 66,
-              "section_title": "באור :1 - כללי (המשך)",
-              "table_title": null,
-              "note": "חברת בת בבעלות מלאה"
-            },
-            {
-              "name": "ווישור חברה לביטוח בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 70,
-              "section_title": "באור :4 - מגזרי פעילות",
-              "table_title": null,
-              "note": "חברת בת"
-            }
-          ],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "ווישור ביטוח",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 70,
-              "section_title": "באור 4 - מגזרי פעילות",
-              "table_title": null,
-              "note": "חברת בת"
-            }
-          ],
-          "change_events": []
-        },
-        "0:5": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:6": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:7": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:8": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:9": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:21:06.911730+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764942": {
     "company_id": "209",
@@ -6785,151 +6623,96 @@
   },
   "1764082": {
     "company_id": "212",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:21.832017+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:21:29.168392+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1761439": {
     "company_id": "216",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:22.088781+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:22:32.945748+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767186": {
     "company_id": "211",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:21.713146+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:21:23.950864+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744705": {
     "company_id": "224",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:22.518239+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 12,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:24:26.574099+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744708": {
     "company_id": "224",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:23.261449+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:22:59.202350+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744734": {
     "company_id": "224",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:23.923677+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:23:21.820634+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1748777": {
     "company_id": "224",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:24.588998+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 14,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:28:47.398259+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764359": {
     "company_id": "224",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:24.940867+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 12,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:27:38.852013+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764368": {
     "company_id": "224",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:25.529821+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:27:59.247888+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764399": {
     "company_id": "224",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-27T11:00:26.076204+00:00",
+    "at": "2026-09-28T10:28:07.071935+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 2,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
