@@ -7120,168 +7120,135 @@
   },
   "1762867": {
     "company_id": "259",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:34.927412+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:42:13.494633+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767611": {
     "company_id": "266",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:35.096271+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:42:21.187256+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1739589": {
     "company_id": "273",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:35.207196+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:42:21.917286+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1761596": {
     "company_id": "273",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:35.308071+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:42:29.201669+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766463": {
     "company_id": "278",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:35.405893+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:43:00.575226+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743963": {
     "company_id": "280",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:35.591139+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:43:05.918303+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743975": {
     "company_id": "280",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:35.805763+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:43:10.932491+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764426": {
     "company_id": "280",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:35.970729+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:44:01.824457+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764433": {
     "company_id": "280",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:36.119189+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:43:21.303318+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1740956": {
     "company_id": "281",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-27T11:00:36.308373+00:00",
+    "at": "2026-09-28T10:44:11.991888+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 3,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "other",
+          "document_type": "change_events",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "Bartek Ingredients",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 50,
+              "event_date": null,
+              "event_description": "Acquired Bartek Ingredients (~50%), a global leader in food-grade malic and fumaric acids.",
+              "page_reference": 20,
+              "section_title": "Phosphate Solutions"
+            }
+          ]
+        },
+        "0:1": {
+          "report_format": "other",
+          "document_type": "change_events",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "Bartek Ingredients",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 50,
+              "event_date": null,
+              "event_description": "Acquisition of Bartek Ingredients (~50%)",
+              "page_reference": 20,
+              "section_title": "Phosphate Solutions"
+            }
+          ]
+        }
+      },
       "attempts": {}
     }
   },
   "1740961": {
     "company_id": "281",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:36.714769+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:44:16.189106+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1761515": {
     "company_id": "281",
