@@ -416,6 +416,8 @@ def _compute_company_status(cid: str, entry: dict, merged: dict, models_by_repor
     any_success = False
     any_in_progress = False
     any_chunk_queued = False
+    partial_35 = 0   # דוחות באמצע חיתוך עיוור עם >=1 חלון שהושלם (3.5)
+    queued_35 = 0    # דוחות עם תוכנית חיתוך ו-0 חלונות שהושלמו
     snap_full_36 = False
     snap_full_35 = False
     snap_any = False
@@ -440,8 +442,10 @@ def _compute_company_status(cid: str, entry: dict, merged: dict, models_by_repor
             # מפיל אף אחד מהם ל-"error" (ראה סדר ה-if למטה).
             if (e.get("chunks") or {}).get("done"):
                 any_in_progress = True
+                partial_35 += 1
             else:
                 any_chunk_queued = True
+                queued_35 += 1
 
     # סטטוס ה-snapshot ספציפית (הוא הקובע ל-full/partial)
     if snap:
@@ -487,6 +491,8 @@ def _compute_company_status(cid: str, entry: dict, merged: dict, models_by_repor
         "total_reports": total,
         "done_reports": done,
         "done_reports_36": done_36,
+        "partial_reports_35": partial_35,
+        "queued_reports_35": queued_35,
         "max_attempts": max_att,
         "n_subsidiaries": max_subs_by_report.get(snap["report_id"], 0) if snap else 0,
     }
@@ -516,19 +522,28 @@ def _sync_status_to_d1(plan: dict, processed: dict, model: str,
     # INSERT OR REPLACE בקבוצות. D1/SQLite מגביל ל-100 משתנים (?) ל-statement
     # יחיד. יש לנו 10 עמודות לשורה, אז מקסימום 10 שורות לבאטש (100 משתנים).
     # 9 ליתר ביטחון (נצפה בפועל: 50 שורות = 500 משתנים = SQLITE_ERROR 7500).
-    BATCH_ROWS = 9
+    BATCH_ROWS = 7  # 13 עמודות * 7 = 91 < 100
+    # עמודות שנוספו אחרי יצירת הטבלה (חלוקת חלקיים ב-3.5). ALTER נכשל אם
+    # העמודה כבר קיימת - זה תקין, מתעלמים.
+    for col in ("partial_reports_35", "queued_reports_35"):
+        try:
+            _d1_query(cfg, f"ALTER TABLE extraction_status ADD COLUMN {col} INTEGER DEFAULT 0", [])
+        except Exception:
+            pass
     cols = ("company_id, company_name, status, has_snapshot_36, has_snapshot_35, "
-            "total_reports, done_reports, done_reports_36, max_attempts, n_subsidiaries, last_updated")
+            "total_reports, done_reports, done_reports_36, partial_reports_35, queued_reports_35, "
+            "max_attempts, n_subsidiaries, last_updated")
     sent = 0
     for i in range(0, len(rows), BATCH_ROWS):
         batch = rows[i:i + BATCH_ROWS]
         placeholders = []
         params = []
         for r in batch:
-            placeholders.append("(?,?,?,?,?,?,?,?,?,?,?)")
+            placeholders.append("(?,?,?,?,?,?,?,?,?,?,?,?,?)")
             params += [r["company_id"], r["company_name"], r["status"],
                        r["has_snapshot_36"], r["has_snapshot_35"],
                        r["total_reports"], r["done_reports"], r["done_reports_36"],
+                       r["partial_reports_35"], r["queued_reports_35"],
                        r["max_attempts"], r["n_subsidiaries"], now]
         sql = f"INSERT OR REPLACE INTO extraction_status ({cols}) VALUES " + ",".join(placeholders)
         try:
