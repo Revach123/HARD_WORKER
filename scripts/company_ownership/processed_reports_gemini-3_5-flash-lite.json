@@ -6519,54 +6519,11 @@
   },
   "1752060": {
     "company_id": "208",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T10:16:22.971991+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "נאוי את לוזון בע\"מ",
-              "ownership_pct": 45,
-              "parent": null,
-              "page_reference": 3,
-              "section_title": "הקמת נאוי את לוזון בע\"מ",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מימון ישיר בע\"מ",
-              "ownership_pct": 5,
-              "parent": null,
-              "page_reference": 3,
-              "section_title": "השקעה במניות",
-              "table_title": null,
-              "note": "שיעור ההחזקה עלה ל-5% ביום 16 באפריל 2026 ול-9.9% נכון למועד פרסום הדוח"
-            },
-            {
-              "name": "נאוי ליווי פרויקטים בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 17,
-              "section_title": "הארכת תוקף רישיונות מורחבים למתן אשראי",
-              "table_title": null,
-              "note": "מוזכרת כחברת בת"
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:17:29.336482+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1756020": {
     "company_id": "208",
@@ -6578,18 +6535,11 @@
   },
   "1763453": {
     "company_id": "208",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:17.584893+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 7,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:18:01.049209+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767494": {
     "company_id": "174",
@@ -6601,138 +6551,237 @@
   },
   "1763472": {
     "company_id": "208",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:19.050150+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:17:50.610523+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1741213": {
     "company_id": "209",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:17.992775+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:17:55.120030+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743839": {
     "company_id": "209",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:19.424994+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 10,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:20:08.002243+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743844": {
     "company_id": "209",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:20.140057+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:18:22.204867+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1762197": {
     "company_id": "209",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:20.093992+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:18:27.542406+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1762235": {
     "company_id": "209",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:20.292855+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:18:32.530796+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764938": {
     "company_id": "209",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-27T11:00:21.400716+00:00",
+    "at": "2026-09-28T10:20:55.369281+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 11,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "איילון קופות גמל בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "1. תיאור החברה",
+              "table_title": null,
+              "note": "חברה בת בבעלות מלאה"
+            },
+            {
+              "name": "ווישור חברה לביטוח בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "1. תיאור החברה",
+              "table_title": null,
+              "note": "נרכשה על ידי החברה"
+            },
+            {
+              "name": "איילון נאמנים סוכנות לביטוח בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "1. תיאור החברה",
+              "table_title": null,
+              "note": "סוכנות ביטוח בבעלות החברה"
+            },
+            {
+              "name": "נכונים סוכנות לביטוח בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "1. תיאור החברה",
+              "table_title": null,
+              "note": "סוכנות ביטוח בבעלות החברה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "נכונים סוכנות לביטוח בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 65,
+              "section_title": "באור :1 - כללי",
+              "table_title": null,
+              "note": "חברת בת בבעלות מלאה"
+            },
+            {
+              "name": "איילון נאמנים סוכנות לביטוח בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 65,
+              "section_title": "באור :1 - כללי",
+              "table_title": null,
+              "note": "חברת בת בבעלות מלאה"
+            },
+            {
+              "name": "איילון קופות גמל בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 66,
+              "section_title": "באור :1 - כללי (המשך)",
+              "table_title": null,
+              "note": "חברת בת בבעלות מלאה"
+            },
+            {
+              "name": "ווישור חברה לביטוח בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 70,
+              "section_title": "באור :4 - מגזרי פעילות",
+              "table_title": null,
+              "note": "חברת בת"
+            }
+          ],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "ווישור ביטוח",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 70,
+              "section_title": "באור 4 - מגזרי פעילות",
+              "table_title": null,
+              "note": "חברת בת"
+            }
+          ],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:7": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:8": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:9": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
   "1764942": {
     "company_id": "209",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:21.054108+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:20:29.802141+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767015": {
     "company_id": "211",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-27T11:00:21.553404+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-28T10:20:55.053794+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764082": {
     "company_id": "212",
