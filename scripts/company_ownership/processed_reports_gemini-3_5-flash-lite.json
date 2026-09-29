@@ -8181,148 +8181,19 @@
   },
   "1749454": {
     "company_id": "434",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T10:27:42.983399+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "ICR Israel Canada Ram Holdings Ltd.",
-              "ownership_pct": 42.5,
-              "parent": null,
-              "page_reference": 13,
-              "section_title": "ICR — Summary of estimated data in major projects in Israel (NIS thousands):",
-              "table_title": null,
-              "note": "Held by the Company on a fully diluted basis and presented under investment in associates"
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "A company that holds the Vertical City project",
-              "ownership_pct": 55.9,
-              "parent": null,
-              "page_reference": 25,
-              "section_title": "B.5. Financing Sources",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "A company that holds the Midtown Jerusalem project",
-              "ownership_pct": 73,
-              "parent": null,
-              "page_reference": 25,
-              "section_title": "B.5. Financing Sources",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Partnership that holds the land (Four and Five Project, Ramat Hasharon)",
-              "ownership_pct": 81,
-              "parent": null,
-              "page_reference": 36,
-              "section_title": "1. Four and Five, Ramat Hasharon",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Sde Dov Project (Rainbow project)",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 37,
-              "section_title": "2. The residential rights in the Rainbow project, Sde Dov complex, Tel Aviv",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "Four and Five Project, Ramat Hasharon",
-              "ownership_pct": 81,
-              "parent": null,
-              "page_reference": 36,
-              "section_title": "1. Four and Five, Ramat Hasharon",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Sde Dov Project (Rainbow project)",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 37,
-              "section_title": "2. The residential rights in the Rainbow project, Sde Dov complex, Tel Aviv",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Midtown Jerusalem Project (formerly Shaare Zedek)",
-              "ownership_pct": 73,
-              "parent": null,
-              "page_reference": 38,
-              "section_title": "3. The residential rights classified as inventory in Midtown Jerusalem",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "SHE Project (formerly the Leumi Building), Tel Aviv",
-              "ownership_pct": 81,
-              "parent": null,
-              "page_reference": 41,
-              "section_title": "4. Residential rights in the SHE project, Tel Aviv",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "VERTICAL",
-              "ownership_pct": 55.9,
-              "parent": null,
-              "page_reference": 41,
-              "section_title": "5. VERTICAL (office rights for marketing)",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:28:08.501276+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765145": {
     "company_id": "434",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:19.911775+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:28:07.987004+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744562": {
     "company_id": "434",
@@ -8334,78 +8205,43 @@
   },
   "1766574": {
     "company_id": "434",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:20.327285+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 8,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:30:17.980307+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1768228": {
     "company_id": "434",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:20.601965+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 6,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:30:00.327196+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764866": {
     "company_id": "440",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:21.934884+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:30:38.218782+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764877": {
     "company_id": "440",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:22.106079+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:31:15.988384+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745657": {
     "company_id": "442",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:22.296063+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:31:28.046691+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767201": {
     "company_id": "442",
@@ -8424,48 +8260,70 @@
   },
   "1745537": {
     "company_id": "444",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:22.482448+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:32:17.682878+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763129": {
     "company_id": "444",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-28T11:04:22.672954+00:00",
+    "at": "2026-09-29T10:32:02.239862+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 4,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "פלפלון סנטר",
+              "ownership_pct": 38,
+              "parent": null,
+              "page_reference": 12,
+              "section_title": "עדכון לסעיף 3.9.1 - מרכז בליליוס (אזור תעשיה תלפיות)",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": [
+            {
+              "company": "חברת המטרה",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 100,
+              "event_date": "2026-07-05",
+              "event_description": "התקשרות במזכר הבנות לרכישת 100% מהונה המונפק והנפרע של חברה היוזמת ומקדמת צבר פרויקטי התחדשות עירונית",
+              "page_reference": 16,
+              "section_title": "התקשרות במזכר הבנות - פרויקטי התחדשות עירונית"
+            }
+          ]
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
   "1737104": {
     "company_id": "445",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:22.737161+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:32:22.382925+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742026": {
     "company_id": "445",
@@ -9159,18 +9017,11 @@
   },
   "1768229": {
     "company_id": "434",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:21.769667+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:31:34.407596+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767441": {
     "company_id": "522",
