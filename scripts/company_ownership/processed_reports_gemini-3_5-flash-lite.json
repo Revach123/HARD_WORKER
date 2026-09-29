@@ -8955,45 +8955,11 @@
   },
   "1763181": {
     "company_id": "475",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T10:39:24.781758+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "לוויתן בונד בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "סעיף 7.21 לדוח התקופתי - מימון",
-              "table_title": null,
-              "note": "חברה בת בבעלות מלאה"
-            },
-            {
-              "name": "NewMed Energy Balkan Limited",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 18,
-              "section_title": "1. שינויים עיקריים שחלו בתקופת הדוח",
-              "table_title": null,
-              "note": "חברה בת של השותפות"
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:40:11.421389+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763188": {
     "company_id": "475",
@@ -9028,153 +8994,124 @@
   },
   "1745702": {
     "company_id": "486",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:28.436074+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:40:38.457407+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767297": {
     "company_id": "486",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:28.590839+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:41:16.322109+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744711": {
     "company_id": "491",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:28.717055+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:41:02.188098+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763816": {
     "company_id": "491",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:28.932500+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:41:22.767095+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767837": {
     "company_id": "494",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:29.103302+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:41:59.338121+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767966": {
     "company_id": "494",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:29.238876+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:41:28.975942+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743849": {
     "company_id": "501",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:29.581208+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:42:30.476556+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743859": {
     "company_id": "501",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:30.190336+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:42:25.733264+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764664": {
     "company_id": "501",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-28T11:04:30.386870+00:00",
+    "at": "2026-09-29T10:42:54.559188+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 5,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "גלובל ריטייל ק.י. בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "1. תיאור עסקי הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "סער א.ת יזמות ומסחר בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "1. תיאור עסקי הקבוצה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
   "1764688": {
     "company_id": "501",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:31.019621+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:42:54.504522+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745409": {
     "company_id": "504",
