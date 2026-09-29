@@ -9358,64 +9358,11 @@
   },
   "1743431": {
     "company_id": "566",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T10:56:41.568730+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 12,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "מנורה מבטחים סוכנויות בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 7,
-              "section_title": "1.2 תחומי פעילותה של החברה",
-              "table_title": null,
-              "note": "חברה בבעלותה ובשליטתה המלאה של החברה"
-            }
-          ],
-          "change_events": [
-            {
-              "company": "אי.אר.אן ישראל בע\"מ",
-              "event_type": "increase",
-              "ownership_pct_before": 70,
-              "ownership_pct_after": 100,
-              "event_date": "2026-01-11",
-              "event_description": "רכישת יתרת מניות אי.אר.אן (30%) כך שלאחר הרכישה מחזיקה החברה ב-100% ממניות אי.אר.אן",
-              "page_reference": 8,
-              "section_title": "2.2 רכישת יתרת מניות ERN"
-            },
-            {
-              "company": "יסודות א' ליווי פיננסי בע\"מ",
-              "event_type": "increase",
-              "ownership_pct_before": 50.1,
-              "ownership_pct_after": 60.1,
-              "event_date": "2026-02-25",
-              "event_description": "מימוש אופציה למניות של חברת יסודות א' ליווי פיננסי בע\"מ, כך שלאחר המימוש החזיקה החברה בסך של 60.1% ממניות יסודות",
-              "page_reference": 8,
-              "section_title": "2.3 רכישת מניות יסודות"
-            }
-          ]
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T11:00:05.901691+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743435": {
     "company_id": "566",
@@ -9427,93 +9374,51 @@
   },
   "1743562": {
     "company_id": "566",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:37.890989+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:57:16.875371+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1748533": {
     "company_id": "566",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:38.101568+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 13,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T11:00:21.384840+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765730": {
     "company_id": "566",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:38.980970+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T11:01:01.247704+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765736": {
     "company_id": "566",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:39.383025+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 12,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T11:07:13.658883+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765849": {
     "company_id": "566",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:40.125372+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T11:01:42.609602+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744074": {
     "company_id": "573",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:40.575753+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T11:05:36.748281+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767377": {
     "company_id": "543",
@@ -9525,18 +9430,11 @@
   },
   "1764868": {
     "company_id": "573",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:40.735080+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T11:06:44.074601+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744276": {
     "company_id": "576",
@@ -9585,18 +9483,11 @@
   },
   "1743210": {
     "company_id": "578",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:40.997641+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T11:07:20.799314+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745511": {
     "company_id": "578",
@@ -33191,18 +33082,11 @@
   },
   "1770504": {
     "company_id": "566",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:40.422074+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 12,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T11:04:31.191883+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1770478": {
     "company_id": "1762",
