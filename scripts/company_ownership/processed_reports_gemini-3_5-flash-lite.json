@@ -7670,72 +7670,11 @@
   },
   "1766319": {
     "company_id": "386",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T10:08:45.951501+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "QLI",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "1. הסברי הדירקטוריון למצב עסקי החברה ליום 30 ביוני 2026",
-              "table_title": null,
-              "note": "חברה מאוחדת המחזיקה בפרויקטים תיירותיים ביוון ובקמבודיה"
-            },
-            {
-              "name": "CR",
-              "ownership_pct": null,
-              "parent": "QLI",
-              "page_reference": 4,
-              "section_title": "1. הסברי הדירקטוריון למצב עסקי החברה ליום 30 ביוני 2026",
-              "table_title": null,
-              "note": "החברה המוחזקת ברודוס"
-            },
-            {
-              "name": "Victory Beach",
-              "ownership_pct": null,
-              "parent": "QLI",
-              "page_reference": 5,
-              "section_title": "1. הסברי הדירקטוריון למצב עסקי החברה ליום 30 ביוני 2026",
-              "table_title": null,
-              "note": "לשעבר Ekreach"
-            },
-            {
-              "name": "Rose",
-              "ownership_pct": null,
-              "parent": "(י.ז) קווינקו בע\"מ",
-              "page_reference": 5,
-              "section_title": "1. הסברי הדירקטוריון למצב עסקי החברה ליום 30 ביוני 2026",
-              "table_title": null,
-              "note": "תאגיד קמבודי"
-            },
-            {
-              "name": "וסנטה",
-              "ownership_pct": null,
-              "parent": "QLI",
-              "page_reference": 5,
-              "section_title": "1. הסברי הדירקטוריון למצב עסקי החברה ליום 30 ביוני 2026",
-              "table_title": null,
-              "note": "מוחזקת בשליטה משותפת על ידי QLI וקבוצת קלאב הוטל"
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:09:00.758895+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743498": {
     "company_id": "387",
@@ -7762,153 +7701,188 @@
   },
   "1765425": {
     "company_id": "387",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:11.333135+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 7,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:10:45.554052+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742389": {
     "company_id": "390",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:11.577157+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 6,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:10:51.850485+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742380": {
     "company_id": "390",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:12.115918+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:11:48.674953+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744011": {
     "company_id": "390",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:12.972631+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:12:07.430396+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742387": {
     "company_id": "390",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:12.726365+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:11:20.993555+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763974": {
     "company_id": "390",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:13.175404+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 6,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:13:13.433554+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763970": {
     "company_id": "390",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:13.682250+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:12:34.603051+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763971": {
     "company_id": "390",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:14.225895+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:13:02.756371+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765636": {
     "company_id": "390",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-28T11:04:14.395890+00:00",
+    "at": "2026-09-29T10:13:39.651036+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 4,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "Amot Investments Ltd.",
+              "ownership_pct": 51.17,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.1 The Group’s main income-generating property investments as of June 30, 2026:",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Carr Properties",
+              "ownership_pct": 80.75,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.1 The Group’s main income-generating property investments as of June 30, 2026:",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Brockton Everlast Inc. Limited",
+              "ownership_pct": 85.57,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.1 The Group’s main income-generating property investments as of June 30, 2026:",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Energix - Renewable Energies Ltd.",
+              "ownership_pct": 49.36,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "1.2 The Group’s renewable energy investments as of June 30, 2026:",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "Brockton Everlast",
+              "ownership_pct": 85.57,
+              "parent": null,
+              "page_reference": 19,
+              "section_title": "2.3.6 Investment in Brockton Everlast (“BE”)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Amot",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 24,
+              "section_title": "2.3.8 Dividend receipts",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Energix",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 21,
+              "section_title": "2.3.7 Investment in renewable energy through Energix",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Carr",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 18,
+              "section_title": "2.3.5.3 Information regarding residential rental projects under construction as of June 30, 2026:",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "AH Boston",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 24,
+              "section_title": "2.3.8 Dividend receipts",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
   "1745619": {
     "company_id": "393",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:14.516210+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:13:41.623864+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767713": {
     "company_id": "393",
