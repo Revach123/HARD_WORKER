@@ -9146,156 +9146,27 @@
   },
   "1766487": {
     "company_id": "522",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T10:45:52.841682+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "CONSTAB GER",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 3,
-              "section_title": "א. הסברי הדירקטוריון למצב עסקי החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ADDVANZE SWE",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 3,
-              "section_title": "א. הסברי הדירקטוריון למצב עסקי החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "DELTA KUNSTSTOFFE GER",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 3,
-              "section_title": "א. הסברי הדירקטוריון למצב עסקי החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "FINKE COLORS GER",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 3,
-              "section_title": "א. הסברי הדירקטוריון למצב עסקי החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "KAFRIT NA",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 3,
-              "section_title": "א. הסברי הדירקטוריון למצב עסקי החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "POLYFIL USA",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 3,
-              "section_title": "א. הסברי הדירקטוריון למצב עסקי החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ABSA RESIN CAN",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 3,
-              "section_title": "א. הסברי הדירקטוריון למצב עסקי החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "BADGER COLOR USA",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 3,
-              "section_title": "א. הסברי הדירקטוריון למצב עסקי החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "KAFRIT IL",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 3,
-              "section_title": "א. הסברי הדירקטוריון למצב עסקי החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "CONSTAB CN",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 3,
-              "section_title": "א. הסברי הדירקטוריון למצב עסקי החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "CONSTAB IND",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 3,
-              "section_title": "א. הסברי הדירקטוריון למצב עסקי החברה",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:46:11.339595+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766499": {
     "company_id": "522",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:32.910221+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:46:54.686486+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766503": {
     "company_id": "522",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:33.134986+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:46:51.977534+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1768229": {
     "company_id": "434",
@@ -9322,18 +9193,11 @@
   },
   "1765681": {
     "company_id": "526",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:33.327628+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:47:01.490202+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766294": {
     "company_id": "530",
@@ -9352,106 +9216,98 @@
   },
   "1744302": {
     "company_id": "531",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:33.461586+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:47:35.463898+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766963": {
     "company_id": "531",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:33.593980+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:48:08.969167+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744196": {
     "company_id": "532",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:33.737405+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:48:22.303816+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764205": {
     "company_id": "532",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:33.883224+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:48:54.412124+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745193": {
     "company_id": "536",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:34.122131+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:50:02.485043+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766947": {
     "company_id": "536",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:34.336266+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 6,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:50:53.815778+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744508": {
     "company_id": "539",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-28T11:04:34.523684+00:00",
+    "at": "2026-09-29T10:50:53.858995+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 5,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "רוטשטיין הנדסה בע\"מ",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "סעיף 8 לחלק א' לדוח התקופתי – התקשרות בהסכם ביצוע לעבודות קבלניות פרויקט כרמי הנדיב",
+              "table_title": null,
+              "note": "חברת בת בשליטה של החברה"
+            },
+            {
+              "name": "חברת בת (פרויקט פינוי-בינוי בלוד)",
+              "ownership_pct": 93,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "סעיף 14.14 לחלק א' לדוח התקופתי – עדכון בקשר לפרויקט פינוי-בינוי בלוד של החברה",
+              "table_title": null,
+              "note": "החברה מחזיקה ב-93% ממניות החברה הבת"
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
