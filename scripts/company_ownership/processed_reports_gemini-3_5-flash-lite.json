@@ -8268,54 +8268,11 @@
   },
   "1763129": {
     "company_id": "444",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T10:32:02.239862+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "פלפלון סנטר",
-              "ownership_pct": 38,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": "עדכון לסעיף 3.9.1 - מרכז בליליוס (אזור תעשיה תלפיות)",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": [
-            {
-              "company": "חברת המטרה",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 100,
-              "event_date": "2026-07-05",
-              "event_description": "התקשרות במזכר הבנות לרכישת 100% מהונה המונפק והנפרע של חברה היוזמת ומקדמת צבר פרויקטי התחדשות עירונית",
-              "page_reference": 16,
-              "section_title": "התקשרות במזכר הבנות - פרויקטי התחדשות עירונית"
-            }
-          ]
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:32:32.468009+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1737104": {
     "company_id": "445",
@@ -8327,78 +8284,43 @@
   },
   "1742026": {
     "company_id": "445",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:22.983102+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:33:27.435095+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742030": {
     "company_id": "445",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:23.419969+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:33:10.674060+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744841": {
     "company_id": "445",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:23.805679+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:33:40.828114+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1746616": {
     "company_id": "445",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:24.069591+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:34:12.282938+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1757289": {
     "company_id": "445",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:24.181223+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:33:50.206480+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763967": {
     "company_id": "445",
@@ -8417,33 +8339,19 @@
   },
   "1763968": {
     "company_id": "445",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:24.695248+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:34:25.343226+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766086": {
     "company_id": "445",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:25.098625+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:34:58.949161+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766221": {
     "company_id": "445",
@@ -8462,48 +8370,71 @@
   },
   "1743103": {
     "company_id": "454",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:25.320457+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:35:11.399140+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764699": {
     "company_id": "454",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-28T11:04:25.484221+00:00",
+    "at": "2026-09-29T10:35:31.394348+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 4,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "חברת נחמני",
+              "event_type": "increase",
+              "ownership_pct_before": null,
+              "ownership_pct_after": null,
+              "event_date": "2026-06-30",
+              "event_description": "רכישת 20.5% מהון המניות של נחמני על ידי TMNG",
+              "page_reference": 6,
+              "section_title": "1.1.6 רכישת מניות המיעוט בחברת נחמני על ידי TMNG"
+            }
+          ]
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "חברת נחמני",
+              "event_type": "increase",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 93.0,
+              "event_date": "2026-06-30",
+              "event_description": "רכישת 20.5% ממניות חברת נחמני על ידי TMNG כך שלאחר השלמת העסקה מחזיקה החברה ב-93% מההון המונפק והנפרע של נחמני",
+              "page_reference": 33,
+              "section_title": "ביאור 3 - אירועים משמעותיים בתקופת הדיווח"
+            }
+          ]
+        }
+      },
       "attempts": {}
     }
   },
   "1767236": {
     "company_id": "456",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:25.669195+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:35:32.985107+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1746759": {
     "company_id": "462",
