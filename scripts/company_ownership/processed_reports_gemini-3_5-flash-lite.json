@@ -9570,18 +9570,11 @@
   },
   "1765671": {
     "company_id": "589",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:43.056345+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T11:15:42.394268+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743771": {
     "company_id": "589",
@@ -9593,18 +9586,11 @@
   },
   "1738952": {
     "company_id": "593",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:43.127973+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T11:15:07.194636+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1741748": {
     "company_id": "593",
@@ -9626,52 +9612,152 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-28T11:04:43.572096+00:00",
+    "at": "2026-09-29T11:16:39.568399+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 11,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "בנק מסד בע\"מ",
+              "ownership_pct": 51.0,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "חברות מוחזקות עיקריות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "חברת כרטיסי אשראי לישראל בע\"מ",
+              "ownership_pct": 28.2,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "חברות מוחזקות עיקריות",
+              "table_title": null,
+              "note": "21.0% בזכויות ההצבעה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "בנק מסד בע\"מ",
+              "ownership_pct": 51.0,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "חברות מוחזקות עיקריות",
+              "table_title": null,
+              "note": "מחזיק 51.0% מהון המניות ומזכויות ההצבעה"
+            },
+            {
+              "name": "חברת כרטיסי אשראי לישראל בע\"מ",
+              "ownership_pct": 28.2,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "חברות מוחזקות עיקריות",
+              "table_title": null,
+              "note": "מחזיק 28.2% בהון ו-21.0% בזכויות ההצבעה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "בנק מסד בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 95,
+              "section_title": "באור 8 - הון, הלימות הון, מינוף ונזילות",
+              "table_title": null,
+              "note": "חברה בת משמעותית"
+            },
+            {
+              "name": "כרטיסי אשראי לישראל בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 101,
+              "section_title": "באור 9 - התחייבויות תלויות והתקשרויות מיוחדות אחרות",
+              "table_title": null,
+              "note": "חברה כלולה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:7": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
   "1760062": {
     "company_id": "593",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:43.644305+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T11:16:09.179229+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1762155": {
     "company_id": "593",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:43.712823+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T11:16:16.717208+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1762844": {
     "company_id": "593",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-28T11:04:44.460800+00:00",
+    "at": "2026-09-29T11:16:35.248682+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -9686,13 +9772,58 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-28T11:04:44.222940+00:00",
+    "at": "2026-09-29T11:16:33.401667+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 12,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "בנק מסד",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "סקירה כללית, יעדים ואסטרטגיה",
+              "table_title": null,
+              "note": "מוזכר כחלק מקבוצת הבנק"
+            },
+            {
+              "name": "מתף – מחשוב ותפעול פיננסי בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 12,
+              "section_title": "היבטי סביבה, חברה וממשל עיקריים (ESG)",
+              "table_title": null,
+              "note": "מוזכר כחברה בת"
+            },
+            {
+              "name": "החברה לנאמנות",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "סקירה כללית, יעדים ואסטרטגיה",
+              "table_title": null,
+              "note": "מוזכר כמפעילת שירותי נאמנות לחברות בנות/קבוצה"
+            },
+            {
+              "name": "החברה לניהול תיקים",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "סקירה כללית, יעדים ואסטרטגיה",
+              "table_title": null,
+              "note": "מוזכרת כחברה בת בתחומים משיקים"
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
@@ -9731,7 +9862,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-28T11:04:44.884690+00:00",
+    "at": "2026-09-29T11:16:42.680881+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -9746,7 +9877,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-28T11:04:44.692412+00:00",
+    "at": "2026-09-29T11:16:48.791953+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -9761,7 +9892,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-28T11:04:45.038943+00:00",
+    "at": "2026-09-29T11:16:45.328899+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -9821,7 +9952,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-28T11:04:45.656346+00:00",
+    "at": "2026-09-29T11:16:49.046226+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
