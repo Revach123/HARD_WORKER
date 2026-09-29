@@ -9264,67 +9264,19 @@
   },
   "1744508": {
     "company_id": "539",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T10:50:53.858995+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "רוטשטיין הנדסה בע\"מ",
-              "ownership_pct": 75,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "סעיף 8 לחלק א' לדוח התקופתי – התקשרות בהסכם ביצוע לעבודות קבלניות פרויקט כרמי הנדיב",
-              "table_title": null,
-              "note": "חברת בת בשליטה של החברה"
-            },
-            {
-              "name": "חברת בת (פרויקט פינוי-בינוי בלוד)",
-              "ownership_pct": 93,
-              "parent": null,
-              "page_reference": 7,
-              "section_title": "סעיף 14.14 לחלק א' לדוח התקופתי – עדכון בקשר לפרויקט פינוי-בינוי בלוד של החברה",
-              "table_title": null,
-              "note": "החברה מחזיקה ב-93% ממניות החברה הבת"
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:51:38.762874+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765452": {
     "company_id": "539",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:34.760086+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 6,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:53:11.716386+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767443": {
     "company_id": "522",
@@ -9343,63 +9295,35 @@
   },
   "1768192": {
     "company_id": "539",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:34.915830+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:52:08.904925+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745222": {
     "company_id": "543",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:35.098796+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:53:26.706335+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767366": {
     "company_id": "543",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:35.503615+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 6,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:55:41.706928+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745224": {
     "company_id": "543",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:35.252254+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:54:00.142326+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744411": {
     "company_id": "544",
@@ -9418,63 +9342,88 @@
   },
   "1767731": {
     "company_id": "544",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:35.892537+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 6,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:56:05.340246+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767715": {
     "company_id": "550",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:36.068605+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:56:08.045236+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743431": {
     "company_id": "566",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-28T11:04:36.364425+00:00",
+    "at": "2026-09-29T10:56:41.568730+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 12,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "מנורה מבטחים סוכנויות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "1.2 תחומי פעילותה של החברה",
+              "table_title": null,
+              "note": "חברה בבעלותה ובשליטתה המלאה של החברה"
+            }
+          ],
+          "change_events": [
+            {
+              "company": "אי.אר.אן ישראל בע\"מ",
+              "event_type": "increase",
+              "ownership_pct_before": 70,
+              "ownership_pct_after": 100,
+              "event_date": "2026-01-11",
+              "event_description": "רכישת יתרת מניות אי.אר.אן (30%) כך שלאחר הרכישה מחזיקה החברה ב-100% ממניות אי.אר.אן",
+              "page_reference": 8,
+              "section_title": "2.2 רכישת יתרת מניות ERN"
+            },
+            {
+              "company": "יסודות א' ליווי פיננסי בע\"מ",
+              "event_type": "increase",
+              "ownership_pct_before": 50.1,
+              "ownership_pct_after": 60.1,
+              "event_date": "2026-02-25",
+              "event_description": "מימוש אופציה למניות של חברת יסודות א' ליווי פיננסי בע\"מ, כך שלאחר המימוש החזיקה החברה בסך של 60.1% ממניות יסודות",
+              "page_reference": 8,
+              "section_title": "2.3 רכישת מניות יסודות"
+            }
+          ]
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
   "1743435": {
     "company_id": "566",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:37.099891+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:56:43.582257+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743562": {
     "company_id": "566",
@@ -9568,18 +9517,11 @@
   },
   "1767377": {
     "company_id": "543",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:35.653612+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:54:27.151755+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764868": {
     "company_id": "573",
