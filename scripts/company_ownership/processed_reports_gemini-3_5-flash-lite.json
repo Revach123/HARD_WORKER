@@ -7765,116 +7765,11 @@
   },
   "1765636": {
     "company_id": "390",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T10:13:39.651036+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "Amot Investments Ltd.",
-              "ownership_pct": 51.17,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "1.1 The Group’s main income-generating property investments as of June 30, 2026:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Carr Properties",
-              "ownership_pct": 80.75,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "1.1 The Group’s main income-generating property investments as of June 30, 2026:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Brockton Everlast Inc. Limited",
-              "ownership_pct": 85.57,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "1.1 The Group’s main income-generating property investments as of June 30, 2026:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Energix - Renewable Energies Ltd.",
-              "ownership_pct": 49.36,
-              "parent": null,
-              "page_reference": 5,
-              "section_title": "1.2 The Group’s renewable energy investments as of June 30, 2026:",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "Brockton Everlast",
-              "ownership_pct": 85.57,
-              "parent": null,
-              "page_reference": 19,
-              "section_title": "2.3.6 Investment in Brockton Everlast (“BE”)",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Amot",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 24,
-              "section_title": "2.3.8 Dividend receipts",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Energix",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 21,
-              "section_title": "2.3.7 Investment in renewable energy through Energix",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Carr",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 18,
-              "section_title": "2.3.5.3 Information regarding residential rental projects under construction as of June 30, 2026:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "AH Boston",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 24,
-              "section_title": "2.3.8 Dividend receipts",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:14:00.857989+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745619": {
     "company_id": "393",
@@ -7886,63 +7781,35 @@
   },
   "1767713": {
     "company_id": "393",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:14.681567+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:14:12.330944+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743724": {
     "company_id": "394",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:14.832050+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:14:45.700304+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743739": {
     "company_id": "394",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:14.957886+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:14:20.822565+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766037": {
     "company_id": "394",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:15.113326+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:15:02.468946+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766042": {
     "company_id": "394",
@@ -7976,18 +7843,11 @@
   },
   "1741274": {
     "company_id": "399",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:15.235776+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:15:18.061147+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763049": {
     "company_id": "399",
@@ -8021,63 +7881,35 @@
   },
   "1767345": {
     "company_id": "400",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:15.665821+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:16:22.678955+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745260": {
     "company_id": "400",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:15.532128+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:16:16.846464+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743796": {
     "company_id": "412",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:15.793887+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:16:48.867747+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764284": {
     "company_id": "412",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:15.920714+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:16:52.000023+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743756": {
     "company_id": "413",
