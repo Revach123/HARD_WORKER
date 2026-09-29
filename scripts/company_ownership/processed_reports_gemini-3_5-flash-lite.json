@@ -8008,63 +8008,11 @@
   },
   "1743854": {
     "company_id": "422",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T10:20:38.649754+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "ארנו א.א. ניהול נדל\"ן בע\"מ",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 2,
-              "section_title": "א. הסברי הדירקטוריון למצב עסקי התאגיד",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ארנו א.ב. ניהול נדל\"ן בע\"מ",
-              "ownership_pct": null,
-              "parent": "ארנו א.א. ניהול נדל\"ן בע\"מ",
-              "page_reference": 2,
-              "section_title": "א. הסברי הדירקטוריון למצב עסקי התאגיד",
-              "table_title": null,
-              "note": "בבעלות מלאה של ארנו א.א."
-            },
-            {
-              "name": "ארנו ניהול נדל\"ן בישראל בע\"מ",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 3,
-              "section_title": "א. הסברי הדירקטוריון למצב עסקי התאגיד",
-              "table_title": null,
-              "note": "משמשת כשותף הכללי בשותפות ארנו נדל\"ן"
-            },
-            {
-              "name": "אקורד פתרונות מימון",
-              "ownership_pct": 39,
-              "parent": null,
-              "page_reference": 3,
-              "section_title": "א. הסברי הדירקטוריון למצב עסקי התאגיד",
-              "table_title": null,
-              "note": "חלקה של החברה בזכויות בשותפות הינו 39% וחלקה בהשקעות הדרושות לרכישת תיקי חייבים הינו 50%"
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:21:28.849872+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743898": {
     "company_id": "422",
@@ -8098,122 +8046,122 @@
   },
   "1766129": {
     "company_id": "422",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:17.999409+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:20:56.743702+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766237": {
     "company_id": "422",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:18.239063+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:21:59.434413+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765623": {
     "company_id": "424",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:18.400290+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:22:10.866047+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744485": {
     "company_id": "425",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:18.562855+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 6,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:23:22.231071+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766510": {
     "company_id": "425",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:18.767709+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 7,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:23:35.876763+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1740061": {
     "company_id": "431",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:18.902760+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:24:16.436391+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767792": {
     "company_id": "433",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:19.193707+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:27:58.599736+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766854": {
     "company_id": "431",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-28T11:04:19.037383+00:00",
+    "at": "2026-09-29T10:24:27.367086+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 3,
-      "done": {},
-      "attempts": {}
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "תאגיד ייעודי",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 90,
+              "event_date": null,
+              "event_description": "רכישת גוף מטוס ללא מנועים מדגם Airbus A320-200neo באמצעות תאגיד ייעודי המוחזק בשיעור של 90% על ידי החברה",
+              "page_reference": 6,
+              "section_title": "1.10 רכישת מטוסים, פירוק וסחר בחלפים"
+            }
+          ]
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "תאגיד ייעודי (רכישת מטוס ראשון)",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 90,
+              "event_date": null,
+              "event_description": "רכישת מטוס ראשון מבין חמישה מטוסים באמצעות תאגיד ייעודי המוחזק על ידי החברה בשיעור של 90%.",
+              "page_reference": 36,
+              "section_title": "ביאור 5 - אירועים מהותיים בתקופת הדיווח ולאחריה"
+            },
+            {
+              "company": "תאגיד ייעודי (רכישת מטוס שני)",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 50,
+              "event_date": null,
+              "event_description": "רכישת מטוס שני מבין חמישה מטוסים לאחר תאריך המאזן באמצעות תאגיד ייעודי המוחזק בחלקים שווים (50%).",
+              "page_reference": 36,
+              "section_title": "ביאור 5 - אירועים מהותיים בתקופת הדיווח ולאחריה"
+            }
+          ]
+        }
+      },
+      "attempts": {
+        "0:1": 1
+      }
     }
   },
   "1742106": {
@@ -8236,13 +8184,128 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-28T11:04:19.820566+00:00",
+    "at": "2026-09-29T10:27:42.983399+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 5,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "ICR Israel Canada Ram Holdings Ltd.",
+              "ownership_pct": 42.5,
+              "parent": null,
+              "page_reference": 13,
+              "section_title": "ICR — Summary of estimated data in major projects in Israel (NIS thousands):",
+              "table_title": null,
+              "note": "Held by the Company on a fully diluted basis and presented under investment in associates"
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "A company that holds the Vertical City project",
+              "ownership_pct": 55.9,
+              "parent": null,
+              "page_reference": 25,
+              "section_title": "B.5. Financing Sources",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "A company that holds the Midtown Jerusalem project",
+              "ownership_pct": 73,
+              "parent": null,
+              "page_reference": 25,
+              "section_title": "B.5. Financing Sources",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Partnership that holds the land (Four and Five Project, Ramat Hasharon)",
+              "ownership_pct": 81,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "1. Four and Five, Ramat Hasharon",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Sde Dov Project (Rainbow project)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "2. The residential rights in the Rainbow project, Sde Dov complex, Tel Aviv",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "Four and Five Project, Ramat Hasharon",
+              "ownership_pct": 81,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "1. Four and Five, Ramat Hasharon",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Sde Dov Project (Rainbow project)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "2. The residential rights in the Rainbow project, Sde Dov complex, Tel Aviv",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Midtown Jerusalem Project (formerly Shaare Zedek)",
+              "ownership_pct": 73,
+              "parent": null,
+              "page_reference": 38,
+              "section_title": "3. The residential rights classified as inventory in Midtown Jerusalem",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "SHE Project (formerly the Leumi Building), Tel Aviv",
+              "ownership_pct": 81,
+              "parent": null,
+              "page_reference": 41,
+              "section_title": "4. Residential rights in the SHE project, Tel Aviv",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "VERTICAL",
+              "ownership_pct": 55.9,
+              "parent": null,
+              "page_reference": 41,
+              "section_title": "5. VERTICAL (office rights for marketing)",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
@@ -8263,18 +8326,11 @@
   },
   "1744562": {
     "company_id": "434",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-28T11:04:19.572458+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 7,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-29T10:26:51.240095+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766574": {
     "company_id": "434",
