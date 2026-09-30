@@ -8102,67 +8102,11 @@
   },
   "1766854": {
     "company_id": "431",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T10:24:27.367086+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [],
-          "change_events": [
-            {
-              "company": "תאגיד ייעודי",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 90,
-              "event_date": null,
-              "event_description": "רכישת גוף מטוס ללא מנועים מדגם Airbus A320-200neo באמצעות תאגיד ייעודי המוחזק בשיעור של 90% על ידי החברה",
-              "page_reference": 6,
-              "section_title": "1.10 רכישת מטוסים, פירוק וסחר בחלפים"
-            }
-          ]
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [],
-          "change_events": [
-            {
-              "company": "תאגיד ייעודי (רכישת מטוס ראשון)",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 90,
-              "event_date": null,
-              "event_description": "רכישת מטוס ראשון מבין חמישה מטוסים באמצעות תאגיד ייעודי המוחזק על ידי החברה בשיעור של 90%.",
-              "page_reference": 36,
-              "section_title": "ביאור 5 - אירועים מהותיים בתקופת הדיווח ולאחריה"
-            },
-            {
-              "company": "תאגיד ייעודי (רכישת מטוס שני)",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 50,
-              "event_date": null,
-              "event_description": "רכישת מטוס שני מבין חמישה מטוסים לאחר תאריך המאזן באמצעות תאגיד ייעודי המוחזק בחלקים שווים (50%).",
-              "page_reference": 36,
-              "section_title": "ביאור 5 - אירועים מהותיים בתקופת הדיווח ולאחריה"
-            }
-          ]
-        }
-      },
-      "attempts": {
-        "0:1": 1
-      }
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:05:39.283661+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742106": {
     "company_id": "434",
@@ -8426,501 +8370,11 @@
   },
   "1767385": {
     "company_id": "473",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T10:38:48.557918+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 7,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "לוזון רונסון",
-              "ownership_pct": 71.72,
-              "parent": null,
-              "page_reference": 3,
-              "section_title": null,
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "חברת הנכסים",
-              "ownership_pct": 100,
-              "parent": "לוזון רונסון",
-              "page_reference": 3,
-              "section_title": null,
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "חברת נווה סביון",
-              "ownership_pct": 75,
-              "parent": "חברת הנכסים",
-              "page_reference": 3,
-              "section_title": null,
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "חברת נחלת יהודה",
-              "ownership_pct": 100,
-              "parent": "חברת הנכסים",
-              "page_reference": 3,
-              "section_title": null,
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "לוזון רונסון מור",
-              "ownership_pct": 59.9,
-              "parent": "חברת הנכסים",
-              "page_reference": 3,
-              "section_title": null,
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "לוזון רונסון הצפון החדש",
-              "ownership_pct": 100,
-              "parent": "חברת הנכסים",
-              "page_reference": 3,
-              "section_title": null,
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "רונסון",
-              "ownership_pct": 100,
-              "parent": "לוזון רונסון",
-              "page_reference": 3,
-              "section_title": null,
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "רום",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": null,
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "שיראור",
-              "ownership_pct": 75,
-              "parent": "רום",
-              "page_reference": 4,
-              "section_title": null,
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אינובייט",
-              "ownership_pct": 50.1,
-              "parent": "רום",
-              "page_reference": 4,
-              "section_title": null,
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "לוזון אנרגיה",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": null,
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "דוראד",
-              "ownership_pct": 33.75,
-              "parent": "לוזון אנרגיה",
-              "page_reference": 4,
-              "section_title": null,
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "לוזון אשראי",
-              "ownership_pct": 28.84,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": null,
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "לנד פייננס שותפות מוגבלת",
-              "ownership_pct": 50.95,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "1. כללי; מגזרי פעילות ומבנה החזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "WESTBRIDGE SP. Z O.O. FINANCE",
-              "ownership_pct": 50.95,
-              "parent": "לנד פייננס שותפות מוגבלת",
-              "page_reference": 4,
-              "section_title": "1. כללי; מגזרי פעילות ומבנה החזקות",
-              "table_title": null,
-              "note": "החזקה אפקטיבית באמצעות לנד פייננס"
-            },
-            {
-              "name": "נאוי את לוזון",
-              "ownership_pct": 45,
-              "parent": "לוזון אשראי",
-              "page_reference": 20,
-              "section_title": "11. עדכון לסעיף 15 לחלק א' לדוח התקופתי - פעילות לוזון אשראי",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "לוזון רונסון",
-              "ownership_pct": 71.72,
-              "parent": null,
-              "page_reference": 21,
-              "section_title": "מידע נוסף אודות נכסי החברה והתחייבויותיה",
-              "table_title": "תמצית החזקות החברה (דוח סולו) ליום 30 ביוני 2026",
-              "note": null
-            },
-            {
-              "name": "רום",
-              "ownership_pct": 100.0,
-              "parent": null,
-              "page_reference": 21,
-              "section_title": "מידע נוסף אודות נכסי החברה והתחייבויותיה",
-              "table_title": "תמצית החזקות החברה (דוח סולו) ליום 30 ביוני 2026",
-              "note": null
-            },
-            {
-              "name": "לוזון אנרגיה",
-              "ownership_pct": 100.0,
-              "parent": null,
-              "page_reference": 21,
-              "section_title": "מידע נוסף אודות נכסי החברה והתחייבויותיה",
-              "table_title": "תמצית החזקות החברה (דוח סולו) ליום 30 ביוני 2026",
-              "note": null
-            },
-            {
-              "name": "לוזון אשראי",
-              "ownership_pct": 28.84,
-              "parent": null,
-              "page_reference": 21,
-              "section_title": "מידע נוסף אודות נכסי החברה והתחייבויותיה",
-              "table_title": "תמצית החזקות החברה (דוח סולו) ליום 30 ביוני 2026",
-              "note": null
-            },
-            {
-              "name": "דוראד",
-              "ownership_pct": 33.75,
-              "parent": "לוזון אנרגיה",
-              "page_reference": 25,
-              "section_title": "הסברי הדירקטוריון למצב עסקי התאגיד",
-              "table_title": null,
-              "note": "מוחזקת בעקיפין באמצעות לוזון אנרגיה"
-            },
-            {
-              "name": "נאוי את לוזון משכנתאות בע\"מ",
-              "ownership_pct": 45.0,
-              "parent": "לוזון אשראי",
-              "page_reference": 20,
-              "section_title": "עדכון לסעיף 15 לחלק א' לדוח התקופתי - פעילות לוזון אשראי",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "דוראד אנרגיה בע\"מ",
-              "ownership_pct": 33.75,
-              "parent": null,
-              "page_reference": 43,
-              "section_title": "באור 4 - השקעה בדוראד:",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "לוזון רונסון",
-              "ownership_pct": 71.72,
-              "parent": null,
-              "page_reference": 63,
-              "section_title": "באור 1 - כללי:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "רום",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 63,
-              "section_title": "באור 1 - כללי:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "שיראור",
-              "ownership_pct": 75,
-              "parent": "רום",
-              "page_reference": 63,
-              "section_title": "באור 1 - כללי:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אינובייט",
-              "ownership_pct": 50.1,
-              "parent": "רום",
-              "page_reference": 63,
-              "section_title": "באור 1 - כללי:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "רונסון",
-              "ownership_pct": 100,
-              "parent": "לוזון רונסון",
-              "page_reference": 63,
-              "section_title": "באור 1 - כללי:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "דוראד",
-              "ownership_pct": 33.75,
-              "parent": "לוזון אנרגיה",
-              "page_reference": 63,
-              "section_title": "באור 1 - כללי:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "לוזון אנרגיה",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 63,
-              "section_title": "באור 1 - כללי:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "לוזון אשראי",
-              "ownership_pct": 28.84,
-              "parent": null,
-              "page_reference": 63,
-              "section_title": "באור 1 - כללי:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "חברת הנכסים",
-              "ownership_pct": 100,
-              "parent": "לוזון רונסון",
-              "page_reference": 63,
-              "section_title": "באור 1 - כללי:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "חברת נווה סביון",
-              "ownership_pct": 75,
-              "parent": "חברת הנכסים",
-              "page_reference": 63,
-              "section_title": "באור 1 - כללי:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "חברת נחלת יהודה",
-              "ownership_pct": 100,
-              "parent": "חברת הנכסים",
-              "page_reference": 63,
-              "section_title": "באור 1 - כללי:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "לוזון רונסון מור ש.ד.",
-              "ownership_pct": 59.9,
-              "parent": "חברת הנכסים",
-              "page_reference": 64,
-              "section_title": "באור 1 - כללי: (המשך)",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "לוזון רונסון הצפון החדש",
-              "ownership_pct": 100,
-              "parent": "חברת הנכסים",
-              "page_reference": 64,
-              "section_title": "באור 1 - כללי: (המשך)",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:5": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "לוזון רונסון",
-              "ownership_pct": 71.72,
-              "parent": null,
-              "page_reference": 104,
-              "section_title": "הגדרות - בדוחות כספיים אלה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "רום גבס חיפוי וקירוי (1997) בע\"מ",
-              "ownership_pct": 100.0,
-              "parent": null,
-              "page_reference": 104,
-              "section_title": "הגדרות - בדוחות כספיים אלה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Ronson Development SE",
-              "ownership_pct": 100.0,
-              "parent": "לוזון רונסון",
-              "page_reference": 104,
-              "section_title": "הגדרות - בדוחות כספיים אלה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "לוזון תשתיות אנרגיה בע\"מ",
-              "ownership_pct": 100.0,
-              "parent": null,
-              "page_reference": 104,
-              "section_title": "הגדרות - בדוחות כספיים אלה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "דוראד אנרגיה בע\"מ",
-              "ownership_pct": 33.75,
-              "parent": "לוזון תשתיות אנרגיה בע\"מ",
-              "page_reference": 104,
-              "section_title": "הגדרות - בדוחות כספיים אלה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "לוזון אשראי ופיננסים בע\"מ",
-              "ownership_pct": 28.84,
-              "parent": null,
-              "page_reference": 104,
-              "section_title": "הגדרות - בדוחות כספיים אלה",
-              "table_title": null,
-              "note": "כ-27.91% בדילול מלא"
-            }
-          ],
-          "change_events": []
-        },
-        "0:6": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "לוזון רונסון",
-              "ownership_pct": 71.72,
-              "parent": null,
-              "page_reference": 104,
-              "section_title": "הגדרות - בדוחות כספיים אלה:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "רום",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 104,
-              "section_title": "הגדרות - בדוחות כספיים אלה:",
-              "table_title": null,
-              "note": "רום גבס חיפוי וקירוי (1997) בע\"מ, חברה פרטית בבעלות מלאה"
-            },
-            {
-              "name": "רונסון",
-              "ownership_pct": 100,
-              "parent": "לוזון רונסון",
-              "page_reference": 104,
-              "section_title": "הגדרות - בדוחות כספיים אלה:",
-              "table_title": null,
-              "note": "Ronson Development SE, בבעלות מלאה, במישרין ובעקיפין, של לוזון רונסון"
-            },
-            {
-              "name": "לוזון אנרגיה",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 104,
-              "section_title": "הגדרות - בדוחות כספיים אלה:",
-              "table_title": null,
-              "note": "לוזון תשתיות אנרגיה בע\"מ (לשעבר: אלומיי לוזון תשתיות אנרגיה בע\"מ), בבעלות מלאה החל מ-10 במאי 2026"
-            },
-            {
-              "name": "דוראד",
-              "ownership_pct": 33.75,
-              "parent": "לוזון אנרגיה",
-              "page_reference": 104,
-              "section_title": "הגדרות - בדוחות כספיים אלה:",
-              "table_title": null,
-              "note": "דוראד אנרגיה בע\"מ, מוחזקת בעקיפין באמצעות לוזון אנרגיה"
-            },
-            {
-              "name": "לוזון אשראי",
-              "ownership_pct": 28.84,
-              "parent": null,
-              "page_reference": 104,
-              "section_title": "הגדרות - בדוחות כספיים אלה:",
-              "table_title": null,
-              "note": "לוזון אשראי ופיננסים בע\"מ (לשעבר: טריא ישראל בע\"מ)"
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {
-        "0:4": 1
-      }
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:05:40.829901+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742090": {
     "company_id": "475",
@@ -9609,132 +9063,11 @@
   },
   "1741705": {
     "company_id": "593",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:16:39.568399+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 11,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "בנק מסד בע\"מ",
-              "ownership_pct": 51.0,
-              "parent": null,
-              "page_reference": 37,
-              "section_title": "חברות מוחזקות עיקריות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "חברת כרטיסי אשראי לישראל בע\"מ",
-              "ownership_pct": 28.2,
-              "parent": null,
-              "page_reference": 37,
-              "section_title": "חברות מוחזקות עיקריות",
-              "table_title": null,
-              "note": "21.0% בזכויות ההצבעה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "בנק מסד בע\"מ",
-              "ownership_pct": 51.0,
-              "parent": null,
-              "page_reference": 37,
-              "section_title": "חברות מוחזקות עיקריות",
-              "table_title": null,
-              "note": "מחזיק 51.0% מהון המניות ומזכויות ההצבעה"
-            },
-            {
-              "name": "חברת כרטיסי אשראי לישראל בע\"מ",
-              "ownership_pct": 28.2,
-              "parent": null,
-              "page_reference": 37,
-              "section_title": "חברות מוחזקות עיקריות",
-              "table_title": null,
-              "note": "מחזיק 28.2% בהון ו-21.0% בזכויות ההצבעה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:5": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "בנק מסד בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 95,
-              "section_title": "באור 8 - הון, הלימות הון, מינוף ונזילות",
-              "table_title": null,
-              "note": "חברה בת משמעותית"
-            },
-            {
-              "name": "כרטיסי אשראי לישראל בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 101,
-              "section_title": "באור 9 - התחייבויות תלויות והתקשרויות מיוחדות אחרות",
-              "table_title": null,
-              "note": "חברה כלולה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:6": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:7": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:06:25.791853+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1760062": {
     "company_id": "593",
@@ -9754,78 +9087,19 @@
   },
   "1762844": {
     "company_id": "593",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:16:35.248682+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:06:36.113527+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1762831": {
     "company_id": "593",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:16:33.401667+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 12,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "בנק מסד",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "סקירה כללית, יעדים ואסטרטגיה",
-              "table_title": null,
-              "note": "מוזכר כחלק מקבוצת הבנק"
-            },
-            {
-              "name": "מתף – מחשוב ותפעול פיננסי בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": "היבטי סביבה, חברה וממשל עיקריים (ESG)",
-              "table_title": null,
-              "note": "מוזכר כחברה בת"
-            },
-            {
-              "name": "החברה לנאמנות",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "סקירה כללית, יעדים ואסטרטגיה",
-              "table_title": null,
-              "note": "מוזכר כמפעילת שירותי נאמנות לחברות בנות/קבוצה"
-            },
-            {
-              "name": "החברה לניהול תיקים",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "סקירה כללית, יעדים ואסטרטגיה",
-              "table_title": null,
-              "note": "מוזכרת כחברה בת בתחומים משיקים"
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:07:50.782753+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742774": {
     "company_id": "600",
@@ -9859,48 +9133,27 @@
   },
   "1745542": {
     "company_id": "612",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:16:42.680881+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:08:43.268961+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742534": {
     "company_id": "612",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:16:48.791953+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 6,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:08:42.110652+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767074": {
     "company_id": "612",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:16:45.328899+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:09:35.234523+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765226": {
     "company_id": "612",
@@ -9919,18 +9172,11 @@
   },
   "1768185": {
     "company_id": "612",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:17:13.137884+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:09:22.624887+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742037": {
     "company_id": "613",
@@ -9949,18 +9195,11 @@
   },
   "1765717": {
     "company_id": "613",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:16:49.046226+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:10:09.079705+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742576": {
     "company_id": "621",
@@ -9982,13 +9221,79 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-29T11:16:51.849146+00:00",
+    "at": "2026-09-30T10:09:53.154059+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 3,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "יפ-אורה בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 3,
+              "section_title": "הסברי הדירקטוריון למצב עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "יפאורה - תבורי בע\"מ",
+              "ownership_pct": null,
+              "parent": "יפ-אורה בע\"מ",
+              "page_reference": 5,
+              "section_title": "הסברי הדירקטוריון למצב עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "עין גדי מים מינרליים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "הסברי הדירקטוריון למצב עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גרין פט למיחזור בע\"מ",
+              "ownership_pct": 0,
+              "parent": "יפאורה - תבורי בע\"מ",
+              "page_reference": 14,
+              "section_title": "9. אירועים מהותיים בפעילות החברה שאירעו בתקופת הדוח ולאחריו",
+              "table_title": null,
+              "note": "החזקה של 75% נמכרה ביום 23 ביוני 2026"
+            }
+          ],
+          "change_events": [
+            {
+              "company": "גרין פט למיחזור בע\"מ",
+              "event_type": "full_disposal",
+              "ownership_pct_before": 75,
+              "ownership_pct_after": 0,
+              "event_date": "2026-06-23",
+              "event_description": "מכירת מלוא מניותיה (75%) בגרין פט על ידי החברה הנכדה יפאורה-תבורי לבק-בוק",
+              "page_reference": 14,
+              "section_title": "9. אירועים מהותיים בפעילות החברה שאירעו בתקופת הדוח ולאחריו"
+            },
+            {
+              "company": "תפוגן תעשיות בע\"מ",
+              "event_type": "full_disposal",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 0,
+              "event_date": "2026-01-01",
+              "event_description": "השלמת הסכם למכירת מלוא החזקות החברה בתפוגן",
+              "page_reference": 13,
+              "section_title": "9. אירועים מהותיים בפעילות החברה שאירעו בתקופת הדוח ולאחריו"
+            }
+          ]
+        }
+      },
       "attempts": {}
     }
   },
