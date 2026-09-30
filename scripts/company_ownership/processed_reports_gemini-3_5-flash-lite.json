@@ -9391,26 +9391,11 @@
   },
   "1760116": {
     "company_id": "629",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T10:12:43.239770+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {
-        "0:0": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:12:53.319465+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1760258": {
     "company_id": "629",
@@ -9429,93 +9414,51 @@
   },
   "1744769": {
     "company_id": "634",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:17:12.104713+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:13:25.443333+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763166": {
     "company_id": "634",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:17:16.624172+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:13:26.443790+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1741401": {
     "company_id": "639",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:17:14.875637+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:14:06.172958+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1741402": {
     "company_id": "639",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:17:20.116986+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:13:41.284139+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1760891": {
     "company_id": "639",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:17:19.513242+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:14:48.889780+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1760906": {
     "company_id": "639",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:17:24.591763+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:14:27.309399+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745692": {
     "company_id": "642",
@@ -9534,31 +9477,84 @@
   },
   "1749557": {
     "company_id": "642",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:17:27.820816+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:14:47.031895+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766517": {
     "company_id": "642",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-29T11:17:35.137790+00:00",
+    "at": "2026-09-30T10:15:27.682786+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 5,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "אפריקה התחדשות",
+              "ownership_pct": 80,
+              "parent": null,
+              "page_reference": 25,
+              "section_title": "עדכון לסעיף 7.13.6 – פרויקטים תחת אפריקה התחדשות עירונית – פרטים נוספים :",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "דניה",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 43,
+              "section_title": "4.4 תוצאות כספיות על פי פעילות מגזרית של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אפריקה מגורים",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 43,
+              "section_title": "4.4 תוצאות כספיות על פי פעילות מגזרית של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "סאני תקשורת",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 43,
+              "section_title": "4.4 תוצאות כספיות על פי פעילות מגזרית של החברה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
@@ -32010,18 +32006,11 @@
   },
   "1768890": {
     "company_id": "642",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:17:34.288877+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:15:02.722445+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1769030": {
     "company_id": "1628",
@@ -32360,18 +32349,11 @@
   },
   "1769250": {
     "company_id": "642",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:17:34.645976+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:15:27.136437+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1747315": {
     "company_id": "1604",
