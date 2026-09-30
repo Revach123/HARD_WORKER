@@ -9940,130 +9940,27 @@
   },
   "1766033": {
     "company_id": "704",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T10:37:26.565174+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 11,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "ירושלים מימון והנפקות (2005) בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 15,
-              "section_title": "1.6 נושאים שונים ואירועים מהותיים בתקופת הדוח ולאחר תאריך המאזן",
-              "table_title": null,
-              "note": "חברת ההנפקות של הבנק"
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "תמר אריאל קפיטל בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 38,
-              "section_title": "2.5 חברות מוחזקות עיקריות",
-              "table_title": null,
-              "note": "החברה הבת, חברות מקבוצת הפניקס מחזיקות 19.99%"
-            },
-            {
-              "name": "מור לנגרמן קפיטל",
-              "ownership_pct": 19.9,
-              "parent": null,
-              "page_reference": 38,
-              "section_title": "2.5 חברות מוחזקות עיקריות",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "ירושלים מימון והנפקות (2005) בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 144,
-              "section_title": "3.3 סיכון נזילות ומימון",
-              "table_title": null,
-              "note": "מוזכרת כחברה בת של הבנק"
-            }
-          ],
-          "change_events": []
-        },
-        "0:5": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:38:14.028103+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744611": {
     "company_id": "715",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:18:47.780123+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:39:44.333832+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765211": {
     "company_id": "715",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:18:46.799245+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 7,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:39:46.458466+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765978": {
     "company_id": "715",
@@ -10082,48 +9979,27 @@
   },
   "1766054": {
     "company_id": "716",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:18:49.169897+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:40:00.592416+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745275": {
     "company_id": "719",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:18:50.949411+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:40:30.112565+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1735454": {
     "company_id": "720",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:18:49.674802+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:40:05.260182+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1739261": {
     "company_id": "720",
@@ -10142,63 +10018,35 @@
   },
   "1739265": {
     "company_id": "720",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:18:50.846465+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:40:30.729669+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1739271": {
     "company_id": "720",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:18:54.867599+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:40:55.315098+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1739273": {
     "company_id": "720",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:18:54.759023+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:40:54.167728+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1755119": {
     "company_id": "720",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:18:55.960437+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:40:59.225935+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1761162": {
     "company_id": "720",
