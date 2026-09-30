@@ -10247,99 +10247,11 @@
   },
   "1742450": {
     "company_id": "746",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T10:50:44.886458+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 7,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "Corações Três ( JV)",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 11,
-              "section_title": "הגדרות",
-              "table_title": null,
-              "note": "מיזם משותף בברזיל המוחזק ב-50% על ידי הקבוצה ו-50% על ידי São Miguel Holding e Investimentos S.A."
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "Três Corações (פעילות הקפה בברזיל)",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 29,
-              "section_title": "תוצאות הפעילות העסקית",
-              "table_title": null,
-              "note": "חברה בשליטה משותפת"
-            },
-            {
-              "name": "שטראוס פריטו-ליי בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 29,
-              "section_title": "תוצאות הפעילות העסקית",
-              "table_title": null,
-              "note": "חברה בשליטה משותפת"
-            }
-          ],
-          "change_events": [
-            {
-              "company": "General Mills Brazil Alimentos Ltda. (Yoki Distribuidora de Alimentos Ltda.)",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 100,
-              "event_date": null,
-              "event_description": "התקשרות בהסכם לרכישת מלוא הזכויות בחברת General Mills Brazil Alimentos Ltda. (Yoki)",
-              "page_reference": 21,
-              "section_title": "תמצית התפתחויות עיקריות בתקופת הדוח ולאחריה"
-            }
-          ]
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "Três Corações Alimentos S.A.",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 49,
-              "section_title": "18.2.1 מכירות תחום פעילות הקפה הבינלאומי לפי איזורים גיאוגרפיים מרכזיים:",
-              "table_title": "מכירות תחום הקפה הבינלאומי לפי איזורים גיאוגרפיים מרכזיים",
-              "note": null
-            },
-            {
-              "name": "HSW",
-              "ownership_pct": 49,
-              "parent": "שטראוס מים בע\"מ",
-              "page_reference": 51,
-              "section_title": "18.3 תחום פעילות שטראוס מים",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:51:45.470058+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742443": {
     "company_id": "746",
@@ -10351,18 +10263,11 @@
   },
   "1759386": {
     "company_id": "746",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:19:39.085611+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:50:52.794758+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1762866": {
     "company_id": "746",
@@ -10412,63 +10317,35 @@
   },
   "1767737": {
     "company_id": "749",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:19:42.735646+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:51:49.101991+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764171": {
     "company_id": "753",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:19:44.078176+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:52:11.041980+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745662": {
     "company_id": "755",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:19:47.414051+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:52:45.458847+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767586": {
     "company_id": "755",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:19:47.700073+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:53:20.244481+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742798": {
     "company_id": "756",
@@ -10487,61 +10364,111 @@
   },
   "1743599": {
     "company_id": "756",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:19:53.672586+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:53:53.612426+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763094": {
     "company_id": "756",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:20:00.000421+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 6,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:54:36.760861+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1740280": {
     "company_id": "759",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:20:01.378449+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:54:36.505402+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1740284": {
     "company_id": "759",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-29T11:20:10.221101+00:00",
+    "at": "2026-09-30T10:55:10.156675+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 3,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "other",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "חברת מת\"ם",
+              "ownership_pct": 50.1,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "פרויקטים בייזום סולו מורחב",
+              "table_title": null,
+              "note": "מופיע בהערת שוליים"
+            },
+            {
+              "name": "חברת גב-ים נגב",
+              "ownership_pct": 73.25,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "פרויקטים בייזום סולו מורחב",
+              "table_title": null,
+              "note": "מופיע בהערת שוליים"
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "חברת מת\"ם",
+              "ownership_pct": 50.1,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "פרויקטים בייזום סולו מורחב**",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "חברת גב-ים נגב",
+              "ownership_pct": 73.25,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "פרויקטים בייזום סולו מורחב**",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "חברת רמת אילן",
+              "ownership_pct": 83.33,
+              "parent": null,
+              "page_reference": 34,
+              "section_title": "נתונים כספיים (במיליוני ש\"ח)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "TRUE TEL AVIV",
+              "ownership_pct": 65,
+              "parent": null,
+              "page_reference": 24,
+              "section_title": "פרויקט בהקמה ושיווק TRUE TEL AVIV תל-אביב-דפנה-מתחם 505",
+              "table_title": null,
+              "note": "חלק גב-ים בפרויקט"
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
@@ -10562,18 +10489,11 @@
   },
   "1759964": {
     "company_id": "759",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:20:13.482105+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:55:14.758374+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742751": {
     "company_id": "763",
