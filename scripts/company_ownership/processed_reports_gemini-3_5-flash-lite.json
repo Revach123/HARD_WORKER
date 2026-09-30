@@ -10388,89 +10388,11 @@
   },
   "1740284": {
     "company_id": "759",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T10:55:10.156675+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {
-        "0:0": {
-          "report_format": "other",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "חברת מת\"ם",
-              "ownership_pct": 50.1,
-              "parent": null,
-              "page_reference": 20,
-              "section_title": "פרויקטים בייזום סולו מורחב",
-              "table_title": null,
-              "note": "מופיע בהערת שוליים"
-            },
-            {
-              "name": "חברת גב-ים נגב",
-              "ownership_pct": 73.25,
-              "parent": null,
-              "page_reference": 20,
-              "section_title": "פרויקטים בייזום סולו מורחב",
-              "table_title": null,
-              "note": "מופיע בהערת שוליים"
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "חברת מת\"ם",
-              "ownership_pct": 50.1,
-              "parent": null,
-              "page_reference": 20,
-              "section_title": "פרויקטים בייזום סולו מורחב**",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "חברת גב-ים נגב",
-              "ownership_pct": 73.25,
-              "parent": null,
-              "page_reference": 20,
-              "section_title": "פרויקטים בייזום סולו מורחב**",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "חברת רמת אילן",
-              "ownership_pct": 83.33,
-              "parent": null,
-              "page_reference": 34,
-              "section_title": "נתונים כספיים (במיליוני ש\"ח)",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "TRUE TEL AVIV",
-              "ownership_pct": 65,
-              "parent": null,
-              "page_reference": 24,
-              "section_title": "פרויקט בהקמה ושיווק TRUE TEL AVIV תל-אביב-דפנה-מתחם 505",
-              "table_title": null,
-              "note": "חלק גב-ים בפרויקט"
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:55:21.085920+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1759961": {
     "company_id": "759",
@@ -10497,138 +10419,380 @@
   },
   "1742751": {
     "company_id": "763",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:20:10.554992+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 10,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:57:13.289971+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764601": {
     "company_id": "763",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:20:10.886929+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 11,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:57:34.466737+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1741491": {
     "company_id": "765",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:20:10.991604+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:57:20.933923+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1762108": {
     "company_id": "765",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:20:11.747347+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:57:43.800477+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1737181": {
     "company_id": "767",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:20:13.232939+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:57:39.881913+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1737182": {
     "company_id": "767",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:20:14.799020+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:58:08.487458+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744461": {
     "company_id": "767",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-29T11:20:13.863484+00:00",
+    "at": "2026-09-30T11:00:35.028917+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 13,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "אל על הנוסע המתמיד בע\"מ",
+              "ownership_pct": 25,
+              "parent": null,
+              "page_reference": 10,
+              "section_title": "1.4.8 הסכם אסטרטגי עם חברת ישראכרט להנפקת כרטיסי אשראי ממותגים FLY CARD",
+              "table_title": null,
+              "note": "מוחזקת במישרין ובעקיפין"
+            }
+          ],
+          "change_events": [
+            {
+              "company": "פידליס פרטנרס אחזקות בע\"מ",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": 0,
+              "ownership_pct_after": 30,
+              "event_date": "2026-02-01",
+              "event_description": "רכישת 30% ממניות פידליס על ידי הפניקס השקעות מתקדמות",
+              "page_reference": 9,
+              "section_title": "1.4.4 רכישת מניות פידליס"
+            },
+            {
+              "company": "חברת קרנות הסל בפולין",
+              "event_type": "increase",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 50.36,
+              "event_date": "2026-04-01",
+              "event_description": "אישור דירקטוריון לרכישת מניות והשקעה המביאה לעליית החברה לשליטה בשיעור של 50.36%",
+              "page_reference": 10,
+              "section_title": "1.4.7 הגדלת ההחזקה בחברת קרנות הסל בפולין"
+            },
+            {
+              "company": "ביי מי טכנולוגיות בע\"מ",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": 0,
+              "ownership_pct_after": 64.85,
+              "event_date": "2026-05-01",
+              "event_description": "השלמת רכישת מניות המהוות 64.85% מהון המניות של BUYME על ידי הפניקס שירותים",
+              "page_reference": 11,
+              "section_title": "1.4.10 רכישת BUYME"
+            }
+          ]
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "מועדון אל על (אל על הנוסע המתמיד בע\"מ)",
+              "ownership_pct": 5.1,
+              "parent": "הפניקס ביטוח",
+              "page_reference": 19,
+              "section_title": "2.1.8 עדכונים מהותיים במהלך שנת 2026 ועד מועד פרסום הדוח",
+              "table_title": null,
+              "note": "שיעור של כ-5.1% מהון המניות המונפק והנפרע"
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "הפניקס פנסיה וגמל בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 44,
+              "section_title": "5.6.1 פנסיה וגמל",
+              "table_title": null,
+              "note": "החברה מחזיקה במישרין נכון למועד הדוח"
+            },
+            {
+              "name": "הפניקס חח\"י קופה מרכזית לקצבה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 44,
+              "section_title": "5.6.1 פנסיה וגמל",
+              "table_title": null,
+              "note": "החברה מחזיקה במישרין נכון למועד הדוח"
+            }
+          ],
+          "change_events": [
+            {
+              "company": "פאי קריפטו בע\"מ",
+              "event_type": "full_disposal",
+              "ownership_pct_before": 47.17,
+              "ownership_pct_after": 0,
+              "event_date": "2026-05-01",
+              "event_description": "נחתם הסכם למכירת כל אחזקותיה של החברה בחברת פאי קריפטו בשיעור של כ-47.17%",
+              "page_reference": 45,
+              "section_title": "5.6.2 ניהול השקעות"
+            },
+            {
+              "company": "מועדון אל על הנוסע המתמיד בע\"מ",
+              "event_type": "other",
+              "ownership_pct_before": 5.1,
+              "ownership_pct_after": 0,
+              "event_date": "2026-02-01",
+              "event_description": "חלוקת דיבידנד בעין של מניות הפניקס ביטוח באל על הנוסע המתמיד בשיעור של כ-5.1%",
+              "page_reference": 50,
+              "section_title": "דיבידנד המחולק מפעילות ביטוח"
+            }
+          ]
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "הפניקס ביטוח",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 52,
+              "section_title": "5.7.2 פירוט דירוג החברות בקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "הפניקס פנסיה וגמל",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 52,
+              "section_title": "5.7.2 פירוט דירוג החברות בקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "הפניקס בית השקעות",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 52,
+              "section_title": "5.7.2 פירוט דירוג החברות בקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "הפניקס גמא",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 52,
+              "section_title": "5.7.2 פירוט דירוג החברות בקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "הפניקס סוכנויות",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 52,
+              "section_title": "5.7.2 פירוט דירוג החברות בקבוצה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "הפניקס חברה לביטוח בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 76,
+              "section_title": "באור 1 - כללי",
+              "table_title": null,
+              "note": "חברה בת בשליטה מלאה של החברה"
+            },
+            {
+              "name": "הפניקס קפיטל פרטנרס בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 76,
+              "section_title": "באור 1 - כללי",
+              "table_title": null,
+              "note": "חברת בת בשליטה מלאה של החברה"
+            },
+            {
+              "name": "הפניקס בית השקעות בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 76,
+              "section_title": "באור 1 - כללי",
+              "table_title": null,
+              "note": "חברת בת בשליטה של החברה"
+            },
+            {
+              "name": "הפניקס גמא בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 76,
+              "section_title": "באור 1 - כללי",
+              "table_title": null,
+              "note": "חברת בת בשליטה מלאה של החברה"
+            },
+            {
+              "name": "הפניקס סוכנויות ביטוח 1989 בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 76,
+              "section_title": "באור 1 - כללי",
+              "table_title": null,
+              "note": "חברת בת בשליטה של החברה"
+            },
+            {
+              "name": "הפניקס פנסיה וגמל בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 76,
+              "section_title": "באור 1 - כללי",
+              "table_title": null,
+              "note": "חברת בת בשליטה מלאה של החברה"
+            },
+            {
+              "name": "הפניקס שירותים 2025 בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 76,
+              "section_title": "באור 1 - כללי",
+              "table_title": null,
+              "note": "חברת בת בשליטה מלאה של החברה"
+            },
+            {
+              "name": "הפניקס השקעות מתקדמות בע\"מ",
+              "ownership_pct": null,
+              "parent": "הפניקס קפיטל פרטנרס בע\"מ",
+              "page_reference": 76,
+              "section_title": "באור 1 - כללי",
+              "table_title": null,
+              "note": "חברת בת בשליטה מלאה של הפניקס קפיטל פרטנרס"
+            },
+            {
+              "name": "אורן מזרח סוכנות לביטוח בע\"מ",
+              "ownership_pct": null,
+              "parent": "הפניקס סוכנויות ביטוח 1989 בע\"מ",
+              "page_reference": 76,
+              "section_title": "באור 1 - כללי",
+              "table_title": null,
+              "note": "חברת בת בשליטה של הפניקס סוכנויות"
+            },
+            {
+              "name": "הפניקס גיוסי הון (2009) בע\"מ",
+              "ownership_pct": null,
+              "parent": "הפניקס חברה לביטוח בע\"מ",
+              "page_reference": 76,
+              "section_title": "באור 1 - כללי",
+              "table_title": null,
+              "note": "חברת בת בשליטה מלאה של הפניקס ביטוח"
+            },
+            {
+              "name": "הפניקס משכנתאות (זהב) בע\"מ",
+              "ownership_pct": null,
+              "parent": "הפניקס חברה לביטוח בע\"מ",
+              "page_reference": 76,
+              "section_title": "באור 1 - כללי",
+              "table_title": null,
+              "note": "חברת בת בשליטה מלאה של הפניקס ביטוח"
+            },
+            {
+              "name": "וואן פארט בע\"מ (One Part)",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 77,
+              "section_title": "באור 1 - כללי (המשך)",
+              "table_title": null,
+              "note": "מוחזקת בחלקים שווים על ידי החברה ושותפים לפניקס שירותים"
+            },
+            {
+              "name": "הפניקס ניהול עושר בע\"מ",
+              "ownership_pct": null,
+              "parent": "הפניקס קפיטל פרטנרס בע\"מ",
+              "page_reference": 77,
+              "section_title": "באור 1 - כללי (המשך)",
+              "table_title": null,
+              "note": "חברה בבעלותה המלאה של הפניקס קפיטל פרטנרס"
+            }
+          ],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
   "1744463": {
     "company_id": "767",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:20:14.047140+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:59:05.414385+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744464": {
     "company_id": "767",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:20:18.369855+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T11:00:34.854731+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1747733": {
     "company_id": "767",
@@ -10647,18 +10811,11 @@
   },
   "1758960": {
     "company_id": "767",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:20:15.459365+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T11:00:45.730980+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1758961": {
     "company_id": "767",
