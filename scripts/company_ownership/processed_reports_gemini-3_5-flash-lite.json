@@ -9830,130 +9830,19 @@
   },
   "1742063": {
     "company_id": "695",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T10:31:50.356220+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 12,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "מזרחי טפחות חברה להנפקות בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 17,
-              "section_title": "גיוס כתבי התחייבות, איגרות חוב ושטרי הון מורכבים",
-              "table_title": null,
-              "note": "חברה בת בבעלות מלאה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "בנק יהב לעובדי המדינה בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 82,
-              "section_title": "חברות מוחזקות עיקריות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "טפחות סוכנות לביטוח (1989) בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 82,
-              "section_title": "חברות מוחזקות עיקריות",
-              "table_title": null,
-              "note": "בבעלות מלאה של הבנק"
-            },
-            {
-              "name": "מזרחי טפחות ליסינג בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 82,
-              "section_title": "חברות מוחזקות עיקריות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מזרחי טפחות INVEST בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 82,
-              "section_title": "השקעות במניות",
-              "table_title": null,
-              "note": "חברת השקעות בבעלות מלאה של הבנק"
-            }
-          ],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:5": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:6": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:32:33.546339+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742079": {
     "company_id": "695",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:18:33.561408+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:32:09.978184+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1762270": {
     "company_id": "695",
@@ -9972,18 +9861,11 @@
   },
   "1763705": {
     "company_id": "695",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:18:34.257967+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 13,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:34:40.262914+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767303": {
     "company_id": "694",
@@ -10002,121 +9884,154 @@
   },
   "1763721": {
     "company_id": "695",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:18:34.765796+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:32:41.474354+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1741410": {
     "company_id": "699",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:18:40.564012+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:35:05.276067+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1741400": {
     "company_id": "699",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:18:34.960738+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 16,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:34:59.432422+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1741999": {
     "company_id": "699",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:18:38.918323+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:35:18.666349+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1760886": {
     "company_id": "699",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:18:42.032940+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:36:17.517692+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1760902": {
     "company_id": "699",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:18:40.734822+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:35:45.515145+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745481": {
     "company_id": "704",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:18:44.935583+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 10,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:37:33.573294+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766033": {
     "company_id": "704",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-29T11:18:46.457965+00:00",
+    "at": "2026-09-30T10:37:26.565174+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 11,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "ירושלים מימון והנפקות (2005) בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 15,
+              "section_title": "1.6 נושאים שונים ואירועים מהותיים בתקופת הדוח ולאחר תאריך המאזן",
+              "table_title": null,
+              "note": "חברת ההנפקות של הבנק"
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "תמר אריאל קפיטל בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 38,
+              "section_title": "2.5 חברות מוחזקות עיקריות",
+              "table_title": null,
+              "note": "החברה הבת, חברות מקבוצת הפניקס מחזיקות 19.99%"
+            },
+            {
+              "name": "מור לנגרמן קפיטל",
+              "ownership_pct": 19.9,
+              "parent": null,
+              "page_reference": 38,
+              "section_title": "2.5 חברות מוחזקות עיקריות",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "ירושלים מימון והנפקות (2005) בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 144,
+              "section_title": "3.3 סיכון נזילות ומימון",
+              "table_title": null,
+              "note": "מוזכרת כחברה בת של הבנק"
+            }
+          ],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
