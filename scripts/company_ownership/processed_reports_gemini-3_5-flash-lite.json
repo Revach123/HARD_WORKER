@@ -10175,64 +10175,163 @@
   },
   "1766768": {
     "company_id": "730",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-09-30T10:47:16.359285+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1742189": {
+    "company_id": "731",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-09-30T10:46:25.911792+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1760893": {
+    "company_id": "731",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-09-30T10:46:31.204719+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1764338": {
+    "company_id": "731",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-09-30T10:47:28.770283+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1743239": {
+    "company_id": "739",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-09-30T10:50:16.352673+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1765719": {
+    "company_id": "739",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-09-30T10:48:38.319756+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1765722": {
+    "company_id": "739",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-09-30T10:49:34.719203+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1762233": {
+    "company_id": "745",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-09-30T10:49:53.204717+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1739211": {
+    "company_id": "746",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-09-30T10:49:58.035368+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1742450": {
+    "company_id": "746",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-30T10:45:26.335723+00:00",
+    "at": "2026-09-30T10:50:44.886458+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
-      "total": 8,
+      "total": 7,
       "done": {
         "0:0": {
           "report_format": "israeli_periodic",
           "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
+          "as_of_date": null,
           "subsidiaries": [
             {
-              "name": "ביטוח ישיר - השקעות פיננסיות בע\"מ",
-              "ownership_pct": 87.87,
+              "name": "Corações Três ( JV)",
+              "ownership_pct": 50,
               "parent": null,
-              "page_reference": 2,
-              "section_title": "1. מבנה הקבוצה ותחומי הפעילות",
+              "page_reference": 11,
+              "section_title": "הגדרות",
               "table_title": null,
-              "note": null
-            },
+              "note": "מיזם משותף בברזיל המוחזק ב-50% על ידי הקבוצה ו-50% על ידי São Miguel Holding e Investimentos S.A."
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
             {
-              "name": "איי.די.איי. חברה לביטוח בע\"מ",
-              "ownership_pct": 40.59,
-              "parent": "ביטוח ישיר - השקעות פיננסיות בע\"מ",
-              "page_reference": 3,
-              "section_title": "1. מבנה הקבוצה ותחומי הפעילות",
-              "table_title": "להלן תמצית מאזן החברה (במיליוני ש\"ח):",
-              "note": null
-            },
-            {
-              "name": "מימון ישיר מקבוצת ישיר (2006) בע\"מ",
-              "ownership_pct": 44.11,
-              "parent": "ביטוח ישיר - השקעות פיננסיות בע\"מ",
-              "page_reference": 3,
-              "section_title": "1. מבנה הקבוצה ותחומי הפעילות",
-              "table_title": "להלן תמצית מאזן החברה (במיליוני ש\"ח):",
-              "note": null
-            },
-            {
-              "name": "אדגר השקעות ופיתוח בע\"מ",
-              "ownership_pct": 57.87,
+              "name": "Três Corações (פעילות הקפה בברזיל)",
+              "ownership_pct": 50,
               "parent": null,
-              "page_reference": 3,
-              "section_title": "1. מבנה הקבוצה ותחומי הפעילות",
-              "table_title": "להלן תמצית מאזן החברה (במיליוני ש\"ח):",
+              "page_reference": 29,
+              "section_title": "תוצאות הפעילות העסקית",
+              "table_title": null,
+              "note": "חברה בשליטה משותפת"
+            },
+            {
+              "name": "שטראוס פריטו-ליי בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 29,
+              "section_title": "תוצאות הפעילות העסקית",
+              "table_title": null,
+              "note": "חברה בשליטה משותפת"
+            }
+          ],
+          "change_events": [
+            {
+              "company": "General Mills Brazil Alimentos Ltda. (Yoki Distribuidora de Alimentos Ltda.)",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 100,
+              "event_date": null,
+              "event_description": "התקשרות בהסכם לרכישת מלוא הזכויות בחברת General Mills Brazil Alimentos Ltda. (Yoki)",
+              "page_reference": 21,
+              "section_title": "תמצית התפתחויות עיקריות בתקופת הדוח ולאחריה"
+            }
+          ]
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "Três Corações Alimentos S.A.",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 49,
+              "section_title": "18.2.1 מכירות תחום פעילות הקפה הבינלאומי לפי איזורים גיאוגרפיים מרכזיים:",
+              "table_title": "מכירות תחום הקפה הבינלאומי לפי איזורים גיאוגרפיים מרכזיים",
               "note": null
             },
             {
-              "name": "נימה שפע ישראל בע\"מ",
-              "ownership_pct": 98.49,
-              "parent": "ביטוח ישיר - השקעות פיננסיות בע\"מ",
-              "page_reference": 3,
-              "section_title": "1. מבנה הקבוצה ותחומי הפעילות",
-              "table_title": "להלן תמצית מאזן החברה (במיליוני ש\"ח):",
+              "name": "HSW",
+              "ownership_pct": 49,
+              "parent": "שטראוס מים בע\"מ",
+              "page_reference": 51,
+              "section_title": "18.3 תחום פעילות שטראוס מים",
+              "table_title": null,
               "note": null
             }
           ],
@@ -10242,155 +10341,13 @@
       "attempts": {}
     }
   },
-  "1742189": {
-    "company_id": "731",
-    "status": "partial",
-    "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:19:09.829685+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1760893": {
-    "company_id": "731",
-    "status": "partial",
-    "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:19:10.094794+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1764338": {
-    "company_id": "731",
-    "status": "partial",
-    "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:19:12.205184+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1743239": {
-    "company_id": "739",
-    "status": "partial",
-    "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:19:22.084138+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1765719": {
-    "company_id": "739",
-    "status": "partial",
-    "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:19:13.456790+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1765722": {
-    "company_id": "739",
-    "status": "partial",
-    "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:19:38.291961+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1762233": {
-    "company_id": "745",
-    "status": "partial",
-    "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:19:23.475275+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1739211": {
-    "company_id": "746",
-    "status": "partial",
-    "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:19:24.067142+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1742450": {
-    "company_id": "746",
-    "status": "partial",
-    "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:19:37.226161+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 7,
-      "done": {},
-      "attempts": {}
-    }
-  },
   "1742443": {
     "company_id": "746",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:20:02.967703+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:50:46.761369+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1759386": {
     "company_id": "746",
