@@ -1259,5 +1259,21 @@
     "kind": "snapshot",
     "attempts": 1,
     "at": "2026-09-29T08:19:55.006241+00:00"
+  },
+  "1729742": {
+    "company_id": "1625",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-30T08:09:46.080954+00:00",
+    "model": "gemini-3.6-flash"
+  },
+  "1731480": {
+    "company_id": "149",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-09-30T08:18:40.150530+00:00",
+    "model": "gemini-3.6-flash"
   }
 }
