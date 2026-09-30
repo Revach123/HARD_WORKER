@@ -9712,132 +9712,27 @@
   },
   "1741737": {
     "company_id": "691",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T10:25:49.746298+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 13,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "דיסקונט בנקורפ אינק.",
-              "ownership_pct": 85,
-              "parent": null,
-              "page_reference": 43,
-              "section_title": "דיסקונט בנקורפ אינק.",
-              "table_title": null,
-              "note": "הבנק החזיק כ-85% מזכויות ההון וכ-95.1% מזכויות הצבעה"
-            },
-            {
-              "name": "בנק מרכנתיל דיסקונט בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 44,
-              "section_title": "בנק מרכנתיל דיסקונט בע\"מ",
-              "table_title": null,
-              "note": "חברה בת בבעלות ובשליטה מלאים של הבנק"
-            },
-            {
-              "name": "חברת כרטיסי אשראי לישראל בע\"מ",
-              "ownership_pct": 71.8,
-              "parent": null,
-              "page_reference": 45,
-              "section_title": "חברת כרטיסי אשראי לישראל בע\"מ",
-              "table_title": null,
-              "note": "הבנק החזיק 71.8% מזכויות ההון ו-79.0% מזכויות הצבעה"
-            },
-            {
-              "name": "דיסקונט קפיטל בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 46,
-              "section_title": "דיסקונט קפיטל בע\"מ",
-              "table_title": null,
-              "note": "חברה בת בבעלות ובשליטה מלאים של הבנק"
-            },
-            {
-              "name": "פייבוקס",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 46,
-              "section_title": "פייבוקס",
-              "table_title": null,
-              "note": "הבנק מחזיק 100% מזכויות ההון וההצבעה"
-            },
-            {
-              "name": "Greenlend",
-              "ownership_pct": 70,
-              "parent": null,
-              "page_reference": 46,
-              "section_title": "Greenlend",
-              "table_title": null,
-              "note": "70% מהון המניות הרגילות מוחזקים על ידי הבנק"
-            }
-          ],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:28:36.928067+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1741790": {
     "company_id": "691",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:18:09.546808+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:26:15.966984+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1758531": {
     "company_id": "691",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:18:10.642045+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:26:20.611006+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1760063": {
     "company_id": "691",
@@ -9856,93 +9751,51 @@
   },
   "1762822": {
     "company_id": "691",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:18:11.565537+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:26:28.016320+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763111": {
     "company_id": "691",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:18:17.735444+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 14,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:29:25.080451+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763235": {
     "company_id": "691",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:18:13.290801+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:28:49.998997+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745452": {
     "company_id": "694",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:18:19.962190+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:30:11.254648+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745455": {
     "company_id": "694",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:18:29.340056+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:31:57.073989+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1747736": {
     "company_id": "694",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:18:21.217434+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:30:23.199127+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767719": {
     "company_id": "675",
@@ -9969,31 +9822,121 @@
   },
   "1740293": {
     "company_id": "695",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-29T11:18:22.058063+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-09-30T10:30:27.603672+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742063": {
     "company_id": "695",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-29T11:18:33.781820+00:00",
+    "at": "2026-09-30T10:31:50.356220+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 12,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "מזרחי טפחות חברה להנפקות בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 17,
+              "section_title": "גיוס כתבי התחייבות, איגרות חוב ושטרי הון מורכבים",
+              "table_title": null,
+              "note": "חברה בת בבעלות מלאה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "בנק יהב לעובדי המדינה בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 82,
+              "section_title": "חברות מוחזקות עיקריות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "טפחות סוכנות לביטוח (1989) בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 82,
+              "section_title": "חברות מוחזקות עיקריות",
+              "table_title": null,
+              "note": "בבעלות מלאה של הבנק"
+            },
+            {
+              "name": "מזרחי טפחות ליסינג בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 82,
+              "section_title": "חברות מוחזקות עיקריות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מזרחי טפחות INVEST בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 82,
+              "section_title": "השקעות במניות",
+              "table_title": null,
+              "note": "חברת השקעות בבעלות מלאה של הבנק"
+            }
+          ],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
