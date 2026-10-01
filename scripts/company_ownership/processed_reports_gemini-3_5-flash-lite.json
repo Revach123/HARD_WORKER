@@ -9218,104 +9218,11 @@
   },
   "1767112": {
     "company_id": "621",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T10:10:23.352617+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "יפ-אורה בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 3,
-              "section_title": "הסברי הדירקטוריון למצב עסקי התאגיד",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "יפאורה - תבורי בע\"מ",
-              "ownership_pct": null,
-              "parent": "יפ-אורה בע\"מ",
-              "page_reference": 5,
-              "section_title": "הסברי הדירקטוריון למצב עסקי התאגיד",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "עין גדי מים מינרליים בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 5,
-              "section_title": "הסברי הדירקטוריון למצב עסקי התאגיד",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "גרין פט למיחזור בע\"מ",
-              "ownership_pct": 0,
-              "parent": "יפאורה - תבורי בע\"מ",
-              "page_reference": 14,
-              "section_title": "9. אירועים מהותיים בפעילות החברה שאירעו בתקופת הדוח ולאחריו",
-              "table_title": null,
-              "note": "החזקה של 75% נמכרה ביום 23 ביוני 2026"
-            }
-          ],
-          "change_events": [
-            {
-              "company": "גרין פט למיחזור בע\"מ",
-              "event_type": "full_disposal",
-              "ownership_pct_before": 75,
-              "ownership_pct_after": 0,
-              "event_date": "2026-06-23",
-              "event_description": "מכירת מלוא מניותיה (75%) בגרין פט על ידי החברה הנכדה יפאורה-תבורי לבק-בוק",
-              "page_reference": 14,
-              "section_title": "9. אירועים מהותיים בפעילות החברה שאירעו בתקופת הדוח ולאחריו"
-            },
-            {
-              "company": "תפוגן תעשיות בע\"מ",
-              "event_type": "full_disposal",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 0,
-              "event_date": "2026-01-01",
-              "event_description": "השלמת הסכם למכירת מלוא החזקות החברה בתפוגן",
-              "page_reference": 13,
-              "section_title": "9. אירועים מהותיים בפעילות החברה שאירעו בתקופת הדוח ולאחריו"
-            }
-          ]
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [],
-          "change_events": [
-            {
-              "company": "גרין פט למחזור בע\"מ",
-              "event_type": "full_disposal",
-              "ownership_pct_before": 75,
-              "ownership_pct_after": 0,
-              "event_date": "2026-06-23",
-              "event_description": "מכירת מלוא מניותיה של יפאורה-תבורי (75%) בחברת גרין פט למחזור בע\"מ לבק-בוק מיחזור חכם בע\"מ",
-              "page_reference": 35,
-              "section_title": "באור 6 - אירועים מהותיים בתקופת הדיווח ולאחר תקופת הדיווח"
-            }
-          ]
-        }
-      },
-      "attempts": {
-        "0:1": 1
-      }
-    }
+    "attempts": 1,
+    "at": "2026-10-01T10:05:49.836270+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1741701": {
     "company_id": "625",
@@ -10546,398 +10453,11 @@
   },
   "1768622": {
     "company_id": "767",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T11:07:17.834593+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 16,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "Phoenix Services 2025 Ltd.",
-              "ownership_pct": null,
-              "parent": "Phoenix Financial Ltd.",
-              "page_reference": 7,
-              "section_title": "1.2 Areas of activity",
-              "table_title": null,
-              "note": "Wholly owned subsidiary"
-            },
-            {
-              "name": "Phoenix Insurance Company Ltd.",
-              "ownership_pct": null,
-              "parent": "Phoenix Financial Ltd.",
-              "page_reference": 7,
-              "section_title": "1.2 Areas of activity",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Phoenix Pension & Provident Ltd.",
-              "ownership_pct": null,
-              "parent": "Phoenix Financial Ltd.",
-              "page_reference": 7,
-              "section_title": "1.2 Areas of activity",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Phoenix Investment House Ltd.",
-              "ownership_pct": null,
-              "parent": "Phoenix Financial Ltd.",
-              "page_reference": 7,
-              "section_title": "1.2 Areas of activity",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Phoenix Capital Partners Ltd.",
-              "ownership_pct": null,
-              "parent": "Phoenix Financial Ltd.",
-              "page_reference": 7,
-              "section_title": "1.2 Areas of activity",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Phoenix Brokers Ltd.",
-              "ownership_pct": null,
-              "parent": "Phoenix Financial Ltd.",
-              "page_reference": 7,
-              "section_title": "1.2 Areas of activity",
-              "table_title": null,
-              "note": "Formerly Phoenix Insurance Agencies 1989 Ltd."
-            },
-            {
-              "name": "Phoenix Gama Ltd.",
-              "ownership_pct": null,
-              "parent": "Phoenix Financial Ltd.",
-              "page_reference": 7,
-              "section_title": "1.2 Areas of activity",
-              "table_title": null,
-              "note": "Wholly owned reporting corporation"
-            },
-            {
-              "name": "Oren Mizrach Insurance Agency Ltd.",
-              "ownership_pct": null,
-              "parent": "Phoenix Brokers Ltd.",
-              "page_reference": 11,
-              "section_title": "2.3.1 Brokers & Advisors",
-              "table_title": null,
-              "note": "Indirect wholly owned subsidiary"
-            },
-            {
-              "name": "Wobi Insurance Agency Ltd.",
-              "ownership_pct": null,
-              "parent": "Oren Mizrach Insurance Agency Ltd.",
-              "page_reference": 11,
-              "section_title": "2.3.1 Brokers & Advisors",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "BUYME Technologies Ltd.",
-              "ownership_pct": 64.85,
-              "parent": "Phoenix Services 2025 Ltd.",
-              "page_reference": 12,
-              "section_title": "2.3.2 Phoenix Services – BUYME acquisition",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": [
-            {
-              "company": "BUYME Technologies Ltd.",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 64.85,
-              "event_date": null,
-              "event_description": "Acquisition of shares representing 64.85% of BUYME's issued and paid-up share capital completed in May 2026.",
-              "page_reference": 12,
-              "section_title": "2.3.2 Phoenix Services – BUYME acquisition"
-            }
-          ]
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "Phoenix Insurance",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 20,
-              "section_title": "4.2 Ratings of group companies",
-              "table_title": "Ratings of group companies",
-              "note": null
-            },
-            {
-              "name": "Phoenix Pension & Provident",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 20,
-              "section_title": "4.2 Ratings of group companies",
-              "table_title": "Ratings of group companies",
-              "note": null
-            },
-            {
-              "name": "Phoenix Investment House",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 20,
-              "section_title": "4.2 Ratings of group companies",
-              "table_title": "Ratings of group companies",
-              "note": null
-            },
-            {
-              "name": "Phoenix Gama",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 20,
-              "section_title": "4.2 Ratings of group companies",
-              "table_title": "Ratings of group companies",
-              "note": null
-            },
-            {
-              "name": "Phoenix Brokers",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 20,
-              "section_title": "4.2 Ratings of group companies",
-              "table_title": "Ratings of group companies",
-              "note": null
-            },
-            {
-              "name": "Phoenix Capital Raising (2009) Ltd.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 22,
-              "section_title": "4.3 Debt raising by the group’s subsidiaries",
-              "table_title": "Debt raising by the group’s subsidiaries",
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "Phoenix Pension & Provident Ltd.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 61,
-              "section_title": "5.6.1 Retirement",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Phoenix IEC Central Pension Fund Ltd.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 61,
-              "section_title": "5.6.1 Retirement",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Phoenix Investment House",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 64,
-              "section_title": "5.6.2 Wealth & Investments",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Phoenix Capital Partners",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 64,
-              "section_title": "5.6.2 Wealth & Investments",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Fidelis Partners Holdings Ltd.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 64,
-              "section_title": "5.6.2 Wealth & Investments",
-              "table_title": null,
-              "note": "Phase A acquisition completed during the Reporting Period"
-            }
-          ],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:5": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:6": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "Phoenix Insurance Company Ltd.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 108,
-              "section_title": "NOTE 1 - GENERAL",
-              "table_title": null,
-              "note": "Wholly-owned subsidiary"
-            },
-            {
-              "name": "Phoenix Capital Partners Ltd.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 108,
-              "section_title": "NOTE 1 - GENERAL",
-              "table_title": null,
-              "note": "Wholly-owned subsidiary"
-            },
-            {
-              "name": "Phoenix Investment House Ltd.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 108,
-              "section_title": "NOTE 1 - GENERAL",
-              "table_title": null,
-              "note": "Subsidiary controlled by the Company"
-            },
-            {
-              "name": "Phoenix Gama Ltd.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 108,
-              "section_title": "NOTE 1 - GENERAL",
-              "table_title": null,
-              "note": "Wholly-owned subsidiary"
-            },
-            {
-              "name": "Phoenix Brokers Ltd.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 108,
-              "section_title": "NOTE 1 - GENERAL",
-              "table_title": null,
-              "note": "Subsidiary under the Company's control"
-            },
-            {
-              "name": "Phoenix Pension & Provident Ltd.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 108,
-              "section_title": "NOTE 1 - GENERAL",
-              "table_title": null,
-              "note": "Wholly-owned subsidiary"
-            },
-            {
-              "name": "Phoenix Services 2025 Ltd.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 108,
-              "section_title": "NOTE 1 - GENERAL",
-              "table_title": null,
-              "note": "Wholly-controlled subsidiary"
-            },
-            {
-              "name": "BUYME Technologies Ltd.",
-              "ownership_pct": 60.7,
-              "parent": "Phoenix Services 2025 Ltd.",
-              "page_reference": 109,
-              "section_title": "NOTE 1 - GENERAL",
-              "table_title": null,
-              "note": "Acquired in May 2026"
-            },
-            {
-              "name": "Phoenix Advanced Investments Ltd.",
-              "ownership_pct": null,
-              "parent": "Phoenix Capital Partners Ltd.",
-              "page_reference": 109,
-              "section_title": "NOTE 1 - GENERAL",
-              "table_title": null,
-              "note": "Wholly-owned subsidiary of Phoenix Capital Partners"
-            },
-            {
-              "name": "Oren Mizrach Insurance Agency Ltd.",
-              "ownership_pct": null,
-              "parent": "Phoenix Brokers Ltd.",
-              "page_reference": 109,
-              "section_title": "NOTE 1 - GENERAL",
-              "table_title": null,
-              "note": "Subsidiary in which Phoenix Brokers is a controlling shareholder"
-            },
-            {
-              "name": "Phoenix Capital Raising (2009) Ltd.",
-              "ownership_pct": null,
-              "parent": "Phoenix Insurance Company Ltd.",
-              "page_reference": 109,
-              "section_title": "NOTE 1 - GENERAL",
-              "table_title": null,
-              "note": "Wholly-owned subsidiary of Phoenix Insurance"
-            },
-            {
-              "name": "Phoenix Mortgages (Gold) Ltd.",
-              "ownership_pct": null,
-              "parent": "Phoenix Insurance Company Ltd.",
-              "page_reference": 109,
-              "section_title": "NOTE 1 - GENERAL",
-              "table_title": null,
-              "note": "Wholly-owned subsidiary of Phoenix Insurance"
-            },
-            {
-              "name": "Phoenix Wealth Management Ltd.",
-              "ownership_pct": null,
-              "parent": "Phoenix Capital Partners Ltd.",
-              "page_reference": 110,
-              "section_title": "NOTE 1 - GENERAL",
-              "table_title": null,
-              "note": "Wholly-owned subsidiary founded in February 2026"
-            },
-            {
-              "name": "EL AL Frequent Flyer Ltd.",
-              "ownership_pct": 25.0,
-              "parent": null,
-              "page_reference": 119,
-              "section_title": "NOTE 3 - OPERATING SEGMENTS",
-              "table_title": null,
-              "note": "Associate"
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T10:07:16.203234+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767382": {
     "company_id": "769",
@@ -10972,152 +10492,43 @@
   },
   "1767328": {
     "company_id": "770",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T11:07:18.542610+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "סינאל",
-              "ownership_pct": 68.94,
-              "parent": null,
-              "page_reference": 35,
-              "section_title": "באור 3 - צירופי עסקים",
-              "table_title": null,
-              "note": "נרכשה בספטמבר 2025, הסכם פשרה נחתם במרץ 2026"
-            },
-            {
-              "name": "סטארלייט טכנולוגיות בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 37,
-              "section_title": "באור 3 - צירופי עסקים (המשך)",
-              "table_title": null,
-              "note": "הושלמה הרכישה ב-3 בפברואר 2026"
-            },
-            {
-              "name": "נקסטוייב טכנולוגיות בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 37,
-              "section_title": "באור 3 - צירופי עסקים (המשך)",
-              "table_title": null,
-              "note": "הושלמה הרכישה ב-3 בפברואר 2026"
-            }
-          ],
-          "change_events": [
-            {
-              "company": "סטארלייט טכנולוגיות בע\"מ",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": 0,
-              "ownership_pct_after": 100,
-              "event_date": "2026-02-03",
-              "event_description": "השלמת רכישת מלוא מניות החברה",
-              "page_reference": 37,
-              "section_title": "באור 3 - צירופי עסקים (המשך)"
-            },
-            {
-              "company": "נקסטוייב טכנולוגיות בע\"מ",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": 0,
-              "ownership_pct_after": 100,
-              "event_date": "2026-02-03",
-              "event_description": "השלמת רכישת מלוא מניות החברה",
-              "page_reference": 37,
-              "section_title": "באור 3 - צירופי עסקים (המשך)"
-            },
-            {
-              "company": "סינאל",
-              "event_type": "other",
-              "ownership_pct_before": 68.94,
-              "ownership_pct_after": 68.94,
-              "event_date": "2026-03-23",
-              "event_description": "חתימת הסכם פשרה ושינוי בתנאי תשלום התמורה הדחית/מותנית",
-              "page_reference": 35,
-              "section_title": "באור 3 - צירופי עסקים"
-            }
-          ]
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T10:06:16.184889+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767340": {
     "company_id": "770",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T11:07:28.650455+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T10:06:41.108479+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744961": {
     "company_id": "771",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T11:07:18.775278+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T10:07:44.107010+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763641": {
     "company_id": "771",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T11:07:19.099974+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T10:07:57.491155+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744476": {
     "company_id": "777",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T11:07:19.369910+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T10:08:53.120029+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767607": {
     "company_id": "719",
@@ -11136,61 +10547,62 @@
   },
   "1744487": {
     "company_id": "777",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T11:07:25.105431+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T10:08:46.980799+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766686": {
     "company_id": "777",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T11:07:25.636295+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T10:09:39.397677+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766690": {
     "company_id": "777",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T11:07:25.919149+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T10:09:12.779891+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766604": {
     "company_id": "796",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-30T11:07:33.628652+00:00",
+    "at": "2026-10-01T10:09:39.294134+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 4,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "other",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
