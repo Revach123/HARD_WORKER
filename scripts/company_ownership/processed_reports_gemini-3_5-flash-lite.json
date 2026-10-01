@@ -10858,82 +10858,19 @@
   },
   "1764374": {
     "company_id": "1025",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-01T10:19:14.551095+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [],
-          "change_events": [
-            {
-              "company": "יאן תחבורה בע\"מ",
-              "event_type": "increase",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 90,
-              "event_date": "2026-01-15",
-              "event_description": "רכישת 40% נוספים ממניות חברת יאן תחבורה בע\"מ, כך שלאחר ההגדלה מחזיקה החברה ב-90%",
-              "page_reference": 4,
-              "section_title": "1. שינויים מהותיים בפעילות החברה, בעסקיה ובנתוני הדוחות הכספיים שלה לתקופה"
-            },
-            {
-              "company": "שניב נדל\"ן בע\"מ",
-              "event_type": "decrease",
-              "ownership_pct_before": null,
-              "ownership_pct_after": null,
-              "event_date": "2026-03-30",
-              "event_description": "מכירת 51% ממניות חברת הבת שניב נדל\"ן לחברת מניבים קרן הריט החדשה בע\"מ",
-              "page_reference": 4,
-              "section_title": "1. שינויים מהותיים בפעילות החברה, בעסקיה ובנתוני הדוחות הכספיים שלה לתקופה"
-            },
-            {
-              "company": "אופל אריזות בע\"מ",
-              "event_type": "increase",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 100,
-              "event_date": "2026-06-02",
-              "event_description": "רכישת יתרת האחזקות (49%) כך שלאחר השלמת העסקה תחזיק החברה ב-100% מהון המניות בדילול מלא",
-              "page_reference": 5,
-              "section_title": "1. שינויים מהותיים בפעילות החברה, בעסקיה ובנתוני הדוחות הכספיים שלה לתקופה"
-            },
-            {
-              "company": "גורי ע.ע.ע בע\"מ",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 60,
-              "event_date": "2026-06-30",
-              "event_description": "הסכם השקעה לרכישת 40% ממניות חברת גורי ע.ע.ע בע\"מ, כך שלאחר השלמת העסקה תחזיק החברה ב-60%",
-              "page_reference": 5,
-              "section_title": "1. שינויים מהותיים בפעילות החברה, בעסקיה ובנתוני הדוחות הכספיים שלה לתקופה"
-            }
-          ]
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T10:21:45.721103+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745599": {
     "company_id": "1028",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T11:07:44.094181+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T10:20:12.311839+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764389": {
     "company_id": "1025",
@@ -10945,63 +10882,35 @@
   },
   "1746009": {
     "company_id": "1028",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T11:07:45.344609+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T10:20:29.101785+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765751": {
     "company_id": "1028",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T11:07:44.401403+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T10:25:22.454353+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745279": {
     "company_id": "1032",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T11:07:44.714833+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T10:22:22.932485+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766401": {
     "company_id": "1032",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T11:07:45.033889+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T10:23:09.896962+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745646": {
     "company_id": "1033",
@@ -11020,18 +10929,11 @@
   },
   "1765756": {
     "company_id": "1033",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T11:07:45.219179+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T10:23:35.715422+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745716": {
     "company_id": "1036",
@@ -11050,31 +10952,374 @@
   },
   "1743815": {
     "company_id": "1039",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T11:07:46.011734+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T10:26:54.000252+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764263": {
     "company_id": "1039",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-30T11:07:46.272440+00:00",
+    "at": "2026-10-01T10:26:46.220942+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 6,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "המושבה אפרת",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "נספח א' – פרוט אודות פרויקטים בהם מעורבת החברה ליום 30 ביוני 2026",
+              "table_title": "פירוט תמציתי אודות פרויקטים בהם מעורבת החברה ליום 30 ביוני 2026",
+              "note": null
+            },
+            {
+              "name": "JOY בן שמן",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "נספח א' – פרוט אודות פרויקטים בהם מעורבת החברה ליום 30 ביוני 2026",
+              "table_title": "פירוט תמציתי אודות פרויקטים בהם מעורבת החברה ליום 30 ביוני 2026",
+              "note": null
+            },
+            {
+              "name": "O ביאליק",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "נספח א' – פרוט אודות פרויקטים בהם מעורבת החברה ליום 30 ביוני 2026",
+              "table_title": "פירוט תמציתי אודות פרויקטים בהם מעורבת החברה ליום 30 ביוני 2026",
+              "note": null
+            },
+            {
+              "name": "נופי אילן",
+              "ownership_pct": 33,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "נספח א' – פרוט אודות פרויקטים בהם מעורבת החברה ליום 30 ביוני 2026",
+              "table_title": "פירוט תמציתי אודות פרויקטים בהם מעורבת החברה ליום 30 ביוני 2026",
+              "note": null
+            },
+            {
+              "name": "שחמון הצעירה",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "נספח א' – פרוט אודות פרויקטים בהם מעורבת החברה ליום 30 ביוני 2026",
+              "table_title": "פירוט תמציתי אודות פרויקטים בהם מעורבת החברה ליום 30 ביוני 2026",
+              "note": null
+            },
+            {
+              "name": "פארק צמרת שלב א'",
+              "ownership_pct": 67,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "נספח א' – פרוט אודות פרויקטים בהם מעורבת החברה ליום 30 ביוני 2026",
+              "table_title": "פירוט תמציתי אודות פרויקטים בהם מעורבת החברה ליום 30 ביוני 2026",
+              "note": null
+            },
+            {
+              "name": "השדה שלב א'",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "נספח א' – פרוט אודות פרויקטים בהם מעורבת החברה ליום 30 ביוני 2026",
+              "table_title": "פירוט תמציתי אודות פרויקטים בהם מעורבת החברה ליום 30 ביוני 2026",
+              "note": null
+            },
+            {
+              "name": "הרצוג 3",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "נספח א' – פרוט אודות פרויקטים בהם מעורבת החברה ליום 30 ביוני 2026",
+              "table_title": "פירוט תמציתי אודות פרויקטים בהם מעורבת החברה ליום 30 ביוני 2026",
+              "note": null
+            },
+            {
+              "name": "התמרים",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "נספח א' – פרוט אודות פרויקטים בהם מעורבת החברה ליום 30 ביוני 2026",
+              "table_title": "פירוט תמציתי אודות פרויקטים בהם מעורבת החברה ליום 30 ביוני 2026",
+              "note": null
+            },
+            {
+              "name": "פארק צמרת שלב ב'",
+              "ownership_pct": 67,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "נספח א' – פרוט אודות פרויקטים בהם מעורבת החברה ליום 30 ביוני 2026",
+              "table_title": "פירוט תמציתי אודות פרויקטים בהם מעורבת החברה ליום 30 ביוני 2026",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "המושבה אפרת",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "פירוט תמציתי אודות פרויקטים בהם מעורבת החברה ליום 30 ביוני 2026",
+              "table_title": "פרויקטים בהקמה",
+              "note": "מוחזק באמצעות חברת בעל התניא אפרת בע\"מ"
+            },
+            {
+              "name": "JOY בן שמן",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "פירוט תמציתי אודות פרויקטים בהם מעורבת החברה ליום 30 ביוני 2026",
+              "table_title": "פרויקטים בהקמה",
+              "note": "מוחזק באמצעות חברת בעל התניא בן שמן בע\"מ"
+            },
+            {
+              "name": "O ביאליק",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "פירוט תמציתי אודות פרויקטים בהם מעורבת החברה ליום 30 ביוני 2026",
+              "table_title": "פרויקטים בהקמה",
+              "note": "מוחזק באמצעות חברת בעל התניא מכרזים בע\"מ"
+            },
+            {
+              "name": "נופי אילן (אבו גוש)",
+              "ownership_pct": 33,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "פירוט תמציתי אודות פרויקטים בהם מעורבת החברה ליום 30 ביוני 2026",
+              "table_title": "פרויקטים בהקמה",
+              "note": null
+            },
+            {
+              "name": "שחמון הצעירה (אילת)",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "פירוט תמציתי אודות פרויקטים בהם מעורבת החברה ליום 30 ביוני 2026",
+              "table_title": "פרויקטים בהקמה",
+              "note": null
+            },
+            {
+              "name": "פארק צמרת שלב א' (עפולה)",
+              "ownership_pct": 67,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "פירוט תמציתי אודות פרויקטים בהם מעורבת החברה ליום 30 ביוני 2026",
+              "table_title": "פרויקטים בהקמה",
+              "note": null
+            },
+            {
+              "name": "השדה שלב א' (אילת)",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "פירוט תמציתי אודות פרויקטים בהם מעורבת החברה ליום 30 ביוני 2026",
+              "table_title": "פרויקטים בהקמה",
+              "note": null
+            },
+            {
+              "name": "התמרים (אילת)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "פירוט תמציתי אודות פרויקטים בהם מעורבת החברה ליום 30 ביוני 2026",
+              "table_title": "פרויקטים בתכנון",
+              "note": null
+            },
+            {
+              "name": "פארק צמרת שלב ב' (עפולה)",
+              "ownership_pct": 67,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "פירוט תמציתי אודות פרויקטים בהם מעורבת החברה ליום 30 ביוני 2026",
+              "table_title": "פרויקטים בתכנון",
+              "note": null
+            },
+            {
+              "name": "השדה שלב ב' (אילת)",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 21,
+              "section_title": "פירוט תמציתי אודות פרויקטים בהם מעורבת החברה ליום 30 ביוני 2026",
+              "table_title": "פרויקטים בתכנון",
+              "note": null
+            },
+            {
+              "name": "לב השרון (קדימה צורן)",
+              "ownership_pct": 67,
+              "parent": null,
+              "page_reference": 21,
+              "section_title": "פירוט תמציתי אודות פרויקטים בהם מעורבת החברה ליום 30 ביוני 2026",
+              "table_title": "פרויקטים בתכנון",
+              "note": null
+            },
+            {
+              "name": "רמת אילן (אבו גוש)",
+              "ownership_pct": 33,
+              "parent": null,
+              "page_reference": 21,
+              "section_title": "פירוט תמציתי אודות פרויקטים בהם מעורבת החברה ליום 30 ביוני 2026",
+              "table_title": "פרויקטים בתכנון",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "פרויקט פארק צמרת (עפולה)",
+              "ownership_pct": 67,
+              "parent": null,
+              "page_reference": 35,
+              "section_title": "2.7 שלב א' של פרויקט פארק צמרת (עפולה) – פרויקט בהקמה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "בעל התניא אילת בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 38,
+              "section_title": "2.8 פרויקט מתחם השדה (אילת) (המוחזק באמצעות חברת בעל התניא אילת בע\"מ) - פרויקט בהקמה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פרויקט הרצוג 3 (בת - ים)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 41,
+              "section_title": "2.9 פרויקט הרצוג 3 (בת - ים) – פרויקט בהקמה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "בעל התניא אילת בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 57,
+              "section_title": "באור :3 - השקעה בחברות כלולות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "בעל התניא מכרזים בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 57,
+              "section_title": "באור :3 - השקעה בחברות כלולות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "בראשית הירוקה בע\"מ",
+              "ownership_pct": 31,
+              "parent": null,
+              "page_reference": 57,
+              "section_title": "באור :3 - השקעה בחברות כלולות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "בעל התניא בן שמן בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 57,
+              "section_title": "באור :3 - השקעה בחברות כלולות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "נופי אילן הירוקה בע\"מ",
+              "ownership_pct": 30,
+              "parent": null,
+              "page_reference": 57,
+              "section_title": "באור :3 - השקעה בחברות כלולות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "רמת אילן הירוקה בע\"מ",
+              "ownership_pct": 33,
+              "parent": null,
+              "page_reference": 57,
+              "section_title": "באור :3 - השקעה בחברות כלולות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "בעל התניא לב השרון בע\"מ",
+              "ownership_pct": 67,
+              "parent": null,
+              "page_reference": 57,
+              "section_title": "באור :3 - השקעה בחברות כלולות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אחדות ישראל- ההסתדרות אשקלון פינוי בינוי בע\"מ",
+              "ownership_pct": 66.67,
+              "parent": null,
+              "page_reference": 57,
+              "section_title": "באור :3 - השקעה בחברות כלולות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אחדות מתחם דוד הא\"י חיפה בע\"מ",
+              "ownership_pct": 80,
+              "parent": null,
+              "page_reference": 57,
+              "section_title": "באור :3 - השקעה בחברות כלולות",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": [
+            {
+              "company": "מיזם נדל\"ן פינוי בינוי הציונות ירושלים בע\"מ",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 73,
+              "event_date": "2026-02-03",
+              "event_description": "אישור אסיפת בעלי המניות התקשרות בהסכם לרכישת 73% מהונה המונפק והנפרע של החברה (בדילול מלא). נכון למועד הדוח טרם התקיימו התנאים המתלים.",
+              "page_reference": 62,
+              "section_title": "באור :4 - אירועים משמעותיים בתקופת הדיווח"
+            }
+          ]
+        }
+      },
       "attempts": {}
     }
   },
@@ -11088,18 +11333,11 @@
   },
   "1766935": {
     "company_id": "1036",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T11:07:45.859364+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T10:24:32.888423+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743469": {
     "company_id": "1040",
@@ -31073,18 +31311,11 @@
   },
   "1769525": {
     "company_id": "1036",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T11:07:45.671981+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T10:25:37.659771+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1769457": {
     "company_id": "1272",
