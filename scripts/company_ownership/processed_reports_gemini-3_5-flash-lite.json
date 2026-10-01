@@ -12221,26 +12221,11 @@
   },
   "1741707": {
     "company_id": "1221",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-01T11:05:09.919272+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T11:05:23.104991+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1741711": {
     "company_id": "1221",
@@ -12306,18 +12291,11 @@
   },
   "1743904": {
     "company_id": "1232",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T11:09:11.738142+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T11:05:44.147830+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766205": {
     "company_id": "1232",
@@ -12336,63 +12314,168 @@
   },
   "1766208": {
     "company_id": "1232",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T11:09:17.064966+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T11:05:38.140390+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745277": {
     "company_id": "1238",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T11:09:13.433107+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T11:05:43.798852+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745631": {
     "company_id": "1238",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-30T11:09:16.726299+00:00",
+    "at": "2026-10-01T11:07:39.274129+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 4,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "ישראייר תעופה ותיירות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 3,
+              "section_title": "1. כללי - תיאור תמציתי של עסקי החברה ועדכונים לפרק א' לדוח התקופתי",
+              "table_title": null,
+              "note": "חברת הבת בבעלות מלאה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "ישראייר תעופה",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 19,
+              "section_title": "א. תחום התיירות והתעופה הביðלאומית והפðים ארצית",
+              "table_title": null,
+              "note": "חברת בת מרכזית"
+            },
+            {
+              "name": "שביל הזהב תיירות בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 18,
+              "section_title": "2.4 תוצאות מגזרי פעילות",
+              "table_title": null,
+              "note": "מטופלת לפי שיטת השווי המאזני במסגרת קבוצת מיליון"
+            },
+            {
+              "name": "קרוז תור בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 18,
+              "section_title": "2.4 תוצאות מגזרי פעילות",
+              "table_title": null,
+              "note": "מטופלת לפי שיטת השווי המאזני במסגרת קבוצת מיליון"
+            }
+          ],
+          "change_events": [
+            {
+              "company": "חברת המועדון של רמי לוי בע\"מ",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 10,
+              "event_date": "2026-05-28",
+              "event_description": "התקשרות ישראייר תעופה בהסכם לרכישת 10% מהון המניות הרגילות של חברת המועדון",
+              "page_reference": 27,
+              "section_title": "חלק ד' - הוראות גילוי בקשר עם הדיווח הפיððסי של התאגיד"
+            }
+          ]
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "ישראייר תעופה ותיירות בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 44,
+              "section_title": "באור :1 - כללי",
+              "table_title": null,
+              "note": "חברת בת מרכזית"
+            },
+            {
+              "name": "PTC",
+              "ownership_pct": 51,
+              "parent": "ישראייר תעופה ותיירות בע\"מ",
+              "page_reference": 52,
+              "section_title": "באור :5 - אירועים מהותיים בתקופת הדוח ולאחריה",
+              "table_title": null,
+              "note": "הכרזה וחלוקת דיבידנד"
+            },
+            {
+              "name": "מיליום",
+              "ownership_pct": 51,
+              "parent": "ישראייר תעופה ותיירות בע\"מ",
+              "page_reference": 52,
+              "section_title": "באור :5 - אירועים מהותיים בתקופת הדוח ולאחריה",
+              "table_title": null,
+              "note": "הכרזה וחלוקת דיבידנד"
+            },
+            {
+              "name": "דרכים",
+              "ownership_pct": 51,
+              "parent": "ישראייר תעופה ותיירות בע\"מ",
+              "page_reference": 52,
+              "section_title": "באור :5 - אירועים מהותיים בתקופת הדוח ולאחריה",
+              "table_title": null,
+              "note": "הכרזה וחלוקת דיבידנד בשותפות"
+            },
+            {
+              "name": "סקי דיל",
+              "ownership_pct": 51,
+              "parent": "ישראייר תעופה ותיירות בע\"מ",
+              "page_reference": 52,
+              "section_title": "באור :5 - אירועים מהותיים בתקופת הדוח ולאחריה",
+              "table_title": null,
+              "note": "הכרזה וחלוקת דיבידנד"
+            },
+            {
+              "name": "חברת המועדון",
+              "ownership_pct": 10,
+              "parent": "ישראייר תעופה ותיירות בע\"מ",
+              "page_reference": 52,
+              "section_title": "באור :5 - אירועים מהותיים בתקופת הדוח ולאחריה",
+              "table_title": null,
+              "note": "רכישת 10% מהון המניות הרגילות"
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
   "1745634": {
     "company_id": "1238",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T11:09:16.973989+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T11:06:10.327165+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1761528": {
     "company_id": "1238",
@@ -12411,33 +12494,19 @@
   },
   "1762218": {
     "company_id": "1238",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T11:09:17.862923+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T11:06:14.990021+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764328": {
     "company_id": "1238",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T11:09:17.316698+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T11:06:26.515345+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764319": {
     "company_id": "1238",
@@ -12456,33 +12525,19 @@
   },
   "1743567": {
     "company_id": "1240",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T11:09:17.620956+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T11:06:48.328370+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765929": {
     "company_id": "1240",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T11:09:17.821903+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T11:07:11.329504+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742318": {
     "company_id": "1247",
@@ -12501,18 +12556,11 @@
   },
   "1765940": {
     "company_id": "1240",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T11:09:18.197497+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T11:07:40.843783+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763058": {
     "company_id": "1247",
