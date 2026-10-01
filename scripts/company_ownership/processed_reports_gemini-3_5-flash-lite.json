@@ -11396,150 +11396,67 @@
   },
   "1741160": {
     "company_id": "1074",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-01T10:40:25.744937+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "סולארפיינט בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 3,
-              "section_title": "1. הסברי הדירקטוריון לעסקי התאגיד - 1.1 תיאור תמציתי של עסקי החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אפולו ארה\"ב",
-              "ownership_pct": null,
-              "parent": "סולארפיינט בע\"מ",
-              "page_reference": 3,
-              "section_title": "1. הסברי הדירקטוריון לעסקי התאגיד - 1.1 תיאור תמציתי של עסקי החברה",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T10:40:39.156842+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1762054": {
     "company_id": "1074",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T11:07:59.759443+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T10:41:02.924913+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744093": {
     "company_id": "1081",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T11:07:59.932448+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T10:41:11.037563+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745836": {
     "company_id": "1074",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T11:08:18.452452+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T10:40:46.900650+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744101": {
     "company_id": "1081",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T11:08:03.726056+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T10:41:29.168932+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765928": {
     "company_id": "1081",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T11:08:03.903050+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T10:41:40.740095+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766932": {
     "company_id": "1082",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T11:08:04.623510+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T10:42:17.169924+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766088": {
     "company_id": "1081",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T11:08:04.384613+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T10:42:02.683020+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763408": {
     "company_id": "1083",
@@ -11561,13 +11478,45 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-30T11:08:10.553898+00:00",
+    "at": "2026-10-01T10:42:32.991990+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 4,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "אל-הר הנדסה ובנין בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 33,
+              "section_title": "3.2 ניתוח התוצאות של מגזרי הפעילות",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
@@ -11588,33 +11537,19 @@
   },
   "1744794": {
     "company_id": "1091",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T11:08:11.056998+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T10:42:40.838429+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744792": {
     "company_id": "1091",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T11:08:10.832245+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T10:42:24.131479+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766724": {
     "company_id": "1091",
