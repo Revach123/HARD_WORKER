@@ -11087,121 +11087,19 @@
   },
   "1744949": {
     "company_id": "1057",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-01T10:30:06.825717+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "פלסאון בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 3,
-              "section_title": "דוח הדירקטוריון על מצב ענייני הקבוצה לשלושת החודשים שהסתיימו ביום 31 במרץ 2026 - א. הקבוצה והסביבה העסקית",
-              "table_title": null,
-              "note": "חברת הבת התעשייתית"
-            },
-            {
-              "name": "ריאון בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 3,
-              "section_title": "דוח הדירקטוריון על מצב ענייני הקבוצה לשלושת החודשים שהסתיימו ביום 31 במרץ 2026 - א. הקבוצה והסביבה העסקית",
-              "table_title": null,
-              "note": "חברה מאוחדת"
-            },
-            {
-              "name": "PF Schweisstechnologie GmbH",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 3,
-              "section_title": "דוח הדירקטוריון על מצב ענייני הקבוצה לשלושת החודשים שהסתיימו ביום 31 במרץ 2026 - א. הקבוצה והסביבה העסקית",
-              "table_title": null,
-              "note": "חברה מאוחדת"
-            },
-            {
-              "name": "M.G. Meccanoplastica Genovese s.r.l",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 3,
-              "section_title": "דוח הדירקטוריון על מצב ענייני הקבוצה לשלושת החודשים שהסתיימו ביום 31 במרץ 2026 - א. הקבוצה והסביבה העסקית",
-              "table_title": null,
-              "note": "חברה מאוחדת"
-            },
-            {
-              "name": "Plasson do Brasil Ltda.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 3,
-              "section_title": "דוח הדירקטוריון על מצב ענייני הקבוצה לשלושת החודשים שהסתיימו ביום 31 במרץ 2026 - א. הקבוצה והסביבה העסקית",
-              "table_title": null,
-              "note": "חברה מאוחדת"
-            },
-            {
-              "name": "Plasson Finolex Industries Ltd.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 3,
-              "section_title": "דוח הדירקטוריון על מצב ענייני הקבוצה לשלושת החודשים שהסתיימו ביום 31 במרץ 2026 - א. הקבוצה והסביבה העסקית",
-              "table_title": null,
-              "note": "חברה כלולה"
-            },
-            {
-              "name": "גלקון בקרים אגודה שיתופית חקלאית בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 3,
-              "section_title": "דוח הדירקטוריון על מצב ענייני הקבוצה לשלושת החודשים שהסתיימו ביום 31 במרץ 2026 - א. הקבוצה והסביבה העסקית",
-              "table_title": null,
-              "note": "חברה מאוחדת"
-            },
-            {
-              "name": "Sentek Pty Ltd.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 3,
-              "section_title": "דוח הדירקטוריון על מצב ענייני הקבוצה לשלושת החודשים שהסתיימו ביום 31 במרץ 2026 - א. הקבוצה והסביבה העסקית",
-              "table_title": null,
-              "note": "חברה מאוחדת"
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T10:30:14.651489+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765048": {
     "company_id": "1057",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T11:07:50.277413+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T10:32:18.536417+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764552": {
     "company_id": "1054",
@@ -11213,18 +11111,11 @@
   },
   "1744798": {
     "company_id": "1060",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T11:07:50.573075+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T10:30:19.234154+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744360": {
     "company_id": "1060",
@@ -11243,78 +11134,188 @@
   },
   "1766532": {
     "company_id": "1060",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T11:07:50.969316+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T10:31:14.787675+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766542": {
     "company_id": "1060",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T11:07:50.837704+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T10:31:33.119737+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766573": {
     "company_id": "1060",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T11:07:51.014189+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T10:31:38.515377+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763145": {
     "company_id": "1062",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-09-30T11:07:51.397318+00:00",
+    "at": "2026-10-01T10:33:08.725501+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 5,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "סאנפלאואר גגות",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.3 להלן נתונים עיקריים בדבר פרויקטים של חברות הקבוצה נכון ליום 30 ביוני 2026",
+              "table_title": "1.3.1 פרויקטים מניבים",
+              "note": null
+            },
+            {
+              "name": "שירותי אנרגיה",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.3 להלן נתונים עיקריים בדבר פרויקטים של חברות הקבוצה נכון ליום 30 ביוני 2026",
+              "table_title": "1.3.1 פרויקטים מניבים",
+              "note": null
+            },
+            {
+              "name": "סאנפלאואר סולו",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.3 להלן נתונים עיקריים בדבר פרויקטים של חברות הקבוצה נכון ליום 30 ביוני 2026",
+              "table_title": "1.3.1 פרויקטים מניבים",
+              "note": null
+            },
+            {
+              "name": "פורטפוליו רוח (פולין)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.3 להלן נתונים עיקריים בדבר פרויקטים של חברות הקבוצה נכון ליום 30 ביוני 2026",
+              "table_title": "1.3.1 פרויקטים מניבים",
+              "note": "חלק מהפורטפוליו בשיעור החזקה של 70%"
+            },
+            {
+              "name": "פורטפוליו סולארי (פולין)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.3 להלן נתונים עיקריים בדבר פרויקטים של חברות הקבוצה נכון ליום 30 ביוני 2026",
+              "table_title": "1.3.1 פרויקטים מניבים",
+              "note": null
+            }
+          ],
+          "change_events": [
+            {
+              "company": "התאגיד המועבר (מערכות פוטו-וולטאיות בישראל)",
+              "event_type": "full_disposal",
+              "ownership_pct_before": 100,
+              "ownership_pct_after": 0,
+              "event_date": "2026-06-03",
+              "event_description": "השלמת מכירת מלוא החזקותיה (100%) בתאגיד שהיה בבעלותה המלאה לאורמש גרינלייט שותפות מוגבלת",
+              "page_reference": 15,
+              "section_title": "3.4 תחום האנרגיה המתחדשת בישראל"
+            },
+            {
+              "company": "פעילות סולטרה וברנד (גרמניה, פולין ואיטליה)",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": 0,
+              "ownership_pct_after": 100,
+              "event_date": "2026-07-22",
+              "event_description": "השלמת עסקת רכישת מלוא זכויותיהן של סולטרה אנרגיות וברנד במספר פרויקטים סולאריים ואגירה",
+              "page_reference": 11,
+              "section_title": "3.1.1 עסקת סולטרה - ברנד"
+            }
+          ]
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "Suchan",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 29,
+              "section_title": "6.2 נכון למועד דוח זה, עומדות חברות הקבוצה באמות המידה הפיננסיות בהן התחייבו לעמוד במסגרת הסכמי ההלוואות המהותיות בהם התקשרו, כמפורט להלן:",
+              "table_title": null,
+              "note": "מגזר פולין"
+            },
+            {
+              "name": "הליוס אחזקות מערכות בינוניות ס.פ.",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 29,
+              "section_title": "6.2 נכון למועד דוח זה, עומדות חברות הקבוצה באמות המידה הפיננסיות בהן התחייבו לעמוד במסגרת הסכמי ההלוואות המהותיות בהם התקשרו, כמפורט להלן:",
+              "table_title": null,
+              "note": "מגזר ישראל"
+            },
+            {
+              "name": "אס. אפ סולאר פרופיט",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 29,
+              "section_title": "6.2 נכון למועד דוח זה, עומדות חברות הקבוצה באמות המידה הפיננסיות בהן התחייבו לעמוד במסגרת הסכמי ההלוואות המהותיות בהם התקשרו, כמפורט להלן:",
+              "table_title": null,
+              "note": "מגזר ישראל"
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "התאגיד המועבר",
+              "event_type": "full_disposal",
+              "ownership_pct_before": 100,
+              "ownership_pct_after": 0,
+              "event_date": "2026-06-03",
+              "event_description": "השלמת מכירת מלוא החזקותיה (100%) בתאגיד שהיה מוחזק בבעלות מלאה",
+              "page_reference": 53,
+              "section_title": "באור 4 - אירועים בתקופת הדוח ואחריו"
+            },
+            {
+              "company": "סולטרה אנרגיות",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": 0,
+              "ownership_pct_after": 100,
+              "event_date": "2026-06-12",
+              "event_description": "התקשרות בהסכם מחייב לרכישת מלוא זכויותיהן (100%) בסולטרה אנרגיות ו-50% מהון המניות של החברות Solterra",
+              "page_reference": 54,
+              "section_title": "באור 4 - אירועים בתקופת הדוח ואחריו"
+            }
+          ]
+        }
+      },
       "attempts": {}
     }
   },
   "1741169": {
     "company_id": "1062",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T11:07:51.222949+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T10:32:41.261568+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1737986": {
     "company_id": "1063",
@@ -11333,33 +11334,19 @@
   },
   "1737999": {
     "company_id": "1063",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T11:07:53.465623+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T10:32:48.149906+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1756736": {
     "company_id": "1063",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T11:07:51.966375+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T10:32:54.999394+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764118": {
     "company_id": "1063",
@@ -11402,18 +11389,11 @@
   },
   "1764123": {
     "company_id": "1063",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-09-30T11:07:52.825435+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-01T10:33:08.585479+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743464": {
     "company_id": "1064",
