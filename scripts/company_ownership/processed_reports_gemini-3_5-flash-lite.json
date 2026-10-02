@@ -15240,7 +15240,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-02T12:42:18.533914+00:00",
+    "at": "2026-10-02T12:43:41.803483+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -15262,6 +15262,52 @@
               "event_description": "רכישת 20.5% מהון המניות של חברת נחמני על ידי TMNG",
               "page_reference": 6,
               "section_title": "דוח הדירקטוריון על מצב ענייני החברה ליום 30 ביוני, 2026"
+            }
+          ]
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "קבוצת גאון",
+              "ownership_pct": 68.4,
+              "parent": null,
+              "page_reference": 33,
+              "section_title": "ביאור 1 - כללי",
+              "table_title": null,
+              "note": "מצבה הפיננסי של החברה ('סולו')"
+            },
+            {
+              "name": "חברת נחמני",
+              "ownership_pct": 93.0,
+              "parent": "צינורות המזרח התיכון - תעשיות 2001 בע\"מ",
+              "page_reference": 37,
+              "section_title": "ביאור 3 - אירועים מהותיים בתקופת הדיווח",
+              "table_title": null,
+              "note": "רכישת מניות מיעוט"
+            },
+            {
+              "name": "גאון אגרו",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "ביאור 3 - אירועים מהותיים בתקופת הדיווח",
+              "table_title": null,
+              "note": "חברה נכדה"
+            }
+          ],
+          "change_events": [
+            {
+              "company": "חברת נחמני",
+              "event_type": "increase",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 93.0,
+              "event_date": "2026-06-30",
+              "event_description": "רכישת 20.5% מהון המניות של חברת נחמני על ידי TMNG כך שלאחר השלמת העסקה מחזיקה הקבוצה ב-93%",
+              "page_reference": 37,
+              "section_title": "ביאור 3 - אירועים מהותיים בתקופת הדיווח"
             }
           ]
         }
@@ -17299,7 +17345,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-01T11:12:28.969801+00:00",
+    "at": "2026-10-02T12:43:39.737188+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -17314,7 +17360,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-01T11:12:28.453321+00:00",
+    "at": "2026-10-02T12:43:40.309105+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -17329,7 +17375,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-01T11:12:29.089310+00:00",
+    "at": "2026-10-02T12:43:40.528573+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -17344,7 +17390,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-01T11:12:29.215388+00:00",
+    "at": "2026-10-02T12:43:40.919787+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -17359,7 +17405,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-01T11:12:30.119474+00:00",
+    "at": "2026-10-02T12:43:41.138417+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -17389,7 +17435,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-01T11:12:30.798661+00:00",
+    "at": "2026-10-02T12:43:42.514360+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -17404,7 +17450,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-01T11:12:30.923086+00:00",
+    "at": "2026-10-02T12:43:42.059348+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -17419,7 +17465,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-01T11:12:31.385722+00:00",
+    "at": "2026-10-02T12:43:42.832838+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -17449,7 +17495,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-01T11:12:30.353511+00:00",
+    "at": "2026-10-02T12:43:41.409631+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -30833,7 +30879,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-01T11:12:30.467789+00:00",
+    "at": "2026-10-02T12:43:41.642319+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
