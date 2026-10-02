@@ -14503,26 +14503,11 @@
   },
   "1765109": {
     "company_id": "1436",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-02T12:30:25.121894+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-02T12:31:27.842225+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744859": {
     "company_id": "1445",
@@ -14549,136 +14534,366 @@
   },
   "1765091": {
     "company_id": "1447",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-01T11:11:52.935606+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-02T12:31:50.460832+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742528": {
     "company_id": "1450",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-01T11:11:53.209247+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 6,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-02T12:37:07.220406+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742535": {
     "company_id": "1450",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-01T11:11:53.105379+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-02T12:33:43.750276+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742945": {
     "company_id": "1450",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-01T11:11:53.381287+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 6,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-02T12:39:24.159535+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1762207": {
     "company_id": "1450",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-01T11:11:53.815665+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 6,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-02T12:40:58.131490+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1762343": {
     "company_id": "1450",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-01T11:11:53.521245+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-02T12:40:15.640654+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745520": {
     "company_id": "1451",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-01T11:11:53.658636+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-02T12:41:27.207246+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766083": {
     "company_id": "1451",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-01T11:11:53.973401+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-02T12:41:20.144606+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745682": {
     "company_id": "1452",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-01T11:11:54.162991+00:00",
+    "at": "2026-10-02T12:42:53.483522+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 4,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "קבוצת גאון",
+              "ownership_pct": 68.4,
+              "parent": null,
+              "page_reference": 14,
+              "section_title": "חלק ב' - גילוי ייעודי למחזיקי אגרות חוב",
+              "table_title": null,
+              "note": "מצוין בהנחות העבודה לתזרים המזומנים החזוי"
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "קבוצת גאון",
+              "ownership_pct": 68.4,
+              "parent": null,
+              "page_reference": 31,
+              "section_title": "ביאור 1 - כ ל ל י",
+              "table_title": null,
+              "note": "שיעור החזקה במניותיה"
+            },
+            {
+              "name": "צינורות המזרח התיכון תעשיות 2001 בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "ביאור 5 - מגזרי פעילות",
+              "table_title": null,
+              "note": "חברת הפלדה"
+            },
+            {
+              "name": "פלסים תשתיות בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "ביאור 5 - מגזרי פעילות",
+              "table_title": null,
+              "note": "פלסים"
+            },
+            {
+              "name": "הכוכב חברה לתעשיות מגופים מתכת (1987) בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "ביאור 5 - מגזרי פעילות",
+              "table_title": null,
+              "note": "הכוכב"
+            },
+            {
+              "name": "שגיב אגודה שיתופית חקלאית בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "ביאור 5 - מגזרי פעילות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גאון חברה לפתרונות מים (ג'י. דאבليو. אס) בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "ביאור 5 - מגזרי פעילות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אורי נחמני ובניו קידוחים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "ביאור 5 - מגזרי פעילות",
+              "table_title": null,
+              "note": "נחמני"
+            },
+            {
+              "name": "גאון אגרו תעשיות בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "ביאור 5 - מגזרי פעילות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "טי אם אן ג'י בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "ביאור 5 - מגזרי פעילות",
+              "table_title": null,
+              "note": "TMNG"
+            },
+            {
+              "name": "גאון שיווק הנדסי בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "ביאור 5 - מגזרי פעילות המשך (המשך)",
+              "table_title": null,
+              "note": "לשעבר: תשתיות הדרום (פ.ח.ש) בע\"מ"
+            },
+            {
+              "name": "פל-ים 94 החברה המרכזית לחקלאות ושיווק בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "ביאור 5 - מגזרי פעילות המשך (המשך)",
+              "table_title": null,
+              "note": "פל-ים"
+            },
+            {
+              "name": "מדי ורד בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "ביאור 5 - מגזרי פעילות המשך (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גאון סיטי טכנולוג'י (ג.ס.ט.) בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "ביאור 5 - מגזרי פעילות המשך (המשך)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "צינורות המזרח התיכון - גילוון (1994) בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "ביאור 5 - מגזרי פעילות המשך (המשך)",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "צינורות המזרח התיכון - תעשיות 2001 בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "ביאור 5 - מגזרי פעילות",
+              "table_title": null,
+              "note": "חברת הפלדה"
+            },
+            {
+              "name": "פלסים תשתיות בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "ביאור 5 - מגזרי פעילות",
+              "table_title": null,
+              "note": "פלסים"
+            },
+            {
+              "name": "הכוכב חברה לתעשיות מגופים מתכת (1987) בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "ביאור 5 - מגזרי פעילות",
+              "table_title": null,
+              "note": "הכוכב"
+            },
+            {
+              "name": "שגיב אגודה שיתופית חקלאית בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "ביאור 5 - מגזרי פעילות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גאון חברה לפתרונות מים (ג'י. דאבליו. אס) בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "ביאור 5 - מגזרי פעילות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אורי נחמני ובניו קידוחים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "ביאור 5 - מגזרי פעילות",
+              "table_title": null,
+              "note": "נחמני"
+            },
+            {
+              "name": "גאון אגרו תעשיות בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "ביאור 5 - מגזרי פעילות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "טי אם אן ג'י בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "ביאור 5 - מגזרי פעילות",
+              "table_title": null,
+              "note": "TMNG"
+            },
+            {
+              "name": "גאון שיווק הנדסי בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "ביאור 5 - מגזרי פעילות המשך",
+              "table_title": null,
+              "note": "לשעבר: תשתיות הדרום (פ.ח.ש) בע\"מ"
+            },
+            {
+              "name": "פל- ים 94 החברה המרכזית לחקלאות ושיווק בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "ביאור 5 - מגזרי פעילות המשך",
+              "table_title": null,
+              "note": "פל-ים"
+            },
+            {
+              "name": "מדי ורד בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "ביאור 5 - מגזרי פעילות המשך",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גאון סיטי טכנולוג'י (ג.ס.ט.) בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "ביאור 5 - מגזרי פעילות המשך",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "צינורות המזרח התיכון - גילוון (1994) בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "ביאור 5 - מגזרי פעילות המשך",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "קבוצת גאון",
+              "ownership_pct": 68.4,
+              "parent": null,
+              "page_reference": 51,
+              "section_title": ".1 מצבה הפיננסי של החברה:",
+              "table_title": null,
+              "note": "שיעור החזקת החברה במניות הקבוצה"
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
@@ -14695,7 +14910,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-01T11:11:54.367935+00:00",
+    "at": "2026-10-02T12:42:53.693469+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -15025,13 +15240,32 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-01T11:11:54.250290+00:00",
+    "at": "2026-10-02T12:42:18.533914+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 4,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "חברת נחמני",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": null,
+              "event_date": "2026-06-30",
+              "event_description": "רכישת 20.5% מהון המניות של חברת נחמני על ידי TMNG",
+              "page_reference": 6,
+              "section_title": "דוח הדירקטוריון על מצב ענייני החברה ליום 30 ביוני, 2026"
+            }
+          ]
+        }
+      },
       "attempts": {}
     }
   },
