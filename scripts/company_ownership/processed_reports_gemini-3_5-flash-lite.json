@@ -12657,170 +12657,11 @@
   },
   "1766002": {
     "company_id": "1293",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-02T10:13:04.896960+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "אופ אר אקס",
-              "ownership_pct": 64,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "פרק ראשון - הסברי הדירקטוריון על מצב ענייני החברה, תוצאות פעולותיה, ההון העצמי ותזרימי המזומנים שלה",
-              "table_title": null,
-              "note": "איחוד צפוי עם וייסיי תחת אוקיוביה"
-            },
-            {
-              "name": "וייסיי",
-              "ownership_pct": 88,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "פרק ראשון - הסברי הדירקטוריון על מצב ענייני החברה, תוצאות פעולותיה, ההון העצמי ותזרימי המזומנים שלה",
-              "table_title": null,
-              "note": "איחוד צפוי עם אופ אר אקס תחת אוקיוביה"
-            },
-            {
-              "name": "דיאגנוסטיר",
-              "ownership_pct": 44,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "פרק ראשון - הסברי הדירקטוריון על מצב ענייני החברה, תוצאות פעולותיה, ההון העצמי ותזרימי המזומנים שלה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מודיפאי",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "פרק ראשון - הסברי הדירקטוריון על מצב ענייני החברה, תוצאות פעולותיה, ההון העצמי ותזרימי המזומנים שלה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "פריפרקס",
-              "ownership_pct": 44,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "פרק ראשון - הסברי הדירקטוריון על מצב ענייני החברה, תוצאות פעולותיה, ההון העצמי ותזרימי המזומנים שלה",
-              "table_title": null,
-              "note": "חברה כלולה לפי שיטת השווי המאזני"
-            },
-            {
-              "name": "רויטל ויז'ן",
-              "ownership_pct": 43,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "פרק ראשון - הסברי הדירקטוריון על מצב ענייני החברה, תוצאות פעולותיה, ההון העצמי ותזרימי המזומנים שלה",
-              "table_title": null,
-              "note": "הושקע באמצעות SAFE, עם המרה עשוי להביא להחזקה של כ-43%"
-            },
-            {
-              "name": "טרסייה פארמה",
-              "ownership_pct": 5,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "פרק ראשון - הסברי הדירקטוריון על מצב ענייני החברה, תוצאות פעולותיה, ההון העצמי ותזרימי המזומנים שלה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "AEYE Health",
-              "ownership_pct": 8,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "פרק ראשון - הסברי הדירקטוריון על מצב ענייני החברה, תוצאות פעולותיה, ההון העצמי ותזרימי המזומנים שלה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "סאוקוליס",
-              "ownership_pct": 5,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "פרק ראשון - הסברי הדירקטוריון על מצב ענייני החברה, תוצאות פעולותיה, ההון העצמי ותזרימי המזומנים שלה",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "מודיפאי ביוסינסס בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 30,
-              "section_title": "ביאור 3 - אירועים מהותיים בתקופת הדיווח ולאחריה",
-              "table_title": null,
-              "note": "הוקמה ביוני 2026"
-            },
-            {
-              "name": "סנאוקוליס בע\"מ",
-              "ownership_pct": 4.6,
-              "parent": null,
-              "page_reference": 31,
-              "section_title": "ביאור 3 - אירועים מהותיים בתקופת הדיווח ולאחריה (המשך)",
-              "table_title": "השקעה בחברות המדדות בשווי הוגן דרך רווח והפסד",
-              "note": "שיעור החזקה בדילול מלא: 4.2%"
-            },
-            {
-              "name": "AEYE Health Inc.",
-              "ownership_pct": 7.7,
-              "parent": null,
-              "page_reference": 31,
-              "section_title": "ביאור 3 - אירועים מהותיים בתקופת הדיווח ולאחריה (המשך)",
-              "table_title": "השקעה בחברות המדדות בשווי הוגן דרך רווח והפסד",
-              "note": "שיעור החזקה בדילול מלא: 7.2%"
-            },
-            {
-              "name": "טלשיר גיא טכנולוגיות רפואיות בע\"מ (רויטל ויז'ן)",
-              "ownership_pct": 43,
-              "parent": null,
-              "page_reference": 33,
-              "section_title": "ביאור 3 - אירועים מהותיים בתקופת הדיווח ולאחריה (המשך)",
-              "table_title": null,
-              "note": "לפני גיוס הון נוסף או הקצאת ניירות ערך"
-            },
-            {
-              "name": "טרסייה פארמה בע\"מ",
-              "ownership_pct": 4.5,
-              "parent": null,
-              "page_reference": 31,
-              "section_title": "ביאור 3 - אירועים מהותיים בתקופת הדיווח ולאחריה (המשך)",
-              "table_title": "השקעה בחברות המדדות בשווי הוגן דרך רווח והפסד",
-              "note": "שיעור החזקה בדילול מלא: 3.8%"
-            },
-            {
-              "name": "Peripherex Inc.",
-              "ownership_pct": 43.7,
-              "parent": null,
-              "page_reference": 35,
-              "section_title": "השקעה בחברה מוחזקת המטופלת בשיטת השווי המאזני",
-              "table_title": null,
-              "note": "נכון ליום 30 ביוני 2026"
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-02T10:13:28.819902+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765070": {
     "company_id": "1294",
@@ -12832,18 +12673,11 @@
   },
   "1745067": {
     "company_id": "1298",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-01T11:11:27.269259+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-02T10:17:42.138485+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767693": {
     "company_id": "1274",
@@ -12855,63 +12689,35 @@
   },
   "1767164": {
     "company_id": "1298",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-01T11:11:27.420272+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-02T10:25:50.118561+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743359": {
     "company_id": "1300",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-01T11:11:27.602809+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-02T10:21:40.877154+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765356": {
     "company_id": "1300",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-01T11:11:27.834071+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-02T10:26:32.289659+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744288": {
     "company_id": "1301",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-01T11:11:27.961351+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-02T10:27:05.731515+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766848": {
     "company_id": "1301",
@@ -12945,46 +12751,59 @@
   },
   "1765679": {
     "company_id": "1305",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-01T11:11:28.366372+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-02T10:28:16.340711+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745479": {
     "company_id": "1307",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-01T11:11:28.622088+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-02T10:29:19.688605+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766813": {
     "company_id": "1307",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-01T11:11:28.823662+00:00",
+    "at": "2026-10-02T10:29:59.407097+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 3,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "אטראו ניהול נכסים פיננסיים (2005) בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 3,
+              "section_title": "פרק א' - מצב עסקי התאגיד, תוצאות פעילותו, הונו העצמי ותזרימי המזומנים שלו",
+              "table_title": null,
+              "note": "חברה בת פרטית בשליטתה המלאה"
+            },
+            {
+              "name": "ילין לפידות החזקות בע\"מ",
+              "ownership_pct": 50,
+              "parent": "אטראו ניהול נכסים פיננסיים (2005) בע\"מ",
+              "page_reference": 3,
+              "section_title": "פרק א' - מצב עסקי התאגיד, תוצאות פעילותו, הונו העצמי ותזרימי המזומנים שלו",
+              "table_title": null,
+              "note": "החזקה של 50% ממניות ההון ו-50% ממניות ההנהלה"
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
@@ -13005,18 +12824,11 @@
   },
   "1742415": {
     "company_id": "1310",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-01T11:11:28.946998+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-02T10:30:21.349130+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1761792": {
     "company_id": "1310",
@@ -30254,18 +30066,11 @@
   },
   "1769899": {
     "company_id": "1301",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-01T11:11:28.270816+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-02T10:27:12.488947+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1769866": {
     "company_id": "1473",
