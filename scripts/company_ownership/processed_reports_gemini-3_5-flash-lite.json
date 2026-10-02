@@ -13103,64 +13103,11 @@
   },
   "1766933": {
     "company_id": "1349",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-02T11:12:58.001123+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 11,
-      "done": {
-        "0:0": {
-          "report_format": "other",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "מרכז לוגיסטי B רבוע נדל\"ן בע\"מ",
-              "ownership_pct": 100,
-              "parent": "רבוע כחול נדל\"ן בע\"מ",
-              "page_reference": 2,
-              "section_title": "שומת מקרקעין מקיפה",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "other",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-02T11:15:21.837628+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766931": {
     "company_id": "1349",
@@ -13211,138 +13158,154 @@
   },
   "1743824": {
     "company_id": "1361",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-01T11:11:44.498918+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-02T11:15:58.593571+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764376": {
     "company_id": "1361",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-01T11:11:44.700489+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-02T11:16:56.030198+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764446": {
     "company_id": "1361",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-01T11:11:45.563248+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-02T11:16:31.946066+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1739608": {
     "company_id": "1363",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-01T11:11:45.598643+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-02T11:16:37.722412+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742416": {
     "company_id": "1363",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-01T11:11:45.701464+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-02T11:17:25.168307+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742425": {
     "company_id": "1363",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-01T11:11:45.837693+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-02T11:17:18.376793+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1761505": {
     "company_id": "1363",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-01T11:11:46.188730+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-02T11:17:23.754211+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763733": {
     "company_id": "1363",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-01T11:11:46.156014+00:00",
+    "at": "2026-10-02T11:17:44.607052+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 4,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "פז שמנים וכימיקלים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "התאגיד וסביבתו העסקית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פזגז בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "התאגיד וסביבתו העסקית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פז שרותי תעופה בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "התאגיד וסביבתו העסקית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פז נכסי תעופה בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "התאגיד וסביבתו העסקית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "תחנת דלק וסיכה נתניה בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 18,
+              "section_title": "תרשים חברות קבוצת פז",
+              "table_title": null,
+              "note": "התמזגה לתוך החברה"
+            },
+            {
+              "name": "תחנת תדלוק צ.ק. בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 18,
+              "section_title": "תרשים חברות קבוצת פז",
+              "table_title": null,
+              "note": "התמזגה לתוך החברה"
+            },
+            {
+              "name": "נתיב סוכני פז בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 18,
+              "section_title": "תרשים חברות קבוצת פז",
+              "table_title": null,
+              "note": "התמזגה לתוך החברה"
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
   "1763734": {
     "company_id": "1363",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-01T11:11:46.520781+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-02T11:17:45.438327+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763854": {
     "company_id": "1363",
@@ -14336,18 +14299,11 @@
   },
   "1767527": {
     "company_id": "1357",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-01T11:11:44.847178+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-02T11:16:03.350482+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766368": {
     "company_id": "1453",
