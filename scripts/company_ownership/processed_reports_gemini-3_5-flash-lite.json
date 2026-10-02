@@ -14183,7 +14183,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-02T11:54:25.328026+00:00",
+    "at": "2026-10-02T11:54:26.350728+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -14305,48 +14305,27 @@
   },
   "1764355": {
     "company_id": "1420",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-01T11:11:50.557326+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 7,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-02T11:57:42.663180+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764360": {
     "company_id": "1420",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-01T11:11:50.303078+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-02T11:57:31.659680+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742262": {
     "company_id": "1425",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-01T11:11:50.618442+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-02T12:02:05.137343+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764978": {
     "company_id": "1425",
@@ -14365,18 +14344,11 @@
   },
   "1764983": {
     "company_id": "1425",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-01T11:11:50.727719+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-02T11:59:10.167906+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743024": {
     "company_id": "1427",
@@ -14395,78 +14367,110 @@
   },
   "1765334": {
     "company_id": "1427",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-01T11:11:50.816709+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-02T12:03:10.675795+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743447": {
     "company_id": "1431",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-01T11:11:51.034489+00:00",
+    "at": "2026-10-02T12:14:54.366679+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 2,
-      "done": {},
-      "attempts": {}
+      "done": {
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
+      "attempts": {
+        "0:0": 1
+      }
     }
   },
   "1743452": {
     "company_id": "1431",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-01T11:11:51.324033+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 9,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-02T12:19:05.526041+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765732": {
     "company_id": "1431",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-01T11:11:51.473854+00:00",
+    "at": "2026-10-02T12:20:47.703695+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 10,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
   "1765738": {
     "company_id": "1431",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-01T11:11:51.587241+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-02T12:20:48.462620+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1741453": {
     "company_id": "1433",
@@ -30604,14 +30608,34 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-01T11:11:50.916314+00:00",
+    "at": "2026-10-02T12:03:10.049575+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 2,
-      "done": {},
-      "attempts": {}
+      "done": {
+        "0:1": {
+          "report_format": "other",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "אדי מערכות",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "מגזר האבזור",
+              "table_title": null,
+              "note": "פעילות/חברה בת בתחום האבזור"
+            }
+          ],
+          "change_events": []
+        }
+      },
+      "attempts": {
+        "0:0": 1
+      }
     }
   },
   "1770622": {
