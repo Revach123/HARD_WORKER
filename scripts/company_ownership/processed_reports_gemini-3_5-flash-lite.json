@@ -13509,126 +13509,11 @@
   },
   "1764321": {
     "company_id": "1397",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-02T11:35:32.937359+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "מדיסטט בע\"מ",
-              "ownership_pct": 60,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אברא מתודולוגיות בינה בע\"מ",
-              "ownership_pct": 91,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אברא שירותי קוד פתוח בע\"מ",
-              "ownership_pct": 95,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אלטרנטיבה מומחי אי טי בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אברא פתרונות ענן בע\"מ",
-              "ownership_pct": 92.5,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אברא הטמעת מערכות מידע ארגוניות בע\"מ",
-              "ownership_pct": 80,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "סי אר ג'י הדסה בע\"מ",
-              "ownership_pct": 55,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אברא שירותי מחשוב ומערכות לניהול לקוחות סי אס אט בע\"מ",
-              "ownership_pct": 80,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "abra US Inc.",
-              "ownership_pct": 95,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ABRA CLOUD SOLUTIONS UK LIMITED",
-              "ownership_pct": 100,
-              "parent": "אברא פתרונות ענן בע\"מ",
-              "page_reference": 6,
-              "section_title": "כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אברא הסניף הצפוני אנג.בי. בע\"מ",
-              "ownership_pct": 60,
-              "parent": "אלטרנטיבה מומחי אי טי בע\"מ ו-אברא פתרונות ענן בע\"מ",
-              "page_reference": 6,
-              "section_title": "כללי",
-              "table_title": null,
-              "note": "מוחזקת ב-27% על ידי אלטרנטיבה וב-33% על ידי אברא פתרונות ענן"
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-02T11:37:43.366840+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764326": {
     "company_id": "1397",
@@ -13640,18 +13525,11 @@
   },
   "1741826": {
     "company_id": "1403",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-01T11:11:48.913563+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-02T11:38:30.503748+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763280": {
     "company_id": "1403",
@@ -13685,138 +13563,745 @@
   },
   "1763909": {
     "company_id": "1405",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-01T11:11:48.836519+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-02T11:41:41.249594+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744183": {
     "company_id": "1418",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-01T11:11:49.001150+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-02T11:41:27.029380+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766325": {
     "company_id": "1418",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-01T11:11:49.153109+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-02T11:47:16.789121+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1736604": {
     "company_id": "1420",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-01T11:11:49.184110+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-02T11:42:10.899780+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742421": {
     "company_id": "1420",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-01T11:11:49.503149+00:00",
+    "at": "2026-10-02T11:51:43.540180+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 6,
-      "done": {},
-      "attempts": {}
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "GMG",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "1.2 נתונים עיקריים מתוך תיאור עסקי התאגיד",
+              "table_title": null,
+              "note": "בבעלות החברה בעקיפין באמצעות חברות בנות של GMG"
+            },
+            {
+              "name": "צ.מ.ח המרמן בע\"מ",
+              "ownership_pct": 66.67,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "1.2 נתונים עיקריים מתוך תיאור עסקי התאגיד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "בנק לאומי לישראל בע\"מ",
+              "ownership_pct": 1.77,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "1.2 נתונים עיקריים מתוך תיאור עסקי התאגיד",
+              "table_title": null,
+              "note": "החזקת מיעוט"
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "\"אכזיב\" בנהריה שלבים א'+ב'",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 35,
+              "section_title": "3.3.1 עדכון בדבר מכירת דירות בפרויקטים בייזום",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "\"אכזיב\" בנהריה שלב ג'",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 35,
+              "section_title": "3.3.1 עדכון בדבר מכירת דירות בפרויקטים בייזום",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "\"אכזיב\" בנהריה שלב ד'",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 35,
+              "section_title": "3.3.1 עדכון בדבר מכירת דירות בפרויקטים בייזום",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "\"אכזיב\" בנהריה שלב ה'",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 35,
+              "section_title": "3.3.1 עדכון בדבר מכירת דירות בפרויקטים בייזום",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "\"גבעת אנדרומדה\" ביפו",
+              "ownership_pct": 33,
+              "parent": null,
+              "page_reference": 35,
+              "section_title": "3.3.1 עדכון בדבר מכירת דירות בפרויקטים בייזום",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "\"ויצמן-פנקס\" בת\"א",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 35,
+              "section_title": "3.3.1 עדכון בדבר מכירת דירות בפרויקטים בייזום",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "\"האגם\" ברמת גן",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 35,
+              "section_title": "3.3.1 עדכון בדבר מכירת דירות בפרויקטים בייזום",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "\"נווה גן\" שלב א' מגרשים 28 ו-30",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 35,
+              "section_title": "3.3.1 עדכון בדבר מכירת דירות בפרויקטים בייזום",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "\"נווה גן\" שלב ב' מגרש 27",
+              "ownership_pct": 25,
+              "parent": null,
+              "page_reference": 35,
+              "section_title": "3.3.1 עדכון בדבר מכירת דירות בפרויקטים בייזום",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "\"נווה גן\" שלב ג' מגרש 29",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 35,
+              "section_title": "3.3.1 עדכון בדבר מכירת דירות בפרויקטים בייזום",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "\"מצפה רנה\" שלב א'",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 35,
+              "section_title": "3.3.1 עדכון בדבר מכירת דירות בפרויקטים בייזום",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "\"יפו- תל אביב\" (\"מכבי יפו\") מגרשים 102, 103-105, 116, 117",
+              "ownership_pct": 33,
+              "parent": null,
+              "page_reference": 35,
+              "section_title": "3.3.1 עדכון בדבר מכירת דירות בפרויקטים בייזום",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "\"קריניצי החדשה\" בר\"ג",
+              "ownership_pct": 33,
+              "parent": null,
+              "page_reference": 35,
+              "section_title": "3.3.1 עדכון בדבר מכירת דירות בפרויקטים בייזום",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "בת גלים/ חיל הים",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 35,
+              "section_title": "3.3.1 עדכון בדבר מכירת דירות בפרויקטים בייזום",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "\"איזי\" (סבוראים) בת\"א",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 35,
+              "section_title": "3.3.1 עדכון בדבר מכירת דירות בפרויקטים בייזום",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "\"מצפה רנה\" שלב ב'",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "3.3.2 עדכון בדבר פרויקטים בייזום שמכירתם טרם החלה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "\"אכזיב\" שלב ו'",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "3.3.2 עדכון בדבר פרויקטים בייזום שמכירתם טרם החלה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "עפרון",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "3.3.2 עדכון בדבר פרויקטים בייזום שמכירתם טרם החלה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "נווה צדק II",
+              "ownership_pct": 37.5,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "3.3.2 עדכון בדבר פרויקטים בייזום שמכירתם טרם החלה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "שוק בצלאל II",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "3.3.2 עדכון בדבר פרויקטים בייזום שמכירתם טרם החלה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "\"לב העיר\" כרמיאל (כרמיאל דיור מוגן)",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "3.3.2 עדכון בדבר פרויקטים בייזום שמכירתם טרם החלה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "כורזין",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "3.3.2 עדכון בדבר פרויקטים בייזום שמכירתם טרם החלה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "קצנלסון",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "3.3.2 עדכון בדבר פרויקטים בייזום שמכירתם טרם החלה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "\"נתיב חן\"",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "3.3.2 עדכון בדבר פרויקטים בייזום שמכירתם טרם החלה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "הרצליה \"קרית המסלול\"",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "3.3.2 עדכון בדבר פרויקטים בייזום שמכירתם טרם החלה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פתח תקווה מגרש 13",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "3.3.2 עדכון בדבר פרויקטים בייזום שמכירתם טרם החלה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פתח תקווה מגרש 25",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "3.3.2 עדכון בדבר פרויקטים בייזום שמכירתם טרם החלה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "רוקח 18-20",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "3.3.3 עדכון בדבר פרויקטים מותלים בייזום בתחום ההתחדשות העירונית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מתחם 104 (הפודים) ר\"ג",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "3.3.3 עדכון בדבר פרויקטים מותלים בייזום בתחום ההתחדשות העירונית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מתחם -22 פני הגבעה ר\"ג",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "3.3.3 עדכון בדבר פרויקטים מותלים בייזום בתחום ההתחדשות העירונית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "שמואל הנציב נתניה",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "3.3.3 עדכון בדבר פרויקטים מותלים בייזום בתחום ההתחדשות העירונית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ז'אן ז'ורס חולון",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "3.3.3 עדכון בדבר פרויקטים מותלים בייזום בתחום ההתחדשות העירונית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מתחם 10 ר\"ג",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "3.3.3 עדכון בדבר פרויקטים מותלים בייזום בתחום ההתחדשות העירונית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מסלנט ת\"א",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "3.3.3 עדכון בדבר פרויקטים מותלים בייזום בתחום ההתחדשות העירונית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מתחם 34 ר\"ג",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "3.3.3 עדכון בדבר פרויקטים מותלים בייזום בתחום ההתחדשות העירונית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ז'בוטינסקי טירת הכרמל",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "3.3.3 עדכון בדבר פרויקטים מותלים בייזום בתחום ההתחדשות העירונית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "משה שרת חולון",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "3.3.3 עדכון בדבר פרויקטים מותלים בייזום בתחום ההתחדשות העירונית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מתחם הנרייטה סולד קריית שמונה",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "3.3.3 עדכון בדבר פרויקטים מותלים בייזום בתחום ההתחדשות העירונית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ארלוזורוב 41 ת\"א (174-176)",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "3.3.3 עדכון בדבר פרויקטים מותלים בייזום בתחום ההתחדשות העירונית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ארלוזורוב ת\"א (182-184)",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "3.3.3 עדכון בדבר פרויקטים מותלים בייזום בתחום ההתחדשות העירונית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "סרלין ת\"א",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "3.3.3 עדכון בדבר פרויקטים מותלים בייזום בתחום ההתחדשות העירונית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מתחם הנביאים רמת השרון",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "3.3.3 עדכון בדבר פרויקטים מותלים בייזום בתחום ההתחדשות העירונית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מתחם יחזקאל פרדס חנה",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "3.3.3 עדכון בדבר פרויקטים מותלים בייזום בתחום ההתחדשות העירונית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מתחם אלי כהן כפר סבא",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "3.3.3 עדכון בדבר פרויקטים מותלים בייזום בתחום ההתחדשות העירונית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מתחם 3 גבעתיים",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "3.3.3 עדכון בדבר פרויקטים מותלים בייזום בתחום ההתחדשות העירונית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "בן גוריון ר\"ג",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "3.3.3 עדכון בדבר פרויקטים מותלים בייזום בתחום ההתחדשות העירונית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "האמוראים ת\"א",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "3.3.3 עדכון בדבר פרויקטים מותלים בייזום בתחום ההתחדשות העירונית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "יהושפט ר\"ג",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "3.3.3 עדכון בדבר פרויקטים מותלים בייזום בתחום ההתחדשות העירונית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "הרצליה הייטס הרצליה",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "3.3.3 עדכון בדבר פרויקטים מותלים בייזום בתחום ההתחדשות העירונית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מתחם הנעורים ר\"ג",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "3.3.3 עדכון בדבר פרויקטים מותלים בייזום בתחום ההתחדשות העירונית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מתחם 35 ר\"ג",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "3.3.3 עדכון בדבר פרויקטים מותלים בייזום בתחום ההתחדשות העירונית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "הברושים כרמיאל",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "3.3.3 עדכון בדבר פרויקטים מותלים בייזום בתחום ההתחדשות העירונית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דפנה 504 ת\"א",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "3.3.3 עדכון בדבר פרויקטים מותלים בייזום בתחום ההתחדשות העירונית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "עין גב ת\"א",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "3.3.3 עדכון בדבר פרויקטים מותלים בייזום בתחום ההתחדשות העירונית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "סוקולוב הנוטרים הרצליה",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "3.3.3 עדכון בדבר פרויקטים מותלים בייזום בתחום ההתחדשות העירונית",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
+      "attempts": {
+        "0:1": 1
+      }
     }
   },
   "1742434": {
     "company_id": "1420",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-01T11:11:49.647920+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-02T11:51:44.988629+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742461": {
     "company_id": "1420",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-01T11:11:49.971495+00:00",
+    "at": "2026-10-02T11:54:25.328026+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 6,
-      "done": {},
-      "attempts": {}
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "צ.מ.ח המרמן בע\"מ",
+              "ownership_pct": 66.67,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "1.2 נתונים עיקריים מתוך תיאור עסקי התאגיד",
+              "table_title": null,
+              "note": "מופיע גם בשם צמח המרמן"
+            },
+            {
+              "name": "Green Mountain (GMG)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "1.2 נתונים עיקריים מתוך תיאור עסקי התאגיד",
+              "table_title": null,
+              "note": "בבעלות מלאה בעקיפין"
+            },
+            {
+              "name": "בנק לאומי לישראל בע\"מ",
+              "ownership_pct": 1.77,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "1.2 נתונים עיקריים מתוך תיאור עסקי התאגיד",
+              "table_title": null,
+              "note": "החזקת מיעוט פיננסית"
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "Green Mountain Global Ltd. (GMG)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 22,
+              "section_title": "השקעות הדאטה סנטרס של קבוצת עזריאלי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מיזם משותף בפרנקפורט, גרמניה",
+              "ownership_pct": 50,
+              "parent": "Green Mountain",
+              "page_reference": 22,
+              "section_title": "השקעות הדאטה סנטרס של קבוצת עזריאלי",
+              "table_title": null,
+              "note": "בשותפות 50%-50% עם KMW"
+            },
+            {
+              "name": "צמח המרמן",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 33,
+              "section_title": "3.1 מידע כללי על תחום המגורים למכירה",
+              "table_title": null,
+              "note": "הושלמה עסקה לרכישת החברה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
+      "attempts": {
+        "0:2": 1
+      }
     }
   },
   "1758136": {
     "company_id": "1420",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-01T11:11:49.744877+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-02T11:54:20.022375+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764026": {
     "company_id": "1420",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-01T11:11:50.003861+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-02T11:54:25.469657+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764355": {
     "company_id": "1420",
