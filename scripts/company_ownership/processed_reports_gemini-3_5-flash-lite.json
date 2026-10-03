@@ -14675,85 +14675,11 @@
   },
   "1744441": {
     "company_id": "1608",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-03T10:45:32.606533+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 8,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "איי.די.איי הנפקות (2010) בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 35,
-              "section_title": "באור 1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "פנדה סוכנות לביטוח כללי בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 35,
-              "section_title": "באור 1 - כללי",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "איי.די.איי הנפקות (2010) בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 35,
-              "section_title": "באור 1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "פנדה סוכנות לביטוח כללי בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 35,
-              "section_title": "באור 1 - כללי",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-03T10:47:07.217339+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744448": {
     "company_id": "1608",
@@ -14765,153 +14691,323 @@
   },
   "1746421": {
     "company_id": "1608",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-02T12:43:26.265591+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-03T10:46:46.669315+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1761420": {
     "company_id": "1608",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-02T12:43:26.388758+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-03T10:46:52.687731+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764684": {
     "company_id": "1608",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-02T12:43:26.660594+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 8,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-03T10:48:43.791752+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764689": {
     "company_id": "1608",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-02T12:43:27.289378+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-03T10:47:36.516833+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742745": {
     "company_id": "1609",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-02T12:43:27.502443+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-03T10:47:53.809019+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765375": {
     "company_id": "1609",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-02T12:43:27.701128+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-03T10:48:17.021378+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1736510": {
     "company_id": "1610",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-02T12:43:27.833215+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-03T10:48:21.169360+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1737808": {
     "company_id": "1610",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-02T12:43:28.287314+00:00",
+    "at": "2026-10-03T10:48:54.007008+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 4,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "other",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "Entera Bio Ltd.",
+              "ownership_pct": 7.9,
+              "parent": null,
+              "page_reference": 19,
+              "section_title": "NOTE 6 INVESTMENTS",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Niagen Bioscience, Inc.",
+              "ownership_pct": 0.04,
+              "parent": null,
+              "page_reference": 19,
+              "section_title": "NOTE 6 INVESTMENTS",
+              "table_title": null,
+              "note": "formally known as ChromaDex Corporation"
+            },
+            {
+              "name": "Eloxx Pharmaceuticals, Inc.",
+              "ownership_pct": 1.0,
+              "parent": null,
+              "page_reference": 19,
+              "section_title": "NOTE 6 INVESTMENTS",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Xenetic Biosciences, Inc.",
+              "ownership_pct": 1.0,
+              "parent": null,
+              "page_reference": 19,
+              "section_title": "NOTE 6 INVESTMENTS",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "BioCardia, Inc.",
+              "ownership_pct": 0.14,
+              "parent": null,
+              "page_reference": 19,
+              "section_title": "NOTE 6 INVESTMENTS",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "CAMP4 Therapeutics Corporation",
+              "ownership_pct": 1.0,
+              "parent": null,
+              "page_reference": 19,
+              "section_title": "NOTE 6 INVESTMENTS",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "HealthSnap, Inc.",
+              "ownership_pct": 4.0,
+              "parent": null,
+              "page_reference": 19,
+              "section_title": "NOTE 6 INVESTMENTS",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "LeaderMed Health Group Limited",
+              "ownership_pct": 47.0,
+              "parent": null,
+              "page_reference": 19,
+              "section_title": "NOTE 6 INVESTMENTS",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Zebra Biologics, Inc.",
+              "ownership_pct": 29.0,
+              "parent": null,
+              "page_reference": 19,
+              "section_title": "NOTE 6 INVESTMENTS",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pharmsynthez",
+              "ownership_pct": 6.0,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "NOTE 6 INVESTMENTS",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Cocrystal Pharma, Inc.",
+              "ownership_pct": 2.0,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "NOTE 6 INVESTMENTS",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Non-Invasive Monitoring Systems, Inc.",
+              "ownership_pct": 1.0,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "NOTE 6 INVESTMENTS",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "20-F",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "Entera Bio Ltd.",
+              "ownership_pct": 7.9,
+              "parent": null,
+              "page_reference": 19,
+              "section_title": "NOTE 6 INVESTMENTS",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Niagen Bioscience, Inc.",
+              "ownership_pct": 0.04,
+              "parent": null,
+              "page_reference": 19,
+              "section_title": "NOTE 6 INVESTMENTS",
+              "table_title": null,
+              "note": "Formally known as ChromaDex Corporation"
+            },
+            {
+              "name": "Eloxx Pharmaceuticals, Inc.",
+              "ownership_pct": 1.0,
+              "parent": null,
+              "page_reference": 19,
+              "section_title": "NOTE 6 INVESTMENTS",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Xenetic Biosciences, Inc.",
+              "ownership_pct": 3.0,
+              "parent": null,
+              "page_reference": 26,
+              "section_title": "NOTE 11 RELATED PARTY TRANSACTIONS",
+              "table_title": null,
+              "note": "Also mentioned as 1% on page 2"
+            },
+            {
+              "name": "BioCardia, Inc.",
+              "ownership_pct": 0.14,
+              "parent": null,
+              "page_reference": 19,
+              "section_title": "NOTE 6 INVESTMENTS",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "CAMP4 Therapeutics Corporation",
+              "ownership_pct": 1.0,
+              "parent": null,
+              "page_reference": 19,
+              "section_title": "NOTE 6 INVESTMENTS",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "HealthSnap, Inc.",
+              "ownership_pct": 4.0,
+              "parent": null,
+              "page_reference": 19,
+              "section_title": "NOTE 6 INVESTMENTS",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "LeaderMed Health Group Limited",
+              "ownership_pct": 47.0,
+              "parent": null,
+              "page_reference": 19,
+              "section_title": "NOTE 6 INVESTMENTS",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Zebra Biologics, Inc.",
+              "ownership_pct": 29.0,
+              "parent": null,
+              "page_reference": 19,
+              "section_title": "NOTE 6 INVESTMENTS",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pharmsynthez",
+              "ownership_pct": 6.0,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "Equity method investments",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Cocrystal Pharma, Inc.",
+              "ownership_pct": 2.0,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "Equity method investments",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Non-Invasive Monitoring Systems, Inc.",
+              "ownership_pct": 1.0,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "Equity method investments",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
   "1737810": {
     "company_id": "1610",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-02T12:43:28.443955+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-03T10:48:51.271232+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1759000": {
     "company_id": "1610",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-02T12:43:28.564042+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-03T10:48:56.120058+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1759652": {
     "company_id": "1610",
