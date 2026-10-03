@@ -14903,36 +14903,11 @@
   },
   "1765136": {
     "company_id": "1616",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-03T10:54:58.078553+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "נירלט צבעים בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "5. אירועים מהותיים בתקופת הדוח ולאחריה",
-              "table_title": null,
-              "note": "חברת בת"
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-03T10:55:23.345309+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765144": {
     "company_id": "1616",
@@ -14966,108 +14941,59 @@
   },
   "1743867": {
     "company_id": "1618",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-02T12:43:31.455928+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-03T10:56:19.891097+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743916": {
     "company_id": "1618",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-02T12:43:31.751601+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-03T10:56:11.759342+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1759780": {
     "company_id": "1618",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-02T12:43:31.878760+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-03T10:56:17.052773+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766160": {
     "company_id": "1618",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-02T12:43:32.268099+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 6,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-03T10:57:26.085399+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766175": {
     "company_id": "1618",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-02T12:43:32.569446+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-03T10:56:46.986117+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745586": {
     "company_id": "1621",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-02T12:43:32.981381+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-03T10:57:48.084109+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745594": {
     "company_id": "1621",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-02T12:43:33.231254+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-03T10:57:44.192433+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767520": {
     "company_id": "1515",
@@ -15079,18 +15005,11 @@
   },
   "1766062": {
     "company_id": "1621",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-02T12:43:33.795987+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-03T10:58:51.414135+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766068": {
     "company_id": "1621",
@@ -15109,31 +15028,51 @@
   },
   "1745241": {
     "company_id": "1622",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-02T12:43:34.074231+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 7,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-03T10:59:15.289710+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766453": {
     "company_id": "1622",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-02T12:43:34.399743+00:00",
+    "at": "2026-10-03T10:59:09.238392+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 7,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "EX/CPS Holding LLC",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 3,
+              "section_title": "פרק א' - דוח הדירקטוריון על מצב ענייני החברה",
+              "table_title": null,
+              "note": "חברה כלולה מהותית"
+            },
+            {
+              "name": "EX45th LLC",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 3,
+              "section_title": "פרק א' - דוח הדירקטוריון על מצב ענייני החברה",
+              "table_title": null,
+              "note": "JV1 - באמצעותה מחזיקה החברה בשרשור בנכס 740 8th Avenue"
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
