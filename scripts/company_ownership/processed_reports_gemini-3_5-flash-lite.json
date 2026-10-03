@@ -13800,215 +13800,135 @@
   },
   "1763332": {
     "company_id": "1457",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-03T10:08:43.733479+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "אלתא מערכות בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 3,
-              "section_title": "עדכון סעיף 11 לפרק א' (תיאור עסקי התאגיד) לדוח התקופתי לשנת 2025 – אלתא (תחום האלקטרוניקה הצבאית)",
-              "table_title": null,
-              "note": "מיזוג חברת הבת לתוך החברה"
-            },
-            {
-              "name": "TSG",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "הנפקת הון בחברה כלולה",
-              "table_title": null,
-              "note": "דילול החזקות עקב גיוס הון"
-            }
-          ],
-          "change_events": [
-            {
-              "company": "אלתא מערכות בע\"מ",
-              "event_type": "other",
-              "ownership_pct_before": null,
-              "ownership_pct_after": null,
-              "event_date": "2026-05-04",
-              "event_description": "החלטת דירקטוריון להמליץ לפעול למיזוג חברת הבת אלתא אל לתוך החברה",
-              "page_reference": 3,
-              "section_title": "עדכון סעיף 11 לפרק א' (תיאור עסקי התאגיד) לדוח התקופתי לשנת 2025 – אלתא (תחום האלקטרוניקה הצבאית)"
-            },
-            {
-              "company": "TSG",
-              "event_type": "decrease",
-              "ownership_pct_before": null,
-              "ownership_pct_after": null,
-              "event_date": null,
-              "event_description": "השלמת גיוס הון בחברה כלולה שהביא לדילול בשיעור החזקת החברה",
-              "page_reference": 10,
-              "section_title": "הנפקת הון בחברה כלולה"
-            }
-          ]
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-03T10:09:13.726312+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744186": {
     "company_id": "1459",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-02T12:42:56.347912+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-03T10:09:26.721782+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765344": {
     "company_id": "1459",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-02T12:42:56.596723+00:00",
+    "at": "2026-10-03T10:09:25.625570+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 4,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "המשביר בתי כלבו בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "א. הסברי הדירקטוריון למצב עסקי התאגיד, תוצאות פעולותיו, הונו העצמי ותזרימי המזומנים שלו:",
+              "table_title": null,
+              "note": "חברה בת בבעלות מלאה"
+            },
+            {
+              "name": "קנת קול עיצוב ופיתוח בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "תחום פעילות פיתוח, עיצוב, ייצור, שיווק והפצה של המותג קנת קול",
+              "table_title": null,
+              "note": "חברה בת בבעלות מלאה"
+            },
+            {
+              "name": "Kenneth Cole Europe B.V. (קנת קול אירופה)",
+              "ownership_pct": 81,
+              "parent": "קנת קול עיצוב ופיתוח בע\"מ",
+              "page_reference": 5,
+              "section_title": "תחום פעילות פיתוח, עיצוב, ייצור, שיווק והפצה של המותג קנת קול",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Cole Kenneth GmbH DACH (קנת קול דאך)",
+              "ownership_pct": 100,
+              "parent": "Kenneth Cole Europe B.V. (קנת קול אירופה)",
+              "page_reference": 6,
+              "section_title": "תחום פעילות פיתוח, עיצוב, ייצור, שיווק והפצה של המותג קנת קול",
+              "table_title": null,
+              "note": "חברה בת בבעלות מלאה של קנת קול אירופה"
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
   "1744027": {
     "company_id": "1460",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-02T12:42:56.788290+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-03T10:09:50.140104+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744031": {
     "company_id": "1460",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-02T12:42:57.088176+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-03T10:10:17.119787+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766639": {
     "company_id": "1460",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-02T12:42:57.278442+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-03T10:10:40.084372+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766644": {
     "company_id": "1460",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-02T12:42:57.532168+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-03T10:11:00.103813+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1739935": {
     "company_id": "1461",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-02T12:42:57.785792+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-03T10:11:03.991590+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742619": {
     "company_id": "1461",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-02T12:42:57.986735+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-03T10:11:35.175303+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1760415": {
     "company_id": "1461",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-02T12:42:58.124217+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-03T10:11:39.033025+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763499": {
     "company_id": "1461",
@@ -14027,18 +13947,11 @@
   },
   "1764135": {
     "company_id": "1461",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-02T12:42:58.390545+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-03T10:12:05.254777+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744946": {
     "company_id": "1463",
