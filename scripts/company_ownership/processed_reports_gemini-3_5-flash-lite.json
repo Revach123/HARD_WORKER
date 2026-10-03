@@ -14005,138 +14005,118 @@
   },
   "1767668": {
     "company_id": "1484",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-02T12:43:05.460386+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-03T10:16:20.180470+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1741954": {
     "company_id": "1490",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-02T12:43:05.680100+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-03T10:17:33.366182+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764944": {
     "company_id": "1490",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-02T12:43:05.921694+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-03T10:16:58.406839+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745515": {
     "company_id": "1496",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-02T12:43:06.260732+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-03T10:17:28.481321+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767630": {
     "company_id": "1484",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-02T12:43:05.253012+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-03T10:16:11.232015+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766388": {
     "company_id": "1496",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-02T12:43:06.469367+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-03T10:18:08.007471+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744791": {
     "company_id": "1502",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-02T12:43:06.717774+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-03T10:19:21.837786+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742830": {
     "company_id": "1510",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-02T12:43:07.292111+00:00",
+    "at": "2026-10-03T10:19:31.146734+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 6,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "אל על הנוסע המתמיד בע\"מ",
+              "ownership_pct": 19.9,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "1.3 החברה - כזרוע האשראי של קבוצת הפניקס",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "הפניקס ליווי בניה וערבויות בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.2 החברה – תחומי הפעילות",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "הפניקס אשראי צרכני בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.2 החברה – תחומי הפעילות",
+              "table_title": null,
+              "note": "חברת בת"
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
   "1742852": {
     "company_id": "1510",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-02T12:43:07.541607+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-03T10:19:39.979232+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764358": {
     "company_id": "1510",
@@ -14335,18 +14315,11 @@
   },
   "1767654": {
     "company_id": "1502",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-02T12:43:06.960792+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-03T10:19:19.306055+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744477": {
     "company_id": "1527",
@@ -29162,251 +29135,11 @@
   },
   "1769866": {
     "company_id": "1473",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-03T10:15:38.770390+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {
-        "0:0": {
-          "report_format": "other",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "גרין-גו",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 3,
-              "section_title": "תקציר מנהלים — נקודת הפריצה.",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "PV Projects × 8",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 19,
-              "section_title": "סיכום פורטפוליו — הכנסות שנתיות מייצגות.",
-              "table_title": "סיכום פורטפוליו — הכנסות שנתיות מייצגות.",
-              "note": null
-            },
-            {
-              "name": "Flux (Wind)",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 19,
-              "section_title": "סיכום פורטפוליו — הכנסות שנתיות מייצגות.",
-              "table_title": "סיכום פורטפוליו — הכנסות שנתיות מייצגות.",
-              "note": null
-            },
-            {
-              "name": "Chint BESS",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 19,
-              "section_title": "סיכום פורטפוליו — הכנסות שנתיות מייצגות.",
-              "table_title": "סיכום פורטפוליו — הכנסות שנתיות מייצגות.",
-              "note": null
-            },
-            {
-              "name": "Brindisi BESS",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 19,
-              "section_title": "סיכום פורטפוליו — הכנסות שנתיות מייצגות.",
-              "table_title": "סיכום פורטפוליו — הכנסות שנתיות מייצגות.",
-              "note": null
-            },
-            {
-              "name": "פורטפוליו נופר",
-              "ownership_pct": 30,
-              "parent": null,
-              "page_reference": 19,
-              "section_title": "סיכום פורטפוליו — הכנסות שנתיות מייצגות.",
-              "table_title": "סיכום פורטפוליו — הכנסות שנתיות מייצגות.",
-              "note": "עד 30%"
-            },
-            {
-              "name": "Kistos CAPP",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 19,
-              "section_title": "סיכום פורטפוליו — הכנסות שנתיות מייצגות.",
-              "table_title": "סיכום פורטפוליו — הכנסות שנתיות מייצגות.",
-              "note": null
-            },
-            {
-              "name": "Salrom CAPP",
-              "ownership_pct": 40,
-              "parent": null,
-              "page_reference": 19,
-              "section_title": "סיכום פורטפוליו — הכנסות שנתיות מייצגות.",
-              "table_title": "סיכום פורטפוליו — הכנסות שנתיות מייצגות.",
-              "note": null
-            },
-            {
-              "name": "Nobian CAPP",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 19,
-              "section_title": "סיכום פורטפוליו — הכנסות שנתיות מייצגות.",
-              "table_title": "סיכום פורטפוליו — הכנסות שנתיות מייצגות.",
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "other",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "MB Sun 6 Sp. z o.o.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 23,
-              "section_title": "PROJECT ACQUIRED · COMMERCIALLY OPERATIONAL",
-              "table_title": null,
-              "note": "Kolbuszowa"
-            },
-            {
-              "name": "SF Projekt 15 Sp. z o.o.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 24,
-              "section_title": "PROJECT ACQUIRED · COMMERCIALLY OPERATIONAL",
-              "table_title": null,
-              "note": "Wilków"
-            },
-            {
-              "name": "SF Projekt 23 Sp. z o.o.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 25,
-              "section_title": "PROJECT ACQUIRED · COMMERCIALLY OPERATIONAL",
-              "table_title": null,
-              "note": "Grędzina"
-            },
-            {
-              "name": "SCS 40",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 26,
-              "section_title": "ACQUIRED · UNDER DEVELOPMENT · PRE-COD",
-              "table_title": null,
-              "note": "Brindisi"
-            },
-            {
-              "name": "Refi 3 Sp. z o.o.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 27,
-              "section_title": "ACQUIRED · CLOSING POST GRID CONNECTION",
-              "table_title": null,
-              "note": "Belsk Duży"
-            },
-            {
-              "name": "Refi 11 Sp. z o.o.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 28,
-              "section_title": "ACQUIRED · CLOSING POST GRID CONNECTION",
-              "table_title": null,
-              "note": "Opoka + Jackowo"
-            },
-            {
-              "name": "Refi 11 Sp. z o.o.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 29,
-              "section_title": "ACQUIRED · CLOSING POST GRID CONNECTION",
-              "table_title": null,
-              "note": "Nysa"
-            },
-            {
-              "name": "REFI 2 sp. z o.o.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 30,
-              "section_title": "ACQUIRED · CLOSING POST GRID CONNECTION · READY TO BUILD",
-              "table_title": null,
-              "note": "Kazubek"
-            },
-            {
-              "name": "Baryl",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 31,
-              "section_title": "UNDER EXCLUSIVITY · SIGNING H2 2026",
-              "table_title": null,
-              "note": "בחינה תחת בלעדיות"
-            },
-            {
-              "name": "Flux",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 32,
-              "section_title": "UNDER EXCLUSIVITY · SIGNING H2 2026",
-              "table_title": null,
-              "note": "פרויקט רוח מופעל"
-            },
-            {
-              "name": "Chint",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 33,
-              "section_title": "UNDER EXCLUSIVITY · SIGNING H2 2026",
-              "table_title": null,
-              "note": "פרויקט אחסון BESS"
-            },
-            {
-              "name": "נופר אנרגיה תפ בע\"מ",
-              "ownership_pct": 30,
-              "parent": null,
-              "page_reference": 34,
-              "section_title": "UNDER EXCLUSIVITY · FRAMEWORK AGREEMENT · SIGNING H2 2026",
-              "table_title": null,
-              "note": "אופציה עד 30%"
-            },
-            {
-              "name": "Kistos",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 35,
-              "section_title": "INITIATED · FEASIBILITY · CAES · CAPP TECHNOLOGY · FOAK",
-              "table_title": null,
-              "note": "שותפות עם Kistos"
-            },
-            {
-              "name": "Salrom",
-              "ownership_pct": 40,
-              "parent": null,
-              "page_reference": 36,
-              "section_title": "INITIATED · FEASIBILITY · CAES · CAPP TECHNOLOGY",
-              "table_title": null,
-              "note": "שותפות עם Salrom וחג'ג' אירופה דבלופמנט"
-            },
-            {
-              "name": "Nobian",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 37,
-              "section_title": "INITIATED · FEASIBILITY · CAES · CAPP TECHNOLOGY",
-              "table_title": null,
-              "note": "שותפות עם Nobian (באמצעות Dansk Salt)"
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-03T10:15:53.147100+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1769859": {
     "company_id": "1628",
