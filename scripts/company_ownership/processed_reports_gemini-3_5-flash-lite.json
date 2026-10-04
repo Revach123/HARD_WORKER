@@ -16311,63 +16311,35 @@
   },
   "1744062": {
     "company_id": "1763",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-03T11:05:44.309683+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 7,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-04T11:07:43.337758+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763724": {
     "company_id": "1763",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-03T11:05:44.514031+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 8,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-04T11:08:20.887591+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742347": {
     "company_id": "1765",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-03T11:05:44.599783+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-04T11:08:24.088242+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763631": {
     "company_id": "1765",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-03T11:05:44.683275+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-04T11:09:02.351065+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745163": {
     "company_id": "1768",
@@ -16394,61 +16366,308 @@
   },
   "1767790": {
     "company_id": "1768",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-03T11:05:44.758724+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-04T11:09:09.003339+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743457": {
     "company_id": "1769",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-03T11:05:47.451170+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 8,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-04T11:11:25.184232+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743461": {
     "company_id": "1769",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-03T11:05:48.508967+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-04T11:10:09.002175+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743872": {
     "company_id": "1769",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-03T11:05:50.903493+00:00",
+    "at": "2026-10-04T11:11:06.934890+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 8,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "BlueGen",
+              "ownership_pct": 80.01,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "נתונים עיקריים אודות השקעות הקרן",
+              "table_title": "נתונים עיקריים אודות השקעות הקרן",
+              "note": null
+            },
+            {
+              "name": "PowerGen",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "נתונים עיקריים אודות השקעות הקרן",
+              "table_title": "נתונים עיקריים אודות השקעות הקרן",
+              "note": null
+            },
+            {
+              "name": "Greenway",
+              "ownership_pct": 13.2,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "נתונים עיקריים אודות השקעות הקרן",
+              "table_title": "נתונים עיקריים אודות השקעות הקרן",
+              "note": null
+            },
+            {
+              "name": "חברות חלוקת הגז",
+              "ownership_pct": 33.33,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "נתונים עיקריים אודות השקעות הקרן",
+              "table_title": "נתונים עיקריים אודות השקעות הקרן",
+              "note": null
+            },
+            {
+              "name": "בון תור",
+              "ownership_pct": 75.7,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "נתונים עיקריים אודות השקעות הקרן",
+              "table_title": "נתונים עיקריים אודות השקעות הקרן",
+              "note": null
+            },
+            {
+              "name": "Porterbrook",
+              "ownership_pct": 10,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "נתונים עיקריים אודות השקעות הקרן",
+              "table_title": "נתונים עיקריים אודות השקעות הקרן",
+              "note": null
+            },
+            {
+              "name": "פרידנזון - ג'נריישן מרכזים לוגיסטיים",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "נתונים עיקריים אודות השקעות הקרן",
+              "table_title": "נתונים עיקריים אודות השקעות הקרן",
+              "note": null
+            },
+            {
+              "name": "BlueGen Waste Management",
+              "ownership_pct": 70,
+              "parent": "BlueGen",
+              "page_reference": 11,
+              "section_title": "פסולת",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "MRC אלון תבור",
+              "ownership_pct": 16.67,
+              "parent": "PowerGen",
+              "page_reference": 16,
+              "section_title": "MRC אלון תבור",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אגירה שאובה PSP",
+              "ownership_pct": 25.5,
+              "parent": "PowerGen",
+              "page_reference": 17,
+              "section_title": "אגירה שאובה PSP",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "פורטרברוק",
+              "ownership_pct": 10,
+              "parent": null,
+              "page_reference": 18,
+              "section_title": "תחבורה רכבתית באנגליה - תמצית תוצאות לשלושת החודשים הראשונים של 2026",
+              "table_title": null,
+              "note": "החזקה עקיפה, נחתם הסכם למכירת מלוא ההחזקות במרץ 2026"
+            },
+            {
+              "name": "פרידנזון-ג'נריישן",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 19,
+              "section_title": "לוגיסטיקה - תמצית תוצאות לשלושת החודשים הראשונים של 2026",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "חברות חלוקת הגז הטבעי",
+              "ownership_pct": 33.33,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "חלוקת גז טבעי והטענת רכבים חשמליים בחו\"ל - תמצית תוצאות לשלושת החודשים הראשונים של 2026",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "GreenWay",
+              "ownership_pct": 13.2,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "חלוקת גז טבעי והטענת רכבים חשמליים בחו\"ל - תמצית תוצאות לשלושת החודשים הראשונים של 2026",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "בלוג'ן בע\"מ",
+              "ownership_pct": 80.01,
+              "parent": null,
+              "page_reference": 23,
+              "section_title": "1.7 עדכונים ביחס לתחום הסביבה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "BlueGen Waste Management Ltd",
+              "ownership_pct": 70,
+              "parent": "בלוג'ן בע\"מ",
+              "page_reference": 23,
+              "section_title": "1.7 עדכונים ביחס לתחום הסביבה",
+              "table_title": null,
+              "note": "זרוע פסולת אינטגרטיבית בשליטת הקרן"
+            },
+            {
+              "name": "סמארט וויסט",
+              "ownership_pct": 50,
+              "parent": "BlueGen Waste Management Ltd",
+              "page_reference": 25,
+              "section_title": "1.7.4 הסדר פיצוי בגין נזקי מלחמה למתקן סמארט וויסט",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פאוורג'ן בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 25,
+              "section_title": "1.8 עדכונים ביחס לתחום ייצור, אגירה ואספקת חשמל",
+              "table_title": null,
+              "note": "המוחזקת במלואה על ידי הקרן"
+            },
+            {
+              "name": "ריינדיר אנרגיה בע\"מ",
+              "ownership_pct": 27.51,
+              "parent": "פאוורג'ן בע\"מ",
+              "page_reference": 26,
+              "section_title": "1.8.2 התקשרות ריינדיר אנרגיה בע\"מ בהסכם להבטחת מועדי אספקת ציוד עיקרי לתחנת הכוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "יבולי שמש אנרגיה מתחדשת בע\"מ",
+              "ownership_pct": 100,
+              "parent": "פאוורג'ן בע\"מ",
+              "page_reference": 28,
+              "section_title": "1.8.4 השלמת עסקה לרכישת יבולי שמש אנרגיה מתחדשת בע\"מ (\"יבולי שמש\")",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "בון תור",
+              "ownership_pct": 76,
+              "parent": null,
+              "page_reference": 50,
+              "section_title": "באור 3 - השקעות בחברות",
+              "table_title": "א. הרכב ההשקעה בחברות:",
+              "note": null
+            },
+            {
+              "name": "PowerGen",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 50,
+              "section_title": "באור 3 - השקעות בחברות",
+              "table_title": "א. הרכב ההשקעה בחברות:",
+              "note": null
+            },
+            {
+              "name": "חברות חלוקת הגז הטבעי",
+              "ownership_pct": 33,
+              "parent": null,
+              "page_reference": 50,
+              "section_title": "באור 3 - השקעות בחברות",
+              "table_title": "א. הרכב ההשקעה בחברות:",
+              "note": null
+            },
+            {
+              "name": "BlueGen",
+              "ownership_pct": 80,
+              "parent": null,
+              "page_reference": 50,
+              "section_title": "באור 3 - השקעות בחברות",
+              "table_title": "א. הרכב ההשקעה בחברות:",
+              "note": null
+            },
+            {
+              "name": "פרידנזון-ג'נריישן מרכזים לוגיסטיים",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 50,
+              "section_title": "באור 3 - השקעות בחברות",
+              "table_title": "א. הרכב ההשקעה בחברות:",
+              "note": null
+            },
+            {
+              "name": "Greenway Holdings S.A (גרין-ווי)",
+              "ownership_pct": 13,
+              "parent": null,
+              "page_reference": 50,
+              "section_title": "באור 3 - השקעות בחברות",
+              "table_title": "א. הרכב ההשקעה בחברות:",
+              "note": null
+            },
+            {
+              "name": "Porterbrook Holdings I Limited (פורטרברוק)",
+              "ownership_pct": 10,
+              "parent": null,
+              "page_reference": 50,
+              "section_title": "באור 3 - השקעות בחברות",
+              "table_title": "א. הרכב ההשקעה בחברות:",
+              "note": "נכס מוחזק למכירה"
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
@@ -27667,45 +27886,11 @@
   },
   "1769608": {
     "company_id": "1762",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:05:38.327268+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {
-        "0:0": {
-          "report_format": "other",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "Energean Israel Limited",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "Israel",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Energean Italy S.p.A.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 9,
-              "section_title": "Italy",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-04T11:06:22.128336+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1769610": {
     "company_id": "1762",
@@ -27717,18 +27902,11 @@
   },
   "1769614": {
     "company_id": "1762",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-03T11:05:43.801269+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-04T11:06:13.128423+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1769921": {
     "company_id": "2252",
@@ -27881,18 +28059,11 @@
   },
   "1770478": {
     "company_id": "1762",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-03T11:05:44.137351+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-04T11:06:35.134581+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1770283": {
     "company_id": "1802",
