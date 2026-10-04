@@ -15336,71 +15336,11 @@
   },
   "1740983": {
     "company_id": "1651",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T10:13:02.308443+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {
-        "0:0": {
-          "report_format": "other",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "Cell Cure Neurosciences Ltd. (\"CCN\")",
-              "ownership_pct": 94,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "1. Organization, Basis of Presentation and Liquidity",
-              "table_title": null,
-              "note": "Includes shares owned by Lineage and ESI."
-            },
-            {
-              "name": "ES Cell International Pte. Ltd. (\"ESI\")",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "1. Organization, Basis of Presentation and Liquidity",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "other",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "CCN",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 30,
-              "section_title": "Israeli Regional Conflict",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ES Cell International Pte. Ltd. (ESI)",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 33,
-              "section_title": "Other Income and Expenses, Net",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-04T10:13:14.818280+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1760450": {
     "company_id": "1651",
@@ -15412,93 +15352,51 @@
   },
   "1762043": {
     "company_id": "1651",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-03T11:05:30.773843+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-04T10:13:20.288844+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1762045": {
     "company_id": "1651",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-03T11:05:30.874562+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-04T10:13:22.725729+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767751": {
     "company_id": "1654",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-03T11:05:31.059214+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-04T10:14:23.687488+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745636": {
     "company_id": "1654",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-03T11:05:30.943436+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 9,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-04T10:16:16.315230+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1741150": {
     "company_id": "1661",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-03T11:05:31.244301+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-04T10:16:23.424525+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1762257": {
     "company_id": "1661",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-03T11:05:31.386924+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-04T10:20:31.092717+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745723": {
     "company_id": "1662",
@@ -15532,46 +15430,67 @@
   },
   "1765651": {
     "company_id": "1664",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-03T11:05:31.526203+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-04T10:28:15.876322+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745290": {
     "company_id": "1665",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-03T11:05:32.089887+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 8,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-04T10:30:22.466257+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767264": {
     "company_id": "1665",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-03T11:05:31.977041+00:00",
+    "at": "2026-10-04T10:30:13.310521+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 14,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "Goodrich Quality Theaters",
+              "ownership_pct": 80,
+              "parent": null,
+              "page_reference": 3,
+              "section_title": "מבוא – החברה וסביבתה העסקית",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "חברת הבת",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 18,
+              "section_title": "גילוי בהתאם לסעיף 10(ב)(14) לתקנות הדוחות",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
@@ -17048,18 +16967,11 @@
   },
   "1767800": {
     "company_id": "1662",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-03T11:05:31.748546+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 19,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-04T10:29:39.989302+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767790": {
     "company_id": "1768",
