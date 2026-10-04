@@ -15856,62 +15856,19 @@
   },
   "1764295": {
     "company_id": "1692",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T10:50:22.969166+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {
-        "0:0": {
-          "report_format": "other",
-          "document_type": "change_events",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "טקלנד (כיום 'מור קרדיט')",
-              "ownership_pct": 56,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "התפתחויות מרכזיות במחצית הראשונה של שנת 2026",
-              "table_title": null,
-              "note": "רכישת פעילות בתחום האשראי החוץ בנקאי"
-            }
-          ],
-          "change_events": [
-            {
-              "company": "טקלנד (כיום 'מור קרדיט')",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 56,
-              "event_date": null,
-              "event_description": "רכישת 56% מחברת טקלנד (כיום 'מור קרדיט'), המספקת פתרונות אשראי חוץ בנקאי",
-              "page_reference": 8,
-              "section_title": "התפתחויות מרכזיות במחצית הראשונה של שנת 2026"
-            }
-          ]
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-04T10:50:34.862938+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764489": {
     "company_id": "1692",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-03T11:05:38.464753+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-04T10:50:55.531531+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767588": {
     "company_id": "1693",
@@ -15945,78 +15902,43 @@
   },
   "1765029": {
     "company_id": "1696",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-03T11:05:38.666986+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-04T10:51:25.896004+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765255": {
     "company_id": "1696",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-03T11:05:38.787980+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-04T10:51:45.083978+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744140": {
     "company_id": "1697",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-03T11:05:38.859320+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-04T10:51:50.914407+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765500": {
     "company_id": "1697",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-03T11:05:38.930044+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-04T10:52:09.631344+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767724": {
     "company_id": "1703",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-03T11:05:39.188428+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-04T10:52:44.253460+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742667": {
     "company_id": "1704",
@@ -16035,48 +15957,27 @@
   },
   "1766712": {
     "company_id": "1704",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-03T11:05:39.075682+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-04T10:53:35.747144+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1741598": {
     "company_id": "1706",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-03T11:05:39.138482+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-04T10:52:48.828831+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744046": {
     "company_id": "1706",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-03T11:05:39.336645+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-04T10:53:36.104144+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744063": {
     "company_id": "1706",
