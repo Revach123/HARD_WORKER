@@ -15681,245 +15681,148 @@
   },
   "1742399": {
     "company_id": "1682",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T10:40:47.064234+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {
-        "0:0": {
-          "report_format": "other",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "Shay",
-              "ownership_pct": 70,
-              "parent": "CPV",
-              "page_reference": 4,
-              "section_title": "OPC Energy at a Glance*",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Maryland",
-              "ownership_pct": 100,
-              "parent": "CPV Group",
-              "page_reference": 6,
-              "section_title": "Substantial Growth Portfolio(1)(2) of 18.8 GW and 11.7 GWh*",
-              "table_title": null,
-              "note": "As of the report approval date"
-            },
-            {
-              "name": "Three Rivers",
-              "ownership_pct": 0,
-              "parent": "CPV Group",
-              "page_reference": 6,
-              "section_title": "Substantial Growth Portfolio(1)(2) of 18.8 GW and 11.7 GWh*",
-              "table_title": null,
-              "note": "As of the report approval date"
-            }
-          ],
-          "change_events": [
-            {
-              "company": "Shore",
-              "event_type": "increase",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 100,
-              "event_date": null,
-              "event_description": "Buyout of the remaining 11% stake in Shore",
-              "page_reference": 9,
-              "section_title": "Key Business Events in 2026"
-            },
-            {
-              "company": "Basin Ranch",
-              "event_type": "increase",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 100,
-              "event_date": null,
-              "event_description": "Buyout of the remaining 30% stake in Basin Ranch",
-              "page_reference": 9,
-              "section_title": "Key Business Events in 2026"
-            },
-            {
-              "company": "Maryland",
-              "event_type": "increase",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 100,
-              "event_date": null,
-              "event_description": "Buyout of the remaining 25% stake in Maryland",
-              "page_reference": 9,
-              "section_title": "Key Business Events in 2026"
-            },
-            {
-              "company": "Three Rivers",
-              "event_type": "full_disposal",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 0,
-              "event_date": null,
-              "event_description": "Sale of a 10% stake in Three Rivers",
-              "page_reference": 9,
-              "section_title": "Key Business Events in 2026"
-            }
-          ]
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-04T10:41:24.558428+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742400": {
     "company_id": "1682",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-03T11:05:35.750272+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-04T10:42:33.194543+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1760182": {
     "company_id": "1682",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-03T11:05:35.784871+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-04T10:41:29.548356+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1762824": {
     "company_id": "1682",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-03T11:05:35.989866+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 7,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-04T10:43:39.674735+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1762833": {
     "company_id": "1682",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-03T11:05:36.101946+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-04T10:43:08.775890+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1762834": {
     "company_id": "1682",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-03T11:05:36.291157+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 6,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-04T10:44:49.030014+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1762836": {
     "company_id": "1682",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-03T11:05:36.748813+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-04T10:44:11.162234+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742886": {
     "company_id": "1683",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-03T11:05:36.726908+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-04T10:45:09.281965+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767045": {
     "company_id": "1683",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-03T11:05:37.061385+00:00",
+    "at": "2026-10-04T10:46:24.764459+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 21,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "other",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
   "1767917": {
     "company_id": "1683",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-03T11:05:36.868030+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-04T10:45:34.333837+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742498": {
     "company_id": "1688",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-03T11:05:37.152307+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-04T10:46:29.126391+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765471": {
     "company_id": "1688",
