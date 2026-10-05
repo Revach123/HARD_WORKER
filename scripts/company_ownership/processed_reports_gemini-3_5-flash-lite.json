@@ -16913,108 +16913,11 @@
   },
   "1743517": {
     "company_id": "1810",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T10:51:58.710761+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "מספנות ישראל בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 3,
-              "section_title": "א. מגזר המספנה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "נמל מספנות ישראל בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 3,
-              "section_title": "ב. מגזר הנמל",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מ.י. מרכבי ישראל בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 3,
-              "section_title": "ב. מגזר הנמל",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "סימנט אי.אס. בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "ג. מגזר חומרי הבניה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "פרימה סימנט בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "ג. מגזר חומרי הבניה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אונת סימנט בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "ג. מגזר חומרי הבניה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "נדיר תעשיות צבע (1996) בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "ג. מגזר חומרי הבניה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ISCO TRADING SA",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "ג. מגזר חומרי הבניה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אירונאוס סיסטמס בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "ה. בנוסף, לקבוצה פעילויות נוספות",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T10:59:44.205709+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765767": {
     "company_id": "1810",
@@ -17065,136 +16968,98 @@
   },
   "1742024": {
     "company_id": "1815",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:15:48.388482+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T10:58:20.291111+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1762572": {
     "company_id": "1815",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:15:53.944942+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T11:00:38.776499+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1762571": {
     "company_id": "1815",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:15:52.845004+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T11:01:34.151252+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766882": {
     "company_id": "1817",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:15:53.255192+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T11:02:08.086003+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763400": {
     "company_id": "1820",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:15:56.248549+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T11:02:01.207195+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767555": {
     "company_id": "1821",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:15:56.472485+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T11:03:14.336851+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743847": {
     "company_id": "1822",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:16:02.560068+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T11:04:29.939000+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743848": {
     "company_id": "1822",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:16:04.782215+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T11:04:43.932410+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743858": {
     "company_id": "1822",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-04T11:16:05.015044+00:00",
+    "at": "2026-10-05T11:05:23.310120+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 2,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "LAPO",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 9,
+              "section_title": "תוצאות הפעילות העסקית",
+              "table_title": null,
+              "note": "חברה שנרכשה ברבעון הרביעי בשנת 2025"
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
@@ -17215,18 +17080,11 @@
   },
   "1763977": {
     "company_id": "1822",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:16:12.050878+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T11:05:41.267401+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763981": {
     "company_id": "1822",
