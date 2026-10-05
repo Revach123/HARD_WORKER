@@ -18016,45 +18016,11 @@
   },
   "1740344": {
     "company_id": "1858",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T11:53:48.106852+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "Delta Brands Switzerland GmbH",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 3,
-              "section_title": "1. תיאור תמציתי של התאגיד וסביבתו העסקית",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Delta Brands Germany GmbH",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 3,
-              "section_title": "1. תיאור תמציתי של התאגיד וסביבתו העסקית",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T11:56:53.566225+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1740350": {
     "company_id": "1858",
@@ -18082,33 +18048,19 @@
   },
   "1766561": {
     "company_id": "1859",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:17:48.842373+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T11:57:16.500567+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767742": {
     "company_id": "1861",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:17:49.260832+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T11:57:35.369634+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767686": {
     "company_id": "1862",
@@ -18127,123 +18079,161 @@
   },
   "1744502": {
     "company_id": "1863",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:17:50.749283+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T11:58:27.111981+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763719": {
     "company_id": "1863",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:17:51.342691+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T11:59:31.623855+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767360": {
     "company_id": "1864",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:17:51.104571+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T12:04:50.846855+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744539": {
     "company_id": "1865",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:17:58.832943+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 12,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T12:07:15.297724+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1748686": {
     "company_id": "1865",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:17:52.267839+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T12:07:22.866574+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765424": {
     "company_id": "1865",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-04T11:18:00.711581+00:00",
+    "at": "2026-10-05T12:08:35.446152+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 12,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "איילון חברה לביטוח בע\"מ",
+              "ownership_pct": 59.11,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "1. תיאור החברה והסביבה העסקית",
+              "table_title": null,
+              "note": "בדילול מלא 57.82%"
+            },
+            {
+              "name": "ווישור חברה לביטוח בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": "איילון חברה לביטוח בע\"מ",
+              "page_reference": 5,
+              "section_title": "1. תיאור החברה והסביבה העסקית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "WUS",
+              "ownership_pct": 39.5,
+              "parent": null,
+              "page_reference": 9,
+              "section_title": "2. מגמות, אירועים והתפתחויות בעסקי הקבוצה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "איילון חברה לביטוח בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 51,
+              "section_title": "דוח רבעוני בדבר אפקטיביות הבקרה הפנימית על הדיווח הכספי ועל הגילוי לפי תקנה 38ג(א)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ווישור חברה לביטוח בע\"מ",
+              "ownership_pct": null,
+              "parent": "איילון חברה לביטוח בע\"מ",
+              "page_reference": 51,
+              "section_title": "דוח רבעוני בדבר אפקטיביות הבקרה הפנימית על הדיווח הכספי ועל הגילוי לפי תקנה 38ג(א)",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ווישור פיננסים",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 42,
+              "section_title": "4.3.8 ניתוח רווח (הפסד) שאינו מיוחס לתחומי פעילות -מאוחד:",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "wePay",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 48,
+              "section_title": "8. אירועים לאחר תקופת הדוח",
+              "table_title": null,
+              "note": "חברת בת ייעודית שהוקמה לאחר תקופת הדוח"
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
   "1766727": {
     "company_id": "1865",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:18:05.371863+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T12:08:48.713401+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765905": {
     "company_id": "1865",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:17:59.626502+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T12:08:18.124208+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766115": {
     "company_id": "1866",
