@@ -17960,202 +17960,125 @@
   },
   "1765115": {
     "company_id": "1853",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T11:49:33.093155+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "בלאקאדג' לאבס בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 7,
-              "section_title": "סביבה כללית והשפעת גורמים חיצוניים על פעילות התאגיד",
-              "table_title": null,
-              "note": "חברה פרטית בבעלות מלאה של החברה"
-            },
-            {
-              "name": "בלאקאדג' משכנתאות בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 5,
-              "section_title": ".1 התאגיד וסביבתו העסקית",
-              "table_title": null,
-              "note": "חברה בת בשליטתה של החברה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T11:50:18.198447+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765796": {
     "company_id": "1853",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:17:37.200601+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T11:50:01.655012+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766628": {
     "company_id": "1855",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:17:32.262869+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T11:51:20.842437+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744255": {
     "company_id": "1857",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:17:32.643858+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T11:51:59.798361+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744262": {
     "company_id": "1857",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:17:38.611933+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T11:51:58.084063+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767155": {
     "company_id": "1857",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:17:39.186741+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T11:52:36.759190+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767158": {
     "company_id": "1857",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:17:39.113031+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T11:52:35.704310+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1740344": {
     "company_id": "1858",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-04T11:17:45.054738+00:00",
+    "at": "2026-10-05T11:53:48.106852+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 3,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "Delta Brands Switzerland GmbH",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 3,
+              "section_title": "1. תיאור תמציתי של התאגיד וסביבתו העסקית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Delta Brands Germany GmbH",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 3,
+              "section_title": "1. תיאור תמציתי של התאגיד וסביבתו העסקית",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
   "1740350": {
     "company_id": "1858",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:17:39.920400+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T11:53:41.550701+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1761179": {
     "company_id": "1858",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:17:50.540941+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T11:55:00.467319+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1761195": {
     "company_id": "1858",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:17:45.743797+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T11:56:35.866253+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766561": {
     "company_id": "1859",
