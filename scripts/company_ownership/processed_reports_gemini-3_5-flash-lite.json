@@ -18122,7 +18122,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-05T12:08:35.446152+00:00",
+    "at": "2026-10-05T12:09:21.348092+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -18214,6 +18214,202 @@
             }
           ],
           "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "איילון חברה לביטוח בע\"מ",
+              "ownership_pct": 59.11,
+              "parent": null,
+              "page_reference": 70,
+              "section_title": "באור 1 - כללי",
+              "table_title": null,
+              "note": "בדילול מלא 57.82%"
+            },
+            {
+              "name": "ווישור חברה לביטוח בע\"מ",
+              "ownership_pct": null,
+              "parent": "איילון חברה לביטוח בע\"מ",
+              "page_reference": 70,
+              "section_title": "באור 1 - כללי",
+              "table_title": null,
+              "note": "מוחזקת במלואה על ידי איילון ביטוח"
+            },
+            {
+              "name": "WeSure Technologies USA Inc. (WUS)",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 70,
+              "section_title": "באור 1 - כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "WeSure Digital Insurance Service Inc. (WDS)",
+              "ownership_pct": null,
+              "parent": "WeSure Technologies USA Inc. (WUS)",
+              "page_reference": 70,
+              "section_title": "באור 1 - כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "WeSure Technologies (India) Private Limited",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 70,
+              "section_title": "באור 1 - כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "קויוטי טכנולוגיות",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 70,
+              "section_title": "באור 1 - כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ווישור פיננסים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 70,
+              "section_title": "באור 1 - כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "wePay",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 70,
+              "section_title": "באור 1 - כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "WeSure Insurance USA Holdings, Inc.",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 70,
+              "section_title": "באור 1 - כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Hourly, Inc.",
+              "ownership_pct": null,
+              "parent": "WeSure Technologies USA Inc. (WUS)",
+              "page_reference": 70,
+              "section_title": "באור 1 - כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Media Data Solutions LLC (MDS)",
+              "ownership_pct": null,
+              "parent": "WeSure Technologies USA Inc. (WUS)",
+              "page_reference": 70,
+              "section_title": "באור 1 - כללי",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "איילון חברה לביטוח בע\"מ",
+              "ownership_pct": 59.11,
+              "parent": null,
+              "page_reference": 70,
+              "section_title": "באור :1 - כללי",
+              "table_title": null,
+              "note": "ובדילול מלא 57.82%"
+            },
+            {
+              "name": "ווישור חברה לביטוח בע\"מ",
+              "ownership_pct": null,
+              "parent": "איילון חברה לביטוח בע\"מ",
+              "page_reference": 70,
+              "section_title": "באור :1 - כללי",
+              "table_title": null,
+              "note": "מוחזקת במלואה על ידי איילון ביטוח"
+            },
+            {
+              "name": "ווישור פיננסים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 70,
+              "section_title": "באור :1 - כללי",
+              "table_title": null,
+              "note": "לשעבר: גלובלטק מימון בע\"מ"
+            },
+            {
+              "name": "WeSure Technologies USA Inc (\"WUS\")",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 70,
+              "section_title": "באור :1 - כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "WeSure USA Insurance Holdings, Inc.",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 70,
+              "section_title": "באור :1 - כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "wePay בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 70,
+              "section_title": "באור :1 - כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "WeSure Digital Insurance Agency Service Inc (\"WDS\")",
+              "ownership_pct": null,
+              "parent": "WeSure Technologies USA Inc (\"WUS\")",
+              "page_reference": 70,
+              "section_title": "באור :1 - כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Hourly, Inc.",
+              "ownership_pct": null,
+              "parent": "WeSure Technologies USA Inc (\"WUS\")",
+              "page_reference": 70,
+              "section_title": "באור :1 - כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Media Data Solutions LLC (\"MDS\")",
+              "ownership_pct": null,
+              "parent": "WeSure Technologies USA Inc (\"WUS\")",
+              "page_reference": 70,
+              "section_title": "באור :1 - כללי",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
         }
       },
       "attempts": {}
@@ -18237,25 +18433,18 @@
   },
   "1766115": {
     "company_id": "1866",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:18:02.499113+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T12:09:25.563858+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744998": {
     "company_id": "1867",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-04T11:18:02.907985+00:00",
+    "at": "2026-10-05T12:09:35.196698+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -18300,7 +18489,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-04T11:18:03.848316+00:00",
+    "at": "2026-10-05T12:09:38.440944+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -18315,7 +18504,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-04T11:18:04.345297+00:00",
+    "at": "2026-10-05T12:09:45.553603+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -18330,7 +18519,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-04T11:18:04.842516+00:00",
+    "at": "2026-10-05T12:09:55.166418+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -18345,7 +18534,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-04T11:18:05.912397+00:00",
+    "at": "2026-10-05T12:10:05.678833+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -18360,7 +18549,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-04T11:18:12.280941+00:00",
+    "at": "2026-10-05T12:10:06.111316+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -18375,7 +18564,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-04T11:18:06.296551+00:00",
+    "at": "2026-10-05T12:10:10.652679+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -18390,7 +18579,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-04T11:18:06.668741+00:00",
+    "at": "2026-10-05T12:10:14.299178+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -18405,7 +18594,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-04T11:18:07.079481+00:00",
+    "at": "2026-10-05T12:10:14.510645+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
