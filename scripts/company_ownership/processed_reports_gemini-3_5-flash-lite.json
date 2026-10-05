@@ -16478,63 +16478,11 @@
   },
   "1763123": {
     "company_id": "1773",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T10:15:54.387077+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 8,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "פרימיום אקספרס בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 7,
-              "section_title": ".1.1 תיאור תמציתי של הקבוצה ותחומי פעילות עיקריים",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "המועדון של רמי לוי בע\"מ",
-              "ownership_pct": 18,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": "1.6.2 ערוצי הנפקה והפצה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ישראכרט מימון בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 16,
-              "section_title": "1.6.6 שיתופי פעולה נוספים",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אייפלנט",
-              "ownership_pct": 20,
-              "parent": null,
-              "page_reference": 16,
-              "section_title": "1.6.6 שיתופי פעולה נוספים",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T10:18:36.189915+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763127": {
     "company_id": "1773",
@@ -16554,63 +16502,35 @@
   },
   "1742494": {
     "company_id": "1774",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:14:51.099650+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T10:16:37.737641+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763382": {
     "company_id": "1774",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:14:45.063396+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T10:17:12.082613+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1740880": {
     "company_id": "1778",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:14:45.580159+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 6,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T10:20:38.596353+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1740881": {
     "company_id": "1778",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:14:47.883221+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T10:18:55.765664+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1740882": {
     "company_id": "1778",
@@ -16629,78 +16549,43 @@
   },
   "1740884": {
     "company_id": "1778",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:14:51.207493+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T10:19:11.554994+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1761423": {
     "company_id": "1778",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:14:51.781059+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 7,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T10:22:44.032629+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1761425": {
     "company_id": "1778",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:14:51.586202+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T10:21:27.327228+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1761427": {
     "company_id": "1778",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:14:52.057033+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T10:22:09.034765+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1761430": {
     "company_id": "1778",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:14:54.770883+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T10:22:34.969668+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745417": {
     "company_id": "1786",
