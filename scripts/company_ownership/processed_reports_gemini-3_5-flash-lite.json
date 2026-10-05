@@ -16398,751 +16398,11 @@
   },
   "1764732": {
     "company_id": "1769",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:14:31.138758+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 12,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "BlueGen",
-              "ownership_pct": 80.01,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "נתונים עיקריים אודות השקעות הקרן",
-              "table_title": "נתונים עיקריים אודות השקעות הקרן",
-              "note": null
-            },
-            {
-              "name": "PowerGen",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "נתונים עיקריים אודות השקעות הקרן",
-              "table_title": "נתונים עיקריים אודות השקעות הקרן",
-              "note": null
-            },
-            {
-              "name": "Greenway",
-              "ownership_pct": 13.2,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "נתונים עיקריים אודות השקעות הקרן",
-              "table_title": "נתונים עיקריים אודות השקעות הקרן",
-              "note": null
-            },
-            {
-              "name": "חברות חלוקת הגז",
-              "ownership_pct": 33.33,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "נתונים עיקריים אודות השקעות הקרן",
-              "table_title": "נתונים עיקריים אודות השקעות הקרן",
-              "note": null
-            },
-            {
-              "name": "בון תור",
-              "ownership_pct": 75.7,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "נתונים עיקריים אודות השקעות הקרן",
-              "table_title": "נתונים עיקריים אודות השקעות הקרן",
-              "note": null
-            },
-            {
-              "name": "Porterbrook",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "נתונים עיקריים אודות השקעות הקרן",
-              "table_title": "נתונים עיקריים אודות השקעות הקרן",
-              "note": "מימוש מלא"
-            },
-            {
-              "name": "פרידנזון-ג'נריישן מרכזים לוגיסטיים",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "נתונים עיקריים אודות השקעות הקרן",
-              "table_title": "נתונים עיקריים אודות השקעות הקרן",
-              "note": null
-            },
-            {
-              "name": "BlueGen Waste Management",
-              "ownership_pct": 70,
-              "parent": "BlueGen",
-              "page_reference": 12,
-              "section_title": "פסולת",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "MRC אלון תבור",
-              "ownership_pct": 16.67,
-              "parent": "PowerGen",
-              "page_reference": 17,
-              "section_title": "MRC אלון תבור",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אגירה שאובה PSP",
-              "ownership_pct": 25.5,
-              "parent": "PowerGen",
-              "page_reference": 18,
-              "section_title": "אגירה שאובה PSP",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "פאוורג'ן בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 28,
-              "section_title": "1.8.1 קבלת הסמכה מהממשלה לקידום תכנון תחנות כוח חדשות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אגירה שאובה PSP",
-              "ownership_pct": 25.5,
-              "parent": "פאוורג'ן בע\"מ",
-              "page_reference": 18,
-              "section_title": "אגירה שאובה PSP",
-              "table_title": null,
-              "note": "איחוד יחסי"
-            },
-            {
-              "name": "פרידנזון-ג'נריישן",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 19,
-              "section_title": "לוגיסטיקה - תמצית תוצאות לששת החודשים הראשונים של 2026",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "חברות חלוקת הגז הטבעי",
-              "ownership_pct": 33.33,
-              "parent": null,
-              "page_reference": 20,
-              "section_title": "חברות חלוקת הגז הטבעי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "GreenWay",
-              "ownership_pct": 13.2,
-              "parent": null,
-              "page_reference": 20,
-              "section_title": "GreenWay",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "בלוג'ן בע\"מ",
-              "ownership_pct": 80.01,
-              "parent": null,
-              "page_reference": 26,
-              "section_title": "1.7 פירוט השינויים והחידושים אשר אירעו בעסקי הקרן בעניינים שמתוארים בנספחי הגילוי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Waste BlueGen Management Ltd",
-              "ownership_pct": 70,
-              "parent": "בלוג'ן בע\"מ",
-              "page_reference": 26,
-              "section_title": "1.7.1 השלמת הקמת זרוע הפסולת של הקרן – BlueGen Waste Management Ltd",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "פאוורג'ן שמיר אנרגיה שותפות מוגבלת",
-              "ownership_pct": 50,
-              "parent": "פאוורג'ן בע\"מ",
-              "page_reference": 28,
-              "section_title": "א. תחנת כוח חדשה באזור בית שמש",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "MRC Alon Tavor Power Ltd",
-              "ownership_pct": 16.67,
-              "parent": "פאוורג'ן בע\"מ",
-              "page_reference": 28,
-              "section_title": "ב. תחנת כוח חדשה באלון תבור",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ריינדיר אנרגיה בע\"מ",
-              "ownership_pct": 27.51,
-              "parent": "פאוורג'ן בע\"מ",
-              "page_reference": 29,
-              "section_title": "1.8.2 התקשרות ריינדיר אנרגיה בע\"מ בהסכם להבטחת מועדי אספקת ציוד עיקרי לתחנת הכוח",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": [
-            {
-              "company": "יבולי שמש אנרגיה מתחדשת בע\"מ",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": 0,
-              "ownership_pct_after": 100,
-              "event_date": "2026-05-25",
-              "event_description": "השלמת עסקה לרכישת מלוא ההחזקות ביבולי שמש",
-              "page_reference": 31,
-              "section_title": "1.8.4 השלמת עסקה לרכישת יבולי שמש אנרגיה מתחדשת בע\"מ (\"יבולי שמש\")"
-            },
-            {
-              "company": "Porterbrook Holding I Limited",
-              "event_type": "full_disposal",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 0,
-              "event_date": "2026-06-09",
-              "event_description": "השלמת מכירת פעילות הקרן בתחום התחבורה הרכבתית בבריטניה",
-              "page_reference": 34,
-              "section_title": "1.10 השלמת מכירת פעילות הקרן בתחום התחבורה הרכבתית בבריטניה"
-            }
-          ]
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "BlueGen בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 44,
-              "section_title": "4. פרטים אודות הערכות שווי מהותיות ומהותיות מאוד",
-              "table_title": null,
-              "note": "חברה מוחזקת / נכס פורטפוליו"
-            },
-            {
-              "name": "PowerGen בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 44,
-              "section_title": "4. פרטים אודות הערכות שווי מהותיות ומהותיות מאוד",
-              "table_title": null,
-              "note": "חברה מוחזקת / נכס פורטפוליו"
-            },
-            {
-              "name": "בון תור בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 44,
-              "section_title": "4. פרטים אודות הערכות שווי מהותיות ומהותיות מאוד",
-              "table_title": null,
-              "note": "חברה מוחזקת / נכס פורטפוליו"
-            }
-          ],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "בון תור בע\"מ",
-              "ownership_pct": 76,
-              "parent": null,
-              "page_reference": 62,
-              "section_title": "באור 3 - השקעות בחברות",
-              "table_title": "הרכב ההשקעה בחברות:",
-              "note": null
-            },
-            {
-              "name": "PowerGen בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 62,
-              "section_title": "באור 3 - השקעות בחברות",
-              "table_title": "הרכב ההשקעה בחברות:",
-              "note": null
-            },
-            {
-              "name": "חברות חלוקת הגז הטבעי",
-              "ownership_pct": 33,
-              "parent": null,
-              "page_reference": 62,
-              "section_title": "באור 3 - השקעות בחברות",
-              "table_title": "הרכב ההשקעה בחברות:",
-              "note": null
-            },
-            {
-              "name": "BlueGen",
-              "ownership_pct": 80,
-              "parent": null,
-              "page_reference": 62,
-              "section_title": "באור 3 - השקעות בחברות",
-              "table_title": "הרכב ההשקעה בחברות:",
-              "note": null
-            },
-            {
-              "name": "פרידנזון-ג'נריישן מרכזים לוגיסטיים בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 62,
-              "section_title": "באור 3 - השקעות בחברות",
-              "table_title": "הרכב ההשקעה בחברות:",
-              "note": null
-            },
-            {
-              "name": "Greenway Holdings S.A (\"גרין-ווי\")",
-              "ownership_pct": 13,
-              "parent": "GCH E-Mobility",
-              "page_reference": 62,
-              "section_title": "באור 3 - השקעות בחברות",
-              "table_title": "הרכב ההשקעה בחברות:",
-              "note": null
-            },
-            {
-              "name": "Porterbrook Holdings I Limited (\"פורטרברוק\")",
-              "ownership_pct": 10,
-              "parent": "ג'נריישן אינפרא בע\"מ",
-              "page_reference": 62,
-              "section_title": "באור 3 - השקעות בחברות",
-              "table_title": "הרכב ההשקעה בחברות:",
-              "note": "ההחזקה נמכרה במהלך תקופת הדוח"
-            }
-          ],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "בלוג'ן בע\"מ",
-              "ownership_pct": 80.01,
-              "parent": null,
-              "page_reference": 88,
-              "section_title": "החברה ופעילותה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "BlueGen Waste",
-              "ownership_pct": 70,
-              "parent": "בלוג'ן בע\"מ",
-              "page_reference": 88,
-              "section_title": "החברה ופעילותה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "זרוע המים ו-EPC",
-              "ownership_pct": 100,
-              "parent": "בלוג'ן בע\"מ",
-              "page_reference": 88,
-              "section_title": "החברה ופעילותה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מתקן התפלה בפלמחים",
-              "ownership_pct": 51,
-              "parent": "זרוע המים",
-              "page_reference": 88,
-              "section_title": "החברה ופעילותה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מתקן התפלה אשדוד ותחנת כוח",
-              "ownership_pct": 50,
-              "parent": "זרוע המים",
-              "page_reference": 88,
-              "section_title": "החברה ופעילותה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מתקן טיפול במי תהום באזור תעשייה רמת השרון",
-              "ownership_pct": 100,
-              "parent": "זרוע המים",
-              "page_reference": 88,
-              "section_title": "החברה ופעילותה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "שו\"ב אנרגיה",
-              "ownership_pct": 100,
-              "parent": "PowerGen",
-              "page_reference": 71,
-              "section_title": "באור 7 – אירועים משמעותיים לאחר תאריך הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "שותפות ג'נריישן רפק אחזקות אמ.אר.סי",
-              "ownership_pct": 50,
-              "parent": "PowerGen",
-              "page_reference": 72,
-              "section_title": "באור 7 – אירועים משמעותיים לאחר תאריך הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "פרויקט ריינדיר",
-              "ownership_pct": 52.5,
-              "parent": "PowerGen",
-              "page_reference": 72,
-              "section_title": "באור 7 – אירועים משמעותיים לאחר תאריך הדוח",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:5": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "BlueGen Waste Management Ltd",
-              "ownership_pct": 70,
-              "parent": null,
-              "page_reference": 89,
-              "section_title": "זרוע הפסולת",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מתקן גרין-נט למיון פסולת בירושלים",
-              "ownership_pct": 100,
-              "parent": "BlueGen Waste",
-              "page_reference": 102,
-              "section_title": "BlueGen Waste – 1 ביאור",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מתקן מיון פסולת בחירייה",
-              "ownership_pct": 100,
-              "parent": "BlueGen Waste",
-              "page_reference": 102,
-              "section_title": "BlueGen Waste – 1 ביאור",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מתקן למיון פסולת בכפר גלעדי",
-              "ownership_pct": 50,
-              "parent": "BlueGen Waste",
-              "page_reference": 102,
-              "section_title": "BlueGen Waste – 1 ביאור",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "סייקל",
-              "ownership_pct": 24.75,
-              "parent": "BlueGen Waste",
-              "page_reference": 102,
-              "section_title": "BlueGen Waste – 1 ביאור",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מתקן דיה לטיפול בפסולת אורגנית באזור אשכול",
-              "ownership_pct": 100,
-              "parent": "BlueGen Waste",
-              "page_reference": 102,
-              "section_title": "BlueGen Waste – 1 ביאור",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מתקן סמארט וויסט למיון ומיחזור פסולת עירונית ופסולת אורגנית בשפד\"ן",
-              "ownership_pct": 50,
-              "parent": "BlueGen Waste",
-              "page_reference": 102,
-              "section_title": "BlueGen Waste – 1 ביאור",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מתקן השבה בנאות חובב (WTE)",
-              "ownership_pct": 54.5,
-              "parent": "BlueGen Waste",
-              "page_reference": 102,
-              "section_title": "BlueGen Waste – 1 ביאור",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "גרינסויל",
-              "ownership_pct": 100,
-              "parent": "BlueGen Waste",
-              "page_reference": 102,
-              "section_title": "BlueGen Waste – 1 ביאור",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מתקן התפלה בפלמחים",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 93,
-              "section_title": "פעילות זכיינות מים",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מתקן התפלה אשדוד ותחנת הכוח",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 94,
-              "section_title": "פעילות זכיינות מים",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מתקן טיפול במי תהום באזור תעש רמת השרון",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 94,
-              "section_title": "פעילות זכיינות מים",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:6": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "גרין־נט מחזור וטיפול בפסולת בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 109,
-              "section_title": "הערכת השווי",
-              "table_title": "להלן שווי החזקות בלוג'ן בזרוע הפסולת",
-              "note": null
-            },
-            {
-              "name": "סייקל",
-              "ownership_pct": 24.75,
-              "parent": null,
-              "page_reference": 115,
-              "section_title": "ביאור ב – פסולת מופרדת במקור",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "סמארט וויסט",
-              "ownership_pct": 50.0,
-              "parent": null,
-              "page_reference": 118,
-              "section_title": "ביאור ג – פרויקטי PPP",
-              "table_title": "להלן שווי נכסי פרויקטי PPP (זכיין ומפעיל)",
-              "note": null
-            },
-            {
-              "name": "דיה",
-              "ownership_pct": 100.0,
-              "parent": null,
-              "page_reference": 118,
-              "section_title": "ביאור ג – פרויקטי PPP",
-              "table_title": "להלן שווי נכסי פרויקטי PPP (זכיין ומפעיל)",
-              "note": null
-            },
-            {
-              "name": "נאות חובב WTE",
-              "ownership_pct": 54.5,
-              "parent": null,
-              "page_reference": 118,
-              "section_title": "ביאור ג – פרויקטי PPP",
-              "table_title": "להלן שווי נכסי פרויקטי PPP (זכיין ומפעיל)",
-              "note": null
-            },
-            {
-              "name": "גרינסויל",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 109,
-              "section_title": "הערכת השווי",
-              "table_title": "להלן שווי החזקות בלוג'ן בזרוע הפסולת",
-              "note": null
-            },
-            {
-              "name": "ת.מ.צ תעשיות מיחזור צמיגים בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 108,
-              "section_title": "כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ד.ט גרין-נט השקעות",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 110,
-              "section_title": "ביאור א – פסולת מעורבת",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:7": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "סמארט וויסט",
-              "ownership_pct": 50,
-              "parent": "BlueGen Waste",
-              "page_reference": 123,
-              "section_title": "ביאור 1 - ביאור ג – פרויקטי PPP",
-              "table_title": null,
-              "note": "חלקה של BlueGen Waste במתקן"
-            },
-            {
-              "name": "דרך הים",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 139,
-              "section_title": "ביאור 2 - זרוע המים ו-EPC",
-              "table_title": "ביאור א – זכיינות מים",
-              "note": null
-            },
-            {
-              "name": "אשדוד",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 139,
-              "section_title": "ביאור 2 - זרוע המים ו-EPC",
-              "table_title": "ביאור א – זכיינות מים",
-              "note": null
-            },
-            {
-              "name": "פרכלורט",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 139,
-              "section_title": "ביאור 2 - זרוע המים ו-EPC",
-              "table_title": "ביאור א – זכיינות מים",
-              "note": null
-            },
-            {
-              "name": "כפר מסריק",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 138,
-              "section_title": "ביאור 2 - זרוע המים ו-EPC",
-              "table_title": "הערכת שווי",
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:8": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "דרך הים",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 139,
-              "section_title": "ביאור א – זכיינות מים",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אשדוד",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 139,
-              "section_title": "ביאור א – זכיינות מים",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "פרכלורט",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 139,
-              "section_title": "ביאור א – זכיינות מים",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "EPC",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 138,
-              "section_title": "הערכת שווי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "תפעול",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 138,
-              "section_title": "הערכת שווי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "כימיקלים",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 138,
-              "section_title": "הערכת שווי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "כפר מסריק",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 138,
-              "section_title": "הערכת שווי",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T10:09:40.300888+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765774": {
     "company_id": "1771",
@@ -17162,240 +16422,135 @@
   },
   "1765161": {
     "company_id": "1772",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:14:30.038574+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T10:11:52.112365+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745280": {
     "company_id": "1772",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:14:25.300137+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 15,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "The Stack",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 7,
-              "section_title": "ניתוח עיקרי תוצאות הפעילות על פי הדוחות המאוחדים של החברה",
-              "table_title": null,
-              "note": "חברה המטופלת בשיטת השווי המאזני"
-            },
-            {
-              "name": "Epic Office 2",
-              "ownership_pct": 20,
-              "parent": null,
-              "page_reference": 7,
-              "section_title": "ניתוח עיקרי תוצאות הפעילות על פי הדוחות המאוחדים של החברה",
-              "table_title": null,
-              "note": "חברה המטופלת בשיטת השווי המאזני"
-            },
-            {
-              "name": "המסעדה בקומת הקרקע בנכס 1 Office Epic",
-              "ownership_pct": 25,
-              "parent": null,
-              "page_reference": 5,
-              "section_title": "עדכונים בקשר עם נכס 1 Office Epic",
-              "table_title": null,
-              "note": "השקעה בזכויות מיעוט ללא זכויות ניהול"
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "Westdale Hills",
-              "ownership_pct": 99,
-              "parent": null,
-              "page_reference": 32,
-              "section_title": "נספח ב' – נדל\"ן להשקעה – נכסים מניבים",
-              "table_title": "Westdale Hills",
-              "note": null
-            },
-            {
-              "name": "Woodmeade",
-              "ownership_pct": 99,
-              "parent": null,
-              "page_reference": 33,
-              "section_title": "נספח ג' – גילוי אודות נכסים אשר הזכויות בהם שועבדו למחזיקי אגרות החוב (סדרה ג') של החברה",
-              "table_title": "Woodmeade",
-              "note": null
-            },
-            {
-              "name": "Colonnade",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 33,
-              "section_title": "נספח ג' – גילוי אודות נכסים אשר הזכויות בהם שועבדו למחזיקי אגרות החוב (סדרה ג') של החברה",
-              "table_title": "Colonnade",
-              "note": null
-            },
-            {
-              "name": "Epic Office 1",
-              "ownership_pct": 99,
-              "parent": null,
-              "page_reference": 33,
-              "section_title": "נספח ג' – גילוי אודות נכסים אשר הזכויות בהם שועבדו למחזיקי אגרות החוב (סדרה ג') של החברה",
-              "table_title": "Epic Office 1",
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T10:14:08.527099+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1739062": {
     "company_id": "1773",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:14:31.212888+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T10:11:57.114870+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742058": {
     "company_id": "1773",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:14:44.337821+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 8,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T10:15:11.786730+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742062": {
     "company_id": "1773",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:14:31.602373+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T10:14:46.470366+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1759619": {
     "company_id": "1773",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:14:37.198428+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T10:15:19.343989+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743707": {
     "company_id": "1773",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:14:36.979169+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T10:15:12.299562+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763123": {
     "company_id": "1773",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-04T11:14:43.642414+00:00",
+    "at": "2026-10-05T10:15:54.387077+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 8,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "פרימיום אקספרס בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": ".1.1 תיאור תמציתי של הקבוצה ותחומי פעילות עיקריים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "המועדון של רמי לוי בע\"מ",
+              "ownership_pct": 18,
+              "parent": null,
+              "page_reference": 12,
+              "section_title": "1.6.2 ערוצי הנפקה והפצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ישראכרט מימון בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 16,
+              "section_title": "1.6.6 שיתופי פעולה נוספים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אייפלנט",
+              "ownership_pct": 20,
+              "parent": null,
+              "page_reference": 16,
+              "section_title": "1.6.6 שיתופי פעולה נוספים",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
   "1763127": {
     "company_id": "1773",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:14:44.045192+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T10:15:32.383561+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763364": {
     "company_id": "1773",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:14:44.609328+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T10:16:05.316894+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742494": {
     "company_id": "1774",
