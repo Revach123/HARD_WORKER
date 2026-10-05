@@ -16713,46 +16713,453 @@
   },
   "1764090": {
     "company_id": "1794",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-10-05T10:28:46.253307+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1737909": {
+    "company_id": "1797",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-10-05T10:28:18.460671+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1762638": {
+    "company_id": "1796",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-10-05T10:28:12.010699+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1742442": {
+    "company_id": "1797",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-10-05T10:29:33.226361+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1742449": {
+    "company_id": "1797",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-10-05T10:32:25.428686+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1758838": {
+    "company_id": "1797",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-10-05T10:29:39.229959+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1760918": {
+    "company_id": "1797",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-10-05T10:29:46.565680+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1764008": {
+    "company_id": "1797",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-10-05T10:31:12.683118+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1764000": {
+    "company_id": "1797",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-10-05T10:31:52.167249+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1743937": {
+    "company_id": "1801",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-05T10:27:37.151511+00:00",
+    "at": "2026-10-05T10:33:15.672629+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
-      "total": 11,
+      "total": 14,
       "done": {
         "0:0": {
           "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
+          "document_type": "change_events",
+          "as_of_date": "2026-03-31",
           "subsidiaries": [
             {
-              "name": "ליווינג נכסים 1 בע\"מ",
-              "ownership_pct": null,
+              "name": "דוראל חשמל מהטבע בע\"מ",
+              "ownership_pct": 100,
               "parent": null,
-              "page_reference": 19,
-              "section_title": "נזילות ומקורות מימון",
+              "page_reference": 8,
+              "section_title": "המשך הרחבה ואופטימיזציה של פעילות דוראל חשמל מהטבע בע\"מ, חברה בבעלותה המלאה של החברה, המחזיקה ברישיון הספקת חשמל, ובכלל זה:",
               "table_title": null,
-              "note": "חברה פרטית בבעלותה המלאה של החברה"
+              "note": null
             }
           ],
-          "change_events": []
+          "change_events": [
+            {
+              "company": "זפירוס ווינג אנרג'יס בע\"מ",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 56.06,
+              "event_date": "2026-04-23",
+              "event_description": "השלמת עסקה לרכישת השליטה בזפירוס דרך שותפות ייעודית",
+              "page_reference": 12,
+              "section_title": "1.5.1 השלמת עסקאות לרכישת השליטה בחברת זפירוס, להשקעת הון ולהעמדת מימון של הפניקס (\"העסקאות\")"
+            }
+          ]
         },
         "0:1": {
           "report_format": "israeli_periodic",
           "document_type": "ownership_snapshot",
-          "as_of_date": null,
+          "as_of_date": "2026-03-31",
           "subsidiaries": [
             {
-              "name": "ליווינג נכסים 1 בע\"מ",
+              "name": "אסדרת שוק - מתקני PV בשילוב אגירת חשמל",
+              "ownership_pct": 74,
+              "parent": null,
+              "page_reference": 24,
+              "section_title": "להלן פרטים אודות פרויקטים שהופעלו מסחרית לאחר יום 31.3.2026 או 'מוכנים לחיבור'",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מערכות תעריפיות / אגירה בחצר הצרכן",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 24,
+              "section_title": "להלן פרטים אודות פרויקטים שהופעלו מסחרית לאחר יום 31.3.2026 או 'מוכנים לחיבור'",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פרויקט קרקעי במתח עליון",
+              "ownership_pct": 67,
+              "parent": null,
+              "page_reference": 24,
+              "section_title": "להלן פרטים אודות פרויקטים שהופעלו מסחרית לאחר יום 31.3.2026 או 'מוכנים לחיבור'",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מערכות קרקעיות בפולין",
+              "ownership_pct": 73,
+              "parent": null,
+              "page_reference": 24,
+              "section_title": "להלן פרטים אודות פרויקטים שהופעלו מסחרית לאחר יום 31.3.2026 או 'מוכנים לחיבור'",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מערכות קרקעיות באיטליה",
               "ownership_pct": 100,
               "parent": null,
-              "page_reference": 19,
-              "section_title": "10. נזילות ומקורות מימון",
+              "page_reference": 24,
+              "section_title": "להלן פרטים אודות פרויקטים שהופעלו מסחרית לאחר יום 31.3.2026 או 'מוכנים לחיבור'",
               "table_title": null,
-              "note": "חברה פרטית בבעלותה המלאה של החברה"
+              "note": null
+            },
+            {
+              "name": "אינדיאנה מרכז 1",
+              "ownership_pct": 33,
+              "parent": null,
+              "page_reference": 26,
+              "section_title": "להלן פרטים אודות פרויקטים בשלבי הקמה או לקראת הקמה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אינדיאנה מרכז 2",
+              "ownership_pct": 33,
+              "parent": null,
+              "page_reference": 26,
+              "section_title": "להלן פרטים אודות פרויקטים בשלבי הקמה או לקראת הקמה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אינדיאנה דרום",
+              "ownership_pct": 28,
+              "parent": null,
+              "page_reference": 26,
+              "section_title": "להלן פרטים אודות פרויקטים בשלבי הקמה או לקראת הקמה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Cold Creek",
+              "ownership_pct": 36,
+              "parent": null,
+              "page_reference": 26,
+              "section_title": "להלן פרטים אודות פרויקטים בשלבי הקמה או לקראת הקמה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Vista Sands",
+              "ownership_pct": 36,
+              "parent": null,
+              "page_reference": 26,
+              "section_title": "להלן פרטים אודות פרויקטים בשלבי הקמה או לקראת הקמה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אסדרת שוק - מתקני PV בשילוב אגירת חשמל (ישראל)",
+              "ownership_pct": 83,
+              "parent": null,
+              "page_reference": 26,
+              "section_title": "להלן פרטים אודות פרויקטים בשלבי הקמה או לקראת הקמה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מערכות תעריפיות / אגירה בחצר הצרכן",
+              "ownership_pct": 71,
+              "parent": null,
+              "page_reference": 27,
+              "section_title": "להלן פרטים אודות פרויקטים בשלבי הקמה או לקראת הקמה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מערכות אגרו-סולאר",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 27,
+              "section_title": "להלן פרטים אודות פרויקטים בשלבי הקמה או לקראת הקמה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מערכות קרקעיות ברומניה",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 27,
+              "section_title": "להלן פרטים אודות פרויקטים בשלבי הקמה או לקראת הקמה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Buckheart",
+              "ownership_pct": 36,
+              "parent": null,
+              "page_reference": 28,
+              "section_title": "להלן פרטים אודות פרויקטים בשלבי פיתוח מתקדם בשל",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Lambs Draw",
+              "ownership_pct": 36,
+              "parent": null,
+              "page_reference": 28,
+              "section_title": "להלן פרטים אודות פרויקטים בשלבי פיתוח מתקדם בשל",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Tennyson Creek",
+              "ownership_pct": 36,
+              "parent": null,
+              "page_reference": 28,
+              "section_title": "להלן פרטים אודות פרויקטים בשלבי פיתוח מתקדם בשל",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Woodward Creek",
+              "ownership_pct": 36,
+              "parent": null,
+              "page_reference": 28,
+              "section_title": "להלן פרטים אודות פרויקטים בשלבי פיתוח מתקדם בשל",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אסדרת שוק - מתקני PV בשילוב אגירת חשמל (ישראל)",
+              "ownership_pct": 68,
+              "parent": null,
+              "page_reference": 28,
+              "section_title": "להלן פרטים אודות פרויקטים בשלבי פיתוח מתקדם בשל",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מערכות תעריפיות",
+              "ownership_pct": 78,
+              "parent": null,
+              "page_reference": 28,
+              "section_title": "להלן פרטים אודות פרויקטים בשלבי פיתוח מתקדם בשל",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מערכות קרקעיות באיטליה",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 29,
+              "section_title": "להלן פרטים אודות פרויקטים בשלבי פיתוח מתקדם בשל",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מערכות קרקעיות בארה\"ב",
+              "ownership_pct": 36,
+              "parent": null,
+              "page_reference": 30,
+              "section_title": "להלן פרטים אודות פרויקטים בשלבי פיתוח מתקדם נוספים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אסדרת שוק - מתקני PV בשילוב אגירת חשמל",
+              "ownership_pct": 59,
+              "parent": null,
+              "page_reference": 30,
+              "section_title": "להלן פרטים אודות פרויקטים בשלבי פיתוח מתקדם נוספים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מערכות תעריפיות / אגירה בחצר הצרכן",
+              "ownership_pct": 88,
+              "parent": null,
+              "page_reference": 30,
+              "section_title": "להלן פרטים אודות פרויקטים בשלבי פיתוח מתקדם נוספים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מערכות אגרו-סולאר",
+              "ownership_pct": 74,
+              "parent": null,
+              "page_reference": 30,
+              "section_title": "להלן פרטים אודות פרויקטים בשלבי פיתוח מתקדם נוספים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מערכות קרקעיות באיטליה",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 30,
+              "section_title": "להלן פרטים אודות פרויקטים בשלבי פיתוח מתקדם נוספים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מערכות קרקעיות במרוקו",
+              "ownership_pct": 65,
+              "parent": null,
+              "page_reference": 30,
+              "section_title": "להלן פרטים אודות פרויקטים בשלבי פיתוח מתקדם נוספים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אסדרת השוק מתח גבוה בישראל",
+              "ownership_pct": 76,
+              "parent": null,
+              "page_reference": 31,
+              "section_title": "להלן פרטים אודות פרויקטים בשלבי ייזום",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אסדרת השוק מתח עליון בישראל",
+              "ownership_pct": 57,
+              "parent": null,
+              "page_reference": 31,
+              "section_title": "להלן פרטים אודות פרויקטים בשלבי ייזום",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "סולאר באיטליה",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 31,
+              "section_title": "להלן פרטים אודות פרויקטים בשלבי ייזום",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "סולאר בפולין",
+              "ownership_pct": 67,
+              "parent": null,
+              "page_reference": 31,
+              "section_title": "להלן פרטים אודות פרויקטים בשלבי ייזום",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אגירה בפולין",
+              "ownership_pct": 61,
+              "parent": null,
+              "page_reference": 31,
+              "section_title": "להלן פרטים אודות פרויקטים בשלבי ייזום",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "סולאר ברומניה",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 31,
+              "section_title": "להלן פרטים אודות פרויקטים בשלבי ייזום",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "סולאר בדנמרק",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 31,
+              "section_title": "להלן פרטים אודות פרויקטים בשלבי ייזום",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "סולאר בארה\"ב",
+              "ownership_pct": 33,
+              "parent": null,
+              "page_reference": 31,
+              "section_title": "להלן פרטים אודות פרויקטים בשלבי ייזום",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "סולאר + אגירה בארה\"ב",
+              "ownership_pct": 33,
+              "parent": null,
+              "page_reference": 31,
+              "section_title": "להלן פרטים אודות פרויקטים בשלבי ייזום",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ביו-גז",
+              "ownership_pct": 76,
+              "parent": null,
+              "page_reference": 31,
+              "section_title": "להלן פרטים אודות פרויקטים בשלבי ייזום",
+              "table_title": null,
+              "note": null
             }
           ],
           "change_events": []
@@ -16760,177 +17167,31 @@
         "0:2": {
           "report_format": "israeli_periodic",
           "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "other",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [],
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "תאגיד ייעודי",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 79,
+              "section_title": "אשראי מהותי בר דיווח",
+              "table_title": "מסגרת גישור מתגלגלת למימון פרויקטים סולאריים בשילוב אגירה באסדרת השוק",
+              "note": "מוחזק 100% על-ידי החברה, בשרשור"
+            }
+          ],
           "change_events": []
         }
       },
       "attempts": {}
     }
   },
-  "1737909": {
-    "company_id": "1797",
-    "status": "partial",
-    "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:15:02.971764+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1762638": {
-    "company_id": "1796",
-    "status": "partial",
-    "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:15:02.776653+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1742442": {
-    "company_id": "1797",
-    "status": "partial",
-    "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:15:11.958170+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1742449": {
-    "company_id": "1797",
-    "status": "partial",
-    "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:15:13.701779+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1758838": {
-    "company_id": "1797",
-    "status": "partial",
-    "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:15:12.158536+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1760918": {
-    "company_id": "1797",
-    "status": "partial",
-    "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:15:12.364507+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1764008": {
-    "company_id": "1797",
-    "status": "partial",
-    "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:15:12.904016+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1764000": {
-    "company_id": "1797",
-    "status": "partial",
-    "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:15:14.739237+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1743937": {
-    "company_id": "1801",
-    "status": "partial",
-    "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:15:15.244787+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 14,
-      "done": {},
-      "attempts": {}
-    }
-  },
   "1743974": {
     "company_id": "1801",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:15:21.977724+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T10:34:02.209725+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764773": {
     "company_id": "1801",
