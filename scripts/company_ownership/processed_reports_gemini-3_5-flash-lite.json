@@ -16849,18 +16849,11 @@
   },
   "1743112": {
     "company_id": "1804",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:15:34.318284+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T10:49:11.246773+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766185": {
     "company_id": "1803",
@@ -16880,108 +16873,156 @@
   },
   "1765213": {
     "company_id": "1804",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:15:34.895161+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T10:49:09.789365+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765251": {
     "company_id": "1804",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:15:38.734019+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T10:49:25.973882+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766881": {
     "company_id": "1806",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:15:35.981187+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T10:51:45.734015+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744307": {
     "company_id": "1809",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:15:40.118770+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T10:50:17.210585+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764611": {
     "company_id": "1809",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:15:43.232304+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T10:51:37.485568+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743517": {
     "company_id": "1810",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-04T11:15:40.531529+00:00",
+    "at": "2026-10-05T10:51:58.710761+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 3,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "מספנות ישראל בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 3,
+              "section_title": "א. מגזר המספנה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "נמל מספנות ישראל בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 3,
+              "section_title": "ב. מגזר הנמל",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מ.י. מרכבי ישראל בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 3,
+              "section_title": "ב. מגזר הנמל",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "סימנט אי.אס. בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "ג. מגזר חומרי הבניה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פרימה סימנט בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "ג. מגזר חומרי הבניה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אונת סימנט בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "ג. מגזר חומרי הבניה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "נדיר תעשיות צבע (1996) בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "ג. מגזר חומרי הבניה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ISCO TRADING SA",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "ג. מגזר חומרי הבניה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אירונאוס סיסטמס בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "ה. בנוסף, לקבוצה פעילויות נוספות",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
   "1765767": {
     "company_id": "1810",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:15:40.996161+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T10:52:52.905560+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765841": {
     "company_id": "1810",
@@ -17000,48 +17041,27 @@
   },
   "1765337": {
     "company_id": "1813",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:15:52.278718+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T10:54:30.799456+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764410": {
     "company_id": "1814",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:15:47.175189+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T10:56:34.480646+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742029": {
     "company_id": "1815",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-04T11:15:47.602490+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-05T10:57:34.304627+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742024": {
     "company_id": "1815",
