@@ -17875,249 +17875,11 @@
   },
   "1764780": {
     "company_id": "1871",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-06T10:14:32.048696+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 9,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "ק.נ. אחזקות",
-              "ownership_pct": 70,
-              "parent": null,
-              "page_reference": 14,
-              "section_title": "סטאטוס פיתוח הפרויקטים",
-              "table_title": "פירוט בדבר מתקנים בסטאטוס בהפעלה מסחרית (אלפי ש\"ח)",
-              "note": null
-            },
-            {
-              "name": "ק.וו.פ סולאר",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 14,
-              "section_title": "סטאטוס פיתוח הפרויקטים",
-              "table_title": "פירוט בדבר מתקנים בסטאטוס בהפעלה מסחרית (אלפי ש\"ח)",
-              "note": null
-            },
-            {
-              "name": "פריים תלמים",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 14,
-              "section_title": "סטאטוס פיתוח הפרויקטים",
-              "table_title": "פירוט בדבר מתקנים בסטאטוס בהפעלה מסחרית (אלפי ש\"ח)",
-              "note": null
-            },
-            {
-              "name": "רפאל סולאר",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 14,
-              "section_title": "סטאטוס פיתוח הפרויקטים",
-              "table_title": "פירוט בדבר מתקנים בסטאטוס בהפעלה מסחרית (אלפי ש\"ח)",
-              "note": null
-            },
-            {
-              "name": "להב אנרגיה ירוקה",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 14,
-              "section_title": "סטאטוס פיתוח הפרויקטים",
-              "table_title": "פירוט בדבר מתקנים בסטאטוס בהפעלה מסחרית (אלפי ש\"ח)",
-              "note": null
-            },
-            {
-              "name": "מיה סול",
-              "ownership_pct": 49,
-              "parent": null,
-              "page_reference": 14,
-              "section_title": "סטאטוס פיתוח הפרויקטים",
-              "table_title": "פירוט בדבר מתקנים בסטאטוס בהפעלה מסחרית (אלפי ש\"ח)",
-              "note": null
-            },
-            {
-              "name": "להב אנרגיה הונגריה",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 14,
-              "section_title": "סטאטוס פיתוח הפרויקטים",
-              "table_title": "פירוט בדבר מתקנים בסטאטוס בהפעלה מסחרית (אלפי ש\"ח)",
-              "note": null
-            },
-            {
-              "name": "להב אנרגיה פורטוגל",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 14,
-              "section_title": "סטאטוס פיתוח הפרויקטים",
-              "table_title": "פירוט בדבר מתקנים בסטאטוס בהפעלה מסחרית (אלפי ש\"ח)",
-              "note": null
-            },
-            {
-              "name": "הליוס מערכות",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 14,
-              "section_title": "סטאטוס פיתוח הפרויקטים",
-              "table_title": "פירוט בדבר מתקנים בסטאטוס בהפעלה מסחרית (אלפי ש\"ח)",
-              "note": null
-            },
-            {
-              "name": "סולנטו",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 14,
-              "section_title": "סטאטוס פיתוח הפרויקטים",
-              "table_title": "פירוט בדבר מתקנים בסטאטוס בהפעלה מסחרית (אלפי ש\"ח)",
-              "note": null
-            },
-            {
-              "name": "המאור הגדול",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 14,
-              "section_title": "סטאטוס פיתוח הפרויקטים",
-              "table_title": "פירוט בדבר מתקנים בסטאטוס בהפעלה מסחרית (אלפי ש\"ח)",
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "פיוי פלאנט 2019 בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 29,
-              "section_title": "נספח א' - פרטים לגבי תעודות התחייבות שהונפקו על ידי החברה",
-              "table_title": "אגרות חוב (סדרה ב')",
-              "note": null
-            },
-            {
-              "name": "פריים תלמים בע\"מ",
-              "ownership_pct": null,
-              "parent": "פיוי פלאנט 2019 בע\"מ",
-              "page_reference": 29,
-              "section_title": "נספח א' - פרטים לגבי תעודות התחייבות שהונפקו על ידי החברה",
-              "table_title": "אגרות חוב (סדרה ב')",
-              "note": "חברת בת של פיוי פלאנט 2019 בע\"מ"
-            },
-            {
-              "name": "ק.נ. אחזקות סולאריות בע\"מ",
-              "ownership_pct": 70,
-              "parent": null,
-              "page_reference": 29,
-              "section_title": "נספח א' - פרטים לגבי תעודות התחייבות שהונפקו על ידי החברה",
-              "table_title": "אגרות חוב (סדרה ב')",
-              "note": null
-            },
-            {
-              "name": "KWP סולאר בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 29,
-              "section_title": "נספח א' - פרטים לגבי תעודות התחייבות שהונפקו על ידי החברה",
-              "table_title": "אגרות חוב (סדרה ב')",
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [],
-          "change_events": [
-            {
-              "company": "להב אנרגיה ירוקה בע\"מ",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": null,
-              "event_date": "2025-08-17",
-              "event_description": "השלמת עסקת מיזוג כנגד העברת מלוא מניות להב אנרגיה ירוקה בע\"מ לחברה",
-              "page_reference": 51,
-              "section_title": "ביאור 5 – צירופי עסקים",
-              "table_title": null
-            },
-            {
-              "company": "הליוס מערכות כ.ס בע\"מ",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": null,
-              "event_date": "2025-09-09",
-              "event_description": "רכישת השליטה בצבר מערכות סולאריות מניבות (רכישת מלוא המניות)",
-              "page_reference": 52,
-              "section_title": "ביאור 5 – צירופי עסקים",
-              "table_title": null
-            },
-            {
-              "company": "סולנטו 1 שותפות מוגבלת",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": null,
-              "event_date": "2025-12-29",
-              "event_description": "השלמת רכישת מלוא זכויות המוכרת בשותפות מוגבלת המחזיקה במספר תאגידים",
-              "page_reference": 53,
-              "section_title": "ביאור 5 – צירופי עסקים",
-              "table_title": null
-            }
-          ]
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [],
-          "change_events": [
-            {
-              "company": "הליוס מערכות כ.ס בע\"מ",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 100,
-              "event_date": "2025-09-09",
-              "event_description": "רכישת השליטה בצבר מערכות סולאריות מניבות בהספק כולל של 13.1 מגה וואט (DC) על ידי רכישת מלוא המניות",
-              "page_reference": 52,
-              "section_title": "ביאור 5 – צירופי עסקים"
-            },
-            {
-              "company": "סולנטו 1 שותפות מוגבלת",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 100,
-              "event_date": "2025-12-29",
-              "event_description": "התקשרות והשלמת רכישת צבר מערכות סולאריות מניבות בהספק כולל של 53.7 מגה וואט (DC)",
-              "page_reference": 53,
-              "section_title": "ביאור 5 – צירופי עסקים)המשך()ב("
-            },
-            {
-              "company": "המאור הגדול אנרגיות סולאריות בע\"מ והמאור הגדול אנרגיות מתחדשות בע\"מ",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 100,
-              "event_date": "2026-03-12",
-              "event_description": "התקשרות והשלמת רכישת צבר מערכות סולאריות מניבות בהספק כולל של כ- 9.7 מגה וואט (DC)",
-              "page_reference": 55,
-              "section_title": "ביאור 5 - צירופי עסקים)המשך("
-            }
-          ]
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T10:17:26.813872+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744607": {
     "company_id": "1872",
@@ -18137,136 +17899,88 @@
   },
   "1735343": {
     "company_id": "1873",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:10:14.299178+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T10:14:45.005518+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1759664": {
     "company_id": "1873",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:10:14.510645+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T10:14:51.172075+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1762280": {
     "company_id": "1873",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:10:24.554204+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T10:15:52.236529+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1762281": {
     "company_id": "1873",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:10:22.152204+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T10:15:42.079114+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766530": {
     "company_id": "1876",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:10:24.974233+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T10:16:46.989486+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766078": {
     "company_id": "1878",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:10:27.124750+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T10:18:23.669871+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767185": {
     "company_id": "1881",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:10:27.729889+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T10:19:02.211489+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742070": {
     "company_id": "1884",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:10:32.104769+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T10:19:50.157538+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766163": {
     "company_id": "1884",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-05T12:10:36.257397+00:00",
+    "at": "2026-10-06T10:19:40.451186+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 4,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
@@ -18302,18 +18016,11 @@
   },
   "1757735": {
     "company_id": "1886",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:10:37.647641+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T10:20:20.963639+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1761176": {
     "company_id": "1886",
