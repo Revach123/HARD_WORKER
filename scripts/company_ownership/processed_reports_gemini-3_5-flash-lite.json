@@ -18337,217 +18337,11 @@
   },
   "1765793": {
     "company_id": "1904",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-06T10:37:46.855306+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "אגד חברה לתחבורה בע\"מ",
-              "ownership_pct": 65,
-              "parent": null,
-              "page_reference": 11,
-              "section_title": "6.1 תחום התחבורה",
-              "table_title": null,
-              "note": "בעקיפין, בשרשור באמצעות שותפות אגד"
-            },
-            {
-              "name": "Eranovum",
-              "ownership_pct": 49,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "2. השקעות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "קיסטון פאוור בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "2. השקעות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מתקן התפלה אשקלון",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 7,
-              "section_title": "2. השקעות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "סאנפלאואר",
-              "ownership_pct": 65,
-              "parent": null,
-              "page_reference": 7,
-              "section_title": "2. השקעות החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "סינטוריון",
-              "ownership_pct": 30,
-              "parent": null,
-              "page_reference": 7,
-              "section_title": "2. השקעות החברה",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "Eranovum (ארנובום)",
-              "ownership_pct": 49,
-              "parent": null,
-              "page_reference": 36,
-              "section_title": "ארנובום",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "קיסטון פאוור בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 39,
-              "section_title": "6.2 תחום האנרגיה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "IPM באר טוביה",
-              "ownership_pct": 34.3,
-              "parent": "קיסטון פאוור בע\"מ",
-              "page_reference": 43,
-              "section_title": "6.2 תחום האנרגיה",
-              "table_title": null,
-              "note": "החזקה בעקיפין באמצעות קיסטון פאוור"
-            },
-            {
-              "name": "רמת חובב",
-              "ownership_pct": 16.33,
-              "parent": "קיסטון פאוור בע\"מ",
-              "page_reference": 43,
-              "section_title": "6.2 תחום האנרגיה",
-              "table_title": null,
-              "note": "החזקה בעקיפין באמצעות קיסטון פאוור"
-            },
-            {
-              "name": "חגית",
-              "ownership_pct": 16.33,
-              "parent": "קיסטון פאוור בע\"מ",
-              "page_reference": 43,
-              "section_title": "6.2 תחום האנרגיה",
-              "table_title": null,
-              "note": "החזקה בעקיפין באמצעות קיסטון פאוור"
-            },
-            {
-              "name": "קיסטון קום בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 44,
-              "section_title": "6.3 תחום התקשורת",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "סינטוריון",
-              "ownership_pct": 30,
-              "parent": "קיסטון קום בע\"מ",
-              "page_reference": 44,
-              "section_title": "6.3 תחום התקשורת",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "טריפל-מ",
-              "ownership_pct": 12.69,
-              "parent": null,
-              "page_reference": 45,
-              "section_title": "תחום התקשורת",
-              "table_title": null,
-              "note": "12.69% במישרין ו-51% בעקיפין"
-            },
-            {
-              "name": "סאנפלאואר",
-              "ownership_pct": 62.23,
-              "parent": null,
-              "page_reference": 46,
-              "section_title": "6.4 תחום האנרגיה המתחדשת",
-              "table_title": null,
-              "note": "64.83% למועד הדוח, 62.23% למועד פרסום הדוח"
-            },
-            {
-              "name": "VID",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 48,
-              "section_title": "6.5 תחום המים",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [],
-          "change_events": [
-            {
-              "company": "שותפות אגד",
-              "event_type": "increase",
-              "ownership_pct_before": null,
-              "ownership_pct_after": null,
-              "event_date": null,
-              "event_description": "מימוש האופצייה השנייה והאחרונה במסגרתה רכשה החברה 13.4% נוספים בשותפות אגד",
-              "page_reference": 35,
-              "section_title": "8. המצב הכספי ומקורות המימון"
-            },
-            {
-              "company": "שותפות אגד",
-              "event_type": "decrease",
-              "ownership_pct_before": null,
-              "ownership_pct_after": null,
-              "event_date": "2026-03-18",
-              "event_description": "עסקה למכירת 10% משותפות אגד למיטב גמל ופנסיה בע\"מ",
-              "page_reference": 48,
-              "section_title": "נספח ג' - עדכון הערכת שווי השקעה ליום 30 ביוני 2026 שותפות אגד שותפות מוגבלת"
-            },
-            {
-              "company": "סאנפאלאואר",
-              "event_type": "increase",
-              "ownership_pct_before": null,
-              "ownership_pct_after": null,
-              "event_date": null,
-              "event_description": "רכישת כ-9.65% נוספים בסאנפאלאואר",
-              "page_reference": 35,
-              "section_title": "8. המצב הכספי ומקורות המימון"
-            }
-          ]
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T10:38:35.535933+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765783": {
     "company_id": "1904",
@@ -18567,78 +18361,43 @@
   },
   "1766715": {
     "company_id": "1904",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:12:40.683905+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T10:38:44.605009+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766716": {
     "company_id": "1904",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:12:52.129829+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T10:40:04.015936+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744780": {
     "company_id": "1905",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:12:44.456186+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T10:41:16.019639+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766777": {
     "company_id": "1905",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:12:46.458011+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T10:42:29.956497+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743035": {
     "company_id": "1907",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:12:46.943907+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T10:45:34.081062+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743033": {
     "company_id": "1907",
@@ -18657,48 +18416,27 @@
   },
   "1764229": {
     "company_id": "1907",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:12:47.461803+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T10:42:53.904128+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764237": {
     "company_id": "1907",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:12:56.273764+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 6,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T10:46:15.997338+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742730": {
     "company_id": "1908",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:12:52.500860+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T10:46:39.507369+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743122": {
     "company_id": "1908",
@@ -18720,30 +18458,31 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-05T12:12:52.910273+00:00",
+    "at": "2026-10-06T10:46:39.369544+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 3,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
   "1763853": {
     "company_id": "1908",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:12:53.444060+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T10:47:13.569983+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765330": {
     "company_id": "1911",
