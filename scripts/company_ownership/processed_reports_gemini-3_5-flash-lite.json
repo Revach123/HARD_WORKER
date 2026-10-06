@@ -18095,513 +18095,11 @@
   },
   "1742028": {
     "company_id": "1891",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-06T10:24:29.940958+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "Sessa Aurunca 12",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 11,
-              "section_title": ".3.6 פירוט הפרויקטים בהפעלה מסחרית (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Rivarolo Canavese",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 11,
-              "section_title": ".3.6 פירוט הפרויקטים בהפעלה מסחרית (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Cumiana",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 11,
-              "section_title": ".3.6 פירוט הפרויקטים בהפעלה מסחרית (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Resko",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 11,
-              "section_title": ".3.6 פירוט הפרויקטים בהפעלה מסחרית (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Parau 1",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 11,
-              "section_title": ".3.6 פירוט הפרויקטים בהפעלה מסחרית (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Scurtu Mare",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 11,
-              "section_title": ".3.6 פירוט הפרויקטים בהפעלה מסחרית (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Oradea",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 11,
-              "section_title": ".3.6 פירוט הפרויקטים בהפעלה מסחרית (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Ratesti",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 11,
-              "section_title": ".3.6 פירוט הפרויקטים בהפעלה מסחרית (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "West Melton",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 11,
-              "section_title": ".3.6 פירוט הפרויקטים בהפעלה מסחרית (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "DE Senftenberg",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": ".3.7 פירוט הפרויקטים בהקמה ומוכנים לחיבור (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Sessa Aurunca 15",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": ".3.7 פירוט הפרויקטים בהקמה ומוכנים לחיבור (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Maria Giuseppa",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": ".3.7 פירוט הפרויקטים בהקמה ומוכנים לחיבור (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Lacedonia",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": ".3.7 פירוט הפרויקטים בהקמה ומוכנים לחיבור (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Borgoratto e Frascaro",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": ".3.7 פירוט הפרויקטים בהקמה ומוכנים לחיבור (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Baneasa",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": ".3.7 פירוט הפרויקטים בהקמה ומוכנים לחיבור (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Mircea Voda",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": ".3.7 פירוט הפרויקטים בהקמה ומוכנים לחיבור (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Ovidiu",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": ".3.7 פירוט הפרויקטים בהקמה ומוכנים לחיבור (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Melinesti Goesti",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": ".3.7 פירוט הפרויקטים בהקמה ומוכנים לחיבור (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Bobicesti",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": ".3.7 פירוט הפרויקטים בהקמה ומוכנים לחיבור (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Iancu Jianu",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": ".3.7 פירוט הפרויקטים בהקמה ומוכנים לחיבור (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Rosiori",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": ".3.7 פירוט הפרויקטים בהקמה ומוכנים לחיבור (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Crizbav",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": ".3.7 פירוט הפרויקטים בהקמה ומוכנים לחיבור (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Parau 2",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": ".3.7 פירוט הפרויקטים בהקמה ומוכנים לחיבור (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Parau 1 BESS",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": ".3.7 פירוט הפרויקטים בהקמה ומוכנים לחיבור (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Ratesti BESS",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": ".3.7 פירוט הפרויקטים בהקמה ומוכנים לחיבור (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Scurtu Mare BESS",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": ".3.7 פירוט הפרויקטים בהקמה ומוכנים לחיבור (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Oradea BESS",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": ".3.7 פירוט הפרויקטים בהקמה ומוכנים לחיבור (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Bobicesti BESS",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": ".3.7 פירוט הפרויקטים בהקמה ומוכנים לחיבור (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Melinesti Goesti BESS",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": ".3.7 פירוט הפרויקטים בהקמה ומוכנים לחיבור (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Iancu Jianu BESS",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": ".3.7 פירוט הפרויקטים בהקמה ומוכנים לחיבור (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Immingham",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": ".3.7 פירוט הפרויקטים בהקמה ומוכנים לחיבור (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Dalmarnock",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": ".3.7 פירוט הפרויקטים בהקמה ומוכנים לחיבור (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Berrington Farms",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": ".3.7 פירוט הפרויקטים בהקמה ומוכנים לחיבור (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "San Benigno",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 13,
-              "section_title": ".3.8 פירוט הפרויקטים לקראת הקמה (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Oppido",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 13,
-              "section_title": ".3.8 פירוט הפרויקטים לקראת הקמה (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Guarini",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 13,
-              "section_title": ".3.8 פירוט הפרויקטים לקראת הקמה (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Beech 1",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 13,
-              "section_title": ".3.8 פירוט הפרויקטים לקראת הקמה (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Beech 2",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 13,
-              "section_title": ".3.8 פירוט הפרויקטים לקראת הקמה (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Nadziejewo",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 13,
-              "section_title": ".3.8 פירוט הפרויקטים לקראת הקמה (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Nadziejewo Bess",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 13,
-              "section_title": ".3.8 פירוט הפרויקטים לקראת הקמה (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Resko BESS",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 13,
-              "section_title": ".3.8 פירוט הפרויקטים לקראת הקמה (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Salbatica 3",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 13,
-              "section_title": ".3.8 פירוט הפרויקטים לקראת הקמה (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "GF Mihailesti",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 13,
-              "section_title": ".3.8 פירוט הפרויקטים לקראת הקמה (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Baneasa BESS",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 13,
-              "section_title": ".3.8 פירוט הפרויקטים לקראת הקמה (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Mircea Voda BESS",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 13,
-              "section_title": ".3.8 פירוט הפרויקטים לקראת הקמה (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Rosiori BESS",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 13,
-              "section_title": ".3.8 פירוט הפרויקטים לקראת הקמה (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Ovidiu BESS",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 13,
-              "section_title": ".3.8 פירוט הפרויקטים לקראת הקמה (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Exton",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 13,
-              "section_title": ".3.8 פירוט הפרויקטים לקראת הקמה (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Hayton",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 13,
-              "section_title": ".3.8 פירוט הפרויקטים לקראת הקמה (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Woolpots",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 13,
-              "section_title": ".3.8 פירוט הפרויקטים לקראת הקמה (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Orrell",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 13,
-              "section_title": ".3.8 פירוט הפרויקטים לקראת הקמה (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Flatterton",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 13,
-              "section_title": ".3.8 פירוט הפרויקטים לקראת הקמה (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Sheriff Faulds",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 13,
-              "section_title": ".3.8 פירוט הפרויקטים לקראת הקמה (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Holmquarry",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 13,
-              "section_title": ".3.8 פירוט הפרויקטים לקראת הקמה (סכומים באלפי אירו), למועד פרסום הדו\"ח:",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T10:26:51.993957+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763672": {
     "company_id": "1891",
@@ -18613,93 +18111,51 @@
   },
   "1763673": {
     "company_id": "1891",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:11:39.040633+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T10:28:16.345361+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765534": {
     "company_id": "1893",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:11:39.471933+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T10:27:19.796147+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1740809": {
     "company_id": "1894",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:11:45.811904+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T10:28:38.729022+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1762473": {
     "company_id": "1894",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:11:55.042646+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T10:29:10.056812+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1762474": {
     "company_id": "1894",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:11:55.264962+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T10:28:47.623376+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765585": {
     "company_id": "1895",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:11:57.259669+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T10:28:52.952561+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767565": {
     "company_id": "1895",
@@ -18718,18 +18174,11 @@
   },
   "1742137": {
     "company_id": "1896",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:12:08.847326+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T10:29:41.198528+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766681": {
     "company_id": "1896",
@@ -18756,18 +18205,11 @@
   },
   "1767747": {
     "company_id": "1899",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:12:09.323586+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T10:29:37.853904+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1741670": {
     "company_id": "1901",
@@ -18786,18 +18228,11 @@
   },
   "1741669": {
     "company_id": "1901",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:12:10.972551+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T10:29:56.314279+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1741671": {
     "company_id": "1901",
