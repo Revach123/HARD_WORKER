@@ -17274,349 +17274,11 @@
   },
   "1744039": {
     "company_id": "1831",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T11:27:49.860125+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 10,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "אלומיי קפיטל בע\"מ",
-              "ownership_pct": 45.85,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "1. הסברי הדירקטוריון למצב עסקי התאגיד, תוצאות פעולותיו, הונו העצמי ותזרימי המזומנים שלו",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "אלומיי קפיטל בע\"מ",
-              "ownership_pct": 45.85,
-              "parent": null,
-              "page_reference": 21,
-              "section_title": "1.5.1.1 אלומיי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "דוראד אנרגיה בע\"מ",
-              "ownership_pct": 16.9,
-              "parent": "אלומיי קפיטל בע\"מ",
-              "page_reference": 21,
-              "section_title": "1.5.1.1 אלומיי",
-              "table_title": null,
-              "note": "החזקה בעקיפין באמצעות אלומיי"
-            },
-            {
-              "name": "נופר דאטה סנטר ישראל שוהם שותפות מוגבלת",
-              "ownership_pct": 90,
-              "parent": null,
-              "page_reference": 21,
-              "section_title": "1.5.1.2 דאטה סנטרים",
-              "table_title": null,
-              "note": "בשרשור"
-            },
-            {
-              "name": "EIM USA Nofar",
-              "ownership_pct": 90,
-              "parent": null,
-              "page_reference": 22,
-              "section_title": "1.5.3 ארה\"ב",
-              "table_title": null,
-              "note": "בשרשור"
-            },
-            {
-              "name": "Sky Blue",
-              "ownership_pct": 67,
-              "parent": "USA Nofar",
-              "page_reference": 22,
-              "section_title": "1.5.3 ארה\"ב",
-              "table_title": null,
-              "note": "בשרשור"
-            },
-            {
-              "name": "L.R.S Holdings Sunprime",
-              "ownership_pct": 31.35,
-              "parent": null,
-              "page_reference": 23,
-              "section_title": "1.5.5 איטליה",
-              "table_title": null,
-              "note": "בשרשור"
-            }
-          ],
-          "change_events": [
-            {
-              "company": "אלומיי קפיטל בע\"מ",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": 0,
-              "ownership_pct_after": 45.85,
-              "event_date": "2026-03-04",
-              "event_description": "השלמת רכישה של 45.85% מהונה המונפק והנפרע של אלומיי קפיטל בע\"מ",
-              "page_reference": 21,
-              "section_title": "1.5.1.1 אלומיי"
-            },
-            {
-              "company": "דוראד אנרגיה בע\"מ",
-              "event_type": "full_disposal",
-              "ownership_pct_before": 16.9,
-              "ownership_pct_after": 0,
-              "event_date": "2026-05-10",
-              "event_description": "השלמת מכירת החזקותיה במניות דוראד",
-              "page_reference": 21,
-              "section_title": "1.5.1.1 אלומיי"
-            },
-            {
-              "company": "Stendal",
-              "event_type": "decrease",
-              "ownership_pct_before": 100,
-              "ownership_pct_after": 51,
-              "event_date": "2025-12-01",
-              "event_description": "מכירת 49% מהון המניות של התאגיד המקים ומפעיל את פרויקט Stendal",
-              "page_reference": 24,
-              "section_title": "1.5.8 גרמניה"
-            }
-          ]
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "שותפות נופר אנרג'י אירופה, שותפות מוגבלת",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 38,
-              "section_title": null,
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "נופר דאטה ישראל שוהם, שותפות מוגבלת",
-              "ownership_pct": 90,
-              "parent": null,
-              "page_reference": 51,
-              "section_title": "אירועים במהלך תקופת הדוח ולאחר תאריך הדוח על המצב הכספי",
-              "table_title": null,
-              "note": "מוחזקת בשרשור"
-            },
-            {
-              "name": "Israel Nofar Energy LP",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 38,
-              "section_title": null,
-              "table_title": null,
-              "note": "הנפקת סדרת נע\"מ"
-            }
-          ],
-          "change_events": [
-            {
-              "company": "אלומיי קפיטל בע\"מ",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 45.85,
-              "event_date": "2025-12-16",
-              "event_description": "התקשרות החברה בהסכם לרכישת מניות השליטה בחברת אלומיי קפיטל בע\"מ (כ-45.85% מההון)",
-              "page_reference": 47,
-              "section_title": "אירועים במהלך תקופת הדוח ולאחר תאריך הדוח על המצב הכספי"
-            }
-          ]
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "נוי נופר אנרגיות מתחדשות אירופה",
-              "ownership_pct": 47.5,
-              "parent": null,
-              "page_reference": 78,
-              "section_title": "ביאור 4 - מידע נוסף בדבר חברות המטופלות לפי שיטת השווי המאזני:",
-              "table_title": null,
-              "note": "ירידה ל-47.5% לאחר מכירת 5% לקרן נוי"
-            },
-            {
-              "name": "אלומיי קפיטל בע\"מ",
-              "ownership_pct": 45.85,
-              "parent": null,
-              "page_reference": 83,
-              "section_title": "ביאור 4 - רכישת השליטה בחברת אלומיי קפיטל בע\"מ (\"אלומיי\")",
-              "table_title": null,
-              "note": "רכישת שליטה (45.85%) שהושלמה ב-4 במרץ 2026"
-            },
-            {
-              "name": "נופר אנרגיה בישראל בע\"מ (נופר ישראל)",
-              "ownership_pct": 81.25,
-              "parent": null,
-              "page_reference": 87,
-              "section_title": "ביאור 6 - הקמת חברה המאגדת את הפעילות בישראל (\"נופר ישראל\") והתקשרות בהסכם עם כלל חברה לביטוח בע\"מ להשקעה בפעילות החברה בישראל",
-              "table_title": null,
-              "note": "הקמת חברה בבעלות מלאה והקצאת 18.75% לכלל חברה לביטוח"
-            },
-            {
-              "name": "Nofar USA Energy Investments and Management LLC",
-              "ownership_pct": 100.0,
-              "parent": null,
-              "page_reference": 80,
-              "section_title": "ביאור 4 - צירופי עסקים ורכישת נכסים בתקופת הדיווח:",
-              "table_title": null,
-              "note": "רכישת מלוא הזכויות בחברות בנות המחזיקות בפרויקטים בארה\"ב"
-            }
-          ],
-          "change_events": [
-            {
-              "company": "נוי נופר אנרגיות מתחדשות אירופה",
-              "event_type": "decrease",
-              "ownership_pct_before": 52.5,
-              "ownership_pct_after": 47.5,
-              "event_date": "2025-11-03",
-              "event_description": "מכירת 5% מזכויות השותפות והמניות בשותף הכללי לקרן נוי",
-              "page_reference": 78,
-              "section_title": "ביאור 4 - מידע נוסף בדבר חברות המטופלות לפי שיטת השווי המאזני:"
-            },
-            {
-              "company": "אלומיי קפיטל בע\"מ",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": 0.0,
-              "ownership_pct_after": 45.85,
-              "event_date": "2026-03-04",
-              "event_description": "השלמת רכישת שליטה (45.85%) באלומיי קפיטל",
-              "page_reference": 83,
-              "section_title": "ביאור 4 - רכישת השליטה בחברת אלומיי קפיטל בע\"מ (\"אלומיי\")"
-            },
-            {
-              "company": "נופר אנרגיה בישראל בע\"מ (נופר ישראל)",
-              "event_type": "decrease",
-              "ownership_pct_before": 100.0,
-              "ownership_pct_after": 81.25,
-              "event_date": "2026-03-19",
-              "event_description": "הקצאת 18.75% ממניות נופר ישראל לכלל חברה לביטוח בהשלמה הראשונה",
-              "page_reference": 87,
-              "section_title": "ביאור 6 - הקמת חברה המאגדת את הפעילות בישראל (\"נופר ישראל\") והתקשרות בהסכם עם כלל חברה לביטוח בע\"מ להשקעה בפעילות החברה בישראל"
-            },
-            {
-              "company": "Nofar USA Energy Investments and Management LLC",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": 0.0,
-              "ownership_pct_after": 100.0,
-              "event_date": "2026-02-16",
-              "event_description": "השלמת עסקת רכישת פורטפוליו פרויקטים סולאריים בארה\"ב (רכישת מלוא הזכויות בחברות בנות)",
-              "page_reference": 80,
-              "section_title": "ביאור 4 - צירופי עסקים ורכישת נכסים בתקופת הדיווח:"
-            }
-          ]
-        },
-        "0:5": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [],
-          "change_events": [
-            {
-              "company": "נופר אנרגיה בישראל בע\"מ",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": 0,
-              "ownership_pct_after": 81.25,
-              "event_date": "2026-01-13",
-              "event_description": "הקמת נופר ישראל כחברה בבעלות מלאה לצורך העברת פעילות והקצאת 18.75% לכלל בהסכם השקעה",
-              "page_reference": 87,
-              "section_title": "6. הקמת חברה המאגדת את הפעילות בישראל (\"נופר ישראל\") והתקשרות בהסכם עם כלל חברה לביטוח בע\"מ להשקעה בפעילות החברה בישראל"
-            },
-            {
-              "company": "אלומיי לוזון תשתיות אנרגיה בע\"מ",
-              "event_type": "full_disposal",
-              "ownership_pct_before": 50,
-              "ownership_pct_after": 0,
-              "event_date": "2026-03-27",
-              "event_description": "הליך היפרדות באלומיי לוזון במסגרתו התחייבה קבוצת עמוס לוזון לרכוש את מניות אלומיי לוזון המוחזקות בעקיפין על ידי אלומיי קפיטל",
-              "page_reference": 89,
-              "section_title": "10. הליך הפרדות באלומיי לוזון"
-            },
-            {
-              "company": "נופר דאטה סנטר ישראל שוהם, שותפות מוגבלת",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": 0,
-              "ownership_pct_after": 90,
-              "event_date": "2026-05-25",
-              "event_description": "התקשרות בהסכם לרכישת זכויות במקרקעין והקמת שותפות מוגבלת המוחזקת ב-90% על ידי החברה",
-              "page_reference": 99,
-              "section_title": "5. התקשרות בהסכמים לרכישת זכויות במקרקעין בשוהם ולהקמת שותפות מוגבלת למטרת ייזום והקמת חוות שרתים"
-            }
-          ]
-        },
-        "0:6": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [],
-          "change_events": [
-            {
-              "company": "אלומיי קפיטל בע\"מ",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 45.85,
-              "event_date": "2026-03-04",
-              "event_description": "השלמת רכישת כ-45.85% מהון המניות והשגת שליטה בחברה",
-              "page_reference": 121,
-              "section_title": "ביאור 2 - הנחות ששימשו לעריכת דוחות הפרופורמה (המשך)"
-            },
-            {
-              "company": "נוי-נופר אנרגיות מתחדשות אירופה, שותפות מוגבלת",
-              "event_type": "decrease",
-              "ownership_pct_before": 52.5,
-              "ownership_pct_after": 47.5,
-              "event_date": "2025-12-25",
-              "event_description": "איבוד שליטה בשותפות ומעבר להחזקה של 47.5% המטופלת לפי שיטת השווי המאזני",
-              "page_reference": 121,
-              "section_title": "ביאור 2 - הנחות ששימשו לעריכת דוחות הפרופורמה (המשך)"
-            }
-          ]
-        },
-        "0:8": {
-          "report_format": "other",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-02-26",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:9": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": "2026-02-26",
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {
-        "0:7": 1
-      }
-    }
+    "attempts": 1,
+    "at": "2026-10-06T10:05:54.330568+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744048": {
     "company_id": "1831",
@@ -18119,301 +17781,11 @@
   },
   "1765424": {
     "company_id": "1865",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:12:27.469621+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 12,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "איילון חברה לביטוח בע\"מ",
-              "ownership_pct": 59.11,
-              "parent": null,
-              "page_reference": 5,
-              "section_title": "1. תיאור החברה והסביבה העסקית",
-              "table_title": null,
-              "note": "בדילול מלא 57.82%"
-            },
-            {
-              "name": "ווישור חברה לביטוח בע\"מ",
-              "ownership_pct": 100.0,
-              "parent": "איילון חברה לביטוח בע\"מ",
-              "page_reference": 5,
-              "section_title": "1. תיאור החברה והסביבה העסקית",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "WUS",
-              "ownership_pct": 39.5,
-              "parent": null,
-              "page_reference": 9,
-              "section_title": "2. מגמות, אירועים והתפתחויות בעסקי הקבוצה",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "איילון חברה לביטוח בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 51,
-              "section_title": "דוח רבעוני בדבר אפקטיביות הבקרה הפנימית על הדיווח הכספי ועל הגילוי לפי תקנה 38ג(א)",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ווישור חברה לביטוח בע\"מ",
-              "ownership_pct": null,
-              "parent": "איילון חברה לביטוח בע\"מ",
-              "page_reference": 51,
-              "section_title": "דוח רבעוני בדבר אפקטיביות הבקרה הפנימית על הדיווח הכספי ועל הגילוי לפי תקנה 38ג(א)",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ווישור פיננסים",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 42,
-              "section_title": "4.3.8 ניתוח רווח (הפסד) שאינו מיוחס לתחומי פעילות -מאוחד:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "wePay",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 48,
-              "section_title": "8. אירועים לאחר תקופת הדוח",
-              "table_title": null,
-              "note": "חברת בת ייעודית שהוקמה לאחר תקופת הדוח"
-            }
-          ],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "איילון חברה לביטוח בע\"מ",
-              "ownership_pct": 59.11,
-              "parent": null,
-              "page_reference": 70,
-              "section_title": "באור 1 - כללי",
-              "table_title": null,
-              "note": "בדילול מלא 57.82%"
-            },
-            {
-              "name": "ווישור חברה לביטוח בע\"מ",
-              "ownership_pct": null,
-              "parent": "איילון חברה לביטוח בע\"מ",
-              "page_reference": 70,
-              "section_title": "באור 1 - כללי",
-              "table_title": null,
-              "note": "מוחזקת במלואה על ידי איילון ביטוח"
-            },
-            {
-              "name": "WeSure Technologies USA Inc. (WUS)",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 70,
-              "section_title": "באור 1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "WeSure Digital Insurance Service Inc. (WDS)",
-              "ownership_pct": null,
-              "parent": "WeSure Technologies USA Inc. (WUS)",
-              "page_reference": 70,
-              "section_title": "באור 1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "WeSure Technologies (India) Private Limited",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 70,
-              "section_title": "באור 1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "קויוטי טכנולוגיות",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 70,
-              "section_title": "באור 1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ווישור פיננסים בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 70,
-              "section_title": "באור 1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "wePay",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 70,
-              "section_title": "באור 1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "WeSure Insurance USA Holdings, Inc.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 70,
-              "section_title": "באור 1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Hourly, Inc.",
-              "ownership_pct": null,
-              "parent": "WeSure Technologies USA Inc. (WUS)",
-              "page_reference": 70,
-              "section_title": "באור 1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Media Data Solutions LLC (MDS)",
-              "ownership_pct": null,
-              "parent": "WeSure Technologies USA Inc. (WUS)",
-              "page_reference": 70,
-              "section_title": "באור 1 - כללי",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "איילון חברה לביטוח בע\"מ",
-              "ownership_pct": 59.11,
-              "parent": null,
-              "page_reference": 70,
-              "section_title": "באור :1 - כללי",
-              "table_title": null,
-              "note": "ובדילול מלא 57.82%"
-            },
-            {
-              "name": "ווישור חברה לביטוח בע\"מ",
-              "ownership_pct": null,
-              "parent": "איילון חברה לביטוח בע\"מ",
-              "page_reference": 70,
-              "section_title": "באור :1 - כללי",
-              "table_title": null,
-              "note": "מוחזקת במלואה על ידי איילון ביטוח"
-            },
-            {
-              "name": "ווישור פיננסים בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 70,
-              "section_title": "באור :1 - כללי",
-              "table_title": null,
-              "note": "לשעבר: גלובלטק מימון בע\"מ"
-            },
-            {
-              "name": "WeSure Technologies USA Inc (\"WUS\")",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 70,
-              "section_title": "באור :1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "WeSure USA Insurance Holdings, Inc.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 70,
-              "section_title": "באור :1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "wePay בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 70,
-              "section_title": "באור :1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "WeSure Digital Insurance Agency Service Inc (\"WDS\")",
-              "ownership_pct": null,
-              "parent": "WeSure Technologies USA Inc (\"WUS\")",
-              "page_reference": 70,
-              "section_title": "באור :1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Hourly, Inc.",
-              "ownership_pct": null,
-              "parent": "WeSure Technologies USA Inc (\"WUS\")",
-              "page_reference": 70,
-              "section_title": "באור :1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Media Data Solutions LLC (\"MDS\")",
-              "ownership_pct": null,
-              "parent": "WeSure Technologies USA Inc (\"WUS\")",
-              "page_reference": 70,
-              "section_title": "באור :1 - כללי",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T10:10:33.942897+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766727": {
     "company_id": "1865",
@@ -18441,18 +17813,11 @@
   },
   "1744998": {
     "company_id": "1867",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:09:35.196698+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T10:07:24.338038+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765078": {
     "company_id": "1867",
@@ -18486,93 +17851,289 @@
   },
   "1767717": {
     "company_id": "1870",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:09:38.440944+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T10:08:19.427880+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743525": {
     "company_id": "1871",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:09:45.553603+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T10:11:23.924451+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743596": {
     "company_id": "1871",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:09:55.166418+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T10:12:15.142319+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764780": {
     "company_id": "1871",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-05T12:10:05.678833+00:00",
+    "at": "2026-10-06T10:14:32.048696+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 9,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "ק.נ. אחזקות",
+              "ownership_pct": 70,
+              "parent": null,
+              "page_reference": 14,
+              "section_title": "סטאטוס פיתוח הפרויקטים",
+              "table_title": "פירוט בדבר מתקנים בסטאטוס בהפעלה מסחרית (אלפי ש\"ח)",
+              "note": null
+            },
+            {
+              "name": "ק.וו.פ סולאר",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 14,
+              "section_title": "סטאטוס פיתוח הפרויקטים",
+              "table_title": "פירוט בדבר מתקנים בסטאטוס בהפעלה מסחרית (אלפי ש\"ח)",
+              "note": null
+            },
+            {
+              "name": "פריים תלמים",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 14,
+              "section_title": "סטאטוס פיתוח הפרויקטים",
+              "table_title": "פירוט בדבר מתקנים בסטאטוס בהפעלה מסחרית (אלפי ש\"ח)",
+              "note": null
+            },
+            {
+              "name": "רפאל סולאר",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 14,
+              "section_title": "סטאטוס פיתוח הפרויקטים",
+              "table_title": "פירוט בדבר מתקנים בסטאטוס בהפעלה מסחרית (אלפי ש\"ח)",
+              "note": null
+            },
+            {
+              "name": "להב אנרגיה ירוקה",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 14,
+              "section_title": "סטאטוס פיתוח הפרויקטים",
+              "table_title": "פירוט בדבר מתקנים בסטאטוס בהפעלה מסחרית (אלפי ש\"ח)",
+              "note": null
+            },
+            {
+              "name": "מיה סול",
+              "ownership_pct": 49,
+              "parent": null,
+              "page_reference": 14,
+              "section_title": "סטאטוס פיתוח הפרויקטים",
+              "table_title": "פירוט בדבר מתקנים בסטאטוס בהפעלה מסחרית (אלפי ש\"ח)",
+              "note": null
+            },
+            {
+              "name": "להב אנרגיה הונגריה",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 14,
+              "section_title": "סטאטוס פיתוח הפרויקטים",
+              "table_title": "פירוט בדבר מתקנים בסטאטוס בהפעלה מסחרית (אלפי ש\"ח)",
+              "note": null
+            },
+            {
+              "name": "להב אנרגיה פורטוגל",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 14,
+              "section_title": "סטאטוס פיתוח הפרויקטים",
+              "table_title": "פירוט בדבר מתקנים בסטאטוס בהפעלה מסחרית (אלפי ש\"ח)",
+              "note": null
+            },
+            {
+              "name": "הליוס מערכות",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 14,
+              "section_title": "סטאטוס פיתוח הפרויקטים",
+              "table_title": "פירוט בדבר מתקנים בסטאטוס בהפעלה מסחרית (אלפי ש\"ח)",
+              "note": null
+            },
+            {
+              "name": "סולנטו",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 14,
+              "section_title": "סטאטוס פיתוח הפרויקטים",
+              "table_title": "פירוט בדבר מתקנים בסטאטוס בהפעלה מסחרית (אלפי ש\"ח)",
+              "note": null
+            },
+            {
+              "name": "המאור הגדול",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 14,
+              "section_title": "סטאטוס פיתוח הפרויקטים",
+              "table_title": "פירוט בדבר מתקנים בסטאטוס בהפעלה מסחרית (אלפי ש\"ח)",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "פיוי פלאנט 2019 בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 29,
+              "section_title": "נספח א' - פרטים לגבי תעודות התחייבות שהונפקו על ידי החברה",
+              "table_title": "אגרות חוב (סדרה ב')",
+              "note": null
+            },
+            {
+              "name": "פריים תלמים בע\"מ",
+              "ownership_pct": null,
+              "parent": "פיוי פלאנט 2019 בע\"מ",
+              "page_reference": 29,
+              "section_title": "נספח א' - פרטים לגבי תעודות התחייבות שהונפקו על ידי החברה",
+              "table_title": "אגרות חוב (סדרה ב')",
+              "note": "חברת בת של פיוי פלאנט 2019 בע\"מ"
+            },
+            {
+              "name": "ק.נ. אחזקות סולאריות בע\"מ",
+              "ownership_pct": 70,
+              "parent": null,
+              "page_reference": 29,
+              "section_title": "נספח א' - פרטים לגבי תעודות התחייבות שהונפקו על ידי החברה",
+              "table_title": "אגרות חוב (סדרה ב')",
+              "note": null
+            },
+            {
+              "name": "KWP סולאר בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 29,
+              "section_title": "נספח א' - פרטים לגבי תעודות התחייבות שהונפקו על ידי החברה",
+              "table_title": "אגרות חוב (סדרה ב')",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "להב אנרגיה ירוקה בע\"מ",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": null,
+              "event_date": "2025-08-17",
+              "event_description": "השלמת עסקת מיזוג כנגד העברת מלוא מניות להב אנרגיה ירוקה בע\"מ לחברה",
+              "page_reference": 51,
+              "section_title": "ביאור 5 – צירופי עסקים",
+              "table_title": null
+            },
+            {
+              "company": "הליוס מערכות כ.ס בע\"מ",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": null,
+              "event_date": "2025-09-09",
+              "event_description": "רכישת השליטה בצבר מערכות סולאריות מניבות (רכישת מלוא המניות)",
+              "page_reference": 52,
+              "section_title": "ביאור 5 – צירופי עסקים",
+              "table_title": null
+            },
+            {
+              "company": "סולנטו 1 שותפות מוגבלת",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": null,
+              "event_date": "2025-12-29",
+              "event_description": "השלמת רכישת מלוא זכויות המוכרת בשותפות מוגבלת המחזיקה במספר תאגידים",
+              "page_reference": 53,
+              "section_title": "ביאור 5 – צירופי עסקים",
+              "table_title": null
+            }
+          ]
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "הליוס מערכות כ.ס בע\"מ",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 100,
+              "event_date": "2025-09-09",
+              "event_description": "רכישת השליטה בצבר מערכות סולאריות מניבות בהספק כולל של 13.1 מגה וואט (DC) על ידי רכישת מלוא המניות",
+              "page_reference": 52,
+              "section_title": "ביאור 5 – צירופי עסקים"
+            },
+            {
+              "company": "סולנטו 1 שותפות מוגבלת",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 100,
+              "event_date": "2025-12-29",
+              "event_description": "התקשרות והשלמת רכישת צבר מערכות סולאריות מניבות בהספק כולל של 53.7 מגה וואט (DC)",
+              "page_reference": 53,
+              "section_title": "ביאור 5 – צירופי עסקים)המשך()ב("
+            },
+            {
+              "company": "המאור הגדול אנרגיות סולאריות בע\"מ והמאור הגדול אנרגיות מתחדשות בע\"מ",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 100,
+              "event_date": "2026-03-12",
+              "event_description": "התקשרות והשלמת רכישת צבר מערכות סולאריות מניבות בהספק כולל של כ- 9.7 מגה וואט (DC)",
+              "page_reference": 55,
+              "section_title": "ביאור 5 - צירופי עסקים)המשך("
+            }
+          ]
+        }
+      },
       "attempts": {}
     }
   },
   "1744607": {
     "company_id": "1872",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:10:06.111316+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T10:13:16.031457+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767448": {
     "company_id": "1872",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:10:10.652679+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T10:14:32.277354+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1735343": {
     "company_id": "1873",
@@ -27663,5 +27224,21 @@
       "done": {},
       "attempts": {}
     }
+  },
+  "1773857": {
+    "company_id": "1267",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-10-06T10:05:28.070200+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1773794": {
+    "company_id": "1796",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-10-06T10:05:28.246676+00:00",
+    "model": "gemini-3.5-flash-lite"
   }
 }
