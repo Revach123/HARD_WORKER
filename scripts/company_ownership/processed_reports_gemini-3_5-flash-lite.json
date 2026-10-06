@@ -19359,169 +19359,11 @@
   },
   "1745172": {
     "company_id": "1978",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-06T12:04:17.069173+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "עוגנים בירוק בע\"מ",
-              "ownership_pct": 91,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "השקעות הקרן",
-              "table_title": "להלן פירוט השקעות הקרן ליום 31 במרץ 2026 (באלפי ש\"ח):",
-              "note": null
-            },
-            {
-              "name": "אקסלרה טלקום בע\"מ",
-              "ownership_pct": 81.6,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "השקעות הקרן",
-              "table_title": "להלן פירוט השקעות הקרן ליום 31 במרץ 2026 (באלפי ש\"ח):",
-              "note": null
-            },
-            {
-              "name": "אסקו ישראל שירותי חשמל ואנרגיה בע\"מ",
-              "ownership_pct": 20,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "השקעות הקרן",
-              "table_title": "להלן פירוט השקעות הקרן ליום 31 במרץ 2026 (באלפי ש\"ח):",
-              "note": "מוחזק באמצעות אסקו אלומה לאחר מכירת 38% בינואר 2026"
-            },
-            {
-              "name": "חן המקום טכנולוגיות סביבה בע\"מ",
-              "ownership_pct": 35,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "השקעות הקרן",
-              "table_title": "להלן פירוט השקעות הקרן ליום 31 במרץ 2026 (באלפי ש\"ח):",
-              "note": null
-            },
-            {
-              "name": "שילוני מיחזור אורגני בע\"מ",
-              "ownership_pct": 30,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "השקעות הקרן",
-              "table_title": "להלן פירוט השקעות הקרן ליום 31 במרץ 2026 (באלפי ש\"ח):",
-              "note": null
-            },
-            {
-              "name": "גרינמיקס תעשיות מחזור בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "השקעות הקרן",
-              "table_title": "להלן פירוט השקעות הקרן ליום 31 במרץ 2026 (באלפי ש\"ח):",
-              "note": "המרת הלוואה ל-50% מניות בוצעה באפריל 2026 (לאחר תאריך המאזן)"
-            },
-            {
-              "name": "סופר פייפ בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "השקעות הקרן",
-              "table_title": "להלן פירוט השקעות הקרן ליום 31 במרץ 2026 (באלפי ש\"ח):",
-              "note": "השקעה באמצעות הלוואה המירה למניות"
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "גרינמיקס תעשיות מחזור בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 20,
-              "section_title": "4.3 גרינמיקס תעשיות מחזור בע\"מ",
-              "table_title": null,
-              "note": "המרת הלוואה המירה למניות והשקעה נוספת ביום 14 באפריל 2026"
-            },
-            {
-              "name": "עוגנים בירוק בע\"מ",
-              "ownership_pct": 91,
-              "parent": null,
-              "page_reference": 32,
-              "section_title": "נספח א' - הערכת שווי של חברת עוגנים בירוק בע\"מ ליום 31 במרץ 2026",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אסקו אלומה בע\"מ",
-              "ownership_pct": 20,
-              "parent": null,
-              "page_reference": 33,
-              "section_title": "נספח ב' - הערכת שווי של חברת אסקו אלומה בע\"מ ליום 31 במרץ 2026",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אקסלרה טלקום בע\"מ",
-              "ownership_pct": 78.5,
-              "parent": null,
-              "page_reference": 34,
-              "section_title": "נספח ג' - הערכת שווי של חברת אקסלרה טלקום בע\"מ ליום 31 במרץ 2026",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "חן המקום טכנולוגיות סביבה בע\"מ",
-              "ownership_pct": 35,
-              "parent": null,
-              "page_reference": 35,
-              "section_title": "נספח ד' - הערכת שווי של חברת חן המקום טכנולוגיות סביבה בע\"מ ליום 31 במרץ 2026",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "חן המקום טכנולוגיות סביבה בע\"מ",
-              "ownership_pct": 35,
-              "parent": null,
-              "page_reference": 35,
-              "section_title": "נספח ד' - הערכת שווי של חברת חן המקום טכנולוגיות סביבה בע\"מ ליום 31 במרץ 2026",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אקסלרה",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 37,
-              "section_title": "נכסים משועבדים להבטחת הסכומים המובטחים ולהבטחת הקיום המלא והמדויק של מלוא התחייבויות הקרן ושל כל יתר תנאי אגרות החוב שעבדה הקרן לטובת הנאמן, עבור מחזיקי אגרות החוב, את הבטוחות הבאות:",
-              "table_title": null,
-              "note": "מניות רגילות משועבדות לטובת הנאמן"
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T12:04:39.809453+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745174": {
     "company_id": "1978",
@@ -19548,48 +19390,27 @@
   },
   "1766541": {
     "company_id": "1978",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:14:22.669590+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T12:04:57.738923+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742790": {
     "company_id": "1979",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:14:28.821893+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T12:06:42.328827+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763668": {
     "company_id": "1979",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:14:30.251041+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T12:06:50.733430+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1768864": {
     "company_id": "1975",
@@ -19601,48 +19422,27 @@
   },
   "1764128": {
     "company_id": "1979",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:14:44.992532+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T12:08:16.614946+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742643": {
     "company_id": "1980",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:14:31.731011+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T12:06:57.411769+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743913": {
     "company_id": "1980",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:14:37.085148+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T12:07:53.844257+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743924": {
     "company_id": "1980",
@@ -19661,48 +19461,27 @@
   },
   "1764981": {
     "company_id": "1980",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:14:37.291183+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T12:08:02.067660+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765405": {
     "company_id": "1980",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:14:42.947353+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T12:08:57.650962+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765416": {
     "company_id": "1980",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:14:49.005415+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T12:09:00.481169+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743181": {
     "company_id": "1982",
