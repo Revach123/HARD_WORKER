@@ -19549,36 +19549,11 @@
   },
   "1766154": {
     "company_id": "1997",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-06T12:19:45.326837+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "גרייס ברידינג טכנולוגיות קיבוע חנקן בע\"מ",
-              "ownership_pct": 85,
-              "parent": null,
-              "page_reference": 20,
-              "section_title": "באור 1 - כ ל ל י",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T12:25:30.986763+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763370": {
     "company_id": "1998",
@@ -19601,37 +19576,94 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-05T12:15:00.059348+00:00",
+    "at": "2026-10-06T12:25:40.133229+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 3,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "טק מסטר טרייד בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "דוח הדירקטוריון על מצב ענייני התאגיד לתקופות של שישה ושלושה חודשים שהסתיימו ביום 30 ביוני 2026",
+              "table_title": null,
+              "note": "חברת בת בשליטת החברה"
+            },
+            {
+              "name": "ק.לאבס אינווישן בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "דוח הדירקטוריון על מצב ענייני התאגיד לתקופות של שישה ושלושה חודשים שהסתיימו ביום 30 ביוני 2026",
+              "table_title": null,
+              "note": "חברת בת בשליטת החברה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "טק מסטרס טרייד בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 31,
+              "section_title": "באור 1 – כללי",
+              "table_title": null,
+              "note": "חברה בת בשליטת החברה"
+            },
+            {
+              "name": "ק.לאבס אינווישן בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 31,
+              "section_title": "באור 1 – כללי",
+              "table_title": null,
+              "note": "חברה בת בשליטת החברה"
+            }
+          ],
+          "change_events": [
+            {
+              "company": "ק.לאבס אינווישן בע\"מ",
+              "event_type": "decrease",
+              "ownership_pct_before": null,
+              "ownership_pct_after": null,
+              "event_date": "2026-01-08",
+              "event_description": "הקצאת 25% מהון המניות של חברת הבת ק.לאבס לחברה בשליטת מנכ\"ל ק.לאבס בתמורה להעמדת הלוואת בעלים",
+              "page_reference": 32,
+              "section_title": "באור 3 - אירועים מהותיים אחרים בתקופת הדוח ולאחריו"
+            }
+          ]
+        }
+      },
       "attempts": {}
     }
   },
   "1736143": {
     "company_id": "2028",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:14:58.594930+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T12:25:38.143724+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1741041": {
     "company_id": "2028",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-05T12:15:00.536141+00:00",
+    "at": "2026-10-06T12:25:39.542508+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -19646,7 +19678,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-05T12:15:00.325478+00:00",
+    "at": "2026-10-06T12:25:41.520592+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -19661,7 +19693,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-05T12:15:00.616197+00:00",
+    "at": "2026-10-06T12:25:41.602593+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -19691,7 +19723,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-05T12:15:00.812604+00:00",
+    "at": "2026-10-06T12:25:42.255687+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -19706,7 +19738,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-05T12:15:02.968852+00:00",
+    "at": "2026-10-06T12:25:43.210205+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -19721,7 +19753,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-05T12:15:01.054266+00:00",
+    "at": "2026-10-06T12:25:44.176653+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -19751,7 +19783,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-05T12:15:01.316455+00:00",
+    "at": "2026-10-06T12:25:43.343183+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -19781,7 +19813,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-05T12:15:08.906206+00:00",
+    "at": "2026-10-06T12:25:44.417017+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
