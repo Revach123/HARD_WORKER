@@ -19279,494 +19279,11 @@
   },
   "1764536": {
     "company_id": "1974",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-06T11:59:40.298370+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 7,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "סופרין פרויקטים בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": "דוח הדירקטוריון על מצב עסקי התאגיד ליום 30 ביוני 2026",
-              "table_title": null,
-              "note": "חברה בת בבעלות מלאה"
-            },
-            {
-              "name": "סופרין וייס נכסים בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "3.2 מגדלי עתיד, ירושלים (נכס מהותי מאוד בהקמה)",
-              "table_title": null,
-              "note": "חברה כלולה המוחזקת בשרשור מלא"
-            }
-          ],
-          "change_events": [
-            {
-              "company": "סופרין בניה בע\"מ",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": 0,
-              "ownership_pct_after": 100,
-              "event_date": "2026-06-22",
-              "event_description": "כניסת קבוצת סופרין לתחום ביצוע עבודות בניה באמצעות חברה ייעודית בבעלות מלאה",
-              "page_reference": 12,
-              "section_title": "1.2 אירועים מהותיים בתקופת הדוח ולאחר מועד הדוח על המצב הכספי"
-            }
-          ]
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "סופרין נכסים בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 31,
-              "section_title": "נספח א' – פרטים אודות המניות המשועבדות וסופרין נכסים",
-              "table_title": "תרשים מבנה אחזקות",
-              "note": null
-            },
-            {
-              "name": "סופרין בניה בע\"מ",
-              "ownership_pct": 100,
-              "parent": "סופרין נכסים בע\"מ",
-              "page_reference": 31,
-              "section_title": "נספח א' – פרטים אודות המניות המשועבדות וסופרין נכסים",
-              "table_title": "תרשים מבנה אחזקות",
-              "note": null
-            },
-            {
-              "name": "סופרין פרויקטים בע\"מ",
-              "ownership_pct": 100,
-              "parent": "סופרין נכסים בע\"מ",
-              "page_reference": 31,
-              "section_title": "נספח א' – פרטים אודות המניות המשועבדות וסופרין נכסים",
-              "table_title": "תרשים מבנה אחזקות",
-              "note": null
-            },
-            {
-              "name": "תדרר סופרין מגדלי השחר בע\"מ",
-              "ownership_pct": 50,
-              "parent": "סופרין נכסים בע\"מ",
-              "page_reference": 31,
-              "section_title": "נספח א' – פרטים אודות המניות המשועבדות וסופרין נכסים",
-              "table_title": "תרשים מבנה אחזקות",
-              "note": null
-            },
-            {
-              "name": "סופרין יזום ניהול בע\"מ",
-              "ownership_pct": 33.3,
-              "parent": "סופרין נכסים בע\"מ",
-              "page_reference": 31,
-              "section_title": "נספח א' – פרטים אודות המניות המשועבדות וסופרין נכסים",
-              "table_title": "תרשים מבנה אחזקות",
-              "note": null
-            },
-            {
-              "name": "סופרין בים בע\"מ",
-              "ownership_pct": 50,
-              "parent": "סופרין נכסים בע\"מ",
-              "page_reference": 31,
-              "section_title": "נספח א' – פרטים אודות המניות המשועבדות וסופרין נכסים",
-              "table_title": "תרשים מבנה אחזקות",
-              "note": null
-            },
-            {
-              "name": "נכסי פנדום הברזל בע\"מ",
-              "ownership_pct": 50,
-              "parent": "סופרין נכסים בע\"מ",
-              "page_reference": 31,
-              "section_title": "נספח א' – פרטים אודות המניות המשועבדות וסופרין נכסים",
-              "table_title": "תרשים מבנה אחזקות",
-              "note": null
-            },
-            {
-              "name": "סופרין פנדום פיתוח בע\"מ",
-              "ownership_pct": 50,
-              "parent": "סופרין נכסים בע\"מ",
-              "page_reference": 31,
-              "section_title": "נספח א' – פרטים אודות המניות המשועבדות וסופרין נכסים",
-              "table_title": "תרשים מבנה אחזקות",
-              "note": null
-            },
-            {
-              "name": "סופרין יזום התחדשות עירונית בע\"מ",
-              "ownership_pct": 50,
-              "parent": "סופרין נכסים בע\"מ",
-              "page_reference": 31,
-              "section_title": "נספח א' – פרטים אודות המניות המשועבדות וסופרין נכסים",
-              "table_title": "תרשים מבנה אחזקות",
-              "note": null
-            },
-            {
-              "name": "סופרין וייס פיתוח בע\"מ",
-              "ownership_pct": 25,
-              "parent": "סופרין נכסים בע\"מ",
-              "page_reference": 34,
-              "section_title": "2.3 פרויקטים המוחזקים על-ידי חברות מוחזקות (כלולות) של סופרין נכסים (במישרין או בעקיפין)",
-              "table_title": "2.3.1 להלן פרויקטים המוחזקים על-ידי חברות מוחזקות של סופרין נכסים (במישרין או בעקיפין), בתחום ייזום הנדל\"ן:",
-              "note": null
-            },
-            {
-              "name": "וייס סופרין נדל\"ן בע\"מ",
-              "ownership_pct": 16.5,
-              "parent": "סופרין נכסים בע\"מ",
-              "page_reference": 34,
-              "section_title": "2.3 פרויקטים המוחזקים על-ידי חברות מוחזקות (כלולות) של סופרין נכסים (במישרין או בעקיפין)",
-              "table_title": "2.3.1 להלן פרויקטים המוחזקים על-ידי חברות מוחזקות של סופרין נכסים (במישרין או בעקיפין), בתחום ייזום הנדל\"ן:",
-              "note": null
-            },
-            {
-              "name": "סופרין וייסברג תוצרת הארץ בע\"מ",
-              "ownership_pct": 10,
-              "parent": "סופרין נכסים בע\"מ",
-              "page_reference": 34,
-              "section_title": "2.3 פרויקטים המוחזקים על-ידי חברות מוחזקות (כלולות) של סופרין נכסים (במישרין או בעקיפין)",
-              "table_title": "2.3.1 להלן פרויקטים המוחזקים על-ידי חברות מוחזקות של סופרין נכסים (במישרין או בעקיפין), בתחום ייזום הנדל\"ן:",
-              "note": null
-            },
-            {
-              "name": "ספיר התחדשות עירונית (ג.ז.) בע\"מ",
-              "ownership_pct": 25,
-              "parent": "סופרין נכסים בע\"מ",
-              "page_reference": 34,
-              "section_title": "2.3 פרויקטים המוחזקים על-ידי חברות מוחזקות (כלולות) של סופרין נכסים (במישרין או בעקיפין)",
-              "table_title": "2.3.1 להלן פרויקטים המוחזקים על-ידי חברות מוחזקות של סופרין נכסים (במישרין או בעקיפין), בתחום ייזום הנדל\"ן:",
-              "note": null
-            },
-            {
-              "name": "סופרין וייס עוזיאל בע\"מ",
-              "ownership_pct": 50,
-              "parent": "סופרין נכסים בע\"מ",
-              "page_reference": 34,
-              "section_title": "2.3 פרויקטים המוחזקים על-ידי חברות מוחזקות (כלולות) של סופרין נכסים (במישרין או בעקיפין)",
-              "table_title": "2.3.1 להלן פרויקטים המוחזקים על-ידי חברות מוחזקות של סופרין נכסים (במישרין או בעקיפין), בתחום ייזום הנדל\"ן:",
-              "note": null
-            },
-            {
-              "name": "סופרין וייס אדרעל - ניהול בע\"מ וסופרין וייס אדראל שותפות מוגבלת",
-              "ownership_pct": 20,
-              "parent": "סופרין נכסים בע\"מ",
-              "page_reference": 34,
-              "section_title": "2.3 פרויקטים המוחזקים על-ידי חברות מוחזקות (כלולות) של סופרין נכסים (במישרין או בעקיפין)",
-              "table_title": "2.3.1 להלן פרויקטים המוחזקים על-ידי חברות מוחזקות של סופרין נכסים (במישרין או בעקיפין), בתחום ייזום הנדל\"ן:",
-              "note": null
-            },
-            {
-              "name": "דניאל פז מתחם טבריה בע\"מ",
-              "ownership_pct": 50,
-              "parent": "סופרין נכסים בע\"מ",
-              "page_reference": 35,
-              "section_title": "2.3 פרויקטים המוחזקים על-ידי חברות מוחזקות (כלולות) של סופרין נכסים (במישרין או בעקיפין)",
-              "table_title": "2.3.1 להלן פרויקטים המוחזקים על-ידי חברות מוחזקות של סופרין נכסים (במישרין או בעקיפין), בתחום ייזום הנדל\"ן:",
-              "note": null
-            },
-            {
-              "name": "פסגות יהודה הלוי 60 בע\"מ",
-              "ownership_pct": 50,
-              "parent": "סופרין נכסים בע\"מ",
-              "page_reference": 35,
-              "section_title": "2.3 פרויקטים המוחזקים על-ידי חברות מוחזקות (כלולות) של סופרין נכסים (במישרין או בעקיפין)",
-              "table_title": "2.3.1 להלן פרויקטים המוחזקים על-ידי חברות מוחזקות של סופרין נכסים (במישרין או בעקיפין), בתחום ייזום הנדל\"ן:",
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "סופרין סן רייז",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 35,
-              "section_title": null,
-              "table_title": null,
-              "note": "פרויקט: נווה שמיר, בית שמש"
-            },
-            {
-              "name": "דניאל פז מתחם טבריה בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 35,
-              "section_title": null,
-              "table_title": null,
-              "note": "פרויקט: מתחם טבריה, עמישב פתח תקווה"
-            },
-            {
-              "name": "פסגות יהודה הלוי 60 בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 35,
-              "section_title": null,
-              "table_title": null,
-              "note": "פרויקט: מתחם רש\"י, ראשל\"צ"
-            },
-            {
-              "name": "סופרין וייס נכסים בע\"מ; וייס סופרין נדל\"ן בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 35,
-              "section_title": "2.3.2 להלן פרויקטים המוחזקים על-ידי חברות מוחזקות של סופרין נכסים (במישרין או בעקיפין), בתחום הנכסים המניבים:",
-              "table_title": null,
-              "note": "פרויקט: בזל פארק, פתח תקווה"
-            },
-            {
-              "name": "נכסי פנדום הברזל בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 35,
-              "section_title": "2.3.2 להלן פרויקטים המוחזקים על-ידי חברות מוחזקות של סופרין נכסים (במישרין או בעקיפין), בתחום הנכסים המניבים:",
-              "table_title": null,
-              "note": "פרויקט: בית הרופאים הברזל 11, תל אביב"
-            },
-            {
-              "name": "נכסי פנדום הברזל בע\"מ",
-              "ownership_pct": 25,
-              "parent": null,
-              "page_reference": 35,
-              "section_title": "2.3.2 להלן פרויקטים המוחזקים על-ידי חברות מוחזקות של סופרין נכסים (במישרין או בעקיפין), בתחום הנכסים המניבים:",
-              "table_title": null,
-              "note": "פרויקט: החושלים הרצליה"
-            },
-            {
-              "name": "נכסי פנדום הברזל בע\"מ; סופרין וייס נכסים בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 35,
-              "section_title": "2.3.2 להלן פרויקטים המוחזקים על-ידי חברות מוחזקות של סופרין נכסים (במישרין או בעקיפין), בתחום הנכסים המניבים:",
-              "table_title": null,
-              "note": "פרויקט: טכנופארק חולון"
-            },
-            {
-              "name": "סופרין וייס נכסים בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 35,
-              "section_title": "2.3.2 להלן פרויקטים המוחזקים על-ידי חברות מוחזקות של סופרין נכסים (במישרין או בעקיפין), בתחום הנכסים המניבים:",
-              "table_title": null,
-              "note": "פרויקט: מיילסטון, הוד השרון"
-            },
-            {
-              "name": "סופרין וייס נכסים בע\"מ",
-              "ownership_pct": 12.5,
-              "parent": null,
-              "page_reference": 35,
-              "section_title": "2.3.2 להלן פרויקטים המוחזקים על-ידי חברות מוחזקות של סופרין נכסים (במישרין או בעקיפין), בתחום הנכסים המניבים:",
-              "table_title": null,
-              "note": "פרויקט: מיילסטון, הוד השרון (שטחי מסחר עילי)"
-            },
-            {
-              "name": "סופרין וייס נכסים בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 35,
-              "section_title": "2.3.2 להלן פרויקטים המוחזקים על-ידי חברות מוחזקות של סופרין נכסים (במישרין או בעקיפין), בתחום הנכסים המניבים:",
-              "table_title": null,
-              "note": "פרויקט: טכנופארק אבן יהודה – שלב א'"
-            },
-            {
-              "name": "סופרין וייס נכסים בע\"מ",
-              "ownership_pct": 25,
-              "parent": null,
-              "page_reference": 35,
-              "section_title": "2.3.2 להלן פרויקטים המוחזקים על-ידי חברות מוחזקות של סופרין נכסים (במישרין או בעקיפין), בתחום הנכסים המניבים:",
-              "table_title": null,
-              "note": "פרויקט: טכנופארק אבן יהודה – שלב א'"
-            },
-            {
-              "name": "סופרין וייס נכסים בע\"מ",
-              "ownership_pct": 25,
-              "parent": null,
-              "page_reference": 35,
-              "section_title": "2.3.2 להלן פרויקטים המוחזקים על-ידי חברות מוחזקות של סופרין נכסים (במישרין או בעקיפין), בתחום הנכסים המניבים:",
-              "table_title": null,
-              "note": "פרויקט: טכנופארק אבן יהודה – שלב ב'"
-            },
-            {
-              "name": "סופרין וייס נכסים בע\"מ; סופרין וייס המיטאן, שותפות מוגבלת; סופרין וייס חכימי שותפות מוגבלת",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 35,
-              "section_title": "2.3.2 להלן פרויקטים המוחזקים על-ידי חברות מוחזקות של סופרין נכסים (במישרין או בעקיפין), בתחום הנכסים המניבים:",
-              "table_title": null,
-              "note": "פרויקט: מגדלי עתיד, ירושלים - שיעורים שונים הנעים בין 16.5% ל-50%"
-            },
-            {
-              "name": "וייס סופרין נדל\"ן בע\"מ",
-              "ownership_pct": 20,
-              "parent": null,
-              "page_reference": 35,
-              "section_title": "2.3.2 להלן פרויקטים המוחזקים על-ידי חברות מוחזקות של סופרין נכסים (במישרין או בעקיפין), בתחום הנכסים המניבים:",
-              "table_title": null,
-              "note": "פרויקט: מגרש 5, הוד השרון"
-            },
-            {
-              "name": "סופרין וייס פיתוח בע\"מ; סופרין וייס חכימי שותפות מוגבלת",
-              "ownership_pct": 12.5,
-              "parent": null,
-              "page_reference": 36,
-              "section_title": "2.3.2 להלן פרויקטים המוחזקים על-ידי חברות מוחזקות של סופרין נכסים (במישרין או בעקיפין), בתחום הנכסים המניבים:",
-              "table_title": null,
-              "note": "פרויקט: אוניקס, קריית אונו"
-            }
-          ],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "סופרין פרויקטים בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 60,
-              "section_title": "ביאור 1 - כללי: א. אודות החברה ופעילותה",
-              "table_title": null,
-              "note": "חברה בת"
-            },
-            {
-              "name": "סופרין בניה בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 70,
-              "section_title": "ביאור 7 - אירועים מהותיים בתקופת הדוח: א. כניסת החברה לתחום ביצוע עבודות הבניה באמצעות חברה ייעודית",
-              "table_title": null,
-              "note": "חברת ביצוע בבעלות מלאה"
-            },
-            {
-              "name": "סופרין וייס נכסים",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 68,
-              "section_title": "ביאור 4 - השקעות המטופלות לפי שיטת השווי המאזני",
-              "table_title": "תמצית נתונים מהדוחות הכספיים של חברות כלולות מהותיות לחברה:",
-              "note": "חברה כלולה המטופלת לפי שיטת השווי המאזני"
-            },
-            {
-              "name": "נכסי פנדום הברזל",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 68,
-              "section_title": "ביאור 4 - השקעות המטופלות לפי שיטת השווי המאזני",
-              "table_title": "תמצית נתונים מהדוחות הכספיים של חברות כלולות מהותיות לחברה:",
-              "note": "חברה כלולה המטופלת לפי שיטת השווי המאזני"
-            }
-          ],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "סופרין פרויקטים בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 82,
-              "section_title": "מידע מהותי נוסף המתייחס לחברה עצמה כחברה אם ליום 30 ביוני 2026 - ביאור 2 - עסקאות עם חברות בנות",
-              "table_title": null,
-              "note": "חברת בת באחזקה מלאה"
-            },
-            {
-              "name": "סופרין נכסים בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 82,
-              "section_title": "מידע מהותי נוסף המתייחס לחברה עצמה כחברה אם ליום 30 ביוני 2026 - ביאור 2 - עסקאות עם חברות בנות",
-              "table_title": null,
-              "note": "חברת בת באחזקה מלאה"
-            },
-            {
-              "name": "סופרין בניה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 70,
-              "section_title": "ביאורים לדוחות הכספיים המאוחדים התמציתיים ביניים - ביאור 7 - אירועים מהותיים בתקופת הדוח: א. כניסת החברה לתחום ביצוע עבודות הבניה באמצעות חברה ייעודית",
-              "table_title": null,
-              "note": "חברה ייעודית בבעלות מלאה שהוקמה ביוני 2026"
-            },
-            {
-              "name": "סופרין וייס נכסים בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 77,
-              "section_title": "מכתב הסכמה הניתן בד בבד עם פרסום דוח עיתי בקשר לתשקיף מדף של סופרין אחזקות בע\"מ מחודש נובמבר 2024",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "נכסי פנדום הברזל בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 77,
-              "section_title": "מכתב הסכמה הניתן בד בבד עם פרסום דוח עיתי בקשר לתשקיף מדף של סופרין אחזקות בע\"מ מחודש נובמבר 2024",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": [
-            {
-              "company": "סופרין בניה בע\"מ",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": 0,
-              "ownership_pct_after": 100,
-              "event_date": "2026-06-30",
-              "event_description": "אישור דירקטוריון לכניסת החברה לתחום ביצוע עבודות הבניה באמצעות חברה ייעודית בבעלות מלאה",
-              "page_reference": 70,
-              "section_title": "ביאורים לדוחות הכספיים המאוחדים התמציתיים ביניים - ביאור 7 - אירועים מהותיים בתקופת הדוח: א. כניסת החברה לתחום ביצוע עבודות הבניה באמצעות חברה ייעודית"
-            }
-          ]
-        },
-        "0:5": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "סופרין וייס המיטיאן",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 95,
-              "section_title": "ביאור 3 - השקעות המטופלות לפי שיטת השווי המאזני:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "סופרין וייסברג תוצרת הארץ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 105,
-              "section_title": "ביאור 3 - השקעות המטופלות לפי שיטת השווי המאזני :",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T12:01:00.143185+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1740833": {
     "company_id": "1975",
@@ -19786,138 +19303,233 @@
   },
   "1744775": {
     "company_id": "1975",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:14:13.101381+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T11:59:54.321934+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1759066": {
     "company_id": "1975",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:14:12.775858+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T12:00:04.180273+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1761921": {
     "company_id": "1975",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:14:13.371218+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T12:00:21.836845+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743149": {
     "company_id": "1977",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:14:18.073368+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T12:02:33.319171+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743169": {
     "company_id": "1977",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:14:18.654056+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T12:01:27.136999+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765124": {
     "company_id": "1977",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:14:18.517632+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T12:02:31.038713+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765133": {
     "company_id": "1977",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:14:21.773685+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T12:03:13.456720+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745172": {
     "company_id": "1978",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-05T12:14:22.836682+00:00",
+    "at": "2026-10-06T12:04:17.069173+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 5,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "עוגנים בירוק בע\"מ",
+              "ownership_pct": 91,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "השקעות הקרן",
+              "table_title": "להלן פירוט השקעות הקרן ליום 31 במרץ 2026 (באלפי ש\"ח):",
+              "note": null
+            },
+            {
+              "name": "אקסלרה טלקום בע\"מ",
+              "ownership_pct": 81.6,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "השקעות הקרן",
+              "table_title": "להלן פירוט השקעות הקרן ליום 31 במרץ 2026 (באלפי ש\"ח):",
+              "note": null
+            },
+            {
+              "name": "אסקו ישראל שירותי חשמל ואנרגיה בע\"מ",
+              "ownership_pct": 20,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "השקעות הקרן",
+              "table_title": "להלן פירוט השקעות הקרן ליום 31 במרץ 2026 (באלפי ש\"ח):",
+              "note": "מוחזק באמצעות אסקו אלומה לאחר מכירת 38% בינואר 2026"
+            },
+            {
+              "name": "חן המקום טכנולוגיות סביבה בע\"מ",
+              "ownership_pct": 35,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "השקעות הקרן",
+              "table_title": "להלן פירוט השקעות הקרן ליום 31 במרץ 2026 (באלפי ש\"ח):",
+              "note": null
+            },
+            {
+              "name": "שילוני מיחזור אורגני בע\"מ",
+              "ownership_pct": 30,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "השקעות הקרן",
+              "table_title": "להלן פירוט השקעות הקרן ליום 31 במרץ 2026 (באלפי ש\"ח):",
+              "note": null
+            },
+            {
+              "name": "גרינמיקס תעשיות מחזור בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "השקעות הקרן",
+              "table_title": "להלן פירוט השקעות הקרן ליום 31 במרץ 2026 (באלפי ש\"ח):",
+              "note": "המרת הלוואה ל-50% מניות בוצעה באפריל 2026 (לאחר תאריך המאזן)"
+            },
+            {
+              "name": "סופר פייפ בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "השקעות הקרן",
+              "table_title": "להלן פירוט השקעות הקרן ליום 31 במרץ 2026 (באלפי ש\"ח):",
+              "note": "השקעה באמצעות הלוואה המירה למניות"
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "גרינמיקס תעשיות מחזור בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "4.3 גרינמיקס תעשיות מחזור בע\"מ",
+              "table_title": null,
+              "note": "המרת הלוואה המירה למניות והשקעה נוספת ביום 14 באפריל 2026"
+            },
+            {
+              "name": "עוגנים בירוק בע\"מ",
+              "ownership_pct": 91,
+              "parent": null,
+              "page_reference": 32,
+              "section_title": "נספח א' - הערכת שווי של חברת עוגנים בירוק בע\"מ ליום 31 במרץ 2026",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אסקו אלומה בע\"מ",
+              "ownership_pct": 20,
+              "parent": null,
+              "page_reference": 33,
+              "section_title": "נספח ב' - הערכת שווי של חברת אסקו אלומה בע\"מ ליום 31 במרץ 2026",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אקסלרה טלקום בע\"מ",
+              "ownership_pct": 78.5,
+              "parent": null,
+              "page_reference": 34,
+              "section_title": "נספח ג' - הערכת שווי של חברת אקסלרה טלקום בע\"מ ליום 31 במרץ 2026",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "חן המקום טכנולוגיות סביבה בע\"מ",
+              "ownership_pct": 35,
+              "parent": null,
+              "page_reference": 35,
+              "section_title": "נספח ד' - הערכת שווי של חברת חן המקום טכנולוגיות סביבה בע\"מ ליום 31 במרץ 2026",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "חן המקום טכנולוגיות סביבה בע\"מ",
+              "ownership_pct": 35,
+              "parent": null,
+              "page_reference": 35,
+              "section_title": "נספח ד' - הערכת שווי של חברת חן המקום טכנולוגיות סביבה בע\"מ ליום 31 במרץ 2026",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אקסלרה",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "נכסים משועבדים להבטחת הסכומים המובטחים ולהבטחת הקיום המלא והמדויק של מלוא התחייבויות הקרן ושל כל יתר תנאי אגרות החוב שעבדה הקרן לטובת הנאמן, עבור מחזיקי אגרות החוב, את הבטוחות הבאות:",
+              "table_title": null,
+              "note": "מניות רגילות משועבדות לטובת הנאמן"
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
   "1745174": {
     "company_id": "1978",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:14:22.238602+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T12:04:26.989115+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766534": {
     "company_id": "1978",
@@ -19981,18 +19593,11 @@
   },
   "1768864": {
     "company_id": "1975",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-05T12:14:15.821065+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-06T12:00:48.660408+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764128": {
     "company_id": "1979",
