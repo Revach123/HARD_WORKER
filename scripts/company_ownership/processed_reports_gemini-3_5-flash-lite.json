@@ -20775,87 +20775,19 @@
   },
   "1768730": {
     "company_id": "2384",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T11:27:45.383570+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {
-        "0:0": {
-          "report_format": "other",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "קבוצת יושפה",
-              "ownership_pct": 25.5,
-              "parent": null,
-              "page_reference": 18,
-              "section_title": "נדל״ן יזמי",
-              "table_title": null,
-              "note": "מוחזקת ע\"י החברה בשותפות עם חברות פרופדו בע\"מ 51% (חלק החברה 25.5%)"
-            },
-            {
-              "name": "פורדיס",
-              "ownership_pct": 40,
-              "parent": null,
-              "page_reference": 11,
-              "section_title": "נדל\"ן מניב בהקמה: נכסים בשטח של 134.5K מ\"ר",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "VICA",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 11,
-              "section_title": "נדל\"ן מניב בהקמה: נכסים בשטח של 134.5K מ\"ר",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "רובע קרסו ריב\"ל",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 15,
-              "section_title": "רובע קרסו ריב\"ל - הפרויקט צפוי לתרום לשווי החברה ולהיקף הפעילות המניבה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מרכז תחבורתי משולב (צומת חולון)",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 16,
-              "section_title": "מרכז תחבורתי משולב | תל אביב דרום (צומת חולון)",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-07T11:28:17.706010+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745346": {
     "company_id": "2385",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-06T12:29:33.351735+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 6,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-07T11:34:48.412179+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744954": {
     "company_id": "2386",
@@ -20874,93 +20806,51 @@
   },
   "1767748": {
     "company_id": "2386",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-06T12:29:42.787013+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 8,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-07T11:45:35.895596+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742316": {
     "company_id": "2387",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-06T12:29:43.220430+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-07T11:40:18.587684+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764411": {
     "company_id": "2387",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-06T12:29:49.260943+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-07T11:46:19.531422+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764540": {
     "company_id": "2387",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-06T12:29:43.896133+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-07T11:45:53.047591+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764553": {
     "company_id": "2387",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-06T12:30:09.854744+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-07T11:48:15.552787+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745138": {
     "company_id": "2389",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-06T12:29:55.573166+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-07T11:49:49.097584+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766465": {
     "company_id": "2389",
@@ -20979,31 +20869,32 @@
   },
   "1767363": {
     "company_id": "2391",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-06T12:29:58.493445+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-07T11:50:33.211253+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742520": {
     "company_id": "2392",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-06T12:30:04.977933+00:00",
+    "at": "2026-10-07T11:49:58.894872+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 4,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
@@ -21069,18 +20960,11 @@
   },
   "1767833": {
     "company_id": "2385",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-06T12:29:36.489522+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 7,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-07T11:35:50.548542+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1768573": {
     "company_id": "2396",
