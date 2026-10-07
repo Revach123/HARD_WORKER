@@ -20376,18 +20376,11 @@
   },
   "1761779": {
     "company_id": "2356",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-06T12:27:16.345977+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-07T10:51:46.855865+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1761780": {
     "company_id": "2356",
@@ -20399,138 +20392,90 @@
   },
   "1761782": {
     "company_id": "2356",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-06T12:27:16.402328+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-07T10:51:18.799628+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763435": {
     "company_id": "2356",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-06T12:27:25.566001+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-07T10:51:54.574714+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743110": {
     "company_id": "2357",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-06T12:27:21.857695+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-07T10:53:56.472475+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766155": {
     "company_id": "2357",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-06T12:27:29.647426+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-07T10:54:35.488327+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743477": {
     "company_id": "2357",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-06T12:27:36.107427+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-07T10:53:14.983811+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742758": {
     "company_id": "2358",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-06T12:27:35.194796+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-07T10:56:38.836078+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742766": {
     "company_id": "2358",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-06T12:27:39.381147+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-07T10:55:49.355637+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763070": {
     "company_id": "2358",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-06T12:27:46.103474+00:00",
+    "at": "2026-10-07T10:56:54.353740+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 4,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
   "1763081": {
     "company_id": "2358",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-06T12:27:42.478809+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-07T10:57:43.329497+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763142": {
     "company_id": "2359",
@@ -25392,18 +25337,11 @@
   },
   "1770825": {
     "company_id": "2356",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-06T12:27:17.977977+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-07T10:51:54.074655+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1771493": {
     "company_id": "2559",
