@@ -20448,26 +20448,11 @@
   },
   "1763070": {
     "company_id": "2358",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T10:56:54.353740+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-07T10:58:45.812754+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763081": {
     "company_id": "2358",
@@ -20479,138 +20464,174 @@
   },
   "1763142": {
     "company_id": "2359",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-06T12:27:43.956451+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-07T11:02:01.216268+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742733": {
     "company_id": "2360",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-06T12:28:16.551439+00:00",
+    "at": "2026-10-07T11:02:13.946748+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 2,
-      "done": {},
-      "attempts": {}
+      "done": {
+        "0:1": {
+          "report_format": "other",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "אקרו בשדרה",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 18,
+              "section_title": "אקרו בשדרה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אחימאיר",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 19,
+              "section_title": "אחימאיר",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "בורלא",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "בורלא",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "One Tower",
+              "ownership_pct": 30.9,
+              "parent": null,
+              "page_reference": 24,
+              "section_title": "ONE TOWER",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Microsoft Campus",
+              "ownership_pct": 24.1,
+              "parent": null,
+              "page_reference": 25,
+              "section_title": "MICROSOFT CAMPUS",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Golf Offices",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 26,
+              "section_title": "GOLF OFFICES",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Cosmopolitan 1",
+              "ownership_pct": 30,
+              "parent": null,
+              "page_reference": 29,
+              "section_title": "COSMOPOLITAN 1",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Cosmopolitan 2",
+              "ownership_pct": 33,
+              "parent": null,
+              "page_reference": 30,
+              "section_title": "COSMOPOLITAN 2",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גן החשמל",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 31,
+              "section_title": "גן החשמל",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        }
+      },
+      "attempts": {
+        "0:0": 1
+      }
     }
   },
   "1742743": {
     "company_id": "2360",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-06T12:28:05.283207+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-07T11:03:42.758636+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764403": {
     "company_id": "2360",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-06T12:28:31.530089+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-07T11:08:15.820225+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764386": {
     "company_id": "2360",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-06T12:28:40.323057+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-07T11:03:29.347751+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1741673": {
     "company_id": "2364",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-06T12:28:35.295153+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-07T11:04:19.026981+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1741677": {
     "company_id": "2364",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-06T12:28:40.215763+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-07T11:04:31.095361+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1761773": {
     "company_id": "2364",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-06T12:28:44.873422+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-07T11:09:58.392717+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1761776": {
     "company_id": "2364",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-06T12:28:44.157951+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-07T11:08:42.536878+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744493": {
     "company_id": "2367",
