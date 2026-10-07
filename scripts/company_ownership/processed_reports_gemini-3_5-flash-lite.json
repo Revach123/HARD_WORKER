@@ -18986,7 +18986,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-06T11:41:27.274548+00:00",
+    "at": "2026-10-07T10:06:10.453887+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -19115,7 +19115,7 @@
         }
       },
       "attempts": {
-        "0:3": 1
+        "0:3": 2
       }
     }
   },
@@ -19573,82 +19573,11 @@
   },
   "1764372": {
     "company_id": "2009",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-06T12:25:40.133229+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "טק מסטר טרייד בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "דוח הדירקטוריון על מצב ענייני התאגיד לתקופות של שישה ושלושה חודשים שהסתיימו ביום 30 ביוני 2026",
-              "table_title": null,
-              "note": "חברת בת בשליטת החברה"
-            },
-            {
-              "name": "ק.לאבס אינווישן בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "דוח הדירקטוריון על מצב ענייני התאגיד לתקופות של שישה ושלושה חודשים שהסתיימו ביום 30 ביוני 2026",
-              "table_title": null,
-              "note": "חברת בת בשליטת החברה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "טק מסטרס טרייד בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 31,
-              "section_title": "באור 1 – כללי",
-              "table_title": null,
-              "note": "חברה בת בשליטת החברה"
-            },
-            {
-              "name": "ק.לאבס אינווישן בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 31,
-              "section_title": "באור 1 – כללי",
-              "table_title": null,
-              "note": "חברה בת בשליטת החברה"
-            }
-          ],
-          "change_events": [
-            {
-              "company": "ק.לאבס אינווישן בע\"מ",
-              "event_type": "decrease",
-              "ownership_pct_before": null,
-              "ownership_pct_after": null,
-              "event_date": "2026-01-08",
-              "event_description": "הקצאת 25% מהון המניות של חברת הבת ק.לאבס לחברה בשליטת מנכ\"ל ק.לאבס בתמורה להעמדת הלוואת בעלים",
-              "page_reference": 32,
-              "section_title": "באור 3 - אירועים מהותיים אחרים בתקופת הדוח ולאחריו"
-            }
-          ]
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-07T10:05:57.825707+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1736143": {
     "company_id": "2028",
@@ -19660,48 +19589,27 @@
   },
   "1741041": {
     "company_id": "2028",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-06T12:25:39.542508+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-07T10:06:24.004010+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1754711": {
     "company_id": "2028",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-06T12:25:41.520592+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-07T10:06:15.734792+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1761327": {
     "company_id": "2028",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-06T12:25:41.602593+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-07T10:06:46.426186+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763819": {
     "company_id": "2028",
@@ -19720,48 +19628,27 @@
   },
   "1736177": {
     "company_id": "2030",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-06T12:25:42.255687+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-07T10:06:48.152404+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1741040": {
     "company_id": "2030",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-06T12:25:43.210205+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-07T10:07:06.186380+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1757279": {
     "company_id": "2030",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-06T12:25:44.176653+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-07T10:06:59.123822+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1761639": {
     "company_id": "2030",
@@ -19780,46 +19667,86 @@
   },
   "1762445": {
     "company_id": "2030",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-06T12:25:43.343183+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-07T10:09:38.986314+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745621": {
     "company_id": "2063",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-06T12:25:50.072867+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 6,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-07T10:11:22.826425+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766979": {
     "company_id": "2063",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-06T12:25:44.417017+00:00",
+    "at": "2026-10-07T10:10:45.959452+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 6,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "רבוע כחול נדל\"ן בע\"מ",
+              "ownership_pct": 57.28,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "רבוע נדל\"ן",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "רבוע נדל\"ן היצירה בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": "רבוע כחול נדל\"ן בע\"מ",
+              "page_reference": 12,
+              "section_title": "מונחים והגדרות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "רבוע נדל\"ן התחדשות עירונית בע\"מ",
+              "ownership_pct": 100.0,
+              "parent": "רבוע כחול נדל\"ן בע\"מ",
+              "page_reference": 14,
+              "section_title": "פרויקטים של התחדשות עירונית (פינוי בינוי)",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": [
+            {
+              "company": "רבוע כחול נדל\"ן בע\"מ",
+              "event_type": "increase",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 57.28,
+              "event_date": "2026-04-09",
+              "event_description": "הגדלת החזקות ברבוע נדל\"ן באמצעות רכישת מניותיה במסגרת המסחר בבורסה ומחוץ לבורסה",
+              "page_reference": 7,
+              "section_title": "רבוע נדל\"ן"
+            }
+          ]
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
