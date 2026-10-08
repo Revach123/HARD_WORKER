@@ -1,0 +1,55 @@
+# שולף מהארכיון ב-R2 שורות של קודי "סוג נכס" נבחרים (ברירת מחדל: מזומן
+# ופיקדונות 100/101/103/105) ושומר אותן ב-git בענף שממנו רץ.
+# אותה קבוצת concurrency כמו maya-monthly-r2 - לכן ממתין לסיום משיכה פעילה.
+name: Maya monthly reports - extract codes from R2
+
+on:
+  push:
+    branches: [claude/maya-monthly-r2]
+    paths: [scripts/maya_extract/**, .github/workflows/maya-extract-codes.yml]
+  workflow_dispatch:
+    inputs:
+      codes:
+        description: "קודי סוג נכס, מופרדים בפסיק"
+        required: false
+        default: "100,101,103,105"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: maya-monthly-r2
+  cancel-in-progress: false
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Extract rows from R2
+        env:
+          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          CF_R2_TOKEN: ${{ secrets.CF_R2_TOKEN }}
+          CF_D1_TOKEN: ${{ secrets.CF_D1_TOKEN }}
+          R2_BUCKET: funds-complete-list
+          CODES: ${{ github.event.inputs.codes || '100,101,103,105' }}
+        run: python scripts/maya_extract/extract_codes.py
+
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/fund_deposits
+          git diff --cached --quiet && exit 0
+          git commit -m "maya extract: codes ${CODES:-100,101,103,105} [skip ci]"
+          git pull --rebase -q origin ${GITHUB_REF_NAME}
+          git push origin HEAD:${GITHUB_REF_NAME}
