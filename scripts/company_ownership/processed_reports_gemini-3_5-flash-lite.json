@@ -22336,76 +22336,86 @@
   },
   "1766132": {
     "company_id": "2516",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:29.729054+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T12:12:12.703765+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766130": {
     "company_id": "2516",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:29.842102+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T12:07:22.451756+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744227": {
     "company_id": "2518",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:30.081800+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T12:13:10.696805+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765893": {
     "company_id": "2518",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:30.267544+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T12:13:58.009312+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744346": {
     "company_id": "2519",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-07T12:51:30.521077+00:00",
+    "at": "2026-10-08T12:14:41.333468+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 3,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "אמירי זכרון יעקב בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 16,
+              "section_title": "19. אירועים מהותיים בתקופת הדוח ולאחר תקופת הדוח",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פסו רומי חברה לבניין והשקעות בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אמירי זכרון יעקב בע\"מ",
+              "page_reference": 15,
+              "section_title": "19. אירועים מהותיים בתקופת הדוח ולאחר תקופת הדוח",
+              "table_title": null,
+              "note": "חברת הביצוע - הושלמה העברת יתרת המניות ב-6 בינואר 2026"
+            }
+          ],
+          "change_events": [
+            {
+              "company": "פסו רומי חברה לבניין והשקעות בע\"מ",
+              "event_type": "increase",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 100,
+              "event_date": "2026-01-06",
+              "event_description": "הושלמה העברת יתרת המניות (33%) בחברת הביצוע לידי אמירי זכרון, כך שחברת הבת מחזיקה במלוא (100%) הון המניות.",
+              "page_reference": 15,
+              "section_title": "19. אירועים מהותיים בתקופת הדוח ולאחר תקופת הדוח"
+            }
+          ]
+        }
+      },
       "attempts": {}
     }
   },
@@ -22414,7 +22424,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-07T12:51:30.756855+00:00",
+    "at": "2026-10-08T12:15:12.036911+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -22429,7 +22439,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-07T12:51:31.050383+00:00",
+    "at": "2026-10-08T12:15:12.440454+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -22444,7 +22454,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-07T12:51:31.658559+00:00",
+    "at": "2026-10-08T12:15:12.877712+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -22459,7 +22469,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-07T12:51:31.788498+00:00",
+    "at": "2026-10-08T12:15:13.126060+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -22474,7 +22484,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-07T12:51:32.308184+00:00",
+    "at": "2026-10-08T12:15:13.563695+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -22489,7 +22499,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-07T12:51:32.455094+00:00",
+    "at": "2026-10-08T12:15:14.013638+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -22504,7 +22514,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-07T12:51:32.862580+00:00",
+    "at": "2026-10-08T12:15:14.327786+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -22519,7 +22529,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-07T12:51:33.096663+00:00",
+    "at": "2026-10-08T12:15:14.602677+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
