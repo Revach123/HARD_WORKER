@@ -7,7 +7,7 @@ pull_to_r2.py — שומר ב-R2 את כל הדוחות החודשיים (TXT1) 
   maya.tase.co.il/api/v1/reports/mutual-funds  (freeText "דוח חודשי")
   -> maya.tase.co.il/api/v1/reports/{id}/attachments/file?attachmentType=TXT1
 
-מבנה ב-R2 (bucket לפי R2_BUCKET, ברירת מחדל maya-reports):
+מבנה ב-R2 (bucket לפי R2_BUCKET; ב-workflow: funds-complete-list):
   monthly/raw/{report_id}.csv.gz  - קובץ ה-TXT1 כפי שהגיע (bytes מקוריים), gzip
   monthly/manifest.json           - לכל דוח: id, title, companies, month, publish,
                                     rows, bytes, gz_bytes, sha256, header, fetched_at
