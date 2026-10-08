@@ -21887,157 +21887,51 @@
   },
   "1745002": {
     "company_id": "2483",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-08T11:29:34.838323+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "גבאי מניבים ופיתוח בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "1. תיאור החברה וסביבתה העסקית",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "חוף לידו אשדוד (2004) בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 17,
-              "section_title": "3. אירועים עיקריים בתקופת הדוח ולאחריה",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": [
-            {
-              "company": "בניין וסביבה מגורים בע\"מ",
-              "event_type": "increase",
-              "ownership_pct_before": 50,
-              "ownership_pct_after": 100,
-              "event_date": "2026-01-01",
-              "event_description": "הסכם היפרדות להעברת 50% ממניות בניין וסביבה לידי גבאי מניבים ואיחוד תוצאות החברה החל מיום 1 בינואר 2026.",
-              "page_reference": 17,
-              "section_title": "3. אירועים עיקריים בתקופת הדוח ולאחריה"
-            }
-          ]
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "גבאי מניבים ופיתוח בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 19,
-              "section_title": null,
-              "table_title": null,
-              "note": "תאגיד מדווח"
-            },
-            {
-              "name": "חברת בניין וסביבה",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 22,
-              "section_title": null,
-              "table_title": null,
-              "note": "רכישת 50% מהון המניות ואיחוד לראשונה בתקופה"
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T11:31:03.323245+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764242": {
     "company_id": "2483",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:17.352121+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T11:35:46.288359+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744382": {
     "company_id": "2484",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:17.603280+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T11:34:40.752042+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766143": {
     "company_id": "2484",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:17.879944+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T11:35:34.461546+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744097": {
     "company_id": "2486",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:18.103682+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T11:36:47.296256+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766260": {
     "company_id": "2486",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:18.411535+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T11:36:44.651658+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744311": {
     "company_id": "2487",
@@ -22056,78 +21950,153 @@
   },
   "1766830": {
     "company_id": "2487",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:18.663624+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T11:38:32.602865+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745649": {
     "company_id": "2488",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:19.003268+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T11:37:43.048033+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766252": {
     "company_id": "2488",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-07T12:51:20.113344+00:00",
+    "at": "2026-10-08T11:39:20.395514+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 6,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "אופק החזקות (מ.ג.ה.) אשדוד בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "4.3 עדכונים ביחס לפרויקט מ.ג.ה. אשדוד",
+              "table_title": null,
+              "note": "מוכרת גם כ'מגה אשדוד'"
+            },
+            {
+              "name": "אופק (ה.נ.ג.) החזקות נדל\"ן גלובליות בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "5. ניתוח המצב הכספי",
+              "table_title": null,
+              "note": "מוכרת גם כ'אופק ה.נ.ג'"
+            },
+            {
+              "name": "אופק ניהול מלון גלי הים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 18,
+              "section_title": "פירוטים: [7] קבלת הלוואה מגוף פיננסי, נטו והארכת מועדי פרעון הלוואה קיימת – בחברת אופק ניהול מלון גלי הים בע\"מ ('גלי ים')",
+              "table_title": null,
+              "note": "מוכרת גם כ'גלי ים'"
+            },
+            {
+              "name": "אופק פרויקט לישנסקי 22 ראשון לציון בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "4.2 עדכונים ביחס לפרויקט לישנסקי",
+              "table_title": null,
+              "note": "מוכרת גם כ'אופק לישנסקי'"
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "ה.נ.ג החזקות נדל\"ן גלובליות בע\"מ (אופק ה.נ.ג)",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 18,
+              "section_title": "הערכות דירקטוריון בדבר תחזית תזרים המזומנים",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "אופק ניהול מלון גלי הים בע\"מ (גלי הים)",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 18,
+              "section_title": "הערכות דירקטוריון בדבר תחזית תזרים המזומנים",
+              "table_title": null,
+              "note": "חברה מוחזקת"
+            },
+            {
+              "name": "מגה אשדוד",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 19,
+              "section_title": "הערכות דירקטוריון בדבר תחזית תזרים המזומנים",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "אופק פרויקט לישנסקי 22 ראשון לציון בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 24,
+              "section_title": "אגרות החוב שבמחזור",
+              "table_title": null,
+              "note": "חברת בת בעלת הזכויות בפרויקט"
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
   "1740380": {
     "company_id": "2489",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:19.221333+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T11:38:37.664015+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1741723": {
     "company_id": "2489",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:19.619972+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T11:39:31.380854+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1741726": {
     "company_id": "2489",
