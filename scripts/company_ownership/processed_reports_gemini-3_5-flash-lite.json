@@ -21657,163 +21657,11 @@
   },
   "1744490": {
     "company_id": "2471",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-08T11:17:02.858400+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 6,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "אמפא קפיטל בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 2,
-              "section_title": "תוכן העניינים",
-              "table_title": null,
-              "note": "חברה כלולה"
-            },
-            {
-              "name": "א.ו. חללי עבודה משותפים בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 11,
-              "section_title": "תחום חללי עבודה משותפים (WeWork)",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אמפא יובלים",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 14,
-              "section_title": "תחום מכירת דירות למגורים (אמפא יובלים)",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אמקור בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 20,
-              "section_title": "אירועים מהותיים שאירעו בתקופת הדוח ולאחריה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אמפא נדל\"ן בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 16,
-              "section_title": "מבנה ההחזקות של הקבוצה",
-              "table_title": null,
-              "note": "חברה קולטת במיזוג"
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "אמפא יובלים",
-              "ownership_pct": 50.0,
-              "parent": null,
-              "page_reference": 25,
-              "section_title": "2. תוצאות הפעילות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אמפא קפיטל",
-              "ownership_pct": 51.4,
-              "parent": null,
-              "page_reference": 25,
-              "section_title": "2. תוצאות הפעילות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "התאגיד המשותף (חוות שרתים)",
-              "ownership_pct": 50.0,
-              "parent": null,
-              "page_reference": 18,
-              "section_title": "5. אירועים מהותיים שאירעו בתקופת הדוח ולאחריה",
-              "table_title": null,
-              "note": "תאגיד משותף לפעילות חוות שרתים בשיתוף עם קבוצת דוראל משאבי אנרגיה מתחדשת בע\"מ"
-            }
-          ],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": [
-            {
-              "company": "החברה הנרכשת",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 100,
-              "event_date": null,
-              "event_description": "מזכר הבנות לא מחייב שנחתם בחודש ינואר 2026 לרכישת מלוא הון המניות (100%) של חברה פרטית הפועלת בתחום הנדל\"ן היזמי למגורים",
-              "page_reference": 54,
-              "section_title": "ביאור 3 - עסקאות ואירועים מהותיים בתקופת הדיווח ולאחריה"
-            },
-            {
-              "company": "תאגיד משותף (חוות שרתים)",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": 0,
-              "ownership_pct_after": 50,
-              "event_date": "2026-02-16",
-              "event_description": "הסכם שיתוף פעולה עם דוראל מיום 16 בפברואר 2026 להקמת חוות שרתים באמצעות תאגיד משותף המוחזק בחלקים שווים (50%)",
-              "page_reference": 54,
-              "section_title": "ביאור 3 - עסקאות ואירועים מהותיים בתקופת הדיווח ולאחריה"
-            }
-          ]
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [],
-          "change_events": [
-            {
-              "company": "חברה פרטית הפועלת בתחום הנדל\"ן היזמי למגורים (החברה הנרכשת)",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 100,
-              "event_date": null,
-              "event_description": "חתימה על מזכר הבנות לא מחייב לרכישת מלוא מניותיה המונפקות והנפרעות (100%) תמורת 80 מיליון ש\"ח ותמורה מותנית.",
-              "page_reference": 54,
-              "section_title": "ביאור 3 - עסקאות ואירועים מהותיים בתקופת הדיווח ולאחריה"
-            },
-            {
-              "company": "תאגיד משותף בתחום חוות שרתים",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 50,
-              "event_date": "2026-02-16",
-              "event_description": "התקשרות עם דוראל בהסכם לשיתוף פעולה בייזום, פיתוח ותפעול חוות שרתים באמצעות תאגיד משותף שיוחזק בחלקים שווים (50%).",
-              "page_reference": 54,
-              "section_title": "ביאור 3 - עסקאות ואירועים מהותיים בתקופת הדיווח ולאחריה"
-            }
-          ]
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T11:18:26.180756+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744499": {
     "company_id": "2471",
@@ -21840,151 +21688,204 @@
   },
   "1766481": {
     "company_id": "2471",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:11.942252+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T11:18:01.023824+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744722": {
     "company_id": "2474",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:12.181355+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T11:18:54.289449+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745084": {
     "company_id": "2474",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:12.397567+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T11:19:11.375828+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764180": {
     "company_id": "2474",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:12.669640+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T11:19:46.759524+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745574": {
     "company_id": "2475",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:12.900941+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T11:19:35.179071+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767536": {
     "company_id": "2475",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-07T12:51:13.203963+00:00",
+    "at": "2026-10-08T11:19:46.669057+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 2,
-      "done": {},
-      "attempts": {}
+      "done": {
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
+      "attempts": {
+        "0:0": 1
+      }
     }
   },
   "1744802": {
     "company_id": "2477",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:13.419795+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T11:20:22.159393+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744807": {
     "company_id": "2477",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:13.624257+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T11:20:41.428315+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764616": {
     "company_id": "2477",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:13.898791+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T11:21:51.477958+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743625": {
     "company_id": "2478",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-07T12:51:14.403287+00:00",
+    "at": "2026-10-08T11:20:58.792516+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 6,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "רייסדור הירקון בני ברק",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 10,
+              "section_title": "6. עדכון בדבר מכירות בפרויקטים בייזום",
+              "table_title": "עדכון בדבר מכירות בפרויקטים בייזום - מכירות יח\"ד (נתונים לפי 100%):",
+              "note": null
+            },
+            {
+              "name": "רייסדור ראש העין C",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 10,
+              "section_title": "6. עדכון בדבר מכירות בפרויקטים בייזום",
+              "table_title": "עדכון בדבר מכירות בפרויקטים בייזום - מכירות יח\"ד (נתונים לפי 100%):",
+              "note": null
+            },
+            {
+              "name": "רייסדור עפולה",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 10,
+              "section_title": "6. עדכון בדבר מכירות בפרויקטים בייזום",
+              "table_title": "עדכון בדבר מכירות בפרויקטים בייזום - מכירות יח\"ד (נתונים לפי 100%):",
+              "note": null
+            },
+            {
+              "name": "רייסדור בסיגליות ב\"ש",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 10,
+              "section_title": "6. עדכון בדבר מכירות בפרויקטים בייזום",
+              "table_title": "עדכון בדבר מכירות בפרויקטים בייזום - מכירות יח\"ד (נתונים לפי 100%):",
+              "note": null
+            },
+            {
+              "name": "רייסדור נווה צבי",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 10,
+              "section_title": "6. עדכון בדבר מכירות בפרויקטים בייזום",
+              "table_title": "עדכון בדבר מכירות בפרויקטים בייזום - מכירות יח\"ד (נתונים לפי 100%):",
+              "note": null
+            },
+            {
+              "name": "רייסדור נתיבות - שלב א'",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 10,
+              "section_title": "6. עדכון בדבר מכירות בפרויקטים בייזום",
+              "table_title": "עדכון בדבר מכירות בפרויקטים בייזום - מכירות יח\"ד (נתונים לפי 100%):",
+              "note": null
+            },
+            {
+              "name": "רייסדור ויוסף מגדל 2 בני ברק",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 10,
+              "section_title": "6. עדכון בדבר מכירות בפרויקטים בייזום",
+              "table_title": "עדכון בדבר מכירות בפרויקטים בייזום - מכירות יח\"ד (נתונים לפי 100%):",
+              "note": null
+            },
+            {
+              "name": "\"נאות זוהר\" קרית מלאכי",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 10,
+              "section_title": "6. עדכון בדבר מכירות בפרויקטים בייזום",
+              "table_title": "עדכון בדבר מכירות בפרויקטים בייזום - מכירות יח\"ד (נתונים לפי 100%):",
+              "note": null
+            },
+            {
+              "name": "רייסדור בני עי\"ש",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 10,
+              "section_title": "6. עדכון בדבר מכירות בפרויקטים בייזום",
+              "table_title": "עדכון בדבר מכירות בפרויקטים בייזום - מכירות יח\"ד (נתונים לפי 100%):",
+              "note": null
+            },
+            {
+              "name": "רייסדור כרמי גת (מתחם 16)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 10,
+              "section_title": "6. עדכון בדבר מכירות בפרויקטים בייזום",
+              "table_title": "עדכון בדבר מכירות בפרויקטים בייזום - מכירות יח\"ד (נתונים לפי 100%):",
+              "note": null
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
