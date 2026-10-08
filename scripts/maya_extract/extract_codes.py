@@ -6,7 +6,8 @@ extract_codes.py — שולף מהארכיון ב-R2 (ראה scripts/maya_monthl
 ברירת מחדל: 100/101/103/105 (מזומן ופיקדונות בבנק).
 
 פלט (OUT_DIR, ברירת מחדל data/fund_deposits/):
-  rows.csv         - כל השורות של הקודים, כל העמודות + מטא-דאטה של הדוח
+  rows.csv.gz      - כל השורות של הקודים, כל העמודות + מטא-דאטה של הדוח (gzip;
+                     עותק גם ב-R2 תחת extracts/codes_<קודים>/rows.csv.gz)
   codes_catalog.csv - לכל קוד "סוג נכס" בכל הארכיון: מספר שורות, דוחות,
                       ודוגמאות לשמות - לאיתור קודים קשורים (למשל ריבית לקבל)
   headers.json     - הכותרות השונות שנמצאו ובכמה דוחות כל אחת
@@ -86,10 +87,15 @@ def main():
         print(f"[{i}/{len(reports)}] {rep['id']} {rep.get('month')}: {n} שורות", flush=True)
 
     meta = ["_report_id", "_report_month", "_report_title", "_company"]
-    with open(os.path.join(out, "rows.csv"), "w", newline="", encoding="utf-8-sig") as f:
+    rows_path = os.path.join(out, "rows.csv.gz")
+    with gzip.open(rows_path, "wt", newline="", encoding="utf-8-sig") as f:
         w = csv.DictWriter(f, fieldnames=meta + all_cols, extrasaction="ignore")
         w.writeheader()
         w.writerows(out_rows)
+    with open(rows_path, "rb") as f:
+        tag = "_".join(str(c) for c in sorted(codes))
+        r2.put(f"extracts/codes_{tag}/rows.csv.gz", f.read(), "application/gzip")
+    print(f"rows.csv.gz: {os.path.getsize(rows_path) / 1e6:.1f}MB", flush=True)
     with open(os.path.join(out, "codes_catalog.csv"), "w", newline="", encoding="utf-8-sig") as f:
         w = csv.writer(f)
         w.writerow(["סוג נכס", "שורות", "דוחות", "דוגמאות שמות (שכיחים)"])
