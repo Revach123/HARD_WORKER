@@ -1,0 +1,48 @@
+# שומר ב-R2 את כל הדוחות החודשיים (TXT1) של קרנות הנאמנות והסל מ-Maya,
+# גולמיים ודחוסים, עם מניפסט. אינקרמנטלי - ריצה חוזרת מורידה רק דוחות חדשים.
+# ראה scripts/maya_monthly/pull_to_r2.py.
+#
+# הרצה: workflow_dispatch (רק כשהקובץ ב-main), או push לענף
+# claude/maya-monthly-r2 (לריצה הראשונה, לפני מיזוג).
+# טוקן: CF_R2_TOKEN אם קיים, אחרת CF_D1_TOKEN - צריך הרשאת R2 Storage: Edit.
+name: Maya monthly reports -> R2
+
+on:
+  push:
+    branches: [claude/maya-monthly-r2]
+    paths: [scripts/maya_monthly/**, .github/workflows/maya-monthly-r2.yml]
+  workflow_dispatch:
+    inputs:
+      months_back:
+        description: 'כמה חודשים אחורה ("all" = עד שאין יותר דוחות)'
+        required: false
+        default: "all"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: maya-monthly-r2
+  cancel-in-progress: false
+
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Pull monthly reports to R2
+        env:
+          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          CF_R2_TOKEN: ${{ secrets.CF_R2_TOKEN }}
+          CF_D1_TOKEN: ${{ secrets.CF_D1_TOKEN }}
+          MONTHS_BACK: ${{ github.event.inputs.months_back || 'all' }}
+        run: python scripts/maya_monthly/pull_to_r2.py
