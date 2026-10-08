@@ -21097,93 +21097,125 @@
   },
   "1755984": {
     "company_id": "2433",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:50:59.626926+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T10:28:58.961873+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743340": {
     "company_id": "2435",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:00.332295+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T10:30:45.353288+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765725": {
     "company_id": "2435",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-07T12:51:00.484962+00:00",
+    "at": "2026-10-08T10:32:03.716323+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 3,
-      "done": {},
-      "attempts": {}
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "ישרס",
+              "ownership_pct": 66.95,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "א. נתונים עיקריים מתוך תאור עסקי התאגיד",
+              "table_title": "נתונים על החזקות החברה בחברות המאוחדות הפעילות",
+              "note": "נכון וסמוך למועד פרסום הדוח מחזיקה החברה בכ- 68.06% מהון המניות המונפק והנפרע של ישרס."
+            },
+            {
+              "name": "חסין אש",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "א. נתונים עיקריים מתוך תאור עסקי התאגיד",
+              "table_title": "נתונים על החזקות החברה בחברות המאוחדות הפעילות",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "ישרס - חברה להשקעות בע\"מ",
+              "ownership_pct": 68.06,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "באור 3 - עסקאות ואירועים מהותיים בתקופת הדיווח",
+              "table_title": null,
+              "note": "שיעור ההחזקה לאחר רכישת מניות נוספות לאחר תאריך המאזן"
+            }
+          ],
+          "change_events": [
+            {
+              "company": "ישרס - חברה להשקעות בע\"מ",
+              "event_type": "increase",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 66.95,
+              "event_date": "2026-06-30",
+              "event_description": "רכישת 63,582 ע.נ. מניות במהלך חודש יוני 2026 בסך של כ-52.5 מיליון ש\"ח, שעור ההחזקה לאחר הרכישה הינו 66.95%.",
+              "page_reference": 37,
+              "section_title": "באור 3 - עסקאות ואירועים מהותיים בתקופת הדיווח"
+            },
+            {
+              "company": "ישרס - חברה להשקעות בע\"מ",
+              "event_type": "increase",
+              "ownership_pct_before": 66.95,
+              "ownership_pct_after": 68.06,
+              "event_date": null,
+              "event_description": "רכישת 54,257 ע.נ. מניות נוספות לאחר תאריך המאזן בסך של כ-44 מיליון ש\"ח, שעור ההחזקה לאחר הרכישה הנ\"ל הינו 68.06%.",
+              "page_reference": 37,
+              "section_title": "באור 3 - עסקאות ואירועים מהותיים בתקופת הדיווח"
+            }
+          ]
+        }
+      },
+      "attempts": {
+        "0:1": 1
+      }
     }
   },
   "1740154": {
     "company_id": "2438",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:00.734392+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T10:33:28.423506+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1740155": {
     "company_id": "2438",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:01.086854+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T10:33:50.180739+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1762058": {
     "company_id": "2438",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:01.231326+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T10:36:59.103902+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1762063": {
     "company_id": "2438",
@@ -21202,18 +21234,11 @@
   },
   "1762069": {
     "company_id": "2438",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:01.766346+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T10:39:23.747142+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766150": {
     "company_id": "2438",
@@ -21247,46 +21272,184 @@
   },
   "1767784": {
     "company_id": "2440",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:01.705627+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T10:41:51.635644+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743355": {
     "company_id": "2441",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:02.158202+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T10:45:55.987803+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764196": {
     "company_id": "2441",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-07T12:51:02.305190+00:00",
+    "at": "2026-10-08T10:45:17.538284+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 5,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "שובל צאלה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "2. תחומי הפעילות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "חברת יצחק שטרן ושות' בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "3. אירועים מהותיים בתקופת הדוח ולאחריה עד למועד אישור הדוח",
+              "table_title": null,
+              "note": "רכישה שהושלמה לאחר מועד הדוח ביום 14 ביולי 2026"
+            },
+            {
+              "name": "שובל מתחמי מגורים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 3,
+              "section_title": "2. תחומי הפעילות של החברה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "יצחק שטרן ושות' בע\"מ",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": 0,
+              "ownership_pct_after": 100,
+              "event_date": "2026-05-25",
+              "event_description": "התקשרות בהסכם מכר לרכישת 100% מהון המניות המונפק והנפרע של חברת יצחק שטרן ושות' בע\"מ, שהושלמה ביום 14 ביולי 2026.",
+              "page_reference": 23,
+              "section_title": "6. תחום הביצוע"
+            }
+          ]
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "פרויקט Miller – שער הגיא, יקנעם",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 35,
+              "section_title": "א. פרויקט Miller – שער הגיא, יקנעם (דירה להשכיר) - פרויקט שהסתיים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פרויקט רמות שובל, שכונת רמות, ירושלים",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "ב. פרויקט רמות שובל, שכונת רמות, ירושלים (מחיר למשתכן) – פרויקט בהקמה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פרויקט פארק צמרת, עכו",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "ג. פארק צמרת, עכו (מחיר מופחת) - פרויקט בהקמה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פרויקט UPTOWN, מתחם לב העיר קריית ביאליק",
+              "ownership_pct": 33.33,
+              "parent": null,
+              "page_reference": 38,
+              "section_title": "ד. פרויקט UPTOWN, מתחם לב העיר קריית ביאליק - פרויקט בהקמה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מבואות דרומיים, חיפה",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 39,
+              "section_title": "ה. מבואות דרומיים, חיפה מחיר מטרה – פרויקט בביצוע",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פרויקט הרכבת, מתחם הגר\"א, תל אביב",
+              "ownership_pct": 27.8,
+              "parent": null,
+              "page_reference": 39,
+              "section_title": "ו. פרויקט הרכבת, מתחם הגר\"א, תל אביב – פרויקט בתכנון",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פרויקט רכסים, רכסים",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 40,
+              "section_title": "ז. פרויקט רכסים, רכסים (מחיר מטרה) – פרויקט בהקמה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פרויקט אלעד, אלעד",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 41,
+              "section_title": "ח. פרויקט אלעד, אלעד – פרויקט בתכנון",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פרויקט ברנר, חיפה",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 41,
+              "section_title": "ט. פרויקט ברנר, חיפה, \"פינוי בינוי\"-פרויקט בתכנון",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פרויקט קרית ביאליק אפקה",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 42,
+              "section_title": "י. פרויקט קרית ביאליק אפקה – פרויקט בהקמה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
@@ -22449,61 +22612,11 @@
   },
   "1767596": {
     "company_id": "2430",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-08T10:27:07.150727+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 19,
-      "done": {
-        "0:0": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "other",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "other",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:5": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T10:40:51.213353+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745108": {
     "company_id": "2490",
