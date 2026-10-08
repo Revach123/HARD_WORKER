@@ -21288,185 +21288,19 @@
   },
   "1764196": {
     "company_id": "2441",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-08T10:45:17.538284+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "שובל צאלה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "2. תחומי הפעילות של החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "חברת יצחק שטרן ושות' בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "3. אירועים מהותיים בתקופת הדוח ולאחריה עד למועד אישור הדוח",
-              "table_title": null,
-              "note": "רכישה שהושלמה לאחר מועד הדוח ביום 14 ביולי 2026"
-            },
-            {
-              "name": "שובל מתחמי מגורים בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 3,
-              "section_title": "2. תחומי הפעילות של החברה",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [],
-          "change_events": [
-            {
-              "company": "יצחק שטרן ושות' בע\"מ",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": 0,
-              "ownership_pct_after": 100,
-              "event_date": "2026-05-25",
-              "event_description": "התקשרות בהסכם מכר לרכישת 100% מהון המניות המונפק והנפרע של חברת יצחק שטרן ושות' בע\"מ, שהושלמה ביום 14 ביולי 2026.",
-              "page_reference": 23,
-              "section_title": "6. תחום הביצוע"
-            }
-          ]
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "פרויקט Miller – שער הגיא, יקנעם",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 35,
-              "section_title": "א. פרויקט Miller – שער הגיא, יקנעם (דירה להשכיר) - פרויקט שהסתיים",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "פרויקט רמות שובל, שכונת רמות, ירושלים",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 36,
-              "section_title": "ב. פרויקט רמות שובל, שכונת רמות, ירושלים (מחיר למשתכן) – פרויקט בהקמה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "פרויקט פארק צמרת, עכו",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 37,
-              "section_title": "ג. פארק צמרת, עכו (מחיר מופחת) - פרויקט בהקמה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "פרויקט UPTOWN, מתחם לב העיר קריית ביאליק",
-              "ownership_pct": 33.33,
-              "parent": null,
-              "page_reference": 38,
-              "section_title": "ד. פרויקט UPTOWN, מתחם לב העיר קריית ביאליק - פרויקט בהקמה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מבואות דרומיים, חיפה",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 39,
-              "section_title": "ה. מבואות דרומיים, חיפה מחיר מטרה – פרויקט בביצוע",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "פרויקט הרכבת, מתחם הגר\"א, תל אביב",
-              "ownership_pct": 27.8,
-              "parent": null,
-              "page_reference": 39,
-              "section_title": "ו. פרויקט הרכבת, מתחם הגר\"א, תל אביב – פרויקט בתכנון",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "פרויקט רכסים, רכסים",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 40,
-              "section_title": "ז. פרויקט רכסים, רכסים (מחיר מטרה) – פרויקט בהקמה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "פרויקט אלעד, אלעד",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 41,
-              "section_title": "ח. פרויקט אלעד, אלעד – פרויקט בתכנון",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "פרויקט ברנר, חיפה",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 41,
-              "section_title": "ט. פרויקט ברנר, חיפה, \"פינוי בינוי\"-פרויקט בתכנון",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "פרויקט קרית ביאליק אפקה",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 42,
-              "section_title": "י. פרויקט קרית ביאליק אפקה – פרויקט בהקמה",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T10:48:00.454453+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743078": {
     "company_id": "2444",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:02.567970+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T10:48:23.155534+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743076": {
     "company_id": "2444",
@@ -21500,33 +21334,19 @@
   },
   "1765457": {
     "company_id": "2444",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:02.784929+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T10:49:55.784788+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765506": {
     "company_id": "2444",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:03.047254+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T10:48:44.987976+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744909": {
     "company_id": "2446",
@@ -21546,48 +21366,27 @@
   },
   "1744151": {
     "company_id": "2449",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:03.390103+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T10:53:26.404152+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744608": {
     "company_id": "2449",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:03.724443+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T10:52:51.782973+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764920": {
     "company_id": "2449",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:04.027674+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T10:57:33.543804+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744277": {
     "company_id": "2450",
@@ -21606,18 +21405,11 @@
   },
   "1765395": {
     "company_id": "2450",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:04.508331+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T10:57:04.289908+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744648": {
     "company_id": "2453",
@@ -21636,48 +21428,42 @@
   },
   "1745105": {
     "company_id": "2453",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:04.737793+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T10:58:03.095305+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766224": {
     "company_id": "2453",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-07T12:51:05.142369+00:00",
+    "at": "2026-10-08T10:58:30.629816+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 8,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
   "1766231": {
     "company_id": "2453",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:05.370682+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T10:58:39.549122+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745239": {
     "company_id": "2454",
