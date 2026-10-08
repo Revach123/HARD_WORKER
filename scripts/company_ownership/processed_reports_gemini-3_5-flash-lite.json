@@ -21777,117 +21777,11 @@
   },
   "1743625": {
     "company_id": "2478",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-08T11:20:58.792516+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 6,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "רייסדור הירקון בני ברק",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "6. עדכון בדבר מכירות בפרויקטים בייזום",
-              "table_title": "עדכון בדבר מכירות בפרויקטים בייזום - מכירות יח\"ד (נתונים לפי 100%):",
-              "note": null
-            },
-            {
-              "name": "רייסדור ראש העין C",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "6. עדכון בדבר מכירות בפרויקטים בייזום",
-              "table_title": "עדכון בדבר מכירות בפרויקטים בייזום - מכירות יח\"ד (נתונים לפי 100%):",
-              "note": null
-            },
-            {
-              "name": "רייסדור עפולה",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "6. עדכון בדבר מכירות בפרויקטים בייזום",
-              "table_title": "עדכון בדבר מכירות בפרויקטים בייזום - מכירות יח\"ד (נתונים לפי 100%):",
-              "note": null
-            },
-            {
-              "name": "רייסדור בסיגליות ב\"ש",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "6. עדכון בדבר מכירות בפרויקטים בייזום",
-              "table_title": "עדכון בדבר מכירות בפרויקטים בייזום - מכירות יח\"ד (נתונים לפי 100%):",
-              "note": null
-            },
-            {
-              "name": "רייסדור נווה צבי",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "6. עדכון בדבר מכירות בפרויקטים בייזום",
-              "table_title": "עדכון בדבר מכירות בפרויקטים בייזום - מכירות יח\"ד (נתונים לפי 100%):",
-              "note": null
-            },
-            {
-              "name": "רייסדור נתיבות - שלב א'",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "6. עדכון בדבר מכירות בפרויקטים בייזום",
-              "table_title": "עדכון בדבר מכירות בפרויקטים בייזום - מכירות יח\"ד (נתונים לפי 100%):",
-              "note": null
-            },
-            {
-              "name": "רייסדור ויוסף מגדל 2 בני ברק",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "6. עדכון בדבר מכירות בפרויקטים בייזום",
-              "table_title": "עדכון בדבר מכירות בפרויקטים בייזום - מכירות יח\"ד (נתונים לפי 100%):",
-              "note": null
-            },
-            {
-              "name": "\"נאות זוהר\" קרית מלאכי",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "6. עדכון בדבר מכירות בפרויקטים בייזום",
-              "table_title": "עדכון בדבר מכירות בפרויקטים בייזום - מכירות יח\"ד (נתונים לפי 100%):",
-              "note": null
-            },
-            {
-              "name": "רייסדור בני עי\"ש",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "6. עדכון בדבר מכירות בפרויקטים בייזום",
-              "table_title": "עדכון בדבר מכירות בפרויקטים בייזום - מכירות יח\"ד (נתונים לפי 100%):",
-              "note": null
-            },
-            {
-              "name": "רייסדור כרמי גת (מתחם 16)",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "6. עדכון בדבר מכירות בפרויקטים בייזום",
-              "table_title": "עדכון בדבר מכירות בפרויקטים בייזום - מכירות יח\"ד (נתונים לפי 100%):",
-              "note": null
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T11:25:01.023582+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766702": {
     "company_id": "2478",
@@ -21906,63 +21800,35 @@
   },
   "1743991": {
     "company_id": "2479",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:14.333794+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T11:22:51.906703+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743997": {
     "company_id": "2479",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:14.923708+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T11:24:43.274176+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764811": {
     "company_id": "2479",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:14.784611+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T11:25:16.134072+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744385": {
     "company_id": "2480",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:15.196837+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T11:26:12.964481+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765682": {
     "company_id": "2480",
@@ -21981,91 +21847,120 @@
   },
   "1744517": {
     "company_id": "2481",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:15.521984+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T11:26:27.895913+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766407": {
     "company_id": "2481",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:15.874811+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T11:28:01.866413+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743417": {
     "company_id": "2482",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:16.100204+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T11:28:00.700801+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766960": {
     "company_id": "2482",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:16.472652+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T11:29:37.444692+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766967": {
     "company_id": "2482",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:16.759581+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T11:28:26.360533+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745002": {
     "company_id": "2483",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-07T12:51:17.069241+00:00",
+    "at": "2026-10-08T11:29:34.838323+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 5,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "גבאי מניבים ופיתוח בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "1. תיאור החברה וסביבתה העסקית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "חוף לידו אשדוד (2004) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 17,
+              "section_title": "3. אירועים עיקריים בתקופת הדוח ולאחריה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": [
+            {
+              "company": "בניין וסביבה מגורים בע\"מ",
+              "event_type": "increase",
+              "ownership_pct_before": 50,
+              "ownership_pct_after": 100,
+              "event_date": "2026-01-01",
+              "event_description": "הסכם היפרדות להעברת 50% ממניות בניין וסביבה לידי גבאי מניבים ואיחוד תוצאות החברה החל מיום 1 בינואר 2026.",
+              "page_reference": 17,
+              "section_title": "3. אירועים עיקריים בתקופת הדוח ולאחריה"
+            }
+          ]
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "גבאי מניבים ופיתוח בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 19,
+              "section_title": null,
+              "table_title": null,
+              "note": "תאגיד מדווח"
+            },
+            {
+              "name": "חברת בניין וסביבה",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 22,
+              "section_title": null,
+              "table_title": null,
+              "note": "רכישת 50% מהון המניות ואיחוד לראשונה בתקופה"
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
