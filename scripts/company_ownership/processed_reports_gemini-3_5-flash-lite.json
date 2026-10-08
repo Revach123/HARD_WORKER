@@ -21966,121 +21966,11 @@
   },
   "1766252": {
     "company_id": "2488",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-08T11:39:20.395514+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 6,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "אופק החזקות (מ.ג.ה.) אשדוד בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "4.3 עדכונים ביחס לפרויקט מ.ג.ה. אשדוד",
-              "table_title": null,
-              "note": "מוכרת גם כ'מגה אשדוד'"
-            },
-            {
-              "name": "אופק (ה.נ.ג.) החזקות נדל\"ן גלובליות בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 7,
-              "section_title": "5. ניתוח המצב הכספי",
-              "table_title": null,
-              "note": "מוכרת גם כ'אופק ה.נ.ג'"
-            },
-            {
-              "name": "אופק ניהול מלון גלי הים בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 18,
-              "section_title": "פירוטים: [7] קבלת הלוואה מגוף פיננסי, נטו והארכת מועדי פרעון הלוואה קיימת – בחברת אופק ניהול מלון גלי הים בע\"מ ('גלי ים')",
-              "table_title": null,
-              "note": "מוכרת גם כ'גלי ים'"
-            },
-            {
-              "name": "אופק פרויקט לישנסקי 22 ראשון לציון בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "4.2 עדכונים ביחס לפרויקט לישנסקי",
-              "table_title": null,
-              "note": "מוכרת גם כ'אופק לישנסקי'"
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "ה.נ.ג החזקות נדל\"ן גלובליות בע\"מ (אופק ה.נ.ג)",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 18,
-              "section_title": "הערכות דירקטוריון בדבר תחזית תזרים המזומנים",
-              "table_title": null,
-              "note": "חברת בת"
-            },
-            {
-              "name": "אופק ניהול מלון גלי הים בע\"מ (גלי הים)",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 18,
-              "section_title": "הערכות דירקטוריון בדבר תחזית תזרים המזומנים",
-              "table_title": null,
-              "note": "חברה מוחזקת"
-            },
-            {
-              "name": "מגה אשדוד",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 19,
-              "section_title": "הערכות דירקטוריון בדבר תחזית תזרים המזומנים",
-              "table_title": null,
-              "note": "חברת בת"
-            },
-            {
-              "name": "אופק פרויקט לישנסקי 22 ראשון לציון בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 24,
-              "section_title": "אגרות החוב שבמחזור",
-              "table_title": null,
-              "note": "חברת בת בעלת הזכויות בפרויקט"
-            }
-          ],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T11:39:54.504012+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1740380": {
     "company_id": "2489",
@@ -22100,18 +21990,11 @@
   },
   "1741726": {
     "company_id": "2489",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:20.371199+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T11:39:45.374729+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765413": {
     "company_id": "2489",
@@ -22130,33 +22013,19 @@
   },
   "1766538": {
     "company_id": "2489",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:20.644589+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T11:40:31.892964+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766544": {
     "company_id": "2489",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:21.299667+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T11:40:20.221181+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767596": {
     "company_id": "2430",
@@ -22183,18 +22052,11 @@
   },
   "1767280": {
     "company_id": "2490",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:21.156531+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T11:41:27.356625+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1768732": {
     "company_id": "2490",
@@ -22213,33 +22075,19 @@
   },
   "1743812": {
     "company_id": "2491",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:21.613265+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T11:41:14.801928+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765799": {
     "company_id": "2491",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:21.806626+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T11:41:48.387307+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744246": {
     "company_id": "2496",
@@ -22259,33 +22107,19 @@
   },
   "1745088": {
     "company_id": "2497",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:22.002257+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T11:43:02.230125+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765994": {
     "company_id": "2497",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:22.270661+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T11:43:56.278314+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745257": {
     "company_id": "2498",
@@ -22307,30 +22141,59 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-07T12:51:22.610190+00:00",
+    "at": "2026-10-08T11:44:22.205248+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 5,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "other",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
   "1766928": {
     "company_id": "2498",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-07T12:51:22.908873+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-08T11:44:21.844147+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763450": {
     "company_id": "2501",
