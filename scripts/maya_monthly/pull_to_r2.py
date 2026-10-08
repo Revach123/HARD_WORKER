@@ -12,6 +12,11 @@ pull_to_r2.py — שומר ב-R2 את כל הדוחות החודשיים (TXT1) 
   monthly/manifest.json           - לכל דוח: id, title, companies, month, publish,
                                     rows, bytes, gz_bytes, sha256, header, fetched_at
 
+דוחות מתקנים: לכל חברה+חודש נשמר רק הדוח העדכני. דוח קודם נמחק מ-R2 רק אם
+כל הקרנות שבו מופיעות בדוח מאוחר יותר של אותה חברה לאותו חודש (כך דוחות
+נפרדים לקבוצות קרנות שונות באותו חודש לא נמחקים). הדוחות שנמחקו נרשמים
+במניפסט תחת "superseded" ולא יורדים שוב.
+
 אינקרמנטלי: דוח שכבר במניפסט לא יורד שוב, ולכן ריצה חוזרת מורידה רק דוחות
 חדשים. המניפסט נשמר כל SAVE_EVERY דוחות, כך שריצה שנקטעה ממשיכה מאותה נקודה.
 
@@ -22,6 +27,7 @@ pull_to_r2.py — שומר ב-R2 את כל הדוחות החודשיים (TXT1) 
 """
 
 import gzip, hashlib, io, csv, json, os, sys, time
+from collections import Counter, defaultdict
 from datetime import date, datetime, timezone
 
 import requests
@@ -76,6 +82,61 @@ def _report_month(title):
         elif p in HEB_MONTHS:
             mon = HEB_MONTHS[p]
     return f"{year:04d}-{mon:02d}" if year and mon else ""
+
+
+def _content_meta(rows):
+    """מתוך שורות ה-CSV: (רשימת מספרי קרן ממוינת, חודש הדוח YYYY-MM מעמודת 'תאריך דוח')."""
+    if not rows:
+        return [], ""
+    header = [h.strip() for h in rows[0]]
+    fi = header.index("מספר קרן") if "מספר קרן" in header else None
+    di = header.index("תאריך דוח") if "תאריך דוח" in header else None
+    funds, dates = set(), Counter()
+    for row in rows[1:]:
+        if fi is not None and fi < len(row):
+            try:
+                funds.add(int(float(row[fi])))
+            except ValueError:
+                pass
+        if di is not None and di < len(row):
+            d = row[di].strip()
+            if len(d) == 8 and d.isdigit():
+                dates[f"{d[4:8]}-{d[2:4]}"] += 1
+    return sorted(funds), (dates.most_common(1)[0][0] if dates else "")
+
+
+def prune_superseded(r2, manifest):
+    """מוחק דוחות שהוחלפו בדוח מתקן (ראה docstring). מחזיר מספר הדוחות שנמחקו."""
+    done, sup = manifest["reports"], manifest.setdefault("superseded", {})
+    for rid, rec in done.items():                       # השלמת funds לדוחות ישנים
+        if "funds" not in rec:
+            data = r2.get(RAW_KEY.format(id=rid))
+            if data is None:
+                continue
+            text = gzip.decompress(data).decode("utf-8-sig", errors="replace")
+            rec["funds"], rec["data_month"] = _content_meta(list(csv.reader(io.StringIO(text))))
+    groups = defaultdict(list)
+    for rid, rec in done.items():
+        month = rec.get("data_month") or rec.get("month")
+        if month and rec.get("funds"):
+            groups[(tuple(sorted(rec.get("companies", []))), month)].append(rec)
+    pruned = 0
+    for (comp, month), recs in groups.items():
+        covered = set()
+        for rec in sorted(recs, key=lambda r: r["id"], reverse=True):
+            funds = set(rec["funds"])
+            if funds <= covered:
+                newer = [r["id"] for r in recs if r["id"] > rec["id"]]
+                r2.delete(RAW_KEY.format(id=rec["id"]))
+                sup[str(rec["id"])] = {"companies": list(comp), "month": month,
+                                       "title": rec.get("title"), "superseded_by": newer,
+                                       "pruned_at": datetime.now(timezone.utc).isoformat()}
+                del done[str(rec["id"])]
+                pruned += 1
+                print(f"נמחק דוח {rec['id']} ({comp}, {month}) - הוחלף ע\"י {newer}", flush=True)
+            else:
+                covered |= funds
+    return pruned
 
 
 def _month_windows():
@@ -153,7 +214,8 @@ def main():
 
     s = requests.Session()
     reports = list_reports(s, months_back)
-    todo = [r for r in reports if str(r["id"]) not in done]
+    sup = manifest.setdefault("superseded", {})
+    todo = [r for r in reports if str(r["id"]) not in done and str(r["id"]) not in sup]
     print(f"נמצאו {len(reports)} דוחות, {len(todo)} חדשים להורדה", flush=True)
 
     def save():
@@ -173,11 +235,13 @@ def main():
             continue
         text = content.decode("utf-8-sig", errors="replace")
         rows = list(csv.reader(io.StringIO(text)))
+        funds, data_month = _content_meta(rows)
         gz = gzip.compress(content, compresslevel=9)
         r2.put(RAW_KEY.format(id=rid), gz, "application/gzip")
         done[str(rid)] = dict(rep, rows=max(len(rows) - 1, 0), bytes=len(content),
                               gz_bytes=len(gz), sha256=hashlib.sha256(content).hexdigest(),
                               header=[h.strip() for h in rows[0]] if rows else [],
+                              funds=funds, data_month=data_month,
                               fetched_at=datetime.now(timezone.utc).isoformat())
         print(f"[{i}/{len(todo)}] {rid} {rep['month']} {rep['companies'][:1]}: "
               f"{len(rows) - 1} שורות, {len(content) // 1024}KB -> {len(gz) // 1024}KB", flush=True)
@@ -185,6 +249,9 @@ def main():
             save()
         time.sleep(0.3)
     save()
+    pruned = prune_superseded(r2, manifest)
+    save()
+    print(f"דוחות מתקנים: נמחקו {pruned} דוחות שהוחלפו (סה\"כ {len(sup)} במניפסט)", flush=True)
 
     tot_rows = sum(r.get("rows", 0) for r in done.values())
     tot_b = sum(r.get("bytes", 0) for r in done.values())

@@ -56,6 +56,9 @@ class R2:
         self._req("PUT", self._obj_url(key), data=data,
                   headers={"Content-Type": content_type})
 
+    def delete(self, key):
+        self._req("DELETE", self._obj_url(key), ok=(200, 204, 404))
+
     def get(self, key):
         """מחזיר bytes, או None אם האובייקט לא קיים."""
         r = self.s.get(self._obj_url(key), timeout=120)

@@ -3,10 +3,9 @@
 # אותה קבוצת concurrency כמו maya-monthly-r2 - לכן ממתין לסיום משיכה פעילה.
 name: Maya monthly reports - extract codes from R2
 
+# ריצה רגילה: כשלב extract בסוף maya-monthly-r2.yml. כאן - הרצה ידנית בלבד
+# (קודים אחרים, למשל).
 on:
-  push:
-    branches: [claude/maya-monthly-r2]
-    paths: [scripts/maya_extract/**, .github/workflows/maya-extract-codes.yml]
   workflow_dispatch:
     inputs:
       codes:
