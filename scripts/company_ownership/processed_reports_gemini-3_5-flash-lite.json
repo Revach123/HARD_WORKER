@@ -6686,80 +6686,11 @@
   },
   "1762840": {
     "company_id": "259",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:17:52.223483+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "Cantium",
-              "ownership_pct": 52,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "א. מגזרי פעילות של קבוצת בזן",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "כרמל אולפינים (כאו\"ל)",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "א. מגזרי פעילות של קבוצת בזן",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Ducor",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "א. מגזרי פעילות של קבוצת בזן",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "גדיב תעשיות פטרוכימיה",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "א. מגזרי פעילות של קבוצת בזן",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "Cantium",
-              "ownership_pct": 52,
-              "parent": null,
-              "page_reference": 18,
-              "section_title": "א. תוצאות הפעילות של קבוצת בזן",
-              "table_title": null,
-              "note": "חברה כלולה, לפי שיעור ההחזקה האפקטיבי של החברה"
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-09T11:19:44.403845+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1768662": {
     "company_id": "224",
@@ -6915,18 +6846,11 @@
   },
   "1759366": {
     "company_id": "286",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-08T12:15:34.991832+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-09T11:18:00.657934+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1746026": {
     "company_id": "286",
@@ -6938,33 +6862,19 @@
   },
   "1765690": {
     "company_id": "286",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-08T12:15:35.171661+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-09T11:19:49.138902+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1739227": {
     "company_id": "288",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-08T12:15:35.280663+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-09T11:20:53.048701+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765809": {
     "company_id": "286",
@@ -7064,18 +6974,11 @@
   },
   "1764385": {
     "company_id": "312",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-08T12:15:35.376085+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-09T11:20:38.661560+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745072": {
     "company_id": "313",
@@ -7103,18 +7006,11 @@
   },
   "1742284": {
     "company_id": "314",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-08T12:15:35.492632+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-09T11:21:02.331985+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763689": {
     "company_id": "314",
@@ -7126,18 +7022,11 @@
   },
   "1763697": {
     "company_id": "314",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-08T12:15:35.788398+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-09T11:22:03.556596+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744934": {
     "company_id": "315",
@@ -7173,18 +7062,11 @@
   },
   "1742372": {
     "company_id": "323",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-08T12:15:36.013475+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-09T11:24:22.312006+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742594": {
     "company_id": "323",
@@ -7292,18 +7174,11 @@
   },
   "1743252": {
     "company_id": "338",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-08T12:15:36.164663+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-09T11:22:27.967183+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1761924": {
     "company_id": "338",
@@ -7323,18 +7198,11 @@
   },
   "1764996": {
     "company_id": "338",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-08T12:15:36.287006+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-09T11:23:49.765586+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745548": {
     "company_id": "341",
