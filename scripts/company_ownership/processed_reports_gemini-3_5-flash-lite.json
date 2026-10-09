@@ -21113,85 +21113,11 @@
   },
   "1765725": {
     "company_id": "2435",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-08T10:32:03.716323+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "ישרס",
-              "ownership_pct": 66.95,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "א. נתונים עיקריים מתוך תאור עסקי התאגיד",
-              "table_title": "נתונים על החזקות החברה בחברות המאוחדות הפעילות",
-              "note": "נכון וסמוך למועד פרסום הדוח מחזיקה החברה בכ- 68.06% מהון המניות המונפק והנפרע של ישרס."
-            },
-            {
-              "name": "חסין אש",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 8,
-              "section_title": "א. נתונים עיקריים מתוך תאור עסקי התאגיד",
-              "table_title": "נתונים על החזקות החברה בחברות המאוחדות הפעילות",
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "ישרס - חברה להשקעות בע\"מ",
-              "ownership_pct": 68.06,
-              "parent": null,
-              "page_reference": 37,
-              "section_title": "באור 3 - עסקאות ואירועים מהותיים בתקופת הדיווח",
-              "table_title": null,
-              "note": "שיעור ההחזקה לאחר רכישת מניות נוספות לאחר תאריך המאזן"
-            }
-          ],
-          "change_events": [
-            {
-              "company": "ישרס - חברה להשקעות בע\"מ",
-              "event_type": "increase",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 66.95,
-              "event_date": "2026-06-30",
-              "event_description": "רכישת 63,582 ע.נ. מניות במהלך חודש יוני 2026 בסך של כ-52.5 מיליון ש\"ח, שעור ההחזקה לאחר הרכישה הינו 66.95%.",
-              "page_reference": 37,
-              "section_title": "באור 3 - עסקאות ואירועים מהותיים בתקופת הדיווח"
-            },
-            {
-              "company": "ישרס - חברה להשקעות בע\"מ",
-              "event_type": "increase",
-              "ownership_pct_before": 66.95,
-              "ownership_pct_after": 68.06,
-              "event_date": null,
-              "event_description": "רכישת 54,257 ע.נ. מניות נוספות לאחר תאריך המאזן בסך של כ-44 מיליון ש\"ח, שעור ההחזקה לאחר הרכישה הנ\"ל הינו 68.06%.",
-              "page_reference": 37,
-              "section_title": "באור 3 - עסקאות ואירועים מהותיים בתקופת הדיווח"
-            }
-          ]
-        }
-      },
-      "attempts": {
-        "0:1": 1
-      }
-    }
+    "attempts": 1,
+    "at": "2026-10-09T10:05:39.529431+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1740154": {
     "company_id": "2438",
@@ -21728,28 +21654,11 @@
   },
   "1767536": {
     "company_id": "2475",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-08T11:19:46.669057+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {
-        "0:0": 1
-      }
-    }
+    "attempts": 1,
+    "at": "2026-10-09T10:06:25.432520+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744802": {
     "company_id": "2477",
@@ -22368,10 +22277,66 @@
   },
   "1744346": {
     "company_id": "2519",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-10-09T10:06:41.011065+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1767234": {
+    "company_id": "2519",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-10-09T10:07:31.294261+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1767261": {
+    "company_id": "2519",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-10-09T10:07:57.323661+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1742735": {
+    "company_id": "2520",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-10-09T10:10:02.552673+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1745685": {
+    "company_id": "2520",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-10-09T10:10:44.545710+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1765451": {
+    "company_id": "2520",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-10-09T10:11:08.988361+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1767681": {
+    "company_id": "2520",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-10-09T10:12:46.931790+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1745082": {
+    "company_id": "2521",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-08T12:15:24.030219+00:00",
+    "at": "2026-10-09T10:12:19.472466+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -22380,164 +22345,22 @@
       "done": {
         "0:0": {
           "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "אמירי זכרון יעקב בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 16,
-              "section_title": "19. אירועים מהותיים בתקופת הדוח ולאחר תקופת הדוח",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "פסו רומי חברה לבניין והשקעות בע\"מ",
-              "ownership_pct": 100,
-              "parent": "אמירי זכרון יעקב בע\"מ",
-              "page_reference": 15,
-              "section_title": "19. אירועים מהותיים בתקופת הדוח ולאחר תקופת הדוח",
-              "table_title": null,
-              "note": "חברת הביצוע - הושלמה העברת יתרת המניות ב-6 בינואר 2026"
-            }
-          ],
-          "change_events": [
-            {
-              "company": "פסו רומי חברה לבניין והשקעות בע\"מ",
-              "event_type": "increase",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 100,
-              "event_date": "2026-01-06",
-              "event_description": "הושלמה העברת יתרת המניות (33%) בחברת הביצוע לידי אמירי זכרון, כך שחברת הבת מחזיקה במלוא (100%) הון המניות.",
-              "page_reference": 15,
-              "section_title": "19. אירועים מהותיים בתקופת הדוח ולאחר תקופת הדוח"
-            }
-          ]
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
           "document_type": "ownership_snapshot",
           "as_of_date": "2026-03-31",
           "subsidiaries": [
             {
-              "name": "אמירי זכרון יעקב בע\"מ",
-              "ownership_pct": 100,
+              "name": "קטה גרופ – חטיבת ההתחדשות בע\"מ",
+              "ownership_pct": null,
               "parent": null,
-              "page_reference": 35,
-              "section_title": "ביאור 1 - כ ל ל י",
+              "page_reference": 10,
+              "section_title": "4. אירועים עיקריים בתקופת הדוח",
               "table_title": null,
-              "note": null
+              "note": "חברה הנמצאת בבעלות ובשליטתה המלאה של החברה"
             }
           ],
           "change_events": []
         }
       },
-      "attempts": {}
-    }
-  },
-  "1767234": {
-    "company_id": "2519",
-    "status": "partial",
-    "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-08T12:15:12.036911+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1767261": {
-    "company_id": "2519",
-    "status": "partial",
-    "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-08T12:15:12.440454+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1742735": {
-    "company_id": "2520",
-    "status": "partial",
-    "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-08T12:15:12.877712+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1745685": {
-    "company_id": "2520",
-    "status": "partial",
-    "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-08T12:15:13.126060+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1765451": {
-    "company_id": "2520",
-    "status": "partial",
-    "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-08T12:15:13.563695+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1767681": {
-    "company_id": "2520",
-    "status": "partial",
-    "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-08T12:15:14.013638+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
-  },
-  "1745082": {
-    "company_id": "2521",
-    "status": "partial",
-    "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-08T12:15:14.327786+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
       "attempts": {}
     }
   },
@@ -24229,6 +24052,14 @@
     "kind": "change",
     "attempts": 1,
     "at": "2026-10-07T10:42:05.903816+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1774731": {
+    "company_id": "175",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-10-09T10:05:29.735203+00:00",
     "model": "gemini-3.5-flash-lite"
   }
 }
