@@ -23124,61 +23124,11 @@
   },
   "1741417": {
     "company_id": "2543",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-09T10:42:26.246680+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {
-        "0:0": {
-          "report_format": "other",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "Odysight.ai Ltd",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "NOTE 1 – GENERAL:",
-              "table_title": null,
-              "note": "wholly owned subsidiary"
-            },
-            {
-              "name": "D. View Ltd.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "NOTE 1 – GENERAL:",
-              "table_title": null,
-              "note": "wholly owned subsidiary"
-            },
-            {
-              "name": "Odysight.ai Eu S.r.l.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "NOTE 1 – GENERAL:",
-              "table_title": null,
-              "note": "wholly owned subsidiary"
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "other",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-09T10:42:40.056856+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1741418": {
     "company_id": "2543",
@@ -23244,78 +23194,43 @@
   },
   "1767514": {
     "company_id": "2547",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-08T12:15:24.247004+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-09T10:42:50.919527+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767062": {
     "company_id": "2548",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-08T12:15:24.785630+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-09T10:45:17.264481+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765095": {
     "company_id": "2549",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-08T12:15:25.131860+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-09T10:48:15.351409+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766970": {
     "company_id": "2548",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-08T12:15:24.682183+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-09T10:52:10.289978+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764927": {
     "company_id": "2550",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-08T12:15:25.647960+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-09T10:51:02.789605+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1768216": {
     "company_id": "2550",
@@ -23334,78 +23249,111 @@
   },
   "1765479": {
     "company_id": "2551",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-08T12:15:25.534179+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-09T10:51:29.391055+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765908": {
     "company_id": "2555",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-08T12:15:25.908324+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-09T10:52:45.325443+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766969": {
     "company_id": "2556",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-08T12:15:26.131075+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 7,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-09T10:54:14.417767+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765408": {
     "company_id": "2557",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-08T12:15:26.327749+00:00",
+    "at": "2026-10-09T10:54:26.693755+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 6,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "איגנשטיין פינס",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 100,
+              "event_date": null,
+              "event_description": "רכישת מלוא האחזקה (100% ממניות החברה) בתקופת הדוח בתמורה ל-4 מיליון ש\"ח",
+              "page_reference": 11,
+              "section_title": "אירועים משמעותיים בתקופת הדוח ואחריה"
+            }
+          ]
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "תדהר הראל מניבים בע\"מ",
+              "event_type": "increase",
+              "ownership_pct_before": 45,
+              "ownership_pct_after": 100,
+              "event_date": "2026-03-30",
+              "event_description": "רכישת 55% נוספים ממניות תדהר הראל מניבים כך שעלתה להחזקה של 100%",
+              "page_reference": 56,
+              "section_title": "באור :3 - צירופי עסקים ושינויים בשיעורי החזקה"
+            },
+            {
+              "company": "תדהר אקו-קיר בע\"מ",
+              "event_type": "full_disposal",
+              "ownership_pct_before": 33,
+              "ownership_pct_after": 0,
+              "event_date": "2026-07-26",
+              "event_description": "הסכם למכירת מלוא החזקותיה (33%) באקו-קיר לחברת אקרשטיין תעשיות בע\"מ",
+              "page_reference": 63,
+              "section_title": "באור :6 - אירועים מהותיים בתקופת הדוח ולאחריה"
+            }
+          ]
+        }
+      },
       "attempts": {}
     }
   },
   "1765430": {
     "company_id": "2557",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-08T12:15:26.738996+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-09T10:55:33.246679+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763212": {
     "company_id": "2558",
