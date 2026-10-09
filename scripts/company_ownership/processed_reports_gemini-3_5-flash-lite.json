@@ -22333,156 +22333,75 @@
   },
   "1745082": {
     "company_id": "2521",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-09T10:12:19.472466+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "קטה גרופ – חטיבת ההתחדשות בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "4. אירועים עיקריים בתקופת הדוח",
-              "table_title": null,
-              "note": "חברה הנמצאת בבעלות ובשליטתה המלאה של החברה"
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-09T10:14:23.291926+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764973": {
     "company_id": "2521",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-08T12:15:14.602677+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-09T10:14:32.380280+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744985": {
     "company_id": "2522",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-08T12:15:14.905264+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-09T10:15:03.063846+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764876": {
     "company_id": "2522",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-08T12:15:15.061278+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-09T10:14:36.796862+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766495": {
     "company_id": "2522",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-08T12:15:15.239922+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-09T10:15:01.475579+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766485": {
     "company_id": "2522",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-08T12:15:15.962850+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-09T10:15:53.419015+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744218": {
     "company_id": "2524",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-08T12:15:16.258714+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-09T10:16:12.989017+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765965": {
     "company_id": "2524",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-08T12:15:16.724862+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 7,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-09T10:19:01.289665+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745267": {
     "company_id": "2527",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-08T12:15:17.082762+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-09T10:18:09.759383+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767524": {
     "company_id": "2507",
@@ -22501,18 +22420,11 @@
   },
   "1767538": {
     "company_id": "2528",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-08T12:15:17.685818+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-09T10:19:32.779962+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767716": {
     "company_id": "2528",
@@ -22699,13 +22611,35 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-08T12:15:17.502639+00:00",
+    "at": "2026-10-09T10:19:29.355201+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 16,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
