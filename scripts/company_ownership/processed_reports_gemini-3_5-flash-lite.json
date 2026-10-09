@@ -5719,18 +5719,11 @@
   },
   "1762747": {
     "company_id": "126",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-08T12:15:31.303077+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-09T11:05:15.220993+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763130": {
     "company_id": "126",
@@ -5750,18 +5743,11 @@
   },
   "1764715": {
     "company_id": "126",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-08T12:15:31.552628+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 6,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-09T11:08:38.467851+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764718": {
     "company_id": "126",
@@ -5789,18 +5775,11 @@
   },
   "1766990": {
     "company_id": "127",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-08T12:15:32.862593+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-09T11:07:24.535779+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743453": {
     "company_id": "130",
@@ -5916,33 +5895,19 @@
   },
   "1744880": {
     "company_id": "149",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-08T12:15:31.953969+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-09T11:09:13.322190+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767477": {
     "company_id": "149",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-08T12:15:32.203964+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-09T11:09:35.640600+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744772": {
     "company_id": "150",
@@ -5965,13 +5930,49 @@
     "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-10-08T12:15:32.470813+00:00",
+    "at": "2026-10-09T11:09:35.490155+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 9,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "368 Third Member LLC",
+              "ownership_pct": 99.2,
+              "parent": null,
+              "page_reference": 19,
+              "section_title": "1.1 הצגת הפרויקט",
+              "table_title": "פירוט ליום 31.3.2026",
+              "note": null
+            },
+            {
+              "name": "368 Third Mezz LLC",
+              "ownership_pct": 100.0,
+              "parent": "368 Third Member LLC",
+              "page_reference": 19,
+              "section_title": "1.1 הצגת הפרויקט",
+              "table_title": "פירוט ליום 31.3.2026",
+              "note": null
+            },
+            {
+              "name": "368 Third Owners LLC",
+              "ownership_pct": 100.0,
+              "parent": "368 Third Mezz LLC",
+              "page_reference": 19,
+              "section_title": "1.1 הצגת הפרויקט",
+              "table_title": "פירוט ליום 31.3.2026",
+              "note": null
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
@@ -23435,127 +23436,11 @@
   },
   "1767752": {
     "company_id": "2571",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-09T11:03:30.569425+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [],
-          "change_events": [
-            {
-              "company": "The River District (תאגיד ה-JV)",
-              "event_type": "full_disposal",
-              "ownership_pct_before": null,
-              "ownership_pct_after": null,
-              "event_date": "2026-05-19",
-              "event_description": "מימוש אופציה למכירת זכויות החברה בתאגיד ה-JV המחזיק בנכס The River District",
-              "page_reference": 4,
-              "section_title": "אירועים מרכזיים בתקופת הדוח ולאחריה"
-            },
-            {
-              "company": "Metroparc (תאגיד ה-JV)",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": null,
-              "event_date": "2026-07-28",
-              "event_description": "העמדת מימון מסוג Preferred Equity והקמת תאגיד משותף חדש בפרויקט Metroparc",
-              "page_reference": 5,
-              "section_title": "אירועים מרכזיים בתקופת הדוח ולאחריה"
-            },
-            {
-              "company": "Parkmerced",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": null,
-              "event_date": "2026-07-16",
-              "event_description": "זכייה בהליך מכירה פומבית של הקרקע נשוא הלוואת Parkmerced כבעלים משותפים",
-              "page_reference": 5,
-              "section_title": "אירועים מרכזיים בתקופת הדוח ולאחריה"
-            }
-          ]
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "YS Broadway Owner LLC",
-              "ownership_pct": 75.78,
-              "parent": null,
-              "page_reference": 27,
-              "section_title": "נספח ב' – גילוי רבעוני: נדל\"ן להשקעה",
-              "table_title": "1740 Broadway",
-              "note": "נכס מניב בהקמה מהותי מאוד"
-            },
-            {
-              "name": "YS 440W57 Owner LLC",
-              "ownership_pct": 50.0,
-              "parent": null,
-              "page_reference": 28,
-              "section_title": "נספח ב' – גילוי רבעוני: נדל\"ן להשקעה",
-              "table_title": "440 W57",
-              "note": "נכס מניב בהקמה מהותי מאוד"
-            },
-            {
-              "name": "YS 220W42 OWNER LLC",
-              "ownership_pct": 50.0,
-              "parent": null,
-              "page_reference": 29,
-              "section_title": "נספח ב' – גילוי רבעוני: נדל\"ן להשקעה",
-              "table_title": "220 West 42nd Street",
-              "note": "נכס מניב בהקמה מהותי מאוד"
-            },
-            {
-              "name": "YS 541 Lexington Owner LLC",
-              "ownership_pct": 50.0,
-              "parent": null,
-              "page_reference": 30,
-              "section_title": "נספח ב' – גילוי רבעוני: נדל\"ן להשקעה",
-              "table_title": "541 Lexington Avenue",
-              "note": "נכס מניב בהקמה מהותי מאוד"
-            }
-          ],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "YS Platform BVI Member LLC",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 39,
-              "section_title": "באור 1 - כללי",
-              "table_title": null,
-              "note": "החברה הבת בבעלות מלאה"
-            },
-            {
-              "name": "River Venture LLC",
-              "ownership_pct": 37.8,
-              "parent": "YS Platform BVI Member LLC",
-              "page_reference": 48,
-              "section_title": "באור 5 - השקעה בחברות המטופלת לפי שיטת השווי המאזני",
-              "table_title": null,
-              "note": "מוחזקת על ידי חברה בת בשיטת השווי המאזני"
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-09T11:03:59.855864+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767769": {
     "company_id": "2573",
@@ -23567,33 +23452,19 @@
   },
   "1767720": {
     "company_id": "2574",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-08T12:15:30.429316+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-09T11:04:47.073741+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767727": {
     "company_id": "2574",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-08T12:15:30.587867+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-09T11:05:05.608210+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764298": {
     "company_id": "2576",
@@ -23627,33 +23498,19 @@
   },
   "1765047": {
     "company_id": "2578",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-08T12:15:30.558954+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-09T11:04:57.912971+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765927": {
     "company_id": "2578",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-08T12:15:31.705587+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-10-09T11:05:21.556433+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764188": {
     "company_id": "2580",
