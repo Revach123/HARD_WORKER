@@ -8118,18 +8118,11 @@
   },
   "1767059": {
     "company_id": "485",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-08T12:15:39.856774+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-09T11:38:21.837895+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745702": {
     "company_id": "486",
@@ -8317,18 +8310,11 @@
   },
   "1767441": {
     "company_id": "522",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-08T12:15:40.066487+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-09T11:39:06.440741+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765681": {
     "company_id": "526",
@@ -8419,18 +8405,11 @@
   },
   "1767443": {
     "company_id": "522",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-08T12:15:40.250302+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-09T11:40:14.800048+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1768192": {
     "company_id": "539",
@@ -8469,13 +8448,207 @@
     "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-10-08T12:15:40.653424+00:00",
+    "at": "2026-10-09T11:46:16.968234+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 24,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:7": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": "2023-03-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:8": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:9": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:10": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:11": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:12": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:13": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:14": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:15": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:16": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:17": {
+          "report_format": "other",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "Valassis Digital",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "Tenancy Analysis",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Valassis Direct Mail, Inc",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "Tenancy Analysis",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Valassis Canada",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "Tenancy Analysis",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Promotion Watch",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "Tenancy Analysis",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "NCH Marketing Services, Inc",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 309,
+              "section_title": "Tenancy Analysis",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:18": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:19": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:20": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
@@ -8585,18 +8758,11 @@
   },
   "1761558": {
     "company_id": "576",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-08T12:15:40.450217+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-09T11:41:06.196596+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763069": {
     "company_id": "576",
@@ -8639,18 +8805,11 @@
   },
   "1746225": {
     "company_id": "578",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-08T12:15:41.194504+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-09T11:42:21.318603+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1761183": {
     "company_id": "578",
@@ -8665,14 +8824,69 @@
     "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-10-08T12:15:41.346446+00:00",
+    "at": "2026-10-09T11:44:36.443457+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 4,
-      "done": {},
-      "attempts": {}
+      "done": {
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "איי.אמ.אס פתרונות הולכה וסינון אוויר בע\"מ",
+              "ownership_pct": 52,
+              "parent": null,
+              "page_reference": 47,
+              "section_title": "באור 3 - צירופי עסקים",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": [
+            {
+              "company": "התאגיד הייעודי",
+              "event_type": "full_disposal",
+              "ownership_pct_before": 50,
+              "ownership_pct_after": 0,
+              "event_date": "2026-03-25",
+              "event_description": "מכירת מלוא החזקותיה (50%) בתאגיד הייעודי המפעיל את פרויקט מעונות הסטודנטים בקמפוס המכללה למינהל בראשון לציון",
+              "page_reference": 49,
+              "section_title": "באור 4 - אירועים ודגשים מרכזיים בתקופת הדיווח ולאחריה"
+            },
+            {
+              "company": "שרות הוגן",
+              "event_type": "increase",
+              "ownership_pct_before": 88,
+              "ownership_pct_after": 94,
+              "event_date": "2026-04-01",
+              "event_description": "רכישת 6% נוספים ממניות שרות הוגן בעקבות מימוש זכות מכירה מצד השותף",
+              "page_reference": 50,
+              "section_title": "באור 4 - אירועים ודגשים מרכזיים בתקופת הדיווח ולאחריה"
+            }
+          ]
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
+      "attempts": {
+        "0:0": 1
+      }
     }
   },
   "1764741": {
@@ -8733,18 +8947,11 @@
   },
   "1741748": {
     "company_id": "593",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-08T12:15:41.550191+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-09T11:44:46.552685+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1741705": {
     "company_id": "593",
@@ -8806,13 +9013,80 @@
     "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-10-08T12:15:41.789370+00:00",
+    "at": "2026-10-09T11:46:14.932227+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 10,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "החברה הלאומית לאספקת פחם בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 39,
+              "section_title": "ד. גילוי בקשר לדיווח הפיננסי של החברה:",
+              "table_title": null,
+              "note": "חברת בת מאוחדת"
+            },
+            {
+              "name": "חברת נתיב האור -אורות רבין בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 39,
+              "section_title": "ד. גילוי בקשר לדיווח הפיננסי של החברה:",
+              "table_title": null,
+              "note": "חברת בת מאוחדת"
+            }
+          ],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "החברה הלאומית לאספקת פחם בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 65,
+              "section_title": "ביאור 2 - כללי דיווח ומדיניות חשבונאית",
+              "table_title": null,
+              "note": "בעלות מלאה"
+            },
+            {
+              "name": "נתיב האור – אורות רבין בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 65,
+              "section_title": "ביאור 2 - כללי דיווח ומדיניות חשבונאית",
+              "table_title": null,
+              "note": "בעלות מלאה"
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
@@ -8868,7 +9142,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-10-08T12:15:42.213781+00:00",
+    "at": "2026-10-09T11:46:21.314997+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
