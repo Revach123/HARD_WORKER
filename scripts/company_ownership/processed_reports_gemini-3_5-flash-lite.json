@@ -9859,418 +9859,11 @@
   },
   "1747733": {
     "company_id": "767",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-10T10:26:43.090471+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 15,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "EL AL Frequent Flyer Ltd.",
-              "ownership_pct": 25,
-              "parent": "Phoenix Financial Ltd.",
-              "page_reference": 12,
-              "section_title": "1.4.8 Strategic issuing agreement with Isracard for Fly Card credit cards",
-              "table_title": null,
-              "note": "Holds a 25% stake directly and indirectly"
-            }
-          ],
-          "change_events": [
-            {
-              "company": "Fidelis Partners Holdings Ltd.",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 30,
-              "event_date": null,
-              "event_description": "Acquisition of 30% of Fidelis's shares by Phoenix Advanced Investments.",
-              "page_reference": 11,
-              "section_title": "1.4.4 Acquisition of Fidelis’s shares"
-            },
-            {
-              "company": "Polish ETF Company",
-              "event_type": "increase",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 50.36,
-              "event_date": null,
-              "event_description": "Board of Directors approved acquisition of additional shares resulting in control with a holding stake of 50.36%.",
-              "page_reference": 12,
-              "section_title": "1.4.7 Increase in the holding stake in an ETF company operating in Poland"
-            },
-            {
-              "company": "BUYME Technologies Ltd.",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 64.85,
-              "event_date": null,
-              "event_description": "Completed transaction for the acquisition of shares constituting 64.85% of BUYME's fully diluted issued and paid-up share capital by Phoenix Services.",
-              "page_reference": 13,
-              "section_title": "1.4.10 Acquisition of BUYME"
-            }
-          ]
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": [
-            {
-              "company": "El Al Club",
-              "event_type": "full_disposal",
-              "ownership_pct_before": 5.1,
-              "ownership_pct_after": 0,
-              "event_date": "2026-01-29",
-              "event_description": "Approval of the distribution of a dividend in kind for Phoenix Insurance's shares in El Al Club, constituting approx. 5.1% of the issued and paid-up share capital.",
-              "page_reference": 22,
-              "section_title": "2.1.8 Significant updates in 2026 until the report publication date"
-            }
-          ]
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "Phoenix Pension & Provident Ltd.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 51,
-              "section_title": "5.6.1. Retirement",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Phoenix IEC Central Pension Fund Ltd.",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 51,
-              "section_title": "5.6.1. Retirement",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": [
-            {
-              "company": "Pi Crypto Ltd.",
-              "event_type": "full_disposal",
-              "ownership_pct_before": 47.17,
-              "ownership_pct_after": 0,
-              "event_date": null,
-              "event_description": "An agreement was signed for the sale of the Company's entire holding stake in Pi Crypto Ltd., totaling approx. 47.17%",
-              "page_reference": 53,
-              "section_title": "5.6.2. Wealth & Investments"
-            }
-          ]
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [],
-          "change_events": [
-            {
-              "company": "Pi Crypto Ltd.",
-              "event_type": "full_disposal",
-              "ownership_pct_before": 47.17,
-              "ownership_pct_after": 0,
-              "event_date": null,
-              "event_description": "Agreement signed for the sale of the Company's entire holding stake in Pi Crypto Ltd., totaling approx. 47.17%, such that the Company will cease to be a shareholder.",
-              "page_reference": 53,
-              "section_title": "5.6.2. Wealth & Investments"
-            },
-            {
-              "company": "El Al Frequent Flyer Ltd.",
-              "event_type": "full_disposal",
-              "ownership_pct_before": 5.1,
-              "ownership_pct_after": 0,
-              "event_date": null,
-              "event_description": "Distribution of Phoenix Insurance's shares in El Al Frequent Flyer Ltd. (approx. 5.1%) as a dividend in kind.",
-              "page_reference": 58,
-              "section_title": "5.7.1.4. Following is a table detailing dividends distributed by subsidiaries"
-            }
-          ]
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "Phoenix Insurance Company Ltd.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 87,
-              "section_title": "NOTE 1 - GENERAL",
-              "table_title": null,
-              "note": "Wholly-owned subsidiary"
-            },
-            {
-              "name": "Phoenix Capital Partners Ltd.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 87,
-              "section_title": "NOTE 1 - GENERAL",
-              "table_title": null,
-              "note": "Wholly-owned subsidiary"
-            },
-            {
-              "name": "Phoenix Investment House Ltd.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 87,
-              "section_title": "NOTE 1 - GENERAL",
-              "table_title": null,
-              "note": "Subsidiary controlled by the Company"
-            },
-            {
-              "name": "Phoenix Gama Ltd.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 87,
-              "section_title": "NOTE 1 - GENERAL",
-              "table_title": null,
-              "note": "Subsidiary wholly-owned by the Company"
-            },
-            {
-              "name": "Phoenix Insurance Agencies 1989 Ltd.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 87,
-              "section_title": "NOTE 1 - GENERAL",
-              "table_title": null,
-              "note": "Company under the Company's control"
-            },
-            {
-              "name": "Phoenix Pension & Provident Ltd.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 87,
-              "section_title": "NOTE 1 - GENERAL",
-              "table_title": null,
-              "note": "Wholly-owned subsidiary"
-            },
-            {
-              "name": "Phoenix Services 2025 Ltd.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 87,
-              "section_title": "NOTE 1 - GENERAL",
-              "table_title": null,
-              "note": "Wholly-controlled subsidiary"
-            },
-            {
-              "name": "Phoenix Advanced Investments Ltd.",
-              "ownership_pct": null,
-              "parent": "Phoenix Capital Partners Ltd.",
-              "page_reference": 87,
-              "section_title": "NOTE 1 - GENERAL",
-              "table_title": null,
-              "note": "Wholly-owned subsidiary of Phoenix Capital Partners"
-            },
-            {
-              "name": "Oren Mizrach Insurance Agency Ltd.",
-              "ownership_pct": null,
-              "parent": "Phoenix Insurance Agencies 1989 Ltd.",
-              "page_reference": 88,
-              "section_title": "NOTE 1 - GENERAL (cont.)",
-              "table_title": null,
-              "note": "Subsidiary in which Phoenix Agencies is a controlling shareholder"
-            },
-            {
-              "name": "Phoenix Capital Raising (2009) Ltd.",
-              "ownership_pct": null,
-              "parent": "Phoenix Insurance Company Ltd.",
-              "page_reference": 88,
-              "section_title": "NOTE 1 - GENERAL (cont.)",
-              "table_title": null,
-              "note": "Wholly-owned subsidiary of Phoenix Insurance"
-            },
-            {
-              "name": "Phoenix Mortgages (Gold) Ltd.",
-              "ownership_pct": null,
-              "parent": "Phoenix Insurance Company Ltd.",
-              "page_reference": 88,
-              "section_title": "NOTE 1 - GENERAL (cont.)",
-              "table_title": null,
-              "note": "Wholly-owned subsidiary of Phoenix Insurance"
-            },
-            {
-              "name": "One Part Ltd.",
-              "ownership_pct": null,
-              "parent": "Phoenix Services 2025 Ltd.",
-              "page_reference": 88,
-              "section_title": "NOTE 1 - GENERAL (cont.)",
-              "table_title": null,
-              "note": "Held in equal parts by the Company and partners to Phoenix Services"
-            },
-            {
-              "name": "BUYME Technologies Ltd.",
-              "ownership_pct": null,
-              "parent": "Phoenix Services 2025 Ltd.",
-              "page_reference": 88,
-              "section_title": "NOTE 1 - GENERAL (cont.)",
-              "table_title": null,
-              "note": "Agreement for the acquisition of shares entered by Phoenix Services"
-            },
-            {
-              "name": "Phoenix Wealth Management Ltd.",
-              "ownership_pct": null,
-              "parent": "Phoenix Capital Partners Ltd.",
-              "page_reference": 88,
-              "section_title": "NOTE 1 - GENERAL (cont.)",
-              "table_title": null,
-              "note": "Wholly-owned subsidiary founded by Phoenix Capital Partners"
-            }
-          ],
-          "change_events": []
-        },
-        "0:5": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "Phoenix Insurance Company Ltd.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 87,
-              "section_title": "NOTE 1 - GENERAL",
-              "table_title": null,
-              "note": "Wholly-owned subsidiary of the Company"
-            },
-            {
-              "name": "Phoenix Capital Partners Ltd.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 87,
-              "section_title": "NOTE 1 - GENERAL",
-              "table_title": null,
-              "note": "Wholly-owned subsidiary of the Company"
-            },
-            {
-              "name": "Phoenix Investment House Ltd.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 87,
-              "section_title": "NOTE 1 - GENERAL",
-              "table_title": null,
-              "note": "Subsidiary controlled by the Company"
-            },
-            {
-              "name": "Phoenix Gama Ltd.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 87,
-              "section_title": "NOTE 1 - GENERAL",
-              "table_title": null,
-              "note": "Subsidiary wholly-owned by the Company"
-            },
-            {
-              "name": "Phoenix Insurance Agencies 1989 Ltd.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 87,
-              "section_title": "NOTE 1 - GENERAL",
-              "table_title": null,
-              "note": "A company under the Company's control"
-            },
-            {
-              "name": "Phoenix Pension & Provident Ltd.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 87,
-              "section_title": "NOTE 1 - GENERAL",
-              "table_title": null,
-              "note": "Wholly-owned subsidiary of the Company"
-            },
-            {
-              "name": "Phoenix Services 2025 Ltd.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 87,
-              "section_title": "NOTE 1 - GENERAL",
-              "table_title": null,
-              "note": "Wholly-controlled subsidiary of the Company"
-            },
-            {
-              "name": "Phoenix Advanced Investments Ltd.",
-              "ownership_pct": null,
-              "parent": "Phoenix Capital Partners Ltd.",
-              "page_reference": 87,
-              "section_title": "NOTE 1 - GENERAL",
-              "table_title": null,
-              "note": "Wholly-owned subsidiary of Phoenix Capital Partners"
-            },
-            {
-              "name": "Oren Mizrach Insurance Agency Ltd.",
-              "ownership_pct": null,
-              "parent": "Phoenix Insurance Agencies 1989 Ltd.",
-              "page_reference": 88,
-              "section_title": "NOTE 1 - GENERAL (cont.)",
-              "table_title": null,
-              "note": "A subsidiary in which Phoenix Agencies is a controlling shareholder"
-            },
-            {
-              "name": "Phoenix Capital Raising (2009) Ltd.",
-              "ownership_pct": null,
-              "parent": "Phoenix Insurance Company Ltd.",
-              "page_reference": 88,
-              "section_title": "NOTE 1 - GENERAL (cont.)",
-              "table_title": null,
-              "note": "Wholly-owned subsidiary of Phoenix Insurance"
-            },
-            {
-              "name": "Phoenix Mortgages (Gold) Ltd.",
-              "ownership_pct": null,
-              "parent": "Phoenix Insurance Company Ltd.",
-              "page_reference": 88,
-              "section_title": "NOTE 1 - GENERAL (cont.)",
-              "table_title": null,
-              "note": "Wholly-owned subsidiary of Phoenix Insurance"
-            },
-            {
-              "name": "One Part Ltd.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 88,
-              "section_title": "NOTE 1 - GENERAL (cont.)",
-              "table_title": null,
-              "note": "Held in equal parts by the Company and partners, transferred to Phoenix Services"
-            },
-            {
-              "name": "BUYME Technologies Ltd.",
-              "ownership_pct": null,
-              "parent": "Phoenix Services 2025 Ltd.",
-              "page_reference": 88,
-              "section_title": "NOTE 1 - GENERAL (cont.)",
-              "table_title": null,
-              "note": "Acquisition agreement entered into by Phoenix Services"
-            },
-            {
-              "name": "Phoenix Wealth Management Ltd.",
-              "ownership_pct": null,
-              "parent": "Phoenix Capital Partners Ltd.",
-              "page_reference": 88,
-              "section_title": "NOTE 1 - GENERAL (cont.)",
-              "table_title": null,
-              "note": "Wholly-owned subsidiary founded by Phoenix Capital Partners"
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T10:30:39.182901+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1758960": {
     "company_id": "767",
@@ -10498,18 +10091,11 @@
   },
   "1765003": {
     "company_id": "826",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:47:24.762171+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T10:27:41.749333+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743042": {
     "company_id": "829",
@@ -10521,48 +10107,27 @@
   },
   "1764246": {
     "company_id": "829",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:47:23.731494+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T10:28:49.289947+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767785": {
     "company_id": "1001",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:47:26.597041+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T10:29:53.446511+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745378": {
     "company_id": "1006",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:47:28.670003+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T10:31:37.993717+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745818": {
     "company_id": "1006",
@@ -10581,18 +10146,11 @@
   },
   "1764762": {
     "company_id": "1006",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:47:26.817377+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T10:31:19.602892+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764801": {
     "company_id": "1006",
@@ -10620,18 +10178,11 @@
   },
   "1744726": {
     "company_id": "1008",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:47:27.193650+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T10:31:46.605366+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764739": {
     "company_id": "1008",
@@ -10754,18 +10305,11 @@
   },
   "1745646": {
     "company_id": "1033",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:47:29.922932+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T10:32:12.444004+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765756": {
     "company_id": "1033",
@@ -10896,18 +10440,11 @@
   },
   "1764373": {
     "company_id": "1054",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:47:31.651455+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T10:34:18.695972+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764392": {
     "company_id": "1054",
@@ -10959,18 +10496,11 @@
   },
   "1744360": {
     "company_id": "1060",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:47:33.424813+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T10:33:44.213984+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766532": {
     "company_id": "1060",
