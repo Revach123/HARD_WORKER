@@ -11607,97 +11607,11 @@
   },
   "1764319": {
     "company_id": "1238",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-10T10:53:51.621864+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "ישראייר תעופה ותיירות בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 3,
-              "section_title": "1. תיאור תמציתי של עסקי החברה והסביבה העסקית בה היא פועלת",
-              "table_title": null,
-              "note": "חברת בת בבעלות מלאה"
-            },
-            {
-              "name": "סקידיל",
-              "ownership_pct": null,
-              "parent": "ישראייר תעופה ותיירות בע\"מ",
-              "page_reference": 4,
-              "section_title": "1. תיאור תמציתי של עסקי החברה והסביבה העסקית בה היא פועלת",
-              "table_title": null,
-              "note": "חברת בת"
-            },
-            {
-              "name": "בשביל הזהב תיירות בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 19,
-              "section_title": "2.4 תוצאות מגזרי פעילות",
-              "table_title": null,
-              "note": "חלק מקבוצת מילניום, מטופלת לפי שיטת השווי המאזני"
-            },
-            {
-              "name": "קרוז תור בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 19,
-              "section_title": "2.4 תוצאות מגזרי פעילות",
-              "table_title": null,
-              "note": "חלק מקבוצת מילניום, מטופלת לפי שיטת השווי המאזני"
-            },
-            {
-              "name": "המלונות ביוון",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 19,
-              "section_title": "2.4 תוצאות מגזרי פעילות",
-              "table_title": null,
-              "note": "מטופלות לפי שיטת השווי המאזני"
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": [
-            {
-              "company": "חברת המועדון",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 10,
-              "event_date": "2026-05-28",
-              "event_description": "התקשרות בהסכם לרכישת 10% מהון המניות הרגילות של חברת המועדון במסגרת הסכם מועדון עם רשת חנויות רמי לוי שיווק השקמה (2006) בע\"מ וישראכרט בע\"מ",
-              "page_reference": 46,
-              "section_title": "אירועים מהותיים שחלו בקבוצה במהלך תקופת הדוח ולאחריו"
-            }
-          ]
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T10:54:51.439916+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743567": {
     "company_id": "1240",
@@ -11717,18 +11631,11 @@
   },
   "1742318": {
     "company_id": "1247",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:48:13.785737+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T10:57:10.862509+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765940": {
     "company_id": "1240",
@@ -11787,18 +11694,11 @@
   },
   "1762361": {
     "company_id": "1264",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:48:14.967956+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T10:55:03.729142+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764660": {
     "company_id": "1264",
@@ -11893,14 +11793,104 @@
     "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-10-09T11:48:16.758917+00:00",
+    "at": "2026-10-10T10:58:03.960703+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 4,
-      "done": {},
-      "attempts": {}
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "א. דורון אחזקות מימון והשקעות בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 14,
+              "section_title": "מצב כספי ליום 30 ביוני 2026",
+              "table_title": null,
+              "note": "חברת בת בתחום המשכנתאות שנרכשה ברבעון הרביעי של שנת 2025; קיימות אופציות Call ו-Put ביחס ל-30% ממניות חברת הבת המוחזקות על ידי בעל המניות הנותר המאפשרות הגעה לאחזקה של 100%."
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "אופל בלאנס (2006) בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 41,
+              "section_title": "מקורות המימון",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אופל בלאנס חולון בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 41,
+              "section_title": "מקורות המימון",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "א.דורון אחזקות מימון והשקעות בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 55,
+              "section_title": "באור 3 - מכשירים פיננסיים (המשך)",
+              "table_title": "התפלגות יתרות הלקוחות, מסך לקוחות, שטרות לגביה וחייבים בגין הלוואות, לפי ענף פעילות",
+              "note": "חברה בת של החברה"
+            },
+            {
+              "name": "אופל בלאנס 2006 בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 59,
+              "section_title": "באור 5 - אירועים משמעותיים בתקופת הדיווח ולאחריה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אופל בלאנס חולון בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 59,
+              "section_title": "באור 5 - אירועים משמעותיים בתקופת הדיווח ולאחריה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אופל 2006 בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 60,
+              "section_title": "באור 5 - אירועים משמעותיים בתקופת הדיווח ולאחריה (המשך)",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        }
+      },
+      "attempts": {
+        "0:2": 1
+      }
     }
   },
   "1767530": {
@@ -11985,33 +11975,19 @@
   },
   "1766848": {
     "company_id": "1301",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:48:19.300672+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T10:57:56.688051+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767696": {
     "company_id": "1304",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:48:19.053148+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T10:58:57.115893+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765679": {
     "company_id": "1305",
@@ -12094,18 +12070,11 @@
   },
   "1744781": {
     "company_id": "1324",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:48:20.667892+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T10:59:18.294229+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744763": {
     "company_id": "1324",
@@ -12141,18 +12110,11 @@
   },
   "1743150": {
     "company_id": "1327",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:48:36.901916+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T10:59:41.884931+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743226": {
     "company_id": "1327",
@@ -12172,18 +12134,11 @@
   },
   "1764022": {
     "company_id": "1327",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:48:40.557574+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T10:59:53.813007+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1740679": {
     "company_id": "1328",
@@ -12195,18 +12150,11 @@
   },
   "1764166": {
     "company_id": "1327",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:48:57.119082+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T11:00:31.786454+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1740687": {
     "company_id": "1328",
@@ -12221,13 +12169,28 @@
     "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-10-09T11:49:02.696091+00:00",
+    "at": "2026-10-10T11:00:26.237438+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 5,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
