@@ -16610,18 +16610,11 @@
   },
   "1764678": {
     "company_id": "1840",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:51:52.294221+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T11:50:44.609817+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763399": {
     "company_id": "1841",
@@ -16641,33 +16634,19 @@
   },
   "1767232": {
     "company_id": "1843",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:51:57.017973+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T11:50:52.068092+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766697": {
     "company_id": "1845",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:51:59.620920+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T11:51:12.290994+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745312": {
     "company_id": "1846",
@@ -16719,18 +16698,11 @@
   },
   "1744560": {
     "company_id": "1848",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:52:08.040309+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T11:51:33.483121+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767336": {
     "company_id": "1848",
@@ -16745,13 +16717,42 @@
     "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-10-09T11:52:17.671558+00:00",
+    "at": "2026-10-10T11:51:27.349936+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 7,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "SOL-AGUA DEVELOPMENT",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 15,
+              "section_title": "פרויקט אנפק - התפלה והולכת מים בשילוב אנרגיות מתחדשות",
+              "table_title": null,
+              "note": "חברת בת בבעלות מלאה"
+            }
+          ],
+          "change_events": [
+            {
+              "company": "פורטפוליו פרויקטים סולארים בפולין",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 51,
+              "event_date": "2026-08-26",
+              "event_description": "חתימה על הסכם מחייב לרכישת פורטפוליו פרויקטים סולארים מניבים בהיקף של כ-268 מגה-וואט באמצעות שותפות ייעודית עם כלל ביטוח, בה סולאיר תחזיק ב-51% מהזכויות ותכהן כשותף הכללי.",
+              "page_reference": 6,
+              "section_title": "פולין"
+            }
+          ]
+        }
+      },
       "attempts": {}
     }
   },
@@ -16776,7 +16777,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-10-09T11:52:20.304283+00:00",
+    "at": "2026-10-10T11:51:41.554293+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -16791,7 +16792,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-10-09T11:52:18.154703+00:00",
+    "at": "2026-10-10T11:51:41.422173+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -16918,7 +16919,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-10-09T11:52:22.797589+00:00",
+    "at": "2026-10-10T11:51:41.730055+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -17028,7 +17029,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-10-09T11:52:23.181234+00:00",
+    "at": "2026-10-10T11:51:41.855060+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -17163,7 +17164,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-10-09T11:52:23.558729+00:00",
+    "at": "2026-10-10T11:51:43.330904+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -17178,7 +17179,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-10-09T11:52:25.654384+00:00",
+    "at": "2026-10-10T11:51:46.949716+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -17249,7 +17250,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-10-09T11:52:25.047254+00:00",
+    "at": "2026-10-10T11:51:47.184391+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
