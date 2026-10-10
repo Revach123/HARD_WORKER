@@ -8445,212 +8445,11 @@
   },
   "1744411": {
     "company_id": "544",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:46:16.968234+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 24,
-      "done": {
-        "0:0": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:5": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:6": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:7": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": "2023-03-31",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:8": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:9": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:10": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:11": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:12": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:13": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:14": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:15": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:16": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:17": {
-          "report_format": "other",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "Valassis Digital",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "Tenancy Analysis",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Valassis Direct Mail, Inc",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "Tenancy Analysis",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Valassis Canada",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "Tenancy Analysis",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Promotion Watch",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "Tenancy Analysis",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "NCH Marketing Services, Inc",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 309,
-              "section_title": "Tenancy Analysis",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:18": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:19": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:20": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T10:05:56.619230+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767731": {
     "company_id": "544",
@@ -8821,73 +8620,11 @@
   },
   "1764405": {
     "company_id": "578",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:44:36.443457+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "איי.אמ.אס פתרונות הולכה וסינון אוויר בע\"מ",
-              "ownership_pct": 52,
-              "parent": null,
-              "page_reference": 47,
-              "section_title": "באור 3 - צירופי עסקים",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": [
-            {
-              "company": "התאגיד הייעודי",
-              "event_type": "full_disposal",
-              "ownership_pct_before": 50,
-              "ownership_pct_after": 0,
-              "event_date": "2026-03-25",
-              "event_description": "מכירת מלוא החזקותיה (50%) בתאגיד הייעודי המפעיל את פרויקט מעונות הסטודנטים בקמפוס המכללה למינהל בראשון לציון",
-              "page_reference": 49,
-              "section_title": "באור 4 - אירועים ודגשים מרכזיים בתקופת הדיווח ולאחריה"
-            },
-            {
-              "company": "שרות הוגן",
-              "event_type": "increase",
-              "ownership_pct_before": 88,
-              "ownership_pct_after": 94,
-              "event_date": "2026-04-01",
-              "event_description": "רכישת 6% נוספים ממניות שרות הוגן בעקבות מימוש זכות מכירה מצד השותף",
-              "page_reference": 50,
-              "section_title": "באור 4 - אירועים ודגשים מרכזיים בתקופת הדיווח ולאחריה"
-            }
-          ]
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {
-        "0:0": 1
-      }
-    }
+    "attempts": 2,
+    "at": "2026-10-10T10:06:10.771905+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764741": {
     "company_id": "578",
@@ -9010,85 +8747,11 @@
   },
   "1765085": {
     "company_id": "600",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:46:14.932227+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 10,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "החברה הלאומית לאספקת פחם בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 39,
-              "section_title": "ד. גילוי בקשר לדיווח הפיננסי של החברה:",
-              "table_title": null,
-              "note": "חברת בת מאוחדת"
-            },
-            {
-              "name": "חברת נתיב האור -אורות רבין בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 39,
-              "section_title": "ד. גילוי בקשר לדיווח הפיננסי של החברה:",
-              "table_title": null,
-              "note": "חברת בת מאוחדת"
-            }
-          ],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "החברה הלאומית לאספקת פחם בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 65,
-              "section_title": "ביאור 2 - כללי דיווח ומדיניות חשבונאית",
-              "table_title": null,
-              "note": "בעלות מלאה"
-            },
-            {
-              "name": "נתיב האור – אורות רבין בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 65,
-              "section_title": "ביאור 2 - כללי דיווח ומדיניות חשבונאית",
-              "table_title": null,
-              "note": "בעלות מלאה"
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T10:06:44.393550+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745542": {
     "company_id": "612",
@@ -9116,18 +8779,11 @@
   },
   "1765226": {
     "company_id": "612",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:46:29.112123+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 11,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T10:10:29.436866+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1768185": {
     "company_id": "612",
@@ -9139,18 +8795,11 @@
   },
   "1742037": {
     "company_id": "613",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:46:21.314997+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T10:07:55.914789+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765717": {
     "company_id": "613",
@@ -9162,18 +8811,11 @@
   },
   "1742576": {
     "company_id": "621",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:46:23.083373+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T10:08:57.765426+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767112": {
     "company_id": "621",
@@ -9265,18 +8907,11 @@
   },
   "1760258": {
     "company_id": "629",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:46:24.881515+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 8,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T10:12:27.174970+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744769": {
     "company_id": "634",
@@ -9328,18 +8963,11 @@
   },
   "1745692": {
     "company_id": "642",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:46:29.096197+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T10:13:54.647413+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1749557": {
     "company_id": "642",
@@ -9391,18 +9019,11 @@
   },
   "1766866": {
     "company_id": "644",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:46:32.482737+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T10:14:06.609230+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744484": {
     "company_id": "654",
@@ -22684,402 +22305,11 @@
   },
   "1764308": {
     "company_id": "2540",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-09T10:41:46.088376+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 54,
-      "done": {
-        "0:0": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:5": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:6": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:7": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:8": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:9": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:10": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:11": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:12": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:13": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:14": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:15": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:16": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:17": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:18": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:19": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:20": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:21": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:22": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:23": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:24": {
-          "report_format": "other",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:25": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:26": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:27": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:28": {
-          "report_format": "other",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:29": {
-          "report_format": "other",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:30": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:31": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:32": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:33": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:34": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:35": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:36": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:37": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:39": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:40": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:41": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:42": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:43": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:44": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:45": {
-          "report_format": "other",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-07-02",
-          "subsidiaries": [
-            {
-              "name": "220 Eleventh LLC",
-              "ownership_pct": null,
-              "parent": "The Moinian Group",
-              "page_reference": 782,
-              "section_title": "PROPERTY TRANSACTION HISTORY",
-              "table_title": null,
-              "note": "Owner of record of the appraised property"
-            }
-          ],
-          "change_events": []
-        },
-        "0:46": {
-          "report_format": "other",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:47": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:48": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:49": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:50": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:51": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:52": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:53": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {
-        "0:38": 1
-      }
-    }
+    "attempts": 1,
+    "at": "2026-10-10T10:05:53.581333+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1741417": {
     "company_id": "2543",
