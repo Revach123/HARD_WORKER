@@ -10968,462 +10968,11 @@
   },
   "1764416": {
     "company_id": "1095",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-10T10:46:49.833458+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 14,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "דלק חברת הדלק הישראלית בע\"מ",
-              "ownership_pct": 19.49,
-              "parent": null,
-              "page_reference": 18,
-              "section_title": "פעילויות נוספות - פעילות בתחום הדלק בישראל",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "InPlay Oil Corp",
-              "ownership_pct": 32.7,
-              "parent": null,
-              "page_reference": 18,
-              "section_title": "פעילויות נוספות - נכסי נפט זניחים של החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Ithaca Energy plc",
-              "ownership_pct": 50.47,
-              "parent": null,
-              "page_reference": 12,
-              "section_title": "תחום האנרגיה בחו\"ל",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "דלק ייזום נכסים בע\"מ",
-              "ownership_pct": 0,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "עדכון פרק א' (תיאור עסקי התאגיד) לדוח התקופתי לשנת 2025 של קבוצת דלק בע\"מ",
-              "table_title": null,
-              "note": "חולקה כדיבידנד בעין ביום 9 ביולי 2026"
-            }
-          ],
-          "change_events": [
-            {
-              "company": "דלק ייזום נכסים בע\"מ",
-              "event_type": "full_disposal",
-              "ownership_pct_before": 100,
-              "ownership_pct_after": 0,
-              "event_date": "2026-07-09",
-              "event_description": "חלוקת מלוא החזקות החברה בדלק ייזום כדבידנד בעין לבעלי מניות החברה",
-              "page_reference": 4,
-              "section_title": "עדכון פרק א' (תיאור עסקי התאגיד) לדוח התקופתי לשנת 2025 של קבוצת דלק בע\"מ"
-            },
-            {
-              "company": "דלק חברת הדלק הישראלית בע\"מ",
-              "event_type": "decrease",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 19.49,
-              "event_date": "2026-07-06",
-              "event_description": "השקעת לאומי פרטנרס בדלק ישראל שהביאה להחזקת החברה בשיעור של כ-19.49%",
-              "page_reference": 18,
-              "section_title": "פעילויות נוספות - פעילות בתחום הדלק בישראל"
-            }
-          ]
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": "2026-08-18",
-          "subsidiaries": [
-            {
-              "name": "InPlay Oil Corp (\"אינפליי\")",
-              "ownership_pct": 32.7,
-              "parent": null,
-              "page_reference": 18,
-              "section_title": "ד. פעילויות נוספות",
-              "table_title": null,
-              "note": "חברה כלולה של החברה"
-            },
-            {
-              "name": "דלק חברת הדלק הישראלית בע\"מ (\"דלק ישראל\")",
-              "ownership_pct": 19.49,
-              "parent": null,
-              "page_reference": 18,
-              "section_title": "ד. פעילויות נוספות",
-              "table_title": null,
-              "note": "נכון למועד אישור הדוח"
-            },
-            {
-              "name": "חברת המועדון",
-              "ownership_pct": 18.0,
-              "parent": null,
-              "page_reference": 28,
-              "section_title": "1.6.2 ערוצי הנפקה והפצה",
-              "table_title": null,
-              "note": "לאחר כניסת ישראייר כשותפה"
-            },
-            {
-              "name": "אייפלנט טכנולוגיות בע\"מ (\"אייפלנט\")",
-              "ownership_pct": 20.0,
-              "parent": null,
-              "page_reference": 32,
-              "section_title": "1.6.6 שיתופי פעולה נוספים",
-              "table_title": null,
-              "note": "החברה מחזיקה ב-20% מהונה המונפק והנפרע"
-            },
-            {
-              "name": "תאגיד שעיסוקו מתן אשראי מבוטח במשכנתא",
-              "ownership_pct": 4.99,
-              "parent": null,
-              "page_reference": 32,
-              "section_title": "1.6.6 שיתופי פעולה נוספים",
-              "table_title": null,
-              "note": "מחזיקה החברה ב-4.99% מהון המניות"
-            }
-          ],
-          "change_events": [
-            {
-              "company": "דלק חברת הדלק הישראלית בע\"מ (\"דלק ישראל\")",
-              "event_type": "decrease",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 19.49,
-              "event_date": "2026-07-06",
-              "event_description": "השקעת לאומי פרטנרס בדלק ישראל שהביאה להקצאת מניות בשיעור 20% ולאחזקת החברה ב-19.49%",
-              "page_reference": 18,
-              "section_title": "ד. פעילויות נוספות"
-            },
-            {
-              "company": "הוט מובייל בע\"מ",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": 0.0,
-              "ownership_pct_after": 100.0,
-              "event_date": "2026-06-30",
-              "event_description": "חתימת הסכם לרכישת מלוא הון המניות על ידי דלק ישראל (40%), קיטסון אינפרא (40%) ולאומי פרטנרס (20%)",
-              "page_reference": 18,
-              "section_title": "ד. פעילויות נוספות"
-            },
-            {
-              "company": "חברת המועדון",
-              "event_type": "decrease",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 18.0,
-              "event_date": "2026-08-06",
-              "event_description": "כניסת ישראייר כשותפה בחברת המועדון ודילול אחזקות הצדדים כך שהחברה מחזיקה ב-18%",
-              "page_reference": 28,
-              "section_title": "1.6.2 ערוצי הנפקה והפצה"
-            },
-            {
-              "company": "בנק אש ישראל בע\"מ (\"בנק אש\")",
-              "event_type": "other",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 0.0,
-              "event_date": "2026-07-17",
-              "event_description": "פקיעת תוקף מזכר ההבנות הלא מחייב לרכישת 100% ממניות הבנק מבלי שנחתמו הסכמים",
-              "page_reference": 18,
-              "section_title": "ג. תחום הפיננסים"
-            },
-            {
-              "company": "חברת הטכנולוגיה אש או אס בע\"מ (\"חברת אש או אס\")",
-              "event_type": "other",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 0.0,
-              "event_date": "2026-07-17",
-              "event_description": "פקיעת תוקף מזכר ההבנות הלא מחייב לרכישת 25% ממניות החברה מבלי שנחתמו הסכמים",
-              "page_reference": 18,
-              "section_title": "ג. תחום הפיננסים"
-            },
-            {
-              "company": "תאגיד שעיסוקו מתן אשראי מבוטח במשכנתא",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": 0.0,
-              "ownership_pct_after": 4.99,
-              "event_date": "2026-07-01",
-              "event_description": "התקשרות בהסכם השקעה וכניסתו לתוקף בחודש יולי 2026 להחזקת 4.99% מהון המניות",
-              "page_reference": 32,
-              "section_title": "1.6.6 שיתופי פעולה נוספים"
-            }
-          ]
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "פרימיום אקספרס",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 66,
-              "section_title": "2.5 פעילות חברות מוחזקות עיקריות",
-              "table_title": "טבלה 18 - פרטים אודות התרומה לרווח הנקי ויתרת ההשקעה ביחס לכל אחת מהחברות המוחזקות העיקריות של החברה",
-              "note": null
-            },
-            {
-              "name": "ישראכרט מימון",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 66,
-              "section_title": "2.5 פעילות חברות מוחזקות עיקריות",
-              "table_title": "טבלה 18 - פרטים אודות התרומה לרווח הנקי ויתרת ההשקעה ביחס לכל אחת מהחברות המוחזקות העיקריות של החברה",
-              "note": null
-            },
-            {
-              "name": "צמרת מימונים בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 66,
-              "section_title": "2.5 פעילות חברות מוחזקות עיקריות",
-              "table_title": "טבלה 18 - פרטים אודות התרומה לרווח הנקי ויתרת ההשקעה ביחס לכל אחת מהחברות המוחזקות העיקריות של החברה",
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "פרימיום אקספרס",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 52,
-              "section_title": "פעילות חברות מוחזקות עיקריות",
-              "table_title": "פרטים אודות התרומה לרווח הנקי ויתרת ההשקעה ביחס לכל אחת מהחברות המוחזקות העיקריות של החברה",
-              "note": null
-            },
-            {
-              "name": "ישראכרט מימון",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 52,
-              "section_title": "פעילות חברות מוחזקות עיקריות",
-              "table_title": "פרטים אודות התרומה לרווח הנקי ויתרת ההשקעה ביחס לכל אחת מהחברות המוחזקות העיקריות של החברה",
-              "note": null
-            },
-            {
-              "name": "צמרת מימונים בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 52,
-              "section_title": "פעילות חברות מוחזקות עיקריות",
-              "table_title": "פרטים אודות התרומה לרווח הנקי ויתרת ההשקעה ביחס לכל אחת מהחברות המוחזקות העיקריות של החברה",
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "ישראכרט בע\"מ",
-              "ownership_pct": 40.45,
-              "parent": null,
-              "page_reference": 77,
-              "section_title": "הפעילות הפיננסית",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "דלק ישראל",
-              "ownership_pct": 19,
-              "parent": null,
-              "page_reference": 75,
-              "section_title": "1. תאור החברה וסביבתה העסקית",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "דלק ישראל נכסים",
-              "ownership_pct": 19,
-              "parent": null,
-              "page_reference": 75,
-              "section_title": "1. תאור החברה וסביבתה העסקית",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מהדרין בע\"מ",
-              "ownership_pct": 61,
-              "parent": null,
-              "page_reference": 75,
-              "section_title": "1. תאור החברה וסביבתה העסקית",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Ithaca Energy PLC",
-              "ownership_pct": 50.47,
-              "parent": null,
-              "page_reference": 77,
-              "section_title": "תחום הנפט והגז באזור הים הצפוני",
-              "table_title": null,
-              "note": "בשרשור"
-            },
-            {
-              "name": "אינפליי",
-              "ownership_pct": 32.8,
-              "parent": null,
-              "page_reference": 78,
-              "section_title": "אינפליי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "דלק תמלוג על לוויתן",
-              "ownership_pct": 100,
-              "parent": "דלק ייזום נכסים בע\"מ",
-              "page_reference": 79,
-              "section_title": "חלוקת מניות דלק ייזום נכסים בע\"מ כדיבידנד בעין",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:5": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:6": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "Ithaca Energy Holdings Plc. (איתקה)",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 122,
-              "section_title": "באור 3 - השקעות בחברות ושותפויות מוחזקות",
-              "table_title": null,
-              "note": "הפסיקה לאחד החל מיום 30 בספטמבר 2025"
-            },
-            {
-              "name": "ישראכרט בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 120,
-              "section_title": "באור 1 - כללי",
-              "table_title": null,
-              "note": "הושלמה רכישת גרעין שליטה ביולי 2025"
-            }
-          ],
-          "change_events": []
-        },
-        "0:7": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [
-            {
-              "name": "דלק ייזום נכסים בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 126,
-              "section_title": "באור 3 - השקעות בחברות ושותפויות מוחזקות",
-              "table_title": null,
-              "note": "חברה ריקה בבעלות מלאה אשר חולקה כדיבידנד בעין"
-            },
-            {
-              "name": "תמלוג על לוויתן בע\"מ",
-              "ownership_pct": 100,
-              "parent": "דלק ייזום נכסים בע\"מ",
-              "page_reference": 126,
-              "section_title": "באור 3 - השקעות בחברות ושותפויות מוחזקות",
-              "table_title": null,
-              "note": "הוחזקה במלואה והועברה לדלק ייזום במסגרת שינוי מבני"
-            },
-            {
-              "name": "דלק מערכות אנרגיה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 126,
-              "section_title": "באור 3 - השקעות בחברות ושותפויות מוחזקות",
-              "table_title": null,
-              "note": "חברה בת בבעלות מלאה"
-            },
-            {
-              "name": "InPlay Oil Corp",
-              "ownership_pct": 32.7,
-              "parent": null,
-              "page_reference": 127,
-              "section_title": "באור 3 - השקעות בחברות ושותפויות מוחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אייפלנט טכנולוגיות בע\"מ",
-              "ownership_pct": 20,
-              "parent": "ישראכרט בע\"מ",
-              "page_reference": 126,
-              "section_title": "באור 3 - השקעות בחברות ושותפויות מוחזקות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ביימי טכנולוגיות בע\"מ",
-              "ownership_pct": 64.85,
-              "parent": "אייפלנט טכנולוגיות בע\"מ",
-              "page_reference": 126,
-              "section_title": "באור 3 - השקעות בחברות ושותפויות מוחזקות",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:8": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:9": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:10": {
-          "report_format": "other",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-06-30",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:11": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T10:50:52.907692+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764497": {
     "company_id": "1095",
@@ -11707,18 +11256,11 @@
   },
   "1761589": {
     "company_id": "1153",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:47:55.390109+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T10:48:22.698308+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742826": {
     "company_id": "1154",
@@ -11810,18 +11352,11 @@
   },
   "1766421": {
     "company_id": "1187",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:47:59.268275+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 6,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T10:49:28.639487+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744429": {
     "company_id": "1193",
@@ -11841,18 +11376,11 @@
   },
   "1746208": {
     "company_id": "1193",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:48:00.053019+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T10:49:54.690582+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764226": {
     "company_id": "1194",
@@ -11864,18 +11392,11 @@
   },
   "1764667": {
     "company_id": "1193",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:48:11.970888+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T10:50:50.295129+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745712": {
     "company_id": "1209",
@@ -11887,18 +11408,11 @@
   },
   "1765699": {
     "company_id": "1209",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:48:04.041848+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T10:51:45.120000+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742816": {
     "company_id": "1212",
@@ -11926,18 +11440,11 @@
   },
   "1767216": {
     "company_id": "1212",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:48:04.429932+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T10:52:14.170945+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763391": {
     "company_id": "1216",
@@ -11973,18 +11480,11 @@
   },
   "1741711": {
     "company_id": "1221",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:48:07.767840+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T10:51:54.131650+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1762316": {
     "company_id": "1221",
@@ -12043,18 +11543,11 @@
   },
   "1766205": {
     "company_id": "1232",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:48:09.105920+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T10:54:45.401428+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766208": {
     "company_id": "1232",
@@ -12090,18 +11583,11 @@
   },
   "1761528": {
     "company_id": "1238",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:48:10.949434+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T10:52:21.952306+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1762218": {
     "company_id": "1238",
@@ -12124,13 +11610,92 @@
     "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-10-09T11:48:16.662400+00:00",
+    "at": "2026-10-10T10:53:51.621864+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 4,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "ישראייר תעופה ותיירות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 3,
+              "section_title": "1. תיאור תמציתי של עסקי החברה והסביבה העסקית בה היא פועלת",
+              "table_title": null,
+              "note": "חברת בת בבעלות מלאה"
+            },
+            {
+              "name": "סקידיל",
+              "ownership_pct": null,
+              "parent": "ישראייר תעופה ותיירות בע\"מ",
+              "page_reference": 4,
+              "section_title": "1. תיאור תמציתי של עסקי החברה והסביבה העסקית בה היא פועלת",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "בשביל הזהב תיירות בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 19,
+              "section_title": "2.4 תוצאות מגזרי פעילות",
+              "table_title": null,
+              "note": "חלק מקבוצת מילניום, מטופלת לפי שיטת השווי המאזני"
+            },
+            {
+              "name": "קרוז תור בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 19,
+              "section_title": "2.4 תוצאות מגזרי פעילות",
+              "table_title": null,
+              "note": "חלק מקבוצת מילניום, מטופלת לפי שיטת השווי המאזני"
+            },
+            {
+              "name": "המלונות ביוון",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 19,
+              "section_title": "2.4 תוצאות מגזרי פעילות",
+              "table_title": null,
+              "note": "מטופלות לפי שיטת השווי המאזני"
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "חברת המועדון",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 10,
+              "event_date": "2026-05-28",
+              "event_description": "התקשרות בהסכם לרכישת 10% מהון המניות הרגילות של חברת המועדון במסגרת הסכם מועדון עם רשת חנויות רמי לוי שיווק השקמה (2006) בע\"מ וישראכרט בע\"מ",
+              "page_reference": 46,
+              "section_title": "אירועים מהותיים שחלו בקבוצה במהלך תקופת הדוח ולאחריו"
+            }
+          ]
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
