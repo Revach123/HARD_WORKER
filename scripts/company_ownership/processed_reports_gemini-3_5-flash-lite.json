@@ -14898,64 +14898,11 @@
   },
   "1743160": {
     "company_id": "1679",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-10T11:32:44.764776+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {
-        "0:0": {
-          "report_format": "other",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "שניב נדל\"ן בע\"מ",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 19,
-              "section_title": "עיקרי הפעילות 2026 - עד מועד פרסום הדו\"ח",
-              "table_title": null,
-              "note": "רכישת 51% מהון המניות, הושלמה ביום 30/3/26"
-            }
-          ],
-          "change_events": [
-            {
-              "company": "שניב נדל\"ן בע\"מ",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 51,
-              "event_date": "2026-03-30",
-              "event_description": "רכישת 51% מהון המניות של שניב נדל\"ן בע\"מ",
-              "page_reference": 19,
-              "section_title": "עיקרי הפעילות 2026 - עד מועד פרסום הדו\"ח"
-            }
-          ]
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "שניב נדל\"ן בע\"מ",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 19,
-              "section_title": "רכישת נכסים",
-              "table_title": null,
-              "note": "העסקה הושלמה ביום 30/3/26"
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T11:32:56.683027+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1762055": {
     "company_id": "1679",
@@ -14967,18 +14914,11 @@
   },
   "1745093": {
     "company_id": "1680",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:50:30.530806+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T11:34:21.359079+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764623": {
     "company_id": "1680",
@@ -14990,18 +14930,11 @@
   },
   "1742390": {
     "company_id": "1682",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:50:35.075750+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 6,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T11:35:25.572060+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742393": {
     "company_id": "1682",
@@ -15204,32 +15137,124 @@
   },
   "1767588": {
     "company_id": "1693",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:50:33.187872+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T11:34:41.166180+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743441": {
     "company_id": "1696",
     "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-10-09T11:50:36.923193+00:00",
+    "at": "2026-10-10T11:35:54.556354+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 4,
-      "done": {},
-      "attempts": {}
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "טופ קפיטל",
+              "ownership_pct": 52.17,
+              "parent": null,
+              "page_reference": 2,
+              "section_title": "1. התאגיד וסביבתו העסקית",
+              "table_title": null,
+              "note": "לרבות בדילול מלא"
+            },
+            {
+              "name": "פתרונות ליזם בע\"מ",
+              "ownership_pct": null,
+              "parent": "טופ קפיטל",
+              "page_reference": 2,
+              "section_title": "1. התאגיד וסביבתו העסקית",
+              "table_title": null,
+              "note": "מוחזקת על ידי טופ קפיטל"
+            },
+            {
+              "name": "ביזי פיננסים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "2. המצב הכספי",
+              "table_title": null,
+              "note": "חברה כלולה"
+            },
+            {
+              "name": "וילי מימון לרכב בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 6,
+              "section_title": "2. המצב הכספי",
+              "table_title": null,
+              "note": "חברה כלולה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "טופ קפיטל - פתרונות ליזם בע\"מ",
+              "ownership_pct": 52.17,
+              "parent": null,
+              "page_reference": 32,
+              "section_title": "ביאור 1 - כ ל ל י",
+              "table_title": null,
+              "note": "לרבות בדילול מלא"
+            }
+          ],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "לידר טופ קפיטל מימון וייעוץ בע\"מ",
+              "ownership_pct": 52.17,
+              "parent": null,
+              "page_reference": 54,
+              "section_title": "ביאור 1 - אופן עריכת המידע הכספי הנפרד המובא לפי תקנה 38ד' לתקנות ניירות ערך (דוחות תקופתיים ומיידיים), התש\"ל-1970",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אורשי ש.ל. נכסים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 54,
+              "section_title": "ביאור 1 - אופן עריכת המידע הכספי הנפרד המובא לפי תקנה 38ד' לתקנות ניירות ערך (דוחות תקופתיים ומיידיים), התש\"ל-1970",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "אורשי רכבים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 54,
+              "section_title": "ביאור 1 - אופן עריכת המידע הכספי הנפרד המובא לפי תקנה 38ד' לתקנות ניירות ערך (דוחות תקופתיים ומיידיים), התש\"ל-1970",
+              "table_title": null,
+              "note": "חברת בת"
+            }
+          ],
+          "change_events": []
+        }
+      },
+      "attempts": {
+        "0:2": 1
+      }
     }
   },
   "1765029": {
@@ -15274,18 +15299,11 @@
   },
   "1742667": {
     "company_id": "1704",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:50:37.205327+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T11:36:34.586128+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766712": {
     "company_id": "1704",
@@ -15337,33 +15355,19 @@
   },
   "1764685": {
     "company_id": "1706",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:50:38.480446+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T11:36:15.827839+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745698": {
     "company_id": "1722",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:50:59.508801+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 7,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T11:41:54.785528+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1767756": {
     "company_id": "1722",
@@ -15383,18 +15387,11 @@
   },
   "1763829": {
     "company_id": "1724",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:50:38.706065+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T11:40:39.373321+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745009": {
     "company_id": "1728",
@@ -15406,18 +15403,11 @@
   },
   "1767278": {
     "company_id": "1728",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:50:44.105320+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T11:42:48.673253+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745729": {
     "company_id": "1729",
@@ -15472,13 +15462,21 @@
     "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-10-09T11:50:46.579786+00:00",
+    "at": "2026-10-10T11:42:16.022538+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 2,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
