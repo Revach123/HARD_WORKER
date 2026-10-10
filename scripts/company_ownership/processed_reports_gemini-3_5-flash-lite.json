@@ -14060,18 +14060,11 @@
   },
   "1766068": {
     "company_id": "1621",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:50:08.560931+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T11:16:25.945561+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745241": {
     "company_id": "1622",
@@ -14190,14 +14183,309 @@
     "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-10-09T11:50:10.009467+00:00",
+    "at": "2026-10-10T11:28:38.730003+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 6,
-      "done": {},
-      "attempts": {}
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "Basin Ranch",
+              "event_type": "increase",
+              "ownership_pct_before": null,
+              "ownership_pct_after": null,
+              "event_date": "2026-02-01",
+              "event_description": "Acquisition of the remaining rights (30%) in the Basin Ranch",
+              "page_reference": 8,
+              "section_title": "1. Executive Summary - D. Main developments in the first quarter of 2026 and thereafter"
+            },
+            {
+              "company": "Shore power plant",
+              "event_type": "increase",
+              "ownership_pct_before": null,
+              "ownership_pct_after": null,
+              "event_date": "2026-01-01",
+              "event_description": "Acquisition of the remaining rights (11%) in the Shore power plant",
+              "page_reference": 9,
+              "section_title": "1. Executive Summary - D. Main developments in the first quarter of 2026 and thereafter (Cont.)"
+            },
+            {
+              "company": "Maryland power plant",
+              "event_type": "increase",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 100,
+              "event_date": "2026-05-01",
+              "event_description": "Acquisition of the remaining interest (25%) in the Maryland power plant",
+              "page_reference": 9,
+              "section_title": "1. Executive Summary - D. Main developments in the first quarter of 2026 and thereafter (Cont.)"
+            },
+            {
+              "company": "Three Rivers power plant",
+              "event_type": "full_disposal",
+              "ownership_pct_before": 10,
+              "ownership_pct_after": 0,
+              "event_date": "2026-05-01",
+              "event_description": "Sale of the rights (10%) in the Three Rivers power plant",
+              "page_reference": 9,
+              "section_title": "1. Executive Summary - D. Main developments in the first quarter of 2026 and thereafter (Cont.)"
+            }
+          ]
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "Fairview",
+              "ownership_pct": 25,
+              "parent": "CPV Group",
+              "page_reference": 36,
+              "section_title": "D. Analysis of the change in EBITDA, the generation data, energy hedges and capacity – Energy Transition segment in the U.S.",
+              "table_title": "Analysis of the Group’s share in the proportionate EBITDA, FFO and net cash flows after service of project debt of associated companies by project in the Energy Transition segment",
+              "note": null
+            },
+            {
+              "name": "Towantic",
+              "ownership_pct": 26,
+              "parent": "CPV Group",
+              "page_reference": 36,
+              "section_title": "D. Analysis of the change in EBITDA, the generation data, energy hedges and capacity – Energy Transition segment in the U.S.",
+              "table_title": "Analysis of the Group’s share in the proportionate EBITDA, FFO and net cash flows after service of project debt of associated companies by project in the Energy Transition segment",
+              "note": null
+            },
+            {
+              "name": "Maryland",
+              "ownership_pct": 75,
+              "parent": "CPV Group",
+              "page_reference": 36,
+              "section_title": "D. Analysis of the change in EBITDA, the generation data, energy hedges and capacity – Energy Transition segment in the U.S.",
+              "table_title": "Analysis of the Group’s share in the proportionate EBITDA, FFO and net cash flows after service of project debt of associated companies by project in the Energy Transition segment",
+              "note": "Holdings increased to 100% in May 2026"
+            },
+            {
+              "name": "Valley",
+              "ownership_pct": 50,
+              "parent": "CPV Group",
+              "page_reference": 36,
+              "section_title": "D. Analysis of the change in EBITDA, the generation data, energy hedges and capacity – Energy Transition segment in the U.S.",
+              "table_title": "Analysis of the Group’s share in the proportionate EBITDA, FFO and net cash flows after service of project debt of associated companies by project in the Energy Transition segment",
+              "note": null
+            },
+            {
+              "name": "Three Rivers",
+              "ownership_pct": 10,
+              "parent": "CPV Group",
+              "page_reference": 36,
+              "section_title": "D. Analysis of the change in EBITDA, the generation data, energy hedges and capacity – Energy Transition segment in the U.S.",
+              "table_title": "Analysis of the Group’s share in the proportionate EBITDA, FFO and net cash flows after service of project debt of associated companies by project in the Energy Transition segment",
+              "note": null
+            },
+            {
+              "name": "Shore",
+              "ownership_pct": 100,
+              "parent": "CPV Group",
+              "page_reference": 36,
+              "section_title": "D. Analysis of the change in EBITDA, the generation data, energy hedges and capacity – Energy Transition segment in the U.S.",
+              "table_title": "Analysis of the Group’s share in the proportionate EBITDA, FFO and net cash flows after service of project debt of associated companies by project in the Energy Transition segment",
+              "note": "Holdings increased from 68% to 100%"
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "Fairview",
+              "ownership_pct": 25,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "4. Analysis of the results of operations for the Three Months Ended March 31, 2026 (in millions of dollars) (Cont.)",
+              "table_title": "Analysis of the Group’s share in the proportionate EBITDA, FFO and net cash flows after service of project debt of associated companies by project in the Energy Transition segment",
+              "note": null
+            },
+            {
+              "name": "Towantic",
+              "ownership_pct": 26,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "4. Analysis of the results of operations for the Three Months Ended March 31, 2026 (in millions of dollars) (Cont.)",
+              "table_title": "Analysis of the Group’s share in the proportionate EBITDA, FFO and net cash flows after service of project debt of associated companies by project in the Energy Transition segment",
+              "note": null
+            },
+            {
+              "name": "Maryland",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "4. Analysis of the results of operations for the Three Months Ended March 31, 2026 (in millions of dollars) (Cont.)",
+              "table_title": "Analysis of the Group’s share in the proportionate EBITDA, FFO and net cash flows after service of project debt of associated companies by project in the Energy Transition segment",
+              "note": null
+            },
+            {
+              "name": "Valley",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "4. Analysis of the results of operations for the Three Months Ended March 31, 2026 (in millions of dollars) (Cont.)",
+              "table_title": "Analysis of the Group’s share in the proportionate EBITDA, FFO and net cash flows after service of project debt of associated companies by project in the Energy Transition segment",
+              "note": null
+            },
+            {
+              "name": "Three Rivers",
+              "ownership_pct": 10,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "4. Analysis of the results of operations for the Three Months Ended March 31, 2026 (in millions of dollars) (Cont.)",
+              "table_title": "Analysis of the Group’s share in the proportionate EBITDA, FFO and net cash flows after service of project debt of associated companies by project in the Energy Transition segment",
+              "note": null
+            },
+            {
+              "name": "Shore",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "4. Analysis of the results of operations for the Three Months Ended March 31, 2026 (in millions of dollars) (Cont.)",
+              "table_title": "Analysis of the Group’s share in the proportionate EBITDA, FFO and net cash flows after service of project debt of associated companies by project in the Energy Transition segment",
+              "note": null
+            },
+            {
+              "name": "OPC Sorek 2 Ltd. (“Sorek 2”)",
+              "ownership_pct": 100,
+              "parent": "OPC Israel",
+              "page_reference": 42,
+              "section_title": "5. Projects Under Construction and Development Projects",
+              "table_title": "Main details with reference to construction projects (the data presented in the table below is in respect of 100% for each project):",
+              "note": null
+            },
+            {
+              "name": "CPV Basin Ranch Holdings, LLC (“Basin Ranch”)",
+              "ownership_pct": 100,
+              "parent": "CPV Group",
+              "page_reference": 48,
+              "section_title": "5. Projects Under Construction and Development Projects",
+              "table_title": "Main details regarding the Basin Ranch power plant that is in the construction stage (which is held as at the approval date of the report at the rate of 100% by the CPV Group (1))",
+              "note": null
+            },
+            {
+              "name": "Shay",
+              "ownership_pct": 70,
+              "parent": "CPV Group",
+              "page_reference": 49,
+              "section_title": "5. Projects Under Construction and Development Projects",
+              "table_title": "Set forth below is a summary of the natural gas project pipeline with carbon capture potential in the U.S., as at the approval date of the report:",
+              "note": null
+            },
+            {
+              "name": "Walker",
+              "ownership_pct": 70,
+              "parent": "CPV Group",
+              "page_reference": 49,
+              "section_title": "5. Projects Under Construction and Development Projects",
+              "table_title": "Set forth below is a summary of the natural gas project pipeline with carbon capture potential in the U.S., as at the approval date of the report:",
+              "note": null
+            },
+            {
+              "name": "CPV Renewable",
+              "ownership_pct": 66.7,
+              "parent": "CPV Group",
+              "page_reference": 51,
+              "section_title": "5. Projects Under Construction and Development Projects",
+              "table_title": null,
+              "note": "Holding rate by CPV Group"
+            },
+            {
+              "name": "CPV Rogues Wind, LLC (“Rogues”)",
+              "ownership_pct": 100,
+              "parent": "CPV Renewable",
+              "page_reference": 51,
+              "section_title": "5. Projects Under Construction and Development Projects",
+              "table_title": "Main details regarding a project under construction using wind technology (the data presented in the table below are in respect of 100% of each project)",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "Basin Ranch project",
+              "event_type": "increase",
+              "ownership_pct_before": 70,
+              "ownership_pct_after": 100,
+              "event_date": null,
+              "event_description": "Acquisition of the remaining 30% stake in the Basin Ranch project, increasing ownership from 70% to 100% and resulting in full consolidation.",
+              "page_reference": 88,
+              "section_title": "NOTE 6 - SUBSIDIARIES"
+            }
+          ]
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "Basin Ranch project",
+              "event_type": "increase",
+              "ownership_pct_before": 70,
+              "ownership_pct_after": 100,
+              "event_date": null,
+              "event_description": "Acquisition of the remaining 30% stake in the Basin Ranch project, bringing total ownership to 100%.",
+              "page_reference": 88,
+              "section_title": "NOTE 6 - SUBSIDIARIES"
+            },
+            {
+              "company": "Shore power plant",
+              "event_type": "increase",
+              "ownership_pct_before": 89,
+              "ownership_pct_after": 100,
+              "event_date": null,
+              "event_description": "Acquisition of the remaining approximately 11% interests in the Shore power plant, bringing total ownership to 100%.",
+              "page_reference": 89,
+              "section_title": "NOTE 6 - SUBSIDIARIES"
+            },
+            {
+              "company": "Maryland power plant",
+              "event_type": "increase",
+              "ownership_pct_before": 75,
+              "ownership_pct_after": 100,
+              "event_date": "2026-05-12",
+              "event_description": "Acquisition of the remaining 25% ownership interests in the Maryland power plant, bringing total ownership to 100%.",
+              "page_reference": 90,
+              "section_title": "NOTE 6 - SUBSIDIARIES"
+            },
+            {
+              "company": "Three Rivers power plant",
+              "event_type": "full_disposal",
+              "ownership_pct_before": 10,
+              "ownership_pct_after": 0,
+              "event_date": "2026-05-12",
+              "event_description": "Disposal of 10% ownership interests in the Three Rivers power plant as consideration for the Maryland power plant acquisition.",
+              "page_reference": 90,
+              "section_title": "NOTE 6 - SUBSIDIARIES"
+            }
+          ]
+        }
+      },
+      "attempts": {
+        "0:3": 1
+      }
     }
   },
   "1745974": {
@@ -14210,33 +14498,19 @@
   },
   "1763100": {
     "company_id": "1635",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:50:12.323555+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 8,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T11:29:33.044193+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744268": {
     "company_id": "1636",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:50:17.177216+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T11:30:18.022871+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765656": {
     "company_id": "1636",
@@ -14248,18 +14522,11 @@
   },
   "1766798": {
     "company_id": "1636",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:50:20.120281+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T11:30:42.689793+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1766808": {
     "company_id": "1636",
@@ -14447,33 +14714,19 @@
   },
   "1745723": {
     "company_id": "1662",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:50:21.765815+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 6,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T11:31:48.886934+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743250": {
     "company_id": "1664",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:50:22.113020+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T11:31:37.338372+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765651": {
     "company_id": "1664",
@@ -14549,18 +14802,11 @@
   },
   "1763421": {
     "company_id": "1672",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:50:25.932861+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T11:32:16.163243+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1739280": {
     "company_id": "1675",
@@ -14572,18 +14818,11 @@
   },
   "1742451": {
     "company_id": "1675",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:50:22.379443+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T11:32:53.398226+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742522": {
     "company_id": "1675",
@@ -14662,13 +14901,59 @@
     "status": "partial",
     "kind": "change",
     "attempts": 1,
-    "at": "2026-10-09T11:50:30.661224+00:00",
+    "at": "2026-10-10T11:32:44.764776+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 3,
-      "done": {},
+      "done": {
+        "0:0": {
+          "report_format": "other",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "שניב נדל\"ן בע\"מ",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 19,
+              "section_title": "עיקרי הפעילות 2026 - עד מועד פרסום הדו\"ח",
+              "table_title": null,
+              "note": "רכישת 51% מהון המניות, הושלמה ביום 30/3/26"
+            }
+          ],
+          "change_events": [
+            {
+              "company": "שניב נדל\"ן בע\"מ",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 51,
+              "event_date": "2026-03-30",
+              "event_description": "רכישת 51% מהון המניות של שניב נדל\"ן בע\"מ",
+              "page_reference": 19,
+              "section_title": "עיקרי הפעילות 2026 - עד מועד פרסום הדו\"ח"
+            }
+          ]
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "שניב נדל\"ן בע\"מ",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 19,
+              "section_title": "רכישת נכסים",
+              "table_title": null,
+              "note": "העסקה הושלמה ביום 30/3/26"
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {}
     }
   },
@@ -22303,18 +22588,11 @@
   },
   "1769585": {
     "company_id": "1635",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 1,
-    "at": "2026-10-09T11:50:12.528720+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 2,
+    "at": "2026-10-10T11:28:59.170881+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1769608": {
     "company_id": "1762",
