@@ -10175,171 +10175,11 @@
   },
   "1744286": {
     "company_id": "1019",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 2,
-    "at": "2026-10-11T10:31:26.735604+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "אילקס ביוטק בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "דו\"ח הדירקטוריון על מצב ענייני התאגיד",
-              "table_title": null,
-              "note": "חברה מאוחדת"
-            },
-            {
-              "name": "Ilex South Africa (PTY) Ltd.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "דו\"ח הדירקטוריון על מצב ענייני התאגיד",
-              "table_title": null,
-              "note": "חברה מאוחדת"
-            },
-            {
-              "name": "א.מ.ג אמריקן מדיקל ג'נטיקס בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "דו\"ח הדירקטוריון על מצב ענייני התאגיד",
-              "table_title": null,
-              "note": "חברה מאוחדת"
-            },
-            {
-              "name": "מדטכניקה",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "שינויים ואירועים בתקופת הדוח ולאחריו",
-              "table_title": null,
-              "note": "חברה בת"
-            },
-            {
-              "name": "Starget Inc.",
-              "ownership_pct": 39.64,
-              "parent": null,
-              "page_reference": 6,
-              "section_title": "שינויים ואירועים בתקופת הדוח ולאחריו",
-              "table_title": null,
-              "note": "כ-32.75% בדילול מלא"
-            }
-          ],
-          "change_events": [
-            {
-              "company": "Starget Inc.",
-              "event_type": "increase",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 39.64,
-              "event_date": null,
-              "event_description": "העמקת השקעה בסבב גיוס והמרת השקעת SAFE למניות, הגעה להחזקה של כ-39.64%",
-              "page_reference": 6,
-              "section_title": "שינויים ואירועים בתקופת הדוח ולאחריו"
-            }
-          ]
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "אילקס ביוטק בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 30,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Ilex Biotech B.V.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 30,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Ilex South Africa (PTY) Ltd.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 30,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "א.מ.ג אמריקן מדיקל ג'נטיקס בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 30,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": "מחזיקה במלוא מניותיה"
-            },
-            {
-              "name": "מדטכניקה בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 30,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": "חברה פרטית בבעלות מלאה של החברה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "Starget Pharma Inc.",
-              "ownership_pct": 39.64,
-              "parent": null,
-              "page_reference": 39,
-              "section_title": "ביאור 10 - השקעות לפי שיטת השווי המאזני",
-              "table_title": null,
-              "note": "כ-32.75% מהון המניות בדילול מלא"
-            },
-            {
-              "name": "Starget Pharma Ltd.",
-              "ownership_pct": 100,
-              "parent": "Starget Pharma Inc.",
-              "page_reference": 50,
-              "section_title": "NOTE 1 - GENERAL:",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "אמברק חדשנות רפואית שותפות מוגבלת",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 40,
-              "section_title": "ביאור 10 - השקעות לפי שיטת השווי המאזני (המשך)",
-              "table_title": null,
-              "note": "הוקמה בחלקים שווים"
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 3,
+    "at": "2026-10-11T10:31:38.456280+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743085": {
     "company_id": "1025",
@@ -10439,18 +10279,11 @@
   },
   "1745716": {
     "company_id": "1036",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 2,
-    "at": "2026-10-10T11:53:28.872784+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 3,
+    "at": "2026-10-11T10:32:24.794413+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743815": {
     "company_id": "1039",
@@ -11638,18 +11471,11 @@
   },
   "1764184": {
     "company_id": "1226",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 2,
-    "at": "2026-10-10T11:53:23.391148+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 3,
+    "at": "2026-10-11T10:32:03.801389+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1743904": {
     "company_id": "1232",
@@ -11765,18 +11591,11 @@
   },
   "1763058": {
     "company_id": "1247",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 2,
-    "at": "2026-10-10T11:53:23.520873+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 3,
+    "at": "2026-10-11T10:32:26.074189+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1740984": {
     "company_id": "1264",
@@ -12036,18 +11855,11 @@
   },
   "1742411": {
     "company_id": "1310",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 2,
-    "at": "2026-10-10T11:53:23.678147+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 3,
+    "at": "2026-10-11T10:32:42.860206+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1742415": {
     "company_id": "1310",
@@ -13131,18 +12943,11 @@
   },
   "1763791": {
     "company_id": "1473",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 2,
-    "at": "2026-10-10T11:53:23.819825+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 3,
+    "at": "2026-10-11T10:33:33.904043+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1763811": {
     "company_id": "1473",
@@ -14825,18 +14630,11 @@
   },
   "1764286": {
     "company_id": "1692",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 2,
-    "at": "2026-10-10T11:53:26.513705+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 3,
+    "at": "2026-10-11T10:33:47.480853+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1764295": {
     "company_id": "1692",
@@ -16000,18 +15798,11 @@
   },
   "1740333": {
     "company_id": "1828",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 2,
-    "at": "2026-10-10T11:53:26.649178+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 3,
+    "at": "2026-10-11T10:34:22.838813+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1740329": {
     "company_id": "1828",
@@ -16567,18 +16358,11 @@
   },
   "1765078": {
     "company_id": "1867",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 2,
-    "at": "2026-10-10T11:53:26.819837+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 3,
+    "at": "2026-10-11T10:34:49.306900+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1765287": {
     "company_id": "1868",
@@ -18158,18 +17942,11 @@
   },
   "1744445": {
     "company_id": "2072",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 2,
-    "at": "2026-10-10T11:53:26.997322+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 3,
+    "at": "2026-10-11T10:34:48.832010+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1744456": {
     "company_id": "2072",
