@@ -1962,5 +1962,27 @@
     "attempts": 1,
     "at": "2026-10-19T08:18:00.157156+00:00",
     "model": "gemini-3.6-flash"
+  },
+  "1729842": {
+    "company_id": "2458",
+    "status": "failed",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-10-20T08:13:06.460809+00:00"
+  },
+  "1728543": {
+    "company_id": "1810",
+    "status": "failed",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-10-20T08:14:47.253228+00:00"
+  },
+  "1729323": {
+    "company_id": "138",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-10-20T08:18:31.123824+00:00",
+    "model": "gemini-3.6-flash"
   }
 }
