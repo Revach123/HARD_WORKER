@@ -2196,5 +2196,27 @@
     "kind": "snapshot",
     "attempts": 1,
     "at": "2026-10-26T09:26:39.062965+00:00"
+  },
+  "1732120": {
+    "company_id": "1072",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-10-27T09:07:22.455075+00:00",
+    "model": "gemini-3.6-flash"
+  },
+  "1732578": {
+    "company_id": "121",
+    "status": "failed",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-10-27T09:17:39.171627+00:00"
+  },
+  "1730944": {
+    "company_id": "1974",
+    "status": "failed",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-10-27T09:21:52.072219+00:00"
   }
 }
