@@ -1,0 +1,12 @@
+[k79] formId=ק79: רשימת ק79: HTTP 400
+[k79] formId=ק079: רשימת ק079: HTTP 400
+Traceback (most recent call last):
+  File "/home/runner/work/HARD_WORKER/HARD_WORKER/scripts/funds_info/creation_limits.py", line 320, in <module>
+    discover(s) if "--discover" in sys.argv else build(s)
+    ^^^^^^^^^^^
+  File "/home/runner/work/HARD_WORKER/HARD_WORKER/scripts/funds_info/creation_limits.py", line 242, in discover
+    form_id, reports = resolve_form_list(session)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/HARD_WORKER/HARD_WORKER/scripts/funds_info/creation_limits.py", line 128, in resolve_form_list
+    raise RuntimeError("לא נמצאו דוחות ק79 באף אחד מהכתיבים: " + ", ".join(FORM_IDS))
+RuntimeError: לא נמצאו דוחות ק79 באף אחד מהכתיבים: ק79, ק079
