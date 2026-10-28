@@ -1,0 +1,92 @@
+# .github/workflows/us-proxy-gemini.yml
+#
+# חילוץ בעלות מ-DEF 14A אמריקאי באמצעות Gemini (scripts/us_proxy/extract_us_proxy.py).
+# קלט: scripts/us_proxy/queue.json.gz (נוצר ע"י ריפו Revach - חברות שהפרסר הדטרמיניסטי לא אימת).
+# פלט (נשמר ב-git, כמו שאר ה-pipelines כאן): results_us_proxy_<model>.jsonl + processed_us_proxy_<model>.json.
+#
+# מכסה: אותם מפתחות GEMINI_API_KEY* ואותה עצירה אוטומטית (RPD) כמו חילוץ החברות הישראליות -
+# נעצר בעדינות כשהמכסה נגמרת וההרצה הבאה ממשיכה מאותה נקודה (processed מתמיד ב-git).
+# שים לב: מכסת RPD היא per (מפתח, מודל) - ריצה על מודל שהריצות הישראליות משתמשות בו צורכת מאותה מכסה.
+#
+# הפעלה: workflow_dispatch בלבד (כמו ה-pipeline הישראלי; schedule מובנה של GitHub מתעכב כאן שעות).
+# תזמון מוקדם בבוקר (מיד אחרי איפוס המכסה) - ע"י cron-job.org או ע"י הפעלה ידנית/אוטומטית מבחוץ.
+
+name: US proxy ownership - Gemini extraction (resumable)
+
+permissions:
+  contents: write
+
+# קבוצה נפרדת מזו של החילוץ הישראלי (subsidiary-extraction-main): הקבצים שונים, ה-push עושה rebase.
+concurrency:
+  group: us-proxy-gemini
+  cancel-in-progress: false
+
+on:
+  workflow_dispatch:
+    inputs:
+      model:
+        description: "איזה מודל Gemini (מכסה ו-processed נפרדים לכל מודל)"
+        required: false
+        type: choice
+        options:
+          - gemini-3.5-flash-lite
+          - gemini-3.6-flash
+        default: gemini-3.5-flash-lite
+      limit:
+        description: "הגבלת מספר חברות (ריק/0 = הכל, עד המכסה)"
+        required: false
+        default: "0"
+      workers:
+        description: "מקביליות (2 מספיק; ה-RPM מוגן לכל מפתח)"
+        required: false
+        default: "2"
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests --break-system-packages
+
+      - name: Check queue exists
+        run: |
+          test -f scripts/us_proxy/queue.json.gz || { echo "::error::scripts/us_proxy/queue.json.gz חסר"; exit 1; }
+          ls -la scripts/us_proxy/
+
+      - name: Run Gemini extraction (stops gracefully at quota)
+        working-directory: scripts/us_proxy
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
+          GEMINI_API_KEY_3: ${{ secrets.GEMINI_API_KEY_3 }}
+          GEMINI_API_KEY_4: ${{ secrets.GEMINI_API_KEY_4 }}
+          GEMINI_MODEL_OVERRIDE: ${{ github.event.inputs.model || 'gemini-3.5-flash-lite' }}
+          PYTHONUNBUFFERED: "1"
+        run: |
+          python -u extract_us_proxy.py --queue queue.json.gz \
+            --limit "${{ github.event.inputs.limit || '0' }}" \
+            --workers "${{ github.event.inputs.workers || '2' }}"
+
+      # רשת ביטחון: הסקריפט כבר עושה checkpoint וקומיט סופי; זה מבטיח שגם קטיעה/כשל לא מאבדים התקדמות.
+      - name: Commit progress
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add scripts/us_proxy/results_us_proxy_*.jsonl scripts/us_proxy/processed_us_proxy_*.json || true
+          if git diff --cached --quiet; then echo "No change."; exit 0; fi
+          git commit -m "us-proxy gemini progress [skip ci]"
+          for attempt in 1 2 3 4 5; do
+            if git push; then exit 0; fi
+            git rebase --abort 2>/dev/null || true
+            git fetch origin main && git rebase origin/main || git rebase --abort
+            sleep $((attempt * 5))
+          done
+          echo "::error::push failed"; exit 1
