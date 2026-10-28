@@ -1,8 +1,13 @@
-[k79] formId=ק79: 0 דוחות
-[k79] formId=ק079: 245 דוחות
-[discover] 1769726 ['קסם']: parsed -> [{'fund': 1146380, 'min_units': None, 'max_units': 168402}, {'fund': 1146745, 'min_units': None, 'max_units': 569579}, {'fund': 1161058, 'min_units': None, 'max_units': 435314}, {'fund': 1147347, 'min_units': None, 'max_units': 430692}, {'fund': 1147131, 'min_units': None, 'max_units': 360553}, {'fund': 1146455, 'min_units': None, 'max_units': 741372}, {'fund': 1220151, 'min_units': None, 'max_units': 132910}, {'fund': 1146547, 'min_units': None, 'max_units': 76164}]
-[discover] 1769724 ['קסם']: parsed -> [{'fund': 1146380, 'min_units': 168, 'max_units': None}, {'fund': 1146745, 'min_units': 569, 'max_units': None}, {'fund': 1161058, 'min_units': 435, 'max_units': None}, {'fund': 1147347, 'min_units': 430, 'max_units': None}, {'fund': 1147131, 'min_units': 360, 'max_units': None}, {'fund': 1146455, 'min_units': 741, 'max_units': None}, {'fund': 1220151, 'min_units': 132, 'max_units': None}, {'fund': 1146547, 'min_units': 76, 'max_units': None}]
-[discover] 1768065 ['קסם']: parsed -> [{'fund': 1189802, 'min_units': 3734, 'max_units': None}, {'fund': 1146570, 'min_units': 24, 'max_units': None}, {'fund': 1146968, 'min_units': 12, 'max_units': None}, {'fund': 1145911, 'min_units': 22, 'max_units': None}, {'fund': 1145994, 'min_units': 55, 'max_units': None}, {'fund': 1146125, 'min_units': 7, 'max_units': None}, {'fund': 1167261, 'min_units': 21, 'max_units': None}, {'fund': 1146984, 'min_units': 104, 'max_units': None}, {'fund': 1147016, 'min_units': 236, 'max_units': None}]
-[discover] funds/all keys: ['assetValue', 'classification', 'distributionCommissionName', 'exposureProfile', 'features', 'featuresText', 'fundId', 'fundType', 'fundTypeId', 'isin', 'longName', 'managementFee', 'managerId', 'managerName', 'name', 'purchasePrice', 'ratesAsOf', 'redemptionPrice', 'saleLoad', 'standardDeviation', 'standardDeviationRemarkType', 'successFee', 'taxStatusName', 'trusteeFee', 'trusteeName', 'underlyingAssets', 'underlyingAssetsText']
-[discover] fee key guess: None
-[discover] formId בשימוש: ק079. קבצים ב-/home/runner/work/HARD_WORKER/HARD_WORKER/data/funds_info/_debug
+[k079] 245 דוחות
+[k079] 245 דוחות חדשים להורדה
+  25/245
+  50/245
+  75/245
+  100/245
+  125/245
+  150/245
+  175/245
+  200/245
+  225/245
+[k079] ⚠ 100 דוחות בלי שורות: [1475783, 1475781, 1475067, 1475066, 1474029, 1474023, 1455687, 1455673, 1449605, 1449600]
+[k079] wrote 192 קרנות (162 פעילות במאיה) -> /home/runner/work/HARD_WORKER/HARD_WORKER/data/funds_info/creation_limits.csv
