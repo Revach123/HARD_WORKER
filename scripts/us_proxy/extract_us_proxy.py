@@ -112,6 +112,19 @@ def grounded(value, source_norm: str) -> bool:
     return value is None or (isinstance(value, str) and norm(value) in source_norm)
 
 
+_FOOT_TAIL = re.compile(r"\s*\(\s*\d{1,2}\s*\)\s*$")
+
+
+def clean_figure(v):
+    """מסיר הפניית שוליים צמודה ("30.2(2)" -> "30.2"); ערך שהוא רק הפניה ("(3)") או בלי ספרות/כוכבית => None."""
+    if not isinstance(v, str):
+        return None
+    t = _FOOT_TAIL.sub("", v).strip()
+    if t == "*" or re.search(r"\d", t):
+        return t
+    return None
+
+
 def ground_result(res: dict, source: str) -> dict:
     """מאפס ערכים שלא מופיעים מילה-במילה במקור; פוסל מחזיקים בלי ציטוט תקף. מחזיר dict מנוקה + סטטיסטיקה."""
     src = norm(source)
@@ -136,6 +149,8 @@ def ground_result(res: dict, source: str) -> dict:
             if v is not None and not grounded(v, src):
                 nulled += 1
                 v = None
+            if k != "shares_text" and v is not None:
+                v = clean_figure(v)  # "(3)" = הפניית שוליים, לא אחוז
             clean[k] = v
         out_holders.append(clean)
     so = []
