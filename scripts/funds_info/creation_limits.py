@@ -33,8 +33,10 @@ creation_limits.py — הון כשר / Revach
 מצבים:
   --discover   שומר HTML ושדות של 3 דוחות אחרונים + רשומת funds/all
                ל-data/funds_info/_debug/ (לבדיקה, ללא CSV)
-  (ברירת מחדל) -> data/funds_info/creation_limits.csv
-               מטמון: data/funds_info/k79_cache.json (דוח שפוענח לא יורד שוב)
+  (ברירת מחדל) -> data/funds_info/creation_limits.csv — שורה לכל קרן סל פעילה:
+               עמלות ו"מגבלת שווי הזמנה" מהדוח השנתי (ק121, annual_terms.py)
+               + מגבלות ביחידות מק079 (בפועל: קסם, ומקרה בודד בילין).
+               מטמונים: k79_cache.json, k121_cache.json (דוח שפוענח לא יורד שוב)
 """
 import csv, html, json, os, re, sys, time
 from datetime import date
@@ -95,12 +97,12 @@ def _req(session, method, url, what, timeout=60, **kw):
 
 
 # ── 1. רשימת דוחות ────────────────────────────────────────────────────────────
-def _list_window(session, frm, to, out, seen, max_pages=50):
+def _list_window(session, frm, to, out, seen, max_pages=50, form_id=FORM_ID):
     for page in range(1, max_pages + 1):
         body = {"pageNumber": page, "fromDate": frm, "toDate": to,
                 "noMeetings": False, "isPriority": False, "isSingle": False,
                 "isIntendToTaseMember": False, "by": "company",
-                "formId": FORM_ID, "freeText": "", "limit": 20, "offset": (page - 1) * 20}
+                "formId": form_id, "freeText": "", "limit": 20, "offset": (page - 1) * 20}
         r = _req(session, "POST", LIST_URL, f"רשימה {frm[:4]} עמוד {page}",
                  timeout=30, headers=HEADERS, data=json.dumps(body))
         if r.status_code != 200:
@@ -120,17 +122,17 @@ def _list_window(session, frm, to, out, seen, max_pages=50):
         time.sleep(0.2)
 
 
-def fetch_report_list(session, first_year=FIRST_YEAR):
+def fetch_report_list(session, first_year=FIRST_YEAR, form_id=FORM_ID):
     today = date.today()
     out, seen = [], set()
     for y in range(today.year, first_year - 1, -1):
         frm = f"{y - 1}-12-31T22:00:00.000Z"
         to = (today.isoformat() if y == today.year else f"{y}-12-31") + "T21:00:00.000Z"
         try:
-            _list_window(session, frm, to, out, seen)
+            _list_window(session, frm, to, out, seen, max_pages=60, form_id=form_id)
         except Exception as e:
             print(f"  ⚠ {e}")
-    print(f"[k079] {len(out)} דוחות")
+    print(f"[{form_id}] {len(out)} דוחות")
     return out
 
 
@@ -237,13 +239,22 @@ def creation_fee_pct(f):
 
 
 # ── main ──────────────────────────────────────────────────────────────────────
-def _load_cache():
-    if os.path.exists(CACHE):
-        with open(CACHE, encoding="utf-8") as f:
+ANNUAL_FORM  = "ק121"
+ANNUAL_CACHE = os.path.join(ROOT, "data", "funds_info", "k121_cache.json")
+
+
+def _load_json(path, default):
+    if os.path.exists(path):
+        with open(path, encoding="utf-8") as f:
             c = json.load(f)
-        if c.get("version") == CACHE_VERSION:
+        if c.get("version") == default["version"]:
             return c
-    return {"version": CACHE_VERSION, "parsed": {}, "empty": []}
+    return default
+
+
+def _save_json(path, obj):
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(obj, f, ensure_ascii=False)
 
 
 def discover(session):
@@ -260,13 +271,11 @@ def discover(session):
         p = parse_report(text)
         print(f"[discover] {rep['id']} {rep['companies']} {p['subject']} {p['effective']}: "
               f"{len(p['rows'])} קרנות, לדוגמה {p['rows'][:2]}")
-    funds = fetch_all_funds(session)
-    with open(os.path.join(DEBUG_DIR, "funds_all_sample.json"), "w", encoding="utf-8") as f:
-        json.dump(funds.get(1143700) or next(iter(funds.values())), f, ensure_ascii=False, indent=1)
 
 
-def build(session):
-    cache = _load_cache()
+def k079_latest(session):
+    """fund -> {"name", "min": (key, side, eff, rid), "max": ...}"""
+    cache = _load_json(CACHE, {"version": CACHE_VERSION, "parsed": {}, "empty": []})
     reports = fetch_report_list(session)
     todo = [r for r in reports if str(r["id"]) not in cache["parsed"] and r["id"] not in cache["empty"]]
     print(f"[k079] {len(todo)} דוחות חדשים להורדה")
@@ -284,54 +293,99 @@ def build(session):
         if i % 25 == 0:
             print(f"  {i}/{len(todo)}")
         time.sleep(0.15)
-    with open(CACHE, "w", encoding="utf-8") as f:
-        json.dump(cache, f, ensure_ascii=False)
+    _save_json(CACHE, cache)
     if cache["empty"]:
         print(f"[k079] ⚠ {len(cache['empty'])} דוחות בלי שורות: {cache['empty'][:10]}")
-
-    # לכל קרן ולכל צד — הדוח האחרון שעוסק בצד הזה
-    latest = {}   # fund -> {"min": (key, side, eff, rid), "max": ..., "name": ...}
+    latest = {}
     for rid, rec in cache["parsed"].items():
         key = (rec["effective"], int(rid))
         for row in rec["rows"]:
             ent = latest.setdefault(row["fund"], {"name": row["name"]})
-            for s in ("min", "max"):
-                if row[s] and (s not in ent or key > ent[s][0]):
-                    ent[s] = (key, row[s], rec["effective"], int(rid))
+            for side in ("min", "max"):
+                if row[side] and (side not in ent or key > ent[side][0]):
+                    ent[side] = (key, row[side], rec["effective"], int(rid))
+    return latest
 
+
+def annual_latest(session, etf_ids):
+    """fund -> {creation_fee, redemption_fee, limit, limit_text, rid, date} מהדוח השנתי האחרון."""
+    import annual_terms as at
+    cache = _load_json(ANNUAL_CACHE, {"version": 1, "parsed": {}, "failed": []})
+    reports = fetch_report_list(session, first_year=date.today().year - 1, form_id=ANNUAL_FORM)
+    todo = [r for r in reports if str(r["id"]) not in cache["parsed"]]
+    print(f"[ק121] {len(todo)} דוחות שנתיים חדשים להורדה")
+    for i, rep in enumerate(todo, 1):
+        try:
+            meta = _req(session, "GET", META_URL.format(id=rep["id"]), f"meta {rep['id']}",
+                        timeout=30, headers=GET_HEADERS).json()
+            att = at.pdf_attachment(meta)
+            if not att:
+                raise RuntimeError("אין PDF")
+            r = _req(session, "GET", FILES_BASE + att["url"].lstrip("/"), f"pdf {rep['id']}",
+                     timeout=120, headers=GET_HEADERS)
+            if r.status_code != 200:
+                raise RuntimeError(f"HTTP {r.status_code}")
+            text = at.pdf_to_text(r.content)
+            rec = at.parse_annual(text)
+            rec["fund"] = at.fund_of(att.get("fileName"), text, etf_ids)
+            rec["date"] = (meta.get("publishDate") or "")[:10]
+            cache["parsed"][str(rep["id"])] = rec
+        except Exception as e:
+            print(f"  ⚠ ק121 {rep['id']}: {e}")
+            cache["failed"].append(rep["id"])
+        if i % 25 == 0:
+            print(f"  {i}/{len(todo)}")
+            _save_json(ANNUAL_CACHE, cache)
+        time.sleep(0.15)
+    _save_json(ANNUAL_CACHE, cache)
+    latest = {}
+    for rid, rec in cache["parsed"].items():
+        fid = rec.get("fund")
+        if fid and (fid not in latest or int(rid) > latest[fid]["rid"]):
+            latest[fid] = dict(rec, rid=int(rid))
+    return latest
+
+
+def build(session):
     funds = fetch_all_funds(session)
+    etfs = {fid: f for fid, f in funds.items() if f.get("fundType") == "קרן סל"}
+    k079 = k079_latest(session)
+    annual = annual_latest(session, set(etfs))
+
     os.makedirs(os.path.dirname(OUT_CSV), exist_ok=True)
-    n_active = 0
+    stats = {"annual": 0, "k079": 0}
     with open(OUT_CSV, "w", newline="", encoding="utf-8-sig") as f:
         w = csv.writer(f)
-        w.writerow(["מספר קרן", "שם קרן", "מנהל", "סוג", "פעילה במאיה",
+        w.writerow(["מספר קרן", "שם קרן", "מנהל",
+                    "עמלת יצירה %", "עמלת פדיון %", "עמלת יצירה % (נגזרת ממחירים)",
+                    "מגבלת שווי הזמנה (דוח שנתי)",
                     "יחידות מזערי ליצירה", "שווי מזערי (ש\"ח)", "תוקף מזערי", "דוח מזערי",
                     "יחידות מרבי ליצירה", "שווי מרבי (ש\"ח)", "תוקף מרבי", "דוח מרבי",
-                    "מחיר פדיון (ש\"ח)", "מחיר קנייה (ש\"ח)", "עמלת יצירה % (נגזרת)"])
-        for fid in sorted(latest):
-            ent, fr = latest[fid], funds.get(fid) or {}
-            n_active += bool(fr)
+                    "מחיר פדיון (ש\"ח)", "דוח שנתי", "תאריך דוח שנתי", "נוסח המגבלה"])
+        for fid in sorted(etfs):
+            fr, an, ent = etfs[fid], annual.get(fid) or {}, k079.get(fid) or {}
+            stats["annual"] += bool(an); stats["k079"] += bool(ent)
             red = fr.get("redemptionPrice")
             red = red / 100 if isinstance(red, (int, float)) else None
-            pur = fr.get("purchasePrice")
-            pur = pur / 100 if isinstance(pur, (int, float)) else None
 
-            def side(s):
-                if s not in ent:
+            def side(sd):
+                if sd not in ent:
                     return ["", "", "", ""]
-                _, v, eff, rid = ent[s]
+                _, v, eff, rid = ent[sd]
                 if not v["limit"]:
                     return ["אין", "", eff, rid]
                 u = v["units"]
                 return [u if u is not None else "", round(u * red) if (u is not None and red) else "", eff, rid]
 
             fee = creation_fee_pct(fr)
-            w.writerow([fid, fr.get("name") or ent["name"], fr.get("managerName", ""),
-                        fr.get("fundType", ""), "כן" if fr else "לא",
+            w.writerow([fid, fr.get("name", ""), fr.get("managerName", ""),
+                        an.get("creation_fee", ""), an.get("redemption_fee", ""),
+                        fee if fee is not None else "",
+                        an.get("limit", "אין דוח שנתי"),
                         *side("min"), *side("max"),
-                        round(red, 2) if red else "", round(pur, 2) if pur else "",
-                        fee if fee is not None else ""])
-    print(f"[k079] wrote {len(latest)} קרנות ({n_active} פעילות במאיה) -> {OUT_CSV}")
+                        round(red, 2) if red else "", an.get("rid", ""), an.get("date", ""),
+                        an.get("limit_text", "")])
+    print(f"[build] {len(etfs)} קרנות סל; דוח שנתי ל-{stats['annual']}, ק079 ל-{stats['k079']} -> {OUT_CSV}")
 
 
 if __name__ == "__main__":
