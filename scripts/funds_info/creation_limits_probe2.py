@@ -40,8 +40,15 @@ def list_free(s, text, frm, to):
 def main():
     os.makedirs(pr.OUT, exist_ok=True)
     s = requests.Session()
-    reps = list_free(s, "תשקיף", "2025-06-30T21:00:00.000Z", cl.date.today().isoformat() + "T21:00:00.000Z")
-    print(f"[probe2] {len(reps)} דוחות עם 'תשקיף'")
+    from datetime import date, timedelta
+    reps, d = [], date(2026, 1, 1)
+    while d <= date(2026, 3, 15):
+        day = list_free(s, "", (d - timedelta(days=1)).isoformat() + "T22:00:00.000Z",
+                        d.isoformat() + "T21:59:00.000Z")
+        hits = [x for x in day if "תשקיף" in (x.get("title") or "")]
+        print(f"[probe2] {d}: {len(day)} דוחות, {len(hits)} עם 'תשקיף'")
+        reps += hits
+        d += timedelta(days=1)
     picked = {}
     for rep in sorted(reps, key=lambda r: r["id"], reverse=True):
         cos = [(c.get("name") or "").strip() for c in (rep.get("companies") or [])]
