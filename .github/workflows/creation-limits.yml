@@ -1,0 +1,50 @@
+name: creation-limits (ק79)
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "discover = שמירת דוגמאות לבדיקה בלבד; build = משיכה מלאה ל-CSV"
+        required: true
+        default: discover
+        type: choice
+        options: [discover, build]
+permissions:
+  contents: write
+concurrency:
+  group: creation-limits
+  cancel-in-progress: true
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - name: Run
+        run: |
+          if [ "${{ inputs.mode }}" = "discover" ]; then
+            python scripts/funds_info/creation_limits.py --discover
+          else
+            python scripts/funds_info/creation_limits.py
+          fi
+      - name: Commit outputs
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main
+          # לא לדחוף בזמן ריצת חילוץ החברות (ר' test-small-batch.yml)
+          for w in 1 2 3 4 5 6 7 8 9 10; do
+            [ -f scripts/company_ownership/RUNNING_LOCK ] || break
+            echo "RUNNING_LOCK קיים - ממתין 60s ($w)"; sleep 60; git pull --rebase origin main
+          done
+          [ -f scripts/company_ownership/RUNNING_LOCK ] && { echo "הלוק לא שוחרר - מדלג על push"; exit 0; }
+          for f in data/funds_info/_debug data/funds_info/creation_limits.csv data/funds_info/k79_cache.json; do [ -e "$f" ] && git add -A "$f"; done
+          if git diff --staged --quiet; then echo "אין שינויים"; exit 0; fi
+          git commit -m "auto: creation limits (${{ inputs.mode }}) [skip ci]"
+          for i in 1 2 3 4 5; do
+            git push && exit 0
+            git pull --rebase origin main
+          done
+          exit 1
