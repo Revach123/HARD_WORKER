@@ -25,7 +25,11 @@ creation_limits.py — הון כשר / Revach
   (למשל "לא קיימת") נרשם כביטול המגבלה.
   הטופס עוסק ביצירה ("לרכישה") בלבד — אין בו מגבלות פדיון.
 
-עמלת יצירה: purchasePrice/redemptionPrice − 1 מ-funds/all. מחיר הפדיון
+עמלות — עמודות סופיות + מקור:
+  יצירה: מחירי מאיה כשהם שונים מהדוח השנתי (משקפים חיוב בפועל), אחרת הדוח השנתי.
+  פדיון: הדוח השנתי; כשחסר — הנחה שווה ליצירה (בבדיקה 10/2026: 407/407 קרנות עם
+  שני הנתונים — שוות).
+עמלת יצירה נגזרת: purchasePrice/redemptionPrice − 1 מ-funds/all. מחיר הפדיון
 במאיה הוא ללא ניכוי עמלת פדיון (ר' דוחות קסם), ומחיר הקנייה = NAV + עמלת
 יצירה. אומת: 1143700 -> 4050.48/4046.43 = 0.10%, תואם לתשקיף.
 עמלת הפדיון אינה ניתנת לגזירה מהמחירים.
@@ -409,7 +413,8 @@ def build(session):
     with open(OUT_CSV, "w", newline="", encoding="utf-8-sig") as f:
         w = csv.writer(f)
         w.writerow(["מספר קרן", "שם קרן", "מנהל",
-                    "עמלת יצירה %", "עמלת פדיון %", "עמלת יצירה % (נגזרת ממחירים)",
+                    "עמלת יצירה %", "עמלת פדיון %", "מקור עמלת יצירה", "מקור עמלת פדיון",
+                    "עמלת יצירה % (דוח שנתי)", "עמלת פדיון % (דוח שנתי)", "עמלת יצירה % (נגזרת ממחירים)",
                     "מגבלת שווי הזמנה (דוח שנתי)",
                     "יחידות מזערי ליצירה", "שווי מזערי (ש\"ח)", "תוקף מזערי", "דוח מזערי",
                     "יחידות מרבי ליצירה", "שווי מרבי (ש\"ח)", "תוקף מרבי", "דוח מרבי",
@@ -430,9 +435,24 @@ def build(session):
                 return [u if u is not None else "", round(u * red) if (u is not None and red) else "", eff, rid]
 
             fee = creation_fee_pct(fr)
+            a_c, a_r = an.get("creation_fee"), an.get("redemption_fee")
+            # מחירי מאיה משקפים את החיוב בפועל, אלא כשהמחיר נמוך מדי לעיגול (נגזר=0)
+            if fee and (a_c is None or abs(a_c - fee) > 0.02):
+                c_final, c_src = fee, "מחירי מאיה (קנייה/פדיון)"
+            elif a_c is not None:
+                c_final, c_src = a_c, "דוח שנתי"
+            else:
+                c_final, c_src = fee, ("מחירי מאיה (קנייה/פדיון)" if fee is not None else "")
+            if a_r is not None:
+                r_final, r_src = a_r, "דוח שנתי"
+            elif c_final is not None:
+                r_final, r_src = c_final, "הנחה: שווה לעמלת היצירה"
+            else:
+                r_final, r_src = None, ""
+            nz = lambda v: "" if v is None else v
             w.writerow([fid, fr.get("name", ""), fr.get("managerName", ""),
-                        an.get("creation_fee", ""), an.get("redemption_fee", ""),
-                        fee if fee is not None else "",
+                        nz(c_final), nz(r_final), c_src, r_src,
+                        nz(a_c), nz(a_r), nz(fee),
                         limit_status(an, fr.get("managerName"), mgr_stmt.get(fr.get("managerName"))),
                         *side("min"), *side("max"),
                         round(red, 2) if red else "", an.get("rid", ""), an.get("date", ""),
