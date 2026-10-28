@@ -10,7 +10,7 @@ creation_limits.py — הון כשר / Revach
      "דוח על שינוי מספר יחידות מזערי/מרבי לרכישה".
   2. maya.tase.co.il/api/v1/funds/all — מחירים, שם, סוג, מנהל.
 
-מבנה הטופס (אומת מול 3 דוחות קסם, 9/2026):
+מבנה הטופס (אומת מול 3 דוחות קסם, 9/2026; גרסה ישנה 2022 ר' ALIAS_MAP):
   UnitsTable1105  "מזערי" / "מרבי"  — איזה צד משתנה בדוח הזה
   Date            תאריך כניסת השינוי לתוקף (dd/mm/yyyy)
   לכל קרן בטבלה, בסדר הזה:
@@ -49,7 +49,7 @@ ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
 OUT_CSV   = os.path.join(ROOT, "data", "funds_info", "creation_limits.csv")
 CACHE     = os.path.join(ROOT, "data", "funds_info", "k79_cache.json")
 DEBUG_DIR = os.path.join(ROOT, "data", "funds_info", "_debug")
-CACHE_VERSION = 2
+CACHE_VERSION = 3
 
 BASE       = "https://maya.tase.co.il"
 LIST_URL   = BASE + "/api/v1/reports/etfs"
@@ -190,10 +190,16 @@ def _iso(d):
     return f"{m.group(3)}-{int(m.group(2)):02d}-{int(m.group(1)):02d}" if m else ""
 
 
+# גרסת טופס ישנה (2022 ואחורה) -> שמות הגרסה הנוכחית
+ALIAS_MAP = {"UnitsNumberChange": "UnitsTable1105", "DateEvent": "Date",
+             "IsExsist": "IsExistNumberOfMinimalUnits948Table", "MinNum": "MinNumber",
+             "IsExsist2": "IsExistNumberOfMinimalUnits948Table_1", "MaxNum": "MaxNumber"}
+
+
 def parse_report(text):
     head, rows, cur = {}, [], None
     for m in _FIELD_RE.finditer(text):
-        alias, val = m.group(1), _clean(m.group(2))
+        alias, val = ALIAS_MAP.get(m.group(1), m.group(1)), _clean(m.group(2))
         if alias in ("UnitsTable1105", "Date", "FormSubject") and alias not in head:
             head[alias] = val
         elif alias == "Fund":
