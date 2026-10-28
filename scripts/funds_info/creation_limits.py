@@ -346,6 +346,24 @@ def annual_latest(session, etf_ids):
     return latest
 
 
+# מנהלים שבדוח השנתי שלהם אין שורת "מגבלת שווי הזמנה" — ההצהרה בתשקיף העיקרי:
+# "לגבי כל קרנות הסל המנוהלות על ידי מנהל הקרן לא נקבע מספר יחידות מזערי ומירבי
+#  להזמנה שלא במסחר בבורסה"
+PROSPECTUS_NO_LIMIT = {
+    "הראל": "אין (תשקיף עיקרי 2.5.2024, P1588270)",
+    "מגדל": "אין (תשקיף עיקרי 30.1.2025, P1643524)",
+}
+
+
+def limit_status(annual_rec, manager):
+    lim = (annual_rec or {}).get("limit") or "אין דוח שנתי"
+    if lim in ("לא מצוין", "אין דוח שנתי"):
+        for k, v in PROSPECTUS_NO_LIMIT.items():
+            if k in (manager or ""):
+                return v
+    return lim
+
+
 def build(session):
     funds = fetch_all_funds(session)
     etfs = {fid: f for fid, f in funds.items() if f.get("fundType") == "קרן סל"}
@@ -381,7 +399,7 @@ def build(session):
             w.writerow([fid, fr.get("name", ""), fr.get("managerName", ""),
                         an.get("creation_fee", ""), an.get("redemption_fee", ""),
                         fee if fee is not None else "",
-                        an.get("limit", "אין דוח שנתי"),
+                        limit_status(an, fr.get("managerName")),
                         *side("min"), *side("max"),
                         round(red, 2) if red else "", an.get("rid", ""), an.get("date", ""),
                         an.get("limit_text", "")])
