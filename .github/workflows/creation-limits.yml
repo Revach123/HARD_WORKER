@@ -33,18 +33,20 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git pull --rebase origin main
-          # לא לדחוף בזמן ריצת חילוץ החברות (ר' test-small-batch.yml)
-          for w in 1 2 3 4 5 6 7 8 9 10; do
-            [ -f scripts/company_ownership/RUNNING_LOCK ] || break
-            echo "RUNNING_LOCK קיים - ממתין 60s ($w)"; sleep 60; git pull --rebase origin main
+          for f in data/funds_info/_debug data/funds_info/creation_limits.csv data/funds_info/k79_cache.json; do
+            [ -e "$f" ] && git add -A "$f"
           done
-          [ -f scripts/company_ownership/RUNNING_LOCK ] && { echo "הלוק לא שוחרר - מדלג על push"; exit 0; }
-          for f in data/funds_info/_debug data/funds_info/creation_limits.csv data/funds_info/k79_cache.json; do [ -e "$f" ] && git add -A "$f"; done
           if git diff --staged --quiet; then echo "אין שינויים"; exit 0; fi
           git commit -m "auto: creation limits (${{ inputs.mode }}) [skip ci]"
+          # לא לדחוף בזמן ריצת חילוץ החברות (ר' test-small-batch.yml)
+          for w in $(seq 1 10); do
+            git fetch -q origin main
+            git cat-file -e origin/main:scripts/company_ownership/RUNNING_LOCK 2>/dev/null || break
+            echo "RUNNING_LOCK קיים ב-main - ממתין 60s ($w)"; sleep 60
+          done
+          git cat-file -e origin/main:scripts/company_ownership/RUNNING_LOCK 2>/dev/null && { echo "הלוק לא שוחרר - מדלג על push"; exit 0; }
           for i in 1 2 3 4 5; do
-            git push && exit 0
-            git pull --rebase origin main
+            git pull --rebase -q origin main && git push && exit 0
+            sleep 3
           done
           exit 1
