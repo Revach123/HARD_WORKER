@@ -20,7 +20,7 @@ from pypdf import PdfReader
 
 OUT = os.path.join(cl.DEBUG_DIR, "probe")
 KNOWN_ANNUAL = [1727829, 1727374, 1730830, 1727369]   # אי.בי.אי, הראל, תכלית, קסם — 2025
-OLD_K079 = 1449600
+OLD_K079 = 1475783
 KEYWORDS = ["מגבלת שווי", "מגבלה לשווי", "מזערי", "מירבי", "מרבי", "עמלת פדיון",
             "עמלת יצירה", "מספר יחידות", "ק079", "ק79"]
 
@@ -55,7 +55,7 @@ def list_form(s, form_id, frm="2025-12-31T22:00:00.000Z"):
 
 def pdf_text(s, m):
     atts = m.get("attachments") or []
-    pdf = max((a for a in atts if (a.get("fileType") or "").lower() == "pdf"),
+    pdf = max((a for a in atts if (a.get("fileType") or "").lower().startswith("pdf")),
               key=lambda a: a.get("size") or a.get("fileSize") or 0, default=None)
     if not pdf:
         return None, None
@@ -113,10 +113,6 @@ def main():
                 m = meta(s, rep["id"])
                 url, text = pdf_text(s, m)
                 if not text or text.startswith("HTTP"):
-                    continue
-                # רק דוח של קרן סל
-                nums = {int(x) for x in re.findall(r"(?<!\d)(\d{7})(?!\d)", text[:3000])}
-                if not (nums & etf_ids):
                     continue
                 key = f"{co}_{rep['id']}"
                 with open(os.path.join(OUT, f"annual_{key}.txt"), "w", encoding="utf-8") as f:
