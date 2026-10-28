@@ -307,13 +307,32 @@ def k079_latest(session):
     return latest
 
 
+ANNUAL_PARSER = 2
+
+
+def _fund_from_htm(session, meta):
+    """מספר הקרן מטופס ה-htm של הדוח (שדה Fund / "מספר קרן: N"), כשאינו בשם הקובץ או ב-PDF."""
+    htm = next((a for a in (meta.get("attachments") or [])
+                if (a.get("fileType") or "").lower() in ("htm", "html")), None)
+    if not htm:
+        return None
+    r = _req(session, "GET", FILES_BASE + htm["url"].lstrip("/"), "htm", timeout=60, headers=GET_HEADERS)
+    if r.status_code != 200:
+        return None
+    m = _FUND_RE.search(r.content.decode("cp1255", errors="replace"))
+    return int(m.group(1)) if m else None
+
+
 def annual_latest(session, etf_ids):
     """fund -> {creation_fee, redemption_fee, limit, limit_text, rid, date} מהדוח השנתי האחרון."""
     import annual_terms as at
     cache = _load_json(ANNUAL_CACHE, {"version": 1, "parsed": {}, "failed": []})
     reports = fetch_report_list(session, first_year=date.today().year - 1, form_id=ANNUAL_FORM)
-    todo = [r for r in reports if str(r["id"]) not in cache["parsed"]]
-    print(f"[ק121] {len(todo)} דוחות שנתיים חדשים להורדה")
+    # חדשים + רשומות חלקיות שעוד לא נוסו בגרסת הפרסינג הנוכחית (pypdf+pdfium, htm)
+    todo = [r for r in reports if str(r["id"]) not in cache["parsed"]
+            or (at.needs_retry(cache["parsed"][str(r["id"])])
+                and cache["parsed"][str(r["id"])].get("parser", 1) < ANNUAL_PARSER)]
+    print(f"[ק121] {len(todo)} דוחות שנתיים להורדה (חדשים + ניסיון חוזר לחלקיים)")
     for i, rep in enumerate(todo, 1):
         try:
             meta = _req(session, "GET", META_URL.format(id=rep["id"]), f"meta {rep['id']}",
@@ -325,10 +344,15 @@ def annual_latest(session, etf_ids):
                      timeout=120, headers=GET_HEADERS)
             if r.status_code != 200:
                 raise RuntimeError(f"HTTP {r.status_code}")
-            text = at.pdf_to_text(r.content)
-            rec = at.parse_annual(text)
-            rec["fund"] = at.fund_of(att.get("fileName"), text, etf_ids)
+            texts = at.pdf_texts(r.content)
+            rec = at.parse_annual_multi(texts)
+            rec["fund"] = None
+            for t in texts:
+                rec["fund"] = rec["fund"] or at.fund_of(att.get("fileName"), t, etf_ids)
+            if not rec["fund"]:
+                rec["fund"] = _fund_from_htm(session, meta)
             rec["date"] = (meta.get("publishDate") or "")[:10]
+            rec["parser"] = ANNUAL_PARSER
             cache["parsed"][str(rep["id"])] = rec
         except Exception as e:
             print(f"  ⚠ ק121 {rep['id']}: {e}")
@@ -355,12 +379,15 @@ PROSPECTUS_NO_LIMIT = {
 }
 
 
-def limit_status(annual_rec, manager):
+def limit_status(annual_rec, manager, mgr_statement=None):
+    """mgr_statement: הצהרה אחידה שנמצאה בדוחות שנתיים אחרים של אותו מנהל ("אין"/"יש (ק079)")."""
     lim = (annual_rec or {}).get("limit") or "אין דוח שנתי"
     if lim in ("לא מצוין", "אין דוח שנתי"):
         for k, v in PROSPECTUS_NO_LIMIT.items():
             if k in (manager or ""):
                 return v
+        if mgr_statement:
+            return f"{mgr_statement} (לפי דוחות אחרים של המנהל)"
     return lim
 
 
@@ -369,6 +396,13 @@ def build(session):
     etfs = {fid: f for fid, f in funds.items() if f.get("fundType") == "קרן סל"}
     k079 = k079_latest(session)
     annual = annual_latest(session, set(etfs))
+
+    # הצהרה אחידה לכל מנהל: אם כל הדוחות שבהם נמצאה שורת מגבלה אומרים אותו דבר
+    seen = {}
+    for fid, an in annual.items():
+        if fid in etfs and an.get("limit") in ("אין", "יש (ק079)"):
+            seen.setdefault(etfs[fid].get("managerName"), set()).add(an["limit"])
+    mgr_stmt = {m: next(iter(v)) for m, v in seen.items() if len(v) == 1}
 
     os.makedirs(os.path.dirname(OUT_CSV), exist_ok=True)
     stats = {"annual": 0, "k079": 0}
@@ -399,7 +433,7 @@ def build(session):
             w.writerow([fid, fr.get("name", ""), fr.get("managerName", ""),
                         an.get("creation_fee", ""), an.get("redemption_fee", ""),
                         fee if fee is not None else "",
-                        limit_status(an, fr.get("managerName")),
+                        limit_status(an, fr.get("managerName"), mgr_stmt.get(fr.get("managerName"))),
                         *side("min"), *side("max"),
                         round(red, 2) if red else "", an.get("rid", ""), an.get("date", ""),
                         an.get("limit_text", "")])
