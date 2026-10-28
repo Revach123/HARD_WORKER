@@ -47,7 +47,6 @@ META_URL   = BASE + "/api/v1/reports/{id}"
 FUNDS_URL  = BASE + "/api/v1/funds/all"
 FILES_BASE = "https://mayafiles.tase.co.il/"
 FORM_IDS   = ["ק79", "ק079"]          # הכתיב במאיה לא אומת — נבדקים שניהם
-FROM_DATE  = "2018-01-01T00:00:00.000Z"
 
 HEADERS = {
     "accept": "application/json, text/plain, */*",
@@ -85,19 +84,17 @@ def _req(session, method, url, what, **kw):
 
 
 # ── 1. רשימת דוחות ק79 ────────────────────────────────────────────────────────
-def fetch_report_list(session, form_id, max_pages=200):
-    """[{'id','date','companies'}] — כל דוחות הטופס מ-2018 (דפדוף עד שאין חדשים)."""
-    to = date.today().isoformat() + "T21:00:00.000Z"
-    out, seen = [], set()
+def _list_window(session, form_id, frm, to, out, seen, max_pages=50):
     for page in range(1, max_pages + 1):
-        body = {"pageNumber": page, "fromDate": FROM_DATE, "toDate": to,
+        body = {"pageNumber": page, "fromDate": frm, "toDate": to,
                 "noMeetings": False, "isPriority": False, "isSingle": False,
                 "isIntendToTaseMember": False, "by": "company",
                 "formId": form_id, "freeText": "", "limit": 20, "offset": (page - 1) * 20}
         r = _req(session, "POST", LIST_URL, f"רשימת {form_id} עמוד {page}",
                  headers=HEADERS, data=json.dumps(body), timeout=30)
         if r.status_code != 200:
-            raise RuntimeError(f"רשימת {form_id}: HTTP {r.status_code}")
+            raise RuntimeError(f"רשימת {form_id} {frm[:10]}..{to[:10]} עמוד {page}: "
+                               f"HTTP {r.status_code} {r.text[:400]}")
         data = r.json() or []
         new = 0
         for rep in data:
@@ -112,6 +109,24 @@ def fetch_report_list(session, form_id, max_pages=200):
         if not data or new == 0:
             break
         time.sleep(0.2)
+
+
+def fetch_report_list(session, form_id, years=None):
+    """[{'id','date','companies'}] — חלונות של שנה (כמו dnm.py), מהשנה הנוכחית אחורה.
+    years=None -> מ-2018. חלון שנכשל לא עוצר את השאר (מודפס)."""
+    today = date.today()
+    first = 2018 if years is None else today.year - years + 1
+    out, seen, errors = [], set(), []
+    for y in range(today.year, first - 1, -1):
+        frm = f"{y - 1}-12-31T22:00:00.000Z"
+        to = (today.isoformat() if y == today.year else f"{y}-12-31") + "T21:00:00.000Z"
+        try:
+            _list_window(session, form_id, frm, to, out, seen)
+        except Exception as e:
+            errors.append(str(e))
+            print(f"  ⚠ {e}")
+    if not out and errors:
+        raise RuntimeError(errors[0])
     return out
 
 
