@@ -40,7 +40,7 @@ sys.path.insert(0, os.path.join(HERE, "..", "company_ownership"))
 import extract_subsidiaries as ex  # noqa: E402  (_key_pool, GEMINI_BASE_URL, GEMINI_MODEL, GeminiQuotaExceededError)
 
 CHECKPOINT_EVERY = 10
-SCHEMA_VERSION = 1
+SCHEMA_VERSION = 2
 
 SYSTEM_PROMPT = """\
 You extract beneficial-ownership information from the text of a US proxy statement (Schedule 14A / DEF 14A).
@@ -55,6 +55,8 @@ STRICT RULES
    than 5% that is mentioned in narrative text or footnotes. One object per (holder, share class) pair.
 4. For each holder return a verbatim evidence quote (max 160 characters, copied exactly from the text) that
    contains the figures you extracted for that holder.
+5a. "classes": one object per share class mentioned in the text (and, in an Up-C structure, one for the holding-company
+   units/interests, e.g. "membership interests in the operating LLC") with ONLY figures the text states for that class.
 5. "structure": describe the ownership/control structure ONLY if the text states it (e.g. dual-class stock,
    Up-C / membership interests / Class B voting, controlled company, voting agreements). Quote exact figures
    as strings. If nothing is stated, use null.
@@ -64,6 +66,16 @@ OUTPUT JSON SCHEMA
 {
   "as_of_date": "YYYY-MM-DD or null (date the ownership table is stated as of)",
   "shares_outstanding": [ {"class": "as written or null", "text": "exact figure as written"} ],
+  "classes": [
+    {
+      "class": "share class as written (e.g. Class A common stock, Class B common stock)",
+      "shares_outstanding_text": "exact figure as written or null",
+      "votes_per_share_text": "exact text about votes per share as written (e.g. '1 vote per share', '3,126,844 votes') or null",
+      "voting_power_percent_text": "exact % of total voting power attributable to this class, as written, or null",
+      "economic_interest_percent_text": "exact % of economic interest attributable to this class, as written, or null",
+      "evidence": "verbatim quote (max 200 chars) supporting the figures above"
+    }
+  ],
   "holders": [
     {
       "name": "name as written, without footnote markers or street address",
@@ -136,10 +148,23 @@ def ground_result(res: dict, source: str) -> dict:
         st = {"type": st.get("type"), "summary": (st.get("summary") or "")[:400], "key_figures": kf}
     else:
         st = None
+    cls = []
+    for c in (res.get("classes") or []):
+        if not isinstance(c, dict) or not c.get("class"):
+            continue
+        ev = c.get("evidence")
+        if not (isinstance(ev, str) and norm(ev) and norm(ev) in src):
+            continue  # בלי ציטוט מאומת - לא סומכים
+        row = {"class": c.get("class"), "evidence": ev}
+        for k in ("shares_outstanding_text", "votes_per_share_text", "voting_power_percent_text",
+                  "economic_interest_percent_text"):
+            v = c.get(k)
+            row[k] = v if (v is not None and grounded(v, src)) else None
+        cls.append(row)
     asof = res.get("as_of_date")
     if not (isinstance(asof, str) and re.match(r"^\d{4}-\d{2}-\d{2}$", asof)):
         asof = None
-    return {"as_of_date": asof, "shares_outstanding": so, "holders": out_holders, "structure": st,
+    return {"as_of_date": asof, "shares_outstanding": so, "classes": cls, "holders": out_holders, "structure": st,
             "no_data_reason": res.get("no_data_reason"),
             "grounding": {"holders_in": len(res.get("holders") or []), "holders_kept": len(out_holders),
                           "holders_dropped": dropped, "fields_nulled": nulled}}
