@@ -37,38 +37,35 @@ def list_free(s, text, frm, to):
     return out
 
 
+URLS = [
+    "rpdf/1643001-1644000/P1643524-00.pdf",   # תשקיף עיקרי 30.1.2025 (חשד: מגדל)
+    "rpdf/1588001-1589000/P1588270-00.pdf",   # תשקיף עיקרי 2.5.2024
+    "rpdf/1594001-1595000/P1594987-00.pdf",   # תשקיף עיקרי 2.6.2024
+    "rpdf/1349001-1350000/P1349007-00.pdf",   # תשקיף עיקרי 1.2.2021
+]
+MGR = re.compile(r"(הראל|מגדל|קסם|מיטב|תכלית|אי\.?בי\.?אי|איביאי|מור|ילין|אנליסט)\s*קרנות\s*נאמנות")
+
+
 def main():
     os.makedirs(pr.OUT, exist_ok=True)
     s = requests.Session()
-    reps = []
-    for n in range(400, 416):
-        fid = f"ק{n}"
-        lst = pr.list_form(s, fid, frm="2025-06-30T21:00:00.000Z")
-        cos = sorted({(c.get("name") or "").strip() for x in lst for c in (x.get("companies") or [])})
-        print(f"[probe2] {fid}: {len(lst)} דוחות; חברות: {cos[:10]}; כותרת: {(lst[0].get('title') if lst else '')[:80]}")
-        reps += [x for x in lst if "תשקיף" in (x.get("title") or "")]
-        time.sleep(1.0)
-    picked = {}
-    for rep in sorted(reps, key=lambda r: r["id"], reverse=True):
-        cos = [(c.get("name") or "").strip() for c in (rep.get("companies") or [])]
-        title = rep.get("title") or ""
-        print(f"  {rep['id']} {cos} {title[:90]}")
-        for t in TARGETS:
-            if t not in picked and any(t in c for c in cos) and "תשקיף" in title and "קרן חדשה" not in title:
-                picked[t] = rep
-    for t, rep in picked.items():
-        m = pr.meta(s, rep["id"])
-        url, text = pr.pdf_text(s, m)
-        print(f"[probe2] {t} {rep['id']} {url} chars={len(text or '')}")
-        if not text or text.startswith("HTTP"):
+    for u in URLS:
+        r = cl._req(s, "GET", cl.FILES_BASE + u, u, timeout=180, headers=cl.GET_HEADERS)
+        print(f"[probe2] {u}: HTTP {r.status_code} {len(r.content)} bytes")
+        if r.status_code != 200:
             continue
-        with open(os.path.join(pr.OUT, f"prospectus_{t}_{rep['id']}.txt"), "w", encoding="utf-8") as f:
+        import annual_terms as at
+        text = at.pdf_to_text(r.content)
+        mgr = MGR.search(text[:5000])
+        print(f"[probe2] {u}: מנהל={mgr.group(0) if mgr else '?'} chars={len(text)}")
+        with open(os.path.join(pr.OUT, "prospectus_" + u.split("/")[-1] + ".txt"), "w", encoding="utf-8") as f:
             f.write(text)
         hits = [ln.strip() for ln in text.splitlines() if KW.search(ln)
-                and "המרביים" not in ln and "המרבית" not in ln]
-        print(f"[probe2] {t}: {len(hits)} שורות רלוונטיות")
-        for ln in hits[:40]:
+                and "המרביים" not in ln and "המרבית" not in ln and "ומרבית" not in ln]
+        print(f"[probe2] {u}: {len(hits)} שורות רלוונטיות")
+        for ln in hits[:25]:
             print("    " + ln[:200])
+        time.sleep(1)
 
 
 if __name__ == "__main__":
