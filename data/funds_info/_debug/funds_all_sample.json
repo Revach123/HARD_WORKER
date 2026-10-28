@@ -1,0 +1,85 @@
+{
+ "fundId": 1143700,
+ "name": "תכלית סל תא 35",
+ "longName": null,
+ "fundType": "קרן סל",
+ "fundTypeId": 5,
+ "isin": "IL0011437006",
+ "managerName": "מיטב קרנות נאמנות",
+ "managerId": 10083,
+ "trusteeName": "מזרחי טפחות נאמנות",
+ "taxStatusName": "פטורה",
+ "managementFee": 0.25,
+ "trusteeFee": 0.02,
+ "successFee": null,
+ "assetValue": null,
+ "purchasePrice": 4050.48,
+ "redemptionPrice": 4046.43,
+ "ratesAsOf": "2026-10-28",
+ "distributionCommissionName": "לא נגבית עמלת הפצה",
+ "saleLoad": 0.0,
+ "standardDeviation": null,
+ "standardDeviationRemarkType": null,
+ "exposureProfile": {
+  "shareSymbol": "4",
+  "fxSymbol": "0",
+  "sharesDesc": "עד 120% מהשווי הנקי של נכסי הקרן",
+  "fxDesc": "ללא חשיפה"
+ },
+ "features": [
+  {
+   "title": "הקרן הינה קרן בלתי מוגבלת בני\"ע חוץ",
+   "enabled": false
+  },
+  {
+   "title": "הקרן הינה קרן ממונפת",
+   "enabled": false
+  },
+  {
+   "title": "לפי מדיניות השקעותיה הקרן הינה קרן מחקה",
+   "enabled": true
+  },
+  {
+   "title": "לפי מדיניות השקעותיה הקרן הינה קרן חשיפה הפוכה",
+   "enabled": false
+  },
+  {
+   "title": "הקרן עוקבת תיק של",
+   "enabled": false
+  },
+  {
+   "title": "הקרן היא קרן מועדים קבועים",
+   "enabled": false
+  },
+  {
+   "title": "יחידות הקרן נקובות ב- $",
+   "enabled": false
+  },
+  {
+   "title": "קרן להשקעות חוץ – מטבע עיקרי",
+   "enabled": false
+  },
+  {
+   "title": "קרן להשק חוץ-פטור ממס לתושבי חוץ",
+   "enabled": false
+  },
+  {
+   "title": "קרן כשרה",
+   "enabled": false
+  }
+ ],
+ "classification": {
+  "major": "מניות בארץ",
+  "main": "מניות לפי שווי שוק",
+  "secondary": "Large Cap"
+ },
+ "underlyingAssets": [
+  {
+   "name": "ת\"א-35",
+   "indexId": 142,
+   "weight": 100.0
+  }
+ ],
+ "featuresText": "לפי מדיניות השקעותיה הקרן הינה קרן מחקה",
+ "underlyingAssetsText": "ת\"א-35"
+}
