@@ -22,6 +22,7 @@ scripts/ownership_us/proxy_parse.py) לא הצליח לאמת, או שיש לה�
 """
 
 import argparse
+import glob
 import gzip
 import json
 import os
@@ -296,8 +297,17 @@ def main():
         queue = json.load(f)
     processed = load_json(processed_path, {})
     order = sorted(queue, key=lambda c: queue[c].get("k", 10**9))  # הגדולות (דירוג נמוך) קודם
-    todo = [c for c in order if processed.get(c, {}).get("status") not in ("ok", "empty")
-            or processed[c].get("schema") != SCHEMA_VERSION]
+    # חברות שכבר עובדו (באותה סכמה) ע"י מודל אחר לא נשלחות שוב - לא מבזבזים מכסה
+    done_elsewhere = set()
+    for pf in glob.glob(os.path.join(HERE, "processed_us_proxy_*.json")):
+        if os.path.abspath(pf) == os.path.abspath(processed_path):
+            continue
+        for c, v in load_json(pf, {}).items():
+            if v.get("status") in ("ok", "empty") and v.get("schema") == SCHEMA_VERSION:
+                done_elsewhere.add(c)
+    todo = [c for c in order if c not in done_elsewhere
+            and (processed.get(c, {}).get("status") not in ("ok", "empty")
+                 or processed[c].get("schema") != SCHEMA_VERSION)]
     if args.limit:
         todo = todo[:args.limit]
     print(f"model={ex.GEMINI_MODEL} queue={len(queue)} todo={len(todo)}")
