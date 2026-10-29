@@ -36,6 +36,10 @@ on:
         description: "הגבלת מספר חברות (ריק/0 = הכל, עד המכסה)"
         required: false
         default: "0"
+      retry_failed_of:
+        description: "תג מודל (למשל gemini-3_5-flash-lite): לעבד רק חברות שהמודל ההוא נכשל בהן (ריק/שגיאה/הרבה פסילות) - לשימוש עם gemini-3.6-flash"
+        required: false
+        default: ""
       workers:
         description: "מקביליות (2 מספיק; ה-RPM מוגן לכל מפתח)"
         required: false
@@ -72,6 +76,7 @@ jobs:
         run: |
           python -u extract_us_proxy.py --queue queue.json.gz \
             --limit "${{ github.event.inputs.limit || '0' }}" \
+            --retry-failed-of "${{ github.event.inputs.retry_failed_of }}" \
             --workers "${{ github.event.inputs.workers || '2' }}"
 
       # רשת ביטחון: הסקריפט כבר עושה checkpoint וקומיט סופי; זה מבטיח שגם קטיעה/כשל לא מאבדים התקדמות.

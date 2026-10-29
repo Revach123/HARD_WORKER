@@ -286,6 +286,9 @@ def main():
     ap.add_argument("--queue", default=os.path.join(HERE, "queue.json.gz"))
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--workers", type=int, default=2)
+    ap.add_argument("--retry-failed-of", default="",
+                    help="תג מודל (למשל gemini-3_5-flash-lite): מעבד רק חברות שהמודל הזה נכשל בהן "
+                         "(ריק / שגיאה / >30%% מהמחזיקים נפסלו בבדיקת הציטוט) - למודל החזק והמוגבל במכסה")
     ap.add_argument("--no-git", action="store_true", help="בלי commit (בדיקות מקומיות)")
     args = ap.parse_args()
 
@@ -308,6 +311,25 @@ def main():
     todo = [c for c in order if c not in done_elsewhere
             and (processed.get(c, {}).get("status") not in ("ok", "empty")
                  or processed[c].get("schema") != SCHEMA_VERSION)]
+    if args.retry_failed_of:
+        # מצב "מסמכים מסובכים": רק מה שמודל אחר לא הסתדר איתו; חברות שהוא כבר עיבד בהצלחה לא נשלחות
+        bad = set()
+        rp = os.path.join(HERE, f"results_us_proxy_{args.retry_failed_of}.jsonl")
+        pp = load_json(os.path.join(HERE, f"processed_us_proxy_{args.retry_failed_of}.json"), {})
+        for c, v in pp.items():
+            if v.get("status") == "error":
+                bad.add(c)
+        if os.path.exists(rp):
+            for line in open(rp, encoding="utf-8"):
+                r = json.loads(line)
+                g = r.get("grounding") or {}
+                hin, dr = g.get("holders_in", 0), g.get("holders_dropped", 0)
+                if r.get("no_data_reason") or (hin and dr / hin > 0.3):
+                    bad.add(r["cik"])
+        todo = [c for c in order if c in bad
+                and (processed.get(c, {}).get("status") not in ("ok", "empty")
+                     or processed[c].get("schema") != SCHEMA_VERSION)]
+        print(f"retry-failed-of {args.retry_failed_of}: {len(bad)} failed, {len(todo)} not yet retried")
     if args.limit:
         todo = todo[:args.limit]
     print(f"model={ex.GEMINI_MODEL} queue={len(queue)} todo={len(todo)}")
