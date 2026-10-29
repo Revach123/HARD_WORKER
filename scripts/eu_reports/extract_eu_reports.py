@@ -35,10 +35,22 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(HERE, "..", "company_ownership"))
 sys.path.insert(0, os.path.join(HERE, "..", "us_proxy"))
 import extract_subsidiaries as ex  # noqa: E402  (_key_pool, GEMINI_BASE_URL, GEMINI_MODEL, GeminiQuotaExceededError)
-from extract_us_proxy import clean_figure, grounded, load_json, norm  # noqa: E402
+from extract_us_proxy import clean_figure, load_json  # noqa: E402
+from extract_us_proxy import norm as _norm  # noqa: E402
 
 CHECKPOINT_EVERY = 10
-SCHEMA_VERSION = 1
+SCHEMA_VERSION = 2  # 2: grounding סובלני לתבליטים + rejected
+_BULLETS = re.compile(r"[\u2022\u00b7\u25aa\u25cf\u25e6\u25a0\u2023\u2043]")
+
+
+def norm(s: str) -> str:
+    """כמו ב-us_proxy, ובנוסף בלי תבליטים: דוחות מפרטים מחזיקים כרשימה ("• BlackRock 11.07%;") וציטוט
+    שמדלג על התבליט (או חוצה שתי שורות רשימה) הוא עדיין ציטוט מדויק של הטקסט."""
+    return _norm(_BULLETS.sub(" ", s or ""))
+
+
+def grounded(value, source_norm: str) -> bool:
+    return value is None or (isinstance(value, str) and norm(value) in source_norm)
 
 SYSTEM_PROMPT = """\
 You extract shareholder information from excerpts of a European listed company's annual report
@@ -101,7 +113,7 @@ OUTPUT JSON SCHEMA
 def ground_result(res: dict, source: str) -> dict:
     """מאפס ערכים שלא מופיעים מילה-במילה במקור; פוסל מחזיקים בלי ציטוט תקף (כמו us_proxy)."""
     src = norm(source)
-    out_holders, dropped, nulled = [], 0, 0
+    out_holders, dropped, nulled, rejected = [], 0, 0, []
     for h in (res.get("holders") or []):
         if not isinstance(h, dict) or not h.get("name"):
             dropped += 1
@@ -109,11 +121,13 @@ def ground_result(res: dict, source: str) -> dict:
         ev = h.get("evidence")
         if not (isinstance(ev, str) and norm(ev) and norm(ev) in src):
             dropped += 1
+            rejected.append({"name": h.get("name"), "evidence": (ev or "")[:200], "why": "evidence"})
             continue
         if norm(h["name"]) not in src:
             toks = norm(h["name"]).split()
             if not toks or toks[0] not in src or toks[-1] not in src:
                 dropped += 1
+                rejected.append({"name": h.get("name"), "evidence": (ev or "")[:200], "why": "name"})
                 continue
         clean = {k: h.get(k) for k in ("name", "role", "class", "evidence")}
         for k in ("shares_text", "percent_text", "voting_percent_text", "as_of_text"):
@@ -151,7 +165,8 @@ def ground_result(res: dict, source: str) -> dict:
     return {"as_of_date": asof, "shares_outstanding": so, "classes": cls, "holders": out_holders, "structure": st,
             "no_data_reason": res.get("no_data_reason"),
             "grounding": {"holders_in": len(res.get("holders") or []), "holders_kept": len(out_holders),
-                          "holders_dropped": dropped, "fields_nulled": nulled}}
+                          "holders_dropped": dropped, "fields_nulled": nulled},
+            "rejected": rejected[:20]}  # לבקרה בלבד - לא מוצג באתר
 
 
 def call_gemini_text(text: str, name: str, max_retries: int = 5) -> dict:
