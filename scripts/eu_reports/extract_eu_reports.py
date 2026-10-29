@@ -39,7 +39,7 @@ from extract_us_proxy import clean_figure, load_json  # noqa: E402
 from extract_us_proxy import norm as _norm  # noqa: E402
 
 CHECKPOINT_EVERY = 10
-SCHEMA_VERSION = 2  # 2: grounding סובלני לתבליטים + rejected
+SCHEMA_VERSION = 3  # 2: grounding סובלני לתבליטים + rejected; 3: control
 _BULLETS = re.compile(r"[\u2022\u00b7\u25aa\u25cf\u25e6\u25a0\u2023\u2043]")
 
 
@@ -73,7 +73,12 @@ STRICT RULES
 6. "classes": one object per share class mentioned, with only figures the text states for that class.
 7. "structure": describe the ownership/control structure ONLY if the text states it (e.g. controlling
    shareholder, relationship agreement, dual-class / multiple voting rights, shareholder agreement).
-8. Output JSON only.
+8. "control": who controls the company IN PRACTICE, ONLY if the text says so explicitly: a controlling shareholder
+   (e.g. "controlling shareholder", "relationship agreement", holds a majority of voting rights), a parent company
+   that consolidates it, special rights to appoint directors, or a shareholder agreement that confers control.
+   Name the controller exactly as written and give a verbatim evidence quote. If the text states that no person
+   controls the company, set "controller" to null and "mechanism" to "none_stated". If nothing is said, use null.
+9. Output JSON only.
 
 OUTPUT JSON SCHEMA
 {
@@ -104,6 +109,12 @@ OUTPUT JSON SCHEMA
     "type": "controlling_shareholder | dual_class | shareholder_agreement | other",
     "summary": "max 400 chars, only what the text states",
     "key_figures": [ {"label": "as written", "text": "exact figure as written"} ]
+  },
+  "control": null | {
+    "controller": "name as written, or null",
+    "mechanism": "majority_voting | relationship_agreement | parent_company | special_rights | shareholder_agreement | none_stated | other",
+    "percent_text": "exact % of voting rights / capital held by the controller as written, or null",
+    "evidence": "verbatim quote (max 240 chars) stating the control"
   },
   "no_data_reason": "string if the text has no shareholder information, else null"
 }
@@ -159,10 +170,26 @@ def ground_result(res: dict, source: str) -> dict:
             v = c.get(k)
             row[k] = v if (v is not None and grounded(v, src)) else None
         cls.append(row)
+    ctl = res.get("control")
+    if isinstance(ctl, dict):
+        ev = ctl.get("evidence")
+        name = ctl.get("controller")
+        if not (isinstance(ev, str) and norm(ev) and norm(ev) in src):
+            ctl = None  # בלי ציטוט מאומת - לא סומכים על קביעת שליטה
+        else:
+            if name is not None and not (isinstance(name, str) and (norm(name) in src or all(
+                    t in src for t in norm(name).split()[:1] + norm(name).split()[-1:]))):
+                name = None
+            pt = ctl.get("percent_text")
+            pt = clean_figure(pt) if (pt is not None and grounded(pt, src)) else None
+            ctl = {"controller": name, "mechanism": ctl.get("mechanism"), "percent_text": pt, "evidence": ev[:300]}
+    else:
+        ctl = None
     asof = res.get("as_of_date")
     if not (isinstance(asof, str) and re.match(r"^\d{4}-\d{2}-\d{2}$", asof)):
         asof = None
     return {"as_of_date": asof, "shares_outstanding": so, "classes": cls, "holders": out_holders, "structure": st,
+            "control": ctl,
             "no_data_reason": res.get("no_data_reason"),
             "grounding": {"holders_in": len(res.get("holders") or []), "holders_kept": len(out_holders),
                           "holders_dropped": dropped, "fields_nulled": nulled},
