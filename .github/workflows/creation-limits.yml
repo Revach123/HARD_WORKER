@@ -56,13 +56,20 @@ jobs:
           done
           if git diff --staged --quiet; then echo "אין שינויים"; exit 0; fi
           git commit -m "auto: creation limits (${{ inputs.mode || 'build' }}) [skip ci]"
-          # לא לדחוף בזמן ריצת חילוץ החברות (ר' test-small-batch.yml)
+          # בזמן ריצת חילוץ החברות (RUNNING_LOCK ב-main) לא דוחפים ל-main: הרצות בדיקה
+          # נדחפות לענף נפרד creation-limits-debug מיד; build ממתין עד 10 דקות ואז מדלג
+          # (ה-CSV יתעדכן בריצה הבאה).
+          locked() { git fetch -q origin main; git cat-file -e origin/main:scripts/company_ownership/RUNNING_LOCK 2>/dev/null; }
+          if [ "${{ inputs.mode || 'build' }}" != "build" ] && locked; then
+            echo "RUNNING_LOCK קיים - דוחף לענף creation-limits-debug"
+            git push -f origin HEAD:refs/heads/creation-limits-debug && exit 0
+            exit 1
+          fi
           for w in $(seq 1 10); do
-            git fetch -q origin main
-            git cat-file -e origin/main:scripts/company_ownership/RUNNING_LOCK 2>/dev/null || break
+            locked || break
             echo "RUNNING_LOCK קיים ב-main - ממתין 60s ($w)"; sleep 60
           done
-          git cat-file -e origin/main:scripts/company_ownership/RUNNING_LOCK 2>/dev/null && { echo "הלוק לא שוחרר - מדלג על push"; exit 0; }
+          locked && { echo "הלוק לא שוחרר - מדלג על push"; exit 0; }
           for i in 1 2 3 4 5; do
             git pull --rebase -q origin main && git push && exit 0
             sleep 3
