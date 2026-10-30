@@ -29,7 +29,7 @@ creation_limits.py — הון כשר / Revach
   יצירה: מחירי הרכישה/פדיון של מנהל הקרן במאיה (לא מחיר המסחר בבורסה) כשהם שונים מהדוח השנתי (משקפים חיוב בפועל), אחרת הדוח השנתי.
   פדיון: הדוח השנתי; כשחסר — הנחה שווה ליצירה (בבדיקה 10/2026: 407/407 קרנות עם
   שני הנתונים — שוות).
-עמלת יצירה נגזרת: purchasePrice/redemptionPrice − 1 מ-funds/all. מחיר הפדיון
+עמלת יצירה נגזרת: 1 − redemptionPrice/purchasePrice מ-funds/all (ר' price_check). מחיר הפדיון
 במאיה הוא ללא ניכוי עמלת פדיון (ר' דוחות קסם), ומחיר הקנייה = NAV + עמלת
 יצירה. אומת: 1143700 -> 4050.48/4046.43 = 0.10%, תואם לתשקיף.
 עמלת הפדיון אינה ניתנת לגזירה מהמחירים.
@@ -236,16 +236,21 @@ def fetch_all_funds(session):
 
 
 def price_check(fr, fee_pct):
-    """האם מחיר הרכישה במאיה = מחיר הפדיון × (1 + עמלת היצירה מהדוח), בדיוק של עיגול.
-    מחירי מאיה (funds/all) הם מחירי מנהל הקרן ליצירה/פדיון, באגורות, מעוגלים ל-0.01 אג'.
+    """האם מחירי מאיה (funds/all: מחירי מנהל הקרן ליצירה/פדיון, באגורות, מעוגלים ל-0.01 אג')
+    תואמים בדיוק את העמלה מהדוח השנתי.
+    נבדק 10/2026 על 407 קרנות סל: היחס הוא רכישה = פדיון ÷ (1 − עמלה), ולא × (1 + עמלה)
+    (405 תואמות בדיוק; ×(1+f) לא תאם אף פעם לבדו). מהמחירים לבדם אי אפשר לדעת אם העמלה
+    מתווספת למחיר הרכישה או מנוכה ממחיר הפדיון — שתיהן נותנות אותו יחס.
     -> (implied_pct_4dp, status)"""
     pur, red = fr.get("purchasePrice"), fr.get("redemptionPrice")
-    if not (isinstance(pur, (int, float)) and isinstance(red, (int, float)) and red > 0):
+    if not (isinstance(pur, (int, float)) and isinstance(red, (int, float)) and red > 0 and pur > 0):
         return "", "אין מחירים"
-    implied = round((pur / red - 1) * 100, 4)
+    implied = round((pur - red) / pur * 100, 4)          # f = 1 − פדיון/רכישה
     if fee_pct is None:
         return implied, ""
-    expected = red * (1 + fee_pct / 100)
+    if pur == red:
+        return implied, "מחיר רכישה = מחיר פדיון"
+    expected = red / (1 - fee_pct / 100)
     diff = pur - expected
     tol = 0.0051 * (2 + fee_pct / 100)          # עיגול שני המחירים ל-0.01 אג'
     if abs(diff) <= tol:
@@ -254,9 +259,10 @@ def price_check(fr, fee_pct):
 
 
 def creation_fee_pct(f):
+    """עמלה משתמעת ממחירי מאיה: 1 − פדיון/רכישה (ר' price_check)."""
     p, r = f.get("purchasePrice"), f.get("redemptionPrice")
-    if isinstance(p, (int, float)) and isinstance(r, (int, float)) and r > 0:
-        return round((p / r - 1) * 100, 2)
+    if isinstance(p, (int, float)) and isinstance(r, (int, float)) and r > 0 and p > 0:
+        return round((p - r) / p * 100, 2)
     return None
 
 
@@ -329,7 +335,7 @@ def k079_latest(session):
     return latest
 
 
-ANNUAL_PARSER = 2
+ANNUAL_PARSER = 3
 
 
 def _fund_from_htm(session, meta):
@@ -352,7 +358,8 @@ def annual_latest(session, etf_ids):
     reports = fetch_report_list(session, first_year=date.today().year - 1, form_id=ANNUAL_FORM)
     # חדשים + רשומות חלקיות שעוד לא נוסו בגרסת הפרסינג הנוכחית (pypdf+pdfium, htm)
     todo = [r for r in reports if str(r["id"]) not in cache["parsed"]
-            or (at.needs_retry(cache["parsed"][str(r["id"])])
+            or ((at.needs_retry(cache["parsed"][str(r["id"])])
+                 or (cache["parsed"][str(r["id"])].get("creation_fee") or 0) >= 1)   # ".1%" שנקרא 1%
                 and cache["parsed"][str(r["id"])].get("parser", 1) < ANNUAL_PARSER)]
     print(f"[ק121] {len(todo)} דוחות שנתיים להורדה (חדשים + ניסיון חוזר לחלקיים)")
     for i, rep in enumerate(todo, 1):
