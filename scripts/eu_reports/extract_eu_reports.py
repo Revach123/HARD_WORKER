@@ -39,14 +39,43 @@ from extract_us_proxy import clean_figure, load_json  # noqa: E402
 from extract_us_proxy import norm as _norm  # noqa: E402
 
 CHECKPOINT_EVERY = 10
-SCHEMA_VERSION = 3  # 2: grounding סובלני לתבליטים + rejected; 3: control
+SCHEMA_VERSION = 4  # 2: grounding סובלני לתבליטים + rejected; 3: control; 4: ציטוט טבלה (תאים בשורות נפרדות)
+CELL_SPAN = 400     # ציטוט של שורת טבלה: כל התאים, לפי הסדר, בטווח הזה בטקסט
 _BULLETS = re.compile(r"[\u2022\u00b7\u25aa\u25cf\u25e6\u25a0\u2023\u2043]")
 
 
 def norm(s: str) -> str:
     """כמו ב-us_proxy, ובנוסף בלי תבליטים: דוחות מפרטים מחזיקים כרשימה ("• BlackRock 11.07%;") וציטוט
-    שמדלג על התבליט (או חוצה שתי שורות רשימה) הוא עדיין ציטוט מדויק של הטקסט."""
-    return _norm(_BULLETS.sub(" ", s or ""))
+    שמדלג על התבליט (או חוצה שתי שורות רשימה) הוא עדיין ציטוט מדויק של הטקסט. "|" (מפריד תאים) = רווח:
+    בטבלה מ-PDF כל תא בשורה משלו, והמודל מצטט "Name | 226,433,021 | 17.98%"."""
+    return _norm(_BULLETS.sub(" ", (s or "").replace("|", " ")))
+
+
+def evidence_ok(ev, source_norm: str) -> bool:
+    """ציטוט מדויק; או ציטוט של שורת טבלה (תאים מופרדים ב-"|" או בשורה חדשה) שבו כל תא מופיע מילה-במילה,
+    לפי הסדר, בטווח CELL_SPAN - כשהמודל דילג על עמודה ("BlackRock, | 231,975,400(2) | 5.69%")."""
+    if not isinstance(ev, str) or not norm(ev):
+        return False
+    if norm(ev) in source_norm:
+        return True
+    cells = [norm(c) for c in re.split(r"[|\n]", ev) if norm(c)]
+    if len(cells) < 2:
+        return False
+    start = 0
+    while True:
+        i = source_norm.find(cells[0], start)
+        if i < 0:
+            return False
+        pos, ok = i + len(cells[0]), True
+        for c in cells[1:]:
+            j = source_norm.find(c, pos)
+            if j < 0 or j - i > CELL_SPAN:
+                ok = False
+                break
+            pos = j + len(c)
+        if ok:
+            return True
+        start = i + 1
 
 
 def grounded(value, source_norm: str) -> bool:
@@ -56,8 +85,9 @@ SYSTEM_PROMPT = """\
 You extract shareholder information from excerpts of a European listed company's annual report
 (e.g. "Substantial shareholdings" / "Major shareholders" notified under the Disclosure Guidance and Transparency
 Rules (DTR 5) or the EU Transparency Directive, "Directors' interests", "Share capital").
-The text may be in any European language. It may contain flattened tables (cells separated by " | ") and
-excerpts separated by "[...]".
+The text may be in any European language. It may contain flattened tables (cells separated by " | ", or each cell on its own line) and
+excerpts separated by "[...]". When quoting a table row whose cells are on separate lines, join the cells
+with " | " in their original order.
 
 STRICT RULES
 1. Use ONLY information explicitly present in the provided text. Never compute, estimate, convert, round,
@@ -130,7 +160,7 @@ def ground_result(res: dict, source: str) -> dict:
             dropped += 1
             continue
         ev = h.get("evidence")
-        if not (isinstance(ev, str) and norm(ev) and norm(ev) in src):
+        if not evidence_ok(ev, src):
             dropped += 1
             rejected.append({"name": h.get("name"), "evidence": (ev or "")[:200], "why": "evidence"})
             continue
@@ -163,7 +193,7 @@ def ground_result(res: dict, source: str) -> dict:
         if not isinstance(c, dict) or not c.get("class"):
             continue
         ev = c.get("evidence")
-        if not (isinstance(ev, str) and norm(ev) and norm(ev) in src):
+        if not evidence_ok(ev, src):
             continue
         row = {"class": c.get("class"), "evidence": ev}
         for k in ("shares_outstanding_text", "votes_per_share_text", "voting_power_percent_text"):
@@ -174,7 +204,7 @@ def ground_result(res: dict, source: str) -> dict:
     if isinstance(ctl, dict):
         ev = ctl.get("evidence")
         name = ctl.get("controller")
-        if not (isinstance(ev, str) and norm(ev) and norm(ev) in src):
+        if not evidence_ok(ev, src):
             ctl = None  # בלי ציטוט מאומת - לא סומכים על קביעת שליטה
         else:
             if name is not None and not (isinstance(name, str) and (norm(name) in src or all(
@@ -298,18 +328,33 @@ def main():
     processed = load_json(processed_path, {})
     order = sorted(queue, key=lambda c: queue[c].get("k", 10**9))
     # דוח שכבר עובד (אותו url, אותה סכמה) ע"י מודל כלשהו לא נשלח שוב - חוסך מכסה
+    # סכמה 3: בדיקת הציטוט פסלה שורות טבלה תקינות (תא בכל שורה). מעבדים מחדש רק דוחות שבהם נפסל מחזיק
+    # כלשהו; השאר תקפים גם בסכמה 4 - לא מבזבזים מכסה
+    dropped_v3 = set()
+    for rf in glob.glob(os.path.join(HERE, "results_eu_reports_*.jsonl")):
+        if rf.endswith("_parser.jsonl"):
+            continue
+        for line in open(rf, encoding="utf-8"):
+            if line.strip():
+                r = json.loads(line)
+                if r.get("schema", 0) < 4 and (r.get("grounding") or {}).get("holders_dropped"):
+                    dropped_v3.add((r["lei"], r.get("url")))
+
+    def current(c, v):
+        sch = v.get("schema") or 0
+        return (v.get("status") in ("ok", "empty") and v.get("u") == queue.get(c, {}).get("u")
+                and (sch == SCHEMA_VERSION or (sch == 3 and (c, v.get("u")) not in dropped_v3)))
+
     done_elsewhere = set()
     for pf in glob.glob(os.path.join(HERE, "processed_eu_reports_*.json")):
         if os.path.abspath(pf) == os.path.abspath(processed_path):
             continue
         for c, v in load_json(pf, {}).items():
-            if v.get("status") in ("ok", "empty") and v.get("schema") == SCHEMA_VERSION and v.get("u") == queue.get(c, {}).get("u"):
+            if current(c, v):
                 done_elsewhere.add(c)
 
     def need(c):
-        p = processed.get(c, {})
-        return (p.get("status") not in ("ok", "empty") or p.get("schema") != SCHEMA_VERSION
-                or p.get("u") != queue[c].get("u"))  # דוח שנתי חדש => מעבדים מחדש
+        return not current(c, processed.get(c, {}))  # כולל דוח שנתי חדש (url אחר) => מעבדים מחדש
 
     todo = [c for c in order if c not in done_elsewhere and need(c)]
     if args.leis:
