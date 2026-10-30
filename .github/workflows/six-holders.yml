@@ -1,0 +1,49 @@
+name: SIX significant shareholders (Switzerland) - fetch
+
+# הודעות בעלי מניות מהותיים של SIX Exchange Regulation -> data/six_holders. ר' scripts/six_holders/fetch_six.py.
+# Revach בונה מזה את השורות השוויצריות של EUROPEAN-COMPANY-INFO.
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "41 4 * * *"
+  push:
+    branches-ignore: [main]
+    paths:
+      - .github/workflows/six-holders.yml
+      - scripts/six_holders/**
+
+concurrency:
+  group: six-holders
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -u scripts/six_holders/fetch_six.py
+      - name: Commit data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          mkdir -p /tmp/out && cp -r data/six_holders /tmp/out/
+          for i in 1 2 3 4 5; do
+            git fetch -q origin "$GITHUB_REF_NAME" && git reset -q --hard "origin/$GITHUB_REF_NAME"
+            rm -rf data/six_holders && cp -r /tmp/out/six_holders data/six_holders
+            git add -A data/six_holders
+            git diff --cached --quiet && { echo "No change."; exit 0; }
+            git commit -q -m "six-holders fetch $(date -u +%Y-%m-%dT%H:%M) [skip ci]"
+            git push -q origin "HEAD:$GITHUB_REF_NAME" && exit 0
+            sleep $((i * 5))
+          done
+          echo "::error::push failed"; exit 1
