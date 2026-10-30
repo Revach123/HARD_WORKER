@@ -362,10 +362,14 @@ def annual_latest(session, etf_ids):
                  or (cache["parsed"][str(r["id"])].get("creation_fee") or 0) >= 1)   # ".1%" שנקרא 1%
                 and cache["parsed"][str(r["id"])].get("parser", 1) < ANNUAL_PARSER)]
     print(f"[ק121] {len(todo)} דוחות שנתיים להורדה (חדשים + ניסיון חוזר לחלקיים)")
+    fails = 0
     for i, rep in enumerate(todo, 1):
         try:
-            meta = _req(session, "GET", META_URL.format(id=rep["id"]), f"meta {rep['id']}",
-                        timeout=30, headers=GET_HEADERS).json()
+            mr = _req(session, "GET", META_URL.format(id=rep["id"]), f"meta {rep['id']}",
+                      timeout=30, headers=GET_HEADERS)
+            if mr.status_code != 200:
+                raise RuntimeError(f"meta HTTP {mr.status_code}")
+            meta = mr.json()
             att = at.pdf_attachment(meta)
             if not att:
                 raise RuntimeError("אין PDF")
@@ -383,9 +387,13 @@ def annual_latest(session, etf_ids):
             rec["date"] = (meta.get("publishDate") or "")[:10]
             rec["parser"] = ANNUAL_PARSER
             cache["parsed"][str(rep["id"])] = rec
+            fails = 0
         except Exception as e:
             print(f"  ⚠ ק121 {rep['id']}: {e}")
-            cache["failed"].append(rep["id"])
+            fails += 1
+            if fails >= 10:      # מאיה חוסמת את ה-runner — לא להמשיך להפציץ; ננסה בריצה הבאה
+                print(f"[ק121] ⚠ {fails} כשלונות רצופים — עצירת ההורדות בריצה זו (המטמון נשמר)")
+                break
         if i % 25 == 0:
             print(f"  {i}/{len(todo)}")
             _save_json(ANNUAL_CACHE, cache)
