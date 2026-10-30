@@ -23,6 +23,8 @@ env: WORLD_DATA_DIR, COUNTRIES (GB,IE,...), LEIS (רשימה, עוקף), PRIORIT
 """
 
 import gzip
+import io
+import zipfile
 import json
 import os
 import re
@@ -168,6 +170,10 @@ def load_universe():
                 continue
             if r.get("security_type") not in ("Common Stock", "Preferred Stock", "Other Equity"):
                 continue
+            # מוצר שהבורסה (SIX) מסווגת כקו מוצרים נגזר/מובנה ונכנס כ"מניה" (Goldman Sachs International Bank
+            # CH0002277314) - לא מניה של חברה
+            if r.get("exchange_product_line") == "DS":
+                continue
             cc = (r.get("issuer_country") or "").upper()
             if LEIS:
                 if lei not in LEIS:
@@ -233,6 +239,32 @@ def report_lines(raw):
         if ln:
             lines.append(ln)
     return lines
+
+
+SHORT_REPORT = 3000   # שורות - פחות מזה בדוח שנתי = כנראה רק אחד מכמה מסמכים בחבילה
+
+
+def package_lines(package_url, report_url):
+    """כל מסמכי ה-XHTML בחבילת ה-ESEF (zip), חוץ מזה שכבר נקרא ומה-viewer -> [lines, ...]."""
+    try:
+        raw = get(package_url, limit=MAX_REPORT_BYTES)
+        if not raw or len(raw) > MAX_REPORT_BYTES:
+            return []
+        z = zipfile.ZipFile(io.BytesIO(raw))
+    except Exception as e:  # noqa: BLE001
+        log(f"    package failed {package_url}: {e!r}")
+        return []
+    main = report_url.rsplit("/", 1)[-1]
+    out = []
+    for name in sorted(z.namelist()):
+        base = name.rsplit("/", 1)[-1]
+        if not re.search(r"\.x?html?$", base, re.I) or base == main or "viewer" in base.lower() or "/reports/" not in "/" + name:
+            continue
+        try:
+            out.append(report_lines(z.read(name)))
+        except Exception as e:  # noqa: BLE001
+            log(f"    package doc failed {name}: {e!r}")
+    return out
 
 
 def find_sections(lines):
@@ -301,7 +333,8 @@ def latest_filing(lei):
     a = r["attributes"]
     return {"id": r.get("id"), "period_end": a.get("period_end"), "date_added": (a.get("date_added") or "")[:10],
             "report_url": BASE + a["report_url"], "viewer_url": BASE + a["viewer_url"] if a.get("viewer_url") else None,
-            "json_url": BASE + a["json_url"] if a.get("json_url") else None, "n_filings": len(rows)}
+            "json_url": BASE + a["json_url"] if a.get("json_url") else None,
+            "package_url": BASE + a["package_url"] if a.get("package_url") else None, "n_filings": len(rows)}
 
 
 def process(lei, meta, old):
@@ -324,6 +357,14 @@ def process(lei, meta, old):
         return rec, None
     rec["report_bytes"] = len(raw)
     lines = report_lines(raw)
+    if len(lines) < SHORT_REPORT and fil.get("package_url"):
+        # דוח שמחולק לכמה קבצי XHTML (TBC Bank: הראשון 651 שורות) - כל המסמכים בחבילה
+        extra = package_lines(fil["package_url"], fil["report_url"])
+        rec["package_tried"] = True
+        if extra:
+            rec["package_docs"] = len(extra)
+            for more in extra:
+                lines += more
     rec["report_lines"] = len(lines)
     if lei in DEBUG_LEIS:
         os.makedirs(os.path.join(OUT_DIR, "debug"), exist_ok=True)
@@ -360,8 +401,13 @@ def main():
             sections = json.load(f)
     except (FileNotFoundError, OSError, json.JSONDecodeError):
         sections = {}
+    def short(r):  # דוח קצר בלי סעיף - אולי דוח מרובה מסמכים שנקרא חלקית (לפני package_lines)
+        return r.get("status") in ("no_section", "partial") and (r.get("report_lines") or 0) < SHORT_REPORT \
+            and "package_tried" not in r
+
     todo = [l for l in order if REFRESH or LEIS or l not in reports
-            or reports[l].get("pv") != PARSER_VERSION or reports[l].get("checked", "") < date.today().isoformat()[:7]]
+            or reports[l].get("pv") != PARSER_VERSION or reports[l].get("checked", "") < date.today().isoformat()[:7]
+            or short(reports[l])]
     if LIMIT:
         todo = todo[:LIMIT]
     log(f"universe={len(uni)} ({','.join(sorted(COUNTRIES)) if not LEIS else 'LEIS'}) cached={len(reports)} todo={len(todo)}")
