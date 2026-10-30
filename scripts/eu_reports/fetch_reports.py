@@ -36,6 +36,7 @@ import urllib.error
 import urllib.request
 from datetime import date
 
+from universe_rules import lei_name_mismatch  # noqa: E402 - משותף עם six_holders/build_six.py
 import lxml.html
 from lxml import etree
 
@@ -170,9 +171,9 @@ def load_universe():
                 continue
             if r.get("security_type") not in ("Common Stock", "Preferred Stock", "Other Equity"):
                 continue
-            # מוצר שהבורסה (SIX) מסווגת כקו מוצרים נגזר/מובנה ונכנס כ"מניה" (Goldman Sachs International Bank
-            # CH0002277314) - לא מניה של חברה
-            if r.get("exchange_product_line") == "DS":
+            # LEI שגוי מהרגולטור: שם המנפיק לפי ה-LEI ושם המנפיק לפי הבורסה בלי מילה משותפת
+            # (CH0002277314 היא Schlatter Industries AG, וה-LEI שלה הוא של Goldman Sachs International Bank)
+            if lei_name_mismatch(r):
                 continue
             cc = (r.get("issuer_country") or "").upper()
             if LEIS:
