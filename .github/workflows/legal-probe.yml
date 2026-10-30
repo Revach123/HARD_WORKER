@@ -14,7 +14,7 @@ permissions:
 jobs:
   probe:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
         with:
@@ -22,10 +22,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install requests pypdf
-      - run: python -u scripts/legal_probe/fetch_legal.py
-        env:
-          ONLY: amendment28_2017_pdf,amendment28_ws,amendment28_ws2,regs_reports_20yd_ws
+      - run: pip install requests pypdf pypdfium2
+      - run: python -u scripts/legal_probe/stop_offering.py
       - name: Commit
         run: |
           git config user.name "github-actions[bot]"
