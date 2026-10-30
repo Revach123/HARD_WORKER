@@ -1,5 +1,9 @@
 name: creation-limits (ק79)
 on:
+  # יומי, לפני build-funds באתר (04:30 UTC), שמושך את ה-CSV מכאן. בריצה מתוזמנת
+  # inputs ריק -> מצב build. המטמונים (k79/k121) מורידים רק דוחות חדשים.
+  schedule:
+    - cron: "23 2 * * *"
   workflow_dispatch:
     inputs:
       mode:
@@ -49,7 +53,7 @@ jobs:
             [ -e "$f" ] && git add -A "$f"
           done
           if git diff --staged --quiet; then echo "אין שינויים"; exit 0; fi
-          git commit -m "auto: creation limits (${{ inputs.mode }}) [skip ci]"
+          git commit -m "auto: creation limits (${{ inputs.mode || 'build' }}) [skip ci]"
           # לא לדחוף בזמן ריצת חילוץ החברות (ר' test-small-batch.yml)
           for w in $(seq 1 10); do
             git fetch -q origin main
