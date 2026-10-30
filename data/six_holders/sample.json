@@ -1,0 +1,456 @@
+[
+ {
+  "publication": {
+   "beneficialAssocComment": [],
+   "beneficialAssocTypeCode": "",
+   "category": "A",
+   "consolidatedFlag": "T",
+   "correcteeDate": 0,
+   "correcteeId": "",
+   "correctorId": "",
+   "deleteeDate": 0,
+   "deleteeId": "",
+   "deletorId": "",
+   "formRevision": null,
+   "notificationId": "ZA01-000000000SUQ4",
+   "notificationSubmitter": "ARYZTA AG",
+   "notificationSubmitterId": "ARYZ",
+   "onBehalfFlag": "",
+   "publicationDate": 20261030,
+   "purchaseTotalVotingRate": 3.061,
+   "relationComment": [],
+   "relationTypeCode": "",
+   "saleTotalVotingRate": 0.353,
+   "sesta20Flag": "T",
+   "submitterComment": [],
+   "transactionDate": 20261028,
+   "transferDate": 0,
+   "triggerComment": [
+    "The obligation to notify was triggered by an acquisition of collateral (Acquisition and Share Position Obligation). With Recommendations of the Disclosure Office dated 15 July 2016, 17 June 2019, 8 July 2022 and 11 July 2025, BlackRock, Inc. was granted easing provisions from the obligation to disclose the direct shareholders according to Article 120 para. 1 FinMIA in conjunction with Article 11 let. b and Article 22 para. 1 let. e and para. 3 FinMIO-FINMA when disclosing holdings according to Article 18 para. 1 and 4 FinMIO-FINMA. However, collective investment schemes within the meaning of Article 18 para. 2 let. a FinMIO-FINMA that hold individually 3% or more of the voting rights of the relevant issuer will be mentioned in the relevant disclosure notification. Any person shall, at his/her request and without prove of interest, receive information about the direct shareholders within the meaning of Article 11 let. b an Article 22 para. 1 let. e and para. 3 FinMIO-FINMA.  Such request has to be addressed via email to the Disclosure Office: disclosure-office@six-group.com. The information will be provided in electronic format with a reference date not older than one month.  The easing provisions are granted until 15 July 2028."
+   ],
+   "triggerTypeCodes": [
+    20,
+    27
+   ],
+   "swxListed": "T",
+   "belowThresholdVotingRate": 0.0
+  },
+  "belowThresholdVotingRate": 0.0,
+  "showHistoryFlag": "T",
+  "groupRepresentative": "",
+  "contactPerson": "",
+  "beneficialNames": [
+   "BlackRock, Inc."
+  ],
+  "beneficialAddrs": [
+   "BlackRock, Inc., New York, US"
+  ],
+  "shareholderNames": [],
+  "shareholderAddrs": [],
+  "positionsEquity": [
+   {
+    "deliveryTypeCode": "",
+    "exerciseDate": "",
+    "exercisePrice": "",
+    "furtherConditions": [],
+    "isin": "",
+    "issuerName": "",
+    "legalTransactionTypeCode": 0,
+    "notificationId": "ZA01-000000000SUQ4",
+    "positionSize": "661389",
+    "positionSubCategory": "E",
+    "positionVotesCount": "661389",
+    "positionVotingRate": "2.664",
+    "returnChooserTypeCode": 0,
+    "returnDate": "",
+    "securityTypeCode": "1",
+    "subscriptionRatio": ""
+   }
+  ],
+  "positionsRights": [],
+  "positionsLending": [],
+  "positionsLendingEquity": [
+   {
+    "deliveryTypeCode": "",
+    "exerciseDate": "",
+    "exercisePrice": "",
+    "furtherConditions": [],
+    "isin": "",
+    "issuerName": "",
+    "legalTransactionTypeCode": 3,
+    "notificationId": "ZA01-000000000SUQ4",
+    "positionSize": "18597",
+    "positionSubCategory": "Q",
+    "positionVotesCount": "18597",
+    "positionVotingRate": ".075",
+    "returnChooserTypeCode": 5,
+    "returnDate": "",
+    "securityTypeCode": "1",
+    "subscriptionRatio": ""
+   }
+  ],
+  "positionsLendingRights": [],
+  "positionsSale": [
+   {
+    "deliveryTypeCode": "",
+    "exerciseDate": "",
+    "exercisePrice": "",
+    "furtherConditions": [
+     "Contracts for difference issued by Barclays on ARYZTA AG"
+    ],
+    "isin": "CH1425684714",
+    "issuerName": "",
+    "legalTransactionTypeCode": 0,
+    "notificationId": "ZA01-000000000SUQ4",
+    "positionSize": "49",
+    "positionSubCategory": "S",
+    "positionVotesCount": "49",
+    "positionVotingRate": "0",
+    "returnChooserTypeCode": 0,
+    "returnDate": "",
+    "securityTypeCode": "62",
+    "subscriptionRatio": ""
+   },
+   {
+    "deliveryTypeCode": "",
+    "exerciseDate": "",
+    "exercisePrice": "",
+    "furtherConditions": [
+     "Contracts for difference issued by Goldman Sachs on ARYZTA AG"
+    ],
+    "isin": "CH1425684714",
+    "issuerName": "",
+    "legalTransactionTypeCode": 0,
+    "notificationId": "ZA01-000000000SUQ4",
+    "positionSize": "19529",
+    "positionSubCategory": "S",
+    "positionVotesCount": "19529",
+    "positionVotingRate": ".079",
+    "returnChooserTypeCode": 0,
+    "returnDate": "",
+    "securityTypeCode": "62",
+    "subscriptionRatio": ""
+   },
+   {
+    "deliveryTypeCode": "",
+    "exerciseDate": "",
+    "exercisePrice": "",
+    "furtherConditions": [
+     "Contracts for difference issued by Merrill Lynch on ARYZTA AG"
+    ],
+    "isin": "CH1425684714",
+    "issuerName": "",
+    "legalTransactionTypeCode": 0,
+    "notificationId": "ZA01-000000000SUQ4",
+    "positionSize": "2095",
+    "positionSubCategory": "S",
+    "positionVotesCount": "2095",
+    "positionVotingRate": ".008",
+    "returnChooserTypeCode": 0,
+    "returnDate": "",
+    "securityTypeCode": "62",
+    "subscriptionRatio": ""
+   },
+   {
+    "deliveryTypeCode": "",
+    "exerciseDate": "",
+    "exercisePrice": "",
+    "furtherConditions": [
+     "Contracts for difference issued by Morgan Stanley on ARYZTA AG"
+    ],
+    "isin": "CH1425684714",
+    "issuerName": "",
+    "legalTransactionTypeCode": 0,
+    "notificationId": "ZA01-000000000SUQ4",
+    "positionSize": "57300",
+    "positionSubCategory": "S",
+    "positionVotesCount": "57300",
+    "positionVotingRate": ".231",
+    "returnChooserTypeCode": 0,
+    "returnDate": "",
+    "securityTypeCode": "62",
+    "subscriptionRatio": ""
+   },
+   {
+    "deliveryTypeCode": "",
+    "exerciseDate": "",
+    "exercisePrice": "",
+    "furtherConditions": [
+     "Contracts for difference issued by UBS on ARYZTA AG"
+    ],
+    "isin": "CH1425684714",
+    "issuerName": "",
+    "legalTransactionTypeCode": 0,
+    "notificationId": "ZA01-000000000SUQ4",
+    "positionSize": "936",
+    "positionSubCategory": "S",
+    "positionVotesCount": "936",
+    "positionVotingRate": ".004",
+    "returnChooserTypeCode": 0,
+    "returnDate": "",
+    "securityTypeCode": "62",
+    "subscriptionRatio": ""
+   },
+   {
+    "deliveryTypeCode": "",
+    "exerciseDate": "",
+    "exercisePrice": "",
+    "furtherConditions": [
+     "Contracts for difference issued by HSBC on ARYZTA AG"
+    ],
+    "isin": "CH1425684714",
+    "issuerName": "",
+    "legalTransactionTypeCode": 0,
+    "notificationId": "ZA01-000000000SUQ4",
+    "positionSize": "1272",
+    "positionSubCategory": "S",
+    "positionVotesCount": "1272",
+    "positionVotingRate": ".005",
+    "returnChooserTypeCode": 0,
+    "returnDate": "",
+    "securityTypeCode": "62",
+    "subscriptionRatio": ""
+   },
+   {
+    "deliveryTypeCode": "",
+    "exerciseDate": "",
+    "exercisePrice": "",
+    "furtherConditions": [
+     "Contracts for difference issued by BNP Paribas on ARYZTA AG"
+    ],
+    "isin": "CH1425684714",
+    "issuerName": "",
+    "legalTransactionTypeCode": 0,
+    "notificationId": "ZA01-000000000SUQ4",
+    "positionSize": "5599",
+    "positionSubCategory": "S",
+    "positionVotesCount": "5599",
+    "positionVotingRate": ".023",
+    "returnChooserTypeCode": 0,
+    "returnDate": "",
+    "securityTypeCode": "62",
+    "subscriptionRatio": ""
+   },
+   {
+    "deliveryTypeCode": "",
+    "exerciseDate": "",
+    "exercisePrice": "",
+    "furtherConditions": [
+     "Contracts for difference issued by Societe Generale on ARYZTA AG"
+    ],
+    "isin": "CH1425684714",
+    "issuerName": "",
+    "legalTransactionTypeCode": 0,
+    "notificationId": "ZA01-000000000SUQ4",
+    "positionSize": "853",
+    "positionSubCategory": "S",
+    "positionVotesCount": "853",
+    "positionVotingRate": ".003",
+    "returnChooserTypeCode": 0,
+    "returnDate": "",
+    "securityTypeCode": "62",
+    "subscriptionRatio": ""
+   }
+  ],
+  "positionsTender": [],
+  "positionsDiscretionaryVoting": [
+   {
+    "deliveryTypeCode": "",
+    "exerciseDate": "",
+    "exercisePrice": "",
+    "furtherConditions": [],
+    "isin": "",
+    "issuerName": "",
+    "legalTransactionTypeCode": 0,
+    "notificationId": "ZA01-000000000SUQ4",
+    "positionSize": "",
+    "positionSubCategory": "V",
+    "positionVotesCount": "98477",
+    "positionVotingRate": ".397",
+    "returnChooserTypeCode": 0,
+    "returnDate": "",
+    "securityTypeCode": "",
+    "subscriptionRatio": ""
+   }
+  ]
+ },
+ {
+  "publication": {
+   "beneficialAssocComment": [],
+   "beneficialAssocTypeCode": "",
+   "category": "C",
+   "consolidatedFlag": "",
+   "correcteeDate": 0,
+   "correcteeId": "",
+   "correctorId": "",
+   "deleteeDate": 0,
+   "deleteeId": "",
+   "deletorId": "",
+   "formRevision": null,
+   "notificationId": "ZA03-000000000SUO8",
+   "notificationSubmitter": "Comet Holding AG",
+   "notificationSubmitterId": "COMET",
+   "onBehalfFlag": "",
+   "publicationDate": 20261030,
+   "purchaseTotalVotingRate": 5.04,
+   "relationComment": [],
+   "relationTypeCode": "",
+   "saleTotalVotingRate": 0.0,
+   "sesta20Flag": "T",
+   "submitterComment": [],
+   "transactionDate": 20261022,
+   "transferDate": 0,
+   "triggerComment": [],
+   "triggerTypeCodes": [
+    21
+   ],
+   "swxListed": "T",
+   "belowThresholdVotingRate": 0.0
+  },
+  "belowThresholdVotingRate": 0.0,
+  "showHistoryFlag": "T",
+  "groupRepresentative": "",
+  "contactPerson": "",
+  "beneficialNames": [
+   "Swisscanto Fondsleitung AG"
+  ],
+  "beneficialAddrs": [
+   "Swisscanto Fondsleitung AG, Zürich, CH"
+  ],
+  "shareholderNames": [],
+  "shareholderAddrs": [],
+  "positionsEquity": [
+   {
+    "deliveryTypeCode": "",
+    "exerciseDate": "",
+    "exercisePrice": "",
+    "furtherConditions": [],
+    "isin": "",
+    "issuerName": "",
+    "legalTransactionTypeCode": 0,
+    "notificationId": "ZA03-000000000SUO8",
+    "positionSize": "391178",
+    "positionSubCategory": "E",
+    "positionVotesCount": "391178",
+    "positionVotingRate": "5.032",
+    "returnChooserTypeCode": 0,
+    "returnDate": "",
+    "securityTypeCode": "1",
+    "subscriptionRatio": ""
+   }
+  ],
+  "positionsRights": [
+   {
+    "deliveryTypeCode": "",
+    "exerciseDate": "",
+    "exercisePrice": "",
+    "furtherConditions": [],
+    "isin": "DE000F35UF52",
+    "issuerName": "",
+    "legalTransactionTypeCode": 0,
+    "notificationId": "ZA03-000000000SUO8",
+    "positionSize": "6",
+    "positionSubCategory": "R",
+    "positionVotesCount": "600",
+    "positionVotingRate": ".008",
+    "returnChooserTypeCode": 0,
+    "returnDate": "",
+    "securityTypeCode": "51",
+    "subscriptionRatio": ""
+   }
+  ],
+  "positionsLending": [],
+  "positionsLendingEquity": [],
+  "positionsLendingRights": [],
+  "positionsSale": [],
+  "positionsTender": [],
+  "positionsDiscretionaryVoting": []
+ },
+ {
+  "publication": {
+   "beneficialAssocComment": [
+    "Die Metall Zug AG, 6300 Zug, Schweiz, wird mehrheitlich gehalten durch die wirtschaftlich Berechtigten, wobei Heinz M. Buhofer unter diesen die Stimmenmehrheit hält (gemäss Offenlegungsmeldung betreffend die Metall Zug AG)."
+   ],
+   "beneficialAssocTypeCode": "",
+   "category": "B",
+   "consolidatedFlag": "",
+   "correcteeDate": 0,
+   "correcteeId": "",
+   "correctorId": "",
+   "deleteeDate": 0,
+   "deleteeId": "",
+   "deletorId": "",
+   "formRevision": null,
+   "notificationId": "ZA02-000000000SUN0",
+   "notificationSubmitter": "Komax Holding AG",
+   "notificationSubmitterId": "KOMAX",
+   "onBehalfFlag": "",
+   "publicationDate": 20261030,
+   "purchaseTotalVotingRate": 25.0,
+   "relationComment": [],
+   "relationTypeCode": "",
+   "saleTotalVotingRate": 0.0,
+   "sesta20Flag": "T",
+   "submitterComment": [],
+   "transactionDate": 20261027,
+   "transferDate": 0,
+   "triggerComment": [],
+   "triggerTypeCodes": [
+    24
+   ],
+   "swxListed": "T",
+   "belowThresholdVotingRate": 0.0
+  },
+  "belowThresholdVotingRate": 0.0,
+  "showHistoryFlag": "T",
+  "groupRepresentative": "Metall Zug AG, 6300 Zug, CH",
+  "contactPerson": "",
+  "beneficialNames": [
+   "Heinz M.  Buhofer",
+   "Annelies Häcki-Buhofer",
+   "Julia Häcki",
+   "Joel Buhofer",
+   "Martin Buhofer Erbengemeinschaft"
+  ],
+  "beneficialAddrs": [
+   "Heinz M.  Buhofer, 6300 Zug, CH",
+   "Annelies Häcki-Buhofer, 6300 Zug, CH",
+   "Julia Häcki, 8032 Zürich, CH",
+   "Joel Buhofer, 8133 Esslingen, CH",
+   "Martin Buhofer Erbengemeinschaft, 6300 Zug, CH"
+  ],
+  "shareholderNames": [
+   "Metall Zug AG"
+  ],
+  "shareholderAddrs": [
+   "Metall Zug AG, 6300 Zug, CH"
+  ],
+  "positionsEquity": [
+   {
+    "deliveryTypeCode": "",
+    "exerciseDate": "",
+    "exercisePrice": "",
+    "furtherConditions": [],
+    "isin": "",
+    "issuerName": "",
+    "legalTransactionTypeCode": 0,
+    "notificationId": "ZA02-000000000SUN0",
+    "positionSize": "1283333",
+    "positionSubCategory": "E",
+    "positionVotesCount": "1283333",
+    "positionVotingRate": "25",
+    "returnChooserTypeCode": 0,
+    "returnDate": "",
+    "securityTypeCode": "1",
+    "subscriptionRatio": ""
+   }
+  ],
+  "positionsRights": [],
+  "positionsLending": [],
+  "positionsLendingEquity": [],
+  "positionsLendingRights": [],
+  "positionsSale": [],
+  "positionsTender": [],
+  "positionsDiscretionaryVoting": []
+ }
+]
