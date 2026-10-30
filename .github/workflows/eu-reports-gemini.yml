@@ -1,0 +1,86 @@
+# .github/workflows/eu-reports-gemini.yml
+#
+# חילוץ בעלות מדוחות שנתיים אירופאיים (ESEF/UKSEF) באמצעות Gemini (scripts/eu_reports/extract_eu_reports.py).
+# קלט: scripts/eu_reports/queue.json.gz (נוצר ע"י ריפו Revach - scripts/ownership_eu/fetch_reports.py).
+# פלט (נשמר ב-git): results_eu_reports_<model>.jsonl + processed_eu_reports_<model>.json.
+# אותם מפתחות GEMINI_API_KEY* ואותה עצירה אוטומטית במכסה כמו us-proxy-gemini; ההרצה הבאה ממשיכה מאותה נקודה.
+# הפעלה ידנית / מתוזמנת בלבד - התור מתעדכן ע"י eu-reports-fetch.yml ואסור שכל עדכון יצרוך מכסה.
+
+name: EU annual reports ownership - Gemini extraction (resumable)
+
+permissions:
+  contents: write
+
+concurrency:
+  group: eu-reports-gemini
+  cancel-in-progress: false
+
+on:
+  workflow_dispatch:
+    inputs:
+      model:
+        description: "איזה מודל Gemini (מכסה ו-processed נפרדים לכל מודל)"
+        required: false
+        type: choice
+        options:
+          - gemini-3.5-flash-lite
+          - gemini-3.6-flash
+        default: gemini-3.5-flash-lite
+      limit:
+        description: "הגבלת מספר חברות (ריק/0 = הכל, עד המכסה)"
+        required: false
+        default: "0"
+      leis:
+        description: "רק LEI אלה (מופרד בפסיקים)"
+        required: false
+        default: ""
+      workers:
+        description: "מקביליות"
+        required: false
+        default: "2"
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests --break-system-packages
+
+      - name: Check queue exists
+        run: test -f scripts/eu_reports/queue.json.gz || { echo "::error::scripts/eu_reports/queue.json.gz חסר"; exit 1; }
+
+      - name: Run Gemini extraction (stops gracefully at quota)
+        working-directory: scripts/eu_reports
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
+          GEMINI_API_KEY_3: ${{ secrets.GEMINI_API_KEY_3 }}
+          GEMINI_API_KEY_4: ${{ secrets.GEMINI_API_KEY_4 }}
+          GEMINI_MODEL_OVERRIDE: ${{ github.event.inputs.model || 'gemini-3.5-flash-lite' }}
+          PYTHONUNBUFFERED: "1"
+        run: |
+          python -u extract_eu_reports.py --queue queue.json.gz \
+            --limit "${{ github.event.inputs.limit || '0' }}" \
+            --leis "${{ github.event.inputs.leis }}" \
+            --workers "${{ github.event.inputs.workers || '2' }}"
+
+      - name: Commit progress
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add scripts/eu_reports/results_eu_reports_*.jsonl scripts/eu_reports/processed_eu_reports_*.json || true
+          if git diff --cached --quiet; then echo "No change."; exit 0; fi
+          git commit -m "eu-reports gemini progress [skip ci]"
+          for attempt in 1 2 3 4 5; do
+            if git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}"; then exit 0; fi
+            sleep $((attempt * 5))
+          done
+          echo "::error::push failed"; exit 1
