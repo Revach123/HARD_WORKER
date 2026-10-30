@@ -31,6 +31,7 @@ def list_form(session, form_id, frm, to, max_pages=40):
         r = cl._req(session, "POST", cl.LIST_URL, f"{form_id} p{page}", timeout=30, headers=cl.HEADERS,
                     data=json.dumps(body))
         if r.status_code != 200:
+            print(f"  {form_id} {frm[:10]}..{to[:10]} p{page}: HTTP {r.status_code} {r.text[:120]!r}")
             return out, r.status_code
         data = r.json() or []
         new = [x for x in data if x.get("id") not in seen]
@@ -52,9 +53,21 @@ def main():
     today = date.today().isoformat() + "T21:00:00.000Z"
     # שלב 1: איזה טופס הוא "הפסקת הצעת יחידות / חידושה" - עמוד אחד לכל קוד, 2018 עד היום
     forms = {}
+    # בדיקת שפיות: ק079 בשנה הנוכחית (עובד ב-creation_limits.py)
+    y0 = date.today().year
+    win = (f"{y0 - 1}-12-31T22:00:00.000Z", today)
+    reps, st = list_form(s, "ק079", *win, max_pages=1)
+    print("sanity ק079:", st, len(reps), json.dumps(reps[:1], ensure_ascii=False)[:600])
     for n in range(1, 200):
         fid = f"ק{n:03d}"
-        reps, st = list_form(s, fid, "2017-12-31T22:00:00.000Z", today, max_pages=1)
+        reps, st = [], None
+        for y in range(y0, y0 - 4, -1):   # חלון של שנה (טווח ארוך נדחה); 4 השנים האחרונות
+            frm = f"{y - 1}-12-31T22:00:00.000Z"
+            to = today if y == y0 else f"{y}-12-31T21:00:00.000Z"
+            r_, st = list_form(s, fid, frm, to, max_pages=1)
+            reps += r_
+            if r_:
+                break
         if reps:
             forms[fid] = {"status": st, "n_page1": len(reps), "sample": reps[0], "titles": sorted({title(r)[:120] for r in reps})[:8]}
             print(fid, len(reps), "|", " || ".join(forms[fid]["titles"][:3])[:300])
