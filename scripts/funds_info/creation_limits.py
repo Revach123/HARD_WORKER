@@ -26,7 +26,7 @@ creation_limits.py — הון כשר / Revach
   הטופס עוסק ביצירה ("לרכישה") בלבד — אין בו מגבלות פדיון.
 
 עמלות — עמודות סופיות + מקור:
-  יצירה: מחירי מאיה כשהם שונים מהדוח השנתי (משקפים חיוב בפועל), אחרת הדוח השנתי.
+  יצירה: מחירי הרכישה/פדיון של מנהל הקרן במאיה (לא מחיר המסחר בבורסה) כשהם שונים מהדוח השנתי (משקפים חיוב בפועל), אחרת הדוח השנתי.
   פדיון: הדוח השנתי; כשחסר — הנחה שווה ליצירה (בבדיקה 10/2026: 407/407 קרנות עם
   שני הנתונים — שוות).
 עמלת יצירה נגזרת: purchasePrice/redemptionPrice − 1 מ-funds/all. מחיר הפדיון
@@ -235,6 +235,24 @@ def fetch_all_funds(session):
     return {int(f["fundId"]): f for f in r.json() if f.get("fundId") is not None}
 
 
+def price_check(fr, fee_pct):
+    """האם מחיר הרכישה במאיה = מחיר הפדיון × (1 + עמלת היצירה מהדוח), בדיוק של עיגול.
+    מחירי מאיה (funds/all) הם מחירי מנהל הקרן ליצירה/פדיון, באגורות, מעוגלים ל-0.01 אג'.
+    -> (implied_pct_4dp, status)"""
+    pur, red = fr.get("purchasePrice"), fr.get("redemptionPrice")
+    if not (isinstance(pur, (int, float)) and isinstance(red, (int, float)) and red > 0):
+        return "", "אין מחירים"
+    implied = round((pur / red - 1) * 100, 4)
+    if fee_pct is None:
+        return implied, ""
+    expected = red * (1 + fee_pct / 100)
+    diff = pur - expected
+    tol = 0.0051 * (2 + fee_pct / 100)          # עיגול שני המחירים ל-0.01 אג'
+    if abs(diff) <= tol:
+        return implied, "מדויק"
+    return implied, f"סטייה {diff:+.2f} אג' ({diff / red * 1e4:+.1f} נ\"ב)"
+
+
 def creation_fee_pct(f):
     p, r = f.get("purchasePrice"), f.get("redemptionPrice")
     if isinstance(p, (int, float)) and isinstance(r, (int, float)) and r > 0:
@@ -410,11 +428,14 @@ def build(session):
 
     os.makedirs(os.path.dirname(OUT_CSV), exist_ok=True)
     stats = {"annual": 0, "k079": 0}
+    checks = []    # (fid, manager, annual_fee, implied, status)
     with open(OUT_CSV, "w", newline="", encoding="utf-8-sig") as f:
         w = csv.writer(f)
         w.writerow(["מספר קרן", "שם קרן", "מנהל",
                     "עמלת יצירה %", "עמלת פדיון %", "מקור עמלת יצירה", "מקור עמלת פדיון",
                     "עמלת יצירה % (דוח שנתי)", "עמלת פדיון % (דוח שנתי)", "עמלת יצירה % (נגזרת ממחירים)",
+                    "מחיר רכישה (מאיה, אג')", "מחיר פדיון (מאיה, אג')", "תאריך מחירים",
+                    "עמלה משתמעת % (4 ספרות)", "התאמת מחירים לדוח",
                     "מגבלת שווי הזמנה (דוח שנתי)",
                     "יחידות מזערי ליצירה", "שווי מזערי (ש\"ח)", "תוקף מזערי", "דוח מזערי",
                     "יחידות מרבי ליצירה", "שווי מרבי (ש\"ח)", "תוקף מרבי", "דוח מרבי",
@@ -438,11 +459,11 @@ def build(session):
             a_c, a_r = an.get("creation_fee"), an.get("redemption_fee")
             # מחירי מאיה משקפים את החיוב בפועל, אלא כשהמחיר נמוך מדי לעיגול (נגזר=0)
             if fee and (a_c is None or abs(a_c - fee) > 0.02):
-                c_final, c_src = fee, "מחירי מאיה (קנייה/פדיון)"
+                c_final, c_src = fee, "מחירי רכישה/פדיון (מאיה)"
             elif a_c is not None:
                 c_final, c_src = a_c, "דוח שנתי"
             else:
-                c_final, c_src = fee, ("מחירי מאיה (קנייה/פדיון)" if fee is not None else "")
+                c_final, c_src = fee, ("מחירי רכישה/פדיון (מאיה)" if fee is not None else "")
             if a_r is not None:
                 r_final, r_src = a_r, "דוח שנתי"
             elif c_final is not None:
@@ -450,14 +471,29 @@ def build(session):
             else:
                 r_final, r_src = None, ""
             nz = lambda v: "" if v is None else v
+            implied, pstat = price_check(fr, a_c)
+            if a_c is not None:
+                checks.append((fid, (fr.get("managerName") or "").strip(), a_c, implied, pstat))
             w.writerow([fid, fr.get("name", ""), fr.get("managerName", ""),
                         nz(c_final), nz(r_final), c_src, r_src,
                         nz(a_c), nz(a_r), nz(fee),
+                        nz(fr.get("purchasePrice")), nz(fr.get("redemptionPrice")), fr.get("ratesAsOf", ""),
+                        implied, pstat,
                         limit_status(an, fr.get("managerName"), mgr_stmt.get(fr.get("managerName"))),
                         *side("min"), *side("max"),
                         round(red, 2) if red else "", an.get("rid", ""), an.get("date", ""),
                         an.get("limit_text", "")])
     print(f"[build] {len(etfs)} קרנות סל; דוח שנתי ל-{stats['annual']}, ק079 ל-{stats['k079']} -> {OUT_CSV}")
+    from collections import Counter
+    st = Counter("מדויק" if c[4] == "מדויק" else ("אין מחירים" if c[4] == "אין מחירים" else "סטייה") for c in checks)
+    print(f"[price-check] {len(checks)} קרנות עם עמלה מהדוח השנתי: {dict(st)}")
+    by_mgr = {}
+    for c in checks:
+        by_mgr.setdefault(c[1], Counter())["מדויק" if c[4] == "מדויק" else "אחר"] += 1
+    for m, v in sorted(by_mgr.items()):
+        print(f"[price-check]   {m}: {dict(v)}")
+    for c in [c for c in checks if c[4] not in ("מדויק",)][:80]:
+        print(f"[price-check]   ✗ {c[0]} {c[1]} דוח={c[2]}% משתמע={c[3]}% {c[4]}")
 
 
 if __name__ == "__main__":
