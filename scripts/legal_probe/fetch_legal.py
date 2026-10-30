@@ -23,6 +23,7 @@ DOCS = {
     "isa_hitech_regs_pdf": "https://www.new.isa.gov.il/images/Fittings/isa/asset_library_pic/al_legislation_asset_library/legislation_pdf_pages-62eba7b928ea2/hashkaot_tec.pdf",
     "knesset_2018_isa_version_pdf": "https://fs.knesset.gov.il/20/Committees/20_cs_bg_492697.pdf",
     "ayalon_startup_hitech_prospectus_pdf": "https://mayafiles.tase.co.il/rpdf/1137001-1138000/P1137870-01.pdf",
+    "amendment28_2017_pdf": "https://fs.knesset.gov.il/20/law/20_lsr_390376.pdf",
     "ibi_hitech_page": "https://www.ibi.co.il/hitechoptions/invest-hitech-funds/",
     "ibi_mgr_report_1566254": "https://mayafiles.tase.co.il/RHtm/1566001-1567000/H1566254.htm",
 }
@@ -39,9 +40,12 @@ def save(name, content, ext):
 def main():
     os.makedirs(OUT, exist_ok=True)
     log = {}
+    only = [x for x in os.environ.get("ONLY", "").split(",") if x]
     for name, url in DOCS.items():
+        if only and name not in only:
+            continue
         try:
-            r = requests.get(url, headers=UA, timeout=90)
+            r = requests.get(url, headers=UA, timeout=180)
             log[name] = [url, r.status_code, len(r.content)]
             if r.status_code != 200:
                 continue
@@ -52,6 +56,10 @@ def main():
                 save(name, r.content, "txt" if "action=raw" in url else "html")
         except Exception as e:  # noqa: BLE001
             log[name] = [url, repr(e)[:200]]
+    json.dump(log, open(os.path.join(OUT, "_log2.json" if only else "_log.json"), "w"), ensure_ascii=False, indent=1)
+    if only:
+        print(json.dumps(log, ensure_ascii=False, indent=1))
+        return
     # מאיה: רשומת הקרן ב-funds/all + נקודות קצה אפשריות לפרטי הקרן ולדוחותיה
     s = requests.Session()
     try:
