@@ -71,6 +71,10 @@ jobs:
           PRIORITY_LEIS: "984500CDDEAD6C2EDQ64"
           MORE_FLAG: /tmp/eu_more
         run: python -u scripts/eu_reports/fetch_reports.py
+      # קורא כללים (ללא Gemini) לרשימות בעלי המניות המהותיים בסעיפים -> results_eu_reports_parser.jsonl
+      - name: Rule-based holders parser
+        if: always()
+        run: python -u scripts/eu_reports/parse_sections.py
       # הקבצים של הריצה מחליפים את אלה שבקצה הענף (הריצות בתור אחת אחרי השנייה והתחילו מהקצה - לכן לא
       # נאבד כלום). בלי rebase על קבצי נתונים: זה מה שהפיל את ריצת ה-5 שעות ב-Revach.
       - name: Commit data
@@ -78,12 +82,13 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          mkdir -p /tmp/out && cp -r data/eu_reports /tmp/out/ && cp scripts/eu_reports/queue.json.gz /tmp/out/ 2>/dev/null || true
+          mkdir -p /tmp/out && cp -r data/eu_reports /tmp/out/ && cp scripts/eu_reports/queue.json.gz scripts/eu_reports/results_eu_reports_parser.jsonl /tmp/out/ 2>/dev/null || true
           for i in 1 2 3 4 5; do
             git fetch -q origin "$GITHUB_REF_NAME" && git reset -q --hard "origin/$GITHUB_REF_NAME"
             rm -rf data/eu_reports && cp -r /tmp/out/eu_reports data/eu_reports
             [ -f /tmp/out/queue.json.gz ] && cp /tmp/out/queue.json.gz scripts/eu_reports/queue.json.gz
-            git add -A data/eu_reports scripts/eu_reports/queue.json.gz
+            [ -f /tmp/out/results_eu_reports_parser.jsonl ] && cp /tmp/out/results_eu_reports_parser.jsonl scripts/eu_reports/
+            git add -A data/eu_reports scripts/eu_reports/queue.json.gz scripts/eu_reports/results_eu_reports_parser.jsonl
             git diff --cached --quiet && { echo "No change."; exit 0; }
             git commit -q -m "eu-reports fetch $(date -u +%Y-%m-%dT%H:%M) [skip ci]"
             git push -q origin "HEAD:$GITHUB_REF_NAME" && exit 0
