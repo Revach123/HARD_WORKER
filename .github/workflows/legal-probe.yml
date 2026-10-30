@@ -24,6 +24,9 @@ jobs:
           python-version: "3.12"
       - run: pip install requests pypdf pypdfium2
       - run: python -u scripts/legal_probe/stop_offering.py
+        env:
+          FORMS: ק087,ק085
+          FIRST_YEAR: "2023"
       - name: Commit
         run: |
           git config user.name "github-actions[bot]"

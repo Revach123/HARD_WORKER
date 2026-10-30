@@ -59,6 +59,17 @@ def main():
     s = requests.Session()
     today = date.today().isoformat() + "T21:00:00.000Z"
     # שלב 1: איזה טופס הוא "הפסקת הצעת יחידות / חידושה" - עמוד אחד לכל קוד, 2018 עד היום
+    only = [x for x in os.environ.get("FORMS", "").split(",") if x]
+    if only:   # הרצה ממוקדת: טפסים ידועים, בלי סריקה; התוצאות לקובץ נפרד
+        global OUT
+        OUT = OUT.replace(".json", "_" + "_".join(only) + ".json")
+        forms, hit = {}, only
+    else:
+        forms, hit = scan_forms(s, today), None
+    run_details(s, forms, hit or [f for f, v in forms.items() if any(re.search(r"הפסק|חידוש", t) for t in v["titles"])])
+
+
+def scan_forms(s, today):
     forms = {}
     # בדיקת שפיות: ק079 בשנה הנוכחית (עובד ב-creation_limits.py)
     y0 = date.today().year
@@ -78,12 +89,16 @@ def main():
         if reps:
             forms[fid] = {"status": st, "n_page1": len(reps), "sample": reps[0], "titles": sorted({title(r)[:120] for r in reps})[:8]}
             print(fid, len(reps), "|", " || ".join(forms[fid]["titles"][:3])[:300])
-    hit = [f for f, v in forms.items() if any(re.search(r"הפסק|חידוש", t) for t in v["titles"])]
+    return forms
+
+
+def run_details(s, forms, hit):
     print("candidate forms:", hit)
+    first_year = int(os.environ.get("FIRST_YEAR", "2018"))
     # שלב 2: כל הדוחות בטפסים המועמדים, לפי שנים
     details = []
     for fid in hit:
-        for y in range(date.today().year, 2017, -1):
+        for y in range(date.today().year, first_year - 1, -1):
             frm = f"{y - 1}-12-31T22:00:00.000Z"
             to = (date.today().isoformat() if y == date.today().year else f"{y}-12-31") + "T21:00:00.000Z"
             reps, _ = list_form(s, fid, frm, to)
