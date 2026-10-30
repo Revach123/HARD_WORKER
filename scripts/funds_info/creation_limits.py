@@ -416,9 +416,14 @@ PROSPECTUS_NO_LIMIT = {
 }
 
 
-def limit_status(annual_rec, manager, mgr_statement=None):
-    """mgr_statement: הצהרה אחידה שנמצאה בדוחות שנתיים אחרים של אותו מנהל ("אין"/"יש (ק079)")."""
+def limit_status(annual_rec, manager, mgr_statement=None, k079_active=False):
+    """mgr_statement: הצהרה אחידה שנמצאה בדוחות שנתיים אחרים של אותו מנהל ("אין"/"יש (ק079)").
+    k079_active: לקרן יש מגבלה פעילה לפי ק079 (לא בוטלה בדיווח מאוחר יותר). ראיה ישירה על
+    הקרן גוברת על תשקיף כללי / הצהרת מנהל מדוחות של קרנות אחרות (למשל 1143726 של מיטב:
+    מגבלה מ-ק079 9/2022 שלא בוטלה, בעוד שבדוח השנתי שלה אין שורת מגבלה)."""
     lim = (annual_rec or {}).get("limit") or "אין דוח שנתי"
+    if lim in ("לא מצוין", "אין דוח שנתי") and k079_active:
+        return "יש (ק079)"
     if lim in ("לא מצוין", "אין דוח שנתי"):
         for k, v in PROSPECTUS_NO_LIMIT.items():
             if k in (manager or ""):
@@ -494,7 +499,8 @@ def build(session):
                         nz(a_c), nz(a_r), nz(fee),
                         nz(fr.get("purchasePrice")), nz(fr.get("redemptionPrice")), fr.get("ratesAsOf", ""),
                         implied, pstat,
-                        limit_status(an, fr.get("managerName"), mgr_stmt.get(fr.get("managerName"))),
+                        limit_status(an, fr.get("managerName"), mgr_stmt.get(fr.get("managerName")),
+                                     any(sd in ent and ent[sd][1]["limit"] for sd in ("min", "max"))),
                         *side("min"), *side("max"),
                         round(red, 2) if red else "", an.get("rid", ""), an.get("date", ""),
                         an.get("limit_text", "")])
