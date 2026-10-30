@@ -4,7 +4,7 @@
 # קלט: scripts/eu_reports/queue.json.gz (נוצר ע"י ריפו Revach - scripts/ownership_eu/fetch_reports.py).
 # פלט (נשמר ב-git): results_eu_reports_<model>.jsonl + processed_eu_reports_<model>.json.
 # אותם מפתחות GEMINI_API_KEY* ואותה עצירה אוטומטית במכסה כמו us-proxy-gemini; ההרצה הבאה ממשיכה מאותה נקודה.
-# דחיפה לתור בענף פיתוח מריצה דגימה (limit 15).
+# הפעלה ידנית / מתוזמנת בלבד - התור מתעדכן ע"י eu-reports-fetch.yml ואסור שכל עדכון יצרוך מכסה.
 
 name: EU annual reports ownership - Gemini extraction (resumable)
 
@@ -38,10 +38,6 @@ on:
         description: "מקביליות"
         required: false
         default: "2"
-  push:
-    branches-ignore: [main]
-    paths:
-      - scripts/eu_reports/queue.json.gz
 
 jobs:
   run:
@@ -71,7 +67,7 @@ jobs:
           PYTHONUNBUFFERED: "1"
         run: |
           python -u extract_eu_reports.py --queue queue.json.gz \
-            --limit "${{ github.event.inputs.limit || (github.event_name == 'push' && '15') || '0' }}" \
+            --limit "${{ github.event.inputs.limit || '0' }}" \
             --leis "${{ github.event.inputs.leis }}" \
             --workers "${{ github.event.inputs.workers || '2' }}"
 

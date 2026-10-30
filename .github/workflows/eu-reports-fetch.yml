@@ -1,0 +1,102 @@
+name: EU annual reports (ESEF) - fetch + ownership sections (resumable, chained)
+
+# הועבר מ-Revach (ריפו פרטי) לכאן (ציבורי - דקות Actions ללא הגבלה). ר' scripts/eu_reports/fetch_reports.py.
+# הדוח השנתי האחרון של כל חברה אירופאית (filings.xbrl.org) -> סעיפי בעלי מניות/דירקטורים/שליטה ->
+# data/eu_reports/{reports.json, sections.json.gz} + scripts/eu_reports/queue.json.gz (תור Gemini).
+# יקום: Revach123/INDICES data/world_securities. ריצה שנעצרת בתקציב הזמן מפעילה את הבאה עד שהיקום נגמר.
+# Revach מושך את reports.json ובונה את דף EUROPEAN-COMPANY-INFO.
+
+on:
+  workflow_dispatch:
+    inputs:
+      countries:
+        description: "מדינות המנפיק (ISO2 מופרד בפסיקים, או EUROPE)"
+        default: "EUROPE"
+      leis:
+        description: "רשימת LEI (עוקף את המדינות)"
+        default: ""
+      limit:
+        description: "הגבלת מספר חברות (0 = הכל)"
+        default: "0"
+      budget_min:
+        description: "תקציב זמן בדקות"
+        default: "320"
+      refresh:
+        description: "1 = לעבד מחדש גם דוחות שכבר עובדו"
+        default: "0"
+      chain:
+        description: "1 = אם נעצר בתקציב הזמן, להפעיל אוטומטית ריצה נוספת"
+        default: "1"
+  push:
+    branches-ignore: [main]
+    paths:
+      - .github/workflows/eu-reports-fetch.yml
+
+concurrency:
+  group: eu-reports-fetch
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    env:
+      PYTHONUNBUFFERED: "1"
+      WORLD_DATA_DIR: _indices/data/world_securities
+    steps:
+      # קצה הענף (לא ה-commit שהפעיל את הריצה): ריצה קודמת בתור אולי קימטה בינתיים
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/checkout@v4
+        with:
+          repository: Revach123/INDICES
+          path: _indices
+          sparse-checkout: data/world_securities
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install lxml
+      - name: Fetch reports + find ownership sections
+        env:
+          COUNTRIES: ${{ github.event.inputs.countries || 'EUROPE' }}
+          LEIS: ${{ github.event.inputs.leis }}
+          LIMIT: ${{ github.event.inputs.limit || '0' }}
+          BUDGET_MIN: ${{ github.event.inputs.budget_min || '320' }}
+          REFRESH: ${{ github.event.inputs.refresh || '0' }}
+          PRIORITY_LEIS: "984500CDDEAD6C2EDQ64"
+          MORE_FLAG: /tmp/eu_more
+        run: python -u scripts/eu_reports/fetch_reports.py
+      # הקבצים של הריצה מחליפים את אלה שבקצה הענף (הריצות בתור אחת אחרי השנייה והתחילו מהקצה - לכן לא
+      # נאבד כלום). בלי rebase על קבצי נתונים: זה מה שהפיל את ריצת ה-5 שעות ב-Revach.
+      - name: Commit data
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          mkdir -p /tmp/out && cp -r data/eu_reports /tmp/out/ && cp scripts/eu_reports/queue.json.gz /tmp/out/ 2>/dev/null || true
+          for i in 1 2 3 4 5; do
+            git fetch -q origin "$GITHUB_REF_NAME" && git reset -q --hard "origin/$GITHUB_REF_NAME"
+            rm -rf data/eu_reports && cp -r /tmp/out/eu_reports data/eu_reports
+            [ -f /tmp/out/queue.json.gz ] && cp /tmp/out/queue.json.gz scripts/eu_reports/queue.json.gz
+            git add -A data/eu_reports scripts/eu_reports/queue.json.gz
+            git diff --cached --quiet && { echo "No change."; exit 0; }
+            git commit -q -m "eu-reports fetch $(date -u +%Y-%m-%dT%H:%M) [skip ci]"
+            git push -q origin "HEAD:$GITHUB_REF_NAME" && exit 0
+            sleep $((i * 5))
+          done
+          echo "::error::push failed"; exit 1
+      - name: Chain next run (time budget reached)
+        if: success() && github.event.inputs.chain != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ ! -f /tmp/eu_more ]; then echo "היקום הושלם - אין ריצה נוספת"; exit 0; fi
+          echo "נותרו $(cat /tmp/eu_more) חברות - מפעיל ריצה נוספת"
+          gh workflow run eu-reports-fetch.yml --repo "$GITHUB_REPOSITORY" --ref "$GITHUB_REF_NAME" \
+            -f countries="${{ github.event.inputs.countries }}" -f budget_min="${{ github.event.inputs.budget_min }}" \
+            -f refresh=0 -f chain=1
