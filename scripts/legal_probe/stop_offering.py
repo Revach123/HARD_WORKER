@@ -19,6 +19,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."
 import creation_limits as cl  # noqa: E402 - HEADERS, LIST_URL, _req, fetch_report_html, _clean
 
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "data", "legal_probe", "stop_offering.json")
+PAUSE = 1.5   # שניות בין בקשות (בקצב מהיר מאיה חוסמת ב-403)
 FUND_RE = re.compile(r"(?:מספר\s*קרן|מס['׳]?\s*קרן)\s*:?\s*(\d{6,8})")
 
 
@@ -28,8 +29,14 @@ def list_form(session, form_id, frm, to, max_pages=40):
         body = {"pageNumber": page, "fromDate": frm, "toDate": to, "noMeetings": False, "isPriority": False,
                 "isSingle": False, "isIntendToTaseMember": False, "by": "company", "formId": form_id,
                 "freeText": "", "limit": 20, "offset": (page - 1) * 20}
-        r = cl._req(session, "POST", cl.LIST_URL, f"{form_id} p{page}", timeout=30, headers=cl.HEADERS,
-                    data=json.dumps(body))
+        for attempt in range(3):
+            time.sleep(PAUSE)
+            r = cl._req(session, "POST", cl.LIST_URL, f"{form_id} p{page}", timeout=30, headers=cl.HEADERS,
+                        data=json.dumps(body))
+            if r.status_code != 403:
+                break
+            print(f"  403 on {form_id} - backing off 90s")   # חסימת קצב של מאיה
+            time.sleep(90)
         if r.status_code != 200:
             print(f"  {form_id} {frm[:10]}..{to[:10]} p{page}: HTTP {r.status_code} {r.text[:120]!r}")
             return out, r.status_code
@@ -58,10 +65,10 @@ def main():
     win = (f"{y0 - 1}-12-31T22:00:00.000Z", today)
     reps, st = list_form(s, "ק079", *win, max_pages=1)
     print("sanity ק079:", st, len(reps), json.dumps(reps[:1], ensure_ascii=False)[:600])
-    for n in range(1, 200):
+    for n in range(1, 131):
         fid = f"ק{n:03d}"
         reps, st = [], None
-        for y in range(y0, y0 - 4, -1):   # חלון של שנה (טווח ארוך נדחה); 4 השנים האחרונות
+        for y in range(y0, y0 - 3, -1):   # חלון של שנה (טווח ארוך נדחה); 3 השנים האחרונות
             frm = f"{y - 1}-12-31T22:00:00.000Z"
             to = today if y == y0 else f"{y}-12-31T21:00:00.000Z"
             r_, st = list_form(s, fid, frm, to, max_pages=1)
@@ -71,7 +78,6 @@ def main():
         if reps:
             forms[fid] = {"status": st, "n_page1": len(reps), "sample": reps[0], "titles": sorted({title(r)[:120] for r in reps})[:8]}
             print(fid, len(reps), "|", " || ".join(forms[fid]["titles"][:3])[:300])
-        time.sleep(0.1)
     hit = [f for f, v in forms.items() if any(re.search(r"הפסק|חידוש", t) for t in v["titles"])]
     print("candidate forms:", hit)
     # שלב 2: כל הדוחות בטפסים המועמדים, לפי שנים
