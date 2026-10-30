@@ -11,7 +11,7 @@ on:
         required: true
         default: discover
         type: choice
-        options: [discover, build, probe, probe2, texts]
+        options: [discover, build, probe, probe2, texts, fund]
       ids:
         description: "texts: מזהי דוחות מופרדים ברווח"
         required: false
@@ -34,7 +34,9 @@ jobs:
         run: |
           set -o pipefail
           mkdir -p data/funds_info/_debug
-          if [ "${{ inputs.mode }}" = "texts" ]; then
+          if [ "${{ inputs.mode }}" = "fund" ]; then
+            python -u scripts/funds_info/fund_probe.py ${{ inputs.ids }} 2>&1 | tee data/funds_info/_debug/run.log
+          elif [ "${{ inputs.mode }}" = "texts" ]; then
             python -u scripts/funds_info/creation_limits_texts.py ${{ inputs.ids }} 2>&1 | tee data/funds_info/_debug/run.log
           elif [ "${{ inputs.mode }}" = "probe2" ]; then
             python -u scripts/funds_info/creation_limits_probe2.py 2>&1 | tee data/funds_info/_debug/run.log
