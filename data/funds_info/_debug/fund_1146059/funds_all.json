@@ -1,0 +1,85 @@
+{
+ "fundId": 1146059,
+ "name": "קסם ETF ממח תא 35 פי2",
+ "longName": null,
+ "fundType": "קרן סל",
+ "fundTypeId": 5,
+ "isin": "IL0011460594",
+ "managerName": "קסם",
+ "managerId": 10047,
+ "trusteeName": "מזרחי טפחות נאמנות",
+ "taxStatusName": "פטורה",
+ "managementFee": 2.75,
+ "trusteeFee": 0.03,
+ "successFee": null,
+ "assetValue": null,
+ "purchasePrice": 497.85,
+ "redemptionPrice": 497.85,
+ "ratesAsOf": "2026-10-29",
+ "distributionCommissionName": "לא נגבית עמלת הפצה",
+ "saleLoad": 0.0,
+ "standardDeviation": null,
+ "standardDeviationRemarkType": null,
+ "exposureProfile": {
+  "shareSymbol": "6",
+  "fxSymbol": "A",
+  "sharesDesc": "מעל 200% מהשווי הנקי של נכסי הקרן",
+  "fxDesc": "עד 10% מהשווי הנקי של נכסי הקרן"
+ },
+ "features": [
+  {
+   "title": "הקרן הינה קרן בלתי מוגבלת בני\"ע חוץ",
+   "enabled": false
+  },
+  {
+   "title": "הקרן הינה קרן ממונפת",
+   "enabled": true
+  },
+  {
+   "title": "לפי מדיניות השקעותיה הקרן הינה קרן מחקה",
+   "enabled": true
+  },
+  {
+   "title": "לפי מדיניות השקעותיה הקרן הינה קרן חשיפה הפוכה",
+   "enabled": true
+  },
+  {
+   "title": "הקרן עוקבת תיק של",
+   "enabled": false
+  },
+  {
+   "title": "הקרן היא קרן מועדים קבועים",
+   "enabled": false
+  },
+  {
+   "title": "יחידות הקרן נקובות ב- $",
+   "enabled": false
+  },
+  {
+   "title": "קרן להשקעות חוץ – מטבע עיקרי",
+   "enabled": false
+  },
+  {
+   "title": "קרן להשק חוץ-פטור ממס לתושבי חוץ",
+   "enabled": false
+  },
+  {
+   "title": "קרן כשרה",
+   "enabled": false
+  }
+ ],
+ "classification": {
+  "major": "ממונפות",
+  "main": "ממונפות בחסר בסיכון גבוה",
+  "secondary": "מניות בארץ"
+ },
+ "underlyingAssets": [
+  {
+   "name": "ת\"א-35",
+   "indexId": 142,
+   "weight": -200.0
+  }
+ ],
+ "featuresText": "הקרן הינה קרן ממונפת,לפי מדיניות השקעותיה הקרן הינה קרן מחקה,לפי מדיניות השקעותיה הקרן הינה קרן חשיפה הפוכה",
+ "underlyingAssetsText": "ת\"א-35"
+}
