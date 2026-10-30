@@ -59,8 +59,9 @@ jobs:
           # בזמן ריצת חילוץ החברות (RUNNING_LOCK ב-main) לא דוחפים ל-main: הרצות בדיקה
           # נדחפות לענף נפרד creation-limits-debug מיד; build ממתין עד 10 דקות ואז מדלג
           # (ה-CSV יתעדכן בריצה הבאה).
-          locked() { git fetch -q origin main; git cat-file -e origin/main:scripts/company_ownership/RUNNING_LOCK 2>/dev/null; }
-          if [ "${{ inputs.mode || 'build' }}" != "build" ] && locked; then
+          # FETCH_HEAD ולא origin/main: בהרצה מענף אחר ה-checkout לא יוצר ref של main.
+          locked() { git fetch -q origin main && git cat-file -e FETCH_HEAD:scripts/company_ownership/RUNNING_LOCK 2>/dev/null; }
+          if [ "${{ github.ref }}" != "refs/heads/main" ] || { [ "${{ inputs.mode || 'build' }}" != "build" ] && locked; }; then
             echo "RUNNING_LOCK קיים - דוחף לענף creation-limits-debug"
             git push -f origin HEAD:refs/heads/creation-limits-debug && exit 0
             exit 1
