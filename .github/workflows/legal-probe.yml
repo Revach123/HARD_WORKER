@@ -25,7 +25,7 @@ jobs:
       - run: pip install requests pypdf
       - run: python -u scripts/legal_probe/fetch_legal.py
         env:
-          ONLY: amendment28_2017_pdf,knesset_2018_isa_version_pdf
+          ONLY: amendment28_2017_pdf,amendment28_ws,amendment28_ws2,regs_reports_20yd_ws
       - name: Commit
         run: |
           git config user.name "github-actions[bot]"

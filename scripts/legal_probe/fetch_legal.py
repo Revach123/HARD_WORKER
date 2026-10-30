@@ -24,6 +24,9 @@ DOCS = {
     "knesset_2018_isa_version_pdf": "https://fs.knesset.gov.il/20/Committees/20_cs_bg_492697.pdf",
     "ayalon_startup_hitech_prospectus_pdf": "https://mayafiles.tase.co.il/rpdf/1137001-1138000/P1137870-01.pdf",
     "amendment28_2017_pdf": "https://fs.knesset.gov.il/20/law/20_lsr_390376.pdf",
+    "amendment28_ws": WS + urllib.parse.quote("חוק השקעות משותפות בנאמנות (תיקון מס׳ 28)"),
+    "amendment28_ws2": WS + urllib.parse.quote("חוק השקעות משותפות בנאמנות (תיקון מס' 28)"),
+    "regs_reports_20yd_ws": WS + urllib.parse.quote("תקנות השקעות משותפות בנאמנות (דוחות)"),
     "ibi_hitech_page": "https://www.ibi.co.il/hitechoptions/invest-hitech-funds/",
     "ibi_mgr_report_1566254": "https://mayafiles.tase.co.il/RHtm/1566001-1567000/H1566254.htm",
 }
@@ -55,7 +58,11 @@ def main():
             else:
                 save(name, r.content, "txt" if "action=raw" in url else "html")
         except Exception as e:  # noqa: BLE001
-            log[name] = [url, repr(e)[:200]]
+            log[name] = [url, repr(e)[:200], r.headers.get("Content-Type") if "r" in dir() else None]
+            try:
+                save(name + "_raw", r.content[:300000], "bin")
+            except Exception:  # noqa: BLE001
+                pass
     json.dump(log, open(os.path.join(OUT, "_log2.json" if only else "_log.json"), "w"), ensure_ascii=False, indent=1)
     if only:
         print(json.dumps(log, ensure_ascii=False, indent=1))
