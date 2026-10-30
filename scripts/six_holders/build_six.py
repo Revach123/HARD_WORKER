@@ -25,7 +25,7 @@ import sys
 from datetime import datetime, timezone
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "eu_reports"))
-from fetch_reports import lei_name_mismatch  # noqa: E402 - אותו כלל יקום כמו הדף האירופאי
+from universe_rules import lei_name_mismatch  # noqa: E402 - אותו כלל יקום כמו הדף האירופאי
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
