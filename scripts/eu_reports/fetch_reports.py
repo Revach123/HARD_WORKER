@@ -158,6 +158,24 @@ def get(url, retries=6, timeout=180, limit=None):
 
 # ---------------------------------------------------------------- universe
 
+_LEGAL = re.compile(r"\b(ag|sa|ltd|limited|plc|nv|holding|holdings|group|inc|se|the|corp|corporation|co|llc|lp|gmbh|"
+                    r"asa|ab|oyj|spa|s|a|n|v|de|du|la|le|et|und|and|of)\b")
+_SYN = {"kantonalbank": "cantonale", "banque": "bank", "banca": "bank"}
+
+
+def _name_tokens(s):
+    s = re.sub(r"[^a-z0-9 ]", " ", (s or "").lower().encode("ascii", "ignore").decode())
+    return {_SYN.get(w, w) for w in _LEGAL.sub(" ", s).split()}
+
+
+def lei_name_mismatch(r):
+    """True כששם המנפיק לפי ה-LEI ושם המנפיק לפי הבורסה אינם חולקים אף מילה (גם לא תחילית של 4 אותיות)."""
+    a, b = _name_tokens(r.get("issuer_name_exchange")), _name_tokens(r.get("issuer_name"))
+    if not a or not b or a & b:
+        return False
+    return not any(x[:4] == y[:4] for x in a for y in b if len(x) > 3 and len(y) > 3)
+
+
 def load_universe():
     """lei -> {n, isin, cc, venues} למניות פעילות של מנפיקים מהמדינות המבוקשות."""
     out = {}
@@ -170,9 +188,9 @@ def load_universe():
                 continue
             if r.get("security_type") not in ("Common Stock", "Preferred Stock", "Other Equity"):
                 continue
-            # מוצר שהבורסה (SIX) מסווגת כקו מוצרים נגזר/מובנה ונכנס כ"מניה" (Goldman Sachs International Bank
-            # CH0002277314) - לא מניה של חברה
-            if r.get("exchange_product_line") == "DS":
+            # LEI שגוי מהרגולטור: שם המנפיק לפי ה-LEI ושם המנפיק לפי הבורסה בלי מילה משותפת
+            # (CH0002277314 היא Schlatter Industries AG, וה-LEI שלה הוא של Goldman Sachs International Bank)
+            if lei_name_mismatch(r):
                 continue
             cc = (r.get("issuer_country") or "").upper()
             if LEIS:

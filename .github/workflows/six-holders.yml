@@ -1,6 +1,7 @@
 name: SIX significant shareholders (Switzerland) - fetch
 
 # הודעות בעלי מניות מהותיים של SIX Exchange Regulation -> data/six_holders. ר' scripts/six_holders/fetch_six.py.
+# build_six.py -> scripts/six_holders/results_eu_reports_six.jsonl + data/six_holders/companies.json;
 # Revach בונה מזה את השורות השוויצריות של EUROPEAN-COMPANY-INFO.
 
 on:
@@ -28,19 +29,27 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.ref_name }}
+      - uses: actions/checkout@v4
+        with:
+          repository: Revach123/INDICES
+          path: _indices
+          sparse-checkout: data/world_securities
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - run: python -u scripts/six_holders/fetch_six.py
+      - name: Current holders per company (results_eu_reports_six.jsonl)
+        run: python -u scripts/six_holders/build_six.py
       - name: Commit data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          mkdir -p /tmp/out && cp -r data/six_holders /tmp/out/
+          mkdir -p /tmp/out && cp -r data/six_holders /tmp/out/ && cp scripts/six_holders/results_eu_reports_six.jsonl /tmp/out/
           for i in 1 2 3 4 5; do
             git fetch -q origin "$GITHUB_REF_NAME" && git reset -q --hard "origin/$GITHUB_REF_NAME"
             rm -rf data/six_holders && cp -r /tmp/out/six_holders data/six_holders
-            git add -A data/six_holders
+            cp /tmp/out/results_eu_reports_six.jsonl scripts/six_holders/
+            git add -A data/six_holders scripts/six_holders/results_eu_reports_six.jsonl
             git diff --cached --quiet && { echo "No change."; exit 0; }
             git commit -q -m "six-holders fetch $(date -u +%Y-%m-%dT%H:%M) [skip ci]"
             git push -q origin "HEAD:$GITHUB_REF_NAME" && exit 0
