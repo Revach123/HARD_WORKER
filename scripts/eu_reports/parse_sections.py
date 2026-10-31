@@ -39,7 +39,20 @@ ANCHOR = re.compile(
     r"répartition\s+du\s+capital|actionnariat|franchissements?\s+de\s+seuils?|partecipazioni\s+rilevanti|"
     r"azionisti\s+rilevanti|participaciones\s+significativas|estructura\s+accionarial|participações\s+qualificadas|"
     r"substantiële\s+deelnemingen|grootaandeelhouders|största\s+aktieägar|storaktionær|største\s+aksjonær|"
-    r"suurimmat\s+osakkeenomistajat|znaczne\s+pakiety|akcjonariusze\s+posiadający", re.I)
+    r"suurimmat\s+osakkeenomistajat|znaczne\s+pakiety|akcjonariusze\s+posiadający|"
+    # כותרות נפוצות נוספות בשפות האיחוד (טבלאות המחזיקים בדוחות שאינם בריטיים)
+    r"struktura\s+akcjonariatu|znaczni\s+akcjonariusze|główni\s+akcjonariusze|aandeelhoudersstructuur|"
+    r"belangrijkste\s+aandeelhouders|meldingen?\s+(van\s+)?(zeggenschap|substantiële)|"
+    r"största\s+ägare|största\s+aktieägarna|ägarstruktur|ägarförhållanden|huvudägare|"
+    r"største\s+aktionærer|aktionærforhold|ejerforhold|største\s+aksjonærer|aksjonærstruktur|"
+    r"suurimmat\s+osakkaat|omistusrakenne|merkittävät\s+osakkeenomistajat|"
+    r"principali\s+azionisti|assetto\s+proprietario|azionariato|"
+    r"principales\s+accionistas|accionistas\s+significativos|estructura\s+del\s+capital|"
+    r"principaux\s+actionnaires|structure\s+de\s+l['’]actionnariat|"
+    r"großaktionäre|wesentliche\s+beteiligungen|aktionäre\s+mit|"
+    r"principais\s+accionistas|estrutura\s+acionista|"
+    r"μετοχική\s+σύνθεση|μέτοχοι\s+με|κύριοι\s+μέτοχοι|"
+    r"holding\s+of\s+3\s?%\s+or\s+more|holdings?\s+of\s+(3|5)\s?%", re.I)
 # שורה שהיא כותרת עמודה / טקסט כללי - לא שם מחזיק
 NOT_NAME = re.compile(
     r"^(name|shareholder|holder|person|investor|director|total|date|number|percentage|nature|notes?|source)\b|"
@@ -53,6 +66,9 @@ INLINE = re.compile(
     rf"^(?:[•●▪\-–]\s*)?(?P<name>[A-ZÀ-ÖØ-Þ][^%\d|]{{2,90}}?)(?:\s*\(?\d\)?)?\s*[:|,]?\s+"
     rf"(?:(?P<sh>{SHARES})\s*\|?\s+)?(?P<pct>{PCT})(?=\s|;|,|\.|$)")
 PCT_LINE = re.compile(rf"^\(?(?P<pct>{PCT})\)?\s*(?:[;,.]|\d)?$")
+INLINE_DEC = re.compile(
+    rf"^(?P<name>[A-ZÀ-ÖØ-Þ][^%\d|]{{2,90}}?)(?:\s*\*+)?\s+(?:(?P<sh>{SHARES})\s+)?(?P<pct>\d{{1,2}}[.,]\d{{1,3}})"
+    r"(?:\s+(?:\d{1,2}[./ ]\w+[./ ]\d{4}|\d{1,2}\s+\w+\s+\d{4}))?\s*$")
 DEC_LINE = re.compile(r"^(?P<pct>\d{1,2}(?:\.\d{1,3}|,\d{2}))$")  # "5.78" בטבלה עם כותרת "%"; "3,500" = אלפים
 SHARES_LINE = re.compile(rf"^(?P<sh>{SHARES})(?:\s*\d)?$")
 DATEISH = re.compile(r"^\d{1,2}(?:st|nd|rd|th)?\s+[A-Za-zÀ-ÿ]+\.?(?:\s+\d{4})?$|^[A-Za-zÀ-ÿ]+\s+\d{4}$|^\d{4}$|"
@@ -78,6 +94,34 @@ CONT_WORD = re.compile(r"(management|capital|group|holdings?|securities|investor
 TABLE_HEAD = re.compile(r"^(%\s+of\s+(total|issued|the)|percentage\s+of|person\s+interested|name\s+of\s+(share)?holder|"
                         r"(major\s+|substantial\s+)?shareholders?$|shares?\s+held|ordinary\s+shares\s+held|"
                         r"number\s+of\s+(ordinary\s+)?shares\s*(held)?$|voting\s+rights$|%\s+of\s+voting)", re.I)
+OTHERS = re.compile(
+    r"^(pozostali|pozostałe|razem|ogółem|övriga|övrigt|totalt|summa|øvrige|i\s+alt|muut|yhteensä|autres|total|"
+    r"altri|altro|mercato|totale|otros|resto|total|sonstige|streubesitz|gesamt|outros|overige|totaal|λοιποί|σύνολο|"
+    r"free\s*float|flottant|publiczność|egne\s+aktier|egna\s+aktier|actions\s+propres|auto-?détention|"
+    r"azioni\s+proprie|autocartera|eigene\s+aktien|omat\s+osakkeet|akcje\s+własne|eigen\s+aandelen|ações\s+próprias|"
+    # סיכומי ביניים, עובדים וחברי מועצה כקבוצה, טבלאות שווי (תחילת השם)
+    r"sub-?total[ei]?|sous-total|zwischensumme|salariés|conseil\s+de|membres\s+du|dont\b|"
+    r"accionistas\s+(internacionales|nacionales|minoritarios)|substansvärde\w*|redovisning\w*|epra\b|difesa|"
+    r"autocontr[oô]le|auto-?détention|administration\s+et|régions|consulting\s+et)\b",
+    re.I)
+# פילוח גיאוגרפי ("Sverige 55%" / "USA 22%") - שם שהוא רק מדינה
+COUNTRY_ONLY = re.compile(
+    r"^(sverige|sweden|usa|us|united\s+states|storbritannien|uk|united\s+kingdom|norge|norway|luxemburg|luxembourg|"
+    r"tyskland|germany|deutschland|finland|suomi|danmark|denmark|frankrike|france|allemagne|italia|italy|españa|spain|"
+    r"nederland|netherlands|belgique|belgium|schweiz|switzerland|suisse|österreich|austria|polska|poland|irland|ireland|"
+    r"övriga\s+världen|rest\s+of\s+(the\s+)?world|europe|europa|asia|nordics?|norden(\s+exkl\.?\s+\w+)?|greece|"
+    r"internacionales|nacionales|privatpersoner|private\s+individuals|personnes\s+physiques|persone\s+fisiche)\W*$", re.I)
+# קטגוריית מחזיקים - רק כשזה כל השם ("Households" / "Public"), לא "Public Investment Corporation"
+CATEGORY = re.compile(
+    r"^(households|companies|kotitaloudet|yritykset|nominees?(\s+registered)?|hallintarekisteröidyt|"
+    r"financial\s+institutions|public(\s+sector)?|foreign(\s+investors)?|ulkomaiset|employees|anställda|ansatte|"
+    r"dipendenti|empleados|fonder|funds|fondi|fonds|directors|board|management|institutional(\s+investors)?|"
+    r"private\s+investors|retail(\s+investors)?|particuliers|investisseurs(\s+institutionnels)?|"
+    r"swedish\s+\w+|international\s+\w+)\W*$", re.I)
+# כותרת עמודה שנדבקה לשם: "Azionista % Dompé Holdings" / "Aandeelhouder % AXA SA" / "Azionista Partecipazione Materiale X"
+HEAD_PREFIX = re.compile(r"^(nombre|azionista|azionisti|aandeelhouder|aandeelhouders|shareholders?|akcjonariusz|aktieägare|"
+                         r"aktionær|osakkeenomistaja|actionnaires?|accionistas?|aktionär|acionista)"
+                         r"(\s+(%|partecipazione(\s+\w+)?|directas|indirectas|total))*\s+", re.I)
 FOOT_TAIL = re.compile(r"\s*\(?\d{1,2}\)?$")
 SMALL = {"of", "and", "the", "de", "du", "la", "le", "des", "van", "von", "der", "den", "di", "del", "y", "et", "&",
          "und", "och", "og", "for", "in", "on", "to", "a", "an", "group", "inc", "ltd", "llc", "plc", "sa", "ag", "nv",
@@ -106,8 +150,18 @@ def name_ok(n):
     if re.search(r"\bof\s+which\b|\bheld\s+an?\b", n, re.I):
         return None                                              # "Power Limited, of which Ceres held a 24.2%"
     n = re.sub(r"\s+\d{1,3}(,\d{1,3})*,?$", "", n)              # "Soros Fund Management 2,491," (מניות שנחתכו)
-    if re.search(r"\d{1,3},\d{3}|\d\.\d", n) or not n.split() or n.split()[-1].lower() in {"of", "and", "the", "to", "a", "an", "for", "in", "on", "&", "by", "with"}:
+    if re.search(r"\d{1,3},\d{3}|\d\.\d", n) or not n.split() or n.split()[-1].lower() in {"of", "and", "the", "to", "a", "an", "for", "in", "on", "&", "by", "with", "et", "und", "och"}:
         return None                                              # שתי שורות טבלה שהתמזגו / "ROCE to"
+    n = re.sub(r"\s*\.{3,}.*$", "", n)                               # "Fosun ......................"
+    n = re.sub(r"^(hausse|baisse|par)\s+", "", n, flags=re.I)          # "Hausse The Capital Group" / "Par UBS Group AG"
+    n = re.sub(r"\s+\d{2,4}[A-Z]?$", "", n)                            # "UBS Group AG 225C" (מספר סעיף)
+    if re.match(r"^(chapitre|chapter|kapitel|capitolo|million|mio|mn)\b", n, re.I) or re.search(r"total\s+shareholder", n, re.I):
+        return None
+    n = HEAD_PREFIX.sub("", n)
+    if COUNTRY_ONLY.match(n) or re.fullmatch(r"(hausse|baisse)", n, re.I) or re.search(r"\ba\s+cédé\b", n, re.I):
+        return None
+    if OTHERS.search(n) or CATEGORY.match(n) or re.match(r"^(directas|indirectas)\b", n, re.I):
+        return None
     if re.search(r"^other\s+shareholders|ethnic|\basian\b|african|caribbean|^white\b|prefer\s+not|"
                  r"=|\bindex\b|\bdirectors\b|securities\s+lending|\bcfds?\b|\bswaps?\b|instruments?$", n, re.I):
         return None                                              # מקרא גרף / "The Executive Directors’"
@@ -162,7 +216,7 @@ def parse_block(lines, start, header_has_pct):
         if TABLE_HEAD.match(t):
             scanned = 0           # כותרת טבלת מחזיקים (גם אחרי עמוד טקסט בפריסת עמודות, כמו Metro / Barclays)
         far = not out and scanned > 40   # שורה ראשונה רחוקה מהעוגן ומכותרת - טבלה אחרת (תגמול, פילוח)
-        m = INLINE.match(t)
+        m = INLINE.match(t) or (header_has_pct and INLINE_DEC.match(t))
         # "Ordinarily 50% of the annual bonus will be..." - משפט שממשיך אחרי האחוז, לא שורת מחזיק
         if m and SENTENCE_TAIL.match(t[m.end():]):
             m = None
