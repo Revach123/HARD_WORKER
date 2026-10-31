@@ -78,6 +78,7 @@ CONT_WORD = re.compile(r"(management|capital|group|holdings?|securities|investor
 TABLE_HEAD = re.compile(r"^(%\s+of\s+(total|issued|the)|percentage\s+of|person\s+interested|name\s+of\s+(share)?holder|"
                         r"(major\s+|substantial\s+)?shareholders?$|shares?\s+held|ordinary\s+shares\s+held|"
                         r"number\s+of\s+(ordinary\s+)?shares\s*(held)?$|voting\s+rights$|%\s+of\s+voting)", re.I)
+FOOT_TAIL = re.compile(r"\s*\(?\d{1,2}\)?$")
 SMALL = {"of", "and", "the", "de", "du", "la", "le", "des", "van", "von", "der", "den", "di", "del", "y", "et", "&",
          "und", "och", "og", "for", "in", "on", "to", "a", "an", "group", "inc", "ltd", "llc", "plc", "sa", "ag", "nv",
          "se", "spa", "s.a.", "n.v.", "a/s", "ab", "asa", "oyj", "gmbh", "lp", "l.p."}
@@ -86,7 +87,13 @@ SMALL = {"of", "and", "the", "de", "du", "la", "le", "des", "van", "von", "der",
 def name_ok(n):
     """שם מחזיק: מתחיל באות גדולה, רוב המילים באותיות גדולות (לא משפט), בלי הערת שוליים בסוף."""
     n = norm(n).strip(" •-–:;,")
-    n = re.sub(r"(\s*\(?\d{1,2}\)?)+$", "", n)                 # "BlackRock, Inc. 2" -> "BlackRock, Inc."
+    # "BlackRock, Inc. 2" -> "BlackRock, Inc.": הערות שוליים אחת-אחת (תבנית עם חזרה מקוננת "(…)+$" קורסת
+    # אקספוננציאלית על שורת טבלה עם עשרות מספרים - זה מה שתקע את הריצה ל-3.5 שעות)
+    while True:
+        m = FOOT_TAIL.search(n)
+        if not m or m.start() == 0:
+            break
+        n = n[:m.start()]
     n = re.sub(r",?\s+(held|holds|owns|owned)(\s+an?)?$", "", n, flags=re.I)
     n = re.sub(r"^(direct\s*(/|and|&)\s*indirect|direct|indirect)\s+", "", n, flags=re.I)  # עמודת "Nature of holding"
     n = re.sub(r"^(\d{1,2}\s+)?(january|february|march|april|may|june|july|august|september|october|november|december)\s+\d{4}\s+",

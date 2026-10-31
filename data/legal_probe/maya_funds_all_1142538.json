@@ -1,0 +1,87 @@
+[
+ {
+  "fundId": 1142538,
+  "name": "איביאי טכ עילית",
+  "longName": null,
+  "fundType": "קרן הייטק",
+  "fundTypeId": 3,
+  "isin": "IL0011425381",
+  "managerName": "איביאי קרנות נאמנות ",
+  "managerId": 10068,
+  "trusteeName": "יובנק נאמנות",
+  "taxStatusName": "פטורה",
+  "managementFee": 1.3,
+  "trusteeFee": 0.1,
+  "successFee": null,
+  "assetValue": 495.2,
+  "purchasePrice": null,
+  "redemptionPrice": null,
+  "ratesAsOf": "2026-10-29",
+  "distributionCommissionName": "לא נגבית עמלת הפצה",
+  "saleLoad": 0.0,
+  "standardDeviation": null,
+  "standardDeviationRemarkType": null,
+  "exposureProfile": {
+   "shareSymbol": "5",
+   "fxSymbol": "D",
+   "sharesDesc": "עד 200% מהשווי הנקי של נכסי הקרן",
+   "fxDesc": "עד 120% מהשווי הנקי של נכסי הקרן"
+  },
+  "features": [
+   {
+    "title": "הקרן הינה קרן בלתי מוגבלת בני\"ע חוץ",
+    "enabled": true
+   },
+   {
+    "title": "הקרן הינה קרן ממונפת",
+    "enabled": false
+   },
+   {
+    "title": "לפי מדיניות השקעותיה הקרן הינה קרן מחקה",
+    "enabled": false
+   },
+   {
+    "title": "לפי מדיניות השקעותיה הקרן הינה קרן חשיפה הפוכה",
+    "enabled": false
+   },
+   {
+    "title": "הקרן עוקבת תיק של",
+    "enabled": false
+   },
+   {
+    "title": "הקרן היא קרן מועדים קבועים",
+    "enabled": false
+   },
+   {
+    "title": "יחידות הקרן נקובות ב- $",
+    "enabled": false
+   },
+   {
+    "title": "קרן להשקעות חוץ – מטבע עיקרי",
+    "enabled": false
+   },
+   {
+    "title": "קרן להשק חוץ-פטור ממס לתושבי חוץ",
+    "enabled": false
+   },
+   {
+    "title": "קרן כשרה",
+    "enabled": false
+   }
+  ],
+  "classification": {
+   "major": "קרן סגורה",
+   "main": "קרן טכנולוגיה עילית",
+   "secondary": null
+  },
+  "underlyingAssets": [
+   {
+    "name": "ת\"א טק-עילית",
+    "indexId": 173,
+    "weight": -100.0
+   }
+  ],
+  "featuresText": "הקרן הינה קרן בלתי מוגבלת בני\"ע חוץ",
+  "underlyingAssetsText": "ת\"א טק-עילית"
+ }
+]
