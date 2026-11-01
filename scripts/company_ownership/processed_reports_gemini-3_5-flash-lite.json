@@ -21840,25 +21840,18 @@
   },
   "1778339": {
     "company_id": "1610",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-31T11:06:33.457064+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-11-01T11:05:59.416218+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1778230": {
     "company_id": "1978",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-31T11:06:33.925684+00:00",
+    "at": "2026-11-01T11:06:03.766664+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -21913,7 +21906,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-31T11:06:33.147247+00:00",
+    "at": "2026-11-01T11:06:03.467732+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -21943,6 +21936,32 @@
             }
           ],
           "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "תאגידים מוחזקים המחזיקים ביחידות קונדו",
+              "ownership_pct": 79,
+              "parent": null,
+              "page_reference": 75,
+              "section_title": "תביעות משפטיות",
+              "table_title": null,
+              "note": "מחזיקים בכ-86 יחידות קונדו למגורים וב-3 יחידות קונדו למסחר למכירה"
+            },
+            {
+              "name": "תאגיד JV המחזיק בנכס בשדרה התשיעית",
+              "ownership_pct": 80,
+              "parent": null,
+              "page_reference": 76,
+              "section_title": "תביעות משפטיות",
+              "table_title": null,
+              "note": "מחזיק בנכס בשדרה התשיעית במנהטן ניו יורק"
+            }
+          ],
+          "change_events": []
         }
       },
       "attempts": {}
@@ -21950,25 +21969,18 @@
   },
   "1778497": {
     "company_id": "1916",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-10-31T11:06:33.571868+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-11-01T11:06:04.366169+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1778498": {
     "company_id": "1916",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-31T11:06:33.692913+00:00",
+    "at": "2026-11-01T11:06:03.564824+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -21983,7 +21995,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-31T11:06:33.807183+00:00",
+    "at": "2026-11-01T11:06:03.666979+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -21998,7 +22010,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-31T11:06:34.181922+00:00",
+    "at": "2026-11-01T11:06:03.963559+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -22013,7 +22025,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-31T11:06:34.310517+00:00",
+    "at": "2026-11-01T11:06:04.083270+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -22028,7 +22040,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-10-31T11:06:34.050573+00:00",
+    "at": "2026-11-01T11:06:03.861932+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
