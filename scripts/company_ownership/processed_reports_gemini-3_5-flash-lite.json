@@ -21851,7 +21851,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-11-01T11:06:03.766664+00:00",
+    "at": "2026-11-02T11:05:46.750560+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -21906,7 +21906,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-11-01T11:06:03.467732+00:00",
+    "at": "2026-11-02T11:05:52.824891+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -21962,6 +21962,50 @@
             }
           ],
           "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "86-06 35th Avenue Realty Co. LLC",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 65,
+              "section_title": "נספח ב' - תמצית נתונים כספיים על הנכסים 86-06 35th Avenue, 3647 Broadway, 3657 Broadway, 143 Linden ו-20-32 Joralemon Street",
+              "table_title": "תמצית הדוחות על המצב הכספי",
+              "note": null
+            },
+            {
+              "name": "3647 Realty Co. LLC",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 67,
+              "section_title": "נספח ב' - תמצית נתונים כספיים על הנכסים 86-06 35th Avenue, 3647 Broadway, 3657 Broadway, 143 Linden ו-20-32 Joralemon Street",
+              "table_title": "תמצית הדוחות על המצב הכספי",
+              "note": null
+            },
+            {
+              "name": "3657 Realty Co. LLC",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 69,
+              "section_title": "נספח ב' - תמצית נתונים כספיים על הנכסים 86-06 35th Avenue, 3647 Broadway, 3657 Broadway, 143 Linden ו-20-32 Joralemon Street",
+              "table_title": "תמצית הדוחות על המצב הכספי",
+              "note": null
+            },
+            {
+              "name": "143 Realty NY LLC",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 71,
+              "section_title": "נספח ב' - תמצית נתונים כספיים על הנכסים 86-06 35th Avenue, 3647 Broadway, 3657 Broadway, 143 Linden ו-20-32 Joralemon Street",
+              "table_title": "תמצית הדוחות על המצב הכספי",
+              "note": null
+            }
+          ],
+          "change_events": []
         }
       },
       "attempts": {}
@@ -21977,40 +22021,26 @@
   },
   "1778498": {
     "company_id": "1916",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-11-01T11:06:03.564824+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-11-02T11:05:39.305151+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1778614": {
     "company_id": "1975",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-11-01T11:06:03.666979+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-11-02T11:05:46.556102+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1778592": {
     "company_id": "2583",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-11-01T11:06:03.963559+00:00",
+    "at": "2026-11-02T11:05:47.051358+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -22025,7 +22055,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-11-01T11:06:04.083270+00:00",
+    "at": "2026-11-02T11:05:47.150088+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -22040,7 +22070,30 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-11-01T11:06:03.861932+00:00",
+    "at": "2026-11-02T11:05:46.851190+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 1,
+      "done": {},
+      "attempts": {}
+    }
+  },
+  "1778916": {
+    "company_id": "126",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-02T11:05:33.324931+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1778872": {
+    "company_id": "2514",
+    "status": "partial",
+    "kind": "change",
+    "attempts": 0,
+    "at": "2026-11-02T11:05:46.941302+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
