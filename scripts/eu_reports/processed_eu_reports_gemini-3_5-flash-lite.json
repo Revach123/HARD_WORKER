@@ -239,6 +239,12 @@
   "ts": "2026-11-01T08:21:12+00:00",
   "u": "https://filings.xbrl.org/2138003GUZRFIN3UT430/2026-03-31/ESEF/GB/0/2138003GUZRFIN3UT430-2026-03-31/reports/2138003GUZRFIN3UT430-2026-03-31-T01.xhtml"
  },
+ "2138003H1BZGR6KM5823": {
+  "schema": 4,
+  "status": "ok",
+  "ts": "2026-11-03T09:02:36+00:00",
+  "u": "https://filings.xbrl.org/2138003H1BZGR6KM5823/2025-12-31/ESEF/GB/0/2138003H1BZGR6KM5823-2025-12-31/reports/2138003H1BZGR6KM5823-2025-12-31-T01.xhtml"
+ },
  "2138003LWDII27UTAG52": {
   "schema": 4,
   "status": "ok",
@@ -2765,6 +2771,12 @@
   "ts": "2026-11-03T09:01:04+00:00",
   "u": "https://filings.xbrl.org/259400AVUPSABLEXNT19/2022-12-31/ESEF/PL/0/xtb_2022-12-31_pl/reports/xtb_2022-12-31_pl.xhtml"
  },
+ "259400D4E0H5BGXNIK97": {
+  "schema": 4,
+  "status": "ok",
+  "ts": "2026-11-03T09:02:48+00:00",
+  "u": "https://filings.xbrl.org/259400D4E0H5BGXNIK97/2023-12-31/ESEF/PL/0/jsw-2023-12-31-pl/reports/jsw-2023-12-31-pl.xhtml"
+ },
  "259400LGXW3K0GDAG361": {
   "schema": 4,
   "status": "ok",
@@ -2783,11 +2795,29 @@
   "ts": "2026-11-03T08:37:11+00:00",
   "u": "https://filings.xbrl.org/259400OI92UBLS9RJK55/2023-12-31/ESEF/PL/1/ESEFArcticPaperSA_K-2023-12-31-en/reports/ESEFArcticPaperSA_K-2023-12-31-en.xhtml"
  },
+ "259400QHDOZWMJ103294": {
+  "schema": 4,
+  "status": "empty",
+  "ts": "2026-11-03T09:02:28+00:00",
+  "u": "https://filings.xbrl.org/259400QHDOZWMJ103294/2022-12-31/ESEF/PL/0/Alior-2022-12-31-pl/reports/Alior-2022-12-31-pl.xhtml"
+ },
+ "259400T1FZYBIW8XUJ78": {
+  "schema": 4,
+  "status": "ok",
+  "ts": "2026-11-03T09:02:45+00:00",
+  "u": "https://filings.xbrl.org/259400T1FZYBIW8XUJ78/2022-12-31/ESEF/PL/0/esef_SSF_GRUPAKRUK-2022-12-31/reports/259400T1FZYBIW8XUJ78-2022-12-31.xhtml"
+ },
  "259400T6ZDQIMDBGDN42": {
   "schema": 4,
   "status": "ok",
   "ts": "2026-11-03T08:44:17+00:00",
   "u": "https://filings.xbrl.org/259400T6ZDQIMDBGDN42/2025-12-31/ESEF/ES/0/259400T6ZDQIMDBGDN42-2025-12-31-1-es/reports/259400T6ZDQIMDBGDN42-2025-12-31-1-es.xhtml"
+ },
+ "259400TOMPUOLS65II22": {
+  "schema": 4,
+  "status": "empty",
+  "ts": "2026-11-03T09:02:50+00:00",
+  "u": "https://filings.xbrl.org/259400TOMPUOLS65II22/2022-12-31/ESEF/PL/0/OPLGrupaMSSF-2022-12-31-pl/reports/OPLGrupaMSSF-2022-12-31.xhtml"
  },
  "259400TYO5Q8SH8TL437": {
   "schema": 4,
@@ -2800,6 +2830,12 @@
   "status": "ok",
   "ts": "2026-11-03T08:53:45+00:00",
   "u": "https://filings.xbrl.org/259400VVMM70CQREJT74/2023-12-31/ESEF/PL/0/orlen-2023-12-31-pl/reports/orlen-2023-12-31-pl.xhtml"
+ },
+ "259400YLRTOBISHBVX41": {
+  "schema": 4,
+  "status": "ok",
+  "ts": "2026-11-03T09:02:36+00:00",
+  "u": "https://filings.xbrl.org/259400YLRTOBISHBVX41/2022-12-31/ESEF/PL/0/PL_ING_Bank_Slaski_Skonsolidowane_sprawozdanie_finansowe_2022/reports/PL_ING_Bank_Slaski_Skonsolidowane_sprawozdanie_finansowe_2022.xhtml"
  },
  "2EULGUTUI56JI9SAL165": {
   "schema": 4,
@@ -3700,6 +3736,13 @@
   "status": "ok",
   "ts": "2026-11-01T08:17:49+00:00",
   "u": "https://filings.xbrl.org/5493003DJ1G01IMQ7S28/2025-12-31/ESEF/GB/0/5493003DJ1G01IMQ7S28-2025-12-31/reports/5493003DJ1G01IMQ7S28-2025-12-31-T01.xhtml"
+ },
+ "5493003GR6L4DZOS2U12": {
+  "err": "JSONDecodeError: Expecting ',' delimiter: line 64 column 54 (char 1989)",
+  "schema": 4,
+  "status": "error",
+  "ts": "2026-11-03T09:02:02+00:00",
+  "u": "https://filings.xbrl.org/5493003GR6L4DZOS2U12/2024-06-30/ESEF/LU/0/kernel-2023-06-30-en-2024-06-30-en/reports/kernel-2023-06-30-en-2024-06-30-en.xhtml"
  },
  "5493003JFSMOJG48V108": {
   "schema": 3,
@@ -6792,6 +6835,12 @@
   "ts": "2026-11-02T08:47:56+00:00",
   "u": "https://filings.xbrl.org/724500J0BPD5CLHCK040/2025-12-31/ESEF/NL/0/sif-2025-12-31-en/reports/sif-2025-12-31-en.xhtml"
  },
+ "724500JXEXUGEATP5L52": {
+  "schema": 4,
+  "status": "ok",
+  "ts": "2026-11-03T09:02:11+00:00",
+  "u": "https://filings.xbrl.org/724500JXEXUGEATP5L52/2025-12-31/ESEF/NL/1/newamsterdaminvestnv-2025-12-31-1-en/reports/newamsterdaminvestnv-2025-12-31-1-en.xhtml"
+ },
  "724500K5PTPSST86UQ23": {
   "schema": 4,
   "status": "ok",
@@ -8598,6 +8647,12 @@
   "ts": "2026-11-02T08:41:41+00:00",
   "u": "https://filings.xbrl.org/959800MAFGMXMGJHCH48/2025-12-31/ESEF/ES/0/959800MAFGMXMGJHCH48-2025-12-31-1-es/reports/959800MAFGMXMGJHCH48-2025-12-31-1-es.xhtml"
  },
+ "959800N1575U0SRS5Z65": {
+  "schema": 4,
+  "status": "ok",
+  "ts": "2026-11-03T09:02:26+00:00",
+  "u": "https://filings.xbrl.org/959800N1575U0SRS5Z65/2025-12-31/ESEF/ES/0/959800N1575U0SRS5Z65-2025-12-31-1-es/reports/959800N1575U0SRS5Z65-2025-12-31-1-es.xhtml"
+ },
  "959800NW6DLQT89M3240": {
   "schema": 4,
   "status": "ok",
@@ -8681,6 +8736,12 @@
   "status": "ok",
   "ts": "2026-11-03T08:56:30+00:00",
   "u": "https://filings.xbrl.org/959800WGUAJ7RBWZRY77/2025-12-31/ESEF/ES/0/959800WGUAJ7RBWZRY77-2025-12-31-1-es/reports/informeauditoriaconsolidado-2026-12-31-1-en.xhtml"
+ },
+ "959800X6PDF1A9CC6S16": {
+  "schema": 4,
+  "status": "ok",
+  "ts": "2026-11-03T09:02:24+00:00",
+  "u": "https://filings.xbrl.org/959800X6PDF1A9CC6S16/2025-12-31/ESEF/ES/0/959800X6PDF1A9CC6S16-2025-12-31-1-es/reports/izertissa-2025-12-31-1-es.xhtml"
  },
  "959800XKAB9VNAVN9425": {
   "schema": 4,
