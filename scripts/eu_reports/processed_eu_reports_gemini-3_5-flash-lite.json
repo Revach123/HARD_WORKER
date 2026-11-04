@@ -479,6 +479,12 @@
   "ts": "2026-10-31T08:52:01+00:00",
   "u": "https://filings.xbrl.org/2138006PZH76JOS6MN27/2025-12-31/ESEF/SE/0/kinn-2025-12-31-1-sv/reports/kinn-2025-12-31-1-sv.xhtml"
  },
+ "2138006QFV6OJMYQC847": {
+  "schema": 4,
+  "status": "ok",
+  "ts": "2026-11-04T08:08:12+00:00",
+  "u": "https://filings.xbrl.org/2138006QFV6OJMYQC847/2025-12-31/ESEF/SE/0/qlir-2025-12-31-1-sv/reports/qlir-2025-12-31-1-sv.xhtml"
+ },
  "2138006R85VEOF5YNK29": {
   "schema": 4,
   "status": "ok",
@@ -1775,6 +1781,12 @@
   "ts": "2026-11-01T08:05:39+00:00",
   "u": "https://filings.xbrl.org/213800OCERWWPQDURL87/2026-03-31/ESEF/GB/0/213800OCERWWPQDURL87-2026-03-31/reports/213800OCERWWPQDURL87-2026-03-31-T01.xhtml"
  },
+ "213800OQLX64UNS38U92": {
+  "schema": 4,
+  "status": "empty",
+  "ts": "2026-11-04T08:08:17+00:00",
+  "u": "https://filings.xbrl.org/213800OQLX64UNS38U92/2025-12-31/ESEF/GB/0/213800OQLX64UNS38U92-2025-12-31/reports/213800OQLX64UNS38U92-2025-12-31-T01.xhtml"
+ },
  "213800ORZ521W585SY02": {
   "schema": 4,
   "status": "ok",
@@ -2807,6 +2819,12 @@
   "ts": "2026-11-03T09:03:43+00:00",
   "u": "https://filings.xbrl.org/2594005719IKYHOINE82/2022-12-31/ESEF/PL/0/tensquaregames_2022-12-31_pl/reports/tensquaregames_2022-12-31_pl.xhtml"
  },
+ "25940062QUG3WEUEGE88": {
+  "schema": 4,
+  "status": "ok",
+  "ts": "2026-11-04T08:08:08+00:00",
+  "u": "https://filings.xbrl.org/25940062QUG3WEUEGE88/2023-12-31/ESEF/PL/0/25940062QUG3WEUEGE88-2023-12-31-pl/reports/25940062QUG3WEUEGE88-2023-12-31-pl.xhtml"
+ },
  "259400A8SZP10GB5IB19": {
   "schema": 4,
   "status": "empty",
@@ -2909,6 +2927,12 @@
   "ts": "2026-11-03T08:59:16+00:00",
   "u": "https://filings.xbrl.org/259400TYO5Q8SH8TL437/2022-12-31/ESEF/PL/0/cdprojektsa-2022-12-31-pl/reports/cdprojektsa-2022-12-31-pl.xhtml"
  },
+ "259400U0O19JWLVHQN14": {
+  "schema": 4,
+  "status": "ok",
+  "ts": "2026-11-04T08:08:03+00:00",
+  "u": "https://filings.xbrl.org/259400U0O19JWLVHQN14/2022-09-30/ESEF/PL/0/synektik-2022-09-30-pl/reports/synektik-2022-09-30-pl.xhtml"
+ },
  "259400VVMM70CQREJT74": {
   "schema": 4,
   "status": "ok",
@@ -2974,6 +2998,12 @@
   "status": "ok",
   "ts": "2026-10-31T08:59:21+00:00",
   "u": "https://filings.xbrl.org/35GDVHRBMFE7NWATNM84/2026-03-31/ESEF/GB/0/35GDVHRBMFE7NWATNM84-2026-03-31/reports/35GDVHRBMFE7NWATNM84-2026-03-31-T01.html"
+ },
+ "391200CLINOY60KP3T33": {
+  "schema": 4,
+  "status": "empty",
+  "ts": "2026-11-04T08:07:51+00:00",
+  "u": "https://filings.xbrl.org/391200CLINOY60KP3T33/2023-12-31/ESEF/LU/1/391200CLINOY60KP3T33-2023-12-31-en/reports/391200CLINOY60KP3T33-2023-12-31-en.xhtml"
  },
  "391200EWTTF186UWWH07": {
   "schema": 4,
@@ -3834,10 +3864,10 @@
   "u": "https://filings.xbrl.org/5493003DJ1G01IMQ7S28/2025-12-31/ESEF/GB/0/5493003DJ1G01IMQ7S28-2025-12-31/reports/5493003DJ1G01IMQ7S28-2025-12-31-T01.xhtml"
  },
  "5493003GR6L4DZOS2U12": {
-  "err": "JSONDecodeError: Expecting ',' delimiter: line 64 column 54 (char 1989)",
+  "err": "JSONDecodeError: Expecting ',' delimiter: line 58 column 54 (char 1765)",
   "schema": 4,
   "status": "error",
-  "ts": "2026-11-03T09:02:02+00:00",
+  "ts": "2026-11-04T08:07:40+00:00",
   "u": "https://filings.xbrl.org/5493003GR6L4DZOS2U12/2024-06-30/ESEF/LU/0/kernel-2023-06-30-en-2024-06-30-en/reports/kernel-2023-06-30-en-2024-06-30-en.xhtml"
  },
  "5493003JFSMOJG48V108": {
@@ -5910,6 +5940,12 @@
   "ts": "2026-11-03T08:56:39+00:00",
   "u": "https://filings.xbrl.org/549300UH2JD85PIJOK89/2025-12-31/ESEF/SE/0/549300UH2JD85PIJOK89-2025-12-31-sv/reports/549300UH2JD85PIJOK89-2025-12-31-sv.xhtml"
  },
+ "549300UIMEEE5TIBYV82": {
+  "schema": 4,
+  "status": "ok",
+  "ts": "2026-11-04T08:07:49+00:00",
+  "u": "https://filings.xbrl.org/549300UIMEEE5TIBYV82/2024-12-31/ESEF/BE/0/549300UIMEEE5TIBYV82-2024-12-31-0-nl/reports/549300UIMEEE5TIBYV82-2024-12-31-0-nl.xhtml"
+ },
  "549300UINV5RINHGMG07": {
   "schema": 4,
   "status": "ok",
@@ -6059,6 +6095,12 @@
   "status": "empty",
   "ts": "2026-11-01T09:07:01+00:00",
   "u": "https://filings.xbrl.org/549300W61XW8OFGBG077/2025-12-31/ESEF/SE/0/549300W61XW8OFGBG077-2025-12-31-1-sv/reports/549300W61XW8OFGBG077-2025-12-31-1-sv.xhtml"
+ },
+ "549300W7L5S281Y3DD68": {
+  "schema": 4,
+  "status": "ok",
+  "ts": "2026-11-04T08:09:01+00:00",
+  "u": "https://filings.xbrl.org/549300W7L5S281Y3DD68/2025-12-31/ESEF/NO/0/549300W7L5S281Y3DD68-2025-12-31-1-en/reports/549300W7L5S281Y3DD68-2025-12-31-1-en.xhtml"
  },
  "549300W9JLPW15XIFM52": {
   "schema": 4,
@@ -6499,10 +6541,9 @@
   "u": "https://filings.xbrl.org/5967007LIEEXZXH8YG14/2025-12-31/ESEF/NO/0/akva-2025-12-31-1-en/reports/akva-2025-12-31-1-en.xhtml"
  },
  "5967007LIEEXZXHECW11": {
-  "err": "JSONDecodeError: Expecting property name enclosed in double quotes: line 13 column 7 (char 226)",
   "schema": 4,
-  "status": "error",
-  "ts": "2026-11-03T08:12:51+00:00",
+  "status": "ok",
+  "ts": "2026-11-04T08:07:46+00:00",
   "u": "https://filings.xbrl.org/5967007LIEEXZXHECW11/2025-12-31/ESEF/NO/0/5967007LIEEXZXHECW11-2025-12-31-1-en/reports/5967007LIEEXZXHECW11-2025-12-31-1-en.xhtml"
  },
  "5967007LIEEXZXHF4O96": {
@@ -7782,6 +7823,12 @@
   "status": "empty",
   "ts": "2026-11-03T08:36:42+00:00",
   "u": "https://filings.xbrl.org/81560022EE962F731A95/2024-12-31/ESEF/IT/0/81560022EE962F731A95-2024-12-31-0-it/reports/81560022EE962F731A95-2024-12-31-0-it.xhtml"
+ },
+ "815600251190FB2E7172": {
+  "schema": 4,
+  "status": "ok",
+  "ts": "2026-11-04T08:08:19+00:00",
+  "u": "https://filings.xbrl.org/815600251190FB2E7172/2024-12-31/ESEF/IT/0/815600251190FB2E7172-2024-12-31-0-it/reports/815600251190FB2E7172-2024-12-31-0-it.xhtml"
  },
  "81560026D234790EB288": {
   "schema": 4,
