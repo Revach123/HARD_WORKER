@@ -22045,7 +22045,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-11-03T11:05:37.603040+00:00",
+    "at": "2026-11-05T15:09:21.960454+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -22060,7 +22060,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-11-03T11:05:37.720036+00:00",
+    "at": "2026-11-05T15:09:22.052069+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -22098,7 +22098,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-11-03T11:05:37.205273+00:00",
+    "at": "2026-11-05T15:09:21.623078+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -22268,7 +22268,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-11-05T14:31:58.671661+00:00",
+    "at": "2026-11-05T14:37:46.152294+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -22277,7 +22277,8 @@
       "done": {},
       "attempts": {
         "0:0": 1,
-        "0:1": 1
+        "0:1": 1,
+        "0:2": 1
       }
     }
   },
@@ -22286,14 +22287,16 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-11-03T11:05:36.969668+00:00",
+    "at": "2026-11-05T14:43:48.010488+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 1,
       "done": {},
-      "attempts": {}
+      "attempts": {
+        "0:0": 1
+      }
     }
   },
   "1779198": {
@@ -22301,7 +22304,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-11-03T11:05:37.307039+00:00",
+    "at": "2026-11-05T15:09:21.863595+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -22862,5 +22865,108 @@
     "attempts": 1,
     "at": "2026-11-05T14:36:57.820844+00:00",
     "model": "gemini-3.5-flash-lite"
+  },
+  "1779668": {
+    "company_id": "2174",
+    "status": "partial",
+    "kind": "change",
+    "attempts": 0,
+    "at": "2026-11-05T14:43:21.965620+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 1,
+      "done": {},
+      "attempts": {
+        "0:0": 1
+      }
+    }
+  },
+  "1779294": {
+    "company_id": "2356",
+    "status": "partial",
+    "kind": "change",
+    "attempts": 0,
+    "at": "2026-11-05T15:02:18.337516+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 3,
+      "done": {},
+      "attempts": {
+        "0:0": 1,
+        "0:1": 1,
+        "0:2": 1
+      }
+    }
+  },
+  "1779295": {
+    "company_id": "2356",
+    "status": "partial",
+    "kind": "change",
+    "attempts": 0,
+    "at": "2026-11-05T14:58:38.348185+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 2,
+      "done": {},
+      "attempts": {
+        "0:0": 1,
+        "0:1": 1
+      }
+    }
+  },
+  "1779296": {
+    "company_id": "2356",
+    "status": "partial",
+    "kind": "change",
+    "attempts": 0,
+    "at": "2026-11-05T15:05:20.738161+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 1,
+      "done": {},
+      "attempts": {
+        "0:0": 1
+      }
+    }
+  },
+  "1779725": {
+    "company_id": "2450",
+    "status": "partial",
+    "kind": "change",
+    "attempts": 0,
+    "at": "2026-11-05T15:08:23.979660+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 1,
+      "done": {},
+      "attempts": {
+        "0:0": 1
+      }
+    }
+  },
+  "1779541": {
+    "company_id": "2514",
+    "status": "partial",
+    "kind": "change",
+    "attempts": 0,
+    "at": "2026-11-05T15:09:21.756257+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 1,
+      "done": {},
+      "attempts": {}
+    }
   }
 }
