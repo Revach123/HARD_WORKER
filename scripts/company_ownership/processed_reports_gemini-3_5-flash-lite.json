@@ -22128,48 +22128,19 @@
   },
   "1779042": {
     "company_id": "759",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-11-05T12:30:40.948663+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {
-        "0:0": 1,
-        "0:1": 1,
-        "0:2": 1
-      }
-    }
+    "attempts": 1,
+    "at": "2026-11-06T11:10:06.340762+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1779048": {
     "company_id": "759",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-11-05T12:29:07.282369+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {
-        "0:0": {
-          "report_format": "other",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-09-30",
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {
-        "0:1": 1,
-        "0:2": 1
-      }
-    }
+    "attempts": 1,
+    "at": "2026-11-06T11:09:36.756765+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1779151": {
     "company_id": "1267",
@@ -22390,106 +22361,43 @@
   },
   "1779289": {
     "company_id": "720",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-11-05T12:00:06.485796+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {
-        "0:0": 1,
-        "0:1": 1
-      }
-    }
+    "attempts": 1,
+    "at": "2026-11-06T11:08:44.042436+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1779292": {
     "company_id": "720",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-11-05T12:07:30.849359+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {
-        "0:0": {
-          "report_format": "other",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {
-        "0:1": 1
-      }
-    }
+    "attempts": 1,
+    "at": "2026-11-06T11:08:54.588803+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1779290": {
     "company_id": "720",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-11-05T12:13:13.979026+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {
-        "0:0": 1,
-        "0:1": 1
-      }
-    }
+    "attempts": 1,
+    "at": "2026-11-06T11:09:12.571790+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1779293": {
     "company_id": "720",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-11-05T12:14:00.072534+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {
-        "0:1": {
-          "report_format": "other",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {
-        "0:0": 1
-      }
-    }
+    "attempts": 1,
+    "at": "2026-11-06T11:09:05.916167+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1779629": {
     "company_id": "1032",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-11-05T12:34:45.318265+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {
-        "0:0": 1
-      }
-    }
+    "attempts": 1,
+    "at": "2026-11-06T11:09:42.304224+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1779688": {
     "company_id": "1153",
@@ -22909,71 +22817,11 @@
   },
   "1779997": {
     "company_id": "639",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-11-06T11:07:36.704390+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-09-30",
-          "subsidiaries": [
-            {
-              "name": "חברה לנכסים ולבניין בע\"מ",
-              "ownership_pct": 70.5,
-              "parent": null,
-              "page_reference": 3,
-              "section_title": "1.1 החברה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "חברת גב-ים לקרקעות בע\"מ",
-              "ownership_pct": 64.0,
-              "parent": "חברה לנכסים ולבניין בע\"מ",
-              "page_reference": 3,
-              "section_title": "1.1 החברה",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-09-30",
-          "subsidiaries": [
-            {
-              "name": "נכסים ובניין",
-              "ownership_pct": 70.5,
-              "parent": null,
-              "page_reference": 37,
-              "section_title": "באור 1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "גב-ים",
-              "ownership_pct": 64.0,
-              "parent": "נכסים ובניין",
-              "page_reference": 37,
-              "section_title": "באור 1 - כללי",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-11-06T11:08:04.504332+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1780004": {
     "company_id": "639",
@@ -22982,5 +22830,101 @@
     "attempts": 1,
     "at": "2026-11-06T11:07:37.573371+00:00",
     "model": "gemini-3.5-flash-lite"
+  },
+  "1779990": {
+    "company_id": "699",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-06T11:08:46.152616+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1780000": {
+    "company_id": "699",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-06T11:08:16.546454+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1779779": {
+    "company_id": "1152",
+    "status": "partial",
+    "kind": "change",
+    "attempts": 0,
+    "at": "2026-11-06T11:10:00.136444+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 6,
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-09-30",
+          "subsidiaries": [
+            {
+              "name": "סאן דור נתיבי אויר בינלאומיים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "פעילות הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אל על הנוסע המתמיד בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "פעילות הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ת.מ.מ. - תעשיות מזון מטוסים (נמל תעופה בן גוריון) בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "פעילות הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Borenstein Caterers Inc",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "פעילות הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "קוקפיט חדשנות בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "פעילות הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אל על טרוול בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "פעילות הקבוצה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        }
+      },
+      "attempts": {
+        "0:1": 1
+      }
+    }
   }
 }
