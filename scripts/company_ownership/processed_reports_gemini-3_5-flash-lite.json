@@ -22144,20 +22144,11 @@
   },
   "1779151": {
     "company_id": "1267",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-11-05T12:40:40.446890+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {
-        "0:0": 1
-      }
-    }
+    "attempts": 1,
+    "at": "2026-11-06T11:10:53.495202+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1779202": {
     "company_id": "1773",
@@ -22401,82 +22392,48 @@
   },
   "1779688": {
     "company_id": "1153",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-11-05T12:37:32.200900+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {
-        "0:0": 1
-      }
-    }
+    "attempts": 1,
+    "at": "2026-11-06T11:10:29.608128+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1779301": {
     "company_id": "1328",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-11-05T13:15:06.325137+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 6,
-      "done": {},
-      "attempts": {
-        "0:0": 1,
-        "0:1": 1,
-        "0:2": 1,
-        "0:3": 1,
-        "0:4": 1,
-        "0:5": 1
-      }
-    }
-  },
-  "1779305": {
-    "company_id": "1328",
-    "status": "partial",
-    "kind": "change",
-    "attempts": 0,
-    "at": "2026-11-05T13:03:33.574633+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {
-        "0:0": 1,
-        "0:1": 1,
-        "0:2": 1
-      }
-    }
-  },
-  "1779366": {
-    "company_id": "1328",
-    "status": "partial",
-    "kind": "change",
-    "attempts": 0,
-    "at": "2026-11-05T13:28:06.055626+00:00",
+    "at": "2026-11-06T11:11:56.439332+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 6,
       "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-09-30",
+          "subsidiaries": [
+            {
+              "name": "אמות קונסטרקשיין",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 10,
+              "section_title": "אסטרטגיה עסקית",
+              "table_title": null,
+              "note": "חברת בת בבעלות מלאה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-09-30",
+          "subsidiaries": [],
+          "change_events": []
+        },
         "0:3": {
           "report_format": "israeli_periodic",
           "document_type": "ownership_snapshot",
@@ -22486,7 +22443,14 @@
         },
         "0:4": {
           "report_format": "israeli_periodic",
-          "document_type": "unknown",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-09-30",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
           "as_of_date": "2026-09-30",
           "subsidiaries": [],
           "change_events": []
@@ -22494,37 +22458,37 @@
       },
       "attempts": {
         "0:0": 1,
-        "0:1": 1,
+        "0:1": 2,
         "0:2": 1,
+        "0:3": 1,
+        "0:4": 1,
         "0:5": 1
       }
     }
   },
+  "1779305": {
+    "company_id": "1328",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-06T11:11:41.519828+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1779366": {
+    "company_id": "1328",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-06T11:12:33.982509+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
   "1779369": {
     "company_id": "1328",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-11-05T13:27:53.926623+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {
-        "0:1": {
-          "report_format": "other",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {
-        "0:0": 1,
-        "0:2": 1
-      }
-    }
+    "attempts": 1,
+    "at": "2026-11-06T11:12:24.968056+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1779636": {
     "company_id": "1363",
@@ -22852,7 +22816,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-11-06T11:10:00.136444+00:00",
+    "at": "2026-11-06T11:11:00.101930+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
@@ -22920,11 +22884,138 @@
             }
           ],
           "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-09-30",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-09-30",
+          "subsidiaries": [
+            {
+              "name": "אל על טרוול בע\"מ",
+              "ownership_pct": null,
+              "parent": "אל על נתיבי אויר לישראל בע\"מ",
+              "page_reference": 58,
+              "section_title": "ביאור 1: - כללי (המשך)",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-09-30",
+          "subsidiaries": [
+            {
+              "name": "סאן דור נתיבי אויר בינלאומיים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 81,
+              "section_title": "ביאור 1 - כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אל על הנוסע המתמיד בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 81,
+              "section_title": "ביאור 1 - כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ת.מ.מ. - תעשיות מזון מטוסים (נמל תעופה בן גוריון) בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 81,
+              "section_title": "ביאור 1 - כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Borenstein Caterers Inc-I",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 81,
+              "section_title": "ביאור 1 - כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "קוקפיט חדשנות בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 81,
+              "section_title": "ביאור 1 - כללי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אל על טרוול בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 81,
+              "section_title": "ביאור 1 - כללי",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-09-30",
+          "subsidiaries": [
+            {
+              "name": "חברת המועדון",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 91,
+              "section_title": "ביאור 5 - מכשירים פיננסיים נגזרים (המשך)",
+              "table_title": null,
+              "note": "קבוצת הפניקס מחזיקה 25% מהון המניות המונפק והנפרע לאחר מימוש אופציה"
+            }
+          ],
+          "change_events": []
         }
       },
       "attempts": {
         "0:1": 1
       }
     }
+  },
+  "1779775": {
+    "company_id": "1152",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-06T11:10:21.105303+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1779998": {
+    "company_id": "1248",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-06T11:10:47.218862+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1779892": {
+    "company_id": "1461",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-06T11:12:29.365862+00:00",
+    "model": "gemini-3.5-flash-lite"
   }
 }
