@@ -22070,75 +22070,35 @@
   },
   "1779156": {
     "company_id": "2110",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-11-05T14:14:03.512710+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {
-        "0:0": 1
-      }
-    }
+    "attempts": 1,
+    "at": "2026-11-06T11:15:11.940871+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1779157": {
     "company_id": "2110",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-11-05T14:30:21.595881+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {
-        "0:0": 1,
-        "0:1": 1,
-        "0:2": 1
-      }
-    }
+    "attempts": 1,
+    "at": "2026-11-06T11:16:03.877981+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1779161": {
     "company_id": "2110",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-11-05T14:37:46.152294+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {
-        "0:0": 1,
-        "0:1": 1,
-        "0:2": 1
-      }
-    }
+    "attempts": 1,
+    "at": "2026-11-06T11:16:01.095853+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1779273": {
     "company_id": "2240",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-11-05T14:43:48.010488+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {
-        "0:0": 1
-      }
-    }
+    "attempts": 1,
+    "at": "2026-11-06T11:16:17.637078+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1779198": {
     "company_id": "2534",
@@ -22441,20 +22401,11 @@
   },
   "1779580": {
     "company_id": "2134",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-11-05T14:36:42.822158+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {
-        "0:0": 1
-      }
-    }
+    "attempts": 1,
+    "at": "2026-11-06T11:16:10.086265+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1779693": {
     "company_id": "2134",
@@ -22466,20 +22417,11 @@
   },
   "1779668": {
     "company_id": "2174",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-11-05T14:43:21.965620+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {
-        "0:0": 1
-      }
-    }
+    "attempts": 1,
+    "at": "2026-11-06T11:16:11.086942+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1779294": {
     "company_id": "2356",
@@ -22832,342 +22774,11 @@
   },
   "1779765": {
     "company_id": "1610",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-11-06T11:14:57.294705+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 16,
-      "done": {
-        "0:0": {
-          "report_format": "10-K",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-09-30",
-          "subsidiaries": [
-            {
-              "name": "EirGen Pharma Ltd.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "NOTE 1 BUSINESS AND ORGANIZATION",
-              "table_title": null,
-              "note": "Irish subsidiary"
-            },
-            {
-              "name": "ModeX Therapeutics, Inc.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "NOTE 1 BUSINESS AND ORGANIZATION",
-              "table_title": null,
-              "note": "Subsidiary"
-            },
-            {
-              "name": "BioReference Health, LLC",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 10,
-              "section_title": "NOTE 2 DISCONTINUED OPERATIONS",
-              "table_title": null,
-              "note": "Subsidiary"
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "other",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-09-30",
-          "subsidiaries": [
-            {
-              "name": "Entera Bio Ltd.",
-              "ownership_pct": 2.1,
-              "parent": null,
-              "page_reference": 22,
-              "section_title": "Investments in equity securities",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Niagen Bioscience, Inc.",
-              "ownership_pct": 0.04,
-              "parent": null,
-              "page_reference": 22,
-              "section_title": "Investments in equity securities",
-              "table_title": null,
-              "note": "Formerly known as ChromaDex Corporation"
-            },
-            {
-              "name": "Eloxx Pharmaceuticals, Inc.",
-              "ownership_pct": 0.07,
-              "parent": null,
-              "page_reference": 22,
-              "section_title": "Investments in equity securities",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Xenetic Biosciences, Inc.",
-              "ownership_pct": 1.0,
-              "parent": null,
-              "page_reference": 22,
-              "section_title": "Investments in equity securities",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "BioCardia",
-              "ownership_pct": 0.1,
-              "parent": null,
-              "page_reference": 22,
-              "section_title": "Investments in equity securities",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "CAMP4 Therapeutics Corporation",
-              "ownership_pct": 0.48,
-              "parent": null,
-              "page_reference": 22,
-              "section_title": "Investments in equity securities",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "HealthSnap, Inc.",
-              "ownership_pct": 4.0,
-              "parent": null,
-              "page_reference": 22,
-              "section_title": "Investments in equity securities",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Nicoya Therapeutics Cayman",
-              "ownership_pct": 15.0,
-              "parent": "EirGen",
-              "page_reference": 37,
-              "section_title": "NICOYA Macau Limited",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "LeaderMed Health Group Limited",
-              "ownership_pct": 47.0,
-              "parent": null,
-              "page_reference": 37,
-              "section_title": "LeaderMed",
-              "table_title": null,
-              "note": "License terminated in July 2026, effective October 2026"
-            },
-            {
-              "name": "Zebra Biologics, Inc.",
-              "ownership_pct": 29.0,
-              "parent": null,
-              "page_reference": 23,
-              "section_title": "Zebra",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Cocrystal Pharma, Inc.",
-              "ownership_pct": 29.6,
-              "parent": null,
-              "page_reference": 23,
-              "section_title": "Cocrystal",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Pharmsynthez",
-              "ownership_pct": 6.0,
-              "parent": null,
-              "page_reference": 23,
-              "section_title": "Equity method investments",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "Non-Invasive Monitoring Systems, Inc.",
-              "ownership_pct": 1.0,
-              "parent": null,
-              "page_reference": 23,
-              "section_title": "Equity method investments",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "other",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-09-30",
-          "subsidiaries": [
-            {
-              "name": "LeaderMed",
-              "ownership_pct": 47,
-              "parent": null,
-              "page_reference": 71,
-              "section_title": "LeaderMed",
-              "table_title": null,
-              "note": "Joint venture; license terminated in July 2026"
-            },
-            {
-              "name": "Nicoya Therapeutics Cayman",
-              "ownership_pct": 15,
-              "parent": null,
-              "page_reference": 71,
-              "section_title": "NICOYA Macau Limited",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "EirGen Pharma Ltd.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 79,
-              "section_title": "OVERVIEW",
-              "table_title": null,
-              "note": "Wholly owned subsidiary"
-            },
-            {
-              "name": "Transition Therapeutics Inc.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 71,
-              "section_title": "Eli Lilly and Company",
-              "table_title": null,
-              "note": "Wholly owned subsidiary"
-            },
-            {
-              "name": "Waratah Pharmaceuticals Inc.",
-              "ownership_pct": null,
-              "parent": "Transition Therapeutics Inc.",
-              "page_reference": 71,
-              "section_title": "Eli Lilly and Company",
-              "table_title": null,
-              "note": "Subsidiary of Transition"
-            },
-            {
-              "name": "ModeX Therapeutics, Inc.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 79,
-              "section_title": "OVERVIEW",
-              "table_title": null,
-              "note": "Subsidiary"
-            }
-          ],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": "2026-09-30",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "other",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "Eirgen Pharma Limited",
-              "ownership_pct": null,
-              "parent": "Opko Health, Inc.",
-              "page_reference": 75,
-              "section_title": null,
-              "table_title": null,
-              "note": "Guarantor"
-            },
-            {
-              "name": "OPKO Biologics Ltd.",
-              "ownership_pct": null,
-              "parent": "Opko Health, Inc.",
-              "page_reference": 75,
-              "section_title": null,
-              "table_title": null,
-              "note": "Guarantor"
-            }
-          ],
-          "change_events": []
-        },
-        "0:5": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:6": {
-          "report_format": "other",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "Eirgen Pharma Limited",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 110,
-              "section_title": null,
-              "table_title": null,
-              "note": "Irish Guarantor"
-            },
-            {
-              "name": "OPKO Biologics Ltd.",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 111,
-              "section_title": null,
-              "table_title": null,
-              "note": "Israeli Guarantor"
-            }
-          ],
-          "change_events": []
-        },
-        "0:7": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:8": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:9": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:10": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:11": {
-          "report_format": "other",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-11-06T11:15:32.425373+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1779907": {
     "company_id": "1993",
@@ -23175,6 +22786,30 @@
     "kind": "change",
     "attempts": 1,
     "at": "2026-11-06T11:15:00.363489+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1779897": {
+    "company_id": "2177",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-06T11:16:16.958855+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1779762": {
+    "company_id": "2250",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-06T11:16:27.113937+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1779764": {
+    "company_id": "2250",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-06T11:16:31.452334+00:00",
     "model": "gemini-3.5-flash-lite"
   }
 }
