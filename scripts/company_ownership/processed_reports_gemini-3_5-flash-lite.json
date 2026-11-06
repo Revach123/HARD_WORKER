@@ -21958,20 +21958,11 @@
   },
   "1778797": {
     "company_id": "2463",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-11-05T15:12:01.804381+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {
-        "0:0": 1
-      }
-    }
+    "attempts": 1,
+    "at": "2026-11-06T11:18:55.916033+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1778916": {
     "company_id": "126",
@@ -21983,18 +21974,11 @@
   },
   "1778872": {
     "company_id": "2514",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-11-05T15:09:21.623078+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-11-06T11:19:29.934477+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1779039": {
     "company_id": "585",
@@ -22425,74 +22409,35 @@
   },
   "1779294": {
     "company_id": "2356",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-11-05T15:02:18.337516+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {},
-      "attempts": {
-        "0:0": 1,
-        "0:1": 1,
-        "0:2": 1
-      }
-    }
+    "attempts": 1,
+    "at": "2026-11-06T11:18:17.902070+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1779295": {
     "company_id": "2356",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-11-05T14:58:38.348185+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {},
-      "attempts": {
-        "0:0": 1,
-        "0:1": 1
-      }
-    }
+    "attempts": 1,
+    "at": "2026-11-06T11:18:19.290096+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1779296": {
     "company_id": "2356",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-11-05T15:05:20.738161+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {
-        "0:0": 1
-      }
-    }
+    "attempts": 1,
+    "at": "2026-11-06T11:18:25.532259+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1779725": {
     "company_id": "2450",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-11-05T15:08:23.979660+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 1,
-      "done": {},
-      "attempts": {
-        "0:0": 1
-      }
-    }
+    "attempts": 1,
+    "at": "2026-11-06T11:18:50.263318+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1779541": {
     "company_id": "2514",
@@ -22810,6 +22755,176 @@
     "kind": "change",
     "attempts": 1,
     "at": "2026-11-06T11:16:31.452334+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1780008": {
+    "company_id": "2250",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-06T11:17:55.481076+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1780035": {
+    "company_id": "2352",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-06T11:17:32.718828+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1779882": {
+    "company_id": "2409",
+    "status": "partial",
+    "kind": "change",
+    "attempts": 0,
+    "at": "2026-11-06T11:19:18.248430+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 6,
+      "done": {
+        "0:0": {
+          "report_format": "other",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-09-30",
+          "subsidiaries": [
+            {
+              "name": "ARC Financial Partners, LLC",
+              "ownership_pct": 25,
+              "parent": null,
+              "page_reference": 15,
+              "section_title": "Consolidated Schedule of Investments (unaudited)",
+              "table_title": null,
+              "note": "Membership Interests (25% ownership)"
+            },
+            {
+              "name": "CION/EagleTree Partners, LLC",
+              "ownership_pct": 85,
+              "parent": null,
+              "page_reference": 15,
+              "section_title": "Consolidated Schedule of Investments (unaudited)",
+              "table_title": null,
+              "note": "Membership Units (85% ownership)"
+            },
+            {
+              "name": "Senior Loan Fund Partners, LLC",
+              "ownership_pct": 80,
+              "parent": null,
+              "page_reference": 16,
+              "section_title": "Consolidated Schedule of Investments (unaudited)",
+              "table_title": null,
+              "note": "Common LLC Interests (80% ownership)"
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "10-K",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-09-30",
+          "subsidiaries": [
+            {
+              "name": "ARC Financial Partners, LLC",
+              "ownership_pct": 25,
+              "parent": null,
+              "page_reference": 26,
+              "section_title": "Consolidated Schedule of Investments",
+              "table_title": "Consolidated Schedule of Investments",
+              "note": "Membership Interests (25% ownership)"
+            },
+            {
+              "name": "CION/EagleTree Partners, LLC",
+              "ownership_pct": 85,
+              "parent": null,
+              "page_reference": 26,
+              "section_title": "Consolidated Schedule of Investments",
+              "table_title": "Consolidated Schedule of Investments",
+              "note": "Membership Units (85% ownership)"
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "10-K",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-09-30",
+          "subsidiaries": [
+            {
+              "name": "Senior Loan Fund Partners, LLC",
+              "ownership_pct": 80.0,
+              "parent": null,
+              "page_reference": 47,
+              "section_title": "Note 7. Joint Ventures",
+              "table_title": null,
+              "note": "Holding 80.0% as common SLFP LLC Interests"
+            },
+            {
+              "name": "CION/EagleTree Partners, LLC",
+              "ownership_pct": 85.0,
+              "parent": null,
+              "page_reference": 49,
+              "section_title": "Note 7. Joint Ventures",
+              "table_title": null,
+              "note": "Company holds 85% of senior secured notes, participating preferred equity, and common share interests"
+            }
+          ],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "other",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-09-30",
+          "subsidiaries": [
+            {
+              "name": "34th Street",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 55,
+              "section_title": "JPM Credit Facility",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Murray Hill Funding",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 56,
+              "section_title": "UBS Repurchase Facility",
+              "table_title": null,
+              "note": "Described as a wholly-owned special-purpose financing subsidiary"
+            },
+            {
+              "name": "Murray Hill Funding II",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 56,
+              "section_title": "UBS Repurchase Facility",
+              "table_title": null,
+              "note": "Described as a wholly-owned special-purpose financing subsidiary"
+            }
+          ],
+          "change_events": []
+        }
+      },
+      "attempts": {}
+    }
+  },
+  "1779925": {
+    "company_id": "2409",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-06T11:18:45.381548+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1779876": {
+    "company_id": "2486",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-06T11:19:24.636023+00:00",
     "model": "gemini-3.5-flash-lite"
   }
 }
