@@ -2628,5 +2628,44 @@
     "attempts": 1,
     "at": "2026-11-08T09:14:17.509635+00:00",
     "model": "gemini-3.6-flash"
+  },
+  "1732640": {
+    "company_id": "2490",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-11-08T09:16:01.913966+00:00",
+    "model": "gemini-3.6-flash"
+  },
+  "1729251": {
+    "company_id": "155",
+    "status": "failed",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-11-08T09:16:17.862798+00:00"
+  },
+  "1729804": {
+    "company_id": "1238",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-11-08T09:16:45.724009+00:00",
+    "model": "gemini-3.6-flash"
+  },
+  "1729215": {
+    "company_id": "1008",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-11-08T09:17:16.672002+00:00",
+    "model": "gemini-3.6-flash"
+  },
+  "1729379": {
+    "company_id": "763",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-11-08T09:17:44.008298+00:00",
+    "model": "gemini-3.6-flash"
   }
 }
