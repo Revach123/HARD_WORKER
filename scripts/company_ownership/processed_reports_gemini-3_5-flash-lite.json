@@ -22720,25 +22720,66 @@
   },
   "1780277": {
     "company_id": "1916",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-11-10T11:07:50.300943+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-09-30",
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-11-10T11:07:58.995758+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1780274": {
+    "company_id": "1916",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-10T11:08:07.480732+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1780241": {
+    "company_id": "2095",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-10T11:08:52.955770+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1780245": {
+    "company_id": "2095",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-10T11:08:24.435055+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1780298": {
+    "company_id": "2188",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-10T11:08:31.979561+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1780234": {
+    "company_id": "2496",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-10T11:08:50.958746+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1780210": {
+    "company_id": "2534",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-10T11:09:17.954520+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1780207": {
+    "company_id": "2534",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-10T11:09:51.668305+00:00",
+    "model": "gemini-3.5-flash-lite"
   }
 }
