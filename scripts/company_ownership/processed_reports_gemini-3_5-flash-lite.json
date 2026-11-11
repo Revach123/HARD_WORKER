@@ -22928,104 +22928,11 @@
   },
   "1780369": {
     "company_id": "1901",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-11-11T11:14:21.051828+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": "2026-09-30",
-          "subsidiaries": [],
-          "change_events": [
-            {
-              "company": "Sensory FX Proprietary Limited",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 70.0,
-              "event_date": "2026-10-30",
-              "event_description": "Acquisition of 70% of the share capital of Sensory FX Proprietary Limited",
-              "page_reference": 8,
-              "section_title": "Acquisition of a fragrance and flavor company in South African – Sensory:"
-            },
-            {
-              "company": "Phoenix Flavors & Fragrances Inc.",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 100.0,
-              "event_date": "2026-05-01",
-              "event_description": "Acquisition of 100% of the share capital of Phoenix Flavors & Fragrances Inc.",
-              "page_reference": 9,
-              "section_title": "Acquisition of a fragrance and flavor company in the USA – Phoenix:"
-            },
-            {
-              "company": "Romessence SAS",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 70.0,
-              "event_date": "2026-05-12",
-              "event_description": "Acquisition of 70% of the share capital of Romessence SAS",
-              "page_reference": 11,
-              "section_title": "Acquisition of a fragrance extracts company in France – Romessence:"
-            },
-            {
-              "company": "Attractive Scent SAS",
-              "event_type": "increase",
-              "ownership_pct_before": 68.6,
-              "ownership_pct_after": 100.0,
-              "event_date": "2026-02-02",
-              "event_description": "Immediate purchase of the remaining share capital of Attractive Scent, constituting approx. 31.4%, reaching 100% ownership",
-              "page_reference": 12,
-              "section_title": "2. Events during the period and subsequent to balance sheet date"
-            },
-            {
-              "company": "Balirom Ltd.",
-              "event_type": "other",
-              "ownership_pct_before": 100.0,
-              "ownership_pct_after": 0.0,
-              "event_date": "2026-06-07",
-              "event_description": "Non-material merger of the Company with Balirom Ltd., a wholly owned subsidiary, merged with and into the Company",
-              "page_reference": 12,
-              "section_title": "2. Events during the period and subsequent to balance sheet date"
-            },
-            {
-              "company": "Food Ingredients Technologies SA (FIT)",
-              "event_type": "increase",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 100.0,
-              "event_date": "2026-07-28",
-              "event_description": "Exercise of option to purchase Sellers' entire holdings in FIT, constituting approx. 24.5% of FIT's share capital",
-              "page_reference": 12,
-              "section_title": "2. Events during the period and subsequent to balance sheet date"
-            }
-          ]
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": "2026-09-30",
-          "subsidiaries": [
-            {
-              "name": "Phoenix",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 30,
-              "section_title": "9. Valuations and estimates",
-              "table_title": null,
-              "note": "Provisional valuation of the acquisition of Phoenix"
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-11-11T11:14:47.873241+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1780426": {
     "company_id": "1916",
