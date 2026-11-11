@@ -22781,5 +22781,246 @@
     "attempts": 1,
     "at": "2026-11-10T11:09:51.668305+00:00",
     "model": "gemini-3.5-flash-lite"
+  },
+  "1780400": {
+    "company_id": "126",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-11T11:05:35.216875+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1780370": {
+    "company_id": "691",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-11T11:05:35.942225+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1780384": {
+    "company_id": "1221",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-11T11:05:56.164197+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1780383": {
+    "company_id": "1221",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-11T11:06:33.871960+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1780410": {
+    "company_id": "1266",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-11T11:06:39.934640+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1780462": {
+    "company_id": "1386",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-11T11:06:44.162658+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1780390": {
+    "company_id": "1581",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-11T11:08:27.121249+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1780447": {
+    "company_id": "1635",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-11T11:09:26.965299+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1780372": {
+    "company_id": "1682",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-11T11:11:35.532221+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1780374": {
+    "company_id": "1682",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-11T11:10:17.430543+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1780375": {
+    "company_id": "1682",
+    "status": "partial",
+    "kind": "change",
+    "attempts": 0,
+    "at": "2026-11-11T11:11:31.738235+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 7,
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2026-09-30",
+          "subsidiaries": [
+            {
+              "name": "Shay Project",
+              "ownership_pct": 70,
+              "parent": "CPV Group",
+              "page_reference": 7,
+              "section_title": "1. Executive Summary",
+              "table_title": null,
+              "note": "Combined cycle with a capacity of 2.1 gigawatts in West Virginia"
+            },
+            {
+              "name": "Walker project",
+              "ownership_pct": 70,
+              "parent": "CPV Group",
+              "page_reference": 7,
+              "section_title": "1. Executive Summary",
+              "table_title": null,
+              "note": "Combined cycle with a capacity of 1.5 gigawatts in Ohio"
+            }
+          ],
+          "change_events": [
+            {
+              "company": "Shore power plant",
+              "event_type": "increase",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 100,
+              "event_date": "2026-01-01",
+              "event_description": "Acquisition of the remaining rights (11%) in the Shore power plant",
+              "page_reference": 8,
+              "section_title": "1. Executive Summary"
+            },
+            {
+              "company": "Maryland power plant",
+              "event_type": "increase",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 100,
+              "event_date": "2026-05-01",
+              "event_description": "Acquisition of the remaining interest (25%) in the Maryland power plant",
+              "page_reference": 8,
+              "section_title": "1. Executive Summary"
+            },
+            {
+              "company": "Three Rivers power plant",
+              "event_type": "full_disposal",
+              "ownership_pct_before": 10,
+              "ownership_pct_after": 0,
+              "event_date": "2026-05-01",
+              "event_description": "Sale of the rights (10%) in the Three Rivers power plant",
+              "page_reference": 8,
+              "section_title": "1. Executive Summary"
+            }
+          ]
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-09-30",
+          "subsidiaries": [
+            {
+              "name": "Shore power plant",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 35,
+              "section_title": "4. Analysis of the results of operations for the Nine Months Ended September 30, 2026 (in millions of dollars) (Cont.)",
+              "table_title": null,
+              "note": "Acquisition of all the rights (100%), consolidated starting from January 2026"
+            },
+            {
+              "name": "Maryland power plant",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 35,
+              "section_title": "4. Analysis of the results of operations for the Nine Months Ended September 30, 2026 (in millions of dollars) (Cont.)",
+              "table_title": null,
+              "note": "Acquisition of all the rights (100%), consolidated starting from May 2026"
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-09-30",
+          "subsidiaries": [
+            {
+              "name": "Fairview",
+              "ownership_pct": 25,
+              "parent": null,
+              "page_reference": 41,
+              "section_title": "D. Analysis of the change in EBITDA, the generation data, energy hedges and capacity – Energy Transition segment in the U.S.",
+              "table_title": "Analysis of the Group’s share in the proportionate EBITDA, FFO and net cash flows after service of project debt of associated companies by project in the Energy Transition segment (in millions of dollars):",
+              "note": null
+            },
+            {
+              "name": "Towantic",
+              "ownership_pct": 26,
+              "parent": null,
+              "page_reference": 41,
+              "section_title": "D. Analysis of the change in EBITDA, the generation data, energy hedges and capacity – Energy Transition segment in the U.S.",
+              "table_title": "Analysis of the Group’s share in the proportionate EBITDA, FFO and net cash flows after service of project debt of associated companies by project in the Energy Transition segment (in millions of dollars):",
+              "note": null
+            },
+            {
+              "name": "Maryland",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 41,
+              "section_title": "D. Analysis of the change in EBITDA, the generation data, energy hedges and capacity – Energy Transition segment in the U.S.",
+              "table_title": "Analysis of the Group’s share in the proportionate EBITDA, FFO and net cash flows after service of project debt of associated companies by project in the Energy Transition segment (in millions of dollars):",
+              "note": "Holdings increased from 75% to 100% in May 2026; results up to April 30, 2026 included in associated companies and starting May 1, 2026 in consolidated subsidiaries"
+            },
+            {
+              "name": "Valley",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 41,
+              "section_title": "D. Analysis of the change in EBITDA, the generation data, energy hedges and capacity – Energy Transition segment in the U.S.",
+              "table_title": "Analysis of the Group’s share in the proportionate EBITDA, FFO and net cash flows after service of project debt of associated companies by project in the Energy Transition segment (in millions of dollars):",
+              "note": null
+            },
+            {
+              "name": "Three Rivers",
+              "ownership_pct": 10,
+              "parent": null,
+              "page_reference": 41,
+              "section_title": "D. Analysis of the change in EBITDA, the generation data, energy hedges and capacity – Energy Transition segment in the U.S.",
+              "table_title": "Analysis of the Group’s share in the proportionate EBITDA, FFO and net cash flows after service of project debt of associated companies by project in the Energy Transition segment (in millions of dollars):",
+              "note": "Disposed of in May 2026; results included up to April 30, 2026"
+            },
+            {
+              "name": "Shore",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 41,
+              "section_title": "D. Analysis of the change in EBITDA, the generation data, energy hedges and capacity – Energy Transition segment in the U.S.",
+              "table_title": "Analysis of the Group’s share in the proportionate EBITDA, FFO and net cash flows after service of project debt of associated companies by project in the Energy Transition segment (in millions of dollars):",
+              "note": null
+            }
+          ],
+          "change_events": []
+        }
+      },
+      "attempts": {}
+    }
   }
 }
