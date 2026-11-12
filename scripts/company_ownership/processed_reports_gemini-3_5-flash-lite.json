@@ -23008,148 +23008,11 @@
   },
   "1780625": {
     "company_id": "593",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-11-12T11:11:21.798929+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 12,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-09-30",
-          "subsidiaries": [
-            {
-              "name": "החברה לנאמנות",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "סקירה כללית, יעדים ואסטרטגיה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "החברה לניהול תיקים",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "סקירה כללית, יעדים ואסטרטגיה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "בנק מסד",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 4,
-              "section_title": "סקירה כללית, יעדים ואסטרטגיה",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "מתף – מחשוב ותפעול פיננסי בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 14,
-              "section_title": "היבטי סביבה, חברה וממשל עיקריים (ESG)",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-09-30",
-          "subsidiaries": [
-            {
-              "name": "הבינלאומי הראשון הנפקות בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 28,
-              "section_title": "אגרות חוב וכתבי התחייבות נדחים",
-              "table_title": null,
-              "note": "חברה בת בבעלות מלאה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-09-30",
-          "subsidiaries": [
-            {
-              "name": "בנק מסד בע\"מ",
-              "ownership_pct": 51.0,
-              "parent": null,
-              "page_reference": 38,
-              "section_title": "חברות מוחזקות עיקריות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "חברת כרטיסי אשראי לישראל בע\"מ",
-              "ownership_pct": 28.2,
-              "parent": null,
-              "page_reference": 38,
-              "section_title": "חברות מוחזקות עיקריות",
-              "table_title": null,
-              "note": "28.2% מההון ו-21.0% מזכויות ההצבעה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-09-30",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-09-30",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:5": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-09-30",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:6": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": "2026-09-30",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:7": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-09-30",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:8": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-11-12T11:13:00.939715+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1780826": {
     "company_id": "627",
@@ -23173,6 +23036,78 @@
     "kind": "change",
     "attempts": 1,
     "at": "2026-11-12T11:11:49.578999+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1780799": {
+    "company_id": "1390",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-12T11:13:29.466343+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1780649": {
+    "company_id": "1450",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-12T11:14:38.332265+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1780805": {
+    "company_id": "1390",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-12T11:14:25.268945+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1780791": {
+    "company_id": "1608",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-12T11:14:49.061884+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1780681": {
+    "company_id": "1450",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-12T11:15:49.494036+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1780621": {
+    "company_id": "1858",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-12T11:17:13.280227+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1780637": {
+    "company_id": "1858",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-12T11:16:22.214538+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1780756": {
+    "company_id": "1894",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-12T11:17:53.594499+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1780626": {
+    "company_id": "2369",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-12T11:18:40.949764+00:00",
     "model": "gemini-3.5-flash-lite"
   }
 }
