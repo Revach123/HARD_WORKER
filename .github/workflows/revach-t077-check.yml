@@ -14,6 +14,10 @@ on:
         description: "trigger the pipeline even with no new reports"
         type: boolean
         default: false
+      ping:
+        description: "test only: send an event nobody listens to (checks the token can dispatch)"
+        type: boolean
+        default: false
 
 concurrency:
   group: revach-t077-check
@@ -50,15 +54,16 @@ jobs:
         run: python t077_check_new.py
 
       - name: Trigger Revach pipeline
-        if: steps.check.outputs.new != '0' || inputs.force
+        if: steps.check.outputs.new != '0' || inputs.force || inputs.ping
         env:
           T: ${{ secrets.REVACH_TOKEN }}
           N: ${{ steps.check.outputs.new }}
+          EV: ${{ inputs.ping && 't077-ping' || 't077-new' }}
         run: |
           code=$(curl -s -o /tmp/resp -w '%{http_code}' -X POST \
             -H "Authorization: Bearer $T" -H "Accept: application/vnd.github+json" \
             https://api.github.com/repos/Revach123/Revach/dispatches \
-            -d "{\"event_type\":\"t077-new\",\"client_payload\":{\"new\":\"$N\"}}")
+            -d "{\"event_type\":\"$EV\",\"client_payload\":{\"new\":\"$N\"}}")
           echo "HTTP $code"; cat /tmp/resp
           [ "$code" = "204" ] || { echo "::error::dispatch failed"; exit 1; }
-          echo "Triggered Revach pipeline ($N new reports)."
+          echo "Sent $EV to Revach ($N new reports)."
