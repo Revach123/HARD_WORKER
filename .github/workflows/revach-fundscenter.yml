@@ -1,0 +1,73 @@
+# FundsCenter Daily - runs here (public repo = free Actions minutes) against a
+# checkout of the private Revach repo; results are pushed back to Revach.
+# Secrets in THIS repo: REVACH_TOKEN, TASE_APIKEY.
+name: Revach - FundsCenter Daily
+
+on:
+  workflow_dispatch: {}
+
+concurrency:
+  group: revach-fundscenter
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  daily:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Check secrets
+        env:
+          T: ${{ secrets.REVACH_TOKEN }}
+          K: ${{ secrets.TASE_APIKEY }}
+        run: |
+          [ -n "$T" ] || { echo "::error::REVACH_TOKEN missing"; exit 1; }
+          [ -n "$K" ] || { echo "::error::TASE_APIKEY missing"; exit 1; }
+
+      - uses: actions/checkout@v4
+        with:
+          repository: Revach123/Revach
+          token: ${{ secrets.REVACH_TOKEN }}
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests beautifulsoup4
+
+      - run: python scripts/fundscenter.py
+
+      - run: python scripts/tase_securities.py
+        env:
+          TASE_APIKEY: ${{ secrets.TASE_APIKEY }}
+
+      - name: Classify
+        run: |
+          TODAY=$(TZ=Asia/Jerusalem date +%Y-%m-%d)
+          Y=$(echo $TODAY | cut -d- -f1); M=$(echo $TODAY | cut -d- -f2)
+          python scripts/classify.py "funds-center/$Y/$M/$TODAY.json" tase/securities.json funds-classified
+
+      - name: Build composition history
+        run: python scripts/funds_center/build_composition_history.py
+
+      - name: Commit to Revach
+        if: ${{ !cancelled() }}
+        env:
+          JOB_STATUS: ${{ job.status }}
+        run: |
+          git config user.name  "github-actions"
+          git config user.email "actions@github.com"
+          git add funds-center/ tase/ funds-classified/ data/funds_center/
+          git diff --staged --quiet && echo "no changes" && exit 0
+          MSG="Daily snapshot $(date +%F) (via HARD_WORKER)"
+          [ "$JOB_STATUS" = "success" ] || MSG="$MSG (partial: a previous step failed)"
+          git commit -m "$MSG"
+          for attempt in 1 2 3; do
+            if git pull --rebase --autostash origin main && git push origin HEAD:main; then
+              exit 0
+            fi
+            sleep $((attempt * 10))
+          done
+          echo "::error::push failed"; exit 1
