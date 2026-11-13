@@ -7,6 +7,8 @@ name: "Revach - Ownership US (SEC 13F / 13D-G / Forms 3-4)"
 # רץ אחרי securities-us-sweep (תלוי ב-us_securities.json: CIK + CUSIP).
 
 on:
+  schedule:
+    - cron: "40 5 * * 6"   # weekly, Saturday 05:40 UTC (moved from Revach)
   workflow_dispatch:
     inputs:
       skip_13dg:

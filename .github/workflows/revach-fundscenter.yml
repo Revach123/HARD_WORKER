@@ -4,6 +4,8 @@
 name: Revach - FundsCenter Daily
 
 on:
+  schedule:
+    - cron: "0 5 * * 0-4"   # Sun-Thu 05:00 UTC (moved from Revach)
   workflow_dispatch: {}
 
 concurrency:
