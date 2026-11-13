@@ -9,6 +9,8 @@ name: "Revach - Securities US sweep (Nasdaq + NYSE)"
 # ה-JSON-ים (מצב + מטמונים) חזרה לענף.
 
 on:
+  schedule:
+    - cron: "17 1 * * 2-6"   # Tue-Sat 01:17 UTC, after US market close (moved from Revach)
   workflow_dispatch: {}
 
 concurrency:
