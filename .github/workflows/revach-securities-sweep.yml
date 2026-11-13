@@ -1,0 +1,103 @@
+# Securities sweep (maya) - runs here (public repo = free Actions minutes)
+# against a checkout of the private Revach repo. The code stays in Revach;
+# only the run happens here. Results are pushed back to Revach.
+#
+# Needs secrets in THIS repo:
+#   REVACH_TOKEN   - fine-grained PAT: repo Revach only, Contents: Read and write
+#   CF_D1_TOKEN, CF_ACCOUNT_ID - Cloudflare D1 (same as in Revach)
+name: Revach - Securities sweep (maya)
+
+on:
+  workflow_dispatch: {}
+
+concurrency:
+  group: revach-securities-sweep
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      PYTHONUNBUFFERED: "1"
+    steps:
+      - name: Check token
+        env:
+          T: ${{ secrets.REVACH_TOKEN }}
+        run: |
+          if [ -z "$T" ]; then echo "::error::REVACH_TOKEN secret is missing in HARD_WORKER"; exit 1; fi
+
+      - uses: actions/checkout@v4
+        with:
+          repository: Revach123/Revach
+          token: ${{ secrets.REVACH_TOKEN }}
+          sparse-checkout: |
+            scripts
+            data/securities
+            data/bonds_list
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Run sweep
+        run: python -u scripts/securities/fetch_securities.py
+
+      - name: Load SQL batches to D1
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CF_D1_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+        run: |
+          npm install -g wrangler
+          fail_count=0
+          for f in data/securities/sql_batches/*.sql; do
+            echo "Executing $f"
+            if ! npx wrangler d1 execute securities_db --remote --file "$f"; then
+              echo "::warning::Batch failed: $f (continuing with remaining batches)"
+              fail_count=$((fail_count + 1))
+            fi
+          done
+          if [ "$fail_count" -gt 0 ]; then
+            echo "::error::$fail_count batch(es) failed to load."
+            exit 1
+          fi
+
+      - name: Verify D1 counts
+        if: always()
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CF_D1_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+        run: |
+          npx wrangler d1 execute securities_db --remote --command "SELECT (SELECT COUNT(*) FROM securities WHERE redemption_date IS NOT NULL AND redemption_date != '') AS with_redemption, (SELECT COUNT(*) FROM securities WHERE midroog_rating IS NOT NULL AND midroog_rating != '') AS with_midroog, (SELECT COUNT(*) FROM securities WHERE maalot_rating IS NOT NULL AND maalot_rating != '') AS with_maalot;" || echo "verification query failed"
+
+      - name: Commit state file to Revach
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add data/securities/state.json data/securities/known_frequencies.json data/securities/schedules_checked.json 2>/dev/null || true
+          git add data/securities/cpi_index.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No state change."
+          else
+            git commit -m "securities sweep state $(date -u +%Y-%m-%d) (via HARD_WORKER)"
+            for attempt in 1 2 3 4 5; do
+              if git pull --rebase origin main && git push origin HEAD:main; then
+                echo "Push succeeded on attempt $attempt."
+                break
+              fi
+              echo "Push rejected (attempt $attempt) - retrying after backoff..."
+              sleep $((attempt * 5))
+              if [ "$attempt" -eq 5 ]; then
+                echo "::error::Failed to push state after 5 attempts."
+                exit 1
+              fi
+            done
+          fi
