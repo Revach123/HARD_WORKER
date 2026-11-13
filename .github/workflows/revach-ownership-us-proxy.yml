@@ -1,0 +1,66 @@
+# Runs here (public repo = free Actions minutes) against a checkout of the
+# private Revach repo; results are pushed back to Revach.
+# Secrets in THIS repo: REVACH_TOKEN, SEC_USER_AGENT.
+name: "Revach - Ownership US - DEF 14A parse (deterministic)"
+
+# פרסור דטרמיניסטי של טבלת הבעלות מה-DEF 14A האחרון של כל חברה. ר' scripts/ownership_us/proxy_parse.py.
+# מודד כמה אפשר לכסות בלי Gemini; מה שנכשל/מורכב יעבור ל-HARD_WORKER.
+
+on:
+  workflow_dispatch:
+    inputs:
+      sample_top:
+        description: "רק N החברות הגדולות (לפי מס' מוסדות 13F). ריק = הכל"
+        default: ""
+      ciks:
+        description: "רשימת CIK מופרדת בפסיקים (עוקף את השאר)"
+        default: ""
+      budget_min:
+        description: "תקציב זמן בדקות"
+        default: "150"
+
+concurrency:
+  group: revach-ownership-us-proxy
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  parse:
+    runs-on: ubuntu-latest
+    timeout-minutes: 200
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: Revach123/Revach
+          token: ${{ secrets.REVACH_TOKEN }}
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install lxml
+      - name: Parse proxies
+        env:
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
+          SAMPLE_TOP: ${{ github.event.inputs.sample_top }}
+          CIKS: ${{ github.event.inputs.ciks }}
+          BUDGET_MIN: ${{ github.event.inputs.budget_min || '150' }}
+          PYTHONUNBUFFERED: "1"
+        run: python -u scripts/ownership_us/proxy_parse.py
+      - name: Build page data (proxy_page.json)
+        if: always()
+        run: python scripts/ownership_us/build_proxy_page.py
+      - name: Commit data
+        if: always()
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add data/ownership_us/proxy_parse.json data/ownership_us/proxy_stats.json data/ownership_us/proxy_debug data/ownership_us/proxy_sections.json.gz data/ownership_us/proxy_page.json data/ownership_us/control_page.json
+          if git diff --cached --quiet; then echo "No change."; exit 0; fi
+          git commit -m "ownership-us proxy parse $(date -u +%Y-%m-%d) (via HARD_WORKER)"
+          for attempt in 1 2 3 4 5; do
+            if git pull --rebase origin main && git push origin HEAD:main; then exit 0; fi
+            sleep $((attempt * 5))
+          done
+          echo "::error::push failed"; exit 1

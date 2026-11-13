@@ -1,0 +1,54 @@
+# Runs here (public repo = free Actions minutes) against a checkout of the
+# private Revach repo; results are pushed back to Revach.
+# Secrets in THIS repo: REVACH_TOKEN, SEC_USER_AGENT.
+name: "Revach - Ownership US (SEC 13F / 13D-G / Forms 3-4)"
+
+# המקבילה האמריקאית לבעלות ממאיה. ר' scripts/ownership_us/fetch_ownership_us.py.
+# רץ אחרי securities-us-sweep (תלוי ב-us_securities.json: CIK + CUSIP).
+
+on:
+  workflow_dispatch:
+    inputs:
+      skip_13dg:
+        description: "דלג על 13D/G (איטי)"
+        default: "0"
+
+concurrency:
+  group: revach-ownership-us
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: Revach123/Revach
+          token: ${{ secrets.REVACH_TOKEN }}
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fetch ownership
+        env:
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
+          SKIP_13DG: ${{ github.event.inputs.skip_13dg || '0' }}
+          PYTHONUNBUFFERED: "1"
+        run: python -u scripts/ownership_us/fetch_ownership_us.py
+      - name: Commit data
+        if: always()   # גם אם שלב המשיכה נקטע - שומרים את מטמון 13D/G החלקי
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add data/ownership_us/*.json
+          if git diff --cached --quiet; then echo "No change."; exit 0; fi
+          git commit -m "ownership-us $(date -u +%Y-%m-%d) (via HARD_WORKER)"
+          for attempt in 1 2 3 4 5; do
+            if git pull --rebase origin main && git push origin HEAD:main; then exit 0; fi
+            sleep $((attempt * 5))
+          done
+          echo "::error::push failed"; exit 1

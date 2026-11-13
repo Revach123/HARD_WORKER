@@ -1,0 +1,131 @@
+# Runs here (public repo = free Actions minutes) against a checkout of the
+# private Revach repo; results are pushed back to Revach.
+# Secrets in THIS repo: REVACH_TOKEN, SEC_USER_AGENT, OPENFIGI_API_KEY, CF_D1_TOKEN, CF_ACCOUNT_ID.
+name: "Revach - Securities US sweep (Nasdaq + NYSE)"
+
+# מאגר ניירות ערך אמריקאים - המקבילה של securities-sweep.yml (מאיה/ת"א).
+# ר' scripts/securities_us/fetch_us_securities.py לתיאור מלא של השלבים.
+# טוען ל-D1 (securities_db, טבלאות us_companies/us_securities) ומקמט את
+# ה-JSON-ים (מצב + מטמונים) חזרה לענף.
+
+on:
+  workflow_dispatch: {}
+
+concurrency:
+  group: revach-securities-us-sweep
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    env:
+      PYTHONUNBUFFERED: "1"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: Revach123/Revach
+          token: ${{ secrets.REVACH_TOKEN }}
+          fetch-depth: 1
+
+      # המאגר העולמי (ריפו ציבורי) - לזיהוי אחזקות הקרנות גם מול אירופה/יפן/קנדה/שווייץ
+      - uses: actions/checkout@v4
+        with:
+          repository: Revach123/INDICES
+          ref: main
+          path: _indices
+          sparse-checkout: data/world_securities
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      # ניירות ת"א פעילים (מאגר ניי"ע הישראלי) - לזיהוי רישום כפול ת"א-ארה"ב לפי ISIN
+      - name: Export TASE securities from D1
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CF_D1_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+        run: |
+          npm install -g wrangler
+          npx wrangler d1 execute securities_db --remote --json \
+            --command "SELECT s.security_id, s.isin, s.symbol, s.security_name, s.security_type, c.corporate_no, c.name AS company_name FROM securities s LEFT JOIN companies c ON c.company_id = s.company_id WHERE s.last_seen_active = 1 AND s.isin IS NOT NULL AND TRIM(s.isin) != ''" \
+            > /tmp/tase_securities.json || echo '[]' > /tmp/tase_securities.json
+
+      - name: Run sweep
+        env:
+          OPENFIGI_API_KEY: ${{ secrets.OPENFIGI_API_KEY }}
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
+          TASE_SECURITIES_FILE: /tmp/tase_securities.json
+        run: python -u scripts/securities_us/fetch_us_securities.py
+
+      # זיהוי אחזקות קרנות הסל (etf.html) וקרנות ה-SEC (sec.html) מול מאגרי ארה"ב ות"א,
+      # לפי ISIN / OpenFIGI / סימול בלבד -> data/ETF/universe/holdings_index.json
+      - name: Build ETF holdings identification index
+        env:
+          OPENFIGI_API_KEY: ${{ secrets.OPENFIGI_API_KEY }}
+          TASE_SECURITIES_FILE: /tmp/tase_securities.json
+          WORLD_DATA_DIR: _indices/data/world_securities
+        run: python -u scripts/securities_us/build_holdings_index.py
+
+      - name: Load SQL batches to D1
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CF_D1_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+        run: |
+          # עמודות שנוספו אחרי יצירת הטבלה (schema.sql יוצר רק טבלה חדשה). ל-SQLite
+          # אין ADD COLUMN IF NOT EXISTS - "duplicate column" בריצות הבאות צפוי ונבלע;
+          # אם עמודה באמת חסרה, ה-INSERT למטה ייכשל בקול.
+          for col in "exchange_instrument_type TEXT" "type_source TEXT" "cusip_status TEXT" "isin_source TEXT" \
+                     "tase_security_id INTEGER" "tase_symbol TEXT" "tase_isin TEXT" "tase_corporate_no TEXT" \
+                     "tase_company_name TEXT" "dual_listing_method TEXT"; do
+            npx wrangler d1 execute securities_db --remote --command "ALTER TABLE us_securities ADD COLUMN $col" 2>&1 | tail -2 || true
+          done
+          fail_count=0
+          for f in data/securities_us/sql_batches/*.sql; do
+            echo "Executing $f ($(wc -c < "$f") bytes)"
+            if ! npx wrangler d1 execute securities_db --remote --yes --file "$f"; then
+              echo "::warning::Batch failed: $f"
+              fail_count=$((fail_count + 1))
+            fi
+          done
+          if [ "$fail_count" -gt 0 ]; then
+            echo "::error::$fail_count batch(es) failed to load."
+            exit 1
+          fi
+
+      - name: Verify D1 counts
+        if: always()
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CF_D1_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+        run: |
+          npx wrangler d1 execute securities_db --remote --command "SELECT exchange, COUNT(*) AS n, SUM(cik IS NOT NULL) AS with_cik, SUM(cusip IS NOT NULL) AS with_cusip, SUM(figi IS NOT NULL) AS with_figi FROM us_securities WHERE last_seen_active = 1 GROUP BY exchange ORDER BY n DESC;" || true
+          npx wrangler d1 execute securities_db --remote --command "SELECT COUNT(*) AS companies, SUM(last_seen_active) AS active, SUM(sec_fetched_at IS NOT NULL) AS with_details FROM us_companies;" || true
+
+      - name: Commit data
+        if: always()
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          [ -d data/securities_us ] || { echo "No output."; exit 0; }
+          git add data/securities_us/*.json data/ETF/universe/holdings_index.json
+          if git diff --cached --quiet; then
+            echo "No change."
+            exit 0
+          fi
+          git commit -m "securities-us sweep $(date -u +%Y-%m-%d) (via HARD_WORKER)"
+          for attempt in 1 2 3 4 5; do
+            if git pull --rebase origin main && git push origin HEAD:main; then
+              echo "Push succeeded on attempt $attempt."
+              exit 0
+            fi
+            sleep $((attempt * 5))
+          done
+          echo "::error::push failed"; exit 1
