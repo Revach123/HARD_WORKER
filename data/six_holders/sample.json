@@ -4,7 +4,7 @@
    "beneficialAssocComment": [],
    "beneficialAssocTypeCode": "",
    "category": "A",
-   "consolidatedFlag": "",
+   "consolidatedFlag": "T",
    "correcteeDate": 0,
    "correcteeId": "",
    "correctorId": "",
@@ -12,25 +12,25 @@
    "deleteeId": "",
    "deletorId": "",
    "formRevision": null,
-   "notificationId": "ZA01-000000000SW62",
-   "notificationSubmitter": "Kuros Biosciences Ltd.",
-   "notificationSubmitterId": "CYTOS",
+   "notificationId": "ZA01-000000000SW70",
+   "notificationSubmitter": "Barry Callebaut AG",
+   "notificationSubmitterId": "BARRY",
    "onBehalfFlag": "",
-   "publicationDate": 20261112,
-   "purchaseTotalVotingRate": 5.115,
+   "publicationDate": 20261113,
+   "purchaseTotalVotingRate": 5.043,
    "relationComment": [],
    "relationTypeCode": "",
-   "saleTotalVotingRate": 0.194,
+   "saleTotalVotingRate": 0.417,
    "sesta20Flag": "T",
    "submitterComment": [],
-   "transactionDate": 20261109,
+   "transactionDate": 20261110,
    "transferDate": 0,
    "triggerComment": [
-    "With recommendations of the Disclosure Office dated 11 August 2016, 8 August 2019, 29 July 2022 and 11 August 2025, JPMorgan Chase & Co. was granted easing provisions from the obligation to disclose the direct shareholders according to Article 120 para. 1 FinMIA in conjunction with Article 11 lit. b and Article 22 para. 1 lit. e and para. 3 FinMIO-FINMA when disclosing holdings according to Article 18 para. 1 and 4 FinMIO-FINMA. However, collective investment schemes within the meaning of Article 18 para. 2 lit. a FinMIO-FINMA that hold individually hold 3% or more of the voting rights of the relevant issuer will be mentioned in the relevant disclosure notification. Any person shall, upon request and without proof of interest, receive information about the direct shareholders within the meaning of Article 11 lit. b and Article 22 para. 1 lit. e and para. 3 FinMIO-FINMA. Such requests must be addressed via email to the Disclosure Office: disclosure-office@six-group.com. The information will be provided within five trading days from receipt of the relevant request by JPMorgan Chase & Co and will be delivered in electronic format with a reference date not older than one month. The easing provisions are granted until 11 August 2028."
+    "The obligation to notify was triggered by an acquisition of collateral (Acquisition Position Obligation). With Recommendations of the Disclosure Office dated 15 July 2016, 17 June 2019, 8 July 2022 and 11 July 2025, BlackRock, Inc. was granted easing provisions from the obligation to disclose the direct shareholders according to Article 120 para. 1 FinMIA in conjunction with Article 11 let. b and Article 22 para. 1 let. e and para. 3 FinMIO-FINMA when disclosing holdings according to Article 18 para. 1 and 4 FinMIO-FINMA. However, collective investment schemes within the meaning of Article 18 para. 2 let. a FinMIO-FINMA that hold individually 3% or more of the voting rights of the relevant issuer will be mentioned in the relevant disclosure notification. Any person shall, at his/her request and without prove of interest, receive information about the direct shareholders within the meaning of Article 11 let. b an Article 22 para. 1 let. e and para. 3 FinMIO-FINMA.  Such request has to be addressed via email to the Disclosure Office: disclosure-office@six-group.com. The information will be provided in electronic format with a reference date not older than one month.  The easing provisions are granted until 15 July 2028."
    ],
    "triggerTypeCodes": [
-    21,
-    20
+    20,
+    27
    ],
    "swxListed": "T",
    "belowThresholdVotingRate": 0.0
@@ -40,21 +40,13 @@
   "groupRepresentative": "",
   "contactPerson": "",
   "beneficialNames": [
-   "JPMorgan Chase & Co."
+   "BlackRock, Inc."
   ],
   "beneficialAddrs": [
-   "JPMorgan Chase & Co., New York, US"
+   "BlackRock, Inc., New York, US"
   ],
-  "shareholderNames": [
-   "J.P. Morgan Securities plc",
-   "J.P. Morgan Securities LLC",
-   "J.P. Morgan SE"
-  ],
-  "shareholderAddrs": [
-   "J.P. Morgan Securities plc, London, GB",
-   "J.P. Morgan Securities LLC, New York, US",
-   "J.P. Morgan SE, Frankfurt, DE"
-  ],
+  "shareholderNames": [],
+  "shareholderAddrs": [],
   "positionsEquity": [
    {
     "deliveryTypeCode": "",
@@ -64,11 +56,11 @@
     "isin": "",
     "issuerName": "",
     "legalTransactionTypeCode": 0,
-    "notificationId": "ZA01-000000000SW62",
-    "positionSize": "996603",
+    "notificationId": "ZA01-000000000SW70",
+    "positionSize": "206272",
     "positionSubCategory": "E",
-    "positionVotesCount": "996603",
-    "positionVotingRate": "2.545",
+    "positionVotesCount": "206272",
+    "positionVotingRate": "3.758",
     "returnChooserTypeCode": 0,
     "returnDate": "",
     "securityTypeCode": "1",
@@ -81,24 +73,223 @@
     "exerciseDate": "",
     "exercisePrice": "",
     "furtherConditions": [
-     "Exercise period: 02/12/2026 - 20/10/2033"
+     "Contracts for difference issued by Barclays on BARRY CALLEBAUT AG"
     ],
-    "isin": "CH0325814116",
+    "isin": "CH0009002962",
     "issuerName": "",
     "legalTransactionTypeCode": 0,
-    "notificationId": "ZA01-000000000SW62",
-    "positionSize": "1006129",
+    "notificationId": "ZA01-000000000SW70",
+    "positionSize": "23725",
     "positionSubCategory": "R",
-    "positionVotesCount": "1006129",
-    "positionVotingRate": "2.57",
+    "positionVotesCount": "23725",
+    "positionVotingRate": ".432",
     "returnChooserTypeCode": 0,
     "returnDate": "",
-    "securityTypeCode": "21",
+    "securityTypeCode": "22",
+    "subscriptionRatio": ""
+   },
+   {
+    "deliveryTypeCode": "",
+    "exerciseDate": "",
+    "exercisePrice": "",
+    "furtherConditions": [
+     "Contracts for difference issued by Citigroup on BARRY CALLEBAUT AG"
+    ],
+    "isin": "CH0009002962",
+    "issuerName": "",
+    "legalTransactionTypeCode": 0,
+    "notificationId": "ZA01-000000000SW70",
+    "positionSize": "940",
+    "positionSubCategory": "R",
+    "positionVotesCount": "940",
+    "positionVotingRate": ".017",
+    "returnChooserTypeCode": 0,
+    "returnDate": "",
+    "securityTypeCode": "22",
+    "subscriptionRatio": ""
+   },
+   {
+    "deliveryTypeCode": "",
+    "exerciseDate": "",
+    "exercisePrice": "",
+    "furtherConditions": [
+     "Contracts for difference issued by Goldman Sachs on BARRY CALLEBAUT AG"
+    ],
+    "isin": "CH0009002962",
+    "issuerName": "",
+    "legalTransactionTypeCode": 0,
+    "notificationId": "ZA01-000000000SW70",
+    "positionSize": "1864",
+    "positionSubCategory": "R",
+    "positionVotesCount": "1864",
+    "positionVotingRate": ".034",
+    "returnChooserTypeCode": 0,
+    "returnDate": "",
+    "securityTypeCode": "22",
+    "subscriptionRatio": ""
+   },
+   {
+    "deliveryTypeCode": "",
+    "exerciseDate": "",
+    "exercisePrice": "",
+    "furtherConditions": [
+     "Contracts for difference issued by JP Morgan on BARRY CALLEBAUT AG"
+    ],
+    "isin": "CH0009002962",
+    "issuerName": "",
+    "legalTransactionTypeCode": 0,
+    "notificationId": "ZA01-000000000SW70",
+    "positionSize": "1548",
+    "positionSubCategory": "R",
+    "positionVotesCount": "1548",
+    "positionVotingRate": ".028",
+    "returnChooserTypeCode": 0,
+    "returnDate": "",
+    "securityTypeCode": "22",
+    "subscriptionRatio": ""
+   },
+   {
+    "deliveryTypeCode": "",
+    "exerciseDate": "",
+    "exercisePrice": "",
+    "furtherConditions": [
+     "Contracts for difference issued by Merrill Lynch on BARRY CALLEBAUT AG"
+    ],
+    "isin": "CH0009002962",
+    "issuerName": "",
+    "legalTransactionTypeCode": 0,
+    "notificationId": "ZA01-000000000SW70",
+    "positionSize": "999",
+    "positionSubCategory": "R",
+    "positionVotesCount": "999",
+    "positionVotingRate": ".018",
+    "returnChooserTypeCode": 0,
+    "returnDate": "",
+    "securityTypeCode": "22",
+    "subscriptionRatio": ""
+   },
+   {
+    "deliveryTypeCode": "",
+    "exerciseDate": "",
+    "exercisePrice": "",
+    "furtherConditions": [
+     "Contracts for difference issued by Morgan Stanley on BARRY CALLEBAUT AG"
+    ],
+    "isin": "CH0009002962",
+    "issuerName": "",
+    "legalTransactionTypeCode": 0,
+    "notificationId": "ZA01-000000000SW70",
+    "positionSize": "896",
+    "positionSubCategory": "R",
+    "positionVotesCount": "896",
+    "positionVotingRate": ".016",
+    "returnChooserTypeCode": 0,
+    "returnDate": "",
+    "securityTypeCode": "22",
+    "subscriptionRatio": ""
+   },
+   {
+    "deliveryTypeCode": "",
+    "exerciseDate": "",
+    "exercisePrice": "",
+    "furtherConditions": [
+     "Contracts for difference issued by UBS on BARRY CALLEBAUT AG"
+    ],
+    "isin": "CH0009002962",
+    "issuerName": "",
+    "legalTransactionTypeCode": 0,
+    "notificationId": "ZA01-000000000SW70",
+    "positionSize": "504",
+    "positionSubCategory": "R",
+    "positionVotesCount": "504",
+    "positionVotingRate": ".009",
+    "returnChooserTypeCode": 0,
+    "returnDate": "",
+    "securityTypeCode": "22",
+    "subscriptionRatio": ""
+   },
+   {
+    "deliveryTypeCode": "",
+    "exerciseDate": "",
+    "exercisePrice": "",
+    "furtherConditions": [
+     "Contracts for difference issued by HSBC on BARRY CALLEBAUT AG"
+    ],
+    "isin": "CH0009002962",
+    "issuerName": "",
+    "legalTransactionTypeCode": 0,
+    "notificationId": "ZA01-000000000SW70",
+    "positionSize": "2830",
+    "positionSubCategory": "R",
+    "positionVotesCount": "2830",
+    "positionVotingRate": ".052",
+    "returnChooserTypeCode": 0,
+    "returnDate": "",
+    "securityTypeCode": "22",
+    "subscriptionRatio": ""
+   },
+   {
+    "deliveryTypeCode": "",
+    "exerciseDate": "",
+    "exercisePrice": "",
+    "furtherConditions": [
+     "Contracts for difference issued by BNP Paribas on BARRY CALLEBAUT AG"
+    ],
+    "isin": "CH0009002962",
+    "issuerName": "",
+    "legalTransactionTypeCode": 0,
+    "notificationId": "ZA01-000000000SW70",
+    "positionSize": "3103",
+    "positionSubCategory": "R",
+    "positionVotesCount": "3103",
+    "positionVotingRate": ".057",
+    "returnChooserTypeCode": 0,
+    "returnDate": "",
+    "securityTypeCode": "22",
+    "subscriptionRatio": ""
+   },
+   {
+    "deliveryTypeCode": "",
+    "exerciseDate": "",
+    "exercisePrice": "",
+    "furtherConditions": [
+     "Contracts for difference issued by Societe Generale on BARRY CALLEBAUT AG"
+    ],
+    "isin": "CH0009002962",
+    "issuerName": "",
+    "legalTransactionTypeCode": 0,
+    "notificationId": "ZA01-000000000SW70",
+    "positionSize": "164",
+    "positionSubCategory": "R",
+    "positionVotesCount": "164",
+    "positionVotingRate": ".003",
+    "returnChooserTypeCode": 0,
+    "returnDate": "",
+    "securityTypeCode": "22",
     "subscriptionRatio": ""
    }
   ],
   "positionsLending": [],
-  "positionsLendingEquity": [],
+  "positionsLendingEquity": [
+   {
+    "deliveryTypeCode": "",
+    "exerciseDate": "",
+    "exercisePrice": "",
+    "furtherConditions": [],
+    "isin": "",
+    "issuerName": "",
+    "legalTransactionTypeCode": 3,
+    "notificationId": "ZA01-000000000SW70",
+    "positionSize": "6444",
+    "positionSubCategory": "Q",
+    "positionVotesCount": "6444",
+    "positionVotingRate": ".117",
+    "returnChooserTypeCode": 5,
+    "returnDate": "",
+    "securityTypeCode": "1",
+    "subscriptionRatio": ""
+   }
+  ],
   "positionsLendingRights": [],
   "positionsSale": [
    {
@@ -106,33 +297,229 @@
     "exerciseDate": "",
     "exercisePrice": "",
     "furtherConditions": [
-     "Exercise period: 20/04/2027 - 29/12/2027"
+     "Contracts for difference issued by Barclays on BARRY CALLEBAUT AG"
     ],
-    "isin": "CH0325814116",
+    "isin": "CH0009002962",
     "issuerName": "",
     "legalTransactionTypeCode": 0,
-    "notificationId": "ZA01-000000000SW62",
-    "positionSize": "76041",
+    "notificationId": "ZA01-000000000SW70",
+    "positionSize": "5097",
     "positionSubCategory": "S",
-    "positionVotesCount": "76041",
-    "positionVotingRate": ".194",
+    "positionVotesCount": "5097",
+    "positionVotingRate": ".093",
     "returnChooserTypeCode": 0,
     "returnDate": "",
-    "securityTypeCode": "61",
+    "securityTypeCode": "62",
+    "subscriptionRatio": ""
+   },
+   {
+    "deliveryTypeCode": "",
+    "exerciseDate": "",
+    "exercisePrice": "",
+    "furtherConditions": [
+     "Contracts for difference issued by Citigroup on BARRY CALLEBAUT AG"
+    ],
+    "isin": "CH0009002962",
+    "issuerName": "",
+    "legalTransactionTypeCode": 0,
+    "notificationId": "ZA01-000000000SW70",
+    "positionSize": "2590",
+    "positionSubCategory": "S",
+    "positionVotesCount": "2590",
+    "positionVotingRate": ".047",
+    "returnChooserTypeCode": 0,
+    "returnDate": "",
+    "securityTypeCode": "62",
+    "subscriptionRatio": ""
+   },
+   {
+    "deliveryTypeCode": "",
+    "exerciseDate": "",
+    "exercisePrice": "",
+    "furtherConditions": [
+     "Contracts for difference issued by Goldman Sachs on BARRY CALLEBAUT AG"
+    ],
+    "isin": "CH0009002962",
+    "issuerName": "",
+    "legalTransactionTypeCode": 0,
+    "notificationId": "ZA01-000000000SW70",
+    "positionSize": "1136",
+    "positionSubCategory": "S",
+    "positionVotesCount": "1136",
+    "positionVotingRate": ".021",
+    "returnChooserTypeCode": 0,
+    "returnDate": "",
+    "securityTypeCode": "62",
+    "subscriptionRatio": ""
+   },
+   {
+    "deliveryTypeCode": "",
+    "exerciseDate": "",
+    "exercisePrice": "",
+    "furtherConditions": [
+     "Contracts for difference issued by JP Morgan on BARRY CALLEBAUT AG"
+    ],
+    "isin": "CH0009002962",
+    "issuerName": "",
+    "legalTransactionTypeCode": 0,
+    "notificationId": "ZA01-000000000SW70",
+    "positionSize": "9564",
+    "positionSubCategory": "S",
+    "positionVotesCount": "9564",
+    "positionVotingRate": ".174",
+    "returnChooserTypeCode": 0,
+    "returnDate": "",
+    "securityTypeCode": "62",
+    "subscriptionRatio": ""
+   },
+   {
+    "deliveryTypeCode": "",
+    "exerciseDate": "",
+    "exercisePrice": "",
+    "furtherConditions": [
+     "Contracts for difference issued by Merrill Lynch on BARRY CALLEBAUT AG"
+    ],
+    "isin": "CH0009002962",
+    "issuerName": "",
+    "legalTransactionTypeCode": 0,
+    "notificationId": "ZA01-000000000SW70",
+    "positionSize": "411",
+    "positionSubCategory": "S",
+    "positionVotesCount": "411",
+    "positionVotingRate": ".007",
+    "returnChooserTypeCode": 0,
+    "returnDate": "",
+    "securityTypeCode": "62",
+    "subscriptionRatio": ""
+   },
+   {
+    "deliveryTypeCode": "",
+    "exerciseDate": "",
+    "exercisePrice": "",
+    "furtherConditions": [
+     "Contracts for difference issued by Morgan Stanley on BARRY CALLEBAUT AG"
+    ],
+    "isin": "CH0009002962",
+    "issuerName": "",
+    "legalTransactionTypeCode": 0,
+    "notificationId": "ZA01-000000000SW70",
+    "positionSize": "236",
+    "positionSubCategory": "S",
+    "positionVotesCount": "236",
+    "positionVotingRate": ".004",
+    "returnChooserTypeCode": 0,
+    "returnDate": "",
+    "securityTypeCode": "62",
+    "subscriptionRatio": ""
+   },
+   {
+    "deliveryTypeCode": "",
+    "exerciseDate": "",
+    "exercisePrice": "",
+    "furtherConditions": [
+     "Contracts for difference issued by UBS on BARRY CALLEBAUT AG"
+    ],
+    "isin": "CH0009002962",
+    "issuerName": "",
+    "legalTransactionTypeCode": 0,
+    "notificationId": "ZA01-000000000SW70",
+    "positionSize": "28",
+    "positionSubCategory": "S",
+    "positionVotesCount": "28",
+    "positionVotingRate": ".001",
+    "returnChooserTypeCode": 0,
+    "returnDate": "",
+    "securityTypeCode": "62",
+    "subscriptionRatio": ""
+   },
+   {
+    "deliveryTypeCode": "",
+    "exerciseDate": "",
+    "exercisePrice": "",
+    "furtherConditions": [
+     "Contracts for difference issued by HSBC on BARRY CALLEBAUT AG"
+    ],
+    "isin": "CH0009002962",
+    "issuerName": "",
+    "legalTransactionTypeCode": 0,
+    "notificationId": "ZA01-000000000SW70",
+    "positionSize": "923",
+    "positionSubCategory": "S",
+    "positionVotesCount": "923",
+    "positionVotingRate": ".017",
+    "returnChooserTypeCode": 0,
+    "returnDate": "",
+    "securityTypeCode": "62",
+    "subscriptionRatio": ""
+   },
+   {
+    "deliveryTypeCode": "",
+    "exerciseDate": "",
+    "exercisePrice": "",
+    "furtherConditions": [
+     "Contracts for difference issued by BNP Paribas on BARRY CALLEBAUT AG"
+    ],
+    "isin": "CH0009002962",
+    "issuerName": "",
+    "legalTransactionTypeCode": 0,
+    "notificationId": "ZA01-000000000SW70",
+    "positionSize": "2676",
+    "positionSubCategory": "S",
+    "positionVotesCount": "2676",
+    "positionVotingRate": ".049",
+    "returnChooserTypeCode": 0,
+    "returnDate": "",
+    "securityTypeCode": "62",
+    "subscriptionRatio": ""
+   },
+   {
+    "deliveryTypeCode": "",
+    "exerciseDate": "",
+    "exercisePrice": "",
+    "furtherConditions": [
+     "Contracts for difference issued by Societe Generale on BARRY CALLEBAUT AG"
+    ],
+    "isin": "CH0009002962",
+    "issuerName": "",
+    "legalTransactionTypeCode": 0,
+    "notificationId": "ZA01-000000000SW70",
+    "positionSize": "223",
+    "positionSubCategory": "S",
+    "positionVotesCount": "223",
+    "positionVotingRate": ".004",
+    "returnChooserTypeCode": 0,
+    "returnDate": "",
+    "securityTypeCode": "62",
     "subscriptionRatio": ""
    }
   ],
   "positionsTender": [],
-  "positionsDiscretionaryVoting": []
+  "positionsDiscretionaryVoting": [
+   {
+    "deliveryTypeCode": "",
+    "exerciseDate": "",
+    "exercisePrice": "",
+    "furtherConditions": [],
+    "isin": "",
+    "issuerName": "",
+    "legalTransactionTypeCode": 0,
+    "notificationId": "ZA01-000000000SW70",
+    "positionSize": "",
+    "positionSubCategory": "V",
+    "positionVotesCount": "33983",
+    "positionVotingRate": ".619",
+    "returnChooserTypeCode": 0,
+    "returnDate": "",
+    "securityTypeCode": "",
+    "subscriptionRatio": ""
+   }
+  ]
  },
  {
   "publication": {
-   "beneficialAssocComment": [
-    "Transaction Agreement between Ahlsell AB (publ) (\"Offeror\") and Meier Tobler Group AG (\"MTG\") regarding a public tender offer for all publicly held registered shares of MTG (\"Offer\"). Acting in concert in connection with the tender agreement between the Offeror on one hand and Meier Capital AG (\"MC\") as well as Mr. Silvan Meier (\"SM\") on the other hand, pursuant to which MC and SM undertake to (i) tender their 6'538'633 shares in MTG (corresponding to approx. 59.33%) into the Offer, (ii) exercise their voting rights at MTG's extraordinary shareholders' meeting in order to satisfy an offer condition, (iii) support the Offer, and (iv) vote against any agenda item of a shareholders' meeting of MTG that could have any adverse effect on the Offer or its success. ",
-    "The collective investment schemes managed by CVC Capital Partners IX Limited, Locron Co-Investment GP Limited and CVC Capital Partners Locron Limited (each a \"Fund Management Entity and together the \"Fund Management Entities\") together hold over 90% of the shares in the Offeror. CVC Capital Partners IX Limited and CVC Capital Partners Locron Limited are both advised by CVC Advisers Jersey Limited and thereby informally aligned. Locron Co-Investment GP Limited manages a co-investment vehicle whose governing documents provide for such vehicle to invest and divest with respect to Ahlsell AB (publ) alongside the fund known as CVC Fund IX which is managed by CVC Capital Partners IX Limited. Foreign collective investment schemes managed by a Fund Management Entity indirectly holding individually 3% or more of the voting rights (art. 18 para. 3 in connection with art. 18 para. 2lit. a FMIO-FINMA) calculated on a look-through basis (indirect ownership interest): CVC Capital Partners IX (A) L.P. (13.06%), Locron Co-Investment L.P. (15.45%), CVC Capital Partners Locron (A) SCSp (23.74%)."
-   ],
+   "beneficialAssocComment": [],
    "beneficialAssocTypeCode": "",
-   "category": "B",
+   "category": "C",
    "consolidatedFlag": "",
    "correcteeDate": 0,
    "correcteeId": "",
@@ -141,62 +528,38 @@
    "deleteeId": "",
    "deletorId": "",
    "formRevision": null,
-   "notificationId": "ZA02-000000000SW21",
-   "notificationSubmitter": "Meier Tobler Group AG",
-   "notificationSubmitterId": "WMH",
+   "notificationId": "ZA03-000000000SWK3",
+   "notificationSubmitter": "Siegfried Holding AG",
+   "notificationSubmitterId": "SIEGFRIED",
    "onBehalfFlag": "",
-   "publicationDate": 20261112,
-   "purchaseTotalVotingRate": 61.294,
+   "publicationDate": 20261113,
+   "purchaseTotalVotingRate": 4.984,
    "relationComment": [],
    "relationTypeCode": "",
    "saleTotalVotingRate": 0.0,
    "sesta20Flag": "T",
    "submitterComment": [],
-   "transactionDate": 20261103,
+   "transactionDate": 20261106,
    "transferDate": 0,
-   "triggerComment": [
-    "Date of transfer of equity securities (if different from date of the event triggering the notification duty)",
-    "Expected in Q1 2027",
-    "",
-    "Additional information regarding part 1 (group subject to reporting obligation):",
-    "- Person 1: CVC Capital Partners IX Limited, St. Helier, Jersey, as fund management entity of certain collective investment schemes",
-    "- Person 2: Locron Co-Investment GP Limited, St. Helier, Jersey, as fund management entity of certain collective investment schemes",
-    "- Person 3: CVC Capital Partners Locron Limited, St. Helier, Jersey, as fund management entity of certain collective investment schemes"
-   ],
+   "triggerComment": [],
    "triggerTypeCodes": [
-    21,
-    23,
-    20
+    22
    ],
    "swxListed": "T",
    "belowThresholdVotingRate": 0.0
   },
   "belowThresholdVotingRate": 0.0,
   "showHistoryFlag": "T",
-  "groupRepresentative": "Ahlsell AB (publ), Stockholm, SE",
+  "groupRepresentative": "",
   "contactPerson": "",
   "beneficialNames": [
-   "CVC Capital Partners IX Limited",
-   "Locron Co-Investment GP Limited",
-   "CVC Capital Partners Locron Limited",
-   "Silvan G.-R. Meier",
-   "Meier Tobler Group AG"
+   "Swisscanto Fondsleitung AG"
   ],
   "beneficialAddrs": [
-   "CVC Capital Partners IX Limited, St. Helier, JE",
-   "Locron Co-Investment GP Limited, St. Helier, JE",
-   "CVC Capital Partners Locron Limited, St. Helier, JE",
-   "Silvan G.-R. Meier, Zurich, CH",
-   "Meier Tobler Group AG, Schwerzenbach, CH"
+   "Swisscanto Fondsleitung AG, Bahnhofstrasse 9, 8001 Zürich, CH"
   ],
-  "shareholderNames": [
-   "Ahlsell AB (publ)",
-   "Meier Capital AG"
-  ],
-  "shareholderAddrs": [
-   "Ahlsell AB (publ), Stockholm, SE",
-   "Meier Capital AG, Schwerzenbach, CH"
-  ],
+  "shareholderNames": [],
+  "shareholderAddrs": [],
   "positionsEquity": [
    {
     "deliveryTypeCode": "",
@@ -206,11 +569,11 @@
     "isin": "",
     "issuerName": "",
     "legalTransactionTypeCode": 0,
-    "notificationId": "ZA02-000000000SW21",
-    "positionSize": "6755002",
+    "notificationId": "ZA03-000000000SWK3",
+    "positionSize": "2254363",
     "positionSubCategory": "E",
-    "positionVotesCount": "6755002",
-    "positionVotingRate": "61.294",
+    "positionVotesCount": "2254363",
+    "positionVotingRate": "4.984",
     "returnChooserTypeCode": 0,
     "returnDate": "",
     "securityTypeCode": "1",
@@ -238,27 +601,27 @@
    "deleteeId": "",
    "deletorId": "",
    "formRevision": null,
-   "notificationId": "ZA03-000000000SWB2",
-   "notificationSubmitter": "Sunrise Communications AG",
-   "notificationSubmitterId": "SUNRIS",
+   "notificationId": "ZA03-000000000SWI7",
+   "notificationSubmitter": "St.Galler Kantonalbank AG",
+   "notificationSubmitterId": "KBSG",
    "onBehalfFlag": "",
-   "publicationDate": 20261112,
-   "purchaseTotalVotingRate": 4.999,
+   "publicationDate": 20261113,
+   "purchaseTotalVotingRate": 0.0,
    "relationComment": [],
    "relationTypeCode": "",
-   "saleTotalVotingRate": 4.999,
+   "saleTotalVotingRate": 0.0,
    "sesta20Flag": "T",
    "submitterComment": [],
-   "transactionDate": 20261106,
+   "transactionDate": 20261111,
    "transferDate": 0,
    "triggerComment": [],
    "triggerTypeCodes": [
     22
    ],
    "swxListed": "T",
-   "belowThresholdVotingRate": 0.0
+   "belowThresholdVotingRate": 3.0
   },
-  "belowThresholdVotingRate": 0.0,
+  "belowThresholdVotingRate": 3.0,
   "showHistoryFlag": "T",
   "groupRepresentative": "",
   "contactPerson": "",
@@ -270,26 +633,7 @@
   ],
   "shareholderNames": [],
   "shareholderAddrs": [],
-  "positionsEquity": [
-   {
-    "deliveryTypeCode": "",
-    "exerciseDate": "",
-    "exercisePrice": "",
-    "furtherConditions": [],
-    "isin": "",
-    "issuerName": "",
-    "legalTransactionTypeCode": 0,
-    "notificationId": "ZA03-000000000SWB2",
-    "positionSize": "4853973",
-    "positionSubCategory": "E",
-    "positionVotesCount": "4853973",
-    "positionVotingRate": "4.999",
-    "returnChooserTypeCode": 0,
-    "returnDate": "",
-    "securityTypeCode": "1",
-    "subscriptionRatio": ""
-   }
-  ],
+  "positionsEquity": [],
   "positionsRights": [],
   "positionsLending": [],
   "positionsLendingEquity": [],
