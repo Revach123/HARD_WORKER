@@ -1,0 +1,134 @@
+# Revach holdings - daily, in this public repo (free Actions minutes).
+#
+#  1. Check the Maya feed for new ת077 reports (feed only - no reports are
+#     downloaded here and no ID numbers are touched).
+#  2. Only if there are new reports: trigger the Revach pipeline (private repo,
+#     billed minutes), which downloads them, and wait for its commit.
+#  3. Always: rebuild ownership (control.json), the heter iska list and the
+#     indices from the files published in Revach's data/, and push to Revach.
+#
+# Secrets in THIS repo: REVACH_TOKEN (Revach, Contents: Read and write), TASE_APIKEY.
+name: Revach - holdings daily (ת077 check + ownership/heter/indices)
+
+on:
+  schedule:
+    - cron: "40 4 * * *"   # daily 04:40 UTC
+  workflow_dispatch:
+    inputs:
+      force_t077:
+        description: "trigger the Revach ת077 download even with no new reports"
+        type: boolean
+        default: false
+      ping:
+        description: "test only: send an event nobody listens to instead of triggering Revach"
+        type: boolean
+        default: false
+
+concurrency:
+  group: revach-holdings-daily
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  daily:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: Revach123/Revach
+          token: ${{ secrets.REVACH_TOKEN }}
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - run: pip install -r requirements.txt
+
+      # -- 1. feed check -------------------------------------------------
+      - name: "1. Check ת077 feed"
+        id: check
+        working-directory: scripts/company_ownership
+        run: python t077_check_new.py
+
+      # -- 2. trigger Revach only when needed, then wait for its commit ----
+      - name: "2. Trigger Revach ת077 download and wait"
+        if: steps.check.outputs.new != '0' || inputs.force_t077 || inputs.ping
+        env:
+          T: ${{ secrets.REVACH_TOKEN }}
+          N: ${{ steps.check.outputs.new }}
+          EV: ${{ inputs.ping && 't077-ping' || 't077-new' }}
+        run: |
+          api() { curl -s -H "Authorization: Bearer $T" -H "Accept: application/vnd.github+json" "$@"; }
+          last_commit() { api "https://api.github.com/repos/Revach123/Revach/commits?path=data/holdings/t077-index.json&per_page=1" | python -c "import json,sys;d=json.load(sys.stdin);print(d[0]['commit']['committer']['date'] if d else '')"; }
+          before=$(last_commit); echo "t077-index.json last commit: $before"
+          code=$(curl -s -o /tmp/resp -w '%{http_code}' -X POST \
+            -H "Authorization: Bearer $T" -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/Revach123/Revach/dispatches \
+            -d "{\"event_type\":\"$EV\",\"client_payload\":{\"new\":\"$N\"}}")
+          echo "dispatch $EV -> HTTP $code"; cat /tmp/resp
+          [ "$code" = "204" ] || { echo "::error::dispatch failed"; exit 1; }
+          [ "$EV" = "t077-new" ] || { echo "ping only - not waiting"; exit 0; }
+          for i in $(seq 1 45); do
+            sleep 60
+            now=$(last_commit)
+            if [ -n "$now" ] && [ "$now" != "$before" ]; then
+              echo "Revach committed new ת077 data at $now"
+              git fetch --depth=1 origin main && git reset --hard origin/main
+              exit 0
+            fi
+            echo "waiting for Revach ת077 commit ($i min)"
+          done
+          echo "::warning::no new ת077 commit from Revach after 45 min - continuing with current data"
+
+      # -- 3. ownership / heter / indices (no ID numbers) ------------------
+      - name: "3a. Ownership (control.json)"
+        working-directory: scripts/company_ownership
+        env:
+          DATAWISE_APIKEY: ${{ secrets.TASE_APIKEY }}
+          WORKERS: "8"
+          OUTPUT_DIR: ${{ github.workspace }}/data/holdings
+        run: |
+          [ -n "$DATAWISE_APIKEY" ] || { echo "::error::TASE_APIKEY missing"; exit 1; }
+          python update.py
+
+      - name: "3b. Heter iska list (HARAV_LEVIN API)"
+        id: heter
+        continue-on-error: true
+        working-directory: scripts/index_info
+        env:
+          OUT_DIR: ${{ github.workspace }}/data/indices
+        run: python build_heter_iska.py
+
+      - name: "3b. Heter success marker"
+        if: steps.heter.outcome == 'success'
+        run: date -u +%s > data/indices/.heter-last-success
+
+      - name: "3c. Indices"
+        working-directory: scripts/index_info
+        env:
+          OUT_DIR: ${{ github.workspace }}/data/indices
+        run: python build_indices.py
+
+      - name: Commit to Revach
+        if: ${{ !cancelled() }}
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/holdings data/indices
+          if git status --porcelain | grep -q '^.. private/\|^?? private/'; then
+            echo "::error::private/ appeared in the tree - refusing to commit"; exit 1
+          fi
+          if git diff --cached --quiet; then echo "No changes."; exit 0; fi
+          git commit -m "holdings daily: ownership / heter / indices ($(date -u +%Y-%m-%d)) (via HARD_WORKER)"
+          for i in 1 2 3 4 5; do
+            git fetch --depth=20 origin main && git rebase -X theirs origin/main && git push origin HEAD:main && exit 0
+            git rebase --abort 2>/dev/null || true
+            sleep $((i * 10))
+          done
+          echo "::error::push failed"; exit 1
