@@ -10,6 +10,8 @@ name: Revach - Securities world load (EU/UK/CH/JP/CA)
 # ר' scripts/securities_world/load_world.py.
 
 on:
+  schedule:
+    - cron: "47 8 * * *"   # daily 08:47 UTC (moved from Revach)
   workflow_dispatch:
     inputs:
       indices_ref:

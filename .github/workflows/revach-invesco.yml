@@ -4,6 +4,8 @@
 name: Revach - Invesco daily fetch
 
 on:
+  schedule:
+    - cron: "52 5 * * *"   # daily 05:52 UTC (moved from Revach)
   workflow_dispatch: {}
 
 concurrency:
