@@ -1,0 +1,52 @@
+# Invesco daily fetch - runs here (public repo = free Actions minutes) against a
+# checkout of the private Revach repo; results are pushed back to Revach.
+# Secrets in THIS repo: REVACH_TOKEN.
+name: Revach - Invesco daily fetch
+
+on:
+  workflow_dispatch: {}
+
+concurrency:
+  group: revach-invesco
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: Revach123/Revach
+          token: ${{ secrets.REVACH_TOKEN }}
+          fetch-depth: 1
+          sparse-checkout: |
+            scripts
+            data/invesco
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - run: pip install requests pandas openpyxl
+
+      - run: python scripts/invesco_fetch.py
+
+      - name: Commit to Revach
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A data/invesco
+          if git diff --staged --quiet; then
+            echo "no data change"
+          else
+            git commit -m "עדכון נתוני Invesco ($(date -u '+%Y-%m-%d %H:%M UTC')) (via HARD_WORKER)"
+            for i in 1 2 3 4 5; do
+              git pull --rebase origin main && git push origin HEAD:main && exit 0
+              sleep $((RANDOM % 10 + 5))
+            done
+            echo "::error::push failed"; exit 1
+          fi
