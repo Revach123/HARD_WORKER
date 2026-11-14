@@ -1,0 +1,68 @@
+# Probe: Ottoman associations list from GuideStar (search-ottoman page).
+# Loads the page to get fresh Visualforce remoting tokens (they are per
+# session and expire), then calls GSTAR_Ctrl.searchMalkars filtered to
+# "אגודה עותומנית" and prints the response shape and a few rows.
+# Manual, read-only, public data, nothing is saved.
+name: guidestar ottoman probe
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Probe
+        run: |
+          pip install -q requests
+          python3 - <<'EOF'
+          import json, re, requests
+          S = requests.Session()
+          S.headers.update({"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Safari/537.36",
+                            "Accept-Language": "he,en;q=0.8"})
+          page = S.get("https://www.guidestar.org.il/search-ottoman", timeout=60)
+          print("page", page.status_code, len(page.text))
+          html = page.text
+          # Visualforce remoting provider config: {"vf":{"vid":...,"ver":...},"actions":{"GSTAR_Ctrl":{"ms":[{"name":"searchMalkars","csrf":...,"authorization":...}]}}}
+          i = html.find('"searchMalkars"')
+          print("searchMalkars in page:", i >= 0)
+          m = re.search(r'Visualforce\.remoting\.Manager\.add\(new \$VFRM\.RemotingProviderImpl\((\{.*?\})\)\);', html, re.S)
+          if not m:
+              print("provider config not found; context:", html[max(0, i-600):i+400] if i >= 0 else html[:1500]); raise SystemExit(1)
+          cfg = json.loads(m.group(1))
+          vf = cfg.get("vf", {})
+          ms = {x["name"]: x for x in cfg["actions"]["GSTAR_Ctrl"]["ms"]}
+          print("methods:", sorted(ms))
+          meth = ms["searchMalkars"]
+          print("searchMalkars params:", meth.get("len"), meth.get("ns"), "ver", meth.get("ver"))
+          body = {"action": "GSTAR_Ctrl", "method": "searchMalkars",
+                  "data": [{"Sug_Hitagdut": ["אגודה עותומנית"]}, {"apiName": "Name", "sortDesc": False}],
+                  "type": "rpc", "tid": 2,
+                  "ctx": {"csrf": meth.get("csrf"), "vid": vf.get("vid"), "ns": meth.get("ns", ""),
+                          "ver": meth.get("ver"), "authorization": meth.get("authorization")}}
+          r = S.post("https://www.guidestar.org.il/apexremote", json=body, timeout=60,
+                     headers={"Referer": "https://www.guidestar.org.il/search-ottoman", "X-Requested-With": "XMLHttpRequest",
+                              "X-User-Agent": "Visualforce-Remoting", "Content-Type": "application/json"})
+          print("apexremote", r.status_code, len(r.text))
+          j = r.json()
+          res = j[0] if isinstance(j, list) else j
+          print("statusCode", res.get("statusCode"), "type", res.get("type"), "message", str(res.get("message"))[:300])
+          result = res.get("result")
+          print("result type:", type(result).__name__)
+          if isinstance(result, dict):
+              print("result keys:", list(result)[:20])
+              for k, v in result.items():
+                  if isinstance(v, list):
+                      print(f"list {k}: {len(v)} items"); print(json.dumps(v[:3], ensure_ascii=False)[:1500])
+                  else:
+                      print(f"{k}: {str(v)[:200]}")
+          elif isinstance(result, list):
+              print(len(result), "items"); print(json.dumps(result[:3], ensure_ascii=False)[:1500])
+          names = json.dumps(result, ensure_ascii=False)
+          for w in ["מאוחדת", "מכבי", "כללית", "לאומית"]:
+              print(w, "in result:", w in names)
+          EOF
