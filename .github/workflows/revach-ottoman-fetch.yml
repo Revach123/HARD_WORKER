@@ -2,7 +2,7 @@
 # Revach data/registry/ottoman_associations.json, data/registry/hekdeshot.json
 # Runs here (public repo = free Actions minutes) against a checkout of Revach.
 # Secrets in THIS repo: REVACH_TOKEN.
-name: Revach - Ottoman associations and hekdeshot (GuideStar)
+name: Revach - Ottoman associations, hekdeshot and PBCs (GuideStar)
 
 on:
   workflow_dispatch: {}
@@ -36,12 +36,13 @@ jobs:
 
       - run: python -u scripts/registry/fetch_guidestar.py ottoman
       - run: python -u scripts/registry/fetch_guidestar.py hekdesh
+      - run: python -u scripts/registry/fetch_guidestar.py pbc
 
       - name: Commit to Revach
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/registry/ottoman_associations.json data/registry/hekdeshot.json
+          git add data/registry/ottoman_associations.json data/registry/hekdeshot.json data/registry/pbc_companies.json
           if git diff --cached --quiet; then echo "No changes."; exit 0; fi
           git commit -m "Ottoman associations and hekdeshot from GuideStar ($(date -u +%Y-%m-%d)) (via HARD_WORKER)"
           for i in 1 2 3 4 5; do
