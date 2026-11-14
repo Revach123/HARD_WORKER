@@ -53,7 +53,7 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/registry/ottoman_associations.json data/registry/hekdeshot.json data/registry/pbc_companies.json
+          git add data/registry/ottoman_associations.json data/registry/hekdeshot.json data/registry/pbc_companies.json data/registry/pbc_ids.json
           if git diff --cached --quiet; then echo "No changes."; exit 0; fi
           git commit -m "GuideStar lists ($(date -u +%Y-%m-%d)) (via HARD_WORKER)"
           for i in 1 2 3 4 5; do
