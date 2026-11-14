@@ -1,0 +1,78 @@
+# One-off: permits categories in HARAV_LEVIN (business-registry-db.businesses.permits_category)
+#   * health funds                      -> עסקים
+#   * every association (any category)  -> עמותות
+#   * everything else: חנויות ומוסדות   -> עסקים
+#   "חברות מנפיקות אג"ח" is kept as is (automatic, bond-pcat.js).
+# Association / health-fund rules: as functions/api/_shared/assoc-pcat.js.
+# Secrets in THIS repo: CF_D1_TOKEN, CF_ACCOUNT_ID.
+name: HARAV_LEVIN - categories migration (עסקים / עמותות)
+
+on:
+  workflow_dispatch:
+    inputs:
+      apply:
+        description: "write the changes (otherwise dry run: only list them)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Migrate
+        env:
+          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          CF_D1_TOKEN: ${{ secrets.CF_D1_TOKEN }}
+          DB_ID: 61e1a52e-1083-478d-914c-5375d8ed59bb   # business-registry-db (HARAV_LEVIN wrangler.toml, binding DB)
+          APPLY: ${{ inputs.apply && '1' || '0' }}
+        run: |
+          python3 - <<'EOF'
+          import collections, json, os, re, urllib.request
+          URL = f"https://api.cloudflare.com/client/v4/accounts/{os.environ['CF_ACCOUNT_ID']}/d1/database/{os.environ['DB_ID']}/query"
+          def q(sql, params=None):
+              req = urllib.request.Request(URL, data=json.dumps({"sql": sql, "params": params or []}).encode(), method="POST",
+                                           headers={"Authorization": f"Bearer {os.environ['CF_D1_TOKEN']}", "Content-Type": "application/json"})
+              with urllib.request.urlopen(req, timeout=60) as r:
+                  res = json.load(r)
+              assert res.get("success"), res.get("errors")
+              return res["result"][0]
+          BOND, ASSOC, BIZ, OLD = 'חברות מנפיקות אג"ח', "עמותות", "עסקים", "חנויות ומוסדות"
+          HEALTH = ("קופת חולים", "מכבי שירותי בריאות", "שירותי בריאות כללית", "לאומית שירותי בריאות")
+          def is_assoc(b):
+              name = f"{b.get('permit_name') or ''} {b.get('registrar_name') or ''}"
+              return bool(re.fullmatch(r"58\d{7}", re.sub(r"\D", "", str(b.get("chp_number") or "")))
+                          or b.get("entity_type") == "association" or "עמותה" in str(b.get("biz_type") or "")
+                          or re.search(r"\(\s*ע[\"״']?ר\s*\)", name) or "עמותה" in str(b.get("notes") or ""))
+          rows = q("SELECT id, chp_number, permit_name, registrar_name, entity_type, biz_type, notes, permits_category FROM businesses")["results"]
+          groups, changes = collections.defaultdict(list), []
+          for b in rows:
+              cur = [x.strip() for x in str(b.get("permits_category") or "").split("|") if x.strip()]
+              bond = [BOND] if BOND in cur else []
+              if str(b.get("permit_name") or "").strip().startswith(HEALTH):
+                  new, g = [BIZ] + bond, "health fund -> עסקים"
+              elif is_assoc(b):
+                  new, g = [ASSOC] + bond, "association -> עמותות"
+              else:
+                  new, g = [], "rename חנויות ומוסדות -> עסקים"
+                  for x in cur:
+                      x = BIZ if x == OLD else x
+                      if x not in new: new.append(x)
+              newv = "|".join(x for x in new if x != "שונות") or "שונות"
+              if newv != (b.get("permits_category") or ""):
+                  groups[g].append((b["permit_name"], b.get("permits_category") or "", newv)); changes.append((b["id"], newv))
+          print(f"businesses: {len(rows)}, to change: {len(changes)}")
+          for g, items in groups.items():
+              print(f"\n== {g}: {len(items)}")
+              for n, o, v in items[:200]: print(f"   {n[:55]:57} [{o}] -> [{v}]")
+          left = [b["permit_name"] for b in rows if OLD in str(b.get("permits_category") or "") and b["id"] not in {i for i, _ in changes}]
+          print("\nstill with the old category after migration:", len(left))
+          if os.environ["APPLY"] != "1":
+              print("\ndry run - nothing written"); raise SystemExit(0)
+          for i, v in changes:
+              q("UPDATE businesses SET permits_category = ? WHERE id = ?", [v, i])
+          print(f"\nupdated {len(changes)} businesses")
+          EOF
