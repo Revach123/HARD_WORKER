@@ -1,0 +1,44 @@
+# Look up a name or number in the public registries on data.gov.il
+# (companies / partnerships / associations). Manual, read-only, prints results.
+name: registry lookup (data.gov.il)
+
+on:
+  workflow_dispatch:
+    inputs:
+      q:
+        description: "free-text query (name or number); several separated by |"
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  lookup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Query
+        env:
+          Q: ${{ inputs.q }}
+        run: |
+          python3 - <<'EOF'
+          import json, os, urllib.parse, urllib.request
+          SRC = {"companies": "f004176c-b85f-4542-8901-7b3176f9a054",
+                 "partnerships": "139aa193-fabb-4f6b-a71b-0bb40fd73eb2",
+                 "associations": "be5b7935-3922-45d4-9638-08871b17ec95"}
+          H = {"User-Agent": "Mozilla/5.0", "Accept": "application/json", "Referer": "https://data.gov.il/"}
+          for q in [x.strip() for x in os.environ["Q"].split("|") if x.strip()]:
+              print(f"\n===== {q}")
+              for name, rid in SRC.items():
+                  url = "https://data.gov.il/api/3/action/datastore_search?" + urllib.parse.urlencode(
+                      {"resource_id": rid, "q": q, "limit": 8})
+                  try:
+                      with urllib.request.urlopen(urllib.request.Request(url, headers=H), timeout=30) as r:
+                          res = json.load(r)["result"]
+                  except Exception as e:
+                      print(f"  {name}: error {e}"); continue
+                  print(f"  {name}: {res.get('total')} hits")
+                  for rec in res["records"]:
+                      rec.pop("_id", None); rec.pop("rank", None)
+                      print("    " + json.dumps({k: v for k, v in rec.items() if v not in (None, "")}, ensure_ascii=False)[:400])
+          EOF
