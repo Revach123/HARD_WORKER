@@ -1,0 +1,40 @@
+# Probe: how GuideStar's search page asks for the next page of searchMalkars.
+# Prints the JavaScript around each searchMalkars call. Manual, read-only.
+name: guidestar paging probe
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Probe
+        run: |
+          pip install -q requests
+          python3 - <<'EOF'
+          import re, requests
+          from urllib.parse import urljoin
+          S = requests.Session(); S.headers["User-Agent"] = "Mozilla/5.0"
+          base = "https://www.guidestar.org.il/search-ottoman"
+          html = S.get(base, timeout=60).text
+          srcs = re.findall(r'<script[^>]+src="([^"]+)"', html)
+          print(len(srcs), "scripts")
+          seen = 0
+          for src in srcs:
+              u = urljoin(base, src.replace("&amp;", "&"))
+              try:
+                  js = S.get(u, timeout=60).text
+              except Exception as e:
+                  continue
+              for m in re.finditer(r'searchMalkars|pageNumber|isLast', js):
+                  i = m.start(); seen += 1
+                  if seen > 25: break
+                  print("\n=====", u[:120], m.group(0))
+                  print(js[max(0, i-700):i+500].replace("\n", " "))
+          print("total hits", seen)
+          EOF
