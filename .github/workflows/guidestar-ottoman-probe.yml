@@ -31,10 +31,11 @@ jobs:
                   js = S.get(u, timeout=60).text
               except Exception as e:
                   continue
-              for m in re.finditer(r'searchMalkars|pageNumber|isLast', js):
+              if 'GSTAR_ALL/main.js' not in u: continue
+              for m in re.finditer(r'prototype\.searchMalkars=function|"searchMalkars",|\.searchMalkars\(', js):
                   i = m.start(); seen += 1
                   if seen > 25: break
                   print("\n=====", u[:120], m.group(0))
-                  print(js[max(0, i-700):i+500].replace("\n", " "))
+                  print(js[max(0, i-300):i+1800].replace("\n", " "))
           print("total hits", seen)
           EOF
