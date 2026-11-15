@@ -29,30 +29,44 @@ permissions:
 jobs:
   load:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash /tmp/q.sh {0}
     timeout-minutes: 60
     env:
       PYTHONUNBUFFERED: "1"
       WORLD_DATA_DIR: _indices/data/world_securities
     steps:
-      - uses: actions/checkout@v4
+      - name: Quiet logs (public repo - full output stays hidden)
+        shell: bash
+        run: |
+          cat > /tmp/q.sh <<'Q'
+          #!/bin/bash
+          # מריץ את שלב ה-workflow ושומר את הפלט בקובץ: בהצלחה - רק "ok"; בכשל - 15 השורות האחרונות בלבד
+          log=$(mktemp)
+          bash --noprofile --norc -eo pipefail "$1" >"$log" 2>&1; c=$?
+          if [ $c -eq 0 ]; then echo "ok ($(wc -l <"$log") log lines hidden)"; else echo "failed (exit $c) - last lines:"; tail -n 15 "$log"; fi
+          exit $c
+          Q
+      - uses: actions/checkout@v5
         with:
           repository: Revach123/Revach
           token: ${{ secrets.REVACH_TOKEN }}
           fetch-depth: 1
 
       # ריפו ציבורי - בלי טוקן. ברירת מחדל main; indices_ref לבדיקת ענף אחר.
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           repository: Revach123/INDICES
           ref: ${{ github.event.inputs.indices_ref || 'main' }}
           path: _indices
           sparse-checkout: data/world_securities
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
           node-version: "20"
 

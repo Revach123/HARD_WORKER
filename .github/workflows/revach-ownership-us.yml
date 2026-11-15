@@ -25,14 +25,28 @@ permissions:
 jobs:
   fetch:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash /tmp/q.sh {0}
     timeout-minutes: 180
     steps:
-      - uses: actions/checkout@v4
+      - name: Quiet logs (public repo - full output stays hidden)
+        shell: bash
+        run: |
+          cat > /tmp/q.sh <<'Q'
+          #!/bin/bash
+          # מריץ את שלב ה-workflow ושומר את הפלט בקובץ: בהצלחה - רק "ok"; בכשל - 15 השורות האחרונות בלבד
+          log=$(mktemp)
+          bash --noprofile --norc -eo pipefail "$1" >"$log" 2>&1; c=$?
+          if [ $c -eq 0 ]; then echo "ok ($(wc -l <"$log") log lines hidden)"; else echo "failed (exit $c) - last lines:"; tail -n 15 "$log"; fi
+          exit $c
+          Q
+      - uses: actions/checkout@v5
         with:
           repository: Revach123/Revach
           token: ${{ secrets.REVACH_TOKEN }}
           fetch-depth: 1
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
       - name: Fetch ownership

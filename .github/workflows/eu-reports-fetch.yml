@@ -49,15 +49,15 @@ jobs:
       WORLD_DATA_DIR: _indices/data/world_securities
     steps:
       # קצה הענף (לא ה-commit שהפעיל את הריצה): ריצה קודמת בתור אולי קימטה בינתיים
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           ref: ${{ github.ref_name }}
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           repository: Revach123/INDICES
           path: _indices
           sparse-checkout: data/world_securities
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
       - run: pip install lxml
