@@ -23804,193 +23804,11 @@
   },
   "1744706": {
     "company_id": "2570",
-    "status": "partial",
+    "status": "success",
     "kind": "snapshot",
-    "attempts": 0,
-    "at": "2026-11-16T11:59:22.582748+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 6,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "לאונרדו התחדשות בורוכוב פתח תקווה בע\"מ",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 15,
-              "section_title": "6.2 תרשים מבנה החזקות החברה במועד פרסום התשקיף",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "לאונרדו ייזום וביצוע בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 14,
-              "section_title": "6.2 תרשים מבנה החזקות החברה במועד פרסום התשקיף",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "לאונרדו בעיר - רעננה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 14,
-              "section_title": "6.2 תרשים מבנה החזקות החברה במועד פרסום התשקיף",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "לאונרדו נ.ת.ר.ה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 11,
-              "section_title": "6.1.2 שנת ההתאגדות וצורת ההתאגדות",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "לאונרדו הזוהר 16-20 פתח תקווה שותפות מוגבלת",
-              "ownership_pct": 100,
-              "parent": "לאונרדו בעיר - רעננה בע\"מ",
-              "page_reference": 14,
-              "section_title": "6.2 תרשים מבנה החזקות החברה במועד פרסום התשקיף",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "לאונרדו בפלמ\"ח קרית ביאליק שותפות מוגבלת",
-              "ownership_pct": 100,
-              "parent": "לאונרדו ייזום וביצוע בע\"מ",
-              "page_reference": 14,
-              "section_title": "6.2 תרשים מבנה החזקות החברה במועד פרסום התשקיף",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "לאונרדו די. ואי. פינוי בינוי במתחם רגר באר שבע בע\"מ",
-              "ownership_pct": 50,
-              "parent": null,
-              "page_reference": 15,
-              "section_title": "6.2 תרשים מבנה החזקות החברה במועד פרסום התשקיף",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "לאונרדו בבית אליעזר חדרה",
-              "ownership_pct": 99,
-              "parent": null,
-              "page_reference": 15,
-              "section_title": "6.2 תרשים מבנה החזקות החברה במועד פרסום התשקיף",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "ס.י בלוי אשכול שותפות מוגבלת",
-              "ownership_pct": 100,
-              "parent": "לאונרדו בעיר - רעננה בע\"מ",
-              "page_reference": 14,
-              "section_title": "6.2 תרשים מבנה החזקות החברה במועד פרסום התשקיף",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-03-31",
-          "subsidiaries": [
-            {
-              "name": "לאונרדו נ.ת.ר.ה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 29,
-              "section_title": "1. פרופיל החברה",
-              "table_title": null,
-              "note": "חברת בת המוחזקת ונשלטת במלואה"
-            },
-            {
-              "name": "לאונרדו התחדשות בורוכוב פתח תקווה בע\"מ",
-              "ownership_pct": 51,
-              "parent": null,
-              "page_reference": 23,
-              "section_title": "(י) הסכם ניהול בין החברה לחברת לאונרדו התחדשות בורוכוב פתח תקווה בע\"מ",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "לאונרדו נ.ת.ר.ה בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 42,
-              "section_title": "8.3.5 הסכם שכירות על משרדי החברה",
-              "table_title": null,
-              "note": "חברה בת של החברה"
-            }
-          ],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2025-12-31",
-          "subsidiaries": [
-            {
-              "name": "לאונרדו בעיר רעננה",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 81,
-              "section_title": "באור 4 –התקשרויות ועסקאות מהותיות עם חברות מוחזקות:",
-              "table_title": null,
-              "note": "פרויקט בקלאוזנר 7, רעננה"
-            },
-            {
-              "name": "לאונרדו ייזום וביצוע",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 81,
-              "section_title": "באור 4 –התקשרויות ועסקאות מהותיות עם חברות מוחזקות:",
-              "table_title": null,
-              "note": "פרויקט בקלאוזנר 12, רעננה"
-            },
-            {
-              "name": "לאונרדו נ.ת.ר.ה",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 82,
-              "section_title": "באור 4 –התקשרויות ועסקאות מהותיות עם חברות מוחזקות(המשך) :",
-              "table_title": null,
-              "note": "שטר הון"
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-11-16T11:59:48.844405+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1745121": {
     "company_id": "2561",
@@ -24014,6 +23832,268 @@
     "kind": "snapshot",
     "attempts": 1,
     "at": "2026-11-16T11:59:41.542621+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1744222": {
+    "company_id": "2567",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-11-16T12:06:54.109901+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1745101": {
+    "company_id": "2573",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-11-16T12:11:57.317577+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 4,
+      "done": {
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אביסרור הנדסה ובניה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 29,
+              "section_title": "ביאור 13 - השקעות והלוואות בחברות מוחזקות",
+              "table_title": "פירוט החברות המאוחדות של הקבוצה",
+              "note": null
+            },
+            {
+              "name": "האוס-ניהול ואחזקת בתים משותפים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 29,
+              "section_title": "ביאור 13 - השקעות והלוואות בחברות מוחזקות",
+              "table_title": "פירוט החברות המאוחדות של הקבוצה",
+              "note": null
+            },
+            {
+              "name": "אביסרור ובניו יזום ופיתוח בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 29,
+              "section_title": "ביאור 13 - השקעות והלוואות בחברות מוחזקות",
+              "table_title": "פירוט החברות המאוחדות של הקבוצה",
+              "note": null
+            },
+            {
+              "name": "אור נס מקרקעין בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 29,
+              "section_title": "ביאור 13 - השקעות והלוואות בחברות מוחזקות",
+              "table_title": "פירוט החברות המאוחדות של הקבוצה",
+              "note": null
+            },
+            {
+              "name": "אביסרור כרמים נווה פת בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 29,
+              "section_title": "ביאור 13 - השקעות והלוואות בחברות מוחזקות",
+              "table_title": "פירוט החברות המאוחדות של הקבוצה",
+              "note": "נרכשה ביום 31 בדצמבר 2025"
+            },
+            {
+              "name": "אביסרור קשת הצלחה נדל\"ן בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 29,
+              "section_title": "ביאור 13 - השקעות והלוואות בחברות מוחזקות",
+              "table_title": "השקעות והלוואות בחברה כלולה המדווחת לפי שיטת השווי המאזני - הרכב",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אביסרור ובניו יזום ופיתוח בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 42,
+              "section_title": "ביאור 1 - כללי",
+              "table_title": null,
+              "note": "הפכה לחברת בת בבעלות מלאה ביום 15 באוקטובר 2025"
+            },
+            {
+              "name": "אור נס מקרקעין בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 42,
+              "section_title": "ביאור 1 - כללי",
+              "table_title": null,
+              "note": "הפכה לחברת בת בבעלות מלאה ביום 15 באוקטובר 2025"
+            },
+            {
+              "name": "אביסרור הנדסה ובניה בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 46,
+              "section_title": "ביאור 7 - חברות מוחזקות, צדדים קשורים ובעלי עניין",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אביסרור קשת הצלחה נדל\"ן בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 46,
+              "section_title": "ביאור 7 - חברות מוחזקות, צדדים קשורים ובעלי עניין",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "האוס-ניהול ואחזקת בתים משותפים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 46,
+              "section_title": "ביאור 7 - חברות מוחזקות, צדדים קשורים ובעלי עניין",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "אביסרור הנדסה ובניה בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 54,
+              "section_title": "ביאור 3 - יתרות מהותיות עם חברות מוחזקות",
+              "table_title": null,
+              "note": "חברה מוחזקת"
+            },
+            {
+              "name": "אביסרור קשת הצלחה נדל\"ן בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 54,
+              "section_title": "ביאור 3 - יתרות מהותיות עם חברות מוחזקות",
+              "table_title": null,
+              "note": "חברה מוחזקת"
+            },
+            {
+              "name": "אביסרור ובניו ייזום ופיתוח בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 54,
+              "section_title": "ביאור 3 - יתרות מהותיות עם חברות מוחזקות",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "אור נס מקרקעין בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 56,
+              "section_title": "פרק 11: פרטים נוספים",
+              "table_title": null,
+              "note": "חברת בת"
+            }
+          ],
+          "change_events": [
+            {
+              "company": "אביסרור ובניו ייזום ופיתוח בע\"מ",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": null,
+              "event_date": "2025-10-15",
+              "event_description": "התקשרות בהסכם להקצאת מניות חדשות כתמורה בעין להעברת מניות בחברה",
+              "page_reference": 56,
+              "section_title": "פרק 11: פרטים נוספים"
+            },
+            {
+              "company": "אור נס מקרקעין בע\"מ",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": null,
+              "event_date": "2025-10-15",
+              "event_description": "התקשרות בהסכם להקצאת מניות חדשות כתמורה בעין להעברת מניות בחברה",
+              "page_reference": 56,
+              "section_title": "פרק 11: פרטים נוספים"
+            }
+          ]
+        }
+      },
+      "attempts": {
+        "0:0": 1
+      }
+    }
+  },
+  "1745209": {
+    "company_id": "2576",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-11-16T12:07:52.890214+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1744924": {
+    "company_id": "2558",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-11-16T12:12:32.177884+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1744789": {
+    "company_id": "2563",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-11-16T12:13:43.420989+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1744045": {
+    "company_id": "1969",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-11-16T12:16:20.660608+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1745027": {
+    "company_id": "2547",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-11-16T12:15:05.709907+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1751569": {
+    "company_id": "2578",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-11-16T12:15:49.102707+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1781260": {
+    "company_id": "231",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-16T12:16:19.678761+00:00",
     "model": "gemini-3.5-flash-lite"
   }
 }
