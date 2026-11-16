@@ -23745,5 +23745,275 @@
     "attempts": 1,
     "at": "2026-11-16T11:40:36.063012+00:00",
     "model": "gemini-3.5-flash-lite"
+  },
+  "1745087": {
+    "company_id": "2555",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-11-16T11:54:53.217552+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1745070": {
+    "company_id": "2571",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-11-16T11:43:06.193388+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1744932": {
+    "company_id": "2549",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-11-16T11:45:09.666330+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1724988": {
+    "company_id": "2540",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-11-16T11:48:37.480049+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1745117": {
+    "company_id": "2557",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-11-16T11:52:37.092100+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1753733": {
+    "company_id": "2556",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-11-16T11:55:46.625825+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1744182": {
+    "company_id": "2550",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-11-16T11:56:19.837603+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1744706": {
+    "company_id": "2570",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-11-16T11:59:22.582748+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 6,
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "לאונרדו התחדשות בורוכוב פתח תקווה בע\"מ",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 15,
+              "section_title": "6.2 תרשים מבנה החזקות החברה במועד פרסום התשקיף",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "לאונרדו ייזום וביצוע בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 14,
+              "section_title": "6.2 תרשים מבנה החזקות החברה במועד פרסום התשקיף",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "לאונרדו בעיר - רעננה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 14,
+              "section_title": "6.2 תרשים מבנה החזקות החברה במועד פרסום התשקיף",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "לאונרדו נ.ת.ר.ה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 11,
+              "section_title": "6.1.2 שנת ההתאגדות וצורת ההתאגדות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "לאונרדו הזוהר 16-20 פתח תקווה שותפות מוגבלת",
+              "ownership_pct": 100,
+              "parent": "לאונרדו בעיר - רעננה בע\"מ",
+              "page_reference": 14,
+              "section_title": "6.2 תרשים מבנה החזקות החברה במועד פרסום התשקיף",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "לאונרדו בפלמ\"ח קרית ביאליק שותפות מוגבלת",
+              "ownership_pct": 100,
+              "parent": "לאונרדו ייזום וביצוע בע\"מ",
+              "page_reference": 14,
+              "section_title": "6.2 תרשים מבנה החזקות החברה במועד פרסום התשקיף",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "לאונרדו די. ואי. פינוי בינוי במתחם רגר באר שבע בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 15,
+              "section_title": "6.2 תרשים מבנה החזקות החברה במועד פרסום התשקיף",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "לאונרדו בבית אליעזר חדרה",
+              "ownership_pct": 99,
+              "parent": null,
+              "page_reference": 15,
+              "section_title": "6.2 תרשים מבנה החזקות החברה במועד פרסום התשקיף",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ס.י בלוי אשכול שותפות מוגבלת",
+              "ownership_pct": 100,
+              "parent": "לאונרדו בעיר - רעננה בע\"מ",
+              "page_reference": 14,
+              "section_title": "6.2 תרשים מבנה החזקות החברה במועד פרסום התשקיף",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-31",
+          "subsidiaries": [
+            {
+              "name": "לאונרדו נ.ת.ר.ה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 29,
+              "section_title": "1. פרופיל החברה",
+              "table_title": null,
+              "note": "חברת בת המוחזקת ונשלטת במלואה"
+            },
+            {
+              "name": "לאונרדו התחדשות בורוכוב פתח תקווה בע\"מ",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 23,
+              "section_title": "(י) הסכם ניהול בין החברה לחברת לאונרדו התחדשות בורוכוב פתח תקווה בע\"מ",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "לאונרדו נ.ת.ר.ה בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 42,
+              "section_title": "8.3.5 הסכם שכירות על משרדי החברה",
+              "table_title": null,
+              "note": "חברה בת של החברה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "לאונרדו בעיר רעננה",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 81,
+              "section_title": "באור 4 –התקשרויות ועסקאות מהותיות עם חברות מוחזקות:",
+              "table_title": null,
+              "note": "פרויקט בקלאוזנר 7, רעננה"
+            },
+            {
+              "name": "לאונרדו ייזום וביצוע",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 81,
+              "section_title": "באור 4 –התקשרויות ועסקאות מהותיות עם חברות מוחזקות:",
+              "table_title": null,
+              "note": "פרויקט בקלאוזנר 12, רעננה"
+            },
+            {
+              "name": "לאונרדו נ.ת.ר.ה",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 82,
+              "section_title": "באור 4 –התקשרויות ועסקאות מהותיות עם חברות מוחזקות(המשך) :",
+              "table_title": null,
+              "note": "שטר הון"
+            }
+          ],
+          "change_events": []
+        }
+      },
+      "attempts": {}
+    }
+  },
+  "1745121": {
+    "company_id": "2561",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-11-16T11:57:01.068409+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1744849": {
+    "company_id": "2568",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-11-16T11:58:47.884701+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1745130": {
+    "company_id": "2574",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-11-16T11:59:41.542621+00:00",
+    "model": "gemini-3.5-flash-lite"
   }
 }
