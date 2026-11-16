@@ -51,6 +51,8 @@ jobs:
     timeout-minutes: 350
     steps:
       - uses: actions/checkout@v5
+        with:
+          token: ${{ secrets.PUSH_TOKEN }}
 
       - uses: actions/setup-python@v6
         with:
