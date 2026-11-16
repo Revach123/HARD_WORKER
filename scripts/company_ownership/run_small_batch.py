@@ -171,12 +171,11 @@ def _call_gemini_with_quota_retry(pdf_bytes: bytes, filename_hint: str,
 
 PROSPECTUS_KEYS = ("תרשים אחזקות", "תרשים החזקות", "מבנה האחזקות", "מבנה ההחזקות", "תרשים מבנה",
                    "חברות מוחזקות", "תאגידים מוחזקים", "חברות בנות", "חברות הנכס", "שותפויות הנכס")
-PROSPECTUS_MAX_PAGES = 60
 
 
 def _prospectus_pages(pdf_bytes: bytes) -> bytes | None:
     """תשקיף הוא מאות עמודים. בוחרים את העמודים שמזכירים מבנה החזקות / חברות בנות, ועוד שני עמודים אחרי כל אחד
-    (התרשים עצמו הוא לרוב תמונה בעמוד שאחרי הכותרת), עד PROSPECTUS_MAX_PAGES. None = לא נמצא - שולחים את הכל."""
+    (התרשים עצמו הוא לרוב תמונה בעמוד שאחרי הכותרת) - בלי תקרה, כדי לא לפספס. None = לא נמצא - שולחים את הכל."""
     try:
         reader = PdfReader(io.BytesIO(pdf_bytes))
         n = len(reader.pages)
@@ -189,17 +188,15 @@ def _prospectus_pages(pdf_bytes: bytes) -> bytes | None:
         if not score:
             return None
         pick = set()
-        for _, i in sorted(score, reverse=True):
+        for _, i in score:
             for j in (i, i + 1, i + 2):
                 if j < n:
                     pick.add(j)
-            if len(pick) >= PROSPECTUS_MAX_PAGES:
-                break
         w = PdfWriter()
-        for j in sorted(pick)[:PROSPECTUS_MAX_PAGES]:
+        for j in sorted(pick):
             w.add_page(reader.pages[j])
         out = io.BytesIO(); w.write(out)
-        print(f"  תשקיף: {n} עמודים -> {min(len(pick), PROSPECTUS_MAX_PAGES)} עמודים רלוונטיים")
+        print(f"  תשקיף: {n} עמודים -> {len(pick)} עמודים רלוונטיים")
         return out.getvalue()
     except Exception as e:
         print(f"  תשקיף: בחירת עמודים נכשלה ({e}) - נשלח המסמך המלא")
