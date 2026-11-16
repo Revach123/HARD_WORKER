@@ -23429,5 +23429,321 @@
     "attempts": 1,
     "at": "2026-11-16T11:20:54.787442+00:00",
     "model": "gemini-3.5-flash-lite"
+  },
+  "1767365": {
+    "company_id": "2586",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-11-16T11:26:48.110960+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 15,
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-08-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "פסטרנק שהם ניהול השקעות בע\"מ",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": 0,
+              "ownership_pct_after": 100,
+              "event_date": "2026-06-24",
+              "event_description": "העברת מלוא הון המניות של חברת פסטרנק שהם ניהול השקעות בע\"מ לחברה בהעברה והמחאה בתמורה להקצאת 21,000,000 מניות",
+              "page_reference": 30,
+              "section_title": "3.2.3 שינוי מבנה"
+            }
+          ]
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "פסטרך שהם ניהול בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 65,
+              "section_title": "חלק א' – תיאור ההתפתחות הכללית של עסקי הקבוצה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מאני פלואו בע\"מ",
+              "ownership_pct": 49,
+              "parent": null,
+              "page_reference": 65,
+              "section_title": "חלק א' – תיאור ההתפתחות הכללית של עסקי הקבוצה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "פסטרדק שהם ניהול",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 79,
+              "section_title": "8.1.1 מבנה תחום הפעילות ושינויים החלים בו",
+              "table_title": null,
+              "note": "חברת בת העוסקת בניהול תיקי השקעות"
+            }
+          ],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "פסטרֹק שהם ניהול",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 89,
+              "section_title": "8.2.1 כללי",
+              "table_title": null,
+              "note": "חברת בת"
+            }
+          ],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "פסטרדק שהם ניהול השקעות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 120,
+              "section_title": "1. מבוא:",
+              "table_title": null,
+              "note": "החברה מחזיקה במלוא הון המניות המונפק והנפרע"
+            },
+            {
+              "name": "מאי פלאו בע\"מ",
+              "ownership_pct": 49,
+              "parent": null,
+              "page_reference": 112,
+              "section_title": "15. השקעות",
+              "table_title": null,
+              "note": "הסכם מייסדים להקמת החברה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:7": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "פסטרדק שהם ניהול השקעות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 120,
+              "section_title": "מבוא",
+              "table_title": null,
+              "note": "החברה מחזיקה במלוא הון המניות המופק והפרע"
+            },
+            {
+              "name": "מאני פלואו בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 124,
+              "section_title": "אירועים מהותיים בתקופת הדוח ולאחר תאריך המאזן",
+              "table_title": null,
+              "note": "ביצוע השקעה כחלק מהתחייבות להשקעה כוללת"
+            }
+          ],
+          "change_events": []
+        },
+        "0:8": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:9": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:10": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:11": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:13": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "פסטרנק שהם ניהול השקעות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 234,
+              "section_title": "ביאור 1 - כללי",
+              "table_title": null,
+              "note": "חברת בת בבעלות מלאה"
+            },
+            {
+              "name": "Flow Money בע\"מ",
+              "ownership_pct": 49,
+              "parent": null,
+              "page_reference": 235,
+              "section_title": "ביאור 7 - אירועים מהותיים בתקופת הדוח ולאחריה",
+              "table_title": null,
+              "note": "מוחזקת בשליטה משותפת"
+            }
+          ],
+          "change_events": []
+        },
+        "0:14": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "Flow Money בע\"מ",
+              "ownership_pct": 49,
+              "parent": null,
+              "page_reference": 252,
+              "section_title": "ביאור 7 - אירועים מהותיים בתקופת הדוח ולאחריה",
+              "table_title": null,
+              "note": "הסכם הקמה והשקעה"
+            }
+          ],
+          "change_events": [
+            {
+              "company": "Flow Money בע\"מ",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 49,
+              "event_date": null,
+              "event_description": "נחתם הסכם להקמה והשקעה בחברת Flow Money בע\"מ להחזקה של 49% מהון המניות",
+              "page_reference": 252,
+              "section_title": "ביאור 7 - אירועים מהותיים בתקופת הדוח ולאחריה"
+            }
+          ]
+        }
+      },
+      "attempts": {
+        "0:12": 1
+      }
+    }
+  },
+  "1766704": {
+    "company_id": "2585",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-11-16T11:21:27.055978+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1767223": {
+    "company_id": "2588",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-11-16T11:23:47.432071+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1767218": {
+    "company_id": "2587",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-11-16T11:28:38.251724+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1744930": {
+    "company_id": "2565",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-11-16T11:31:02.263567+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1779465": {
+    "company_id": "2594",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-11-16T11:38:35.120509+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1767151": {
+    "company_id": "2589",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-11-16T11:32:03.359203+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1744252": {
+    "company_id": "2572",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-11-16T11:36:12.561636+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1742996": {
+    "company_id": "2551",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-11-16T11:36:41.350197+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1757358": {
+    "company_id": "2580",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-11-16T11:40:36.063012+00:00",
+    "model": "gemini-3.5-flash-lite"
   }
 }
