@@ -28,6 +28,7 @@ jobs:
     steps:
       - uses: actions/checkout@v5
         with:
+          token: ${{ secrets.PUSH_TOKEN }}
           ref: ${{ github.ref_name }}
       - uses: actions/checkout@v5
         with:

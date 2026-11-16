@@ -41,6 +41,8 @@ jobs:
     timeout-minutes: 30  # חברה אחת - לא צריך יותר
     steps:
       - uses: actions/checkout@v5
+        with:
+          token: ${{ secrets.PUSH_TOKEN }}
 
       - uses: actions/setup-python@v6
         with:

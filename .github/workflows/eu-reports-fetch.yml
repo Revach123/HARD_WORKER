@@ -51,6 +51,7 @@ jobs:
       # קצה הענף (לא ה-commit שהפעיל את הריצה): ריצה קודמת בתור אולי קימטה בינתיים
       - uses: actions/checkout@v5
         with:
+          token: ${{ secrets.PUSH_TOKEN }}
           ref: ${{ github.ref_name }}
       - uses: actions/checkout@v5
         with:
