@@ -352,3 +352,57 @@ if __name__ == "__main__":
     for r in reports[:5]:
         names = [c["name"] for c in r["companies"]]
         print(r["id"], r["publishDate"], names, "->", pick_main_pdf_url(r))
+
+
+# ── תשקיפים (ת012): מקור חלופי לחברה בלי דוח שנתי (מנפיקה חדשה) ──────────────
+PROSPECTUS_FORM = "ת012"
+
+
+def _post_feed(body: dict) -> list[dict]:
+    resp = requests.post(MAYA_REPORTS_URL, headers=HEADERS, json=body, verify=False, timeout=30)
+    resp.raise_for_status()
+    d = resp.json()
+    return d if isinstance(d, list) else (d.get("reports") or [])
+
+
+def fetch_prospectuses(from_date: date, to_date: date, max_pages: int = 60) -> list[dict]:
+    """כל התשקיפים (ת012) בטווח - עמוד אחרי עמוד (30 לעמוד)."""
+    out = []
+    for page in range(1, max_pages + 1):
+        body = {"pageNumber": page, "fromDate": _iso_start_of_day_utc(from_date),
+                "toDate": _iso_start_of_day_utc(to_date), "isPriority": False, "isTradeHalt": False,
+                "by": "company", "formId": PROSPECTUS_FORM, "limit": 30, "offset": (page - 1) * 30}
+        items = _post_feed(body)
+        if not items:
+            break
+        out.extend(items)
+        time.sleep(0.3)
+    return out
+
+
+def fetch_company_prospectus(company_id, from_date: date, to_date: date) -> dict | None:
+    """התשקיף האחרון של חברה אחת (כולל טיוטה, כשאין סופי) - לבקשת דחיפות/חירום לחברה בלי דוח שנתי."""
+    best = None
+    for page in range(1, 6):
+        body = {"pageNumber": page, "fromDate": _iso_start_of_day_utc(from_date),
+                "toDate": _iso_start_of_day_utc(to_date), "isPriority": False, "isTradeHalt": False,
+                "by": "company", "companyId": int(company_id), "limit": 30, "offset": (page - 1) * 30}
+        items = _post_feed(body)
+        if not items:
+            break
+        for r in items:
+            t = r.get("title") or ""
+            if "תשקיף" not in t or not pick_main_pdf_url(r):
+                continue
+            score = (0 if "טיוטה" in t else 1, r.get("publishDate") or "")
+            if best is None or score > best[0]:
+                best = (score, r)
+    return best[1] if best else None
+
+
+def prospectus_snapshot(r: dict) -> dict:
+    """רשומת snapshot בתוכנית מתוך דוח תשקיף. ה-URL מסומן ב-#prospectus: run_small_batch שולח ל-Gemini רק את
+    העמודים הרלוונטיים (תרשים/מבנה החזקות, חברות בנות/מוחזקות) ולא את כל התשקיף (מאות עמודים)."""
+    return {"report_id": str(r["id"]), "title": r.get("title") or "", "publish_date": r.get("publishDate"),
+            "pdf_url": pick_main_pdf_url(r) + "#prospectus", "pdf_size_kb": pick_main_pdf_size(r),
+            "extra_pdfs": [], "source": "prospectus"}

@@ -33,6 +33,7 @@ from datetime import datetime, timezone
 
 import extract_subsidiaries as ex
 import run_small_batch as rsb
+import maya_reports_client as mrc
 
 CHECKPOINT_EVERY = 10  # commit+push תוך כדי ריצה אחרי כל כך הרבה משימות -
 # לא רק בסוף. נלמד בדרך הקשה: ריצה של 59 דקות איבדה את כל ההתקדמות
@@ -245,6 +246,20 @@ def _d1_query(cfg: dict, sql: str, params: list | None = None) -> dict:
     if not res.get("success"):
         raise RuntimeError(f"D1 error: {json.dumps(res.get('errors'), ensure_ascii=False)}")
     return res
+
+
+def _prospectus_entry(cid):
+    """רשומת תוכנית לחברה בלי דוח שנתי: התשקיף האחרון שלה (שנתיים אחורה). None אם אין."""
+    from datetime import date as _d, timedelta as _td
+    try:
+        r = mrc.fetch_company_prospectus(cid, _d.today() - _td(days=730), _d.today())
+    except Exception as e:
+        print(f"  אזהרה: חיפוש תשקיף לחברה {cid} נכשל ({e})")
+        return None
+    if not r:
+        return None
+    name = next((c.get("name") for c in r.get("companies", []) if str(c.get("companyId")) == str(cid)), None)
+    return {"company_name": name, "snapshot": mrc.prospectus_snapshot(r), "changes": []}
 
 
 def read_priority_requests() -> list:
@@ -754,8 +769,13 @@ if __name__ == "__main__":
             plan = {cid: plan[cid]}
             print(f"מצב חירום: מריץ רק על חברה {cid} ({plan[cid].get('company_name')}).")
         else:
-            print(f"מצב חירום: חברה {cid} לא נמצאה בתוכנית - אין מה להריץ.")
-            plan = {}
+            entry = _prospectus_entry(cid)
+            if entry:
+                plan = {cid: entry}
+                print(f"מצב חירום: חברה {cid} בלי דוח שנתי - מריץ על התשקיף ({entry['snapshot']['title'][:60]}).")
+            else:
+                print(f"מצב חירום: חברה {cid} לא נמצאה בתוכנית ואין לה תשקיף - אין מה להריץ.")
+                plan = {}
 
     processed = load_processed(args.processed_log)
     print(f"נטען processed_reports: {len(processed)} דוחות כבר טופלו בעבר.\n")
@@ -865,6 +885,12 @@ if __name__ == "__main__":
     # למטה. חל על שני המודלים (3.6 ו-3.5) - ראה הסבר בהמשך, ליד השימוש,
     # למה זה השתנה בחזרה מ"רק 3.6".
     urgent_cids = set(read_priority_requests())
+    # בקשת דחיפות לחברה שאינה בתוכנית (אין לה דוח שנתי) - התשקיף האחרון שלה, אם יש
+    for _cid in sorted(urgent_cids - set(plan)):
+        _e = _prospectus_entry(_cid)
+        if _e:
+            plan[_cid] = _e
+            print(f"בקשת דחיפות: {_cid} בלי דוח שנתי - נוסף התשקיף ({_e['snapshot']['title'][:60]}).")
 
     # רשימת משימות שטוחה: כל דוח (snapshot או change) הוא משימה נפרדת עם
     # report_id ייחודי משלו - אידמפוטנטיות ברמת הדוח הבודד. "failed" אינו

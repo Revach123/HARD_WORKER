@@ -155,10 +155,35 @@ def build_plan(from_date: date, to_date: date) -> dict:
     change_index = build_change_index(from_date, to_date, snapshot_index)
 
     all_company_ids = set(snapshot_index) | set(change_index)
+
+    # חברה בלי דוח שנתי בטווח (מנפיקה חדשה): התשקיף האחרון שלה (ת012) כמקור. סופי עדיף על טיוטה, אחר כך המאוחר
+    prosp = {}
+    try:
+        for r in mrc.fetch_prospectuses(from_date, to_date):
+            if not mrc.pick_main_pdf_url(r):
+                continue
+            for c in r.get("companies", []):
+                cid = c["companyId"]
+                if c.get("isDeleted") or cid in snapshot_index:
+                    continue
+                t = r.get("title") or ""
+                score = (0 if "טיוטה" in t else 1, r.get("publishDate") or "")
+                if cid not in prosp or score > prosp[cid][0]:
+                    prosp[cid] = (score, r, c.get("name"))
+        print(f"  {len(prosp)} חברות בלי דוח שנתי עם תשקיף - התשקיף ישמש כמקור.")
+    except Exception as e:
+        print(f"  אזהרה: שליפת תשקיפים נכשלה ({e}) - ממשיך בלי")
+    all_company_ids |= set(prosp)
     plan = {}
     for cid in all_company_ids:
         snap = snapshot_index.get(cid)
         changes = change_index.get(cid, [])
+        if not snap and cid in prosp:
+            _, pr, pname = prosp[cid]
+            plan[str(cid)] = {"company_name": pname, "snapshot": mrc.prospectus_snapshot(pr),
+                              "changes": [{"report_id": c["report_id"], "publish_date": c["publish_date"].isoformat(),
+                                           "pdf_url": c["pdf_url"]} for c in changes]}
+            continue
         plan[str(cid)] = {
             "company_name": (snap or (changes[0] if changes else {})).get("company_name"),
             "snapshot": (

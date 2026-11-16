@@ -169,6 +169,43 @@ def _call_gemini_with_quota_retry(pdf_bytes: bytes, filename_hint: str,
     )
 
 
+PROSPECTUS_KEYS = ("תרשים אחזקות", "תרשים החזקות", "מבנה האחזקות", "מבנה ההחזקות", "תרשים מבנה",
+                   "חברות מוחזקות", "תאגידים מוחזקים", "חברות בנות", "חברות הנכס", "שותפויות הנכס")
+PROSPECTUS_MAX_PAGES = 60
+
+
+def _prospectus_pages(pdf_bytes: bytes) -> bytes | None:
+    """תשקיף הוא מאות עמודים. בוחרים את העמודים שמזכירים מבנה החזקות / חברות בנות, ועוד שני עמודים אחרי כל אחד
+    (התרשים עצמו הוא לרוב תמונה בעמוד שאחרי הכותרת), עד PROSPECTUS_MAX_PAGES. None = לא נמצא - שולחים את הכל."""
+    try:
+        reader = PdfReader(io.BytesIO(pdf_bytes))
+        n = len(reader.pages)
+        score = []
+        for i, pg in enumerate(reader.pages):
+            t = pg.extract_text() or ""
+            k = sum(t.count(x) for x in PROSPECTUS_KEYS)
+            if k:
+                score.append((k, i))
+        if not score:
+            return None
+        pick = set()
+        for _, i in sorted(score, reverse=True):
+            for j in (i, i + 1, i + 2):
+                if j < n:
+                    pick.add(j)
+            if len(pick) >= PROSPECTUS_MAX_PAGES:
+                break
+        w = PdfWriter()
+        for j in sorted(pick)[:PROSPECTUS_MAX_PAGES]:
+            w.add_page(reader.pages[j])
+        out = io.BytesIO(); w.write(out)
+        print(f"  תשקיף: {n} עמודים -> {min(len(pick), PROSPECTUS_MAX_PAGES)} עמודים רלוונטיים")
+        return out.getvalue()
+    except Exception as e:
+        print(f"  תשקיף: בחירת עמודים נכשלה ({e}) - נשלח המסמך המלא")
+        return None
+
+
 def _try_extract(pdf_url: str) -> dict | None:
     """מוריד ומחלץ מ-URL בודד. מחזיר None בכישלון (במקום לזרוק), כדי
     שהקורא יוכל לנסות PDF הבא באותו דוח בלי להפיל את כל התהליך.
@@ -176,12 +213,19 @@ def _try_extract(pdf_url: str) -> dict | None:
     אחרי חילוץ המסמך המלא - אם נמצא חשד לטבלה פורמלית שנחתכה, גוזר
     טווח עמודים סביבה ומריץ בדיקה ממוקדת נפרדת, וממזג (dedup לפי name)
     כל חברה חדשה שנמצאה לתוך התוצאה. לא מחליף - רק מוסיף."""
+    is_prosp = pdf_url.endswith("#prospectus")
+    if is_prosp:
+        pdf_url = pdf_url[:-len("#prospectus")]
     try:
         print(f"  מוריד {pdf_url} ...")
         pdf_bytes = mrc.download_report_file(pdf_url)
     except Exception as e:
         print(f"  שגיאת הורדה: {e}")
         return None
+    if is_prosp:
+        sliced = _prospectus_pages(pdf_bytes)
+        if sliced:
+            pdf_bytes = sliced
 
     print(f"  ({len(pdf_bytes):,} bytes) שולח ל-Gemini...")
     result = _call_gemini_with_quota_retry(pdf_bytes, pdf_url)
@@ -319,6 +363,8 @@ def _process_report_chunked(
     for fi, url in enumerate(all_pdf_urls):
         try:
             pdf_bytes = mrc.download_report_file(url)
+            if url.endswith("#prospectus"):
+                pdf_bytes = _prospectus_pages(pdf_bytes) or pdf_bytes
             reader = PdfReader(io.BytesIO(pdf_bytes))
             n_pages = len(reader.pages)
         except Exception as e:
