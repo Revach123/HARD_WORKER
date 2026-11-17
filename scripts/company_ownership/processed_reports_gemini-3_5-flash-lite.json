@@ -23840,43 +23840,11 @@
   },
   "1781317": {
     "company_id": "1266",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-11-17T11:54:11.886254+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 14,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-09-30",
-          "subsidiaries": [
-            {
-              "name": "מרכנתיל הנפקות בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 14,
-              "section_title": "4. מיזוג הבנק לתוך בנק דיסקונט",
-              "table_title": null,
-              "note": "חברת בת אשר אושר מיזוגה עם ולתוך דיסקונט מנפיקים בע\"מ"
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-09-30",
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-11-17T12:00:08.841391+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1781328": {
     "company_id": "1310",
@@ -23885,5 +23853,193 @@
     "attempts": 1,
     "at": "2026-11-17T11:54:19.195070+00:00",
     "model": "gemini-3.5-flash-lite"
+  },
+  "1781322": {
+    "company_id": "1310",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-17T11:55:11.713152+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1781339": {
+    "company_id": "1363",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-17T11:57:03.976328+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1781343": {
+    "company_id": "1363",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-17T11:57:24.220692+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1781547": {
+    "company_id": "1671",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-17T11:58:46.045616+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1781540": {
+    "company_id": "1704",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-17T12:01:26.075762+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1781312": {
+    "company_id": "1773",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-17T12:05:10.124677+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1781313": {
+    "company_id": "1773",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-17T12:02:01.106137+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1781487": {
+    "company_id": "2240",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-17T12:02:57.114566+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1781542": {
+    "company_id": "2369",
+    "status": "partial",
+    "kind": "change",
+    "attempts": 0,
+    "at": "2026-11-17T12:12:48.864401+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 3,
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2026-09-30",
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "E.P.S (Israel) Tech 1992 Ltd",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 100,
+              "event_date": "2026-09-09",
+              "event_description": "Approval received from the Competition Authority for the transaction to acquire 100% of the shares of E.P.S (Israel) Tech 1992 Ltd.",
+              "page_reference": 3,
+              "section_title": "2. Events in the corporation's activity during the reported period and up to the date of its publication"
+            }
+          ]
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "E.P.S. (Israel) Tech 1992 Ltd.",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 100,
+              "event_date": "2026-03-27",
+              "event_description": "Acquisition of 100% of the issued and paid-up share capital of E.P.S. (Israel) Tech 1992 Ltd.",
+              "page_reference": 41,
+              "section_title": "NOTE 5- BUSINESS COMBINATIONS"
+            },
+            {
+              "company": "Bressner Technology GmbH",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 99.6,
+              "event_date": "2025-12-30",
+              "event_description": "Acquisition of 99.6% of the issued share capital of Bressner Technology GmbH by subsidiary HIPER Euro GmbH",
+              "page_reference": 42,
+              "section_title": "NOTE 5- BUSINESS COMBINATIONS (Cont.)"
+            }
+          ]
+        }
+      },
+      "attempts": {
+        "0:1": 1
+      }
+    }
+  },
+  "1781538": {
+    "company_id": "2521",
+    "status": "partial",
+    "kind": "change",
+    "attempts": 0,
+    "at": "2026-11-17T12:05:23.361858+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 3,
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-09-30",
+          "subsidiaries": [
+            {
+              "name": "קטה גרופ – חטיבת הייזום בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "2. תחומי פעילות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "קטה גרופ – חטיבת התחדשות בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "2. תחומי פעילות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "קטה גרופ – חטיבת הביצוע בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "2. תחומי פעילות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "קטה גרופ – חטיבת המניבים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "2. תחומי פעילות",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        }
+      },
+      "attempts": {}
+    }
   }
 }
