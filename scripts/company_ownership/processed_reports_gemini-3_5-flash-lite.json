@@ -24337,157 +24337,105 @@
   },
   "1781870": {
     "company_id": "1510",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-18T12:06:32.190471+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1781615": {
+    "company_id": "1679",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-18T12:06:29.654470+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1781624": {
+    "company_id": "1679",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-18T12:08:40.709929+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1781809": {
+    "company_id": "1773",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-18T12:06:48.921822+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1781639": {
+    "company_id": "1774",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-18T12:08:10.329717+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1781597": {
+    "company_id": "1815",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-18T12:09:54.992302+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1781594": {
+    "company_id": "1815",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-18T12:09:44.347243+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1781622": {
+    "company_id": "1828",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-18T12:11:34.921206+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1781620": {
+    "company_id": "1828",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-18T12:10:45.795587+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1781655": {
+    "company_id": "1884",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-11-18T12:01:54.825266+00:00",
+    "at": "2026-11-18T12:11:09.762364+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
-      "total": 7,
+      "total": 4,
       "done": {
         "0:0": {
           "report_format": "israeli_periodic",
           "document_type": "ownership_snapshot",
           "as_of_date": "2026-09-30",
-          "subsidiaries": [
-            {
-              "name": "חברת אל על הנוסע המתמיד בע\"מ",
-              "ownership_pct": 19.9,
-              "parent": null,
-              "page_reference": 5,
-              "section_title": "1.2 החברה – תחומי הפעילות",
-              "table_title": null,
-              "note": "מוכרת גם בשם חברת מועדון הנוסע המתמיד"
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-09-30",
-          "subsidiaries": [
-            {
-              "name": "חברת מועדון הנוסע המתמיד",
-              "ownership_pct": 19.9,
-              "parent": null,
-              "page_reference": 19,
-              "section_title": "3. מצב כספי (באלפי ש\"ח)",
-              "table_title": "מצב כספי (באלפי ש\"ח)",
-              "note": null
-            }
-          ],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-09-30",
-          "subsidiaries": [
-            {
-              "name": "אל על הנוסע המתמיד בע\"מ",
-              "ownership_pct": 19.9,
-              "parent": null,
-              "page_reference": 46,
-              "section_title": "באור 1 - כללי",
-              "table_title": null,
-              "note": null
-            },
-            {
-              "name": "הפניקס גמא מימון אישי בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 52,
-              "section_title": "באור 4 - מגזרי פעילות",
-              "table_title": null,
-              "note": "חברה בת בבעלות מלאה"
-            },
-            {
-              "name": "הפניקס ליווי בניה וערבויות בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 53,
-              "section_title": "באור 4 - מגזרי פעילות",
-              "table_title": null,
-              "note": "חברה בת"
-            },
-            {
-              "name": "הפניקס אשראי צרכני בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 54,
-              "section_title": "באור 4 - מגזרי פעילות",
-              "table_title": null,
-              "note": "חברה בת"
-            }
-          ],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-09-30",
-          "subsidiaries": [
-            {
-              "name": "הפניקס גמא מימון אישי בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 52,
-              "section_title": "באור 4 - מגזרי פעילות",
-              "table_title": null,
-              "note": "חברה בת בבעלות מלאה"
-            },
-            {
-              "name": "חברת מועדון הנוסע המתמיד בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 52,
-              "section_title": "באור 4 - מגזרי פעילות",
-              "table_title": null,
-              "note": "חברה כלולה"
-            },
-            {
-              "name": "הפניקס ליווי בניה וערבויות בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 53,
-              "section_title": "באור 4 - מגזרי פעילות (המשך)",
-              "table_title": null,
-              "note": "חברה בת"
-            },
-            {
-              "name": "הפניקס אשראי צרכני בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 54,
-              "section_title": "באור 4 - מגזרי פעילות (המשך)",
-              "table_title": null,
-              "note": "חברה בת"
-            }
-          ],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-09-30",
-          "subsidiaries": [
-            {
-              "name": "חברת אל על הנוסע המתמיד בע\"מ",
-              "ownership_pct": 19.9,
-              "parent": null,
-              "page_reference": 78,
-              "section_title": "ביאור 6 – חברות מהותיות מוחזקות",
-              "table_title": "א. מידע פיננסי מתומצת על המצב הכספי",
-              "note": null
-            }
-          ],
+          "subsidiaries": [],
           "change_events": []
         }
       },
       "attempts": {}
     }
+  },
+  "1781635": {
+    "company_id": "2009",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-18T12:13:56.842909+00:00",
+    "model": "gemini-3.5-flash-lite"
   }
 }
