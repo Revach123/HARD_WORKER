@@ -24056,47 +24056,11 @@
   },
   "1781596": {
     "company_id": "445",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-11-18T11:16:08.813894+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-09-30",
-          "subsidiaries": [
-            {
-              "name": "מג'יק תעשיות תוכנה בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 5,
-              "section_title": "1. הסברי הדירקטוריון למצב עסקי התאגיד",
-              "table_title": null,
-              "note": "חברה בת בבעלות מלאה החל מפברואר 2026 בדרך של מיזוג משולש הופכי"
-            }
-          ],
-          "change_events": [
-            {
-              "company": "מג'יק תעשיות תוכנה בע\"מ",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 100,
-              "event_date": "2026-02-24",
-              "event_description": "השלמת עסקת המיזוג ורכישת מלוא הון המניות המונפק והנפרע בדרך של מיזוג משולש הופכי",
-              "page_reference": 9,
-              "section_title": "1.1.4 אירועים מהותיים"
-            }
-          ]
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-11-18T11:18:45.075264+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1781599": {
     "company_id": "445",
@@ -24104,6 +24068,731 @@
     "kind": "change",
     "attempts": 1,
     "at": "2026-11-18T11:17:36.888614+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1781665": {
+    "company_id": "475",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-18T11:22:26.702877+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1781682": {
+    "company_id": "475",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-18T11:19:06.238267+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1781722": {
+    "company_id": "475",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-18T11:19:29.251302+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1781608": {
+    "company_id": "604",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-18T11:31:21.820635+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1781611": {
+    "company_id": "604",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-18T11:31:32.864047+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1781614": {
+    "company_id": "604",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-18T11:32:07.344952+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1781617": {
+    "company_id": "604",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-18T11:32:27.288424+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1781603": {
+    "company_id": "613",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-18T11:34:21.394311+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1781770": {
+    "company_id": "612",
+    "status": "partial",
+    "kind": "change",
+    "attempts": 0,
+    "at": "2026-11-18T11:37:04.803717+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 7,
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-09-30",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "other",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-09-30",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "other",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-09-30",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": "2026-09-30",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "other",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-09-30",
+          "subsidiaries": [
+            {
+              "name": "MLP Pruszków I Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 84,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Pruszków II Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 84,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Pruszków III Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 84,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Pruszków IV Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 84,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Poznań Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 84,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Lublin Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 84,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Poznań II Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 84,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP spółka z ograniczoną odpowiedzialnością SKA",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 84,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "Feniks Obrót Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 84,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Property Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 84,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Bieruń Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 84,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Bieruń I Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 84,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 84,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Teresin Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 84,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Business Park Poznań Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 84,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP FIN Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 84,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "LOKAFOP 201 Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 84,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "LOKAFOP 201 spółka z ograniczoną odpowiedzialnością SKA",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 84,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Wrocław Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 84,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Gliwice Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 84,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Business Park Berlin I LP Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 84,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Czeladź Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 84,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Temp Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 84,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Dortmund LP Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 84,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Dortmund GP Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 84,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Unna Sp. z o.o. & Co. KG (formerly: MLP Logistic Park Germany I Sp. z o.o. & Co. KG)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 84,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Poznań West II Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 84,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Bucharest West Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 84,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Bucharest West SRL",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 84,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Teresin II Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 84,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Pruszków V Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 84,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Germany Management GmbH",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 84,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Wrocław West Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 84,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP GERMANY GP Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 85,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Łódź II Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 85,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Zgorzelec Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 85,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Schwalmtal LP Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 85,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Schwalmtal GP Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 85,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Pruszków VI Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 85,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Business Park Berlin I Sp. z o.o. & Co. KG",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 85,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Business Park Castrop-Rauxel Sp. z o.o. & Co. KG (formerly: MLP Schwalmtal Sp. z o.o. & Co. KG)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 85,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Business Park Wien GmbH",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 85,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Wrocław West I Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 85,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Gelsenkirchen GP Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 85,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Gelsenkirchen LP Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 85,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Gelsenkirchen Sp. z o.o. & Co. KG",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 85,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Gorzów Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 85,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Idstein LP Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 85,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Idstein GP Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 85,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Idstein Sp. z o.o. & Co. KG",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 85,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Business Park Trebur GP Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 85,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Business Park Trebur LP Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 85,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Berlin Spreenhagen Sp. z o.o. & Co. KG (formely MLP Business Park Trebur Sp. z o.o. & Co. KG)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 85,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Poznań West III Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 85,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Łódź III Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 85,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "Feniks PV Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 85,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Bieruń West Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 85,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Wrocław South Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 85,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Rzeszów Sp. z o.o. (formerly: MLP Bieruń II Sp. z o.o.)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 85,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP SPV I Sp. z o.o. & Co. KG",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 85,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP SPV II Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 85,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Hamburg East Sp. z o.o. & Co. KG",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 85,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP Business Park Gänsbachergasse GmbH",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 85,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": null
+            },
+            {
+              "name": "MLP SPV III Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 85,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": "Acquired during the period (0% as at 31 Dec 2025)"
+            },
+            {
+              "name": "MLP SPV IV Sp. z o.o.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 85,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": "Acquired during the period (0% as at 31 Dec 2025)"
+            },
+            {
+              "name": "MLP Dormagen Sp. z o.o. & Co. KG",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 85,
+              "section_title": "1. Long-term financial assets in related parties",
+              "table_title": "The Company holds shares in the following subsidiaries:",
+              "note": "Acquired during the period (0% as at 31 Dec 2025)"
+            }
+          ],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "other",
+          "document_type": "unknown",
+          "as_of_date": "2026-09-30",
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
+      "attempts": {}
+    }
+  },
+  "1781765": {
+    "company_id": "686",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-18T11:37:16.895848+00:00",
     "model": "gemini-3.5-flash-lite"
   }
 }
