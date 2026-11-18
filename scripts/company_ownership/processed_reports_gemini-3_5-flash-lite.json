@@ -23920,67 +23920,11 @@
   },
   "1781542": {
     "company_id": "2369",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-11-17T12:12:48.864401+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 3,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": "2026-09-30",
-          "subsidiaries": [],
-          "change_events": [
-            {
-              "company": "E.P.S (Israel) Tech 1992 Ltd",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 100,
-              "event_date": "2026-09-09",
-              "event_description": "Approval received from the Competition Authority for the transaction to acquire 100% of the shares of E.P.S (Israel) Tech 1992 Ltd.",
-              "page_reference": 3,
-              "section_title": "2. Events in the corporation's activity during the reported period and up to the date of its publication"
-            }
-          ]
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": null,
-          "subsidiaries": [],
-          "change_events": [
-            {
-              "company": "E.P.S. (Israel) Tech 1992 Ltd.",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 100,
-              "event_date": "2026-03-27",
-              "event_description": "Acquisition of 100% of the issued and paid-up share capital of E.P.S. (Israel) Tech 1992 Ltd.",
-              "page_reference": 41,
-              "section_title": "NOTE 5- BUSINESS COMBINATIONS"
-            },
-            {
-              "company": "Bressner Technology GmbH",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 99.6,
-              "event_date": "2025-12-30",
-              "event_description": "Acquisition of 99.6% of the issued share capital of Bressner Technology GmbH by subsidiary HIPER Euro GmbH",
-              "page_reference": 42,
-              "section_title": "NOTE 5- BUSINESS COMBINATIONS (Cont.)"
-            }
-          ]
-        }
-      },
-      "attempts": {
-        "0:1": 1
-      }
-    }
+    "attempts": 1,
+    "at": "2026-11-18T12:14:41.580421+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1781538": {
     "company_id": "2521",
@@ -24409,26 +24353,11 @@
   },
   "1781655": {
     "company_id": "1884",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-11-18T12:11:09.762364+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-09-30",
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-11-18T12:17:45.811774+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1781635": {
     "company_id": "2009",
@@ -24436,6 +24365,30 @@
     "kind": "change",
     "attempts": 1,
     "at": "2026-11-18T12:13:56.842909+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1781643": {
+    "company_id": "2413",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-18T12:16:56.851459+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1781884": {
+    "company_id": "2534",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-18T12:18:14.048356+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1781651": {
+    "company_id": "2413",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-18T12:22:08.148196+00:00",
     "model": "gemini-3.5-flash-lite"
   }
 }
