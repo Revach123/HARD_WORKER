@@ -1,0 +1,125 @@
+# Bond issue dates (Maya) - runs here (public repo = free Actions minutes)
+# against a checkout of the private Revach repo. The code stays in Revach;
+# only the run happens here. Result (data/securities/issue_dates.json) is pushed back to Revach.
+# Output is hidden (public repo): only counts are written, into the Revach commit message.
+#
+# Needs secrets in THIS repo (same as revach-securities-sweep):
+#   REVACH_TOKEN   - fine-grained PAT: repo Revach only, Contents: Read and write
+#   CF_D1_TOKEN, CF_ACCOUNT_ID - Cloudflare D1
+name: Revach - Issue dates (maya)
+
+on:
+  schedule:
+    - cron: "40 4 * * *"   # daily 04:40 UTC (moved from Revach)
+  workflow_dispatch:
+    inputs:
+      revach_ref:
+        description: "Revach branch to run from / push to"
+        default: "main"
+      priority_only:
+        description: "Only the bonds in data/securities/issue_dates_priority.json (1/0)"
+        default: "0"
+      force_retry:
+        description: "Re-check securities tried within the last week (1/0)"
+        default: "0"
+      cp_only:
+        description: "Only commercial paper (1/0)"
+        default: "0"
+
+concurrency:
+  group: revach-issue-dates
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  issue-dates:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash /tmp/q.sh {0}
+    timeout-minutes: 150
+    env:
+      PYTHONUNBUFFERED: "1"
+      REF: ${{ github.event.inputs.revach_ref || 'main' }}
+    steps:
+      - name: Quiet logs (public repo - full output stays hidden)
+        shell: bash
+        run: |
+          cat > /tmp/q.sh <<'Q'
+          #!/bin/bash
+          # runs the step and keeps its output in a file: on success only "ok"; on failure only the last 15 lines
+          log=$(mktemp)
+          bash --noprofile --norc -eo pipefail "$1" >"$log" 2>&1; c=$?
+          if [ $c -eq 0 ]; then echo "ok ($(wc -l <"$log") log lines hidden)"; else echo "failed (exit $c) - last lines:"; tail -n 15 "$log"; fi
+          exit $c
+          Q
+      - name: Check token
+        env:
+          T: ${{ secrets.REVACH_TOKEN }}
+        run: |
+          if [ -z "$T" ]; then echo "::error::REVACH_TOKEN secret is missing in HARD_WORKER"; exit 1; fi
+
+      - uses: actions/checkout@v5
+        with:
+          repository: Revach123/Revach
+          ref: ${{ github.event.inputs.revach_ref || 'main' }}
+          token: ${{ secrets.REVACH_TOKEN }}
+          sparse-checkout: |
+            scripts
+            data/securities
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: "20"
+
+      - name: Export bond securities from D1
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CF_D1_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+        run: |
+          if [ ! -f scripts/securities/build_issue_dates.py ]; then echo "build_issue_dates.py is not on ref $REF yet - nothing to do"; exit 0; fi
+          npm install -g wrangler
+          npx wrangler d1 execute securities_db --remote --json \
+            --command "SELECT security_id, company_id, security_type, symbol, security_name FROM securities WHERE company_id IS NOT NULL" \
+            > /tmp/d1_issue.json
+
+      - name: Build issue dates (Maya)
+        env:
+          PRIORITY_ONLY: ${{ github.event.inputs.priority_only == '1' && '1' || '0' }}
+          FORCE_RETRY: ${{ github.event.inputs.force_retry || '0' }}
+          CP_ONLY: ${{ github.event.inputs.cp_only || '0' }}
+        run: |
+          [ -f scripts/securities/build_issue_dates.py ] || exit 0
+          python -u scripts/securities/build_issue_dates.py /tmp/d1_issue.json data/securities/issue_dates.json
+
+      - name: Commit result to Revach
+        run: |
+          [ -f scripts/securities/build_issue_dates.py ] || exit 0
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add data/securities/issue_dates.json
+          if git diff --cached --quiet; then
+            echo "No change."
+          else
+            SUMMARY=$(python3 -c "import json; d=json.load(open('data/securities/issue_dates.json')); print('resolved', d['count'], 'missing', d['unresolved'])")
+            git commit -m "securities-issue-dates: $SUMMARY (via HARD_WORKER)"
+            for attempt in 1 2 3 4 5; do
+              if git pull --rebase origin "$REF" && git push origin HEAD:"$REF"; then
+                echo "Push succeeded on attempt $attempt."
+                break
+              fi
+              echo "Push rejected (attempt $attempt) - retrying after backoff..."
+              sleep $((attempt * 5))
+              if [ "$attempt" -eq 5 ]; then
+                echo "::error::Failed to push after 5 attempts."
+                exit 1
+              fi
+            done
+          fi
