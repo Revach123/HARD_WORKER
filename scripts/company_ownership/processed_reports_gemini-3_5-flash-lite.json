@@ -24160,124 +24160,11 @@
   },
   "1781604": {
     "company_id": "1110",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-11-18T12:05:46.765760+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-09-30",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": "2026-09-30",
-          "subsidiaries": [],
-          "change_events": [
-            {
-              "company": "סאמיט איקס בע\"מ",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": 0,
-              "ownership_pct_after": 55,
-              "event_date": "2026-02-26",
-              "event_description": "רכישת 55% מהון המניות המונפק והנפרע של סאמיט על ידי נס",
-              "page_reference": 27,
-              "section_title": "5.2. התקשרות נס בהסכם רכישה והשקעה בחברת סאמיט איקס בע\"מ"
-            },
-            {
-              "company": "לוג-און תוכנה בע\"מ",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": 0,
-              "ownership_pct_after": 100,
-              "event_date": "2026-07-01",
-              "event_description": "רכישת מלוא החזקותיה (100%) בחברת לוג-און תוכנה בע\"מ",
-              "page_reference": 27,
-              "section_title": "5.5. השלמת התקשרות בהסכם לרכישת לוג-און תוכנה בע\"מ"
-            },
-            {
-              "company": "בטר מולטי ארנק בע\"מ",
-              "event_type": "full_disposal",
-              "ownership_pct_before": 32,
-              "ownership_pct_after": 0,
-              "event_date": "2026-08-26",
-              "event_description": "מכירת מלוא החזקות החברה בבטר מולטי ארנק בע\"מ (כ-32%) לצד שלישי",
-              "page_reference": 28,
-              "section_title": "5.10. מכירת החזקות החברה בבטר מולטי ארנק בע\"מ (\"בטר\")"
-            },
-            {
-              "company": "סאמיט איקס בע\"מ",
-              "event_type": "increase",
-              "ownership_pct_before": 55,
-              "ownership_pct_after": 74,
-              "event_date": "2026-10-14",
-              "event_description": "הגדלת החזקות נס בסאמיט איקס בע\"מ מ-55% לכ-74% מהון המניות",
-              "page_reference": 29,
-              "section_title": "6.1. הגדלת החזקות נס בסאמיט איקס בע\"מ"
-            }
-          ]
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": "2026-09-30",
-          "subsidiaries": [],
-          "change_events": [
-            {
-              "company": "סאמיט איקס בע\"מ",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": 0,
-              "ownership_pct_after": 55,
-              "event_date": "2026-02-26",
-              "event_description": "השלמת עסקת רכישת 55% מהון המניות המונפק והנפרע של סאמיט",
-              "page_reference": 56,
-              "section_title": "ביאור 6 - אירועים מהותיים בתקופת הדיווח"
-            },
-            {
-              "company": "לוג-און תוכנה בע\"מ",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": 0,
-              "ownership_pct_after": 100,
-              "event_date": "2026-07-01",
-              "event_description": "השלמת רכישת מלוא אחזקותיה (100%) בחברת לוג-און תוכנה בע\"מ, לרבות חברות הבת והנכדה שלה",
-              "page_reference": 58,
-              "section_title": "ביאור 6 - אירועים מהותיים בתקופת הדיווח"
-            },
-            {
-              "company": "בטר מולטי ארנק בע\"מ",
-              "event_type": "full_disposal",
-              "ownership_pct_before": null,
-              "ownership_pct_after": 0,
-              "event_date": "2026-08-26",
-              "event_description": "מכירת מלוא החזקותיה של החברה בבטר מולטי ארנק בע\"מ לצד שלישי",
-              "page_reference": 58,
-              "section_title": "ביאור 6 - אירועים מהותיים בתקופת הדיווח"
-            },
-            {
-              "company": "סאמיט איקס בע\"מ",
-              "event_type": "increase",
-              "ownership_pct_before": 55,
-              "ownership_pct_after": 74,
-              "event_date": "2026-10-14",
-              "event_description": "התקשרות בתוספת להסכם לרכישת מניות נוספות בסאמיט כך שהחזקותיה יגדלו מ-55% לכ-74%",
-              "page_reference": 59,
-              "section_title": "ביאור 7 - אירועים מהותיים לאחר תאריך המאזן"
-            }
-          ]
-        }
-      },
-      "attempts": {
-        "0:2": 1
-      }
-    }
+    "attempts": 1,
+    "at": "2026-11-19T11:15:51.084963+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1781870": {
     "company_id": "1510",
@@ -24537,33 +24424,11 @@
   },
   "1781922": {
     "company_id": "691",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-11-19T11:11:52.838248+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 15,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-09-30",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": "2026-09-30",
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-11-19T11:14:36.459240+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1782015": {
     "company_id": "691",
@@ -24579,6 +24444,413 @@
     "kind": "change",
     "attempts": 1,
     "at": "2026-11-19T11:11:54.433051+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1781915": {
+    "company_id": "1041",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-19T11:12:05.190540+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1781923": {
+    "company_id": "1041",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-19T11:13:46.065201+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782006": {
+    "company_id": "1083",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-19T11:14:36.023247+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1781990": {
+    "company_id": "1095",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-19T11:14:40.526876+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1781986": {
+    "company_id": "1095",
+    "status": "partial",
+    "kind": "change",
+    "attempts": 0,
+    "at": "2026-11-19T11:16:33.603020+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 14,
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2026-09-30",
+          "subsidiaries": [
+            {
+              "name": "Ithaca Energy plc",
+              "ownership_pct": 50.47,
+              "parent": null,
+              "page_reference": 10,
+              "section_title": "ב. תחום האנרגיה בחו\"ל",
+              "table_title": null,
+              "note": "שיעור ההחזקה של החברה באיתקה"
+            }
+          ],
+          "change_events": [
+            {
+              "company": "הוט מובייל בע\"מ",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": 0,
+              "ownership_pct_after": 100,
+              "event_date": "2026-10-05",
+              "event_description": "השלמת עסקה לרכישת מלוא מניות הוט מובייל ע\"י דקל מובייל",
+              "page_reference": 18,
+              "section_title": "ד. פעילויות נוספות"
+            },
+            {
+              "company": "חברה נרכשת (מפיק נפט וגז פרטי)",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": 0,
+              "ownership_pct_after": 100,
+              "event_date": "2026-08-21",
+              "event_description": "השלמת עסקה לרכישת מלוא הון המניות של מפיק נפט וגז פרטי על ידי אינפליי",
+              "page_reference": 18,
+              "section_title": "ד. פעילויות נוספות"
+            }
+          ]
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-09-30",
+          "subsidiaries": [
+            {
+              "name": "פרימיום אקספרס בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 24,
+              "section_title": "1.1 תיאור תמציתי של הקבוצה ותחומי פעילות עיקריים",
+              "table_title": null,
+              "note": "חברה בת בבעלות מלאה"
+            },
+            {
+              "name": "חברת המועדון",
+              "ownership_pct": 18,
+              "parent": null,
+              "page_reference": 29,
+              "section_title": "1.6.2 ערוצי הנפקה והפצה",
+              "table_title": null,
+              "note": "מועדון רמי לוי"
+            },
+            {
+              "name": "אייפלנט טכנולוגיות בע\"מ",
+              "ownership_pct": 20,
+              "parent": null,
+              "page_reference": 35,
+              "section_title": "1.6.6 שיתופי פעולה נוספים",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-09-30",
+          "subsidiaries": [
+            {
+              "name": "פרימיום אקספרס",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 48,
+              "section_title": "חברה בת משמעותית – פרימיום אקספרס",
+              "table_title": null,
+              "note": "חברה בת משמעותית"
+            }
+          ],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-09-30",
+          "subsidiaries": [
+            {
+              "name": "פרימיום אקספרס",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 55,
+              "section_title": "2.5 פעילות חברות מוחזקות עיקריות",
+              "table_title": "טבלה 18 - פרטים אודות התרומה לרווח הנקי ויתרת ההשקעה ביחס לכל אחת מהחברות המוחזקות העיקריות של החברה",
+              "note": "בחודשים מרץ ויוני 2026 הזרימה החברה לפרימיום אקספרס הון בסך של 60 מיליון ש\"ח ו-90 מיליון ש\"ח, בהתאמה."
+            },
+            {
+              "name": "ישראכרט מימון",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 55,
+              "section_title": "2.5 פעילות חברות מוחזקות עיקריות",
+              "table_title": "טבלה 18 - פרטים אודות התרומה לרווח הנקי ויתרת ההשקעה ביחס לכל אחת מהחברות המוחזקות העיקריות של החברה",
+              "note": null
+            },
+            {
+              "name": "צמרת מימונים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 55,
+              "section_title": "2.5 פעילות חברות מוחזקות עיקריות",
+              "table_title": "טבלה 18 - פרטים אודות התרומה לרווח הנקי ויתרת ההשקעה ביחס לכל אחת מהחברות המוחזקות העיקריות של החברה",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-09-30",
+          "subsidiaries": [
+            {
+              "name": "ישראכרט בע\"מ",
+              "ownership_pct": 40.44,
+              "parent": null,
+              "page_reference": 79,
+              "section_title": "הפעילות הפיננסית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מהדרין בע\"מ",
+              "ownership_pct": 61,
+              "parent": null,
+              "page_reference": 76,
+              "section_title": "תאור החברה וסביבתה העסקית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Ithaca Energy PLC",
+              "ownership_pct": 50.47,
+              "parent": null,
+              "page_reference": 78,
+              "section_title": "תחום הנפט והגז באזור הים הצפוני",
+              "table_title": null,
+              "note": "בשרשור"
+            },
+            {
+              "name": "אינפליי",
+              "ownership_pct": 32.8,
+              "parent": null,
+              "page_reference": 80,
+              "section_title": "פעילויות נוספות",
+              "table_title": null,
+              "note": "חברה כלולה"
+            },
+            {
+              "name": "דלק ייזום נכסים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 81,
+              "section_title": "חלוקת מניות דלק ייזום נכסים בע\"מ כדיבידנד בעין",
+              "table_title": null,
+              "note": "חברה ריקה בבעלות מלאה שחולקה כדיבידנד בעין ביום 10 ביולי 2026"
+            },
+            {
+              "name": "דלק תמלוג על לוויתן",
+              "ownership_pct": 100,
+              "parent": "דלק ייזום נכסים בע\"מ",
+              "page_reference": 81,
+              "section_title": "חלוקת מניות דלק ייזום נכסים בע\"מ כדיבידנד בעין",
+              "table_title": null,
+              "note": "הוחזקה ב-100% והועברה לדלק ייזום"
+            },
+            {
+              "name": "ניו-מד אנרג'י - שותפות מוגבלת",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 77,
+              "section_title": "עיקרי הפעילות",
+              "table_title": null,
+              "note": "פועלת בתחום האנרגיה"
+            }
+          ],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-09-30",
+          "subsidiaries": [
+            {
+              "name": "ניו-מד אנרג'י",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 88,
+              "section_title": "4. המצב הכספי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "איתקה",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 94,
+              "section_title": "ב) פעילות חיפושי והפקת נפט וגז באזור הים הצפוני",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ישראכרט",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 98,
+              "section_title": "ג) פעילות פיננסית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מהדרין",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 99,
+              "section_title": "ד) תחומי פעילות אחרים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דלק ישראל",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 99,
+              "section_title": "ד) תחומי פעילות אחרים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דלק ישראל נכסים",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 99,
+              "section_title": "ד) תחומי פעילות אחרים",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אינפליי",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 99,
+              "section_title": "ד) תחומי פעילות אחרים",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-09-30",
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:7": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-09-30",
+          "subsidiaries": [
+            {
+              "name": "ניו-מד אנרג'י שותפות מוגבלת",
+              "ownership_pct": 54.57,
+              "parent": null,
+              "page_reference": 130,
+              "section_title": "באור :3 - השקעות בחברות ושותפויות מוחזקות",
+              "table_title": null,
+              "note": "לאחר מימוש אופציות באוקטובר 2026"
+            },
+            {
+              "name": "InPlay Oil Corp",
+              "ownership_pct": 32.8,
+              "parent": null,
+              "page_reference": 133,
+              "section_title": "באור :3 - השקעות בחברות ושותפויות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "תמלוג על לוויתן בע\"מ",
+              "ownership_pct": 100,
+              "parent": "דלק מערכות אנרגיה בע\"מ",
+              "page_reference": 132,
+              "section_title": "באור :3 - השקעות בחברות ושותפויות מוחזקות",
+              "table_title": null,
+              "note": "הועברה בהמשך כדיבידנד בעין לדלק ייזום נכסים בע\"מ"
+            },
+            {
+              "name": "ישראכרט בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 123,
+              "section_title": "באור :1 - כללי",
+              "table_title": null,
+              "note": "מוחזקת בגרעין שליטה"
+            },
+            {
+              "name": "Ithaca Energy Holdings Plc.",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 126,
+              "section_title": "באור :3 - השקעות בחברות ושותפויות מוחזקות",
+              "table_title": null,
+              "note": "מוצגת כחברה כלולה לפי שיטת השווי המאזני החל מיום 30 בספטמבר 2025"
+            }
+          ],
+          "change_events": []
+        }
+      },
+      "attempts": {}
+    }
+  },
+  "1782050": {
+    "company_id": "1095",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-19T11:14:53.094893+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1781928": {
+    "company_id": "1096",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-19T11:15:17.780443+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1781932": {
+    "company_id": "1096",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-19T11:15:36.613384+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782263": {
+    "company_id": "1300",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-19T11:16:34.005260+00:00",
     "model": "gemini-3.5-flash-lite"
   }
 }
