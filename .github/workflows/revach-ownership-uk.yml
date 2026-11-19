@@ -1,0 +1,69 @@
+# Runs here (public repo = free Actions minutes) against a checkout of the
+# private Revach repo; results are pushed back to Revach.
+# Secrets in THIS repo: REVACH_TOKEN, COMPANIES_HOUSE_API_KEY.
+name: "Revach - Ownership UK (Companies House PSC)"
+
+# בעלי שליטה משמעותית (PSC) לחברות הבריטיות ב-eu_page.json, כדי להשלים את מי שאין לו מחזיק גדול בדוח השנתי.
+# ר' scripts/ownership_uk/build_uk_psc.py ב-Revach. מגבלת Companies House: 600 בקשות / 5 דקות.
+# ההרצה הראשונה ארוכה (~שעה); אחריה נמשכות רק חברות שנבדקו לפני יותר מ-30 יום.
+
+on:
+  schedule:
+    - cron: "50 6 * * 6"   # weekly, Saturday 06:50 UTC
+  workflow_dispatch: {}
+
+concurrency:
+  group: revach-ownership-uk
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash /tmp/q.sh {0}
+    timeout-minutes: 180
+    steps:
+      - name: Quiet logs (public repo - full output stays hidden)
+        shell: bash
+        run: |
+          cat > /tmp/q.sh <<'Q'
+          #!/bin/bash
+          # מריץ את שלב ה-workflow ושומר את הפלט בקובץ: בהצלחה - רק "ok"; בכשל - 15 השורות האחרונות בלבד
+          log=$(mktemp)
+          bash --noprofile --norc -eo pipefail "$1" >"$log" 2>&1; c=$?
+          if [ $c -eq 0 ]; then echo "ok ($(wc -l <"$log") log lines hidden)"; else echo "failed (exit $c) - last lines:"; tail -n 15 "$log"; fi
+          exit $c
+          Q
+      - uses: actions/checkout@v5
+        with:
+          repository: Revach123/Revach
+          token: ${{ secrets.REVACH_TOKEN }}
+          fetch-depth: 1
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Fetch PSC
+        env:
+          COMPANIES_HOUSE_API_KEY: ${{ secrets.COMPANIES_HOUSE_API_KEY }}
+          PYTHONUNBUFFERED: "1"
+        run: python -u scripts/ownership_uk/build_uk_psc.py
+      - name: Rebuild combined table
+        run: python scripts/ownership_all/build_combined.py
+      - name: Commit data
+        if: always()   # גם אם המשיכה נקטעה - שומרים את המטמון החלקי (המשך מאותה נקודה בריצה הבאה)
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add data/ownership_uk/*.json data/ownership_all/companies.json
+          if git diff --cached --quiet; then echo "No change."; exit 0; fi
+          git commit -m "ownership-uk $(date -u +%Y-%m-%d) (via HARD_WORKER)"
+          for attempt in 1 2 3 4 5; do
+            if git pull --rebase --autostash -X theirs origin main && git push origin HEAD:main; then exit 0; fi
+            git rebase --abort 2>/dev/null || true
+            sleep $((attempt * 5))
+          done
+          echo "::error::push failed"; exit 1
