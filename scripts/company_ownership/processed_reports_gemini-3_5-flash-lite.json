@@ -24920,28 +24920,129 @@
   },
   "1782464": {
     "company_id": "1581",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-20T11:19:05.313865+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782466": {
+    "company_id": "1581",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-20T11:18:10.440822+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782629": {
+    "company_id": "1609",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-20T11:18:25.720959+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782321": {
+    "company_id": "1633",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-20T11:23:01.394543+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782290": {
+    "company_id": "1689",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-20T11:20:07.906390+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782566": {
+    "company_id": "1739",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-20T11:20:50.437038+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782345": {
+    "company_id": "1762",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-20T11:20:58.239585+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782348": {
+    "company_id": "1762",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-20T11:21:13.359267+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782313": {
+    "company_id": "1769",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-20T11:22:59.636705+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782301": {
+    "company_id": "1769",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-20T11:23:52.365068+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782644": {
+    "company_id": "1769",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-11-20T11:17:03.398675+00:00",
+    "at": "2026-11-20T11:23:18.958024+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
-      "total": 8,
+      "total": 2,
       "done": {
         "0:0": {
-          "report_format": "israeli_periodic",
+          "report_format": "other",
           "document_type": "ownership_snapshot",
           "as_of_date": "2026-09-30",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [],
+          "subsidiaries": [
+            {
+              "name": "מטרופולין",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 9,
+              "section_title": "מטרופולין – חתימה על ההסדרה הענפית",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "PowerGen",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 13,
+              "section_title": "גיבוש מקורות המימון לעסקת שו\"ב אנרגיה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "BlueGen Waste",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 16,
+              "section_title": "פסולת - התקדמות משמעותית בהקמות",
+              "table_title": null,
+              "note": null
+            }
+          ],
           "change_events": []
         }
       },
