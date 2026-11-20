@@ -140,8 +140,9 @@ jobs:
           fi
           if git diff --cached --quiet; then echo "No changes."; exit 0; fi
           git commit -m "holdings daily: ownership / heter / indices ($(date -u +%Y-%m-%d)) (via HARD_WORKER)"
+          # --autostash: steps also rewrite files outside data/ (e.g. scripts/company_ownership/private_holdings_proposal.json) - a dirty tree blocked the rebase since 17.11
           for i in 1 2 3 4 5; do
-            git fetch --depth=20 origin main && git rebase -X theirs origin/main && git push origin HEAD:main && exit 0
+            git fetch --depth=20 origin main && git rebase --autostash -X theirs origin/main && git push origin HEAD:main && exit 0
             git rebase --abort 2>/dev/null || true
             sleep $((i * 10))
           done
