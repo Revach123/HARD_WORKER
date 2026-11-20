@@ -118,7 +118,7 @@ jobs:
           CI: "true"
           CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
           CF_D1_TOKEN: ${{ secrets.CF_D1_TOKEN }}
-          CF_DATABASE_ID: ${{ vars.CF_DATABASE_ID }}
+          CF_DATABASE_ID: ${{ vars.CF_DATABASE_ID || secrets.CF_DATABASE_ID }}   # משתנה גלוי או סוד - מה שהוגדר
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           AI_MAX: "25"
         run: |
