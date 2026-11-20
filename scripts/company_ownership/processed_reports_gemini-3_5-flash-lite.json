@@ -24757,5 +24757,207 @@
     "attempts": 1,
     "at": "2026-11-19T11:26:22.547124+00:00",
     "model": "gemini-3.5-flash-lite"
+  },
+  "1782388": {
+    "company_id": "323",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-20T11:07:03.075517+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782289": {
+    "company_id": "323",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-20T11:07:54.197786+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782545": {
+    "company_id": "576",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-20T11:08:10.014710+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782572": {
+    "company_id": "829",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-20T11:09:09.059602+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782560": {
+    "company_id": "600",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-20T11:10:25.189393+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782311": {
+    "company_id": "1064",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-20T11:11:57.547452+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782299": {
+    "company_id": "1064",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-20T11:11:50.710690+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782303": {
+    "company_id": "1064",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-20T11:12:16.195912+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782307": {
+    "company_id": "1064",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-20T11:12:30.377170+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782438": {
+    "company_id": "1154",
+    "status": "partial",
+    "kind": "change",
+    "attempts": 0,
+    "at": "2026-11-20T11:12:35.092625+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 4,
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-09-30",
+          "subsidiaries": [
+            {
+              "name": "Kardan Land China Ltd.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 11,
+              "section_title": "נדל\"ן",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "GTC Real Estate Holding BV",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 18,
+              "section_title": null,
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "City Dream",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 12,
+              "section_title": "מיד ע נוסף",
+              "table_title": "מכירת דירות (יחידות שנמכרו בתקופה)",
+              "note": "פרויקט / חברה בשליטה משותפת"
+            },
+            {
+              "name": "Suzy",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 12,
+              "section_title": "מיד ע נוסף",
+              "table_title": "מכירת דירות (יחידות שנמכרו בתקופה)",
+              "note": "פרויקט / חברה בשליטה משותפת"
+            },
+            {
+              "name": "Palm Garden",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 12,
+              "section_title": "מיד ע נוסף",
+              "table_title": "מכירת דירות (יחידות שנמכרו בתקופה)",
+              "note": "פרויקט / חברה בשליטה משותפת"
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-09-30",
+          "subsidiaries": [
+            {
+              "name": "GTC RE",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 32,
+              "section_title": "שווי ההשקעות בספרי Kardan N.V.",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "TGI",
+              "ownership_pct": 98.43,
+              "parent": null,
+              "page_reference": 32,
+              "section_title": "שווי ההשקעות בספרי Kardan N.V.",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Kardan Land China",
+              "ownership_pct": 100,
+              "parent": "GTC RE",
+              "page_reference": 32,
+              "section_title": "שווי ההשקעות בספרי Kardan N.V.",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Tahal Group Assets B.V.",
+              "ownership_pct": 100,
+              "parent": "TGI",
+              "page_reference": 32,
+              "section_title": "שווי ההשקעות בספרי Kardan N.V.",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Tahal Group B.V.",
+              "ownership_pct": 100,
+              "parent": "TGI",
+              "page_reference": 32,
+              "section_title": "שווי ההשקעות בספרי Kardan N.V.",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        }
+      },
+      "attempts": {}
+    }
+  },
+  "1782325": {
+    "company_id": "1219",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-20T11:12:57.159013+00:00",
+    "model": "gemini-3.5-flash-lite"
   }
 }
