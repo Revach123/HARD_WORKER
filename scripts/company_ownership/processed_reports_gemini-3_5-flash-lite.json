@@ -25160,49 +25160,58 @@
   },
   "1782574": {
     "company_id": "2392",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-11-20T11:36:01.683794+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 4,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-09-30",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": "2026-09-30",
-          "subsidiaries": [
-            {
-              "name": "דיויד לנדמרק יזמות אס.פי.סי בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 29,
-              "section_title": "ניתוח המצב הכספי",
-              "table_title": null,
-              "note": "מוזכרת כחברה בת במסגרת הסברי הדירקטוריון לדוחות"
-            }
-          ],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "unknown",
-          "as_of_date": "2026-09-30",
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-11-20T11:36:17.996510+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782341": {
+    "company_id": "2397",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-20T11:37:56.960794+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782431": {
+    "company_id": "2474",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-20T11:37:36.687840+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782369": {
+    "company_id": "2538",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-20T11:38:10.918609+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782641": {
+    "company_id": "2503",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-20T11:43:15.929379+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782478": {
+    "company_id": "2538",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-20T11:39:44.683913+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782617": {
+    "company_id": "2589",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-20T11:40:43.679256+00:00",
+    "model": "gemini-3.5-flash-lite"
   }
 }
