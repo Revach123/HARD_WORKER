@@ -25000,49 +25000,163 @@
   },
   "1782644": {
     "company_id": "1769",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-20T11:23:57.286082+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782312": {
+    "company_id": "1797",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-20T11:25:12.192120+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782634": {
+    "company_id": "1772",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-20T11:28:48.977267+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782392": {
+    "company_id": "1797",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-20T11:26:08.327122+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782304": {
+    "company_id": "1822",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-20T11:27:05.910555+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782334": {
+    "company_id": "1822",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-20T11:27:38.986613+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782373": {
+    "company_id": "1840",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-20T11:30:03.796166+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782379": {
+    "company_id": "1840",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-20T11:29:01.021002+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782343": {
+    "company_id": "1871",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-20T11:30:58.661275+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782532": {
+    "company_id": "1891",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-20T11:30:09.070206+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782471": {
+    "company_id": "1896",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-11-20T11:23:18.958024+00:00",
+    "at": "2026-11-20T11:30:50.694333+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
-      "total": 2,
+      "total": 3,
       "done": {
         "0:0": {
-          "report_format": "other",
+          "report_format": "israeli_periodic",
           "document_type": "ownership_snapshot",
           "as_of_date": "2026-09-30",
           "subsidiaries": [
             {
-              "name": "מטרופולין",
+              "name": "אקרשטיין תעשיות בע\"מ",
               "ownership_pct": null,
               "parent": null,
-              "page_reference": 9,
-              "section_title": "מטרופולין – חתימה על ההסדרה הענפית",
+              "page_reference": 7,
+              "section_title": "א חלק - הסברי הדירקטוריון למצב התאגיד, תוצאות פעולותיו, הונו העצמי ותזרימי המזומנים שלו",
               "table_title": null,
-              "note": null
+              "note": "חברה בת בבעלות מלאה"
             },
             {
-              "name": "PowerGen",
+              "name": "קלרם בע\"מ",
               "ownership_pct": null,
-              "parent": null,
-              "page_reference": 13,
-              "section_title": "גיבוש מקורות המימון לעסקת שו\"ב אנרגיה",
+              "parent": "אקרשטיין תעשיות בע\"מ",
+              "page_reference": 7,
+              "section_title": "א חלק - הסברי הדירקטוריון למצב התאגיד, תוצאות פעולותיו, הונו העצמי ותזרימי המזומנים שלו",
               "table_title": null,
-              "note": null
+              "note": "חברה בבעלות מלאה של אקרשטיין תעשיות"
             },
             {
-              "name": "BlueGen Waste",
+              "name": "אב לב תעשיות מתכת בע\"מ",
               "ownership_pct": null,
-              "parent": null,
-              "page_reference": 16,
-              "section_title": "פסולת - התקדמות משמעותית בהקמות",
+              "parent": "אקרשטיין תעשיות בע\"מ",
+              "page_reference": 7,
+              "section_title": "א חלק - הסברי הדירקטוריון למצב התאגיד, תוצאות פעולותיו, הונו העצמי ותזרימי המזומנים שלו",
               "table_title": null,
-              "note": null
+              "note": "חברה בבעלות מלאה של אקרשטיין תעשיות"
+            },
+            {
+              "name": "אקרשטיין פרויקטים בע\"מ",
+              "ownership_pct": null,
+              "parent": "אקרשטיין תעשיות בע\"מ",
+              "page_reference": 7,
+              "section_title": "א חלק - הסברי הדירקטוריון למצב התאגיד, תוצאות פעולותיו, הונו העצמי ותזרימי המזומנים שלו",
+              "table_title": null,
+              "note": "חברה בבעלות מלאה של אקרשטיין תעשיות"
+            },
+            {
+              "name": "Acker Stone Industries, Inc",
+              "ownership_pct": null,
+              "parent": "אקרשטיין תעשיות בע\"מ",
+              "page_reference": 8,
+              "section_title": "א חלק - הסברי הדירקטוריון למצב התאגיד, תוצאות פעולותיו, הונו העצמי ותזרימי המזומנים שלו",
+              "table_title": null,
+              "note": "חברה בת של אקרשטיין תעשיות שהתאגדה בקליפורניה"
+            },
+            {
+              "name": "Acker Stone Arizona, Inc",
+              "ownership_pct": null,
+              "parent": "Acker Stone Industries, Inc",
+              "page_reference": 8,
+              "section_title": "א חלק - הסברי הדירקטוריון למצב התאגיד, תוצאות פעולותיו, הונו העצמי ותזרימי המזומנים שלו",
+              "table_title": null,
+              "note": "חברה שהתאגדה באריזונה ומוחזקת במלואה על ידי Acker Stone Industries, Inc"
             }
           ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-09-30",
+          "subsidiaries": [],
           "change_events": []
         }
       },
