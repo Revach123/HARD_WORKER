@@ -21,14 +21,16 @@ name: Revach - Corp events (mergers, exits, names, offerings, capital)
 
 on:
   schedule:
-    - cron: "20 5 * * *"   # daily 05:20 UTC (after holdings-daily)
+    # 08:15 UTC: מכסת Gemini היומית מתאפסת בחצות שעון פסיפיק (08:00 UTC), וחילוץ חברות הבת (אותו מפתח)
+    # מתחיל ב-09:05 - שלב הפרשנות רץ ראשון בריצה, לפני שהמכסה מנוצלת
+    - cron: "15 8 * * *"
   workflow_dispatch:
     inputs:
       mode:
         description: "all = daily | offerings-monthly / capital = backfills | *-rebuild = no download | probe-* / sample-days = checks"
         type: choice
         default: all
-        options: [all, capital, capital-rebuild, offerings, offerings-monthly, offerings-rebuild,
+        options: [all, capital, capital-ai, capital-rebuild, offerings, offerings-monthly, offerings-rebuild,
                   exits, exits-rebuild, names, names-rebuild, names-context,
                   probe-feed, probe-reports, sample-days]
       args:
@@ -122,9 +124,11 @@ jobs:
         run: |
           case "$MODE" in
             all)
+              if [ -f ../../data/corp_events/t087-index.json ]; then python capital_events.py ai; fi
               python corp_events.py all
               if [ -f ../../data/corp_events/t087-index.json ]; then MAX_MINUTES=30 python capital_events.py forward; fi ;;
             capital)         python capital_events.py all ;;
+            capital-ai)      python capital_events.py ai ;;
             capital-rebuild) python capital_events.py rebuild ;;
             *)               python corp_events.py "$MODE" ;;
           esac
