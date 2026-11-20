@@ -25080,81 +25080,123 @@
   },
   "1782471": {
     "company_id": "1896",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-20T11:31:03.124200+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782547": {
+    "company_id": "1907",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-20T11:31:28.794510+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782556": {
+    "company_id": "1907",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-20T11:32:42.181749+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782308": {
+    "company_id": "1948",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-20T11:32:40.542021+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782319": {
+    "company_id": "1948",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-20T11:32:56.368825+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782378": {
+    "company_id": "1974",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-20T11:36:13.318433+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782489": {
+    "company_id": "1975",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-20T11:33:05.872973+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782335": {
+    "company_id": "2170",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-20T11:33:42.464928+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782647": {
+    "company_id": "2359",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-20T11:33:51.365595+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782350": {
+    "company_id": "2367",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-20T11:35:06.871629+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782574": {
+    "company_id": "2392",
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-11-20T11:30:50.694333+00:00",
+    "at": "2026-11-20T11:36:01.683794+00:00",
     "model": "gemini-3.5-flash-lite",
     "chunks": {
       "size": 20,
       "overlap": 3,
-      "total": 3,
+      "total": 4,
       "done": {
         "0:0": {
           "report_format": "israeli_periodic",
           "document_type": "ownership_snapshot",
           "as_of_date": "2026-09-30",
-          "subsidiaries": [
-            {
-              "name": "אקרשטיין תעשיות בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 7,
-              "section_title": "א חלק - הסברי הדירקטוריון למצב התאגיד, תוצאות פעולותיו, הונו העצמי ותזרימי המזומנים שלו",
-              "table_title": null,
-              "note": "חברה בת בבעלות מלאה"
-            },
-            {
-              "name": "קלרם בע\"מ",
-              "ownership_pct": null,
-              "parent": "אקרשטיין תעשיות בע\"מ",
-              "page_reference": 7,
-              "section_title": "א חלק - הסברי הדירקטוריון למצב התאגיד, תוצאות פעולותיו, הונו העצמי ותזרימי המזומנים שלו",
-              "table_title": null,
-              "note": "חברה בבעלות מלאה של אקרשטיין תעשיות"
-            },
-            {
-              "name": "אב לב תעשיות מתכת בע\"מ",
-              "ownership_pct": null,
-              "parent": "אקרשטיין תעשיות בע\"מ",
-              "page_reference": 7,
-              "section_title": "א חלק - הסברי הדירקטוריון למצב התאגיד, תוצאות פעולותיו, הונו העצמי ותזרימי המזומנים שלו",
-              "table_title": null,
-              "note": "חברה בבעלות מלאה של אקרשטיין תעשיות"
-            },
-            {
-              "name": "אקרשטיין פרויקטים בע\"מ",
-              "ownership_pct": null,
-              "parent": "אקרשטיין תעשיות בע\"מ",
-              "page_reference": 7,
-              "section_title": "א חלק - הסברי הדירקטוריון למצב התאגיד, תוצאות פעולותיו, הונו העצמי ותזרימי המזומנים שלו",
-              "table_title": null,
-              "note": "חברה בבעלות מלאה של אקרשטיין תעשיות"
-            },
-            {
-              "name": "Acker Stone Industries, Inc",
-              "ownership_pct": null,
-              "parent": "אקרשטיין תעשיות בע\"מ",
-              "page_reference": 8,
-              "section_title": "א חלק - הסברי הדירקטוריון למצב התאגיד, תוצאות פעולותיו, הונו העצמי ותזרימי המזומנים שלו",
-              "table_title": null,
-              "note": "חברה בת של אקרשטיין תעשיות שהתאגדה בקליפורניה"
-            },
-            {
-              "name": "Acker Stone Arizona, Inc",
-              "ownership_pct": null,
-              "parent": "Acker Stone Industries, Inc",
-              "page_reference": 8,
-              "section_title": "א חלק - הסברי הדירקטוריון למצב התאגיד, תוצאות פעולותיו, הונו העצמי ותזרימי המזומנים שלו",
-              "table_title": null,
-              "note": "חברה שהתאגדה באריזונה ומוחזקת במלואה על ידי Acker Stone Industries, Inc"
-            }
-          ],
+          "subsidiaries": [],
           "change_events": []
         },
         "0:1": {
           "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
+          "document_type": "unknown",
+          "as_of_date": "2026-09-30",
+          "subsidiaries": [
+            {
+              "name": "דיויד לנדמרק יזמות אס.פי.סי בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 29,
+              "section_title": "ניתוח המצב הכספי",
+              "table_title": null,
+              "note": "מוזכרת כחברה בת במסגרת הסברי הדירקטוריון לדוחות"
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
           "as_of_date": "2026-09-30",
           "subsidiaries": [],
           "change_events": []
