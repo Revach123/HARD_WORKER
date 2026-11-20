@@ -1,4 +1,5 @@
-# Bond issue dates (Maya) - runs here (public repo = free Actions minutes)
+# Bond issue dates (Maya) - MANUAL RUN ONLY (no schedule: an issue date never changes once found;
+# new bonds get first_seen_at from the daily sweep). Runs here (public repo = free Actions minutes)
 # against a checkout of the private Revach repo. The code stays in Revach;
 # only the run happens here. Result (data/securities/issue_dates.json) is pushed back to Revach.
 # Output is hidden (public repo): only counts are written, into the Revach commit message.
@@ -9,8 +10,6 @@
 name: Revach - Issue dates (maya)
 
 on:
-  schedule:
-    - cron: "40 4 * * *"   # daily 04:40 UTC (moved from Revach)
   workflow_dispatch:
     inputs:
       revach_ref:
