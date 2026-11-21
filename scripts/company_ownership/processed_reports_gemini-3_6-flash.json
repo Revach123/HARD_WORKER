@@ -3391,5 +3391,35 @@
     "attempts": 1,
     "at": "2026-11-19T09:15:05.971829+00:00",
     "model": "gemini-3.6-flash"
+  },
+  "1744743": {
+    "company_id": "2575",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-11-21T09:07:30.280497+00:00",
+    "model": "gemini-3.6-flash"
+  },
+  "1724988": {
+    "company_id": "2540",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-11-21T09:08:40.822629+00:00",
+    "model": "gemini-3.6-flash"
+  },
+  "1745117": {
+    "company_id": "2557",
+    "status": "failed",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-11-21T09:16:03.059000+00:00"
+  },
+  "1753733": {
+    "company_id": "2556",
+    "status": "failed",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-11-21T09:18:05.510214+00:00"
   }
 }
