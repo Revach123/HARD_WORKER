@@ -37,7 +37,12 @@ jobs:
           # מריץ את שלב ה-workflow ושומר את הפלט בקובץ: בהצלחה - רק "ok"; בכשל - 15 השורות האחרונות בלבד
           log=$(mktemp)
           bash --noprofile --norc -eo pipefail "$1" >"$log" 2>&1; c=$?
-          if [ $c -eq 0 ]; then echo "ok ($(wc -l <"$log") log lines hidden)"; else echo "failed (exit $c) - last lines:"; tail -n 15 "$log"; fi
+          if [ $c -eq 0 ]; then echo "ok ($(wc -l <"$log") log lines hidden)"; else
+            echo "failed (exit $c)"
+            # which batch / which error (first lines only, trimmed) - so a failure can be diagnosed without the full log
+            echo "-- error lines:"; grep -nE "Executing|Batch failed|\[ERROR\]|ERROR|Error:|constraint|D1_ERROR|SQLITE|timed? ?out|exceeded|rate" "$log" | grep -vE "^[0-9]+:Executing .*\.sql$" | head -n 25 | cut -c1-220
+            echo "-- last lines:"; tail -n 15 "$log"
+          fi
           exit $c
           Q
       - name: Check token
