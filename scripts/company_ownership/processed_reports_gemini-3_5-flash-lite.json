@@ -25280,163 +25280,19 @@
   },
   "1782670": {
     "company_id": "1688",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-11-21T11:18:07.906224+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-09-30",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-09-30",
-          "subsidiaries": [
-            {
-              "name": "Navitas Petroleum Holdings LLC",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 52,
-              "section_title": "באור :5 - הלוואות מתאגידים בנקאיים ומוסדות פיננסיים",
-              "table_title": null,
-              "note": "חברת בת בבעלות מלאה"
-            },
-            {
-              "name": "Navitas Petroleum Africa Limited",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 50,
-              "section_title": "באור :3 - השקעות בנכסי נפט וגז, נטו (המשך)",
-              "table_title": null,
-              "note": "חברה פרטית בבעלות מלאה של השותפות"
-            },
-            {
-              "name": "Navitas Petroleum US, LLC",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 50,
-              "section_title": "באור :3 - השקעות בנכסי נפט וגז, נטו (המשך)",
-              "table_title": null,
-              "note": "חברת בת בשרשור"
-            }
-          ],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-09-30",
-          "subsidiaries": [
-            {
-              "name": "Navitas Petroleum Holdings, LLC",
-              "ownership_pct": 100,
-              "parent": "Navitas Petroleum Lux SARL",
-              "page_reference": 55,
-              "section_title": "התקשרות בהסכם מימון מגוף מוסדי",
-              "table_title": null,
-              "note": "החזקות השותפות בארה\"ב הועברו בחודש יולי 2026 לחברת בת חדשה בלוקסמבורג"
-            },
-            {
-              "name": "Navitas Petroleum Lux SARL",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 55,
-              "section_title": "התקשרות בהסכם מימון מגוף מוסדי",
-              "table_title": null,
-              "note": null
-            }
-          ],
-          "change_events": [
-            {
-              "company": "Navitas Petroleum Holdings, LLC",
-              "event_type": "other",
-              "ownership_pct_before": 100,
-              "ownership_pct_after": 100,
-              "event_date": "2026-07-30",
-              "event_description": "העברת מלוא החזקות השותפות בארה\"ב לחברת בת חדשה בלוקסמבורג (Navitas Petroleum Lux SARL) בפטור ממס",
-              "page_reference": 55,
-              "section_title": "התקשרות בהסכם מימון מגוף מוסדי"
-            }
-          ]
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "change_events",
-          "as_of_date": "2026-09-30",
-          "subsidiaries": [],
-          "change_events": [
-            {
-              "company": "Navitas Petroleum Lux SARL",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": 0,
-              "ownership_pct_after": 100,
-              "event_date": null,
-              "event_description": "התאגדות חברה בת חדשה בלוקסמבורג בבעלות מלאה של השותפות",
-              "page_reference": 70,
-              "section_title": "באור 6 - הלוואות בינחברתיות"
-            },
-            {
-              "company": "Navitas Petroleum Holdings, LLC",
-              "event_type": "other",
-              "ownership_pct_before": 100,
-              "ownership_pct_after": 100,
-              "event_date": "2026-07-01",
-              "event_description": "העברת מלוא החזקות השותפות ב-Navitas Petroleum Holdings, LLC לנאוויטס לוקסמבורג במסגרת שינוי מבני בפטור ממס",
-              "page_reference": 71,
-              "section_title": "באור 9 - שינוי מבני"
-            },
-            {
-              "company": "Navitas Petroleum Africa Ltd",
-              "event_type": "new_acquisition",
-              "ownership_pct_before": 0,
-              "ownership_pct_after": 100,
-              "event_date": "2026-09-21",
-              "event_description": "השלמת רכישת זכויות ברישיון אקספלורציה CBK 1 Block בדרום אפריקה באמצעות חברה בת בבעלות מלאה",
-              "page_reference": 73,
-              "section_title": "סעיף 7 לדוח התקופתי - נכסי הנפט של השותפות"
-            }
-          ]
-        }
-      },
-      "attempts": {
-        "0:0": 1
-      }
-    }
+    "attempts": 1,
+    "at": "2026-11-22T11:06:08.660270+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1782652": {
     "company_id": "2507",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-11-21T11:23:01.508233+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 2,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-09-30",
-          "subsidiaries": [],
-          "change_events": []
-        }
-      },
-      "attempts": {
-        "0:1": 1
-      }
-    }
+    "attempts": 1,
+    "at": "2026-11-22T11:06:08.244987+00:00",
+    "model": "gemini-3.5-flash-lite"
   },
   "1782677": {
     "company_id": "2556",
