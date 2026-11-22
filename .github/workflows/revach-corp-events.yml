@@ -3,7 +3,7 @@
 # (scripts/company_ownership/corp_events.py, capital_events.py); only the run
 # happens here. Results are pushed back to Revach main.
 #
-#   daily (schedule) : mergers ת062, exits ת103, name changes ת101, offerings ת020
+#   daily (cron-job.org, 08:15 UTC): mergers ת062, exits ת103, name changes ת101, offerings ת020
 #                      (incremental) + material capital events ת087 (forward only)
 #   manual (dispatch): any mode - long backfills, rebuilds
 #
@@ -19,11 +19,10 @@
 #                                  without it the registry name match is skipped.
 name: Revach - Corp events (mergers, exits, names, offerings, capital)
 
+# הפעלה יומית: cron-job.org (משימה "Revach corp events") שולח workflow_dispatch עם mode=all ב-08:15 UTC -
+# מיד אחרי איפוס מכסת Gemini (חצות שעון פסיפיק, 08:00 UTC) ולפני חילוץ חברות הבת (09:05, אותו מפתח).
+# בלי schedule של GitHub: כאן הוא מתעכב בכ-9 שעות (ריצה מאוחרת, אחרי שהמכסה נוצלה).
 on:
-  schedule:
-    # 08:15 UTC: מכסת Gemini היומית מתאפסת בחצות שעון פסיפיק (08:00 UTC), וחילוץ חברות הבת (אותו מפתח)
-    # מתחיל ב-09:05 - שלב הפרשנות רץ ראשון בריצה, לפני שהמכסה מנוצלת
-    - cron: "15 8 * * *"
   workflow_dispatch:
     inputs:
       mode:
