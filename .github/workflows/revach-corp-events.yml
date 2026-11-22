@@ -5,7 +5,7 @@
 #
 #   daily (schedule) : mergers ת062, exits ת103, name changes ת101, offerings ת020
 #                      (incremental) + material capital events ת087 (forward only)
-#   manual (dispatch): any mode - long backfills, rebuilds, probes
+#   manual (dispatch): any mode - long backfills, rebuilds
 #
 # Gemini: only capital_events.py, only for candidates found by the structured-field
 # filter, ONE key (GEMINI_API_KEY - no key rotation), at most AI_MAX requests per run,
@@ -27,32 +27,14 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "all = daily | offerings-monthly / capital = backfills | build = rebuild outputs, no download | probe-* / sample-days = checks"
+        description: "all = daily | offerings-monthly / capital = backfills | build = rebuild outputs from the indexes, no download"
         type: choice
         default: all
         options: [all, build, capital, capital-ai, offerings, offerings-monthly,
-                  exits, names, names-rebuild, names-context,
-                  probe-feed, probe-reports, sample-days]
-      args:
-        description: "probe-feed: 'companyId,from,to' | probe-reports: report ids | sample-days: (FORMS/MONTHS/PER_FORM below)"
-        type: string
-        default: ""
-      forms:
-        description: "sample-days: form (e.g. ת087)"
-        type: string
-        default: ""
-      months:
-        description: "sample-days: number of days"
-        type: string
-        default: ""
-      per_form:
-        description: "sample-days: reports per day"
-        type: string
-        default: ""
+                  exits, names, names-rebuild, names-context]
 
-# probes don't touch the indexes - separate group so they neither wait for nor cancel the long runs
 concurrency:
-  group: revach-corp-events-${{ (startsWith(inputs.mode, 'probe') || startsWith(inputs.mode, 'sample')) && 'probe' || 'data' }}
+  group: revach-corp-events
   cancel-in-progress: false
 
 permissions:
@@ -110,10 +92,6 @@ jobs:
         working-directory: scripts/company_ownership
         env:
           MODE: ${{ inputs.mode || 'all' }}
-          PROBE_ARGS: ${{ inputs.args }}
-          FORMS: ${{ inputs.forms }}
-          MONTHS: ${{ inputs.months }}
-          PER_FORM: ${{ inputs.per_form }}
           SINCE_YEAR: "2000"
           CI: "true"
           CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
@@ -134,7 +112,7 @@ jobs:
             build)      ;;
             *)          python corp_events.py "$MODE" ;;
           esac
-          case "$MODE" in probe-*|sample-days) ;; *) SKIP_BUILD=0 python corp_events.py build ;; esac
+          SKIP_BUILD=0 python corp_events.py build
 
       - name: Commit to Revach
         if: ${{ !cancelled() }}
