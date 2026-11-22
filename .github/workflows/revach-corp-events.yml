@@ -29,7 +29,7 @@ on:
         description: "all = daily | offerings-monthly / capital = backfills | build = rebuild outputs from the indexes, no download"
         type: choice
         default: all
-        options: [all, build, capital, capital-ai, offerings, offerings-monthly,
+        options: [all, build, capital, capital-ai, offerings, offerings-monthly, offerings-pdf-scan, offerings-pdf-ai,
                   exits, names, names-rebuild, names-context]
 
 concurrency:
@@ -98,16 +98,21 @@ jobs:
           CF_DATABASE_ID: ${{ vars.CF_DATABASE_ID || secrets.CF_DATABASE_ID }}   # משתנה גלוי או סוד - מה שהוגדר
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           AI_MAX: "25"
+          OFFER_AI_MAX: "20"
         run: |
           # שלבי האיסוף רק מוסיפים דוחות לאינדקסים (SKIP_BUILD=1); כל קובצי התוצר נבנים פעם אחת בסוף (corp_events build)
           export SKIP_BUILD=1
           case "$MODE" in
             all)
               if [ -f ../../data/corp_events/t087-index.json ]; then python capital_events.py ai; fi
+              python offerings_ai.py ai                       # הנפקות לפני 2024 מ-PDF - עד OFFER_AI_MAX ביום
               python corp_events.py all
+              MAX_MINUTES=20 python offerings_ai.py scan      # רשימת דוחות ה-PDF - מתקדמת מעט כל יום עד שמסתיימת
               if [ -f ../../data/corp_events/t087-index.json ]; then MAX_MINUTES=30 python capital_events.py forward; fi ;;
             capital)    python capital_events.py all ;;
             capital-ai) python capital_events.py ai ;;
+            offerings-pdf-scan) MAX_MINUTES=60 python offerings_ai.py scan ;;
+            offerings-pdf-ai)   python offerings_ai.py ai ;;
             build)      ;;
             *)          python corp_events.py "$MODE" ;;
           esac
