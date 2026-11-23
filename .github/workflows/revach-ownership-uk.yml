@@ -58,7 +58,7 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add data/ownership_uk/*.json data/ownership_all/companies.json
+          git add data/ownership_uk/*.json data/ownership_all/*.json
           if git diff --cached --quiet; then echo "No change."; exit 0; fi
           git commit -m "ownership-uk $(date -u +%Y-%m-%d) (via HARD_WORKER)"
           for attempt in 1 2 3 4 5; do
