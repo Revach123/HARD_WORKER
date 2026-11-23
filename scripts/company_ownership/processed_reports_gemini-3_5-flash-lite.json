@@ -25384,92 +25384,58 @@
   },
   "1782850": {
     "company_id": "1969",
-    "status": "partial",
+    "status": "success",
     "kind": "change",
-    "attempts": 0,
-    "at": "2026-11-23T11:11:42.268311+00:00",
-    "model": "gemini-3.5-flash-lite",
-    "chunks": {
-      "size": 20,
-      "overlap": 3,
-      "total": 5,
-      "done": {
-        "0:0": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-09-30",
-          "subsidiaries": [
-            {
-              "name": "רוטשילד 22 מבנים בע\"מ",
-              "ownership_pct": 42.5,
-              "parent": null,
-              "page_reference": 14,
-              "section_title": "תוצאות הפעילות",
-              "table_title": null,
-              "note": "חברה כלולה מהותית המטופלת לפי שיטת השווי המאזני"
-            }
-          ],
-          "change_events": []
-        },
-        "0:1": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-09-30",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:2": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-09-30",
-          "subsidiaries": [
-            {
-              "name": "רוטשילד 22 מבנים בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 48,
-              "section_title": "ביאור 6 - השקעות המטופלות לפי שיטת השווי המאזני",
-              "table_title": null,
-              "note": "חברה כלולה המטופלת לפי שיטת השווי המאזני"
-            },
-            {
-              "name": "גבסי נופי ים בע\"מ",
-              "ownership_pct": null,
-              "parent": null,
-              "page_reference": 52,
-              "section_title": "ביאור 7 - אירועים מהותיים במהלך תקופת הדיווח ולאחריה",
-              "table_title": null,
-              "note": "שותפה לפרויקט"
-            }
-          ],
-          "change_events": []
-        },
-        "0:3": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": "2026-09-30",
-          "subsidiaries": [],
-          "change_events": []
-        },
-        "0:4": {
-          "report_format": "israeli_periodic",
-          "document_type": "ownership_snapshot",
-          "as_of_date": null,
-          "subsidiaries": [
-            {
-              "name": "רוטשילד 22 ניהול בע\"מ",
-              "ownership_pct": 100,
-              "parent": null,
-              "page_reference": 72,
-              "section_title": "ביאור 1 - כללי",
-              "table_title": null,
-              "note": "מוחזקת בשליטה מלאה על ידי החברה"
-            }
-          ],
-          "change_events": []
-        }
-      },
-      "attempts": {}
-    }
+    "attempts": 1,
+    "at": "2026-11-23T11:11:46.130954+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782871": {
+    "company_id": "1969",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-23T11:12:33.680427+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782888": {
+    "company_id": "1979",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-23T11:12:53.879115+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782866": {
+    "company_id": "2449",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-23T11:13:54.880212+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782868": {
+    "company_id": "2449",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-23T11:14:14.626826+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782784": {
+    "company_id": "2484",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-23T11:14:44.492021+00:00",
+    "model": "gemini-3.5-flash-lite"
+  },
+  "1782770": {
+    "company_id": "2429",
+    "status": "success",
+    "kind": "change",
+    "attempts": 1,
+    "at": "2026-11-23T11:16:37.306826+00:00",
+    "model": "gemini-3.5-flash-lite"
   }
 }
