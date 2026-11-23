@@ -1,0 +1,80 @@
+name: Subsidiary countries (focused Gemini extraction)
+
+# מדינת ההתאגדות של חברות בת שלא נמצאו ברשם הישראלי - רק חברות אם עם ח.פ (country_targets.json).
+# חילוץ ממוקד: רק העמודים הרלוונטיים בכל דוח; הפלט בקובץ נפרד (subsidiary_countries.jsonl) -
+# private_subsidiaries.jsonl לא משתנה. ר' scripts/company_ownership/extract_countries.py.
+# הפעלה: workflow_dispatch בלבד (schedule של GitHub מתעכב כאן שעות), מוקדם אחרי איפוס המכסה (08:00 UTC),
+# לפני שאר ריצות Gemini. נעצר כשהמכסה נגמרת; הפעלה נוספת ממשיכה מהחברות שלא טופלו.
+
+permissions:
+  contents: write
+
+concurrency:
+  group: subsidiary-countries
+  cancel-in-progress: false
+
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "הגבלת מספר חברות אם (ריק = הכל, עד המכסה)"
+        required: false
+        default: ""
+      model:
+        description: "מודל Gemini"
+        required: false
+        type: choice
+        options:
+          - gemini-3.6-flash
+          - gemini-3.5-flash-lite
+        default: gemini-3.6-flash
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          token: ${{ secrets.PUSH_TOKEN }}
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests pypdf --break-system-packages
+
+      - name: Extract subsidiary countries (stops gracefully at quota)
+        timeout-minutes: 170
+        working-directory: scripts/company_ownership
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
+          GEMINI_API_KEY_3: ${{ secrets.GEMINI_API_KEY_3 }}
+          GEMINI_API_KEY_4: ${{ secrets.GEMINI_API_KEY_4 }}
+          GEMINI_MODEL_OVERRIDE: ${{ github.event.inputs.model || 'gemini-3.6-flash' }}
+          PYTHONUNBUFFERED: "1"
+        run: |
+          LIMIT_ARG=""
+          if [ -n "${{ github.event.inputs.limit }}" ]; then LIMIT_ARG="--limit ${{ github.event.inputs.limit }}"; fi
+          python extract_countries.py $LIMIT_ARG
+
+      - name: Commit results
+        if: always()
+        working-directory: scripts/company_ownership
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          [ -f subsidiary_countries.jsonl ] || { echo "אין תוצאות."; exit 0; }
+          git add subsidiary_countries.jsonl
+          if git diff --staged --quiet; then echo "אין שינויים."; exit 0; fi
+          git commit -m "Update subsidiary countries [skip ci]"
+          for i in 1 2 3 4 5; do
+            if git push; then exit 0; fi
+            git rebase --abort 2>/dev/null || true
+            git fetch origin main
+            git rebase origin/main || git rebase --abort 2>/dev/null || true
+            sleep $((i * 3))
+          done
+          echo "::error::push failed"; exit 1
