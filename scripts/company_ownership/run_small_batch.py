@@ -309,10 +309,11 @@ def _iter_page_windows(n_pages: int) -> list[tuple[int, int]]:
 
 
 # ---- סינון עמודים (GEMINI_PAGE_FILTER=1, ניסוי): רק עמודים שכנראה מופיעות בהם חברות בת נשלחים ל-Gemini ----
+# כותרות חזקות - עמוד עם טבלה / תרשים של חברות הבת (לא כל אזכור של "חברות בנות" בבאורים)
 PAGE_KEYS = re.compile(
-    r"חברות\s+מוחזקות|חברות\s+בנות|תאגידים\s+מוחזקים|חברות\s+כלולות|תקנה\s*11|מבנה\s+ה?[אה]חזקות|תרשים|"
-    r"השקעות\s+בחברות|הסדרים\s+משותפים|List\s+of\s+Subsidiaries|Subsidiaries|Organizational\s+Structure|"
-    r"Investees|Holding\s+structure|Group\s+structure", re.I)
+    r"תקנה\s*11|חברות\s+(?:בנות\s+ו)?(?:מוחזקות|כלולות)\s+(?:עיקריות|מהותיות)|רשימת\s+(?:ה)?חברות|"
+    r"(?:תרשים|מבנה)\s+(?:ה)?(?:[אה]חזקות|החזקות|אחזקות|הקבוצה|התאגיד)|תרשים\s+מבנה|"
+    r"List\s+of\s+(?:Significant\s+)?Subsidiaries|Organizational\s+Structure|Holding\s+structure|Group\s+structure", re.I)
 ENTITY = re.compile(r'בע"?מ|בע״מ|שותפות|\bLtd\b|\bLimited\b|\bLLC\b|\bInc\b|\bB\.?V\b|\bGmbH\b|\bS\.?A\b|\bL\.?P\b|'
                     r'\bS\.?R\.?L\b|\bsp\.? z|\bPLC\b|\bCorp', re.I)
 PAGE_PAD = 1
@@ -344,7 +345,7 @@ def _relevant_pages(pdf_bytes: bytes, n_pages: int):
         return None
     hit = set()
     for i, t in enumerate(texts):
-        if PAGE_KEYS.search(t) or (len(ENTITY.findall(t)) >= 4 and t.count("%") >= 3):
+        if PAGE_KEYS.search(t) or (len(ENTITY.findall(t)) >= 8 and t.count("%") >= 5):
             hit.add(i)
     low = {i for i, t in enumerate(texts) if len(t.strip()) < 300}
     hit |= {i for i in low if any(abs(i - j) <= 2 for j in hit)}

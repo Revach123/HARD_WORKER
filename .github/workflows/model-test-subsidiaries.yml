@@ -27,6 +27,10 @@ on:
         description: "רק עמודים רלוונטיים (pdftotext) נשלחים ל-Gemini"
         type: boolean
         default: false
+      dry:
+        description: "בלי Gemini - רק בדיקת סינון העמודים (כמה נבחרו, כמה מחברות הבת הקיימות מכוסות)"
+        type: boolean
+        default: false
       workers:
         description: "חברות במקביל"
         required: false
@@ -63,7 +67,7 @@ jobs:
           GEMINI_CHUNK: ${{ github.event.inputs.chunk == 'true' && '1' || '0' }}
           GEMINI_PAGE_FILTER: ${{ github.event.inputs.page_filter == 'true' && '1' || '0' }}
           PYTHONUNBUFFERED: "1"
-        run: python model_test_extract.py --cids "${{ github.event.inputs.cids }}" --workers "${{ github.event.inputs.workers || '6' }}"
+        run: python model_test_extract.py --cids "${{ github.event.inputs.cids }}" --workers "${{ github.event.inputs.workers || '6' }}" ${{ github.event.inputs.dry == 'true' && '--dry' || '' }}
       - name: Commit test output
         if: always()
         working-directory: scripts/company_ownership

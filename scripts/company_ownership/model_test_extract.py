@@ -47,11 +47,48 @@ def existing_best():
     return best
 
 
+def dry(a):
+    """סינון העמודים בלי Gemini: לכל דוח - כמה עמודים נבחרו, וכמה מחברות הבת בחילוץ הקיים (page_reference בקובץ הראשי)
+    נמצאות בעמודים שנבחרו. רק קריאת PDF - אין עלות."""
+    import io
+    import maya_reports_client as mrc
+    from pypdf import PdfReader
+    plan = json.load(open("selection_plan.json", encoding="utf-8"))
+    best = {}
+    for line in open("private_subsidiaries.jsonl", encoding="utf-8"):
+        try:
+            r = json.loads(line)
+        except ValueError:
+            continue
+        k = (str(r.get("parent_hp")), str(r.get("report_id")))
+        if len(r.get("subsidiaries") or []) > len(best.get(k, [])):
+            best[k] = r.get("subsidiaries") or []
+    tot_sel = tot_pages = tot_cov = tot_refs = 0
+    for cid in a.cids.split(","):
+        snap = (plan.get(cid) or {}).get("snapshot") or {}
+        if not snap:
+            continue
+        pdf = mrc.download_report_file(snap["pdf_url"])
+        n = len(PdfReader(io.BytesIO(pdf)).pages)
+        sel = rsb._relevant_pages(pdf, n) or list(range(n))
+        refs = [s.get("page_reference") for s in best.get((cid, snap["report_id"]), [])]
+        refs = [int(p) for p in refs if str(p).isdigit() and 1 <= int(p) <= n]
+        cov = sum(1 for p in refs if p - 1 in set(sel))
+        tot_sel += len(sel); tot_pages += n; tot_cov += cov; tot_refs += len(refs)
+        print(f"DRY {plan[cid].get('company_name')} ({cid}): {len(sel)}/{n} עמודים נבחרו; "
+              f"חברות בת קיימות בעמודים שנבחרו: {cov}/{len(refs)}")
+    print(f"DRY TOTAL: {tot_sel}/{tot_pages} עמודים ({100 * tot_sel // max(1, tot_pages)}%); "
+          f"כיסוי חברות הבת הקיימות: {tot_cov}/{tot_refs} ({100 * tot_cov // max(1, tot_refs)}%)")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--cids", required=True)
     ap.add_argument("--workers", type=int, default=6)
+    ap.add_argument("--dry", action="store_true", help="בלי Gemini: רק כמה עמודים נבחרים, וכמה מעמודי חברות הבת הקיימות מכוסים")
     a = ap.parse_args()
+    if a.dry:
+        return dry(a)
     plan = json.load(open("selection_plan.json", encoding="utf-8"))
     cids = [c for c in a.cids.split(",") if c in plan]
     done = set()
