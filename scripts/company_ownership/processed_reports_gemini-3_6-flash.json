@@ -16575,7 +16575,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-11-24T09:49:50.791802+00:00",
+    "at": "2026-11-24T09:49:57.284186+00:00",
     "model": "gemini-3.6-flash",
     "chunks": {
       "size": 20,
@@ -16585,7 +16585,8 @@
       "attempts": {
         "0:0": 1,
         "0:1": 1,
-        "0:2": 1
+        "0:2": 1,
+        "0:3": 1
       }
     }
   },
@@ -16646,7 +16647,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-11-24T09:49:53.297431+00:00",
+    "at": "2026-11-24T09:49:58.458231+00:00",
     "model": "gemini-3.6-flash",
     "chunks": {
       "size": 20,
@@ -16655,7 +16656,9 @@
       "done": {},
       "attempts": {
         "0:0": 1,
-        "0:1": 1
+        "0:1": 1,
+        "0:2": 1,
+        "0:3": 1
       }
     }
   },
@@ -16681,7 +16684,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-11-24T09:49:53.190746+00:00",
+    "at": "2026-11-24T09:49:57.824633+00:00",
     "model": "gemini-3.6-flash",
     "chunks": {
       "size": 20,
@@ -16690,7 +16693,8 @@
       "done": {},
       "attempts": {
         "0:0": 1,
-        "0:1": 1
+        "0:1": 1,
+        "0:2": 1
       }
     }
   },
@@ -16699,7 +16703,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-11-24T09:49:52.826826+00:00",
+    "at": "2026-11-24T09:49:55.938182+00:00",
     "model": "gemini-3.6-flash",
     "chunks": {
       "size": 20,
@@ -16707,7 +16711,8 @@
       "total": 2,
       "done": {},
       "attempts": {
-        "0:0": 1
+        "0:0": 1,
+        "0:1": 1
       }
     }
   },
@@ -16722,6 +16727,40 @@
       "size": 20,
       "overlap": 3,
       "total": 1,
+      "done": {},
+      "attempts": {
+        "0:0": 1
+      }
+    }
+  },
+  "1763462": {
+    "company_id": "130",
+    "status": "partial",
+    "kind": "change",
+    "attempts": 0,
+    "at": "2026-11-24T09:49:57.682108+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 1,
+      "done": {},
+      "attempts": {
+        "0:0": 1
+      }
+    }
+  },
+  "1765721": {
+    "company_id": "130",
+    "status": "partial",
+    "kind": "change",
+    "attempts": 0,
+    "at": "2026-11-24T09:49:57.728555+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 2,
       "done": {},
       "attempts": {
         "0:0": 1
