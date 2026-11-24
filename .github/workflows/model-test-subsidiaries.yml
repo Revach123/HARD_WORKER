@@ -23,6 +23,10 @@ on:
         description: "חלונות של 20 עמודים (כמו flash-lite בייצור) גם למודל הזה"
         type: boolean
         default: false
+      page_filter:
+        description: "רק עמודים רלוונטיים (pdftotext) נשלחים ל-Gemini"
+        type: boolean
+        default: false
       workers:
         description: "חברות במקביל"
         required: false
@@ -32,7 +36,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: model-test-${{ github.event.inputs.model }}-${{ github.event.inputs.thinking }}-${{ github.event.inputs.chunk }}
+  group: model-test-${{ github.event.inputs.model }}-${{ github.event.inputs.thinking }}-${{ github.event.inputs.chunk }}-${{ github.event.inputs.page_filter }}
   cancel-in-progress: false
 
 jobs:
@@ -46,7 +50,9 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
-      - run: pip install requests pypdf --break-system-packages
+      - run: |
+          pip install requests pypdf --break-system-packages
+          sudo apt-get install -y -qq poppler-utils >/dev/null
       - name: Extract (test)
         working-directory: scripts/company_ownership
         env:
@@ -55,6 +61,7 @@ jobs:
           GEMINI_THINKING: ${{ github.event.inputs.thinking }}
           GEMINI_RPM: "300"
           GEMINI_CHUNK: ${{ github.event.inputs.chunk == 'true' && '1' || '0' }}
+          GEMINI_PAGE_FILTER: ${{ github.event.inputs.page_filter == 'true' && '1' || '0' }}
           PYTHONUNBUFFERED: "1"
         run: python model_test_extract.py --cids "${{ github.event.inputs.cids }}" --workers "${{ github.event.inputs.workers || '6' }}"
       - name: Commit test output

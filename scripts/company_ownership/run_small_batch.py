@@ -35,6 +35,7 @@ run_small_batch.py
 
 import argparse
 import os
+import re
 import io
 import json
 import threading
@@ -307,6 +308,84 @@ def _iter_page_windows(n_pages: int) -> list[tuple[int, int]]:
     return windows
 
 
+# ---- סינון עמודים (GEMINI_PAGE_FILTER=1, ניסוי): רק עמודים שכנראה מופיעות בהם חברות בת נשלחים ל-Gemini ----
+PAGE_KEYS = re.compile(
+    r"חברות\s+מוחזקות|חברות\s+בנות|תאגידים\s+מוחזקים|חברות\s+כלולות|תקנה\s*11|מבנה\s+ה?[אה]חזקות|תרשים|"
+    r"השקעות\s+בחברות|הסדרים\s+משותפים|List\s+of\s+Subsidiaries|Subsidiaries|Organizational\s+Structure|"
+    r"Investees|Holding\s+structure|Group\s+structure", re.I)
+ENTITY = re.compile(r'בע"?מ|בע״מ|שותפות|\bLtd\b|\bLimited\b|\bLLC\b|\bInc\b|\bB\.?V\b|\bGmbH\b|\bS\.?A\b|\bL\.?P\b|'
+                    r'\bS\.?R\.?L\b|\bsp\.? z|\bPLC\b|\bCorp', re.I)
+PAGE_PAD = 1
+
+
+def _page_texts(pdf_bytes: bytes, n_pages: int):
+    """טקסט כל עמוד (pdftotext - מהיר, ב-C). None אם אין pdftotext או שהפלט לא תואם."""
+    import shutil
+    import subprocess
+    import tempfile
+    if not shutil.which("pdftotext"):
+        return None
+    with tempfile.NamedTemporaryFile(suffix=".pdf") as f:
+        f.write(pdf_bytes)
+        f.flush()
+        try:
+            out = subprocess.run(["pdftotext", "-q", f.name, "-"], capture_output=True, timeout=300).stdout
+        except subprocess.TimeoutExpired:
+            return None
+    pages = out.decode("utf-8", "replace").split("\f")
+    return pages[:n_pages] if len(pages) >= n_pages else None
+
+
+def _relevant_pages(pdf_bytes: bytes, n_pages: int):
+    """עמודים (0-based) שכנראה מופיעות בהם חברות בת: כותרת רלוונטית, או ריכוז של שמות ישויות ואחוזים; ועמוד עם מעט
+    טקסט (תרשים / תמונה) ליד עמוד כזה. + PAGE_PAD לכל כיוון. None - אין סינון (כל העמודים)."""
+    texts = _page_texts(pdf_bytes, n_pages)
+    if not texts:
+        return None
+    hit = set()
+    for i, t in enumerate(texts):
+        if PAGE_KEYS.search(t) or (len(ENTITY.findall(t)) >= 4 and t.count("%") >= 3):
+            hit.add(i)
+    low = {i for i, t in enumerate(texts) if len(t.strip()) < 300}
+    hit |= {i for i in low if any(abs(i - j) <= 2 for j in hit)}
+    sel = sorted({q for i in hit for q in range(i - PAGE_PAD, i + PAGE_PAD + 1) if 0 <= q < n_pages})
+    return sel or None
+
+
+def _page_windows(pages: list[int]) -> list[list[int]]:
+    """רשימת עמודים נבחרים -> חלונות של עד CHUNK_PAGES עמודים (בלי חפיפה - העמודים כבר מורחבים בשוליים)."""
+    return [pages[i:i + CHUNK_PAGES] for i in range(0, len(pages), CHUNK_PAGES)]
+
+
+def _win_pages(w) -> list[int]:
+    return list(range(w[0], w[1])) if isinstance(w, tuple) else list(w)
+
+
+def _slice_pages(reader: PdfReader, pages: list[int]) -> bytes:
+    writer = PdfWriter()
+    for i in pages:
+        writer.add_page(reader.pages[i])
+    buf = io.BytesIO()
+    writer.write(buf)
+    return buf.getvalue()
+
+
+def _map_page_refs(result: dict, pages: list[int]) -> dict:
+    """page_reference יחסי לחלון (1 = העמוד הראשון בחלון) -> העמוד במסמך המקורי (1-based), גם בחלון לא רציף."""
+    def _fix(rec):
+        try:
+            p = int(str(rec.get("page_reference")).strip())
+        except (ValueError, TypeError):
+            return
+        if 1 <= p <= len(pages):
+            rec["page_reference"] = pages[p - 1] + 1
+    for s in result.get("subsidiaries", []):
+        _fix(s)
+    for ev in result.get("change_events", []):
+        _fix(ev)
+    return result
+
+
 def _slice_pdf(reader: PdfReader, start: int, end: int) -> bytes:
     """גוזר עמודים [start,end) (0-indexed) ל-PDF חדש. reader כבר פתוח -
     לא קוראים את הקובץ מחדש לכל חלון."""
@@ -365,12 +444,15 @@ def _process_report_chunked(
                 pdf_bytes = _prospectus_pages(pdf_bytes) or pdf_bytes
             reader = PdfReader(io.BytesIO(pdf_bytes))
             n_pages = len(reader.pages)
+            sel = _relevant_pages(pdf_bytes, n_pages) if os.environ.get("GEMINI_PAGE_FILTER") == "1" else None
+            if sel is not None:
+                print(f"  סינון עמודים: {len(sel)}/{n_pages} עמודים נשלחים ({url.split('/')[-1]})")
         except Exception as e:
             print(f"  אזהרה: קובץ {fi} ({url}) נכשל בהורדה/קריאה: {e} - מוחרג "
                   f"מתוכנית החלונות (הדוח לא ייחשב שלם עד שהקובץ יצליח).")
             continue
-        files.append({"url": url, "reader": reader,
-                      "windows": _iter_page_windows(n_pages), "n_pages": n_pages})
+        files.append({"url": url, "reader": reader, "n_pages": n_pages,
+                      "windows": _page_windows(sel) if sel is not None else _iter_page_windows(n_pages)})
 
     if not files:
         print("  כישלון מוחלט: אף קובץ PDF של הדוח לא נטען.")
@@ -405,10 +487,11 @@ def _process_report_chunked(
             _persist()
             return PARTIAL
         f = files[fi]
-        start, end = f["windows"][wi]
-        print(f"  חלון {key} (עמ' {start+1}-{end}/{f['n_pages']}, "
+        wpages = _win_pages(f["windows"][wi])
+        start, end = wpages[0], wpages[-1] + 1
+        print(f"  חלון {key} (עמ' {start+1}-{end}/{f['n_pages']}, {len(wpages)} עמ', "
               f"{f['url'].split('/')[-1]}) -> Gemini...")
-        win_bytes = _slice_pdf(f["reader"], start, end)
+        win_bytes = _slice_pages(f["reader"], wpages)
         try:
             res = _call_gemini_with_quota_retry(win_bytes, f"{f['url']}#w{start+1}-{end}")
             if res is None and not QUOTA_EXCEEDED.is_set():      # כישלון שאינו מכסה (JSON פגום וכו') - ניסיון חוזר מיידי אחד
@@ -428,7 +511,7 @@ def _process_report_chunked(
                              "_window_failed": True}
             _persist()
             continue
-        done[key] = _offset_page_refs(res, start)
+        done[key] = _map_page_refs(res, wpages)
         _persist()
         print(f"    חלון {key}: {len(res.get('subsidiaries', []))} חברות.")
         time.sleep(1)
