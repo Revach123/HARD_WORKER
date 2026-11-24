@@ -362,28 +362,60 @@ CHART_KEYS = re.compile(
     r"Organizational\s+(?:Structure|chart)|Holding\s+structure|Group\s+structure|Structure\s+chart", re.I)
 
 
-def _chart_pages(pdf_bytes: bytes, n_pages: int):
-    """רק עמודי תרשים מבנה ההחזקות (GEMINI_PAGE_FILTER=charts - למודל יקר): עמוד עם כותרת תרשים, והעמודים שאחריו
-    כל עוד הם המשך התרשים (הרבה שמות ישויות, או מעט טקסט = גרפיקה), עד 10 עמודים. None - לא נמצא תרשים."""
+CHART_WORDS = re.compile(
+    r"חברות\s+בנות|חבר(?:ה|ות)\s+בת|מוחזק(?:ות|ת)|תרשים|מבנה\s+ה?(?:[אה]חזקות|החזקות|אחזקות|קבוצה|תאגיד)|"
+    r"Organi[sz]ational\s+(?:Structure|chart)|Holding\s+structure|Group\s+structure|Structure\s+chart|Subsidiar", re.I)
+OCR_MAX_PAGES = 120          # תקרה לעמוד-תמונה בקובץ (OCR ~5 שניות לעמוד)
+
+
+def _ocr_page(pdf_path: str, page: int):
+    """OCR לעמוד אחד (1-based): pdftoppm 300dpi -> tesseract אנגלית+עברית, psm 11 (טקסט מפוזר, כמו בתרשים)."""
+    import shutil
+    import subprocess
+    import tempfile
+    if not (shutil.which("tesseract") and shutil.which("pdftoppm")):
+        return None
+    with tempfile.TemporaryDirectory() as d:
+        subprocess.run(["pdftoppm", "-f", str(page), "-l", str(page), "-r", "300", "-png", pdf_path, os.path.join(d, "p")],
+                       capture_output=True, timeout=120)
+        imgs = sorted(f for f in os.listdir(d) if f.endswith(".png"))
+        if not imgs:
+            return None
+        r = subprocess.run(["tesseract", os.path.join(d, imgs[0]), "-", "-l", "eng+heb", "--psm", "11"],
+                           capture_output=True, timeout=300)
+        return r.stdout.decode("utf-8", "replace")
+
+
+def _chart_pages(pdf_bytes: bytes, n_pages: int, detail: list | None = None):
+    """עמודי תרשים מבנה ההחזקות (GEMINI_PAGE_FILTER=charts - למודל יקר). עמוד כמעט בלי טקסט (תמונה) עובר OCR, והוא
+    תרשים אם יש בו הרבה אחוזים (8+; אחוזי החזקה על החצים), או מילת מפתח ("חברות בת", "מוחזקות", "תרשים",
+    "מבנה החזקות", Organizational structure...) בו או בעמוד שלפניו (הכותרת "להלן תרשים..." לרוב בעמוד הקודם, כטקסט).
+    עמוד תמונות בלי אחוזים (למשל תמונות של נכסים בשומה) - לא. detail - לבדיקות: [(עמוד, אחוזים, מילת מפתח)]."""
+    import tempfile
     texts = _page_texts(pdf_bytes, n_pages)
     if not texts:
         return None
     rev = lambda t: t + "\n" + "\n".join(line[::-1] for line in t.splitlines())
-    sel = set()
-    def chart_like(t):
-        """עמוד תרשים בלי כותרת מזוהה: הרבה שמות ישויות בשורות קצרות (תיבות בתרשים), לא פסקאות"""
-        lines = [x.strip() for x in t.splitlines() if x.strip()]
-        return len(ENTITY.findall(rev(t))) >= 10 and lines and sum(map(len, lines)) / len(lines) < 45
-    for i, t in enumerate(texts):
-        if CHART_KEYS.search(rev(t)) or chart_like(t):
-            sel.add(i)
-            for j in range(i + 1, min(n_pages, i + 11)):
-                tj = texts[j]
-                if len(ENTITY.findall(rev(tj))) >= 3 or len(tj.strip()) < 300:
-                    sel.add(j)
-                else:
-                    break
-    return sorted(sel) or None
+    low = [i for i, t in enumerate(texts) if len(t.strip()) < 300][:OCR_MAX_PAGES]
+    if not low:
+        return None
+    ocr = {}
+    with tempfile.NamedTemporaryFile(suffix=".pdf") as f:
+        f.write(pdf_bytes)
+        f.flush()
+        for i in low:
+            ocr[i] = _ocr_page(f.name, i + 1) or ""
+    sel = []
+    for i in low:
+        t = ocr[i]
+        pct = len(re.findall(r"\d\s?%|%\s?\d", t))
+        prev = (ocr.get(i - 1) or texts[i - 1]) if i > 0 else ""
+        kw = bool(CHART_WORDS.search(rev(t)) or CHART_WORDS.search(rev(prev)))
+        if pct >= 8 or (kw and pct >= 2):
+            sel.append(i)
+            if detail is not None:
+                detail.append((i + 1, pct, kw))
+    return sel or None
 
 
 def _page_windows(pages: list[int]) -> list[list[int]]:

@@ -66,7 +66,7 @@ jobs:
       - run: |
           pip install requests pypdf --break-system-packages
           sudo apt-get install -y -qq poppler-utils >/dev/null
-          if [ -n "${{ github.event.inputs.probe }}${{ github.event.inputs.ocr_test }}" ]; then sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-heb >/dev/null; fi
+          if [ -n "${{ github.event.inputs.probe }}${{ github.event.inputs.ocr_test }}" ] || [ "${{ github.event.inputs.page_filter }}" = "charts" ]; then sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-heb >/dev/null; fi
       - name: Extract (test)
         working-directory: scripts/company_ownership
         env:

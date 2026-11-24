@@ -189,6 +189,22 @@ def dry(a):
         k = (str(r.get("parent_hp")), str(r.get("report_id")))
         if len(r.get("subsidiaries") or []) > len(best.get(k, [])):
             best[k] = r.get("subsidiaries") or []
+    if os.environ.get("GEMINI_PAGE_FILTER") == "charts":       # כל קבצי הדוח: אילו עמודים זוהו כתרשים
+        for cid in a.cids.split(","):
+            snap = (plan.get(cid) or {}).get("snapshot") or {}
+            for fi, url in enumerate([snap.get("pdf_url")] + (snap.get("extra_pdfs") or [])):
+                if not url:
+                    continue
+                pdf = mrc.download_report_file(url)
+                n = len(PdfReader(io.BytesIO(pdf)).pages)
+                det = []
+                t0 = time.time()
+                sel = rsb._chart_pages(pdf, n, det) or []
+                print(f"DRY {plan[cid].get('company_name')} ({cid}) קובץ {fi} {url.split('/')[-1]}: {n} עמ', "
+                      f"תרשימים: {len(sel)} עמ' {[p for p, _, _ in det][:25]} ({int(time.time() - t0)}s)")
+                for pg, pct, kw in det[:12]:
+                    print(f"DRY    עמ' {pg}: אחוזים={pct}{' · מילת מפתח' if kw else ''}")
+        return
     tot_sel = tot_pages = tot_cov = tot_refs = 0
     for cid in a.cids.split(","):
         snap = (plan.get(cid) or {}).get("snapshot") or {}
