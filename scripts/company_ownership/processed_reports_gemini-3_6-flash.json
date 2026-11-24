@@ -3699,5 +3699,2358 @@
     "attempts": 1,
     "at": "2026-11-24T09:16:42.571358+00:00",
     "model": "gemini-3.6-flash"
+  },
+  "1731977": {
+    "company_id": "351",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-11-24T09:21:10.860788+00:00",
+    "model": "gemini-3.6-flash"
+  },
+  "1732405": {
+    "company_id": "2435",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-11-24T09:22:39.467744+00:00",
+    "model": "gemini-3.6-flash"
+  },
+  "1728237": {
+    "company_id": "1886",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-11-24T09:21:36.904722+00:00",
+    "model": "gemini-3.6-flash"
+  },
+  "1721390": {
+    "company_id": "2352",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-11-24T09:25:58.220900+00:00",
+    "model": "gemini-3.6-flash"
+  },
+  "1731943": {
+    "company_id": "1019",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-11-24T09:23:04.154536+00:00",
+    "model": "gemini-3.6-flash"
+  },
+  "1734198": {
+    "company_id": "2453",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-11-24T09:22:39.167584+00:00",
+    "model": "gemini-3.6-flash"
+  },
+  "1745027": {
+    "company_id": "2547",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-11-24T09:22:25.235357+00:00",
+    "model": "gemini-3.6-flash"
+  },
+  "1731625": {
+    "company_id": "400",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-11-24T09:26:11.618009+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 13,
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-26",
+          "subsidiaries": [
+            {
+              "name": "ישראל אירופה (א.א.) בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "2.6 להלן תרשים המתאר את מבנה החזקות החברה (בחברות בנות מהותיות) למועד הדוח :",
+              "table_title": null,
+              "note": "למיטב ידיעת החברה, יתרת ההחזקה בישראל אירופה (א.א.) בע\"מ הינה בידי אסקופה ישראל מגורים בע\"מ (להלן: \"אסקופה\") שבעל השליטה בה הינו מר אלעד אפרגן."
+            },
+            {
+              "name": "דוניץ יזום ופיתוח בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "2.6 להלן תרשים המתאר את מבנה החזקות החברה (בחברות בנות מהותיות) למועד הדוח :",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דוניץ קרית האומנים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "2.6 להלן תרשים המתאר את מבנה החזקות החברה (בחברות בנות מהותיות) למועד הדוח :",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלעד ישראל מגורים החדשה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "2.6 להלן תרשים המתאר את מבנה החזקות החברה (בחברות בנות מהותיות) למועד הדוח :",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אחים דוניץ בגבעתיים (2012) בע\"מ",
+              "ownership_pct": 70,
+              "parent": null,
+              "page_reference": 8,
+              "section_title": "2.6 להלן תרשים המתאר את מבנה החזקות החברה (בחברות בנות מהותיות) למועד הדוח :",
+              "table_title": null,
+              "note": "יתרת ההחזקה באחים דוניץ בגבעתיים (2012) בע\"מ רשומה על שם החברה (בנאמנות בעבור צדדים שלישיים שאינם קשורים לחברה)."
+            },
+            {
+              "name": "אחים דוניץ רמת השרון (2012) בע\"מ",
+              "ownership_pct": 100,
+              "parent": "דוניץ יזום ופיתוח בע\"מ",
+              "page_reference": 8,
+              "section_title": "2.6 להלן תרשים המתאר את מבנה החזקות החברה (בחברות בנות מהותיות) למועד הדוח :",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "א.מ.ת נוה סביון בע\"מ",
+              "ownership_pct": 66.66,
+              "parent": "דוניץ קרית האומנים בע\"מ",
+              "page_reference": 8,
+              "section_title": "2.6 להלן תרשים המתאר את מבנה החזקות החברה (בחברות בנות מהותיות) למועד הדוח :",
+              "table_title": null,
+              "note": "ביתרית הון המניות המונפק והנפרע מחזיקה אספן גרופ בע\"מ, שהינה חברה ציבורית שניירות הערך שלה רשומים למסחר בבורסה."
+            },
+            {
+              "name": "אלעד ישראל ע.ר. ייזום בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אלעד ישראל מגורים החדשה בע\"מ",
+              "page_reference": 8,
+              "section_title": "2.6 להלן תרשים המתאר את מבנה החזקות החברה (בחברות בנות מהותיות) למועד הדוח :",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "קבוצת ביתא בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אלעד ישראל מגורים החדשה בע\"מ",
+              "page_reference": 8,
+              "section_title": "2.6 להלן תרשים המתאר את מבנה החזקות החברה (בחברות בנות מהותיות) למועד הדוח :",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "א.מ.ת נוה סביון בע\"מ",
+              "ownership_pct": 66.66,
+              "parent": null,
+              "page_reference": 33,
+              "section_title": "8.8 גילוי ברמה המצרפית - 8.8.1 מידע כללי על הפרויקטים בקבוצה",
+              "table_title": null,
+              "note": "חברה מאוחדת. יתרת הון המניות מוחזקת על ידי אספן גרופ בע\"מ"
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אלעד",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 48,
+              "section_title": "8.9.6 מידע נוסף על פרויקטים אחרים שאינם מהותיים מאוד",
+              "table_title": null,
+              "note": "משמשת כחברת החזקה שבאמצעותה מוחזקים פרויקטים שונים"
+            },
+            {
+              "name": "דוניץ קרית האמנים",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 44,
+              "section_title": "8.9.5 עתודות קרקע",
+              "table_title": null,
+              "note": "מוזכרת כצד להסכמי פינוי במתחם"
+            },
+            {
+              "name": "מכבי יפו",
+              "ownership_pct": 33,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "8.8.3 פרויקטים בהקמה",
+              "table_title": null,
+              "note": "מצוין בהערת שוליים 17: חלק החברה במכבי יפו 33%"
+            }
+          ],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אלעד",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 60,
+              "section_title": "8.10 פרויקטים מהותיים מאוד של התאגיד",
+              "table_title": null,
+              "note": "רכישת מניות אלעד המוזכרת בהערות שוליים בדוח"
+            }
+          ],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "ישראל אירופה (א.א.) בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 78,
+              "section_title": "13. השקעות",
+              "table_title": null,
+              "note": "הקצאת 50% מהזכויות בחודש אוגוסט 2022"
+            }
+          ],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "ישראל אירופה (א.א.) בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 94,
+              "section_title": "דוח הדירקטוריון על מצב ענייני התאגיד - עדכונים בקשר עם פרויקטים של הקבוצה",
+              "table_title": null,
+              "note": "חברה כלולה"
+            },
+            {
+              "name": "אלעד",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 95,
+              "section_title": "דוח הדירקטוריון על מצב ענייני התאגיד - עדכונים בקשר עם פרויקטים של הקבוצה",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "חברת פרויקט (רוטשילד – יהודה הלוי ובצלאל יפה)",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 96,
+              "section_title": "דוח הדירקטוריון על מצב ענייני התאגיד - עדכונים בקשר עם פרויקטים של הקבוצה",
+              "table_title": null,
+              "note": "חברת פרויקט בבעלות מלאה המחזיקה 50% מהמקרקעין"
+            }
+          ],
+          "change_events": [
+            {
+              "company": "פרויקט יפה נוף שלב ב' בחיפה",
+              "event_type": "increase",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 100,
+              "event_date": "2025-04-27",
+              "event_description": "הסכם לרכישת החזקות שותף צד ג' בפרויקט יפה נוף שלב ב' בחיפה, עד להחזקה במלוא (100%) זכויות היזם",
+              "page_reference": 95,
+              "section_title": "דוח הדירקטוריון על מצב ענייני התאגיד - עדכונים בקשר עם פרויקטים של הקבוצה"
+            },
+            {
+              "company": "פרויקט התחדשות עירונית בפתח תקווה",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": 0,
+              "ownership_pct_after": 33.33,
+              "event_date": "2025-04-08",
+              "event_description": "הסכם להמחאת שליש (1/3) מהזכויות והחובות בפרויקט התחדשות עירונית בפתח תקווה",
+              "page_reference": 95,
+              "section_title": "דוח הדירקטוריון על מצב ענייני התאגיד - עדכונים בקשר עם פרויקטים של הקבוצה"
+            }
+          ]
+        },
+        "0:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אלעד",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 104,
+              "section_title": ".3 נזילות (באלפי ש\"ח)",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:7": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אלעד ישראל מגורים החדשה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 126,
+              "section_title": "באור 1 כללי - ב. הגדרות",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:8": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "דוניץ נכסי מקרקעין 1990 בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 144,
+              "section_title": "באור 8 - השקעות בחברות מוחזקות",
+              "table_title": "א . חברות מאוחדות: .1 פירוט החברות המוחזקות העיקריות של החברה:",
+              "note": null
+            },
+            {
+              "name": "דוניץ - קרית האמנים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 144,
+              "section_title": "באור 8 - השקעות בחברות מוחזקות",
+              "table_title": "א . חברות מאוחדות: .1 פירוט החברות המוחזקות העיקריות של החברה:",
+              "note": "החברה ערבה לערבויות חברת בת"
+            },
+            {
+              "name": "דוניץ יזום ופיתוח בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 144,
+              "section_title": "באור 8 - השקעות בחברות מוחזקות",
+              "table_title": "א . חברות מאוחדות: .1 פירוט החברות המוחזקות העיקריות של החברה:",
+              "note": "החברה ערבה לערבויות חברת בת"
+            },
+            {
+              "name": "אחים דוניץ בגבעתיים (2012) בע\"מ",
+              "ownership_pct": 70,
+              "parent": null,
+              "page_reference": 144,
+              "section_title": "באור 8 - השקעות בחברות מוחזקות",
+              "table_title": "א . חברות מאוחדות: .1 פירוט החברות המוחזקות העיקריות של החברה:",
+              "note": null
+            },
+            {
+              "name": "אלעד ישראל מגורים החדשה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 144,
+              "section_title": "באור 8 - השקעות בחברות מוחזקות",
+              "table_title": "א . חברות מאוחדות: .1 פירוט החברות המוחזקות העיקריות של החברה:",
+              "note": null
+            },
+            {
+              "name": "קבוצת ביתא בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 144,
+              "section_title": "באור 8 - השקעות בחברות מוחזקות",
+              "table_title": "א . חברות מאוחדות: .1 פירוט החברות המוחזקות העיקריות של החברה:",
+              "note": null
+            },
+            {
+              "name": "לב ראשון אחזקה ושירותים בע\"מ",
+              "ownership_pct": 34,
+              "parent": null,
+              "page_reference": 144,
+              "section_title": "באור 8 - השקעות בחברות מוחזקות",
+              "table_title": "ב. חברות מוחזקות מטופלות לפי שיטת השווי המאזני : (1) היקף ההשקעה בחברות כלולות (אלפי ש״ח)",
+              "note": null
+            },
+            {
+              "name": "ישראל אירופה (א.א.) בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 144,
+              "section_title": "באור 8 - השקעות בחברות מוחזקות",
+              "table_title": "ב. חברות מוחזקות מטופלות לפי שיטת השווי המאזני : (1) היקף ההשקעה בחברות כלולות (אלפי ש״ח)",
+              "note": null
+            },
+            {
+              "name": "ביתא רוטשילד בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 144,
+              "section_title": "באור 8 - השקעות בחברות מוחזקות",
+              "table_title": "ב. חברות מוחזקות מטופלות לפי שיטת השווי המאזני : (1) היקף ההשקעה בחברות כלולות (אלפי ש״ח)",
+              "note": null
+            },
+            {
+              "name": "מתאגדים פלטפורמה דיגיטלית בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 144,
+              "section_title": "באור 8 - השקעות בחברות מוחזקות",
+              "table_title": "ב. חברות מוחזקות מטופלות לפי שיטת השווי המאזני : (1) היקף ההשקעה בחברות כלולות (אלפי ש״ח)",
+              "note": null
+            },
+            {
+              "name": "הגדוד העברי 63 תל אביב (מ.א) בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 144,
+              "section_title": "באור 8 - השקעות בחברות מוחזקות",
+              "table_title": "ב. חברות מוחזקות מטופלות לפי שיטת השווי המאזני : (1) היקף ההשקעה בחברות כלולות (אלפי ש״ח)",
+              "note": null
+            },
+            {
+              "name": "שותפות לב ראשון (היקב)",
+              "ownership_pct": 34,
+              "parent": null,
+              "page_reference": 145,
+              "section_title": "באור 8 - השקעות בחברות מוחזקות (המשך)",
+              "table_title": "ג . עסקה משותפת המטופלת לפי שיטת השווי המאזני - מידע כללי וחלק החברה בשווי מאזני (אלפי ש״ח)",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:9": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "דוניץ נכסי מקרקעין 1990 בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 166,
+              "section_title": "ביאורים לדוחות הכספיים",
+              "table_title": "רשימת חברות הקבוצה ליום 31 בדצמבר, 2025",
+              "note": null
+            },
+            {
+              "name": "דוניץ – קרית האמנים בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 166,
+              "section_title": "ביאורים לדוחות הכספיים",
+              "table_title": "רשימת חברות הקבוצה ליום 31 בדצמבר, 2025",
+              "note": null
+            },
+            {
+              "name": "דוניץ יזום ופיתוח בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 166,
+              "section_title": "ביאורים לדוחות הכספיים",
+              "table_title": "רשימת חברות הקבוצה ליום 31 בדצמבר, 2025",
+              "note": null
+            },
+            {
+              "name": "אחים דוניץ רמת השרון (2012) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 166,
+              "section_title": "ביאורים לדוחות הכספיים",
+              "table_title": "רשימת חברות הקבוצה ליום 31 בדצמבר, 2025",
+              "note": null
+            },
+            {
+              "name": "לב ראשון - לציון אחזקה ושרותים בע\"מ",
+              "ownership_pct": 34,
+              "parent": null,
+              "page_reference": 166,
+              "section_title": "ביאורים לדוחות הכספיים",
+              "table_title": "רשימת חברות הקבוצה ליום 31 בדצמבר, 2025",
+              "note": null
+            },
+            {
+              "name": "אחים דוניץ בגבעתיים (2012) בע\"מ",
+              "ownership_pct": 70,
+              "parent": null,
+              "page_reference": 166,
+              "section_title": "ביאורים לדוחות הכספיים",
+              "table_title": "רשימת חברות הקבוצה ליום 31 בדצמבר, 2025",
+              "note": null
+            },
+            {
+              "name": "אלעד ישראל מגורים החדשה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 166,
+              "section_title": "ביאורים לדוחות הכספיים",
+              "table_title": "רשימת חברות הקבוצה ליום 31 בדצמבר, 2025",
+              "note": null
+            },
+            {
+              "name": "ישראל אירופה (א.א.) בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 166,
+              "section_title": "ביאורים לדוחות הכספיים",
+              "table_title": "רשימת חברות הקבוצה ליום 31 בדצמבר, 2025",
+              "note": null
+            },
+            {
+              "name": "אמות נוה סביון בע\"מ",
+              "ownership_pct": 66.66,
+              "parent": "אלעד ישראל מגורים החדשה בע\"מ",
+              "page_reference": 166,
+              "section_title": "ביאורים לדוחות הכספיים",
+              "table_title": "חברות מוחזקות של חברה מוחזקת מהותית אלעד ישראל מגורים החדשה בע\"מ",
+              "note": null
+            },
+            {
+              "name": "אלעד ישראל ע.ר. יזמות בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אלעד ישראל מגורים החדשה בע\"מ",
+              "page_reference": 166,
+              "section_title": "ביאורים לדוחות הכספיים",
+              "table_title": "חברות מוחזקות של חברה מוחזקת מהותית אלעד ישראל מגורים החדשה בע\"מ",
+              "note": null
+            },
+            {
+              "name": "הגדוד העברי 63 תל אביב (מ.א) בע\"מ",
+              "ownership_pct": 50,
+              "parent": "אלעד ישראל מגורים החדשה בע\"מ",
+              "page_reference": 166,
+              "section_title": "ביאורים לדוחות הכספיים",
+              "table_title": "חברות מוחזקות של חברה מוחזקת מהותית אלעד ישראל מגורים החדשה בע\"מ",
+              "note": null
+            }
+          ],
+          "change_events": []
+        }
+      },
+      "attempts": {
+        "0:10": 1,
+        "0:11": 1,
+        "0:12": 1
+      }
+    }
+  },
+  "1765154": {
+    "company_id": "2514",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-11-24T09:26:04.868324+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 32,
+      "done": {
+        "0:0": {
+          "report_format": "10-K",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "National Property REIT Corp.",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "Item 1. Business",
+              "table_title": null,
+              "note": "Controlling equity position"
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "10-K",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "10-K",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "other",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "NPRC",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 60,
+              "section_title": "Risks affecting investments in real estate.",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "10-K",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "Prospect Capital Funding LLC",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 72,
+              "section_title": "In addition to regulatory restrictions that restrict our ability to raise capital, our credit facility and the deed of trust governing our 5.50% 2030 Notes (the “Deed of Trust”) contain various covenants which, if not complied with, could accelerate repayment under our credit facility or the Deed of Trust, thereby materially and adversely affecting our liquidity, financial condition and results of operations.",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "10-K",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "Prospect Capital Funding LLC",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 91,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+              "table_title": null,
+              "note": "Wholly owned subsidiary formed on May 15, 2007"
+            },
+            {
+              "name": "Prospect Yield Corporation, LLC",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 91,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+              "table_title": null,
+              "note": "Wholly-owned subsidiary formed on September 30, 2014"
+            },
+            {
+              "name": "Belnick Holdings of Delaware, LLC",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 99,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+              "table_title": null,
+              "note": "Consolidated Holding Company, 100% ownership established May 22, 2025"
+            },
+            {
+              "name": "Belnick, LLC",
+              "ownership_pct": 100,
+              "parent": "Belnick Holdings of Delaware, LLC",
+              "page_reference": 99,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+              "table_title": null,
+              "note": "Belnick Delaware owns 100% of membership units effective December 31, 2025"
+            },
+            {
+              "name": "CP Holdings of Delaware LLC",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 91,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+              "table_title": null,
+              "note": "Consolidated Holding Company, wholly owned or substantially wholly owned"
+            },
+            {
+              "name": "Credit Central Holdings of Delaware, LLC",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 99,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+              "table_title": null,
+              "note": "Consolidated Holding Company"
+            },
+            {
+              "name": "Credit Central Loan Company, LLC",
+              "ownership_pct": 99.8,
+              "parent": "Credit Central Holdings of Delaware, LLC",
+              "page_reference": 99,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+              "table_title": null,
+              "note": "Credit Central Delaware owns 99.8% of equity"
+            },
+            {
+              "name": "Credit Central, LLC",
+              "ownership_pct": 100,
+              "parent": "Credit Central Loan Company, LLC",
+              "page_reference": 99,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+              "table_title": null,
+              "note": "Credit Central owns 100%"
+            },
+            {
+              "name": "Credit Central South, LLC",
+              "ownership_pct": 100,
+              "parent": "Credit Central Loan Company, LLC",
+              "page_reference": 99,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+              "table_title": null,
+              "note": "Credit Central owns 100%"
+            },
+            {
+              "name": "Credit Central of Texas, LLC",
+              "ownership_pct": 100,
+              "parent": "Credit Central Loan Company, LLC",
+              "page_reference": 99,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+              "table_title": null,
+              "note": "Credit Central owns 100%"
+            },
+            {
+              "name": "Credit Central of Tennessee, LLC",
+              "ownership_pct": 100,
+              "parent": "Credit Central Loan Company, LLC",
+              "page_reference": 99,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+              "table_title": null,
+              "note": "Credit Central owns 100%"
+            },
+            {
+              "name": "Echelon Transportation, LLC",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 99,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+              "table_title": null,
+              "note": "Prospect owns 100% of membership interests"
+            },
+            {
+              "name": "AerLift Leasing Limited",
+              "ownership_pct": 60.7,
+              "parent": "Echelon Transportation, LLC",
+              "page_reference": 99,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+              "table_title": null,
+              "note": "Echelon owns 60.7% of equity"
+            },
+            {
+              "name": "Energy Solutions Holdings Inc.",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 91,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+              "table_title": null,
+              "note": "Consolidated Holding Company, wholly owned or substantially wholly owned"
+            },
+            {
+              "name": "First Tower Holdings of Delaware LLC",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 100,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+              "table_title": null,
+              "note": "Consolidated Holding Company"
+            },
+            {
+              "name": "First Tower Finance Company LLC",
+              "ownership_pct": 78.06,
+              "parent": "First Tower Holdings of Delaware LLC",
+              "page_reference": 100,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+              "table_title": null,
+              "note": "First Tower Delaware owns 80.10% voting interest resulting in 78.06% ownership"
+            },
+            {
+              "name": "First Tower, LLC",
+              "ownership_pct": 100,
+              "parent": "First Tower Finance Company LLC",
+              "page_reference": 100,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+              "table_title": null,
+              "note": "First Tower Finance owns 100%"
+            },
+            {
+              "name": "InterDent, Inc.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 100,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+              "table_title": null,
+              "note": "Prospect owns 100% of equity"
+            },
+            {
+              "name": "MITY Holdings of Delaware Inc.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 100,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+              "table_title": null,
+              "note": "Consolidated Holding Company"
+            },
+            {
+              "name": "MITY, Inc.",
+              "ownership_pct": 100,
+              "parent": "MITY Holdings of Delaware Inc.",
+              "page_reference": 100,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+              "table_title": null,
+              "note": "MITY Delaware owns 100% of equity"
+            },
+            {
+              "name": "MITY-Lite, Inc.",
+              "ownership_pct": 100,
+              "parent": "MITY, Inc.",
+              "page_reference": 100,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+              "table_title": null,
+              "note": "MITY owns 100%"
+            },
+            {
+              "name": "Broda USA, Inc.",
+              "ownership_pct": 100,
+              "parent": "MITY, Inc.",
+              "page_reference": 100,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+              "table_title": null,
+              "note": "MITY owns 100%"
+            },
+            {
+              "name": "Broda Enterprises ULC",
+              "ownership_pct": 100,
+              "parent": "MITY, Inc.",
+              "page_reference": 100,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+              "table_title": null,
+              "note": "MITY owns 100%"
+            },
+            {
+              "name": "National Property REIT Corp.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 100,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+              "table_title": null,
+              "note": "100% of fully-diluted common equity"
+            },
+            {
+              "name": "Nationwide Acceptance Holdings LLC",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 91,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+              "table_title": null,
+              "note": "Consolidated Holding Company, wholly owned or substantially wholly owned"
+            },
+            {
+              "name": "NMMB Holdings, Inc.",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 91,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+              "table_title": null,
+              "note": "Consolidated Holding Company, wholly owned or substantially wholly owned"
+            },
+            {
+              "name": "NPH Property Holdings, LLC",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 91,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+              "table_title": null,
+              "note": "Consolidated Holding Company, wholly owned or substantially wholly owned"
+            },
+            {
+              "name": "NPH Holdco LLC",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 91,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+              "table_title": null,
+              "note": "Consolidated Holding Company, wholly owned or substantially wholly owned"
+            },
+            {
+              "name": "Pacific World Corporation",
+              "ownership_pct": 99.99,
+              "parent": null,
+              "page_reference": 103,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+              "table_title": null,
+              "note": "100% preferred equity representing 99.99% fully-diluted ownership interest"
+            },
+            {
+              "name": "Prospect Opportunity Holdings I, Inc.",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 91,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+              "table_title": null,
+              "note": "Consolidated Holding Company, wholly owned or substantially wholly owned"
+            },
+            {
+              "name": "QC Holdings TopCo, LLC",
+              "ownership_pct": 95.4,
+              "parent": null,
+              "page_reference": 103,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+              "table_title": null,
+              "note": "Holds 95.4% equity interest as of June 30, 2026"
+            },
+            {
+              "name": "R-V Holdings of Delaware, LLC",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 103,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+              "table_title": null,
+              "note": "Consolidated Holding Company"
+            },
+            {
+              "name": "R-V Industries, Inc.",
+              "ownership_pct": 90.28,
+              "parent": "R-V Holdings of Delaware, LLC",
+              "page_reference": 103,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+              "table_title": null,
+              "note": "R-V Holdings owns 90.28% of fully-diluted equity"
+            },
+            {
+              "name": "SB Forging Company, Inc.",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 91,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+              "table_title": null,
+              "note": "Consolidated Holding Company, wholly owned or substantially wholly owned"
+            },
+            {
+              "name": "Spartan Energy Holdings, Inc.",
+              "ownership_pct": null,
+              "parent": "CP Energy Services Inc.",
+              "page_reference": 94,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+              "table_title": null,
+              "note": "CP Energy purchased a controlling interest in common equity in June 2019"
+            },
+            {
+              "name": "Spartan Energy Services, LLC",
+              "ownership_pct": 100,
+              "parent": "Spartan Energy Holdings, Inc.",
+              "page_reference": 94,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+              "table_title": null,
+              "note": "Spartan Holdings owns 100%"
+            },
+            {
+              "name": "STI Holding, Inc.",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 91,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+              "table_title": null,
+              "note": "Consolidated Holding Company, wholly owned or substantially wholly owned"
+            },
+            {
+              "name": "Strategic Chemical Solutions Corp.",
+              "ownership_pct": 99.96,
+              "parent": null,
+              "page_reference": 103,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+              "table_title": null,
+              "note": "f/k/a USES Corp."
+            },
+            {
+              "name": "UTP Holdings Group Inc.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 104,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+              "table_title": null,
+              "note": "Wholly-owned holding company controlled by Prospect (f/k/a Harbortouch Holdings of Delaware)"
+            },
+            {
+              "name": "Universal Turbine Parts, LLC",
+              "ownership_pct": 100,
+              "parent": "UTP Holdings Group Inc.",
+              "page_reference": 104,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+              "table_title": null,
+              "note": "UTP Holdings owns 100% of voting stock"
+            },
+            {
+              "name": "Valley Electric Holdings I, Inc.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 104,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+              "table_title": null,
+              "note": "Prospect owns 100% of common stock"
+            },
+            {
+              "name": "Valley Electric Holdings II, Inc.",
+              "ownership_pct": 100,
+              "parent": "Valley Electric Holdings I, Inc.",
+              "page_reference": 104,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+              "table_title": null,
+              "note": "Valley Holdings I owns 100%"
+            },
+            {
+              "name": "Valley Electric Company, Inc.",
+              "ownership_pct": 94.99,
+              "parent": "Valley Electric Holdings II, Inc.",
+              "page_reference": 104,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+              "table_title": null,
+              "note": "Valley Holdings II owns 94.99%"
+            },
+            {
+              "name": "VE Company, Inc.",
+              "ownership_pct": 100,
+              "parent": "Valley Electric Company, Inc.",
+              "page_reference": 104,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+              "table_title": null,
+              "note": "Valley Electric owns 100%"
+            },
+            {
+              "name": "Valley Electric Co. of Mt. Vernon, Inc.",
+              "ownership_pct": 100,
+              "parent": "VE Company, Inc.",
+              "page_reference": 104,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+              "table_title": null,
+              "note": "VE Company owns 100%"
+            },
+            {
+              "name": "Comet Electric, Inc.",
+              "ownership_pct": 100,
+              "parent": "VE Company, Inc.",
+              "page_reference": 104,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+              "table_title": null,
+              "note": "VE Company owns 100%"
+            },
+            {
+              "name": "Victor Holdings of Delaware, LLC",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 91,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations",
+              "table_title": null,
+              "note": "Consolidated Holding Company, wholly owned or substantially wholly owned"
+            }
+          ],
+          "change_events": [
+            {
+              "company": "Belnick, LLC",
+              "event_type": "increase",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 100,
+              "event_date": "2025-12-31",
+              "event_description": "Belnick Delaware executed a share transfer agreement for the remaining Class A units and effective December 31, 2025, owns 100% of the membership units in Belnick.",
+              "page_reference": 99,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations"
+            },
+            {
+              "company": "QC Holdings TopCo, LLC",
+              "event_type": "decrease",
+              "ownership_pct_before": 99.55,
+              "ownership_pct_after": 95.4,
+              "event_date": "2025-06-30",
+              "event_description": "On June 30, 2025, Prospect acquired a 99.55% equity interest in QC Holdings and currently holds a 95.4% equity interest in the company.",
+              "page_reference": 103,
+              "section_title": "Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations"
+            }
+          ]
+        },
+        "0:6": {
+          "report_format": "10-K",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "Pacific World Corporation",
+              "ownership_pct": 99.99,
+              "parent": null,
+              "page_reference": 202,
+              "section_title": "Pacific World Corporation",
+              "table_title": null,
+              "note": "Prospect owns 100% of preferred equity, representing a 99.99% fully-diluted ownership interest"
+            },
+            {
+              "name": "QC Holdings TopCo, LLC",
+              "ownership_pct": 95.4,
+              "parent": null,
+              "page_reference": 202,
+              "section_title": "QC Holdings TopCo, LLC",
+              "table_title": null,
+              "note": "Acquired 99.55% equity interest on June 30, 2025; currently holds 95.4% equity interest"
+            },
+            {
+              "name": "R-V Holdings",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 202,
+              "section_title": "R-V Industries Inc.",
+              "table_title": null,
+              "note": "Consolidated Holding Company"
+            },
+            {
+              "name": "R-V Industries Inc.",
+              "ownership_pct": 90.28,
+              "parent": "R-V Holdings",
+              "page_reference": 202,
+              "section_title": "R-V Industries Inc.",
+              "table_title": null,
+              "note": "R-V Holdings owns 90.28% of fully-diluted equity; management owns remaining 9.72%"
+            },
+            {
+              "name": "Strategic Chemical Solutions Corp.",
+              "ownership_pct": 99.96,
+              "parent": null,
+              "page_reference": 202,
+              "section_title": "Strategic Chemical Solutions Corp. (f/k/a USES Corp.)",
+              "table_title": null,
+              "note": "f/k/a USES Corp."
+            },
+            {
+              "name": "UTP Holdings",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 203,
+              "section_title": "Universal Turbine Parts, LLC",
+              "table_title": null,
+              "note": "f/k/a Harbortouch Holdings of Delaware; wholly-owned holding company"
+            },
+            {
+              "name": "Universal Turbine Parts, LLC",
+              "ownership_pct": 100,
+              "parent": "UTP Holdings",
+              "page_reference": 203,
+              "section_title": "Universal Turbine Parts, LLC",
+              "table_title": null,
+              "note": "UTP Holdings purchased all voting stock"
+            },
+            {
+              "name": "Valley Holdings I",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 203,
+              "section_title": "Valley Electric Company, Inc.",
+              "table_title": null,
+              "note": "Consolidated Holding Company"
+            },
+            {
+              "name": "Valley Holdings II",
+              "ownership_pct": 100,
+              "parent": "Valley Holdings I",
+              "page_reference": 203,
+              "section_title": "Valley Electric Company, Inc.",
+              "table_title": null,
+              "note": "Consolidated Holding Company"
+            },
+            {
+              "name": "Valley Electric Company, Inc.",
+              "ownership_pct": 94.99,
+              "parent": "Valley Holdings II",
+              "page_reference": 203,
+              "section_title": "Valley Electric Company, Inc.",
+              "table_title": null,
+              "note": "Management owns remaining 5.01%"
+            },
+            {
+              "name": "VE Company, Inc.",
+              "ownership_pct": 100,
+              "parent": "Valley Electric Company, Inc.",
+              "page_reference": 203,
+              "section_title": "Valley Electric Company, Inc.",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Valley Electric Co. of Mt. Vernon, Inc.",
+              "ownership_pct": 100,
+              "parent": "VE Company, Inc.",
+              "page_reference": 203,
+              "section_title": "Valley Electric Company, Inc.",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Comet Electric, Inc.",
+              "ownership_pct": 100,
+              "parent": "VE Company, Inc.",
+              "page_reference": 203,
+              "section_title": "Valley Electric Company, Inc.",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "PCF",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 205,
+              "section_title": "Revolving Credit Facility",
+              "table_title": null,
+              "note": "Wholly owned subsidiary, Delaware LLC"
+            },
+            {
+              "name": "National Property REIT Corp.",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 202,
+              "section_title": "National Property REIT Corp.",
+              "table_title": null,
+              "note": "Abbreviated as NPRC"
+            },
+            {
+              "name": "Nixon, Inc.",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 203,
+              "section_title": "Affiliate and Non-Control Company Investments",
+              "table_title": null,
+              "note": "Affiliate investment"
+            },
+            {
+              "name": "RGIS Services, LLC",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 203,
+              "section_title": "Affiliate and Non-Control Company Investments",
+              "table_title": null,
+              "note": "Affiliate investment"
+            }
+          ],
+          "change_events": [
+            {
+              "company": "QC Holdings TopCo, LLC",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 99.55,
+              "event_date": "2025-06-30",
+              "event_description": "Prospect acquired a 99.55% equity interest in QC Holdings",
+              "page_reference": 202,
+              "section_title": "QC Holdings TopCo, LLC"
+            }
+          ]
+        },
+        "0:7": {
+          "report_format": "10-K",
+          "document_type": "change_events",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [],
+          "change_events": [
+            {
+              "company": "Valley Electric",
+              "event_type": "full_disposal",
+              "ownership_pct_before": 94.99,
+              "ownership_pct_after": 0,
+              "event_date": "2026-07-01",
+              "event_description": "On July 1, 2026, sold 94.99% equity interests in Valley Electric for total consideration of $280,779.",
+              "page_reference": 127,
+              "section_title": "Recent Developments"
+            }
+          ]
+        },
+        "0:8": {
+          "report_format": "10-K",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "Prospect Capital Funding LLC",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 154,
+              "section_title": "CONSOLIDATED SCHEDULE OF INVESTMENTS - Endnote Explanations as of June 30, 2026",
+              "table_title": null,
+              "note": "Wholly owned subsidiary and bankruptcy remote special purpose entity"
+            },
+            {
+              "name": "QC Holdings TopCo, LLC",
+              "ownership_pct": 95.4,
+              "parent": null,
+              "page_reference": 155,
+              "section_title": "CONSOLIDATED SCHEDULE OF INVESTMENTS - Endnote Explanations as of June 30, 2026",
+              "table_title": null,
+              "note": "Equity interest representing a controlling beneficial interest"
+            },
+            {
+              "name": "CP Holdings of Delaware LLC",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 155,
+              "section_title": "CONSOLIDATED SCHEDULE OF INVESTMENTS - Endnote Explanations as of June 30, 2026",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "CP Energy Services Inc.",
+              "ownership_pct": 99.8,
+              "parent": "CP Holdings of Delaware LLC",
+              "page_reference": 155,
+              "section_title": "CONSOLIDATED SCHEDULE OF INVESTMENTS - Endnote Explanations as of June 30, 2026",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "CP Well Testing, LLC",
+              "ownership_pct": 100,
+              "parent": "CP Energy Services Inc.",
+              "page_reference": 155,
+              "section_title": "CONSOLIDATED SCHEDULE OF INVESTMENTS - Endnote Explanations as of June 30, 2026",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Wright Foster Disposals, LLC",
+              "ownership_pct": 100,
+              "parent": "CP Energy Services Inc.",
+              "page_reference": 155,
+              "section_title": "CONSOLIDATED SCHEDULE OF INVESTMENTS - Endnote Explanations as of June 30, 2026",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Foster Testing Co., Inc.",
+              "ownership_pct": 100,
+              "parent": "CP Energy Services Inc.",
+              "page_reference": 155,
+              "section_title": "CONSOLIDATED SCHEDULE OF INVESTMENTS - Endnote Explanations as of June 30, 2026",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ProHaul Transports, LLC",
+              "ownership_pct": 100,
+              "parent": "CP Energy Services Inc.",
+              "page_reference": 155,
+              "section_title": "CONSOLIDATED SCHEDULE OF INVESTMENTS - Endnote Explanations as of June 30, 2026",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Wright Trucking, Inc.",
+              "ownership_pct": 100,
+              "parent": "CP Energy Services Inc.",
+              "page_reference": 155,
+              "section_title": "CONSOLIDATED SCHEDULE OF INVESTMENTS - Endnote Explanations as of June 30, 2026",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Spartan Energy Services, LLC",
+              "ownership_pct": 100,
+              "parent": "Spartan Energy Holdings, Inc.",
+              "page_reference": 155,
+              "section_title": "CONSOLIDATED SCHEDULE OF INVESTMENTS - Endnote Explanations as of June 30, 2026",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Credit Central Holdings of Delaware, LLC",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 155,
+              "section_title": "CONSOLIDATED SCHEDULE OF INVESTMENTS - Endnote Explanations as of June 30, 2026",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Credit Central Loan Company, LLC",
+              "ownership_pct": 99.8,
+              "parent": "Credit Central Holdings of Delaware, LLC",
+              "page_reference": 155,
+              "section_title": "CONSOLIDATED SCHEDULE OF INVESTMENTS - Endnote Explanations as of June 30, 2026",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Credit Central, LLC",
+              "ownership_pct": 100,
+              "parent": "Credit Central Loan Company, LLC",
+              "page_reference": 155,
+              "section_title": "CONSOLIDATED SCHEDULE OF INVESTMENTS - Endnote Explanations as of June 30, 2026",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Credit Central South, LLC",
+              "ownership_pct": 100,
+              "parent": "Credit Central Loan Company, LLC",
+              "page_reference": 155,
+              "section_title": "CONSOLIDATED SCHEDULE OF INVESTMENTS - Endnote Explanations as of June 30, 2026",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Credit Central of Texas, LLC",
+              "ownership_pct": 100,
+              "parent": "Credit Central Loan Company, LLC",
+              "page_reference": 155,
+              "section_title": "CONSOLIDATED SCHEDULE OF INVESTMENTS - Endnote Explanations as of June 30, 2026",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Credit Central of Tennessee, LLC",
+              "ownership_pct": 100,
+              "parent": "Credit Central Loan Company, LLC",
+              "page_reference": 155,
+              "section_title": "CONSOLIDATED SCHEDULE OF INVESTMENTS - Endnote Explanations as of June 30, 2026",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "First Tower Holdings of Delaware LLC",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 155,
+              "section_title": "CONSOLIDATED SCHEDULE OF INVESTMENTS - Endnote Explanations as of June 30, 2026",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "First Tower Finance Company LLC",
+              "ownership_pct": 80.1,
+              "parent": "First Tower Holdings of Delaware LLC",
+              "page_reference": 155,
+              "section_title": "CONSOLIDATED SCHEDULE OF INVESTMENTS - Endnote Explanations as of June 30, 2026",
+              "table_title": null,
+              "note": "80.10% voting interest and 78.06% fully-diluted economic interest"
+            },
+            {
+              "name": "First Tower, LLC",
+              "ownership_pct": 100,
+              "parent": "First Tower Finance Company LLC",
+              "page_reference": 155,
+              "section_title": "CONSOLIDATED SCHEDULE OF INVESTMENTS - Endnote Explanations as of June 30, 2026",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Energy Solutions Holdings Inc.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 155,
+              "section_title": "CONSOLIDATED SCHEDULE OF INVESTMENTS - Endnote Explanations as of June 30, 2026",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "MITY Holdings of Delaware Inc.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 155,
+              "section_title": "CONSOLIDATED SCHEDULE OF INVESTMENTS - Endnote Explanations as of June 30, 2026",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "MITY, Inc.",
+              "ownership_pct": 100,
+              "parent": "MITY Holdings of Delaware Inc.",
+              "page_reference": 155,
+              "section_title": "CONSOLIDATED SCHEDULE OF INVESTMENTS - Endnote Explanations as of June 30, 2026",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "MITY-Lite, Inc.",
+              "ownership_pct": 100,
+              "parent": "MITY, Inc.",
+              "page_reference": 155,
+              "section_title": "CONSOLIDATED SCHEDULE OF INVESTMENTS - Endnote Explanations as of June 30, 2026",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Broda Enterprises USA, Inc.",
+              "ownership_pct": 100,
+              "parent": "MITY, Inc.",
+              "page_reference": 155,
+              "section_title": "CONSOLIDATED SCHEDULE OF INVESTMENTS - Endnote Explanations as of June 30, 2026",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Broda Enterprises ULC",
+              "ownership_pct": 100,
+              "parent": "MITY, Inc.",
+              "page_reference": 155,
+              "section_title": "CONSOLIDATED SCHEDULE OF INVESTMENTS - Endnote Explanations as of June 30, 2026",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "MITY FSC, Inc.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 155,
+              "section_title": "CONSOLIDATED SCHEDULE OF INVESTMENTS - Endnote Explanations as of June 30, 2026",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "NPH Property Holdings, LLC",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 155,
+              "section_title": "CONSOLIDATED SCHEDULE OF INVESTMENTS - Endnote Explanations as of June 30, 2026",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "National Property REIT Corp.",
+              "ownership_pct": 100,
+              "parent": "NPH Property Holdings, LLC",
+              "page_reference": 155,
+              "section_title": "CONSOLIDATED SCHEDULE OF INVESTMENTS - Endnote Explanations as of June 30, 2026",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Nationwide Acceptance Holdings LLC",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 156,
+              "section_title": "CONSOLIDATED SCHEDULE OF INVESTMENTS - Endnote Explanations as of June 30, 2026",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Nationwide Loan Company LLC",
+              "ownership_pct": 94.22,
+              "parent": "Nationwide Acceptance Holdings LLC",
+              "page_reference": 156,
+              "section_title": "CONSOLIDATED SCHEDULE OF INVESTMENTS - Endnote Explanations as of June 30, 2026",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "NMMB Holdings, Inc.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 156,
+              "section_title": "CONSOLIDATED SCHEDULE OF INVESTMENTS - Endnote Explanations as of June 30, 2026",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "NMMB, Inc.",
+              "ownership_pct": 92.77,
+              "parent": "NMMB Holdings, Inc.",
+              "page_reference": 156,
+              "section_title": "CONSOLIDATED SCHEDULE OF INVESTMENTS - Endnote Explanations as of June 30, 2026",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Refuel Agency, Inc.",
+              "ownership_pct": 100,
+              "parent": "NMMB, Inc.",
+              "page_reference": 156,
+              "section_title": "CONSOLIDATED SCHEDULE OF INVESTMENTS - Endnote Explanations as of June 30, 2026",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Armed Forces Communications, Inc.",
+              "ownership_pct": 100,
+              "parent": "Refuel Agency, Inc.",
+              "page_reference": 156,
+              "section_title": "CONSOLIDATED SCHEDULE OF INVESTMENTS - Endnote Explanations as of June 30, 2026",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Strategic Chemical Solutions Corp.",
+              "ownership_pct": 99.96,
+              "parent": null,
+              "page_reference": 156,
+              "section_title": "CONSOLIDATED SCHEDULE OF INVESTMENTS - Endnote Explanations as of June 30, 2026",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Valley Electric Holdings I, Inc.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 156,
+              "section_title": "CONSOLIDATED SCHEDULE OF INVESTMENTS - Endnote Explanations as of June 30, 2026",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Valley Electric Holdings II, Inc.",
+              "ownership_pct": 100,
+              "parent": "Valley Electric Holdings I, Inc.",
+              "page_reference": 156,
+              "section_title": "CONSOLIDATED SCHEDULE OF INVESTMENTS - Endnote Explanations as of June 30, 2026",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Valley Electric Company, Inc.",
+              "ownership_pct": 94.99,
+              "parent": "Valley Electric Holdings II, Inc.",
+              "page_reference": 156,
+              "section_title": "CONSOLIDATED SCHEDULE OF INVESTMENTS - Endnote Explanations as of June 30, 2026",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "VE Company, Inc.",
+              "ownership_pct": 100,
+              "parent": "Valley Electric Company, Inc.",
+              "page_reference": 156,
+              "section_title": "CONSOLIDATED SCHEDULE OF INVESTMENTS - Endnote Explanations as of June 30, 2026",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Valley Electric Co. of Mt. Vernon, Inc.",
+              "ownership_pct": 100,
+              "parent": "VE Company, Inc.",
+              "page_reference": 156,
+              "section_title": "CONSOLIDATED SCHEDULE OF INVESTMENTS - Endnote Explanations as of June 30, 2026",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Encinitas Watches Holdco, LLC",
+              "ownership_pct": 8.57,
+              "parent": null,
+              "page_reference": 156,
+              "section_title": "CONSOLIDATED SCHEDULE OF INVESTMENTS - Endnote Explanations as of June 30, 2026",
+              "table_title": null,
+              "note": "Parent company of Nixon, Inc."
+            },
+            {
+              "name": "UTP Holdings Group, Inc.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 156,
+              "section_title": "CONSOLIDATED SCHEDULE OF INVESTMENTS - Endnote Explanations as of June 30, 2026",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Universal Turbine Parts, LLC",
+              "ownership_pct": 100,
+              "parent": "UTP Holdings Group, Inc.",
+              "page_reference": 156,
+              "section_title": "CONSOLIDATED SCHEDULE OF INVESTMENTS - Endnote Explanations as of June 30, 2026",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific World Corporation",
+              "ownership_pct": 99.99,
+              "parent": null,
+              "page_reference": 156,
+              "section_title": "CONSOLIDATED SCHEDULE OF INVESTMENTS - Endnote Explanations as of June 30, 2026",
+              "table_title": null,
+              "note": "100% of preferred equity representing a 99.99% ownership interest"
+            },
+            {
+              "name": "Echelon Transportation, LLC",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 142,
+              "section_title": "Control Investments (greater than 25.00% voting control)",
+              "table_title": "CONSOLIDATED SCHEDULE OF INVESTMENTS AS OF JUNE 30, 2026",
+              "note": "Membership Interest (100%)"
+            },
+            {
+              "name": "Freedom Marine Solutions, LLC",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 142,
+              "section_title": "Control Investments (greater than 25.00% voting control)",
+              "table_title": "CONSOLIDATED SCHEDULE OF INVESTMENTS AS OF JUNE 30, 2026",
+              "note": "Membership Interest (100%)"
+            },
+            {
+              "name": "Kickapoo Ranch Pet Resort",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 142,
+              "section_title": "Control Investments (greater than 25.00% voting control)",
+              "table_title": "CONSOLIDATED SCHEDULE OF INVESTMENTS AS OF JUNE 30, 2026",
+              "note": "Membership Interest (100%)"
+            }
+          ],
+          "change_events": []
+        }
+      },
+      "attempts": {
+        "0:9": 1,
+        "0:10": 1,
+        "0:11": 1,
+        "0:12": 1,
+        "0:13": 1,
+        "0:14": 1
+      }
+    }
+  },
+  "1732289": {
+    "company_id": "2396",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-11-24T09:26:02.075126+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 12,
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "ריבירה אשל הירדן בע\"מ",
+              "ownership_pct": 20,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "חלק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
+              "table_title": "תרשים מבנה אחזקות",
+              "note": null
+            },
+            {
+              "name": "אלעד סנטר בע\"מ",
+              "ownership_pct": 10,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "חלק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
+              "table_title": "תרשים מבנה אחזקות",
+              "note": null
+            },
+            {
+              "name": "קניין ובניין בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "חלק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
+              "table_title": "תרשים מבנה אחזקות",
+              "note": null
+            },
+            {
+              "name": "ראש כרמל בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "חלק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
+              "table_title": "תרשים מבנה אחזקות",
+              "note": null
+            },
+            {
+              "name": "גשם ירדן רכסים בע\"מ",
+              "ownership_pct": 49,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "חלק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
+              "table_title": "תרשים מבנה אחזקות",
+              "note": null
+            },
+            {
+              "name": "פארק המדע הקוונטי בע\"מ",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "חלק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
+              "table_title": "תרשים מבנה אחזקות",
+              "note": null
+            },
+            {
+              "name": "אשל הירדן בניה (1994) ופיתוח בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "חלק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
+              "table_title": "תרשים מבנה אחזקות",
+              "note": null
+            },
+            {
+              "name": "אשל הירדן פארק צפון בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "חלק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
+              "table_title": "תרשים מבנה אחזקות",
+              "note": null
+            },
+            {
+              "name": "דיורים בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "חלק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
+              "table_title": "תרשים מבנה אחזקות",
+              "note": null
+            },
+            {
+              "name": "גשם הירדן נהריה בע\"מ",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 5,
+              "section_title": "חלק ראשון - תיאור ההתפתחות הכללית של עסקי החברה",
+              "table_title": "תרשים מבנה אחזקות",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אשל הירדן ייזום ובניין בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "7.5 סקירה של כלל הפרויקטים של החברה",
+              "table_title": "פרויקטים בהקמה ופרויקטים שהסתיימו במהלך שנת הכספים של 2025",
+              "note": null
+            },
+            {
+              "name": "דיורים בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "7.5 סקירה של כלל הפרויקטים של החברה",
+              "table_title": "פרויקטים בהקמה ופרויקטים שהסתיימו במהלך שנת הכספים של 2025",
+              "note": "חברת בת בבעלות משותפת (50%)"
+            },
+            {
+              "name": "אלעד סנטר בע\"מ",
+              "ownership_pct": 10,
+              "parent": null,
+              "page_reference": 20,
+              "section_title": "7.5 סקירה של כלל הפרויקטים של החברה",
+              "table_title": "פרויקטים בתכנון שהיתר בנייה התקבל/צפוי להתקבל במהלך 12 החודשים הקרובים",
+              "note": null
+            },
+            {
+              "name": "קניין ובניין בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 21,
+              "section_title": "7.5 סקירה של כלל הפרויקטים של החברה",
+              "table_title": "קרקעות בעלות תכנית בניין עיר (תב\"ע) מאושרת לבנייה",
+              "note": null
+            },
+            {
+              "name": "גשם הירדן רכסים בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 21,
+              "section_title": "7.5 סקירה של כלל הפרויקטים של החברה",
+              "table_title": "קרקעות בעלות תכנית בניין עיר (תב\"ע) מאושרת לבנייה",
+              "note": null
+            },
+            {
+              "name": "ריביירה אשל הירדן בע\"מ",
+              "ownership_pct": 20,
+              "parent": null,
+              "page_reference": 21,
+              "section_title": "7.5 סקירה של כלל הפרויקטים של החברה",
+              "table_title": "קרקעות בעלות תכנית בניין עיר (תב\"ע) מאושרת לבנייה",
+              "note": null
+            },
+            {
+              "name": "רבץ רכסים בע\"מ",
+              "ownership_pct": 0,
+              "parent": null,
+              "page_reference": 21,
+              "section_title": "7.5 סקירה של כלל הפרויקטים של החברה",
+              "table_title": "אחרים",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "דיורים בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 37,
+              "section_title": "7.8 מידע נוסף ביחס לפרויקטים וקרקעות בספרי החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלעד סנטר בע\"מ",
+              "ownership_pct": 10,
+              "parent": null,
+              "page_reference": 39,
+              "section_title": "7.8 מידע נוסף ביחס לפרויקטים וקרקעות בספרי החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "קנין ובניין בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 40,
+              "section_title": "7.8 מידע נוסף ביחס לפרויקטים וקרקעות בספרי החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם הירדן רכסים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 41,
+              "section_title": "7.8 מידע נוסף ביחס לפרויקטים וקרקעות בספרי החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ריביירה אשל הירדן בע\"מ",
+              "ownership_pct": 20,
+              "parent": null,
+              "page_reference": 41,
+              "section_title": "7.8 מידע נוסף ביחס לפרויקטים וקרקעות בספרי החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם הירדן נהריה בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 48,
+              "section_title": "10.1 שיתוף פעולה בהקמת פרויקטים",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אלעד סנטר בע\"מ",
+              "ownership_pct": 10,
+              "parent": null,
+              "page_reference": 71,
+              "section_title": "1.2.9 חתימה על הסכם ניהול בפרויקט \"אלעד סנטר\"",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אלעד סנטר בע\"מ",
+              "ownership_pct": 10,
+              "parent": null,
+              "page_reference": 71,
+              "section_title": "1.2.9 חתימה על הסכם ניהול בפרויקט \"אלעד סנטר\"",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גשם הירדן נהריה",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 74,
+              "section_title": "1.3 תיאור המצב הכספי על-פי הדוחות על המצב הכספי של החברה",
+              "table_title": null,
+              "note": "חברה מטופלת לפי שיטת השווי המאזני"
+            },
+            {
+              "name": "דיורים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 86,
+              "section_title": "מכתב הסכמה בקשר לתשקיף מדף של אשל הירדן יזום ובנין בע\"מ",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:5": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "דיורים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 86,
+              "section_title": "מכתב הסכמה בקשר לתשקיף מדף של אשל הירדן יזום ובנין בע\"מ מחודש פברואר 2026",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אשל הירדן יזום ובנין בניה (1994) ופיתוח בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 121,
+              "section_title": "ביאור 11 - השקעה בחברות המטופלות לפי שיטת השווי המאזני (המשך)",
+              "table_title": "שיעור זכויות בהון המניות ובזכויות ההצבעה ליום 31 בדצמבר",
+              "note": null
+            },
+            {
+              "name": "פארק המדע הקוונטי כרמיאל בע\"מ",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 121,
+              "section_title": "ביאור 11 - השקעה בחברות המטופלות לפי שיטת השווי המאזני (המשך)",
+              "table_title": "שיעור זכויות בהון המניות ובזכויות ההצבעה ליום 31 בדצמבר",
+              "note": "לשעבר אשל הירדן אחזקות 2000 בע\"מ"
+            },
+            {
+              "name": "אשל מוריה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 121,
+              "section_title": "ביאור 11 - השקעה בחברות המטופלות לפי שיטת השווי המאזני (המשך)",
+              "table_title": "שיעור זכויות בהון המניות ובזכויות ההצבעה ליום 31 בדצמבר",
+              "note": null
+            },
+            {
+              "name": "דיורים בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 121,
+              "section_title": "ביאור 11 - השקעה בחברות המטופלות לפי שיטת השווי המאזני (המשך)",
+              "table_title": "שיעור זכויות בהון המניות ובזכויות ההצבעה ליום 31 בדצמבר",
+              "note": "חברה בעסקה משותפת"
+            },
+            {
+              "name": "גשם הירדן נהריה בע\"מ",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 121,
+              "section_title": "ביאור 11 - השקעה בחברות המטופלות לפי שיטת השווי המאזני (המשך)",
+              "table_title": "שיעור זכויות בהון המניות ובזכויות ההצבעה ליום 31 בדצמבר",
+              "note": "חברה בעסקה משותפת; זכויות ההצבעה הן 50% והחברה זכאית ל-50% מהרווחים בחברה"
+            },
+            {
+              "name": "גשם הירדן רכסים בע\"מ",
+              "ownership_pct": 49,
+              "parent": null,
+              "page_reference": 121,
+              "section_title": "ביאור 11 - השקעה בחברות המטופלות לפי שיטת השווי המאזני (המשך)",
+              "table_title": "שיעור זכויות בהון המניות ובזכויות ההצבעה ליום 31 בדצמבר",
+              "note": "חברה בעסקה משותפת; זכויות ההצבעה הן 50% והחברה זכאית ל-50% מהרווחים בחברה"
+            },
+            {
+              "name": "ראש כרמל בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 121,
+              "section_title": "ביאור 11 - השקעה בחברות המטופלות לפי שיטת השווי המאזני (המשך)",
+              "table_title": "שיעור זכויות בהון המניות ובזכויות ההצבעה ליום 31 בדצמבר",
+              "note": "חברה בעסקה משותפת"
+            },
+            {
+              "name": "קניין ובניין בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 121,
+              "section_title": "ביאור 11 - השקעה בחברות המטופלות לפי שיטת השווי המאזני (המשך)",
+              "table_title": "שיעור זכויות בהון המניות ובזכויות ההצבעה ליום 31 בדצמבר",
+              "note": "חברה בעסקה משותפת"
+            },
+            {
+              "name": "אלעד סנטר בע\"מ",
+              "ownership_pct": 10,
+              "parent": null,
+              "page_reference": 121,
+              "section_title": "ביאור 11 - השקעה בחברות המטופלות לפי שיטת השווי המאזני (המשך)",
+              "table_title": "שיעור זכויות בהון המניות ובזכויות ההצבעה ליום 31 בדצמבר",
+              "note": "החברה האם מחזיקה 14.4% במניות חברת אלעד סנטר בע\"מ"
+            },
+            {
+              "name": "ריביירה אשל הירדן בע\"מ",
+              "ownership_pct": 20,
+              "parent": null,
+              "page_reference": 121,
+              "section_title": "ביאור 11 - השקעה בחברות המטופלות לפי שיטת השווי המאזני (המשך)",
+              "table_title": "שיעור זכויות בהון המניות ובזכויות ההצבעה ליום 31 בדצמבר",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:7": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אשל הירדן יזום ובנין בניה (1994) ופיתוח בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 121,
+              "section_title": "ביאור 11 - השקעה בחברות המטופלות לפי שיטת השווי המאזני",
+              "table_title": "שיעור זכויות בהון המניות ובזכויות ההצבעה ליום 31 בדצמבר",
+              "note": null
+            },
+            {
+              "name": "פארק המדע הקוונטי כרמיאל בע\"מ",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 121,
+              "section_title": "ביאור 11 - השקעה בחברות המטופלות לפי שיטת השווי המאזני",
+              "table_title": "שיעור זכויות בהון המניות ובזכויות ההצבעה ליום 31 בדצמבר",
+              "note": null
+            },
+            {
+              "name": "אשל מוריה בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 121,
+              "section_title": "ביאור 11 - השקעה בחברות המטופלות לפי שיטת השווי המאזני",
+              "table_title": "שיעור זכויות בהון המניות ובזכויות ההצבעה ליום 31 בדצמבר",
+              "note": null
+            },
+            {
+              "name": "דיורים בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 121,
+              "section_title": "ביאור 11 - השקעה בחברות המטופלות לפי שיטת השווי המאזני",
+              "table_title": "שיעור זכויות בהון המניות ובזכויות ההצבעה ליום 31 בדצמבר",
+              "note": "חברה בעסקה משותפת"
+            },
+            {
+              "name": "גשם הירדן נהריה בע\"מ",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 121,
+              "section_title": "ביאור 11 - השקעה בחברות המטופלות לפי שיטת השווי המאזני",
+              "table_title": "שיעור זכויות בהון המניות ובזכויות ההצבעה ליום 31 בדצמבר",
+              "note": "חברה בעסקה משותפת; לחברה שליטה משותפת, זכויות ההצבעה והרווחים הם 50%"
+            },
+            {
+              "name": "גשם הירדן רכסים בע\"מ",
+              "ownership_pct": 49,
+              "parent": null,
+              "page_reference": 121,
+              "section_title": "ביאור 11 - השקעה בחברות המטופלות לפי שיטת השווי המאזני",
+              "table_title": "שיעור זכויות בהון המניות ובזכויות ההצבעה ליום 31 בדצמבר",
+              "note": "חברה בעסקה משותפת; לחברה שליטה משותפת, זכויות ההצבעה והרווחים הם 50%"
+            },
+            {
+              "name": "ראש כרמל בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 121,
+              "section_title": "ביאור 11 - השקעה בחברות המטופלות לפי שיטת השווי המאזני",
+              "table_title": "שיעור זכויות בהון המניות ובזכויות ההצבעה ליום 31 בדצמבר",
+              "note": "חברה בעסקה משותפת"
+            },
+            {
+              "name": "קניין ובניין בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 121,
+              "section_title": "ביאור 11 - השקעה בחברות המטופלות לפי שיטת השווי המאזני",
+              "table_title": "שיעור זכויות בהון המניות ובזכויות ההצבעה ליום 31 בדצמבר",
+              "note": "חברה בעסקה משותפת"
+            },
+            {
+              "name": "אלעד סנטר בע\"מ",
+              "ownership_pct": 10,
+              "parent": null,
+              "page_reference": 121,
+              "section_title": "ביאור 11 - השקעה בחברות המטופלות לפי שיטת השווי המאזני",
+              "table_title": "שיעור זכויות בהון המניות ובזכויות ההצבעה ליום 31 בדצמבר",
+              "note": "החברה האם מחזיקה 14.4% במניות החברה"
+            },
+            {
+              "name": "ריביירה אשל הירדן בע\"מ",
+              "ownership_pct": 20,
+              "parent": null,
+              "page_reference": 121,
+              "section_title": "ביאור 11 - השקעה בחברות המטופלות לפי שיטת השווי המאזני",
+              "table_title": "שיעור זכויות בהון המניות ובזכויות ההצבעה ליום 31 בדצמבר",
+              "note": null
+            }
+          ],
+          "change_events": []
+        },
+        "0:8": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "גשם הירדן נהריה בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 142,
+              "section_title": "ביאור 27 - יתרות ועסקאות צדדים קשורים, בעל שליטה ובעל עניין",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "דיורים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 142,
+              "section_title": "ביאור 27 - יתרות ועסקאות צדדים קשורים, בעל שליטה ובעל עניין",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלעד סנטר בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 142,
+              "section_title": "ביאור 27 - יתרות ועסקאות צדדים קשורים, בעל שליטה ובעל עניין",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        }
+      },
+      "attempts": {
+        "0:9": 1,
+        "0:10": 1
+      }
+    }
+  },
+  "1730457": {
+    "company_id": "660",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-11-24T09:25:52.478903+00:00",
+    "model": "gemini-3.6-flash"
+  },
+  "1727000": {
+    "company_id": "1787",
+    "status": "success",
+    "kind": "snapshot",
+    "attempts": 1,
+    "at": "2026-11-24T09:26:21.879922+00:00",
+    "model": "gemini-3.6-flash"
+  },
+  "1732099": {
+    "company_id": "1693",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-11-24T09:26:22.400528+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 12,
+      "done": {
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "שותפות האגירה",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 35,
+              "section_title": null,
+              "table_title": null,
+              "note": "שותפות פעילות אגירה משותפת עם איי-סטורג'"
+            }
+          ],
+          "change_events": []
+        },
+        "0:4": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": null,
+          "subsidiaries": [],
+          "change_events": []
+        }
+      },
+      "attempts": {
+        "0:0": 1,
+        "0:2": 1,
+        "0:3": 1,
+        "0:5": 1
+      }
+    }
+  },
+  "1735329": {
+    "company_id": "456",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-11-24T09:26:18.028995+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 7,
+      "done": {},
+      "attempts": {
+        "0:0": 1
+      }
+    }
   }
 }
