@@ -272,6 +272,10 @@ def call_gemini_text(text: str, name: str, max_retries: int = 5) -> dict:
             last_error = e
             time.sleep(5 * (2 ** attempt))
             continue
+        if resp.status_code == 402:
+            # נגמר הקרדיט בחשבון (Payment Required) - כמו מכסה יומית: עוצרים בעדינות, בלי לספור כישלון של החלון/הדוח
+            pool.mark_exhausted(key, daily=True)
+            raise ex.GeminiQuotaExceededError("402: נגמר הקרדיט בחשבון Gemini (Payment Required) - יש להוסיף קרדיט")
         if resp.status_code == 429 and "exceeded your current quota" in resp.text:
             is_daily = False
             try:

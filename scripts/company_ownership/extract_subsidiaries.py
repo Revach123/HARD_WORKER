@@ -477,6 +477,10 @@ def call_gemini_extraction(pdf_bytes: bytes, filename_hint: str, max_retries: in
             time.sleep(wait)
             continue
 
+        if resp.status_code == 402:
+            # נגמר הקרדיט בחשבון (Payment Required) - כמו מכסה יומית: עוצרים בעדינות, בלי לספור כישלון של החלון/הדוח
+            _key_pool.mark_exhausted(key, daily=True)
+            raise GeminiQuotaExceededError("402: נגמר הקרדיט בחשבון Gemini (Payment Required) - יש להוסיף קרדיט")
         if resp.status_code == 429 and "exceeded your current quota" in resp.text:
             # ניתן להבדיל בין RPD אמיתי לזמני-TPM/RPM: תגובת השגיאה של
             # Gemini כוללת details[].violations[].quotaId, ומכסות
