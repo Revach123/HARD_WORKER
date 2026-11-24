@@ -370,8 +370,12 @@ def _chart_pages(pdf_bytes: bytes, n_pages: int):
         return None
     rev = lambda t: t + "\n" + "\n".join(line[::-1] for line in t.splitlines())
     sel = set()
+    def chart_like(t):
+        """עמוד תרשים בלי כותרת מזוהה: הרבה שמות ישויות בשורות קצרות (תיבות בתרשים), לא פסקאות"""
+        lines = [x.strip() for x in t.splitlines() if x.strip()]
+        return len(ENTITY.findall(rev(t))) >= 10 and lines and sum(map(len, lines)) / len(lines) < 45
     for i, t in enumerate(texts):
-        if CHART_KEYS.search(rev(t)):
+        if CHART_KEYS.search(rev(t)) or chart_like(t):
             sel.add(i)
             for j in range(i + 1, min(n_pages, i + 11)):
                 tj = texts[j]
