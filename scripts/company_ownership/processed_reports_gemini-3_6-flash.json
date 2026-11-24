@@ -16145,7 +16145,7 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-11-24T09:49:23.888494+00:00",
+    "at": "2026-11-24T09:49:24.989383+00:00",
     "model": "gemini-3.6-flash",
     "chunks": {
       "size": 20,
@@ -16153,7 +16153,9 @@
       "total": 3,
       "done": {},
       "attempts": {
-        "0:0": 1
+        "0:0": 1,
+        "0:1": 1,
+        "0:2": 1
       }
     }
   },
@@ -16162,12 +16164,164 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-11-24T09:49:24.036218+00:00",
+    "at": "2026-11-24T09:49:24.546513+00:00",
     "model": "gemini-3.6-flash",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 2,
+      "done": {},
+      "attempts": {
+        "0:0": 1,
+        "0:1": 1
+      }
+    }
+  },
+  "1744415": {
+    "company_id": "121",
+    "status": "partial",
+    "kind": "change",
+    "attempts": 0,
+    "at": "2026-11-24T09:49:25.885913+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 5,
+      "done": {},
+      "attempts": {
+        "0:0": 1,
+        "0:1": 1,
+        "0:2": 1,
+        "0:3": 1,
+        "0:4": 1
+      }
+    }
+  },
+  "1744895": {
+    "company_id": "106",
+    "status": "partial",
+    "kind": "change",
+    "attempts": 0,
+    "at": "2026-11-24T09:49:25.303334+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 3,
+      "done": {},
+      "attempts": {
+        "0:0": 1,
+        "0:1": 1,
+        "0:2": 1
+      }
+    }
+  },
+  "1766447": {
+    "company_id": "121",
+    "status": "partial",
+    "kind": "change",
+    "attempts": 0,
+    "at": "2026-11-24T09:49:26.314882+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 5,
+      "done": {},
+      "attempts": {
+        "0:0": 1,
+        "0:1": 1,
+        "0:2": 1,
+        "0:3": 1,
+        "0:4": 1
+      }
+    }
+  },
+  "1740692": {
+    "company_id": "126",
+    "status": "partial",
+    "kind": "change",
+    "attempts": 0,
+    "at": "2026-11-24T09:49:25.848198+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 1,
+      "done": {},
+      "attempts": {
+        "0:0": 1
+      }
+    }
+  },
+  "1742748": {
+    "company_id": "126",
+    "status": "partial",
+    "kind": "change",
+    "attempts": 0,
+    "at": "2026-11-24T09:49:26.362209+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 1,
+      "done": {},
+      "attempts": {
+        "0:0": 1
+      }
+    }
+  },
+  "1743454": {
+    "company_id": "126",
+    "status": "partial",
+    "kind": "change",
+    "attempts": 0,
+    "at": "2026-11-24T09:49:27.827724+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 5,
+      "done": {},
+      "attempts": {
+        "0:0": 1,
+        "0:1": 1,
+        "0:2": 1,
+        "0:3": 1,
+        "0:4": 1
+      }
+    }
+  },
+  "1741161": {
+    "company_id": "126",
+    "status": "partial",
+    "kind": "change",
+    "attempts": 0,
+    "at": "2026-11-24T09:49:27.139863+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 2,
+      "done": {},
+      "attempts": {
+        "0:0": 1,
+        "0:1": 1
+      }
+    }
+  },
+  "1762747": {
+    "company_id": "126",
+    "status": "partial",
+    "kind": "change",
+    "attempts": 0,
+    "at": "2026-11-24T09:49:27.598940+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 1,
       "done": {},
       "attempts": {
         "0:0": 1
