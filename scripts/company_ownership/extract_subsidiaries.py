@@ -533,10 +533,45 @@ def call_gemini_extraction(pdf_bytes: bytes, filename_hint: str, max_retries: in
     try:
         return json.loads(text)
     except json.JSONDecodeError as e:
+        fixed = repair_json(text)
+        if fixed is not None:
+            print(f"    JSON פגום ({e.msg}) - שוחזרו {len(fixed['subsidiaries'])} חברות ו-{len(fixed['change_events'])} "
+                  f"אירועים מהפריטים השלמים.")
+            return fixed
         print("=== JSON גולמי שהתקבל (לצורך אבחון) ===", file=sys.stderr)
         print(text, file=sys.stderr)
         print("=== סוף הטקסט הגולמי ===", file=sys.stderr)
         raise
+
+
+def repair_json(text: str) -> dict | None:
+    """JSON פגום מ-Gemini (פסיק חסר, תשובה שנקטעה): קודם האובייקט החיצוני בלבד; ואם גם זה נכשל - כל הפריטים השלמים
+    (אובייקטים שטוחים) - חברות בת (יש name) ואירועי שינוי (יש company). None אם לא נמצא כלום."""
+    i, j = text.find("{"), text.rfind("}")
+    if 0 <= i < j:
+        try:
+            out = json.loads(text[i:j + 1])
+            if isinstance(out, dict):
+                return {"subsidiaries": out.get("subsidiaries", []), "change_events": out.get("change_events", []), **out}
+        except json.JSONDecodeError:
+            pass
+    subs, events, head = [], [], {}
+    for m in re.finditer(r"\{[^{}]*\}", text):
+        try:
+            x = json.loads(m.group(0))
+        except json.JSONDecodeError:
+            continue
+        if "name" in x:
+            subs.append(x)
+        elif "company" in x:
+            events.append(x)
+    for k in ("report_format", "document_type", "as_of_date"):
+        mm = re.search(rf'"{k}"\s*:\s*("([^"]*)"|null)', text)
+        if mm:
+            head[k] = mm.group(2)
+    if not subs and not events:
+        return None
+    return {**head, "subsidiaries": subs, "change_events": events}
 
 
 def sql_escape(value):

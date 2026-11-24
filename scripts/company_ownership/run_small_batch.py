@@ -411,6 +411,9 @@ def _process_report_chunked(
         win_bytes = _slice_pdf(f["reader"], start, end)
         try:
             res = _call_gemini_with_quota_retry(win_bytes, f"{f['url']}#w{start+1}-{end}")
+            if res is None and not QUOTA_EXCEEDED.is_set():      # כישלון שאינו מכסה (JSON פגום וכו') - ניסיון חוזר מיידי אחד
+                print(f"    חלון {key}: ניסיון חוזר מיידי")
+                res = _call_gemini_with_quota_retry(win_bytes, f"{f['url']}#w{start+1}-{end}")
         except ex.GeminiQuotaExceededError:
             print(f"  מכסה נגמרה בחלון {key} - נשמרו {len(done)}/{total}, חלקי.")
             _persist()

@@ -155,6 +155,7 @@ jobs:
         working-directory: scripts/company_ownership
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_CHUNK: "1"            # חלונות של 20 עמודים לכל מודל - שליחת דוח שלם מפספסת את רוב חברות הבת ונכשלת בדוחות גדולים (ניסוי 24/11)
           GEMINI_RPM: "300"            # חשבון בתשלום (Tier 1): 1,000 בקשות לדקה
           GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
           GEMINI_API_KEY_3: ${{ secrets.GEMINI_API_KEY_3 }}
