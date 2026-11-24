@@ -11320,17 +11320,83 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-11-24T09:35:12.287589+00:00",
+    "at": "2026-11-24T09:35:58.994696+00:00",
     "model": "gemini-3.6-flash",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 14,
-      "done": {},
+      "done": {
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "פאי ת\"א",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 55,
+              "section_title": "10.5 פרויקט המרד (דיור מוגן)",
+              "table_title": "(א) הצגת הקרקע",
+              "note": "חברה פרטית בבעלות מלאה של פאי סיאם"
+            },
+            {
+              "name": "חצאם חברה לבניה והשקעות ב.ש. (1989) בע\"מ",
+              "ownership_pct": 99,
+              "parent": null,
+              "page_reference": 69,
+              "section_title": "11.2 זכויות בניה בדרך חברון 113 פינת רחוב הנגרים 20, באר שבע",
+              "table_title": null,
+              "note": "חברה בשליטת החברה (99%)"
+            },
+            {
+              "name": "פאי סיאם מפרץ אמנון",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 53,
+              "section_title": "(ז) פרטים אודות הערכות שווי",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פאי סיאם לינקולן",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 52,
+              "section_title": "(ו) שעבודים ומגבלות משפטיות בנכס",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "גינות המלכים",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 52,
+              "section_title": "(ו) שעבודים ומגבלות משפטיות בנכס",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מלונות החוף הצפוני",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 52,
+              "section_title": "(ו) שעבודים ומגבלות משפטיות בנכס",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
+        }
+      },
       "attempts": {
         "0:0": 1,
         "0:1": 1,
-        "0:2": 1
+        "0:2": 1,
+        "0:4": 1,
+        "0:5": 1,
+        "0:6": 1
       }
     }
   },
@@ -11367,7 +11433,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-11-24T09:35:16.498385+00:00",
+    "at": "2026-11-24T09:35:19.029728+00:00",
     "model": "gemini-3.6-flash",
     "chunks": {
       "size": 20,
@@ -11382,7 +11448,11 @@
         "0:4": 1,
         "0:5": 1,
         "0:6": 1,
-        "0:7": 1
+        "0:7": 1,
+        "0:8": 1,
+        "0:9": 1,
+        "0:10": 1,
+        "0:11": 1
       }
     }
   },
@@ -11391,7 +11461,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-11-24T09:35:17.160545+00:00",
+    "at": "2026-11-24T09:35:18.762342+00:00",
     "model": "gemini-3.6-flash",
     "chunks": {
       "size": 20,
@@ -11406,7 +11476,10 @@
         "0:4": 1,
         "0:5": 1,
         "0:6": 1,
-        "0:7": 1
+        "0:7": 1,
+        "0:8": 1,
+        "0:9": 1,
+        "0:10": 1
       }
     }
   },
@@ -11415,7 +11488,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-11-24T09:35:17.113357+00:00",
+    "at": "2026-11-24T09:35:17.967313+00:00",
     "model": "gemini-3.6-flash",
     "chunks": {
       "size": 20,
@@ -11430,7 +11503,266 @@
         "0:4": 1,
         "0:5": 1,
         "0:6": 1,
+        "0:7": 1,
+        "0:8": 1,
+        "0:9": 1
+      }
+    }
+  },
+  "1732462": {
+    "company_id": "1393",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-11-24T09:35:20.574738+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 7,
+      "done": {},
+      "attempts": {
+        "0:0": 1,
+        "0:1": 1,
+        "0:2": 1,
+        "0:3": 1,
+        "0:4": 1,
+        "0:5": 1,
+        "0:6": 1
+      }
+    }
+  },
+  "1730632": {
+    "company_id": "1890",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-11-24T09:35:21.683627+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 9,
+      "done": {},
+      "attempts": {
+        "0:0": 1,
+        "0:1": 1,
+        "0:2": 1,
+        "0:3": 1,
+        "0:4": 1,
+        "0:5": 1,
+        "0:6": 1,
+        "0:7": 1,
+        "0:8": 1
+      }
+    }
+  },
+  "1736260": {
+    "company_id": "424",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-11-24T09:35:42.101073+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 10,
+      "done": {},
+      "attempts": {
+        "0:0": 1,
+        "0:1": 1,
+        "0:2": 1,
+        "0:3": 1,
+        "0:4": 1,
+        "0:5": 1,
+        "0:6": 1,
+        "0:7": 1,
+        "0:8": 1,
+        "0:9": 1
+      }
+    }
+  },
+  "1731563": {
+    "company_id": "531",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-11-24T09:35:42.563160+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 11,
+      "done": {},
+      "attempts": {
+        "0:0": 1,
+        "0:1": 1,
+        "0:2": 1,
+        "0:3": 1,
+        "0:4": 1,
+        "0:5": 1,
+        "0:6": 1,
+        "0:7": 1,
+        "0:8": 1,
+        "0:9": 1,
+        "0:10": 1
+      }
+    }
+  },
+  "1731022": {
+    "company_id": "1551",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-11-24T09:35:36.953255+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 8,
+      "done": {},
+      "attempts": {
+        "0:0": 1,
+        "0:1": 1,
+        "0:2": 1,
+        "0:3": 1,
+        "0:4": 1,
+        "0:5": 1,
+        "0:6": 1,
         "0:7": 1
+      }
+    }
+  },
+  "1732435": {
+    "company_id": "2475",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-11-24T09:35:47.513123+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 8,
+      "done": {},
+      "attempts": {
+        "0:0": 1,
+        "0:1": 1,
+        "0:2": 1,
+        "0:3": 1,
+        "0:4": 1,
+        "0:5": 1,
+        "0:6": 1,
+        "0:7": 1
+      }
+    }
+  },
+  "1730029": {
+    "company_id": "1677",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-11-24T09:35:59.829497+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 11,
+      "done": {},
+      "attempts": {
+        "0:0": 1,
+        "0:1": 1,
+        "0:2": 1,
+        "0:3": 1,
+        "0:4": 1,
+        "0:5": 1,
+        "0:6": 1,
+        "0:7": 1,
+        "0:8": 1,
+        "0:9": 1,
+        "0:10": 1
+      }
+    }
+  },
+  "1730043": {
+    "company_id": "314",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-11-24T09:35:57.230469+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 11,
+      "done": {},
+      "attempts": {
+        "0:0": 1,
+        "0:1": 1,
+        "0:2": 1,
+        "0:3": 1,
+        "0:4": 1,
+        "0:5": 1
+      }
+    }
+  },
+  "1735890": {
+    "company_id": "1033",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-11-24T09:35:58.661513+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 9,
+      "done": {},
+      "attempts": {
+        "0:0": 1,
+        "0:1": 1,
+        "0:2": 1
+      }
+    }
+  },
+  "1728892": {
+    "company_id": "2423",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-11-24T09:36:00.006523+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 10,
+      "done": {},
+      "attempts": {
+        "0:0": 1,
+        "0:1": 1,
+        "0:2": 1,
+        "0:3": 1,
+        "0:4": 1,
+        "0:5": 1
+      }
+    }
+  },
+  "1726995": {
+    "company_id": "1310",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-11-24T09:35:57.846687+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 10,
+      "done": {},
+      "attempts": {
+        "0:0": 1,
+        "0:1": 1
       }
     }
   }
