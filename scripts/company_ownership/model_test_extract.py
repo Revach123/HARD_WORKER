@@ -47,6 +47,26 @@ def existing_best():
     return best
 
 
+def ocr_page(pdf_bytes, page):
+    """OCR לעמוד אחד: pdftoppm (300dpi) -> tesseract (אנגלית+עברית, psm 11 - טקסט מפוזר כמו בתרשים). None בלי tesseract."""
+    import shutil
+    import subprocess
+    import tempfile
+    if not (shutil.which("tesseract") and shutil.which("pdftoppm")):
+        return None
+    with tempfile.TemporaryDirectory() as d:
+        src = os.path.join(d, "r.pdf")
+        open(src, "wb").write(pdf_bytes)
+        subprocess.run(["pdftoppm", "-f", str(page), "-l", str(page), "-r", "300", "-png", src, os.path.join(d, "p")],
+                       capture_output=True, timeout=120)
+        imgs = sorted(f for f in os.listdir(d) if f.endswith(".png"))
+        if not imgs:
+            return None
+        r = subprocess.run(["tesseract", os.path.join(d, imgs[0]), "-", "-l", "eng+heb", "--psm", "11"],
+                           capture_output=True, timeout=300)
+        return r.stdout.decode("utf-8", "replace")
+
+
 def probe(a):
     """לכל קובץ בדוח של כל חברה: לכל עמוד בטווח - אורך הטקסט ומניין סיומות של ישויות (LLC, LP, Inc...), וסה"כ שמות שונים
     שמסתיימים בסיומת כזו. ובהשוואה: כמה חברות בת מצא כל מודל בבדיקות הקודמות בעמודים האלה (page_reference)."""
@@ -73,13 +93,20 @@ def probe(a):
             if not texts:
                 continue
             tot, names = collections.Counter(), set()
+            ocr_n = 0
             for pg in range(lo, min(hi, n) + 1):
                 t = texts[pg - 1]
+                src = ""
+                if len(t.strip()) < 300:            # כמעט בלי טקסט - כנראה תמונה / תרשים: OCR
+                    o = ocr_page(pdf, pg)
+                    if o is not None:
+                        t, src = o, " (OCR)"
+                        ocr_n += 1
                 c = {k: len(re.findall(v, t)) for k, v in SUF.items()}
                 tot.update(c)
                 nm = {" ".join(m.split()) for m in NAME.findall(t)}
                 names |= nm
-                print(f"PROBE   עמ' {pg}: {len(t.strip())} תווים | " + " ".join(f"{k}={v}" for k, v in c.items() if v)
+                print(f"PROBE   עמ' {pg}{src}: {len(t.strip())} תווים | " + " ".join(f"{k}={v}" for k, v in c.items() if v)
                       + f" | שמות ישויות שונים: {len(nm)}")
             print(f"PROBE   סה\"כ עמ' {lo}-{hi}: " + " ".join(f"{k}={v}" for k, v in tot.items() if v)
                   + f" | שמות ישויות שונים: {len(names)} | דוגמה: {sorted(names)[:6]}")
