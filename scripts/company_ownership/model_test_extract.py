@@ -47,6 +47,51 @@ def existing_best():
     return best
 
 
+def probe(a):
+    """לכל קובץ בדוח של כל חברה: לכל עמוד בטווח - אורך הטקסט ומניין סיומות של ישויות (LLC, LP, Inc...), וסה"כ שמות שונים
+    שמסתיימים בסיומת כזו. ובהשוואה: כמה חברות בת מצא כל מודל בבדיקות הקודמות בעמודים האלה (page_reference)."""
+    import collections
+    import glob
+    import io
+    import re
+    import maya_reports_client as mrc
+    from pypdf import PdfReader
+    lo, hi = (int(x) for x in a.probe.split("-"))
+    SUF = {"LLC": r"\bL\.?L\.?C\b", "LP": r"\bL\.?P\b", "Inc": r"\bInc\b", "Ltd/Limited": r"\bLtd\b|\bLimited\b",
+           "Corp": r"\bCorp(?:oration)?\b", "בע״מ": r'בע"?מ|בע״מ|מ"עב|מ״עב', "שותפות": r"שותפות|תופתוש"}
+    NAME = re.compile(r"([A-Z0-9][\w&.,'\- ]{2,60}?\s(?:LLC|L\.L\.C\.|LP|L\.P\.|Inc\.?|Ltd\.?|Limited|Corp\.?))\b")
+    plan = json.load(open("selection_plan.json", encoding="utf-8"))
+    for cid in a.cids.split(","):
+        snap = (plan.get(cid) or {}).get("snapshot") or {}
+        for fi, url in enumerate([snap.get("pdf_url")] + (snap.get("extra_pdfs") or [])):
+            if not url:
+                continue
+            pdf = mrc.download_report_file(url)
+            n = len(PdfReader(io.BytesIO(pdf)).pages)
+            texts = rsb._page_texts(pdf, n)
+            print(f"PROBE {plan[cid].get('company_name')} ({cid}) קובץ {fi} {url.split('/')[-1]}: {n} עמודים, pdftotext={'כן' if texts else 'לא'}")
+            if not texts:
+                continue
+            tot, names = collections.Counter(), set()
+            for pg in range(lo, min(hi, n) + 1):
+                t = texts[pg - 1]
+                c = {k: len(re.findall(v, t)) for k, v in SUF.items()}
+                tot.update(c)
+                nm = {" ".join(m.split()) for m in NAME.findall(t)}
+                names |= nm
+                print(f"PROBE   עמ' {pg}: {len(t.strip())} תווים | " + " ".join(f"{k}={v}" for k, v in c.items() if v)
+                      + f" | שמות ישויות שונים: {len(nm)}")
+            print(f"PROBE   סה\"כ עמ' {lo}-{hi}: " + " ".join(f"{k}={v}" for k, v in tot.items() if v)
+                  + f" | שמות ישויות שונים: {len(names)} | דוגמה: {sorted(names)[:6]}")
+        for f in sorted(glob.glob("model_test/subs_*.jsonl")):
+            for line in open(f, encoding="utf-8"):
+                r = json.loads(line)
+                if str(r.get("parent_hp")) == cid:
+                    k = sum(1 for x in r.get("subsidiaries") or [] if str(x.get("page_reference")).isdigit()
+                            and lo <= int(x["page_reference"]) <= hi)
+                    print(f"PROBE   {f.split('/')[-1][5:-6]}: {k} חברות בת בעמודים {lo}-{hi}")
+
+
 def dry(a):
     """סינון העמודים בלי Gemini: לכל דוח - כמה עמודים נבחרו, וכמה מחברות הבת בחילוץ הקיים (page_reference בקובץ הראשי)
     נמצאות בעמודים שנבחרו. רק קריאת PDF - אין עלות."""
@@ -95,8 +140,11 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--cids", required=True)
     ap.add_argument("--workers", type=int, default=6)
+    ap.add_argument("--probe", default="", help="בלי Gemini: טקסט (pdftotext) של עמודים נבחרים ומניין שמות ישויות, למשל 10-16")
     ap.add_argument("--dry", action="store_true", help="בלי Gemini: רק כמה עמודים נבחרים, וכמה מעמודי חברות הבת הקיימות מכוסים")
     a = ap.parse_args()
+    if a.probe:
+        return probe(a)
     if a.dry:
         return dry(a)
     plan = json.load(open("selection_plan.json", encoding="utf-8"))
