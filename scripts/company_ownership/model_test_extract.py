@@ -77,6 +77,16 @@ def dry(a):
         tot_sel += len(sel); tot_pages += n; tot_cov += cov; tot_refs += len(refs)
         print(f"DRY {plan[cid].get('company_name')} ({cid}): {len(sel)}/{n} עמודים נבחרו; "
               f"חברות בת קיימות בעמודים שנבחרו: {cov}/{len(refs)}")
+        texts = rsb._page_texts(pdf, n)
+        if texts is None:
+            print(f"   (pdftotext לא החזיר טקסט תואם - {n} עמודים)")
+            continue
+        import collections
+        missed = collections.Counter(p for p in refs if p - 1 not in set(sel))
+        for p, c in missed.most_common(6):
+            t = texts[p - 1]
+            head = " ".join(t.split())[:110]
+            print(f"   MISS p{p} ({c} חברות): len={len(t.strip())} ent={len(rsb.ENTITY.findall(t))} pct={t.count('%')} | {head}")
     print(f"DRY TOTAL: {tot_sel}/{tot_pages} עמודים ({100 * tot_sel // max(1, tot_pages)}%); "
           f"כיסוי חברות הבת הקיימות: {tot_cov}/{tot_refs} ({100 * tot_cov // max(1, tot_refs)}%)")
 
