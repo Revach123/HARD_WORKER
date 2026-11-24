@@ -4269,7 +4269,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-11-24T09:26:04.868324+00:00",
+    "at": "2026-11-24T09:26:44.323550+00:00",
     "model": "gemini-3.6-flash",
     "chunks": {
       "size": 20,
@@ -5413,6 +5413,234 @@
             }
           ],
           "change_events": []
+        },
+        "0:15": {
+          "report_format": "10-K",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-06-30",
+          "subsidiaries": [
+            {
+              "name": "Nationwide Acceptance Holdings LLC",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 256,
+              "section_title": "Nationwide Loan Company LLC",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Nationwide Loan Company LLC",
+              "ownership_pct": 94.22,
+              "parent": "Nationwide Acceptance Holdings LLC",
+              "page_reference": 256,
+              "section_title": "Nationwide Loan Company LLC",
+              "table_title": null,
+              "note": "Nationwide management owns remaining 5.78%"
+            },
+            {
+              "name": "NMMB Holdings, Inc.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 256,
+              "section_title": "NMMB, Inc.",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "NMMB, Inc.",
+              "ownership_pct": 92.77,
+              "parent": "NMMB Holdings, Inc.",
+              "page_reference": 256,
+              "section_title": "NMMB, Inc.",
+              "table_title": null,
+              "note": "NMMB management owns remaining equity"
+            },
+            {
+              "name": "Refuel Agency, Inc.",
+              "ownership_pct": 100,
+              "parent": "NMMB, Inc.",
+              "page_reference": 256,
+              "section_title": "NMMB, Inc.",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Armed Forces Communications, Inc.",
+              "ownership_pct": 100,
+              "parent": "Refuel Agency, Inc.",
+              "page_reference": 256,
+              "section_title": "NMMB, Inc.",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Pacific World Corporation",
+              "ownership_pct": 99.99,
+              "parent": null,
+              "page_reference": 257,
+              "section_title": "Pacific World Corporation",
+              "table_title": null,
+              "note": "100% of preferred equity representing 99.99% fully-diluted ownership"
+            },
+            {
+              "name": "QC Holdings TopCo, LLC",
+              "ownership_pct": 95.4,
+              "parent": null,
+              "page_reference": 258,
+              "section_title": "QC Holdings TopCo, LLC",
+              "table_title": null,
+              "note": "95.4% equity interest as of June 30, 2026"
+            },
+            {
+              "name": "R-V Holdings of Delaware, LLC",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 258,
+              "section_title": "R-V Industries, Inc.",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "R-V Industries, Inc.",
+              "ownership_pct": 90.28,
+              "parent": "R-V Holdings of Delaware, LLC",
+              "page_reference": 258,
+              "section_title": "R-V Industries, Inc.",
+              "table_title": null,
+              "note": "R-V management owns remaining 9.72%"
+            },
+            {
+              "name": "Strategic Chemical Solutions Corp.",
+              "ownership_pct": 99.96,
+              "parent": null,
+              "page_reference": 259,
+              "section_title": "Strategic Chemical Solutions Corp. (effective October 21, 2025 f/k/a USES Corp.)",
+              "table_title": null,
+              "note": "effective October 21, 2025 f/k/a USES Corp."
+            },
+            {
+              "name": "UTP Holdings Group, Inc.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 260,
+              "section_title": "Universal Turbine Parts, LLC",
+              "table_title": null,
+              "note": "f/k/a Harbortouch Holdings of Delaware"
+            },
+            {
+              "name": "Universal Turbine Parts, LLC",
+              "ownership_pct": 100,
+              "parent": "UTP Holdings Group, Inc.",
+              "page_reference": 260,
+              "section_title": "Universal Turbine Parts, LLC",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Valley Electric Holdings I, Inc.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 261,
+              "section_title": "Valley Electric Company, Inc.",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Valley Electric Holdings II, Inc.",
+              "ownership_pct": 100,
+              "parent": "Valley Electric Holdings I, Inc.",
+              "page_reference": 261,
+              "section_title": "Valley Electric Company, Inc.",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Valley Electric Company, Inc.",
+              "ownership_pct": 94.99,
+              "parent": "Valley Electric Holdings II, Inc.",
+              "page_reference": 261,
+              "section_title": "Valley Electric Company, Inc.",
+              "table_title": null,
+              "note": "Valley Electric management owns remaining 5.01%"
+            },
+            {
+              "name": "VE Company, Inc.",
+              "ownership_pct": 100,
+              "parent": "Valley Electric Company, Inc.",
+              "page_reference": 261,
+              "section_title": "Valley Electric Company, Inc.",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Valley Electric Co. of Mt. Vernon, Inc.",
+              "ownership_pct": 100,
+              "parent": "VE Company, Inc.",
+              "page_reference": 261,
+              "section_title": "Valley Electric Company, Inc.",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Victor Holdings of Delaware, LLC",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 262,
+              "section_title": "Victor Technology, LLC",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "VTI Acquisition, Inc.",
+              "ownership_pct": 100,
+              "parent": "Victor Holdings of Delaware, LLC",
+              "page_reference": 262,
+              "section_title": "Victor Technology, LLC",
+              "table_title": null,
+              "note": "Acquired during year ended June 30, 2026"
+            },
+            {
+              "name": "Victor Technology, LLC",
+              "ownership_pct": 100,
+              "parent": "Victor Holdings of Delaware, LLC",
+              "page_reference": 262,
+              "section_title": "Victor Technology, LLC",
+              "table_title": null,
+              "note": "Acquired during year ended June 30, 2026"
+            }
+          ],
+          "change_events": [
+            {
+              "company": "VTI Acquisition, Inc.",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 100,
+              "event_date": null,
+              "event_description": "Victor Holdings acquired 100% of the equity interest in VTI Acquisition, Inc. during the year ended June 30, 2026.",
+              "page_reference": 262,
+              "section_title": "Victor Technology, LLC"
+            },
+            {
+              "company": "Victor Technology, LLC",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 100,
+              "event_date": null,
+              "event_description": "Victor Holdings acquired 100% of the equity interest in Victor Technology, LLC during the year ended June 30, 2026.",
+              "page_reference": 262,
+              "section_title": "Victor Technology, LLC"
+            },
+            {
+              "company": "Valley Electric Company, Inc.",
+              "event_type": "full_disposal",
+              "ownership_pct_before": 94.99,
+              "ownership_pct_after": 0,
+              "event_date": "2026-07-01",
+              "event_description": "On July 1, 2026, sold 94.99% equity interests in Valley Electric for total consideration of $280,779.",
+              "page_reference": 267,
+              "section_title": "Note 18. Subsequent Events"
+            }
+          ]
         }
       },
       "attempts": {
@@ -5421,7 +5649,23 @@
         "0:11": 1,
         "0:12": 1,
         "0:13": 1,
-        "0:14": 1
+        "0:14": 1,
+        "0:16": 1,
+        "0:17": 1,
+        "0:18": 1,
+        "0:19": 1,
+        "0:20": 1,
+        "0:21": 1,
+        "0:22": 1,
+        "0:23": 1,
+        "0:24": 1,
+        "0:25": 1,
+        "0:26": 1,
+        "0:27": 1,
+        "0:28": 1,
+        "0:29": 1,
+        "0:30": 1,
+        "0:31": 1
       }
     }
   },
@@ -5430,7 +5674,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-11-24T09:26:02.075126+00:00",
+    "at": "2026-11-24T09:26:23.600600+00:00",
     "model": "gemini-3.6-flash",
     "chunks": {
       "size": 20,
@@ -5967,6 +6211,77 @@
             }
           ],
           "change_events": []
+        },
+        "0:11": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "דיורים בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 188,
+              "section_title": null,
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "גשם הירדן רכסים בע\"מ",
+              "ownership_pct": 49,
+              "parent": null,
+              "page_reference": 188,
+              "section_title": null,
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "קניין ובניין בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 188,
+              "section_title": null,
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "ראש כרמל בע\"מ",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 188,
+              "section_title": null,
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "ריביירה אשל הירדן בע\"מ",
+              "ownership_pct": 20,
+              "parent": null,
+              "page_reference": 188,
+              "section_title": null,
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "אלעד סנטר בע\"מ",
+              "ownership_pct": 10,
+              "parent": null,
+              "page_reference": 188,
+              "section_title": null,
+              "table_title": "תקנה 11",
+              "note": null
+            },
+            {
+              "name": "גשם הירדן נהריה בע\"מ",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 188,
+              "section_title": "תקנה 13 - הכנסות בשנת הדיווח של חברות בת וחברות כלולות מהותיות והכנסות החברה מהן (באלפי ש\"ח)",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
         }
       },
       "attempts": {
@@ -5996,7 +6311,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-11-24T09:26:22.400528+00:00",
+    "at": "2026-11-24T09:26:24.828153+00:00",
     "model": "gemini-3.6-flash",
     "chunks": {
       "size": 20,
@@ -6032,7 +6347,13 @@
         "0:0": 1,
         "0:2": 1,
         "0:3": 1,
-        "0:5": 1
+        "0:5": 1,
+        "0:6": 1,
+        "0:7": 1,
+        "0:8": 1,
+        "0:9": 1,
+        "0:10": 1,
+        "0:11": 1
       }
     }
   },
@@ -6041,15 +6362,989 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-11-24T09:26:18.028995+00:00",
+    "at": "2026-11-24T09:27:08.853682+00:00",
     "model": "gemini-3.6-flash",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 7,
+      "done": {
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אפסלון אינק",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 27,
+              "section_title": "20.2.2 מותג פרטי בקטגוריית Baby care",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "חנות המשווקת מוצרים בקטגוריית Baby care ב-Amazon",
+              "ownership_pct": 56,
+              "parent": "אפסלון אינק",
+              "page_reference": 27,
+              "section_title": "20.2.2 מותג פרטי בקטגוריית Baby care",
+              "table_title": null,
+              "note": "רכישת 56% מזכויות הבעלות והשליטה הושלמה ביום 4 ביולי 2024"
+            }
+          ],
+          "change_events": [
+            {
+              "company": "חנות המשווקת מוצרים בקטגוריית Baby care ב-Amazon",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 56,
+              "event_date": "2024-07-04",
+              "event_description": "השלמת עסקה לרכישת 56% מזכויות הבעלות והשליטה בחנות המשווקת ב-Amazon ארה\"ב ובריטניה מגוון מוצרים בתחום Baby care ע\"י אפסלון אינק",
+              "page_reference": 27,
+              "section_title": "20.2.2 מותג פרטי בקטגוריית Baby care"
+            },
+            {
+              "company": "חנות מקוונת אפבלנד",
+              "event_type": "full_disposal",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 0,
+              "event_date": null,
+              "event_description": "מכירת החנות המקוונת, המותג וכל הנכסים הנלווים של אפבלנד לצד ג' במהלך שנת 2025",
+              "page_reference": 24,
+              "section_title": "12. שינויים בהיקף הפעילות בתחום וברווחיותו"
+            },
+            {
+              "company": "חנות מקוונת לאורה",
+              "event_type": "full_disposal",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 0,
+              "event_date": null,
+              "event_description": "הפסקת פעילות החנות המקוונת לאורה במהלך שנת 2025",
+              "page_reference": 24,
+              "section_title": "12. שינויים בהיקף הפעילות בתחום וברווחיותו"
+            }
+          ]
+        },
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "אפסלון טרייד-טק אמ.אל בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 44,
+              "section_title": "דוח הדירקטוריון על מצב ענייני החברה לתקופה שהסתיימה ביום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אפסלון ברנדס הולדינג אינק",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 44,
+              "section_title": "דוח הדירקטוריון על מצב ענייני החברה לתקופה שהסתיימה ביום 31 בדצמבר 2025",
+              "table_title": null,
+              "note": "מאוגדת לפי דיני מדינת דלאוור, ארה\"ב"
+            }
+          ],
+          "change_events": []
+        }
+      },
+      "attempts": {
+        "0:0": 1,
+        "0:3": 1,
+        "0:4": 1,
+        "0:5": 1,
+        "0:6": 1
+      }
+    }
+  },
+  "1729867": {
+    "company_id": "2511",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-11-24T09:26:51.197467+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 11,
+      "done": {
+        "0:2": {
+          "report_format": "israeli_periodic",
+          "document_type": "change_events",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "חשב",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 35,
+              "section_title": "פתרונות תוכנה מקיפים לניהול תהליכים עסקיים ולניהול תהליכים למוסדות פיננסים",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "לירם תוכנה",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 35,
+              "section_title": "פתרונות תוכנה מקיפים לניהול תהליכים עסקיים ולניהול תהליכים למוסדות פיננסים",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "פייפרלס",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 35,
+              "section_title": "פתרונות תוכנה מקיפים לניהול תהליכים עסקיים ולניהול תהליכים למוסדות פיננסים",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "פורמלי",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 35,
+              "section_title": "פתרונות תוכנה מקיפים לניהול תהליכים עסקיים ולניהול תהליכים למוסדות פיננסים",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "אמלוג'יק",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 35,
+              "section_title": "שירותים מקצועיים לפיתוח מוצרי תוכנה ומערכות ליבה",
+              "table_title": null,
+              "note": "חברה בקבוצה"
+            },
+            {
+              "name": "קול המס",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 36,
+              "section_title": "שירותי ייעוץ מקצועי",
+              "table_title": null,
+              "note": "חברה מוחזקת"
+            },
+            {
+              "name": "יוניק",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 43,
+              "section_title": "הטבות וטיבם של הסכמי ההעסקה של העובדים",
+              "table_title": null,
+              "note": "חברת בת של החברה"
+            },
+            {
+              "name": "משמרות",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 48,
+              "section_title": "הסכמי אשראי מהותיים",
+              "table_title": "הסכמי אשראי מהותיים",
+              "note": "רכישת מניות משמרות"
+            },
+            {
+              "name": "מידע מחשבים",
+              "ownership_pct": 60,
+              "parent": null,
+              "page_reference": 54,
+              "section_title": "הסכמים מהותיים",
+              "table_title": null,
+              "note": "רכישת 60% מהחזקות ביום 3 ביולי 2024"
+            },
+            {
+              "name": "ווי-אייטי",
+              "ownership_pct": 60,
+              "parent": null,
+              "page_reference": 54,
+              "section_title": "הסכמים מהותיים",
+              "table_title": null,
+              "note": "רכישת 60% מהחזקות ביום 13 באוקטובר 2024"
+            }
+          ],
+          "change_events": [
+            {
+              "company": "מידע מחשבים",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 60,
+              "event_date": "2024-07-03",
+              "event_description": "רכישת 60% מהחזקות במידע מחשבים, בתוספת אופציית Call לחברה ואופציית Put למוכר בגין 40% הנותרים",
+              "page_reference": 54,
+              "section_title": "הסכמים מהותיים"
+            },
+            {
+              "company": "ווי-אייטי",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 60,
+              "event_date": "2024-10-13",
+              "event_description": "רכישת 60% מהחזקות בווי-אייטי, בתוספת אופציית Call לחברה ואופציית Put למוכר בגין 40% הנותרים",
+              "page_reference": 54,
+              "section_title": "הסכמים מהותיים"
+            }
+          ]
+        }
+      },
+      "attempts": {
+        "0:0": 1,
+        "0:1": 1,
+        "0:3": 1,
+        "0:4": 1,
+        "0:5": 1,
+        "0:6": 1,
+        "0:7": 1,
+        "0:8": 1
+      }
+    }
+  },
+  "1728277": {
+    "company_id": "280",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-11-24T09:26:53.825619+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 13,
+      "done": {
+        "0:6": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "א.ר קוסמטיקה בוטנית בע\"מ (\"איב רושה\")",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 113,
+              "section_title": "ביאור 5 – צירוף עסקים וחברות בנות:",
+              "table_title": "(ב) להלן פרטים על החברות הבנות בהחזקה ישירה:",
+              "note": null
+            },
+            {
+              "name": "טופ טן אביזרי אופנה בע\"מ (\"טופ טן\")",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 113,
+              "section_title": "ביאור 5 – צירוף עסקים וחברות בנות:",
+              "table_title": "(ב) להלן פרטים על החברות הבנות בהחזקה ישירה:",
+              "note": null
+            },
+            {
+              "name": "אורבניקה (פאלו) ריטייל בע\"מ (\"אורבניקה\")",
+              "ownership_pct": 70.8,
+              "parent": null,
+              "page_reference": 113,
+              "section_title": "ביאור 5 – צירוף עסקים וחברות בנות:",
+              "table_title": "(ב) להלן פרטים על החברות הבנות בהחזקה ישירה:",
+              "note": null
+            },
+            {
+              "name": "קרולינה למקה בע\"מ (\"קרולינה למקה\")",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 113,
+              "section_title": "ביאור 5 – צירוף עסקים וחברות בנות:",
+              "table_title": "(ב) להלן פרטים על החברות הבנות בהחזקה ישירה:",
+              "note": null
+            },
+            {
+              "name": "Castro Singapore",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 113,
+              "section_title": "ביאור 5 – צירוף עסקים וחברות בנות:",
+              "table_title": "(ב) להלן פרטים על החברות הבנות בהחזקה ישירה:",
+              "note": null
+            },
+            {
+              "name": "Radixis Inc (\"רדיקסיס\")",
+              "ownership_pct": 79.9,
+              "parent": null,
+              "page_reference": 113,
+              "section_title": "ביאור 5 – צירוף עסקים וחברות בנות:",
+              "table_title": "(ב) להלן פרטים על החברות הבנות בהחזקה ישירה:",
+              "note": null
+            },
+            {
+              "name": "הודיס בע\"מ",
+              "ownership_pct": 100,
+              "parent": "אורבניקה (פאלו) ריטייל בע\"מ (\"אורבניקה\")",
+              "page_reference": 114,
+              "section_title": "ביאור 5 – צירוף עסקים וחברות בנות:",
+              "table_title": null,
+              "note": "לאחר השלמת שינוי מבני מחזיקה אורבניקה ב-100% מהונה המונפק והנפרע של הודיס"
+            }
+          ],
+          "change_events": [
+            {
+              "company": "אורבניקה (פאלו) ריטייל בע\"מ (\"אורבניקה\")",
+              "event_type": "decrease",
+              "ownership_pct_before": 100,
+              "ownership_pct_after": 70.8,
+              "event_date": "2025-05-04",
+              "event_description": "הנפקה לראשונה לציבור של מניות אורבניקה בבורסה לניירות ערך בתל אביב",
+              "page_reference": 114,
+              "section_title": "ביאור 5 – צירוף עסקים וחברות בנות:"
+            },
+            {
+              "company": "Radixis Inc (\"רדיקסיס\")",
+              "event_type": "decrease",
+              "ownership_pct_before": 79.9,
+              "ownership_pct_after": 54,
+              "event_date": "2026-03-03",
+              "event_description": "אישור הסכם השקעה של קבוצת משקיעים חיצוניים ברדיקסיס, אשר יביא להחזקה של כ-54% בהון ובהצבעה",
+              "page_reference": 115,
+              "section_title": "ביאור 5 – צירוף עסקים וחברות בנות:"
+            }
+          ]
+        }
+      },
+      "attempts": {
+        "0:0": 1,
+        "0:1": 1,
+        "0:2": 1,
+        "0:3": 1,
+        "0:4": 1,
+        "0:5": 1,
+        "0:7": 1,
+        "0:8": 1,
+        "0:9": 1,
+        "0:10": 1,
+        "0:11": 1,
+        "0:12": 1
+      }
+    }
+  },
+  "1728540": {
+    "company_id": "180",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-11-24T09:26:53.097340+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 11,
+      "done": {
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "Angel North America Inc.",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 31,
+              "section_title": "8.1 כללי",
+              "table_title": null,
+              "note": "חברה בת בבעלות מלאה של החברה"
+            },
+            {
+              "name": "Angel's Bakery USA LLC",
+              "ownership_pct": 55,
+              "parent": "Angel North America Inc.",
+              "page_reference": 31,
+              "section_title": "8.1 כללי",
+              "table_title": null,
+              "note": "מוחזקת ב-55% על ידי ANA"
+            },
+            {
+              "name": "Angel's Samson's Pita US LLC",
+              "ownership_pct": 55,
+              "parent": "Angel North America Inc.",
+              "page_reference": 31,
+              "section_title": "8.1 כללי",
+              "table_title": null,
+              "note": "מוחזקת ב-55% על ידי ANA"
+            },
+            {
+              "name": "ARE",
+              "ownership_pct": 55,
+              "parent": "Angel North America Inc.",
+              "page_reference": 34,
+              "section_title": "8.14 רכוש קבוע, מקרקעין ומתקנים",
+              "table_title": null,
+              "note": "מוחזקת ב-55% על ידי ANA"
+            }
+          ],
+          "change_events": [
+            {
+              "company": "אורנים",
+              "event_type": "other",
+              "ownership_pct_before": null,
+              "ownership_pct_after": null,
+              "event_date": "2024-01-29",
+              "event_description": "מיזוגה של אורנים לתוך החברה",
+              "page_reference": 26,
+              "section_title": "7.19 רכוש קבוע, מקרקעין ומתקנים"
+            }
+          ]
+        }
+      },
+      "attempts": {
+        "0:0": 1,
+        "0:2": 1,
+        "0:3": 1,
+        "0:4": 1,
+        "0:5": 1,
+        "0:6": 1,
+        "0:7": 1,
+        "0:8": 1,
+        "0:9": 1,
+        "0:10": 1
+      }
+    }
+  },
+  "1731729": {
+    "company_id": "1867",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-11-24T09:27:14.483871+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 15,
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2026-03-26",
+          "subsidiaries": [
+            {
+              "name": "דיפלומט מפיצים (1968) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 7,
+              "section_title": "כללי - הגדרות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "כופר בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 13,
+              "section_title": "2. מבנה החזקות",
+              "table_title": null,
+              "note": "מחזיקה ב-10% מדיפלומט מפיצים (1968) בע\"מ"
+            },
+            {
+              "name": "Diplomat Georgia LLC",
+              "ownership_pct": 100,
+              "parent": "דיפלומט מפיצים (1968) בע\"מ",
+              "page_reference": 7,
+              "section_title": "כללי - הגדרות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "D.C.L. (Holding) Ltd",
+              "ownership_pct": 100,
+              "parent": "דיפלומט מפיצים (1968) בע\"מ",
+              "page_reference": 7,
+              "section_title": "כללי - הגדרות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "סטארקיסט פודור בע\"מ",
+              "ownership_pct": 100,
+              "parent": "דיפלומט מפיצים (1968) בע\"מ",
+              "page_reference": 7,
+              "section_title": "כללי - הגדרות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ראקוטו דיפלומט אינטרנשיונל שותפות מוגבלת",
+              "ownership_pct": 75,
+              "parent": "דיפלומט מפיצים (1968) בע\"מ",
+              "page_reference": 7,
+              "section_title": "כללי - הגדרות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Diplomat Distributors (D.D.) Cyprus Ltd",
+              "ownership_pct": 100,
+              "parent": "D.C.L. (Holding) Ltd",
+              "page_reference": 7,
+              "section_title": "כללי - הגדרות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Diplomat Distributors Greece Single Member P.C",
+              "ownership_pct": 100,
+              "parent": "D.C.L. (Holding) Ltd",
+              "page_reference": 7,
+              "section_title": "כללי - הגדרות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Diplomat Distributors (R) S.R.L",
+              "ownership_pct": 100,
+              "parent": "D.C.L. (Holding) Ltd",
+              "page_reference": 7,
+              "section_title": "כללי - הגדרות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Diplomat Distributors SA Proprietary Ltd",
+              "ownership_pct": 92,
+              "parent": "D.C.L. (Holding) Ltd",
+              "page_reference": 7,
+              "section_title": "כללי - הגדרות",
+              "table_title": null,
+              "note": "בתרשים בעמוד 13 מופיע כ-100%"
+            },
+            {
+              "name": "Diplomat New Zealand Limited",
+              "ownership_pct": 100,
+              "parent": "D.C.L. (Holding) Ltd",
+              "page_reference": 7,
+              "section_title": "כללי - הגדרות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אגודה שיתופית מוצרי שום ותיבול דורות",
+              "ownership_pct": 51,
+              "parent": "דיפלומט מפיצים (1968) בע\"מ",
+              "page_reference": 7,
+              "section_title": "כללי - הגדרות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "סי. די. אס. אל בע\"מ (CDSL)",
+              "ownership_pct": 50,
+              "parent": "דיפלומט מפיצים (1968) בע\"מ",
+              "page_reference": 7,
+              "section_title": "כללי - הגדרות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מדיטרנד שיווק (2004) בע\"מ",
+              "ownership_pct": 75,
+              "parent": "דיפלומט מפיצים (1968) בע\"מ",
+              "page_reference": 8,
+              "section_title": "כללי - הגדרות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "נווה פארמה (1996) בע\"מ",
+              "ownership_pct": 100,
+              "parent": "דיפלומט מפיצים (1968) בע\"מ",
+              "page_reference": 8,
+              "section_title": "כללי - הגדרות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "ביגדם בע\"מ",
+              "ownership_pct": 100,
+              "parent": "דיפלומט מפיצים (1968) בע\"מ",
+              "page_reference": 8,
+              "section_title": "כללי - הגדרות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "נוגם תמרוקים",
+              "ownership_pct": 100,
+              "parent": "דיפלומט מפיצים (1968) בע\"מ",
+              "page_reference": 13,
+              "section_title": "2. מבנה החזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מ.מ.ס מולטי מרקטינג",
+              "ownership_pct": 100,
+              "parent": "דיפלומט מפיצים (1968) בע\"מ",
+              "page_reference": 13,
+              "section_title": "2. מבנה החזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "בדגוני",
+              "ownership_pct": 51,
+              "parent": "Diplomat Georgia LLC",
+              "page_reference": 13,
+              "section_title": "2. מבנה החזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "DTD",
+              "ownership_pct": 50,
+              "parent": "D.C.L. (Holding) Ltd",
+              "page_reference": 13,
+              "section_title": "2. מבנה החזקות",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": [
+            {
+              "company": "נווה פארמה (1996) בע\"מ",
+              "event_type": "increase",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 100,
+              "event_date": "2025-04-29",
+              "event_description": "רכישת יתרת המניות של נווה פארמה על ידי דיפלומט מפיצים והגעה להחזקה של 100%",
+              "page_reference": 14,
+              "section_title": "3. תחומי פעילות - תחום פעילות ישראל"
+            },
+            {
+              "company": "מדיטרנד שיווק (2004) בע\"מ",
+              "event_type": "increase",
+              "ownership_pct_before": 65,
+              "ownership_pct_after": 75,
+              "event_date": "2025-07-01",
+              "event_description": "רכישת 10% מהונה המונפק של מדיטרנד והגדלת ההחזקה ל-75%",
+              "page_reference": 14,
+              "section_title": "3. תחומי פעילות - תחום פעילות ישראל"
+            }
+          ]
+        },
+        "0:11": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "CDSL",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 190,
+              "section_title": "באור 14 : - השקעות בחברות מוחזקות",
+              "table_title": "א. השקעות בחברות מוחזקות המטופלות לפי שיטת השווי המאזני",
+              "note": null
+            },
+            {
+              "name": "Stornext Georgia LLC",
+              "ownership_pct": 49,
+              "parent": null,
+              "page_reference": 190,
+              "section_title": "באור 14 : - השקעות בחברות מוחזקות",
+              "table_title": "א. השקעות בחברות מוחזקות המטופלות לפי שיטת השווי המאזני",
+              "note": null
+            },
+            {
+              "name": "D.T.D",
+              "ownership_pct": 50,
+              "parent": null,
+              "page_reference": 190,
+              "section_title": "באור 14 : - השקעות בחברות מוחזקות",
+              "table_title": "א. השקעות בחברות מוחזקות המטופלות לפי שיטת השווי המאזני",
+              "note": null
+            },
+            {
+              "name": "מדיטרנד שיווק 2004 בע\"מ",
+              "ownership_pct": 75,
+              "parent": null,
+              "page_reference": 191,
+              "section_title": "באור 14 : - השקעות בחברות מוחזקות",
+              "table_title": null,
+              "note": "רכישת 50% ב-2020, 10% נוספים ב-2022, ו-15% נוספים ביולי 2025"
+            },
+            {
+              "name": "דורות אגודה חקלאית שיתופית בע\"מ",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 191,
+              "section_title": "באור 14 : - השקעות בחברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "נווה פארמה (1996) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 192,
+              "section_title": "באור 14 : - השקעות בחברות מוחזקות",
+              "table_title": null,
+              "note": "רכישת 65% בספטמבר 2022 ומימוש אופציית PUT ליתרת המניות באפריל 2025"
+            },
+            {
+              "name": "ביגדם בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 192,
+              "section_title": "באור 14 : - השקעות בחברות מוחזקות",
+              "table_title": null,
+              "note": "רכישת 90.2% בספטמבר 2022 וביטול אופציות לרכישת יתרת המניות ל-100% בינואר 2024"
+            },
+            {
+              "name": "שותפות למכירה ושיווק של מוצרים אלכוהוליים בגיאורגיה",
+              "ownership_pct": 51,
+              "parent": null,
+              "page_reference": 192,
+              "section_title": "באור 14 : - השקעות בחברות מוחזקות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "נילוס",
+              "ownership_pct": 0,
+              "parent": null,
+              "page_reference": 191,
+              "section_title": "באור 14 : - השקעות בחברות מוחזקות",
+              "table_title": null,
+              "note": "הפסיקה את פעילותה בפברואר 2024, החברה אינה מחזיקה עוד בהונה (הוחזקו 11% ב-2023)"
+            }
+          ],
+          "change_events": [
+            {
+              "company": "מדיטרנד שיווק 2004 בע\"מ",
+              "event_type": "increase",
+              "ownership_pct_before": 60,
+              "ownership_pct_after": 75,
+              "event_date": "2025-07-01",
+              "event_description": "מימוש מוקדם חלקי של אופציית CALL לרכישת 15% נוספים מהון המניות",
+              "page_reference": 191,
+              "section_title": "באור 14 : - השקעות בחברות מוחזקות"
+            },
+            {
+              "company": "נווה פארמה (1996) בע\"מ",
+              "event_type": "increase",
+              "ownership_pct_before": 65,
+              "ownership_pct_after": 100,
+              "event_date": "2025-04-29",
+              "event_description": "מימוש אופציית PUT למכירת יתרת המניות של נווה פארמה",
+              "page_reference": 192,
+              "section_title": "באור 14 : - השקעות בחברות מוחזקות"
+            },
+            {
+              "company": "ביגדם בע\"מ",
+              "event_type": "increase",
+              "ownership_pct_before": 90.2,
+              "ownership_pct_after": 100,
+              "event_date": "2024-01-31",
+              "event_description": "הסכם לביטול אופציות ורכישת יתרת המניות בביגדם עד ל-100%",
+              "page_reference": 192,
+              "section_title": "באור 14 : - השקעות בחברות מוחזקות"
+            },
+            {
+              "company": "נילוס",
+              "event_type": "full_disposal",
+              "ownership_pct_before": 11,
+              "ownership_pct_after": 0,
+              "event_date": "2024-02-12",
+              "event_description": "החלטה על הפסקת פעילות החברה ואי החזקה בהונה המונפק והנפרע",
+              "page_reference": 191,
+              "section_title": "באור 14 : - השקעות בחברות מוחזקות"
+            }
+          ]
+        }
+      },
+      "attempts": {
+        "0:1": 1,
+        "0:2": 1,
+        "0:3": 1,
+        "0:4": 1,
+        "0:5": 1,
+        "0:6": 1,
+        "0:7": 1,
+        "0:8": 1,
+        "0:9": 1,
+        "0:10": 1
+      }
+    }
+  },
+  "1726807": {
+    "company_id": "2095",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-11-24T09:26:50.816718+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 16,
       "done": {},
       "attempts": {
-        "0:0": 1
+        "0:0": 1,
+        "0:1": 1,
+        "0:2": 1,
+        "0:3": 1,
+        "0:4": 1,
+        "0:5": 1,
+        "0:6": 1,
+        "0:7": 1,
+        "0:8": 1,
+        "0:9": 1,
+        "0:10": 1,
+        "0:11": 1,
+        "0:12": 1,
+        "0:13": 1,
+        "0:14": 1,
+        "0:15": 1
+      }
+    }
+  },
+  "1728602": {
+    "company_id": "2066",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-11-24T09:26:58.799149+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 15,
+      "done": {},
+      "attempts": {
+        "0:0": 1,
+        "0:1": 1,
+        "0:2": 1,
+        "0:3": 1,
+        "0:4": 1,
+        "0:5": 1,
+        "0:6": 1,
+        "0:7": 1,
+        "0:8": 1,
+        "0:9": 1,
+        "0:10": 1,
+        "0:11": 1,
+        "0:12": 1,
+        "0:13": 1,
+        "0:14": 1
+      }
+    }
+  },
+  "1730150": {
+    "company_id": "723",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-11-24T09:26:57.634386+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 17,
+      "done": {},
+      "attempts": {
+        "0:0": 1,
+        "0:1": 1
+      }
+    }
+  },
+  "1724922": {
+    "company_id": "1510",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-11-24T09:27:09.103365+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 16,
+      "done": {},
+      "attempts": {
+        "0:0": 1,
+        "0:1": 1,
+        "0:2": 1,
+        "0:3": 1,
+        "0:4": 1,
+        "0:5": 1,
+        "0:6": 1,
+        "0:7": 1,
+        "0:8": 1,
+        "0:9": 1,
+        "0:10": 1,
+        "0:11": 1,
+        "0:12": 1,
+        "0:13": 1,
+        "0:14": 1,
+        "0:15": 1
+      }
+    }
+  },
+  "1722705": {
+    "company_id": "1873",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-11-24T09:27:15.033036+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 8,
+      "done": {},
+      "attempts": {
+        "0:0": 1,
+        "0:1": 1,
+        "0:2": 1,
+        "0:3": 1,
+        "0:4": 1
+      }
+    }
+  },
+  "1732714": {
+    "company_id": "770",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-11-24T09:27:15.179831+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 12,
+      "done": {},
+      "attempts": {
+        "0:0": 1,
+        "0:1": 1,
+        "0:2": 1,
+        "0:3": 1,
+        "0:4": 1
+      }
+    }
+  },
+  "1751569": {
+    "company_id": "2578",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-11-24T09:27:14.936612+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 2,
+      "done": {},
+      "attempts": {
+        "0:0": 1,
+        "0:1": 1
       }
     }
   }
