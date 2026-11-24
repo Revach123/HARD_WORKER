@@ -532,6 +532,12 @@ def call_gemini_extraction(pdf_bytes: bytes, filename_hint: str, max_retries: in
 
     try:
         return json.loads(text)
+    except json.JSONDecodeError:
+        pass
+    # הסיבה הנפוצה: מרכאות בתוך שם עברי (בע"מ, נדל"ן) שלא סומנו - הופכים לגרשיים ״ ומנסים שוב
+    text = re.sub(r'(?<=[\u0590-\u05FF])"(?=[\u0590-\u05FF])', "״", text)
+    try:
+        return json.loads(text)
     except json.JSONDecodeError as e:
         fixed = repair_json(text)
         if fixed is not None:
