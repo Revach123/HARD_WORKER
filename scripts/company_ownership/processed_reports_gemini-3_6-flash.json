@@ -8706,7 +8706,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-11-24T09:31:42.483967+00:00",
+    "at": "2026-11-24T09:32:07.558108+00:00",
     "model": "gemini-3.6-flash",
     "chunks": {
       "size": 20,
@@ -8950,6 +8950,32 @@
             }
           ],
           "change_events": []
+        },
+        "0:11": {
+          "report_format": "israeli_periodic",
+          "document_type": "unknown",
+          "as_of_date": null,
+          "subsidiaries": [
+            {
+              "name": "וואן סיטי",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 190,
+              "section_title": "תקנה 26א | נושאי משרה בכירה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "וואן שילוב מערכות בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 191,
+              "section_title": "תקנה 26א | נושאי משרה בכירה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": []
         }
       },
       "attempts": {
@@ -8960,7 +8986,8 @@
         "0:4": 1,
         "0:8": 1,
         "0:9": 1,
-        "0:10": 1
+        "0:10": 1,
+        "0:12": 1
       }
     }
   },
@@ -9507,7 +9534,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-11-24T09:31:47.304638+00:00",
+    "at": "2026-11-24T09:32:15.300956+00:00",
     "model": "gemini-3.6-flash",
     "chunks": {
       "size": 20,
@@ -9739,11 +9766,103 @@
               "section_title": "חלק א' – תיאור ההתפתחות הכללית של עסקי התאגיד - 1. פעילות התאגיד ותיאור התפתחות עסקיו"
             }
           ]
+        },
+        "0:3": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "Daily Drills LLC",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 66,
+              "section_title": "1.2.1 רכישת Daily Drills",
+              "table_title": null,
+              "note": "רכישת מלוא הזכויות ביום 16 באוקטובר 2025"
+            },
+            {
+              "name": "דלתא ישראל מותגים בע\"מ",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 65,
+              "section_title": "1.1 כללי",
+              "table_title": null,
+              "note": "חברת בת"
+            },
+            {
+              "name": "Schiesser",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 53,
+              "section_title": "59.7.4 התחייבות בשל סיום יחסי עובד ומעביד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Eminence",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 53,
+              "section_title": "59.7.4 התחייבות בשל סיום יחסי עובד ומעביד",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "קבוצת Bogart",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 62,
+              "section_title": "66.3.2 השלמת הליכי אינטגרציה ותפעול עם חברות בנות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Bare Necessities",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 62,
+              "section_title": "66.3.2 השלמת הליכי אינטגרציה ותפעול עם חברות בנות",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "Organic Basics",
+              "ownership_pct": null,
+              "parent": null,
+              "page_reference": 60,
+              "section_title": "66.2.4 מסחר באתרים מקוונים",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": [
+            {
+              "company": "Daily Drills LLC",
+              "event_type": "new_acquisition",
+              "ownership_pct_before": 0,
+              "ownership_pct_after": 100,
+              "event_date": "2025-10-16",
+              "event_description": "רכישת מלוא הזכויות של LLC Daily Drills",
+              "page_reference": 66,
+              "section_title": "1.2.1 רכישת Daily Drills"
+            }
+          ]
         }
       },
       "attempts": {
         "0:1": 1,
-        "0:2": 1
+        "0:2": 1,
+        "0:4": 1,
+        "0:5": 1,
+        "0:6": 1,
+        "0:7": 1,
+        "0:8": 1,
+        "0:9": 1,
+        "0:10": 1,
+        "0:11": 1,
+        "0:12": 1,
+        "0:13": 1
       }
     }
   },
@@ -9752,7 +9871,7 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-11-24T09:31:51.750886+00:00",
+    "at": "2026-11-24T09:32:14.001489+00:00",
     "model": "gemini-3.6-flash",
     "chunks": {
       "size": 20,
@@ -9784,9 +9903,23 @@
             }
           ],
           "change_events": []
+        },
+        "0:1": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [],
+          "change_events": []
         }
       },
-      "attempts": {}
+      "attempts": {
+        "0:2": 1,
+        "0:3": 1,
+        "0:4": 1,
+        "0:5": 1,
+        "0:6": 1,
+        "0:7": 1
+      }
     }
   },
   "1730213": {
@@ -9794,12 +9927,365 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 0,
-    "at": "2026-11-24T09:31:56.535095+00:00",
+    "at": "2026-11-24T09:31:58.988378+00:00",
     "model": "gemini-3.6-flash",
     "chunks": {
       "size": 20,
       "overlap": 3,
       "total": 8,
+      "done": {},
+      "attempts": {
+        "0:0": 1,
+        "0:1": 1,
+        "0:2": 1,
+        "0:3": 1,
+        "0:4": 1,
+        "0:5": 1,
+        "0:6": 1,
+        "0:7": 1
+      }
+    }
+  },
+  "1744252": {
+    "company_id": "2572",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-11-24T09:32:10.416313+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 2,
+      "done": {},
+      "attempts": {
+        "0:0": 1,
+        "0:1": 1
+      }
+    }
+  },
+  "1728715": {
+    "company_id": "813",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-11-24T09:32:13.609741+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 11,
+      "done": {},
+      "attempts": {
+        "0:0": 1,
+        "0:1": 1,
+        "0:2": 1,
+        "0:3": 1,
+        "0:4": 1,
+        "0:5": 1,
+        "0:6": 1,
+        "0:7": 1,
+        "0:8": 1,
+        "0:9": 1,
+        "0:10": 1
+      }
+    }
+  },
+  "1730754": {
+    "company_id": "1664",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-11-24T09:32:14.365396+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 10,
+      "done": {},
+      "attempts": {
+        "0:0": 1,
+        "0:1": 1,
+        "0:2": 1,
+        "0:3": 1,
+        "0:4": 1,
+        "0:5": 1,
+        "0:6": 1,
+        "0:7": 1,
+        "0:8": 1,
+        "0:9": 1
+      }
+    }
+  },
+  "1732798": {
+    "company_id": "2391",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-11-24T09:32:17.121772+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 8,
+      "done": {},
+      "attempts": {
+        "0:0": 1,
+        "0:1": 1,
+        "0:2": 1,
+        "0:3": 1,
+        "0:4": 1,
+        "0:5": 1,
+        "0:6": 1,
+        "0:7": 1
+      }
+    }
+  },
+  "1726160": {
+    "company_id": "216",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-11-24T09:32:20.031871+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 14,
+      "done": {},
+      "attempts": {
+        "0:0": 1,
+        "0:1": 1,
+        "0:2": 1,
+        "0:3": 1,
+        "0:4": 1,
+        "0:5": 1,
+        "0:6": 1,
+        "0:7": 1,
+        "0:8": 1,
+        "0:9": 1,
+        "0:10": 1,
+        "0:11": 1,
+        "0:12": 1,
+        "0:13": 1
+      }
+    }
+  },
+  "1732520": {
+    "company_id": "1028",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-11-24T09:32:19.304358+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 10,
+      "done": {},
+      "attempts": {
+        "0:0": 1,
+        "0:1": 1,
+        "0:2": 1,
+        "0:3": 1,
+        "0:4": 1,
+        "0:5": 1,
+        "0:6": 1,
+        "0:7": 1,
+        "0:8": 1,
+        "0:9": 1
+      }
+    }
+  },
+  "1733357": {
+    "company_id": "421",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-11-24T09:32:20.194765+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 13,
+      "done": {},
+      "attempts": {
+        "0:0": 1,
+        "0:1": 1,
+        "0:2": 1,
+        "0:3": 1,
+        "0:4": 1,
+        "0:5": 1,
+        "0:6": 1,
+        "0:7": 1
+      }
+    }
+  },
+  "1732591": {
+    "company_id": "589",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-11-24T09:32:20.163398+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 13,
+      "done": {
+        "0:0": {
+          "report_format": "israeli_periodic",
+          "document_type": "ownership_snapshot",
+          "as_of_date": "2025-12-31",
+          "subsidiaries": [
+            {
+              "name": "מנדלסון תשתיות ותעשיות בע\"מ",
+              "ownership_pct": 53.91,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.3 תרשים מבנה החזקות עיקריות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "כימוביל (אחזקות) בע\"מ",
+              "ownership_pct": 100,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.3 תרשים מבנה החזקות עיקריות של החברה",
+              "table_title": null,
+              "note": "לשעבר ע. פלר אחזקות בע\"מ"
+            },
+            {
+              "name": "אוברסיז קומרס בע\"מ",
+              "ownership_pct": 53.33,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.3 תרשים מבנה החזקות עיקריות של החברה",
+              "table_title": null,
+              "note": "8.59% מוחזקות במישרין על ידי החברה ו-44.74% מוחזקות על ידי כימוביל (אחזקות)"
+            },
+            {
+              "name": "כימוטל בע\"מ",
+              "ownership_pct": 100,
+              "parent": "כימוביל (אחזקות) בע\"מ",
+              "page_reference": 4,
+              "section_title": "1.3 תרשים מבנה החזקות עיקריות של החברה",
+              "table_title": null,
+              "note": "לשעבר כימוביל בע\"מ"
+            },
+            {
+              "name": "קבוצת דיפוס",
+              "ownership_pct": 100,
+              "parent": "כימוביל (אחזקות) בע\"מ",
+              "page_reference": 4,
+              "section_title": "1.3 תרשים מבנה החזקות עיקריות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "קבוצת בקטוכם",
+              "ownership_pct": 100,
+              "parent": "כימוביל (אחזקות) בע\"מ",
+              "page_reference": 4,
+              "section_title": "1.3 תרשים מבנה החזקות עיקריות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "אלכסנדרוביץ פלסטיקה הנדסית בע\"מ",
+              "ownership_pct": 100,
+              "parent": "מנדלסון תשתיות ותעשיות בע\"מ",
+              "page_reference": 4,
+              "section_title": "1.3 תרשים מבנה החזקות עיקריות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פלעד ח.י תעשיות בע\"מ",
+              "ownership_pct": 65,
+              "parent": "מנדלסון תשתיות ותעשיות בע\"מ",
+              "page_reference": 4,
+              "section_title": "1.3 תרשים מבנה החזקות עיקריות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "א.ב. פרופילון שיווק בע\"מ",
+              "ownership_pct": 100,
+              "parent": "מנדלסון תשתיות ותעשיות בע\"מ",
+              "page_reference": 4,
+              "section_title": "1.3 תרשים מבנה החזקות עיקריות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "מנדלסון מתכות איכות בע\"מ",
+              "ownership_pct": 100,
+              "parent": "מנדלסון תשתיות ותעשיות בע\"מ",
+              "page_reference": 4,
+              "section_title": "1.3 תרשים מבנה החזקות עיקריות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "טביב - איכות לסביבה בע\"מ",
+              "ownership_pct": 100,
+              "parent": "כימוטל בע\"מ",
+              "page_reference": 4,
+              "section_title": "1.3 תרשים מבנה החזקות עיקריות של החברה",
+              "table_title": null,
+              "note": null
+            },
+            {
+              "name": "פלציב עין הנציב אגש\"ח בע\"מ",
+              "ownership_pct": 25,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.3 תרשים מבנה החזקות עיקריות של החברה",
+              "table_title": null,
+              "note": "מוחזקת באמצעות חברה פרטית בבעלות מלאה"
+            },
+            {
+              "name": "קרן טנא הון צמיחה 3 פי.אי.אף, ש.מ",
+              "ownership_pct": 1.84,
+              "parent": null,
+              "page_reference": 4,
+              "section_title": "1.3 תרשים מבנה החזקות עיקריות של החברה",
+              "table_title": null,
+              "note": null
+            }
+          ],
+          "change_events": [
+            {
+              "company": "כימוטל בע\"מ",
+              "event_type": "other",
+              "ownership_pct_before": null,
+              "ownership_pct_after": 100,
+              "event_date": "2025-01-21",
+              "event_description": "הושלם שינוי מבני בקבוצה במסגרתו הועברו האחזקות בכימוטל בע\"מ מע. פלר לכימוביל בע\"מ ולאחר מכן מוזגה כימוטל לתוך כימוביל בע\"מ",
+              "page_reference": 3,
+              "section_title": "1.2 התפתחות עסקי התאגיד"
+            }
+          ]
+        }
+      },
+      "attempts": {
+        "0:1": 1
+      }
+    }
+  },
+  "1732612": {
+    "company_id": "507",
+    "status": "partial",
+    "kind": "snapshot",
+    "attempts": 0,
+    "at": "2026-11-24T09:32:19.994409+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "total": 11,
       "done": {},
       "attempts": {
         "0:0": 1
