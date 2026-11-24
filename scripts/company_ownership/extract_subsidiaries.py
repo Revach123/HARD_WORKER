@@ -128,7 +128,8 @@ class GeminiKeyPool:
         if not keys:
             raise RuntimeError("לא נמצא אף GEMINI_API_KEY ב-environment")
         self._keys = keys
-        self._limiters = {k: RateLimiter(max_per_minute=14) for k in keys}
+        # RPM לכל מפתח: בחשבון בתשלום (Tier 1) המגבלה 1,000 לדקה; ברירת המחדל 14 (חינמי) - GEMINI_RPM משנה
+        self._limiters = {k: RateLimiter(max_per_minute=int(os.environ.get("GEMINI_RPM", "14"))) for k in keys}
         self._exhausted_at: dict[str, float] = {}  # key -> timestamp (monotonic)
         self._daily_exhausted: set[str] = set()  # RPD אמיתי - לא מתאושש היום
         self._lock = threading.Lock()
@@ -433,7 +434,7 @@ def call_gemini_extraction(pdf_bytes: bytes, filename_hint: str, max_retries: in
             # שהאכיפה הקשיחה גורמת למודל "להסתפק" בתשובה ריקה תקנית
             # סכמטית כשהוא פחות בטוח, במקום לחפש לעומק במסמך ענק. שאר
             # התיקונים (מיזוג קבצים, quota_retries) לא הושפעו ונשארים.
-            "thinkingConfig": {"thinkingLevel": "high"},  # איכות > מהירות
+            "thinkingConfig": {"thinkingLevel": os.environ.get("GEMINI_THINKING", "high")},  # איכות > מהירות (ניסוי: low)
         },
     }
 

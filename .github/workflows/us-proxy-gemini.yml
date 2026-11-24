@@ -43,7 +43,7 @@ on:
       workers:
         description: "מקביליות (2 מספיק; ה-RPM מוגן לכל מפתח)"
         required: false
-        default: "2"
+        default: "6"
 
 jobs:
   run:
@@ -70,6 +70,7 @@ jobs:
         working-directory: scripts/us_proxy
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_RPM: "300"            # חשבון בתשלום (Tier 1): 1,000 בקשות לדקה
           GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
           GEMINI_API_KEY_3: ${{ secrets.GEMINI_API_KEY_3 }}
           GEMINI_API_KEY_4: ${{ secrets.GEMINI_API_KEY_4 }}
@@ -79,7 +80,7 @@ jobs:
           python -u extract_us_proxy.py --queue queue.json.gz \
             --limit "${{ github.event.inputs.limit || '0' }}" \
             --retry-failed-of "${{ github.event.inputs.retry_failed_of }}" \
-            --workers "${{ github.event.inputs.workers || '2' }}"
+            --workers "${{ github.event.inputs.workers || '6' }}"
 
       # רשת ביטחון: הסקריפט כבר עושה checkpoint וקומיט סופי; זה מבטיח שגם קטיעה/כשל לא מאבדים התקדמות.
       - name: Commit progress

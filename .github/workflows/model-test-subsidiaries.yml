@@ -1,0 +1,70 @@
+name: Model test - subsidiary extraction
+
+# ניסוי השוואת מודלים לחילוץ חברות הבת, על חברות נבחרות. כותב רק ל-scripts/company_ownership/model_test/
+# (private_subsidiaries.jsonl, processed_reports ו-D1 לא משתנים). ר' model_test_extract.py.
+
+on:
+  workflow_dispatch:
+    inputs:
+      cids:
+        description: "companyId של מאיה (מופרדים בפסיק)"
+        required: true
+        default: "1172,1630,127,691,1068,1095"
+      model:
+        description: "מודל Gemini (שם מדויק)"
+        required: true
+        default: gemini-3.6-flash
+      thinking:
+        description: "רמת חשיבה"
+        type: choice
+        options: [high, low]
+        default: high
+      workers:
+        description: "חברות במקביל"
+        required: false
+        default: "6"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: model-test-${{ github.event.inputs.model }}-${{ github.event.inputs.thinking }}
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          token: ${{ secrets.PUSH_TOKEN }}
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: pip install requests pypdf --break-system-packages
+      - name: Extract (test)
+        working-directory: scripts/company_ownership
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL_OVERRIDE: ${{ github.event.inputs.model }}
+          GEMINI_THINKING: ${{ github.event.inputs.thinking }}
+          GEMINI_RPM: "300"
+          PYTHONUNBUFFERED: "1"
+        run: python model_test_extract.py --cids "${{ github.event.inputs.cids }}" --workers "${{ github.event.inputs.workers || '6' }}"
+      - name: Commit test output
+        if: always()
+        working-directory: scripts/company_ownership
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          [ -d model_test ] || exit 0
+          git add model_test
+          if git diff --staged --quiet; then exit 0; fi
+          git commit -m "model test: ${{ github.event.inputs.model }} ${{ github.event.inputs.thinking }} [skip ci]"
+          for i in 1 2 3 4 5; do
+            if git push; then exit 0; fi
+            git fetch origin main; git rebase origin/main || git rebase --abort
+            sleep $((i * 3))
+          done
+          exit 1

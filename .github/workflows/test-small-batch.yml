@@ -56,7 +56,7 @@ on:
       workers:
         description: "כמה משימות מקביליות - זהירות: יותר מדי workers עם קבצי PDF גדולים עלול לחצות TPM שוב ושוב ולבזבז RPD אמיתי על ניסיונות כושלים (נצפה בפועל)"
         required: false
-        default: "2"
+        default: "6"
       skip_maya_refetch:
         description: "דלג לגמרי על שלב שליפת Maya - להשתמש ב-selection_plan.json הקיים כמו שהוא"
         required: false
@@ -155,6 +155,7 @@ jobs:
         working-directory: scripts/company_ownership
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_RPM: "300"            # חשבון בתשלום (Tier 1): 1,000 בקשות לדקה
           GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
           GEMINI_API_KEY_3: ${{ secrets.GEMINI_API_KEY_3 }}
           GEMINI_API_KEY_4: ${{ secrets.GEMINI_API_KEY_4 }}
@@ -178,7 +179,7 @@ jobs:
           echo "מודל: $MODEL | קובץ מעקב: $PROCESSED_LOG"
           python run_full_batch.py --plan selection_plan.json $LIMIT_ARG \
             --processed-log "$PROCESSED_LOG" \
-            --workers ${{ github.event.inputs.workers || '2' }} 2>&1 | tee run_log.txt
+            --workers ${{ github.event.inputs.workers || '6' }} 2>&1 | tee run_log.txt
           exit ${PIPESTATUS[0]}
 
       # if: always() - קריטי: מחייב את ההתקדמות ל-git גם אם ההרצה

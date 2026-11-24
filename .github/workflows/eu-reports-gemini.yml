@@ -37,7 +37,7 @@ on:
       workers:
         description: "מקביליות"
         required: false
-        default: "2"
+        default: "6"
 
 jobs:
   run:
@@ -62,6 +62,7 @@ jobs:
         working-directory: scripts/eu_reports
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_RPM: "300"            # חשבון בתשלום (Tier 1): 1,000 בקשות לדקה
           GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
           GEMINI_API_KEY_3: ${{ secrets.GEMINI_API_KEY_3 }}
           GEMINI_API_KEY_4: ${{ secrets.GEMINI_API_KEY_4 }}
@@ -71,7 +72,7 @@ jobs:
           python -u extract_eu_reports.py --queue queue.json.gz \
             --limit "${{ github.event.inputs.limit || '0' }}" \
             --leis "${{ github.event.inputs.leis }}" \
-            --workers "${{ github.event.inputs.workers || '2' }}"
+            --workers "${{ github.event.inputs.workers || '6' }}"
 
       - name: Commit progress
         if: always()
