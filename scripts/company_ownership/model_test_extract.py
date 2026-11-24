@@ -20,8 +20,9 @@ from concurrent.futures import ThreadPoolExecutor
 MODEL = os.environ.get("GEMINI_MODEL_OVERRIDE", "gemini-3.6-flash")
 THINK = os.environ.get("GEMINI_THINKING", "high")
 os.makedirs("model_test", exist_ok=True)
-OUT = f"model_test/subs_{MODEL}_{THINK}.jsonl"
-os.environ.setdefault("GEMINI_USAGE_LOG", f"model_test/usage_{MODEL}_{THINK}.log")
+TAG = f"{MODEL}_{THINK}" + ("_chunk" if os.environ.get("GEMINI_CHUNK") == "1" else "")
+OUT = f"model_test/subs_{TAG}.jsonl"
+os.environ.setdefault("GEMINI_USAGE_LOG", f"model_test/usage_{TAG}.log")
 
 import extract_subsidiaries as ex          # noqa: E402
 import run_small_batch as rsb              # noqa: E402

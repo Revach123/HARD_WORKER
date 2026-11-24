@@ -34,6 +34,7 @@ run_small_batch.py
 """
 
 import argparse
+import os
 import io
 import json
 import threading
@@ -462,7 +463,7 @@ def _process_report(
     משותף בין process_company (snapshot) ל-process_change_report."""
 
     # 3.5: מסלול חיתוך עיוור (resumable, בלי זיהוי טבלה). 3.6: מסלול מלא למטה.
-    if ex.GEMINI_MODEL in CHUNK_MODELS:
+    if ex.GEMINI_MODEL in CHUNK_MODELS or os.environ.get("GEMINI_CHUNK") == "1":   # GEMINI_CHUNK=1: חלונות לכל מודל
         return _process_report_chunked(
             company_id, company_name, report_id, publish_date,
             pdf_url, extra_pdfs, source_type,

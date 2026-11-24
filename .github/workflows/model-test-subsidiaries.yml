@@ -19,6 +19,10 @@ on:
         type: choice
         options: [high, low]
         default: high
+      chunk:
+        description: "חלונות של 20 עמודים (כמו flash-lite בייצור) גם למודל הזה"
+        type: boolean
+        default: false
       workers:
         description: "חברות במקביל"
         required: false
@@ -28,7 +32,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: model-test-${{ github.event.inputs.model }}-${{ github.event.inputs.thinking }}
+  group: model-test-${{ github.event.inputs.model }}-${{ github.event.inputs.thinking }}-${{ github.event.inputs.chunk }}
   cancel-in-progress: false
 
 jobs:
@@ -50,6 +54,7 @@ jobs:
           GEMINI_MODEL_OVERRIDE: ${{ github.event.inputs.model }}
           GEMINI_THINKING: ${{ github.event.inputs.thinking }}
           GEMINI_RPM: "300"
+          GEMINI_CHUNK: ${{ github.event.inputs.chunk == 'true' && '1' || '0' }}
           PYTHONUNBUFFERED: "1"
         run: python model_test_extract.py --cids "${{ github.event.inputs.cids }}" --workers "${{ github.event.inputs.workers || '6' }}"
       - name: Commit test output
