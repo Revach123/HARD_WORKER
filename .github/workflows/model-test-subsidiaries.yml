@@ -74,6 +74,7 @@ jobs:
           GEMINI_MODEL_OVERRIDE: ${{ github.event.inputs.model }}
           GEMINI_THINKING: ${{ github.event.inputs.thinking }}
           GEMINI_RPM: "300"
+          PROBE_DUMP: ${{ github.event.inputs.probe != '' && '1' || '0' }}
           GEMINI_CHUNK: ${{ github.event.inputs.chunk == 'true' && '1' || '0' }}
           GEMINI_PAGE_FILTER: ${{ github.event.inputs.page_filter == 'relevant' && '1' || github.event.inputs.page_filter == 'charts' && 'charts' || '0' }}
           PYTHONUNBUFFERED: "1"

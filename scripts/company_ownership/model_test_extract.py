@@ -153,6 +153,9 @@ def probe(a):
                     if o is not None:
                         t, src = o, " (OCR)"
                         ocr_n += 1
+                        if os.environ.get("PROBE_DUMP") == "1":
+                            for ln in [x for x in t.splitlines() if x.strip()][:60]:
+                                print(f"OCRTXT p{pg} | {ln.strip()[:110]}")
                 c = {k: len(re.findall(v, t)) for k, v in SUF.items()}
                 tot.update(c)
                 nm = {" ".join(m.split()) for m in NAME.findall(t)}
