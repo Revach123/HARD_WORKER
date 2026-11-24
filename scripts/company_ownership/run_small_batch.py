@@ -313,7 +313,9 @@ def _iter_page_windows(n_pages: int) -> list[tuple[int, int]]:
 PAGE_KEYS = re.compile(
     r"תקנה\s*11|חברות\s+(?:בנות\s+ו)?(?:מוחזקות|כלולות)\s+(?:עיקריות|מהותיות)|רשימת\s+(?:ה)?חברות|"
     r"(?:תרשים|מבנה)\s+(?:ה)?(?:[אה]חזקות|החזקות|אחזקות|הקבוצה|התאגיד)|תרשים\s+מבנה|"
-    r"List\s+of\s+(?:Significant\s+)?Subsidiaries|Organizational\s+Structure|Holding\s+structure|Group\s+structure", re.I)
+    r"השקע(?:ה|ות)\s+בחברות\s+(?:מוחזקות|כלולות|בנות)|השקעות\s+עיקריות|פרטים\s+אודות\s+השקעות|נתוני\s+(?:ה)?פרויקטים|זכיין|"
+    r"List\s+of\s+(?:Significant\s+)?Subsidiaries|(?:Principal|Significant)\s+subsidiaries|Group\s+Entities|"
+    r"Investments?\s+in\s+(?:subsidiaries|investees|associates)|Organizational\s+Structure|Holding\s+structure|Group\s+structure", re.I)
 ENTITY = re.compile(r'בע"?מ|בע״מ|שותפות|\bLtd\b|\bLimited\b|\bLLC\b|\bInc\b|\bB\.?V\b|\bGmbH\b|\bS\.?A\b|\bL\.?P\b|'
                     r'\bS\.?R\.?L\b|\bsp\.? z|\bPLC\b|\bCorp', re.I)
 PAGE_PAD = 1
@@ -345,7 +347,9 @@ def _relevant_pages(pdf_bytes: bytes, n_pages: int):
         return None
     hit = set()
     for i, t in enumerate(texts):
-        if PAGE_KEYS.search(t) or (len(ENTITY.findall(t)) >= 8 and t.count("%") >= 5):
+        t2 = t + "\n" + "\n".join(line[::-1] for line in t.splitlines())   # עברית בסדר חזותי (הפוך) בחלק מהקבצים
+        ent = len(ENTITY.findall(t2))
+        if PAGE_KEYS.search(t2) or ent >= 8 or (ent >= 5 and t.count("%") >= 3):
             hit.add(i)
     low = {i for i, t in enumerate(texts) if len(t.strip()) < 300}
     hit |= {i for i in low if any(abs(i - j) <= 2 for j in hit)}
