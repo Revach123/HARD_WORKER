@@ -67,6 +67,57 @@ def ocr_page(pdf_bytes, page):
         return r.stdout.decode("utf-8", "replace")
 
 
+def ocr_test(a):
+    """אותם עמודים (למשל תרשים מבנה ההחזקות) נשלחים ל-Gemini פעמיים: רק ה-PDF, ו-PDF + טקסט OCR של כל עמוד כרמז.
+    מדפיס מספר חברות בת, כמה עם אחוז, חפיפה עם תוצאת Hydrogen באותם עמודים, וטוקנים לכל ניסיון."""
+    import glob
+    import io
+    import re
+    import maya_reports_client as mrc
+    from pypdf import PdfReader
+    cid, fidx, rng = a.ocr_test.split(":")
+    lo, hi = (int(x) for x in rng.split("-"))
+    plan = json.load(open("selection_plan.json", encoding="utf-8"))
+    snap = plan[cid]["snapshot"]
+    url = ([snap["pdf_url"]] + (snap.get("extra_pdfs") or []))[int(fidx)]
+    pdf = mrc.download_report_file(url)
+    reader = PdfReader(io.BytesIO(pdf))
+    pages = list(range(lo - 1, min(hi, len(reader.pages))))
+    part = rsb._slice_pages(reader, pages)
+    ocr = "\n\n".join(f"--- עמוד {p + 1} ---\n{(ocr_page(pdf, p + 1) or '').strip()}" for p in pages)
+    norm = lambda x: re.sub(r"[^a-z0-9\u0590-\u05FF]", "", (x or "").lower())
+    hyd = set()
+    for f in glob.glob("model_test/subs_gemini-4-hydrogen*.jsonl"):
+        for line in open(f, encoding="utf-8"):
+            r = json.loads(line)
+            if str(r.get("parent_hp")) == cid:
+                hyd |= {norm(x["name"]) for x in r.get("subsidiaries") or []
+                        if str(x.get("page_reference")).isdigit() and lo <= int(x["page_reference"]) <= hi}
+    log = os.environ["GEMINI_USAGE_LOG"]
+    print(f"OCRTEST {plan[cid].get('company_name')} {url.split('/')[-1]} עמ' {lo}-{hi}: מודל {MODEL}/{THINK}; "
+          f"OCR {len(ocr)} תווים; Hydrogen מצא {len(hyd)}")
+    for label, hint in (("בלי OCR", f"{url.split('/')[-1]} עמ' {lo}-{hi}"),
+                        ("עם OCR", f"{url.split('/')[-1]} עמ' {lo}-{hi}\n\nטקסט OCR של העמודים המצורפים (עזר לקריאת השמות "
+                                   f"בתרשים; ייתכנו שגיאות זיהוי - השמות והאחוזים הקובעים הם מה שבתמונה):\n{ocr}")):
+        before = sum(1 for _ in open(log)) if os.path.exists(log) else 0
+        try:
+            res = rsb._call_gemini_with_quota_retry(part, hint) or {}
+        except ex.GeminiQuotaExceededError as e:
+            print(f"OCRTEST {label}: מכסה/קרדיט - {e}")
+            return
+        subs = res.get("subsidiaries") or []
+        names = {norm(x.get("name")) for x in subs if x.get("name")}
+        with_pct = sum(1 for x in subs if x.get("ownership_pct") is not None)
+        u = {"in": 0, "out": 0, "think": 0}
+        if os.path.exists(log):
+            for line in list(open(log))[before:]:
+                kv = dict(x.split("=", 1) for x in line.split()[1:] if "=" in x)
+                for k in u:
+                    u[k] += int(kv.get(k, 0))
+        print(f"OCRTEST {label}: {len(names)} חברות בת ({with_pct} עם אחוז); משותפות עם Hydrogen: {len(names & hyd)}; "
+              f"חדשות מול Hydrogen: {len(names - hyd)} | in={u['in']} out={u['out']} think={u['think']}")
+
+
 def probe(a):
     """לכל קובץ בדוח של כל חברה: לכל עמוד בטווח - אורך הטקסט ומניין סיומות של ישויות (LLC, LP, Inc...), וסה"כ שמות שונים
     שמסתיימים בסיומת כזו. ובהשוואה: כמה חברות בת מצא כל מודל בבדיקות הקודמות בעמודים האלה (page_reference)."""
@@ -167,9 +218,12 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--cids", required=True)
     ap.add_argument("--workers", type=int, default=6)
+    ap.add_argument("--ocr-test", default="", help="cid:file:from-to - אותם עמודים ל-Gemini פעם בלי ופעם עם טקסט OCR כרמז")
     ap.add_argument("--probe", default="", help="בלי Gemini: טקסט (pdftotext) של עמודים נבחרים ומניין שמות ישויות, למשל 10-16")
     ap.add_argument("--dry", action="store_true", help="בלי Gemini: רק כמה עמודים נבחרים, וכמה מעמודי חברות הבת הקיימות מכוסים")
     a = ap.parse_args()
+    if a.ocr_test:
+        return ocr_test(a)
     if a.probe:
         return probe(a)
     if a.dry:

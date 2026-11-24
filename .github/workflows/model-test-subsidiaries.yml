@@ -36,6 +36,10 @@ on:
         description: "בלי Gemini: טווח עמודים (למשל 10-16) - טקסט pdftotext ומניין שמות ישויות"
         required: false
         default: ""
+      ocr_test:
+        description: "cid:file:from-to (למשל 1630:1:10-16) - אותם עמודים בלי / עם OCR כרמז"
+        required: false
+        default: ""
       workers:
         description: "חברות במקביל"
         required: false
@@ -62,7 +66,7 @@ jobs:
       - run: |
           pip install requests pypdf --break-system-packages
           sudo apt-get install -y -qq poppler-utils >/dev/null
-          if [ -n "${{ github.event.inputs.probe }}" ]; then sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-heb >/dev/null; fi
+          if [ -n "${{ github.event.inputs.probe }}${{ github.event.inputs.ocr_test }}" ]; then sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-heb >/dev/null; fi
       - name: Extract (test)
         working-directory: scripts/company_ownership
         env:
@@ -73,7 +77,7 @@ jobs:
           GEMINI_CHUNK: ${{ github.event.inputs.chunk == 'true' && '1' || '0' }}
           GEMINI_PAGE_FILTER: ${{ github.event.inputs.page_filter == 'relevant' && '1' || github.event.inputs.page_filter == 'charts' && 'charts' || '0' }}
           PYTHONUNBUFFERED: "1"
-        run: python model_test_extract.py --cids "${{ github.event.inputs.cids }}" --workers "${{ github.event.inputs.workers || '6' }}" ${{ github.event.inputs.dry == 'true' && '--dry' || '' }} ${{ github.event.inputs.probe != '' && format('--probe {0}', github.event.inputs.probe) || '' }}
+        run: python model_test_extract.py --cids "${{ github.event.inputs.cids }}" --workers "${{ github.event.inputs.workers || '6' }}" ${{ github.event.inputs.dry == 'true' && '--dry' || '' }} ${{ github.event.inputs.probe != '' && format('--probe {0}', github.event.inputs.probe) || '' }} ${{ github.event.inputs.ocr_test != '' && format('--ocr-test {0}', github.event.inputs.ocr_test) || '' }}
       - name: Commit test output
         if: always()
         working-directory: scripts/company_ownership
