@@ -24,9 +24,10 @@ on:
         type: boolean
         default: false
       page_filter:
-        description: "רק עמודים רלוונטיים (pdftotext) נשלחים ל-Gemini"
-        type: boolean
-        default: false
+        description: "סינון עמודים: none / relevant (טבלאות ותרשימים) / charts (רק תרשימי מבנה - למודל יקר)"
+        type: choice
+        options: [none, relevant, charts]
+        default: none
       dry:
         description: "בלי Gemini - רק בדיקת סינון העמודים (כמה נבחרו, כמה מחברות הבת הקיימות מכוסות)"
         type: boolean
@@ -65,7 +66,7 @@ jobs:
           GEMINI_THINKING: ${{ github.event.inputs.thinking }}
           GEMINI_RPM: "300"
           GEMINI_CHUNK: ${{ github.event.inputs.chunk == 'true' && '1' || '0' }}
-          GEMINI_PAGE_FILTER: ${{ github.event.inputs.page_filter == 'true' && '1' || '0' }}
+          GEMINI_PAGE_FILTER: ${{ github.event.inputs.page_filter == 'relevant' && '1' || github.event.inputs.page_filter == 'charts' && 'charts' || '0' }}
           PYTHONUNBUFFERED: "1"
         run: python model_test_extract.py --cids "${{ github.event.inputs.cids }}" --workers "${{ github.event.inputs.workers || '6' }}" ${{ github.event.inputs.dry == 'true' && '--dry' || '' }}
       - name: Commit test output

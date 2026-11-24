@@ -21,7 +21,7 @@ MODEL = os.environ.get("GEMINI_MODEL_OVERRIDE", "gemini-3.6-flash")
 THINK = os.environ.get("GEMINI_THINKING", "high")
 os.makedirs("model_test", exist_ok=True)
 TAG = f"{MODEL}_{THINK}" + ("_chunk" if os.environ.get("GEMINI_CHUNK") == "1" else "") + \
-    ("_filter" if os.environ.get("GEMINI_PAGE_FILTER") == "1" else "")
+    ({"1": "_filter", "charts": "_charts"}.get(os.environ.get("GEMINI_PAGE_FILTER", ""), ""))
 OUT = f"model_test/subs_{TAG}.jsonl"
 os.environ.setdefault("GEMINI_USAGE_LOG", f"model_test/usage_{TAG}.log")
 
@@ -70,7 +70,7 @@ def dry(a):
             continue
         pdf = mrc.download_report_file(snap["pdf_url"])
         n = len(PdfReader(io.BytesIO(pdf)).pages)
-        sel = rsb._relevant_pages(pdf, n) or list(range(n))
+        sel = (rsb._chart_pages(pdf, n) if os.environ.get("GEMINI_PAGE_FILTER") == "charts" else rsb._relevant_pages(pdf, n)) or list(range(n))
         refs = [s.get("page_reference") for s in best.get((cid, snap["report_id"]), [])]
         refs = [int(p) for p in refs if str(p).isdigit() and 1 <= int(p) <= n]
         cov = sum(1 for p in refs if p - 1 in set(sel))

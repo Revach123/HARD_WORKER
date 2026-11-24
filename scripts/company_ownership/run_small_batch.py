@@ -357,6 +357,31 @@ def _relevant_pages(pdf_bytes: bytes, n_pages: int):
     return sel or None
 
 
+CHART_KEYS = re.compile(
+    r"(?:תרשים|מבנה)\s+(?:ה)?(?:[אה]חזקות|החזקות|אחזקות|הקבוצה|התאגיד)|תרשים\s+מבנה|"
+    r"Organizational\s+(?:Structure|chart)|Holding\s+structure|Group\s+structure|Structure\s+chart", re.I)
+
+
+def _chart_pages(pdf_bytes: bytes, n_pages: int):
+    """רק עמודי תרשים מבנה ההחזקות (GEMINI_PAGE_FILTER=charts - למודל יקר): עמוד עם כותרת תרשים, והעמודים שאחריו
+    כל עוד הם המשך התרשים (הרבה שמות ישויות, או מעט טקסט = גרפיקה), עד 10 עמודים. None - לא נמצא תרשים."""
+    texts = _page_texts(pdf_bytes, n_pages)
+    if not texts:
+        return None
+    rev = lambda t: t + "\n" + "\n".join(line[::-1] for line in t.splitlines())
+    sel = set()
+    for i, t in enumerate(texts):
+        if CHART_KEYS.search(rev(t)):
+            sel.add(i)
+            for j in range(i + 1, min(n_pages, i + 11)):
+                tj = texts[j]
+                if len(ENTITY.findall(rev(tj))) >= 3 or len(tj.strip()) < 300:
+                    sel.add(j)
+                else:
+                    break
+    return sorted(sel) or None
+
+
 def _page_windows(pages: list[int]) -> list[list[int]]:
     """רשימת עמודים נבחרים -> חלונות של עד CHUNK_PAGES עמודים (בלי חפיפה - העמודים כבר מורחבים בשוליים)."""
     return [pages[i:i + CHUNK_PAGES] for i in range(0, len(pages), CHUNK_PAGES)]
@@ -449,12 +474,18 @@ def _process_report_chunked(
                 pdf_bytes = _prospectus_pages(pdf_bytes) or pdf_bytes
             reader = PdfReader(io.BytesIO(pdf_bytes))
             n_pages = len(reader.pages)
-            sel = _relevant_pages(pdf_bytes, n_pages) if os.environ.get("GEMINI_PAGE_FILTER") == "1" else None
+            pf = os.environ.get("GEMINI_PAGE_FILTER", "")
+            sel = _relevant_pages(pdf_bytes, n_pages) if pf == "1" else _chart_pages(pdf_bytes, n_pages) if pf == "charts" else None
+            if pf == "charts" and sel is None:
+                sel = []      # בלי תרשים - אין מה לשלוח למודל היקר
             if sel is not None:
                 print(f"  סינון עמודים: {len(sel)}/{n_pages} עמודים נשלחים ({url.split('/')[-1]})")
         except Exception as e:
             print(f"  אזהרה: קובץ {fi} ({url}) נכשל בהורדה/קריאה: {e} - מוחרג "
                   f"מתוכנית החלונות (הדוח לא ייחשב שלם עד שהקובץ יצליח).")
+            continue
+        if sel == []:
+            print(f"  אין עמודי תרשים ב-{url.split('/')[-1]} - מדלג")
             continue
         files.append({"url": url, "reader": reader, "n_pages": n_pages,
                       "windows": _page_windows(sel) if sel is not None else _iter_page_windows(n_pages)})
