@@ -38,6 +38,21 @@ import extract_subsidiaries as ex  # noqa: E402  (_key_pool, GEMINI_BASE_URL, GE
 from extract_us_proxy import clean_figure, load_json  # noqa: E402
 from extract_us_proxy import norm as _norm  # noqa: E402
 
+_USAGE_SRC = "eu_reports"
+
+def _log_gemini_usage(model, data):
+    """שורת שימוש בטוקנים לכל תשובת Gemini (לחישוב עלות). נכתבת ללוג וגם לקובץ (GEMINI_USAGE_LOG) - בריצות עם לוג מוסתר
+    שלב נפרד בסוף מסכם את הקובץ. רק מספרים, בלי תוכן."""
+    u = (data or {}).get("usageMetadata") or {}
+    line = (f"GEMINI_USAGE src={_USAGE_SRC} model={model} in={u.get('promptTokenCount', 0)} "
+            f"out={u.get('candidatesTokenCount', 0)} think={u.get('thoughtsTokenCount', 0)}")
+    print(line, flush=True)
+    try:
+        with open(os.environ.get("GEMINI_USAGE_LOG", "/tmp/gemini_usage.log"), "a") as f:
+            f.write(line + "\n")
+    except OSError:
+        pass
+
 CHECKPOINT_EVERY = 10
 SCHEMA_VERSION = 4  # 2: grounding סובלני לתבליטים + rejected; 3: control; 4: ציטוט טבלה (תאים בשורות נפרדות)
 CELL_SPAN = 400     # ציטוט של שורת טבלה: כל התאים, לפי הסדר, בטווח הזה בטקסט
@@ -274,6 +289,7 @@ def call_gemini_text(text: str, name: str, max_retries: int = 5) -> dict:
             continue
         resp.raise_for_status()
         data = resp.json()
+        _log_gemini_usage(ex.GEMINI_MODEL, data)
         try:
             txt = data["candidates"][0]["content"]["parts"][0]["text"]
         except (KeyError, IndexError) as e:

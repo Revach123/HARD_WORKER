@@ -30,6 +30,21 @@ from datetime import date, datetime
 import requests
 import urllib3
 
+_USAGE_SRC = "subsidiaries"
+
+def _log_gemini_usage(model, data):
+    """שורת שימוש בטוקנים לכל תשובת Gemini (לחישוב עלות). נכתבת ללוג וגם לקובץ (GEMINI_USAGE_LOG) - בריצות עם לוג מוסתר
+    שלב נפרד בסוף מסכם את הקובץ. רק מספרים, בלי תוכן."""
+    u = (data or {}).get("usageMetadata") or {}
+    line = (f"GEMINI_USAGE src={_USAGE_SRC} model={model} in={u.get('promptTokenCount', 0)} "
+            f"out={u.get('candidatesTokenCount', 0)} think={u.get('thoughtsTokenCount', 0)}")
+    print(line, flush=True)
+    try:
+        with open(os.environ.get("GEMINI_USAGE_LOG", "/tmp/gemini_usage.log"), "a") as f:
+            f.write(line + "\n")
+    except OSError:
+        pass
+
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 GEMINI_MODEL = os.environ.get("GEMINI_MODEL_OVERRIDE", "gemini-3.6-flash")
@@ -504,6 +519,7 @@ def call_gemini_extraction(pdf_bytes: bytes, filename_hint: str, max_retries: in
         raise last_error
 
     data = resp.json()
+    _log_gemini_usage(GEMINI_MODEL, data)
 
     try:
         text = data["candidates"][0]["content"]["parts"][0]["text"]

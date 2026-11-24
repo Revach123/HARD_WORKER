@@ -40,6 +40,21 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(HERE, "..", "company_ownership"))
 import extract_subsidiaries as ex  # noqa: E402  (_key_pool, GEMINI_BASE_URL, GEMINI_MODEL, GeminiQuotaExceededError)
 
+_USAGE_SRC = "us_proxy"
+
+def _log_gemini_usage(model, data):
+    """שורת שימוש בטוקנים לכל תשובת Gemini (לחישוב עלות). נכתבת ללוג וגם לקובץ (GEMINI_USAGE_LOG) - בריצות עם לוג מוסתר
+    שלב נפרד בסוף מסכם את הקובץ. רק מספרים, בלי תוכן."""
+    u = (data or {}).get("usageMetadata") or {}
+    line = (f"GEMINI_USAGE src={_USAGE_SRC} model={model} in={u.get('promptTokenCount', 0)} "
+            f"out={u.get('candidatesTokenCount', 0)} think={u.get('thoughtsTokenCount', 0)}")
+    print(line, flush=True)
+    try:
+        with open(os.environ.get("GEMINI_USAGE_LOG", "/tmp/gemini_usage.log"), "a") as f:
+            f.write(line + "\n")
+    except OSError:
+        pass
+
 CHECKPOINT_EVERY = 10
 SCHEMA_VERSION = 2
 
@@ -236,6 +251,7 @@ def call_gemini_text(text: str, name: str, max_retries: int = 5) -> dict:
             continue
         resp.raise_for_status()
         data = resp.json()
+        _log_gemini_usage(ex.GEMINI_MODEL, data)
         try:
             txt = data["candidates"][0]["content"]["parts"][0]["text"]
         except (KeyError, IndexError) as e:

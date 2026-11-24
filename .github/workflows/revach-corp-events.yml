@@ -118,6 +118,16 @@ jobs:
           esac
           SKIP_BUILD=0 python corp_events.py build
 
+      - name: Gemini usage (tokens only)
+        if: always()
+        shell: bash
+        run: |
+          # סיכום שורות GEMINI_USAGE (הלוג של השלב הקודם מוסתר) - רק מספרים, לחישוב עלות
+          f=/tmp/gemini_usage.log
+          [ -f "$f" ] || { echo "GEMINI_USAGE_TOTAL calls=0"; exit 0; }
+          awk '{for(i=1;i<=NF;i++){split($i,kv,"=");v[kv[1]]=kv[2]}; k=v["src"]" "v["model"]; n[k]++; a[k]+=v["in"]; b[k]+=v["out"]; c[k]+=v["think"]}
+               END{for(k in n) printf "GEMINI_USAGE_TOTAL %s calls=%d in=%d out=%d think=%d\n", k, n[k], a[k], b[k], c[k]}' "$f"
+
       - name: Commit to Revach
         if: ${{ !cancelled() }}
         run: |
