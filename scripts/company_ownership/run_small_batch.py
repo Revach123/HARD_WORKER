@@ -132,6 +132,22 @@ def _crop_pdf_pages(pdf_bytes: bytes, center_page: int) -> bytes | None:
     return buf.getvalue()
 
 
+def normalize_list_response(raw: list) -> dict:
+    """Gemini החזיר רשימה במקום אובייקט. שני מקרים:
+    - התשובה המלאה עטופה ברשימה: [{"subsidiaries": [...], ...}] - לוקחים את האובייקט(ים) ומאחדים את הרשימות שבהם.
+      (באג שתוקן 25/11: בעבר זה נשמר כ"חברת בת" אחת - כל חברות הבת שבחלון אבדו.)
+    - רשימת חברות בת עצמה: [{"name": ...}, ...]."""
+    wrapped = [x for x in raw if isinstance(x, dict) and ("subsidiaries" in x or "change_events" in x)]
+    if wrapped:
+        out = {k: v for k, v in wrapped[0].items() if k not in ("subsidiaries", "change_events")}
+        out["subsidiaries"] = [s for x in wrapped for s in (x.get("subsidiaries") or [])]
+        out["change_events"] = [e for x in wrapped for e in (x.get("change_events") or [])]
+        print(f"  Gemini עטף את התשובה ברשימה - {len(out['subsidiaries'])} חברות בת חולצו ממנה.")
+        return out
+    print(f"  אזהרה: Gemini החזיר מערך גולמי ({len(raw)} פריטים) במקום {{'subsidiaries': [...]}} - מנרמל.")
+    return {"subsidiaries": [x for x in raw if isinstance(x, dict)], "change_events": []}
+
+
 def _call_gemini_with_quota_retry(pdf_bytes: bytes, filename_hint: str,
                                    quota_retries: int = 4) -> dict | None:
     """עוטף call_gemini_extraction עם retry-with-cooldown מקומי על
@@ -151,9 +167,7 @@ def _call_gemini_with_quota_retry(pdf_bytes: bytes, filename_hint: str,
         try:
             raw = ex.call_gemini_extraction(pdf_bytes, filename_hint=filename_hint, max_retries=6)
             if isinstance(raw, list):
-                print(f"  אזהרה: Gemini החזיר מערך גולמי ({len(raw)} פריטים) "
-                      f"במקום {{'subsidiaries': [...]}} - מנרמל.")
-                raw = {"subsidiaries": raw, "change_events": []}
+                raw = normalize_list_response(raw)
             return raw
         except ex.GeminiQuotaExceededError as e:
             last_quota_error = e
