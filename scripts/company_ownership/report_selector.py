@@ -13,6 +13,8 @@ report_selector.py
 """
 
 import argparse
+import os
+import re
 import json
 from collections import defaultdict
 from datetime import date, datetime, timedelta
@@ -108,6 +110,15 @@ def build_snapshot_index(from_date: date, to_date: date) -> dict:
     return best_by_company
 
 
+_PERIODIC = re.compile(r"דוח\s+רבעון|חצי\s+שנתי")
+_NOT_PERIODIC = re.compile(r"מועד\s+פרסום")
+
+
+def is_periodic_change(title: str) -> bool:
+    """דוח רבעוני / חצי שנתי (לא הודעה על מועד פרסום, לא מצגת, לא תרגום, לא דיווח מיידי)."""
+    return bool(_PERIODIC.search(title or "")) and not _NOT_PERIODIC.search(title or "")
+
+
 def build_change_index(from_date: date, to_date: date, snapshot_index: dict) -> dict:
     """מחזיר {companyId: [{"report_id","publish_date","pdf_url"}, ...]} -
     רק דוחות שפורסמו *אחרי* ה-snapshot של אותה חברה."""
@@ -118,8 +129,15 @@ def build_change_index(from_date: date, to_date: date, snapshot_index: dict) -> 
     )
     print(f"  סה\"כ {len(reports)} דוחות שינויים בטווח.")
 
+    # CHANGES_QUARTERLY_ONLY=1 (חיסכון): רק דוחות רבעוניים / חצי שנתיים. מצגות, תרגומים והודעות כמעט ולא מוסיפים
+    # אירועי שינוי שלא מופיעים ברבעוני (ר' estimate_changes.py)
+    quarterly_only = os.environ.get("CHANGES_QUARTERLY_ONLY") == "1"
+    n_skipped = 0
     changes_by_company = defaultdict(list)
     for r in reports:
+        if quarterly_only and not is_periodic_change(r.get("title")):
+            n_skipped += 1
+            continue
         pdf_url = mrc.pick_main_pdf_url(r)
         if not pdf_url:
             continue
@@ -143,6 +161,8 @@ def build_change_index(from_date: date, to_date: date, snapshot_index: dict) -> 
 
     for cid in changes_by_company:
         changes_by_company[cid].sort(key=lambda x: x["publish_date"])
+    if quarterly_only:
+        print(f"  CHANGES_QUARTERLY_ONLY: דולגו {n_skipped} דוחות שאינם רבעוניים / חצי שנתיים.")
 
     n_companies_with_changes = len(changes_by_company)
     n_total_changes = sum(len(v) for v in changes_by_company.values())

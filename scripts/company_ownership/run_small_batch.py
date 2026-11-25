@@ -549,9 +549,18 @@ def _win_pages(w) -> list[int]:
 CHART_MODEL = os.environ.get("GEMINI_CHART_MODEL", "").strip()     # למשל gemini-4-hydrogen; ריק - בלי מעבר תרשימים
 
 
-def _scheme() -> str:
+def _page_filter(source_type: str = "annual_report") -> str:
+    """סינון העמודים לדוח: GEMINI_PAGE_FILTER לדוח השנתי; לדוחות השינויים GEMINI_PAGE_FILTER_CHANGES אם הוגדר
+    (למשל changes - עמודי אירועי שינוי בלבד), אחרת כמו השנתי."""
+    pf = os.environ.get("GEMINI_PAGE_FILTER", "")
+    if source_type != "annual_report":
+        pf = os.environ.get("GEMINI_PAGE_FILTER_CHANGES") or pf
+    return pf
+
+
+def _scheme(source_type: str = "annual_report") -> str:
     """זהות תוכנית החלונות - התקדמות שנשמרה בתוכנית אחרת (גודל/סינון/מודל תרשימים) לא מתערבבת: מתאפסת."""
-    return f"{CHUNK_PAGES}/{CHUNK_OVERLAP}/{os.environ.get('GEMINI_PAGE_FILTER', '')}/{CHART_MODEL}"
+    return f"{CHUNK_PAGES}/{CHUNK_OVERLAP}/{_page_filter(source_type)}/{CHART_MODEL}"
 
 
 def _slice_pages(reader: PdfReader, pages: list[int]) -> bytes:
@@ -637,7 +646,7 @@ def _process_report_chunked(
                 pdf_bytes = _prospectus_pages(pdf_bytes) or pdf_bytes
             reader = PdfReader(io.BytesIO(pdf_bytes))
             n_pages = len(reader.pages)
-            pf = os.environ.get("GEMINI_PAGE_FILTER", "")
+            pf = _page_filter(source_type)
             sel = (_relevant_pages(pdf_bytes, n_pages) if pf == "1" else _chart_pages(pdf_bytes, n_pages) if pf == "charts"
                    else _formal_pages(pdf_bytes, n_pages) if pf == "formal"
                    else _change_pages(pdf_bytes, n_pages) if pf == "changes" else None)
@@ -674,7 +683,7 @@ def _process_report_chunked(
 
     # שלב 2: טעינת התקדמות קודמת מהמאגר (resume).
     prog = CHUNK_PROGRESS_GET(report_id) or {}
-    if prog.get("done") and prog.get("scheme", f"{CHUNK_PAGES}/{CHUNK_OVERLAP}//") != _scheme():
+    if prog.get("done") and prog.get("scheme", f"{CHUNK_PAGES}/{CHUNK_OVERLAP}//") != _scheme(source_type):
         print(f"  התקדמות קודמת בתוכנית חלונות אחרת ({prog.get('scheme', 'ישנה')}) - מתחילים מחדש.")
         prog = {}
     done = dict(prog.get("done", {}))              # {"fi:wi": <window result>}
@@ -682,7 +691,7 @@ def _process_report_chunked(
 
     def _persist():
         CHUNK_PROGRESS_PUT(report_id, str(company_id), _kind_of(source_type), {
-            "size": CHUNK_PAGES, "overlap": CHUNK_OVERLAP, "scheme": _scheme(),
+            "size": CHUNK_PAGES, "overlap": CHUNK_OVERLAP, "scheme": _scheme(source_type),
             "total": total, "done": done, "attempts": win_attempts,
         })
 
