@@ -26,7 +26,8 @@ TAG = f"{MODEL}_{THINK}" + ("_chunk" if os.environ.get("GEMINI_CHUNK") == "1" el
     ("_" + os.environ["EXTRACTION_PROMPT"] if os.environ.get("EXTRACTION_PROMPT", "v1") != "v1" else "") + \
     (f"_p{os.environ['GEMINI_CHUNK_PAGES']}" if os.environ.get("GEMINI_CHUNK_PAGES") else "") + \
     (f"_media-{os.environ['GEMINI_MEDIA_RES']}" if os.environ.get("GEMINI_MEDIA_RES") else "") + \
-    ("_compact" if os.environ.get("EXTRACTION_COMPACT") == "1" else "")
+    ("_compact" if os.environ.get("EXTRACTION_COMPACT") == "1" else "") + \
+    (f"_{os.environ['TEST_TAG']}" if os.environ.get("TEST_TAG") else "")
 OUT = f"model_test/subs_{TAG}.jsonl"
 os.environ.setdefault("GEMINI_USAGE_LOG", f"model_test/usage_{TAG}.log")
 

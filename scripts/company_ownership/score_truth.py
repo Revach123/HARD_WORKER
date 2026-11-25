@@ -32,7 +32,7 @@ def score(path, truth=None):
             continue
         ext.setdefault(str(r.get("report_id")), set()).update(
             key(s.get("name")) for s in r.get("subsidiaries") or [] if s.get("name"))
-    tp = fp = n_found = n_good = ent_found = ent_good = 0
+    tp = fp = unk = n_found = n_good = ent_found = ent_good = 0
     reports = 0
     for rep in truth:
         got = ext.get(str(rep["report_id"]))
@@ -52,8 +52,10 @@ def score(path, truth=None):
                 tp += 1
             elif l == "uncertain":
                 continue
+            elif l is None:
+                unk += 1          # שם שלא בסט האמת (נבנה מריצות קודמות) - לא בהכרח שגוי, לבדיקה
             else:
-                fp += 1
+                fp += 1           # not_holding - שגוי
         found = {canon[k] for k in got if k in canon}
         good = {(key(it["name"]), it["label"]) for it in rep["items"] if it["label"] in ("entity", "asset")}
         n_found += len(found & good)
@@ -61,12 +63,12 @@ def score(path, truth=None):
         ent_found += len({x for x in found & good if x[1] == "entity"})
         ent_good += len({x for x in good if x[1] == "entity"})
     return {"reports": reports, "precision": round(100 * tp / max(1, tp + fp)), "recall": round(100 * n_found / max(1, n_good)),
-            "entity_recall": round(100 * ent_found / max(1, ent_good)), "found": n_found, "of": n_good, "wrong": fp}
+            "entity_recall": round(100 * ent_found / max(1, ent_good)), "found": n_found, "of": n_good, "wrong": fp, "unknown": unk}
 
 
 if __name__ == "__main__":
     t = load_truth()
     for p in sys.argv[1:]:
         s = score(p, t)
-        print(f"TRUTH {p.split('/')[-1]}: דוחות {s['reports']}, דיוק {s['precision']}% (שגויים {s['wrong']}), "
+        print(f"TRUTH {p.split('/')[-1]}: דוחות {s['reports']}, דיוק {s['precision']}% (שגויים {s['wrong']}, לא בסט {s['unknown']}), "
               f"כיסוי {s['recall']}% ({s['found']}/{s['of']}), כיסוי ישויות {s['entity_recall']}%")

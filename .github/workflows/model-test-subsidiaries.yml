@@ -33,7 +33,7 @@ on:
         type: boolean
         default: false
       extra:
-        description: "הגדרות נוספות, מופרדות בפסיק: media=low, compact=1, pages=5, probe=10-16 (בלי Gemini)"
+        description: "הגדרות נוספות, מופרדות בפסיק: media=low, compact=1, pages=5, tag=rerun2, probe=10-16 (בלי Gemini)"
         required: false
         default: ""
       chart_model:
@@ -82,6 +82,7 @@ jobs:
               media)   echo "GEMINI_MEDIA_RES=$v" >> "$GITHUB_ENV" ;;
               compact) echo "EXTRACTION_COMPACT=$v" >> "$GITHUB_ENV" ;;
               pages)   echo "GEMINI_CHUNK_PAGES=$v" >> "$GITHUB_ENV" ;;
+              tag)     echo "TEST_TAG=$v" >> "$GITHUB_ENV" ;;      # חזרה על אותה הגדרה לקובץ נפרד (רעש בין ריצות)
               probe)   echo "PROBE_RANGE=$v" >> "$GITHUB_ENV"; echo "PROBE_DUMP=1" >> "$GITHUB_ENV" ;;
             esac
           done
