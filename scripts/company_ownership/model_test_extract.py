@@ -23,7 +23,10 @@ os.makedirs("model_test", exist_ok=True)
 TAG = f"{MODEL}_{THINK}" + ("_chunk" if os.environ.get("GEMINI_CHUNK") == "1" else "") + \
     ({"1": "_filter", "charts": "_charts", "formal": "_formal"}.get(os.environ.get("GEMINI_PAGE_FILTER", ""), "")) + \
     (f"_charts-{os.environ['GEMINI_CHART_MODEL']}" if os.environ.get("GEMINI_CHART_MODEL") else "") + \
-    ("_" + os.environ["EXTRACTION_PROMPT"] if os.environ.get("EXTRACTION_PROMPT", "v1") != "v1" else "")
+    ("_" + os.environ["EXTRACTION_PROMPT"] if os.environ.get("EXTRACTION_PROMPT", "v1") != "v1" else "") + \
+    (f"_p{os.environ['GEMINI_CHUNK_PAGES']}" if os.environ.get("GEMINI_CHUNK_PAGES") else "") + \
+    (f"_media-{os.environ['GEMINI_MEDIA_RES']}" if os.environ.get("GEMINI_MEDIA_RES") else "") + \
+    ("_compact" if os.environ.get("EXTRACTION_COMPACT") == "1" else "")
 OUT = f"model_test/subs_{TAG}.jsonl"
 os.environ.setdefault("GEMINI_USAGE_LOG", f"model_test/usage_{TAG}.log")
 
@@ -312,15 +315,22 @@ def main():
         prev = best.get((cid, rid), set())
         print(f"RESULT cid={cid} {plan.get(cid, {}).get('company_name')}: {len(names)} חברות בת "
               f"(קיים: {len(prev)}; חדשות שלא היו: {len(names - prev)}; מהקיים שחסרות: {len(prev - names)})")
-    u = {"calls": 0, "in": 0, "out": 0, "think": 0}
+    u = {"calls": 0, "in": 0, "out": 0, "think": 0, "cached": 0}
     log = os.environ["GEMINI_USAGE_LOG"]
     if os.path.exists(log):
         for line in open(log):
             kv = dict(x.split("=", 1) for x in line.split()[1:] if "=" in x)
             u["calls"] += 1
-            for k in ("in", "out", "think"):
+            for k in ("in", "out", "think", "cached"):
                 u[k] += int(kv.get(k, 0))
-    print(f"USAGE model={MODEL} thinking={THINK} calls={u['calls']} in={u['in']} out={u['out']} think={u['think']}")
+    print(f"USAGE model={MODEL} thinking={THINK} calls={u['calls']} in={u['in']} out={u['out']} think={u['think']} "
+          f"cached={u['cached']}")
+    if os.path.exists(OUT):
+        import score_truth
+        s = score_truth.score(OUT)
+        if s["reports"]:
+            print(f"TRUTH {TAG}: דוחות {s['reports']}, דיוק {s['precision']}% (שגויים {s['wrong']}), "
+                  f"כיסוי {s['recall']}% ({s['found']}/{s['of']}), כיסוי ישויות {s['entity_recall']}%")
 
 
 if __name__ == "__main__":

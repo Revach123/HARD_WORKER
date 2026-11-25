@@ -37,7 +37,8 @@ def _log_gemini_usage(model, data):
     שלב נפרד בסוף מסכם את הקובץ. רק מספרים, בלי תוכן."""
     u = (data or {}).get("usageMetadata") or {}
     line = (f"GEMINI_USAGE src={_USAGE_SRC} model={model} in={u.get('promptTokenCount', 0)} "
-            f"out={u.get('candidatesTokenCount', 0)} think={u.get('thoughtsTokenCount', 0)}")
+            f"out={u.get('candidatesTokenCount', 0)} think={u.get('thoughtsTokenCount', 0)} "
+            f"cached={u.get('cachedContentTokenCount', 0)}")
     print(line, flush=True)
     try:
         with open(os.environ.get("GEMINI_USAGE_LOG", "/tmp/gemini_usage.log"), "a") as f:
@@ -345,6 +346,40 @@ EXTRACTION_PROMPT_V2_RULES = """\
 if os.environ.get("EXTRACTION_PROMPT", "v1") == "v2":
     EXTRACTION_SYSTEM_PROMPT = EXTRACTION_SYSTEM_PROMPT + EXTRACTION_PROMPT_V2_RULES
 
+# ---- פלט חסכוני (EXTRACTION_COMPACT=1, בבדיקה): פחות טוקני פלט (היקרים פי 5 מקלט), אותו מידע ----
+EXTRACTION_COMPACT_RULES = """
+פלט חסכוני (מחייב):
+14. אל תכלול שדה שערכו null, false או רשימה ריקה - פשוט השמט אותו.
+15. section_title ו-table_title - רק בפריט הראשון מכל סעיף/טבלה. פריטים הבאים מאותו סעיף ומאותה טבלה - בלי שני
+   השדות (הם יורשים מהפריט הקודם). כשהסעיף או הטבלה מתחלפים - כתוב אותם שוב.
+16. note - רק כשיש מידע מהותי. event_description - עד 10 מילים.
+"""
+COMPACT_OUTPUT = os.environ.get("EXTRACTION_COMPACT") == "1"
+if COMPACT_OUTPUT:
+    EXTRACTION_SYSTEM_PROMPT = EXTRACTION_SYSTEM_PROMPT + EXTRACTION_COMPACT_RULES
+
+
+def _expand_compact(result):
+    """פלט חסכוני -> הפורמט הרגיל: section_title / table_title עוברים לפריטים הבאים עד שמתחלפים."""
+    if not COMPACT_OUTPUT or not isinstance(result, dict):
+        return result
+    for lst in ("subsidiaries", "change_events"):
+        sec = tab = None
+        for it in result.get(lst) or []:
+            if not isinstance(it, dict):
+                continue
+            if it.get("section_title"):
+                sec, tab = it["section_title"], it.get("table_title")
+            else:
+                it["section_title"] = sec
+                if lst == "subsidiaries" and not it.get("table_title"):
+                    it["table_title"] = tab
+            if lst == "subsidiaries":
+                it.setdefault("ownership_pct", None)
+                it.setdefault("parent", None)
+                it.setdefault("note", None)
+    return result
+
 
 # תרגום מדויק של סכימת הפלט המתוארת בטקסט חופשי ב-EXTRACTION_SYSTEM_PROMPT
 # (בסעיף "סכימת פלט (JSON בלבד)") ל-responseSchema אוכף של Gemini. שני
@@ -463,6 +498,9 @@ def call_gemini_extraction(pdf_bytes: bytes, filename_hint: str, max_retries: in
             # סכמטית כשהוא פחות בטוח, במקום לחפש לעומק במסמך ענק. שאר
             # התיקונים (מיזוג קבצים, quota_retries) לא הושפעו ונשארים.
             "thinkingConfig": {"thinkingLevel": os.environ.get("GEMINI_THINKING", "high")},  # איכות > מהירות (ניסוי: low)
+            # GEMINI_MEDIA_RES=low (בבדיקה): תמונת כל עמוד PDF ~280 טוקנים במקום ~560 (הטקסט המובנה נשלח בנפרד)
+            **({"mediaResolution": "MEDIA_RESOLUTION_" + os.environ["GEMINI_MEDIA_RES"].upper()}
+               if os.environ.get("GEMINI_MEDIA_RES") else {}),
         },
     }
 
@@ -563,19 +601,19 @@ def call_gemini_extraction(pdf_bytes: bytes, filename_hint: str, max_retries: in
     text = re.sub(r"^```json\s*|\s*```$", "", text.strip())
 
     try:
-        return json.loads(text)
+        return _expand_compact(json.loads(text))
     except json.JSONDecodeError:
         pass
     # הסיבה הנפוצה: מרכאות בתוך שם עברי (בע"מ, נדל"ן) שלא סומנו - הופכים לגרשיים ״ ומנסים שוב
     text = re.sub(r'(?<=[\u0590-\u05FF])"(?=[\u0590-\u05FF])', "״", text)
     try:
-        return json.loads(text)
+        return _expand_compact(json.loads(text))
     except json.JSONDecodeError as e:
         fixed = repair_json(text)
         if fixed is not None:
             print(f"    JSON פגום ({e.msg}) - שוחזרו {len(fixed['subsidiaries'])} חברות ו-{len(fixed['change_events'])} "
                   f"אירועים מהפריטים השלמים.")
-            return fixed
+            return _expand_compact(fixed)
         print("=== JSON גולמי שהתקבל (לצורך אבחון) ===", file=sys.stderr)
         print(text, file=sys.stderr)
         print("=== סוף הטקסט הגולמי ===", file=sys.stderr)

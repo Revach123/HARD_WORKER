@@ -32,8 +32,8 @@ on:
         description: "בלי Gemini - רק בדיקת סינון העמודים (כמה נבחרו, כמה מחברות הבת הקיימות מכוסות)"
         type: boolean
         default: false
-      probe:
-        description: "בלי Gemini: טווח עמודים (למשל 10-16) - טקסט pdftotext ומניין שמות ישויות"
+      extra:
+        description: "הגדרות נוספות, מופרדות בפסיק: media=low, compact=1, pages=5, probe=10-16 (בלי Gemini)"
         required: false
         default: ""
       chart_model:
@@ -54,7 +54,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: model-test-${{ github.event.inputs.model }}-${{ github.event.inputs.thinking }}-${{ github.event.inputs.chunk }}-${{ github.event.inputs.page_filter }}-${{ github.event.inputs.chart_model }}-${{ github.event.inputs.prompt }}
+  group: model-test-${{ github.event.inputs.model }}-${{ github.event.inputs.thinking }}-${{ github.event.inputs.chunk }}-${{ github.event.inputs.page_filter }}-${{ github.event.inputs.chart_model }}-${{ github.event.inputs.prompt }}-${{ github.event.inputs.extra }}
   cancel-in-progress: false
 
 jobs:
@@ -71,7 +71,20 @@ jobs:
       - run: |
           pip install requests pypdf --break-system-packages
           sudo apt-get install -y -qq poppler-utils >/dev/null
-          if [ -n "${{ github.event.inputs.probe }}${{ github.event.inputs.ocr_test }}" ] || [ "${{ github.event.inputs.page_filter }}" = "charts" ] || [ "${{ github.event.inputs.page_filter }}" = "formal" ] || [ -n "${{ github.event.inputs.chart_model }}" ]; then sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-heb >/dev/null; fi
+          if [ -n "$(echo '${{ github.event.inputs.extra }}' | grep -o 'probe=')${{ github.event.inputs.ocr_test }}" ] || [ "${{ github.event.inputs.page_filter }}" = "charts" ] || [ "${{ github.event.inputs.page_filter }}" = "formal" ] || [ -n "${{ github.event.inputs.chart_model }}" ]; then sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-heb >/dev/null; fi
+      - name: Extra settings
+        run: |
+          # extra: "media=low,compact=1,pages=5,probe=10-16" -> משתני סביבה לשלב הבא
+          IFS=',' read -ra KV <<< "${{ github.event.inputs.extra }}"
+          for kv in "${KV[@]}"; do
+            k="${kv%%=*}"; v="${kv#*=}"
+            case "$k" in
+              media)   echo "GEMINI_MEDIA_RES=$v" >> "$GITHUB_ENV" ;;
+              compact) echo "EXTRACTION_COMPACT=$v" >> "$GITHUB_ENV" ;;
+              pages)   echo "GEMINI_CHUNK_PAGES=$v" >> "$GITHUB_ENV" ;;
+              probe)   echo "PROBE_RANGE=$v" >> "$GITHUB_ENV"; echo "PROBE_DUMP=1" >> "$GITHUB_ENV" ;;
+            esac
+          done
       - name: Extract (test)
         working-directory: scripts/company_ownership
         env:
@@ -81,11 +94,10 @@ jobs:
           GEMINI_RPM: "300"
           EXTRACTION_PROMPT: ${{ github.event.inputs.prompt || 'v1' }}
           GEMINI_CHART_MODEL: ${{ github.event.inputs.chart_model }}
-          PROBE_DUMP: ${{ github.event.inputs.probe != '' && '1' || '0' }}
           GEMINI_CHUNK: ${{ github.event.inputs.chunk == 'true' && '1' || '0' }}
           GEMINI_PAGE_FILTER: ${{ github.event.inputs.page_filter == 'relevant' && '1' || (github.event.inputs.page_filter == 'charts' || github.event.inputs.page_filter == 'formal') && github.event.inputs.page_filter || '0' }}
           PYTHONUNBUFFERED: "1"
-        run: python model_test_extract.py --cids "${{ github.event.inputs.cids }}" --workers 6 ${{ github.event.inputs.dry == 'true' && '--dry' || '' }} ${{ github.event.inputs.probe != '' && format('--probe {0}', github.event.inputs.probe) || '' }} ${{ github.event.inputs.ocr_test != '' && (startsWith(github.event.inputs.ocr_test, 'why=') && format('--why "{0}"', github.event.inputs.ocr_test) || format('--ocr-test {0}', github.event.inputs.ocr_test)) || '' }}
+        run: python model_test_extract.py --cids "${{ github.event.inputs.cids }}" --workers 6 ${{ github.event.inputs.dry == 'true' && '--dry' || '' }} ${PROBE_RANGE:+--probe $PROBE_RANGE} ${{ github.event.inputs.ocr_test != '' && (startsWith(github.event.inputs.ocr_test, 'why=') && format('--why "{0}"', github.event.inputs.ocr_test) || format('--ocr-test {0}', github.event.inputs.ocr_test)) || '' }}
       - name: Commit test output
         if: always()
         working-directory: scripts/company_ownership
@@ -95,7 +107,7 @@ jobs:
           [ -d model_test ] || exit 0
           git add model_test
           if git diff --staged --quiet; then exit 0; fi
-          git commit -m "model test: ${{ github.event.inputs.model }} ${{ github.event.inputs.thinking }} [skip ci]"
+          git commit -m "model test: ${{ github.event.inputs.model }} ${{ github.event.inputs.thinking }} ${{ github.event.inputs.extra }} [skip ci]"
           for i in 1 2 3 4 5; do
             if git push; then exit 0; fi
             git fetch origin main; git rebase origin/main || git rebase --abort

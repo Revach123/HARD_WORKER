@@ -1,0 +1,35 @@
+name: Gemini batch mode - technical test
+
+# בדיקה טכנית בלבד: 3 חלונות מדוח שנתי - רגיל מול Batch (חצי מחיר). לא כותב נתונים. ר' batch_test.py.
+
+on:
+  workflow_dispatch:
+    inputs:
+      cid:
+        description: "companyId מהתוכנית"
+        required: false
+        default: "746"
+
+permissions:
+  contents: read
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: pip install requests pypdf --break-system-packages
+      - name: Test
+        working-directory: scripts/company_ownership
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL_OVERRIDE: gemini-3.6-flash
+          GEMINI_THINKING: low
+          EXTRACTION_PROMPT: v2
+          BATCH_WAIT_MIN: "130"
+          PYTHONUNBUFFERED: "1"
+        run: python batch_test.py "${{ github.event.inputs.cid || '746' }}"
