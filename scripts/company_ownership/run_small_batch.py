@@ -389,15 +389,19 @@ def _ocr_page(pdf_path: str, page: int):
     import tempfile
     if not (shutil.which("tesseract") and shutil.which("pdftoppm")):
         return None
-    with tempfile.TemporaryDirectory() as d:
-        subprocess.run(["pdftoppm", "-f", str(page), "-l", str(page), "-r", "300", "-png", pdf_path, os.path.join(d, "p")],
-                       capture_output=True, timeout=120)
-        imgs = sorted(f for f in os.listdir(d) if f.endswith(".png"))
-        if not imgs:
-            return None
-        r = subprocess.run(["tesseract", os.path.join(d, imgs[0]), "-", "-l", "eng+heb", "--psm", "11"],
-                           capture_output=True, timeout=300)
-        return r.stdout.decode("utf-8", "replace")
+    env = {**os.environ, "OMP_THREAD_LIMIT": "1"}     # tesseract בתהליכון אחד - כמה דוחות במקביל לא חונקים את המעבד
+    try:
+        with tempfile.TemporaryDirectory() as d:
+            subprocess.run(["pdftoppm", "-f", str(page), "-l", str(page), "-r", "200", "-png", pdf_path, os.path.join(d, "p")],
+                           capture_output=True, timeout=120)
+            imgs = sorted(f for f in os.listdir(d) if f.endswith(".png"))
+            if not imgs:
+                return None
+            r = subprocess.run(["tesseract", os.path.join(d, imgs[0]), "-", "-l", "eng+heb", "--psm", "11"],
+                               capture_output=True, timeout=180, env=env)
+            return r.stdout.decode("utf-8", "replace")
+    except (subprocess.TimeoutExpired, OSError):
+        return ""            # עמוד שלא הצליח - מדלגים עליו, לא מפילים את הקובץ
 
 
 def _chart_pages(pdf_bytes: bytes, n_pages: int, detail: list | None = None):
@@ -541,7 +545,11 @@ def _process_report_chunked(
             if sel is not None:
                 print(f"  סינון עמודים: {len(sel)}/{n_pages} עמודים נשלחים ({url.split('/')[-1]})")
             # GEMINI_CHART_MODEL: עמודי תרשים מבנה שהם תמונה (OCR) - בנוסף, למודל חזק יותר (חלונות נפרדים באותו דוח)
-            charts = _chart_pages(pdf_bytes, n_pages) if CHART_MODEL and pf != "charts" else None
+            try:
+                charts = _chart_pages(pdf_bytes, n_pages) if CHART_MODEL and pf != "charts" else None
+            except Exception as e:      # זיהוי התרשימים לא מפיל את החילוץ הרגיל של הקובץ
+                print(f"  אזהרה: זיהוי תרשימים נכשל ({type(e).__name__}) - ממשיכים בלי")
+                charts = None
             if charts:
                 print(f"  תרשימי מבנה (תמונה): {len(charts)} עמ' -> {CHART_MODEL} ({url.split('/')[-1]})")
         except Exception as e:
