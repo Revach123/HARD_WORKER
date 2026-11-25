@@ -1,0 +1,73 @@
+# Israeli cooperative societies (אגודות שיתופיות) for Revach - weekly, here (public repo = free Actions minutes; no heavy runs in the private repo):
+#  load the full list from the Registrar's API (govapps.economy.gov.il/CooperativeSocieties) into company-info-db
+#  (associations table, category "אגודה שיתופית"): UPSERT only; rows from the official registries are never touched.
+#  No fallback to a static file (old data must never be loaded by mistake). If the API fails or the data is incomplete,
+#  nothing is written, an alert e-mail is sent (secrets ALERT_EMAIL + MAIL_SCRIPT_SECRET) and the run fails.
+# The script lives in Revach (scripts/registry/load_cooperatives.py) and is pulled with REVACH_TOKEN.
+# Runs on Sunday after the GuideStar load (revach-guidestar, 03:40 UTC).
+# Secrets in THIS repo: REVACH_TOKEN, CF_D1_TOKEN, CF_ACCOUNT_ID, MAIL_SCRIPT_SECRET, ALERT_EMAIL.
+name: Revach - cooperative societies
+
+on:
+  schedule:
+    - cron: "55 3 * * 0"   # Sunday 03:55 UTC
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "download and count only, write nothing to the DB"
+        type: boolean
+        default: false
+      test_alert:
+        description: "send a test alert e-mail only (no download, no write)"
+        type: boolean
+        default: false
+
+concurrency:
+  group: revach-cooperatives
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  cooperatives:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash /tmp/q.sh {0}
+    timeout-minutes: 30
+    steps:
+      - name: Quiet logs (public repo - full output stays hidden)
+        shell: bash
+        run: |
+          cat > /tmp/q.sh <<'Q'
+          #!/bin/bash
+          # runs the step and keeps its output in a file: on success only "ok"; on failure only the last 15 lines
+          log=$(mktemp)
+          bash --noprofile --norc -eo pipefail "$1" >"$log" 2>&1; c=$?
+          if [ $c -eq 0 ]; then echo "ok ($(wc -l <"$log") log lines hidden)"; else echo "failed (exit $c) - last lines:"; tail -n 15 "$log"; fi
+          exit $c
+          Q
+      - uses: actions/checkout@v5
+        with:
+          repository: Revach123/Revach
+          token: ${{ secrets.REVACH_TOKEN }}
+          fetch-depth: 1
+          sparse-checkout: |
+            scripts/registry
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Load cooperative societies
+        working-directory: scripts/registry
+        env:
+          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          CF_D1_TOKEN: ${{ secrets.CF_D1_TOKEN }}
+          CF_DATABASE_ID: c1d082fc-c125-4f62-8b33-9b62d5bda2da   # company-info-db (public, in HARAV_LEVIN wrangler.toml)
+          DRY_RUN: ${{ inputs.dry_run && '1' || '' }}
+          TEST_ALERT: ${{ inputs.test_alert && '1' || '' }}
+          ALERT_EMAIL: ${{ secrets.ALERT_EMAIL }}
+          MAIL_SCRIPT_SECRET: ${{ secrets.MAIL_SCRIPT_SECRET }}
+        run: python -u load_cooperatives.py
