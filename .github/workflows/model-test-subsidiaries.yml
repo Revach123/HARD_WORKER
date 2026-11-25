@@ -36,6 +36,10 @@ on:
         description: "בלי Gemini: טווח עמודים (למשל 10-16) - טקסט pdftotext ומניין שמות ישויות"
         required: false
         default: ""
+      chart_model:
+        description: "מודל לעמודי תרשים מבנה שהם תמונה (OCR), בנוסף - למשל gemini-4-hydrogen; ריק = בלי"
+        required: false
+        default: ""
       ocr_test:
         description: "cid:file:from-to (למשל 1630:1:10-16) - אותם עמודים בלי / עם OCR כרמז"
         required: false
@@ -49,7 +53,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: model-test-${{ github.event.inputs.model }}-${{ github.event.inputs.thinking }}-${{ github.event.inputs.chunk }}-${{ github.event.inputs.page_filter }}
+  group: model-test-${{ github.event.inputs.model }}-${{ github.event.inputs.thinking }}-${{ github.event.inputs.chunk }}-${{ github.event.inputs.page_filter }}-${{ github.event.inputs.chart_model }}
   cancel-in-progress: false
 
 jobs:
@@ -66,7 +70,7 @@ jobs:
       - run: |
           pip install requests pypdf --break-system-packages
           sudo apt-get install -y -qq poppler-utils >/dev/null
-          if [ -n "${{ github.event.inputs.probe }}${{ github.event.inputs.ocr_test }}" ] || [ "${{ github.event.inputs.page_filter }}" = "charts" ]; then sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-heb >/dev/null; fi
+          if [ -n "${{ github.event.inputs.probe }}${{ github.event.inputs.ocr_test }}" ] || [ "${{ github.event.inputs.page_filter }}" = "charts" ] || [ -n "${{ github.event.inputs.chart_model }}" ]; then sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-heb >/dev/null; fi
       - name: Extract (test)
         working-directory: scripts/company_ownership
         env:
@@ -74,6 +78,7 @@ jobs:
           GEMINI_MODEL_OVERRIDE: ${{ github.event.inputs.model }}
           GEMINI_THINKING: ${{ github.event.inputs.thinking }}
           GEMINI_RPM: "300"
+          GEMINI_CHART_MODEL: ${{ github.event.inputs.chart_model }}
           PROBE_DUMP: ${{ github.event.inputs.probe != '' && '1' || '0' }}
           GEMINI_CHUNK: ${{ github.event.inputs.chunk == 'true' && '1' || '0' }}
           GEMINI_PAGE_FILTER: ${{ github.event.inputs.page_filter == 'relevant' && '1' || github.event.inputs.page_filter == 'charts' && 'charts' || '0' }}

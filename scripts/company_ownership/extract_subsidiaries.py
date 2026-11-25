@@ -406,7 +406,8 @@ def all_keys_daily_exhausted() -> bool:
     return _key_pool.all_daily_exhausted()
 
 
-def call_gemini_extraction(pdf_bytes: bytes, filename_hint: str, max_retries: int = 2) -> dict:
+def call_gemini_extraction(pdf_bytes: bytes, filename_hint: str, max_retries: int = 2, model: str | None = None) -> dict:
+    model = model or GEMINI_MODEL           # מודל אחר לקריאה הזו (למשל עמודי תרשים -> מודל חזק יותר)
     b64 = base64.b64encode(pdf_bytes).decode()
     payload = {
         "system_instruction": {"parts": [{"text": EXTRACTION_SYSTEM_PROMPT}]},
@@ -466,7 +467,7 @@ def call_gemini_extraction(pdf_bytes: bytes, filename_hint: str, max_retries: in
                 )
 
         _key_pool.limiter_for(key).acquire()  # RPM של המפתח הזה בלבד
-        url = f"{GEMINI_BASE_URL}/{GEMINI_MODEL}:generateContent?key={key}"
+        url = f"{GEMINI_BASE_URL}/{model}:generateContent?key={key}"
 
         try:
             resp = requests.post(url, json=payload, verify=False, timeout=180)
@@ -524,7 +525,7 @@ def call_gemini_extraction(pdf_bytes: bytes, filename_hint: str, max_retries: in
         raise last_error
 
     data = resp.json()
-    _log_gemini_usage(GEMINI_MODEL, data)
+    _log_gemini_usage(model, data)
 
     try:
         text = data["candidates"][0]["content"]["parts"][0]["text"]

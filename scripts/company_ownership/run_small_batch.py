@@ -149,7 +149,7 @@ def normalize_list_response(raw: list) -> dict:
 
 
 def _call_gemini_with_quota_retry(pdf_bytes: bytes, filename_hint: str,
-                                   quota_retries: int = 4) -> dict | None:
+                                   quota_retries: int = 4, model: str | None = None) -> dict | None:
     """עוטף call_gemini_extraction עם retry-with-cooldown מקומי על
     מכסה. הבאג שנצפה בפועל: עם max_retries=2 (ברירת המחדל) ו-N מפתחות
     במאגר, מספיק שמפתח *אחד* נכנס לקירור זמני (65s, לא מכסה אמיתית)
@@ -165,7 +165,7 @@ def _call_gemini_with_quota_retry(pdf_bytes: bytes, filename_hint: str,
                 "מכסה יומית אמיתית (RPD) כבר זוהתה - מוותר מיד בלי קירור נוסף."
             )
         try:
-            raw = ex.call_gemini_extraction(pdf_bytes, filename_hint=filename_hint, max_retries=6)
+            raw = ex.call_gemini_extraction(pdf_bytes, filename_hint=filename_hint, max_retries=6, model=model)
             if isinstance(raw, list):
                 raw = normalize_list_response(raw)
             return raw
@@ -438,7 +438,17 @@ def _page_windows(pages: list[int]) -> list[list[int]]:
 
 
 def _win_pages(w) -> list[int]:
+    if isinstance(w, dict):
+        return list(w["pages"])
     return list(range(w[0], w[1])) if isinstance(w, tuple) else list(w)
+
+
+CHART_MODEL = os.environ.get("GEMINI_CHART_MODEL", "").strip()     # למשל gemini-4-hydrogen; ריק - בלי מעבר תרשימים
+
+
+def _scheme() -> str:
+    """זהות תוכנית החלונות - התקדמות שנשמרה בתוכנית אחרת (גודל/סינון/מודל תרשימים) לא מתערבבת: מתאפסת."""
+    return f"{CHUNK_PAGES}/{CHUNK_OVERLAP}/{os.environ.get('GEMINI_PAGE_FILTER', '')}/{CHART_MODEL}"
 
 
 def _slice_pages(reader: PdfReader, pages: list[int]) -> bytes:
@@ -530,6 +540,10 @@ def _process_report_chunked(
                 sel = []      # בלי תרשים - אין מה לשלוח למודל היקר
             if sel is not None:
                 print(f"  סינון עמודים: {len(sel)}/{n_pages} עמודים נשלחים ({url.split('/')[-1]})")
+            # GEMINI_CHART_MODEL: עמודי תרשים מבנה שהם תמונה (OCR) - בנוסף, למודל חזק יותר (חלונות נפרדים באותו דוח)
+            charts = _chart_pages(pdf_bytes, n_pages) if CHART_MODEL and pf != "charts" else None
+            if charts:
+                print(f"  תרשימי מבנה (תמונה): {len(charts)} עמ' -> {CHART_MODEL} ({url.split('/')[-1]})")
         except Exception as e:
             print(f"  אזהרה: קובץ {fi} ({url}) נכשל בהורדה/קריאה: {e} - מוחרג "
                   f"מתוכנית החלונות (הדוח לא ייחשב שלם עד שהקובץ יצליח).")
@@ -537,8 +551,9 @@ def _process_report_chunked(
         if sel == []:
             print(f"  אין עמודי תרשים ב-{url.split('/')[-1]} - מדלג")
             continue
-        files.append({"url": url, "reader": reader, "n_pages": n_pages,
-                      "windows": _page_windows(sel) if sel is not None else _iter_page_windows(n_pages)})
+        wins = _page_windows(sel) if sel is not None else _iter_page_windows(n_pages)
+        wins += [{"pages": w, "model": CHART_MODEL} for w in _page_windows(charts or [])]
+        files.append({"url": url, "reader": reader, "n_pages": n_pages, "windows": wins})
 
     if not files:
         print("  כישלון מוחלט: אף קובץ PDF של הדוח לא נטען.")
@@ -550,12 +565,15 @@ def _process_report_chunked(
 
     # שלב 2: טעינת התקדמות קודמת מהמאגר (resume).
     prog = CHUNK_PROGRESS_GET(report_id) or {}
+    if prog.get("done") and prog.get("scheme", f"{CHUNK_PAGES}/{CHUNK_OVERLAP}//") != _scheme():
+        print(f"  התקדמות קודמת בתוכנית חלונות אחרת ({prog.get('scheme', 'ישנה')}) - מתחילים מחדש.")
+        prog = {}
     done = dict(prog.get("done", {}))              # {"fi:wi": <window result>}
     win_attempts = dict(prog.get("attempts", {}))  # {"fi:wi": int}
 
     def _persist():
         CHUNK_PROGRESS_PUT(report_id, str(company_id), _kind_of(source_type), {
-            "size": CHUNK_PAGES, "overlap": CHUNK_OVERLAP,
+            "size": CHUNK_PAGES, "overlap": CHUNK_OVERLAP, "scheme": _scheme(),
             "total": total, "done": done, "attempts": win_attempts,
         })
 
@@ -574,15 +592,16 @@ def _process_report_chunked(
             return PARTIAL
         f = files[fi]
         wpages = _win_pages(f["windows"][wi])
+        wmodel = f["windows"][wi].get("model") if isinstance(f["windows"][wi], dict) else None
         start, end = wpages[0], wpages[-1] + 1
         print(f"  חלון {key} (עמ' {start+1}-{end}/{f['n_pages']}, {len(wpages)} עמ', "
-              f"{f['url'].split('/')[-1]}) -> Gemini...")
+              f"{f['url'].split('/')[-1]}) -> {wmodel or 'Gemini'}...")
         win_bytes = _slice_pages(f["reader"], wpages)
         try:
-            res = _call_gemini_with_quota_retry(win_bytes, f"{f['url']}#w{start+1}-{end}")
+            res = _call_gemini_with_quota_retry(win_bytes, f"{f['url']}#w{start+1}-{end}", model=wmodel)
             if res is None and not QUOTA_EXCEEDED.is_set():      # כישלון שאינו מכסה (JSON פגום וכו') - ניסיון חוזר מיידי אחד
                 print(f"    חלון {key}: ניסיון חוזר מיידי")
-                res = _call_gemini_with_quota_retry(win_bytes, f"{f['url']}#w{start+1}-{end}")
+                res = _call_gemini_with_quota_retry(win_bytes, f"{f['url']}#w{start+1}-{end}", model=wmodel)
         except ex.GeminiQuotaExceededError:
             print(f"  מכסה נגמרה בחלון {key} - נשמרו {len(done)}/{total}, חלקי.")
             _persist()

@@ -21,7 +21,8 @@ MODEL = os.environ.get("GEMINI_MODEL_OVERRIDE", "gemini-3.6-flash")
 THINK = os.environ.get("GEMINI_THINKING", "high")
 os.makedirs("model_test", exist_ok=True)
 TAG = f"{MODEL}_{THINK}" + ("_chunk" if os.environ.get("GEMINI_CHUNK") == "1" else "") + \
-    ({"1": "_filter", "charts": "_charts"}.get(os.environ.get("GEMINI_PAGE_FILTER", ""), ""))
+    ({"1": "_filter", "charts": "_charts"}.get(os.environ.get("GEMINI_PAGE_FILTER", ""), "")) + \
+    (f"_charts-{os.environ['GEMINI_CHART_MODEL']}" if os.environ.get("GEMINI_CHART_MODEL") else "")
 OUT = f"model_test/subs_{TAG}.jsonl"
 os.environ.setdefault("GEMINI_USAGE_LOG", f"model_test/usage_{TAG}.log")
 
