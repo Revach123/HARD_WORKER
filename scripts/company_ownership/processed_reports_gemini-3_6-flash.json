@@ -30552,5 +30552,53 @@
       "done": {},
       "attempts": {}
     }
+  },
+  "1764416": {
+    "company_id": "1095",
+    "status": "partial",
+    "kind": "change",
+    "attempts": 0,
+    "at": "2026-11-25T09:16:07.315208+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "scheme": "20/3//",
+      "total": 14,
+      "done": {},
+      "attempts": {}
+    }
+  },
+  "1764423": {
+    "company_id": "1095",
+    "status": "partial",
+    "kind": "change",
+    "attempts": 0,
+    "at": "2026-11-25T09:16:08.307794+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "scheme": "20/3//",
+      "total": 1,
+      "done": {},
+      "attempts": {}
+    }
+  },
+  "1764497": {
+    "company_id": "1095",
+    "status": "partial",
+    "kind": "change",
+    "attempts": 0,
+    "at": "2026-11-25T09:16:12.076785+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "scheme": "20/3//",
+      "total": 1,
+      "done": {},
+      "attempts": {}
+    }
   }
 }
