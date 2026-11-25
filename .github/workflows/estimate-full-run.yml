@@ -42,6 +42,7 @@ jobs:
         run: |
           if [ "${{ github.event.inputs.limit }}" = "changes" ]; then python estimate_changes.py 80; exit 0; fi
           if [ "${{ github.event.inputs.limit }}" = "nonq" ]; then python nonq_check.py 40; exit 0; fi
+          if [ "${{ github.event.inputs.limit }}" = "diag" ]; then sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-heb >/dev/null; python diag_missing.py; exit 0; fi
           python estimate_full_run.py --sample-every "${{ github.event.inputs.sample_every || '10' }}" \
             --changes-sample "${{ github.event.inputs.changes_sample || '150' }}" \
             ${{ github.event.inputs.limit != '' && format('--limit {0}', github.event.inputs.limit) || '' }}
