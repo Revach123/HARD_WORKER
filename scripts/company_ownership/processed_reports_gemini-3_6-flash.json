@@ -50344,5 +50344,37 @@
       "done": {},
       "attempts": {}
     }
+  },
+  "1740046": {
+    "company_id": "2352",
+    "status": "partial",
+    "kind": "change",
+    "attempts": 0,
+    "at": "2026-11-25T09:28:16.327281+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "scheme": "20/3//",
+      "total": 3,
+      "done": {},
+      "attempts": {}
+    }
+  },
+  "1762097": {
+    "company_id": "2352",
+    "status": "partial",
+    "kind": "change",
+    "attempts": 0,
+    "at": "2026-11-25T09:28:17.106261+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "scheme": "20/3//",
+      "total": 4,
+      "done": {},
+      "attempts": {}
+    }
   }
 }
