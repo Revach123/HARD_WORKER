@@ -66,7 +66,19 @@ jobs:
               other[name] = {digits(x.get(idf)) for x in recs} if idf else set()
           rows = d1("SELECT id, name, status, reg_date, purpose, updated_at FROM associations WHERE category = 'הקדש ציבורי'")
           missing = [r for r in rows if digits(r["id"]) not in off_ids]
-          out = {"db_hekdeshot": len(rows), "official_general": len(off_ids), "not_in_official": len(missing),
+          # השורות של כל הקדש חסר בטבלאות האחרות (עד 4 לכל טבלה) + שמות השדות - כדי לראות שנים / תאריכים (עדכני או היסטורי)
+          detail = {}
+          for name, (recs, fields) in tables.items():
+              if "מידע כללי" in name: continue
+              idf = next((f for f in fields if "מספר" in f and "תיק" in f), None) or next((f for f in fields if "מספר" in f), None)
+              hits = {}
+              for x in recs:
+                  k = digits(x.get(idf)) if idf else ""
+                  if k in {digits(r["id"]) for r in missing}:
+                      hits.setdefault(k, []).append({f: x.get(f) for f in fields if f != "_id"})
+              detail[name] = {"fields": fields, "rows": {k: v[:4] for k, v in hits.items()},
+                              "years_in_table": sorted({str(x.get(f))[:4] for x in recs for f in fields if "שנ" in f or "תאריך" in f})[-6:]}
+          out = {"db_hekdeshot": len(rows), "official_general": len(off_ids), "official_general_records": len(general), "not_in_official": len(missing), "other_tables_detail": detail,
                  "other_official_tables": {k: len(v) for k, v in other.items()},
                  "rows": [{**r, "in_other_official_tables": [k for k, v in other.items() if digits(r["id"]) in v]} for r in missing]}
           os.makedirs("data/probe", exist_ok=True)
