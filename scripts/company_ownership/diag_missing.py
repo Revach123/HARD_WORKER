@@ -27,6 +27,17 @@ RUNS = {"control": B + "_control.jsonl", "media": B + "_media-low.jsonl",
         "H-low": "model_test/subs_gemini-4-hydrogen_low_chunk_formal_v2_media-low_compact.jsonl"}
 
 
+def layout_texts(pdf):
+    """pdftotext -layout: שורת טבלה נשארת שורה אחת (שם + אחוז יחד)."""
+    import subprocess, tempfile
+    with tempfile.NamedTemporaryFile(suffix=".pdf") as f:
+        f.write(pdf)
+        f.flush()
+        out = subprocess.run(["pdftotext", "-q", "-layout", f.name, "-"], capture_output=True, timeout=300).stdout
+    txt = re.sub("[\u200e\u200f\u202a-\u202e\u2066-\u2069]", "", out.decode("utf-8", "replace"))
+    return txt.split("\f")
+
+
 def found_keys(path, rid):
     out = set()
     for line in open(path, encoding="utf-8"):
@@ -55,6 +66,7 @@ def main():
             print(f"DIAG אין דוח בתוכנית ל-{rid}")
             continue
         files = []
+        lay = []
         for url in [snap["pdf_url"]] + list(snap.get("extra_pdfs") or []):
             try:
                 pdf = mrc.download_report_file(url)
@@ -63,6 +75,7 @@ def main():
                 rel = set(rsb._relevant_pages(pdf, n) or range(n))
                 formal = set(rsb._formal_pages(pdf, n) or [])
                 files.append((texts, rel, formal))
+                lay.extend(layout_texts(pdf))
             except Exception as e:
                 print(f"DIAG {rid}: קובץ נכשל ({type(e).__name__})")
         items = [it for it in rep["items"] if it["label"] in ("entity", "asset")]
@@ -76,11 +89,24 @@ def main():
                             lines.add(st.key(line))
                             break
         cand["candidates"] += len(lines)
+        llines = set()
+        for t in lay:
+            for line in t.splitlines():
+                for ln in (line, line[::-1]):
+                    if rsb.ENTITY.search(ln) or (re.search(r"\d\s*%|%\s*\d|\d+\.\d+", ln) and len(re.findall(r"[A-Za-z\u05d0-\u05ea]", ln)) >= 4):
+                        llines.add(st.key(line))
+                        break
+        cand["layout_candidates"] += len(llines)
+        alltext = " ".join(st.key(t) for t in lay)
         for it in items:
             names = {st.key(n) for n in [it["name"]] + list(it.get("alt_names") or [])}
             cand["items"] += 1
             if any(k and any(k in ln for ln in lines) for k in names):
                 cand["covered"] += 1
+            if any(k and any(k in ln for ln in llines) for k in names):
+                cand["layout_covered"] += 1
+            if any(k and k in alltext for k in names):
+                cand["in_any_text"] += 1
         dens = Counter(it.get("page") for it in items)
         got = {k: found_keys(p, rid) for k, p in RUNS.items()}
         for it in items:
@@ -124,6 +150,8 @@ def main():
                 diff_density["same"] += 1
     print(f"DIAG רשימת מועמדים (בלי AI, כל העמודים): {cand['candidates']} שורות ב-10 הדוחות; "
           f"מכסה {cand['covered']}/{cand['items']} מפריטי סט האמת")
+    print(f"DIAG מועמדים עם -layout: {cand['layout_candidates']} שורות; מכסה {cand['layout_covered']}/{cand['items']}; "
+          f"השם מופיע בטקסט הדוח בכלל (כל עמוד): {cand['in_any_text']}/{cand['items']}")
     print("DIAG פריטים: " + " ".join(f"{k}={v}" for k, v in page_stats.items()))
     for run, c in causes.items():
         print(f"DIAG {run}: " + " ".join(f"{k}={c[k]}" for k in
