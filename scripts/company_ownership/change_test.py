@@ -88,16 +88,25 @@ def main():
             print(f"  {rid}: שגיאה {type(e).__name__}: {e}", flush=True)
 
     t0 = time.time()
+    tag = os.environ.get("CHG_TAG", "")              # למשל v1high - קבצים נפרדים לכל הגדרה
+    sfx = f"_{tag}" if tag else ""
+    phases = [p for p in (os.environ.get("CHG_PHASES") or "all,filtered").split(",") if p]
     for phase, pf in (("all", ""), ("filtered", "changes")):
-        PHASE["out"] = f"model_test/changes_{phase}.jsonl"
+        if phase not in phases:
+            continue
+        PHASE["out"] = f"model_test/changes_{phase}{sfx}.jsonl"
         os.environ["GEMINI_PAGE_FILTER_CHANGES"] = pf
         os.environ["GEMINI_PAGE_FILTER"] = ""
-        os.environ["GEMINI_USAGE_LOG"] = f"model_test/usage_changes_{phase}.log"
+        os.environ["GEMINI_USAGE_LOG"] = f"model_test/usage_changes_{phase}{sfx}.log"
         with ThreadPoolExecutor(6) as pool:
             list(pool.map(one, sample))
         print(f"שלב {phase}: {int(time.time() - t0)}s", flush=True)
 
-    a, f = events("model_test/changes_all.jsonl"), events("model_test/changes_filtered.jsonl")
+    if tag:          # הגדרה אחרת על כל העמודים: מול הריצה הקודמת (v2 + חשיבה נמוכה) ומול הייצור
+        a, f = events(f"model_test/changes_all{sfx}.jsonl"), events("model_test/changes_all.jsonl")
+        print(f"CHGTEST השוואה: {tag} (כל העמודים) מול v2-low (כל העמודים) - 'בסינון' להלן = v2-low")
+    else:
+        a, f = events("model_test/changes_all.jsonl"), events("model_test/changes_filtered.jsonl")
     prod = {rid: {(_key(e.get("company")), e.get("event_type")) for e in recs[rid][2].get("change_events") or []}
             for rid in sample}
     both = [rid for rid in sample if rid in a and rid in f]
@@ -120,8 +129,8 @@ def main():
         for k in a[r] - f[r]:
             miss[k[1]] = miss.get(k[1], 0) + 1
     print("CHGTEST סוגי האירועים שהסינון פספס: " + " ".join(f"{k}={v}" for k, v in sorted(miss.items(), key=lambda x: -x[1])))
-    for phase in ("all", "filtered"):
-        u = usage(f"model_test/usage_changes_{phase}.log")
+    for phase in phases:
+        u = usage(f"model_test/usage_changes_{phase}{sfx}.log")
         print(f"CHGTEST טוקנים {phase}: calls={u['calls']} in={u['in']} out={u['out']} think={u['think']}")
 
 

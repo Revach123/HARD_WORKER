@@ -15,6 +15,15 @@ on:
         type: choice
         options: [low, high]
         default: low
+      prompt:
+        description: "גרסת ההנחיה"
+        type: choice
+        options: [v2, v1]
+        default: v2
+      only_all:
+        description: "רק כל העמודים (בלי סינון), לקבצים נפרדים לפי ההגדרה - להשוואה מול הריצה הקודמת"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -45,7 +54,9 @@ jobs:
           GEMINI_THINKING: ${{ github.event.inputs.thinking || 'low' }}
           GEMINI_RPM: "300"
           GEMINI_CHUNK: "1"
-          EXTRACTION_PROMPT: v2
+          EXTRACTION_PROMPT: ${{ github.event.inputs.prompt || 'v2' }}
+          CHG_PHASES: ${{ github.event.inputs.only_all == 'true' && 'all' || 'all,filtered' }}
+          CHG_TAG: ${{ github.event.inputs.only_all == 'true' && format('{0}{1}', github.event.inputs.prompt, github.event.inputs.thinking) || '' }}
           PYTHONUNBUFFERED: "1"
         run: python change_test.py "${{ github.event.inputs.n || '15' }}"
       - name: Commit test output
