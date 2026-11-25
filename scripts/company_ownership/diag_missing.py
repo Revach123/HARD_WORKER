@@ -45,6 +45,7 @@ def main():
         if s.get("report_id"):
             by_rid[str(s["report_id"])] = s
     causes = {k: Counter() for k in RUNS}
+    cand = Counter()
     diff_density = Counter()
     page_stats = Counter()
     for rep in truth:
@@ -65,6 +66,21 @@ def main():
             except Exception as e:
                 print(f"DIAG {rid}: קובץ נכשל ({type(e).__name__})")
         items = [it for it in rep["items"] if it["label"] in ("entity", "asset")]
+        # רשימת מועמדים חינמית מכל עמודי הדוח: שורות עם צורת התאגדות, או שורות עם אחוז ושם
+        lines = set()
+        for texts, rel, formal in files:
+            for t in texts:
+                for line in t.splitlines():
+                    for ln in (line, line[::-1]):
+                        if rsb.ENTITY.search(ln) or (re.search(r"\d\s*%|%\s*\d", ln) and len(re.findall(r"[A-Za-z\u05d0-\u05ea]", ln)) >= 4):
+                            lines.add(st.key(line))
+                            break
+        cand["candidates"] += len(lines)
+        for it in items:
+            names = {st.key(n) for n in [it["name"]] + list(it.get("alt_names") or [])}
+            cand["items"] += 1
+            if any(k and any(k in ln for ln in lines) for k in names):
+                cand["covered"] += 1
         dens = Counter(it.get("page") for it in items)
         got = {k: found_keys(p, rid) for k, p in RUNS.items()}
         for it in items:
@@ -106,6 +122,8 @@ def main():
                 diff_density["dense(10+)" if dens[p] >= 10 else "sparse"] += 1
             else:
                 diff_density["same"] += 1
+    print(f"DIAG רשימת מועמדים (בלי AI, כל העמודים): {cand['candidates']} שורות ב-10 הדוחות; "
+          f"מכסה {cand['covered']}/{cand['items']} מפריטי סט האמת")
     print("DIAG פריטים: " + " ".join(f"{k}={v}" for k, v in page_stats.items()))
     for run, c in causes.items():
         print(f"DIAG {run}: " + " ".join(f"{k}={c[k]}" for k in
