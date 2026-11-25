@@ -30,7 +30,7 @@ on:
         type: choice
         default: all
         options: [all, build, capital, capital-ai, offerings, offerings-monthly, offerings-pdf-scan, offerings-pdf-ai,
-                  exits, names, names-rebuild, names-context]
+                  exits, names, names-rebuild, names-context, ai-thinking-test]
 
 concurrency:
   group: revach-corp-events
@@ -114,6 +114,10 @@ jobs:
             offerings-pdf-scan) MAX_MINUTES=60 python offerings_ai.py scan ;;
             offerings-pdf-ai)   python offerings_ai.py ai ;;
             build)      ;;
+            ai-thinking-test)   # בדיקה בלבד: מדגם שכבר פורש, חשיבה high מול low, השוואה לשמור. לא כותב לאינדקסים
+              AI_TEST_N=40 python capital_events.py ai-test
+              AI_TEST_N=30 python offerings_ai.py ai-test
+              exit 0 ;;
             *)          python corp_events.py "$MODE" ;;
           esac
           SKIP_BUILD=0 python corp_events.py build
@@ -124,12 +128,13 @@ jobs:
         run: |
           # סיכום שורות GEMINI_USAGE (הלוג של השלב הקודם מוסתר) - רק מספרים, לחישוב עלות
           f=/tmp/gemini_usage.log
+          [ -f /tmp/ai_test_summary.txt ] && cat /tmp/ai_test_summary.txt     # בדיקת רמת חשיבה - רק מספרי התאמה
           [ -f "$f" ] || { echo "GEMINI_USAGE_TOTAL calls=0"; exit 0; }
           awk '{for(i=1;i<=NF;i++){split($i,kv,"=");v[kv[1]]=kv[2]}; k=v["src"]" "v["model"]; n[k]++; a[k]+=v["in"]; b[k]+=v["out"]; c[k]+=v["think"]}
                END{for(k in n) printf "GEMINI_USAGE_TOTAL %s calls=%d in=%d out=%d think=%d\n", k, n[k], a[k], b[k], c[k]}' "$f"
 
       - name: Commit to Revach
-        if: ${{ !cancelled() }}
+        if: ${{ !cancelled() && inputs.mode != 'ai-thinking-test' }}
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
