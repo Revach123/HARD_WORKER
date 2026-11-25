@@ -271,6 +271,48 @@ def _try_extract(pdf_url: str) -> dict | None:
     return result
 
 
+LEGAL_TOKENS = re.compile(
+    r'בע"?מ|בע״מ|בעמ|ש\.?מ\.?|שותפות\s+מוגבלת|שותפות\s+כללית|שותפות\s+רשומה|\(?\s*בפירוק\s*\)?|'
+    r'\b(?:ltd|limited|llc|l\.l\.c|inc|incorporated|corp|corporation|co|l\.?p|plc|b\.?v|n\.?v|gmbh|ag|s\.?a|s\.?r\.?l|'
+    r's\.?r\.?o|sp\.?\s*z\.?\s*o\.?\s*o|kft|ab|sia|pte|pty|the)\b\.?', re.I)
+
+
+def _name_key(name: str) -> str:
+    """מפתח להשוואת שמות: בלי צורת התאגדות, רווחים ופיסוק (אותו שם בכתיב אחר -> אותו מפתח)."""
+    s = LEGAL_TOKENS.sub(" ", str(name or "").lower())
+    return re.sub(r"[^0-9a-z\u0590-\u05FF]", "", s)
+
+
+def _dedup_names(subs: list[dict]) -> list[dict]:
+    """איחוד פריטים שהם אותה ישות בכתיב אחר (מפתח _name_key זהה, או שם של אחד מופיע ב-alt_names של אחר).
+    נשמר הפריט המלא יותר (עם אחוז, שם ארוך יותר); השמות האחרים נוספים ל-alt_names."""
+    out, by_key = [], {}
+    def score(x):
+        return (x.get("ownership_pct") is not None, not x.get("name_is_generic"), len(str(x.get("name") or "")))
+    for s in subs:
+        keys = {_name_key(s.get("name"))} | {_name_key(a) for a in s.get("alt_names") or []}
+        keys.discard("")
+        hit = next((by_key[k] for k in keys if k in by_key), None)
+        if hit is None:
+            s = dict(s)
+            out.append(s)
+            for k in keys:
+                by_key[k] = s
+            continue
+        keep, other = (hit, s) if score(hit) >= score(s) else (s, hit)
+        alts = list(dict.fromkeys([*(keep.get("alt_names") or []), other.get("name"), *(other.get("alt_names") or [])]))
+        alts = [a for a in alts if a and a != keep.get("name")]
+        if keep is s:                                   # הפריט החדש עדיף - מחליף את הקיים באותו מקום
+            hit.clear()
+            hit.update(s)
+        target = hit
+        target["alt_names"] = alts
+        for k in keys | {_name_key(a) for a in alts}:
+            if k:
+                by_key[k] = target
+    return out
+
+
 def _merge_extraction_results(results: list[dict]) -> dict:
     """ממזג את תוצאות כל קבצי ה-PDF של אותו דוח לרשומה אחת:
     - subsidiaries: איחוד עם dedup לפי name (הרשומה הראשונה שנתקלים
@@ -296,9 +338,12 @@ def _merge_extraction_results(results: list[dict]) -> dict:
             if dedup_key not in merged_events:
                 merged_events[dedup_key] = ev
 
+    subs = list(merged_subs.values())
+    if os.environ.get("EXTRACTION_PROMPT", "v1") == "v2":
+        subs = _dedup_names(subs)
     return {
         **meta,
-        "subsidiaries": list(merged_subs.values()),
+        "subsidiaries": subs,
         "change_events": list(merged_events.values()),
     }
 

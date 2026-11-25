@@ -337,7 +337,10 @@ EXTRACTION_PROMPT_V2_RULES = """\
 11. אל תחלץ ישויות מסעיפים שאינם מתארים את ההחזקות של החברה המדווחת: דירקטורים ונושאי משרה (תקנה 26 - כהונה בתאגידים
    אחרים), בעלי עניין ובעלי השליטה בחברה, הלוואות / אשראי / ערבויות לצדדים שלישיים, לקוחות וספקים, הסכמים עם צדדים
    שלישיים, ונכסים להשוואה בשומות.
-12. לכל פריט ב-subsidiaries הוסף גם את השדות: "entity_type", "name_is_generic" (true/false).
+12. לכל פריט ב-subsidiaries הוסף גם את השדות: "entity_type", "name_is_generic" (true/false), "alt_names" (רשימה).
+13. אותה ישות פעם אחת בלבד: אם היא מופיעה בשמות שונים (עברית ואנגלית, כתיב אחר, שם מקוצר ושם מלא, למשל "אי די בי ניו
+   יורק" ו-"Israel Discount Bank of New York") - החזר פריט אחד: name - השם הרשמי המלא (עדיף כפי שבטבלת החברות
+   המוחזקות / תקנה 11), ושאר השמות ב-alt_names.
 """
 if os.environ.get("EXTRACTION_PROMPT", "v1") == "v2":
     EXTRACTION_SYSTEM_PROMPT = EXTRACTION_SYSTEM_PROMPT + EXTRACTION_PROMPT_V2_RULES
