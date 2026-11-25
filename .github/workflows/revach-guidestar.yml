@@ -1,12 +1,12 @@
 # GuideStar lists for Revach - weekly, here (public repo = free Actions minutes):
-#  1. fetch Ottoman associations, public hekdeshot and public-benefit companies
+#  1. fetch Ottoman associations and public-benefit companies
 #     (חל"צ) -> Revach data/registry/*.json
-#  2. load the Ottoman associations and hekdeshot into company-info-db
+#  2. load the Ottoman associations into company-info-db (hekdeshot now come from the official registry: revach-hekdeshot.yml)
 #     (associations table): new numbers are added, rows that came from here are
 #     updated; rows from the official registries are never touched.
 # Runs on Sunday after Revach's weekly registry load (load-associations, 02:30 UTC).
 # Secrets in THIS repo: REVACH_TOKEN, CF_D1_TOKEN, CF_ACCOUNT_ID.
-name: Revach - GuideStar lists (Ottoman, hekdeshot, PBC)
+name: Revach - GuideStar lists (Ottoman, PBC)
 
 on:
   schedule:
@@ -60,14 +60,13 @@ jobs:
       - run: pip install requests
 
       - run: python -u scripts/registry/fetch_guidestar.py ottoman
-      - run: python -u scripts/registry/fetch_guidestar.py hekdesh
       - run: python -u scripts/registry/fetch_guidestar.py pbc
 
       - name: Commit lists to Revach
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/registry/ottoman_associations.json data/registry/hekdeshot.json data/registry/pbc_companies.json data/registry/pbc_ids.json
+          git add data/registry/ottoman_associations.json data/registry/pbc_companies.json data/registry/pbc_ids.json
           if git diff --cached --quiet; then echo "No changes."; exit 0; fi
           git commit -m "GuideStar lists ($(date -u +%Y-%m-%d)) (via HARD_WORKER)"
           for i in 1 2 3 4 5; do
