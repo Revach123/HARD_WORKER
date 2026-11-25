@@ -1,0 +1,45 @@
+name: Estimate full extraction cost (no Gemini)
+
+# הערכת עלות לחילוץ מלא מחדש של כל הדוחות - בלי Gemini: הורדת הדוחות, ספירת עמודים, סינון עמודים, ו-OCR לזיהוי
+# תרשימים על מדגם. ר' scripts/company_ownership/estimate_full_run.py.
+
+on:
+  workflow_dispatch:
+    inputs:
+      sample_every:
+        description: "OCR לזיהוי תרשימים - כל N-י דוח שנתי"
+        required: false
+        default: "10"
+      changes_sample:
+        description: "מדגם דוחות שינויים"
+        required: false
+        default: "150"
+      limit:
+        description: "רק N דוחות שנתיים (בדיקה); ריק = הכל"
+        required: false
+        default: ""
+
+permissions:
+  contents: read
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: |
+          pip install requests pypdf --break-system-packages
+          sudo apt-get install -y -qq poppler-utils tesseract-ocr tesseract-ocr-heb >/dev/null
+      - name: Estimate
+        working-directory: scripts/company_ownership
+        env:
+          GEMINI_API_KEY: "unused"
+          PYTHONUNBUFFERED: "1"
+        run: |
+          python estimate_full_run.py --sample-every "${{ github.event.inputs.sample_every || '10' }}" \
+            --changes-sample "${{ github.event.inputs.changes_sample || '150' }}" \
+            ${{ github.event.inputs.limit != '' && format('--limit {0}', github.event.inputs.limit) || '' }}
