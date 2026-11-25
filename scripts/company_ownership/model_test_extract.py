@@ -69,6 +69,31 @@ def ocr_page(pdf_bytes, page):
         return r.stdout.decode("utf-8", "replace")
 
 
+def why(a):
+    """לכל עמוד שצוין: האם נבחר בסינון העמודים, ואיזה סימן תפס (כותרת / ריכוז ישויות ואחוזים) - ותחילת הטקסט."""
+    import io
+    import re
+    import maya_reports_client as mrc
+    from pypdf import PdfReader
+    plan = json.load(open("selection_plan.json", encoding="utf-8"))
+    for spec in a.why.split(";"):
+        cid, fidx, pages = spec.replace("why=", "").split(":")
+        snap = plan[cid]["snapshot"]
+        url = ([snap["pdf_url"]] + (snap.get("extra_pdfs") or []))[int(fidx)]
+        pdf = mrc.download_report_file(url)
+        n = len(PdfReader(io.BytesIO(pdf)).pages)
+        texts = rsb._page_texts(pdf, n)
+        sel = set(rsb._relevant_pages(pdf, n) or [])
+        print(f"WHY {plan[cid]['company_name']} {url.split('/')[-1]} ({n} עמ', נבחרו {len(sel)})")
+        for p in [int(x) for x in pages.split(",")]:
+            t = texts[p - 1] if texts else ""
+            t2 = t + "\n" + "\n".join(line[::-1] for line in t.splitlines())
+            k = rsb.PAGE_KEYS.search(t2)
+            ent = len(rsb.ENTITY.findall(t2))
+            print(f"WHY  עמ' {p}: {'נבחר' if p - 1 in sel else 'לא נבחר'} | len={len(t.strip())} ent={ent} pct={t.count('%')} "
+                  f"key={k.group(0) if k else '-'} | {' '.join(t.split())[:160]}")
+
+
 def ocr_test(a):
     """אותם עמודים (למשל תרשים מבנה ההחזקות) נשלחים ל-Gemini פעמיים: רק ה-PDF, ו-PDF + טקסט OCR של כל עמוד כרמז.
     מדפיס מספר חברות בת, כמה עם אחוז, חפיפה עם תוצאת Hydrogen באותם עמודים, וטוקנים לכל ניסיון."""
@@ -239,10 +264,13 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--cids", required=True)
     ap.add_argument("--workers", type=int, default=6)
+    ap.add_argument("--why", default="", help="cid:file:p1,p2,... - לכל עמוד: נבחר בסינון? ולמה (בלי Gemini)")
     ap.add_argument("--ocr-test", default="", help="cid:file:from-to - אותם עמודים ל-Gemini פעם בלי ופעם עם טקסט OCR כרמז")
     ap.add_argument("--probe", default="", help="בלי Gemini: טקסט (pdftotext) של עמודים נבחרים ומניין שמות ישויות, למשל 10-16")
     ap.add_argument("--dry", action="store_true", help="בלי Gemini: רק כמה עמודים נבחרים, וכמה מעמודי חברות הבת הקיימות מכוסים")
     a = ap.parse_args()
+    if a.why:
+        return why(a)
     if a.ocr_test:
         return ocr_test(a)
     if a.probe:
