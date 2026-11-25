@@ -17846,11 +17846,12 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-11-24T09:50:59.882124+00:00",
+    "at": "2026-11-25T09:10:30.061858+00:00",
     "model": "gemini-3.6-flash",
     "chunks": {
       "size": 20,
       "overlap": 3,
+      "scheme": "20/3//",
       "total": 3,
       "done": {},
       "attempts": {
@@ -17865,11 +17866,12 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-11-24T09:50:49.873823+00:00",
+    "at": "2026-11-25T09:10:29.702566+00:00",
     "model": "gemini-3.6-flash",
     "chunks": {
       "size": 20,
       "overlap": 3,
+      "scheme": "20/3//",
       "total": 2,
       "done": {},
       "attempts": {
@@ -17883,11 +17885,12 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-11-24T09:50:55.388862+00:00",
+    "at": "2026-11-25T09:10:29.863542+00:00",
     "model": "gemini-3.6-flash",
     "chunks": {
       "size": 20,
       "overlap": 3,
+      "scheme": "20/3//",
       "total": 4,
       "done": {},
       "attempts": {
@@ -17903,11 +17906,12 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-11-24T09:50:54.631029+00:00",
+    "at": "2026-11-25T09:10:30.663949+00:00",
     "model": "gemini-3.6-flash",
     "chunks": {
       "size": 20,
       "overlap": 3,
+      "scheme": "20/3//",
       "total": 2,
       "done": {},
       "attempts": {
@@ -17921,11 +17925,12 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-11-24T09:50:52.909852+00:00",
+    "at": "2026-11-25T09:10:30.575755+00:00",
     "model": "gemini-3.6-flash",
     "chunks": {
       "size": 20,
       "overlap": 3,
+      "scheme": "20/3//",
       "total": 1,
       "done": {},
       "attempts": {
@@ -17938,11 +17943,12 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-11-24T09:51:07.479718+00:00",
+    "at": "2026-11-25T09:10:30.193385+00:00",
     "model": "gemini-3.6-flash",
     "chunks": {
       "size": 20,
       "overlap": 3,
+      "scheme": "20/3//",
       "total": 4,
       "done": {},
       "attempts": {
@@ -17958,11 +17964,12 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-11-24T09:51:01.959910+00:00",
+    "at": "2026-11-25T09:10:30.856372+00:00",
     "model": "gemini-3.6-flash",
     "chunks": {
       "size": 20,
       "overlap": 3,
+      "scheme": "20/3//",
       "total": 3,
       "done": {},
       "attempts": {
@@ -17977,11 +17984,12 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-11-24T09:51:04.327312+00:00",
+    "at": "2026-11-25T09:10:32.109243+00:00",
     "model": "gemini-3.6-flash",
     "chunks": {
       "size": 20,
       "overlap": 3,
+      "scheme": "20/3//",
       "total": 5,
       "done": {},
       "attempts": {
@@ -17998,11 +18006,12 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-11-24T09:51:01.998865+00:00",
+    "at": "2026-11-25T09:10:30.740651+00:00",
     "model": "gemini-3.6-flash",
     "chunks": {
       "size": 20,
       "overlap": 3,
+      "scheme": "20/3//",
       "total": 3,
       "done": {},
       "attempts": {
@@ -18017,11 +18026,12 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-11-24T09:51:15.154960+00:00",
+    "at": "2026-11-25T09:10:32.242230+00:00",
     "model": "gemini-3.6-flash",
     "chunks": {
       "size": 20,
       "overlap": 3,
+      "scheme": "20/3//",
       "total": 7,
       "done": {},
       "attempts": {
@@ -18040,11 +18050,12 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-11-24T09:51:03.447851+00:00",
+    "at": "2026-11-25T09:10:32.149510+00:00",
     "model": "gemini-3.6-flash",
     "chunks": {
       "size": 20,
       "overlap": 3,
+      "scheme": "20/3//",
       "total": 1,
       "done": {},
       "attempts": {
@@ -18347,6 +18358,22 @@
       "overlap": 3,
       "scheme": "20/3//",
       "total": 2,
+      "done": {},
+      "attempts": {}
+    }
+  },
+  "1783555": {
+    "company_id": "182",
+    "status": "partial",
+    "kind": "change",
+    "attempts": 0,
+    "at": "2026-11-25T09:10:30.374337+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "scheme": "20/3//",
+      "total": 4,
       "done": {},
       "attempts": {}
     }
