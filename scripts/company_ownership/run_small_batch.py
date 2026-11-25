@@ -332,6 +332,10 @@ PAGE_KEYS = re.compile(
     r"Investments?\s+in\s+(?:subsidiaries|investees|associates)|Organizational\s+Structure|Holding\s+structure|Group\s+structure", re.I)
 ENTITY = re.compile(r'בע"?מ|בע״מ|שותפות|\bLtd\b|\bLimited\b|\bLLC\b|\bInc\b|\bB\.?V\b|\bGmbH\b|\bS\.?A\b|\bL\.?P\b|'
                     r'\bS\.?R\.?L\b|\bsp\.? z|\bPLC\b|\bCorp', re.I)
+# משפט החזקה בטקסט חופשי (דוח הדירקטוריון / תיאור עסקי התאגיד): "הבנק מחזיק 100% מ...", "מחזיקה ב-51%", "holds 70%"
+HOLD_STMT = re.compile(r"מחזיק(?:ה|ים|ות)?\s+(?:ב[-־]?\s*)?(?:כ[-־]?\s*)?\d[\d.,]*\s*%|"
+                       r"\d[\d.,]*\s*%\s+(?:מ)?(?:הון|זכויות|מניות|אחזקות|החזקות)|"
+                       r"(?:holds?|owns?|holding)\s+(?:approximately\s+|about\s+)?\d[\d.,]*\s*%", re.I)
 PAGE_PAD = 1
 
 
@@ -363,7 +367,7 @@ def _relevant_pages(pdf_bytes: bytes, n_pages: int):
     for i, t in enumerate(texts):
         t2 = t + "\n" + "\n".join(line[::-1] for line in t.splitlines())   # עברית בסדר חזותי (הפוך) בחלק מהקבצים
         ent = len(ENTITY.findall(t2))
-        if PAGE_KEYS.search(t2) or ent >= 8 or (ent >= 5 and t.count("%") >= 3):
+        if PAGE_KEYS.search(t2) or ent >= 8 or (ent >= 5 and t.count("%") >= 3) or len(HOLD_STMT.findall(t2)) >= 1:
             hit.add(i)
     low = {i for i, t in enumerate(texts) if len(t.strip()) < 300}
     hit |= {i for i in low if any(abs(i - j) <= 2 for j in hit)}

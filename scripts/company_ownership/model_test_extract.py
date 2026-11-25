@@ -90,7 +90,9 @@ def why(a):
             t2 = t + "\n" + "\n".join(line[::-1] for line in t.splitlines())
             k = rsb.PAGE_KEYS.search(t2)
             ent = len(rsb.ENTITY.findall(t2))
+            hs = rsb.HOLD_STMT.search(t2)
             print(f"WHY  עמ' {p}: {'נבחר' if p - 1 in sel else 'לא נבחר'} | len={len(t.strip())} ent={ent} pct={t.count('%')} "
+                  f"hold={hs.group(0) if hs else '-'} "
                   f"key={k.group(0) if k else '-'} | {' '.join(t.split())[:160]}")
 
 
