@@ -1,0 +1,6992 @@
+{
+ "version": "2026-11-25",
+ "definition": "חברות בת וחברות מוחזקות (entity) ונכסים/פרויקטים מוחזקים (asset) שהדוח מפרט; duplicate - שם נוסף לישות שכבר ברשימה; not_holding - לא החזקה; uncertain - לבדיקה ידנית. נבנה מאיחוד Hydrogen (עמודים רשמיים) + התהליך החדש + החילוץ הקיים, וסומן ידנית.",
+ "reports": {
+  "230": {
+   "company": "בזק",
+   "report_id": "1726440",
+   "items": [
+    {
+     "name": "בזק ג'ן",
+     "alt_names": [
+      "בזק ג'ן בע\"מ",
+      "בזק ג'ן בע״מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 50.0,
+     "page": 8,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Yes",
+     "alt_names": [
+      "yes"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100.0,
+     "page": 8,
+     "found_by": [
+      "H",
+      "P"
+     ]
+    },
+    {
+     "name": "בזק בינלאומי",
+     "alt_names": [
+      "חברת בזק בינלאומי בע״מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100.0,
+     "page": 8,
+     "found_by": [
+      "H",
+      "P"
+     ]
+    },
+    {
+     "name": "פלאפון",
+     "alt_names": [
+      "פלאפון תקשורת בע״מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100.0,
+     "page": 8,
+     "found_by": [
+      "H",
+      "P"
+     ]
+    },
+    {
+     "name": "פלאפון תקשורת בע\"מ",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": null,
+     "pct": 100.0,
+     "page": 7,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "חברת בזק בינלאומי בע\"מ",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": null,
+     "pct": 100.0,
+     "page": 7,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "יס שירותי טלוויזיה ותקשורת בע\"מ",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": null,
+     "pct": 100.0,
+     "page": 7,
+     "found_by": [
+      "O"
+     ]
+    }
+   ]
+  },
+  "629": {
+   "company": "טבע",
+   "report_id": "1720750",
+   "items": [
+    {
+     "name": "Anda Inc.",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 223,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Salomon Levin and Elstein Ltd.",
+     "alt_names": [
+      "Salomon Levin and Elstein Ltd. (SLE)"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 113,
+     "found_by": [
+      "H",
+      "P"
+     ]
+    },
+    {
+     "name": "Medis",
+     "alt_names": [],
+     "label": "not_holding",
+     "type": "company",
+     "pct": null,
+     "page": 116,
+     "found_by": [
+      "H",
+      "P"
+     ]
+    },
+    {
+     "name": "Actavis Group PTC ehf",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 223,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Actavis Pharma Holding 4 ehf",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 223,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Arrow International Limited",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 223,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Norton Healthcare Limited",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 223,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Mepha Pharma AG",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 223,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Merckle GmbH",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 223,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Pliva Hrvatska d.o.o.",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 223,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Ratiopharm GmbH",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 223,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Salomon, Levin & Elstein Ltd.",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 223,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "TAPI NL B.V.",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 223,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Teva Actavis Holding B.V.",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 223,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Teva Canada Limited",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 223,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Teva Biotech GmbH",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 223,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Teva Capital Services Switzerland GmbH",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 223,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Teva Czech Industries s.r.o",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 223,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Teva Health GmbH",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 223,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Teva Pharmaceuticals Finance Netherlands B.V.",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 223,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Teva Finance Services II B.V.",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 223,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Teva Italia S.r.l",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 223,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Teva Limited Liability Company",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 223,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Teva Pharma S.L.U",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 223,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Teva Pharmaceuticals International GmbH",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 223,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Teva Pharmaceuticals USA, Inc.",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 223,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Teva Operations Poland Sp. Z.o.o.",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 223,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Teva Santé SAS",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 223,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Teva UK Limited",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 223,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Teva-Takeda",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 0,
+     "page": 177,
+     "found_by": [
+      "P"
+     ]
+    },
+    {
+     "name": "Teva-Takeda business venture",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": null,
+     "pct": 51,
+     "page": 8,
+     "found_by": [
+      "O"
+     ]
+    }
+   ]
+  },
+  "691": {
+   "company": "דיסקונט",
+   "report_id": "1726714",
+   "items": [
+    {
+     "name": "Discount Bancorp, Inc",
+     "alt_names": [
+      "Discount Bancorp Inc.",
+      "Discount Bancorp, Inc.",
+      "בנקורפ",
+      "דיסקונט בנקורפ",
+      "דיסקונט בנקורפ אינק",
+      "דיסקונט בנקורפ אינק.",
+      "דיסקונט בנקורפ, אינק"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 85.45,
+     "page": 178,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Israel Discount Bank Of New York U.S.A.",
+     "alt_names": [
+      "Israel Discount Bank Of New York U.S.A",
+      "Israel Discount Bank of New York",
+      "אי די בי ניו יורק"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 5,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "בנק מרכנתיל דיסקונט בע\"מ",
+     "alt_names": [
+      "בנק מרכנתיל דיסקונט"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 56,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "חברת כרטיסי אשראי לישראל בע\"מ",
+     "alt_names": [
+      "כאל",
+      "כרטיסי אשראי לישראל",
+      "כרטיסי אשראי לישראל (כאל)",
+      "כרטיסי אשראי לישראל בע\"מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 71.8,
+     "page": 57,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "דיסקונט קפיטל בע\"מ",
+     "alt_names": [
+      "דיסקונט קפיטל"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 58,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "דיסקונט קפיטל חיתום",
+     "alt_names": [
+      "דיסקונט קפיטל חיתום בע\"מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 60.68,
+     "page": 303,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "פייבוקס בע\"מ",
+     "alt_names": [
+      "פייבוקס"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 180,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "גרינלנד בע\"מ",
+     "alt_names": [
+      "Greenlend",
+      "גרינלנד"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 70,
+     "page": 3,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "IDBNY Realty (Delaware),Inc",
+     "alt_names": [
+      "IDBNY Realty (Delaware) Inc",
+      "IDBNY Realty (Delaware), Inc"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 178,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "IDB Realty LLC",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 178,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "דיינרס (קלוב) ישראל בע\"מ",
+     "alt_names": [
+      "דיינרס קלוב ישראל בע\"מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 178,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "כ.א.ל. (מימון) בע\"מ",
+     "alt_names": [
+      "כאל (מימון) בע\"מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 4,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "תפנית דיסקונט ניהול תיקי השקעות בע\"מ",
+     "alt_names": [
+      "תפנית דיסקונט ניהול תיקי השקעות"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 69,
+     "page": 3,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "דיסקונט מנפיקים בע\"מ",
+     "alt_names": [
+      "דיסקונט מנפיקים"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 3,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "דיינרס קלאב",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 303,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "דיסקונט ליסינג בע\"מ",
+     "alt_names": [
+      "דיסקונט ליסינג"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 3,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "דיסקונט נאמנות בע\"מ",
+     "alt_names": [
+      "דיסקונט נאמנות"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 3,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "דיסקונט למשכנתאות לבית סוכנות לביטוח (2005) בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 3,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "\"בדל\" שרותי מחשב ומנהלה בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 3,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "חברת נדבך לנדל\"ן והשקעות בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 3,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "חברה לרישומים של בנק דיסקונט לישראל בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 3,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "ציר חברה למסחר בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 3,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "כספונט בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 20,
+     "page": 3,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "מרכז סליקה בנקאי בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 25,
+     "page": 3,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "חברת כספות הבנקים בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 50,
+     "page": 3,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "הופאון מוביליטי ישראל בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 20,
+     "page": 3,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "יוניטק טכנולוגיות בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 20,
+     "page": 3,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "FIMI Opportunity Fund L.P.",
+     "alt_names": [],
+     "label": "entity",
+     "type": "fund",
+     "pct": 20,
+     "page": 3,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Discount Reinsurance International Limited",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 3,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "מרביט סוכנות לביטוח (1996) בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 4,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "מרכנתיל הנפקות בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 4,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "אי.אף. הקרן הבינלאומית (יועצים) בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 4,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "די סי אם וונצ'ר ניהול בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 4,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "מניף - שרותים פיננסים בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 17.53,
+     "page": 4,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "גניגר מפעלי פלסטיקה בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 15.15,
+     "page": 4,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "אימג'סאט אינטרנשיונל (אי.אס.איי.) בע\"מ. (ISI)",
+     "alt_names": [
+      "אימג'סאט אינטרנשיונל (אי.אס.איי.) בע\"מ (ISI)"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 11.47,
+     "page": 4,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "מ.ל.ר.ן פרויקטים ומסחר בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 12.93,
+     "page": 4,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "מרינה גרופ בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 16.5,
+     "page": 4,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "אבן החכמים בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 20,
+     "page": 4,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "תומאטק זרעים בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 18.5,
+     "page": 4,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "וי.אפ.אר נכסים ואחזקות בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 20,
+     "page": 4,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "ויטלייף מדעי החיים בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 20,
+     "page": 4,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "דיינרס (מימון) בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 4,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "ד.ק. החברה לניהול ושיווק אשראי בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 4,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "יציל פיננסים בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 4,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "כאל (פקדונות) בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 4,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "שלמה כ.א.ל. בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 20,
+     "page": 4,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "IDB Real Estate Holdings Inc",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 5,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "IDB Capital Corp.",
+     "alt_names": [
+      "IDB Capital Corp"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 5,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "DB Properties, Inc.",
+     "alt_names": [
+      "DB Properties, Inc"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 5,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "IDBNY LIDO Wealth, LLC",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 50,
+     "page": 5,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "New York U.S.A Israel Discount Bank Of New York",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": "company",
+     "pct": 100.0,
+     "page": 5,
+     "found_by": [
+      "P"
+     ]
+    },
+    {
+     "name": "בנקורפ אינק.",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": "company",
+     "pct": null,
+     "page": 23,
+     "found_by": [
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "תפנית",
+     "alt_names": [],
+     "label": "not_holding",
+     "type": null,
+     "pct": null,
+     "page": 211,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "מוניציפל בנק בע\"מ",
+     "alt_names": [],
+     "label": "not_holding",
+     "type": null,
+     "pct": null,
+     "page": 211,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "דיסקונט בנקאות, אינק",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": null,
+     "pct": 95.1,
+     "page": 303,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "תכמית דיסקונט ניהול תיקי השקעות",
+     "alt_names": [],
+     "label": "entity",
+     "type": null,
+     "pct": 100,
+     "page": 303,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "דיסקונט מוביפיקס",
+     "alt_names": [],
+     "label": "entity",
+     "type": null,
+     "pct": 100,
+     "page": 303,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "מס\"ב",
+     "alt_names": [],
+     "label": "entity",
+     "type": null,
+     "pct": 25,
+     "page": 343,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "דיירנס קלאב",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": null,
+     "pct": null,
+     "page": 370,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "Israel Discount Bank of New York, USA",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": null,
+     "pct": null,
+     "page": 370,
+     "found_by": [
+      "O"
+     ]
+    }
+   ]
+  },
+  "1041": {
+   "company": "מגדל ביטוח",
+   "report_id": "1730567",
+   "items": [
+    {
+     "name": "בי-וול פתרונות לאיכות חיים בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 12,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "מגדל שוקי הון (1965) בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 12,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "מגדל ניהול תיקי השקעות (1998) בע\"מ",
+     "alt_names": [
+      "מגדל ניהול תיקי השקעות (1998) בע״מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 12,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "מגדל קרנות נאמנות בע\"מ",
+     "alt_names": [
+      "מגדל קרנות נאמנות בע״מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 12,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "מגדל ואליו בע\"מ",
+     "alt_names": [
+      "מגדל ואליו",
+      "מגדל ואליו בע״מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 12,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "מגדל עשיית שוק בע\"מ",
+     "alt_names": [
+      "מגדל עשיית שוק בע״מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 12,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "מגדל חברה לביטוח בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 12,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "מגדל ביטוח גיוס הון בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 12,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "מגדל מקפת קרנות פנסיה וקופות גמל בע\"מ",
+     "alt_names": [
+      "מגדל מקפת"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 12,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "מגדל אחזקות וניהול סוכנויות ביטוח בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 12,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "מבטח - סימון סוכנויות לביטוח בע\"מ",
+     "alt_names": [
+      "מבטח סיימון סוכנויות לביטוח בע\"מ",
+      "מבטח סימון סוכנויות לביטוח בע\"מ",
+      "מבטח-סימון סוכנויות לביטוח בע\"מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 12,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "שגיא יוגב סוכנויות ביטוח (1988) בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 12,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "שחם אורלן סוכנות לביטוח בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 12,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "פלתורס סוכנויות ביטוח בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 73.28,
+     "page": 12,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "מקפת שירותים פיננסים - סוכנות לביטוח (1998) בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 455,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "סוכנויות פלתורס ביטוח בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 73.28,
+     "page": 455,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "אחוד רשת סוכנויות ביטוח בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 456,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "מגדל בריאות ואיכות חיים בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 456,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "מגדל שירותי ניהול בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 456,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "דטה קאר ישראל בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 456,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "מגדל הנפקות בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 54,
+     "found_by": [
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "לביא אגדים ופידרים קרנות השקעה פרטיות בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 50,
+     "page": 54,
+     "found_by": [
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "שחם אורלן סוכנויות לביטוח בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 216,
+     "found_by": [
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "יוזמה - קרן פנסיה לעצמאים בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 157,
+     "found_by": [
+      "P"
+     ]
+    },
+    {
+     "name": "מגדל בריאות",
+     "alt_names": [],
+     "label": "uncertain",
+     "type": null,
+     "pct": null,
+     "page": 18,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "בי-וול",
+     "alt_names": [],
+     "label": "uncertain",
+     "type": null,
+     "pct": null,
+     "page": 18,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "טאואר סוכנות לביטוח פנסיוני בע\"מ",
+     "alt_names": [],
+     "label": "uncertain",
+     "type": null,
+     "pct": null,
+     "page": 54,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "נכסי המגן בע\"מ",
+     "alt_names": [],
+     "label": "uncertain",
+     "type": null,
+     "pct": null,
+     "page": 289,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "מגדל אחזקות נדל\"ן בע\"מ",
+     "alt_names": [],
+     "label": "uncertain",
+     "type": null,
+     "pct": null,
+     "page": 289,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "מגדל אחזקות וניהול סוכנויות ביטוח בע“מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": null,
+     "pct": 100,
+     "page": 455,
+     "found_by": [
+      "O"
+     ]
+    }
+   ]
+  },
+  "777": {
+   "company": "שופרסל",
+   "report_id": "1734231",
+   "items": [
+    {
+     "name": "לארו נדל\"ן בע\"מ",
+     "alt_names": [
+      "לארו נדל\"ן"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 221,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "גדרון תעשיות בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 18,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "ארבעת המינים בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 18,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "שופרסל אמיגה בע\"מ",
+     "alt_names": [
+      "שופרסל אמיגה"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 18,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "שופרסל סטוק בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 18,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "קטיף בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 18,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "שופרסל טרוול בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 53,
+     "page": 18,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "היפרכל בע\"מ",
+     "alt_names": [
+      "היפר - כל בע\"מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 18,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "שופרסל ביילסול השקעות בע\"מ",
+     "alt_names": [
+      "שופרסל - ביילסול השקעות בע\"מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 18,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "חברת הנכסים של שופרסל בע\"מ",
+     "alt_names": [
+      "חברת הנכסים של שופר - סל בע\"מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 18,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "הנץ יבואנים ויצואנים בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 18,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "עורבני חברה להשקעות בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 18,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "לב המפרץ",
+     "alt_names": [
+      "לב המפרץ בע\"מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 58.73,
+     "page": 18,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "היפר רשת הגל הירוק בע\"מ",
+     "alt_names": [],
+     "label": "uncertain",
+     "type": "company",
+     "pct": null,
+     "page": 214,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "סניף בפסגות רוממה",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 35,
+     "page": 40,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "מרכז השילוח האוטומטי במודיעין",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 25,
+     "page": 215,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "גידרון תעשיות בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 195,
+     "found_by": [
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "המפיץ יוסי ישראלי בע\"מ",
+     "alt_names": [],
+     "label": "uncertain",
+     "type": "company",
+     "pct": 0,
+     "page": 195,
+     "found_by": [
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "שופרסל פיננסים, שותפות מוגבלת",
+     "alt_names": [
+      "שופרסל פיננסים שותפות מוגבלת"
+     ],
+     "label": "entity",
+     "type": "partnership",
+     "pct": 100,
+     "page": 195,
+     "found_by": [
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "לארו נדל\"ן בע\"מ (לשעבר שופרסל נדל\"ן בע\"מ)",
+     "alt_names": [],
+     "label": "entity",
+     "type": null,
+     "pct": 100,
+     "page": 221,
+     "found_by": [
+      "O"
+     ]
+    }
+   ]
+  },
+  "746": {
+   "company": "שטראוס גרופ",
+   "report_id": "1730561",
+   "items": [
+    {
+     "name": "שטראוס מים בע\"מ",
+     "alt_names": [
+      "תנה תעשיות בע\"מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 25,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Our Taap Ltd.",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 51,
+     "page": 25,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Qingdao HSW Health Water Appliance Co. Ltd.",
+     "alt_names": [
+      "HSW",
+      "Qingdao HSW Health Water Appliance Co. Ltd"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 49,
+     "page": 25,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Qingdao Haier Strauss Water Sino-German Co. Ltd.",
+     "alt_names": [
+      "Qingdao HaiShi IoT Technology Co., Ltd.",
+      "Qingdao Haier Strauss Water"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 49,
+     "page": 25,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Strauss Coffee BV",
+     "alt_names": [
+      "Strauss Coffee B.V."
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 25,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Strauss Commodities AG",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 25,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Strauss LLC",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 25,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Strauss Ukraine LLC",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 25,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Três Corações Alimentos S.A.",
+     "alt_names": [
+      "Três Corações",
+      "Três Corações Alimentos S.A"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 50,
+     "page": 25,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Strauss Café Poland Sp. Zoo",
+     "alt_names": [
+      "Strauss Café Poland Sp.z.o.o"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 25,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Strauss Romania SRL",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 25,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "שטראוס בריאות בע\"מ",
+     "alt_names": [
+      "שטראוס בריאות",
+      "שטראוס בריאות בע״מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 80,
+     "page": 25,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "מחלבות יטבתה ע\"ש אורי חורזו ז\"ל בע\"מ",
+     "alt_names": [
+      "יטבתה",
+      "מחלבות יטבתה",
+      "מחלבות יטבתה ע״ש אורי חורזו ז״ל בע״מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 50,
+     "page": 25,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "שטראוס שיווק בע\"מ",
+     "alt_names": [
+      "שטראוס שיווק בע״מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 25,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "שטראוס פריטו ליי בע\"מ",
+     "alt_names": [
+      "שטראוס פריטו ליי",
+      "שטראוס פריטו ליי בע״מ",
+      "שטראוס פריטו-ליי בע\"מ",
+      "שטראוס פריטוליי",
+      "שטראוס פריטוליי בע\"מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 50,
+     "page": 25,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "מכוורת יד מרדכי שטראוס בע\"מ",
+     "alt_names": [
+      "מכוורת יד מרדכי שטראוס בע״מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 51,
+     "page": 25,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "שטראוס סלטים מסחר בע\"מ",
+     "alt_names": [
+      "שטראוס סלטים מסחר בע״מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 25,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "שטראוס יבוא וסחר ע.מ. בע\"מ",
+     "alt_names": [
+      "שטראוס ייבוא וסחר ע.מ. בע\"מ",
+      "שטראוס ייבוא וסחר ע.מ. בע״מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 25,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "S.E USA Inc",
+     "alt_names": [
+      "S.E. USA Inc."
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 292,
+     "found_by": [
+      "H",
+      "P"
+     ]
+    },
+    {
+     "name": "Três Corações Imóveis Armazéns Gerais e Serviços Ltda.",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 50,
+     "page": 438,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "Café Três Corações S.A.",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 99.9,
+     "page": 439,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Principal Comércio e Indústria Ltda",
+     "alt_names": [
+      "Principal Com. E Ind. Ltda.",
+      "Principal Comércio e Indústria Ltda."
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 439,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Café Brasileiro Alimentos Ltda.",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 439,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Cafeterias Três Corações Ltda.",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 439,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Prumo Participações Ltda.",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 439,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Rituais Café S.A.",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 439,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "3Caffi Indústria e Comércio de Cápsulas S.A.",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 50,
+     "page": 439,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Positive Company Indústria e Comércio Ltda.",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 50,
+     "page": 439,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Unnix Indústria e Comércio S.A.",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 67,
+     "page": 439,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "שטראוס מים ישראל בע״מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 253,
+     "found_by": [
+      "P"
+     ]
+    },
+    {
+     "name": "Strauss Russia LLC",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 283,
+     "found_by": [
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Sabra Dipping Company LLC",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 0,
+     "page": 292,
+     "found_by": [
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "PepsiCo - Strauss Fresh Dips&Spreads International GmbH",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 0,
+     "page": 292,
+     "found_by": [
+      "P"
+     ]
+    },
+    {
+     "name": "מחלבות יטבתה על שם אורי חורזו ז\"ל בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 50,
+     "page": 377,
+     "found_by": [
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Café Brasileiro",
+     "alt_names": [],
+     "label": "not_holding",
+     "type": "company",
+     "pct": null,
+     "page": 477,
+     "found_by": [
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Três Corações (JV)",
+     "alt_names": [],
+     "label": "entity",
+     "type": null,
+     "pct": 50,
+     "page": 18,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "מחלבות יטבתה ע\"ש אורי חורז ז\"ל בע\"מ",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": null,
+     "pct": 50,
+     "page": 25,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "מחלבות יטבתה",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": null,
+     "pct": 50,
+     "page": 63,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "Três Corações (Corações Três)",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": null,
+     "pct": 50,
+     "page": 90,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "טרס קורסואס",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": null,
+     "pct": 50,
+     "page": 104,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "Imoveis SC",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": null,
+     "pct": 50,
+     "page": 109,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "Qingdao HaiShi IoT Technology Co., Ltd. (SINO GERMAN)",
+     "alt_names": [],
+     "label": "entity",
+     "type": null,
+     "pct": 49,
+     "page": 129,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "טרס קורסואס (Três Corações)",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": null,
+     "pct": 50,
+     "page": 137,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "הייאר שטראוס מים (סין)",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": null,
+     "pct": 49,
+     "page": 144,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "האייר – שטראוס מים",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": null,
+     "pct": null,
+     "page": 190,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "יד מרדכי",
+     "alt_names": [],
+     "label": "not_holding",
+     "type": null,
+     "pct": null,
+     "page": 190,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "HSW (האייר שטראוס מים)",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": null,
+     "pct": 49,
+     "page": 230,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "סברה ובאובלה",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": null,
+     "pct": 50,
+     "page": 233,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "Tres Coracoes Alimentos S.A",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": null,
+     "pct": 100,
+     "page": 252,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "Qingdao HSW Water Health Appliance Co. Ltd.",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": null,
+     "pct": null,
+     "page": 274,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "International GmbH",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": null,
+     "pct": 50,
+     "page": 292,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "3Caffi Indústria e Comércio de Cápsulas Ltda.",
+     "alt_names": [],
+     "label": "entity",
+     "type": null,
+     "pct": 50,
+     "page": 458,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "Prumo",
+     "alt_names": [],
+     "label": "not_holding",
+     "type": null,
+     "pct": null,
+     "page": 463,
+     "found_by": [
+      "O"
+     ]
+    }
+   ]
+  },
+  "323": {
+   "company": "מליסרון",
+   "report_id": "1728200",
+   "items": [
+    {
+     "name": "בריטיש – ישראל השקעות בע\"מ",
+     "alt_names": [
+      "בריטיש ישראל השקעות בע\"מ",
+      "בריטיש – ישראל השקעות בע״מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 288,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "בריטיש ישראל הייטק (צפון) בע\"מ",
+     "alt_names": [
+      "בריטיש ישראל הייטק (צפון) בע״מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 8,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "שער יוקנעם שותפות מוגבלת",
+     "alt_names": [],
+     "label": "entity",
+     "type": "partnership",
+     "pct": 100,
+     "page": 8,
+     "found_by": [
+      "H",
+      "P"
+     ]
+    },
+    {
+     "name": "שער יוקנעם (1995) בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 8,
+     "found_by": [
+      "H",
+      "P"
+     ]
+    },
+    {
+     "name": "נכסי אזו-ריט בע\"מ",
+     "alt_names": [
+      "נכסי אזו-ריט בע״מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 8,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "מיי עופר- שירותי ניהול בע\"מ",
+     "alt_names": [
+      "מיי עופר - שירותי ניהול בע\"מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 8,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "כלל השקעות בנדל\"ן בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 8,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "מליסרון (בית המילניום) בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 8,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "אזורי מל\"ל תעשיות בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 74,
+     "page": 8,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "מרכזי מסחר (אזו-ריט) בע\"מ",
+     "alt_names": [
+      "מרכזי מסחר (אזו-ריט) בע״מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 8,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "קניון סירקין (בריטיש ישראל) בע\"מ",
+     "alt_names": [
+      "קניון סירקין (בריטיש ישראל) בע״מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 8,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "הראל - הטיילת קניונים בע\"מ",
+     "alt_names": [
+      "הראל הטיילת קניונים בע\"מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 8,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "מ.ל.א הנגב יזמות והשקעות בע\"מ",
+     "alt_names": [
+      "מ.ל.א. הנגב יזמות והשקעות בע״מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 8,
+     "found_by": [
+      "H",
+      "P"
+     ]
+    },
+    {
+     "name": "אזו-ריט בילו סנטר בע\"מ",
+     "alt_names": [
+      "אזו-ריט בילו סנטר בע״מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 72,
+     "page": 8,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "אזו-ריט רחובות בע\"מ",
+     "alt_names": [
+      "אזו-ריט רחובות בע״מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 8,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "קניון הראל בע\"מ",
+     "alt_names": [
+      "קניון הראל בע״מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 8,
+     "found_by": [
+      "H",
+      "P"
+     ]
+    },
+    {
+     "name": "חוצות המפרץ חיפה בע\"מ",
+     "alt_names": [
+      "חוצות המפרץ חיפה בע״מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 50,
+     "page": 8,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "אביב מליסרון בע\"מ",
+     "alt_names": [
+      "אביב מליסרון",
+      "אביב מליסרון בע״מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 8,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "אביב מליסרון במעוז אביב בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 80,
+     "page": 9,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "אביב מליסרון במשמר הירדן בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 85,
+     "page": 9,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "אביב מליסרון מגורים שחקים הרצליה בע\"מ",
+     "alt_names": [
+      "אביב מליסרון מגורים שחקים הרצליה בע״מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 88.17,
+     "page": 9,
+     "found_by": [
+      "H",
+      "P"
+     ]
+    },
+    {
+     "name": "אביב מליסרון בריינין 33-31 תל אביב שותפות מוגבלת",
+     "alt_names": [],
+     "label": "entity",
+     "type": "partnership",
+     "pct": 84.9,
+     "page": 9,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "אביב מליסרון בשירת הים נתניה בע\"מ",
+     "alt_names": [
+      "אביב מליסרון בשירת הים נתניה בע״מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 9,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "אביב מליסרון מגורים בשדה דב בע\"מ",
+     "alt_names": [
+      "אביב מליסרון מגורים בשדה דב בע״מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 9,
+     "found_by": [
+      "H",
+      "P"
+     ]
+    },
+    {
+     "name": "אביב מליסרון בטבנקין תל אביב בע\"מ",
+     "alt_names": [
+      "אביב מליסרון בטבנקין תל אביב בע״מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 95,
+     "page": 9,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "אביב מליסרון מגורים במתחם י\"א גבעתיים בע\"מ",
+     "alt_names": [
+      "אביב מליסרון מגורים במתחם יא' גבעתיים בע״מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 85,
+     "page": 9,
+     "found_by": [
+      "H",
+      "P"
+     ]
+    },
+    {
+     "name": "אביב מליסרון מגורים במתחם י\"ב גבעתיים - שותפות מוגבלת",
+     "alt_names": [
+      "אביב מליסרון מגורים במתחם יב' גבעתיים שותפות מוגבלת"
+     ],
+     "label": "entity",
+     "type": "partnership",
+     "pct": 85,
+     "page": 9,
+     "found_by": [
+      "H",
+      "P"
+     ]
+    },
+    {
+     "name": "אביב מליסרון מגורים במתחם ד' גבעתיים בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 85,
+     "page": 9,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "אביב מליסרון מגורים במתחם ה' גבעתיים שותפות מוגבלת",
+     "alt_names": [],
+     "label": "entity",
+     "type": "partnership",
+     "pct": 85,
+     "page": 9,
+     "found_by": [
+      "H",
+      "P"
+     ]
+    },
+    {
+     "name": "אביב מליסרון במקור בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 85,
+     "page": 9,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "אביב מליסרון בפודים 30 בע\"מ",
+     "alt_names": [
+      "אביב מליסרון בפודים 30 בע״מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 80,
+     "page": 9,
+     "found_by": [
+      "H",
+      "P"
+     ]
+    },
+    {
+     "name": "אביב מליסרון בחפץ חיים 13,11 תל אביב -שותפות מוגבלת",
+     "alt_names": [
+      "אביב מליסרון בחפץ חיים 13,11 תל אביב-שותפות מוגבלת"
+     ],
+     "label": "entity",
+     "type": "partnership",
+     "pct": 69.9,
+     "page": 9,
+     "found_by": [
+      "H",
+      "P"
+     ]
+    },
+    {
+     "name": "אביב בפודים",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 80,
+     "page": 82,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "אביב בחפץ חיים",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 70,
+     "page": 83,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "אביב במקור",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 85,
+     "page": 83,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "אביב ברדינג",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 85,
+     "page": 83,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "LANDMARK",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 50,
+     "page": 83,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "הסתדרות מתחם ד'",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 85,
+     "page": 84,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "הסתדרות מתחם ה'",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 85,
+     "page": 84,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "הסתדרות מתחם י\"א",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 85,
+     "page": 84,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "הסתדרות מתחם י\"ב",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 85,
+     "page": 84,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "מעוז אביב",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 80,
+     "page": 84,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "טבנקין",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 95,
+     "page": 85,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "שירת הים",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 100,
+     "page": 85,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "אביב בשדה דב",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 100,
+     "page": 86,
+     "found_by": [
+      "H",
+      "O"
+     ]
+    },
+    {
+     "name": "הסתדרות מתחם ו'",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 85,
+     "page": 87,
+     "found_by": [
+      "H",
+      "O"
+     ]
+    },
+    {
+     "name": "מעלה השואבה",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 85,
+     "page": 87,
+     "found_by": [
+      "H",
+      "O"
+     ]
+    },
+    {
+     "name": "בני אפרים",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 85,
+     "page": 87,
+     "found_by": [
+      "H",
+      "O"
+     ]
+    },
+    {
+     "name": "קוגל",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 80,
+     "page": 88,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "יפת",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 42.5,
+     "page": 88,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "סוקולוב",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 85,
+     "page": 89,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "הרואה הגת בן גוריון",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 85,
+     "page": 90,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "הרצל שרת",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 80,
+     "page": 90,
+     "found_by": [
+      "H",
+      "O"
+     ]
+    },
+    {
+     "name": "מתחם 52 - המעפיל והמבדיל",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 80,
+     "page": 90,
+     "found_by": [
+      "H",
+      "O"
+     ]
+    },
+    {
+     "name": "עוזיאל",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 85,
+     "page": 90,
+     "found_by": [
+      "H",
+      "O"
+     ]
+    },
+    {
+     "name": "ז'בוטינסקי וסביון (מתחם 84)",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 85,
+     "page": 90,
+     "found_by": [
+      "H",
+      "O"
+     ]
+    },
+    {
+     "name": "ארלוזרוב, פרוג ויוחנן",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 85,
+     "page": 90,
+     "found_by": [
+      "H",
+      "O"
+     ]
+    },
+    {
+     "name": "כצנלסון סירקין",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 80,
+     "page": 91,
+     "found_by": [
+      "H",
+      "O"
+     ]
+    },
+    {
+     "name": "בית חורון",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 80,
+     "page": 91,
+     "found_by": [
+      "H",
+      "O"
+     ]
+    },
+    {
+     "name": "כיכר העצמאות, ארלוזורוב וביאליק",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 80,
+     "page": 91,
+     "found_by": [
+      "H",
+      "O"
+     ]
+    },
+    {
+     "name": "ז'בוטינסקי והזוהר",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": null,
+     "page": 91,
+     "found_by": [
+      "H",
+      "O"
+     ]
+    },
+    {
+     "name": "הפודים, העמל וסוקולוב",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 80,
+     "page": 91,
+     "found_by": [
+      "H",
+      "O"
+     ]
+    },
+    {
+     "name": "כצנלסון, שנקין והמרי",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 80,
+     "page": 91,
+     "found_by": [
+      "H",
+      "O"
+     ]
+    },
+    {
+     "name": "כצנלסון, מתחם המלבן",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": null,
+     "page": 92,
+     "found_by": [
+      "H",
+      "O"
+     ]
+    },
+    {
+     "name": "סירקין",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": null,
+     "page": 92,
+     "found_by": [
+      "H",
+      "O"
+     ]
+    },
+    {
+     "name": "ז'בוטינסקי מתחם גרונר",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 85,
+     "page": 92,
+     "found_by": [
+      "H",
+      "O"
+     ]
+    },
+    {
+     "name": "כצנלסון והתע\"ש",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": null,
+     "page": 92,
+     "found_by": [
+      "H",
+      "O"
+     ]
+    },
+    {
+     "name": "כצנלסון קק\"ל",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 80,
+     "page": 93,
+     "found_by": [
+      "H",
+      "O"
+     ]
+    },
+    {
+     "name": "כצנלסון ויצמן",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 80,
+     "page": 93,
+     "found_by": [
+      "H",
+      "O"
+     ]
+    },
+    {
+     "name": "סמטת השילוח, מעלה הבנים ושד' ירושלים",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 85,
+     "page": 93,
+     "found_by": [
+      "H",
+      "O"
+     ]
+    },
+    {
+     "name": "עליית הנוער הל\"ה",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 42,
+     "page": 93,
+     "found_by": [
+      "H",
+      "O"
+     ]
+    },
+    {
+     "name": "כצנלסון 131,133,135",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 80,
+     "page": 94,
+     "found_by": [
+      "H",
+      "O"
+     ]
+    },
+    {
+     "name": "מתחם כצנלסון המעלות ומתחם כצנלסון השק\"ל",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 80,
+     "page": 94,
+     "found_by": [
+      "H",
+      "O"
+     ]
+    },
+    {
+     "name": "יצחק שדה",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 100,
+     "page": 94,
+     "found_by": [
+      "H",
+      "O"
+     ]
+    },
+    {
+     "name": "אביב בחפץ חיים 13,11 תל אביב - שותפות מוגבלת",
+     "alt_names": [],
+     "label": "entity",
+     "type": "partnership",
+     "pct": 69.9,
+     "page": 224,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "אביב מליסרון בשחקים הרצליה בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 88.2,
+     "page": 224,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "אביב ברידינג 31-33 תל אביב - שותפות מוגבלת",
+     "alt_names": [],
+     "label": "entity",
+     "type": "partnership",
+     "pct": 84.9,
+     "page": 224,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "אביב מליסרון בשדה דב בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 224,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "בתי יציקה וולקן בע\"מ",
+     "alt_names": [],
+     "label": "uncertain",
+     "type": "company",
+     "pct": 100,
+     "page": 178,
+     "found_by": [
+      "P"
+     ]
+    },
+    {
+     "name": "שער יקנעם (1995) בע״מ",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": "company",
+     "pct": 100,
+     "page": 8,
+     "found_by": [
+      "P"
+     ]
+    },
+    {
+     "name": "שער יקנעם שותפות מוגבלת",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": "partnership",
+     "pct": 100,
+     "page": 8,
+     "found_by": [
+      "P"
+     ]
+    },
+    {
+     "name": "כלל השקעות בנדל״ן בע״מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 8,
+     "found_by": [
+      "P"
+     ]
+    },
+    {
+     "name": "מליסרון (בית המניפה) בע״מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 8,
+     "found_by": [
+      "P"
+     ]
+    },
+    {
+     "name": "אזורי גליל תעשיות בע״מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 74,
+     "page": 8,
+     "found_by": [
+      "P"
+     ]
+    },
+    {
+     "name": "הראל- הפעלת קניונים בע״מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 8,
+     "found_by": [
+      "P"
+     ]
+    },
+    {
+     "name": "אביב מליסרון במעוף אביב בע״מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 80,
+     "page": 9,
+     "found_by": [
+      "P"
+     ]
+    },
+    {
+     "name": "אביב מליסרון במשמור הירדן בע״מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 85,
+     "page": 9,
+     "found_by": [
+      "P"
+     ]
+    },
+    {
+     "name": "אביב מליסרון בריינס 31-33 תל אביב שותפות מוגבלת",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": "partnership",
+     "pct": 84.9,
+     "page": 9,
+     "found_by": [
+      "P"
+     ]
+    },
+    {
+     "name": "אביב מליסרון במקור חיים בע״מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 85,
+     "page": 9,
+     "found_by": [
+      "P"
+     ]
+    },
+    {
+     "name": "קניון רמת אביב בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100.0,
+     "page": 223,
+     "found_by": [
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "גרופר קניות חברתיות בע\"מ",
+     "alt_names": [],
+     "label": "uncertain",
+     "type": "company",
+     "pct": 100.0,
+     "page": 223,
+     "found_by": [
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "אירוס הגלבוע בע\"מ",
+     "alt_names": [],
+     "label": "uncertain",
+     "type": "company",
+     "pct": 100.0,
+     "page": 223,
+     "found_by": [
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "פיצה האט (ישראל) החזקות 1993 בע\"מ",
+     "alt_names": [],
+     "label": "uncertain",
+     "type": "company",
+     "pct": 100.0,
+     "page": 223,
+     "found_by": [
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "ע.ר.ד. עמרי ורועי בע\"מ",
+     "alt_names": [],
+     "label": "uncertain",
+     "type": "company",
+     "pct": 100.0,
+     "page": 223,
+     "found_by": [
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "מי עופר- שירותי ניהול בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 8,
+     "found_by": [
+      "P"
+     ]
+    },
+    {
+     "name": "אזו-ריט בית סנובר בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 72,
+     "page": 8,
+     "found_by": [
+      "P"
+     ]
+    },
+    {
+     "name": "אבנת בע\"מ",
+     "alt_names": [],
+     "label": "uncertain",
+     "type": null,
+     "pct": 100,
+     "page": 121,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "TLV LANDMARK מגדל A",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": null,
+     "pct": 50,
+     "page": 36,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "Outlet עופר בילו סנטר",
+     "alt_names": [],
+     "label": "asset",
+     "type": null,
+     "pct": 72,
+     "page": 37,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "קניון עופר רחובות",
+     "alt_names": [],
+     "label": "asset",
+     "type": null,
+     "pct": 100,
+     "page": 38,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "קניון עופר רמת אביב",
+     "alt_names": [],
+     "label": "asset",
+     "type": null,
+     "pct": 100,
+     "page": 39,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "עופר הקריון",
+     "alt_names": [],
+     "label": "asset",
+     "type": null,
+     "pct": 100,
+     "page": 46,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "עופר הקניון הגדול פתח תקווה",
+     "alt_names": [],
+     "label": "asset",
+     "type": null,
+     "pct": 100,
+     "page": 51,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "חברת חוצות המפרץ חיפה בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": null,
+     "pct": 50,
+     "page": 66,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "קוגל חולון",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": null,
+     "pct": 15,
+     "page": 88,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "יפת יפו",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": null,
+     "pct": 16,
+     "page": 88,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "סוקולוב רמת גן",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": null,
+     "pct": 85,
+     "page": 89,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "הרואה בן גוריון",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": null,
+     "pct": 85,
+     "page": 90,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "אביב בגבעתיים",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": null,
+     "pct": 85,
+     "page": 97,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "אביב בשחקים, הרצליה",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": null,
+     "pct": 88.17,
+     "page": 104,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "מ.ל.א הנגב השקעות ויזמות בע\"מ",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": null,
+     "pct": 100.0,
+     "page": 223,
+     "found_by": [
+      "O"
+     ]
+    }
+   ]
+  },
+  "127": {
+   "company": "מבטח שמיר",
+   "report_id": "1731732",
+   "items": [
+    {
+     "name": "מבטח שמיר השקעות (93) בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 10,
+     "found_by": [
+      "H",
+      "P"
+     ]
+    },
+    {
+     "name": "מבטח שמיר נדל\"ן בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 10,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "מ.ש.נ.ד. אחזקות נדל\"ן בע\"מ",
+     "alt_names": [
+      "מ.ש.נ.ד אחזקות נדל\"ן בע\"מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 186,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "מבטח שמיר פיננסים בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 10,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "מבטח שמיר ניירות ערך בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 10,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "מבטח שמיר טכנולוגיות (2000) בע\"מ",
+     "alt_names": [
+      "מבטח שמיר טכנולוגיות (2000)"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 186,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "חאן הנמל בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 10,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "מבטח שמיר אנרג'י 2022 בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 10,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "MSUS L.P.",
+     "alt_names": [
+      "MSUS LP"
+     ],
+     "label": "entity",
+     "type": "partnership",
+     "pct": 100,
+     "page": 10,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "MSUS Evanston LP",
+     "alt_names": [],
+     "label": "entity",
+     "type": "partnership",
+     "pct": 100,
+     "page": 10,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "MSUS Greensburg LP",
+     "alt_names": [],
+     "label": "entity",
+     "type": "partnership",
+     "pct": 100,
+     "page": 10,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "MSUS Davis LP",
+     "alt_names": [],
+     "label": "entity",
+     "type": "partnership",
+     "pct": 100,
+     "page": 10,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "קבוצת שמיר אנרגיה (2023) בע\"מ",
+     "alt_names": [
+      "קבוצת שמיר אנרגיה",
+      "שמיר אנרגיה"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 79.74,
+     "page": 11,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "MRC Alon Tavor Power Ltd.",
+     "alt_names": [
+      "MRC",
+      "MRC Alon Tavor",
+      "MRC Alon Tavor Power Ltd"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 33.33,
+     "page": 11,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "קסם אנרגיה בע\"מ",
+     "alt_names": [
+      "קסם",
+      "קסם אנרגיה"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 52.86,
+     "page": 11,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "סינרג'י רמת הגליל, שותפות מוגבלת",
+     "alt_names": [
+      "סינרג'י רמת הגליל שותפות מוגבלת"
+     ],
+     "label": "entity",
+     "type": "partnership",
+     "pct": 25,
+     "page": 11,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "מבטח שמיר - אנרטי, ביוגז אוהד שותפות מוגבלת",
+     "alt_names": [
+      "ביוגז אוהד",
+      "מבטח שמיר - אנרטי , ביוגז אוהד שותפות מוגבלת",
+      "מבטח שמיר – אנרטי, ביוגז אוהד שותפות מוגבלת"
+     ],
+     "label": "entity",
+     "type": "partnership",
+     "pct": 50,
+     "page": 11,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "אשטרום-רפק-מבטח אנרגיה מתחדשת, רמת הגולן שותפות מוגבלת",
+     "alt_names": [
+      "אשטרום - רפק - מבטח אנרגיה מתחדשת, רמת הגולן שותפות מוגבלת",
+      "אשטרום -רפק-מבטח אנרגיה מתחדשת, רמת הגולן שותפות מוגבלת",
+      "אשטרום רפק מבטח אנרגיה מתחדשת רמת הגולן שותפות מוגבלת",
+      "אשטרום רפק מבטח אנרגיה מתחדשת רמת הגולן, שותפות מוגבלת"
+     ],
+     "label": "entity",
+     "type": "partnership",
+     "pct": 33,
+     "page": 11,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "מניף שירותים פיננסיים בע\"מ",
+     "alt_names": [
+      "מניף",
+      "מניף שירותים פיננסים בע\"מ",
+      "מניף-שירותים פיננסים בע\"מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 48.67,
+     "page": 186,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Davidson Technology Growth GmbH & Co. KG",
+     "alt_names": [
+      "Davidson Technology Growth Debt",
+      "דוידסון"
+     ],
+     "label": "entity",
+     "type": "fund",
+     "pct": 42.4,
+     "page": 12,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Finergy Capital, LLC",
+     "alt_names": [
+      "Finergy",
+      "Finergy Capital LLC",
+      "Finergy LLC"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 70,
+     "page": 12,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "מגדלי הוד השרון בע\"מ",
+     "alt_names": [
+      "מגדלי הוד השרון",
+      "מגדלי הוד השרון בע״מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 42.34,
+     "page": 82,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Jarvinia (Cyprus) Limited",
+     "alt_names": [
+      "JC",
+      "Jarvinia (Cyprus) Ltd.",
+      "Jarvinia Cyprus Ltd.",
+      "ג'רביניה"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 35,
+     "page": 195,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "מבטח אור (2021) לגיל השלישי בע\"מ",
+     "alt_names": [
+      "מבטח אור",
+      "מבטח אור (2021) לגיל השלישי בע״מ",
+      "מבטח אור לגיל השלישי",
+      "מבטח אור לגיל השלישי בע\"מ",
+      "מבטח אור לגיל השלישי בע״מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 50,
+     "page": 82,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Mivtach MS Holdings Ltd.",
+     "alt_names": [
+      "Mivtach Kin Holdings Ltd.",
+      "Mivtach MS"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 70,
+     "page": 82,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "EATOS Group Real Estate Ltd.",
+     "alt_names": [
+      "EATOS",
+      "Eatos Group Real Estate Ltd",
+      "Eatos Group Real-Estate Ltd",
+      "Eatos Group Real-Estate Ltd."
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 50,
+     "page": 82,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "נכס נדל\"ן מניב בהרצליה פיתוח, ישראל",
+     "alt_names": [
+      "נכס נדל\"ן מניב בהרצליה פיתוח"
+     ],
+     "label": "asset",
+     "type": "asset",
+     "pct": 55.95,
+     "page": 82,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "נכס נדל\"ן מניב ברמת גן, ישראל",
+     "alt_names": [
+      "נכס נדל\"ן מניב ברמת גן"
+     ],
+     "label": "asset",
+     "type": "asset",
+     "pct": 20,
+     "page": 82,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Bon MS Holdings, LLC",
+     "alt_names": [
+      "Bon MS Holdings",
+      "Bon MS Holdings LLC"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 33,
+     "page": 10,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Bon MS Evanston, LLC",
+     "alt_names": [
+      "Bon MS Evanston",
+      "Bon MS Evanston LLC"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 33,
+     "page": 10,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Bon MS Greensburg, LLC",
+     "alt_names": [
+      "Bon MS Greensburg",
+      "Bon MS Greensburg LLC"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 30,
+     "page": 10,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Bon MS Davis, LLC",
+     "alt_names": [
+      "Bon MS Davis",
+      "Bon MS Davis LLC"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 30,
+     "page": 10,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "TVJ",
+     "alt_names": [],
+     "label": "uncertain",
+     "type": "company",
+     "pct": null,
+     "page": 131,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "Bean & Co Global Ltd.",
+     "alt_names": [
+      "BEAN",
+      "Bean & Co",
+      "Bean & Co Global Ltd",
+      "Bean & Co.",
+      "Bean & Co. Global"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 23.98,
+     "page": 108,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "חברת הניהול של Bean & Co Global Ltd.",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 10,
+     "page": 110,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "Supplant Ltd.",
+     "alt_names": [
+      "Supplant",
+      "Supplant Ltd",
+      "סופלנט בע\"מ"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 29.29,
+     "page": 195,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Stardom Media Ventures L.P.",
+     "alt_names": [
+      "Stardom",
+      "Stardom Media Ventures L.P",
+      "Stardom Media Ventures LP"
+     ],
+     "label": "entity",
+     "type": "partnership",
+     "pct": 10.55,
+     "page": 195,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "KDCP GP KDC Media Fund Ltd.",
+     "alt_names": [
+      "KDCP GP KDC MEDIA FUND Ltd",
+      "KDCP GP KDC Media Fund Ltd"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 26,
+     "page": 263,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "UNBOX Investments Limited Partnership",
+     "alt_names": [
+      "UNBOX Investments",
+      "אנבוקס השקעות שותפות מוגבלת"
+     ],
+     "label": "entity",
+     "type": "partnership",
+     "pct": 75,
+     "page": 109,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Target Global Early Stage I Parallel Fund GmbH & Co. KG",
+     "alt_names": [
+      "קרן Target"
+     ],
+     "label": "entity",
+     "type": "fund",
+     "pct": 11.84,
+     "page": 10,
+     "found_by": [
+      "H",
+      "O"
+     ]
+    },
+    {
+     "name": "שיבולת קפיטל שותפות מוגבלת (קרן State Of Mind Ventures)",
+     "alt_names": [
+      "State of Mind Ventures",
+      "קרן SOMV"
+     ],
+     "label": "entity",
+     "type": "fund",
+     "pct": 10.667,
+     "page": 184,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "State of mind ventures II Limited Partnership",
+     "alt_names": [
+      "State of Mind Ventures II Limited Partnership"
+     ],
+     "label": "entity",
+     "type": "fund",
+     "pct": 5.8,
+     "page": 10,
+     "found_by": [
+      "H",
+      "P"
+     ]
+    },
+    {
+     "name": "LENDBUZZ, Inc.",
+     "alt_names": [
+      "Lendbuzz",
+      "Lendbuzz Ltd."
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 7.83,
+     "page": 10,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "גילת",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 131,
+     "found_by": [
+      "H",
+      "O"
+     ]
+    },
+    {
+     "name": "Accelario",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 131,
+     "found_by": [
+      "H",
+      "O"
+     ]
+    },
+    {
+     "name": "מירוס",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 131,
+     "found_by": [
+      "H",
+      "O"
+     ]
+    },
+    {
+     "name": "Beyeonics Vision",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 131,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "Beyeonics Surgical",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 131,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "Sipnose",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 131,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "Supplant Argo Project Ltd",
+     "alt_names": [
+      "Supplant Argo Project"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 25,
+     "page": 195,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Target Ytrium Ltd.",
+     "alt_names": [
+      "Target Ytrium"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 0.099,
+     "page": 263,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "מבטח שמיר השקעות (1993) בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 186,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "קסם פיתוח מיזמי אנרגיה בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 186,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "MRC Operation Ltd.",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 33.33,
+     "page": 195,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Miros Development Group INC",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 0,
+     "page": 195,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Target Yttrium Ltd.",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 0.09,
+     "page": 195,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Accelario Software Ltd.",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 7.76,
+     "page": 195,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "מבטח שמיר אנרטי אנרגיה מתחדשת בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 50,
+     "page": 195,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "קרן SOMV II",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": "fund",
+     "pct": 5.77,
+     "page": 184,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "שותפות אלון תבור",
+     "alt_names": [],
+     "label": "entity",
+     "type": "partnership",
+     "pct": 100,
+     "page": 203,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "Bhalakh Realtors Prirate Limited",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 92.24,
+     "page": 206,
+     "found_by": [
+      "H",
+      "O"
+     ]
+    },
+    {
+     "name": "חברת הניהול",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": "company",
+     "pct": 10,
+     "page": 206,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "VATBox Ltd.",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 207,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "שותפות פרויקטים קטנים",
+     "alt_names": [],
+     "label": "entity",
+     "type": "partnership",
+     "pct": 100,
+     "page": 211,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "שמיר אנרג'י",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 210,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "Acronis",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 252,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "קרן SOMV2",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": "fund",
+     "pct": null,
+     "page": 252,
+     "found_by": [
+      "H",
+      "O"
+     ]
+    },
+    {
+     "name": "Scopio",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 252,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "Bon MS Holding LLC",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 33.33,
+     "page": 263,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "סופלנט אגרו פרוייקטים בע\"מ",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 25,
+     "page": 263,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "נכס נדל״ן בהרצליה",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 55.95,
+     "page": 10,
+     "found_by": [
+      "P"
+     ]
+    },
+    {
+     "name": "נכס נדל״ן ברמת גן",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 20,
+     "page": 10,
+     "found_by": [
+      "P"
+     ]
+    },
+    {
+     "name": "אגרוקס השקעות שותפות מוגבלת",
+     "alt_names": [],
+     "label": "entity",
+     "type": "partnership",
+     "pct": 75,
+     "page": 10,
+     "found_by": [
+      "P"
+     ]
+    },
+    {
+     "name": "Target Global Early Stage I",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": "fund",
+     "pct": 11.84,
+     "page": 10,
+     "found_by": [
+      "P"
+     ]
+    },
+    {
+     "name": "השקעה בנדל\"ן בארה\"ב",
+     "alt_names": [],
+     "label": "not_holding",
+     "type": "other",
+     "pct": 30.0,
+     "page": 82,
+     "found_by": [
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Stardom Media Ventures L. P",
+     "alt_names": [],
+     "label": "entity",
+     "type": "fund",
+     "pct": 10.55,
+     "page": 108,
+     "found_by": [
+      "P"
+     ]
+    },
+    {
+     "name": "Bhalakh Realtors Private Limited",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": "company",
+     "pct": 92.24,
+     "page": 206,
+     "found_by": [
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "MRC A.T Power Development Limited Partnership",
+     "alt_names": [],
+     "label": "entity",
+     "type": "partnership",
+     "pct": 100,
+     "page": 12,
+     "found_by": [
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "M.R.C Alon Tavor Energy 1 General Partner Ltd",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 12,
+     "found_by": [
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Peaker Partnership",
+     "alt_names": [],
+     "label": "uncertain",
+     "type": "partnership",
+     "pct": null,
+     "page": 53,
+     "found_by": [
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Davidson Technology Growth",
+     "alt_names": [],
+     "label": "entity",
+     "type": null,
+     "pct": 42.4,
+     "page": 12,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "נכסי נדל\"ן מניבים בארה\"ב",
+     "alt_names": [],
+     "label": "not_holding",
+     "type": null,
+     "pct": null,
+     "page": 12,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "מבטח קין (Mivtach MS Holdings Ltd)",
+     "alt_names": [],
+     "label": "entity",
+     "type": null,
+     "pct": 77.5,
+     "page": 101,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "Mivtach Capital Holdings Inc",
+     "alt_names": [],
+     "label": "entity",
+     "type": null,
+     "pct": 100,
+     "page": 101,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "State of Mind Ventures (\"SOMV\")",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": null,
+     "pct": 10.667,
+     "page": 113,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "State of Mind Ventures קרן 2",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": null,
+     "pct": 5.8,
+     "page": 113,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "Target .Ltd",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": null,
+     "pct": 11.84,
+     "page": 113,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "Mivtach MS Holdings (נכסים בקנדה)",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": null,
+     "pct": null,
+     "page": 149,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "Eatos Group Real-Estae Limited (נכסים באנגליה)",
+     "alt_names": [],
+     "label": "entity",
+     "type": null,
+     "pct": null,
+     "page": 149,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "MRC Alon Power Tavor Ltd.",
+     "alt_names": [],
+     "label": "entity",
+     "type": null,
+     "pct": null,
+     "page": 169,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "קרן SOMV (State Of Mind Ventures)",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": null,
+     "pct": 10.667,
+     "page": 184,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "קרן II SOMV",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": null,
+     "pct": 5.77,
+     "page": 184,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "קבוצת Bon (שותפויות נדל\"ן מניבים בארה\"ב)",
+     "alt_names": [],
+     "label": "uncertain",
+     "type": null,
+     "pct": 30,
+     "page": 409,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "שותפות מבטח שמיר – אנרטי, ביוגז אוהד שותפות מוגבלת",
+     "alt_names": [],
+     "label": "entity",
+     "type": null,
+     "pct": 50,
+     "page": 412,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "שותפות אנרגיה מתחדשת (אשטרום רפק מבטח אנרגיה מתחדשת רמת הגולן)",
+     "alt_names": [],
+     "label": "entity",
+     "type": null,
+     "pct": 33,
+     "page": 415,
+     "found_by": [
+      "O"
+     ]
+    }
+   ]
+  },
+  "2250": {
+   "company": "אורמת טכנו",
+   "report_id": "1736500",
+   "items": [
+    {
+     "name": "OPC LLC",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 16,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "OrCal Geothermal Inc.",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 16,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Ormat International Inc.",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 17,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Ormat Nevada Inc.",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 17,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Ormat Systems Ltd.",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 17,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "ORPD LLC",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 63.25,
+     "page": 17,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "OrPower 4, Inc.",
+     "alt_names": [
+      "OrPower 4 Inc."
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 146,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Ortitlan, Limitada",
+     "alt_names": [
+      "Ortitlan Limitada"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 146,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "ORTP, LLC",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 17,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Orzunil I de Electricidad, Limitada",
+     "alt_names": [
+      "Orzunil"
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 17,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Puna Geothermal Venture",
+     "alt_names": [],
+     "label": "entity",
+     "type": "other",
+     "pct": 100,
+     "page": 17,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Viridity Energy Solutions Inc.",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 18,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Sarulla Complex",
+     "alt_names": [
+      "Sarulla",
+      "Sarulla Operations Ltd.",
+      "Sarulla complex",
+      "Sarulla geothermal power plant project",
+      "Sarulla project"
+     ],
+     "label": "asset",
+     "type": "asset",
+     "pct": 12.75,
+     "page": 26,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Ijen",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 49.0,
+     "page": 9,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Sage Geosystems Inc.",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 6,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "Ormesa Complex",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 100,
+     "page": 25,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Heber Complex",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 100,
+     "page": 25,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Mammoth Complex",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 100,
+     "page": 25,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Brawley",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 100,
+     "page": 25,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Steamboat Complex",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 100,
+     "page": 25,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Brady Complex",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 100,
+     "page": 25,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Tuscarora",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 100,
+     "page": 25,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Jersey Valley",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 100,
+     "page": 25,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "McGinness Hills",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 100,
+     "page": 25,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Don A. Campbell",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 100,
+     "page": 25,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Tungsten Mountain",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 100,
+     "page": 25,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Dixie Valley",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 100,
+     "page": 25,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Blue Mountain",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 100,
+     "page": 25,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Beowawe",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 100,
+     "page": 25,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Neal Hot Springs",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 60,
+     "page": 25,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Raft River",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 100,
+     "page": 25,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "San Emidio",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 100,
+     "page": 25,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Still Water Complex",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 100,
+     "page": 25,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Salt Wells",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 100,
+     "page": 25,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Puna",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 63.3,
+     "page": 25,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Cove Fort",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 100,
+     "page": 26,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Amatitlan (Guatemala)",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 100,
+     "page": 26,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Zunil (Guatemala)",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 97,
+     "page": 26,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Olkaria III Complex (Kenya)",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 100,
+     "page": 26,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Bouillante (Guadeloupe, France)",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 63.75,
+     "page": 26,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Platanares (Honduras)",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 100,
+     "page": 26,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "OREG 1",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 100,
+     "page": 26,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "OREG 2",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 100,
+     "page": 26,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "OREG 3",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 100,
+     "page": 26,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Wister",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 100,
+     "page": 26,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Steamboat Solar",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 100,
+     "page": 26,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Stillwater Solar PV",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 100,
+     "page": 26,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Stillwater Solar PV II",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 100,
+     "page": 26,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Woods Hill",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 100,
+     "page": 26,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "North Valley",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 100,
+     "page": 26,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Arrowleaf",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 100,
+     "page": 26,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Brady",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 100,
+     "page": 26,
+     "found_by": [
+      "H",
+      "P"
+     ]
+    },
+    {
+     "name": "Hoku",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 100,
+     "page": 26,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "ORNI 41",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 26,
+     "found_by": [
+      "H",
+      "P"
+     ]
+    },
+    {
+     "name": "ORNI 43",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 26,
+     "found_by": [
+      "H",
+      "P"
+     ]
+    },
+    {
+     "name": "Steamboat Hills, LLC",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 26,
+     "found_by": [
+      "H",
+      "P"
+     ]
+    },
+    {
+     "name": "CD4 partnership",
+     "alt_names": [],
+     "label": "entity",
+     "type": "partnership",
+     "pct": null,
+     "page": 26,
+     "found_by": [
+      "H",
+      "P"
+     ]
+    },
+    {
+     "name": "ORNI 36",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 26,
+     "found_by": [
+      "H",
+      "P"
+     ]
+    },
+    {
+     "name": "Heber Geothermal Company, LLC",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 26,
+     "found_by": [
+      "H",
+      "P"
+     ]
+    },
+    {
+     "name": "OrHeber2, LLC",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 26,
+     "found_by": [
+      "H",
+      "P"
+     ]
+    },
+    {
+     "name": "Vessi 38, LLC",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 26,
+     "found_by": [
+      "H",
+      "P"
+     ]
+    },
+    {
+     "name": "ORNI 30, LLC",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 26,
+     "found_by": [
+      "H",
+      "P"
+     ]
+    },
+    {
+     "name": "LAVA",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 34,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "TerraWave",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 34,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "RepAir Carbon",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 34,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "Novocycle",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 35,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "Two Energy Storage facilities in Israel",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 50,
+     "page": 38,
+     "found_by": [
+      "H",
+      "O"
+     ]
+    },
+    {
+     "name": "Ijen (Indonesia)",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 49,
+     "page": 46,
+     "found_by": [
+      "H",
+      "O"
+     ]
+    },
+    {
+     "name": "Blue Mountain geothermal power plant",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 100,
+     "page": 85,
+     "found_by": [
+      "H",
+      "P"
+     ]
+    },
+    {
+     "name": "Two Energy Storage facilities (Israel)",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": "asset",
+     "pct": 50,
+     "page": 85,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "Ijen Geothermal Power Plant",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": "asset",
+     "pct": null,
+     "page": 85,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "Lower Rio energy storage facility",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": null,
+     "page": 85,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "Salt Wells geothermal power plant",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": "asset",
+     "pct": null,
+     "page": 84,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "Bouillante geothermal power plant",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": null,
+     "page": 85,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "10MW Geothermal Project in Dominica",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": null,
+     "page": 85,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "Mammoth 2 geothermal power plant",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": null,
+     "page": 85,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "Songa Wayaua project company",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 85,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "Atadei project company",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 85,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "Dixie Meadows geothermal power plant",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": null,
+     "page": 74,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "Amatitlan power plant",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": null,
+     "page": 78,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "OREG4",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100.0,
+     "page": 97,
+     "found_by": [
+      "H",
+      "P"
+     ]
+    },
+    {
+     "name": "DAC 1",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 100,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "OPAL",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 117,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "Cove Fort power plant",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 100,
+     "page": 138,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "Salt Wells power plant",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": "asset",
+     "pct": 100,
+     "page": 138,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "Stillwater triple hybrid geothermal, solar PV and solar thermal power plant",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 100,
+     "page": 138,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "Guadeloupe power plant",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": null,
+     "page": 125,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "Brawley power plant",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": null,
+     "page": 125,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "OREG 2 facility",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": null,
+     "page": 125,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "Dominica project",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": null,
+     "page": 128,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "Tungsten",
+     "alt_names": [],
+     "label": "entity",
+     "type": "partnership",
+     "pct": null,
+     "page": 131,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "McGinness Hills 3",
+     "alt_names": [],
+     "label": "entity",
+     "type": "partnership",
+     "pct": null,
+     "page": 131,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "Casa Diablo 4",
+     "alt_names": [],
+     "label": "entity",
+     "type": "other",
+     "pct": null,
+     "page": 156,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "Heber 1",
+     "alt_names": [],
+     "label": "entity",
+     "type": "partnership",
+     "pct": null,
+     "page": 131,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "Heber 2",
+     "alt_names": [],
+     "label": "entity",
+     "type": "partnership",
+     "pct": null,
+     "page": 131,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "TOPP2 power plant",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": null,
+     "page": 132,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "geothermal power plant in Guatemala",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 97,
+     "page": 146,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "GeoPlatanares",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 146,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "Geothermie Bouillante S.A.",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 63.75,
+     "page": 155,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Geothermal Power Company of Dominica",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 156,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "Mammoth Pacific, LLC",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 156,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "Mammoth G1",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 100,
+     "page": 156,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "Mammoth G2",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 100,
+     "page": 156,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "Mammoth G3",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": 100,
+     "page": 156,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "Bottleneck battery energy storage project",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": null,
+     "page": 156,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "North Valley Geothermal power plant",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": null,
+     "page": 161,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "Steamboat Hills Repower Geothermal power plant",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": null,
+     "page": 162,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "McGinness Hills phase 3 geothermal power plant",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": null,
+     "page": 163,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "Tungsten Mountain geothermal power plant",
+     "alt_names": [],
+     "label": "asset",
+     "type": "asset",
+     "pct": null,
+     "page": 163,
+     "found_by": [
+      "H"
+     ]
+    },
+    {
+     "name": "Opal Geo, LLC",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 163,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "USG",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 171,
+     "found_by": [
+      "H",
+      "O"
+     ]
+    },
+    {
+     "name": "PT Medco Cahaya Geothermal",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 49,
+     "page": 178,
+     "found_by": [
+      "H",
+      "P"
+     ]
+    },
+    {
+     "name": "Ijen geothermal project",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": "asset",
+     "pct": 49.0,
+     "page": 98,
+     "found_by": [
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Tungsten Mountain (Solar)",
+     "alt_names": [],
+     "label": "asset",
+     "type": null,
+     "pct": 100,
+     "page": 26,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "Beowawe (Solar)",
+     "alt_names": [],
+     "label": "asset",
+     "type": null,
+     "pct": 100,
+     "page": 26,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "Brady (Solar)",
+     "alt_names": [],
+     "label": "asset",
+     "type": null,
+     "pct": 100,
+     "page": 26,
+     "found_by": [
+      "O"
+     ]
+    },
+    {
+     "name": "PT Medco Cahaya Geothermal (\"MCG\")",
+     "alt_names": [],
+     "label": "duplicate",
+     "type": null,
+     "pct": 49,
+     "page": 336,
+     "found_by": [
+      "O"
+     ]
+    }
+   ]
+  },
+  "273": {
+   "company": "נייס",
+   "report_id": "1725031",
+   "items": [
+    {
+     "name": "NICE Systems Australia PTY Ltd.",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 53,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "NICE Systems Technologies Brasil LTDA",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 53,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "NICE Systems Canada Ltd.",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 53,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "NICE Interactive Solutions India Private Ltd.",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 53,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Actimize Ltd.",
+     "alt_names": [
+      "Actimize Inc."
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 53,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "NICE Japan Ltd.",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 53,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "NICE Technologies Mexico S.R.L.",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 53,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "NICE Netherlands B.V.",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 53,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "NICE Systems (Singapore) Pte. Ltd.",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 53,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "NICE Technologies Sole Proprietorship LLC",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 53,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Actimize UK Limited",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 53,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "NICE Systems Technologies UK Limited",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 53,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "NICE Systems UK Ltd.",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 53,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "inContact Inc.",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 53,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "NICE Systems Inc.",
+     "alt_names": [
+      "NICE Systems, Inc.",
+      "Nice Systems Inc."
+     ],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 53,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "NICE Systems Technologies Inc.",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 53,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "LiveVox Inc.",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 53,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    },
+    {
+     "name": "Cognigy GmbH",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": 100,
+     "page": 53,
+     "found_by": [
+      "H",
+      "O",
+      "P"
+     ]
+    }
+   ]
+  }
+ }
+}
