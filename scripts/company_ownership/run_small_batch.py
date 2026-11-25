@@ -512,6 +512,29 @@ def _formal_pages(pdf_bytes: bytes, n_pages: int):
     return sorted(sel) or None
 
 
+# דוחות שינויים (רבעוניים): רק עמודים שמתארים שינוי בהחזקות - אירועים מהותיים, רכישה / מכירה / מיזוג / הקמה, משפט החזקה
+EVENT_KEYS = re.compile(
+    r"אירועים\s+(?:מהותיים|בתקופת|לאחר)|רכיש(?:ה|ת)|רכשה|מכיר(?:ה|ת)\s+(?:של\s+)?(?:מניות|החזק|אחזק|זכויות)|מימוש|מיזוג|"
+    r"השלמת\s+(?:ה)?עסקה|הקמת\s+(?:חברה|שותפות)|התקשרות\s+בהסכם|הסכם\s+(?:לרכישת|למכירת)|דילול|"
+    r"acqui(?:re|sition)|disposal|divest|merger|completion\s+of|subsequent\s+events|significant\s+events", re.I)
+
+
+def _change_pages(pdf_bytes: bytes, n_pages: int):
+    """עמודי שינויים בדוח רבעוני: כותרת/מילת אירוע (EVENT_KEYS) יחד עם אחוזים או ישויות, או משפט החזקה (HOLD_STMT),
+    או טבלת החברות המוחזקות (PAGE_KEYS). ±PAGE_PAD."""
+    texts = _page_texts(pdf_bytes, n_pages)
+    if not texts:
+        return None
+    hit = set()
+    for i, t in enumerate(texts):
+        t2 = t + "\n" + "\n".join(line[::-1] for line in t.splitlines())
+        ev = len(EVENT_KEYS.findall(t2))
+        if PAGE_KEYS.search(t2) or HOLD_STMT.search(t2) or (ev and ("%" in t or len(ENTITY.findall(t2)) >= 2)):
+            hit.add(i)
+    sel = sorted({q for i in hit for q in range(i - PAGE_PAD, i + PAGE_PAD + 1) if 0 <= q < n_pages})
+    return sel or None
+
+
 def _page_windows(pages: list[int]) -> list[list[int]]:
     """רשימת עמודים נבחרים -> חלונות של עד CHUNK_PAGES עמודים (בלי חפיפה - העמודים כבר מורחבים בשוליים)."""
     return [pages[i:i + CHUNK_PAGES] for i in range(0, len(pages), CHUNK_PAGES)]
@@ -616,7 +639,8 @@ def _process_report_chunked(
             n_pages = len(reader.pages)
             pf = os.environ.get("GEMINI_PAGE_FILTER", "")
             sel = (_relevant_pages(pdf_bytes, n_pages) if pf == "1" else _chart_pages(pdf_bytes, n_pages) if pf == "charts"
-                   else _formal_pages(pdf_bytes, n_pages) if pf == "formal" else None)
+                   else _formal_pages(pdf_bytes, n_pages) if pf == "formal"
+                   else _change_pages(pdf_bytes, n_pages) if pf == "changes" else None)
             if pf == "charts" and sel is None:
                 sel = []      # בלי תרשים - אין מה לשלוח למודל היקר
             if sel is not None:
