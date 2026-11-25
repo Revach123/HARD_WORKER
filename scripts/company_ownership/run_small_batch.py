@@ -333,7 +333,7 @@ PAGE_KEYS = re.compile(
 ENTITY = re.compile(r'בע"?מ|בע״מ|שותפות|\bLtd\b|\bLimited\b|\bLLC\b|\bInc\b|\bB\.?V\b|\bGmbH\b|\bS\.?A\b|\bL\.?P\b|'
                     r'\bS\.?R\.?L\b|\bsp\.? z|\bPLC\b|\bCorp', re.I)
 # משפט החזקה בטקסט חופשי (דוח הדירקטוריון / תיאור עסקי התאגיד): "הבנק מחזיק 100% מ...", "מחזיקה ב-51%", "holds 70%"
-HOLD_STMT = re.compile(r"מחזיק(?:ה|ים|ות)?\s+(?:ב[-־]?\s*)?(?:כ[-־]?\s*)?\d[\d.,]*\s*%|"
+HOLD_STMT = re.compile(r"מחזיק(?:ה|ים|ות)?\s+(?:ב[-־]?\s*)?(?:כ[-־]?\s*)?(?:\d[\d.,]*\s*%|%\s*\d[\d.,]*)|"
                        r"\d[\d.,]*\s*%\s+(?:מ)?(?:הון|זכויות|מניות|אחזקות|החזקות)|"
                        r"(?:holds?|owns?|holding)\s+(?:approximately\s+|about\s+)?\d[\d.,]*\s*%", re.I)
 PAGE_PAD = 1
@@ -353,7 +353,9 @@ def _page_texts(pdf_bytes: bytes, n_pages: int):
             out = subprocess.run(["pdftotext", "-q", f.name, "-"], capture_output=True, timeout=300).stdout
         except subprocess.TimeoutExpired:
             return None
-    pages = out.decode("utf-8", "replace").split("\f")
+    # תווי כיווניות בלתי נראים (pdftotext עוטף בהם רצפי מספרים בעברית: "מחזיק \u202a100%\u202c") - מסירים לפני כל התאמה
+    txt = re.sub("[\u200e\u200f\u202a-\u202e\u2066-\u2069]", "", out.decode("utf-8", "replace"))
+    pages = txt.split("\f")
     return pages[:n_pages] if len(pages) >= n_pages else None
 
 
