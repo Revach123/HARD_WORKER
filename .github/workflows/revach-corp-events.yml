@@ -30,7 +30,7 @@ on:
         type: choice
         default: all
         options: [all, build, capital, capital-ai, offerings, offerings-monthly, offerings-pdf-scan, offerings-pdf-ai,
-                  exits, names, names-rebuild, names-context, ai-thinking-test]
+                  exits, names, names-rebuild, names-context, ai-thinking-test, groq-test]
 
 concurrency:
   group: revach-corp-events
@@ -97,6 +97,7 @@ jobs:
           CF_D1_TOKEN: ${{ secrets.CF_D1_TOKEN }}
           CF_DATABASE_ID: ${{ vars.CF_DATABASE_ID || secrets.CF_DATABASE_ID }}   # משתנה גלוי או סוד - מה שהוגדר
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}       # בדיקות בלבד (groq-test)
           AI_MAX: "25"
           OFFER_AI_MAX: "150"    # עד שהמכסה נגמרת (429 עוצר מיד) - כמה שיותר דוחות בכל יום
         run: |
@@ -120,6 +121,9 @@ jobs:
               AI_TEST_N=40 python capital_events.py ai-test
               AI_TEST_N=30 python offerings_ai.py ai-test
               exit 0 ;;
+            groq-test)          # בדיקה בלבד: פרשנות אירועי ההון במודל פתוח ב-Groq (מכסה חינמית), מול השמור
+              AI_TEST_N=40 AI_PAUSE=20 AI_TEST_LEVELS="groq:openai/gpt-oss-120b" python capital_events.py ai-test
+              exit 0 ;;
             *)          python corp_events.py "$MODE" ;;
           esac
           SKIP_BUILD=0 python corp_events.py build
@@ -136,7 +140,7 @@ jobs:
                END{for(k in n) printf "GEMINI_USAGE_TOTAL %s calls=%d in=%d out=%d think=%d\n", k, n[k], a[k], b[k], c[k]}' "$f"
 
       - name: Commit to Revach
-        if: ${{ !cancelled() && inputs.mode != 'ai-thinking-test' }}
+        if: ${{ !cancelled() && inputs.mode != 'ai-thinking-test' && inputs.mode != 'groq-test' }}
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
