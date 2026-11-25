@@ -27261,5 +27261,21 @@
       "done": {},
       "attempts": {}
     }
+  },
+  "1783577": {
+    "company_id": "2576",
+    "status": "partial",
+    "kind": "change",
+    "attempts": 0,
+    "at": "2026-11-25T11:06:10.134977+00:00",
+    "model": "gemini-3.5-flash-lite",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "scheme": "20/3//",
+      "total": 3,
+      "done": {},
+      "attempts": {}
+    }
   }
 }
