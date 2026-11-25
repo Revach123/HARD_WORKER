@@ -83,6 +83,7 @@ jobs:
               compact) echo "EXTRACTION_COMPACT=$v" >> "$GITHUB_ENV" ;;
               pages)   echo "GEMINI_CHUNK_PAGES=$v" >> "$GITHUB_ENV" ;;
               tag)     echo "TEST_TAG=$v" >> "$GITHUB_ENV" ;;
+              budget)  echo "GEMINI_BUDGET_USD=$v" >> "$GITHUB_ENV" ;;   # תקרת עלות לריצה (דולר)
               recheck) echo "GEMINI_RECHECK=$v" >> "$GITHUB_ENV" ;;
               recheck_model) echo "RECHECK_MODEL=$v" >> "$GITHUB_ENV" ;;
               recheck_thinking) echo "RECHECK_THINKING=$v" >> "$GITHUB_ENV" ;;      # חזרה על אותה הגדרה לקובץ נפרד (רעש בין ריצות)

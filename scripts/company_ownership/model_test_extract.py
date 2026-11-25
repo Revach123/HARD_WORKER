@@ -328,6 +328,7 @@ def main():
                 u[k] += int(kv.get(k, 0))
     print(f"USAGE model={MODEL} thinking={THINK} calls={u['calls']} in={u['in']} out={u['out']} think={u['think']} "
           f"cached={u['cached']}")
+    print(f"COST ${ex._SPENT[0]:.2f} (תקרה ${ex._BUDGET or 0})" + (" - נעצר בתקרה" if ex.budget_exceeded() else ""))
     if os.environ.get("GEMINI_RECHECK") == "1":
         print(f"RECHECK חלונות {rsb.RECHECK_STATS['windows']}, נשלחו שוב {rsb.RECHECK_STATS['flagged']} "
               f"({rsb.RECHECK_STATS['calls']} קריאות), פריטים לפני {rsb.RECHECK_STATS['before']} / בשליחה החוזרת "

@@ -32,6 +32,18 @@ import urllib3
 
 _USAGE_SRC = "subsidiaries"
 
+# תקרת תקציב לריצה (GEMINI_BUDGET_USD, לבדיקות): עלות מצטברת לפי הטוקנים; בהגעה לתקרה - כל קריאה נוספת נעצרת
+# כמו מכסה (הדוח נשאר חלקי). מחירים לכל מיליון טוקנים (קלט, פלט כולל חשיבה) - מחיר המבצע עד 31/12/2026
+_PRICES = {"gemini-3.6-flash": (0.75, 3.75), "gemini-3.8-flash": (0.75, 3.75), "gemini-3.5-flash-lite": (0.30, 2.50),
+           "gemini-4-hydrogen": (1.50, 7.50)}
+_BUDGET = float(os.environ.get("GEMINI_BUDGET_USD") or 0)
+_SPENT = [0.0]
+
+
+def budget_exceeded() -> bool:
+    return bool(_BUDGET) and _SPENT[0] >= _BUDGET
+
+
 def _log_gemini_usage(model, data):
     """שורת שימוש בטוקנים לכל תשובת Gemini (לחישוב עלות). נכתבת ללוג וגם לקובץ (GEMINI_USAGE_LOG) - בריצות עם לוג מוסתר
     שלב נפרד בסוף מסכם את הקובץ. רק מספרים, בלי תוכן."""
@@ -39,6 +51,9 @@ def _log_gemini_usage(model, data):
     line = (f"GEMINI_USAGE src={_USAGE_SRC} model={model} in={u.get('promptTokenCount', 0)} "
             f"out={u.get('candidatesTokenCount', 0)} think={u.get('thoughtsTokenCount', 0)} "
             f"cached={u.get('cachedContentTokenCount', 0)}")
+    pi, po = _PRICES.get(model, (1.50, 7.50))          # מודל לא מוכר - המחיר הגבוה (שמרני)
+    _SPENT[0] += (u.get("promptTokenCount", 0) * pi + (u.get("candidatesTokenCount", 0)
+                                                      + u.get("thoughtsTokenCount", 0)) * po) / 1e6
     print(line, flush=True)
     try:
         with open(os.environ.get("GEMINI_USAGE_LOG", "/tmp/gemini_usage.log"), "a") as f:
@@ -471,6 +486,8 @@ def all_keys_daily_exhausted() -> bool:
 def call_gemini_extraction(pdf_bytes: bytes, filename_hint: str, max_retries: int = 2, model: str | None = None,
                            thinking: str | None = None) -> dict:
     model = model or GEMINI_MODEL           # מודל אחר לקריאה הזו (למשל עמודי תרשים -> מודל חזק יותר)
+    if budget_exceeded():
+        raise GeminiQuotaExceededError(f"תקרת התקציב לריצה (${_BUDGET}) הושגה - ${_SPENT[0]:.2f}")
     b64 = base64.b64encode(pdf_bytes).decode()
     payload = {
         "system_instruction": {"parts": [{"text": EXTRACTION_SYSTEM_PROMPT}]},
