@@ -44,16 +44,17 @@ on:
         description: "cid:file:from-to (למשל 1630:1:10-16) - אותם עמודים בלי / עם OCR כרמז"
         required: false
         default: ""
-      workers:
-        description: "חברות במקביל"
-        required: false
-        default: "6"
+      prompt:
+        description: "גרסת ההנחיה לג'מיני (v1 = הייצור, v2 = סוג ישות / נכסים, שמות מלאים, בלי סעיפים לא רלוונטיים)"
+        type: choice
+        options: [v1, v2]
+        default: v1
 
 permissions:
   contents: write
 
 concurrency:
-  group: model-test-${{ github.event.inputs.model }}-${{ github.event.inputs.thinking }}-${{ github.event.inputs.chunk }}-${{ github.event.inputs.page_filter }}-${{ github.event.inputs.chart_model }}
+  group: model-test-${{ github.event.inputs.model }}-${{ github.event.inputs.thinking }}-${{ github.event.inputs.chunk }}-${{ github.event.inputs.page_filter }}-${{ github.event.inputs.chart_model }}-${{ github.event.inputs.prompt }}
   cancel-in-progress: false
 
 jobs:
@@ -78,12 +79,13 @@ jobs:
           GEMINI_MODEL_OVERRIDE: ${{ github.event.inputs.model }}
           GEMINI_THINKING: ${{ github.event.inputs.thinking }}
           GEMINI_RPM: "300"
+          EXTRACTION_PROMPT: ${{ github.event.inputs.prompt || 'v1' }}
           GEMINI_CHART_MODEL: ${{ github.event.inputs.chart_model }}
           PROBE_DUMP: ${{ github.event.inputs.probe != '' && '1' || '0' }}
           GEMINI_CHUNK: ${{ github.event.inputs.chunk == 'true' && '1' || '0' }}
           GEMINI_PAGE_FILTER: ${{ github.event.inputs.page_filter == 'relevant' && '1' || github.event.inputs.page_filter == 'charts' && 'charts' || '0' }}
           PYTHONUNBUFFERED: "1"
-        run: python model_test_extract.py --cids "${{ github.event.inputs.cids }}" --workers "${{ github.event.inputs.workers || '6' }}" ${{ github.event.inputs.dry == 'true' && '--dry' || '' }} ${{ github.event.inputs.probe != '' && format('--probe {0}', github.event.inputs.probe) || '' }} ${{ github.event.inputs.ocr_test != '' && format('--ocr-test {0}', github.event.inputs.ocr_test) || '' }}
+        run: python model_test_extract.py --cids "${{ github.event.inputs.cids }}" --workers 6 ${{ github.event.inputs.dry == 'true' && '--dry' || '' }} ${{ github.event.inputs.probe != '' && format('--probe {0}', github.event.inputs.probe) || '' }} ${{ github.event.inputs.ocr_test != '' && format('--ocr-test {0}', github.event.inputs.ocr_test) || '' }}
       - name: Commit test output
         if: always()
         working-directory: scripts/company_ownership
