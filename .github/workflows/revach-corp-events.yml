@@ -105,14 +105,16 @@ jobs:
           case "$MODE" in
             all)
               if [ -f ../../data/corp_events/t087-index.json ]; then python capital_events.py ai; fi
-              python offerings_ai.py ai                       # הנפקות לפני 2024 מ-PDF - עד OFFER_AI_MAX ביום (או עד שהמכסה נגמרת)
+              # חשיבה נמוכה להנפקות: בבדיקה (30 דוחות) תוצאה זהה לחשיבה גבוהה בסכום, בבדיקת השפיות ובסוגי ני"ע; ~80% פחות עלות.
+              # פרשנות אירועי ההון נשארת בחשיבה הרגילה (בחשיבה נמוכה זיהתה פחות מיזוגים במהופך ויותר שגיאות JSON)
+              GEMINI_THINKING=low python offerings_ai.py ai   # הנפקות לפני 2024 מ-PDF - עד OFFER_AI_MAX ביום (או עד שהמכסה נגמרת)
               python corp_events.py all
               MAX_MINUTES=20 python offerings_ai.py scan      # רשימת דוחות ה-PDF - מתקדמת מעט כל יום עד שמסתיימת
               if [ -f ../../data/corp_events/t087-index.json ]; then MAX_MINUTES=30 python capital_events.py forward; fi ;;
             capital)    python capital_events.py all ;;
             capital-ai) python capital_events.py ai ;;
             offerings-pdf-scan) MAX_MINUTES=60 python offerings_ai.py scan ;;
-            offerings-pdf-ai)   python offerings_ai.py ai ;;
+            offerings-pdf-ai)   GEMINI_THINKING=low python offerings_ai.py ai ;;
             build)      ;;
             ai-thinking-test)   # בדיקה בלבד: מדגם שכבר פורש, חשיבה high מול low, השוואה לשמור. לא כותב לאינדקסים
               AI_TEST_N=40 python capital_events.py ai-test
