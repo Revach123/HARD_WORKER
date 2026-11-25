@@ -4329,17 +4329,35 @@
   },
   "1729790": {
     "company_id": "1140",
-    "status": "failed",
+    "status": "partial",
     "kind": "snapshot",
     "attempts": 2,
-    "at": "2026-11-24T09:49:17.357821+00:00"
+    "at": "2026-11-25T09:09:55.723786+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "scheme": "20/3//",
+      "total": 21,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1736339": {
     "company_id": "1001",
-    "status": "failed",
+    "status": "partial",
     "kind": "snapshot",
     "attempts": 2,
-    "at": "2026-11-24T09:49:16.445110+00:00"
+    "at": "2026-11-25T09:09:55.525234+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "scheme": "20/3//",
+      "total": 11,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1730880": {
     "company_id": "1636",
@@ -4875,11 +4893,12 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 1,
-    "at": "2026-11-24T09:47:24.012900+00:00",
+    "at": "2026-11-25T09:09:55.295808+00:00",
     "model": "gemini-3.6-flash",
     "chunks": {
       "size": 20,
       "overlap": 3,
+      "scheme": "20/3//",
       "total": 6,
       "done": {},
       "attempts": {
@@ -4937,11 +4956,12 @@
     "status": "partial",
     "kind": "snapshot",
     "attempts": 1,
-    "at": "2026-11-24T09:49:23.668670+00:00",
+    "at": "2026-11-25T09:09:50.892154+00:00",
     "model": "gemini-3.6-flash",
     "chunks": {
       "size": 20,
       "overlap": 3,
+      "scheme": "20/3//",
       "total": 6,
       "done": {},
       "attempts": {
@@ -13238,10 +13258,19 @@
   },
   "1730043": {
     "company_id": "314",
-    "status": "failed",
+    "status": "partial",
     "kind": "snapshot",
     "attempts": 1,
-    "at": "2026-11-24T09:36:12.138816+00:00"
+    "at": "2026-11-25T09:09:53.616658+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "scheme": "20/3//",
+      "total": 11,
+      "done": {},
+      "attempts": {}
+    }
   },
   "1735890": {
     "company_id": "1033",
@@ -16323,11 +16352,12 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-11-24T09:49:17.038060+00:00",
+    "at": "2026-11-25T09:09:55.768749+00:00",
     "model": "gemini-3.6-flash",
     "chunks": {
       "size": 20,
       "overlap": 3,
+      "scheme": "20/3//",
       "total": 2,
       "done": {},
       "attempts": {
@@ -16341,11 +16371,12 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-11-24T09:49:17.960432+00:00",
+    "at": "2026-11-25T09:09:55.813154+00:00",
     "model": "gemini-3.6-flash",
     "chunks": {
       "size": 20,
       "overlap": 3,
+      "scheme": "20/3//",
       "total": 3,
       "done": {},
       "attempts": {
@@ -16360,11 +16391,12 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-11-24T09:49:18.410094+00:00",
+    "at": "2026-11-25T09:09:56.012442+00:00",
     "model": "gemini-3.6-flash",
     "chunks": {
       "size": 20,
       "overlap": 3,
+      "scheme": "20/3//",
       "total": 1,
       "done": {},
       "attempts": {
@@ -16377,11 +16409,12 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-11-24T09:49:23.860223+00:00",
+    "at": "2026-11-25T09:09:56.149765+00:00",
     "model": "gemini-3.6-flash",
     "chunks": {
       "size": 20,
       "overlap": 3,
+      "scheme": "20/3//",
       "total": 5,
       "done": {},
       "attempts": {
@@ -16398,11 +16431,12 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-11-24T09:49:23.392088+00:00",
+    "at": "2026-11-25T09:09:55.971485+00:00",
     "model": "gemini-3.6-flash",
     "chunks": {
       "size": 20,
       "overlap": 3,
+      "scheme": "20/3//",
       "total": 4,
       "done": {},
       "attempts": {
@@ -16418,11 +16452,12 @@
     "status": "partial",
     "kind": "change",
     "attempts": 0,
-    "at": "2026-11-24T09:49:23.011273+00:00",
+    "at": "2026-11-25T09:09:56.080924+00:00",
     "model": "gemini-3.6-flash",
     "chunks": {
       "size": 20,
       "overlap": 3,
+      "scheme": "20/3//",
       "total": 1,
       "done": {},
       "attempts": {
