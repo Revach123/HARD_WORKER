@@ -1,0 +1,72 @@
+# One-off comparison (manual, read-only): the official hekdeshot registry (data.gov.il, Registrar of Hekdeshot) vs the GuideStar list that Revach
+# loads today (data/registry/hekdeshot.json): coverage (ids only on one side), status / registration-date / purposes completeness, freshness.
+# Writes ONLY aggregate numbers to data/probe/hekdeshot_compare.json in this repo (no names).
+name: Revach - hekdeshot sources comparison
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/checkout@v5
+        with:
+          repository: Revach123/Revach
+          token: ${{ secrets.REVACH_TOKEN }}
+          fetch-depth: 1
+          sparse-checkout: data/registry
+          path: revach
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Compare
+        run: |
+          mkdir -p data/probe
+          python3 - <<'PY'
+          import json, re, urllib.request, urllib.parse, collections
+          H = {"User-Agent": "Mozilla/5.0", "Referer": "https://data.gov.il/"}
+          def get(u):
+              with urllib.request.urlopen(urllib.request.Request(u, headers=H), timeout=120) as r:
+                  return json.loads(r.read().decode("utf-8"))
+          CK = "https://data.gov.il/api/3/action/"
+          pkg = get(CK + "package_show?id=hekdeshot")["result"]
+          res = next(r for r in pkg["resources"] if "מידע כללי" in (r.get("name") or ""))
+          off, offset = [], 0
+          while True:
+              r = get(CK + "datastore_search?" + urllib.parse.urlencode({"resource_id": res["id"], "limit": 1000, "offset": offset}))["result"]
+              off += r["records"]; offset += len(r["records"])
+              if not r["records"] or offset >= int(r["total"]): break
+          gs = json.load(open("revach/data/registry/hekdeshot.json", encoding="utf-8"))
+          gsr = gs["rows"]
+          oid = {re.sub(r"\D", "", str(x.get("מספר תיק"))): x for x in off}
+          gid = {re.sub(r"\D", "", str(x.get("id"))): x for x in gsr}
+          only_off, only_gs, both = set(oid) - set(gid), set(gid) - set(oid), set(oid) & set(gid)
+          norm = lambda s: re.sub(r"[^\w]", "", str(s or "").replace("~", '"'))
+          name_diff = sum(1 for k in both if norm(oid[k].get("שם הקדש")) != norm(gid[k].get("name")))
+          status = collections.Counter(str(x.get("סטטווס תיק") or "").strip() for x in off)
+          def filled(rows, f): return sum(1 for x in rows if str(x.get(f) or "").strip())
+          out = {
+              "official": {"records": len(off), "resource_modified": res.get("last_modified"), "package_modified": pkg.get("metadata_modified"),
+                           "status_counts": dict(status), "with_reg_date": filled(off, "תאריך רישום"), "with_purpose": filled(off, "מטרות"),
+                           "with_funding": filled(off, "שיטת מימון")},
+              "guidestar": {"records": len(gsr), "fetchedAt": gs.get("fetchedAt"), "with_status": filled(gsr, "status"), "with_founded": filled(gsr, "founded"),
+                            "with_category": filled(gsr, "category"), "with_city": filled(gsr, "city")},
+              "overlap": len(both), "only_official": len(only_off), "only_guidestar": len(only_gs), "name_differs_in_overlap": name_diff,
+              "only_official_sample_ids": sorted(only_off)[:15], "only_guidestar_sample_ids": sorted(only_gs)[:15],
+              "only_official_status": dict(collections.Counter(str(oid[k].get("סטטווס תיק") or "").strip() for k in only_off)),
+          }
+          json.dump(out, open("data/probe/hekdeshot_compare.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+          print(json.dumps(out, ensure_ascii=False)[:1500])
+          PY
+      - name: Commit result
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/probe/hekdeshot_compare.json
+          git diff --staged --quiet || (git commit -m "probe: hekdeshot sources comparison [skip ci]" && git pull --rebase -q origin main && git push -q)
