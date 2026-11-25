@@ -26,7 +26,7 @@ on:
       page_filter:
         description: "סינון עמודים: none / relevant (טבלאות ותרשימים) / charts (רק תרשימי מבנה - למודל יקר)"
         type: choice
-        options: [none, relevant, charts]
+        options: [none, relevant, charts, formal]
         default: none
       dry:
         description: "בלי Gemini - רק בדיקת סינון העמודים (כמה נבחרו, כמה מחברות הבת הקיימות מכוסות)"
@@ -71,7 +71,7 @@ jobs:
       - run: |
           pip install requests pypdf --break-system-packages
           sudo apt-get install -y -qq poppler-utils >/dev/null
-          if [ -n "${{ github.event.inputs.probe }}${{ github.event.inputs.ocr_test }}" ] || [ "${{ github.event.inputs.page_filter }}" = "charts" ] || [ -n "${{ github.event.inputs.chart_model }}" ]; then sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-heb >/dev/null; fi
+          if [ -n "${{ github.event.inputs.probe }}${{ github.event.inputs.ocr_test }}" ] || [ "${{ github.event.inputs.page_filter }}" = "charts" ] || [ "${{ github.event.inputs.page_filter }}" = "formal" ] || [ -n "${{ github.event.inputs.chart_model }}" ]; then sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-heb >/dev/null; fi
       - name: Extract (test)
         working-directory: scripts/company_ownership
         env:
@@ -83,7 +83,7 @@ jobs:
           GEMINI_CHART_MODEL: ${{ github.event.inputs.chart_model }}
           PROBE_DUMP: ${{ github.event.inputs.probe != '' && '1' || '0' }}
           GEMINI_CHUNK: ${{ github.event.inputs.chunk == 'true' && '1' || '0' }}
-          GEMINI_PAGE_FILTER: ${{ github.event.inputs.page_filter == 'relevant' && '1' || github.event.inputs.page_filter == 'charts' && 'charts' || '0' }}
+          GEMINI_PAGE_FILTER: ${{ github.event.inputs.page_filter == 'relevant' && '1' || (github.event.inputs.page_filter == 'charts' || github.event.inputs.page_filter == 'formal') && github.event.inputs.page_filter || '0' }}
           PYTHONUNBUFFERED: "1"
         run: python model_test_extract.py --cids "${{ github.event.inputs.cids }}" --workers 6 ${{ github.event.inputs.dry == 'true' && '--dry' || '' }} ${{ github.event.inputs.probe != '' && format('--probe {0}', github.event.inputs.probe) || '' }} ${{ github.event.inputs.ocr_test != '' && (startsWith(github.event.inputs.ocr_test, 'why=') && format('--why "{0}"', github.event.inputs.ocr_test) || format('--ocr-test {0}', github.event.inputs.ocr_test)) || '' }}
       - name: Commit test output

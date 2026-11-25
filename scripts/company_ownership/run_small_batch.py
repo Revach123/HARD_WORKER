@@ -487,6 +487,31 @@ def _chart_pages(pdf_bytes: bytes, n_pages: int, detail: list | None = None):
     return sel or None
 
 
+def _formal_pages(pdf_bytes: bytes, n_pages: int):
+    """רק העמודים של הרשימות הרשמיות (לסט האמת): עמוד עם כותרת חזקה (תקנה 11, רשימת חברות מוחזקות, תרשים מבנה,
+    Group Entities, List of Subsidiaries...) ועמודי ההמשך של הטבלה (כל עוד יש בהם שמות ישויות או אחוזים, עד 15),
+    + עמודי תרשים שהם תמונה (OCR). None - לא נמצא."""
+    texts = _page_texts(pdf_bytes, n_pages)
+    if not texts:
+        return None
+    rev = lambda t: t + "\n" + "\n".join(line[::-1] for line in t.splitlines())
+    sel = set()
+    for i, t in enumerate(texts):
+        if PAGE_KEYS.search(rev(t)):
+            sel.add(i)
+            for j in range(i + 1, min(n_pages, i + 16)):
+                tj = rev(texts[j])
+                if len(ENTITY.findall(tj)) >= 3 or texts[j].count("%") >= 3:
+                    sel.add(j)
+                else:
+                    break
+    try:
+        sel |= set(_chart_pages(pdf_bytes, n_pages) or [])
+    except Exception:
+        pass
+    return sorted(sel) or None
+
+
 def _page_windows(pages: list[int]) -> list[list[int]]:
     """רשימת עמודים נבחרים -> חלונות של עד CHUNK_PAGES עמודים (בלי חפיפה - העמודים כבר מורחבים בשוליים)."""
     return [pages[i:i + CHUNK_PAGES] for i in range(0, len(pages), CHUNK_PAGES)]
@@ -590,7 +615,8 @@ def _process_report_chunked(
             reader = PdfReader(io.BytesIO(pdf_bytes))
             n_pages = len(reader.pages)
             pf = os.environ.get("GEMINI_PAGE_FILTER", "")
-            sel = _relevant_pages(pdf_bytes, n_pages) if pf == "1" else _chart_pages(pdf_bytes, n_pages) if pf == "charts" else None
+            sel = (_relevant_pages(pdf_bytes, n_pages) if pf == "1" else _chart_pages(pdf_bytes, n_pages) if pf == "charts"
+                   else _formal_pages(pdf_bytes, n_pages) if pf == "formal" else None)
             if pf == "charts" and sel is None:
                 sel = []      # בלי תרשים - אין מה לשלוח למודל היקר
             if sel is not None:
