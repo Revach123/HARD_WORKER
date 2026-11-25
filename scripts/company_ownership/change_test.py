@@ -47,11 +47,11 @@ def events(path):
 
 
 def usage(path):
-    u = {"calls": 0, "in": 0, "out": 0, "think": 0}
+    u = {"calls": 0, "in": 0, "out": 0, "think": 0, "cached": 0}
     for line in open(path) if os.path.exists(path) else []:
         kv = dict(x.split("=", 1) for x in line.split()[1:] if "=" in x)
         u["calls"] += 1
-        for k in ("in", "out", "think"):
+        for k in ("in", "out", "think", "cached"):
             u[k] += int(kv.get(k, 0))
     return u
 
@@ -88,7 +88,7 @@ def main():
             print(f"  {rid}: שגיאה {type(e).__name__}: {e}", flush=True)
 
     t0 = time.time()
-    tag = os.environ.get("CHG_TAG", "")              # למשל v1high - קבצים נפרדים לכל הגדרה
+    tag = "_".join(x for x in (os.environ.get("CHG_TAG", ""), os.environ.get("CHG_TAG_EXTRA", "")) if x)  # קבצים נפרדים לכל הגדרה
     sfx = f"_{tag}" if tag else ""
     phases = [p for p in (os.environ.get("CHG_PHASES") or "all,filtered").split(",") if p]
     for phase, pf in (("all", ""), ("filtered", "changes")):
@@ -129,9 +129,14 @@ def main():
         for k in a[r] - f[r]:
             miss[k[1]] = miss.get(k[1], 0) + 1
     print("CHGTEST סוגי האירועים שהסינון פספס: " + " ".join(f"{k}={v}" for k, v in sorted(miss.items(), key=lambda x: -x[1])))
+    if os.environ.get("GEMINI_RECHECK") == "1":
+        st = rsb.RECHECK_STATS
+        print(f"CHGTEST בדיקת שלמות: חלונות {st['windows']}, נשלחו שוב {st['flagged']} ({st['calls']} קריאות), "
+              f"פריטים לפני {st['before']} / בשליחה החוזרת {st['after']}")
     for phase in phases:
         u = usage(f"model_test/usage_changes_{phase}{sfx}.log")
-        print(f"CHGTEST טוקנים {phase}: calls={u['calls']} in={u['in']} out={u['out']} think={u['think']}")
+        print(f"CHGTEST טוקנים {phase}: calls={u['calls']} in={u['in']} out={u['out']} think={u['think']} "
+              f"cached={u.get('cached', 0)}")
 
 
 if __name__ == "__main__":

@@ -20,6 +20,10 @@ on:
         type: choice
         options: [v2, v1]
         default: v2
+      extra:
+        description: "הגדרות נוספות, מופרדות בפסיק: media=low, compact=1, recheck=1, recheck_model=..., recheck_thinking=high, tag=..."
+        required: false
+        default: ""
       only_all:
         description: "רק כל העמודים (בלי סינון), לקבצים נפרדים לפי ההגדרה - להשוואה מול הריצה הקודמת"
         type: boolean
@@ -46,6 +50,20 @@ jobs:
       - run: |
           pip install requests pypdf --break-system-packages
           sudo apt-get install -y -qq poppler-utils >/dev/null
+      - name: Extra settings
+        run: |
+          IFS=',' read -ra KV <<< "${{ github.event.inputs.extra }}"
+          for kv in "${KV[@]}"; do
+            k="${kv%%=*}"; v="${kv#*=}"
+            case "$k" in
+              media)   echo "GEMINI_MEDIA_RES=$v" >> "$GITHUB_ENV" ;;
+              compact) echo "EXTRACTION_COMPACT=$v" >> "$GITHUB_ENV" ;;
+              recheck) echo "GEMINI_RECHECK=$v" >> "$GITHUB_ENV" ;;
+              recheck_model) echo "RECHECK_MODEL=$v" >> "$GITHUB_ENV" ;;
+              recheck_thinking) echo "RECHECK_THINKING=$v" >> "$GITHUB_ENV" ;;
+              tag)     echo "CHG_TAG_EXTRA=$v" >> "$GITHUB_ENV" ;;
+            esac
+          done
       - name: Test
         working-directory: scripts/company_ownership
         env:

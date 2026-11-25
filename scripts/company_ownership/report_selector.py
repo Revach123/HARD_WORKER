@@ -132,10 +132,15 @@ def build_change_index(from_date: date, to_date: date, snapshot_index: dict) -> 
     # CHANGES_QUARTERLY_ONLY=1 (חיסכון): רק דוחות רבעוניים / חצי שנתיים. מצגות, תרגומים והודעות כמעט ולא מוסיפים
     # אירועי שינוי שלא מופיעים ברבעוני (ר' estimate_changes.py)
     quarterly_only = os.environ.get("CHANGES_QUARTERLY_ONLY") == "1"
+    skip_pres = os.environ.get("CHANGES_SKIP_PRESENTATIONS") == "1"
     n_skipped = 0
     changes_by_company = defaultdict(list)
     for r in reports:
         if quarterly_only and not is_periodic_change(r.get("title")):
+            n_skipped += 1
+            continue
+        # CHANGES_SKIP_PRESENTATIONS=1: בלי מצגות - בבדיקה רובן פרויקטים ונכסים (רק ~4% חברות), לא חברות
+        if skip_pres and "מצגת" in (r.get("title") or ""):
             n_skipped += 1
             continue
         pdf_url = mrc.pick_main_pdf_url(r)
@@ -161,8 +166,8 @@ def build_change_index(from_date: date, to_date: date, snapshot_index: dict) -> 
 
     for cid in changes_by_company:
         changes_by_company[cid].sort(key=lambda x: x["publish_date"])
-    if quarterly_only:
-        print(f"  CHANGES_QUARTERLY_ONLY: דולגו {n_skipped} דוחות שאינם רבעוניים / חצי שנתיים.")
+    if quarterly_only or skip_pres:
+        print(f"  CHANGES_QUARTERLY_ONLY / SKIP_PRESENTATIONS: דולגו {n_skipped} דוחות שאינם רבעוניים / חצי שנתיים.")
 
     n_companies_with_changes = len(changes_by_company)
     n_total_changes = sum(len(v) for v in changes_by_company.values())

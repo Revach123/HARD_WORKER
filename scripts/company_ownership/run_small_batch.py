@@ -149,7 +149,8 @@ def normalize_list_response(raw: list) -> dict:
 
 
 def _call_gemini_with_quota_retry(pdf_bytes: bytes, filename_hint: str,
-                                   quota_retries: int = 4, model: str | None = None) -> dict | None:
+                                   quota_retries: int = 4, model: str | None = None,
+                                   thinking: str | None = None) -> dict | None:
     """עוטף call_gemini_extraction עם retry-with-cooldown מקומי על
     מכסה. הבאג שנצפה בפועל: עם max_retries=2 (ברירת המחדל) ו-N מפתחות
     במאגר, מספיק שמפתח *אחד* נכנס לקירור זמני (65s, לא מכסה אמיתית)
@@ -165,7 +166,8 @@ def _call_gemini_with_quota_retry(pdf_bytes: bytes, filename_hint: str,
                 "מכסה יומית אמיתית (RPD) כבר זוהתה - מוותר מיד בלי קירור נוסף."
             )
         try:
-            raw = ex.call_gemini_extraction(pdf_bytes, filename_hint=filename_hint, max_retries=6, model=model)
+            raw = ex.call_gemini_extraction(pdf_bytes, filename_hint=filename_hint, max_retries=6, model=model,
+                                            thinking=thinking)
             if isinstance(raw, list):
                 raw = normalize_list_response(raw)
             return raw
@@ -549,6 +551,67 @@ def _win_pages(w) -> list[int]:
 CHART_MODEL = os.environ.get("GEMINI_CHART_MODEL", "").strip()     # למשל gemini-4-hydrogen; ריק - בלי מעבר תרשימים
 
 
+# ---- בדיקת שלמות (GEMINI_RECHECK=1, בבדיקה): חלון שהחזיר הרבה פחות חברות ממה שיש בטקסט שלו - נשלח שוב ----
+# ספירה חינמית (בלי AI): שורות שונות בטקסט העמודים (pdftotext) עם צורת התאגדות (בע"מ, Ltd, Inc...). אם החלון החזיר
+# פחות מ-RECHECK_RATIO מהספירה (ולפחות RECHECK_MIN שמות בטקסט) - העמודים הצפופים בחלון (RECHECK_DENSE שמות ומעלה)
+# נשלחים שוב בחלונות קטנים (RECHECK_PAGES) ל-RECHECK_MODEL בחשיבה RECHECK_THINKING, והתוצאות מתווספות לחלון.
+RECHECK = os.environ.get("GEMINI_RECHECK") == "1"
+RECHECK_MIN = int(os.environ.get("RECHECK_MIN") or 8)
+RECHECK_RATIO = float(os.environ.get("RECHECK_RATIO") or 0.5)
+RECHECK_DENSE = int(os.environ.get("RECHECK_DENSE") or 3)
+RECHECK_PAGES = int(os.environ.get("RECHECK_PAGES") or 5)
+RECHECK_MODEL = os.environ.get("RECHECK_MODEL") or None
+RECHECK_THINKING = os.environ.get("RECHECK_THINKING") or "high"
+RECHECK_STATS = {"windows": 0, "flagged": 0, "calls": 0, "before": 0, "after": 0}
+_RECHECK_LOCK = threading.Lock()
+
+
+def _entity_lines(text: str) -> set:
+    """שורות שונות עם צורת התאגדות - אומדן חינמי למספר שמות החברות בעמוד."""
+    out = set()
+    for line in (text or "").splitlines():
+        if ENTITY.search(line) or ENTITY.search(line[::-1]):
+            k = re.sub(r"[\s\d.,%()\-–]", "", line)
+            if len(k) >= 4:
+                out.add(k)
+    return out
+
+
+def _recheck_window(f, wpages, res, key):
+    """בדיקת שלמות לחלון אחד. מחזיר רשימת תוצאות נוספות (כבר ממופות לעמודי הקובץ) או []."""
+    texts = f.get("texts")
+    if not RECHECK or not texts:
+        return []
+    per_page = {p: _entity_lines(texts[p]) for p in wpages if p < len(texts)}
+    expected = len(set().union(*per_page.values())) if per_page else 0
+    got = len(res.get("subsidiaries") or []) + len(res.get("change_events") or [])
+    with _RECHECK_LOCK:
+        RECHECK_STATS["windows"] += 1
+    if expected < RECHECK_MIN or got >= RECHECK_RATIO * expected:
+        return []
+    dense = [p for p in wpages if len(per_page.get(p, ())) >= RECHECK_DENSE]
+    if not dense:
+        return []
+    print(f"    בדיקת שלמות: חלון {key} החזיר {got}, בטקסט ~{expected} שמות - שליחה חוזרת של {len(dense)} עמ' "
+          f"צפופים ({RECHECK_MODEL or 'אותו מודל'}, חשיבה {RECHECK_THINKING})")
+    extra = []
+    for i in range(0, len(dense), RECHECK_PAGES):
+        pages = dense[i:i + RECHECK_PAGES]
+        r2 = _call_gemini_with_quota_retry(_slice_pages(f["reader"], pages), f"{f['url']}#recheck{pages[0]+1}",
+                                           model=RECHECK_MODEL, thinking=RECHECK_THINKING)
+        with _RECHECK_LOCK:
+            RECHECK_STATS["calls"] += 1
+        if r2:
+            extra.append(_map_page_refs(r2, pages))
+    n2 = sum(len(x.get("subsidiaries") or []) + len(x.get("change_events") or []) for x in extra)
+    with _RECHECK_LOCK:
+        RECHECK_STATS["flagged"] += 1
+        RECHECK_STATS["before"] += got
+        RECHECK_STATS["after"] += n2
+    print(f"    בדיקת שלמות: חלון {key} - {n2} פריטים בשליחה החוזרת (היו {got})")
+    return extra
+
+
 def _page_filter(source_type: str = "annual_report") -> str:
     """סינון העמודים לדוח: GEMINI_PAGE_FILTER לדוח השנתי; לדוחות השינויים GEMINI_PAGE_FILTER_CHANGES אם הוגדר
     (למשל changes - עמודי אירועי שינוי בלבד), אחרת כמו השנתי."""
@@ -671,7 +734,8 @@ def _process_report_chunked(
             continue
         wins = _page_windows(sel) if sel is not None else _iter_page_windows(n_pages)
         wins += [{"pages": w, "model": CHART_MODEL} for w in _page_windows(charts or [])]
-        files.append({"url": url, "reader": reader, "n_pages": n_pages, "windows": wins})
+        files.append({"url": url, "reader": reader, "n_pages": n_pages, "windows": wins,
+                      "texts": _page_texts(pdf_bytes, n_pages) if RECHECK else None})
 
     if not files:
         print("  כישלון מוחלט: אף קובץ PDF של הדוח לא נטען.")
@@ -734,7 +798,16 @@ def _process_report_chunked(
                              "_window_failed": True}
             _persist()
             continue
-        done[key] = _map_page_refs(res, wpages)
+        mapped = _map_page_refs(res, wpages)
+        try:
+            for x in (_recheck_window(f, wpages, res, key) if not wmodel else []):
+                mapped["subsidiaries"] = (mapped.get("subsidiaries") or []) + (x.get("subsidiaries") or [])
+                mapped["change_events"] = (mapped.get("change_events") or []) + (x.get("change_events") or [])
+        except ex.GeminiQuotaExceededError:
+            raise
+        except Exception as e:      # בדיקת השלמות לא מפילה את החלון
+            print(f"    בדיקת שלמות: שגיאה ({type(e).__name__}) - ממשיכים בלי")
+        done[key] = mapped
         _persist()
         print(f"    חלון {key}: {len(res.get('subsidiaries', []))} חברות.")
         time.sleep(1)

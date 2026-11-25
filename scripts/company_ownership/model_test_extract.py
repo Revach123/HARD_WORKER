@@ -27,6 +27,8 @@ TAG = f"{MODEL}_{THINK}" + ("_chunk" if os.environ.get("GEMINI_CHUNK") == "1" el
     (f"_p{os.environ['GEMINI_CHUNK_PAGES']}" if os.environ.get("GEMINI_CHUNK_PAGES") else "") + \
     (f"_media-{os.environ['GEMINI_MEDIA_RES']}" if os.environ.get("GEMINI_MEDIA_RES") else "") + \
     ("_compact" if os.environ.get("EXTRACTION_COMPACT") == "1" else "") + \
+    (f"_recheck-{os.environ.get('RECHECK_MODEL') or 'same'}-{os.environ.get('RECHECK_THINKING') or 'high'}"
+     if os.environ.get("GEMINI_RECHECK") == "1" else "") + \
     (f"_{os.environ['TEST_TAG']}" if os.environ.get("TEST_TAG") else "")
 OUT = f"model_test/subs_{TAG}.jsonl"
 os.environ.setdefault("GEMINI_USAGE_LOG", f"model_test/usage_{TAG}.log")
@@ -326,6 +328,10 @@ def main():
                 u[k] += int(kv.get(k, 0))
     print(f"USAGE model={MODEL} thinking={THINK} calls={u['calls']} in={u['in']} out={u['out']} think={u['think']} "
           f"cached={u['cached']}")
+    if os.environ.get("GEMINI_RECHECK") == "1":
+        print(f"RECHECK חלונות {rsb.RECHECK_STATS['windows']}, נשלחו שוב {rsb.RECHECK_STATS['flagged']} "
+              f"({rsb.RECHECK_STATS['calls']} קריאות), פריטים לפני {rsb.RECHECK_STATS['before']} / בשליחה החוזרת "
+              f"{rsb.RECHECK_STATS['after']}")
     if os.path.exists(OUT):
         import score_truth
         s = score_truth.score(OUT)

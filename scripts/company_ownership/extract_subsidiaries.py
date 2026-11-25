@@ -468,7 +468,8 @@ def all_keys_daily_exhausted() -> bool:
     return _key_pool.all_daily_exhausted()
 
 
-def call_gemini_extraction(pdf_bytes: bytes, filename_hint: str, max_retries: int = 2, model: str | None = None) -> dict:
+def call_gemini_extraction(pdf_bytes: bytes, filename_hint: str, max_retries: int = 2, model: str | None = None,
+                           thinking: str | None = None) -> dict:
     model = model or GEMINI_MODEL           # מודל אחר לקריאה הזו (למשל עמודי תרשים -> מודל חזק יותר)
     b64 = base64.b64encode(pdf_bytes).decode()
     payload = {
@@ -497,7 +498,7 @@ def call_gemini_extraction(pdf_bytes: bytes, filename_hint: str, max_retries: in
             # שהאכיפה הקשיחה גורמת למודל "להסתפק" בתשובה ריקה תקנית
             # סכמטית כשהוא פחות בטוח, במקום לחפש לעומק במסמך ענק. שאר
             # התיקונים (מיזוג קבצים, quota_retries) לא הושפעו ונשארים.
-            "thinkingConfig": {"thinkingLevel": os.environ.get("GEMINI_THINKING", "high")},  # איכות > מהירות (ניסוי: low)
+            "thinkingConfig": {"thinkingLevel": thinking or os.environ.get("GEMINI_THINKING", "high")},  # ניסוי: low
             # GEMINI_MEDIA_RES=low (בבדיקה): תמונת כל עמוד PDF ~280 טוקנים במקום ~560 (הטקסט המובנה נשלח בנפרד)
             **({"mediaResolution": "MEDIA_RESOLUTION_" + os.environ["GEMINI_MEDIA_RES"].upper()}
                if os.environ.get("GEMINI_MEDIA_RES") else {}),
