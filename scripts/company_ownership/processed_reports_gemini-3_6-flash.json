@@ -30344,5 +30344,21 @@
       "done": {},
       "attempts": {}
     }
+  },
+  "1714071": {
+    "company_id": "1092",
+    "status": "partial",
+    "kind": "change",
+    "attempts": 0,
+    "at": "2026-11-25T09:16:01.728668+00:00",
+    "model": "gemini-3.6-flash",
+    "chunks": {
+      "size": 20,
+      "overlap": 3,
+      "scheme": "20/3//",
+      "total": 3,
+      "done": {},
+      "attempts": {}
+    }
   }
 }
