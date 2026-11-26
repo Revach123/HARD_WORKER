@@ -146,12 +146,30 @@ def main():
     ap.add_argument("--indices", default="")
     ap.add_argument("--site", default="")
     ap.add_argument("--maya", default="", help="data/registry/maya_companies_full.json")
+    ap.add_argument("--requests-dir", default="", help="pack-requests/ מענף agent-results: עמודים שסוכן ביקש להוסיף לחבילה")
+    ap.add_argument("--done-requests", default="", help="קובץ פלט: רשימת report_id שהבקשות שלהם טופלו")
     a = ap.parse_args()
     plan = json.load(open(a.plan, encoding="utf-8"))
     rows = priorities(plan, a.indices, a.site, a.maya)
     done = {d for d in os.listdir(a.packs_dir) if os.path.exists(os.path.join(a.packs_dir, d, "manifest.json"))} \
         if os.path.isdir(a.packs_dir) else set()
-    if a.reports:
+    extra = {}
+    if a.requests_dir and os.path.isdir(a.requests_dir):
+        for fn in sorted(os.listdir(a.requests_dir)):
+            if fn.endswith(".json"):
+                try:
+                    req = json.load(open(os.path.join(a.requests_dir, fn), encoding="utf-8"))
+                except ValueError:
+                    continue
+                ex = {}
+                for x in req.get("pages") or []:
+                    ex.setdefault(str(x.get("file")), []).append(int(x.get("page") or 0))
+                extra[fn[:-5]] = ex
+    if extra:
+        # בקשות של סוכנים קודמות לתור: בונים מחדש את החבילה עם העמודים שביקשו
+        todo = [r for r in rows if r["report_id"] in extra]
+        print(f"REQUESTS: {len(todo)} חבילות לבנייה מחדש עם עמודים שהתבקשו")
+    elif a.reports:
         want = [r.strip() for r in a.reports.split(",") if r.strip()]
         todo = [r for r in rows if r["report_id"] in want]
     else:
@@ -190,13 +208,16 @@ def main():
             if not files:
                 print(f"  {r['report_id']} ({r['company']}): אף קובץ לא ירד - מדלג")
                 continue
-            man = wp.build_pack(r["report_id"], files, a.packs_dir)
+            man = wp.build_pack(r["report_id"], files, a.packs_dir, extra.get(r["report_id"]))
         man.update({"title": e["snapshot"].get("title"), "doc_kind": wp.doc_kind(e["snapshot"].get("title"), man)})
         man.update({"company": r["company"], "company_id": r["cid"], "hp": r["hp"], "publish_date": r["publish_date"],
                     "priority": r["priority"], "index_tier": r["tier"],
                     "urls": {**{f"{r['report_id']}_{i}": u for i, u in enumerate(urls)}, **html_urls}})
         with open(os.path.join(a.packs_dir, r["report_id"], "manifest.json"), "w", encoding="utf-8") as f:
             json.dump(man, f, ensure_ascii=False, indent=1)
+        if r["report_id"] in extra and a.done_requests:
+            with open(a.done_requests, "a", encoding="utf-8") as f:
+                f.write(r["report_id"] + "\n")
         print(f"PACK {r['report_id']} ({r['company']}) priority {r['priority']}: " + "; ".join(
             f"{f['name']} {f['pages']}p " + " ".join(f"{k}={len(v)}" for k, v in f["sections"].items() if v)
             for f in man["files"]))

@@ -49,6 +49,13 @@ jobs:
             && (cd wp && git sparse-checkout set --no-cone 'packs/*/manifest.json' README.md) \
             || { git init -q wp && cd wp && git checkout -q --orphan work-packs && mkdir -p packs \
                  && git remote add origin "https://x-access-token:${T}@github.com/Revach123/Revach.git"; }
+      - name: Agent page requests (agent-results/pack-requests)
+        env:
+          T: ${{ secrets.REVACH_TOKEN }}
+        run: |
+          git clone --quiet --depth 1 --filter=blob:none --sparse --branch agent-results "https://x-access-token:${T}@github.com/Revach123/Revach.git" ar \
+            && (cd ar && git sparse-checkout set --no-cone 'pack-requests/*' 'redo/*' README.md) || mkdir -p ar
+          ls ar/pack-requests 2>/dev/null | head -20 || true
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
@@ -82,6 +89,25 @@ jobs:
           }
           args="--packs-dir ../../wp/packs --indices ../../revach/data/indices/by-company.json \
             --site ../../revach/data/holdings/extracted_subsidiaries.json --maya ../../revach/data/registry/maya_companies_full.json"
+          # בקשות עמודים של סוכנים - קודם לכל: בנייה מחדש של החבילה עם העמודים, ואז redo לדוח ומחיקת הבקשה
+          if ls ../../ar/pack-requests/*.json >/dev/null 2>&1; then
+            : > /tmp/done_req.txt
+            python work_pack_queue.py --n 0 --requests-dir ../../ar/pack-requests --done-requests /tmp/done_req.txt $args
+            push || exit 1
+            if [ -s /tmp/done_req.txt ]; then
+              ( cd ../../ar
+                git config user.name "github-actions[bot]"; git config user.email "github-actions[bot]@users.noreply.github.com"
+                mkdir -p redo
+                while read rid; do
+                  printf '{"created_at": "%s", "reason": "pages requested by the agent were added to the pack", "added": "requested_pages in manifest"}\n' \
+                    "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > "redo/$rid.json"
+                  git rm -q --sparse "pack-requests/$rid.json"
+                done < /tmp/done_req.txt
+                git add --sparse redo
+                git commit -q -m "pack requests handled: $(wc -l < /tmp/done_req.txt) packs rebuilt with requested pages -> redo"
+                for i in 1 2 3 4 5; do git push -q origin HEAD:agent-results && break; git pull -q --rebase origin agent-results || true; sleep $((i * 5)); done )
+            fi
+          fi
           if [ -n "$REPORTS" ]; then
             python work_pack_queue.py --n "$N" --reports "$REPORTS" $args
             push; exit $?

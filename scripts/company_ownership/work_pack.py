@@ -72,6 +72,19 @@ def image_list(path, first, last):
     return res
 
 
+def vector_chart(raw):
+    """עמוד שנראה כמו תרשים החזקות וקטורי: לפחות 15 שורות לא ריקות, רובן קצרות (תיבות), ולפחות 3 אחוזים / מספרים עשרוניים."""
+    lines = [x.strip() for x in raw.splitlines() if x.strip()]
+    if len(lines) < 15:
+        return False
+    short = sum(1 for x in lines if len(x) <= 14)
+    nums = len(re.findall(r"\d\s*%|%\s*\d|\b\d{1,3}\.\d{1,2}\b", raw))
+    words = sum(1 for x in lines if re.search(r"[א-תA-Za-z]{2,}", x))           # תיבות = שמות; טבלה כספית = מספרים
+    pct = len(re.findall(r"%", raw))
+    big = len(re.findall(r"\d{1,3}(?:,\d{3})+", raw))                           # סכומים (1,234,567) - טבלה כספית
+    return short / len(lines) >= 0.7 and nums >= 3 and words / len(lines) >= 0.55 and pct >= 2 and big <= 3
+
+
 def locate(pages):
     """pages: [(raw, layout)] -> {section: [page numbers 1-based]}."""
     n = len(pages)
@@ -162,8 +175,8 @@ def save_image(src, dst_base, seen):
     return dst
 
 
-def build_pack(rid, files, out_dir):
-    """files: [(name, local_pdf_path)]."""
+def build_pack(rid, files, out_dir, extra=None):
+    """files: [(name, local_pdf_path)]. extra: {file_name: [pages]} - עמודים שסוכן ביקש (pack-requests): רינדור 200dpi."""
     root = os.path.join(out_dir, str(rid))
     for d in ("pages", "text", "images", "render"):
         os.makedirs(os.path.join(root, d), exist_ok=True)
@@ -185,6 +198,10 @@ def build_pack(rid, files, out_dir):
             if CHART.search(both(raw_p)) or (len(raw_p.strip()) < 600 and p <= 40):
                 if p not in loc["charts"]:
                     loc["charts"].append(p)
+        # תרשים וקטורי (בלי תמונה ובלי כותרת): הרבה שורות קצרות עם אחוזים (דלק עמ' 7 - "דלק / פטרוליום / 1 %")
+        for p in range(1, min(n, 80) + 1):
+            if p not in loc["charts"] and vector_chart(pages[p - 1][0]):
+                loc["charts"].append(p)
         loc["charts"] = sorted(set(loc["charts"]))
         with gzip.open(os.path.join(root, "text", f"{name}.txt.gz"), "wt", encoding="utf-8") as f:
             f.write("\f".join(raw[:n]))
@@ -211,7 +228,21 @@ def build_pack(rid, files, out_dir):
                         k += 1
             subprocess.run(["pdftoppm", "-f", str(p), "-l", str(p), "-r", "200", "-jpeg", "-jpegopt", "quality=88", "-singlefile", path,
                             os.path.join(root, "render", f"{name}_p{p}")], capture_output=True, timeout=180)
+        # עמודי הטבלאות (תקנה 11/12, ביאור המוחזקות, Exhibit 21) גם כתמונה, ברזולוציה קלה: לקריאה כשעמודות הטקסט מתפרקות
+        # (נספח דלק / דוראל), ולתמונה לשאלות. הסוכן לא יכול להוריד את ה-PDF בעצמו (מאיה חוסמת - 403)
+        table_pages = sorted({int(p) for k in ("reg11", "reg12", "fs_notes", "exhibit21") for p in loc.get(k) or []}
+                             - set(loc["charts"]))[:60]
+        for p in table_pages:
+            subprocess.run(["pdftoppm", "-f", str(p), "-l", str(p), "-r", "110", "-jpeg", "-jpegopt", "quality=80", "-singlefile", path,
+                            os.path.join(root, "render", f"{name}_p{p}")], capture_output=True, timeout=180)
+        req = sorted({int(p) for p in (extra or {}).get(name) or [] if 1 <= int(p) <= n})
+        for p in req:
+            subprocess.run(["pdftoppm", "-f", str(p), "-l", str(p), "-r", "200", "-jpeg", "-jpegopt", "quality=88", "-singlefile", path,
+                            os.path.join(root, "render", f"{name}_p{p}")], capture_output=True, timeout=180)
+            with open(os.path.join(root, "pages", f"{name}_p{p}.txt"), "w", encoding="utf-8") as f:
+                f.write("=== layout ===\n" + pages[p - 1][1] + "\n=== raw ===\n" + pages[p - 1][0])
         man["files"].append({"name": name, "pages": n, "sections": loc, "chart_images": chart_imgs,
+                             "table_renders": table_pages, "requested_pages": req,
                              "text_chars": sum(len(r.strip()) for r in raw[:n])})
     with open(os.path.join(root, "manifest.json"), "w", encoding="utf-8") as f:
         json.dump(man, f, ensure_ascii=False, indent=1)
