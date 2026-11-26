@@ -26,7 +26,7 @@ permissions:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 300
+    timeout-minutes: 350
     steps:
       - uses: actions/checkout@v5
       - name: Revach (site data, read only)
@@ -44,7 +44,9 @@ jobs:
         env:
           T: ${{ secrets.REVACH_TOKEN }}
         run: |
-          git clone --quiet --depth 1 --branch work-packs "https://x-access-token:${T}@github.com/Revach123/Revach.git" wp \
+          # רק ה-manifest של כל חבילה (לדעת מה כבר נבנה) - לא כל התמונות (כמה GB)
+          git clone --quiet --depth 1 --filter=blob:none --sparse --branch work-packs "https://x-access-token:${T}@github.com/Revach123/Revach.git" wp \
+            && (cd wp && git sparse-checkout set --no-cone 'packs/*/manifest.json' README.md) \
             || { git init -q wp && cd wp && git checkout -q --orphan work-packs && mkdir -p packs \
                  && git remote add origin "https://x-access-token:${T}@github.com/Revach123/Revach.git"; }
       - uses: actions/setup-python@v6
@@ -53,7 +55,7 @@ jobs:
       - run: |
           pip install requests pypdf pillow --break-system-packages
           sudo apt-get install -y -qq poppler-utils >/dev/null
-      - name: Build packs
+      - name: Build and push packs (every 50 - a long run that hits the time limit keeps what it built)
         working-directory: scripts/company_ownership
         env:
           GEMINI_API_KEY: "unused"
@@ -61,22 +63,36 @@ jobs:
           CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
           CF_D1_TOKEN: ${{ secrets.CF_D1_TOKEN }}
           CF_DATABASE_ID: c1d082fc-c125-4f62-8b33-9b62d5bda2da   # company-info-db (company_views)
+          N: ${{ github.event.inputs.n || '20' }}
+          REPORTS: ${{ github.event.inputs.reports }}
         run: |
           mkdir -p ../../wp/packs
-          python work_pack_queue.py --n "${{ github.event.inputs.n || '20' }}" --reports "${{ github.event.inputs.reports }}" \
-            --packs-dir ../../wp/packs --indices ../../revach/data/indices/by-company.json \
-            --site ../../revach/data/holdings/extracted_subsidiaries.json --maya ../../revach/data/registry/maya_companies_full.json
-      - name: Push packs
-        working-directory: wp
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add packs
-          if git diff --cached --quiet; then echo "No new packs."; exit 0; fi
-          git commit -q -m "work packs: $(git diff --cached --name-only | grep -c manifest.json) reports"
-          for i in 1 2 3 4 5; do
-            if git push -q origin HEAD:work-packs; then exit 0; fi
-            git pull -q --rebase origin work-packs || true
-            sleep $((i * 5))
+          cd ../../wp && git config user.name "github-actions[bot]" && git config user.email "github-actions[bot]@users.noreply.github.com" && cd -
+          push() {
+            ( cd ../../wp
+              git add --sparse packs
+              if git diff --cached --quiet; then echo "No new packs."; return 0; fi
+              git commit -q -m "work packs: $(git diff --cached --name-only | grep -c manifest.json) reports"
+              for i in 1 2 3 4 5; do
+                if git push -q origin HEAD:work-packs; then return 0; fi
+                git pull -q --rebase origin work-packs || true
+                sleep $((i * 5))
+              done
+              return 1 )
+          }
+          args="--packs-dir ../../wp/packs --indices ../../revach/data/indices/by-company.json \
+            --site ../../revach/data/holdings/extracted_subsidiaries.json --maya ../../revach/data/registry/maya_companies_full.json"
+          if [ -n "$REPORTS" ]; then
+            python work_pack_queue.py --n "$N" --reports "$REPORTS" $args
+            push; exit $?
+          fi
+          left=$N
+          while [ "$left" -gt 0 ]; do
+            step=$(( left < 50 ? left : 50 ))
+            before=$(ls ../../wp/packs | wc -l)
+            python work_pack_queue.py --n "$step" $args
+            push || exit 1
+            built=$(( $(ls ../../wp/packs | wc -l) - before ))
+            [ "$built" -le 0 ] && { echo "Queue empty."; break; }
+            left=$(( left - step ))
           done
-          exit 1

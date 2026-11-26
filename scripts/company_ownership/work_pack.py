@@ -134,11 +134,40 @@ def doc_kind(title, man):
     return "periodic"
 
 
+
+IMG_MAX_PNG = 1_500_000      # PNG גדול מזה (תמונת שער / צילום) -> JPEG איכותי; תרשים קטן נשאר PNG חד
+IMG_MAX_SIDE = 4000
+
+
+def save_image(src, dst_base, seen):
+    """שמירת תמונה מוטמעת בחבילה. מחזיר את הנתיב שנשמר. זהה לתמונה שכבר נשמרה (לפי hash) - מחזיר את הקודמת.
+    PNG כבד -> JPEG q90 (ובצד הארוך עד 4000 פיקסל): חבילה אחת שקלה 105MB בגלל צילומי שער ב-PNG של 34MB."""
+    import hashlib
+    from PIL import Image
+    h = hashlib.md5(open(src, "rb").read()).hexdigest()
+    if h in seen:
+        return seen[h]
+    if os.path.getsize(src) <= IMG_MAX_PNG:
+        dst = dst_base + ".png"
+        shutil.copy(src, dst)
+    else:
+        im = Image.open(src)
+        if im.mode not in ("RGB", "L"):
+            im = im.convert("RGB")
+        if max(im.size) > IMG_MAX_SIDE:
+            im.thumbnail((IMG_MAX_SIDE, IMG_MAX_SIDE), Image.LANCZOS)
+        dst = dst_base + ".jpg"
+        im.save(dst, "JPEG", quality=90, optimize=True)
+    seen[h] = dst
+    return dst
+
+
 def build_pack(rid, files, out_dir):
     """files: [(name, local_pdf_path)]."""
     root = os.path.join(out_dir, str(rid))
     for d in ("pages", "text", "images", "render"):
         os.makedirs(os.path.join(root, d), exist_ok=True)
+    seen_imgs = {}   # תמונה זהה (רקע / לוגו שחוזר בכל עמוד) נשמרת פעם אחת
     man = {"report_id": str(rid), "files": [], "built": time.strftime("%Y-%m-%d %H:%M")}
     for name, path in files:
         raw = pdftotext_pages(path, False)
@@ -177,8 +206,7 @@ def build_pack(rid, files, out_dir):
                     except Exception:
                         continue
                     if w >= 300 and h >= 150:
-                        dst = os.path.join(root, "images", f"{name}_p{p}_{k}.png")
-                        shutil.copy(fp, dst)
+                        dst = save_image(fp, os.path.join(root, "images", f"{name}_p{p}_{k}"), seen_imgs)
                         chart_imgs.append({"page": p, "file": os.path.basename(dst), "size": [w, h]})
                         k += 1
             subprocess.run(["pdftoppm", "-f", str(p), "-l", str(p), "-r", "200", "-jpeg", "-jpegopt", "quality=88", "-singlefile", path,
