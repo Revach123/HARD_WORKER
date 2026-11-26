@@ -1,6 +1,6 @@
 {
  "version": "2026-11-25",
- "definition": "חברות בת וחברות מוחזקות (entity) ונכסים/פרויקטים מוחזקים (asset) שהדוח מפרט; duplicate - שם נוסף לישות שכבר ברשימה; not_holding - לא החזקה; uncertain - לבדיקה ידנית. נבנה מאיחוד Hydrogen (עמודים רשמיים) + התהליך החדש + החילוץ הקיים, וסומן ידנית. misread - שם שנקרא שגוי מתמונה (מי שמחזיר אותו - טעות).",
+ "definition": "חברות בת וחברות מוחזקות (entity) ונכסים/פרויקטים מוחזקים (asset) שהדוח מפרט; duplicate - שם נוסף לישות שכבר ברשימה; not_holding - לא החזקה; uncertain - לבדיקה ידנית. נבנה מאיחוד Hydrogen (עמודים רשמיים) + התהליך החדש + החילוץ הקיים, וסומן ידנית. misread - שם שנקרא שגוי מתמונה (מי שמחזיר אותו - טעות). former - חוסלה / נמכרה / מוזגה לפני יום הדוח (מקומה ב-former, לא בהחזקות).",
  "reports": {
   "230": {
    "company": "בזק",
@@ -119,7 +119,8 @@
     {
      "name": "Salomon Levin and Elstein Ltd.",
      "alt_names": [
-      "Salomon Levin and Elstein Ltd. (SLE)"
+      "Salomon Levin and Elstein Ltd. (SLE)",
+      "Salomon, Levin & Elstein Ltd."
      ],
      "label": "entity",
      "type": "company",
@@ -483,13 +484,14 @@
     {
      "name": "Teva-Takeda",
      "alt_names": [],
-     "label": "entity",
+     "label": "former",
      "type": "company",
      "pct": 0,
      "page": 177,
      "found_by": [
       "P"
-     ]
+     ],
+     "note": "נמכרה ב-31.3.2025 (עמ' 7, 72, 177) - לא החזקה ליום הדוח. מי שמחזיר אותה כהחזקה - טעות"
     },
     {
      "name": "Teva-Takeda business venture",
@@ -501,6 +503,54 @@
      "found_by": [
       "O"
      ]
+    },
+    {
+     "name": "Teva Pharmaceutical Finance Netherlands II B.V.",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 184,
+     "found_by": [
+      "agent"
+     ],
+     "note": "נוסף 26/11 - אומת בדוח: Exhibits - senior notes issuer; GLEIF parent Teva"
+    },
+    {
+     "name": "Teva Pharmaceutical Finance Netherlands III B.V.",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 184,
+     "found_by": [
+      "agent"
+     ],
+     "note": "נוסף 26/11 - אומת בדוח: Exhibits - senior notes issuer; GLEIF parent Teva"
+    },
+    {
+     "name": "Teva Pharmaceutical Finance Netherlands IV B.V.",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 184,
+     "found_by": [
+      "agent"
+     ],
+     "note": "נוסף 26/11 - אומת בדוח: Exhibits - senior notes issuer; GLEIF parent Teva"
+    },
+    {
+     "name": "Teva API India Private Limited",
+     "alt_names": [],
+     "label": "entity",
+     "type": "company",
+     "pct": null,
+     "page": 153,
+     "found_by": [
+      "agent"
+     ],
+     "note": "נוסף 26/11 - אומת בדוח: \"Teva's subsidiary in India, Teva API India Private Limited\""
     }
    ]
   },
@@ -7020,6 +7070,10 @@
   {
    "date": "2026-11-26",
    "what": "מליסרון: 8 שמות שנקראו שגוי מהתרשים (Gemini) סומנו misread, 2 כפילויות אוחדו; שמות חלופיים במגדל ובדיסקונט - אומת מול תמונות התרשים וטקסט הדוח"
+  },
+  {
+   "date": "2026-11-26",
+   "what": "טבע: Teva-Takeda סומנה former (נמכרה 3/2025); נוספו 3 חברות Finance Netherlands ו-Teva API India (חברות בנות לפי הדוח); כתיב SLE"
   }
  ]
 }
