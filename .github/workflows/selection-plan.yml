@@ -1,0 +1,60 @@
+name: Holdings - rebuild report plan (no AI)
+
+# בונה מחדש את selection_plan.json (הדוח השנתי האחרון של כל חברה ממאיה) בלי ריצת Gemini.
+# הריצה היומית (test-small-batch.yml) בונה את התוכנית ואז מחלצת ב-Gemini - והיא כבויה. כאן רק התוכנית, כדי ששינויים
+# בבחירת הדוח (report_selector.py: תרגום / הודעה על הגשה ל-SEC / 20F בלי מקף) ייכנסו, ובניית החבילות תקבל את הדוח הנכון.
+
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: selection-plan
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          token: ${{ secrets.PUSH_TOKEN }}
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: pip install requests pypdf --break-system-packages
+      - name: Build report selection plan
+        working-directory: scripts/company_ownership
+        env:
+          PYTHONUNBUFFERED: "1"
+        run: |
+          cp selection_plan.json /tmp/plan_old.json
+          python report_selector.py --from-date "$(date -u -d '9 months ago' +%Y-%m-%d)" --to-date "$(date -u +%Y-%m-%d)" \
+            --out selection_plan.json
+          python - <<'EOF'
+          import json
+          o = json.load(open("/tmp/plan_old.json", encoding="utf-8"))
+          n = json.load(open("selection_plan.json", encoding="utf-8"))
+          rid = lambda e: str((e.get("snapshot") or {}).get("report_id") or "")
+          ch = [(c, e.get("company_name"), rid(o[c]), rid(e)) for c, e in n.items() if c in o and rid(o[c]) != rid(e)]
+          print(f"PLAN: {len(o)} -> {len(n)} companies; report changed for {len(ch)}; new {len(set(n) - set(o))}; dropped {len(set(o) - set(n))}")
+          for c, name, a, b in ch[:60]:
+              print(f"  {name}: {a} -> {b}")
+          EOF
+      - name: Commit plan
+        working-directory: scripts/company_ownership
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add selection_plan.json
+          if git diff --cached --quiet; then echo "Plan unchanged."; exit 0; fi
+          git commit -q -m "auto: selection plan rebuilt (no AI) [skip ci]"
+          for i in 1 2 3 4; do
+            git push -q && exit 0
+            git pull -q --rebase origin main || true
+            sleep $((i * 5))
+          done
+          exit 1
