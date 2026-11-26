@@ -2,7 +2,7 @@
 """
 work_pack_queue.py - בוחר את הדוחות הבאים לסוכן ובונה להם חבילות עבודה (work_pack.build_pack). בלי AI.
 
-סדר עדיפות: ת"א-35, אחר כך ת"א-90 (= שאר ת"א-125 - ת"א-125 כולל את ת"א-35 ואת ת"א-90), אחר כך חברות שבמדד מניות כלשהו
+סדר עדיפות: חברות שחיפשו באתר ב-30 הימים האחרונים (לפי מספר הצפיות, טבלת company_views), אחר כך ת"א-35, אחר כך ת"א-90 (= שאר ת"א-125 - ת"א-125 כולל את ת"א-35 ואת ת"א-90), אחר כך חברות שבמדד מניות כלשהו
 אחר, ואז השאר; בתוך כל קבוצה - חברות עם יותר חברות מוחזקות באתר היום
 קודם (מבנה מורכב = יותר מה לתקן). דוח שכבר יש לו חבילה (בענף work-packs) - מדלגים.
 
@@ -40,10 +40,32 @@ def cid_to_hp(maya_path=""):
     return out
 
 
+def view_counts(days=30):
+    """צפיות בכרטיסי החברות באתר ב-N הימים האחרונים (טבלת company_views ב-company-info-db) - {ח.פ: צפיות}.
+    דרך Cloudflare D1 HTTP API (CF_ACCOUNT_ID, CF_D1_TOKEN, CF_DATABASE_ID). בלי הגדרות / תקלה - מילון ריק."""
+    acc, tok, dbid = (os.environ.get(k, "").strip() for k in ("CF_ACCOUNT_ID", "CF_D1_TOKEN", "CF_DATABASE_ID"))
+    if not (acc and tok and dbid):
+        print("VIEWS: אין הגדרות D1 - בלי צפיות")
+        return {}
+    import requests
+    sql = ("SELECT hp, SUM(n) AS n FROM company_views WHERE day >= date('now', ?) GROUP BY hp")
+    try:
+        r = requests.post(f"https://api.cloudflare.com/client/v4/accounts/{acc}/d1/database/{dbid}/query",
+                          headers={"Authorization": f"Bearer {tok}"}, json={"sql": sql, "params": [f"-{days} day"]}, timeout=60)
+        rows = (r.json().get("result") or [{}])[0].get("results") or []
+        out = {str(x["hp"]).lstrip("0"): int(x["n"]) for x in rows}
+        print(f"VIEWS: {len(out)} חברות נצפו ב-{days} הימים האחרונים")
+        return out
+    except Exception as e:
+        print(f"VIEWS: שגיאה ({type(e).__name__}) - בלי צפיות")
+        return {}
+
+
 def priorities(plan, indices_path, site_path, maya_path=""):
     idx = json.load(open(indices_path, encoding="utf-8")).get("companies", {}) if os.path.exists(indices_path) else {}
     site = json.load(open(site_path, encoding="utf-8")).get("parents", {}) if os.path.exists(site_path) else {}
     c2h = cid_to_hp(maya_path)
+    views = view_counts()
     rows = []
     for cid, e in plan.items():
         s = e.get("snapshot")
@@ -54,9 +76,11 @@ def priorities(plan, indices_path, site_path, maya_path=""):
         names = {i.get("name") for i in ind}
         tier = min([t for n, t in TOP if n in names] or [2 if any(i.get("assetClass") == "equity" for i in ind) else 3])
         kids = len((site.get(hp) or {}).get("children", [])) if hp else 0
+        v = views.get(hp or "", 0)
         rows.append({"report_id": str(s["report_id"]), "cid": str(cid), "hp": hp, "company": e.get("company_name"),
-                     "tier": tier, "kids": kids, "publish_date": s.get("publish_date")})
-    rows.sort(key=lambda r: (r["tier"], -r["kids"], r["publish_date"] or ""))
+                     "tier": -1 if v else tier, "views": v, "kids": kids, "publish_date": s.get("publish_date")})
+    # חברות שחיפשו באתר - קודם (לפי מספר הצפיות), ואז לפי המדדים; בתוך קבוצה - יותר חברות מוחזקות קודם
+    rows.sort(key=lambda r: (r["tier"], -r["views"], -r["kids"], r["publish_date"] or ""))
     for i, r in enumerate(rows):
         r["priority"] = i + 1
     return rows

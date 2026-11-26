@@ -58,6 +58,9 @@ jobs:
         env:
           GEMINI_API_KEY: "unused"
           PYTHONUNBUFFERED: "1"
+          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          CF_D1_TOKEN: ${{ secrets.CF_D1_TOKEN }}
+          CF_DATABASE_ID: ${{ vars.CF_DATABASE_ID || secrets.CF_DATABASE_ID }}   # company-info-db (company_views)
         run: |
           mkdir -p ../../wp/packs
           python work_pack_queue.py --n "${{ github.event.inputs.n || '20' }}" --reports "${{ github.event.inputs.reports }}" \
