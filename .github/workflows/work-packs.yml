@@ -11,6 +11,10 @@ on:
         description: "כמה חבילות חדשות לבנות"
         required: false
         default: "20"
+      rebuild_old:
+        description: "קודם לבנות מחדש חבילות מגרסה ישנה של הבונה (true/false)"
+        required: false
+        default: "true"
       reports:
         description: "report_id מסוימים (מופרדים בפסיק) - במקום סדר העדיפות"
         required: false
@@ -111,6 +115,15 @@ jobs:
           if [ -n "$REPORTS" ]; then
             python work_pack_queue.py --n "$N" --reports "$REPORTS" $args
             push; exit $?
+          fi
+          # חבילות מגרסה ישנה של הבונה - קודם (בלי תרשימים וקטוריים / תמונות טבלאות)
+          if [ "${{ github.event.inputs.rebuild_old || 'true' }}" = "true" ]; then
+            for round in $(seq 1 20); do
+              python work_pack_queue.py --n 50 --rebuild-old $args | tee /tmp/rb.txt
+              push || exit 1
+              k=$(grep -oE "REBUILD: [0-9]+" /tmp/rb.txt | grep -oE "[0-9]+")
+              [ "${k:-0}" -lt 50 ] && break      # סבב אחרון (חבילה שלא ירדה נשארת ישנה - לא לולאה אינסופית)
+            done
           fi
           left=$N
           while [ "$left" -gt 0 ]; do

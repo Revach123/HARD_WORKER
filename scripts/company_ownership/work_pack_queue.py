@@ -146,6 +146,8 @@ def main():
     ap.add_argument("--indices", default="")
     ap.add_argument("--site", default="")
     ap.add_argument("--maya", default="", help="data/registry/maya_companies_full.json")
+    ap.add_argument("--rebuild-old", action="store_true",
+                    help="לבנות מחדש חבילות שנבנו בגרסה ישנה (בלי table_renders: בלי תרשימים וקטוריים ותמונות טבלאות), לפני חדשות")
     ap.add_argument("--requests-dir", default="", help="pack-requests/ מענף agent-results: עמודים שסוכן ביקש להוסיף לחבילה")
     ap.add_argument("--done-requests", default="", help="קובץ פלט: רשימת report_id שהבקשות שלהם טופלו")
     a = ap.parse_args()
@@ -169,6 +171,15 @@ def main():
         # בקשות של סוכנים קודמות לתור: בונים מחדש את החבילה עם העמודים שביקשו
         todo = [r for r in rows if r["report_id"] in extra]
         print(f"REQUESTS: {len(todo)} חבילות לבנייה מחדש עם עמודים שהתבקשו")
+    elif a.rebuild_old:
+        def old(rid):
+            try:
+                m = json.load(open(os.path.join(a.packs_dir, rid, "manifest.json"), encoding="utf-8"))
+            except (OSError, ValueError):
+                return False
+            return any("table_renders" not in f for f in m.get("files") or [])
+        todo = [r for r in rows if r["report_id"] in done and old(r["report_id"])][:a.n]
+        print(f"REBUILD: {len(todo)} חבילות מגרסה ישנה נבנות מחדש")
     elif a.reports:
         want = [r.strip() for r in a.reports.split(",") if r.strip()]
         todo = [r for r in rows if r["report_id"] in want]
