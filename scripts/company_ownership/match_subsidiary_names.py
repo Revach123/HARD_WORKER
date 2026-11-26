@@ -157,6 +157,40 @@ def _get_json(url, params, max_retries=3):
     raise SearchTemporaryError(f"{url} נכשל אחרי {max_retries} ניסיונות: {last}")
 
 
+# --- החלק בסוגריים מבדיל בין חברות אחיות ("מגדל שוקי הון (1965)" מול "(שירותי ניהול)") - זהה ל-functions/api/match.js ---
+SOFT_PAREN = re.compile(r"""^\s*(?:["“”'].*|\d|\*+|שותפות(?:\s+(?:רשומה|מוגבלת|כללית))?|ש\.?\s*ר\.?|ש\.?\s*מ\.?|ל\.?\s*ר\.?|"""
+                        r"""בפירוק.*|לשעבר.*|להלן.*|ראו?\s.*|[A-Za-z][A-Za-z0-9 .,'&-]*)\s*$""")
+
+
+def paren_keys(s):
+    out = []
+    for p in re.findall(r"\(([^)]*)\)", str(s or "")):
+        p = p.strip()
+        if not p or SOFT_PAREN.match(p):
+            continue
+        out.append(re.sub(r"^ה", "", re.sub(r"[\"'\u05f4\u05f3.\-\s]", "", p)))
+    return sorted(out)
+
+
+def _nearly_same(a, b):
+    if a == b:
+        return True
+    if a.isdigit() and b.isdigit() and min(len(a), len(b)) >= 2 and (a.endswith(b) or b.endswith(a)):
+        return True     # (93) = (1993)
+    L = max(len(a), len(b))
+    return not L or levenshtein(a, b) / L <= 0.2
+
+
+def paren_conflict(name, reg_name):
+    """'hard' - תוכן סוגריים שונה בשני הצדדים; 'soft' - לשם יש שנה / מספר ולמרשם אין סוגריים; None - אין סתירה."""
+    a, b = paren_keys(name), paren_keys(reg_name)
+    if not a:
+        return None
+    if not b:
+        return "soft" if any(re.search(r"\d", x) for x in a) else None
+    return None if all(any(_nearly_same(x, y) for y in b) for x in a) else "hard"
+
+
 def match_exact(name):
     """exact דרך /api/match. שולח שם גולמי (נרמול server-side).
     מחזיר {kind,id,name,confidence:'exact'} או None."""
@@ -177,6 +211,7 @@ def match_fuzzy(name):
         rn = normalize(r.get("name"))
         if rn != target and is_close(target, rn):
             fuzzy.append(r)
+    fuzzy = [r for r in fuzzy if not paren_conflict(name, r.get("name"))]   # התאמה מקורבת + סוגריים לא תואמים - לא מחברים
     if len(fuzzy) == 1:
         m = fuzzy[0]
         return {"kind": m.get("kind"), "id": m.get("id"),
