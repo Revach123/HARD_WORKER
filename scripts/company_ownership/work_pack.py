@@ -88,7 +88,9 @@ def locate(pages):
             sec["reg12"].add(i)
         if REG26.search(headb):
             sec["reg26"].add(i)
-        if CHART.search(t) and (ent >= 3 or len(raw.strip()) < 400):
+        # כותרת תרשים בראש העמוד - עמוד תרשים גם כשיש בו עוד טקסט (דיסקונט עמ' 303: "תרשים מבנה האחזקות של בנק דיסקונט"
+        # ואחריו פרק על השליטה בבנק; התרשים יכול להיות וקטורי - בלי תמונה מוטמעת)
+        if CHART.search(t) and (ent >= 3 or len(raw.strip()) < 400 or CHART.search(headb)):
             sec["charts"].add(i)
         nums = len(re.findall(r"(?<![\d.,])(?:100(?:\.0+)?|[1-9]\d(?:\.\d+)?)(?![\d,])", t))   # טבלת אחוזים בלי % ליד כל מספר
         if NOTE.search(t) and ent >= 5 and (pct >= 3 or ("%" in t and nums >= 8)):
