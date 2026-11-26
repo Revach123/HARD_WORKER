@@ -108,6 +108,10 @@ def build_snapshot_index(from_date: date, to_date: date) -> dict:
                     "pdf_url": pdf_url,
                     "pdf_size": pdf_size,
                     "extra_pdfs": mrc.extra_pdfs(r),
+                    # קבצים שאינם PDF (iXBRL / HTML - בזק, ג'נריישן קפיטל: הדוח עצמו לא ב-PDF, ה-PDF הוא נספח)
+                    "other_files": [{"url": mrc.MAYA_FILES_BASE_URL + a["url"], "type": a.get("fileType"),
+                                     "size": a.get("fileSize")}
+                                    for a in r.get("attachments") or [] if not str(a.get("fileType") or "").startswith("pdf")],
                 }
 
     print(f"  {len(best_by_company)} חברות עם דוח סיכום.")

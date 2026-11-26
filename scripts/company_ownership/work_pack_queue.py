@@ -10,7 +10,9 @@ work_pack_queue.py - בוחר את הדוחות הבאים לסוכן ובונה
                                  --site ../../revach/data/holdings/extracted_subsidiaries.json [--reports 1730567,...]
 """
 import argparse
+import io
 import json
+import re
 import os
 import sys
 import tempfile
@@ -38,6 +40,45 @@ def cid_to_hp(maya_path=""):
         if r.get("parent_hp") and r.get("parent_ch_p"):
             out.setdefault(str(r["parent_hp"]), str(r["parent_ch_p"]).lstrip("0"))
     return out
+
+
+def html_to_pdf(url, base):
+    """הורדת קובץ HTML / XHTML (או zip שבתוכו HTML) של דוח והמרה ל-PDF ב-Chrome headless. None אם לא הצליח."""
+    import glob
+    import shutil
+    import subprocess
+    import zipfile
+    import maya_reports_client as mrc
+    try:
+        data = mrc.download_report_file(url)
+    except Exception as ex:
+        print(f"  HTML: הורדה נכשלה ({type(ex).__name__}): {url}")
+        return None
+    os.makedirs(base, exist_ok=True)
+    src = os.path.join(base, "doc")
+    if data[:2] == b"PK":
+        with zipfile.ZipFile(io.BytesIO(data)) as z:
+            z.extractall(base)
+        cands = sorted(glob.glob(os.path.join(base, "**", "*.*htm*"), recursive=True), key=os.path.getsize, reverse=True)
+        if not cands:
+            print(f"  HTML: אין קובץ HTML ב-zip: {url}")
+            return None
+        src = cands[0]
+    else:
+        src += ".html"
+        open(src, "wb").write(data)
+    chrome = next((c for c in ("google-chrome", "chromium", "chromium-browser") if shutil.which(c)), None)
+    if not chrome:
+        print("  HTML: אין Chrome להמרה")
+        return None
+    out = base + ".pdf"
+    subprocess.run([chrome, "--headless", "--no-sandbox", "--disable-gpu", f"--print-to-pdf={out}", "--no-pdf-header-footer",
+                    "file://" + os.path.abspath(src)], capture_output=True, timeout=600)
+    if os.path.exists(out) and os.path.getsize(out) > 0:
+        print(f"  HTML -> PDF: {os.path.basename(src)} ({os.path.getsize(out) // 1024} KB)")
+        return out
+    print(f"  HTML: ההמרה נכשלה: {url}")
+    return None
 
 
 def view_counts(half_life_days=30):
@@ -121,6 +162,7 @@ def main():
     for r in todo:
         e = by_cid[r["cid"]]
         urls = [e["snapshot"]["pdf_url"]] + list(e["snapshot"].get("extra_pdfs") or [])
+        html_urls = {}
         with tempfile.TemporaryDirectory() as td:
             files = []
             for i, u in enumerate(urls):
@@ -136,6 +178,15 @@ def main():
                 if os.path.exists(local) and os.path.getsize(local) > 0:
                     files.append((f"{r['report_id']}_{i}", local))
                 time.sleep(5)
+            # דוח ב-iXBRL / HTML: ה-PDF הוא רק נספח (בזק - עבודת EY, 36 עמ'). ממירים את ה-HTML ל-PDF (Chrome headless)
+            # ומוסיפים כקובץ נוסף בחבילה - כך יש טקסט, עמודים ותמונות כמו בכל דוח
+            for j, o in enumerate(e["snapshot"].get("other_files") or []):
+                if not re.search(r"x?html?|xbrl|zip", str(o.get("type") or "") + " " + o["url"], re.I):
+                    continue
+                pdf = html_to_pdf(o["url"], os.path.join(td, f"{r['report_id']}_h{j}"))
+                if pdf:
+                    files.append((f"{r['report_id']}_h{j}", pdf))
+                    html_urls[f"{r['report_id']}_h{j}"] = o["url"]
             if not files:
                 print(f"  {r['report_id']} ({r['company']}): אף קובץ לא ירד - מדלג")
                 continue
@@ -143,7 +194,7 @@ def main():
         man.update({"title": e["snapshot"].get("title"), "doc_kind": wp.doc_kind(e["snapshot"].get("title"), man)})
         man.update({"company": r["company"], "company_id": r["cid"], "hp": r["hp"], "publish_date": r["publish_date"],
                     "priority": r["priority"], "index_tier": r["tier"],
-                    "urls": {f"{r['report_id']}_{i}": u for i, u in enumerate(urls)}})
+                    "urls": {**{f"{r['report_id']}_{i}": u for i, u in enumerate(urls)}, **html_urls}})
         with open(os.path.join(a.packs_dir, r["report_id"], "manifest.json"), "w", encoding="utf-8") as f:
             json.dump(man, f, ensure_ascii=False, indent=1)
         print(f"PACK {r['report_id']} ({r['company']}) priority {r['priority']}: " + "; ".join(
