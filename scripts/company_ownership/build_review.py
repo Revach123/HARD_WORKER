@@ -47,6 +47,26 @@ def cid_to_hp(maya_path):
             for c in (d if isinstance(d, list) else d.get("companies") or []) if c.get("companyId") and c.get("corporateNo")}
 
 
+def validate(script, res_path, pack_dir):
+    """validate_result.py על התוצאה מול החבילה: {"ok", "errors"}. None - אין חבילה לבדיקה."""
+    import contextlib
+    import importlib.util
+    import io
+    if not os.path.exists(os.path.join(pack_dir, "manifest.json")):
+        return None
+    spec = importlib.util.spec_from_file_location("validate_result", script)
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    buf = io.StringIO()
+    try:
+        with contextlib.redirect_stdout(buf):
+            rc = mod.main(res_path, pack_dir)
+    except Exception as e:  # noqa: BLE001 - בדיקה שקרסה = לא עברה
+        return {"ok": False, "errors": [f"הבדיקה נכשלה: {type(e).__name__}: {e}"[:200]]}
+    errs = [x[len("שגיאה: "):][:200] for x in buf.getvalue().splitlines() if x.startswith("שגיאה:")]
+    return {"ok": rc == 0, "errors": errs[:6], "n_errors": len(errs)}
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--results", required=True, help="תיקיית results מענף agent-results")
@@ -54,6 +74,8 @@ def main():
     ap.add_argument("--maya", default="")
     ap.add_argument("--packs", default="", help="תיקיית packs (לח.פ / שם החברה מה-manifest)")
     ap.add_argument("--out", required=True)
+    ap.add_argument("--redo-dir", default="", help="redo/ מענף agent-results - דוח שממתין להרצה חוזרת לא נכנס לרשימה")
+    ap.add_argument("--validator", default="", help="validate_result.py (מאגר Revach) - תוצאה שלא עברה: בלי כניסה אוטומטית")
     ap.add_argument("--registry-fixes", default="registry_fixes.json",
                     help="קישורים לרשם החברות שנמצאו חשודים (סוגריים סותרים / התאמה מקורבת) - שאלות לאישור")
     a = ap.parse_args()
@@ -61,9 +83,13 @@ def main():
     c2h = cid_to_hp(a.maya) if a.maya else {}
     os.makedirs(a.out, exist_ok=True)
     reports = []
+    redo = {x[:-5] for x in os.listdir(a.redo_dir) if x.endswith(".json")} if a.redo_dir and os.path.isdir(a.redo_dir) else set()
     for f in sorted(glob.glob(os.path.join(a.results, "*.json"))):
         d = json.load(open(f, encoding="utf-8"))
         rid = str(d.get("report_id") or os.path.basename(f)[:-5])
+        if rid in redo:
+            print(f"  {rid}: ממתין להרצה חוזרת (redo) - לא ברשימה")
+            continue
         man = {}
         if a.packs and os.path.exists(os.path.join(a.packs, rid, "manifest.json")):
             man = json.load(open(os.path.join(a.packs, rid, "manifest.json"), encoding="utf-8"))
@@ -118,10 +144,21 @@ def main():
                 q["image"] = None
             q["item_id"] = f"{rid}:{q.get('id')}"
             qs.append(q)
+        val = validate(a.validator, f, os.path.join(a.packs, rid)) if a.validator and a.packs else None
+        auto, gated = [], []
+        for c in changes:
+            if c["change"] != "remove" and not c.get("verified", True):
+                continue                                   # unverified - נכנס רק אחרי תשובה לשאלה
+            if val is not None and not val["ok"]:
+                gated.append({**c, "gate": "validation"})  # התוצאה לא עברה את validate_result.py
+            elif c["change"] == "remove" and not c.get("reason"):
+                gated.append({**c, "gate": "no_reason"})   # הסרה בלי סיבה בדוח (מיזוג / מכירה / חיסול) - רק באישור
+            else:
+                auto.append(c)
         reports.append({"report_id": rid, "company": d.get("company") or man.get("company"), "hp": hp,
                         "report_date": d.get("report_date"), "publish_date": man.get("publish_date"),
-                        "holdings": len(holds), "current": len(cur),
-                        "verified_changes": [c for c in changes if c.get("verified", True) or c["change"] == "remove"],
+                        "holdings": len(holds), "current": len(cur), "validation": val,
+                        "verified_changes": auto, "gated_changes": gated,
                         "unverified": [c for c in changes if not c.get("verified", True) and c["change"] != "remove"],
                         "questions": qs, "disagreements": d.get("disagreements") or [],
                         "item_id": f"{rid}:company"})
@@ -131,14 +168,16 @@ def main():
             q["item_id"] = f"registry:{q['id']}"
         if regs:
             reports.append({"report_id": "registry", "company": "קישורים לרשם החברות", "hp": None, "holdings": 0, "current": 0,
-                            "verified_changes": [], "unverified": [], "questions": regs, "disagreements": [],
+                            "verified_changes": [], "gated_changes": [], "unverified": [], "questions": regs, "disagreements": [],
                             "item_id": "registry:company"})
     out = {"built": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="minutes"), "reports": reports}
     with open(os.path.join(a.out, "pending.json"), "w", encoding="utf-8") as fo:
         json.dump(out, fo, ensure_ascii=False, indent=1)
     nq = sum(len(r["questions"]) for r in reports)
     nv = sum(len(r["verified_changes"]) for r in reports)
-    print(f"REVIEW {len(reports)} דוחות: {nv} שינויים מאומתים, {nq} שאלות")
+    ng = sum(len(r.get("gated_changes") or []) for r in reports)
+    nf = sum(1 for r in reports if r.get("validation") and not r["validation"]["ok"])
+    print(f"REVIEW {len(reports)} דוחות: {nv} שינויים אוטומטיים, {ng} ממתינים לאישור ({nf} דוחות לא עברו בדיקה), {nq} שאלות")
 
 
 if __name__ == "__main__":

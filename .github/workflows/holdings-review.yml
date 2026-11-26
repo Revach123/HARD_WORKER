@@ -34,6 +34,7 @@ jobs:
             data/holdings
             data/registry/maya_companies_full.json
             scripts/registry
+            scripts/company_ownership/agent/validate_result.py
           sparse-checkout-cone-mode: false
       - name: Agent results + work packs manifests
         env:
@@ -41,8 +42,9 @@ jobs:
         run: |
           git clone -q --depth 1 --branch agent-results "https://x-access-token:${T}@github.com/Revach123/Revach.git" ar \
             || { echo "No agent-results branch yet."; mkdir -p ar/results; }
+          # לבדיקת השלמות (validate_result.py): manifest + טקסט + עמודי החלקים, בלי תמונות
           git clone -q --depth 1 --filter=blob:none --sparse --branch work-packs "https://x-access-token:${T}@github.com/Revach123/Revach.git" wp \
-            && (cd wp && git sparse-checkout set --no-cone 'packs/*/manifest.json') || mkdir -p wp/packs
+            && (cd wp && git sparse-checkout set --no-cone 'packs/*/manifest.json' 'packs/*/text/*' 'packs/*/pages/*') || mkdir -p wp/packs
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
@@ -52,7 +54,8 @@ jobs:
           cp ../../revach/data/holdings/review/pending.json /tmp/pending_old.json 2>/dev/null || echo '{}' > /tmp/pending_old.json
           rm -rf ../../revach/data/holdings/review
           python build_review.py --results ../../ar/results --site ../../revach/data/holdings/extracted_subsidiaries.json \
-            --maya ../../revach/data/registry/maya_companies_full.json --packs ../../wp/packs --out ../../revach/data/holdings/review
+            --maya ../../revach/data/registry/maya_companies_full.json --packs ../../wp/packs --out ../../revach/data/holdings/review \
+            --redo-dir ../../ar/redo --validator ../../revach/scripts/company_ownership/agent/validate_result.py
       - name: Push to site
         working-directory: revach
         run: |
