@@ -140,6 +140,7 @@ def main():
                 print(f"  {r['report_id']} ({r['company']}): אף קובץ לא ירד - מדלג")
                 continue
             man = wp.build_pack(r["report_id"], files, a.packs_dir)
+        man.update({"title": e["snapshot"].get("title"), "doc_kind": wp.doc_kind(e["snapshot"].get("title"), man)})
         man.update({"company": r["company"], "company_id": r["cid"], "hp": r["hp"], "publish_date": r["publish_date"],
                     "priority": r["priority"], "index_tier": r["tier"],
                     "urls": {f"{r['report_id']}_{i}": u for i, u in enumerate(urls)}})

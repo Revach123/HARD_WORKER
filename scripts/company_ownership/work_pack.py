@@ -48,7 +48,8 @@ ENT = re.compile(r'בע"?מ|בע״מ|שותפות|\bLtd\b|\bLimited\b|\bLLC\b|\b
 REG11 = re.compile(r"תקנה\s*:?\s*11\b|11\s*:?\s*תקנה|רשימת\s+(?:ה)?השקעות\s+בחברות|השקעות\s+בחברות[- ]בת\s+ובחברות\s+כלולות", re.I)
 REG12 = re.compile(r"תקנה\s*:?\s*12\b|12\s*:?\s*תקנה|שינויים\s+בהשקעות\s+בחברות", re.I)
 REG26 = re.compile(r"תקנה\s*:?\s*26\b|26\s*:?\s*תקנה|הדירקטורים\s+של\s+התאגיד", re.I)
-CHART = re.compile(r"(?:תרשים|מבנה)\s+(?:ה)?(?:[אה]חזקות|החזקות|אחזקות|הקבוצה|התאגיד)|תרשים\s+מבנה|"
+# "תרשים חברות מוחזקות עיקריות" (לאומי), "תרשים ההחזקות", "תרשים מבנה" - כל "תרשים" שאחריו מילה על החזקות / חברות / הקבוצה
+CHART = re.compile(r"(?:תרשים|מבנה)\s+(?:ה)?(?:[אה]חזקות|החזקות|אחזקות|הקבוצה|התאגיד|חברות|השקעות)|תרשים\s+מבנה|"
                    r"Organi[sz]ational\s+(?:Structure|chart)|Holding\s+structure|Group\s+structure|Structure\s+chart", re.I)
 NOTE = re.compile(r"חברות\s+מאוחדות|חברות\s+בנות\s+מהותיות|חברות\s+מוחזקות|ישויות\s+הקבוצה|השקע(?:ה|ות)\s+בחברות\s+(?:מוחזקות|כלולות|בנות)|"
                   r"חברות\s+כלולות|פירוט\s+החברות|Principal\s+subsidiaries|Significant\s+subsidiaries|Investments?\s+in\s+(?:subsidiaries|investees|associates)", re.I)
@@ -112,6 +113,25 @@ def locate(pages):
     return {k: sorted(p + 1 for p in v) for k, v in sec.items()}
 
 
+SEC_FORM = re.compile(r"\b(?:20|10)[- ]?[FK]\b|\bF[- ]?20\b|\b6[- ]?K\b|Form\s+(?:20|10|6)", re.I)
+TRANSL = re.compile(r"translation|תרגום", re.I)
+
+
+def doc_kind(title, man):
+    """סוג המסמך שבחבילה, לסוכן:
+      "translation"  - תרגום (בדרך כלל חלקי) ולא הדוח המקורי (או.פי.סי: "Unofficial English translation of certain sections")
+      "sec_notice"   - הודעה בלבד על הגשה ל-SEC (20-F / 10-K / 6-K), בלי רשימת החברות - הרשימה מ-EDGAR (Exhibit 8 / 21)
+      "sec_filing"   - הטופס עצמו (20-F / 10-K) - רשימת החברות ב-Exhibit 8 / 21, לרוב רק הפניה אליו
+      "periodic"     - דוח תקופתי רגיל"""
+    t = title or ""
+    pages = sum(f.get("pages") or 0 for f in man.get("files") or [])
+    if TRANSL.search(t):
+        return "translation"
+    if SEC_FORM.search(t):
+        return "sec_notice" if pages <= 15 else "sec_filing"
+    return "periodic"
+
+
 def build_pack(rid, files, out_dir):
     """files: [(name, local_pdf_path)]."""
     root = os.path.join(out_dir, str(rid))
@@ -129,7 +149,9 @@ def build_pack(rid, files, out_dir):
         big = {p for p, _, w, h in imgs if w >= 300 and h >= 200}
         for p in big:
             raw_p = pages[p - 1][0]
-            if len(raw_p.strip()) < 600 and (p <= 40 or CHART.search(both(raw_p))):
+            # כותרת תרשים + תמונה גדולה = תרשים, גם כשבעמוד יש עוד טקסט (נספח דסק"ש במגה אור: 923 תווים, הסעיף הבא
+            # מתחיל באותו עמוד). בלי כותרת - רק עמוד כמעט ריק בתחילת הדוח
+            if CHART.search(both(raw_p)) or (len(raw_p.strip()) < 600 and p <= 40):
                 if p not in loc["charts"]:
                     loc["charts"].append(p)
         loc["charts"] = sorted(set(loc["charts"]))
@@ -195,6 +217,7 @@ def main():
                     time.sleep(5)
                 files.append((f"{rid}_{i}", local))
             man = build_pack(rid, [(n, p) for n, p in files if os.path.exists(p)], a.out)
+        man.update({"title": e["snapshot"].get("title"), "doc_kind": doc_kind(e["snapshot"].get("title"), man)})
         man.update({"company": e.get("company_name"), "company_id": cid, "publish_date": e["snapshot"].get("publish_date"),
                     "urls": {f"{rid}_{i}": u for i, u in enumerate(urls)}})
         with open(os.path.join(a.out, rid, "manifest.json"), "w", encoding="utf-8") as f:

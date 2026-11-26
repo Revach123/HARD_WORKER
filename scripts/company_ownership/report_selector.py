@@ -40,10 +40,14 @@ def _title_score(title: str) -> int:
     t = title or ""
     if "מצגת" in t:
         return -10  # אף פעם לא הדוח האמיתי - ראינו זאת מאומת (תפרון, אלקו)
+    if re.search(r"translation|תרגום", t, re.I):
+        return -5   # תרגום חלקי של הדוח (או.פי.סי: "Unofficial English translation of certain sections ... Annual Report")
     if "דוח תקופתי" in t and "ושנתי" in t:
         return 10  # ההתאמה המדויקת ביותר שראינו בפועל
-    if "20-F" in t or "10-K" in t or "Annual Report" in t:
-        return 10
+    if re.search(r"מודיע|זמין באתר|\b6[- ]?K\b", t, re.I):
+        return 3    # הודעה על הגשה ל-SEC (אלביט, נובה) - רק כשאין את הטופס עצמו
+    if re.search(r"\b(?:20|10)[- ]?[FK]\b|\bF[- ]?20\b", t, re.I) or "Annual Report" in t:
+        return 10   # גם "20F" / "F20" בלי מקף (14 חברות)
     if "דוח תקופתי" in t:
         return 5
     return 0  # לא ידוע - לא פוסל, רק לא מועדף
