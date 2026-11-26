@@ -1,0 +1,79 @@
+name: Holdings agent - work packs
+
+# חבילות עבודה לסוכן חילוץ ההחזקות (בלי AI): הורדת הדוח השנתי, מיקום החלקים (תקנה 11/12/26, תרשימים, ביאור מוחזקות,
+# Exhibit 21), טקסט ותמונות התרשימים. החבילות נדחפות לענף work-packs במאגר Revach (הפרטי). הסוכן לוקח משם.
+# סדר: ת"א-35, ת"א-125, ת"א-90, השאר. ר' scripts/company_ownership/work_pack_queue.py.
+
+on:
+  workflow_dispatch:
+    inputs:
+      n:
+        description: "כמה חבילות חדשות לבנות"
+        required: false
+        default: "20"
+      reports:
+        description: "report_id מסוימים (מופרדים בפסיק) - במקום סדר העדיפות"
+        required: false
+        default: ""
+
+concurrency:
+  group: work-packs
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v5
+      - name: Revach (site data, read only)
+        uses: actions/checkout@v5
+        with:
+          repository: Revach123/Revach
+          token: ${{ secrets.REVACH_TOKEN }}
+          path: revach
+          sparse-checkout: |
+            data/indices/by-company.json
+            data/holdings/extracted_subsidiaries.json
+            data/registry/maya_companies_full.json
+          sparse-checkout-cone-mode: false
+      - name: Revach work-packs branch
+        env:
+          T: ${{ secrets.REVACH_TOKEN }}
+        run: |
+          git clone --quiet --depth 1 --branch work-packs "https://x-access-token:${T}@github.com/Revach123/Revach.git" wp \
+            || { git init -q wp && cd wp && git checkout -q --orphan work-packs && mkdir -p packs \
+                 && git remote add origin "https://x-access-token:${T}@github.com/Revach123/Revach.git"; }
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: |
+          pip install requests pypdf pillow --break-system-packages
+          sudo apt-get install -y -qq poppler-utils >/dev/null
+      - name: Build packs
+        working-directory: scripts/company_ownership
+        env:
+          GEMINI_API_KEY: "unused"
+          PYTHONUNBUFFERED: "1"
+        run: |
+          mkdir -p ../../wp/packs
+          python work_pack_queue.py --n "${{ github.event.inputs.n || '20' }}" --reports "${{ github.event.inputs.reports }}" \
+            --packs-dir ../../wp/packs --indices ../../revach/data/indices/by-company.json \
+            --site ../../revach/data/holdings/extracted_subsidiaries.json --maya ../../revach/data/registry/maya_companies_full.json
+      - name: Push packs
+        working-directory: wp
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add packs
+          if git diff --cached --quiet; then echo "No new packs."; exit 0; fi
+          git commit -q -m "work packs: $(git diff --cached --name-only | grep -c manifest.json) reports"
+          for i in 1 2 3 4 5; do
+            if git push -q origin HEAD:work-packs; then exit 0; fi
+            git pull -q --rebase origin work-packs || true
+            sleep $((i * 5))
+          done
+          exit 1
