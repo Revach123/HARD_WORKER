@@ -140,8 +140,11 @@ def main():
             page_stats["page_in_relevant_filter"] += sent_rel
             page_stats["page_in_formal_filter"] += sent_formal
             for run, keys in got.items():
+                lab = "E" if it["label"] == "entity" else "A"
+                causes[run]["n_" + lab] += 1
                 if names & keys:
                     causes[run]["found"] += 1
+                    causes[run]["found_" + lab] += 1
                     continue
                 sent = sent_formal if run == "H-low" else sent_rel
                 if run == "control" and p0 is not None and not sent:
@@ -150,14 +153,11 @@ def main():
                     image_pages[(rep["company"], p0)] += 1
                 if p0 is None:
                     causes[run]["no_page_ref"] += 1
-                elif not sent:
-                    causes[run]["page_not_sent"] += 1
-                elif not in_text:
-                    causes[run]["image_only"] += 1
-                elif dens[p] >= 10:
-                    causes[run]["omitted_dense"] += 1
                 else:
-                    causes[run]["omitted"] += 1
+                    why = ("page_not_sent" if not sent else "image_only" if not in_text
+                           else "omitted_dense" if dens[p] >= 10 else "omitted")
+                    causes[run][why] += 1
+                    causes[run][why + "_" + lab] += 1
             a, b = bool(names & got["control"]), bool(names & got["media"])
             if a != b:
                 diff_density["dense(10+)" if dens[p] >= 10 else "sparse"] += 1
@@ -177,8 +177,9 @@ def main():
             print(f"DIAGI {comp} עמ' {p0 + 1} ({n} פריטים): {info}")
     print("DIAG פריטים: " + " ".join(f"{k}={v}" for k, v in page_stats.items()))
     for run, c in causes.items():
-        print(f"DIAG {run}: " + " ".join(f"{k}={c[k]}" for k in
-                                         ("found", "page_not_sent", "image_only", "omitted_dense", "omitted", "no_page_ref")))
+        for lab, nm in (("E", "חברות"), ("A", "נכסים")):
+            print(f"DIAG {run} {nm}: n={c['n_' + lab]} found={c['found_' + lab]} " + " ".join(
+                f"{k}={c[k + '_' + lab]}" for k in ("page_not_sent", "image_only", "omitted_dense", "omitted")))
     print("DIAG שתי ריצות זהות (control מול media): " + " ".join(f"{k}={v}" for k, v in diff_density.items()))
 
 
