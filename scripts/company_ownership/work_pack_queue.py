@@ -2,7 +2,7 @@
 """
 work_pack_queue.py - בוחר את הדוחות הבאים לסוכן ובונה להם חבילות עבודה (work_pack.build_pack). בלי AI.
 
-סדר עדיפות: חברות שחיפשו באתר ב-30 הימים האחרונים (לפי מספר הצפיות, טבלת company_views), אחר כך ת"א-35, אחר כך ת"א-90 (= שאר ת"א-125 - ת"א-125 כולל את ת"א-35 ואת ת"א-90), אחר כך חברות שבמדד מניות כלשהו
+סדר עדיפות: חברות שחיפשו באתר (ציון מכל ההיסטוריה, חיפושים אחרונים שווים יותר - טבלת company_views), אחר כך ת"א-35, אחר כך ת"א-90 (= שאר ת"א-125 - ת"א-125 כולל את ת"א-35 ואת ת"א-90), אחר כך חברות שבמדד מניות כלשהו
 אחר, ואז השאר; בתוך כל קבוצה - חברות עם יותר חברות מוחזקות באתר היום
 קודם (מבנה מורכב = יותר מה לתקן). דוח שכבר יש לו חבילה (בענף work-packs) - מדלגים.
 
@@ -40,25 +40,35 @@ def cid_to_hp(maya_path=""):
     return out
 
 
-def view_counts(days=30):
-    """צפיות בכרטיסי החברות באתר ב-N הימים האחרונים (טבלת company_views ב-company-info-db) - {ח.פ: צפיות}.
+def view_counts(half_life_days=30):
+    """ציון חיפושים לכל חברה מכל ההיסטוריה (טבלת company_views ב-company-info-db): כל צפייה נספרת, ומשקלה יורד
+    בחצי כל half_life_days ימים - חיפוש מאתמול שווה כמעט 1, מלפני חודש 0.5, מלפני שנה עדיין קצת. {ח.פ: ציון}.
     דרך Cloudflare D1 HTTP API (CF_ACCOUNT_ID, CF_D1_TOKEN, CF_DATABASE_ID). בלי הגדרות / תקלה - מילון ריק."""
     acc, tok, dbid = (os.environ.get(k, "").strip() for k in ("CF_ACCOUNT_ID", "CF_D1_TOKEN", "CF_DATABASE_ID"))
     if not (acc and tok and dbid):
         print("VIEWS: אין הגדרות D1 - בלי צפיות")
         return {}
+    import datetime
     import requests
-    sql = ("SELECT hp, SUM(n) AS n FROM company_views WHERE day >= date('now', ?) GROUP BY hp")
     try:
         r = requests.post(f"https://api.cloudflare.com/client/v4/accounts/{acc}/d1/database/{dbid}/query",
-                          headers={"Authorization": f"Bearer {tok}"}, json={"sql": sql, "params": [f"-{days} day"]}, timeout=60)
+                          headers={"Authorization": f"Bearer {tok}"},
+                          json={"sql": "SELECT hp, day, n FROM company_views"}, timeout=60)
         rows = (r.json().get("result") or [{}])[0].get("results") or []
-        out = {str(x["hp"]).lstrip("0"): int(x["n"]) for x in rows}
-        print(f"VIEWS: {len(out)} חברות נצפו ב-{days} הימים האחרונים")
-        return out
     except Exception as e:
         print(f"VIEWS: שגיאה ({type(e).__name__}) - בלי צפיות")
         return {}
+    today = datetime.date.today()
+    out = {}
+    for x in rows:
+        try:
+            age = (today - datetime.date.fromisoformat(str(x["day"]))).days
+        except ValueError:
+            continue
+        hp = str(x["hp"]).lstrip("0")
+        out[hp] = out.get(hp, 0.0) + int(x["n"]) * 0.5 ** (max(age, 0) / half_life_days)
+    print(f"VIEWS: {len(out)} חברות נצפו (כל ההיסטוריה, משקל יורד בחצי כל {half_life_days} ימים)")
+    return out
 
 
 def priorities(plan, indices_path, site_path, maya_path=""):
@@ -79,7 +89,7 @@ def priorities(plan, indices_path, site_path, maya_path=""):
         v = views.get(hp or "", 0)
         rows.append({"report_id": str(s["report_id"]), "cid": str(cid), "hp": hp, "company": e.get("company_name"),
                      "tier": -1 if v else tier, "views": v, "kids": kids, "publish_date": s.get("publish_date")})
-    # חברות שחיפשו באתר - קודם (לפי מספר הצפיות), ואז לפי המדדים; בתוך קבוצה - יותר חברות מוחזקות קודם
+    # חברות שחיפשו באתר - קודם (לפי ציון החיפושים), ואז לפי המדדים; בתוך קבוצה - יותר חברות מוחזקות קודם
     rows.sort(key=lambda r: (r["tier"], -r["views"], -r["kids"], r["publish_date"] or ""))
     for i, r in enumerate(rows):
         r["priority"] = i + 1
