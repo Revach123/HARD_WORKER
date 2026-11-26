@@ -1,0 +1,131 @@
+# -*- coding: utf-8 -*-
+"""
+build_review.py - רשימת השינויים שממתינים לאישור המנהל (בלי AI).
+
+לכל תוצאה של סוכן החילוץ (results/<report_id>.json בענף agent-results) - השוואה למה שהאתר מציג היום
+(data/holdings/extracted_subsidiaries.json):
+  verified  - שינויים שהסוכן אימת בלי ספק: חברה חדשה / חברה שתוסר / אחוז שהשתנה / חברת אם. אישור בלחיצה אחת לכל חברה.
+  questions - שאלות שהסוכן ביקש להכריע בהן: תמונת האזור בדוח, הצעה, אפשרויות נוספות.
+הפלט: <out>/pending.json + תמונות השאלות <out>/<report_id>/<qid>.jpg (מוצג בדשבורד הפענוח, extraction-dashboard.html).
+
+הרצה:  python build_review.py --results ../../ar/results --site ../../revach/data/holdings/extracted_subsidiaries.json
+                              --maya ../../revach/data/registry/maya_companies_full.json --out ../../revach/data/holdings/review
+"""
+import argparse
+import datetime
+import glob
+import json
+import os
+import re
+import shutil
+import sys
+
+LEG = r"בע\"?מ|בע״מ|\bltd\.?|\blimited\b|\binc\.?|\bllc\b|\bb\.?v\.?|\bgmbh\b|\bs\.?a\.?|\bplc\b|\bcorp\.?|\bl\.?p\.?|\bag\b|\bco\.?\b"
+
+
+def tkey(n):
+    """מפתח שם שלא תלוי בסדר המילים, בפיסוק, בצורת ההתאגדות ובכינוי המוגדר בסוגריים ("סטור")."""
+    n = str(n or "").lower().replace("״", '"').replace("׳", "'")
+    n = re.sub(r'\(\s*["“”][^()]{0,40}["“”]?\s*\)', " ", n)
+    n = re.sub(LEG, " ", n)
+    n = re.sub(r"[\"'`.,()\[\]\-–/&]", " ", n)
+    return " ".join(sorted(t for t in n.split() if t and t not in ("and", "ו")))
+
+
+def cid_to_hp(maya_path):
+    try:
+        d = json.load(open(maya_path, encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+    return {str(c["companyId"]): str(c["corporateNo"]).lstrip("0")
+            for c in (d if isinstance(d, list) else d.get("companies") or []) if c.get("companyId") and c.get("corporateNo")}
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--results", required=True, help="תיקיית results מענף agent-results")
+    ap.add_argument("--site", required=True)
+    ap.add_argument("--maya", default="")
+    ap.add_argument("--packs", default="", help="תיקיית packs (לח.פ / שם החברה מה-manifest)")
+    ap.add_argument("--out", required=True)
+    ap.add_argument("--registry-fixes", default="registry_fixes.json",
+                    help="קישורים לרשם החברות שנמצאו חשודים (סוגריים סותרים / התאמה מקורבת) - שאלות לאישור")
+    a = ap.parse_args()
+    site = json.load(open(a.site, encoding="utf-8")).get("parents", {})
+    c2h = cid_to_hp(a.maya) if a.maya else {}
+    os.makedirs(a.out, exist_ok=True)
+    reports = []
+    for f in sorted(glob.glob(os.path.join(a.results, "*.json"))):
+        d = json.load(open(f, encoding="utf-8"))
+        rid = str(d.get("report_id") or os.path.basename(f)[:-5])
+        man = {}
+        if a.packs and os.path.exists(os.path.join(a.packs, rid, "manifest.json")):
+            man = json.load(open(os.path.join(a.packs, rid, "manifest.json"), encoding="utf-8"))
+        hp = str(man.get("hp") or c2h.get(str(man.get("company_id") or "")) or d.get("hp") or "").lstrip("0") or None
+        cur = (site.get(hp) or {}).get("children", []) if hp else []
+        cur_by = {}
+        for ch in cur:
+            for n in (ch.get("name"), ch.get("raw")):
+                if n:
+                    cur_by.setdefault(tkey(n), ch)
+        holds = d.get("holdings") or []
+        seen = set()
+        changes = []
+        for h in holds:
+            keys = {tkey(x) for x in [h.get("name")] + list(h.get("alt_names") or []) if x}
+            ch = next((cur_by[k] for k in keys if k in cur_by), None)
+            if ch is not None:
+                seen.add(id(ch))
+            item = {"name": h.get("name"), "type": h.get("type"), "parent": h.get("parent"), "parent_basis": h.get("parent_basis"),
+                    "pct": h.get("pct_capital"), "page": h.get("page"), "section": h.get("section"), "evidence": h.get("evidence"),
+                    "verified": h.get("verified", True)}
+            if ch is None:
+                changes.append({**item, "change": "add"})
+            else:
+                old = ch.get("vot")
+                new = h.get("pct_capital")
+                if isinstance(old, (int, float)) and isinstance(new, (int, float)) and abs(old - new) > 0.01:
+                    changes.append({**item, "change": "pct", "old_pct": old})
+        for ch in cur:
+            if id(ch) not in seen:
+                changes.append({"name": ch.get("name"), "change": "remove", "old_pct": ch.get("vot"),
+                                "reason": next((x.get("reason") for x in d.get("former") or []
+                                                if tkey(x.get("name")) in {tkey(ch.get("name")), tkey(ch.get("raw"))}), None)})
+        qs = []
+        for q in d.get("questions") or []:
+            q = dict(q)
+            img = q.get("image")
+            src = os.path.join(a.results, rid, os.path.basename(img)) if img else ""
+            if src and os.path.exists(src):
+                os.makedirs(os.path.join(a.out, rid), exist_ok=True)
+                shutil.copy(src, os.path.join(a.out, rid, os.path.basename(img)))
+                q["image"] = f"{rid}/{os.path.basename(img)}"
+            else:
+                q["image"] = None
+            q["item_id"] = f"{rid}:{q.get('id')}"
+            qs.append(q)
+        reports.append({"report_id": rid, "company": d.get("company") or man.get("company"), "hp": hp,
+                        "report_date": d.get("report_date"), "publish_date": man.get("publish_date"),
+                        "holdings": len(holds), "current": len(cur),
+                        "verified_changes": [c for c in changes if c.get("verified", True) or c["change"] == "remove"],
+                        "unverified": [c for c in changes if not c.get("verified", True) and c["change"] != "remove"],
+                        "questions": qs, "disagreements": d.get("disagreements") or [],
+                        "item_id": f"{rid}:company"})
+    if a.registry_fixes and os.path.exists(a.registry_fixes):
+        regs = json.load(open(a.registry_fixes, encoding="utf-8"))
+        for q in regs:
+            q["item_id"] = f"registry:{q['id']}"
+        if regs:
+            reports.append({"report_id": "registry", "company": "קישורים לרשם החברות", "hp": None, "holdings": 0, "current": 0,
+                            "verified_changes": [], "unverified": [], "questions": regs, "disagreements": [],
+                            "item_id": "registry:company"})
+    out = {"built": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="minutes"), "reports": reports}
+    with open(os.path.join(a.out, "pending.json"), "w", encoding="utf-8") as fo:
+        json.dump(out, fo, ensure_ascii=False, indent=1)
+    nq = sum(len(r["questions"]) for r in reports)
+    nv = sum(len(r["verified_changes"]) for r in reports)
+    print(f"REVIEW {len(reports)} דוחות: {nv} שינויים מאומתים, {nq} שאלות")
+
+
+if __name__ == "__main__":
+    sys.exit(main())

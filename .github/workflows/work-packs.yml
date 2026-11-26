@@ -60,7 +60,7 @@ jobs:
           PYTHONUNBUFFERED: "1"
           CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
           CF_D1_TOKEN: ${{ secrets.CF_D1_TOKEN }}
-          CF_DATABASE_ID: ${{ vars.CF_DATABASE_ID || secrets.CF_DATABASE_ID }}   # company-info-db (company_views)
+          CF_DATABASE_ID: c1d082fc-c125-4f62-8b33-9b62d5bda2da   # company-info-db (company_views)
         run: |
           mkdir -p ../../wp/packs
           python work_pack_queue.py --n "${{ github.event.inputs.n || '20' }}" --reports "${{ github.event.inputs.reports }}" \

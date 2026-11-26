@@ -1,0 +1,77 @@
+name: Holdings agent - review list
+
+# רשימת השינויים שממתינים לאישור (בלי AI): תוצאות סוכן החילוץ (ענף agent-results במאגר Revach) מול מה שהאתר מציג היום.
+# הפלט נכנס ל-data/holdings/review/ באתר (pending.json + תמונות השאלות) ומוצג בדשבורד הפענוח, לשונית "ממתין לאישור".
+# כשיש פריטים חדשים - מייל מעוצב עם קישור לדשבורד. שום נתון באתר לא משתנה כאן - רק הרשימה לאישור.
+# Secrets: REVACH_TOKEN, ALERT_EMAIL, MAIL_SCRIPT_SECRET.
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 5,11,17 * * *"
+
+concurrency:
+  group: holdings-review
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+      - name: Revach main (site data)
+        uses: actions/checkout@v5
+        with:
+          repository: Revach123/Revach
+          token: ${{ secrets.REVACH_TOKEN }}
+          path: revach
+          fetch-depth: 1
+          sparse-checkout: |
+            data/holdings
+            data/registry/maya_companies_full.json
+            scripts/registry
+          sparse-checkout-cone-mode: false
+      - name: Agent results + work packs manifests
+        env:
+          T: ${{ secrets.REVACH_TOKEN }}
+        run: |
+          git clone -q --depth 1 --branch agent-results "https://x-access-token:${T}@github.com/Revach123/Revach.git" ar \
+            || { echo "No agent-results branch yet."; mkdir -p ar/results; }
+          git clone -q --depth 1 --filter=blob:none --sparse --branch work-packs "https://x-access-token:${T}@github.com/Revach123/Revach.git" wp \
+            && (cd wp && git sparse-checkout set --no-cone 'packs/*/manifest.json') || mkdir -p wp/packs
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Build review list
+        working-directory: scripts/company_ownership
+        run: |
+          cp ../../revach/data/holdings/review/pending.json /tmp/pending_old.json 2>/dev/null || echo '{}' > /tmp/pending_old.json
+          rm -rf ../../revach/data/holdings/review
+          python build_review.py --results ../../ar/results --site ../../revach/data/holdings/extracted_subsidiaries.json \
+            --maya ../../revach/data/registry/maya_companies_full.json --packs ../../wp/packs --out ../../revach/data/holdings/review
+      - name: Push to site
+        working-directory: revach
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A data/holdings/review
+          # רק חותמת הזמן השתנתה - לא דוחפים
+          if git diff --cached --quiet || [ "$(git diff --cached --numstat | grep -v 'pending.json' | wc -l)$(git diff --cached -U0 data/holdings/review/pending.json | grep '^[+-] ' | grep -vc '"built"')" = "00" ]; then
+            echo "No changes."; git reset -q; exit 0; fi
+          git commit -q -m "holdings review: pending approval list"
+          for i in 1 2 3 4 5; do
+            if git push -q origin HEAD:main; then exit 0; fi
+            git pull -q --rebase origin main || true
+            sleep $((i * 5))
+          done
+          exit 1
+      - name: Email (new pending items only)
+        working-directory: scripts/company_ownership
+        env:
+          ALERT_EMAIL: ${{ secrets.ALERT_EMAIL }}
+          MAIL_SCRIPT_SECRET: ${{ secrets.MAIL_SCRIPT_SECRET }}
+        run: python review_notify.py --old /tmp/pending_old.json --new ../../revach/data/holdings/review/pending.json --alerts ../../revach/scripts/registry
