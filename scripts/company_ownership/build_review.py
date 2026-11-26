@@ -32,6 +32,12 @@ def tkey(n):
     return " ".join(sorted(t for t in n.split() if t and t not in ("and", "ו")))
 
 
+def norm(n):
+    """שם מנורמל בלי לוותר על הצורה המשפטית (להבחנה בין Ltd. ל-Inc.)."""
+    n = str(n or "").lower().replace("״", '"').replace("׳", "'")
+    return " ".join(re.sub(r"[\"'`.,()\[\]\-–/&]", " ", n).split())
+
+
 def cid_to_hp(maya_path):
     try:
         d = json.load(open(maya_path, encoding="utf-8"))
@@ -63,19 +69,27 @@ def main():
             man = json.load(open(os.path.join(a.packs, rid, "manifest.json"), encoding="utf-8"))
         hp = str(man.get("hp") or c2h.get(str(man.get("company_id") or "")) or d.get("hp") or "").lstrip("0") or None
         cur = (site.get(hp) or {}).get("children", []) if hp else []
+        # מפתח -> כל החברות באתר עם המפתח הזה. tkey מוריד צורה משפטית, ולכן "Actimize Ltd." ו-"Actimize Inc." (שתי חברות
+        # שונות) מקבלות אותו מפתח - שומרים את כולן, לא רק את הראשונה, אחרת השנייה נראית "חסרה בדוח" ומסומנת להסרה.
         cur_by = {}
         for ch in cur:
             for n in (ch.get("name"), ch.get("raw")):
                 if n:
-                    cur_by.setdefault(tkey(n), ch)
+                    lst = cur_by.setdefault(tkey(n), [])
+                    if not any(x is ch for x in lst):
+                        lst.append(ch)
         holds = d.get("holdings") or []
         seen = set()
         changes = []
         for h in holds:
-            keys = {tkey(x) for x in [h.get("name")] + list(h.get("alt_names") or []) if x}
-            ch = next((cur_by[k] for k in keys if k in cur_by), None)
-            if ch is not None:
-                seen.add(id(ch))
+            names = [x for x in [h.get("name")] + list(h.get("alt_names") or []) if x]
+            keys = {tkey(x) for x in names}
+            cands = [c for k in keys for c in cur_by.get(k, [])]
+            for c in cands:          # כל חברה באתר שחולקת מפתח עם החזקה בדוח - לא תוסר
+                seen.add(id(c))
+            exact = {norm(x) for x in names}
+            ch = next((c for c in cands if norm(c.get("name")) in exact or norm(c.get("raw")) in exact), None) \
+                or (cands[0] if cands else None)
             item = {"name": h.get("name"), "type": h.get("type"), "parent": h.get("parent"), "parent_basis": h.get("parent_basis"),
                     "pct": h.get("pct_capital"), "page": h.get("page"), "section": h.get("section"), "evidence": h.get("evidence"),
                     "verified": h.get("verified", True)}
