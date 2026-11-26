@@ -612,6 +612,142 @@ def _recheck_window(f, wpages, res, key):
     return extra
 
 
+# ---- שלב מועמדים (GEMINI_CANDIDATES=1, בבדיקה): השלמת חברות שהמודל דילג עליהן ----
+# כל שורה בטקסט הדוח (pdftotext -layout, כל העמודים) עם צורת התאגדות, שהשם בה לא חולץ, נשלחת כרשימה ממוספרת (טקסט
+# בלבד, זול) ל-Gemini: לכל מספר חייבת להיות החלטה - האם זו החזקה של החברה המדווחת, ואחוז. אי אפשר "לדלג": מספר שלא
+# קיבל תשובה מזוהה ונשאל שוב.
+CANDIDATES = os.environ.get("GEMINI_CANDIDATES") == "1"
+CAND_MODEL = os.environ.get("CANDIDATES_MODEL") or "gemini-3.6-flash"
+CAND_BATCH = 120
+CAND_STATS = {"lines": 0, "calls": 0, "accepted": 0, "added": 0, "unanswered": 0}
+_CAND_PROMPT = """Reporting company: {company}.
+Below are numbered lines from its annual report, grouped by page (with the page's first lines as a heading).
+For EVERY numbered line decide: does the line name a company / partnership / fund that the REPORTING COMPANY holds,
+directly or indirectly (subsidiary, associate, joint venture, other investee)? Use the line and its page heading.
+NOT holdings: shareholders or controlling owners of the reporting company, lenders/banks/bond trustees, customers,
+suppliers, auditors, rating agencies, insurers, companies where directors serve, competitors, the reporting company itself.
+Return JSON only: {{"r": [{{"i": <number>, "h": 1 or 0, "name": "<full legal name as written in the line>" or null,
+"pct": <ownership % if stated in the line, else null>}}]}} - exactly one entry for every number.
+
+{lines}"""
+
+
+def _layout_texts(pdf_bytes: bytes):
+    import subprocess
+    import tempfile
+    with tempfile.NamedTemporaryFile(suffix=".pdf") as f:
+        f.write(pdf_bytes)
+        f.flush()
+        try:
+            out = subprocess.run(["pdftotext", "-q", "-layout", f.name, "-"], capture_output=True, timeout=300).stdout
+        except subprocess.TimeoutExpired:
+            return []
+    txt = re.sub("[\u200e\u200f\u202a-\u202e\u2066-\u2069]", "", out.decode("utf-8", "replace"))
+    return txt.split("\f")
+
+
+def _ckey(n):
+    return re.sub(r"[\s\"'״׳`.,()\-–]|בע\"?מ|בעמ", "", str(n or "").lower())
+
+
+def _gemini_text_json(prompt: str):
+    """קריאת טקסט בלבד ל-Gemini (חשיבה נמוכה) -> JSON. נספרת בתקציב ובלוג השימוש."""
+    import requests
+    if ex.budget_exceeded():
+        raise ex.GeminiQuotaExceededError("תקרת התקציב")
+    body = {"contents": [{"parts": [{"text": prompt}]}],
+            "generationConfig": {"temperature": 0, "responseMimeType": "application/json",
+                                 "thinkingConfig": {"thinkingLevel": "low"}}}
+    for attempt in range(3):
+        r = requests.post(f"{ex.GEMINI_BASE_URL}/{CAND_MODEL}:generateContent", json=body, timeout=180,
+                          headers={"x-goog-api-key": os.environ["GEMINI_API_KEY"]})
+        if r.status_code in (402, 429):
+            raise ex.GeminiQuotaExceededError(f"HTTP {r.status_code}")
+        if r.status_code != 200:
+            time.sleep(5)
+            continue
+        d = r.json()
+        ex._log_gemini_usage(CAND_MODEL, d)
+        try:
+            t = d["candidates"][0]["content"]["parts"][0]["text"]
+            t = re.sub(r'(?<=[\u0590-\u05FF])"(?=[\u0590-\u05FF])', "״", t)
+            return json.loads(t)
+        except (KeyError, IndexError, ValueError):
+            time.sleep(2)
+    return None
+
+
+def _candidate_stage(files, merged, company_name):
+    """מוסיף ל-merged['subsidiaries'] חברות מרשימת המועמדים שאושרו. מחזיר מספר שנוספו."""
+    have = {_ckey(x.get("name")) for x in merged.get("subsidiaries") or []}
+    have |= {_ckey(a) for x in merged.get("subsidiaries") or [] for a in x.get("alt_names") or []}
+    have.discard("")
+    own = _ckey(company_name)
+    pages = []          # [(page_no, heading, [lines])]
+    seen = set()
+    for f in files:
+        for pi, t in enumerate(f.get("layout") or []):
+            heads = [ln.strip() for ln in t.splitlines() if len(ln.strip()) > 8][:2]
+            lines = []
+            for line in t.splitlines():
+                ln = re.sub(r"\s{2,}", "  ", line.strip())
+                if not ln or len(ln) > 220 or not (ENTITY.search(ln) or ENTITY.search(ln[::-1])):
+                    continue
+                k = _ckey(ln)
+                if k in seen or (own and own in k and len(k) < len(own) + 6) or any(len(h) >= 5 and h in k for h in have):
+                    continue
+                seen.add(k)
+                lines.append(ln)
+            if lines:
+                pages.append((pi + 1, " / ".join(h[:90] for h in heads), lines))
+    items = [(pno, head, ln) for pno, head, lines in pages for ln in lines]
+    with _RECHECK_LOCK:
+        CAND_STATS["lines"] += len(items)
+    added = 0
+    for b in range(0, len(items), CAND_BATCH):
+        chunk = items[b:b + CAND_BATCH]
+        todo = set(range(len(chunk)))
+        for attempt in range(2):
+            if not todo:
+                break
+            txt, last = [], None
+            for i in sorted(todo):
+                pno, head, ln = chunk[i]
+                if pno != last:
+                    txt.append(f"\n[Page {pno} | heading: {head}]")
+                    last = pno
+                txt.append(f"{i + 1}. {ln}")
+            res = _gemini_text_json(_CAND_PROMPT.format(company=company_name, lines="\n".join(txt)))
+            with _RECHECK_LOCK:
+                CAND_STATS["calls"] += 1
+            rows = (res or {}).get("r") if isinstance(res, dict) else res
+            for row in rows or []:
+                try:
+                    i = int(row.get("i")) - 1
+                except (TypeError, ValueError, AttributeError):
+                    continue
+                if i not in todo:
+                    continue
+                todo.discard(i)
+                if str(row.get("h")) in ("1", "true", "True") and row.get("name"):
+                    with _RECHECK_LOCK:
+                        CAND_STATS["accepted"] += 1
+                    k = _ckey(row["name"])
+                    if k and k not in have:
+                        have.add(k)
+                        merged.setdefault("subsidiaries", []).append({
+                            "name": row["name"], "ownership_pct": row.get("pct"), "parent": None,
+                            "page_reference": chunk[i][0], "section_title": None, "table_title": None,
+                            "note": "candidates", "source": "candidates"})
+                        added += 1
+        with _RECHECK_LOCK:
+            CAND_STATS["unanswered"] += len(todo)
+    with _RECHECK_LOCK:
+        CAND_STATS["added"] += added
+    print(f"  שלב מועמדים: {len(items)} שורות, נוספו {added} חברות")
+    return added
+
+
 def _page_filter(source_type: str = "annual_report") -> str:
     """סינון העמודים לדוח: GEMINI_PAGE_FILTER לדוח השנתי; לדוחות השינויים GEMINI_PAGE_FILTER_CHANGES אם הוגדר
     (למשל changes - עמודי אירועי שינוי בלבד), אחרת כמו השנתי."""
@@ -735,7 +871,8 @@ def _process_report_chunked(
         wins = _page_windows(sel) if sel is not None else _iter_page_windows(n_pages)
         wins += [{"pages": w, "model": CHART_MODEL} for w in _page_windows(charts or [])]
         files.append({"url": url, "reader": reader, "n_pages": n_pages, "windows": wins,
-                      "texts": _page_texts(pdf_bytes, n_pages) if RECHECK else None})
+                      "texts": _page_texts(pdf_bytes, n_pages) if RECHECK else None,
+                      "layout": _layout_texts(pdf_bytes) if CANDIDATES and source_type == "annual_report" else None})
 
     if not files:
         print("  כישלון מוחלט: אף קובץ PDF של הדוח לא נטען.")
@@ -819,6 +956,13 @@ def _process_report_chunked(
 
     failed = [k for k, v in done.items() if v.get("_window_failed")]
     merged = _merge_extraction_results(list(done.values()))
+    if CANDIDATES and source_type == "annual_report":
+        try:
+            _candidate_stage(files, merged, company_name)
+        except ex.GeminiQuotaExceededError:
+            print("  שלב מועמדים: נעצר (מכסה / תקציב) - נשמר בלי השלמה")
+        except Exception as e:
+            print(f"  שלב מועמדים: שגיאה ({type(e).__name__}) - נשמר בלי השלמה")
     if failed:
         print(f"  הושלם עם {len(failed)}/{total} חלונות שנכשלו לצמיתות (כיסוי "
               f"חלקי) - {len(merged['subsidiaries'])} חברות אחרי dedup.")

@@ -29,6 +29,7 @@ TAG = f"{MODEL}_{THINK}" + ("_chunk" if os.environ.get("GEMINI_CHUNK") == "1" el
     ("_compact" if os.environ.get("EXTRACTION_COMPACT") == "1" else "") + \
     (f"_recheck-{os.environ.get('RECHECK_MODEL') or 'same'}-{os.environ.get('RECHECK_THINKING') or 'high'}"
      if os.environ.get("GEMINI_RECHECK") == "1" else "") + \
+    ("_cand" if os.environ.get("GEMINI_CANDIDATES") == "1" else "") + \
     (f"_{os.environ['TEST_TAG']}" if os.environ.get("TEST_TAG") else "")
 OUT = f"model_test/subs_{TAG}.jsonl"
 os.environ.setdefault("GEMINI_USAGE_LOG", f"model_test/usage_{TAG}.log")
@@ -328,6 +329,9 @@ def main():
                 u[k] += int(kv.get(k, 0))
     print(f"USAGE model={MODEL} thinking={THINK} calls={u['calls']} in={u['in']} out={u['out']} think={u['think']} "
           f"cached={u['cached']}")
+    if os.environ.get("GEMINI_CANDIDATES") == "1":
+        print(f"CAND שורות {rsb.CAND_STATS['lines']}, קריאות {rsb.CAND_STATS['calls']}, אושרו {rsb.CAND_STATS['accepted']}, "
+              f"נוספו {rsb.CAND_STATS['added']}, בלי תשובה {rsb.CAND_STATS['unanswered']}")
     print(f"COST ${ex._SPENT[0]:.2f} (תקרה ${ex._BUDGET or 0})" + (" - נעצר בתקרה" if ex.budget_exceeded() else ""))
     if os.environ.get("GEMINI_RECHECK") == "1":
         print(f"RECHECK חלונות {rsb.RECHECK_STATS['windows']}, נשלחו שוב {rsb.RECHECK_STATS['flagged']} "
