@@ -57,6 +57,9 @@ def main():
             by_rid[str(s["report_id"])] = s
     causes = {k: Counter() for k in RUNS}
     cand = Counter()
+    missed_pages = defaultdict(int)     # (דוח, עמוד) -> פריטים שלא נשלחו
+    image_pages = defaultdict(int)
+    page_info = {}
     diff_density = Counter()
     page_stats = Counter()
     for rep in truth:
@@ -78,6 +81,14 @@ def main():
                 lay.extend(layout_texts(pdf))
             except Exception as e:
                 print(f"DIAG {rid}: קובץ נכשל ({type(e).__name__})")
+        for fi, (texts, rel, formal) in enumerate(files):
+            for i, t in enumerate(texts):
+                t2 = t + "\n" + "\n".join(line[::-1] for line in t.splitlines())
+                heads = [ln.strip()[:60] for ln in t.splitlines() if len(ln.strip()) > 8][:2]
+                page_info.setdefault((rep["company"], i), []).append(
+                    f"f{fi} len={len(t.strip())} ent={len(rsb.ENTITY.findall(t2))} pct={t.count('%')} "
+                    f"hold={len(rsb.HOLD_STMT.findall(t2))} key={'Y' if rsb.PAGE_KEYS.search(t2) else 'n'} "
+                    f"rel={'Y' if i in rel else 'n'} | {' / '.join(heads)}")
         items = [it for it in rep["items"] if it["label"] in ("entity", "asset")]
         # רשימת מועמדים חינמית מכל עמודי הדוח: שורות עם צורת התאגדות, או שורות עם אחוז ושם
         lines = set()
@@ -133,6 +144,10 @@ def main():
                     causes[run]["found"] += 1
                     continue
                 sent = sent_formal if run == "H-low" else sent_rel
+                if run == "control" and p0 is not None and not sent:
+                    missed_pages[(rep["company"], p0)] += 1
+                if run == "control" and p0 is not None and sent and not in_text:
+                    image_pages[(rep["company"], p0)] += 1
                 if p0 is None:
                     causes[run]["no_page_ref"] += 1
                 elif not sent:
@@ -152,6 +167,14 @@ def main():
           f"מכסה {cand['covered']}/{cand['items']} מפריטי סט האמת")
     print(f"DIAG מועמדים עם -layout: {cand['layout_candidates']} שורות; מכסה {cand['layout_covered']}/{cand['items']}; "
           f"השם מופיע בטקסט הדוח בכלל (כל עמוד): {cand['in_any_text']}/{cand['items']}")
+    print("DIAG ---- עמודים שלא נשלחו (control) ----")
+    for (comp, p0), n in sorted(missed_pages.items(), key=lambda x: -x[1]):
+        for info in page_info.get((comp, p0), []):
+            print(f"DIAGP {comp} עמ' {p0 + 1} ({n} פריטים): {info}")
+    print("DIAG ---- עמודים שנשלחו אבל השם לא בטקסט (תמונה) ----")
+    for (comp, p0), n in sorted(image_pages.items(), key=lambda x: -x[1]):
+        for info in page_info.get((comp, p0), []):
+            print(f"DIAGI {comp} עמ' {p0 + 1} ({n} פריטים): {info}")
     print("DIAG פריטים: " + " ".join(f"{k}={v}" for k, v in page_stats.items()))
     for run, c in causes.items():
         print(f"DIAG {run}: " + " ".join(f"{k}={c[k]}" for k in
