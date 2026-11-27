@@ -38,6 +38,23 @@ def norm(n):
     return " ".join(re.sub(r"[\"'`.,()\[\]\-–/&]", " ", n).split())
 
 
+DESC = re.compile(r"חברה|רשומה|רשום|קפריסא|יוונ|הולנד|אמריקא|אנגל|גרמנ|סינ|מיזם|שותפות|בקפריסין|ביוון|בהולנד|בסין|"
+                  r"בארה\"?ב|registered|company|incorporated|partnership|\b(?:jv|joint venture)\b", re.I)
+LOOSE_LEGAL = {"בע", "מ", "בעמ", "ltd", "inc", "llc", "limited", "b", "v", "bv", "lp", "l", "p", "שותפות", "מוגבלת", "sa", "s", "a",
+               "co", "corp", "corporation", "gmbh", "plc", "pty", "as", "ag", "nv"}
+
+
+def loose(name):
+    """כמו review_apply._loose: בלי תיאור בסוגריים; סוגריים מבחינים (שנה / שם) - אין מפתח רופף."""
+    n = str(name or "").lower()
+    for par in re.findall(r"\([^()]*\)", n):
+        if not DESC.search(par):
+            return ""
+        n = n.replace(par, " ")
+    toks = [t for t in re.findall(r"[א-תa-z0-9]+", n) if t not in LOOSE_LEGAL]
+    return " ".join(sorted(toks)) if len(toks) >= 2 else ""
+
+
 def cid_to_hp(maya_path):
     try:
         d = json.load(open(maya_path, encoding="utf-8"))
@@ -116,6 +133,12 @@ def main():
             exact = {norm(x) for x in names}
             ch = next((c for c in cands if norm(c.get("name")) in exact or norm(c.get("raw")) in exact), None) \
                 or (cands[0] if cands else None)
+            if ch is None:               # תיאור בסוגריים באתר ("ICH Europe Ltd. (חברה קפריסאית)") - אותה חברה, לא חדשה
+                lk = {loose(x) for x in names} - {""}
+                lc = [c for c in cur if lk & {loose(c.get("name")), loose(c.get("raw"))}]
+                if len(lc) == 1:
+                    ch = lc[0]
+                    seen.add(id(ch))
             item = {"name": h.get("name"), "type": h.get("type"), "parent": h.get("parent"), "parent_basis": h.get("parent_basis"),
                     "pct": h.get("pct_capital"), "page": h.get("page"), "section": h.get("section"), "evidence": h.get("evidence"),
                     "verified": h.get("verified", True)}
