@@ -236,7 +236,7 @@ def save_image(src, dst_base, seen):
     return dst
 
 
-BUILDER_VERSION = 6   # להעלות בכל שיפור בזיהוי - חבילות בלי תוצאה נבנות מחדש (work_pack_queue --rebuild-old)
+BUILDER_VERSION = 7   # להעלות בכל שיפור בזיהוי - חבילות בלי תוצאה נבנות מחדש (work_pack_queue --rebuild-old)
 
 
 def build_pack(rid, files, out_dir, extra=None):
