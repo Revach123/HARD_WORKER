@@ -1,0 +1,30 @@
+name: Holdings - Maya event types probe (no AI)
+
+# אבחון: אילו סוגי אירועים / טפסים של דיווחים מיידיים במאיה מכילים רכישה / מכירה / מיזוג של חברות מוחזקות
+# (דוחות השינוי בתוכנית הם רק רבעוניים - CHANGE_EVENT_IDS 104-106). רק הדפסה ללוג, בלי commit.
+
+on:
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "כמה ימים אחורה"
+        required: false
+        default: "7"
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: pip install requests --break-system-packages
+      - working-directory: scripts/company_ownership
+        env:
+          PYTHONUNBUFFERED: "1"
+        run: python maya_event_probe.py "${{ github.event.inputs.days || '7' }}"
