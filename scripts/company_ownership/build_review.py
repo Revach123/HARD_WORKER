@@ -150,6 +150,45 @@ def main():
                 new = h.get("pct_capital")
                 if isinstance(old, (int, float)) and isinstance(new, (int, float)) and abs(old - new) > 0.01:
                     changes.append({**item, "change": "pct", "old_pct": old})
+        # כפילות בין חברות שנמצאו (שתיהן חולקות מפתח עם החזקה): שם מנורמל זהה / מפתח רופף זהה, ובלי ח.פ שונים - אחת נשארת
+        # (זו שהשם שלה כמו בדוח), השאר הסרה עם סיבה. "Actimize Ltd." / "Actimize Inc." - שם מנורמל שונה ואין מפתח רופף: לא כפילות
+        agent_norms = {norm(x) for h in holds for x in [h.get("name")] + list(h.get("alt_names") or []) if x}
+        groups = {}
+        for ch in cur:
+            if id(ch) in seen:
+                for k in {("n", norm(ch.get("name"))), ("l", loose(ch.get("name")))}:
+                    if k[1]:
+                        groups.setdefault(k, []).append(ch)
+        dropped = set()
+        for k, g in groups.items():
+            g = [c for c in g if id(c) not in dropped]
+            if len(g) < 2 or len({str(c.get("hp")) for c in g if c.get("hp")}) > 1:
+                continue
+            keep = next((c for c in g if norm(c.get("name")) in agent_norms or norm(c.get("raw")) in agent_norms), g[0])
+            for c in g:
+                if c is not keep:
+                    dropped.add(id(c))
+                    changes.append({"name": c.get("name"), "change": "remove", "old_pct": c.get("vot"), "verified": True,
+                                    "reason": f"כפילות של {keep.get('name')} (אותה חברה פעמיים בנתונים הקודמים)"})
+        # כפילות בנתונים הישנים: חברה באתר שאינה בדוח, אבל זהה בשמה (שם מנורמל / מפתח רופף - לא רק tkey, שמאחד Ltd. ו-Inc.)
+        # לחברה אחרת באתר שהסוכן כן מצא - כפילות טהורה, הסרה עם סיבה (נכנסת אוטומטית)
+        found_keys = {}
+        for ch in cur:
+            if id(ch) in seen:
+                for x in (ch.get("name"), ch.get("raw")):
+                    if x:
+                        found_keys.setdefault(("n", norm(x)), ch.get("name"))
+                        if loose(x):
+                            found_keys.setdefault(("l", loose(x)), ch.get("name"))
+        for ch in cur:
+            if id(ch) in seen:
+                continue
+            dup = next((found_keys[k] for x in (ch.get("name"), ch.get("raw")) if x
+                        for k in (("n", norm(x)), ("l", loose(x))) if k in found_keys and k[1]), None)
+            if dup:
+                seen.add(id(ch))
+                changes.append({"name": ch.get("name"), "change": "remove", "old_pct": ch.get("vot"), "verified": True,
+                                "reason": f"כפילות של {dup} (אותה חברה פעמיים בנתונים הקודמים)"})
         for ch in cur:
             if id(ch) not in seen:
                 changes.append({"name": ch.get("name"), "change": "remove", "old_pct": ch.get("vot"),
@@ -232,6 +271,17 @@ def main():
     ng = sum(len(r.get("gated_changes") or []) for r in reports)
     nf = sum(1 for r in reports if r.get("validation") and not r["validation"]["ok"])
     print(f"REVIEW {len(reports)} דוחות: {nv} שינויים אוטומטיים, {ng} ממתינים לאישור ({nf} דוחות לא עברו בדיקה), {nq} שאלות")
+    # מעקב: כפילויות שנשארו באתר (שם מנורמל / מפתח רופף זהה, בלי ח.פ שונים) - יורדות כשסוכן מגיע לחברה
+    dup = 0
+    for p in site.values():
+        g = {}
+        for k in p.get("children", []):
+            for key in {("n", norm(k.get("name"))), ("l", loose(k.get("name")))}:
+                if key[1]:
+                    g.setdefault(key, []).append(k)
+        dup += sum(1 for v in g.values() if len(v) > 1 and len({str(x.get("hp")) for x in v if x.get("hp")}) <= 1)
+    ndup = sum(1 for r in reports for c in r["verified_changes"] if "כפילות" in str(c.get("reason")))
+    print(f"DUPLICATES באתר: {dup} קבוצות; מוסרות עכשיו: {ndup}")
 
 
 if __name__ == "__main__":
