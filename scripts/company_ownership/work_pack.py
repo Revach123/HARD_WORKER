@@ -47,16 +47,17 @@ def pdftotext_pages(path, layout):
 
 ENT = re.compile(r'בע"?מ|בע״מ|שותפות|\bLtd\b|\bLimited\b|\bLLC\b|\bInc\b|\bB\.?V\b|\bGmbH\b|\bS\.?A\b|\bL\.?P\b|'
                  r'\bS\.?R\.?L\b|\bsp\.? z|\bPLC\b|\bCorp|\bAG\b|\behf\b|\bd\.o\.o', re.I)
-REG11 = re.compile(r"תקנה[ \t]*:?[ \t]*11(?!\d)|(?<![\d.])11[ \t]*:?[ \t]*תקנה|רשימת\s+(?:ה)?השקעות\s+בחברות|השקעות\s+בחברות[- ]בת\s+ובחברות\s+כלולות", re.I)
+REG11 = re.compile(r"Regulation[ \t]+11\b|תקנה[ \t]*:?[ \t]*11(?!\d)|(?<![\d.])11[ \t]*:?[ \t]*תקנה|רשימת\s+(?:ה)?השקעות\s+בחברות|השקעות\s+בחברות[- ]בת\s+ובחברות\s+כלולות", re.I)
 REG12 = re.compile(r"תקנה[ \t]*:?[ \t]*12\b|(?<![\d.])12[ \t]*:?[ \t]*תקנה|שינויים\s+בהשקעות\s+בחברות", re.I)
 REG26 = re.compile(r"תקנה[ \t]*:?[ \t]*26\b|(?<![\d.])26[ \t]*:?[ \t]*תקנה|הדירקטורים\s+של\s+התאגיד", re.I)
 # "תרשים חברות מוחזקות עיקריות" (לאומי), "תרשים ההחזקות", "תרשים מבנה" - כל "תרשים" שאחריו מילה על החזקות / חברות / הקבוצה
-CHART = re.compile(r"(?:תרשים|מבנה)\s+(?:ה)?(?:[אה]חזקות|החזקות|אחזקות|הקבוצה|התאגיד|חברות|השקעות)|תרשים\s+מבנה|"
+CHART = re.compile(r"(?:תרשים|מבנה)\s+(?:של\s+)?(?:ה)?(?:[אה]חזקות|החזקות|אחזקות|הקבוצה|התאגיד|חברות|השקעות)|תרשים\s+מבנה|"
                    r"Organi[sz]ational\s+(?:Structure|chart)|Holdings?\s+structure|Group\s+structure|Structure\s+chart|"
                    r"chart\s+of\s+(?:the\s+)?(?:holdings?|group|corporate)", re.I)
 # תרשים שממשיך בעמוד הבא ("פירוט בעמוד הבא" - אשטרום, שיכון ובינוי)
 CONT = re.compile(r"(?:פירוט|המשך|ראו|ראה|יפורט)\s+(?:ה?תרשים\s+)?ב?עמוד\s+הבא|בעמוד\s+הבא|continued\s+on\s+(?:the\s+)?next\s+page", re.I)
-NOTE = re.compile(r"זכויות\s+בישויות\s+אחרות|רשימת\s+(?:ה)?חברות\s+(?:ה|ב)?קבוצה|חברות\s+הקבוצה|חברות\s+מאוחדות|חברות\s+בנות\s+מהותיות|חברות\s+מוחזקות|ישויות\s+הקבוצה|השקע(?:ה|ות)\s+בחברות\s+(?:מוחזקות|כלולות|בנות)|"
+NOTE = re.compile(r"זכויות\s+בישויות\s+אחרות|טבלת\s+(?:ה)?[אה]חזקות|נספח\s+(?:ה)?[אה]חזקות|רשימת\s+(?:ה)?תאגידים\s+(?:ה)?מוחזקים|"
+                  r"רשימת\s+(?:ה)?(?:חברות|שותפויות)(?:\s+ו(?:ה)?(?:חברות|שותפויות))?\s+(?:ה)?מוחזקות|רשימת\s+(?:ה)?חברות\s+(?:ה|ב)?קבוצה|חברות\s+הקבוצה|חברות\s+מאוחדות|חברות\s+בנות\s+מהותיות|חברות\s+מוחזקות|ישויות\s+הקבוצה|השקע(?:ה|ות)\s+בחברות\s+(?:מוחזקות|כלולות|בנות)|"
                   r"חברות\s+כלולות|פירוט\s+החברות|Principal\s+subsidiaries|Significant\s+subsidiaries|Investments?\s+in\s+(?:subsidiaries|investees|associates)", re.I)
 EXH = re.compile(r"Exhibit\s+(?:21|8)(?:\.1)?\b[^\n]{0,80}|List\s+of\s+(?:Significant\s+)?Subsidiaries|Subsidiaries\s+of\s+the\s+(?:Company|Registrant)", re.I)
 PCT = re.compile(r"\d[\d.,]*\s*%|%\s*\d")
@@ -67,6 +68,13 @@ HOLD_LIST = re.compile(r"חברות\s+(?:ה)?(?:בנות|בת)\s+ו(?:ה)?(?:ח�
 # הפניה מעמוד תקנה 11: "ראו נספח ב'" / "ראו סעיף 26 לפרק א'"
 REF_APPX = re.compile(r"(?:ראו|ראה|מצורף|ב)\s*נספח\s+([א-ת])(?=['׳\s.,)])")
 REF_SEC = re.compile(r"(?:ראו|ראה)\s+סעיף\s+(\d{1,2})\s*(?:ל|ב)?פרק\s+א")
+# תת-כותרת ממוספרת של תרשים ("20.2 תרשים אחזקות מג'יק") - עמוד תרשים גם כשהתרשים באמצע עמוד מלא טקסט
+CHART_SUB = re.compile(r"(?:^|\n)[ \t]*\.?\d{1,2}(?:\.\d{1,2}){0,3}\.?\s*(?:להלן[ \t]+)?(?:" + CHART.pattern + r")", re.I)
+# כותרת "החזקות החברה" / "מבנה ההחזקות" בראש העמוד + הרבה אחוזים = תרשים בטקסט וקטורי (נתנאל: "4. החזקות החברה (100%)")
+CHART_HOLD = re.compile(r"(?:^|\n)[ \t]*\.?\d{0,2}\.?[ \t]*(?:ה)?[אה]חזקות[ \t]+(?:ה)?(?:חברה|קבוצה|תאגיד)")
+# טבלאות החזקות נוספות: "שם החברה / סכום ההשקעה" (השקעות בפרק א'), טבלת רכישות ("החברה/הפעילות הנרכשת")
+TABLES = re.compile(r"שם\s+(?:ה)?חברה\s*/?\s*(?:ה)?סכום\s+(?:ה)?השקעה|(?:החברה|הפעילות|החברות)\s*/\s*(?:ה)?(?:פעילות|חברה)\s+(?:ה)?נרכשת|"
+                    r"חברות\s+שנרכשו|טבלת\s+(?:ה)?רכישות|Subsidiaries\s+acquired")
 # כותרת ביאור (גם כשהשמות בטבלה קצרים, בלי בע"מ - אברא "ביאור 9 - זכויות בישויות אחרות")
 NOTE_HEAD = re.compile(r"ביאור\s*[-–]?\s*\d{1,2}\s*[-–:]?\s*(?:" + NOTE.pattern + r")", re.I)
 # תת-כותרת "2. חברות בת" בביאור הכללי (אברא ביאור 1א2) - שורה שכולה הכותרת
@@ -101,13 +109,13 @@ def vector_chart(raw):
     words = sum(1 for x in lines if re.search(r"[א-תA-Za-z]{2,}", x))           # תיבות = שמות; טבלה כספית = מספרים
     pct = len(re.findall(r"%", raw))
     big = len(re.findall(r"\d{1,3}(?:,\d{3})+", raw))                           # סכומים (1,234,567) - טבלה כספית
-    return short / len(lines) >= 0.7 and nums >= 3 and words / len(lines) >= 0.55 and pct >= 2 and big <= 3
+    return short / len(lines) >= 0.65 and nums >= 3 and words / len(lines) >= 0.55 and pct >= 2 and big <= 3
 
 
 def locate(pages):
     """pages: [(raw, layout)] -> {section: [page numbers 1-based]}."""
     n = len(pages)
-    sec = {k: set() for k in ("reg11", "reg12", "reg26", "charts", "fs_notes", "exhibit21")}
+    sec = {k: set() for k in ("reg11", "reg12", "reg26", "charts", "fs_notes", "exhibit21", "tables")}
     for i, (raw, lay) in enumerate(pages):
         t = both(raw + "\n" + lay)
         ent = len(ENT.findall(t))
@@ -139,6 +147,10 @@ def locate(pages):
             sec["fs_notes"].add(i)      # כותרת הביאור / הנספח בראש העמוד (ישרוטל "זכויות בישויות אחרות", סקופ "רשימת חברות הקבוצה")
         if EXH.search(t) and ent >= 8:
             sec["exhibit21"].add(i)
+        if CHART_SUB.search(raw) or (CHART_HOLD.search(head) and pct >= 5):
+            sec["charts"].add(i)
+        if TABLES.search(t) and (ent >= 2 or pct >= 2 or len(re.findall(r"20\d\d", t)) >= 4):
+            sec["tables"].add(i)
         if HOLD_LIST.search(headb) and (ent >= 2 or pct >= 3):
             sec["reg11"].add(i)
         if NOTE_HEAD.search(t) or (SUBS_LINE.search(raw) and "ביאור" in t and ent >= 3) or (NOTE_EN.search(raw) and ent >= 2):
@@ -158,7 +170,7 @@ def locate(pages):
                 if hdr.search("\n".join(pages[j][0].strip().splitlines()[:6])) and len(ENT.findall(both(pages[j][0]))) >= 3:
                     sec["reg11"].add(j)
     # המשך טבלה: עמוד אחרי תקנה 11 / ביאור / exhibit עם הרבה ישויות - עד 4 עמודים
-    for k in ("reg11", "fs_notes", "exhibit21"):
+    for k in ("reg11", "fs_notes", "exhibit21", "tables"):
         for i in sorted(sec[k]):
             for j in range(i + 1, min(n, i + 5)):
                 raw, lay = pages[j]
@@ -224,7 +236,7 @@ def save_image(src, dst_base, seen):
     return dst
 
 
-BUILDER_VERSION = 5   # להעלות בכל שיפור בזיהוי - חבילות בלי תוצאה נבנות מחדש (work_pack_queue --rebuild-old)
+BUILDER_VERSION = 6   # להעלות בכל שיפור בזיהוי - חבילות בלי תוצאה נבנות מחדש (work_pack_queue --rebuild-old)
 
 
 def build_pack(rid, files, out_dir, extra=None):
@@ -257,6 +269,10 @@ def build_pack(rid, files, out_dir, extra=None):
         for p in list(loc["charts"]):
             if p < n and CONT.search(both(pages[p - 1][0])) and (p + 1) not in loc["charts"]:
                 loc["charts"].append(p + 1)
+        # עמוד עם תמונה גדולה צמוד לעמוד תרשים - המשך התרשים (אשטרום עמ' 10: התרשים ממשיך בעמוד הבא, בלי כותרת)
+        for p in sorted(big):
+            if p not in loc["charts"] and ((p - 1) in loc["charts"] or (p + 1) in loc["charts"]) and len(pages[p - 1][0].strip()) < 1500:
+                loc["charts"].append(p)
         loc["charts"] = sorted(set(loc["charts"]))
         with gzip.open(os.path.join(root, "text", f"{name}.txt.gz"), "wt", encoding="utf-8") as f:
             f.write("\f".join(raw[:n]))
@@ -285,7 +301,7 @@ def build_pack(rid, files, out_dir, extra=None):
                             os.path.join(root, "render", f"{name}_p{p}")], capture_output=True, timeout=180)
         # עמודי הטבלאות (תקנה 11/12, ביאור המוחזקות, Exhibit 21) גם כתמונה, ברזולוציה קלה: לקריאה כשעמודות הטקסט מתפרקות
         # (נספח דלק / דוראל), ולתמונה לשאלות. הסוכן לא יכול להוריד את ה-PDF בעצמו (מאיה חוסמת - 403)
-        table_pages = sorted({int(p) for k in ("reg11", "reg12", "fs_notes", "exhibit21") for p in loc.get(k) or []}
+        table_pages = sorted({int(p) for k in ("reg11", "reg12", "fs_notes", "exhibit21", "tables") for p in loc.get(k) or []}
                              - set(loc["charts"]))[:60]
         for p in table_pages:
             subprocess.run(["pdftoppm", "-f", str(p), "-l", str(p), "-r", "110", "-jpeg", "-jpegopt", "quality=80", "-singlefile", path,
