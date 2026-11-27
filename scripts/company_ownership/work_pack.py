@@ -47,7 +47,7 @@ def pdftotext_pages(path, layout):
 
 ENT = re.compile(r'בע"?מ|בע״מ|שותפות|\bLtd\b|\bLimited\b|\bLLC\b|\bInc\b|\bB\.?V\b|\bGmbH\b|\bS\.?A\b|\bL\.?P\b|'
                  r'\bS\.?R\.?L\b|\bsp\.? z|\bPLC\b|\bCorp|\bAG\b|\behf\b|\bd\.o\.o', re.I)
-REG11 = re.compile(r"תקנה\s*:?\s*11\b|11\s*:?\s*תקנה|רשימת\s+(?:ה)?השקעות\s+בחברות|השקעות\s+בחברות[- ]בת\s+ובחברות\s+כלולות", re.I)
+REG11 = re.compile(r"תקנה\s*:?\s*11(?!\d)|(?<!\d)11\s*:?\s*תקנה|רשימת\s+(?:ה)?השקעות\s+בחברות|השקעות\s+בחברות[- ]בת\s+ובחברות\s+כלולות", re.I)
 REG12 = re.compile(r"תקנה\s*:?\s*12\b|12\s*:?\s*תקנה|שינויים\s+בהשקעות\s+בחברות", re.I)
 REG26 = re.compile(r"תקנה\s*:?\s*26\b|26\s*:?\s*תקנה|הדירקטורים\s+של\s+התאגיד", re.I)
 # "תרשים חברות מוחזקות עיקריות" (לאומי), "תרשים ההחזקות", "תרשים מבנה" - כל "תרשים" שאחריו מילה על החזקות / חברות / הקבוצה
@@ -56,7 +56,7 @@ CHART = re.compile(r"(?:תרשים|מבנה)\s+(?:ה)?(?:[אה]חזקות|החז
                    r"chart\s+of\s+(?:the\s+)?(?:holdings?|group|corporate)", re.I)
 # תרשים שממשיך בעמוד הבא ("פירוט בעמוד הבא" - אשטרום, שיכון ובינוי)
 CONT = re.compile(r"(?:פירוט|המשך|ראו|ראה|יפורט)\s+(?:ה?תרשים\s+)?ב?עמוד\s+הבא|בעמוד\s+הבא|continued\s+on\s+(?:the\s+)?next\s+page", re.I)
-NOTE = re.compile(r"חברות\s+מאוחדות|חברות\s+בנות\s+מהותיות|חברות\s+מוחזקות|ישויות\s+הקבוצה|השקע(?:ה|ות)\s+בחברות\s+(?:מוחזקות|כלולות|בנות)|"
+NOTE = re.compile(r"זכויות\s+בישויות\s+אחרות|רשימת\s+(?:ה)?חברות\s+(?:ה|ב)?קבוצה|חברות\s+הקבוצה|חברות\s+מאוחדות|חברות\s+בנות\s+מהותיות|חברות\s+מוחזקות|ישויות\s+הקבוצה|השקע(?:ה|ות)\s+בחברות\s+(?:מוחזקות|כלולות|בנות)|"
                   r"חברות\s+כלולות|פירוט\s+החברות|Principal\s+subsidiaries|Significant\s+subsidiaries|Investments?\s+in\s+(?:subsidiaries|investees|associates)", re.I)
 EXH = re.compile(r"Exhibit\s+(?:21|8)(?:\.1)?\b[^\n]{0,80}|List\s+of\s+(?:Significant\s+)?Subsidiaries|Subsidiaries\s+of\s+the\s+(?:Company|Registrant)", re.I)
 PCT = re.compile(r"\d[\d.,]*\s*%|%\s*\d")
@@ -102,6 +102,14 @@ def locate(pages):
         headb = both(head)
         if REG11.search(t) and (ent >= 3 or pct >= 3):
             sec["reg11"].add(i)
+        elif REG11.search(headb) and not REG12.search(headb):
+            # כותרת תקנה 11 בראש העמוד, והטבלה תמונה / טקסט מפורק (ישרוטל עמ' 161) - העמוד וההמשך שלו
+            sec["reg11"].add(i)
+            for j in range(i + 1, min(n, i + 4)):
+                if len(pages[j][0].strip()) < 700 or len(ENT.findall(both(pages[j][0]))) >= 4:
+                    sec["reg11"].add(j)
+                else:
+                    break
         if REG12.search(headb) or (REG12.search(t) and ent >= 2):
             sec["reg12"].add(i)
         if REG26.search(headb):
@@ -113,6 +121,8 @@ def locate(pages):
         nums = len(re.findall(r"(?<![\d.,])(?:100(?:\.0+)?|[1-9]\d(?:\.\d+)?)(?![\d,])", t))   # טבלת אחוזים בלי % ליד כל מספר
         if NOTE.search(t) and ent >= 5 and (pct >= 3 or ("%" in t and nums >= 8)):
             sec["fs_notes"].add(i)
+        elif NOTE.search(headb) and ent >= 3:
+            sec["fs_notes"].add(i)      # כותרת הביאור / הנספח בראש העמוד (ישרוטל "זכויות בישויות אחרות", סקופ "רשימת חברות הקבוצה")
         if EXH.search(t) and ent >= 8:
             sec["exhibit21"].add(i)
     # המשך טבלה: עמוד אחרי תקנה 11 / ביאור / exhibit עם הרבה ישויות - עד 4 עמודים
@@ -180,13 +190,16 @@ def save_image(src, dst_base, seen):
     return dst
 
 
+BUILDER_VERSION = 4   # להעלות בכל שיפור בזיהוי - חבילות בלי תוצאה נבנות מחדש (work_pack_queue --rebuild-old)
+
+
 def build_pack(rid, files, out_dir, extra=None):
     """files: [(name, local_pdf_path)]. extra: {file_name: [pages]} - עמודים שסוכן ביקש (pack-requests): רינדור 200dpi."""
     root = os.path.join(out_dir, str(rid))
     for d in ("pages", "text", "images", "render"):
         os.makedirs(os.path.join(root, d), exist_ok=True)
     seen_imgs = {}   # תמונה זהה (רקע / לוגו שחוזר בכל עמוד) נשמרת פעם אחת
-    man = {"report_id": str(rid), "files": [], "built": time.strftime("%Y-%m-%d %H:%M")}
+    man = {"report_id": str(rid), "files": [], "built": time.strftime("%Y-%m-%d %H:%M"), "builder": BUILDER_VERSION}
     for name, path in files:
         raw = pdftotext_pages(path, False)
         lay = pdftotext_pages(path, True)

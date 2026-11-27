@@ -58,7 +58,7 @@ jobs:
           T: ${{ secrets.REVACH_TOKEN }}
         run: |
           git clone --quiet --depth 1 --filter=blob:none --sparse --branch agent-results "https://x-access-token:${T}@github.com/Revach123/Revach.git" ar \
-            && (cd ar && git sparse-checkout set --no-cone 'pack-requests/*' 'redo/*' README.md) || mkdir -p ar
+            && (cd ar && git sparse-checkout set --no-cone 'pack-requests/*' 'redo/*' 'results/*.json' README.md) || mkdir -p ar
           ls ar/pack-requests 2>/dev/null | head -20 || true
       - uses: actions/setup-python@v6
         with:
@@ -119,7 +119,7 @@ jobs:
           # חבילות מגרסה ישנה של הבונה - קודם (בלי תרשימים וקטוריים / תמונות טבלאות)
           if [ "${{ github.event.inputs.rebuild_old || 'true' }}" = "true" ]; then
             for round in $(seq 1 20); do
-              python work_pack_queue.py --n 50 --rebuild-old $args | tee /tmp/rb.txt
+              python work_pack_queue.py --n 50 --rebuild-old --results-dir ../../ar/results $args | tee /tmp/rb.txt
               push || exit 1
               k=$(grep -oE "REBUILD: [0-9]+" /tmp/rb.txt | grep -oE "[0-9]+")
               [ "${k:-0}" -lt 50 ] && break      # סבב אחרון (חבילה שלא ירדה נשארת ישנה - לא לולאה אינסופית)
