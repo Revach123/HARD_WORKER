@@ -50,7 +50,10 @@ REG12 = re.compile(r"תקנה\s*:?\s*12\b|12\s*:?\s*תקנה|שינויים\s+ב
 REG26 = re.compile(r"תקנה\s*:?\s*26\b|26\s*:?\s*תקנה|הדירקטורים\s+של\s+התאגיד", re.I)
 # "תרשים חברות מוחזקות עיקריות" (לאומי), "תרשים ההחזקות", "תרשים מבנה" - כל "תרשים" שאחריו מילה על החזקות / חברות / הקבוצה
 CHART = re.compile(r"(?:תרשים|מבנה)\s+(?:ה)?(?:[אה]חזקות|החזקות|אחזקות|הקבוצה|התאגיד|חברות|השקעות)|תרשים\s+מבנה|"
-                   r"Organi[sz]ational\s+(?:Structure|chart)|Holding\s+structure|Group\s+structure|Structure\s+chart", re.I)
+                   r"Organi[sz]ational\s+(?:Structure|chart)|Holdings?\s+structure|Group\s+structure|Structure\s+chart|"
+                   r"chart\s+of\s+(?:the\s+)?(?:holdings?|group|corporate)", re.I)
+# תרשים שממשיך בעמוד הבא ("פירוט בעמוד הבא" - אשטרום, שיכון ובינוי)
+CONT = re.compile(r"(?:פירוט|המשך|ראו|ראה|יפורט)\s+(?:ה?תרשים\s+)?ב?עמוד\s+הבא|בעמוד\s+הבא|continued\s+on\s+(?:the\s+)?next\s+page", re.I)
 NOTE = re.compile(r"חברות\s+מאוחדות|חברות\s+בנות\s+מהותיות|חברות\s+מוחזקות|ישויות\s+הקבוצה|השקע(?:ה|ות)\s+בחברות\s+(?:מוחזקות|כלולות|בנות)|"
                   r"חברות\s+כלולות|פירוט\s+החברות|Principal\s+subsidiaries|Significant\s+subsidiaries|Investments?\s+in\s+(?:subsidiaries|investees|associates)", re.I)
 EXH = re.compile(r"Exhibit\s+(?:21|8)(?:\.1)?\b[^\n]{0,80}|List\s+of\s+(?:Significant\s+)?Subsidiaries|Subsidiaries\s+of\s+the\s+(?:Company|Registrant)", re.I)
@@ -202,6 +205,9 @@ def build_pack(rid, files, out_dir, extra=None):
         for p in range(1, min(n, 80) + 1):
             if p not in loc["charts"] and vector_chart(pages[p - 1][0]):
                 loc["charts"].append(p)
+        for p in list(loc["charts"]):
+            if p < n and CONT.search(both(pages[p - 1][0])) and (p + 1) not in loc["charts"]:
+                loc["charts"].append(p + 1)
         loc["charts"] = sorted(set(loc["charts"]))
         with gzip.open(os.path.join(root, "text", f"{name}.txt.gz"), "wt", encoding="utf-8") as f:
             f.write("\f".join(raw[:n]))
