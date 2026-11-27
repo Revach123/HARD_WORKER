@@ -40,7 +40,7 @@ def norm(n):
 
 DESC = re.compile(r"חברה|רשומה|רשום|קפריסא|יוונ|הולנד|אמריקא|אנגל|גרמנ|סינ|מיזם|שותפות|בקפריסין|ביוון|בהולנד|בסין|"
                   r"בארה\"?ב|registered|company|incorporated|partnership|\b(?:jv|joint venture)\b", re.I)
-LOOSE_LEGAL = {"בע", "מ", "בעמ", "ltd", "inc", "llc", "limited", "b", "v", "bv", "lp", "l", "p", "שותפות", "מוגבלת", "sa", "s", "a",
+LOOSE_LEGAL = {"בע", "מ", "בעמ", "ltd", "inc", "llc", "limited", "bv", "lp", "שותפות", "מוגבלת", "sa",
                "co", "corp", "corporation", "gmbh", "plc", "pty", "as", "ag", "nv"}
 
 
@@ -51,6 +51,7 @@ def loose(name):
         if not DESC.search(par):
             return ""
         n = n.replace(par, " ")
+    n = re.sub(r"\b(?:b\.?\s?v|l\.?\s?p|s\.?\s?a|n\.?\s?v|l\.?\s?l\.?\s?c)\b\.?", " ", n)   # אות בודדת אחרת נשארת (Solar A ≠ Solar B)
     toks = [t for t in re.findall(r"[א-תa-z0-9]+", n) if t not in LOOSE_LEGAL]
     return " ".join(sorted(toks)) if len(toks) >= 2 else ""
 
