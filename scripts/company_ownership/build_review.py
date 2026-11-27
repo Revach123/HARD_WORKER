@@ -56,6 +56,35 @@ def loose(name):
     return " ".join(sorted(toks)) if len(toks) >= 2 else ""
 
 
+LEGAL_FORM = re.compile(r'בע"?מ|בע״מ|שותפות|ש\.מ|אגודה|עמותה|חל"צ|\b(?:ltd|limited|llc|l\.?l\.?c|inc|corp|corporation|plc|gmbh|ag|'
+                        r'b\.?v|n\.?v|s\.?a|s\.?p\.?a|s\.?r\.?l|s\.?a\.?s|kft|d\.o\.o|sp\.?\s?z|pty|oy|ab|as|lp|l\.p|co)\b', re.I)
+ACTIVITY = re.compile(r"^(?:תאגיד|פעילות|פעילויות|פרויקט|פרוייקט|פרויקטי|תחנת|תחנות|מערכות|מערכת|נכסי|נכס|מתחם|קניון|אתר|מגרש|"
+                      r"project|plant|portfolio|activities|operations|assets?)\b", re.I)
+
+
+def name_toks(n):
+    n = re.sub(r"\([^()]*\)", " ", str(n or "").lower())
+    return [t for t in re.findall(r"[א-תa-z0-9]+", n) if t not in LOOSE_LEGAL]
+
+
+def certain_error(name, rep_keys, agent_tok):
+    """סיבה להסרה אוטומטית של רשומה ישנה שהסוכן לא מצא, רק כשזו טעות ודאית; None - ספק אמיתי (נשאר לאישור).
+    1. החברה המדווחת עצמה. 2. פעילות / נכס / פרויקט בלי צורה משפטית ("פעילות ההיסעים", "תחנות צפוניות").
+    3. כינוי קצר (בלי צורה משפטית) של חברה שהסוכן מצא בשמה המלא - כל המילים בתוך חברה אחת ("Lukovac" -> "Vjetroelektrana Lukovac d.o.o.")."""
+    if tkey(name) in rep_keys:
+        return "החברה המדווחת עצמה - לא החזקה"
+    if LEGAL_FORM.search(str(name or "")):
+        return None
+    if ACTIVITY.search(str(name or "").strip()):
+        return "פעילות / נכס / פרויקט - לא ישות משפטית"
+    t = set(name_toks(name))
+    if t:
+        cont = [a for a in agent_tok if t < a]
+        if cont:
+            return "כינוי קצר של חברה שנמצאה בדוח בשמה המלא"
+    return None
+
+
 def cid_to_hp(maya_path):
     try:
         d = json.load(open(maya_path, encoding="utf-8"))
@@ -189,6 +218,16 @@ def main():
                 seen.add(id(ch))
                 changes.append({"name": ch.get("name"), "change": "remove", "old_pct": ch.get("vot"), "verified": True,
                                 "reason": f"כפילות של {dup} (אותה חברה פעמיים בנתונים הקודמים)"})
+        # הסרה של טעות ודאית - נכנסת אוטומטית עם סיבה (כלל המנהל 27/11: "אם זה בטוח טעות - בלי אישור, רק הספקות האמיתיות")
+        rep_keys = {tkey(d.get("company")), tkey(man.get("company"))} - {""}
+        agent_tok = [set(name_toks(x)) for h in holds for x in [h.get("name")] + list(h.get("alt_names") or []) if x]
+        for ch in cur:
+            if id(ch) in seen:
+                continue
+            why = certain_error(ch.get("name"), rep_keys, agent_tok)
+            if why:
+                seen.add(id(ch))
+                changes.append({"name": ch.get("name"), "change": "remove", "old_pct": ch.get("vot"), "verified": True, "reason": why})
         for ch in cur:
             if id(ch) not in seen:
                 changes.append({"name": ch.get("name"), "change": "remove", "old_pct": ch.get("vot"),
