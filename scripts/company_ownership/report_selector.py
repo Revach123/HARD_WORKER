@@ -23,7 +23,16 @@ import maya_reports_client as mrc
 
 # קודים מאושרים על ידי אריה (לא ניחוש):
 SNAPSHOT_EVENT_IDS = [101, 103]      # דוח שנתי, 20-F - כולל את כל רשימת ההחזקות
-CHANGE_EVENT_IDS = [104, 105, 106]   # רבעוניים/מיידיים - רק דיווחי שינוי
+CHANGE_EVENT_IDS = [104, 105, 106]   # בפועל: דוחות רבעוניים / חצי שנתיים, מצגות והודעות על מועד פרסום (בלי דיווחים מיידיים)
+# דיווחים מיידיים על אירוע בהחזקות (טופס ת053 ודומיו) - לפי סריקת הקטגוריות במאיה (maya_event_probe.py, 27/11):
+# 201 דיווח מיידי כללי ("הושלמה עסקת מכירת מניות"), 203 מיזוג / הצעת רכש, 211 ו-219 העברת שליטה במיזוג / מכירה,
+# 223 הליכים / מכירת נכסים, 230 פירוק, 322 ("הבנות לרכישת קבוצת חברות"). הקטגוריות מעורבות - רק כותרת על אירוע בהחזקות נכנסת
+IMMEDIATE_EVENT_IDS = [201, 203, 211, 219, 223, 230, 322]
+IMM_HOLD = re.compile(r"(?:רכישת|מכירת|מימוש|העברת)\s+(?:כל\s+)?(?:ה)?(?:מניות|שליטה|השליטה|חברה|חב'|חברת|חברות|פעילות|קבוצת|קב'|החזק|זכויות|אחזק|השקע)|"
+                      r"מיזוג|השלמת\s+(?:ה)?עסק|הושלמה\s+(?:ה)?עסק|הקמת\s+(?:חברה|חב'|שותפות|מיזם)|פירוק|חיסול|הצעת\s+רכש|"
+                      r"חברה\s+בת|חב'\s+בת|חברת\s+בת|חברה\s+מוחזקת|הבנות\s+לרכישת|acquisit|merger|divest", re.I)
+IMM_SKIP = re.compile(r"רכישה\s*/?\s*מכירה\s+עצמית|רכישה\s+עצמית|רכישת\s+פוליס|FORM\s*4|בעלי\s+עניין|ב\"ע|זימון\s+אסיפ|תוצאות\s+אסיפ|"
+                      r"אסיפת\s+(?:ה)?אג|מועד\s+פרסום|מצגת|תביעה|ייצוגית|אופצי", re.I)
 
 
 def _parse_publish_date(s: str) -> datetime:
@@ -201,9 +210,46 @@ def build_change_index(from_date: date, to_date: date, snapshot_index: dict) -> 
     return changes_by_company
 
 
+def build_immediate_index(from_date: date, to_date: date, snapshot_index: dict) -> dict:
+    """דיווחים מיידיים על אירוע בהחזקות (רכישה / מכירה / מיזוג / הקמה / פירוק) שפורסמו אחרי הדוח השנתי של החברה.
+    {companyId: [{"report_id","title","publish_date","pdf_url","kind": "immediate"}]}"""
+    print("\nשולף דיווחים מיידיים על אירועים בהחזקות...")
+    reports = mrc.fetch_all_reports_chunked_cached(from_date, to_date, IMMEDIATE_EVENT_IDS, cache_tag="immediate")
+    out = defaultdict(list)
+    seen = set()
+    n_kept = 0
+    for r in reports:
+        t = r.get("title") or ""
+        if not IMM_HOLD.search(t) or IMM_SKIP.search(t) or str(r.get("id")) in seen:
+            continue
+        pdf_url = mrc.pick_main_pdf_url(r)
+        if not pdf_url:
+            continue
+        seen.add(str(r.get("id")))
+        pub = _parse_publish_date(r["publishDate"])
+        for c in r.get("companies", []):
+            if c.get("isDeleted"):
+                continue
+            snap = snapshot_index.get(c["companyId"])
+            if snap is not None and pub <= snap["publish_date"]:
+                continue
+            out[c["companyId"]].append({"company_name": c["name"], "report_id": str(r["id"]), "title": t,
+                                        "publish_date": pub, "pdf_url": pdf_url, "kind": "immediate"})
+            n_kept += 1
+    print(f"  {len(reports)} דיווחים בקטגוריות, {n_kept} על אירוע בהחזקות ({len(out)} חברות).")
+    return out
+
+
 def build_plan(from_date: date, to_date: date) -> dict:
     snapshot_index = build_snapshot_index(from_date, to_date)
     change_index = build_change_index(from_date, to_date, snapshot_index)
+    try:
+        for cid, items in build_immediate_index(from_date, to_date, snapshot_index).items():
+            have = {c["report_id"] for c in change_index.get(cid, [])}
+            change_index.setdefault(cid, []).extend(i for i in items if i["report_id"] not in have)
+            change_index[cid].sort(key=lambda x: x["publish_date"])
+    except Exception as e:
+        print(f"  אזהרה: שליפת הדיווחים המיידיים נכשלה ({type(e).__name__}: {e}) - ממשיך בלי")
 
     all_company_ids = set(snapshot_index) | set(change_index)
 
@@ -255,6 +301,7 @@ def build_plan(from_date: date, to_date: date) -> dict:
                     "title": c.get("title") or "",
                     "publish_date": c["publish_date"].isoformat(),
                     "pdf_url": c["pdf_url"],
+                    **({"kind": c["kind"]} if c.get("kind") else {}),
                 }
                 for c in changes
             ],

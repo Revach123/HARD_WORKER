@@ -146,11 +146,17 @@ CHG_SKIP = re.compile(r"מועד\s+פרסום|מצגת|תרגום|translat")
 MAX_CHANGES = 8
 
 
+MAX_IMMEDIATE = 12
+
+
 def pick_changes(e):
-    """דוחות השינוי לחבילה (מהישן לחדש, עד MAX_CHANGES האחרונים). בלי כותרת בתוכנית (תוכנית ישנה) - לא מצרפים."""
-    out = [c for c in e.get("changes") or [] if c.get("title") and c.get("pdf_url") and not CHG_SKIP.search(c["title"])
-           and (CHG_PERIODIC.search(c["title"]) or CHG_EVENT.search(c["title"]))]
-    return sorted(out, key=lambda c: c.get("publish_date") or "")[-MAX_CHANGES:]
+    """דוחות השינוי לחבילה, מהישן לחדש: עד MAX_CHANGES דוחות רבעוניים אחרונים + עד MAX_IMMEDIATE דיווחים מיידיים על
+    אירוע בהחזקות (kind "immediate" - נבחרו כבר לפי כותרת ב-report_selector). בלי כותרת בתוכנית (תוכנית ישנה) - לא מצרפים."""
+    ch = [c for c in e.get("changes") or [] if c.get("title") and c.get("pdf_url") and not CHG_SKIP.search(c["title"])]
+    per = [c for c in ch if c.get("kind") != "immediate" and CHG_PERIODIC.search(c["title"])]
+    imm = [c for c in ch if c.get("kind") == "immediate" or (not CHG_PERIODIC.search(c["title"]) and CHG_EVENT.search(c["title"]))]
+    key = lambda c: c.get("publish_date") or ""
+    return sorted(sorted(per, key=key)[-MAX_CHANGES:] + sorted(imm, key=key)[-MAX_IMMEDIATE:], key=key)
 
 
 def main():
@@ -264,7 +270,8 @@ def main():
         if chg_files:
             man["urls"].update({f: c["pdf_url"] for f, c in chg_files.items()})
             man["changes"] = [{"file": f, "report_id": c["report_id"], "title": c.get("title"),
-                               "publish_date": c.get("publish_date")} for f, c in chg_files.items()]
+                               "publish_date": c.get("publish_date"), "kind": c.get("kind") or "periodic"}
+                              for f, c in chg_files.items()]
         if amend:
             k0 = len(urls) - len(amend)
             man["amendments"] = [dict(x, file=f"{r['report_id']}_{k0 + j}") for j, x in enumerate(amend)]
