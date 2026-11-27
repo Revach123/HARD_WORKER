@@ -31,6 +31,9 @@ def _parse_publish_date(s: str) -> datetime:
     return datetime.fromisoformat(s)
 
 
+AMEND = re.compile(r"תיקון|מתוקן|amend", re.I)
+
+
 def _title_score(title: str) -> int:
     """ציון התאמה לכותרת "דוח תקופתי אמיתי" - גבוה יותר = סביר יותר
     שזה הדוח המלא, לא מצגת/תקציר. מבוסס על כותרות אמיתיות שראינו
@@ -40,10 +43,12 @@ def _title_score(title: str) -> int:
     t = title or ""
     if "מצגת" in t:
         return -10  # אף פעם לא הדוח האמיתי - ראינו זאת מאומת (תפרון, אלקו)
-    if re.search(r"translation|תרגום", t, re.I):
+    if re.search(r"translat|תרגום|מתורגם", t, re.I):
         return -5   # תרגום חלקי של הדוח (או.פי.סי: "Unofficial English translation of certain sections ... Annual Report")
     if "דוח תקופתי" in t and "ושנתי" in t:
-        return 10  # ההתאמה המדויקת ביותר שראינו בפועל
+        # "תיקון דוח" - לרוב רק העמודים שתוקנו (אב-גד: 3 עמודים). הדוח המקורי נשאר המקור, והתיקון מצורף אליו
+        # כקובץ נוסף (amendments - ר' build_snapshot_index)
+        return 9 if AMEND.search(t) else 10
     if re.search(r"מודיע|זמין באתר|\b6[- ]?K\b", t, re.I):
         return 3    # הודעה על הגשה ל-SEC (אלביט, נובה) - רק כשאין את הטופס עצמו
     if re.search(r"\b(?:20|10)[- ]?[FK]\b|\bF[- ]?20\b", t, re.I) or "Annual Report" in t:
@@ -114,7 +119,19 @@ def build_snapshot_index(from_date: date, to_date: date) -> dict:
                                     for a in r.get("attachments") or [] if not str(a.get("fileType") or "").startswith("pdf")],
                 }
 
-    print(f"  {len(best_by_company)} חברות עם דוח סיכום.")
+    # תיקוני דוח שפורסמו אחרי הדוח שנבחר - מצורפים לחבילה שלו (קבצים נוספים), כדי שהסוכן יקרא את שניהם
+    for r in reports:
+        if not AMEND.search(r.get("title") or "") or _title_score(r.get("title")) <= 0:
+            continue
+        url = mrc.pick_main_pdf_url(r)
+        pub = _parse_publish_date(r["publishDate"])
+        for c in r.get("companies", []):
+            b = best_by_company.get(c.get("companyId"))
+            if url and b and str(r["id"]) != b["report_id"] and pub >= b["publish_date"]:
+                b.setdefault("amendments", []).append({"report_id": str(r["id"]), "title": r.get("title"),
+                                                       "publish_date": pub.isoformat(), "pdf_url": url})
+    print(f"  {len(best_by_company)} חברות עם דוח סיכום "
+          f"({sum(1 for b in best_by_company.values() if b.get('amendments'))} עם תיקון דוח מצורף).")
     return best_by_company
 
 
@@ -167,6 +184,7 @@ def build_change_index(from_date: date, to_date: date, snapshot_index: dict) -> 
             changes_by_company[cid].append({
                 "company_name": c["name"],
                 "report_id": str(r["id"]),
+                "title": r.get("title") or "",
                 "publish_date": pub_date,
                 "pdf_url": pdf_url,
                 "extra_pdfs": mrc.extra_pdfs(r),
@@ -227,12 +245,14 @@ def build_plan(from_date: date, to_date: date) -> dict:
                     "pdf_url": snap["pdf_url"],
                     "pdf_size_kb": snap["pdf_size"],
                     "extra_pdfs": snap["extra_pdfs"],
+                    "amendments": snap.get("amendments") or [],
                 }
                 if snap else None
             ),
             "changes": [
                 {
                     "report_id": c["report_id"],
+                    "title": c.get("title") or "",
                     "publish_date": c["publish_date"].isoformat(),
                     "pdf_url": c["pdf_url"],
                 }

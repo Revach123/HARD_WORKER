@@ -19,6 +19,10 @@ on:
         description: "report_id מסוימים (מופרדים בפסיק) - במקום סדר העדיפות"
         required: false
         default: ""
+      with_changes:
+        description: "לצרף לחבילה את דוחות השינוי שפורסמו אחרי הדוח השנתי (true/false) - בשלב הניסוי רק עם reports"
+        required: false
+        default: "false"
 
 concurrency:
   group: work-packs
@@ -76,6 +80,7 @@ jobs:
           CF_DATABASE_ID: c1d082fc-c125-4f62-8b33-9b62d5bda2da   # company-info-db (company_views)
           N: ${{ github.event.inputs.n || '20' }}
           REPORTS: ${{ github.event.inputs.reports }}
+          WITH_CHANGES: ${{ github.event.inputs.with_changes || 'false' }}
         run: |
           mkdir -p ../../wp/packs
           cd ../../wp && git config user.name "github-actions[bot]" && git config user.email "github-actions[bot]@users.noreply.github.com" && cd -
@@ -93,6 +98,7 @@ jobs:
           }
           args="--packs-dir ../../wp/packs --indices ../../revach/data/indices/by-company.json \
             --site ../../revach/data/holdings/extracted_subsidiaries.json --maya ../../revach/data/registry/maya_companies_full.json"
+          [ "$WITH_CHANGES" = "true" ] && args="$args --with-changes"
           # בקשות עמודים של סוכנים - קודם לכל: בנייה מחדש של החבילה עם העמודים, ואז redo לדוח ומחיקת הבקשה
           if ls ../../ar/pack-requests/*.json >/dev/null 2>&1; then
             : > /tmp/done_req.txt

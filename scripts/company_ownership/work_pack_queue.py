@@ -137,6 +137,22 @@ def priorities(plan, indices_path, site_path, maya_path=""):
     return rows
 
 
+# דוחות שינוי שמצורפים לחבילת הדוח השנתי (--with-changes): רבעוני / חצי שנתי, ודיווח מיידי על אירוע בהחזקות.
+# הסוכן קורא את הדוח השנתי ואת דוחות השינוי יחד - "יום הדוח" הוא מועד פרסום דוח השינוי האחרון (ר' ההוראות)
+CHG_PERIODIC = re.compile(r"דוח\s+רבעון|חצי\s+שנתי|רבעון\s+(?:ה)?(?:ראשון|שני|שלישי)")
+CHG_EVENT = re.compile(r"רכיש|מכיר|מיזוג|מימוש|השלמת\s+(?:ה)?עסק|הקמת|פירוק|חיסול|הצעת\s+רכש|שינוי\s+(?:ב)?(?:שיעור\s+)?(?:ה)?החזק|"
+                       r"השקעה\s+ב|הסכם\s+(?:ל)?(?:רכישת|מכירת)|acquisit|merger|divest|disposal", re.I)
+CHG_SKIP = re.compile(r"מועד\s+פרסום|מצגת|תרגום|translat")
+MAX_CHANGES = 8
+
+
+def pick_changes(e):
+    """דוחות השינוי לחבילה (מהישן לחדש, עד MAX_CHANGES האחרונים). בלי כותרת בתוכנית (תוכנית ישנה) - לא מצרפים."""
+    out = [c for c in e.get("changes") or [] if c.get("title") and c.get("pdf_url") and not CHG_SKIP.search(c["title"])
+           and (CHG_PERIODIC.search(c["title"]) or CHG_EVENT.search(c["title"]))]
+    return sorted(out, key=lambda c: c.get("publish_date") or "")[-MAX_CHANGES:]
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--n", type=int, default=20, help="כמה חבילות חדשות לבנות בהרצה")
@@ -151,6 +167,7 @@ def main():
                     help="לבנות מחדש חבילות שנבנו בגרסה ישנה (בלי table_renders: בלי תרשימים וקטוריים ותמונות טבלאות), לפני חדשות")
     ap.add_argument("--requests-dir", default="", help="pack-requests/ מענף agent-results: עמודים שסוכן ביקש להוסיף לחבילה")
     ap.add_argument("--done-requests", default="", help="קובץ פלט: רשימת report_id שהבקשות שלהם טופלו")
+    ap.add_argument("--with-changes", action="store_true", help="לצרף לחבילה את דוחות השינוי שפורסמו אחרי הדוח השנתי")
     a = ap.parse_args()
     plan = json.load(open(a.plan, encoding="utf-8"))
     rows = priorities(plan, a.indices, a.site, a.maya)
@@ -193,7 +210,10 @@ def main():
     import maya_reports_client as mrc
     for r in todo:
         e = by_cid[r["cid"]]
-        urls = [e["snapshot"]["pdf_url"]] + list(e["snapshot"].get("extra_pdfs") or [])
+        amend = e["snapshot"].get("amendments") or []     # תיקון דוח שפורסם אחרי הדוח - קבצים נוספים בחבילה
+        urls = [e["snapshot"]["pdf_url"]] + list(e["snapshot"].get("extra_pdfs") or []) + [x["pdf_url"] for x in amend]
+        chg = pick_changes(e) if a.with_changes else []
+        chg_files = {}
         html_urls = {}
         with tempfile.TemporaryDirectory() as td:
             files = []
@@ -209,6 +229,20 @@ def main():
                         time.sleep(15)
                 if os.path.exists(local) and os.path.getsize(local) > 0:
                     files.append((f"{r['report_id']}_{i}", local))
+                time.sleep(5)
+            for k, c in enumerate(chg):
+                local = os.path.join(td, f"{r['report_id']}_c{k}.pdf")
+                for attempt in range(4):
+                    try:
+                        with open(local, "wb") as f:
+                            f.write(mrc.download_report_file(c["pdf_url"]))
+                        break
+                    except Exception as ex:
+                        print(f"  {r['report_id']}_c{k}: הורדה נכשלה ({type(ex).__name__}) - ניסיון {attempt + 1}")
+                        time.sleep(15)
+                if os.path.exists(local) and os.path.getsize(local) > 0:
+                    files.append((f"{r['report_id']}_c{k}", local))
+                    chg_files[f"{r['report_id']}_c{k}"] = c
                 time.sleep(5)
             # דוח ב-iXBRL / HTML: ה-PDF הוא רק נספח (בזק - עבודת EY, 36 עמ'). ממירים את ה-HTML ל-PDF (Chrome headless)
             # ומוסיפים כקובץ נוסף בחבילה - כך יש טקסט, עמודים ותמונות כמו בכל דוח
@@ -227,6 +261,13 @@ def main():
         man.update({"company": r["company"], "company_id": r["cid"], "hp": r["hp"], "publish_date": r["publish_date"],
                     "priority": r["priority"], "index_tier": r["tier"],
                     "urls": {**{f"{r['report_id']}_{i}": u for i, u in enumerate(urls)}, **html_urls}})
+        if chg_files:
+            man["urls"].update({f: c["pdf_url"] for f, c in chg_files.items()})
+            man["changes"] = [{"file": f, "report_id": c["report_id"], "title": c.get("title"),
+                               "publish_date": c.get("publish_date")} for f, c in chg_files.items()]
+        if amend:
+            k0 = len(urls) - len(amend)
+            man["amendments"] = [dict(x, file=f"{r['report_id']}_{k0 + j}") for j, x in enumerate(amend)]
         with open(os.path.join(a.packs_dir, r["report_id"], "manifest.json"), "w", encoding="utf-8") as f:
             json.dump(man, f, ensure_ascii=False, indent=1)
         if r["report_id"] in extra and a.done_requests:
