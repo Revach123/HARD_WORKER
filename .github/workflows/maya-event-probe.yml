@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       days:
-        description: "כמה ימים אחורה"
+        description: "כמה ימים אחורה, או: events <מ> <עד> (סריקת eventsIds)"
         required: false
         default: "7"
 
@@ -17,7 +17,7 @@ permissions:
 jobs:
   probe:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-python@v6
@@ -27,4 +27,4 @@ jobs:
       - working-directory: scripts/company_ownership
         env:
           PYTHONUNBUFFERED: "1"
-        run: python maya_event_probe.py "${{ github.event.inputs.days || '7' }}"
+        run: python maya_event_probe.py ${{ github.event.inputs.days || '7' }}

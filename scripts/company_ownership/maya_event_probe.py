@@ -32,7 +32,34 @@ def page(d0, d1, n, extra=None):
     return d if isinstance(d, list) else (d.get("reports") or [])
 
 
+def scan_events(lo, hi, day):
+    """לכל eventId בטווח: כמה דיווחים ביום אחד (עמוד ראשון), כמה מהם בכותרת על אירוע בהחזקות, ו-3 כותרות לדוגמה.
+    השהיה של 1.5 שניות, ובחסימה (403) המתנה ארוכה וניסיון חוזר."""
+    for ev in range(lo, hi + 1):
+        got = None
+        for attempt in range(4):
+            try:
+                got = page(day, day + timedelta(days=1), 1, {"eventsIds": [ev]})
+                break
+            except Exception as e:
+                time.sleep(20 * (attempt + 1))
+        time.sleep(1.5)
+        if not got:
+            continue
+        h = [r.get("title") or "" for r in got if HOLD.search(r.get("title") or "")]
+        forms = collections.Counter(r.get("formId") for r in got).most_common(3)
+        print(f"EVENT {ev} | {len(got)}{'+' if len(got) == 30 else ''} | {len(h)} | {forms} | " +
+              " || ".join((h or [r.get('title') or '' for r in got])[:3])[:300], flush=True)
+
+
 def main():
+    if len(sys.argv) > 1 and sys.argv[1] == "events":
+        lo, hi = int(sys.argv[2]), int(sys.argv[3])
+        days = [date.today() - timedelta(days=k) for k in (2, 3, 4, 5, 6)]
+        for d in days:
+            print(f"== יום {d}")
+            scan_events(lo, hi, d)
+        return
     days = int(sys.argv[1]) if len(sys.argv) > 1 else 7
     end = date.today() - timedelta(days=1)
     items = []
