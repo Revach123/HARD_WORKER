@@ -29,7 +29,9 @@ BIDI = re.compile("[‎‏‪-‮⁦-⁩]")
 
 
 def norm(t):
-    return BIDI.sub("", unicodedata.normalize("NFKC", t or ""))
+    t = BIDI.sub("", unicodedata.normalize("NFKC", t or ""))
+    # גופן שבו נ ממופה ל-"ð" (ווישור, אאורה) - רק בתוך / ליד אותיות עבריות
+    return re.sub(r"ð(?=[\u05d0-\u05ea\s\"'״])|(?<=[\u05d0-\u05ea])ð", "נ", t)
 
 
 def both(t):
