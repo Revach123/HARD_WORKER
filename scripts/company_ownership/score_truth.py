@@ -11,10 +11,13 @@ uncertain לא נספר). כיסוי (recall): מישויות + נכסים בס�
 import json
 import re
 import sys
+import unicodedata
 
 
 def key(n):
-    return re.sub(r"[\s\"'״׳`.,()\-–]|בע\"?מ|בעמ|\bltd\b|\binc\b|\bllc\b|\bl\.?p\b", "", str(n or "").lower())
+    # NFKC + כל סוגי המרכאות (“ ” „ ״ ׳) - "בע“מ" ו-"בע"מ" הם אותו שם
+    n = unicodedata.normalize("NFKC", str(n or "")).replace("“", '"').replace("”", '"').replace("„", '"')
+    return re.sub(r"[\s\"'״׳`.,()\-–]|בע\"?מ|בעמ|\bltd\b|\binc\b|\bllc\b|\bl\.?p\b", "", n.lower())
 
 
 def load_truth(path="truth_set.json"):
