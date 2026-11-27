@@ -168,6 +168,33 @@ def main():
                 q["image"] = None
             q["item_id"] = f"{rid}:{q.get('id')}"
             qs.append(q)
+        # חברת ביניים: חברה שמחזיקה בחברה בת היא בעצמה חברה בת. אם החזקה נכנסת וחברת האם שלה (מהדוח) לא באתר ולא נכנסת -
+        # מוסיפים גם אותה מהפלט של הסוכן (גם אם סומנה לא-מאומתת בגלל שאלה על פרט אחר), אחרת הקישור בעץ נשבר (סאמיט: 110 חברות
+        # תחת "Summit Properties Ltd." שחיכתה לשאלה)
+        by_name = {}
+        for h in holds:
+            for x in [h.get("name")] + list(h.get("alt_names") or []):
+                if x:
+                    by_name.setdefault(tkey(x), h)
+        on_site = set(cur_by) | {loose(c.get("name")) for c in cur} - {""}
+        entering = {tkey(c["name"]) for c in changes if c["change"] in ("add", "pct") and (c.get("verified", True))}
+        queue = [c.get("parent") for c in changes if c["change"] in ("add", "pct") and c.get("verified", True)]
+        while queue:
+            par = queue.pop()
+            if not par or par == "REPORTING_COMPANY":
+                continue
+            k = tkey(par)
+            if k in on_site or loose(par) in on_site or k in entering:
+                continue
+            h = by_name.get(k)
+            if not h:
+                continue
+            entering.add(k)
+            changes.append({"name": h.get("name"), "type": h.get("type"), "parent": h.get("parent"),
+                            "parent_basis": h.get("parent_basis"), "pct": h.get("pct_capital"), "page": h.get("page"),
+                            "section": h.get("section"), "evidence": h.get("evidence"), "verified": True,
+                            "change": "add", "as_parent": True})
+            queue.append(h.get("parent"))
         val = validate(a.validator, f, os.path.join(a.packs, rid)) if a.validator and a.packs else None
         auto, gated = [], []
         for c in changes:
