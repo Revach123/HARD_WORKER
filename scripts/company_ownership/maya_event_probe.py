@@ -55,7 +55,7 @@ def scan_events(lo, hi, day):
 def main():
     if len(sys.argv) > 1 and sys.argv[1] == "events":
         lo, hi = int(sys.argv[2]), int(sys.argv[3])
-        days = [date.today() - timedelta(days=k) for k in (2, 3, 4, 5, 6)]
+        days = [date.today() - timedelta(days=k) for k in (2, 3)]
         for d in days:
             print(f"== יום {d}")
             scan_events(lo, hi, d)
