@@ -1330,37 +1330,44 @@
      ]
     },
     {
-     "name": "תכמית דיסקונט ניהול תיקי השקעות",
-     "alt_names": [],
+     "name": "תפנית דיסקונט ניהול תיקי השקעות בע\"מ",
+     "alt_names": [
+      "תפנית"
+     ],
      "label": "entity",
      "type": null,
      "pct": 100,
      "page": 303,
      "found_by": [
       "O"
-     ]
+     ],
+     "fix_27_11": "typo (תכמית) - the report says תפנית (p.10)"
     },
     {
      "name": "דיסקונט מוביפיקס",
      "alt_names": [],
-     "label": "entity",
+     "label": "uncertain",
      "type": null,
      "pct": 100,
      "page": 303,
      "found_by": [
       "O"
-     ]
+     ],
+     "fix_27_11": "not found anywhere in the report text - kept out of the score"
     },
     {
-     "name": "מס\"ב",
-     "alt_names": [],
+     "name": "מרכז סליקה בנקאי בע\"מ",
+     "alt_names": [
+      "מס\"ב"
+     ],
      "label": "entity",
      "type": null,
      "pct": 25,
      "page": 343,
      "found_by": [
       "O"
-     ]
+     ],
+     "fix_27_11": "full name from the report (reg 11)"
     },
     {
      "name": "דיירנס קלאב",
