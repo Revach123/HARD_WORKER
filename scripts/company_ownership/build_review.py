@@ -85,6 +85,45 @@ def certain_error(name, rep_keys, agent_tok):
     return None
 
 
+# סתירה בין השם בדוח לשם ברשם (תוכן סוגריים שונה - כמו match_subsidiary_names.paren_conflict): קישור חשוד לרשם
+SOFT_PAREN = re.compile(r"""^\s*(?:["“”'].*|\d|\*+|שותפות(?:\s+(?:רשומה|מוגבלת|כללית))?|ש\.?\s*ר\.?|ש\.?\s*מ\.?|ל\.?\s*ר\.?|"""
+                        r"""בפירוק.*|לשעבר.*|להלן.*|ראו?\s.*|[A-Za-z][A-Za-z0-9 .,'&-]*)\s*$""")
+
+
+def _lev(a, b):
+    prev = list(range(len(b) + 1))
+    for i, ca in enumerate(a, 1):
+        cur = [i]
+        for j, cb in enumerate(b, 1):
+            cur.append(min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (ca != cb)))
+        prev = cur
+    return prev[-1]
+
+
+def paren_keys(s):
+    out = []
+    for p in re.findall(r"\(([^)]*)\)", str(s or "")):
+        p = p.strip()
+        if p and not SOFT_PAREN.match(p):
+            out.append(re.sub(r"^ה", "", re.sub(r"[\"'\u05f4\u05f3.\-\s]", "", p)))
+    return sorted(out)
+
+
+def paren_hard_conflict(name, reg_name):
+    """True רק בסתירה אמיתית: לשני הצדדים סוגריים מבחינים ותוכנם שונה ("(1965)" מול "(שירותי ניהול)").
+    הבדל קטן / שנה מקוצרת ("(93)" = "(1993)") / סוגריים רק בצד אחד - לא (כלל המנהל: "אם זה קרוב - אין צורך")."""
+    a, b = paren_keys(name), paren_keys(reg_name)
+    if not a or not b:
+        return False
+
+    def near(x, y):
+        if x == y or (x.isdigit() and y.isdigit() and min(len(x), len(y)) >= 2 and (x.endswith(y) or y.endswith(x))):
+            return True
+        L = max(len(x), len(y))
+        return not L or _lev(x, y) / L <= 0.2
+    return not all(any(near(x, y) for y in b) for x in a)
+
+
 def cid_to_hp(maya_path):
     try:
         d = json.load(open(maya_path, encoding="utf-8"))
@@ -130,6 +169,7 @@ def main():
     c2h = cid_to_hp(a.maya) if a.maya else {}
     os.makedirs(a.out, exist_ok=True)
     reports = []
+    reg_qs = []
     redo = {x[:-5] for x in os.listdir(a.redo_dir) if x.endswith(".json")} if a.redo_dir and os.path.isdir(a.redo_dir) else set()
     for f in sorted(glob.glob(os.path.join(a.results, "*.json"))):
         d = json.load(open(f, encoding="utf-8"))
@@ -169,6 +209,15 @@ def main():
                 if len(lc) == 1:
                     ch = lc[0]
                     seen.add(id(ch))
+            # קישור לרשם שהשם שלו סותר את השם בדוח - שאלה (נכנסת לחלק "קישורים לרשם החברות")
+            if ch is not None and ch.get("hp") and ch.get("raw") and paren_hard_conflict(h.get("name"), ch.get("name")):
+                reg_qs.append({"id": f"reg-{ch['hp']}-{hp}", "holding": h.get("name"), "field": "registry", "parent_hp": hp,
+                               "parent": d.get("company") or man.get("company"), "current_no": str(ch["hp"]),
+                               "current_name": ch.get("name"), "page": h.get("page"), "image": None,
+                               "question": f'"{h.get("name")}" (כך בדוח) מקושר ל"{ch.get("name")}" ({ch["hp"]}) - '
+                                           f'הסוגריים בשם סותרים. להסיר את הקישור?',
+                               "suggestion": "להסיר את הקישור", "options": ["להסיר את הקישור", "להשאיר כמו שהוא"],
+                               "reason": "תוכן הסוגריים בשם בדוח שונה מהשם ברשם - כנראה חברה אחות"})
             item = {"name": h.get("name"), "type": h.get("type"), "parent": h.get("parent"), "parent_basis": h.get("parent_basis"),
                     "pct": h.get("pct_capital"), "page": h.get("page"), "section": h.get("section"), "evidence": h.get("evidence"),
                     "verified": h.get("verified", True)}
@@ -294,8 +343,13 @@ def main():
                         "unverified": [c for c in changes if not c.get("verified", True) and c["change"] != "remove"],
                         "questions": qs, "disagreements": d.get("disagreements") or [],
                         "item_id": f"{rid}:company"})
-    if a.registry_fixes and os.path.exists(a.registry_fixes):
-        regs = json.load(open(a.registry_fixes, encoding="utf-8"))
+    regs = json.load(open(a.registry_fixes, encoding="utf-8")) if a.registry_fixes and os.path.exists(a.registry_fixes) else []
+    ids = {q["id"] for q in regs}
+    for q in reg_qs:
+        if q["id"] not in ids:
+            ids.add(q["id"])
+            regs.append(q)
+    if True:
         for q in regs:
             q["item_id"] = f"registry:{q['id']}"
         if regs:
