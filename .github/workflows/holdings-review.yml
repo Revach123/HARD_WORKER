@@ -52,7 +52,11 @@ jobs:
         working-directory: scripts/company_ownership
         run: |
           cp ../../revach/data/holdings/review/pending.json /tmp/pending_old.json 2>/dev/null || echo '{}' > /tmp/pending_old.json
-          rm -rf ../../revach/data/holdings/review
+          # רק מה ש-build_review מייצר (pending.json + תיקיות תמונות השאלות). applied.json - רישום ההחלטות שהוחלו, נכתב בסנכרון
+          # של האתר - אסור למחוק (מחיקה שלו החזירה את האתר לנתונים שלפני השינויים, 26/11)
+          R=../../revach/data/holdings/review
+          rm -f "$R/pending.json"
+          [ -d "$R" ] && find "$R" -mindepth 1 -maxdepth 1 -type d -exec rm -rf {} +
           python build_review.py --results ../../ar/results --site ../../revach/data/holdings/extracted_subsidiaries.json \
             --maya ../../revach/data/registry/maya_companies_full.json --packs ../../wp/packs --out ../../revach/data/holdings/review \
             --redo-dir ../../ar/redo --validator ../../revach/scripts/company_ownership/agent/validate_result.py
@@ -62,6 +66,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -A data/holdings/review
+          git diff --cached --name-status -- data/holdings/review/applied.json | grep -q '^D' && { echo "applied.json would be deleted - abort"; exit 1; }
           # רק חותמת הזמן השתנתה - לא דוחפים
           if git diff --cached --quiet || [ "$(git diff --cached --numstat | grep -v 'pending.json' | wc -l)$(git diff --cached -U0 data/holdings/review/pending.json | grep '^[+-] ' | grep -vc '"built"')" = "00" ]; then
             echo "No changes."; git reset -q; exit 0; fi
