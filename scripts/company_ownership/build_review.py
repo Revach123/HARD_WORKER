@@ -178,7 +178,10 @@ def main():
                     by_name.setdefault(tkey(x), h)
         on_site = set(cur_by) | {loose(c.get("name")) for c in cur} - {""}
         entering = {tkey(c["name"]) for c in changes if c["change"] in ("add", "pct") and (c.get("verified", True))}
-        queue = [c.get("parent") for c in changes if c["change"] in ("add", "pct") and c.get("verified", True)]
+        # כל החזקה שנכנסת או שכבר באתר (גם בלי שינוי) - חברת האם שלה צריכה להיות בעץ
+        site_keys = set(cur_by)
+        queue = [c.get("parent") for c in changes if c["change"] in ("add", "pct") and c.get("verified", True)] + \
+                [h.get("parent") for h in holds if {tkey(x) for x in [h.get("name")] + list(h.get("alt_names") or []) if x} & site_keys]
         while queue:
             par = queue.pop()
             if not par or par == "REPORTING_COMPANY":
