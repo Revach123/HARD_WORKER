@@ -47,16 +47,16 @@ def pdftotext_pages(path, layout):
 
 ENT = re.compile(r'בע"?מ|בע״מ|שותפות|\bLtd\b|\bLimited\b|\bLLC\b|\bInc\b|\bB\.?V\b|\bGmbH\b|\bS\.?A\b|\bL\.?P\b|'
                  r'\bS\.?R\.?L\b|\bsp\.? z|\bPLC\b|\bCorp|\bAG\b|\behf\b|\bd\.o\.o', re.I)
-REG11 = re.compile(r"Regulation[ \t]+11\b|תקנה[ \t]*:?[ \t]*11(?!\d)|(?<![\d.])11[ \t]*:?[ \t]*תקנה|רשימת\s+(?:ה)?השקעות\s+בחברות|השקעות\s+בחברות[- ]בת\s+ובחברות\s+כלולות", re.I)
-REG12 = re.compile(r"תקנה[ \t]*:?[ \t]*12\b|(?<![\d.])12[ \t]*:?[ \t]*תקנה|שינויים\s+בהשקעות\s+בחברות", re.I)
-REG26 = re.compile(r"תקנה[ \t]*:?[ \t]*26\b|(?<![\d.])26[ \t]*:?[ \t]*תקנה|הדירקטורים\s+של\s+התאגיד", re.I)
+REG11 = re.compile(r"Regulation[ \t]+11\b|תקנה[ \t]*[:\-–]?[ \t]*11(?!\d)|(?<![\d.])11[ \t]*:?[ \t]*תקנה|רשימת\s+(?:ה)?השקעות\s+בחברות|השקעות\s+בחברות[- ]בת\s+ובחברות\s+כלולות", re.I)
+REG12 = re.compile(r"תקנה[ \t]*[:\-–]?[ \t]*12(?!\d)|(?<![\d.])12[ \t]*:?[ \t]*תקנה|שינויים\s+בהשקעות\s+בחברות", re.I)
+REG26 = re.compile(r"תקנה[ \t]*[:\-–]?[ \t]*26(?!\d)|(?<![\d.])26[ \t]*:?[ \t]*תקנה|הדירקטורים\s+של\s+התאגיד", re.I)
 # "תרשים חברות מוחזקות עיקריות" (לאומי), "תרשים ההחזקות", "תרשים מבנה" - כל "תרשים" שאחריו מילה על החזקות / חברות / הקבוצה
 CHART = re.compile(r"(?:תרשים|מבנה)\s+(?:של\s+)?(?:ה)?(?:[אה]חזקות|החזקות|אחזקות|הקבוצה|התאגיד|חברות|השקעות)|תרשים\s+מבנה|"
                    r"Organi[sz]ational\s+(?:Structure|chart)|Holdings?\s+structure|Group\s+structure|Structure\s+chart|"
                    r"chart\s+of\s+(?:the\s+)?(?:holdings?|group|corporate)", re.I)
 # תרשים שממשיך בעמוד הבא ("פירוט בעמוד הבא" - אשטרום, שיכון ובינוי)
 CONT = re.compile(r"(?:פירוט|המשך|ראו|ראה|יפורט)\s+(?:ה?תרשים\s+)?ב?עמוד\s+הבא|בעמוד\s+הבא|continued\s+on\s+(?:the\s+)?next\s+page", re.I)
-NOTE = re.compile(r"זכויות\s+בישויות\s+אחרות|טבלת\s+(?:ה)?[אה]חזקות|נספח\s+(?:ה)?[אה]חזקות|רשימת\s+(?:ה)?תאגידים\s+(?:ה)?מוחזקים|"
+NOTE = re.compile(r"זכויות\s+בישויות\s+אחרות|(?:לשותפות|לחברה|לקבוצה)\s+החזקות\s+ב(?:מספר\s+)?(?:תאגידים|חברות)|טבלת\s+(?:ה)?[אה]חזקות|נספח\s+(?:ה)?[אה]חזקות|רשימת\s+(?:ה)?תאגידים\s+(?:ה)?מוחזקים|"
                   r"רשימת\s+(?:ה)?(?:חברות|שותפויות)(?:\s+ו(?:ה)?(?:חברות|שותפויות))?\s+(?:ה)?מוחזקות|רשימת\s+(?:ה)?חברות\s+(?:ה|ב)?קבוצה|חברות\s+הקבוצה|חברות\s+מאוחדות|חברות\s+בנות\s+מהותיות|חברות\s+מוחזקות|ישויות\s+הקבוצה|השקע(?:ה|ות)\s+בחברות\s+(?:מוחזקות|כלולות|בנות)|"
                   r"חברות\s+כלולות|פירוט\s+החברות|Principal\s+subsidiaries|Significant\s+subsidiaries|Investments?\s+in\s+(?:subsidiaries|investees|associates)", re.I)
 EXH = re.compile(r"Exhibit\s+(?:21|8)(?:\.1)?\b[^\n]{0,80}|List\s+of\s+(?:Significant\s+)?Subsidiaries|Subsidiaries\s+of\s+the\s+(?:Company|Registrant)", re.I)
@@ -122,7 +122,13 @@ def locate(pages):
         pct = len(PCT.findall(t))
         head = "\n".join(raw.strip().splitlines()[:12])            # כותרת העמוד
         headb = both(head)
-        if REG11.search(t) and (ent >= 3 or pct >= 3):
+        # עמוד שבראשו תקנה 12 / 13 ("שינויים בהשקעות בחברות בת ובחברות כלולות", "הכנסות של חברות בת וחברות כלולות") אינו
+        # תקנה 11, אלא אם גם תקנה 11 בראשו במפורש (ניו-מד עמ' 471)
+        not11 = bool(REG12.search(headb) or re.search(r"תקנה[ \t]*[:\-–]?[ \t]*13(?!\d)", headb)) and \
+            not re.search(r"תקנה[ \t]*[:\-–]?[ \t]*11(?!\d)", headb)
+        if not11:
+            pass
+        elif REG11.search(t) and (ent >= 3 or pct >= 3):
             sec["reg11"].add(i)
         elif REG11.search(headb) and not REG12.search(headb):
             # כותרת תקנה 11 בראש העמוד, והטבלה תמונה / טקסט מפורק (ישרוטל עמ' 161) - העמוד וההמשך שלו
@@ -151,7 +157,7 @@ def locate(pages):
             sec["charts"].add(i)
         if TABLES.search(t) and (ent >= 2 or pct >= 2 or len(re.findall(r"20\d\d", t)) >= 4):
             sec["tables"].add(i)
-        if HOLD_LIST.search(headb) and (ent >= 2 or pct >= 3):
+        if HOLD_LIST.search(headb) and (ent >= 2 or pct >= 3) and not not11:
             sec["reg11"].add(i)
         if NOTE_HEAD.search(t) or (SUBS_LINE.search(raw) and "ביאור" in t and ent >= 3) or (NOTE_EN.search(raw) and ent >= 2):
             sec["fs_notes"].add(i)
@@ -236,7 +242,7 @@ def save_image(src, dst_base, seen):
     return dst
 
 
-BUILDER_VERSION = 7   # להעלות בכל שיפור בזיהוי - חבילות בלי תוצאה נבנות מחדש (work_pack_queue --rebuild-old)
+BUILDER_VERSION = 8   # להעלות בכל שיפור בזיהוי - חבילות בלי תוצאה נבנות מחדש (work_pack_queue --rebuild-old)
 
 
 def build_pack(rid, files, out_dir, extra=None):
